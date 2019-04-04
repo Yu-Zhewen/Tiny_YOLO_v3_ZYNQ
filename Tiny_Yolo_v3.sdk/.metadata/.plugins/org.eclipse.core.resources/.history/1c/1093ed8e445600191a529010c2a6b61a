@@ -1,0 +1,15 @@
+#ifndef NETWORK_H
+#define NETWORK_H
+#include "darknet.h"
+
+//#include "image.h"
+//#include "layer.h"
+//#include "data.h"
+//#include "tree.h"
+
+void set_batch_network(network *net, int b);
+layer get_network_output_layer(network *net);
+float *network_predict(network *net, float *input);
+network *make_network(int n);
+
+#endif

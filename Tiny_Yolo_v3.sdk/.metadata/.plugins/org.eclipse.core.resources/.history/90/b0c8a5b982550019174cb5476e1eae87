@@ -1,0 +1,12 @@
+#ifndef IMAGE_H
+#define IMAGE_H
+
+#include <stdlib.h>
+#include <stdio.h>
+#include <float.h>
+#include <string.h>
+#include <math.h>
+#include "box.h"
+#include "darknet.h"
+void draw_detections(image im, detection *dets, int num, float thresh, char **names, int classes);
+#endif

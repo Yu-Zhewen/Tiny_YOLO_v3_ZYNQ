@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:54:30 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Sat Mar  2 13:22:02 2019
+# Process ID: 5176
+# Current directory: /home/xavier/MSc_Project/Tiny_Yolo_v3/Tiny_Yolo_v3.runs/yolo_sys_axi_gpio_0_0_synth_1
+# Command line: vivado -log yolo_sys_axi_gpio_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source yolo_sys_axi_gpio_0_0.tcl
+# Log file: /home/xavier/MSc_Project/Tiny_Yolo_v3/Tiny_Yolo_v3.runs/yolo_sys_axi_gpio_0_0_synth_1/yolo_sys_axi_gpio_0_0.vds
+# Journal file: /home/xavier/MSc_Project/Tiny_Yolo_v3/Tiny_Yolo_v3.runs/yolo_sys_axi_gpio_0_0_synth_1/vivado.jou
+#-----------------------------------------------------------
+source yolo_sys_axi_gpio_0_0.tcl -notrace

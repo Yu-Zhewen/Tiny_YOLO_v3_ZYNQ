@@ -1,0 +1,15 @@
+#ifndef CONVOLUTIONAL_LAYER_H
+#define CONVOLUTIONAL_LAYER_H
+
+#include "activations.h"
+//#include "layer.h"
+#include "network.h"
+
+
+typedef layer convolutional_layer;
+
+void scale_bias(float *output, float *scales, int batch, int n, int size);
+void add_bias(float *output, float *biases, int batch, int n, int size);
+
+
+#endif

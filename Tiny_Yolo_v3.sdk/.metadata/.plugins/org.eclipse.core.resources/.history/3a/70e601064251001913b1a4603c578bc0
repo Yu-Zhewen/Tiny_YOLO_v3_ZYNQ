@@ -1,0 +1,6 @@
+#ifndef CONVOLUTIONAL_LAYER_H
+#define CONVOLUTIONAL_LAYER_H
+
+#include "activations.h"
+#include "layer.h"
+#include "network.h"

@@ -1,0 +1,5 @@
+#ifndef BLAS_H
+#define BLAS_H
+#include "darknet.h"
+void upsample_cpu(float *in, int w, int h, int c, int batch, int stride, int forward,  float scale, float *out);
+#endif

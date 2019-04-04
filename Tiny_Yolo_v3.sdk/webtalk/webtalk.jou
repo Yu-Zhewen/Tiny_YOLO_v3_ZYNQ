@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:54:30 MST 2017
+# 
+# Start of session at: Sun Mar  3 22:15:10 2019
+# Process ID: 24319
+# Current directory: /home/xavier/MSc_Project/Tiny_Yolo_v3/Tiny_Yolo_v3.sdk/webtalk
+# Command line: wbtcv -mode batch -source sdk_webtalk.tcl
+# Log file: /home/xavier/MSc_Project/Tiny_Yolo_v3/Tiny_Yolo_v3.sdk/webtalk/webtalk.log
+# Journal file: /home/xavier/MSc_Project/Tiny_Yolo_v3/Tiny_Yolo_v3.sdk/webtalk/webtalk.jou
+#-----------------------------------------------------------
+source sdk_webtalk.tcl

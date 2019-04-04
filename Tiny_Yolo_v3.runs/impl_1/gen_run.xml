@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7z020clg484-1" LaunchTime="1551532920">
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <File Type="BG-DRC" Name="yolo_sys_wrapper.drc"/>
+  <File Type="BG-BGN" Name="yolo_sys_wrapper.bgn"/>
+  <File Type="BITSTR-SYSDEF" Name="yolo_sys_wrapper.sysdef"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="yolo_sys_wrapper.ltx"/>
+  <File Type="BITSTR-MMI" Name="yolo_sys_wrapper.mmi"/>
+  <File Type="BITSTR-BMM" Name="yolo_sys_wrapper_bd.bmm"/>
+  <File Type="BITSTR-NKY" Name="yolo_sys_wrapper.nky"/>
+  <File Type="BITSTR-RBT" Name="yolo_sys_wrapper.rbt"/>
+  <File Type="BITSTR-MSK" Name="yolo_sys_wrapper.msk"/>
+  <File Type="BG-BIN" Name="yolo_sys_wrapper.bin"/>
+  <File Type="BG-BIT" Name="yolo_sys_wrapper.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="yolo_sys_wrapper_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="yolo_sys_wrapper_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="yolo_sys_wrapper_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="yolo_sys_wrapper_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="yolo_sys_wrapper_postroute_physopt.dcp"/>
+  <File Type="ROUTE-CLK" Name="yolo_sys_wrapper_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-SIMILARITY" Name="yolo_sys_wrapper_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-TIMING-RPX" Name="yolo_sys_wrapper_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-TIMING-PB" Name="yolo_sys_wrapper_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="yolo_sys_wrapper_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="yolo_sys_wrapper_route_status.pb"/>
+  <File Type="ROUTE-STATUS" Name="yolo_sys_wrapper_route_status.rpt"/>
+  <File Type="ROUTE-PWR-RPX" Name="yolo_sys_wrapper_power_routed.rpx"/>
+  <File Type="PLACE-IO" Name="yolo_sys_wrapper_io_placed.rpt"/>
+  <File Type="RDI-RDI" Name="yolo_sys_wrapper.vdi"/>
+  <File Type="PWROPT-TIMING" Name="yolo_sys_wrapper_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="yolo_sys_wrapper_utilization_placed.pb"/>
+  <File Type="PHYSOPT-TIMING" Name="yolo_sys_wrapper_timing_summary_physopted.rpt"/>
+  <File Type="PWROPT-DRC" Name="yolo_sys_wrapper_drc_pwropted.rpt"/>
+  <File Type="PLACE-UTIL" Name="yolo_sys_wrapper_utilization_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="yolo_sys_wrapper_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="OPT-TIMING" Name="yolo_sys_wrapper_timing_summary_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="yolo_sys_wrapper.hwdef"/>
+  <File Type="PWROPT-DCP" Name="yolo_sys_wrapper_pwropt.dcp"/>
+  <File Type="REPORTS-TCL" Name="yolo_sys_wrapper_reports.tcl"/>
+  <File Type="OPT-DCP" Name="yolo_sys_wrapper_opt.dcp"/>
+  <File Type="PLACE-DCP" Name="yolo_sys_wrapper_placed.dcp"/>
+  <File Type="PA-TCL" Name="yolo_sys_wrapper.tcl"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="yolo_sys_wrapper_methodology_drc_opted.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="yolo_sys_wrapper_incremental_reuse_pre_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="yolo_sys_wrapper_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-TIMING" Name="yolo_sys_wrapper_timing_summary_placed.rpt"/>
+  <File Type="INIT-TIMING" Name="yolo_sys_wrapper_timing_summary_init.rpt"/>
+  <File Type="OPT-DRC" Name="yolo_sys_wrapper_drc_opted.rpt"/>
+  <File Type="PLACE-CTRL" Name="yolo_sys_wrapper_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="yolo_sys_wrapper_incremental_reuse_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="yolo_sys_wrapper_postplace_pwropt.dcp"/>
+  <File Type="PHYSOPT-DCP" Name="yolo_sys_wrapper_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="yolo_sys_wrapper_drc_physopted.rpt"/>
+  <File Type="ROUTE-ERROR-DCP" Name="yolo_sys_wrapper_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="yolo_sys_wrapper_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="yolo_sys_wrapper_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="yolo_sys_wrapper_drc_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="yolo_sys_wrapper_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="yolo_sys_wrapper_drc_routed.pb"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="yolo_sys_wrapper_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-DRC-RPX" Name="yolo_sys_wrapper_drc_routed.rpx"/>
+  <File Type="ROUTE-PWR" Name="yolo_sys_wrapper_power_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="yolo_sys_wrapper_methodology_drc_routed.rpx"/>
+  <File Type="ROUTE-PWR-SUM" Name="yolo_sys_wrapper_power_summary_routed.pb"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/bd/yolo_sys/yolo_sys.bd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/bd/yolo_sys/hdl/yolo_sys_wrapper.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="yolo_sys_wrapper"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2017">
+      <Desc>Default settings for Implementation.</Desc>
+    </StratHandle>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="yolo_sys_auto_pc_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="yolo_sys_rst_ps7_0_100M_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="yolo_sys_processing_system7_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="yolo_sys_axi_gpio_0_0"/>
+</GenRun>

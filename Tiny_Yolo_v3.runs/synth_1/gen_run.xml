@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xc7z020clg484-1" LaunchTime="1551532920">
+  <File Type="VDS-TIMING-PB" Name="yolo_sys_wrapper_timing_summary_synth.pb"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="yolo_sys_wrapper_timing_summary_synth.rpt"/>
+  <File Type="RDS-DCP" Name="yolo_sys_wrapper.dcp"/>
+  <File Type="RDS-UTIL-PB" Name="yolo_sys_wrapper_utilization_synth.pb"/>
+  <File Type="RDS-UTIL" Name="yolo_sys_wrapper_utilization_synth.rpt"/>
+  <File Type="RDS-PROPCONSTRS" Name="yolo_sys_wrapper_drc_synth.rpt"/>
+  <File Type="RDS-RDS" Name="yolo_sys_wrapper.vds"/>
+  <File Type="REPORTS-TCL" Name="yolo_sys_wrapper_reports.tcl"/>
+  <File Type="PA-TCL" Name="yolo_sys_wrapper.tcl"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/bd/yolo_sys/yolo_sys.bd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/bd/yolo_sys/hdl/yolo_sys_wrapper.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="yolo_sys_wrapper"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2017">
+      <Desc>Vivado Synthesis Defaults</Desc>
+    </StratHandle>
+    <Step Id="synth_design"/>
+  </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="yolo_sys_axi_gpio_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="yolo_sys_auto_pc_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="yolo_sys_rst_ps7_0_100M_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="yolo_sys_processing_system7_0_0"/>
+</GenRun>
