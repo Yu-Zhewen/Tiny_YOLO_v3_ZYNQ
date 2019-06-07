@@ -1,0 +1,16 @@
+11:08:54 **** Build of configuration Debug for project desktop_ref2 ****
+make all 
+Building target: desktop_ref2
+Invoking: GCC C Linker
+gcc  -o "desktop_ref2"  ./src/activations.o ./src/batchnorm_layer.o ./src/blas.o ./src/box.o ./src/convolutional_layer.o ./src/gemm.o ./src/helloworld.o ./src/im2col.o ./src/image.o ./src/maxpool_layer.o ./src/network.o ./src/parser.o ./src/route_layer.o ./src/upsample_layer.o ./src/utils.o ./src/yolo_layer.o   -lm
+Finished building target: desktop_ref2
+ 
+11:09:33 **** Incremental Build of configuration Debug for project desktop_ref2 ****
+make all 
+make: Nothing to be done for 'all'.
+11:11:06 **** Incremental Build of configuration Debug for project desktop_ref2 ****
+make all 
+make: Nothing to be done for 'all'.
+11:11:51 **** Incremental Build of configuration Debug for project desktop_ref2 ****
+make all 
+make: Nothing to be done for 'all'.

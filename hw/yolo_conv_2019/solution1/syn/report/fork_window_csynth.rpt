@@ -1,0 +1,252 @@
+
+
+================================================================
+== Vivado HLS Report for 'fork_window'
+================================================================
+* Date:           Fri Jun  7 09:43:25 2019
+
+* Version:        2019.1 (Build 2552052 on Fri May 24 15:28:33 MDT 2019)
+* Project:        yolo_conv_2019
+* Solution:       solution1
+* Product family: zynq
+* Target device:  xc7z020-clg484-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |  10.00|     0.000|        1.25|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+-----+-----+-----+----------+
+    |  Latency  |  Interval | Pipeline |
+    | min | max | min | max |   Type   |
+    +-----+-----+-----+-----+----------+
+    |    0|    0|    1|    1| function |
+    +-----+-----+-----+-----+----------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-------+--------+-------+-----+
+|       Name      | BRAM_18K| DSP48E|   FF   |  LUT  | URAM|
++-----------------+---------+-------+--------+-------+-----+
+|DSP              |        -|      -|       -|      -|    -|
+|Expression       |        -|      -|       -|      -|    -|
+|FIFO             |        -|      -|       -|      -|    -|
+|Instance         |        -|      -|       -|      -|    -|
+|Memory           |        -|      -|       -|      -|    -|
+|Multiplexer      |        -|      -|       -|      -|    -|
+|Register         |        -|      -|       -|      -|    -|
++-----------------+---------+-------+--------+-------+-----+
+|Total            |        0|      0|       0|      0|    0|
++-----------------+---------+-------+--------+-------+-----+
+|Available        |      280|    220|  106400|  53200|    0|
++-----------------+---------+-------+--------+-------+-----+
+|Utilization (%)  |        0|      0|       0|      0|    0|
++-----------------+---------+-------+--------+-------+-----+
+
++ Detail: 
+    * Instance: 
+    N/A
+
+    * DSP48E: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    N/A
+
+    * Multiplexer: 
+    N/A
+
+    * Register: 
+    N/A
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++-----------------------+-----+-----+------------+-----------------------+--------------+
+|       RTL Ports       | Dir | Bits|  Protocol  |     Source Object     |    C Type    |
++-----------------------+-----+-----+------------+-----------------------+--------------+
+|ap_ready               | out |    1| ap_ctrl_hs |      fork_window      | return value |
+|ap_return_0            | out |   32| ap_ctrl_hs |      fork_window      | return value |
+|ap_return_1            | out |   32| ap_ctrl_hs |      fork_window      | return value |
+|ap_return_2            | out |   32| ap_ctrl_hs |      fork_window      | return value |
+|ap_return_3            | out |   32| ap_ctrl_hs |      fork_window      | return value |
+|ap_return_4            | out |   32| ap_ctrl_hs |      fork_window      | return value |
+|ap_return_5            | out |   32| ap_ctrl_hs |      fork_window      | return value |
+|ap_return_6            | out |   32| ap_ctrl_hs |      fork_window      | return value |
+|ap_return_7            | out |   32| ap_ctrl_hs |      fork_window      | return value |
+|ap_return_8            | out |   32| ap_ctrl_hs |      fork_window      | return value |
+|ap_return_9            | out |   32| ap_ctrl_hs |      fork_window      | return value |
+|ap_return_10           | out |   32| ap_ctrl_hs |      fork_window      | return value |
+|ap_return_11           | out |   32| ap_ctrl_hs |      fork_window      | return value |
+|ap_return_12           | out |   32| ap_ctrl_hs |      fork_window      | return value |
+|ap_return_13           | out |   32| ap_ctrl_hs |      fork_window      | return value |
+|ap_return_14           | out |   32| ap_ctrl_hs |      fork_window      | return value |
+|ap_return_15           | out |   32| ap_ctrl_hs |      fork_window      | return value |
+|ap_return_16           | out |   32| ap_ctrl_hs |      fork_window      | return value |
+|ap_return_17           | out |   32| ap_ctrl_hs |      fork_window      | return value |
+|ap_return_18           | out |   32| ap_ctrl_hs |      fork_window      | return value |
+|ap_return_19           | out |   32| ap_ctrl_hs |      fork_window      | return value |
+|ap_return_20           | out |   32| ap_ctrl_hs |      fork_window      | return value |
+|ap_return_21           | out |   32| ap_ctrl_hs |      fork_window      | return value |
+|ap_return_22           | out |   32| ap_ctrl_hs |      fork_window      | return value |
+|ap_return_23           | out |   32| ap_ctrl_hs |      fork_window      | return value |
+|ap_return_24           | out |   32| ap_ctrl_hs |      fork_window      | return value |
+|ap_return_25           | out |   32| ap_ctrl_hs |      fork_window      | return value |
+|ap_return_26           | out |   32| ap_ctrl_hs |      fork_window      | return value |
+|ap_return_27           | out |   32| ap_ctrl_hs |      fork_window      | return value |
+|ap_return_28           | out |   32| ap_ctrl_hs |      fork_window      | return value |
+|ap_return_29           | out |   32| ap_ctrl_hs |      fork_window      | return value |
+|ap_return_30           | out |   32| ap_ctrl_hs |      fork_window      | return value |
+|ap_return_31           | out |   32| ap_ctrl_hs |      fork_window      | return value |
+|ap_return_32           | out |   32| ap_ctrl_hs |      fork_window      | return value |
+|ap_return_33           | out |   32| ap_ctrl_hs |      fork_window      | return value |
+|ap_return_34           | out |   32| ap_ctrl_hs |      fork_window      | return value |
+|ap_return_35           | out |   32| ap_ctrl_hs |      fork_window      | return value |
+|ap_return_36           | out |   32| ap_ctrl_hs |      fork_window      | return value |
+|ap_return_37           | out |   32| ap_ctrl_hs |      fork_window      | return value |
+|ap_return_38           | out |   32| ap_ctrl_hs |      fork_window      | return value |
+|ap_return_39           | out |   32| ap_ctrl_hs |      fork_window      | return value |
+|ap_return_40           | out |   32| ap_ctrl_hs |      fork_window      | return value |
+|ap_return_41           | out |   32| ap_ctrl_hs |      fork_window      | return value |
+|ap_return_42           | out |   32| ap_ctrl_hs |      fork_window      | return value |
+|ap_return_43           | out |   32| ap_ctrl_hs |      fork_window      | return value |
+|ap_return_44           | out |   32| ap_ctrl_hs |      fork_window      | return value |
+|ap_return_45           | out |   32| ap_ctrl_hs |      fork_window      | return value |
+|ap_return_46           | out |   32| ap_ctrl_hs |      fork_window      | return value |
+|ap_return_47           | out |   32| ap_ctrl_hs |      fork_window      | return value |
+|ap_return_48           | out |   32| ap_ctrl_hs |      fork_window      | return value |
+|ap_return_49           | out |   32| ap_ctrl_hs |      fork_window      | return value |
+|ap_return_50           | out |   32| ap_ctrl_hs |      fork_window      | return value |
+|ap_return_51           | out |   32| ap_ctrl_hs |      fork_window      | return value |
+|ap_return_52           | out |   32| ap_ctrl_hs |      fork_window      | return value |
+|ap_return_53           | out |   32| ap_ctrl_hs |      fork_window      | return value |
+|ap_return_54           | out |   32| ap_ctrl_hs |      fork_window      | return value |
+|ap_return_55           | out |   32| ap_ctrl_hs |      fork_window      | return value |
+|ap_return_56           | out |   32| ap_ctrl_hs |      fork_window      | return value |
+|ap_return_57           | out |   32| ap_ctrl_hs |      fork_window      | return value |
+|ap_return_58           | out |   32| ap_ctrl_hs |      fork_window      | return value |
+|ap_return_59           | out |   32| ap_ctrl_hs |      fork_window      | return value |
+|ap_return_60           | out |   32| ap_ctrl_hs |      fork_window      | return value |
+|ap_return_61           | out |   32| ap_ctrl_hs |      fork_window      | return value |
+|ap_return_62           | out |   32| ap_ctrl_hs |      fork_window      | return value |
+|ap_return_63           | out |   32| ap_ctrl_hs |      fork_window      | return value |
+|ap_return_64           | out |   32| ap_ctrl_hs |      fork_window      | return value |
+|ap_return_65           | out |   32| ap_ctrl_hs |      fork_window      | return value |
+|ap_return_66           | out |   32| ap_ctrl_hs |      fork_window      | return value |
+|ap_return_67           | out |   32| ap_ctrl_hs |      fork_window      | return value |
+|ap_return_68           | out |   32| ap_ctrl_hs |      fork_window      | return value |
+|ap_return_69           | out |   32| ap_ctrl_hs |      fork_window      | return value |
+|ap_return_70           | out |   32| ap_ctrl_hs |      fork_window      | return value |
+|ap_return_71           | out |   32| ap_ctrl_hs |      fork_window      | return value |
+|ap_return_72           | out |   32| ap_ctrl_hs |      fork_window      | return value |
+|ap_return_73           | out |   32| ap_ctrl_hs |      fork_window      | return value |
+|ap_return_74           | out |   32| ap_ctrl_hs |      fork_window      | return value |
+|ap_return_75           | out |   32| ap_ctrl_hs |      fork_window      | return value |
+|ap_return_76           | out |   32| ap_ctrl_hs |      fork_window      | return value |
+|ap_return_77           | out |   32| ap_ctrl_hs |      fork_window      | return value |
+|ap_return_78           | out |   32| ap_ctrl_hs |      fork_window      | return value |
+|ap_return_79           | out |   32| ap_ctrl_hs |      fork_window      | return value |
+|ap_return_80           | out |   32| ap_ctrl_hs |      fork_window      | return value |
+|ap_return_81           | out |   32| ap_ctrl_hs |      fork_window      | return value |
+|ap_return_82           | out |   32| ap_ctrl_hs |      fork_window      | return value |
+|ap_return_83           | out |   32| ap_ctrl_hs |      fork_window      | return value |
+|ap_return_84           | out |   32| ap_ctrl_hs |      fork_window      | return value |
+|ap_return_85           | out |   32| ap_ctrl_hs |      fork_window      | return value |
+|ap_return_86           | out |   32| ap_ctrl_hs |      fork_window      | return value |
+|ap_return_87           | out |   32| ap_ctrl_hs |      fork_window      | return value |
+|ap_return_88           | out |   32| ap_ctrl_hs |      fork_window      | return value |
+|ap_return_89           | out |   32| ap_ctrl_hs |      fork_window      | return value |
+|ap_return_90           | out |   32| ap_ctrl_hs |      fork_window      | return value |
+|ap_return_91           | out |   32| ap_ctrl_hs |      fork_window      | return value |
+|ap_return_92           | out |   32| ap_ctrl_hs |      fork_window      | return value |
+|ap_return_93           | out |   32| ap_ctrl_hs |      fork_window      | return value |
+|ap_return_94           | out |   32| ap_ctrl_hs |      fork_window      | return value |
+|ap_return_95           | out |   32| ap_ctrl_hs |      fork_window      | return value |
+|ap_return_96           | out |   32| ap_ctrl_hs |      fork_window      | return value |
+|ap_return_97           | out |   32| ap_ctrl_hs |      fork_window      | return value |
+|ap_return_98           | out |   32| ap_ctrl_hs |      fork_window      | return value |
+|ap_return_99           | out |   32| ap_ctrl_hs |      fork_window      | return value |
+|ap_return_100          | out |   32| ap_ctrl_hs |      fork_window      | return value |
+|ap_return_101          | out |   32| ap_ctrl_hs |      fork_window      | return value |
+|ap_return_102          | out |   32| ap_ctrl_hs |      fork_window      | return value |
+|ap_return_103          | out |   32| ap_ctrl_hs |      fork_window      | return value |
+|ap_return_104          | out |   32| ap_ctrl_hs |      fork_window      | return value |
+|ap_return_105          | out |   32| ap_ctrl_hs |      fork_window      | return value |
+|ap_return_106          | out |   32| ap_ctrl_hs |      fork_window      | return value |
+|ap_return_107          | out |   32| ap_ctrl_hs |      fork_window      | return value |
+|ap_return_108          | out |   32| ap_ctrl_hs |      fork_window      | return value |
+|ap_return_109          | out |   32| ap_ctrl_hs |      fork_window      | return value |
+|ap_return_110          | out |   32| ap_ctrl_hs |      fork_window      | return value |
+|ap_return_111          | out |   32| ap_ctrl_hs |      fork_window      | return value |
+|ap_return_112          | out |   32| ap_ctrl_hs |      fork_window      | return value |
+|ap_return_113          | out |   32| ap_ctrl_hs |      fork_window      | return value |
+|ap_return_114          | out |   32| ap_ctrl_hs |      fork_window      | return value |
+|ap_return_115          | out |   32| ap_ctrl_hs |      fork_window      | return value |
+|ap_return_116          | out |   32| ap_ctrl_hs |      fork_window      | return value |
+|ap_return_117          | out |   32| ap_ctrl_hs |      fork_window      | return value |
+|ap_return_118          | out |   32| ap_ctrl_hs |      fork_window      | return value |
+|ap_return_119          | out |   32| ap_ctrl_hs |      fork_window      | return value |
+|ap_return_120          | out |   32| ap_ctrl_hs |      fork_window      | return value |
+|ap_return_121          | out |   32| ap_ctrl_hs |      fork_window      | return value |
+|ap_return_122          | out |   32| ap_ctrl_hs |      fork_window      | return value |
+|ap_return_123          | out |   32| ap_ctrl_hs |      fork_window      | return value |
+|ap_return_124          | out |   32| ap_ctrl_hs |      fork_window      | return value |
+|ap_return_125          | out |   32| ap_ctrl_hs |      fork_window      | return value |
+|ap_return_126          | out |   32| ap_ctrl_hs |      fork_window      | return value |
+|ap_return_127          | out |   32| ap_ctrl_hs |      fork_window      | return value |
+|ap_return_128          | out |   32| ap_ctrl_hs |      fork_window      | return value |
+|ap_return_129          | out |   32| ap_ctrl_hs |      fork_window      | return value |
+|ap_return_130          | out |   32| ap_ctrl_hs |      fork_window      | return value |
+|ap_return_131          | out |   32| ap_ctrl_hs |      fork_window      | return value |
+|ap_return_132          | out |   32| ap_ctrl_hs |      fork_window      | return value |
+|ap_return_133          | out |   32| ap_ctrl_hs |      fork_window      | return value |
+|ap_return_134          | out |   32| ap_ctrl_hs |      fork_window      | return value |
+|ap_return_135          | out |   32| ap_ctrl_hs |      fork_window      | return value |
+|ap_return_136          | out |   32| ap_ctrl_hs |      fork_window      | return value |
+|ap_return_137          | out |   32| ap_ctrl_hs |      fork_window      | return value |
+|ap_return_138          | out |   32| ap_ctrl_hs |      fork_window      | return value |
+|ap_return_139          | out |   32| ap_ctrl_hs |      fork_window      | return value |
+|ap_return_140          | out |   32| ap_ctrl_hs |      fork_window      | return value |
+|ap_return_141          | out |   32| ap_ctrl_hs |      fork_window      | return value |
+|ap_return_142          | out |   32| ap_ctrl_hs |      fork_window      | return value |
+|ap_return_143          | out |   32| ap_ctrl_hs |      fork_window      | return value |
+|window_group_0_val_s   |  in |   32|   ap_none  |  window_group_0_val_s |    scalar    |
+|window_group_0_val_17  |  in |   32|   ap_none  | window_group_0_val_17 |    scalar    |
+|window_group_0_val_18  |  in |   32|   ap_none  | window_group_0_val_18 |    scalar    |
+|window_group_0_val_19  |  in |   32|   ap_none  | window_group_0_val_19 |    scalar    |
+|window_group_0_val_20  |  in |   32|   ap_none  | window_group_0_val_20 |    scalar    |
+|window_group_0_val_21  |  in |   32|   ap_none  | window_group_0_val_21 |    scalar    |
+|window_group_0_val_22  |  in |   32|   ap_none  | window_group_0_val_22 |    scalar    |
+|window_group_0_val_23  |  in |   32|   ap_none  | window_group_0_val_23 |    scalar    |
+|window_group_0_val_24  |  in |   32|   ap_none  | window_group_0_val_24 |    scalar    |
++-----------------------+-----+-----+------------+-----------------------+--------------+
+

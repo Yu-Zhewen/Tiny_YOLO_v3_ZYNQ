@@ -1,0 +1,15 @@
+{
+  "psConfig": {
+    "container": {
+      "name": "ps",
+      "apmNodes": []
+    }
+  },
+  "plConfig": {
+    "otherContainer": {
+      "name": "other",
+      "apmNodes": []
+    },
+    "mdmContainers": []
+  }
+}

@@ -1,0 +1,22 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:54:30 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Sat May 25 16:57:36 2019
+# Process ID: 19212
+# Current directory: /home/xavier/MSc_Project/Tiny_Yolo_v3
+# Command line: vivado Tiny_Yolo_v3.xpr
+# Log file: /home/xavier/MSc_Project/Tiny_Yolo_v3/vivado.log
+# Journal file: /home/xavier/MSc_Project/Tiny_Yolo_v3/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project Tiny_Yolo_v3.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2017.4/data/ip'.
+open_project: Time (s): cpu = 00:00:20 ; elapsed = 00:00:19 . Memory (MB): peak = 6104.941 ; gain = 107.879 ; free physical = 4336 ; free virtual = 13817
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Sat May 25 17:04:43 2019...

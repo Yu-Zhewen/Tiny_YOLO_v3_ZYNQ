@@ -1,0 +1,6 @@
+11:11:51 **** Incremental Build of configuration Debug for project desktop_ref2 ****
+make all 
+make: Nothing to be done for 'all'.
+
+11:11:51 Build Finished (took 598ms)
+

@@ -1,5 +1,0 @@
-#ifndef DATA_H
-#define DATA_H
-#include "darknet.h"
-#include "list.h"
-#endif

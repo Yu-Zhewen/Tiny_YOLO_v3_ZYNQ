@@ -1,0 +1,67 @@
+19:29:29 **** Incremental Build of configuration Debug for project sdk_desktop ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: GCC C Compiler
+gcc -I/home/xavier/MSc_Project/Tiny_Yolo_v3/Tiny_Yolo_v3.sdk/include -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function ‘main’:
+../src/helloworld.c:70:16: warning: implicit declaration of function ‘load_image_color’ [-Wimplicit-function-declaration]
+src/subdir.mk:63: recipe for target 'src/helloworld.o' failed
+     image im = load_image_color(0,0);
+                ^
+../src/helloworld.c:70:16: error: invalid initializer
+../src/helloworld.c:71:19: warning: implicit declaration of function ‘letterbox_image’ [-Wimplicit-function-declaration]
+     image sized = letterbox_image(im, net->w, net->h);
+                   ^
+../src/helloworld.c:71:19: error: invalid initializer
+../src/helloworld.c:83:21: error: incompatible type for argument 1 of ‘draw_detections’
+     draw_detections(im,dets,nboxes,thresh,names,l.classes);
+                     ^
+In file included from /home/xavier/MSc_Project/Tiny_Yolo_v3/Tiny_Yolo_v3.sdk/include/darknet.h:521:0,
+                 from ../src/helloworld.c:49:
+/home/xavier/MSc_Project/Tiny_Yolo_v3/Tiny_Yolo_v3.sdk/include/../yolo/src/image.h:10:6: note: expected ‘int’ but argument is of type ‘image {aka struct <anonymous>}’
+ void draw_detections(int w, int h, detection *dets, int num, float thresh, char **names, int classes);
+      ^
+../src/helloworld.c:83:24: warning: passing argument 2 of ‘draw_detections’ makes integer from pointer without a cast [-Wint-conversion]
+     draw_detections(im,dets,nboxes,thresh,names,l.classes);
+                        ^
+In file included from /home/xavier/MSc_Project/Tiny_Yolo_v3/Tiny_Yolo_v3.sdk/include/darknet.h:521:0,
+                 from ../src/helloworld.c:49:
+/home/xavier/MSc_Project/Tiny_Yolo_v3/Tiny_Yolo_v3.sdk/include/../yolo/src/image.h:10:6: note: expected ‘int’ but argument is of type ‘detection * {aka struct detection *}’
+ void draw_detections(int w, int h, detection *dets, int num, float thresh, char **names, int classes);
+      ^
+../src/helloworld.c:83:29: warning: passing argument 3 of ‘draw_detections’ makes pointer from integer without a cast [-Wint-conversion]
+     draw_detections(im,dets,nboxes,thresh,names,l.classes);
+                             ^
+In file included from /home/xavier/MSc_Project/Tiny_Yolo_v3/Tiny_Yolo_v3.sdk/include/darknet.h:521:0,
+                 from ../src/helloworld.c:49:
+/home/xavier/MSc_Project/Tiny_Yolo_v3/Tiny_Yolo_v3.sdk/include/../yolo/src/image.h:10:6: note: expected ‘detection * {aka struct detection *}’ but argument is of type ‘int’
+ void draw_detections(int w, int h, detection *dets, int num, float thresh, char **names, int classes);
+      ^
+../src/helloworld.c:83:43: error: incompatible type for argument 5 of ‘draw_detections’
+     draw_detections(im,dets,nboxes,thresh,names,l.classes);
+                                           ^
+In file included from /home/xavier/MSc_Project/Tiny_Yolo_v3/Tiny_Yolo_v3.sdk/include/darknet.h:521:0,
+                 from ../src/helloworld.c:49:
+/home/xavier/MSc_Project/Tiny_Yolo_v3/Tiny_Yolo_v3.sdk/include/../yolo/src/image.h:10:6: note: expected ‘float’ but argument is of type ‘char **’
+ void draw_detections(int w, int h, detection *dets, int num, float thresh, char **names, int classes);
+      ^
+../src/helloworld.c:83:49: warning: passing argument 6 of ‘draw_detections’ makes pointer from integer without a cast [-Wint-conversion]
+     draw_detections(im,dets,nboxes,thresh,names,l.classes);
+                                                 ^
+In file included from /home/xavier/MSc_Project/Tiny_Yolo_v3/Tiny_Yolo_v3.sdk/include/darknet.h:521:0,
+                 from ../src/helloworld.c:49:
+/home/xavier/MSc_Project/Tiny_Yolo_v3/Tiny_Yolo_v3.sdk/include/../yolo/src/image.h:10:6: note: expected ‘char **’ but argument is of type ‘int’
+ void draw_detections(int w, int h, detection *dets, int num, float thresh, char **names, int classes);
+      ^
+../src/helloworld.c:83:5: error: too few arguments to function ‘draw_detections’
+     draw_detections(im,dets,nboxes,thresh,names,l.classes);
+     ^
+In file included from /home/xavier/MSc_Project/Tiny_Yolo_v3/Tiny_Yolo_v3.sdk/include/darknet.h:521:0,
+                 from ../src/helloworld.c:49:
+/home/xavier/MSc_Project/Tiny_Yolo_v3/Tiny_Yolo_v3.sdk/include/../yolo/src/image.h:10:6: note: declared here
+ void draw_detections(int w, int h, detection *dets, int num, float thresh, char **names, int classes);
+      ^
+make: *** [src/helloworld.o] Error 1
+
+19:29:29 Build Finished (took 481ms)
+

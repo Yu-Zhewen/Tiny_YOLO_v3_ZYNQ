@@ -1,0 +1,15 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:54:30 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Sun Jun  2 14:41:25 2019
+# Process ID: 12660
+# Current directory: /home/xavier/MSc_Project/Tiny_Yolo_v3
+# Command line: vivado Tiny_Yolo_v3.xpr
+# Log file: /home/xavier/MSc_Project/Tiny_Yolo_v3/vivado.log
+# Journal file: /home/xavier/MSc_Project/Tiny_Yolo_v3/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project Tiny_Yolo_v3.xpr
+update_compile_order -fileset sources_1
+launch_sdk -workspace /home/xavier/MSc_Project/Tiny_Yolo_v3/Tiny_Yolo_v3.sdk -hwspec /home/xavier/MSc_Project/Tiny_Yolo_v3/Tiny_Yolo_v3.sdk/yolo_sys_wrapper.hdf

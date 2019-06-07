@@ -1,0 +1,97 @@
+Hello World
+conv     16  3 x 3 / 1   416 x 416 x   3   ->   416 x 416 x  16  0.150 BFLOPs
+max          2 x 2 / 2   416 x 416 x  16   ->   208 x 208 x  16
+conv     32  3 x 3 / 1   208 x 208 x  16   ->   208 x 208 x  32  0.399 BFLOPs
+max          2 x 2 / 2   208 x 208 x  32   ->   104 x 104 x  32
+conv     64  3 x 3 / 1   104 x 104 x  32   ->   104 x 104 x  64  0.399 BFLOPs
+max          2 x 2 / 2   104 x 104 x  64   ->    52 x  52 x  64
+conv    128  3 x 3 / 1    52 x  52 x  64   ->    52 x  52 x 128  0.399 BFLOPs
+max          2 x 2 / 2    52 x  52 x 128   ->    26 x  26 x 128
+conv    256  3 x 3 / 1    26 x  26 x 128   ->    26 x  26 x 256  0.399 BFLOPs
+max          2 x 2 / 2    26 x  26 x 256   ->    13 x  13 x 256
+conv    512  3 x 3 / 1    13 x  13 x 256   ->    13 x  13 x 512  0.399 BFLOPs
+max          2 x 2 / 1    13 x  13 x 512   ->    13 x  13 x 512
+conv   1024  3 x 3 / 1    13 x  13 x 512   ->    13 x  13 x1024  1.595 BFLOPs
+conv    256  1 x 1 / 1    13 x  13 x1024   ->    13 x  13 x 256  0.089 BFLOPs   
+conv    512  3 x 3 / 1    13 x  13 x 256   ->    13 x  13 x 512  0.399 BFLOPs   
+conv    255  1 x 1 / 1    13 x  13 x 512   ->    13 x  13 x 255  0.044 BFLOPs   
+yolo                                                                            
+route  13                                                                       
+13                                                                              
+conv    128  1 x 1 / 1    13 x  13 x 256   ->    13 x  13 x 128  0.011 BFLOPs   
+upsample            2x    13 x  13 x 128   ->    26 x  26 x 128                 
+route  19 8                                                                     
+conv    256  3 x 3 / 1    26 x  26 x 384   ->    26 x  26 x 256  1.196 BFLOPs   
+conv    255  1 x 1 / 1    26 x  26 x 256   ->    26 x  26 x 255  0.088 BFLOPs   
+yolo                                                                            
+End of Parse Network                                                            
+Loading weights ...Done!                                                        
+End of Load Weight                                                              
+Input Loaded                                                                    
+Forward Layer0                                                                  
+(M:16,K:27,N:173056)                                                            
+Time used:9(s)                                                                  
+Forward Layer1                                                                  
+Time used:0(s)                                                                  
+Forward Layer2                                                                  
+(M:32,K:144,N:43264)                                                            
+Time used:16(s)                                                                 
+Forward Layer3                                                                  
+Time used:0(s)                                                                  
+Forward Layer4                                                                  
+(M:64,K:288,N:10816)                                                            
+Time used:14(s)                                                                 
+Forward Layer5                                                                  
+Time used:0(s)                                                                  
+Forward Layer6                                                                  
+(M:128,K:576,N:2704)                                                            
+Time used:14(s)                                                                 
+Forward Layer7                                                                  
+Time used:0(s)                                                                  
+Forward Layer8                                                                  
+(M:256,K:1152,N:676)                                                            
+Time used:13(s)                                                                 
+Forward Layer9                                                                  
+Time used:0(s)                                                                  
+Forward Layer10                                                                 
+(M:512,K:2304,N:169)                                                            
+Time used:13(s)                                                                 
+Forward Layer11                                                                 
+Time used:0(s)                                                                  
+Forward Layer12                                                                 
+(M:1024,K:4608,N:169)                                                           
+Time used:54(s)                                                                 
+Forward Layer13                                                                 
+(M:256,K:1024,N:169)                                                            
+Time used:3(s)                                                                  
+Forward Layer14                                                                 
+(M:512,K:2304,N:169)                                                            
+Time used:13(s)                                                                 
+Forward Layer15                                                                 
+(M:255,K:512,N:169)                                                             
+Time used:1(s)                                                                  
+Forward Layer16                                                                 
+Time used:0(s)                                                                  
+Forward Layer17                                                                 
+Time used:0(s)                                                                  
+Forward Layer18                                                                 
+(M:128,K:256,N:169)                                                             
+Time used:0(s)                                                                  
+Forward Layer19                                                                 
+Time used:0(s)                                                                  
+Forward Layer20                                                                 
+Time used:0(s)                                                                  
+Forward Layer21                                                                 
+(M:256,K:3456,N:676)                                                            
+Time used:40(s)                                                                 
+Forward Layer22                                                                 
+(M:255,K:256,N:676)                                                             
+Time used:2(s)                                                                  
+Forward Layer23                                                                 
+Time used:0(s)                                                                  
+Predict Retrieved                                                               
+Total Time used:198(s)                                                          
+cow: 56%  (l:424,r:605,t:207,b:351)                                             
+cow: 54%  (l:476,r:555,t:234,b:330)                                             
+horse: 56%  (l:0,r:178,t:175,b:315)                                             
+End of Detection 
