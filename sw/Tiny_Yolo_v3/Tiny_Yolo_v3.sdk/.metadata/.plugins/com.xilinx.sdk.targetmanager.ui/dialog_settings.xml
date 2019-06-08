@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<section name="Workbench">
-	<item value="false" key="yolo_sys_wrapper_hw_platform_0-partial_bit"/>
-	<item value="Auto Detect" key="yolo_sys_wrapper_hw_platform_0-device"/>
-	<item value="" key="yolo_sys_wrapper_hw_platform_0-bmmFile"/>
-	<item value="yolo_sys_wrapper_hw_platform_0" key="programfpga.hwplatform"/>
-	<item value="Local" key="yolo_sys_wrapper_hw_platform_0-target"/>
-	<item value="yolo_sys_wrapper.bit" key="yolo_sys_wrapper_hw_platform_0-bitFile"/>
-</section>

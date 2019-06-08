@@ -1,8 +1,8 @@
-Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------
-| Tool Version : Vivado v.2017.4 (lin64) Build 2086221 Fri Dec 15 20:54:30 MST 2017
-| Date         : Sat Mar  2 13:25:24 2019
-| Host         : Lenovo-XiaoXin-CHAO7000 running 64-bit Ubuntu 16.04.5 LTS
+| Tool Version : Vivado v.2019.1 (lin64) Build 2552052 Fri May 24 14:47:09 MDT 2019
+| Date         : Sat Jun  8 10:33:13 2019
+| Host         : Lenovo-XiaoXin-CHAO7000 running 64-bit Ubuntu 16.04.6 LTS
 | Command      : report_utilization -file yolo_sys_auto_pc_0_utilization_synth.rpt -pb yolo_sys_auto_pc_0_utilization_synth.pb
 | Design       : yolo_sys_auto_pc_0
 | Device       : 7z020clg484-1
@@ -30,13 +30,13 @@ Table of Contents
 +----------------------------+------+-------+-----------+-------+
 |          Site Type         | Used | Fixed | Available | Util% |
 +----------------------------+------+-------+-----------+-------+
-| Slice LUTs*                |  414 |     0 |     53200 |  0.78 |
-|   LUT as Logic             |  349 |     0 |     53200 |  0.66 |
+| Slice LUTs*                |  428 |     0 |     53200 |  0.80 |
+|   LUT as Logic             |  363 |     0 |     53200 |  0.68 |
 |   LUT as Memory            |   65 |     0 |     17400 |  0.37 |
 |     LUT as Distributed RAM |    0 |     0 |           |       |
 |     LUT as Shift Register  |   65 |     0 |           |       |
-| Slice Registers            |  601 |     0 |    106400 |  0.56 |
-|   Register as Flip Flop    |  601 |     0 |    106400 |  0.56 |
+| Slice Registers            |  564 |     0 |    106400 |  0.53 |
+|   Register as Flip Flop    |  564 |     0 |    106400 |  0.53 |
 |   Register as Latch        |    0 |     0 |    106400 |  0.00 |
 | F7 Muxes                   |    0 |     0 |     26600 |  0.00 |
 | F8 Muxes                   |    0 |     0 |     13300 |  0.00 |
@@ -58,8 +58,8 @@ Table of Contents
 | 0     |          Yes |           - |            - |
 | 0     |          Yes |           - |          Set |
 | 0     |          Yes |           - |        Reset |
-| 49    |          Yes |         Set |            - |
-| 552   |          Yes |       Reset |            - |
+| 15    |          Yes |         Set |            - |
+| 549   |          Yes |       Reset |            - |
 +-------+--------------+-------------+--------------+
 
 
@@ -148,17 +148,17 @@ Table of Contents
 +----------+------+---------------------+
 | Ref Name | Used | Functional Category |
 +----------+------+---------------------+
-| FDRE     |  552 |        Flop & Latch |
-| LUT3     |  243 |                 LUT |
-| LUT6     |  104 |                 LUT |
-| LUT5     |   66 |                 LUT |
-| FDSE     |   49 |        Flop & Latch |
+| FDRE     |  549 |        Flop & Latch |
+| LUT3     |  241 |                 LUT |
+| LUT6     |  117 |                 LUT |
+| LUT5     |   48 |                 LUT |
 | SRLC32E  |   47 |  Distributed Memory |
-| LUT4     |   47 |                 LUT |
-| LUT2     |   19 |                 LUT |
+| LUT4     |   46 |                 LUT |
+| LUT2     |   27 |                 LUT |
+| LUT1     |   23 |                 LUT |
 | SRL16E   |   18 |  Distributed Memory |
 | CARRY4   |   18 |          CarryLogic |
-| LUT1     |    6 |                 LUT |
+| FDSE     |   15 |        Flop & Latch |
 +----------+------+---------------------+
 
 

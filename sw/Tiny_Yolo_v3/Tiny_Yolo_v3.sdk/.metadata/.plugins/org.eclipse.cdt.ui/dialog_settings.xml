@@ -1,21 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
-	<item value="/home/xavier/MSc_Project/Tiny_Yolo_v3/Tiny_Yolo_v3.sdk/include" key="org.eclipse.cdt.utils.ui.controls.FileListControl"/>
-	<item value="Default C source template" key="LastUsedSourceTemplate"/>
-	<section name="org.eclipse.cdt.ui.OPEN_ACTION_SELECTION_DIALOG_SECTION">
-		<item value="444" key="DIALOG_WIDTH"/>
-		<item value="1|Ubuntu|11.0|0|GTK|1|" key="DIALOG_FONT_NAME"/>
-		<item value="485" key="DIALOG_HEIGHT"/>
-		<item value="705" key="DIALOG_X_ORIGIN"/>
-		<item value="215" key="DIALOG_Y_ORIGIN"/>
-	</section>
-	<section name="CPathsPropertyPage">
-		<item value="0" key="pageIndex"/>
-	</section>
+	<item value="/home/xavier/MSc_Project/git_v/Tiny_YOLO_v3_ZYNQ/sw/desktop_ref/include" key="org.eclipse.cdt.utils.ui.controls.FileListControl"/>
 	<section name="org.eclipse.cdt.ui.text.hover.CMacroExpansionExploration">
-	</section>
-	<section name="IncludeSysmbolsPropertyPage">
-		<item value="0" key="pageIndex"/>
 	</section>
 	<section name="completion_proposal_size">
 	</section>

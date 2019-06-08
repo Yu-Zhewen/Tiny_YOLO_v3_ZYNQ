@@ -23,6 +23,14 @@
 
 /******************************************************************/
 
+/* Platform specific definitions */
+#define PLATFORM_ZYNQ
+ 
+/* Definitions for sleep timer configuration */
+#define XSLEEP_TIMER_IS_DEFAULT_TIMER
+ 
+ 
+/******************************************************************/
 
 /* Definitions for peripheral PS7_DDR_0 */
 #define XPAR_PS7_DDR_0_S_AXI_BASEADDR 0x00100000
@@ -94,11 +102,13 @@
 #define XPAR_PS7_ETHERNET_0_ENET_SLCR_100MBPS_DIV1 5
 #define XPAR_PS7_ETHERNET_0_ENET_SLCR_10MBPS_DIV0 8
 #define XPAR_PS7_ETHERNET_0_ENET_SLCR_10MBPS_DIV1 50
+#define XPAR_PS7_ETHERNET_0_ENET_TSU_CLK_FREQ_HZ 0
 
 
 /******************************************************************/
 
 #define XPAR_PS7_ETHERNET_0_IS_CACHE_COHERENT 0
+#define XPAR_XEMACPS_0_IS_CACHE_COHERENT 0
 /* Canonical definitions for peripheral PS7_ETHERNET_0 */
 #define XPAR_XEMACPS_0_DEVICE_ID XPAR_PS7_ETHERNET_0_DEVICE_ID
 #define XPAR_XEMACPS_0_BASEADDR 0xE000B000
@@ -110,6 +120,7 @@
 #define XPAR_XEMACPS_0_ENET_SLCR_100Mbps_DIV1 5
 #define XPAR_XEMACPS_0_ENET_SLCR_10Mbps_DIV0 8
 #define XPAR_XEMACPS_0_ENET_SLCR_10Mbps_DIV1 50
+#define XPAR_XEMACPS_0_ENET_TSU_CLK_FREQ_HZ 0
 
 
 /******************************************************************/
@@ -363,6 +374,7 @@
 #define XPAR_XSDPS_0_BUS_WIDTH 0
 #define XPAR_XSDPS_0_MIO_BANK 0
 #define XPAR_XSDPS_0_HAS_EMIO 0
+#define XPAR_XSDPS_0_IS_CACHE_COHERENT 0
 
 
 /******************************************************************/

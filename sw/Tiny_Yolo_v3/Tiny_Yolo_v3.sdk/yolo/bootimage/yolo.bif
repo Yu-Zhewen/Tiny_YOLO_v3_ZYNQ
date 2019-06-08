@@ -1,7 +1,7 @@
 //arch = zynq; split = false; format = BIN
 the_ROM_image:
 {
-	[bootloader]/home/xavier/MSc_Project/Tiny_Yolo_v3/Tiny_Yolo_v3.sdk/fsbl/Debug/fsbl.elf
-	/home/xavier/MSc_Project/Tiny_Yolo_v3/Tiny_Yolo_v3.sdk/yolo_sys_wrapper_hw_platform_0/yolo_sys_wrapper.bit
-	/home/xavier/MSc_Project/Tiny_Yolo_v3/Tiny_Yolo_v3.sdk/yolo/Debug/yolo.elf
+	[bootloader]/home/xavier/MSc_Project/git_v/Tiny_YOLO_v3_ZYNQ/sw/Tiny_Yolo_v3/Tiny_Yolo_v3.sdk/fsbl/Debug/fsbl.elf
+	/home/xavier/MSc_Project/git_v/Tiny_YOLO_v3_ZYNQ/sw/Tiny_Yolo_v3/Tiny_Yolo_v3.sdk/yolo_sys_wrapper_hw_platform_0/yolo_sys_wrapper.bit
+	/home/xavier/MSc_Project/git_v/Tiny_YOLO_v3_ZYNQ/sw/Tiny_Yolo_v3/Tiny_Yolo_v3.sdk/yolo/Debug/yolo.elf
 }

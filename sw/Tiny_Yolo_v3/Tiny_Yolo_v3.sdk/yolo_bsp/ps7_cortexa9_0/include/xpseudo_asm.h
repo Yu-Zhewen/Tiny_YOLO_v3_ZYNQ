@@ -1,6 +1,6 @@
 /******************************************************************************
 *
-* Copyright (C) 2009 - 2015 Xilinx, Inc.  All rights reserved.
+* Copyright (C) 2009 - 2018 Xilinx, Inc.  All rights reserved.
 *
 * Permission is hereby granted, free of charge, to any person obtaining a copy
 * of this software and associated documentation files (the "Software"), to deal
@@ -11,10 +11,6 @@
 *
 * The above copyright notice and this permission notice shall be included in
 * all copies or substantial portions of the Software.
-*
-* Use of the Software is limited solely to applications:
-* (a) running on a Xilinx device, or
-* (b) that interact with a Xilinx device through a bus or interconnect.
 *
 * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
@@ -56,11 +52,16 @@
 * ----- ---- -------- -----------------------------------------------
 * 1.00a ecm  10/18/09 First release
 * 3.04a sdm  01/02/12 Remove redundant dsb in mcr instruction.
+* 6.8   aru  09/06/18 Removed compilation warnings for ARMCC toolchain.
 * </pre>
 *
 ******************************************************************************/
 #ifndef XPSEUDO_ASM_H
 #define XPSEUDO_ASM_H
+
+#ifdef __cplusplus
+extern "C" {
+#endif
 
 #include "xreg_cortexa9.h"
 #ifdef __GNUC__
@@ -69,6 +70,10 @@
  #include "xpseudo_asm_iccarm.h"
 #else
  #include "xpseudo_asm_rvct.h"
+#endif
+
+#ifdef __cplusplus
+}
 #endif
 
 #endif /* XPSEUDO_ASM_H */

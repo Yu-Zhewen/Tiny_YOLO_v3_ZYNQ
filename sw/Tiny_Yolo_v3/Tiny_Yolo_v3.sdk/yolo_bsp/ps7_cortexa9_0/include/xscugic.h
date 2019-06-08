@@ -1,6 +1,6 @@
 /******************************************************************************
 *
-* Copyright (C) 2010 - 2017 Xilinx, Inc.  All rights reserved.
+* Copyright (C) 2010 - 2018 Xilinx, Inc.  All rights reserved.
 *
 * Permission is hereby granted, free of charge, to any person obtaining a copy
 * of this software and associated documentation files (the "Software"), to deal
@@ -11,10 +11,6 @@
 *
 * The above copyright notice and this permission notice shall be included in
 * all copies or substantial portions of the Software.
-*
-* Use of the Software is limited solely to applications:
-* (a) running on a Xilinx device, or
-* (b) that interact with a Xilinx device through a bus or interconnect.
 *
 * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
@@ -33,7 +29,7 @@
 /**
 *
 * @file xscugic.h
-* @addtogroup scugic_v3_8
+* @addtogroup scugic_v4_0
 * @{
 * @details
 *
@@ -175,6 +171,13 @@
 *                     the compilation warning in xscugic_g.c. Fix for CR#978736.
 *       mus  07/25/17 Updated xdefine_gic_params proc to export correct canonical
 *                     definitions for pl to ps interrupts.Fix for CR#980534
+* 3.9   mus  02/21/18 Added new API's XScuGic_UnmapAllInterruptsFromCpu and
+*                     XScuGic_InterruptUnmapFromCpu, These API's can be used
+*                     by applications to unmap specific/all interrupts from
+*                     target CPU.
+* 3.10  aru  08/23/18 Resolved MISRA-C:2012 compliance mandatory violations
+* 4.0   mus  11/22/18 Fixed bugs in software interrupt generation through 
+*                      XScuGic_SoftwareIntr API
 *
 * </pre>
 *
@@ -203,6 +206,9 @@ extern "C" {
 #if !defined (ARMR5) && !defined (__aarch64__) && !defined (ARMA53_32)
 #define ARMA9
 #endif
+
+#define XSCUGIC500_DCTLR_ARE_NS_ENABLE  0x20
+#define XSCUGIC500_DCTLR_ARE_S_ENABLE  0x10
 /**************************** Type Definitions *******************************/
 
 /* The following data type defines each entry in an interrupt vector table.
@@ -317,6 +323,228 @@ typedef struct
 #define XScuGic_DistReadReg(InstancePtr, RegOffset) \
 (XScuGic_ReadReg(((InstancePtr)->Config->DistBaseAddress), (RegOffset)))
 
+/****************************************************************************/
+/**
+*
+* Write the given ReDistributor Interface register
+*
+* @param    InstancePtr is a pointer to the instance to be worked on.
+* @param    RegOffset is the register offset to be written
+* @param    Data is the 32-bit value to write to the register
+*
+* @return   None.
+*
+* @note
+* C-style signature:
+*    void XScuGic_DistWriteReg(XScuGic *InstancePtr, u32 RegOffset, u32 Data)
+*
+*****************************************************************************/
+#define XScuGic_ReDistWriteReg(InstancePtr, RegOffset, Data) \
+(XScuGic_WriteReg(((InstancePtr)->Config->DistBaseAddress)+ \
+				   XSCUGIC_RDIST_OFFSET, (RegOffset), ((u32)(Data))))
+
+/****************************************************************************/
+/**
+*
+* Read the given ReDistributor Interface register
+*
+* @param    InstancePtr is a pointer to the instance to be worked on.
+* @param    RegOffset is the register offset to be read
+*
+* @return   The 32-bit value of the register
+*
+* @note
+* C-style signature:
+*    u32 XScuGic_DistReadReg(XScuGic *InstancePtr, u32 RegOffset)
+*
+*****************************************************************************/
+#define XScuGic_ReDistReadReg(InstancePtr, RegOffset) \
+(XScuGic_ReadReg((((InstancePtr)->Config->DistBaseAddress)+ \
+XSCUGIC_RDIST_OFFSET), (RegOffset)))
+
+/****************************************************************************/
+/**
+*
+* Write the given ReDistributor SGI PPI Interface register
+*
+* @param    InstancePtr is a pointer to the instance to be worked on.
+* @param    RegOffset is the register offset to be written
+* @param    Data is the 32-bit value to write to the register
+*
+* @return   None.
+*
+* @note
+* C-style signature:
+*    void XScuGic_DistWriteReg(XScuGic *InstancePtr, u32 RegOffset, u32 Data)
+*
+*****************************************************************************/
+#define XScuGic_ReDistSGIPPIWriteReg(InstancePtr, RegOffset, Data) \
+(XScuGic_WriteReg(((InstancePtr)->Config->DistBaseAddress)+ \
+				   XSCUGIC_RDIST_SGI_PPI_OFFSET, (RegOffset), ((u32)(Data))))
+
+/****************************************************************************/
+/**
+*
+* Read the given ReDistributor SGI PPI Interface register
+*
+* @param    InstancePtr is a pointer to the instance to be worked on.
+* @param    RegOffset is the register offset to be read
+*
+* @return   The 32-bit value of the register
+*
+* @note
+* C-style signature:
+*    u32 XScuGic_DistReadReg(XScuGic *InstancePtr, u32 RegOffset)
+*
+*****************************************************************************/
+#define XScuGic_ReDistSGIPPIReadReg(InstancePtr, RegOffset) \
+(XScuGic_ReadReg((((InstancePtr)->Config->DistBaseAddress)+ \
+					XSCUGIC_RDIST_SGI_PPI_OFFSET), (RegOffset)))
+
+/****************************************************************************/
+/**
+* This function enables system register interface for GIC CPU Interface
+*
+* @param	value to be written
+*
+* @return	None.
+*
+* @note        None.
+*
+*****************************************************************************/
+#define XScuGic_Enable_SystemReg_CPU_Interface_EL3() mtcp(S3_6_C12_C12_5, 0xF);
+#define XScuGic_Enable_SystemReg_CPU_Interface_EL1() mtcp(S3_0_C12_C12_5, 0xF);
+/****************************************************************************/
+/**
+* This function enables Grou0 interrupts
+*
+* @param	None.
+*
+* @return	None.
+*
+* @note        None.
+*
+*****************************************************************************/
+#define XScuGic_Enable_Group0_Interrupts() mtcp(S3_0_C12_C12_6,0x1);
+/****************************************************************************/
+/**
+* This function enables Group1 interrupts
+*
+* @param	None.
+*
+* @return	None.
+*
+* @note        None.
+*
+*****************************************************************************/
+#if defined (__aarch64__)
+#if EL1_NONSECURE
+#define XScuGic_Enable_Group1_Interrupts() \
+		mtcp (S3_0_C12_C12_7, 0x1 | mfcp(S3_0_C12_C12_7) );
+#else
+#define XScuGic_Enable_Group1_Interrupts() \
+		mtcp (S3_6_C12_C12_7, 0x1 | mfcp(S3_6_C12_C12_7) );
+#endif
+#endif
+/****************************************************************************/
+/**
+* This function writes to ICC_SGI0R_EL1
+*
+* @param	value to be written
+*
+* @return	None.
+*
+* @note     None.
+*
+*****************************************************************************/
+#define XScuGic_WriteICC_SGI0R_EL1(val) mtcp(S3_0_C12_C11_7,val)
+
+/****************************************************************************/
+/**
+* This function writes to ICC_SGI1R_EL1
+*
+* @param	value to be written
+*
+* @return	None.
+*
+* @note        None.
+*
+*****************************************************************************/
+#define XScuGic_WriteICC_SGI1R_EL1(val) mtcp(S3_0_C12_C11_5,val)
+
+/****************************************************************************/
+/**
+* This function reads ICC_SGI1R_EL1 register
+*
+* @param	None
+*
+* @return	Value of ICC_SGI1R_EL1 register
+*
+* @note        None.
+*
+*****************************************************************************/
+#define XScuGic_ReadICC_SGI1R_EL1() mfcp(S3_0_C12_C11_5)
+/****************************************************************************/
+/**
+* This function sets interrupt priority filter
+*
+* @param	None.
+*
+* @return	None.
+*
+* @note        None.
+*
+*****************************************************************************/
+#define XScuGic_set_priority_filter(val)  __asm__ __volatile__("msr  S3_0_C4_C6_0,%0"  : : "r" (val))
+/****************************************************************************/
+/**
+* This function returns interrupt id of highest priority pending interrupt
+*
+* @param	None.
+*
+* @return	None.
+*
+* @note        None.
+*
+*****************************************************************************/
+#if defined (__aarch64__)
+#if EL3
+#define XScuGic_get_IntID()  mfcp(S3_0_C12_C8_0)
+#else
+#define XScuGic_get_IntID()  mfcp(S3_0_C12_C12_0)
+#endif
+#endif
+/****************************************************************************/
+/**
+* This function acks the interrupt
+*
+* @param	None.
+*
+* @return	None.
+*
+* @note        None.
+*
+*****************************************************************************/
+#if  defined (__aarch64__)
+#if EL3
+#define XScuGic_ack_Int(val)   mtcp(S3_0_C12_C8_1,val)
+#else
+#define XScuGic_ack_Int(val)   mtcp(S3_0_C12_C12_1,val)
+#endif
+#endif
+/****************************************************************************/
+/**
+* This macro returns bit position for the specific interrupt's trigger type
+* configuration within GICR_ICFGR0/GICR_ICFGR1 register
+*
+* @param	None.
+*
+* @return	None.
+*
+* @note        None.
+*
+*****************************************************************************/
+#define XScuGic_Get_Rdist_Int_Trigger_Index(IntrId)  (((Int_Id%16) & 0x1f) << 2) +1
 /************************** Function Prototypes ******************************/
 
 /*
@@ -340,6 +568,8 @@ void XScuGic_GetPriorityTriggerType(XScuGic *InstancePtr, u32 Int_Id,
 void XScuGic_SetPriorityTriggerType(XScuGic *InstancePtr, u32 Int_Id,
 					u8 Priority, u8 Trigger);
 void XScuGic_InterruptMaptoCpu(XScuGic *InstancePtr, u8 Cpu_Id, u32 Int_Id);
+void XScuGic_InterruptUnmapFromCpu(XScuGic *InstancePtr, u8 Cpu_Id, u32 Int_Id);
+void XScuGic_UnmapAllInterruptsFromCpu(XScuGic *InstancePtr, u8 Cpu_Id);
 void XScuGic_Stop(XScuGic *InstancePtr);
 void XScuGic_SetCpuID(u32 CpuCoreId);
 u32 XScuGic_GetCpuID(void);
@@ -358,6 +588,8 @@ void XScuGic_InterruptHandler(XScuGic *InstancePtr);
  */
 s32  XScuGic_SelfTest(XScuGic *InstancePtr);
 
+void XScuGic_EnableSGI_PPI(XScuGic *InstancePtr,u32 ID);
+void XScuGic_SetPPI_SGI_Priority(XScuGic *InstancePtr,u32 ID, u32 priority);
 #ifdef __cplusplus
 }
 #endif

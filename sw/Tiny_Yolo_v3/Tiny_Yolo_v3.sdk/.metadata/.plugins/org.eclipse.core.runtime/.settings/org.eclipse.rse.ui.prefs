@@ -1,4 +1,2 @@
 eclipse.preferences.version=1
-org.eclipse.rse.connectorservice.dstore.ui.preferences.keepalivetimeout=6000000
-org.eclipse.rse.connectorservice.dstore.ui.preferences.sockettimeout=1000000
 org.eclipse.rse.preferences.order.connections=Lenovo-XiaoXin-CHAO7000.Local

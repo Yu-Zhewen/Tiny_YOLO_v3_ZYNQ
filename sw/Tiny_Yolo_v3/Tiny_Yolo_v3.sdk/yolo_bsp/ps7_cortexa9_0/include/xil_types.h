@@ -1,6 +1,6 @@
 /******************************************************************************
 *
-* Copyright (C) 2010 - 2015 Xilinx, Inc. All rights reserved.
+* Copyright (C) 2010 - 2019 Xilinx, Inc. All rights reserved.
 *
 * Permission is hereby granted, free of charge, to any person obtaining a copy
 * of this software and associated documentation files (the "Software"), to deal
@@ -11,10 +11,6 @@
 *
 * The above copyright notice and this permission notice shall be included in
 * all copies or substantial portions of the Software.
-*
-* Use of the Software is limited solely to applications:
-* (a) running on a Xilinx device, or
-* (b) that interact with a Xilinx device through a bus or interconnect.
 *
 * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
@@ -49,12 +45,17 @@
 * 5.00 	pkp  05/29/14 Made changes for 64 bit architecture
 *	srt  07/14/14 Use standard definitions from stdint.h and stddef.h
 *		      Define LONG and ULONG datatypes and mask values
+* 7.00  mus  01/07/19 Add cpp extern macro
 * </pre>
 *
 ******************************************************************************/
 
 #ifndef XIL_TYPES_H	/* prevent circular inclusions */
 #define XIL_TYPES_H	/* by using protection macros */
+
+#ifdef __cplusplus
+extern "C" {
+#endif
 
 #include <stdint.h>
 #include <stddef.h>
@@ -201,6 +202,10 @@ typedef void (*XExceptionHandler) (void *InstancePtr);
 
 #ifndef NULL
 #define NULL		0U
+#endif
+
+#ifdef __cplusplus
+}
 #endif
 
 #endif	/* end of protection macro */

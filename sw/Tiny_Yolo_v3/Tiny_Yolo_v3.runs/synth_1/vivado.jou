@@ -1,12 +1,12 @@
 #-----------------------------------------------------------
-# Vivado v2017.4 (64-bit)
-# SW Build 2086221 on Fri Dec 15 20:54:30 MST 2017
-# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
-# Start of session at: Sat Mar  2 13:25:25 2019
-# Process ID: 5637
-# Current directory: /home/xavier/MSc_Project/Tiny_Yolo_v3/Tiny_Yolo_v3.runs/synth_1
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Sat Jun  8 10:33:15 2019
+# Process ID: 6750
+# Current directory: /home/xavier/MSc_Project/git_v/Tiny_YOLO_v3_ZYNQ/sw/Tiny_Yolo_v3/Tiny_Yolo_v3.runs/synth_1
 # Command line: vivado -log yolo_sys_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source yolo_sys_wrapper.tcl
-# Log file: /home/xavier/MSc_Project/Tiny_Yolo_v3/Tiny_Yolo_v3.runs/synth_1/yolo_sys_wrapper.vds
-# Journal file: /home/xavier/MSc_Project/Tiny_Yolo_v3/Tiny_Yolo_v3.runs/synth_1/vivado.jou
+# Log file: /home/xavier/MSc_Project/git_v/Tiny_YOLO_v3_ZYNQ/sw/Tiny_Yolo_v3/Tiny_Yolo_v3.runs/synth_1/yolo_sys_wrapper.vds
+# Journal file: /home/xavier/MSc_Project/git_v/Tiny_YOLO_v3_ZYNQ/sw/Tiny_Yolo_v3/Tiny_Yolo_v3.runs/synth_1/vivado.jou
 #-----------------------------------------------------------
 source yolo_sys_wrapper.tcl -notrace

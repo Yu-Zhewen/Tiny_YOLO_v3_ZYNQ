@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="yolo_sys_axi_gpio_0_0_synth_1" LaunchPart="xc7z020clg484-1" LaunchTime="1551532851">
+<GenRun Id="yolo_sys_axi_gpio_0_0_synth_1" LaunchPart="xc7z020clg484-1" LaunchTime="1559986277">
   <File Type="VDS-TIMING-PB" Name="yolo_sys_axi_gpio_0_0_timing_summary_synth.pb"/>
   <File Type="VDS-TIMINGSUMMARY" Name="yolo_sys_axi_gpio_0_0_timing_summary_synth.rpt"/>
   <File Type="RDS-DCP" Name="yolo_sys_axi_gpio_0_0.dcp"/>
@@ -12,9 +12,11 @@
   <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/yolo_sys_axi_gpio_0_0">
     <File Path="$PSRCDIR/sources_1/bd/yolo_sys/ip/yolo_sys_axi_gpio_0_0/yolo_sys_axi_gpio_0_0.xci">
       <FileInfo>
+        <Attr Name="Library" Val="xil_defaultlib"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
+        <Attr Name="ProcessingOrder" Val="EARLY"/>
       </FileInfo>
     </File>
     <Config>
@@ -25,9 +27,11 @@
   <FileSet Name="constrs_in" Type="BlockSrcs" RelSrcDir="$PSRCDIR/yolo_sys_axi_gpio_0_0">
     <File Path="$PSRCDIR/sources_1/bd/yolo_sys/ip/yolo_sys_axi_gpio_0_0/yolo_sys_axi_gpio_0_0.xci">
       <FileInfo>
+        <Attr Name="Library" Val="xil_defaultlib"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
+        <Attr Name="ProcessingOrder" Val="EARLY"/>
       </FileInfo>
     </File>
     <Config>
@@ -35,8 +39,14 @@
       <Option Name="UseBlackboxStub" Val="1"/>
     </Config>
   </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2017">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019">
       <Desc>Vivado Synthesis Defaults</Desc>
     </StratHandle>
     <Step Id="synth_design"/>

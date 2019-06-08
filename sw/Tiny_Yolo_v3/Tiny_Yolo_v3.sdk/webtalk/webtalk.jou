@@ -1,12 +1,12 @@
 #-----------------------------------------------------------
-# Webtalk v2017.4 (64-bit)
-# SW Build 2086221 on Fri Dec 15 20:54:30 MST 2017
+# Webtalk v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
 # 
-# Start of session at: Sun Mar  3 22:15:10 2019
-# Process ID: 24319
-# Current directory: /home/xavier/MSc_Project/Tiny_Yolo_v3/Tiny_Yolo_v3.sdk/webtalk
+# Start of session at: Sat Jun  8 15:53:48 2019
+# Process ID: 16999
+# Current directory: /home/xavier/MSc_Project/git_v/Tiny_YOLO_v3_ZYNQ/sw/Tiny_Yolo_v3/Tiny_Yolo_v3.sdk/webtalk
 # Command line: wbtcv -mode batch -source sdk_webtalk.tcl
-# Log file: /home/xavier/MSc_Project/Tiny_Yolo_v3/Tiny_Yolo_v3.sdk/webtalk/webtalk.log
-# Journal file: /home/xavier/MSc_Project/Tiny_Yolo_v3/Tiny_Yolo_v3.sdk/webtalk/webtalk.jou
+# Log file: /home/xavier/MSc_Project/git_v/Tiny_YOLO_v3_ZYNQ/sw/Tiny_Yolo_v3/Tiny_Yolo_v3.sdk/webtalk/webtalk.log
+# Journal file: /home/xavier/MSc_Project/git_v/Tiny_YOLO_v3_ZYNQ/sw/Tiny_Yolo_v3/Tiny_Yolo_v3.sdk/webtalk/webtalk.jou
 #-----------------------------------------------------------
 source sdk_webtalk.tcl

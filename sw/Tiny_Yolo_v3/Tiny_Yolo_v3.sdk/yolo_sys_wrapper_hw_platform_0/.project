@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
 	<name>yolo_sys_wrapper_hw_platform_0</name>
-	<comment>Created by SDK v2017.4</comment>
+	<comment>Created by SDK v2019.1</comment>
 	<projects>
 	</projects>
 	<buildSpec>
@@ -11,7 +11,7 @@
 	</natures>
 	<filteredResources>
 		<filter>
-			<id>1551634123345</id>
+			<id>1559986649465</id>
 			<name></name>
 			<type>6</type>
 			<matcher>
@@ -20,7 +20,7 @@
 			</matcher>
 		</filter>
 		<filter>
-			<id>1551634123359</id>
+			<id>1559986649473</id>
 			<name></name>
 			<type>6</type>
 			<matcher>
@@ -29,7 +29,7 @@
 			</matcher>
 		</filter>
 		<filter>
-			<id>1551634123362</id>
+			<id>1559986649509</id>
 			<name></name>
 			<type>6</type>
 			<matcher>

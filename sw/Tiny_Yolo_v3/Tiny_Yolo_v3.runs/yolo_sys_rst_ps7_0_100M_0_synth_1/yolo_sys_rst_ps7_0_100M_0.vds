@@ -1,25 +1,26 @@
 #-----------------------------------------------------------
-# Vivado v2017.4 (64-bit)
-# SW Build 2086221 on Fri Dec 15 20:54:30 MST 2017
-# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
-# Start of session at: Sat Mar  2 13:23:19 2019
-# Process ID: 5356
-# Current directory: /home/xavier/MSc_Project/Tiny_Yolo_v3/Tiny_Yolo_v3.runs/yolo_sys_rst_ps7_0_100M_0_synth_1
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Sat Jun  8 10:31:23 2019
+# Process ID: 6219
+# Current directory: /home/xavier/MSc_Project/git_v/Tiny_YOLO_v3_ZYNQ/sw/Tiny_Yolo_v3/Tiny_Yolo_v3.runs/yolo_sys_rst_ps7_0_100M_0_synth_1
 # Command line: vivado -log yolo_sys_rst_ps7_0_100M_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source yolo_sys_rst_ps7_0_100M_0.tcl
-# Log file: /home/xavier/MSc_Project/Tiny_Yolo_v3/Tiny_Yolo_v3.runs/yolo_sys_rst_ps7_0_100M_0_synth_1/yolo_sys_rst_ps7_0_100M_0.vds
-# Journal file: /home/xavier/MSc_Project/Tiny_Yolo_v3/Tiny_Yolo_v3.runs/yolo_sys_rst_ps7_0_100M_0_synth_1/vivado.jou
+# Log file: /home/xavier/MSc_Project/git_v/Tiny_YOLO_v3_ZYNQ/sw/Tiny_Yolo_v3/Tiny_Yolo_v3.runs/yolo_sys_rst_ps7_0_100M_0_synth_1/yolo_sys_rst_ps7_0_100M_0.vds
+# Journal file: /home/xavier/MSc_Project/git_v/Tiny_YOLO_v3_ZYNQ/sw/Tiny_Yolo_v3/Tiny_Yolo_v3.runs/yolo_sys_rst_ps7_0_100M_0_synth_1/vivado.jou
 #-----------------------------------------------------------
 source yolo_sys_rst_ps7_0_100M_0.tcl -notrace
 Command: synth_design -top yolo_sys_rst_ps7_0_100M_0 -part xc7z020clg484-1 -mode out_of_context
 Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg484-1
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 5431 
+INFO: Helper process launched with PID 6264 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1260.230 ; gain = 78.996 ; free physical = 3359 ; free virtual = 13432
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 1697.844 ; gain = 152.715 ; free physical = 131 ; free virtual = 11726
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'yolo_sys_rst_ps7_0_100M_0' [/home/xavier/MSc_Project/Tiny_Yolo_v3/Tiny_Yolo_v3.srcs/sources_1/bd/yolo_sys/ip/yolo_sys_rst_ps7_0_100M_0/synth/yolo_sys_rst_ps7_0_100M_0.vhd:74]
+INFO: [Synth 8-638] synthesizing module 'yolo_sys_rst_ps7_0_100M_0' [/home/xavier/MSc_Project/git_v/Tiny_YOLO_v3_ZYNQ/sw/Tiny_Yolo_v3/Tiny_Yolo_v3.srcs/sources_1/bd/yolo_sys/ip/yolo_sys_rst_ps7_0_100M_0/synth/yolo_sys_rst_ps7_0_100M_0.vhd:74]
 	Parameter C_FAMILY bound to: zynq - type: string 
 	Parameter C_EXT_RST_WIDTH bound to: 4 - type: integer 
 	Parameter C_AUX_RST_WIDTH bound to: 4 - type: integer 
@@ -29,8 +30,8 @@ INFO: [Synth 8-638] synthesizing module 'yolo_sys_rst_ps7_0_100M_0' [/home/xavie
 	Parameter C_NUM_PERP_RST bound to: 1 - type: integer 
 	Parameter C_NUM_INTERCONNECT_ARESETN bound to: 1 - type: integer 
 	Parameter C_NUM_PERP_ARESETN bound to: 1 - type: integer 
-INFO: [Synth 8-3491] module 'proc_sys_reset' declared at '/home/xavier/MSc_Project/Tiny_Yolo_v3/Tiny_Yolo_v3.srcs/sources_1/bd/yolo_sys/ipshared/f86a/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1264' bound to instance 'U0' of component 'proc_sys_reset' [/home/xavier/MSc_Project/Tiny_Yolo_v3/Tiny_Yolo_v3.srcs/sources_1/bd/yolo_sys/ip/yolo_sys_rst_ps7_0_100M_0/synth/yolo_sys_rst_ps7_0_100M_0.vhd:129]
-INFO: [Synth 8-638] synthesizing module 'proc_sys_reset' [/home/xavier/MSc_Project/Tiny_Yolo_v3/Tiny_Yolo_v3.srcs/sources_1/bd/yolo_sys/ipshared/f86a/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1323]
+INFO: [Synth 8-3491] module 'proc_sys_reset' declared at '/home/xavier/MSc_Project/git_v/Tiny_YOLO_v3_ZYNQ/sw/Tiny_Yolo_v3/Tiny_Yolo_v3.srcs/sources_1/bd/yolo_sys/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1264' bound to instance 'U0' of component 'proc_sys_reset' [/home/xavier/MSc_Project/git_v/Tiny_YOLO_v3_ZYNQ/sw/Tiny_Yolo_v3/Tiny_Yolo_v3.srcs/sources_1/bd/yolo_sys/ip/yolo_sys_rst_ps7_0_100M_0/synth/yolo_sys_rst_ps7_0_100M_0.vhd:129]
+INFO: [Synth 8-638] synthesizing module 'proc_sys_reset' [/home/xavier/MSc_Project/git_v/Tiny_YOLO_v3_ZYNQ/sw/Tiny_Yolo_v3/Tiny_Yolo_v3.srcs/sources_1/bd/yolo_sys/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1323]
 	Parameter C_FAMILY bound to: zynq - type: string 
 	Parameter C_EXT_RST_WIDTH bound to: 4 - type: integer 
 	Parameter C_AUX_RST_WIDTH bound to: 4 - type: integer 
@@ -44,37 +45,37 @@ INFO: [Synth 8-638] synthesizing module 'proc_sys_reset' [/home/xavier/MSc_Proje
 	Parameter IS_C_INVERTED bound to: 1'b0 
 	Parameter IS_D_INVERTED bound to: 1'b0 
 	Parameter IS_R_INVERTED bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'FDRE_inst' to cell 'FDRE' [/home/xavier/MSc_Project/Tiny_Yolo_v3/Tiny_Yolo_v3.srcs/sources_1/bd/yolo_sys/ipshared/f86a/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1392]
+INFO: [Synth 8-113] binding component instance 'FDRE_inst' to cell 'FDRE' [/home/xavier/MSc_Project/git_v/Tiny_YOLO_v3_ZYNQ/sw/Tiny_Yolo_v3/Tiny_Yolo_v3.srcs/sources_1/bd/yolo_sys/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1392]
 	Parameter INIT bound to: 1'b1 
 	Parameter IS_C_INVERTED bound to: 1'b0 
 	Parameter IS_D_INVERTED bound to: 1'b0 
 	Parameter IS_R_INVERTED bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'FDRE_BSR' to cell 'FDRE' [/home/xavier/MSc_Project/Tiny_Yolo_v3/Tiny_Yolo_v3.srcs/sources_1/bd/yolo_sys/ipshared/f86a/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1408]
+INFO: [Synth 8-113] binding component instance 'FDRE_BSR' to cell 'FDRE' [/home/xavier/MSc_Project/git_v/Tiny_YOLO_v3_ZYNQ/sw/Tiny_Yolo_v3/Tiny_Yolo_v3.srcs/sources_1/bd/yolo_sys/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1408]
 	Parameter INIT bound to: 1'b0 
 	Parameter IS_C_INVERTED bound to: 1'b0 
 	Parameter IS_D_INVERTED bound to: 1'b0 
 	Parameter IS_R_INVERTED bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'FDRE_BSR_N' to cell 'FDRE' [/home/xavier/MSc_Project/Tiny_Yolo_v3/Tiny_Yolo_v3.srcs/sources_1/bd/yolo_sys/ipshared/f86a/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1434]
+INFO: [Synth 8-113] binding component instance 'FDRE_BSR_N' to cell 'FDRE' [/home/xavier/MSc_Project/git_v/Tiny_YOLO_v3_ZYNQ/sw/Tiny_Yolo_v3/Tiny_Yolo_v3.srcs/sources_1/bd/yolo_sys/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1434]
 	Parameter INIT bound to: 1'b1 
 	Parameter IS_C_INVERTED bound to: 1'b0 
 	Parameter IS_D_INVERTED bound to: 1'b0 
 	Parameter IS_R_INVERTED bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'FDRE_PER' to cell 'FDRE' [/home/xavier/MSc_Project/Tiny_Yolo_v3/Tiny_Yolo_v3.srcs/sources_1/bd/yolo_sys/ipshared/f86a/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1457]
+INFO: [Synth 8-113] binding component instance 'FDRE_PER' to cell 'FDRE' [/home/xavier/MSc_Project/git_v/Tiny_YOLO_v3_ZYNQ/sw/Tiny_Yolo_v3/Tiny_Yolo_v3.srcs/sources_1/bd/yolo_sys/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1457]
 	Parameter INIT bound to: 1'b0 
 	Parameter IS_C_INVERTED bound to: 1'b0 
 	Parameter IS_D_INVERTED bound to: 1'b0 
 	Parameter IS_R_INVERTED bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'FDRE_PER_N' to cell 'FDRE' [/home/xavier/MSc_Project/Tiny_Yolo_v3/Tiny_Yolo_v3.srcs/sources_1/bd/yolo_sys/ipshared/f86a/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1481]
-INFO: [Synth 8-638] synthesizing module 'lpf' [/home/xavier/MSc_Project/Tiny_Yolo_v3/Tiny_Yolo_v3.srcs/sources_1/bd/yolo_sys/ipshared/f86a/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:816]
+INFO: [Synth 8-113] binding component instance 'FDRE_PER_N' to cell 'FDRE' [/home/xavier/MSc_Project/git_v/Tiny_YOLO_v3_ZYNQ/sw/Tiny_Yolo_v3/Tiny_Yolo_v3.srcs/sources_1/bd/yolo_sys/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1481]
+INFO: [Synth 8-638] synthesizing module 'lpf' [/home/xavier/MSc_Project/git_v/Tiny_YOLO_v3_ZYNQ/sw/Tiny_Yolo_v3/Tiny_Yolo_v3.srcs/sources_1/bd/yolo_sys/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:816]
 	Parameter C_EXT_RST_WIDTH bound to: 4 - type: integer 
 	Parameter C_AUX_RST_WIDTH bound to: 4 - type: integer 
 	Parameter C_EXT_RESET_HIGH bound to: 1'b0 
 	Parameter C_AUX_RESET_HIGH bound to: 1'b0 
-INFO: [Synth 8-3491] module 'SRL16' declared at '/opt/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:50689' bound to instance 'POR_SRL_I' of component 'SRL16' [/home/xavier/MSc_Project/Tiny_Yolo_v3/Tiny_Yolo_v3.srcs/sources_1/bd/yolo_sys/ipshared/f86a/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:868]
-INFO: [Synth 8-638] synthesizing module 'SRL16' [/opt/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:50689]
+INFO: [Synth 8-3491] module 'SRL16' declared at '/opt/Xilinx_2019_1/Vivado/2019.1/scripts/rt/data/unisim_comp.v:77684' bound to instance 'POR_SRL_I' of component 'SRL16' [/home/xavier/MSc_Project/git_v/Tiny_YOLO_v3_ZYNQ/sw/Tiny_Yolo_v3/Tiny_Yolo_v3.srcs/sources_1/bd/yolo_sys/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:868]
+INFO: [Synth 8-6157] synthesizing module 'SRL16' [/opt/Xilinx_2019_1/Vivado/2019.1/scripts/rt/data/unisim_comp.v:77684]
 	Parameter INIT bound to: 16'b0000000000000000 
-INFO: [Synth 8-256] done synthesizing module 'SRL16' (1#1) [/opt/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:50689]
-INFO: [Synth 8-638] synthesizing module 'cdc_sync' [/home/xavier/MSc_Project/Tiny_Yolo_v3/Tiny_Yolo_v3.srcs/sources_1/bd/yolo_sys/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:106]
+INFO: [Synth 8-6155] done synthesizing module 'SRL16' (1#1) [/opt/Xilinx_2019_1/Vivado/2019.1/scripts/rt/data/unisim_comp.v:77684]
+INFO: [Synth 8-638] synthesizing module 'cdc_sync' [/home/xavier/MSc_Project/git_v/Tiny_YOLO_v3_ZYNQ/sw/Tiny_Yolo_v3/Tiny_Yolo_v3.srcs/sources_1/bd/yolo_sys/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:106]
 	Parameter C_CDC_TYPE bound to: 1 - type: integer 
 	Parameter C_RESET_STATE bound to: 0 - type: integer 
 	Parameter C_SINGLE_BIT bound to: 1 - type: integer 
@@ -82,33 +83,33 @@ INFO: [Synth 8-638] synthesizing module 'cdc_sync' [/home/xavier/MSc_Project/Tin
 	Parameter C_VECTOR_WIDTH bound to: 2 - type: integer 
 	Parameter C_MTBF_STAGES bound to: 4 - type: integer 
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_IN_cdc_to' to cell 'FDR' [/home/xavier/MSc_Project/Tiny_Yolo_v3/Tiny_Yolo_v3.srcs/sources_1/bd/yolo_sys/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:514]
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_IN_cdc_to' to cell 'FDR' [/home/xavier/MSc_Project/git_v/Tiny_YOLO_v3_ZYNQ/sw/Tiny_Yolo_v3/Tiny_Yolo_v3.srcs/sources_1/bd/yolo_sys/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:514]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d2' to cell 'FDR' [/home/xavier/MSc_Project/Tiny_Yolo_v3/Tiny_Yolo_v3.srcs/sources_1/bd/yolo_sys/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:545]
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d2' to cell 'FDR' [/home/xavier/MSc_Project/git_v/Tiny_YOLO_v3_ZYNQ/sw/Tiny_Yolo_v3/Tiny_Yolo_v3.srcs/sources_1/bd/yolo_sys/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:545]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d3' to cell 'FDR' [/home/xavier/MSc_Project/Tiny_Yolo_v3/Tiny_Yolo_v3.srcs/sources_1/bd/yolo_sys/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:554]
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d3' to cell 'FDR' [/home/xavier/MSc_Project/git_v/Tiny_YOLO_v3_ZYNQ/sw/Tiny_Yolo_v3/Tiny_Yolo_v3.srcs/sources_1/bd/yolo_sys/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:554]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d4' to cell 'FDR' [/home/xavier/MSc_Project/Tiny_Yolo_v3/Tiny_Yolo_v3.srcs/sources_1/bd/yolo_sys/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:564]
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d4' to cell 'FDR' [/home/xavier/MSc_Project/git_v/Tiny_YOLO_v3_ZYNQ/sw/Tiny_Yolo_v3/Tiny_Yolo_v3.srcs/sources_1/bd/yolo_sys/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:564]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d5' to cell 'FDR' [/home/xavier/MSc_Project/Tiny_Yolo_v3/Tiny_Yolo_v3.srcs/sources_1/bd/yolo_sys/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:574]
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d5' to cell 'FDR' [/home/xavier/MSc_Project/git_v/Tiny_YOLO_v3_ZYNQ/sw/Tiny_Yolo_v3/Tiny_Yolo_v3.srcs/sources_1/bd/yolo_sys/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:574]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d6' to cell 'FDR' [/home/xavier/MSc_Project/Tiny_Yolo_v3/Tiny_Yolo_v3.srcs/sources_1/bd/yolo_sys/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:584]
-INFO: [Synth 8-256] done synthesizing module 'cdc_sync' (2#1) [/home/xavier/MSc_Project/Tiny_Yolo_v3/Tiny_Yolo_v3.srcs/sources_1/bd/yolo_sys/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:106]
-INFO: [Synth 8-256] done synthesizing module 'lpf' (3#1) [/home/xavier/MSc_Project/Tiny_Yolo_v3/Tiny_Yolo_v3.srcs/sources_1/bd/yolo_sys/ipshared/f86a/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:816]
-INFO: [Synth 8-638] synthesizing module 'sequence_psr' [/home/xavier/MSc_Project/Tiny_Yolo_v3/Tiny_Yolo_v3.srcs/sources_1/bd/yolo_sys/ipshared/f86a/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:301]
-INFO: [Synth 8-638] synthesizing module 'upcnt_n' [/home/xavier/MSc_Project/Tiny_Yolo_v3/Tiny_Yolo_v3.srcs/sources_1/bd/yolo_sys/ipshared/f86a/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:125]
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d6' to cell 'FDR' [/home/xavier/MSc_Project/git_v/Tiny_YOLO_v3_ZYNQ/sw/Tiny_Yolo_v3/Tiny_Yolo_v3.srcs/sources_1/bd/yolo_sys/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:584]
+INFO: [Synth 8-256] done synthesizing module 'cdc_sync' (2#1) [/home/xavier/MSc_Project/git_v/Tiny_YOLO_v3_ZYNQ/sw/Tiny_Yolo_v3/Tiny_Yolo_v3.srcs/sources_1/bd/yolo_sys/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:106]
+INFO: [Synth 8-256] done synthesizing module 'lpf' (3#1) [/home/xavier/MSc_Project/git_v/Tiny_YOLO_v3_ZYNQ/sw/Tiny_Yolo_v3/Tiny_Yolo_v3.srcs/sources_1/bd/yolo_sys/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:816]
+INFO: [Synth 8-638] synthesizing module 'sequence_psr' [/home/xavier/MSc_Project/git_v/Tiny_YOLO_v3_ZYNQ/sw/Tiny_Yolo_v3/Tiny_Yolo_v3.srcs/sources_1/bd/yolo_sys/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:301]
+INFO: [Synth 8-638] synthesizing module 'upcnt_n' [/home/xavier/MSc_Project/git_v/Tiny_YOLO_v3_ZYNQ/sw/Tiny_Yolo_v3/Tiny_Yolo_v3.srcs/sources_1/bd/yolo_sys/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:125]
 	Parameter C_SIZE bound to: 6 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'upcnt_n' (4#1) [/home/xavier/MSc_Project/Tiny_Yolo_v3/Tiny_Yolo_v3.srcs/sources_1/bd/yolo_sys/ipshared/f86a/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:125]
-INFO: [Synth 8-256] done synthesizing module 'sequence_psr' (5#1) [/home/xavier/MSc_Project/Tiny_Yolo_v3/Tiny_Yolo_v3.srcs/sources_1/bd/yolo_sys/ipshared/f86a/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:301]
-INFO: [Synth 8-256] done synthesizing module 'proc_sys_reset' (6#1) [/home/xavier/MSc_Project/Tiny_Yolo_v3/Tiny_Yolo_v3.srcs/sources_1/bd/yolo_sys/ipshared/f86a/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1323]
-INFO: [Synth 8-256] done synthesizing module 'yolo_sys_rst_ps7_0_100M_0' (7#1) [/home/xavier/MSc_Project/Tiny_Yolo_v3/Tiny_Yolo_v3.srcs/sources_1/bd/yolo_sys/ip/yolo_sys_rst_ps7_0_100M_0/synth/yolo_sys_rst_ps7_0_100M_0.vhd:74]
+INFO: [Synth 8-256] done synthesizing module 'upcnt_n' (4#1) [/home/xavier/MSc_Project/git_v/Tiny_YOLO_v3_ZYNQ/sw/Tiny_Yolo_v3/Tiny_Yolo_v3.srcs/sources_1/bd/yolo_sys/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:125]
+INFO: [Synth 8-256] done synthesizing module 'sequence_psr' (5#1) [/home/xavier/MSc_Project/git_v/Tiny_YOLO_v3_ZYNQ/sw/Tiny_Yolo_v3/Tiny_Yolo_v3.srcs/sources_1/bd/yolo_sys/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:301]
+INFO: [Synth 8-256] done synthesizing module 'proc_sys_reset' (6#1) [/home/xavier/MSc_Project/git_v/Tiny_YOLO_v3_ZYNQ/sw/Tiny_Yolo_v3/Tiny_Yolo_v3.srcs/sources_1/bd/yolo_sys/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1323]
+INFO: [Synth 8-256] done synthesizing module 'yolo_sys_rst_ps7_0_100M_0' (7#1) [/home/xavier/MSc_Project/git_v/Tiny_YOLO_v3_ZYNQ/sw/Tiny_Yolo_v3/Tiny_Yolo_v3.srcs/sources_1/bd/yolo_sys/ip/yolo_sys_rst_ps7_0_100M_0/synth/yolo_sys_rst_ps7_0_100M_0.vhd:74]
 WARNING: [Synth 8-3331] design cdc_sync has unconnected port prmry_aclk
 WARNING: [Synth 8-3331] design cdc_sync has unconnected port prmry_resetn
 WARNING: [Synth 8-3331] design cdc_sync has unconnected port prmry_vect_in[1]
 WARNING: [Synth 8-3331] design cdc_sync has unconnected port prmry_vect_in[0]
 WARNING: [Synth 8-3331] design cdc_sync has unconnected port scndry_resetn
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1302.762 ; gain = 121.527 ; free physical = 3368 ; free virtual = 13442
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:11 . Memory (MB): peak = 1756.562 ; gain = 211.434 ; free physical = 256 ; free virtual = 11643
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -118,53 +119,57 @@ Report Check Netlist:
 |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1302.762 ; gain = 121.527 ; free physical = 3367 ; free virtual = 13441
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:11 . Memory (MB): peak = 1759.531 ; gain = 214.402 ; free physical = 410 ; free virtual = 11798
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:11 . Memory (MB): peak = 1759.531 ; gain = 214.402 ; free physical = 410 ; free virtual = 11798
 ---------------------------------------------------------------------------------
 INFO: [Netlist 29-17] Analyzing 13 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
-INFO: [Device 21-403] Loading part xc7z020clg484-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [/home/xavier/MSc_Project/Tiny_Yolo_v3/Tiny_Yolo_v3.srcs/sources_1/bd/yolo_sys/ip/yolo_sys_rst_ps7_0_100M_0/yolo_sys_rst_ps7_0_100M_0_ooc.xdc] for cell 'U0'
-Finished Parsing XDC File [/home/xavier/MSc_Project/Tiny_Yolo_v3/Tiny_Yolo_v3.srcs/sources_1/bd/yolo_sys/ip/yolo_sys_rst_ps7_0_100M_0/yolo_sys_rst_ps7_0_100M_0_ooc.xdc] for cell 'U0'
-Parsing XDC File [/home/xavier/MSc_Project/Tiny_Yolo_v3/Tiny_Yolo_v3.srcs/sources_1/bd/yolo_sys/ip/yolo_sys_rst_ps7_0_100M_0/yolo_sys_rst_ps7_0_100M_0_board.xdc] for cell 'U0'
-Finished Parsing XDC File [/home/xavier/MSc_Project/Tiny_Yolo_v3/Tiny_Yolo_v3.srcs/sources_1/bd/yolo_sys/ip/yolo_sys_rst_ps7_0_100M_0/yolo_sys_rst_ps7_0_100M_0_board.xdc] for cell 'U0'
-Parsing XDC File [/home/xavier/MSc_Project/Tiny_Yolo_v3/Tiny_Yolo_v3.srcs/sources_1/bd/yolo_sys/ip/yolo_sys_rst_ps7_0_100M_0/yolo_sys_rst_ps7_0_100M_0.xdc] for cell 'U0'
-Finished Parsing XDC File [/home/xavier/MSc_Project/Tiny_Yolo_v3/Tiny_Yolo_v3.srcs/sources_1/bd/yolo_sys/ip/yolo_sys_rst_ps7_0_100M_0/yolo_sys_rst_ps7_0_100M_0.xdc] for cell 'U0'
-Parsing XDC File [/home/xavier/MSc_Project/Tiny_Yolo_v3/Tiny_Yolo_v3.runs/yolo_sys_rst_ps7_0_100M_0_synth_1/dont_touch.xdc]
-Finished Parsing XDC File [/home/xavier/MSc_Project/Tiny_Yolo_v3/Tiny_Yolo_v3.runs/yolo_sys_rst_ps7_0_100M_0_synth_1/dont_touch.xdc]
+Parsing XDC File [/home/xavier/MSc_Project/git_v/Tiny_YOLO_v3_ZYNQ/sw/Tiny_Yolo_v3/Tiny_Yolo_v3.srcs/sources_1/bd/yolo_sys/ip/yolo_sys_rst_ps7_0_100M_0/yolo_sys_rst_ps7_0_100M_0_ooc.xdc] for cell 'U0'
+Finished Parsing XDC File [/home/xavier/MSc_Project/git_v/Tiny_YOLO_v3_ZYNQ/sw/Tiny_Yolo_v3/Tiny_Yolo_v3.srcs/sources_1/bd/yolo_sys/ip/yolo_sys_rst_ps7_0_100M_0/yolo_sys_rst_ps7_0_100M_0_ooc.xdc] for cell 'U0'
+Parsing XDC File [/home/xavier/MSc_Project/git_v/Tiny_YOLO_v3_ZYNQ/sw/Tiny_Yolo_v3/Tiny_Yolo_v3.srcs/sources_1/bd/yolo_sys/ip/yolo_sys_rst_ps7_0_100M_0/yolo_sys_rst_ps7_0_100M_0_board.xdc] for cell 'U0'
+Finished Parsing XDC File [/home/xavier/MSc_Project/git_v/Tiny_YOLO_v3_ZYNQ/sw/Tiny_Yolo_v3/Tiny_Yolo_v3.srcs/sources_1/bd/yolo_sys/ip/yolo_sys_rst_ps7_0_100M_0/yolo_sys_rst_ps7_0_100M_0_board.xdc] for cell 'U0'
+Parsing XDC File [/home/xavier/MSc_Project/git_v/Tiny_YOLO_v3_ZYNQ/sw/Tiny_Yolo_v3/Tiny_Yolo_v3.srcs/sources_1/bd/yolo_sys/ip/yolo_sys_rst_ps7_0_100M_0/yolo_sys_rst_ps7_0_100M_0.xdc] for cell 'U0'
+Finished Parsing XDC File [/home/xavier/MSc_Project/git_v/Tiny_YOLO_v3_ZYNQ/sw/Tiny_Yolo_v3/Tiny_Yolo_v3.srcs/sources_1/bd/yolo_sys/ip/yolo_sys_rst_ps7_0_100M_0/yolo_sys_rst_ps7_0_100M_0.xdc] for cell 'U0'
+Parsing XDC File [/home/xavier/MSc_Project/git_v/Tiny_YOLO_v3_ZYNQ/sw/Tiny_Yolo_v3/Tiny_Yolo_v3.runs/yolo_sys_rst_ps7_0_100M_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/xavier/MSc_Project/git_v/Tiny_YOLO_v3_ZYNQ/sw/Tiny_Yolo_v3/Tiny_Yolo_v3.runs/yolo_sys_rst_ps7_0_100M_0_synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1896.234 ; gain = 0.000 ; free physical = 140 ; free virtual = 11519
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 13 instances were transformed.
   FDR => FDRE: 12 instances
   SRL16 => SRL16E: 1 instances
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 1646.762 ; gain = 0.000 ; free physical = 2953 ; free virtual = 13028
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.09 . Memory (MB): peak = 1900.203 ; gain = 3.969 ; free physical = 136 ; free virtual = 11516
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:29 ; elapsed = 00:00:48 . Memory (MB): peak = 1646.762 ; gain = 465.527 ; free physical = 3023 ; free virtual = 13098
+Finished Constraint Validation : Time (s): cpu = 00:00:15 ; elapsed = 00:00:23 . Memory (MB): peak = 1900.203 ; gain = 355.074 ; free physical = 325 ; free virtual = 11707
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z020clg484-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:29 ; elapsed = 00:00:48 . Memory (MB): peak = 1646.762 ; gain = 465.527 ; free physical = 3023 ; free virtual = 13098
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:15 ; elapsed = 00:00:23 . Memory (MB): peak = 1900.203 ; gain = 355.074 ; free physical = 325 ; free virtual = 11707
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
-Applied set_property DONT_TOUCH = true for U0. (constraint file  /home/xavier/MSc_Project/Tiny_Yolo_v3/Tiny_Yolo_v3.runs/yolo_sys_rst_ps7_0_100M_0_synth_1/dont_touch.xdc, line 9).
+Applied set_property DONT_TOUCH = true for U0. (constraint file  /home/xavier/MSc_Project/git_v/Tiny_YOLO_v3_ZYNQ/sw/Tiny_Yolo_v3/Tiny_Yolo_v3.runs/yolo_sys_rst_ps7_0_100M_0_synth_1/dont_touch.xdc, line 9).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:29 ; elapsed = 00:00:48 . Memory (MB): peak = 1646.762 ; gain = 465.527 ; free physical = 3025 ; free virtual = 13100
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:23 . Memory (MB): peak = 1900.203 ; gain = 355.074 ; free physical = 323 ; free virtual = 11706
 ---------------------------------------------------------------------------------
-WARNING: [Synth 8-6014] Unused sequential element q_int_reg was removed.  [/home/xavier/MSc_Project/Tiny_Yolo_v3/Tiny_Yolo_v3.srcs/sources_1/bd/yolo_sys/ipshared/f86a/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:138]
-INFO: [Synth 8-4471] merging register 'seq_cnt_en_reg' into 'from_sys_reg' [/home/xavier/MSc_Project/Tiny_Yolo_v3/Tiny_Yolo_v3.srcs/sources_1/bd/yolo_sys/ipshared/f86a/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:377]
-WARNING: [Synth 8-6014] Unused sequential element seq_cnt_en_reg was removed.  [/home/xavier/MSc_Project/Tiny_Yolo_v3/Tiny_Yolo_v3.srcs/sources_1/bd/yolo_sys/ipshared/f86a/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:377]
+INFO: [Synth 8-4471] merging register 'seq_cnt_en_reg' into 'from_sys_reg' [/home/xavier/MSc_Project/git_v/Tiny_YOLO_v3_ZYNQ/sw/Tiny_Yolo_v3/Tiny_Yolo_v3.srcs/sources_1/bd/yolo_sys/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:377]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:30 ; elapsed = 00:00:48 . Memory (MB): peak = 1646.762 ; gain = 465.527 ; free physical = 3016 ; free virtual = 13091
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:23 . Memory (MB): peak = 1900.203 ; gain = 355.074 ; free physical = 335 ; free virtual = 11719
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -225,7 +230,7 @@ Finished Part Resource Summary
 ---------------------------------------------------------------------------------
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
-WARNING: [Synth 8-6014] Unused sequential element SEQ/SEQ_COUNTER/q_int_reg was removed.  [/home/xavier/MSc_Project/Tiny_Yolo_v3/Tiny_Yolo_v3.srcs/sources_1/bd/yolo_sys/ipshared/f86a/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:138]
+Warning: Parallel synthesis criteria is not met 
 INFO: [Synth 8-3886] merging instance 'U0/SEQ/pr_dec_reg[1]' (FD) to 'U0/SEQ/bsr_dec_reg[1]'
 INFO: [Synth 8-3886] merging instance 'U0/SEQ/bsr_dec_reg[1]' (FD) to 'U0/SEQ/core_dec_reg[1]'
 WARNING: [Synth 8-3332] Sequential element (EXT_LPF/ACTIVE_LOW_EXT.ACT_LO_EXT/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d5) is unused and will be removed from module proc_sys_reset.
@@ -233,7 +238,7 @@ WARNING: [Synth 8-3332] Sequential element (EXT_LPF/ACTIVE_LOW_EXT.ACT_LO_EXT/GE
 WARNING: [Synth 8-3332] Sequential element (EXT_LPF/ACTIVE_LOW_AUX.ACT_LO_AUX/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d5) is unused and will be removed from module proc_sys_reset.
 WARNING: [Synth 8-3332] Sequential element (EXT_LPF/ACTIVE_LOW_AUX.ACT_LO_AUX/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d6) is unused and will be removed from module proc_sys_reset.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:30 ; elapsed = 00:00:48 . Memory (MB): peak = 1646.762 ; gain = 465.527 ; free physical = 3007 ; free virtual = 13082
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:24 . Memory (MB): peak = 1900.203 ; gain = 355.074 ; free physical = 321 ; free virtual = 11710
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -245,13 +250,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:37 ; elapsed = 00:00:58 . Memory (MB): peak = 1646.762 ; gain = 465.527 ; free physical = 2954 ; free virtual = 13029
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:27 ; elapsed = 00:00:36 . Memory (MB): peak = 1900.203 ; gain = 355.074 ; free physical = 156 ; free virtual = 11300
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:37 ; elapsed = 00:00:58 . Memory (MB): peak = 1646.762 ; gain = 465.527 ; free physical = 2953 ; free virtual = 13029
+Finished Timing Optimization : Time (s): cpu = 00:00:27 ; elapsed = 00:00:36 . Memory (MB): peak = 1900.203 ; gain = 355.074 ; free physical = 168 ; free virtual = 11312
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -263,7 +268,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:37 ; elapsed = 00:00:59 . Memory (MB): peak = 1646.762 ; gain = 465.527 ; free physical = 2951 ; free virtual = 13026
+Finished Technology Mapping : Time (s): cpu = 00:00:27 ; elapsed = 00:00:36 . Memory (MB): peak = 1900.203 ; gain = 355.074 ; free physical = 167 ; free virtual = 11311
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -287,7 +292,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:38 ; elapsed = 00:00:59 . Memory (MB): peak = 1646.762 ; gain = 465.527 ; free physical = 2943 ; free virtual = 13019
+Finished IO Insertion : Time (s): cpu = 00:00:29 ; elapsed = 00:00:38 . Memory (MB): peak = 1900.203 ; gain = 355.074 ; free physical = 181 ; free virtual = 11140
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -300,7 +305,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:38 ; elapsed = 00:00:59 . Memory (MB): peak = 1646.762 ; gain = 465.527 ; free physical = 2943 ; free virtual = 13019
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:29 ; elapsed = 00:00:38 . Memory (MB): peak = 1900.203 ; gain = 355.074 ; free physical = 182 ; free virtual = 11141
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -312,25 +317,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:38 ; elapsed = 00:00:59 . Memory (MB): peak = 1646.762 ; gain = 465.527 ; free physical = 2943 ; free virtual = 13019
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:29 ; elapsed = 00:00:38 . Memory (MB): peak = 1900.203 ; gain = 355.074 ; free physical = 188 ; free virtual = 11148
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:38 ; elapsed = 00:00:59 . Memory (MB): peak = 1646.762 ; gain = 465.527 ; free physical = 2943 ; free virtual = 13019
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:29 ; elapsed = 00:00:38 . Memory (MB): peak = 1900.203 ; gain = 355.074 ; free physical = 189 ; free virtual = 11148
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:38 ; elapsed = 00:00:59 . Memory (MB): peak = 1646.762 ; gain = 465.527 ; free physical = 2943 ; free virtual = 13019
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:29 ; elapsed = 00:00:38 . Memory (MB): peak = 1900.203 ; gain = 355.074 ; free physical = 203 ; free virtual = 11162
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:38 ; elapsed = 00:00:59 . Memory (MB): peak = 1646.762 ; gain = 465.527 ; free physical = 2943 ; free virtual = 13019
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:29 ; elapsed = 00:00:38 . Memory (MB): peak = 1900.203 ; gain = 355.074 ; free physical = 201 ; free virtual = 11160
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -371,29 +376,36 @@ Report Instance Areas:
 |7     |      SEQ_COUNTER                 |upcnt_n        |    13|
 +------+----------------------------------+---------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:38 ; elapsed = 00:00:59 . Memory (MB): peak = 1646.762 ; gain = 465.527 ; free physical = 2943 ; free virtual = 13018
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:29 ; elapsed = 00:00:38 . Memory (MB): peak = 1900.203 ; gain = 355.074 ; free physical = 199 ; free virtual = 11158
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 7 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:27 ; elapsed = 00:00:32 . Memory (MB): peak = 1646.762 ; gain = 121.527 ; free physical = 2998 ; free virtual = 13074
-Synthesis Optimization Complete : Time (s): cpu = 00:00:38 ; elapsed = 00:00:59 . Memory (MB): peak = 1646.770 ; gain = 465.527 ; free physical = 2998 ; free virtual = 13074
+Synthesis finished with 0 errors, 0 critical warnings and 4 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:26 ; elapsed = 00:00:33 . Memory (MB): peak = 1900.203 ; gain = 214.402 ; free physical = 246 ; free virtual = 11205
+Synthesis Optimization Complete : Time (s): cpu = 00:00:29 ; elapsed = 00:00:38 . Memory (MB): peak = 1900.211 ; gain = 355.074 ; free physical = 260 ; free virtual = 11219
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Netlist 29-17] Analyzing 9 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1900.211 ; gain = 0.000 ; free physical = 181 ; free virtual = 11140
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 9 instances were transformed.
   FDR => FDRE: 8 instances
   SRL16 => SRL16E: 1 instances
 
 INFO: [Common 17-83] Releasing license: Synthesis
-43 Infos, 12 Warnings, 0 Critical Warnings and 0 Errors encountered.
+43 Infos, 9 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:40 ; elapsed = 00:01:00 . Memory (MB): peak = 1646.770 ; gain = 478.910 ; free physical = 2955 ; free virtual = 13031
-INFO: [Common 17-1381] The checkpoint '/home/xavier/MSc_Project/Tiny_Yolo_v3/Tiny_Yolo_v3.runs/yolo_sys_rst_ps7_0_100M_0_synth_1/yolo_sys_rst_ps7_0_100M_0.dcp' has been generated.
-INFO: [Coretcl 2-1482] Added synthesis output to IP cache for IP /home/xavier/MSc_Project/Tiny_Yolo_v3/Tiny_Yolo_v3.srcs/sources_1/bd/yolo_sys/ip/yolo_sys_rst_ps7_0_100M_0/yolo_sys_rst_ps7_0_100M_0.xci
+synth_design: Time (s): cpu = 00:00:37 ; elapsed = 00:00:47 . Memory (MB): peak = 1900.211 ; gain = 506.625 ; free physical = 323 ; free virtual = 11283
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1900.211 ; gain = 0.000 ; free physical = 323 ; free virtual = 11283
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint '/home/xavier/MSc_Project/git_v/Tiny_YOLO_v3_ZYNQ/sw/Tiny_Yolo_v3/Tiny_Yolo_v3.runs/yolo_sys_rst_ps7_0_100M_0_synth_1/yolo_sys_rst_ps7_0_100M_0.dcp' has been generated.
+WARNING: [Common 17-576] 'use_project_ipc' is deprecated. This option is deprecated and no longer used.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP yolo_sys_rst_ps7_0_100M_0, cache-ID = 78becdf9a5ea1461
 INFO: [Coretcl 2-1174] Renamed 6 cell refs.
-INFO: [Common 17-1381] The checkpoint '/home/xavier/MSc_Project/Tiny_Yolo_v3/Tiny_Yolo_v3.runs/yolo_sys_rst_ps7_0_100M_0_synth_1/yolo_sys_rst_ps7_0_100M_0.dcp' has been generated.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1924.215 ; gain = 0.000 ; free physical = 318 ; free virtual = 11279
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint '/home/xavier/MSc_Project/git_v/Tiny_YOLO_v3_ZYNQ/sw/Tiny_Yolo_v3/Tiny_Yolo_v3.runs/yolo_sys_rst_ps7_0_100M_0_synth_1/yolo_sys_rst_ps7_0_100M_0.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file yolo_sys_rst_ps7_0_100M_0_utilization_synth.rpt -pb yolo_sys_rst_ps7_0_100M_0_utilization_synth.pb
-report_utilization: Time (s): cpu = 00:00:00.12 ; elapsed = 00:00:00.14 . Memory (MB): peak = 1670.773 ; gain = 0.000 ; free physical = 2937 ; free virtual = 13013
-INFO: [Common 17-206] Exiting Vivado at Sat Mar  2 13:24:32 2019...
+INFO: [Common 17-206] Exiting Vivado at Sat Jun  8 10:32:25 2019...

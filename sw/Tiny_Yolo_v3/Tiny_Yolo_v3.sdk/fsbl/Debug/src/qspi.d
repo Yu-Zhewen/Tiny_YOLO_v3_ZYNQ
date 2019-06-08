@@ -4,6 +4,7 @@ src/qspi.o src/qspi.o: ../src/qspi.c ../src/qspi.h ../src/fsbl.h \
  ../../fsbl_bsp/ps7_cortexa9_0/include/xil_printf.h \
  ../../fsbl_bsp/ps7_cortexa9_0/include/xparameters.h \
  ../../fsbl_bsp/ps7_cortexa9_0/include/xparameters_ps.h \
+ ../../fsbl_bsp/ps7_cortexa9_0/include/bspconfig.h \
  ../../fsbl_bsp/ps7_cortexa9_0/include/xpseudo_asm.h \
  ../../fsbl_bsp/ps7_cortexa9_0/include/xreg_cortexa9.h \
  ../../fsbl_bsp/ps7_cortexa9_0/include/xpseudo_asm_gcc.h \
@@ -15,7 +16,7 @@ src/qspi.o src/qspi.o: ../src/qspi.c ../src/qspi.h ../src/fsbl.h \
  ../../fsbl_bsp/ps7_cortexa9_0/include/xil_io.h \
  ../../fsbl_bsp/ps7_cortexa9_0/include/xstatus.h \
  ../../fsbl_bsp/ps7_cortexa9_0/include/xil_assert.h ../src/fsbl_debug.h \
- /home/xavier/MSc_Project/Tiny_Yolo_v3/Tiny_Yolo_v3.sdk/yolo_sys_wrapper_hw_platform_0/ps7_init.h \
+ /home/xavier/MSc_Project/git_v/Tiny_YOLO_v3_ZYNQ/sw/Tiny_Yolo_v3/Tiny_Yolo_v3.sdk/yolo_sys_wrapper_hw_platform_0/ps7_init.h \
  ../src/image_mover.h ../../fsbl_bsp/ps7_cortexa9_0/include/xqspips_hw.h \
  ../../fsbl_bsp/ps7_cortexa9_0/include/xqspips.h \
  ../../fsbl_bsp/ps7_cortexa9_0/include/xqspips_hw.h
@@ -33,6 +34,8 @@ src/qspi.o src/qspi.o: ../src/qspi.c ../src/qspi.h ../src/fsbl.h \
 ../../fsbl_bsp/ps7_cortexa9_0/include/xparameters.h:
 
 ../../fsbl_bsp/ps7_cortexa9_0/include/xparameters_ps.h:
+
+../../fsbl_bsp/ps7_cortexa9_0/include/bspconfig.h:
 
 ../../fsbl_bsp/ps7_cortexa9_0/include/xpseudo_asm.h:
 
@@ -60,7 +63,7 @@ src/qspi.o src/qspi.o: ../src/qspi.c ../src/qspi.h ../src/fsbl.h \
 
 ../src/fsbl_debug.h:
 
-/home/xavier/MSc_Project/Tiny_Yolo_v3/Tiny_Yolo_v3.sdk/yolo_sys_wrapper_hw_platform_0/ps7_init.h:
+/home/xavier/MSc_Project/git_v/Tiny_YOLO_v3_ZYNQ/sw/Tiny_Yolo_v3/Tiny_Yolo_v3.sdk/yolo_sys_wrapper_hw_platform_0/ps7_init.h:
 
 ../src/image_mover.h:
 

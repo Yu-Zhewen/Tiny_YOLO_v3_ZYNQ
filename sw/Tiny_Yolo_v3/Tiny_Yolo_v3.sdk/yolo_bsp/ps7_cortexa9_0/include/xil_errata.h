@@ -12,10 +12,6 @@
 * The above copyright notice and this permission notice shall be included in
 * all copies or substantial portions of the Software.
 *
-* Use of the Software is limited solely to applications:
-* (a) running on a Xilinx device, or
-* (b) that interact with a Xilinx device through a bus or interconnect.
-*
 * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
 * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL
@@ -52,11 +48,16 @@
 * Ver   Who  Date     Changes
 * ----- ---- -------- -----------------------------------------------
 * 1.00a srt  04/18/13 First release
+* 6.6   mus  12/07/17 Removed errata 753970, It fixes CR#989132.
 * </pre>
 *
 ******************************************************************************/
 #ifndef XIL_ERRATA_H
 #define XIL_ERRATA_H
+
+#ifdef __cplusplus
+extern "C" {
+#endif
 
 /**
  * @name errata_definitions
@@ -113,13 +114,12 @@
  */
 #define CONFIG_PL310_ERRATA_727915 1
 
-/**
- *  Errata No: 	 753970
- *  Description: Cache sync operation may be faulty
- */
-#define CONFIG_PL310_ERRATA_753970 1
 /*@}*/
 #endif  /* ENABLE_ARM_ERRATA */
+
+#ifdef __cplusplus
+}
+#endif
 
 #endif  /* XIL_ERRATA_H */
 /**

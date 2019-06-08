@@ -3,23 +3,24 @@
     with args -log yolo_sys_processing_system7_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source yolo_sys_processing_system7_0_0.tcl
 
 
-****** Vivado v2017.4 (64-bit)
-  **** SW Build 2086221 on Fri Dec 15 20:54:30 MST 2017
-  **** IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
-    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+****** Vivado v2019.1 (64-bit)
+  **** SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
+  **** IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 
 source yolo_sys_processing_system7_0_0.tcl -notrace
 Command: synth_design -top yolo_sys_processing_system7_0_0 -part xc7z020clg484-1 -mode out_of_context
 Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg484-1
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 5223 
+INFO: Helper process launched with PID 6265 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1270.230 ; gain = 88.996 ; free physical = 3383 ; free virtual = 13395
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 1702.266 ; gain = 153.715 ; free physical = 128 ; free virtual = 11724
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'yolo_sys_processing_system7_0_0' [/home/xavier/MSc_Project/Tiny_Yolo_v3/Tiny_Yolo_v3.srcs/sources_1/bd/yolo_sys/ip/yolo_sys_processing_system7_0_0/synth/yolo_sys_processing_system7_0_0.v:60]
-INFO: [Synth 8-638] synthesizing module 'processing_system7_v5_5_processing_system7' [/home/xavier/MSc_Project/Tiny_Yolo_v3/Tiny_Yolo_v3.srcs/sources_1/bd/yolo_sys/ip/yolo_sys_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:162]
+INFO: [Synth 8-6157] synthesizing module 'yolo_sys_processing_system7_0_0' [/home/xavier/MSc_Project/git_v/Tiny_YOLO_v3_ZYNQ/sw/Tiny_Yolo_v3/Tiny_Yolo_v3.srcs/sources_1/bd/yolo_sys/ip/yolo_sys_processing_system7_0_0/synth/yolo_sys_processing_system7_0_0.v:60]
+INFO: [Synth 8-6157] synthesizing module 'processing_system7_v5_5_processing_system7' [/home/xavier/MSc_Project/git_v/Tiny_YOLO_v3_ZYNQ/sw/Tiny_Yolo_v3/Tiny_Yolo_v3.srcs/sources_1/bd/yolo_sys/ip/yolo_sys_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:162]
 	Parameter C_USE_DEFAULT_ACP_USER_VAL bound to: 0 - type: integer 
 	Parameter C_S_AXI_ACP_ARUSER_VAL bound to: 31 - type: integer 
 	Parameter C_S_AXI_ACP_AWUSER_VAL bound to: 31 - type: integer 
@@ -76,15 +77,15 @@ INFO: [Synth 8-638] synthesizing module 'processing_system7_v5_5_processing_syst
 	Parameter C_USE_S_AXI_ACP bound to: 0 - type: integer 
 	Parameter C_GP0_EN_MODIFIABLE_TXN bound to: 1 - type: integer 
 	Parameter C_GP1_EN_MODIFIABLE_TXN bound to: 1 - type: integer 
-INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [/home/xavier/MSc_Project/Tiny_Yolo_v3/Tiny_Yolo_v3.srcs/sources_1/bd/yolo_sys/ip/yolo_sys_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:1348]
-INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [/home/xavier/MSc_Project/Tiny_Yolo_v3/Tiny_Yolo_v3.srcs/sources_1/bd/yolo_sys/ip/yolo_sys_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:1349]
-INFO: [Synth 8-638] synthesizing module 'BIBUF' [/opt/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:268]
-INFO: [Synth 8-256] done synthesizing module 'BIBUF' (1#1) [/opt/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:268]
-INFO: [Synth 8-638] synthesizing module 'PS7' [/opt/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:40559]
-INFO: [Synth 8-256] done synthesizing module 'PS7' (2#1) [/opt/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:40559]
-INFO: [Synth 8-256] done synthesizing module 'processing_system7_v5_5_processing_system7' (3#1) [/home/xavier/MSc_Project/Tiny_Yolo_v3/Tiny_Yolo_v3.srcs/sources_1/bd/yolo_sys/ip/yolo_sys_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:162]
-WARNING: [Synth 8-350] instance 'inst' of module 'processing_system7_v5_5_processing_system7' requires 685 connections, but only 672 given [/home/xavier/MSc_Project/Tiny_Yolo_v3/Tiny_Yolo_v3.srcs/sources_1/bd/yolo_sys/ip/yolo_sys_processing_system7_0_0/synth/yolo_sys_processing_system7_0_0.v:328]
-INFO: [Synth 8-256] done synthesizing module 'yolo_sys_processing_system7_0_0' (4#1) [/home/xavier/MSc_Project/Tiny_Yolo_v3/Tiny_Yolo_v3.srcs/sources_1/bd/yolo_sys/ip/yolo_sys_processing_system7_0_0/synth/yolo_sys_processing_system7_0_0.v:60]
+INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [/home/xavier/MSc_Project/git_v/Tiny_YOLO_v3_ZYNQ/sw/Tiny_Yolo_v3/Tiny_Yolo_v3.srcs/sources_1/bd/yolo_sys/ip/yolo_sys_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:1348]
+INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [/home/xavier/MSc_Project/git_v/Tiny_YOLO_v3_ZYNQ/sw/Tiny_Yolo_v3/Tiny_Yolo_v3.srcs/sources_1/bd/yolo_sys/ip/yolo_sys_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:1349]
+INFO: [Synth 8-6157] synthesizing module 'BIBUF' [/opt/Xilinx_2019_1/Vivado/2019.1/scripts/rt/data/unisim_comp.v:722]
+INFO: [Synth 8-6155] done synthesizing module 'BIBUF' (1#1) [/opt/Xilinx_2019_1/Vivado/2019.1/scripts/rt/data/unisim_comp.v:722]
+INFO: [Synth 8-6157] synthesizing module 'PS7' [/opt/Xilinx_2019_1/Vivado/2019.1/scripts/rt/data/unisim_comp.v:61707]
+INFO: [Synth 8-6155] done synthesizing module 'PS7' (2#1) [/opt/Xilinx_2019_1/Vivado/2019.1/scripts/rt/data/unisim_comp.v:61707]
+INFO: [Synth 8-6155] done synthesizing module 'processing_system7_v5_5_processing_system7' (3#1) [/home/xavier/MSc_Project/git_v/Tiny_YOLO_v3_ZYNQ/sw/Tiny_Yolo_v3/Tiny_Yolo_v3.srcs/sources_1/bd/yolo_sys/ip/yolo_sys_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:162]
+WARNING: [Synth 8-7023] instance 'inst' of module 'processing_system7_v5_5_processing_system7' has 685 connections declared, but only 672 given [/home/xavier/MSc_Project/git_v/Tiny_YOLO_v3_ZYNQ/sw/Tiny_Yolo_v3/Tiny_Yolo_v3.srcs/sources_1/bd/yolo_sys/ip/yolo_sys_processing_system7_0_0/synth/yolo_sys_processing_system7_0_0.v:329]
+INFO: [Synth 8-6155] done synthesizing module 'yolo_sys_processing_system7_0_0' (4#1) [/home/xavier/MSc_Project/git_v/Tiny_YOLO_v3_ZYNQ/sw/Tiny_Yolo_v3/Tiny_Yolo_v3.srcs/sources_1/bd/yolo_sys/ip/yolo_sys_processing_system7_0_0/synth/yolo_sys_processing_system7_0_0.v:60]
 WARNING: [Synth 8-3331] design processing_system7_v5_5_processing_system7 has unconnected port ENET0_GMII_COL
 WARNING: [Synth 8-3331] design processing_system7_v5_5_processing_system7 has unconnected port ENET0_GMII_CRS
 WARNING: [Synth 8-3331] design processing_system7_v5_5_processing_system7 has unconnected port ENET0_GMII_RX_DV
@@ -165,7 +166,7 @@ WARNING: [Synth 8-3331] design processing_system7_v5_5_processing_system7 has un
 WARNING: [Synth 8-3331] design processing_system7_v5_5_processing_system7 has unconnected port FTMD_TRACEIN_ATID[1]
 WARNING: [Synth 8-3331] design processing_system7_v5_5_processing_system7 has unconnected port FTMD_TRACEIN_ATID[0]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1312.762 ; gain = 131.527 ; free physical = 3410 ; free virtual = 13424
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:11 . Memory (MB): peak = 1761.984 ; gain = 213.434 ; free physical = 413 ; free virtual = 11802
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -175,44 +176,50 @@ Report Check Netlist:
 |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 1312.762 ; gain = 131.527 ; free physical = 3395 ; free virtual = 13409
+Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
-INFO: [Device 21-403] Loading part xc7z020clg484-1
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:12 . Memory (MB): peak = 1764.953 ; gain = 216.402 ; free physical = 388 ; free virtual = 11777
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:12 . Memory (MB): peak = 1764.953 ; gain = 216.402 ; free physical = 388 ; free virtual = 11777
+---------------------------------------------------------------------------------
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [/home/xavier/MSc_Project/Tiny_Yolo_v3/Tiny_Yolo_v3.srcs/sources_1/bd/yolo_sys/ip/yolo_sys_processing_system7_0_0/yolo_sys_processing_system7_0_0.xdc] for cell 'inst'
-Finished Parsing XDC File [/home/xavier/MSc_Project/Tiny_Yolo_v3/Tiny_Yolo_v3.srcs/sources_1/bd/yolo_sys/ip/yolo_sys_processing_system7_0_0/yolo_sys_processing_system7_0_0.xdc] for cell 'inst'
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/xavier/MSc_Project/Tiny_Yolo_v3/Tiny_Yolo_v3.srcs/sources_1/bd/yolo_sys/ip/yolo_sys_processing_system7_0_0/yolo_sys_processing_system7_0_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/yolo_sys_processing_system7_0_0_propImpl.xdc].
+Parsing XDC File [/home/xavier/MSc_Project/git_v/Tiny_YOLO_v3_ZYNQ/sw/Tiny_Yolo_v3/Tiny_Yolo_v3.srcs/sources_1/bd/yolo_sys/ip/yolo_sys_processing_system7_0_0/yolo_sys_processing_system7_0_0.xdc] for cell 'inst'
+Finished Parsing XDC File [/home/xavier/MSc_Project/git_v/Tiny_YOLO_v3_ZYNQ/sw/Tiny_Yolo_v3/Tiny_Yolo_v3.srcs/sources_1/bd/yolo_sys/ip/yolo_sys_processing_system7_0_0/yolo_sys_processing_system7_0_0.xdc] for cell 'inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/xavier/MSc_Project/git_v/Tiny_YOLO_v3_ZYNQ/sw/Tiny_Yolo_v3/Tiny_Yolo_v3.srcs/sources_1/bd/yolo_sys/ip/yolo_sys_processing_system7_0_0/yolo_sys_processing_system7_0_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/yolo_sys_processing_system7_0_0_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/yolo_sys_processing_system7_0_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
-Parsing XDC File [/home/xavier/MSc_Project/Tiny_Yolo_v3/Tiny_Yolo_v3.runs/yolo_sys_processing_system7_0_0_synth_1/dont_touch.xdc]
-Finished Parsing XDC File [/home/xavier/MSc_Project/Tiny_Yolo_v3/Tiny_Yolo_v3.runs/yolo_sys_processing_system7_0_0_synth_1/dont_touch.xdc]
+Parsing XDC File [/home/xavier/MSc_Project/git_v/Tiny_YOLO_v3_ZYNQ/sw/Tiny_Yolo_v3/Tiny_Yolo_v3.runs/yolo_sys_processing_system7_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/xavier/MSc_Project/git_v/Tiny_YOLO_v3_ZYNQ/sw/Tiny_Yolo_v3/Tiny_Yolo_v3.runs/yolo_sys_processing_system7_0_0_synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1835.594 ; gain = 0.000 ; free physical = 267 ; free virtual = 11648
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 1587.598 ; gain = 0.000 ; free physical = 2890 ; free virtual = 12947
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.05 ; elapsed = 00:00:00.06 . Memory (MB): peak = 1838.562 ; gain = 2.969 ; free physical = 260 ; free virtual = 11641
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:31 ; elapsed = 00:00:51 . Memory (MB): peak = 1587.598 ; gain = 406.363 ; free physical = 2968 ; free virtual = 13026
+Finished Constraint Validation : Time (s): cpu = 00:00:16 ; elapsed = 00:00:23 . Memory (MB): peak = 1838.562 ; gain = 290.012 ; free physical = 337 ; free virtual = 11721
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z020clg484-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:31 ; elapsed = 00:00:51 . Memory (MB): peak = 1587.598 ; gain = 406.363 ; free physical = 2968 ; free virtual = 13026
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:16 ; elapsed = 00:00:23 . Memory (MB): peak = 1838.562 ; gain = 290.012 ; free physical = 337 ; free virtual = 11721
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
-Applied set_property DONT_TOUCH = true for inst. (constraint file  /home/xavier/MSc_Project/Tiny_Yolo_v3/Tiny_Yolo_v3.runs/yolo_sys_processing_system7_0_0_synth_1/dont_touch.xdc, line 9).
+Applied set_property DONT_TOUCH = true for inst. (constraint file  /home/xavier/MSc_Project/git_v/Tiny_YOLO_v3_ZYNQ/sw/Tiny_Yolo_v3/Tiny_Yolo_v3.runs/yolo_sys_processing_system7_0_0_synth_1/dont_touch.xdc, line 9).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:31 ; elapsed = 00:00:51 . Memory (MB): peak = 1587.598 ; gain = 406.363 ; free physical = 2948 ; free virtual = 13008
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:24 . Memory (MB): peak = 1838.562 ; gain = 290.012 ; free physical = 330 ; free virtual = 11717
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:32 ; elapsed = 00:00:52 . Memory (MB): peak = 1587.598 ; gain = 406.363 ; free physical = 2941 ; free virtual = 13008
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:18 ; elapsed = 00:00:25 . Memory (MB): peak = 1838.562 ; gain = 290.012 ; free physical = 294 ; free virtual = 11691
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -246,6 +253,7 @@ Finished Part Resource Summary
 ---------------------------------------------------------------------------------
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
 WARNING: [Synth 8-3331] design processing_system7_v5_5_processing_system7 has unconnected port ENET0_GMII_COL
 WARNING: [Synth 8-3331] design processing_system7_v5_5_processing_system7 has unconnected port ENET0_GMII_CRS
 WARNING: [Synth 8-3331] design processing_system7_v5_5_processing_system7 has unconnected port ENET0_GMII_RX_DV
@@ -269,7 +277,7 @@ WARNING: [Synth 8-3331] design processing_system7_v5_5_processing_system7 has un
 WARNING: [Synth 8-3331] design processing_system7_v5_5_processing_system7 has unconnected port ENET1_GMII_RXD[3]
 INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:32 ; elapsed = 00:00:52 . Memory (MB): peak = 1595.605 ; gain = 414.371 ; free physical = 2928 ; free virtual = 12995
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:26 . Memory (MB): peak = 1838.562 ; gain = 290.012 ; free physical = 266 ; free virtual = 11666
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -281,13 +289,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:40 ; elapsed = 00:01:03 . Memory (MB): peak = 1793.605 ; gain = 612.371 ; free physical = 2573 ; free virtual = 12640
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:30 ; elapsed = 00:00:37 . Memory (MB): peak = 2013.562 ; gain = 465.012 ; free physical = 139 ; free virtual = 11108
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:40 ; elapsed = 00:01:03 . Memory (MB): peak = 1813.613 ; gain = 632.379 ; free physical = 2560 ; free virtual = 12627
+Finished Timing Optimization : Time (s): cpu = 00:00:30 ; elapsed = 00:00:38 . Memory (MB): peak = 2033.570 ; gain = 485.020 ; free physical = 137 ; free virtual = 11096
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -299,7 +307,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:41 ; elapsed = 00:01:05 . Memory (MB): peak = 1821.621 ; gain = 640.387 ; free physical = 2544 ; free virtual = 12612
+Finished Technology Mapping : Time (s): cpu = 00:00:32 ; elapsed = 00:00:39 . Memory (MB): peak = 2041.578 ; gain = 493.027 ; free physical = 169 ; free virtual = 11128
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -323,7 +331,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:43 ; elapsed = 00:01:06 . Memory (MB): peak = 1821.621 ; gain = 640.387 ; free physical = 3088 ; free virtual = 13161
+Finished IO Insertion : Time (s): cpu = 00:00:35 ; elapsed = 00:00:43 . Memory (MB): peak = 2052.484 ; gain = 503.934 ; free physical = 1497 ; free virtual = 12455
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -336,7 +344,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:43 ; elapsed = 00:01:06 . Memory (MB): peak = 1821.621 ; gain = 640.387 ; free physical = 3088 ; free virtual = 13161
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:35 ; elapsed = 00:00:43 . Memory (MB): peak = 2052.484 ; gain = 503.934 ; free physical = 1497 ; free virtual = 12456
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -348,25 +356,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:43 ; elapsed = 00:01:06 . Memory (MB): peak = 1821.621 ; gain = 640.387 ; free physical = 3088 ; free virtual = 13160
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:35 ; elapsed = 00:00:43 . Memory (MB): peak = 2052.484 ; gain = 503.934 ; free physical = 1497 ; free virtual = 12456
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:43 ; elapsed = 00:01:06 . Memory (MB): peak = 1821.621 ; gain = 640.387 ; free physical = 3088 ; free virtual = 13160
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:35 ; elapsed = 00:00:43 . Memory (MB): peak = 2052.484 ; gain = 503.934 ; free physical = 1497 ; free virtual = 12456
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:43 ; elapsed = 00:01:06 . Memory (MB): peak = 1821.621 ; gain = 640.387 ; free physical = 3088 ; free virtual = 13160
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:35 ; elapsed = 00:00:43 . Memory (MB): peak = 2052.484 ; gain = 503.934 ; free physical = 1497 ; free virtual = 12456
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:43 ; elapsed = 00:01:06 . Memory (MB): peak = 1821.621 ; gain = 640.387 ; free physical = 3088 ; free virtual = 13160
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:35 ; elapsed = 00:00:43 . Memory (MB): peak = 2052.484 ; gain = 503.934 ; free physical = 1497 ; free virtual = 12456
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -395,24 +403,31 @@ Report Instance Areas:
 |2     |  inst   |processing_system7_v5_5_processing_system7 |   243|
 +------+---------+-------------------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:43 ; elapsed = 00:01:06 . Memory (MB): peak = 1821.621 ; gain = 640.387 ; free physical = 3088 ; free virtual = 13160
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:35 ; elapsed = 00:00:43 . Memory (MB): peak = 2052.484 ; gain = 503.934 ; free physical = 1497 ; free virtual = 12456
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 79 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:31 ; elapsed = 00:00:37 . Memory (MB): peak = 1821.621 ; gain = 365.551 ; free physical = 3143 ; free virtual = 13215
-Synthesis Optimization Complete : Time (s): cpu = 00:00:43 ; elapsed = 00:01:06 . Memory (MB): peak = 1821.629 ; gain = 640.387 ; free physical = 3143 ; free virtual = 13215
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:31 ; elapsed = 00:00:37 . Memory (MB): peak = 2052.484 ; gain = 430.324 ; free physical = 1550 ; free virtual = 12508
+Synthesis Optimization Complete : Time (s): cpu = 00:00:35 ; elapsed = 00:00:43 . Memory (MB): peak = 2052.492 ; gain = 503.934 ; free physical = 1565 ; free virtual = 12523
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2065.359 ; gain = 0.000 ; free physical = 1481 ; free virtual = 12439
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
 21 Infos, 101 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:45 ; elapsed = 00:01:08 . Memory (MB): peak = 1823.621 ; gain = 655.762 ; free physical = 3268 ; free virtual = 13340
-INFO: [Common 17-1381] The checkpoint '/home/xavier/MSc_Project/Tiny_Yolo_v3/Tiny_Yolo_v3.runs/yolo_sys_processing_system7_0_0_synth_1/yolo_sys_processing_system7_0_0.dcp' has been generated.
-INFO: [Coretcl 2-1482] Added synthesis output to IP cache for IP /home/xavier/MSc_Project/Tiny_Yolo_v3/Tiny_Yolo_v3.srcs/sources_1/bd/yolo_sys/ip/yolo_sys_processing_system7_0_0/yolo_sys_processing_system7_0_0.xci
-INFO: [Common 17-1381] The checkpoint '/home/xavier/MSc_Project/Tiny_Yolo_v3/Tiny_Yolo_v3.runs/yolo_sys_processing_system7_0_0_synth_1/yolo_sys_processing_system7_0_0.dcp' has been generated.
+synth_design: Time (s): cpu = 00:00:42 ; elapsed = 00:00:50 . Memory (MB): peak = 2065.359 ; gain = 629.188 ; free physical = 1717 ; free virtual = 12676
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2065.359 ; gain = 0.000 ; free physical = 1717 ; free virtual = 12676
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint '/home/xavier/MSc_Project/git_v/Tiny_YOLO_v3_ZYNQ/sw/Tiny_Yolo_v3/Tiny_Yolo_v3.runs/yolo_sys_processing_system7_0_0_synth_1/yolo_sys_processing_system7_0_0.dcp' has been generated.
+WARNING: [Common 17-576] 'use_project_ipc' is deprecated. This option is deprecated and no longer used.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP yolo_sys_processing_system7_0_0, cache-ID = d35a81b3a2562e83
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2065.359 ; gain = 0.000 ; free physical = 1707 ; free virtual = 12666
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint '/home/xavier/MSc_Project/git_v/Tiny_YOLO_v3_ZYNQ/sw/Tiny_Yolo_v3/Tiny_Yolo_v3.runs/yolo_sys_processing_system7_0_0_synth_1/yolo_sys_processing_system7_0_0.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file yolo_sys_processing_system7_0_0_utilization_synth.rpt -pb yolo_sys_processing_system7_0_0_utilization_synth.pb
-report_utilization: Time (s): cpu = 00:00:00.11 ; elapsed = 00:00:00.14 . Memory (MB): peak = 1823.621 ; gain = 0.000 ; free physical = 3260 ; free virtual = 13333
-INFO: [Common 17-206] Exiting Vivado at Sat Mar  2 13:23:22 2019...
+INFO: [Common 17-206] Exiting Vivado at Sat Jun  8 10:32:29 2019...

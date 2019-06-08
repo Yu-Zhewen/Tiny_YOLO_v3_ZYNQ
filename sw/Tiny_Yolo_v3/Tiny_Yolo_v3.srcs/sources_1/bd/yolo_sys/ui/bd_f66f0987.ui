@@ -1,28 +1,29 @@
 {
-   ExpandedHierarchyInLayout: "",
-   guistr: "# # String gsaved with Nlview 6.6.11  2017-06-12 bk=1.3860 VDI=40 GEI=35 GUI=JA:1.6
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0.19  2019-03-26 bk=1.5019 VDI=41 GEI=35 GUI=JA:9.0 TLS
 #  -string -flagsOSRD
-preplace port DDR -pg 1 -y 290 -defaultsOSRD
-preplace port leds_8bits -pg 1 -y 170 -defaultsOSRD
-preplace port FIXED_IO -pg 1 -y 310 -defaultsOSRD
-preplace inst axi_gpio_0 -pg 1 -lvl 3 -y 170 -defaultsOSRD
-preplace inst ps7_0_axi_periph -pg 1 -lvl 2 -y 150 -defaultsOSRD
-preplace inst rst_ps7_0_100M -pg 1 -lvl 1 -y 110 -defaultsOSRD
-preplace inst processing_system7_0 -pg 1 -lvl 1 -y 370 -defaultsOSRD
-preplace netloc processing_system7_0_DDR 1 1 3 NJ 290 NJ 290 NJ
-preplace netloc processing_system7_0_M_AXI_GP0 1 1 1 480
-preplace netloc rst_ps7_0_100M_peripheral_aresetn 1 1 2 460 30 760J
+preplace port DDR -pg 1 -lvl 4 -x 1030 -y 300 -defaultsOSRD
+preplace port FIXED_IO -pg 1 -lvl 4 -x 1030 -y 320 -defaultsOSRD
+preplace port leds_8bits -pg 1 -lvl 4 -x 1030 -y 180 -defaultsOSRD
+preplace inst processing_system7_0 -pg 1 -lvl 1 -x 240 -y 380 -defaultsOSRD
+preplace inst axi_gpio_0 -pg 1 -lvl 3 -x 900 -y 180 -defaultsOSRD
+preplace inst ps7_0_axi_periph -pg 1 -lvl 2 -x 630 -y 160 -defaultsOSRD
+preplace inst rst_ps7_0_100M -pg 1 -lvl 1 -x 240 -y 120 -defaultsOSRD
+preplace netloc processing_system7_0_FCLK_CLK0 1 0 3 20 10 470 30 790J
 preplace netloc processing_system7_0_FCLK_RESET0_N 1 0 2 30 20 450
-preplace netloc processing_system7_0_FIXED_IO 1 1 3 NJ 310 NJ 310 NJ
-preplace netloc axi_gpio_0_GPIO 1 3 1 NJ
-preplace netloc processing_system7_0_FCLK_CLK0 1 0 3 20 10 470 20 770J
-preplace netloc ps7_0_axi_periph_M00_AXI 1 2 1 N
-preplace netloc rst_ps7_0_100M_interconnect_aresetn 1 1 1 N
-levelinfo -pg 1 0 240 620 880 1010 -top 0 -bot 500
-",
+preplace netloc rst_ps7_0_100M_peripheral_aresetn 1 1 2 460 40 780
+preplace netloc rst_ps7_0_100M_interconnect_aresetn 1 1 1 N 140
+preplace netloc processing_system7_0_M_AXI_GP0 1 1 1 480 100n
+preplace netloc ps7_0_axi_periph_M00_AXI 1 2 1 N 160
+preplace netloc processing_system7_0_DDR 1 1 3 NJ 300 NJ 300 NJ
+preplace netloc processing_system7_0_FIXED_IO 1 1 3 NJ 320 NJ 320 NJ
+preplace netloc axi_gpio_0_GPIO 1 3 1 NJ 180
+levelinfo -pg 1 0 240 630 900 1030
+pagesize -pg 1 -db -bbox -sgen 0 0 1160 520
+"
 }
 {
-   da_axi4_cnt: "1",
-   da_board_cnt: "1",
-   da_ps7_cnt: "1",
+   "da_axi4_cnt":"1",
+   "da_board_cnt":"1",
+   "da_ps7_cnt":"1"
 }

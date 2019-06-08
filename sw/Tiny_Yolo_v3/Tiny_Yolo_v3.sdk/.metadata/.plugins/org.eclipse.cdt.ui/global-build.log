@@ -1,16 +1,525 @@
-11:08:54 **** Build of configuration Debug for project desktop_ref2 ****
+11:16:10 **** Incremental Build of configuration Debug for project desktop_ref ****
 make all 
-Building target: desktop_ref2
-Invoking: GCC C Linker
-gcc  -o "desktop_ref2"  ./src/activations.o ./src/batchnorm_layer.o ./src/blas.o ./src/box.o ./src/convolutional_layer.o ./src/gemm.o ./src/helloworld.o ./src/im2col.o ./src/image.o ./src/maxpool_layer.o ./src/network.o ./src/parser.o ./src/route_layer.o ./src/upsample_layer.o ./src/utils.o ./src/yolo_layer.o   -lm
-Finished building target: desktop_ref2
+Building file: ../src/activations.c
+Invoking: GCC C Compiler
+gcc -I/home/xavier/MSc_Project/git_v/Tiny_YOLO_v3_ZYNQ/sw/desktop_ref/include -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/activations.d" -MT"src/activations.o" -o "src/activations.o" "../src/activations.c"
+Finished building: ../src/activations.c
  
-11:09:33 **** Incremental Build of configuration Debug for project desktop_ref2 ****
+Building file: ../src/batchnorm_layer.c
+Invoking: GCC C Compiler
+gcc -I/home/xavier/MSc_Project/git_v/Tiny_YOLO_v3_ZYNQ/sw/desktop_ref/include -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/batchnorm_layer.d" -MT"src/batchnorm_layer.o" -o "src/batchnorm_layer.o" "../src/batchnorm_layer.c"
+Finished building: ../src/batchnorm_layer.c
+ 
+Building file: ../src/blas.c
+Invoking: GCC C Compiler
+gcc -I/home/xavier/MSc_Project/git_v/Tiny_YOLO_v3_ZYNQ/sw/desktop_ref/include -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/blas.d" -MT"src/blas.o" -o "src/blas.o" "../src/blas.c"
+Finished building: ../src/blas.c
+ 
+Building file: ../src/box.c
+Invoking: GCC C Compiler
+gcc -I/home/xavier/MSc_Project/git_v/Tiny_YOLO_v3_ZYNQ/sw/desktop_ref/include -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/box.d" -MT"src/box.o" -o "src/box.o" "../src/box.c"
+Finished building: ../src/box.c
+ 
+Building file: ../src/convolutional_layer.c
+Invoking: GCC C Compiler
+gcc -I/home/xavier/MSc_Project/git_v/Tiny_YOLO_v3_ZYNQ/sw/desktop_ref/include -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/convolutional_layer.d" -MT"src/convolutional_layer.o" -o "src/convolutional_layer.o" "../src/convolutional_layer.c"
+Finished building: ../src/convolutional_layer.c
+ 
+Building file: ../src/gemm.c
+Invoking: GCC C Compiler
+gcc -I/home/xavier/MSc_Project/git_v/Tiny_YOLO_v3_ZYNQ/sw/desktop_ref/include -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/gemm.d" -MT"src/gemm.o" -o "src/gemm.o" "../src/gemm.c"
+Finished building: ../src/gemm.c
+ 
+Building file: ../src/helloworld.c
+Invoking: GCC C Compiler
+gcc -I/home/xavier/MSc_Project/git_v/Tiny_YOLO_v3_ZYNQ/sw/desktop_ref/include -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building file: ../src/im2col.c
+Invoking: GCC C Compiler
+gcc -I/home/xavier/MSc_Project/git_v/Tiny_YOLO_v3_ZYNQ/sw/desktop_ref/include -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/im2col.d" -MT"src/im2col.o" -o "src/im2col.o" "../src/im2col.c"
+Finished building: ../src/im2col.c
+ 
+Building file: ../src/image.c
+Invoking: GCC C Compiler
+gcc -I/home/xavier/MSc_Project/git_v/Tiny_YOLO_v3_ZYNQ/sw/desktop_ref/include -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/image.d" -MT"src/image.o" -o "src/image.o" "../src/image.c"
+Finished building: ../src/image.c
+ 
+Building file: ../src/maxpool_layer.c
+Invoking: GCC C Compiler
+gcc -I/home/xavier/MSc_Project/git_v/Tiny_YOLO_v3_ZYNQ/sw/desktop_ref/include -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/maxpool_layer.d" -MT"src/maxpool_layer.o" -o "src/maxpool_layer.o" "../src/maxpool_layer.c"
+Finished building: ../src/maxpool_layer.c
+ 
+Building file: ../src/network.c
+Invoking: GCC C Compiler
+gcc -I/home/xavier/MSc_Project/git_v/Tiny_YOLO_v3_ZYNQ/sw/desktop_ref/include -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/network.d" -MT"src/network.o" -o "src/network.o" "../src/network.c"
+Finished building: ../src/network.c
+ 
+Building file: ../src/parser.c
+Invoking: GCC C Compiler
+gcc -I/home/xavier/MSc_Project/git_v/Tiny_YOLO_v3_ZYNQ/sw/desktop_ref/include -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/parser.d" -MT"src/parser.o" -o "src/parser.o" "../src/parser.c"
+../src/parser.c: In function ‘load_weights_upto’:
+../src/parser.c:944:15: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+     net->seen = 32013312;
+               ^
+../src/parser.c:942:9: warning: unused variable ‘revision’ [-Wunused-variable]
+     int revision = 0;
+         ^
+../src/parser.c:941:9: warning: unused variable ‘minor’ [-Wunused-variable]
+     int minor = 2;
+         ^
+../src/parser.c:940:9: warning: unused variable ‘major’ [-Wunused-variable]
+     int major = 0;
+         ^
+../src/parser.c: In function ‘load_weights’:
+../src/parser.c:964:42: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+     conv_weight_file[0].biases           = conv_0_biases;
+                                          ^
+../src/parser.c:965:42: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+     conv_weight_file[0].scales           = conv_0_scales;
+                                          ^
+../src/parser.c:966:42: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+     conv_weight_file[0].rolling_mean     = conv_0_rolling_mean;
+                                          ^
+../src/parser.c:967:42: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+     conv_weight_file[0].rolling_variance = conv_0_rolling_variance;
+                                          ^
+../src/parser.c:968:42: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+     conv_weight_file[0].weights          = conv_0_weights;
+                                          ^
+../src/parser.c:970:42: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+     conv_weight_file[1].biases           = conv_1_biases;
+                                          ^
+../src/parser.c:971:42: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+     conv_weight_file[1].scales           = conv_1_scales;
+                                          ^
+../src/parser.c:972:42: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+     conv_weight_file[1].rolling_mean     = conv_1_rolling_mean;
+                                          ^
+../src/parser.c:973:42: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+     conv_weight_file[1].rolling_variance = conv_1_rolling_variance;
+                                          ^
+../src/parser.c:974:42: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+     conv_weight_file[1].weights          = conv_1_weights;
+                                          ^
+../src/parser.c:976:42: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+     conv_weight_file[2].biases           = conv_2_biases;
+                                          ^
+../src/parser.c:977:42: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+     conv_weight_file[2].scales           = conv_2_scales;
+                                          ^
+../src/parser.c:978:42: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+     conv_weight_file[2].rolling_mean     = conv_2_rolling_mean;
+                                          ^
+../src/parser.c:979:42: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+     conv_weight_file[2].rolling_variance = conv_2_rolling_variance;
+                                          ^
+../src/parser.c:980:42: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+     conv_weight_file[2].weights          = conv_2_weights;
+                                          ^
+../src/parser.c:982:42: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+     conv_weight_file[3].biases           = conv_3_biases;
+                                          ^
+../src/parser.c:983:42: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+     conv_weight_file[3].scales           = conv_3_scales;
+                                          ^
+../src/parser.c:984:42: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+     conv_weight_file[3].rolling_mean     = conv_3_rolling_mean;
+                                          ^
+../src/parser.c:985:42: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+     conv_weight_file[3].rolling_variance = conv_3_rolling_variance;
+                                          ^
+../src/parser.c:986:42: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+     conv_weight_file[3].weights          = conv_3_weights;
+                                          ^
+../src/parser.c:988:42: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+     conv_weight_file[4].biases           = conv_4_biases;
+                                          ^
+../src/parser.c:989:42: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+     conv_weight_file[4].scales           = conv_4_scales;
+                                          ^
+../src/parser.c:990:42: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+     conv_weight_file[4].rolling_mean     = conv_4_rolling_mean;
+                                          ^
+../src/parser.c:991:42: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+     conv_weight_file[4].rolling_variance = conv_4_rolling_variance;
+                                          ^
+../src/parser.c:992:42: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+     conv_weight_file[4].weights          = conv_4_weights;
+                                          ^
+../src/parser.c:994:42: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+     conv_weight_file[5].biases           = conv_5_biases;
+                                          ^
+../src/parser.c:995:42: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+     conv_weight_file[5].scales           = conv_5_scales;
+                                          ^
+../src/parser.c:996:42: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+     conv_weight_file[5].rolling_mean     = conv_5_rolling_mean;
+                                          ^
+../src/parser.c:997:42: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+     conv_weight_file[5].rolling_variance = conv_5_rolling_variance;
+                                          ^
+../src/parser.c:998:42: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+     conv_weight_file[5].weights          = conv_5_weights;
+                                          ^
+../src/parser.c:1000:42: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+     conv_weight_file[6].biases           = conv_6_biases;
+                                          ^
+../src/parser.c:1001:42: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+     conv_weight_file[6].scales           = conv_6_scales;
+                                          ^
+../src/parser.c:1002:42: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+     conv_weight_file[6].rolling_mean     = conv_6_rolling_mean;
+                                          ^
+../src/parser.c:1003:42: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+     conv_weight_file[6].rolling_variance = conv_6_rolling_variance;
+                                          ^
+../src/parser.c:1004:42: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+     conv_weight_file[6].weights          = conv_6_weights;
+                                          ^
+../src/parser.c:1006:42: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+     conv_weight_file[7].biases           = conv_7_biases;
+                                          ^
+../src/parser.c:1007:42: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+     conv_weight_file[7].scales           = conv_7_scales;
+                                          ^
+../src/parser.c:1008:42: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+     conv_weight_file[7].rolling_mean     = conv_7_rolling_mean;
+                                          ^
+../src/parser.c:1009:42: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+     conv_weight_file[7].rolling_variance = conv_7_rolling_variance;
+                                          ^
+../src/parser.c:1010:42: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+     conv_weight_file[7].weights          = conv_7_weights;
+                                          ^
+../src/parser.c:1012:42: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+     conv_weight_file[8].biases           = conv_8_biases;
+                                          ^
+../src/parser.c:1013:42: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+     conv_weight_file[8].scales           = conv_8_scales;
+                                          ^
+../src/parser.c:1014:42: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+     conv_weight_file[8].rolling_mean     = conv_8_rolling_mean;
+                                          ^
+../src/parser.c:1015:42: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+     conv_weight_file[8].rolling_variance = conv_8_rolling_variance;
+                                          ^
+../src/parser.c:1016:42: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+     conv_weight_file[8].weights          = conv_8_weights;
+                                          ^
+../src/parser.c:1018:42: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+     conv_weight_file[9].biases           = conv_9_biases;
+                                          ^
+../src/parser.c:1022:42: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+     conv_weight_file[9].weights          = conv_9_weights;
+                                          ^
+../src/parser.c:1024:43: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+     conv_weight_file[10].biases           = conv_10_biases;
+                                           ^
+../src/parser.c:1025:43: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+     conv_weight_file[10].scales           = conv_10_scales;
+                                           ^
+../src/parser.c:1026:43: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+     conv_weight_file[10].rolling_mean     = conv_10_rolling_mean;
+                                           ^
+../src/parser.c:1027:43: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+     conv_weight_file[10].rolling_variance = conv_10_rolling_variance;
+                                           ^
+../src/parser.c:1028:43: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+     conv_weight_file[10].weights          = conv_10_weights;
+                                           ^
+../src/parser.c:1030:43: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+     conv_weight_file[11].biases           = conv_11_biases;
+                                           ^
+../src/parser.c:1031:43: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+     conv_weight_file[11].scales           = conv_11_scales;
+                                           ^
+../src/parser.c:1032:43: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+     conv_weight_file[11].rolling_mean     = conv_11_rolling_mean;
+                                           ^
+../src/parser.c:1033:43: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+     conv_weight_file[11].rolling_variance = conv_11_rolling_variance;
+                                           ^
+../src/parser.c:1034:43: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+     conv_weight_file[11].weights          = conv_11_weights;
+                                           ^
+../src/parser.c:1036:43: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+     conv_weight_file[12].biases           = conv_12_biases;
+                                           ^
+../src/parser.c:1040:43: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+     conv_weight_file[12].weights          = conv_12_weights;
+                                           ^
+Finished building: ../src/parser.c
+ 
+Building file: ../src/route_layer.c
+Invoking: GCC C Compiler
+gcc -I/home/xavier/MSc_Project/git_v/Tiny_YOLO_v3_ZYNQ/sw/desktop_ref/include -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/route_layer.d" -MT"src/route_layer.o" -o "src/route_layer.o" "../src/route_layer.c"
+Finished building: ../src/route_layer.c
+ 
+Building file: ../src/upsample_layer.c
+Invoking: GCC C Compiler
+gcc -I/home/xavier/MSc_Project/git_v/Tiny_YOLO_v3_ZYNQ/sw/desktop_ref/include -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/upsample_layer.d" -MT"src/upsample_layer.o" -o "src/upsample_layer.o" "../src/upsample_layer.c"
+Finished building: ../src/upsample_layer.c
+ 
+Building file: ../src/utils.c
+Invoking: GCC C Compiler
+gcc -I/home/xavier/MSc_Project/git_v/Tiny_YOLO_v3_ZYNQ/sw/desktop_ref/include -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/utils.d" -MT"src/utils.o" -o "src/utils.o" "../src/utils.c"
+Finished building: ../src/utils.c
+ 
+Building file: ../src/yolo_layer.c
+Invoking: GCC C Compiler
+gcc -I/home/xavier/MSc_Project/git_v/Tiny_YOLO_v3_ZYNQ/sw/desktop_ref/include -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/yolo_layer.d" -MT"src/yolo_layer.o" -o "src/yolo_layer.o" "../src/yolo_layer.c"
+Finished building: ../src/yolo_layer.c
+ 
+Building target: desktop_ref
+Invoking: GCC C Linker
+gcc  -o "desktop_ref"  ./src/activations.o ./src/batchnorm_layer.o ./src/blas.o ./src/box.o ./src/convolutional_layer.o ./src/gemm.o ./src/helloworld.o ./src/im2col.o ./src/image.o ./src/maxpool_layer.o ./src/network.o ./src/parser.o ./src/route_layer.o ./src/upsample_layer.o ./src/utils.o ./src/yolo_layer.o   -lm
+Finished building target: desktop_ref
+ 
+11:17:17 **** Incremental Build of configuration Debug for project desktop_ref ****
 make all 
 make: Nothing to be done for 'all'.
-11:11:06 **** Incremental Build of configuration Debug for project desktop_ref2 ****
+15:37:27 **** Incremental Build of configuration Debug for project desktop_ref ****
+make all 
+Building file: ../src/convolutional_layer.c
+Invoking: GCC C Compiler
+gcc -I/home/xavier/MSc_Project/git_v/Tiny_YOLO_v3_ZYNQ/sw/desktop_ref/include -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/convolutional_layer.d" -MT"src/convolutional_layer.o" -o "src/convolutional_layer.o" "../src/convolutional_layer.c"
+../src/convolutional_layer.c:139:8: warning: type defaults to ‘int’ in declaration of ‘conv_count’ [-Wimplicit-int]
+ static conv_count = 0;
+        ^
+../src/convolutional_layer.c: In function ‘forward_convolutional_layer’:
+../src/convolutional_layer.c:151:13: warning: format ‘%d’ expects argument of type ‘int’, but argument 3 has type ‘char *’ [-Wformat=]
+  fprintf(fp,"#ifndef CONV_%d_PARAM_H\n",num);
+             ^
+../src/convolutional_layer.c:152:13: warning: format ‘%d’ expects argument of type ‘int’, but argument 3 has type ‘char *’ [-Wformat=]
+  fprintf(fp,"#define CONV_%d_PARAM_H\n\n",num);
+             ^
+../src/convolutional_layer.c:154:13: warning: format ‘%d’ expects argument of type ‘int’, but argument 3 has type ‘char *’ [-Wformat=]
+  fprintf(fp,"#define CONV_%d_KERNEL_DIM %d\n",num,l.size);
+             ^
+../src/convolutional_layer.c:155:13: warning: format ‘%d’ expects argument of type ‘int’, but argument 3 has type ‘char *’ [-Wformat=]
+  fprintf(fp,"#define CONV_%d_PAD %d\n",num,l.pad);
+             ^
+../src/convolutional_layer.c:156:13: warning: format ‘%d’ expects argument of type ‘int’, but argument 3 has type ‘char *’ [-Wformat=]
+  fprintf(fp,"#define CONV_%d_INPUT_CAHNNEL %d\n",num,l.c);
+             ^
+../src/convolutional_layer.c:157:13: warning: format ‘%d’ expects argument of type ‘int’, but argument 3 has type ‘char *’ [-Wformat=]
+  fprintf(fp,"#define CONV_%d_INPUT_WIDTH (%d+2*PAD)\n",num,l.w);
+             ^
+../src/convolutional_layer.c:158:13: warning: format ‘%d’ expects argument of type ‘int’, but argument 3 has type ‘char *’ [-Wformat=]
+  fprintf(fp,"#define CONV_%d_INPUT_HEIGHT (%d+2*PAD)\n",num,l.h);
+             ^
+../src/convolutional_layer.c:159:13: warning: format ‘%d’ expects argument of type ‘int’, but argument 3 has type ‘char *’ [-Wformat=]
+  fprintf(fp,"#define CONV_%d_OUTPUT_CHANNEL %d\n",num,l.n);
+             ^
+../src/convolutional_layer.c:160:13: warning: format ‘%d’ expects argument of type ‘int’, but argument 3 has type ‘char *’ [-Wformat=]
+src/subdir.mk:63: recipe for target 'src/convolutional_layer.o' failed
+  fprintf(fp,"#define CONV_%d_OUTPUT_WIDTH %d\n",num,l.out_w);
+             ^
+../src/convolutional_layer.c:161:13: warning: format ‘%d’ expects argument of type ‘int’, but argument 3 has type ‘char *’ [-Wformat=]
+  fprintf(fp,"#define CONV_%d_OUTPUT_HEIGHT %d\n\n",num,l.out_h);
+             ^
+../src/convolutional_layer.c:163:13: warning: format ‘%d’ expects argument of type ‘int’, but argument 3 has type ‘char *’ [-Wformat=]
+  fprintf(fp,"conv_param conv_%d_param={.kernel_dim=%d,\n",num,l.size);
+             ^
+../src/convolutional_layer.c:173:5: error: lvalue required as increment operand
+  num++;
+     ^
+make: *** [src/convolutional_layer.o] Error 1
+15:38:18 **** Incremental Build of configuration Debug for project desktop_ref ****
+make all 
+Building file: ../src/convolutional_layer.c
+Invoking: GCC C Compiler
+gcc -I/home/xavier/MSc_Project/git_v/Tiny_YOLO_v3_ZYNQ/sw/desktop_ref/include -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/convolutional_layer.d" -MT"src/convolutional_layer.o" -o "src/convolutional_layer.o" "../src/convolutional_layer.c"
+../src/convolutional_layer.c:139:8: warning: type defaults to ‘int’ in declaration of ‘conv_count’ [-Wimplicit-int]
+ static conv_count = 0;
+        ^
+Finished building: ../src/convolutional_layer.c
+ 
+Building target: desktop_ref
+Invoking: GCC C Linker
+gcc  -o "desktop_ref"  ./src/activations.o ./src/batchnorm_layer.o ./src/blas.o ./src/box.o ./src/convolutional_layer.o ./src/gemm.o ./src/helloworld.o ./src/im2col.o ./src/image.o ./src/maxpool_layer.o ./src/network.o ./src/parser.o ./src/route_layer.o ./src/upsample_layer.o ./src/utils.o ./src/yolo_layer.o   -lm
+Finished building target: desktop_ref
+ 
+15:38:33 **** Incremental Build of configuration Debug for project desktop_ref ****
+make all 
+Building file: ../src/convolutional_layer.c
+Invoking: GCC C Compiler
+gcc -I/home/xavier/MSc_Project/git_v/Tiny_YOLO_v3_ZYNQ/sw/desktop_ref/include -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/convolutional_layer.d" -MT"src/convolutional_layer.o" -o "src/convolutional_layer.o" "../src/convolutional_layer.c"
+Finished building: ../src/convolutional_layer.c
+ 
+Building target: desktop_ref
+Invoking: GCC C Linker
+gcc  -o "desktop_ref"  ./src/activations.o ./src/batchnorm_layer.o ./src/blas.o ./src/box.o ./src/convolutional_layer.o ./src/gemm.o ./src/helloworld.o ./src/im2col.o ./src/image.o ./src/maxpool_layer.o ./src/network.o ./src/parser.o ./src/route_layer.o ./src/upsample_layer.o ./src/utils.o ./src/yolo_layer.o   -lm
+Finished building target: desktop_ref
+ 
+15:38:41 **** Incremental Build of configuration Debug for project desktop_ref ****
 make all 
 make: Nothing to be done for 'all'.
-11:11:51 **** Incremental Build of configuration Debug for project desktop_ref2 ****
+15:39:24 **** Incremental Build of configuration Debug for project desktop_ref ****
+make all 
+Building file: ../src/convolutional_layer.c
+Invoking: GCC C Compiler
+gcc -I/home/xavier/MSc_Project/git_v/Tiny_YOLO_v3_ZYNQ/sw/desktop_ref/include -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/convolutional_layer.d" -MT"src/convolutional_layer.o" -o "src/convolutional_layer.o" "../src/convolutional_layer.c"
+Finished building: ../src/convolutional_layer.c
+ 
+Building target: desktop_ref
+Invoking: GCC C Linker
+gcc  -o "desktop_ref"  ./src/activations.o ./src/batchnorm_layer.o ./src/blas.o ./src/box.o ./src/convolutional_layer.o ./src/gemm.o ./src/helloworld.o ./src/im2col.o ./src/image.o ./src/maxpool_layer.o ./src/network.o ./src/parser.o ./src/route_layer.o ./src/upsample_layer.o ./src/utils.o ./src/yolo_layer.o   -lm
+Finished building target: desktop_ref
+ 
+15:39:28 **** Incremental Build of configuration Debug for project desktop_ref ****
 make all 
 make: Nothing to be done for 'all'.
+15:40:23 **** Incremental Build of configuration Debug for project desktop_ref ****
+make all 
+Building file: ../src/convolutional_layer.c
+Invoking: GCC C Compiler
+gcc -I/home/xavier/MSc_Project/git_v/Tiny_YOLO_v3_ZYNQ/sw/desktop_ref/include -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/convolutional_layer.d" -MT"src/convolutional_layer.o" -o "src/convolutional_layer.o" "../src/convolutional_layer.c"
+../src/convolutional_layer.c:18:1: error: unknown type name ‘conv_param’
+ conv_param conv_0_param={.kernel_dim=3,
+ ^
+../src/convolutional_layer.c:18:26: error: field name not in record or union initializer
+ conv_param conv_0_param={.kernel_dim=3,
+                          ^
+../src/convolutional_layer.c:18:26: note: (near initialization for ‘conv_0_param’)
+../src/convolutional_layer.c:19:27: error: field name not in record or union initializer
+                           .pad=1,
+                           ^
+../src/convolutional_layer.c:19:27: note: (near initialization for ‘conv_0_param’)
+../src/convolutional_layer.c:19:32: warning: excess elements in scalar initializer
+                           .pad=1,
+                                ^
+../src/convolutional_layer.c:19:32: note: (near initialization for ‘conv_0_param’)
+../src/convolutional_layer.c:20:27: error: field name not in record or union initializer
+                           .input_channel=3,
+                           ^
+../src/convolutional_layer.c:20:27: note: (near initialization for ‘conv_0_param’)
+../src/convolutional_layer.c:20:42: warning: excess elements in scalar initializer
+                           .input_channel=3,
+                                          ^
+../src/convolutional_layer.c:20:42: note: (near initialization for ‘conv_0_param’)
+../src/convolutional_layer.c:21:27: error: field name not in record or union initializer
+                           .input_width=418,
+                           ^
+../src/convolutional_layer.c:21:27: note: (near initialization for ‘conv_0_param’)
+../src/convolutional_layer.c:21:40: warning: excess elements in scalar initializer
+                           .input_width=418,
+                                        ^
+../src/convolutional_layer.c:21:40: note: (near initialization for ‘conv_0_param’)
+../src/convolutional_layer.c:22:27: error: field name not in record or union initializer
+                           .input_height=418,
+                           ^
+../src/convolutional_layer.c:22:27: note: (near initialization for ‘conv_0_param’)
+src/subdir.mk:63: recipe for target 'src/convolutional_layer.o' failed
+../src/convolutional_layer.c:22:41: warning: excess elements in scalar initializer
+                           .input_height=418,
+                                         ^
+../src/convolutional_layer.c:22:41: note: (near initialization for ‘conv_0_param’)
+../src/convolutional_layer.c:23:27: error: field name not in record or union initializer
+                           .output_channel=16,
+                           ^
+../src/convolutional_layer.c:23:27: note: (near initialization for ‘conv_0_param’)
+../src/convolutional_layer.c:23:43: warning: excess elements in scalar initializer
+                           .output_channel=16,
+                                           ^
+../src/convolutional_layer.c:23:43: note: (near initialization for ‘conv_0_param’)
+../src/convolutional_layer.c:24:27: error: field name not in record or union initializer
+                           .output_width=416,
+                           ^
+../src/convolutional_layer.c:24:27: note: (near initialization for ‘conv_0_param’)
+../src/convolutional_layer.c:24:41: warning: excess elements in scalar initializer
+                           .output_width=416,
+                                         ^
+../src/convolutional_layer.c:24:41: note: (near initialization for ‘conv_0_param’)
+../src/convolutional_layer.c:25:27: error: field name not in record or union initializer
+                           .output_height=416};
+                           ^
+../src/convolutional_layer.c:25:27: note: (near initialization for ‘conv_0_param’)
+../src/convolutional_layer.c:25:42: warning: excess elements in scalar initializer
+                           .output_height=416};
+                                          ^
+../src/convolutional_layer.c:25:42: note: (near initialization for ‘conv_0_param’)
+make: *** [src/convolutional_layer.o] Error 1
+15:40:48 **** Incremental Build of configuration Debug for project desktop_ref ****
+make all 
+Building file: ../src/convolutional_layer.c
+Invoking: GCC C Compiler
+gcc -I/home/xavier/MSc_Project/git_v/Tiny_YOLO_v3_ZYNQ/sw/desktop_ref/include -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/convolutional_layer.d" -MT"src/convolutional_layer.o" -o "src/convolutional_layer.o" "../src/convolutional_layer.c"
+../src/convolutional_layer.c:18:1: error: unknown type name ‘conv_param’
+ conv_param conv_0_param={.kernel_dim=3,
+ ^
+../src/convolutional_layer.c:18:26: error: field name not in record or union initializer
+ conv_param conv_0_param={.kernel_dim=3,
+                          ^
+../src/convolutional_layer.c:18:26: note: (near initialization for ‘conv_0_param’)
+../src/convolutional_layer.c:19:27: error: field name not in record or union initializer
+                           .pad=1,
+                           ^
+../src/convolutional_layer.c:19:27: note: (near initialization for ‘conv_0_param’)
+../src/convolutional_layer.c:19:32: warning: excess elements in scalar initializer
+                           .pad=1,
+                                ^
+../src/convolutional_layer.c:19:32: note: (near initialization for ‘conv_0_param’)
+../src/convolutional_layer.c:20:27: error: field name not in record or union initializer
+                           .input_channel=3,
+                           ^
+../src/convolutional_layer.c:20:27: note: (near initialization for ‘conv_0_param’)
+../src/convolutional_layer.c:20:42: warning: excess elements in scalar initializer
+                           .input_channel=3,
+                                          ^
+../src/convolutional_layer.c:20:42: note: (near initialization for ‘conv_0_param’)
+../src/convolutional_layer.c:21:27: error: field name not in record or union initializer
+                           .input_width=418,
+                           ^
+../src/convolutional_layer.c:21:27: note: (near initialization for ‘conv_0_param’)
+src/subdir.mk:63: recipe for target 'src/convolutional_layer.o' failed
+../src/convolutional_layer.c:21:40: warning: excess elements in scalar initializer
+                           .input_width=418,
+                                        ^
+../src/convolutional_layer.c:21:40: note: (near initialization for ‘conv_0_param’)
+../src/convolutional_layer.c:22:27: error: field name not in record or union initializer
+                           .input_height=418,
+                           ^
+../src/convolutional_layer.c:22:27: note: (near initialization for ‘conv_0_param’)
+../src/convolutional_layer.c:22:41: warning: excess elements in scalar initializer
+                           .input_height=418,
+                                         ^
+../src/convolutional_layer.c:22:41: note: (near initialization for ‘conv_0_param’)
+../src/convolutional_layer.c:23:27: error: field name not in record or union initializer
+                           .output_channel=16,
+                           ^
+../src/convolutional_layer.c:23:27: note: (near initialization for ‘conv_0_param’)
+../src/convolutional_layer.c:23:43: warning: excess elements in scalar initializer
+                           .output_channel=16,
+                                           ^
+../src/convolutional_layer.c:23:43: note: (near initialization for ‘conv_0_param’)
+../src/convolutional_layer.c:24:27: error: field name not in record or union initializer
+                           .output_width=416,
+                           ^
+../src/convolutional_layer.c:24:27: note: (near initialization for ‘conv_0_param’)
+../src/convolutional_layer.c:24:41: warning: excess elements in scalar initializer
+                           .output_width=416,
+                                         ^
+../src/convolutional_layer.c:24:41: note: (near initialization for ‘conv_0_param’)
+../src/convolutional_layer.c:25:27: error: field name not in record or union initializer
+                           .output_height=416};
+                           ^
+../src/convolutional_layer.c:25:27: note: (near initialization for ‘conv_0_param’)
+../src/convolutional_layer.c:25:42: warning: excess elements in scalar initializer
+                           .output_height=416};
+                                          ^
+../src/convolutional_layer.c:25:42: note: (near initialization for ‘conv_0_param’)
+make: *** [src/convolutional_layer.o] Error 1
+15:41:26 **** Incremental Build of configuration Debug for project desktop_ref ****
+make all 
+Building file: ../src/convolutional_layer.c
+Invoking: GCC C Compiler
+gcc -I/home/xavier/MSc_Project/git_v/Tiny_YOLO_v3_ZYNQ/sw/desktop_ref/include -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/convolutional_layer.d" -MT"src/convolutional_layer.o" -o "src/convolutional_layer.o" "../src/convolutional_layer.c"
+Finished building: ../src/convolutional_layer.c
+ 
+Building target: desktop_ref
+Invoking: GCC C Linker
+gcc  -o "desktop_ref"  ./src/activations.o ./src/batchnorm_layer.o ./src/blas.o ./src/box.o ./src/convolutional_layer.o ./src/gemm.o ./src/helloworld.o ./src/im2col.o ./src/image.o ./src/maxpool_layer.o ./src/network.o ./src/parser.o ./src/route_layer.o ./src/upsample_layer.o ./src/utils.o ./src/yolo_layer.o   -lm
+Finished building target: desktop_ref
+ 

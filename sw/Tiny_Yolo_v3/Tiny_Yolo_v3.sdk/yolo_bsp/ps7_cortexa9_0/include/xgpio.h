@@ -1,6 +1,6 @@
 /******************************************************************************
 *
-* Copyright (C) 2002 - 2015 Xilinx, Inc.  All rights reserved.
+* Copyright (C) 2002 - 2019 Xilinx, Inc.  All rights reserved.
 *
 * Permission is hereby granted, free of charge, to any person obtaining a copy
 * of this software and associated documentation files (the "Software"), to deal
@@ -11,10 +11,6 @@
 *
 * The above copyright notice and this permission notice shall be included in
 * all copies or substantial portions of the Software.
-*
-* Use of the Software is limited solely to applications:
-* (a) running on a Xilinx device, or
-* (b) that interact with a Xilinx device through a bus or interconnect.
 *
 * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
@@ -32,7 +28,7 @@
 /*****************************************************************************/
 /**
 * @file xgpio.h
-* @addtogroup gpio_v4_2
+* @addtogroup gpio_v4_4
 * @{
 * @details
 *
@@ -117,6 +113,7 @@
 *                     for CR-965028.
 *       ms   03/17/17 Added readme.txt file in examples folder for doxygen
 *                     generation.
+* 4.4   sne  04/25/19 Updated Makefile for IAR compier (CR-1029421).
 *
 * </pre>
 *****************************************************************************/

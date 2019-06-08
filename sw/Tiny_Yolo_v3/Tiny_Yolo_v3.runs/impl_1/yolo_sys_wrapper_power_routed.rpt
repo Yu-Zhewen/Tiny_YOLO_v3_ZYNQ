@@ -1,8 +1,8 @@
-Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-| Tool Version     : Vivado v.2017.4 (lin64) Build 2086221 Fri Dec 15 20:54:30 MST 2017
-| Date             : Sat Mar  2 13:29:14 2019
-| Host             : Lenovo-XiaoXin-CHAO7000 running 64-bit Ubuntu 16.04.5 LTS
+| Tool Version     : Vivado v.2019.1 (lin64) Build 2552052 Fri May 24 14:47:09 MDT 2019
+| Date             : Sat Jun  8 10:35:59 2019
+| Host             : Lenovo-XiaoXin-CHAO7000 running 64-bit Ubuntu 16.04.6 LTS
 | Command          : report_power -file yolo_sys_wrapper_power_routed.rpt -pb yolo_sys_wrapper_power_summary_routed.pb -rpx yolo_sys_wrapper_power_routed.rpx
 | Design           : yolo_sys_wrapper
 | Device           : xc7z020clg484-1
@@ -52,14 +52,14 @@ Table of Contents
 +-------------------------+-----------+----------+-----------+-----------------+
 | On-Chip                 | Power (W) | Used     | Available | Utilization (%) |
 +-------------------------+-----------+----------+-----------+-----------------+
-| Clocks                  |     0.003 |        3 |       --- |             --- |
-| Slice Logic             |    <0.001 |     1367 |       --- |             --- |
-|   LUT as Logic          |    <0.001 |      366 |     53200 |            0.69 |
-|   Register              |    <0.001 |      606 |    106400 |            0.57 |
+| Clocks                  |     0.002 |        3 |       --- |             --- |
+| Slice Logic             |     0.001 |     1337 |       --- |             --- |
+|   LUT as Logic          |     0.001 |      368 |     53200 |            0.69 |
+|   Register              |    <0.001 |      573 |    106400 |            0.54 |
 |   CARRY4                |    <0.001 |       18 |     13300 |            0.14 |
 |   LUT as Shift Register |    <0.001 |       60 |     17400 |            0.34 |
-|   Others                |     0.000 |      191 |       --- |             --- |
-| Signals                 |     0.002 |     1009 |       --- |             --- |
+|   Others                |     0.000 |      189 |       --- |             --- |
+| Signals                 |     0.002 |      957 |       --- |             --- |
 | I/O                     |    <0.001 |        8 |       200 |            4.00 |
 | PS7                     |     1.529 |        1 |       --- |             --- |
 | Static Power            |     0.144 |          |           |                 |
@@ -73,7 +73,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.021 |       0.006 |      0.015 |
+| Vccint    |       1.000 |     0.020 |       0.006 |      0.015 |
 | Vccaux    |       1.800 |     0.015 |       0.000 |      0.015 |
 | Vcco33    |       3.300 |     0.001 |       0.000 |      0.001 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
@@ -146,52 +146,15 @@ Table of Contents
 3.1 By Hierarchy
 ----------------
 
-+--------------------------------------------------+-----------+
-| Name                                             | Power (W) |
-+--------------------------------------------------+-----------+
-| yolo_sys_wrapper                                 |     1.535 |
-|   yolo_sys_i                                     |     1.535 |
-|     axi_gpio_0                                   |    <0.001 |
-|       U0                                         |    <0.001 |
-|         AXI_LITE_IPIF_I                          |    <0.001 |
-|           I_SLAVE_ATTACHMENT                     |    <0.001 |
-|             I_DECODER                            |    <0.001 |
-|         gpio_core_1                              |    <0.001 |
-|     processing_system7_0                         |     1.530 |
-|       inst                                       |     1.530 |
-|     ps7_0_axi_periph                             |     0.004 |
-|       s00_couplers                               |     0.004 |
-|         auto_pc                                  |     0.004 |
-|           inst                                   |     0.004 |
-|             gen_axilite.gen_b2s_conv.axilite_b2s |     0.004 |
-|               RD.ar_channel_0                    |    <0.001 |
-|                 ar_cmd_fsm_0                     |    <0.001 |
-|                 cmd_translator_0                 |    <0.001 |
-|                   incr_cmd_0                     |    <0.001 |
-|                   wrap_cmd_0                     |    <0.001 |
-|               RD.r_channel_0                     |     0.001 |
-|                 rd_data_fifo_0                   |    <0.001 |
-|                 transaction_fifo_0               |    <0.001 |
-|               SI_REG                             |     0.001 |
-|                 ar.ar_pipe                       |    <0.001 |
-|                 aw.aw_pipe                       |    <0.001 |
-|                 b.b_pipe                         |    <0.001 |
-|                 r.r_pipe                         |    <0.001 |
-|               WR.aw_channel_0                    |    <0.001 |
-|                 aw_cmd_fsm_0                     |    <0.001 |
-|                 cmd_translator_0                 |    <0.001 |
-|                   incr_cmd_0                     |    <0.001 |
-|                   wrap_cmd_0                     |    <0.001 |
-|               WR.b_channel_0                     |    <0.001 |
-|                 bid_fifo_0                       |    <0.001 |
-|                 bresp_fifo_0                     |    <0.001 |
-|     rst_ps7_0_100M                               |    <0.001 |
-|       U0                                         |    <0.001 |
-|         EXT_LPF                                  |    <0.001 |
-|           ACTIVE_LOW_AUX.ACT_LO_AUX              |    <0.001 |
-|           ACTIVE_LOW_EXT.ACT_LO_EXT              |    <0.001 |
-|         SEQ                                      |    <0.001 |
-|           SEQ_COUNTER                            |    <0.001 |
-+--------------------------------------------------+-----------+
++--------------------------+-----------+
+| Name                     | Power (W) |
++--------------------------+-----------+
+| yolo_sys_wrapper         |     1.535 |
+|   yolo_sys_i             |     1.535 |
+|     processing_system7_0 |     1.529 |
+|       inst               |     1.529 |
+|     ps7_0_axi_periph     |     0.004 |
+|       s00_couplers       |     0.004 |
++--------------------------+-----------+
 
 

@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Rename resource &apos;yolo/src/parse.c&apos; to &apos;parser.c&apos;" description="Rename resource &apos;parse.c&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/parse.c" name="parser.c" stamp="1552160399978" updateReferences="true"/>
-</session>

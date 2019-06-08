@@ -2,7 +2,7 @@
 
 rem  Vivado (TM)
 rem  runme.bat: a Vivado-generated Script
-rem  Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+rem  Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 
 
 set HD_SDIR=%~dp0

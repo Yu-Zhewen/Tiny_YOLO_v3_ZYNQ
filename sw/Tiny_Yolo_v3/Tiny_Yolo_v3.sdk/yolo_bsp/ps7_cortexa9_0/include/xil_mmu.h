@@ -1,6 +1,6 @@
 /******************************************************************************
 *
-* Copyright (C) 2012 - 2015 Xilinx, Inc.  All rights reserved.
+* Copyright (C) 2012 - 2018 Xilinx, Inc.  All rights reserved.
 *
 * Permission is hereby granted, free of charge, to any person obtaining a copy
 * of this software and associated documentation files (the "Software"), to deal
@@ -11,10 +11,6 @@
 *
 * The above copyright notice and this permission notice shall be included in
 * all copies or substantial portions of the Software.
-*
-* Use of the Software is limited solely to applications:
-* (a) running on a Xilinx device, or
-* (b) that interact with a Xilinx device through a bus or interconnect.
 *
 * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
@@ -49,6 +45,7 @@
 * 4.2	pkp	 07/21/14 Included xil_types.h file which contains definition for
 *					  u32 which resolves issue of CR#805869
 * 5.4	pkp	 23/11/15 Added attribute definitions for Xil_SetTlbAttributes API
+* 6.8   aru  09/06/18 Removed compilation warnings for ARMCC toolchain.
 * </pre>
 *
 *
@@ -97,6 +94,7 @@ extern "C" {
 void Xil_SetTlbAttributes(INTPTR Addr, u32 attrib);
 void Xil_EnableMMU(void);
 void Xil_DisableMMU(void);
+void* Xil_MemMap(UINTPTR PhysAddr, size_t size, u32 flags);
 
 #ifdef __cplusplus
 }
