@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'window_macc'" level="0">
-<item name = "Date">Fri Jun  7 09:43:26 2019
+<item name = "Date">Sun Jun  9 10:21:29 2019
 </item>
 <item name = "Version">2019.1 (Build 2552052 on Fri May 24 15:28:33 MDT 2019)</item>
 <item name = "Project">yolo_conv_2019</item>
@@ -129,14 +129,14 @@
 </item>
 <item name = "Expression"><table name="" hasTotal="1">
 <keys size="7">Variable Name, Operation, DSP48E, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
-<column name="add_ln151_1_fu_2359_p2">+, 0, 0, 15, 9, 2</column>
-<column name="add_ln151_2_fu_2539_p2">+, 0, 0, 15, 9, 2</column>
-<column name="add_ln151_3_fu_2334_p2">+, 0, 0, 15, 9, 3</column>
-<column name="add_ln151_4_fu_2491_p2">+, 0, 0, 15, 9, 3</column>
-<column name="add_ln151_5_fu_2652_p2">+, 0, 0, 15, 9, 3</column>
-<column name="add_ln151_6_fu_2515_p2">+, 0, 0, 15, 9, 3</column>
-<column name="add_ln151_7_fu_2676_p2">+, 0, 0, 15, 9, 4</column>
-<column name="add_ln151_fu_2389_p2">+, 0, 0, 15, 9, 1</column>
+<column name="add_ln175_1_fu_2359_p2">+, 0, 0, 15, 9, 2</column>
+<column name="add_ln175_2_fu_2539_p2">+, 0, 0, 15, 9, 2</column>
+<column name="add_ln175_3_fu_2334_p2">+, 0, 0, 15, 9, 3</column>
+<column name="add_ln175_4_fu_2491_p2">+, 0, 0, 15, 9, 3</column>
+<column name="add_ln175_5_fu_2652_p2">+, 0, 0, 15, 9, 3</column>
+<column name="add_ln175_6_fu_2515_p2">+, 0, 0, 15, 9, 3</column>
+<column name="add_ln175_7_fu_2676_p2">+, 0, 0, 15, 9, 4</column>
+<column name="add_ln175_fu_2389_p2">+, 0, 0, 15, 9, 1</column>
 <column name="ap_block_pp0_stage0_11001">and, 0, 0, 2, 1, 1</column>
 <column name="ap_condition_1569">and, 0, 0, 2, 1, 1</column>
 <column name="ap_condition_1643">and, 0, 0, 2, 1, 1</column>
@@ -466,15 +466,15 @@
 <column name="ap_phi_reg_pp0_iter9_UnifiedRetVal_i49_reg_2018">32, 0, 32, 0</column>
 <column name="ap_phi_reg_pp0_iter9_UnifiedRetVal_i99_reg_1980">32, 0, 32, 0</column>
 <column name="ap_phi_reg_pp0_iter9_UnifiedRetVal_i_reg_1904">32, 0, 32, 0</column>
-<column name="sext_ln151_1_reg_2905">9, 0, 9, 0</column>
-<column name="sext_ln151_2_reg_2891">9, 0, 9, 0</column>
-<column name="sext_ln151_3_reg_3436">9, 0, 9, 0</column>
-<column name="sext_ln151_4_reg_2887">9, 0, 9, 0</column>
-<column name="sext_ln151_5_reg_3428">9, 0, 9, 0</column>
-<column name="sext_ln151_6_reg_4130">9, 0, 9, 0</column>
-<column name="sext_ln151_7_reg_3432">9, 0, 9, 0</column>
-<column name="sext_ln151_8_reg_4134">9, 0, 9, 0</column>
-<column name="sext_ln151_reg_2914">9, 0, 9, 0</column>
+<column name="sext_ln175_1_reg_2905">9, 0, 9, 0</column>
+<column name="sext_ln175_2_reg_2891">9, 0, 9, 0</column>
+<column name="sext_ln175_3_reg_3436">9, 0, 9, 0</column>
+<column name="sext_ln175_4_reg_2887">9, 0, 9, 0</column>
+<column name="sext_ln175_5_reg_3428">9, 0, 9, 0</column>
+<column name="sext_ln175_6_reg_4130">9, 0, 9, 0</column>
+<column name="sext_ln175_7_reg_3432">9, 0, 9, 0</column>
+<column name="sext_ln175_8_reg_4134">9, 0, 9, 0</column>
+<column name="sext_ln175_reg_2914">9, 0, 9, 0</column>
 <column name="sum_010_1_reg_3785">32, 0, 32, 0</column>
 <column name="sum_010_2_reg_4148">32, 0, 32, 0</column>
 <column name="sum_113_1_reg_4483">32, 0, 32, 0</column>
@@ -483,14 +483,14 @@
 <column name="sum_2_1_reg_4508">32, 0, 32, 0</column>
 <column name="sum_2_reg_4503">32, 0, 32, 0</column>
 <column name="sum_s_reg_3615">32, 0, 32, 0</column>
-<column name="tmp_67_reg_2900">6, 0, 6, 0</column>
-<column name="tmp_68_reg_2882">6, 0, 6, 0</column>
-<column name="tmp_69_reg_3423">6, 0, 6, 0</column>
-<column name="tmp_70_reg_2872">6, 0, 6, 0</column>
-<column name="tmp_71_reg_3403">6, 0, 6, 0</column>
-<column name="tmp_72_reg_4115">6, 0, 6, 0</column>
-<column name="tmp_73_reg_3413">6, 0, 6, 0</column>
-<column name="tmp_74_reg_4125">6, 0, 6, 0</column>
+<column name="tmp_87_reg_2900">6, 0, 6, 0</column>
+<column name="tmp_88_reg_2882">6, 0, 6, 0</column>
+<column name="tmp_89_reg_3423">6, 0, 6, 0</column>
+<column name="tmp_90_reg_2872">6, 0, 6, 0</column>
+<column name="tmp_91_reg_3403">6, 0, 6, 0</column>
+<column name="tmp_92_reg_4115">6, 0, 6, 0</column>
+<column name="tmp_93_reg_3413">6, 0, 6, 0</column>
+<column name="tmp_94_reg_4125">6, 0, 6, 0</column>
 <column name="tmp_reg_2909">6, 0, 6, 0</column>
 <column name="val_1_0_1_reg_3620">32, 0, 32, 0</column>
 <column name="val_1_0_2_reg_3610">32, 0, 32, 0</column>
@@ -511,14 +511,14 @@
 <column name="window_2_0_val_rea_1_reg_2832">32, 0, 32, 0</column>
 <column name="window_2_1_val_rea_1_reg_2827">32, 0, 32, 0</column>
 <column name="window_2_2_val_rea_1_reg_2822">32, 0, 32, 0</column>
-<column name="sext_ln151_1_reg_2905">64, 32, 9, 0</column>
-<column name="sext_ln151_2_reg_2891">64, 32, 9, 0</column>
-<column name="sext_ln151_3_reg_3436">64, 32, 9, 0</column>
-<column name="sext_ln151_4_reg_2887">64, 32, 9, 0</column>
-<column name="sext_ln151_5_reg_3428">64, 32, 9, 0</column>
-<column name="sext_ln151_6_reg_4130">64, 32, 9, 0</column>
-<column name="sext_ln151_7_reg_3432">64, 32, 9, 0</column>
-<column name="sext_ln151_8_reg_4134">64, 32, 9, 0</column>
+<column name="sext_ln175_1_reg_2905">64, 32, 9, 0</column>
+<column name="sext_ln175_2_reg_2891">64, 32, 9, 0</column>
+<column name="sext_ln175_3_reg_3436">64, 32, 9, 0</column>
+<column name="sext_ln175_4_reg_2887">64, 32, 9, 0</column>
+<column name="sext_ln175_5_reg_3428">64, 32, 9, 0</column>
+<column name="sext_ln175_6_reg_4130">64, 32, 9, 0</column>
+<column name="sext_ln175_7_reg_3432">64, 32, 9, 0</column>
+<column name="sext_ln175_8_reg_4134">64, 32, 9, 0</column>
 <column name="val_1_0_2_reg_3610">64, 32, 32, 0</column>
 <column name="val_1_1_1_reg_3525">64, 32, 32, 0</column>
 <column name="val_1_1_2_reg_4138">64, 32, 32, 0</column>

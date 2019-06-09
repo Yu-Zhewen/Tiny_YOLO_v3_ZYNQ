@@ -2,39 +2,39 @@
 <Messages>
 	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_631" tag="SCHEDULE" content="Option &apos;relax_ii_for_timing&apos; is enabled, will increase II to preserve clock frequency constraints."/>
 	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1312" tag="" content="Analyzing design file &apos;yolo_conv_2019/src/yolo_conv.cpp&apos; ..."/>
-	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_965" tag="" content="Finished Linking Time (s): cpu = 00:01:04 ; elapsed = 00:01:06 . Memory (MB): peak = 892.023 ; gain = 192.000 ; free physical = 861 ; free virtual = 12435"/>
-	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_965" tag="" content="Finished Checking Pragmas Time (s): cpu = 00:01:04 ; elapsed = 00:01:06 . Memory (MB): peak = 892.023 ; gain = 192.000 ; free physical = 861 ; free virtual = 12435"/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_965" tag="" content="Finished Linking Time (s): cpu = 00:01:02 ; elapsed = 00:01:04 . Memory (MB): peak = 892.023 ; gain = 192.000 ; free physical = 820 ; free virtual = 10690"/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_965" tag="" content="Finished Checking Pragmas Time (s): cpu = 00:01:02 ; elapsed = 00:01:04 . Memory (MB): peak = 892.023 ; gain = 192.000 ; free physical = 820 ; free virtual = 10690"/>
 	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1467" tag="" content="Starting code transformations ..."/>
 	<Message severity="INFO" prefix="[XFORM 203-603]" key="XFORM_INLINE_STATUS_221" tag="" content="Inlining function &apos;hls::LineBuffer&lt;3, 418, float, 0&gt;::shift_pixels_up&apos; into &apos;hls::LineBuffer&lt;3, 418, float, 0&gt;::shift_up&apos; (/opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot/hls/hls_video_mem.h:863)."/>
-	<Message severity="INFO" prefix="[XFORM 203-603]" key="XFORM_INLINE_STATUS_221" tag="" content="Inlining function &apos;hls::LineBuffer&lt;3, 418, float, 0&gt;::shift_up&apos; into &apos;yolo_line_buffer&apos; (yolo_conv_2019/src/yolo_conv.cpp:106)."/>
+	<Message severity="INFO" prefix="[XFORM 203-603]" key="XFORM_INLINE_STATUS_221" tag="" content="Inlining function &apos;hls::LineBuffer&lt;3, 418, float, 0&gt;::shift_up&apos; into &apos;yolo_line_buffer&apos; (yolo_conv_2019/src/yolo_conv.cpp:130)."/>
 	<Message severity="INFO" prefix="[XFORM 203-603]" key="XFORM_INLINE_STATUS_221" tag="" content="Inlining function &apos;hls::LineBuffer&lt;3, 418, float, 0&gt;::insert_bottom_row&apos; into &apos;hls::LineBuffer&lt;3, 418, float, 0&gt;::insert_top&apos; (/opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot/hls/hls_video_mem.h:883)."/>
-	<Message severity="INFO" prefix="[XFORM 203-603]" key="XFORM_INLINE_STATUS_221" tag="" content="Inlining function &apos;hls::LineBuffer&lt;3, 418, float, 0&gt;::insert_top&apos; into &apos;yolo_line_buffer&apos; (yolo_conv_2019/src/yolo_conv.cpp:107)."/>
-	<Message severity="INFO" prefix="[XFORM 203-603]" key="XFORM_INLINE_STATUS_221" tag="" content="Inlining function &apos;hls::LineBuffer&lt;3, 418, float, 0&gt;::getval&apos; into &apos;slide_window&apos; (yolo_conv_2019/src/yolo_conv.cpp:119)."/>
+	<Message severity="INFO" prefix="[XFORM 203-603]" key="XFORM_INLINE_STATUS_221" tag="" content="Inlining function &apos;hls::LineBuffer&lt;3, 418, float, 0&gt;::insert_top&apos; into &apos;yolo_line_buffer&apos; (yolo_conv_2019/src/yolo_conv.cpp:131)."/>
+	<Message severity="INFO" prefix="[XFORM 203-603]" key="XFORM_INLINE_STATUS_221" tag="" content="Inlining function &apos;hls::LineBuffer&lt;3, 418, float, 0&gt;::getval&apos; into &apos;slide_window&apos; (yolo_conv_2019/src/yolo_conv.cpp:143)."/>
 	<Message severity="INFO" prefix="[XFORM 203-603]" key="XFORM_INLINE_STATUS_221" tag="" content="Inlining function &apos;hls::Window&lt;3, 3, float&gt;::insert_pixel&apos; into &apos;hls::Window&lt;3, 3, float&gt;::insert&apos; (/opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot/hls/hls_video_mem.h:573)."/>
-	<Message severity="INFO" prefix="[XFORM 203-603]" key="XFORM_INLINE_STATUS_221" tag="" content="Inlining function &apos;hls::Window&lt;3, 3, float&gt;::insert&apos; into &apos;fork_window&apos; (yolo_conv_2019/src/yolo_conv.cpp:137)."/>
-	<Message severity="INFO" prefix="[XFORM 203-603]" key="XFORM_INLINE_STATUS_221" tag="" content="Inlining function &apos;hls::Window&lt;3, 3, float&gt;::insert&apos; into &apos;slide_window&apos; (yolo_conv_2019/src/yolo_conv.cpp:120)."/>
-	<Message severity="INFO" prefix="[XFORM 203-603]" key="XFORM_INLINE_STATUS_221" tag="" content="Inlining function &apos;hls::Window&lt;3, 3, float&gt;::getval&apos; into &apos;window_macc&apos; (yolo_conv_2019/src/yolo_conv.cpp:150)."/>
-	<Message severity="INFO" prefix="[XFORM 203-603]" key="XFORM_INLINE_STATUS_221" tag="" content="Inlining function &apos;hls::Window&lt;3, 3, float&gt;::getval&apos; into &apos;fork_window&apos; (yolo_conv_2019/src/yolo_conv.cpp:133)."/>
-	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_965" tag="" content="Finished Standard Transforms Time (s): cpu = 00:01:06 ; elapsed = 00:01:08 . Memory (MB): peak = 892.023 ; gain = 192.000 ; free physical = 811 ; free virtual = 12394"/>
+	<Message severity="INFO" prefix="[XFORM 203-603]" key="XFORM_INLINE_STATUS_221" tag="" content="Inlining function &apos;hls::Window&lt;3, 3, float&gt;::insert&apos; into &apos;fork_window&apos; (yolo_conv_2019/src/yolo_conv.cpp:161)."/>
+	<Message severity="INFO" prefix="[XFORM 203-603]" key="XFORM_INLINE_STATUS_221" tag="" content="Inlining function &apos;hls::Window&lt;3, 3, float&gt;::insert&apos; into &apos;slide_window&apos; (yolo_conv_2019/src/yolo_conv.cpp:144)."/>
+	<Message severity="INFO" prefix="[XFORM 203-603]" key="XFORM_INLINE_STATUS_221" tag="" content="Inlining function &apos;hls::Window&lt;3, 3, float&gt;::getval&apos; into &apos;window_macc&apos; (yolo_conv_2019/src/yolo_conv.cpp:174)."/>
+	<Message severity="INFO" prefix="[XFORM 203-603]" key="XFORM_INLINE_STATUS_221" tag="" content="Inlining function &apos;hls::Window&lt;3, 3, float&gt;::getval&apos; into &apos;fork_window&apos; (yolo_conv_2019/src/yolo_conv.cpp:157)."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_965" tag="" content="Finished Standard Transforms Time (s): cpu = 00:01:04 ; elapsed = 00:01:06 . Memory (MB): peak = 892.023 ; gain = 192.000 ; free physical = 770 ; free virtual = 10649"/>
 	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1472" tag="" content="Checking synthesizability ..."/>
-	<Message severity="INFO" prefix="[XFORM 203-602]" key="XFORM_AUTO_INLINE_STATUS_223" tag="" content="Inlining function &apos;yolo_line_buffer&apos; into &apos;yolo_conv_top&apos; (yolo_conv_2019/src/yolo_conv.cpp:39) automatically."/>
-	<Message severity="INFO" prefix="[XFORM 203-602]" key="XFORM_AUTO_INLINE_STATUS_223" tag="" content="Inlining function &apos;write_output&apos; into &apos;yolo_conv_top&apos; (yolo_conv_2019/src/yolo_conv.cpp:57) automatically."/>
-	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_965" tag="" content="Finished Checking Synthesizability Time (s): cpu = 00:01:07 ; elapsed = 00:01:09 . Memory (MB): peak = 894.055 ; gain = 194.031 ; free physical = 769 ; free virtual = 12356"/>
-	<Message severity="INFO" prefix="[XFORM 203-502]" key="XFORM_AUTO_UNROLL_STATUS_246" tag="" content="Unrolling all sub-loops inside loop &apos;Loop-3.1.1&apos; (yolo_conv_2019/src/yolo_conv.cpp:24) in function &apos;yolo_conv_top&apos; for pipelining."/>
-	<Message severity="INFO" prefix="[XFORM 203-502]" key="XFORM_AUTO_UNROLL_STATUS_250" tag="" content="Unrolling all loops for pipelining in function &apos;out_stream_merge&apos; (yolo_conv_2019/src/yolo_conv.cpp:163)."/>
-	<Message severity="INFO" prefix="[XFORM 203-502]" key="XFORM_AUTO_UNROLL_STATUS_250" tag="" content="Unrolling all loops for pipelining in function &apos;fork_window&apos; (yolo_conv_2019/src/yolo_conv.cpp:127)."/>
-	<Message severity="INFO" prefix="[XFORM 203-502]" key="XFORM_AUTO_UNROLL_STATUS_250" tag="" content="Unrolling all loops for pipelining in function &apos;window_macc&apos; (yolo_conv_2019/src/yolo_conv.cpp:143)."/>
-	<Message severity="INFO" prefix="[XFORM 203-502]" key="XFORM_AUTO_UNROLL_STATUS_250" tag="" content="Unrolling all loops for pipelining in function &apos;slide_window&apos; (yolo_conv_2019/src/yolo_conv.cpp:111)."/>
-	<Message severity="INFO" prefix="[XFORM 203-502]" key="XFORM_AUTO_UNROLL_STATUS_250" tag="" content="Unrolling all loops for pipelining in function &apos;yolo_line_buffer&apos; (yolo_conv_2019/src/yolo_conv.cpp:103)."/>
-	<Message severity="INFO" prefix="[HLS 200-489]" key="HLS 200-489" tag="" content="Unrolling loop &apos;Loop-3.1.1.1&apos; (yolo_conv_2019/src/yolo_conv.cpp:47) in function &apos;yolo_conv_top&apos; completely with a factor of 16."/>
-	<Message severity="INFO" prefix="[HLS 200-489]" key="HLS 200-489" tag="" content="Unrolling loop &apos;Loop-1&apos; (yolo_conv_2019/src/yolo_conv.cpp:166) in function &apos;out_stream_merge&apos; completely with a factor of 6."/>
-	<Message severity="INFO" prefix="[HLS 200-489]" key="HLS 200-489" tag="" content="Unrolling loop &apos;Loop-1&apos; (yolo_conv_2019/src/yolo_conv.cpp:129) in function &apos;fork_window&apos; completely with a factor of 3."/>
-	<Message severity="INFO" prefix="[HLS 200-489]" key="HLS 200-489" tag="" content="Unrolling loop &apos;Loop-1.1&apos; (yolo_conv_2019/src/yolo_conv.cpp:131) in function &apos;fork_window&apos; completely with a factor of 3."/>
-	<Message severity="INFO" prefix="[HLS 200-489]" key="HLS 200-489" tag="" content="Unrolling loop &apos;Loop-1.1.1&apos; (yolo_conv_2019/src/yolo_conv.cpp:135) in function &apos;fork_window&apos; completely with a factor of 16."/>
-	<Message severity="INFO" prefix="[HLS 200-489]" key="HLS 200-489" tag="" content="Unrolling loop &apos;Loop-1&apos; (yolo_conv_2019/src/yolo_conv.cpp:146) in function &apos;window_macc&apos; completely with a factor of 3."/>
-	<Message severity="INFO" prefix="[HLS 200-489]" key="HLS 200-489" tag="" content="Unrolling loop &apos;Loop-1.1&apos; (yolo_conv_2019/src/yolo_conv.cpp:148) in function &apos;window_macc&apos; completely with a factor of 3."/>
-	<Message severity="INFO" prefix="[HLS 200-489]" key="HLS 200-489" tag="" content="Unrolling loop &apos;Loop-1&apos; (yolo_conv_2019/src/yolo_conv.cpp:115) in function &apos;slide_window&apos; completely with a factor of 3."/>
-	<Message severity="INFO" prefix="[HLS 200-489]" key="HLS 200-489" tag="" content="Unrolling loop &apos;Loop-1.1&apos; (yolo_conv_2019/src/yolo_conv.cpp:117) in function &apos;slide_window&apos; completely with a factor of 3."/>
+	<Message severity="INFO" prefix="[XFORM 203-602]" key="XFORM_AUTO_INLINE_STATUS_223" tag="" content="Inlining function &apos;yolo_line_buffer&apos; into &apos;yolo_conv_top&apos; (yolo_conv_2019/src/yolo_conv.cpp:46) automatically."/>
+	<Message severity="INFO" prefix="[XFORM 203-602]" key="XFORM_AUTO_INLINE_STATUS_223" tag="" content="Inlining function &apos;write_output&apos; into &apos;yolo_conv_top&apos; (yolo_conv_2019/src/yolo_conv.cpp:79) automatically."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_965" tag="" content="Finished Checking Synthesizability Time (s): cpu = 00:01:05 ; elapsed = 00:01:07 . Memory (MB): peak = 894.059 ; gain = 194.035 ; free physical = 728 ; free virtual = 10611"/>
+	<Message severity="INFO" prefix="[XFORM 203-502]" key="XFORM_AUTO_UNROLL_STATUS_246" tag="" content="Unrolling all sub-loops inside loop &apos;Loop-3.1.1&apos; (yolo_conv_2019/src/yolo_conv.cpp:29) in function &apos;yolo_conv_top&apos; for pipelining."/>
+	<Message severity="INFO" prefix="[XFORM 203-502]" key="XFORM_AUTO_UNROLL_STATUS_250" tag="" content="Unrolling all loops for pipelining in function &apos;out_stream_merge&apos; (yolo_conv_2019/src/yolo_conv.cpp:187)."/>
+	<Message severity="INFO" prefix="[XFORM 203-502]" key="XFORM_AUTO_UNROLL_STATUS_250" tag="" content="Unrolling all loops for pipelining in function &apos;fork_window&apos; (yolo_conv_2019/src/yolo_conv.cpp:151)."/>
+	<Message severity="INFO" prefix="[XFORM 203-502]" key="XFORM_AUTO_UNROLL_STATUS_250" tag="" content="Unrolling all loops for pipelining in function &apos;window_macc&apos; (yolo_conv_2019/src/yolo_conv.cpp:167)."/>
+	<Message severity="INFO" prefix="[XFORM 203-502]" key="XFORM_AUTO_UNROLL_STATUS_250" tag="" content="Unrolling all loops for pipelining in function &apos;slide_window&apos; (yolo_conv_2019/src/yolo_conv.cpp:135)."/>
+	<Message severity="INFO" prefix="[XFORM 203-502]" key="XFORM_AUTO_UNROLL_STATUS_250" tag="" content="Unrolling all loops for pipelining in function &apos;yolo_line_buffer&apos; (yolo_conv_2019/src/yolo_conv.cpp:127)."/>
+	<Message severity="INFO" prefix="[HLS 200-489]" key="HLS 200-489" tag="" content="Unrolling loop &apos;Loop-3.1.1.1&apos; (yolo_conv_2019/src/yolo_conv.cpp:56) in function &apos;yolo_conv_top&apos; completely with a factor of 16."/>
+	<Message severity="INFO" prefix="[HLS 200-489]" key="HLS 200-489" tag="" content="Unrolling loop &apos;Loop-1&apos; (yolo_conv_2019/src/yolo_conv.cpp:193) in function &apos;out_stream_merge&apos; completely with a factor of 6."/>
+	<Message severity="INFO" prefix="[HLS 200-489]" key="HLS 200-489" tag="" content="Unrolling loop &apos;Loop-1&apos; (yolo_conv_2019/src/yolo_conv.cpp:153) in function &apos;fork_window&apos; completely with a factor of 3."/>
+	<Message severity="INFO" prefix="[HLS 200-489]" key="HLS 200-489" tag="" content="Unrolling loop &apos;Loop-1.1&apos; (yolo_conv_2019/src/yolo_conv.cpp:155) in function &apos;fork_window&apos; completely with a factor of 3."/>
+	<Message severity="INFO" prefix="[HLS 200-489]" key="HLS 200-489" tag="" content="Unrolling loop &apos;Loop-1.1.1&apos; (yolo_conv_2019/src/yolo_conv.cpp:159) in function &apos;fork_window&apos; completely with a factor of 16."/>
+	<Message severity="INFO" prefix="[HLS 200-489]" key="HLS 200-489" tag="" content="Unrolling loop &apos;Loop-1&apos; (yolo_conv_2019/src/yolo_conv.cpp:170) in function &apos;window_macc&apos; completely with a factor of 3."/>
+	<Message severity="INFO" prefix="[HLS 200-489]" key="HLS 200-489" tag="" content="Unrolling loop &apos;Loop-1.1&apos; (yolo_conv_2019/src/yolo_conv.cpp:172) in function &apos;window_macc&apos; completely with a factor of 3."/>
+	<Message severity="INFO" prefix="[HLS 200-489]" key="HLS 200-489" tag="" content="Unrolling loop &apos;Loop-1&apos; (yolo_conv_2019/src/yolo_conv.cpp:139) in function &apos;slide_window&apos; completely with a factor of 3."/>
+	<Message severity="INFO" prefix="[HLS 200-489]" key="HLS 200-489" tag="" content="Unrolling loop &apos;Loop-1.1&apos; (yolo_conv_2019/src/yolo_conv.cpp:141) in function &apos;slide_window&apos; completely with a factor of 3."/>
 	<Message severity="INFO" prefix="[HLS 200-489]" key="HLS 200-489" tag="" content="Unrolling loop &apos;Loop-1&apos; (/opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot/hls/hls_video_mem.h:727) in function &apos;yolo_line_buffer&apos; completely with a factor of 2."/>
 	<Message severity="INFO" prefix="[XFORM 203-102]" key="XFORM_AUTO_PARTITION_STATUS_120" tag="" content="Partitioning array &apos;kernel_window.val.0&apos; automatically."/>
 	<Message severity="INFO" prefix="[XFORM 203-102]" key="XFORM_AUTO_PARTITION_STATUS_120" tag="" content="Partitioning array &apos;kernel_window.val.1&apos; automatically."/>
@@ -45,28 +45,46 @@
 	<Message severity="INFO" prefix="[XFORM 203-101]" key="XFORM_PARTITION_STATUS_116" tag="" content="Partitioning array &apos;line_buff_group.val&apos; (yolo_conv_2019/src/yolo_conv.cpp:13) in dimension 2 completely."/>
 	<Message severity="INFO" prefix="[XFORM 203-101]" key="XFORM_PARTITION_STATUS_116" tag="" content="Partitioning array &apos;window_group.val&apos; (yolo_conv_2019/src/yolo_conv.cpp:14) in dimension 1 completely."/>
 	<Message severity="INFO" prefix="[XFORM 203-101]" key="XFORM_PARTITION_STATUS_116" tag="" content="Partitioning array &apos;val_output&apos; (yolo_conv_2019/src/yolo_conv.cpp:16) in dimension 1 completely."/>
-	<Message severity="INFO" prefix="[XFORM 203-101]" key="XFORM_PARTITION_STATUS_116" tag="" content="Partitioning array &apos;kernel_window.val&apos; (yolo_conv_2019/src/yolo_conv.cpp:43) in dimension 1 completely."/>
+	<Message severity="INFO" prefix="[XFORM 203-101]" key="XFORM_PARTITION_STATUS_116" tag="" content="Partitioning array &apos;biased_output&apos; (yolo_conv_2019/src/yolo_conv.cpp:18) in dimension 1 completely."/>
+	<Message severity="INFO" prefix="[XFORM 203-101]" key="XFORM_PARTITION_STATUS_116" tag="" content="Partitioning array &apos;activated_output&apos; (yolo_conv_2019/src/yolo_conv.cpp:20) in dimension 1 completely."/>
+	<Message severity="INFO" prefix="[XFORM 203-101]" key="XFORM_PARTITION_STATUS_116" tag="" content="Partitioning array &apos;kernel_window.val&apos; (yolo_conv_2019/src/yolo_conv.cpp:51) in dimension 1 completely."/>
 	<Message severity="INFO" prefix="[XFORM 203-101]" key="XFORM_PARTITION_STATUS_116" tag="" content="Partitioning array &apos;window_group.val&apos; (yolo_conv_2019/src/yolo_conv.cpp:14) in dimension 2 completely."/>
-	<Message severity="INFO" prefix="[XFORM 203-101]" key="XFORM_PARTITION_STATUS_116" tag="" content="Partitioning array &apos;kernel_window.val&apos; (yolo_conv_2019/src/yolo_conv.cpp:43) in dimension 2 completely."/>
+	<Message severity="INFO" prefix="[XFORM 203-101]" key="XFORM_PARTITION_STATUS_116" tag="" content="Partitioning array &apos;kernel_window.val&apos; (yolo_conv_2019/src/yolo_conv.cpp:51) in dimension 2 completely."/>
 	<Message severity="INFO" prefix="[XFORM 203-101]" key="XFORM_PARTITION_STATUS_116" tag="" content="Partitioning array &apos;window_group.val&apos; (yolo_conv_2019/src/yolo_conv.cpp:14) in dimension 3 completely."/>
-	<Message severity="INFO" prefix="[XFORM 203-602]" key="XFORM_AUTO_INLINE_STATUS_223" tag="" content="Inlining function &apos;yolo_line_buffer&apos; into &apos;yolo_conv_top&apos; (yolo_conv_2019/src/yolo_conv.cpp:39) automatically."/>
-	<Message severity="INFO" prefix="[XFORM 203-602]" key="XFORM_AUTO_INLINE_STATUS_223" tag="" content="Inlining function &apos;slide_window&apos; into &apos;yolo_conv_top&apos; (yolo_conv_2019/src/yolo_conv.cpp:44) automatically."/>
-	<Message severity="INFO" prefix="[XFORM 203-602]" key="XFORM_AUTO_INLINE_STATUS_223" tag="" content="Inlining function &apos;write_output&apos; into &apos;yolo_conv_top&apos; (yolo_conv_2019/src/yolo_conv.cpp:57) automatically."/>
-	<Message severity="INFO" prefix="[XFORM 203-603]" key="XFORM_INLINE_STATUS_221" tag="" content="Inlining function &apos;aesl_mux_load.16[27 x float]P.i64.i64&apos; into &apos;window_macc&apos; (yolo_conv_2019/src/yolo_conv.cpp:151)."/>
-	<Message severity="INFO" prefix="[XFORM 203-603]" key="XFORM_INLINE_STATUS_221" tag="" content="Inlining function &apos;aesl_mux_load.16[27 x float]P.i64.i64&apos; into &apos;window_macc&apos; (yolo_conv_2019/src/yolo_conv.cpp:151)."/>
-	<Message severity="INFO" prefix="[XFORM 203-603]" key="XFORM_INLINE_STATUS_221" tag="" content="Inlining function &apos;aesl_mux_load.16[27 x float]P.i64.i64&apos; into &apos;window_macc&apos; (yolo_conv_2019/src/yolo_conv.cpp:151)."/>
-	<Message severity="INFO" prefix="[XFORM 203-603]" key="XFORM_INLINE_STATUS_221" tag="" content="Inlining function &apos;aesl_mux_load.16[27 x float]P.i64.i64&apos; into &apos;window_macc&apos; (yolo_conv_2019/src/yolo_conv.cpp:151)."/>
-	<Message severity="INFO" prefix="[XFORM 203-603]" key="XFORM_INLINE_STATUS_221" tag="" content="Inlining function &apos;aesl_mux_load.16[27 x float]P.i64.i64&apos; into &apos;window_macc&apos; (yolo_conv_2019/src/yolo_conv.cpp:151)."/>
-	<Message severity="INFO" prefix="[XFORM 203-603]" key="XFORM_INLINE_STATUS_221" tag="" content="Inlining function &apos;aesl_mux_load.16[27 x float]P.i64.i64&apos; into &apos;window_macc&apos; (yolo_conv_2019/src/yolo_conv.cpp:151)."/>
-	<Message severity="INFO" prefix="[XFORM 203-603]" key="XFORM_INLINE_STATUS_221" tag="" content="Inlining function &apos;aesl_mux_load.16[27 x float]P.i64.i64&apos; into &apos;window_macc&apos; (yolo_conv_2019/src/yolo_conv.cpp:151)."/>
-	<Message severity="INFO" prefix="[XFORM 203-603]" key="XFORM_INLINE_STATUS_221" tag="" content="Inlining function &apos;aesl_mux_load.16[27 x float]P.i64.i64&apos; into &apos;window_macc&apos; (yolo_conv_2019/src/yolo_conv.cpp:151)."/>
-	<Message severity="INFO" prefix="[XFORM 203-603]" key="XFORM_INLINE_STATUS_221" tag="" content="Inlining function &apos;aesl_mux_load.16[27 x float]P.i64.i64&apos; into &apos;window_macc&apos; (yolo_conv_2019/src/yolo_conv.cpp:151)."/>
-	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_965" tag="" content="Finished Pre-synthesis Time (s): cpu = 00:01:10 ; elapsed = 00:01:12 . Memory (MB): peak = 966.254 ; gain = 266.230 ; free physical = 702 ; free virtual = 12296"/>
-	<Message severity="INFO" prefix="[XFORM 203-541]" key="XFORM_LOOPFLAT_STATUS_218" tag="" content="Flattening a loop nest &apos;Loop-2.1&apos; (yolo_conv_2019/src/yolo_conv.cpp:22:20) in function &apos;yolo_conv_top&apos;."/>
-	<Message severity="INFO" prefix="[XFORM 203-541]" key="XFORM_LOOPFLAT_STATUS_218" tag="" content="Flattening a loop nest &apos;Loop-2&apos; (yolo_conv_2019/src/yolo_conv.cpp:20:19) in function &apos;yolo_conv_top&apos;."/>
+	<Message severity="INFO" prefix="[XFORM 203-602]" key="XFORM_AUTO_INLINE_STATUS_223" tag="" content="Inlining function &apos;yolo_line_buffer&apos; into &apos;yolo_conv_top&apos; (yolo_conv_2019/src/yolo_conv.cpp:46) automatically."/>
+	<Message severity="INFO" prefix="[XFORM 203-602]" key="XFORM_AUTO_INLINE_STATUS_223" tag="" content="Inlining function &apos;slide_window&apos; into &apos;yolo_conv_top&apos; (yolo_conv_2019/src/yolo_conv.cpp:52) automatically."/>
+	<Message severity="INFO" prefix="[XFORM 203-602]" key="XFORM_AUTO_INLINE_STATUS_223" tag="" content="Inlining function &apos;write_output&apos; into &apos;yolo_conv_top&apos; (yolo_conv_2019/src/yolo_conv.cpp:79) automatically."/>
+	<Message severity="INFO" prefix="[XFORM 203-401]" key="XFORM_IFCONV_STATUS_239" tag="" content="Performing if-conversion on hyperblock from (yolo_conv_2019/src/yolo_conv.cpp:66:8) to (yolo_conv_2019/src/yolo_conv.cpp:77:13) in function &apos;yolo_conv_top&apos;... converting 3 basic blocks."/>
+	<Message severity="INFO" prefix="[XFORM 203-401]" key="XFORM_IFCONV_STATUS_239" tag="" content="Performing if-conversion on hyperblock from (yolo_conv_2019/src/yolo_conv.cpp:66:8) to (yolo_conv_2019/src/yolo_conv.cpp:77:13) in function &apos;yolo_conv_top&apos;... converting 3 basic blocks."/>
+	<Message severity="INFO" prefix="[XFORM 203-401]" key="XFORM_IFCONV_STATUS_239" tag="" content="Performing if-conversion on hyperblock from (yolo_conv_2019/src/yolo_conv.cpp:66:8) to (yolo_conv_2019/src/yolo_conv.cpp:77:13) in function &apos;yolo_conv_top&apos;... converting 3 basic blocks."/>
+	<Message severity="INFO" prefix="[XFORM 203-401]" key="XFORM_IFCONV_STATUS_239" tag="" content="Performing if-conversion on hyperblock from (yolo_conv_2019/src/yolo_conv.cpp:66:8) to (yolo_conv_2019/src/yolo_conv.cpp:77:13) in function &apos;yolo_conv_top&apos;... converting 3 basic blocks."/>
+	<Message severity="INFO" prefix="[XFORM 203-401]" key="XFORM_IFCONV_STATUS_239" tag="" content="Performing if-conversion on hyperblock from (yolo_conv_2019/src/yolo_conv.cpp:66:8) to (yolo_conv_2019/src/yolo_conv.cpp:77:13) in function &apos;yolo_conv_top&apos;... converting 3 basic blocks."/>
+	<Message severity="INFO" prefix="[XFORM 203-401]" key="XFORM_IFCONV_STATUS_239" tag="" content="Performing if-conversion on hyperblock from (yolo_conv_2019/src/yolo_conv.cpp:66:8) to (yolo_conv_2019/src/yolo_conv.cpp:77:13) in function &apos;yolo_conv_top&apos;... converting 3 basic blocks."/>
+	<Message severity="INFO" prefix="[XFORM 203-401]" key="XFORM_IFCONV_STATUS_239" tag="" content="Performing if-conversion on hyperblock from (yolo_conv_2019/src/yolo_conv.cpp:66:8) to (yolo_conv_2019/src/yolo_conv.cpp:77:13) in function &apos;yolo_conv_top&apos;... converting 3 basic blocks."/>
+	<Message severity="INFO" prefix="[XFORM 203-401]" key="XFORM_IFCONV_STATUS_239" tag="" content="Performing if-conversion on hyperblock from (yolo_conv_2019/src/yolo_conv.cpp:66:8) to (yolo_conv_2019/src/yolo_conv.cpp:77:13) in function &apos;yolo_conv_top&apos;... converting 3 basic blocks."/>
+	<Message severity="INFO" prefix="[XFORM 203-401]" key="XFORM_IFCONV_STATUS_239" tag="" content="Performing if-conversion on hyperblock from (yolo_conv_2019/src/yolo_conv.cpp:66:8) to (yolo_conv_2019/src/yolo_conv.cpp:77:13) in function &apos;yolo_conv_top&apos;... converting 3 basic blocks."/>
+	<Message severity="INFO" prefix="[XFORM 203-401]" key="XFORM_IFCONV_STATUS_239" tag="" content="Performing if-conversion on hyperblock from (yolo_conv_2019/src/yolo_conv.cpp:66:8) to (yolo_conv_2019/src/yolo_conv.cpp:77:13) in function &apos;yolo_conv_top&apos;... converting 3 basic blocks."/>
+	<Message severity="INFO" prefix="[XFORM 203-401]" key="XFORM_IFCONV_STATUS_239" tag="" content="Performing if-conversion on hyperblock from (yolo_conv_2019/src/yolo_conv.cpp:66:8) to (yolo_conv_2019/src/yolo_conv.cpp:77:13) in function &apos;yolo_conv_top&apos;... converting 3 basic blocks."/>
+	<Message severity="INFO" prefix="[XFORM 203-401]" key="XFORM_IFCONV_STATUS_239" tag="" content="Performing if-conversion on hyperblock from (yolo_conv_2019/src/yolo_conv.cpp:66:8) to (yolo_conv_2019/src/yolo_conv.cpp:77:13) in function &apos;yolo_conv_top&apos;... converting 3 basic blocks."/>
+	<Message severity="INFO" prefix="[XFORM 203-401]" key="XFORM_IFCONV_STATUS_239" tag="" content="Performing if-conversion on hyperblock from (yolo_conv_2019/src/yolo_conv.cpp:66:8) to (yolo_conv_2019/src/yolo_conv.cpp:77:13) in function &apos;yolo_conv_top&apos;... converting 3 basic blocks."/>
+	<Message severity="INFO" prefix="[XFORM 203-401]" key="XFORM_IFCONV_STATUS_239" tag="" content="Performing if-conversion on hyperblock from (yolo_conv_2019/src/yolo_conv.cpp:66:8) to (yolo_conv_2019/src/yolo_conv.cpp:77:13) in function &apos;yolo_conv_top&apos;... converting 3 basic blocks."/>
+	<Message severity="INFO" prefix="[XFORM 203-401]" key="XFORM_IFCONV_STATUS_239" tag="" content="Performing if-conversion on hyperblock from (yolo_conv_2019/src/yolo_conv.cpp:66:8) to (yolo_conv_2019/src/yolo_conv.cpp:77:13) in function &apos;yolo_conv_top&apos;... converting 3 basic blocks."/>
+	<Message severity="INFO" prefix="[XFORM 203-401]" key="XFORM_IFCONV_STATUS_239" tag="" content="Performing if-conversion on hyperblock from (yolo_conv_2019/src/yolo_conv.cpp:66:8) to (yolo_conv_2019/src/yolo_conv.cpp:77:13) in function &apos;yolo_conv_top&apos;... converting 3 basic blocks."/>
+	<Message severity="INFO" prefix="[XFORM 203-603]" key="XFORM_INLINE_STATUS_221" tag="" content="Inlining function &apos;aesl_mux_load.16[27 x float]P.i64.i64&apos; into &apos;window_macc&apos; (yolo_conv_2019/src/yolo_conv.cpp:175)."/>
+	<Message severity="INFO" prefix="[XFORM 203-603]" key="XFORM_INLINE_STATUS_221" tag="" content="Inlining function &apos;aesl_mux_load.16[27 x float]P.i64.i64&apos; into &apos;window_macc&apos; (yolo_conv_2019/src/yolo_conv.cpp:175)."/>
+	<Message severity="INFO" prefix="[XFORM 203-603]" key="XFORM_INLINE_STATUS_221" tag="" content="Inlining function &apos;aesl_mux_load.16[27 x float]P.i64.i64&apos; into &apos;window_macc&apos; (yolo_conv_2019/src/yolo_conv.cpp:175)."/>
+	<Message severity="INFO" prefix="[XFORM 203-603]" key="XFORM_INLINE_STATUS_221" tag="" content="Inlining function &apos;aesl_mux_load.16[27 x float]P.i64.i64&apos; into &apos;window_macc&apos; (yolo_conv_2019/src/yolo_conv.cpp:175)."/>
+	<Message severity="INFO" prefix="[XFORM 203-603]" key="XFORM_INLINE_STATUS_221" tag="" content="Inlining function &apos;aesl_mux_load.16[27 x float]P.i64.i64&apos; into &apos;window_macc&apos; (yolo_conv_2019/src/yolo_conv.cpp:175)."/>
+	<Message severity="INFO" prefix="[XFORM 203-603]" key="XFORM_INLINE_STATUS_221" tag="" content="Inlining function &apos;aesl_mux_load.16[27 x float]P.i64.i64&apos; into &apos;window_macc&apos; (yolo_conv_2019/src/yolo_conv.cpp:175)."/>
+	<Message severity="INFO" prefix="[XFORM 203-603]" key="XFORM_INLINE_STATUS_221" tag="" content="Inlining function &apos;aesl_mux_load.16[27 x float]P.i64.i64&apos; into &apos;window_macc&apos; (yolo_conv_2019/src/yolo_conv.cpp:175)."/>
+	<Message severity="INFO" prefix="[XFORM 203-603]" key="XFORM_INLINE_STATUS_221" tag="" content="Inlining function &apos;aesl_mux_load.16[27 x float]P.i64.i64&apos; into &apos;window_macc&apos; (yolo_conv_2019/src/yolo_conv.cpp:175)."/>
+	<Message severity="INFO" prefix="[XFORM 203-603]" key="XFORM_INLINE_STATUS_221" tag="" content="Inlining function &apos;aesl_mux_load.16[27 x float]P.i64.i64&apos; into &apos;window_macc&apos; (yolo_conv_2019/src/yolo_conv.cpp:175)."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_965" tag="" content="Finished Pre-synthesis Time (s): cpu = 00:01:08 ; elapsed = 00:01:10 . Memory (MB): peak = 966.258 ; gain = 266.234 ; free physical = 660 ; free virtual = 10550"/>
+	<Message severity="INFO" prefix="[XFORM 203-541]" key="XFORM_LOOPFLAT_STATUS_218" tag="" content="Flattening a loop nest &apos;Loop-2.1&apos; (yolo_conv_2019/src/yolo_conv.cpp:27:20) in function &apos;yolo_conv_top&apos;."/>
+	<Message severity="INFO" prefix="[XFORM 203-541]" key="XFORM_LOOPFLAT_STATUS_218" tag="" content="Flattening a loop nest &apos;Loop-2&apos; (yolo_conv_2019/src/yolo_conv.cpp:24:19) in function &apos;yolo_conv_top&apos;."/>
 	<Message severity="WARNING" prefix="[ANALYSIS 214-52]" key="ANALYSIS_USER_SET_DEP_242" tag="" content="Found false inter dependency for variable &apos;line_buff_group.val[&apos; (yolo_conv_2019/src/yolo_conv.cpp:13)."/>
 	<Message severity="WARNING" prefix="[ANALYSIS 214-52]" key="ANALYSIS_USER_SET_DEP_242" tag="" content="Found false intra dependency for variable &apos;line_buff_group.val[&apos; (yolo_conv_2019/src/yolo_conv.cpp:13)."/>
-	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_965" tag="" content="Finished Architecture Synthesis Time (s): cpu = 00:01:11 ; elapsed = 00:01:13 . Memory (MB): peak = 966.254 ; gain = 266.230 ; free physical = 655 ; free virtual = 12251"/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_965" tag="" content="Finished Architecture Synthesis Time (s): cpu = 00:01:10 ; elapsed = 00:01:12 . Memory (MB): peak = 1036.523 ; gain = 336.500 ; free physical = 612 ; free virtual = 10504"/>
 	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1317" tag="" content="Starting hardware synthesis ..."/>
 	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1385" tag="" content="Synthesizing &apos;yolo_conv_top&apos; ..."/>
 	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1477" tag="" content="----------------------------------------------------------------"/>
@@ -76,13 +94,13 @@
 	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_46" tag="" content="Pipelining function &apos;fork_window&apos;."/>
 	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_44" tag="" content="Pipelining result : Target II = 1, Final II = 1, Depth = 1."/>
 	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_596" tag="" content="Finished scheduling."/>
-	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 73.54 seconds; current allocated memory: 269.020 MB."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 71.87 seconds; current allocated memory: 270.638 MB."/>
 	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_926" tag="" content="Starting micro-architecture generation ..."/>
 	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_698" tag="" content="Performing variable lifetime analysis."/>
 	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_697" tag="" content="Exploring resource sharing."/>
 	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_693" tag="" content="Binding ..."/>
 	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_925" tag="" content="Finished micro-architecture generation."/>
-	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.06 seconds; current allocated memory: 269.484 MB."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.06 seconds; current allocated memory: 271.103 MB."/>
 	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1477" tag="" content="----------------------------------------------------------------"/>
 	<Message severity="INFO" prefix="[HLS 200-42]" key="HLS_42_1438" tag="" content="-- Implementing module &apos;window_macc&apos;"/>
 	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1478" tag="" content="----------------------------------------------------------------"/>
@@ -90,61 +108,61 @@
 	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_46" tag="" content="Pipelining function &apos;window_macc&apos;."/>
 	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_44" tag="" content="Pipelining result : Target II = 1, Final II = 1, Depth = 63."/>
 	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_596" tag="" content="Finished scheduling."/>
-	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.62 seconds; current allocated memory: 272.397 MB."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.6 seconds; current allocated memory: 274.012 MB."/>
 	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_926" tag="" content="Starting micro-architecture generation ..."/>
 	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_698" tag="" content="Performing variable lifetime analysis."/>
 	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_697" tag="" content="Exploring resource sharing."/>
 	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_693" tag="" content="Binding ..."/>
 	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_925" tag="" content="Finished micro-architecture generation."/>
-	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.76 seconds; current allocated memory: 274.699 MB."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.76 seconds; current allocated memory: 276.313 MB."/>
 	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1477" tag="" content="----------------------------------------------------------------"/>
 	<Message severity="INFO" prefix="[HLS 200-42]" key="HLS_42_1438" tag="" content="-- Implementing module &apos;out_stream_merge&apos;"/>
 	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1478" tag="" content="----------------------------------------------------------------"/>
 	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_597" tag="" content="Starting scheduling ..."/>
 	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_46" tag="" content="Pipelining function &apos;out_stream_merge&apos;."/>
 	<Message severity="WARNING" prefix="[SCHED 204-68]" key="SCHED_CARRIED_CONSTRAINT_NOT_MET_32" tag="LOOP,SDX_LOOP,SCHEDULE" content="The II Violation in module &apos;out_stream_merge&apos; (Function: out_stream_merge): Unable to enforce a carried dependence constraint (II = 1, distance = 1, offset = 1)
-   between axis write on port &apos;outStream_V_data&apos; (yolo_conv_2019/src/yolo_conv.cpp:184) and axis write on port &apos;outStream_V_data&apos; (yolo_conv_2019/src/yolo_conv.cpp:184)."/>
+   between axis write on port &apos;outStream_V_data&apos; (yolo_conv_2019/src/yolo_conv.cpp:211) and axis write on port &apos;outStream_V_data&apos; (yolo_conv_2019/src/yolo_conv.cpp:211)."/>
 	<Message severity="WARNING" prefix="[SCHED 204-68]" key="SCHED_CARRIED_CONSTRAINT_NOT_MET_32" tag="LOOP,SDX_LOOP,SCHEDULE" content="The II Violation in module &apos;out_stream_merge&apos; (Function: out_stream_merge): Unable to enforce a carried dependence constraint (II = 2, distance = 1, offset = 1)
-   between axis write on port &apos;outStream_V_data&apos; (yolo_conv_2019/src/yolo_conv.cpp:184) and axis write on port &apos;outStream_V_data&apos; (yolo_conv_2019/src/yolo_conv.cpp:184)."/>
+   between axis write on port &apos;outStream_V_data&apos; (yolo_conv_2019/src/yolo_conv.cpp:211) and axis write on port &apos;outStream_V_data&apos; (yolo_conv_2019/src/yolo_conv.cpp:211)."/>
 	<Message severity="WARNING" prefix="[SCHED 204-68]" key="SCHED_CARRIED_CONSTRAINT_NOT_MET_32" tag="LOOP,SDX_LOOP,SCHEDULE" content="The II Violation in module &apos;out_stream_merge&apos; (Function: out_stream_merge): Unable to enforce a carried dependence constraint (II = 3, distance = 1, offset = 1)
-   between axis write on port &apos;outStream_V_data&apos; (yolo_conv_2019/src/yolo_conv.cpp:184) and axis write on port &apos;outStream_V_data&apos; (yolo_conv_2019/src/yolo_conv.cpp:184)."/>
+   between axis write on port &apos;outStream_V_data&apos; (yolo_conv_2019/src/yolo_conv.cpp:211) and axis write on port &apos;outStream_V_data&apos; (yolo_conv_2019/src/yolo_conv.cpp:211)."/>
 	<Message severity="WARNING" prefix="[SCHED 204-68]" key="SCHED_CARRIED_CONSTRAINT_NOT_MET_32" tag="LOOP,SDX_LOOP,SCHEDULE" content="The II Violation in module &apos;out_stream_merge&apos; (Function: out_stream_merge): Unable to enforce a carried dependence constraint (II = 4, distance = 1, offset = 1)
-   between axis write on port &apos;outStream_V_data&apos; (yolo_conv_2019/src/yolo_conv.cpp:184) and axis write on port &apos;outStream_V_data&apos; (yolo_conv_2019/src/yolo_conv.cpp:184)."/>
+   between axis write on port &apos;outStream_V_data&apos; (yolo_conv_2019/src/yolo_conv.cpp:211) and axis write on port &apos;outStream_V_data&apos; (yolo_conv_2019/src/yolo_conv.cpp:211)."/>
 	<Message severity="WARNING" prefix="[SCHED 204-68]" key="SCHED_CARRIED_CONSTRAINT_NOT_MET_32" tag="LOOP,SDX_LOOP,SCHEDULE" content="The II Violation in module &apos;out_stream_merge&apos; (Function: out_stream_merge): Unable to enforce a carried dependence constraint (II = 5, distance = 1, offset = 1)
-   between axis write on port &apos;outStream_V_data&apos; (yolo_conv_2019/src/yolo_conv.cpp:184) and axis write on port &apos;outStream_V_data&apos; (yolo_conv_2019/src/yolo_conv.cpp:184)."/>
+   between axis write on port &apos;outStream_V_data&apos; (yolo_conv_2019/src/yolo_conv.cpp:211) and axis write on port &apos;outStream_V_data&apos; (yolo_conv_2019/src/yolo_conv.cpp:211)."/>
 	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_44" tag="" content="Pipelining result : Target II = 1, Final II = 6, Depth = 7."/>
 	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_596" tag="" content="Finished scheduling."/>
-	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 1.87 seconds; current allocated memory: 275.527 MB."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 1.85 seconds; current allocated memory: 277.120 MB."/>
 	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_926" tag="" content="Starting micro-architecture generation ..."/>
 	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_698" tag="" content="Performing variable lifetime analysis."/>
 	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_697" tag="" content="Exploring resource sharing."/>
 	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_693" tag="" content="Binding ..."/>
 	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_925" tag="" content="Finished micro-architecture generation."/>
-	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.16 seconds; current allocated memory: 277.146 MB."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.13 seconds; current allocated memory: 278.739 MB."/>
 	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1477" tag="" content="----------------------------------------------------------------"/>
 	<Message severity="INFO" prefix="[HLS 200-42]" key="HLS_42_1438" tag="" content="-- Implementing module &apos;yolo_conv_top&apos;"/>
 	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1478" tag="" content="----------------------------------------------------------------"/>
 	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_597" tag="" content="Starting scheduling ..."/>
 	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_41" tag="" content="Pipelining loop &apos;Loop 2&apos;."/>
 	<Message severity="WARNING" prefix="[SCHED 204-68]" key="SCHED_CARRIED_CONSTRAINT_NOT_MET_32" tag="LOOP,SDX_LOOP,SCHEDULE" content="The II Violation in module &apos;yolo_conv_top&apos; (Loop: Loop 2): Unable to enforce a carried dependence constraint (II = 6, distance = 1, offset = 1)
-   between &apos;call&apos; operation (&apos;_ln75&apos;, yolo_conv_2019/src/yolo_conv.cpp:75) to &apos;out_stream_merge&apos; and fifo request on port &apos;out_stream_group[0].V&apos;, yolo_conv_2019/src/yolo_conv.cpp:10 (yolo_conv_2019/src/yolo_conv.cpp:56)."/>
+   between &apos;call&apos; operation (&apos;_ln99&apos;, yolo_conv_2019/src/yolo_conv.cpp:99) to &apos;out_stream_merge&apos; and fifo request on port &apos;out_stream_group[0].V&apos;, yolo_conv_2019/src/yolo_conv.cpp:10 (yolo_conv_2019/src/yolo_conv.cpp:77)."/>
 	<Message severity="WARNING" prefix="[SCHED 204-68]" key="SCHED_CARRIED_CONSTRAINT_NOT_MET_32" tag="LOOP,SDX_LOOP,SCHEDULE" content="The II Violation in module &apos;yolo_conv_top&apos; (Loop: Loop 2): Unable to enforce a carried dependence constraint (II = 7, distance = 1, offset = 1)
-   between &apos;call&apos; operation (&apos;_ln75&apos;, yolo_conv_2019/src/yolo_conv.cpp:75) to &apos;out_stream_merge&apos; and fifo request on port &apos;out_stream_group[0].V&apos;, yolo_conv_2019/src/yolo_conv.cpp:10 (yolo_conv_2019/src/yolo_conv.cpp:56)."/>
-	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_44" tag="" content="Pipelining result : Target II = 1, Final II = 8, Depth = 90."/>
+   between &apos;call&apos; operation (&apos;_ln99&apos;, yolo_conv_2019/src/yolo_conv.cpp:99) to &apos;out_stream_merge&apos; and fifo request on port &apos;out_stream_group[0].V&apos;, yolo_conv_2019/src/yolo_conv.cpp:10 (yolo_conv_2019/src/yolo_conv.cpp:77)."/>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_44" tag="" content="Pipelining result : Target II = 1, Final II = 8, Depth = 105."/>
 	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_596" tag="" content="Finished scheduling."/>
-	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 1.03 seconds; current allocated memory: 280.268 MB."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 1.48 seconds; current allocated memory: 282.653 MB."/>
 	<Message severity="INFO" prefix="[HLS 200-434]" key="HLS 200-434" tag="SDX" content="Only 1 loops out of a total 2 loops have been pipelined in this design."/>
 	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_926" tag="" content="Starting micro-architecture generation ..."/>
 	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_698" tag="" content="Performing variable lifetime analysis."/>
 	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_697" tag="" content="Exploring resource sharing."/>
 	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_693" tag="" content="Binding ..."/>
 	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_925" tag="" content="Finished micro-architecture generation."/>
-	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 6.64 seconds; current allocated memory: 291.921 MB."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 6.94 seconds; current allocated memory: 295.486 MB."/>
 	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1483" tag="" content="----------------------------------------------------------------"/>
 	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1484" tag="" content="-- Generating RTL for module &apos;fork_window&apos;"/>
 	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1485" tag="" content="----------------------------------------------------------------"/>
 	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_856" tag="" content="Finished creating RTL model for &apos;fork_window&apos;."/>
-	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 2.71 seconds; current allocated memory: 339.126 MB."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 3.12 seconds; current allocated memory: 342.845 MB."/>
 	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1483" tag="" content="----------------------------------------------------------------"/>
 	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1484" tag="" content="-- Generating RTL for module &apos;window_macc&apos;"/>
 	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1485" tag="" content="----------------------------------------------------------------"/>
@@ -154,12 +172,12 @@
 	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_855" tag="" content="Generating core module &apos;yolo_conv_top_mul_mul_9ns_11ns_20_1_1&apos;: 9 instance(s)."/>
 	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_855" tag="" content="Generating core module &apos;yolo_conv_top_urem_9ns_6ns_9_13_1&apos;: 9 instance(s)."/>
 	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_856" tag="" content="Finished creating RTL model for &apos;window_macc&apos;."/>
-	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.42 seconds; current allocated memory: 346.631 MB."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.42 seconds; current allocated memory: 350.355 MB."/>
 	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1483" tag="" content="----------------------------------------------------------------"/>
 	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1484" tag="" content="-- Generating RTL for module &apos;out_stream_merge&apos;"/>
 	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1485" tag="" content="----------------------------------------------------------------"/>
 	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_856" tag="" content="Finished creating RTL model for &apos;out_stream_merge&apos;."/>
-	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 1.43 seconds; current allocated memory: 357.765 MB."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 1.43 seconds; current allocated memory: 361.463 MB."/>
 	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1483" tag="" content="----------------------------------------------------------------"/>
 	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1484" tag="" content="-- Generating RTL for module &apos;yolo_conv_top&apos;"/>
 	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1485" tag="" content="----------------------------------------------------------------"/>
@@ -195,9 +213,13 @@
 	<Message severity="WARNING" prefix="[RTGEN 206-101]" key="RTGEN_101_862" tag="" content="Global array &apos;kernel_weight_14&apos; will not be exposed as RTL port."/>
 	<Message severity="WARNING" prefix="[RTGEN 206-101]" key="RTGEN_101_862" tag="" content="Global array &apos;kernel_weight_15&apos; will not be exposed as RTL port."/>
 	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_851" tag="" content="Bundling port &apos;return&apos; to AXI-Lite port AXILiteS."/>
-	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_855" tag="" content="Generating core module &apos;yolo_conv_top_fadd_32ns_32ns_32_5_full_dsp_1&apos;: 2 instance(s)."/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_855" tag="" content="Generating core module &apos;yolo_conv_top_dmul_64ns_64ns_64_6_max_dsp_1&apos;: 2 instance(s)."/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_855" tag="" content="Generating core module &apos;yolo_conv_top_fadd_32ns_32ns_32_5_full_dsp_1&apos;: 4 instance(s)."/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_855" tag="" content="Generating core module &apos;yolo_conv_top_fcmp_32ns_32ns_1_2_1&apos;: 2 instance(s)."/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_855" tag="" content="Generating core module &apos;yolo_conv_top_fpext_32ns_64_2_1&apos;: 2 instance(s)."/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_855" tag="" content="Generating core module &apos;yolo_conv_top_fptrunc_64ns_32_2_1&apos;: 2 instance(s)."/>
 	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_856" tag="" content="Finished creating RTL model for &apos;yolo_conv_top&apos;."/>
-	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 7.3 seconds; current allocated memory: 401.139 MB."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 7.07 seconds; current allocated memory: 407.183 MB."/>
 	<Message severity="INFO" prefix="[RTMG 210-282]" key="RTMG_282_1796" tag="" content="Generating pipelined core: &apos;yolo_conv_top_urem_9ns_6ns_9_13_1_div&apos;"/>
 	<Message severity="INFO" prefix="[RTMG 210-279]" key="RTMG_279_1793" tag="" content="Implementing memory &apos;window_macc_kernel_weight_0_rom&apos; using distributed ROMs."/>
 	<Message severity="INFO" prefix="[RTMG 210-279]" key="RTMG_279_1793" tag="" content="Implementing memory &apos;window_macc_kernel_weight_1_rom&apos; using distributed ROMs."/>
@@ -232,7 +254,7 @@
 	<Message severity="INFO" prefix="[RTMG 210-285]" key="RTMG_285_1799" tag="" content="Implementing FIFO &apos;out_stream_group_13_U(fifo_w32_d2_A)&apos; using Shift Registers."/>
 	<Message severity="INFO" prefix="[RTMG 210-285]" key="RTMG_285_1799" tag="" content="Implementing FIFO &apos;out_stream_group_14_U(fifo_w32_d2_A)&apos; using Shift Registers."/>
 	<Message severity="INFO" prefix="[RTMG 210-285]" key="RTMG_285_1799" tag="" content="Implementing FIFO &apos;out_stream_group_15_U(fifo_w32_d2_A)&apos; using Shift Registers."/>
-	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_965" tag="" content="Finished generating all RTL models Time (s): cpu = 00:01:34 ; elapsed = 00:01:41 . Memory (MB): peak = 1108.027 ; gain = 408.004 ; free physical = 427 ; free virtual = 12062"/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_965" tag="" content="Finished generating all RTL models Time (s): cpu = 00:01:34 ; elapsed = 00:01:42 . Memory (MB): peak = 1181.527 ; gain = 481.504 ; free physical = 369 ; free virtual = 10308"/>
 	<Message severity="INFO" prefix="[VHDL 208-304]" key="VHDL_304_1066" tag="" content="Generating VHDL RTL for yolo_conv_top."/>
 	<Message severity="INFO" prefix="[VLOG 209-307]" key="VLOG_307_1067" tag="" content="Generating Verilog RTL for yolo_conv_top."/>
 </Messages>

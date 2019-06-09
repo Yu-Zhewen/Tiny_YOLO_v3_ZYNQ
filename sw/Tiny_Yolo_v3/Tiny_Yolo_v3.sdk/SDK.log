@@ -7,3 +7,10 @@
 10:49:40 INFO  : Invoking Bootgen: bootgen -image yolo.bif -arch zynq -o /home/xavier/MSc_Project/git_v/Tiny_YOLO_v3_ZYNQ/sw/Tiny_Yolo_v3/Tiny_Yolo_v3.sdk/yolo/bootimage/BOOT.bin
 10:49:40 INFO  : Creating new bif file /home/xavier/MSc_Project/git_v/Tiny_YOLO_v3_ZYNQ/sw/Tiny_Yolo_v3/Tiny_Yolo_v3.sdk/yolo/bootimage/yolo.bif
 10:49:43 INFO  : Bootgen command execution is done.
+08:58:28 INFO  : Registering command handlers for SDK TCF services
+08:58:31 INFO  : Launching XSCT server: xsct -n -interactive /home/xavier/MSc_Project/git_v/Tiny_YOLO_v3_ZYNQ/sw/Tiny_Yolo_v3/Tiny_Yolo_v3.sdk/temp_xsdb_launch_script.tcl
+08:58:39 INFO  : XSCT server has started successfully.
+08:58:39 INFO  : Successfully done setting XSCT server connection channel  
+08:58:54 INFO  : Successfully done setting SDK workspace  
+08:58:54 INFO  : Processing command line option -hwspec /home/xavier/MSc_Project/git_v/Tiny_YOLO_v3_ZYNQ/sw/Tiny_Yolo_v3/Tiny_Yolo_v3.sdk/yolo_sys_wrapper.hdf.
+08:58:54 INFO  : Checking for hwspec changes in the project yolo_sys_wrapper_hw_platform_0.

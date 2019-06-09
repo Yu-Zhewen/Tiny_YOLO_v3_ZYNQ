@@ -20,7 +20,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='/home/xavier/MSc_Project/hls/yolo_conv_prj_2019/project_1/project_1.runs/impl_1'
+HD_PWD='/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_prj_2019/project_1/project_1.runs/impl_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

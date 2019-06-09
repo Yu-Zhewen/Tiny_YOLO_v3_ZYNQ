@@ -214,53 +214,44 @@ void forward_convolutional_layer(convolutional_layer l, network net)
 			gemm(0,1,m,n,k,1,a,k,b_t,k,1,c,n);
 
 
-//			FILE *LayerInput=fopen("layer_input.dat","w");
-//			FILE *LayerOutput=fopen("layer_output_sdk.dat","w");
-//
-//			for(int k=0;k<l.c*(l.w+2);k++)
-//			{
-//				fprintf(LayerInput,"%f\n",0.0);
-//			}
-//
-//
-//			for(int i=0;i<l.h*l.w;i++)
-//			{
-//				if(i%l.w==0)
-//				{
-//					for(int j=0;j<l.c;j++)
-//					{
-//						fprintf(LayerInput,"%f\n",0.0);
-//					}
-//				}
-//				for(int j=0;j<l.c;j++)
-//				{
-//					fprintf(LayerInput,"%f\n",im[i+j*l.h*l.w]);
-//				}
-//				if(i%l.w==l.w-1)
-//				{
-//					for(int j=0;j<l.c;j++)
-//					{
-//						fprintf(LayerInput,"%f\n",0.0);
-//					}
-//				}
-//			}
-//
-//			for(int k=0;k<l.c*(l.w+2);k++)
-//			{
-//				fprintf(LayerInput,"%f\n",0.0);
-//			}
-//
-//
-//			for(int i=0;i<l.out_h*l.out_w;i++)
-//			{
-//				for(int j=0;j<l.out_c;j++)
-//				{
-//					fprintf(LayerOutput,"%f\n",c[i+j*l.out_h*l.out_w]);
-//				}
-//			}
-//
-//	        fclose(LayerInput);
-//	        fclose(LayerOutput);
+			FILE *LayerInput=fopen("layer_input.dat","w");
+			FILE *LayerOutput=fopen("layer_output_sdk.dat","w");
+
+			for(int k=0;k<l.c*(l.w+2);k++)
+			{
+				fprintf(LayerInput,"%f\n",0.0);
+			}
+
+
+			for(int i=0;i<l.h*l.w;i++)
+			{
+				if(i%l.w==0)
+				{
+					for(int j=0;j<l.c;j++)
+					{
+						fprintf(LayerInput,"%f\n",0.0);
+					}
+				}
+				for(int j=0;j<l.c;j++)
+				{
+					fprintf(LayerInput,"%f\n",im[i+j*l.h*l.w]);
+				}
+				if(i%l.w==l.w-1)
+				{
+					for(int j=0;j<l.c;j++)
+					{
+						fprintf(LayerInput,"%f\n",0.0);
+					}
+				}
+			}
+
+			for(int k=0;k<l.c*(l.w+2);k++)
+			{
+				fprintf(LayerInput,"%f\n",0.0);
+			}
+
+	        fclose(LayerInput);
+
 
 
 			free(b_t);
@@ -273,7 +264,30 @@ void forward_convolutional_layer(convolutional_layer l, network net)
         add_bias(l.output, l.biases, l.batch, l.n, l.out_h*l.out_w);
     }
 
+	for(int i=0;i<l.out_h*l.out_w;i++)
+	{
+		for(int j=0;j<l.out_c;j++)
+		{
+			fprintf(LayerOutput,"%f\n",c[i+j*l.out_h*l.out_w]);
+		}
+	}
+
+    fclose(LayerOutput);
+
+
     activate_array(l.output, l.outputs*l.batch, l.activation);
+
+	for(int i=0;i<l.out_h*l.out_w;i++)
+	{
+		for(int j=0;j<l.out_c;j++)
+		{
+			fprintf(LayerOutput,"%f\n",c[i+j*l.out_h*l.out_w]);
+		}
+	}
+
+    fclose(LayerOutput);
+
+
     //if(l.binary || l.xnor) swap_binary(&l);
 }
 

@@ -1,15 +1,6 @@
-15:41:26 **** Incremental Build of configuration Debug for project desktop_ref ****
+09:18:16 **** Incremental Build of configuration Debug for project desktop_ref ****
 make all 
-Building file: ../src/convolutional_layer.c
-Invoking: GCC C Compiler
-gcc -I/home/xavier/MSc_Project/git_v/Tiny_YOLO_v3_ZYNQ/sw/desktop_ref/include -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/convolutional_layer.d" -MT"src/convolutional_layer.o" -o "src/convolutional_layer.o" "../src/convolutional_layer.c"
-Finished building: ../src/convolutional_layer.c
- 
-Building target: desktop_ref
-Invoking: GCC C Linker
-gcc  -o "desktop_ref"  ./src/activations.o ./src/batchnorm_layer.o ./src/blas.o ./src/box.o ./src/convolutional_layer.o ./src/gemm.o ./src/helloworld.o ./src/im2col.o ./src/image.o ./src/maxpool_layer.o ./src/network.o ./src/parser.o ./src/route_layer.o ./src/upsample_layer.o ./src/utils.o ./src/yolo_layer.o   -lm
-Finished building target: desktop_ref
- 
+make: Nothing to be done for 'all'.
 
-15:41:27 Build Finished (took 668ms)
+09:18:17 Build Finished (took 558ms)
 

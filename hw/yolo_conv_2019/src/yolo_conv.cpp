@@ -15,6 +15,10 @@ void yolo_conv_top(yolo_stream_type &inStream, yolo_stream_type &outStream)
 #pragma HLS ARRAY_PARTITION variable=window_group complete dim=1
 	float val_output[KERNEL_NUM];
 #pragma HLS ARRAY_PARTITION variable=val_output complete dim=1
+	float biased_output[KERNEL_NUM];
+#pragma HLS ARRAY_PARTITION variable=biased_output complete dim=1
+	float activated_output[KERNEL_NUM];
+#pragma HLS ARRAY_PARTITION variable=activated_output complete dim=1
 	float_32_side_channel curr_input;
 
 	for(int row_idx=0;row_idx<INPUT_HEIGHT+1;row_idx++)
@@ -59,9 +63,20 @@ void yolo_conv_top(yolo_stream_type &inStream, yolo_stream_type &outStream)
 						//accumulate for number of input channels
 						if(input_ch_idx == INPUT_CHANNEL-1)
 						{
+							biased_output[kernel_idx] = val_output[kernel_idx] + kernel_bias[kernel_idx];
+
+							if(LEAKY&&(biased_output[kernel_idx]<0))
+							{
+								activated_output[kernel_idx] = biased_output[kernel_idx] * .1;
+							}
+							else
+							{
+								activated_output[kernel_idx] = biased_output[kernel_idx];
+							}
+
 							if(!(out_stream_group[kernel_idx].full()))
 								//write data to internal FIFO
-								write_output(val_output[kernel_idx],out_stream_group[kernel_idx]);
+								write_output(activated_output[kernel_idx],out_stream_group[kernel_idx]);
 						}
 					}
 

@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'out_stream_merge'" level="0">
-<item name = "Date">Fri Jun  7 09:43:27 2019
+<item name = "Date">Sun Jun  9 10:21:31 2019
 </item>
 <item name = "Version">2019.1 (Build 2552052 on Fri May 24 15:28:33 MDT 2019)</item>
 <item name = "Project">yolo_conv_2019</item>
@@ -77,11 +77,11 @@
 </item>
 <item name = "Expression"><table name="" hasTotal="1">
 <keys size="7">Variable Name, Operation, DSP48E, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
-<column name="add_ln168_1_fu_792_p2">+, 0, 0, 15, 6, 2</column>
-<column name="add_ln168_2_fu_738_p2">+, 0, 0, 15, 3, 6</column>
-<column name="add_ln168_3_fu_822_p2">+, 0, 0, 15, 6, 3</column>
-<column name="add_ln168_fu_716_p2">+, 0, 0, 15, 6, 2</column>
-<column name="sub_ln168_fu_653_p2">-, 0, 0, 15, 6, 6</column>
+<column name="add_ln195_1_fu_792_p2">+, 0, 0, 15, 6, 2</column>
+<column name="add_ln195_2_fu_738_p2">+, 0, 0, 15, 3, 6</column>
+<column name="add_ln195_3_fu_822_p2">+, 0, 0, 15, 6, 3</column>
+<column name="add_ln195_fu_716_p2">+, 0, 0, 15, 6, 2</column>
+<column name="sub_ln195_fu_653_p2">-, 0, 0, 15, 6, 6</column>
 <column name="ap_block_pp0_stage0_01001">and, 0, 0, 2, 1, 1</column>
 <column name="ap_block_pp0_stage1_01001">and, 0, 0, 2, 1, 1</column>
 <column name="ap_block_pp0_stage1_11001">and, 0, 0, 2, 1, 1</column>
@@ -159,30 +159,30 @@
 <column name="grp_nbreadreq_fu_198_p3">and, 0, 0, 2, 1, 0</column>
 <column name="grp_nbreadreq_fu_206_p3">and, 0, 0, 2, 1, 0</column>
 <column name="grp_nbreadreq_fu_238_p3">and, 0, 0, 2, 1, 0</column>
-<column name="tmp_16_nbreadreq_fu_166_p3">and, 0, 0, 2, 1, 0</column>
-<column name="tmp_17_nbreadreq_fu_158_p3">and, 0, 0, 2, 1, 0</column>
-<column name="tmp_19_nbreadreq_fu_230_p3">and, 0, 0, 2, 1, 0</column>
-<column name="tmp_20_nbreadreq_fu_222_p3">and, 0, 0, 2, 1, 0</column>
-<column name="tmp_21_nbreadreq_fu_214_p3">and, 0, 0, 2, 1, 0</column>
-<column name="tmp_26_nbreadreq_fu_262_p3">and, 0, 0, 2, 1, 0</column>
-<column name="tmp_27_nbreadreq_fu_254_p3">and, 0, 0, 2, 1, 0</column>
-<column name="tmp_28_nbreadreq_fu_246_p3">and, 0, 0, 2, 1, 0</column>
-<column name="tmp_32_nbreadreq_fu_278_p3">and, 0, 0, 2, 1, 0</column>
-<column name="tmp_33_nbreadreq_fu_270_p3">and, 0, 0, 2, 1, 0</column>
+<column name="tmp_28_nbreadreq_fu_166_p3">and, 0, 0, 2, 1, 0</column>
+<column name="tmp_29_nbreadreq_fu_158_p3">and, 0, 0, 2, 1, 0</column>
+<column name="tmp_31_nbreadreq_fu_230_p3">and, 0, 0, 2, 1, 0</column>
+<column name="tmp_32_nbreadreq_fu_222_p3">and, 0, 0, 2, 1, 0</column>
+<column name="tmp_33_nbreadreq_fu_214_p3">and, 0, 0, 2, 1, 0</column>
+<column name="tmp_38_nbreadreq_fu_262_p3">and, 0, 0, 2, 1, 0</column>
+<column name="tmp_39_nbreadreq_fu_254_p3">and, 0, 0, 2, 1, 0</column>
+<column name="tmp_40_nbreadreq_fu_246_p3">and, 0, 0, 2, 1, 0</column>
+<column name="tmp_44_nbreadreq_fu_278_p3">and, 0, 0, 2, 1, 0</column>
+<column name="tmp_45_nbreadreq_fu_270_p3">and, 0, 0, 2, 1, 0</column>
 <column name="tmp_s_nbreadreq_fu_174_p3">and, 0, 0, 2, 1, 0</column>
 <column name="grp_fu_624_p2">icmp, 0, 0, 9, 4, 1</column>
-<column name="icmp_ln169_1_fu_704_p2">icmp, 0, 0, 18, 28, 1</column>
-<column name="icmp_ln169_2_fu_732_p2">icmp, 0, 0, 8, 2, 1</column>
-<column name="icmp_ln169_3_fu_807_p2">icmp, 0, 0, 8, 2, 1</column>
-<column name="icmp_ln169_4_fu_754_p2">icmp, 0, 0, 8, 2, 1</column>
-<column name="icmp_ln169_5_fu_837_p2">icmp, 0, 0, 8, 2, 1</column>
-<column name="icmp_ln169_fu_673_p2">icmp, 0, 0, 8, 2, 1</column>
-<column name="icmp_ln178_1_fu_772_p2">icmp, 0, 0, 18, 32, 4</column>
-<column name="icmp_ln178_2_fu_777_p2">icmp, 0, 0, 11, 6, 4</column>
-<column name="icmp_ln178_3_fu_813_p2">icmp, 0, 0, 11, 6, 4</column>
-<column name="icmp_ln178_4_fu_848_p2">icmp, 0, 0, 11, 5, 4</column>
-<column name="icmp_ln178_5_fu_858_p2">icmp, 0, 0, 11, 5, 4</column>
-<column name="icmp_ln178_fu_760_p2">icmp, 0, 0, 11, 6, 4</column>
+<column name="icmp_ln196_1_fu_704_p2">icmp, 0, 0, 18, 28, 1</column>
+<column name="icmp_ln196_2_fu_732_p2">icmp, 0, 0, 8, 2, 1</column>
+<column name="icmp_ln196_3_fu_807_p2">icmp, 0, 0, 8, 2, 1</column>
+<column name="icmp_ln196_4_fu_754_p2">icmp, 0, 0, 8, 2, 1</column>
+<column name="icmp_ln196_5_fu_837_p2">icmp, 0, 0, 8, 2, 1</column>
+<column name="icmp_ln196_fu_673_p2">icmp, 0, 0, 8, 2, 1</column>
+<column name="icmp_ln205_1_fu_772_p2">icmp, 0, 0, 18, 32, 4</column>
+<column name="icmp_ln205_2_fu_777_p2">icmp, 0, 0, 11, 6, 4</column>
+<column name="icmp_ln205_3_fu_813_p2">icmp, 0, 0, 11, 6, 4</column>
+<column name="icmp_ln205_4_fu_848_p2">icmp, 0, 0, 11, 5, 4</column>
+<column name="icmp_ln205_5_fu_858_p2">icmp, 0, 0, 11, 5, 4</column>
+<column name="icmp_ln205_fu_760_p2">icmp, 0, 0, 11, 6, 4</column>
 <column name="ap_block_pp0_stage0_11001">or, 0, 0, 2, 1, 1</column>
 <column name="ap_block_pp0_stage0_subdone">or, 0, 0, 2, 1, 1</column>
 <column name="ap_block_pp0_stage1_subdone">or, 0, 0, 2, 1, 1</column>
@@ -195,7 +195,7 @@
 <column name="ap_block_state5_pp0_stage4_iter0">or, 0, 0, 2, 1, 1</column>
 <column name="ap_block_state6_pp0_stage5_iter0">or, 0, 0, 2, 1, 1</column>
 <column name="or_ln114_fu_710_p2">or, 0, 0, 4, 4, 1</column>
-<column name="or_ln168_fu_688_p2">or, 0, 0, 32, 32, 1</column>
+<column name="or_ln195_fu_688_p2">or, 0, 0, 32, 32, 1</column>
 <column name="ap_enable_pp0">xor, 0, 0, 2, 1, 2</column>
 </table>
 </item>
@@ -246,7 +246,7 @@
 </item>
 <item name = "Register"><table name="" hasTotal="1">
 <keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
-<column name="add_ln168_reg_942">5, 0, 6, 1</column>
+<column name="add_ln195_reg_942">5, 0, 6, 1</column>
 <column name="ap_CS_fsm">6, 0, 6, 0</column>
 <column name="ap_enable_reg_pp0_iter0_reg">1, 0, 1, 0</column>
 <column name="ap_enable_reg_pp0_iter1">1, 0, 1, 0</column>
@@ -267,33 +267,33 @@
 <column name="curr_output_last_V_5_reg_1091">1, 0, 1, 0</column>
 <column name="icmp_ln114_1_reg_1062">1, 0, 1, 0</column>
 <column name="icmp_ln114_reg_970">1, 0, 1, 0</column>
-<column name="icmp_ln169_1_reg_894">1, 0, 1, 0</column>
-<column name="icmp_ln169_2_reg_947">1, 0, 1, 0</column>
-<column name="icmp_ln169_3_reg_1043">1, 0, 1, 0</column>
-<column name="icmp_ln169_4_reg_966">1, 0, 1, 0</column>
-<column name="icmp_ln169_5_reg_1058">1, 0, 1, 0</column>
-<column name="icmp_ln169_reg_876">1, 0, 1, 0</column>
-<column name="icmp_ln178_1_reg_1018">1, 0, 1, 0</column>
-<column name="icmp_ln178_2_reg_1023">1, 0, 1, 0</column>
-<column name="icmp_ln178_3_reg_1047">1, 0, 1, 0</column>
+<column name="icmp_ln196_1_reg_894">1, 0, 1, 0</column>
+<column name="icmp_ln196_2_reg_947">1, 0, 1, 0</column>
+<column name="icmp_ln196_3_reg_1043">1, 0, 1, 0</column>
+<column name="icmp_ln196_4_reg_966">1, 0, 1, 0</column>
+<column name="icmp_ln196_5_reg_1058">1, 0, 1, 0</column>
+<column name="icmp_ln196_reg_876">1, 0, 1, 0</column>
+<column name="icmp_ln205_1_reg_1018">1, 0, 1, 0</column>
+<column name="icmp_ln205_2_reg_1023">1, 0, 1, 0</column>
+<column name="icmp_ln205_3_reg_1047">1, 0, 1, 0</column>
 <column name="last_V_read_reg_984">1, 0, 1, 0</column>
 <column name="or_ln114_reg_898">3, 0, 4, 1</column>
-<column name="or_ln168_reg_889">31, 0, 32, 1</column>
+<column name="or_ln195_reg_889">31, 0, 32, 1</column>
 <column name="phi_ln114_1_reg_478">1, 0, 1, 0</column>
 <column name="phi_ln114_2_reg_500">1, 0, 1, 0</column>
 <column name="phi_ln114_3_reg_564">1, 0, 1, 0</column>
 <column name="phi_ln114_4_reg_512">1, 0, 1, 0</column>
 <column name="phi_ln114_5_reg_594">1, 0, 1, 0</column>
 <column name="phi_ln114_reg_448">1, 0, 1, 0</column>
-<column name="sub_ln168_reg_868">5, 0, 6, 1</column>
+<column name="sub_ln195_reg_868">5, 0, 6, 1</column>
 <column name="tmp_dest_V_reg_993">6, 0, 6, 0</column>
 <column name="tmp_id_V_reg_998">5, 0, 5, 0</column>
 <column name="tmp_keep_V_reg_1013">4, 0, 4, 0</column>
 <column name="tmp_strb_V_reg_1008">4, 0, 4, 0</column>
 <column name="tmp_user_V_reg_1003">2, 0, 2, 0</column>
 <column name="trunc_ln114_reg_880">3, 0, 4, 1</column>
-<column name="trunc_ln168_1_reg_1052">4, 0, 5, 1</column>
-<column name="trunc_ln168_reg_884">3, 0, 4, 1</column>
+<column name="trunc_ln195_1_reg_1052">4, 0, 5, 1</column>
+<column name="trunc_ln195_reg_884">3, 0, 4, 1</column>
 </table>
 </item>
 </section>

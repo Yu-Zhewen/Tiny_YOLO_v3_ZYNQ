@@ -54,7 +54,7 @@ int main()
 		float ref_data;
 		fscanf(layer_output_sdk,"%f\n",&ref_data);
 
-		if(fabs(output_data[pix_idx]-ref_data)>1e-5)
+		if(fabs(output_data[pix_idx]-ref_data)>2e-5)
 		{
 			flag = true;
 			fprintf(error_log,"%d\t%f\t%f\n",pix_idx,ref_data,output_data[pix_idx]);

@@ -12,9 +12,10 @@
     "Package": "-clg484",
     "Speed": "-1"
   },
-  "HlsSolution": {
-    
-  },
+  "HlsSolution": {"Config": [
+      "config_export -format=ip_catalog",
+      "config_export -rtl=verilog"
+    ]},
   "Args": {
     "inStream": {
       "index": "0",
@@ -103,7 +104,7 @@
     "ClockPeriod": "10",
     "IsCombLogic": "0",
     "II": "x",
-    "Latency": "4203494",
+    "Latency": "4203509",
     "Uncertainty": "1.25"
   },
   "Xdc": {"OocClocks": ["create_clock -name ap_clk -period 10.000 [get_ports ap_clk]"]},
@@ -142,8 +143,12 @@
       "impl\/vhdl\/window_macc_kernel_weight_14.vhd",
       "impl\/vhdl\/window_macc_kernel_weight_15.vhd",
       "impl\/vhdl\/yolo_conv_top_AXILiteS_s_axi.vhd",
+      "impl\/vhdl\/yolo_conv_top_dmul_64ns_64ns_64_6_max_dsp_1.vhd",
       "impl\/vhdl\/yolo_conv_top_fadd_32ns_32ns_32_5_full_dsp_1.vhd",
+      "impl\/vhdl\/yolo_conv_top_fcmp_32ns_32ns_1_2_1.vhd",
       "impl\/vhdl\/yolo_conv_top_fmul_32ns_32ns_32_4_max_dsp_1.vhd",
+      "impl\/vhdl\/yolo_conv_top_fpext_32ns_64_2_1.vhd",
+      "impl\/vhdl\/yolo_conv_top_fptrunc_64ns_32_2_1.vhd",
       "impl\/vhdl\/yolo_conv_top_line_buff_group_val_s.vhd",
       "impl\/vhdl\/yolo_conv_top_mul_mul_9ns_11ns_20_1_1.vhd",
       "impl\/vhdl\/yolo_conv_top_urem_9ns_6ns_9_13_1.vhd",
@@ -187,8 +192,12 @@
       "impl\/verilog\/window_macc_kernel_weight_15.v",
       "impl\/verilog\/window_macc_kernel_weight_15_rom.dat",
       "impl\/verilog\/yolo_conv_top_AXILiteS_s_axi.v",
+      "impl\/verilog\/yolo_conv_top_dmul_64ns_64ns_64_6_max_dsp_1.v",
       "impl\/verilog\/yolo_conv_top_fadd_32ns_32ns_32_5_full_dsp_1.v",
+      "impl\/verilog\/yolo_conv_top_fcmp_32ns_32ns_1_2_1.v",
       "impl\/verilog\/yolo_conv_top_fmul_32ns_32ns_32_4_max_dsp_1.v",
+      "impl\/verilog\/yolo_conv_top_fpext_32ns_64_2_1.v",
+      "impl\/verilog\/yolo_conv_top_fptrunc_64ns_32_2_1.v",
       "impl\/verilog\/yolo_conv_top_line_buff_group_val_s.v",
       "impl\/verilog\/yolo_conv_top_mul_mul_9ns_11ns_20_1_1.v",
       "impl\/verilog\/yolo_conv_top_urem_9ns_6ns_9_13_1.v",
@@ -206,26 +215,50 @@
     ],
     "Misc": ["impl\/misc\/logo.png"],
     "Subcore": [
+      "impl\/misc\/yolo_conv_top_ap_dmul_4_max_dsp_64_ip.tcl",
       "impl\/misc\/yolo_conv_top_ap_fadd_3_full_dsp_32_ip.tcl",
-      "impl\/misc\/yolo_conv_top_ap_fmul_2_max_dsp_32_ip.tcl"
+      "impl\/misc\/yolo_conv_top_ap_fcmp_0_no_dsp_32_ip.tcl",
+      "impl\/misc\/yolo_conv_top_ap_fmul_2_max_dsp_32_ip.tcl",
+      "impl\/misc\/yolo_conv_top_ap_fpext_0_no_dsp_32_ip.tcl",
+      "impl\/misc\/yolo_conv_top_ap_fptrunc_0_no_dsp_64_ip.tcl"
     ],
-    "DesignXml": "\/home\/xavier\/MSc_Project\/hls\/yolo_conv_2019\/solution1\/.autopilot\/db\/yolo_conv_top.design.xml",
-    "DebugDir": "\/home\/xavier\/MSc_Project\/hls\/yolo_conv_2019\/solution1\/.debug",
-    "ProtoInst": ["\/home\/xavier\/MSc_Project\/hls\/yolo_conv_2019\/solution1\/.debug\/yolo_conv_top.protoinst"]
+    "DesignXml": "\/home\/xavier\/MSc_Project\/hls\/yolo_conv_hls_2019\/yolo_conv_2019\/solution1\/.autopilot\/db\/yolo_conv_top.design.xml",
+    "DebugDir": "\/home\/xavier\/MSc_Project\/hls\/yolo_conv_hls_2019\/yolo_conv_2019\/solution1\/.debug",
+    "ProtoInst": ["\/home\/xavier\/MSc_Project\/hls\/yolo_conv_hls_2019\/yolo_conv_2019\/solution1\/.debug\/yolo_conv_top.protoinst"]
   },
   "SubcoreInfo": {
     "HasXpmMemory": false,
     "HasClockedDsp": false,
     "IP": [
       {
+        "name": "yolo_conv_top_ap_dmul_4_max_dsp_64",
+        "vlnv": "xilinx.com:ip:floating_point:7.1",
+        "params": "CONFIG.a_precision_type Double CONFIG.a_tuser_width 1 CONFIG.add_sub_value Both CONFIG.b_tuser_width 1 CONFIG.c_a_exponent_width 11 CONFIG.c_a_fraction_width 53 CONFIG.c_compare_operation Programmable CONFIG.c_has_divide_by_zero false CONFIG.c_has_invalid_op false CONFIG.c_has_overflow false CONFIG.c_has_underflow false CONFIG.c_latency 4 CONFIG.c_mult_usage Max_Usage CONFIG.c_optimization Speed_Optimized CONFIG.c_rate 1 CONFIG.c_result_exponent_width 11 CONFIG.c_result_fraction_width 53 CONFIG.component_name yolo_conv_top_ap_dmul_4_max_dsp_64 CONFIG.flow_control NonBlocking CONFIG.has_a_tlast false CONFIG.has_a_tuser false CONFIG.has_aclken true CONFIG.has_aresetn false CONFIG.has_b_tlast false CONFIG.has_b_tuser false CONFIG.has_operation_tlast false CONFIG.has_operation_tuser false CONFIG.has_result_tready false CONFIG.maximum_latency false CONFIG.operation_tuser_width 1 CONFIG.operation_type Multiply CONFIG.result_precision_type Double CONFIG.result_tlast_behv Null"
+      },
+      {
         "name": "yolo_conv_top_ap_fadd_3_full_dsp_32",
         "vlnv": "xilinx.com:ip:floating_point:7.1",
         "params": "CONFIG.a_precision_type Single CONFIG.a_tuser_width 1 CONFIG.add_sub_value Add CONFIG.b_tuser_width 1 CONFIG.c_a_exponent_width 8 CONFIG.c_a_fraction_width 24 CONFIG.c_compare_operation Programmable CONFIG.c_has_divide_by_zero false CONFIG.c_has_invalid_op false CONFIG.c_has_overflow false CONFIG.c_has_underflow false CONFIG.c_latency 3 CONFIG.c_mult_usage Full_Usage CONFIG.c_optimization Speed_Optimized CONFIG.c_rate 1 CONFIG.c_result_exponent_width 8 CONFIG.c_result_fraction_width 24 CONFIG.component_name yolo_conv_top_ap_fadd_3_full_dsp_32 CONFIG.flow_control NonBlocking CONFIG.has_a_tlast false CONFIG.has_a_tuser false CONFIG.has_aclken true CONFIG.has_aresetn false CONFIG.has_b_tlast false CONFIG.has_b_tuser false CONFIG.has_operation_tlast false CONFIG.has_operation_tuser false CONFIG.has_result_tready false CONFIG.maximum_latency false CONFIG.operation_tuser_width 1 CONFIG.operation_type Add_Subtract CONFIG.result_precision_type Single CONFIG.result_tlast_behv Null"
       },
       {
+        "name": "yolo_conv_top_ap_fcmp_0_no_dsp_32",
+        "vlnv": "xilinx.com:ip:floating_point:7.1",
+        "params": "CONFIG.a_precision_type Single CONFIG.a_tuser_width 1 CONFIG.add_sub_value Both CONFIG.b_tuser_width 1 CONFIG.c_a_exponent_width 8 CONFIG.c_a_fraction_width 24 CONFIG.c_compare_operation Programmable CONFIG.c_has_divide_by_zero false CONFIG.c_has_invalid_op false CONFIG.c_has_overflow false CONFIG.c_has_underflow false CONFIG.c_latency 0 CONFIG.c_mult_usage No_Usage CONFIG.c_optimization Speed_Optimized CONFIG.c_rate 1 CONFIG.c_result_exponent_width 1 CONFIG.c_result_fraction_width 0 CONFIG.component_name yolo_conv_top_ap_fcmp_0_no_dsp_32 CONFIG.flow_control NonBlocking CONFIG.has_a_tlast false CONFIG.has_a_tuser false CONFIG.has_aclken false CONFIG.has_aresetn false CONFIG.has_b_tlast false CONFIG.has_b_tuser false CONFIG.has_operation_tlast false CONFIG.has_operation_tuser false CONFIG.has_result_tready false CONFIG.maximum_latency false CONFIG.operation_tuser_width 1 CONFIG.operation_type Compare CONFIG.result_precision_type Custom CONFIG.result_tlast_behv Null"
+      },
+      {
         "name": "yolo_conv_top_ap_fmul_2_max_dsp_32",
         "vlnv": "xilinx.com:ip:floating_point:7.1",
         "params": "CONFIG.a_precision_type Single CONFIG.a_tuser_width 1 CONFIG.add_sub_value Both CONFIG.b_tuser_width 1 CONFIG.c_a_exponent_width 8 CONFIG.c_a_fraction_width 24 CONFIG.c_compare_operation Programmable CONFIG.c_has_divide_by_zero false CONFIG.c_has_invalid_op false CONFIG.c_has_overflow false CONFIG.c_has_underflow false CONFIG.c_latency 2 CONFIG.c_mult_usage Max_Usage CONFIG.c_optimization Speed_Optimized CONFIG.c_rate 1 CONFIG.c_result_exponent_width 8 CONFIG.c_result_fraction_width 24 CONFIG.component_name yolo_conv_top_ap_fmul_2_max_dsp_32 CONFIG.flow_control NonBlocking CONFIG.has_a_tlast false CONFIG.has_a_tuser false CONFIG.has_aclken true CONFIG.has_aresetn false CONFIG.has_b_tlast false CONFIG.has_b_tuser false CONFIG.has_operation_tlast false CONFIG.has_operation_tuser false CONFIG.has_result_tready false CONFIG.maximum_latency false CONFIG.operation_tuser_width 1 CONFIG.operation_type Multiply CONFIG.result_precision_type Single CONFIG.result_tlast_behv Null"
+      },
+      {
+        "name": "yolo_conv_top_ap_fpext_0_no_dsp_32",
+        "vlnv": "xilinx.com:ip:floating_point:7.1",
+        "params": "CONFIG.a_precision_type Single CONFIG.a_tuser_width 1 CONFIG.add_sub_value Both CONFIG.b_tuser_width 1 CONFIG.c_a_exponent_width 8 CONFIG.c_a_fraction_width 24 CONFIG.c_compare_operation Programmable CONFIG.c_has_divide_by_zero false CONFIG.c_has_invalid_op false CONFIG.c_has_overflow false CONFIG.c_has_underflow false CONFIG.c_latency 0 CONFIG.c_mult_usage No_Usage CONFIG.c_optimization Speed_Optimized CONFIG.c_rate 1 CONFIG.c_result_exponent_width 11 CONFIG.c_result_fraction_width 53 CONFIG.component_name yolo_conv_top_ap_fpext_0_no_dsp_32 CONFIG.flow_control NonBlocking CONFIG.has_a_tlast false CONFIG.has_a_tuser false CONFIG.has_aclken false CONFIG.has_aresetn false CONFIG.has_b_tlast false CONFIG.has_b_tuser false CONFIG.has_operation_tlast false CONFIG.has_operation_tuser false CONFIG.has_result_tready false CONFIG.maximum_latency false CONFIG.operation_tuser_width 1 CONFIG.operation_type Float_to_Float CONFIG.result_precision_type Double CONFIG.result_tlast_behv Null"
+      },
+      {
+        "name": "yolo_conv_top_ap_fptrunc_0_no_dsp_64",
+        "vlnv": "xilinx.com:ip:floating_point:7.1",
+        "params": "CONFIG.a_precision_type Double CONFIG.a_tuser_width 1 CONFIG.add_sub_value Both CONFIG.b_tuser_width 1 CONFIG.c_a_exponent_width 11 CONFIG.c_a_fraction_width 53 CONFIG.c_compare_operation Programmable CONFIG.c_has_divide_by_zero false CONFIG.c_has_invalid_op false CONFIG.c_has_overflow false CONFIG.c_has_underflow false CONFIG.c_latency 0 CONFIG.c_mult_usage No_Usage CONFIG.c_optimization Speed_Optimized CONFIG.c_rate 1 CONFIG.c_result_exponent_width 8 CONFIG.c_result_fraction_width 24 CONFIG.component_name yolo_conv_top_ap_fptrunc_0_no_dsp_64 CONFIG.flow_control NonBlocking CONFIG.has_a_tlast false CONFIG.has_a_tuser false CONFIG.has_aclken false CONFIG.has_aresetn false CONFIG.has_b_tlast false CONFIG.has_b_tuser false CONFIG.has_operation_tlast false CONFIG.has_operation_tuser false CONFIG.has_result_tready false CONFIG.maximum_latency false CONFIG.operation_tuser_width 1 CONFIG.operation_type Float_to_Float CONFIG.result_precision_type Single CONFIG.result_tlast_behv Null"
       }
     ]
   },
@@ -723,19 +756,19 @@
       "Instances": [
         {
           "ModuleName": "window_macc",
-          "InstanceName": "grp_window_macc_fu_821"
+          "InstanceName": "grp_window_macc_fu_865"
         },
         {
           "ModuleName": "window_macc",
-          "InstanceName": "grp_window_macc_fu_867"
+          "InstanceName": "grp_window_macc_fu_911"
         },
         {
           "ModuleName": "out_stream_merge",
-          "InstanceName": "grp_out_stream_merge_fu_913"
+          "InstanceName": "grp_out_stream_merge_fu_957"
         },
         {
           "ModuleName": "fork_window",
-          "InstanceName": "call_ret_fork_window_fu_954"
+          "InstanceName": "call_ret_fork_window_fu_998"
         }
       ]
     },
@@ -838,10 +871,10 @@
       },
       "yolo_conv_top": {
         "Latency": {
-          "LatencyBest": "4203494",
-          "LatencyAvg": "4203494",
-          "LatencyWorst": "4203494",
-          "PipelineII": "4203495",
+          "LatencyBest": "4203509",
+          "LatencyAvg": "4203509",
+          "LatencyWorst": "4203509",
+          "PipelineII": "4203510",
           "PipelineDepth": "",
           "PipelineType": "none"
         },
@@ -861,16 +894,16 @@
           {
             "Name": "Loop 2",
             "TripCount": "525426",
-            "Latency": "4203489",
+            "Latency": "4203504",
             "PipelineII": "8",
-            "PipelineDepth": "90"
+            "PipelineDepth": "105"
           }
         ],
         "Area": {
           "BRAM_18K": "12",
-          "DSP48E": "112",
-          "FF": "47847",
-          "LUT": "26078",
+          "DSP48E": "138",
+          "FF": "52355",
+          "LUT": "30838",
           "URAM": "0"
         }
       }
@@ -886,7 +919,7 @@
   },
   "GenData": {
     "DataVersion": "0.2",
-    "Time": "2019-06-07 09:43:39 BST",
+    "Time": "2019-06-09 10:21:44 BST",
     "ToolName": "vivado_hls",
     "ToolVersion": "2019.1"
   }

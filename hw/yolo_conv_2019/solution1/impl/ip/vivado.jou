@@ -2,11 +2,11 @@
 # Vivado v2019.1 (64-bit)
 # SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
 # IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
-# Start of session at: Fri Jun  7 09:44:09 2019
-# Process ID: 9833
-# Current directory: /home/xavier/MSc_Project/hls/yolo_conv_2019/solution1/impl/ip
+# Start of session at: Sun Jun  9 10:22:02 2019
+# Process ID: 5730
+# Current directory: /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_2019/solution1/impl/ip
 # Command line: vivado -notrace -mode batch -source run_ippack.tcl
-# Log file: /home/xavier/MSc_Project/hls/yolo_conv_2019/solution1/impl/ip/vivado.log
-# Journal file: /home/xavier/MSc_Project/hls/yolo_conv_2019/solution1/impl/ip/vivado.jou
+# Log file: /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_2019/solution1/impl/ip/vivado.log
+# Journal file: /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_2019/solution1/impl/ip/vivado.jou
 #-----------------------------------------------------------
 source run_ippack.tcl -notrace

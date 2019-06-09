@@ -2,14 +2,24 @@
 <vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
   <errorLogs>
     <logs>
+      <synLog/>
       <packageLog/>
     </logs>
   </errorLogs>
   <warningLogs>
     <logs>
+      <synLog>
+        <logs message="WARNING: [RTGEN 206-101] Global array 'kernel_weight_15' will not be exposed as RTL port." projectName="yolo_conv_2019" solutionName="solution1" date="2019-06-09T10:21:31.686+0100" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Global array 'kernel_weight_14' will not be exposed as RTL port." projectName="yolo_conv_2019" solutionName="solution1" date="2019-06-09T10:21:31.683+0100" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Global array 'kernel_weight_13' will not be exposed as RTL port." projectName="yolo_conv_2019" solutionName="solution1" date="2019-06-09T10:21:31.680+0100" type="Warning"/>
+      </synLog>
       <packageLog>
-        <logs message="WARNING: [IP_Flow 19-4832] The IP name 'yolo_conv_top_ap_fmul_2_max_dsp_32' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues." projectName="yolo_conv_2019" solutionName="solution1" date="2019-06-07T09:44:26.529+0100" type="Warning"/>
-        <logs message="WARNING: [IP_Flow 19-4832] The IP name 'yolo_conv_top_ap_fadd_3_full_dsp_32' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues." projectName="yolo_conv_2019" solutionName="solution1" date="2019-06-07T09:44:23.049+0100" type="Warning"/>
+        <logs message="WARNING: [IP_Flow 19-4832] The IP name 'yolo_conv_top_ap_fptrunc_0_no_dsp_64' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues." projectName="yolo_conv_2019" solutionName="solution1" date="2019-06-09T10:22:31.231+0100" type="Warning"/>
+        <logs message="WARNING: [IP_Flow 19-4832] The IP name 'yolo_conv_top_ap_fpext_0_no_dsp_32' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues." projectName="yolo_conv_2019" solutionName="solution1" date="2019-06-09T10:22:28.221+0100" type="Warning"/>
+        <logs message="WARNING: [IP_Flow 19-4832] The IP name 'yolo_conv_top_ap_fmul_2_max_dsp_32' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues." projectName="yolo_conv_2019" solutionName="solution1" date="2019-06-09T10:22:25.382+0100" type="Warning"/>
+        <logs message="WARNING: [IP_Flow 19-4832] The IP name 'yolo_conv_top_ap_fcmp_0_no_dsp_32' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues." projectName="yolo_conv_2019" solutionName="solution1" date="2019-06-09T10:22:22.231+0100" type="Warning"/>
+        <logs message="WARNING: [IP_Flow 19-4832] The IP name 'yolo_conv_top_ap_fadd_3_full_dsp_32' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues." projectName="yolo_conv_2019" solutionName="solution1" date="2019-06-09T10:22:19.438+0100" type="Warning"/>
+        <logs message="WARNING: [IP_Flow 19-4832] The IP name 'yolo_conv_top_ap_dmul_4_max_dsp_64' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues." projectName="yolo_conv_2019" solutionName="solution1" date="2019-06-09T10:22:16.842+0100" type="Warning"/>
       </packageLog>
     </logs>
   </warningLogs>

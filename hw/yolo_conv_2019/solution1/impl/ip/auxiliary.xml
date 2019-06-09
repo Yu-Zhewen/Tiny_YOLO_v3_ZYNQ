@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<xd:acceleratorMap xmlns:xd="http://www.xilinx.com/xidane" xd:functionName="yolo_conv_top" xd:componentRef="yolo_conv_top" xd:initiationInterval="4203495" xd:clockPeriod="10.000" xd:sequential="true" xd:hostMachine="64" xd:reset="control">
+<xd:acceleratorMap xmlns:xd="http://www.xilinx.com/xidane" xd:functionName="yolo_conv_top" xd:componentRef="yolo_conv_top" xd:initiationInterval="4203510" xd:clockPeriod="10.000" xd:sequential="true" xd:hostMachine="64" xd:reset="control">
   <xd:controlReg xd:name="control" xd:interfaceRef="s_axi_AXILiteS" xd:busTypeRef="axilite" xd:type="generic_axi_lite" xd:offset="0x0"/>
   <xd:arg xd:name="inStream.data" xd:originalName="inStream" xd:direction="in" xd:interfaceRef="inStream" xd:busTypeRef="axis" xd:dataWidth="32"/>
   <xd:arg xd:name="inStream.keep" xd:originalName="inStream" xd:direction="in" xd:interfaceRef="inStream" xd:busTypeRef="axis" xd:dataWidth="4"/>
@@ -15,6 +15,6 @@
   <xd:arg xd:name="outStream.last" xd:originalName="outStream" xd:direction="out" xd:interfaceRef="outStream" xd:busTypeRef="axis" xd:dataWidth="1"/>
   <xd:arg xd:name="outStream.id" xd:originalName="outStream" xd:direction="out" xd:interfaceRef="outStream" xd:busTypeRef="axis" xd:dataWidth="5"/>
   <xd:arg xd:name="outStream.dest" xd:originalName="outStream" xd:direction="out" xd:interfaceRef="outStream" xd:busTypeRef="axis" xd:dataWidth="6"/>
-  <xd:latencyEstimates xd:best-case="4203494" xd:worst-case="4203494" xd:average-case="4203494"/>
-  <xd:resourceEstimates xd:LUT="26078" xd:FF="47847" xd:BRAM="12" xd:DSP="112"/>
+  <xd:latencyEstimates xd:best-case="4203509" xd:worst-case="4203509" xd:average-case="4203509"/>
+  <xd:resourceEstimates xd:LUT="30838" xd:FF="52355" xd:BRAM="12" xd:DSP="138"/>
 </xd:acceleratorMap>
