@@ -756,19 +756,19 @@
       "Instances": [
         {
           "ModuleName": "window_macc",
-          "InstanceName": "grp_window_macc_fu_865"
+          "InstanceName": "grp_window_macc_fu_882"
         },
         {
           "ModuleName": "window_macc",
-          "InstanceName": "grp_window_macc_fu_911"
+          "InstanceName": "grp_window_macc_fu_928"
         },
         {
           "ModuleName": "out_stream_merge",
-          "InstanceName": "grp_out_stream_merge_fu_957"
+          "InstanceName": "grp_out_stream_merge_fu_974"
         },
         {
           "ModuleName": "fork_window",
-          "InstanceName": "call_ret_fork_window_fu_998"
+          "InstanceName": "call_ret_fork_window_fu_1015"
         }
       ]
     },
@@ -902,8 +902,8 @@
         "Area": {
           "BRAM_18K": "12",
           "DSP48E": "138",
-          "FF": "52355",
-          "LUT": "30838",
+          "FF": "52273",
+          "LUT": "30871",
           "URAM": "0"
         }
       }
@@ -919,7 +919,7 @@
   },
   "GenData": {
     "DataVersion": "0.2",
-    "Time": "2019-06-09 10:21:44 BST",
+    "Time": "2019-06-09 15:03:27 BST",
     "ToolName": "vivado_hls",
     "ToolVersion": "2019.1"
   }

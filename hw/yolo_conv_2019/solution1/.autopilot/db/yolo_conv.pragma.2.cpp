@@ -36193,50 +36193,61 @@ _ssdm_op_SpecPipeline(-1, 1, 1, 0, "");
 
     if(row_idx != (416 +2*1))
     {
-
-    curr_input = inStream.read();
-
-
-    yolo_line_buffer(curr_input.data,&line_buff_group[input_ch_idx],col_idx);
-
-
-    if((row_idx>=3 -1)&&(col_idx>=3 -1))
-    {
-     window_type kernel_window;
-     kernel_window = slide_window(conv_count,&line_buff_group[input_ch_idx]);
-
-     fork_window(kernel_window,window_group);
-
-     for(int kernel_idx=0; kernel_idx<16; kernel_idx++)
+     if(((row_idx == 0)||
+        (row_idx == (416 +2*1)-1)||
+        (col_idx == 0)||
+        (col_idx == (416 +2*1)-1))&&1)
      {
-      if(input_ch_idx == 0)
-       val_output[kernel_idx] = 0;
 
-      val_output[kernel_idx] += window_macc(&window_group[kernel_idx],&kernel_weight[kernel_idx*3*3*3 +input_ch_idx*3*3]);
+      curr_input.data = 0;
+     }
+     else
+     {
 
-
-      if(input_ch_idx == 3 -1)
-      {
-       biased_output[kernel_idx] = val_output[kernel_idx] + kernel_bias[kernel_idx];
-
-       if(1&&(biased_output[kernel_idx]<0))
-       {
-        activated_output[kernel_idx] = biased_output[kernel_idx] * .1;
-       }
-       else
-       {
-        activated_output[kernel_idx] = biased_output[kernel_idx];
-       }
-
-       if(!(out_stream_group[kernel_idx].full()))
-
-        write_output(activated_output[kernel_idx],out_stream_group[kernel_idx]);
-      }
+      curr_input = inStream.read();
      }
 
 
+     yolo_line_buffer(curr_input.data,&line_buff_group[input_ch_idx],col_idx);
 
-    }
+
+     if((row_idx>=3 -1)&&(col_idx>=3 -1))
+     {
+      window_type kernel_window;
+      kernel_window = slide_window(conv_count,&line_buff_group[input_ch_idx]);
+
+      fork_window(kernel_window,window_group);
+
+      for(int kernel_idx=0; kernel_idx<16; kernel_idx++)
+      {
+       if(input_ch_idx == 0)
+        val_output[kernel_idx] = 0;
+
+       val_output[kernel_idx] += window_macc(&window_group[kernel_idx],&kernel_weight[kernel_idx*3*3*3 +input_ch_idx*3*3]);
+
+
+       if(input_ch_idx == 3 -1)
+       {
+        biased_output[kernel_idx] = val_output[kernel_idx] + kernel_bias[kernel_idx];
+
+        if(1&&(biased_output[kernel_idx]<0))
+        {
+         activated_output[kernel_idx] = biased_output[kernel_idx] * .1;
+        }
+        else
+        {
+         activated_output[kernel_idx] = biased_output[kernel_idx];
+        }
+
+        if(!(out_stream_group[kernel_idx].full()))
+
+         write_output(activated_output[kernel_idx],out_stream_group[kernel_idx]);
+       }
+      }
+
+
+
+     }
     }
 
 
@@ -36257,7 +36268,7 @@ _ssdm_op_SpecPipeline(-1, 1, 1, 0, "");
   }
 
  }
-# 125 "yolo_conv_2019/src/yolo_conv.cpp"
+# 136 "yolo_conv_2019/src/yolo_conv.cpp"
 }
 
 void yolo_line_buffer(float curr_data, line_buff_type *line_buff, int col_idx)

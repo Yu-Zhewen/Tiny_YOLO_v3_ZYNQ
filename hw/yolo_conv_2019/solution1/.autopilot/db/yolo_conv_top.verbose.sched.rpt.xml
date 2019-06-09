@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'yolo_conv_top'" level="0">
-<item name = "Date">Sun Jun  9 10:21:19 2019
+<item name = "Date">Sun Jun  9 15:03:01 2019
 </item>
 <item name = "Version">2019.1 (Build 2552052 on Fri May 24 15:28:33 MDT 2019)</item>
 <item name = "Project">yolo_conv_2019</item>

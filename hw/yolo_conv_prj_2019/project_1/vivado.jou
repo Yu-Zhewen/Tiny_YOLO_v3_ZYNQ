@@ -2,8 +2,8 @@
 # Vivado v2019.1 (64-bit)
 # SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
 # IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
-# Start of session at: Sun Jun  9 10:24:15 2019
-# Process ID: 5861
+# Start of session at: Sun Jun  9 15:05:12 2019
+# Process ID: 17872
 # Current directory: /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_prj_2019/project_1
 # Command line: vivado project_1.xpr
 # Log file: /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_prj_2019/project_1/vivado.log
@@ -13,7 +13,7 @@ start_gui
 open_project project_1.xpr
 update_compile_order -fileset sources_1
 open_bd_design {/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_prj_2019/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd}
-delete_bd_objs [get_bd_intf_nets ps7_0_axi_periph_M01_AXI] [get_bd_intf_nets yolo_conv_top_0_outStream] [get_bd_intf_nets axi_dma_0_M_AXIS_MM2S] [get_bd_cells yolo_conv_top_0]
+delete_bd_objs [get_bd_intf_nets axi_dma_0_M_AXIS_MM2S] [get_bd_intf_nets yolo_conv_top_0_outStream] [get_bd_intf_nets ps7_0_axi_periph_M01_AXI] [get_bd_cells yolo_conv_top_0]
 startgroup
 create_bd_cell -type ip -vlnv xilinx.com:hls:yolo_conv_top:1.0 yolo_conv_top_0
 endgroup
@@ -22,6 +22,7 @@ connect_bd_intf_net [get_bd_intf_pins yolo_conv_top_0/inStream] [get_bd_intf_pin
 connect_bd_intf_net [get_bd_intf_pins yolo_conv_top_0/outStream] [get_bd_intf_pins axi_dma_0/S_AXIS_S2MM]
 regenerate_bd_layout
 regenerate_bd_layout -routing
+regenerate_bd_layout
 validate_bd_design
 save_bd_design
 reset_run synth_1

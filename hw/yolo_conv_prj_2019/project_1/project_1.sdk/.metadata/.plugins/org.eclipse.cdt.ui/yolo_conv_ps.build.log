@@ -1,8 +1,31 @@
-10:50:32 **** Incremental Build of configuration Debug for project yolo_conv_ps ****
+15:23:33 **** Auto Build of configuration Debug for project yolo_conv_ps ****
 make pre-build main-build 
 a9-linaro-pre-build-step
  
-make: Nothing to be done for 'main-build'.
+Building file: ../src/helloworld.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -I/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_prj_2019/project_1/include -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../yolo_conv_ps_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+In file included from ../src/helloworld.c:54:
+../../yolo_conv_ps_bsp/ps7_cortexa9_0/include/xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:122: note: -Wmisleading-indentation is disabled from this point onwards, since column-tracking was disabled due to the size of the code/headers
+  Xil_DCacheInvalidateRange((u32)layer_output_hls,OUTPUT_WIDTH*OUTPUT_HEIGHT*OUTPUT_CHANNEL*sizeof(float));
+ 
+Finished building: ../src/helloworld.c
+ 
+Building target: yolo_conv_ps.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../yolo_conv_ps_bsp/ps7_cortexa9_0/lib -o "yolo_conv_ps.elf"  ./src/helloworld.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: yolo_conv_ps.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size yolo_conv_ps.elf  |tee "yolo_conv_ps.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  70768	13154920	11100800	24326488	1733158	yolo_conv_ps.elf
+Finished building: yolo_conv_ps.elf.size
+ 
 
-10:50:32 Build Finished (took 471ms)
+15:23:52 Build Finished (took 18s.425ms)
 

@@ -113,7 +113,7 @@ int main()
     Xil_DCacheFlushRange((u32)layer_output_hls,OUTPUT_WIDTH*OUTPUT_HEIGHT*OUTPUT_CHANNEL*sizeof(float));
 
    // printf("Sending data to IP core slave\n");
-    XAxiDma_SimpleTransfer(&axiDMA,(u32)layer_input,INPUT_WIDTH*INPUT_HEIGHT*INPUT_CHANNEL*sizeof(float),XAXIDMA_DMA_TO_DEVICE);
+    XAxiDma_SimpleTransfer(&axiDMA,(u32)layer_input,(INPUT_WIDTH-2*PAD)*(INPUT_HEIGHT-2*PAD)*INPUT_CHANNEL*sizeof(float),XAXIDMA_DMA_TO_DEVICE);
 
 	//printf("Get data\n");
 	XAxiDma_SimpleTransfer(&axiDMA,(u32)layer_output_hls,OUTPUT_WIDTH*OUTPUT_HEIGHT*OUTPUT_CHANNEL*sizeof(float),XAXIDMA_DEVICE_TO_DMA);

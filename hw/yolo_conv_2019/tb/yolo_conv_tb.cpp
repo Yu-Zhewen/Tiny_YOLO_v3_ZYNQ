@@ -20,7 +20,7 @@ int main()
 	layer_output_sdk = fopen("layer_output_sdk.dat","r");
 	error_log = fopen("error.log","w");
 
-	for(int pix_idx=0;pix_idx<(INPUT_WIDTH*INPUT_HEIGHT*INPUT_CHANNEL);pix_idx++)
+	for(int pix_idx=0;pix_idx<((INPUT_WIDTH-2*PAD)*(INPUT_HEIGHT-2*PAD)*INPUT_CHANNEL);pix_idx++)
 	{
 		float_32_side_channel curr_input;
 		float input_data;

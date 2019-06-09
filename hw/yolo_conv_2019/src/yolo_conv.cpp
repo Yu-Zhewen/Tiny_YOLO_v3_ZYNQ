@@ -39,50 +39,61 @@ void yolo_conv_top(yolo_stream_type &inStream, yolo_stream_type &outStream)
 
 				if(row_idx != INPUT_HEIGHT)
 				{
-				//stream input
-				curr_input = inStream.read();
-
-				//line buffer for every input channel
-				yolo_line_buffer(curr_input.data,&line_buff_group[input_ch_idx],col_idx);
-
-				//wait for line biffer to fill first conv op
-				if((row_idx>=KERNEL_DIM-1)&&(col_idx>=KERNEL_DIM-1))
-				{
-					window_type kernel_window;
-					kernel_window = slide_window(conv_count,&line_buff_group[input_ch_idx]);
-					//copy data to allow parallelism
-					fork_window(kernel_window,window_group);
-
-					for(int kernel_idx=0; kernel_idx<KERNEL_NUM; kernel_idx++)
+					if(((row_idx == 0)||
+					   (row_idx == INPUT_HEIGHT-1)||
+					   (col_idx == 0)||
+					   (col_idx == INPUT_WIDTH-1))&&PAD)
 					{
-						if(input_ch_idx == 0)
-							val_output[kernel_idx] = 0;
-						//core of conv, macc
-						val_output[kernel_idx] += window_macc(&window_group[kernel_idx],&kernel_weight[kernel_idx*KERNEL_AREA+input_ch_idx*KERNEL_DIM*KERNEL_DIM]);
-
-						//accumulate for number of input channels
-						if(input_ch_idx == INPUT_CHANNEL-1)
-						{
-							biased_output[kernel_idx] = val_output[kernel_idx] + kernel_bias[kernel_idx];
-
-							if(LEAKY&&(biased_output[kernel_idx]<0))
-							{
-								activated_output[kernel_idx] = biased_output[kernel_idx] * .1;
-							}
-							else
-							{
-								activated_output[kernel_idx] = biased_output[kernel_idx];
-							}
-
-							if(!(out_stream_group[kernel_idx].full()))
-								//write data to internal FIFO
-								write_output(activated_output[kernel_idx],out_stream_group[kernel_idx]);
-						}
+						//padding
+						curr_input.data = 0;
+					}
+					else
+					{
+						//stream input
+						curr_input = inStream.read();
 					}
 
+					//line buffer for every input channel
+					yolo_line_buffer(curr_input.data,&line_buff_group[input_ch_idx],col_idx);
+
+					//wait for line biffer to fill first conv op
+					if((row_idx>=KERNEL_DIM-1)&&(col_idx>=KERNEL_DIM-1))
+					{
+						window_type kernel_window;
+						kernel_window = slide_window(conv_count,&line_buff_group[input_ch_idx]);
+						//copy data to allow parallelism
+						fork_window(kernel_window,window_group);
+
+						for(int kernel_idx=0; kernel_idx<KERNEL_NUM; kernel_idx++)
+						{
+							if(input_ch_idx == 0)
+								val_output[kernel_idx] = 0;
+							//core of conv, macc
+							val_output[kernel_idx] += window_macc(&window_group[kernel_idx],&kernel_weight[kernel_idx*KERNEL_AREA+input_ch_idx*KERNEL_DIM*KERNEL_DIM]);
+
+							//accumulate for number of input channels
+							if(input_ch_idx == INPUT_CHANNEL-1)
+							{
+								biased_output[kernel_idx] = val_output[kernel_idx] + kernel_bias[kernel_idx];
+
+								if(LEAKY&&(biased_output[kernel_idx]<0))
+								{
+									activated_output[kernel_idx] = biased_output[kernel_idx] * .1;
+								}
+								else
+								{
+									activated_output[kernel_idx] = biased_output[kernel_idx];
+								}
+
+								if(!(out_stream_group[kernel_idx].full()))
+									//write data to internal FIFO
+									write_output(activated_output[kernel_idx],out_stream_group[kernel_idx]);
+							}
+						}
 
 
-				}
+
+					}
 				}
 
 				//read data from the internal FIFO, and write to the output
