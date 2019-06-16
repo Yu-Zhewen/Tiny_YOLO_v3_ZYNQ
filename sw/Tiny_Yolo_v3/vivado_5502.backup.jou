@@ -1,0 +1,15 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Sun Jun  9 08:55:31 2019
+# Process ID: 5502
+# Current directory: /home/xavier/MSc_Project/git_v/Tiny_YOLO_v3_ZYNQ/sw/Tiny_Yolo_v3
+# Command line: vivado Tiny_Yolo_v3.xpr
+# Log file: /home/xavier/MSc_Project/git_v/Tiny_YOLO_v3_ZYNQ/sw/Tiny_Yolo_v3/vivado.log
+# Journal file: /home/xavier/MSc_Project/git_v/Tiny_YOLO_v3_ZYNQ/sw/Tiny_Yolo_v3/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project Tiny_Yolo_v3.xpr
+update_compile_order -fileset sources_1
+launch_sdk -workspace /home/xavier/MSc_Project/git_v/Tiny_YOLO_v3_ZYNQ/sw/Tiny_Yolo_v3/Tiny_Yolo_v3.sdk -hwspec /home/xavier/MSc_Project/git_v/Tiny_YOLO_v3_ZYNQ/sw/Tiny_Yolo_v3/Tiny_Yolo_v3.sdk/yolo_sys_wrapper.hdf
