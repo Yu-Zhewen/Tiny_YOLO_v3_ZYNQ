@@ -1,0 +1,2 @@
+ {CheckOptions: [ {key: xilinx-tb31-process.TopFunctionName, value: 'yolo_max_pool_top'}, {key: xilinx-tb31-process.KeepTopName, value: '1'},
+{key: xilinx-tb31-process.NewFlow, value: '1'}, {key: xilinx-tb31-process.BCSim, value: '0'} ] } 
