@@ -1,0 +1,1005 @@
+!SESSION 2019-06-22 14:25:24.877 -----------------------------------------------
+eclipse.buildId=2019.1
+java.version=1.8.0_112
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -data /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019/yolo_conv_fp_prj_2019.sdk
+
+This is a continuation of log file /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019/yolo_conv_fp_prj_2019.sdk/.metadata/.bak_0.log
+Created Time: 2019-06-22 15:22:37.413
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:22:37.413
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019/yolo_conv_fp_prj_2019.sdk/design_1_wrapper_hw_platform_0/system.hdf /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019/yolo_conv_fp_prj_2019.sdk/yolo_conv_fp_ps_bsp/system.mss ], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:22:37.414
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019/yolo_conv_fp_prj_2019.sdk/design_1_wrapper_hw_platform_0/system.hdf /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019/yolo_conv_fp_prj_2019.sdk/yolo_conv_fp_ps_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:22:37.415
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019/yolo_conv_fp_prj_2019.sdk/design_1_wrapper_hw_platform_0/system.hdf /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019/yolo_conv_fp_prj_2019.sdk/yolo_conv_fp_ps_bsp/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+"osname": "standalone",
+"osver": "7.0",
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:22:37.415
+!MESSAGE XSCT Command: [::hsi::utils::closesw /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019/yolo_conv_fp_prj_2019.sdk/yolo_conv_fp_ps_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:22:37.416
+!MESSAGE XSCT command with result: [::hsi::utils::closesw /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019/yolo_conv_fp_prj_2019.sdk/yolo_conv_fp_ps_bsp/system.mss], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:22:37.530
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019/yolo_conv_fp_prj_2019.sdk/design_1_wrapper_hw_platform_0/system.hdf /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019/yolo_conv_fp_prj_2019.sdk/yolo_conv_fp_ps_bsp/system.mss ], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:22:37.533
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019/yolo_conv_fp_prj_2019.sdk/design_1_wrapper_hw_platform_0/system.hdf /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019/yolo_conv_fp_prj_2019.sdk/yolo_conv_fp_ps_bsp/system.mss ], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:22:37.533
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019/yolo_conv_fp_prj_2019.sdk/design_1_wrapper_hw_platform_0/system.hdf /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019/yolo_conv_fp_prj_2019.sdk/yolo_conv_fp_ps_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:22:37.535
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019/yolo_conv_fp_prj_2019.sdk/design_1_wrapper_hw_platform_0/system.hdf /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019/yolo_conv_fp_prj_2019.sdk/yolo_conv_fp_ps_bsp/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+"osname": "standalone",
+"osver": "7.0",
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:22:37.535
+!MESSAGE XSCT Command: [::hsi::utils::closesw /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019/yolo_conv_fp_prj_2019.sdk/yolo_conv_fp_ps_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:22:37.536
+!MESSAGE XSCT command with result: [::hsi::utils::closesw /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019/yolo_conv_fp_prj_2019.sdk/yolo_conv_fp_ps_bsp/system.mss], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:22:37.640
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019/yolo_conv_fp_prj_2019.sdk/design_1_wrapper_hw_platform_0/system.hdf /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019/yolo_conv_fp_prj_2019.sdk/yolo_conv_fp_ps_bsp/system.mss ], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:22:37.643
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019/yolo_conv_fp_prj_2019.sdk/design_1_wrapper_hw_platform_0/system.hdf /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019/yolo_conv_fp_prj_2019.sdk/yolo_conv_fp_ps_bsp/system.mss ], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:22:37.643
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019/yolo_conv_fp_prj_2019.sdk/design_1_wrapper_hw_platform_0/system.hdf /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019/yolo_conv_fp_prj_2019.sdk/yolo_conv_fp_ps_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:22:37.644
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019/yolo_conv_fp_prj_2019.sdk/design_1_wrapper_hw_platform_0/system.hdf /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019/yolo_conv_fp_prj_2019.sdk/yolo_conv_fp_ps_bsp/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+"osname": "standalone",
+"osver": "7.0",
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:22:37.644
+!MESSAGE XSCT Command: [::hsi::utils::closesw /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019/yolo_conv_fp_prj_2019.sdk/yolo_conv_fp_ps_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:22:37.645
+!MESSAGE XSCT command with result: [::hsi::utils::closesw /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019/yolo_conv_fp_prj_2019.sdk/yolo_conv_fp_ps_bsp/system.mss], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:22:49.078
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-16
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:22:49.735
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#5]. Thread: Worker-16
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:22:49.735
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-16
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:22:49.857
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zed 210248586321]. Thread: Worker-16
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:22:49.858
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-16
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:22:49.918
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zed 210248586321]. Thread: Worker-16
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:22:49.919
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248586321" && level==1}], Thread: Worker-16
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:22:49.936
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248586321" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-16
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:22:49.936
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248586321" && level==0} -index 1], Thread: Worker-16
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:22:49.954
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248586321" && level==0} -index 1], Result: [null, ]. Thread: Worker-16
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:22:49.954
+!MESSAGE XSCT Command: [fpga -state], Thread: Worker-16
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:22:49.981
+!MESSAGE XSCT command with result: [fpga -state], Result: [null, FPGA is configured]. Thread: Worker-16
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:22:49.981
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-16
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:22:49.982
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#5]. Thread: Worker-16
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:22:49.983
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-16
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:22:49.990
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zed 210248586321]. Thread: Worker-16
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:22:49.990
+!MESSAGE XSCT Command: [version -server], Thread: Worker-16
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:22:49.991
+!MESSAGE XSCT command with result: [version -server], Result: [null, 2019.1]. Thread: Worker-16
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:22:49.991
+!MESSAGE XSCT Command: [version], Thread: Worker-16
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:22:49.992
+!MESSAGE XSCT command with result: [version], Result: [null, xsct 2019.1
+SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.]. Thread: Worker-16
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:22:49.992
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-16
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:22:49.998
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zed 210248586321]. Thread: Worker-16
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:22:49.998
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248586321" && level==1}], Thread: Worker-16
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:22:50.014
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248586321" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-16
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:22:50.015
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-16
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:22:50.022
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zed 210248586321]. Thread: Worker-16
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:22:50.022
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248586321" && level==1}], Thread: Worker-16
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:22:50.042
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248586321" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-16
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:22:50.043
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-16
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:22:50.048
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zed 210248586321]. Thread: Worker-16
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:22:50.048
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248586321" && level==1}], Thread: Worker-16
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:22:50.064
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248586321" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-16
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:22:50.065
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-16
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:22:50.071
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zed 210248586321]. Thread: Worker-16
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:22:50.071
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248586321" && level==1}], Thread: Worker-16
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:22:50.087
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248586321" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-16
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:22:50.087
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-16
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:22:50.093
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zed 210248586321]. Thread: Worker-16
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:22:50.093
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248586321" && level==1}], Thread: Worker-16
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:22:50.109
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248586321" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-16
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:22:50.110
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-16
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:22:50.115
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zed 210248586321]. Thread: Worker-16
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:22:50.115
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248586321" && level==1}], Thread: Worker-16
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:22:50.131
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248586321" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-16
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:22:50.131
+!MESSAGE XSCT Command: [jtag targets -set -filter {name =~ "Digilent Zed 210248586321" && level == 0}], Thread: Worker-16
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:22:50.148
+!MESSAGE XSCT command with result: [jtag targets -set -filter {name =~ "Digilent Zed 210248586321" && level == 0}], Result: [null, ]. Thread: Worker-16
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:22:50.148
+!MESSAGE XSCT Command: [jtag frequency], Thread: Worker-16
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:22:50.150
+!MESSAGE XSCT command with result: [jtag frequency], Result: [null, 15000000]. Thread: Worker-16
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:22:50.150
+!MESSAGE XSCT Command: [source /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019/yolo_conv_fp_prj_2019.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl], Thread: Worker-16
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:22:50.152
+!MESSAGE XSCT command with result: [source /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019/yolo_conv_fp_prj_2019.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl], Result: [null, ]. Thread: Worker-16
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:22:50.152
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248586321"} -index 0], Thread: Worker-16
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:22:50.186
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248586321"} -index 0], Result: [null, ]. Thread: Worker-16
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:22:50.187
+!MESSAGE XSCT Command: [loadhw -hw /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019/yolo_conv_fp_prj_2019.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]], Thread: Worker-16
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:22:50.235
+!MESSAGE XSCT command with result: [loadhw -hw /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019/yolo_conv_fp_prj_2019.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]], Result: [null, design_1_wrapper_3]. Thread: Worker-16
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:22:50.236
+!MESSAGE XSCT Command: [configparams force-mem-access 1], Thread: Worker-16
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:22:50.237
+!MESSAGE XSCT command with result: [configparams force-mem-access 1], Result: [null, ]. Thread: Worker-16
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:22:50.237
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248586321"} -index 0], Thread: Worker-16
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:22:50.258
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248586321"} -index 0], Result: [null, ]. Thread: Worker-16
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:22:50.259
+!MESSAGE XSCT Command: [stop], Thread: Worker-16
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:22:50.271
+!MESSAGE XSCT command with result: [stop], Result: [null, ]. Thread: Worker-16
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:22:50.271
+!MESSAGE XSCT Command: [ps7_init], Thread: Worker-16
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:22:50.495
+!MESSAGE XSCT command with result: [ps7_init], Result: [null, ]. Thread: Worker-16
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:22:50.495
+!MESSAGE XSCT Command: [ps7_post_config], Thread: Worker-16
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:22:50.501
+!MESSAGE XSCT command with result: [ps7_post_config], Result: [null, ]. Thread: Worker-16
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:22:50.502
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248586321"} -index 0], Thread: Worker-16
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:22:50.525
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248586321"} -index 0], Result: [null, ]. Thread: Worker-16
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:22:50.526
+!MESSAGE XSCT Command: [rst -processor], Thread: Worker-16
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:22:50.559
+!MESSAGE XSCT command with result: [rst -processor], Result: [null, ]. Thread: Worker-16
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:22:50.560
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248586321"} -index 0], Thread: Worker-16
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:22:50.584
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248586321"} -index 0], Result: [null, ]. Thread: Worker-16
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:22:50.584
+!MESSAGE XSCT Command: [dow /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019/yolo_conv_fp_prj_2019.sdk/yolo_conv_fp_ps/Debug/yolo_conv_fp_ps.elf], Thread: Worker-16
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:23:04.594
+!MESSAGE XSCT command with result: [dow /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019/yolo_conv_fp_prj_2019.sdk/yolo_conv_fp_ps/Debug/yolo_conv_fp_ps.elf], Result: [null, ]. Thread: Worker-16
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:23:04.595
+!MESSAGE XSCT Command: [configparams force-mem-access 0], Thread: Worker-16
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:23:04.597
+!MESSAGE XSCT command with result: [configparams force-mem-access 0], Result: [null, ]. Thread: Worker-16
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:23:04.601
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248586321"} -index 0], Thread: Worker-16
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:23:04.623
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248586321"} -index 0], Result: [null, ]. Thread: Worker-16
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:23:04.623
+!MESSAGE XSCT Command: [con], Thread: Worker-16
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:23:04.644
+!MESSAGE XSCT command with result: [con], Result: [null, ]. Thread: Worker-16
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:23:04.645
+!MESSAGE XSCT Command: [disconnect tcfchan#5], Thread: Thread-362
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:23:04.649
+!MESSAGE XSCT command with result: [disconnect tcfchan#5], Result: [null, ]. Thread: Thread-362
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:23:18.031
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019/yolo_conv_fp_prj_2019.sdk/design_1_wrapper_hw_platform_0/system.hdf /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019/yolo_conv_fp_prj_2019.sdk/yolo_conv_fp_ps_bsp/system.mss ], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:23:20.061
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019/yolo_conv_fp_prj_2019.sdk/design_1_wrapper_hw_platform_0/system.hdf /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019/yolo_conv_fp_prj_2019.sdk/yolo_conv_fp_ps_bsp/system.mss ], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:23:20.061
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019/yolo_conv_fp_prj_2019.sdk/design_1_wrapper_hw_platform_0/system.hdf /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019/yolo_conv_fp_prj_2019.sdk/yolo_conv_fp_ps_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:23:20.064
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019/yolo_conv_fp_prj_2019.sdk/design_1_wrapper_hw_platform_0/system.hdf /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019/yolo_conv_fp_prj_2019.sdk/yolo_conv_fp_ps_bsp/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+"osname": "standalone",
+"osver": "7.0",
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:23:20.065
+!MESSAGE XSCT Command: [::hsi::utils::closesw /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019/yolo_conv_fp_prj_2019.sdk/yolo_conv_fp_ps_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:23:20.066
+!MESSAGE XSCT command with result: [::hsi::utils::closesw /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019/yolo_conv_fp_prj_2019.sdk/yolo_conv_fp_ps_bsp/system.mss], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:23:20.203
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019/yolo_conv_fp_prj_2019.sdk/design_1_wrapper_hw_platform_0/system.hdf /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019/yolo_conv_fp_prj_2019.sdk/yolo_conv_fp_ps_bsp/system.mss ], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:23:20.210
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019/yolo_conv_fp_prj_2019.sdk/design_1_wrapper_hw_platform_0/system.hdf /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019/yolo_conv_fp_prj_2019.sdk/yolo_conv_fp_ps_bsp/system.mss ], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:23:20.210
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019/yolo_conv_fp_prj_2019.sdk/design_1_wrapper_hw_platform_0/system.hdf /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019/yolo_conv_fp_prj_2019.sdk/yolo_conv_fp_ps_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:23:20.213
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019/yolo_conv_fp_prj_2019.sdk/design_1_wrapper_hw_platform_0/system.hdf /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019/yolo_conv_fp_prj_2019.sdk/yolo_conv_fp_ps_bsp/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+"osname": "standalone",
+"osver": "7.0",
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:23:20.213
+!MESSAGE XSCT Command: [::hsi::utils::closesw /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019/yolo_conv_fp_prj_2019.sdk/yolo_conv_fp_ps_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:23:20.214
+!MESSAGE XSCT command with result: [::hsi::utils::closesw /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019/yolo_conv_fp_prj_2019.sdk/yolo_conv_fp_ps_bsp/system.mss], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:23:20.374
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019/yolo_conv_fp_prj_2019.sdk/design_1_wrapper_hw_platform_0/system.hdf /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019/yolo_conv_fp_prj_2019.sdk/yolo_conv_fp_ps_bsp/system.mss ], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:23:20.377
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019/yolo_conv_fp_prj_2019.sdk/design_1_wrapper_hw_platform_0/system.hdf /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019/yolo_conv_fp_prj_2019.sdk/yolo_conv_fp_ps_bsp/system.mss ], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:23:20.378
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019/yolo_conv_fp_prj_2019.sdk/design_1_wrapper_hw_platform_0/system.hdf /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019/yolo_conv_fp_prj_2019.sdk/yolo_conv_fp_ps_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:23:20.380
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019/yolo_conv_fp_prj_2019.sdk/design_1_wrapper_hw_platform_0/system.hdf /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019/yolo_conv_fp_prj_2019.sdk/yolo_conv_fp_ps_bsp/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+"osname": "standalone",
+"osver": "7.0",
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:23:20.381
+!MESSAGE XSCT Command: [::hsi::utils::closesw /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019/yolo_conv_fp_prj_2019.sdk/yolo_conv_fp_ps_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:23:20.383
+!MESSAGE XSCT command with result: [::hsi::utils::closesw /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019/yolo_conv_fp_prj_2019.sdk/yolo_conv_fp_ps_bsp/system.mss], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:23:20.538
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019/yolo_conv_fp_prj_2019.sdk/design_1_wrapper_hw_platform_0/system.hdf /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019/yolo_conv_fp_prj_2019.sdk/yolo_conv_fp_ps_bsp/system.mss ], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:23:20.542
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019/yolo_conv_fp_prj_2019.sdk/design_1_wrapper_hw_platform_0/system.hdf /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019/yolo_conv_fp_prj_2019.sdk/yolo_conv_fp_ps_bsp/system.mss ], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:23:20.542
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019/yolo_conv_fp_prj_2019.sdk/design_1_wrapper_hw_platform_0/system.hdf /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019/yolo_conv_fp_prj_2019.sdk/yolo_conv_fp_ps_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:23:20.544
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019/yolo_conv_fp_prj_2019.sdk/design_1_wrapper_hw_platform_0/system.hdf /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019/yolo_conv_fp_prj_2019.sdk/yolo_conv_fp_ps_bsp/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+"osname": "standalone",
+"osver": "7.0",
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:23:20.544
+!MESSAGE XSCT Command: [::hsi::utils::closesw /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019/yolo_conv_fp_prj_2019.sdk/yolo_conv_fp_ps_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:23:20.545
+!MESSAGE XSCT command with result: [::hsi::utils::closesw /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019/yolo_conv_fp_prj_2019.sdk/yolo_conv_fp_ps_bsp/system.mss], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:23:20.679
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019/yolo_conv_fp_prj_2019.sdk/design_1_wrapper_hw_platform_0/system.hdf /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019/yolo_conv_fp_prj_2019.sdk/yolo_conv_fp_ps_bsp/system.mss ], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:23:20.681
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019/yolo_conv_fp_prj_2019.sdk/design_1_wrapper_hw_platform_0/system.hdf /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019/yolo_conv_fp_prj_2019.sdk/yolo_conv_fp_ps_bsp/system.mss ], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:23:20.681
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019/yolo_conv_fp_prj_2019.sdk/design_1_wrapper_hw_platform_0/system.hdf /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019/yolo_conv_fp_prj_2019.sdk/yolo_conv_fp_ps_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:23:20.683
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019/yolo_conv_fp_prj_2019.sdk/design_1_wrapper_hw_platform_0/system.hdf /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019/yolo_conv_fp_prj_2019.sdk/yolo_conv_fp_ps_bsp/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+"osname": "standalone",
+"osver": "7.0",
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:23:20.684
+!MESSAGE XSCT Command: [::hsi::utils::closesw /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019/yolo_conv_fp_prj_2019.sdk/yolo_conv_fp_ps_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:23:20.684
+!MESSAGE XSCT command with result: [::hsi::utils::closesw /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019/yolo_conv_fp_prj_2019.sdk/yolo_conv_fp_ps_bsp/system.mss], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:23:33.427
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-18
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:23:34.178
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#6]. Thread: Worker-18
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:23:34.178
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-18
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:23:34.290
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zed 210248586321]. Thread: Worker-18
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:23:34.290
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-18
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:23:34.296
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zed 210248586321]. Thread: Worker-18
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:23:34.296
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248586321" && level==1}], Thread: Worker-18
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:23:34.318
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248586321" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-18
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:23:34.319
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248586321" && level==0} -index 1], Thread: Worker-18
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:23:34.371
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248586321" && level==0} -index 1], Result: [null, ]. Thread: Worker-18
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:23:34.372
+!MESSAGE XSCT Command: [fpga -state], Thread: Worker-18
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:23:34.403
+!MESSAGE XSCT command with result: [fpga -state], Result: [null, FPGA is configured]. Thread: Worker-18
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:23:34.404
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-18
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:23:34.405
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#6]. Thread: Worker-18
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:23:34.405
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-18
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:23:34.411
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zed 210248586321]. Thread: Worker-18
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:23:34.412
+!MESSAGE XSCT Command: [version -server], Thread: Worker-18
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:23:34.412
+!MESSAGE XSCT command with result: [version -server], Result: [null, 2019.1]. Thread: Worker-18
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:23:34.413
+!MESSAGE XSCT Command: [version], Thread: Worker-18
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:23:34.413
+!MESSAGE XSCT command with result: [version], Result: [null, xsct 2019.1
+SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.]. Thread: Worker-18
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:23:34.413
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-18
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:23:34.419
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zed 210248586321]. Thread: Worker-18
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:23:34.420
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248586321" && level==1}], Thread: Worker-18
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:23:34.437
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248586321" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-18
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:23:34.438
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-18
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:23:34.444
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zed 210248586321]. Thread: Worker-18
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:23:34.444
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248586321" && level==1}], Thread: Worker-18
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:23:34.463
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248586321" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-18
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:23:34.463
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-18
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:23:34.469
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zed 210248586321]. Thread: Worker-18
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:23:34.470
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248586321" && level==1}], Thread: Worker-18
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:23:34.489
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248586321" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-18
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:23:34.489
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-18
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:23:34.499
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zed 210248586321]. Thread: Worker-18
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:23:34.499
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248586321" && level==1}], Thread: Worker-18
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:23:34.519
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248586321" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-18
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:23:34.520
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-18
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:23:34.526
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zed 210248586321]. Thread: Worker-18
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:23:34.527
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248586321" && level==1}], Thread: Worker-18
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:23:34.546
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248586321" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-18
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:23:34.546
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-18
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:23:34.553
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zed 210248586321]. Thread: Worker-18
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:23:34.554
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248586321" && level==1}], Thread: Worker-18
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:23:34.570
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248586321" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-18
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:23:34.571
+!MESSAGE XSCT Command: [jtag targets -set -filter {name =~ "Digilent Zed 210248586321" && level == 0}], Thread: Worker-18
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:23:34.591
+!MESSAGE XSCT command with result: [jtag targets -set -filter {name =~ "Digilent Zed 210248586321" && level == 0}], Result: [null, ]. Thread: Worker-18
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:23:34.591
+!MESSAGE XSCT Command: [jtag frequency], Thread: Worker-18
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:23:34.592
+!MESSAGE XSCT command with result: [jtag frequency], Result: [null, 15000000]. Thread: Worker-18
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:23:34.592
+!MESSAGE XSCT Command: [source /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019/yolo_conv_fp_prj_2019.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl], Thread: Worker-18
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:23:34.594
+!MESSAGE XSCT command with result: [source /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019/yolo_conv_fp_prj_2019.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl], Result: [null, ]. Thread: Worker-18
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:23:34.594
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248586321"} -index 0], Thread: Worker-18
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:23:34.622
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248586321"} -index 0], Result: [null, ]. Thread: Worker-18
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:23:34.622
+!MESSAGE XSCT Command: [loadhw -hw /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019/yolo_conv_fp_prj_2019.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]], Thread: Worker-18
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:23:34.679
+!MESSAGE XSCT command with result: [loadhw -hw /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019/yolo_conv_fp_prj_2019.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]], Result: [null, design_1_wrapper_4]. Thread: Worker-18
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:23:34.680
+!MESSAGE XSCT Command: [configparams force-mem-access 1], Thread: Worker-18
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:23:34.684
+!MESSAGE XSCT command with result: [configparams force-mem-access 1], Result: [null, ]. Thread: Worker-18
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:23:34.684
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248586321"} -index 0], Thread: Worker-18
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:23:34.709
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248586321"} -index 0], Result: [null, ]. Thread: Worker-18
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:23:34.709
+!MESSAGE XSCT Command: [stop], Thread: Worker-18
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:23:34.734
+!MESSAGE XSCT command with result: [stop], Result: [null, ]. Thread: Worker-18
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:23:34.735
+!MESSAGE XSCT Command: [ps7_init], Thread: Worker-18
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:23:35.032
+!MESSAGE XSCT command with result: [ps7_init], Result: [null, ]. Thread: Worker-18
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:23:35.033
+!MESSAGE XSCT Command: [ps7_post_config], Thread: Worker-18
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:23:35.038
+!MESSAGE XSCT command with result: [ps7_post_config], Result: [null, ]. Thread: Worker-18
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:23:35.038
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248586321"} -index 0], Thread: Worker-18
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:23:35.071
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248586321"} -index 0], Result: [null, ]. Thread: Worker-18
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:23:35.071
+!MESSAGE XSCT Command: [rst -processor], Thread: Worker-18
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:23:35.090
+!MESSAGE XSCT command with result: [rst -processor], Result: [null, ]. Thread: Worker-18
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:23:35.090
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248586321"} -index 0], Thread: Worker-18
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:23:35.114
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248586321"} -index 0], Result: [null, ]. Thread: Worker-18
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:23:35.114
+!MESSAGE XSCT Command: [dow /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019/yolo_conv_fp_prj_2019.sdk/yolo_conv_fp_ps/Debug/yolo_conv_fp_ps.elf], Thread: Worker-18
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:23:49.265
+!MESSAGE XSCT command with result: [dow /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019/yolo_conv_fp_prj_2019.sdk/yolo_conv_fp_ps/Debug/yolo_conv_fp_ps.elf], Result: [null, ]. Thread: Worker-18
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:23:49.265
+!MESSAGE XSCT Command: [configparams force-mem-access 0], Thread: Worker-18
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:23:49.267
+!MESSAGE XSCT command with result: [configparams force-mem-access 0], Result: [null, ]. Thread: Worker-18
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:23:49.272
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248586321"} -index 0], Thread: Worker-18
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:23:49.296
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248586321"} -index 0], Result: [null, ]. Thread: Worker-18
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:23:49.296
+!MESSAGE XSCT Command: [con], Thread: Worker-18
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:23:49.317
+!MESSAGE XSCT command with result: [con], Result: [null, ]. Thread: Worker-18
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:23:49.319
+!MESSAGE XSCT Command: [disconnect tcfchan#6], Thread: Thread-423
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:23:49.330
+!MESSAGE XSCT command with result: [disconnect tcfchan#6], Result: [null, ]. Thread: Thread-423
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:24:18.882
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019/yolo_conv_fp_prj_2019.sdk/design_1_wrapper_hw_platform_0/system.hdf /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019/yolo_conv_fp_prj_2019.sdk/yolo_conv_fp_ps_bsp/system.mss ], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:24:20.285
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019/yolo_conv_fp_prj_2019.sdk/design_1_wrapper_hw_platform_0/system.hdf /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019/yolo_conv_fp_prj_2019.sdk/yolo_conv_fp_ps_bsp/system.mss ], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:24:20.285
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019/yolo_conv_fp_prj_2019.sdk/design_1_wrapper_hw_platform_0/system.hdf /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019/yolo_conv_fp_prj_2019.sdk/yolo_conv_fp_ps_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:24:20.287
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019/yolo_conv_fp_prj_2019.sdk/design_1_wrapper_hw_platform_0/system.hdf /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019/yolo_conv_fp_prj_2019.sdk/yolo_conv_fp_ps_bsp/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+"osname": "standalone",
+"osver": "7.0",
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:24:20.287
+!MESSAGE XSCT Command: [::hsi::utils::closesw /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019/yolo_conv_fp_prj_2019.sdk/yolo_conv_fp_ps_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:24:20.288
+!MESSAGE XSCT command with result: [::hsi::utils::closesw /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019/yolo_conv_fp_prj_2019.sdk/yolo_conv_fp_ps_bsp/system.mss], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:24:20.374
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019/yolo_conv_fp_prj_2019.sdk/design_1_wrapper_hw_platform_0/system.hdf /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019/yolo_conv_fp_prj_2019.sdk/yolo_conv_fp_ps_bsp/system.mss ], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:24:20.376
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019/yolo_conv_fp_prj_2019.sdk/design_1_wrapper_hw_platform_0/system.hdf /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019/yolo_conv_fp_prj_2019.sdk/yolo_conv_fp_ps_bsp/system.mss ], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:24:20.376
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019/yolo_conv_fp_prj_2019.sdk/design_1_wrapper_hw_platform_0/system.hdf /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019/yolo_conv_fp_prj_2019.sdk/yolo_conv_fp_ps_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:24:20.378
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019/yolo_conv_fp_prj_2019.sdk/design_1_wrapper_hw_platform_0/system.hdf /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019/yolo_conv_fp_prj_2019.sdk/yolo_conv_fp_ps_bsp/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+"osname": "standalone",
+"osver": "7.0",
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:24:20.378
+!MESSAGE XSCT Command: [::hsi::utils::closesw /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019/yolo_conv_fp_prj_2019.sdk/yolo_conv_fp_ps_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:24:20.379
+!MESSAGE XSCT command with result: [::hsi::utils::closesw /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019/yolo_conv_fp_prj_2019.sdk/yolo_conv_fp_ps_bsp/system.mss], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:24:20.461
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019/yolo_conv_fp_prj_2019.sdk/design_1_wrapper_hw_platform_0/system.hdf /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019/yolo_conv_fp_prj_2019.sdk/yolo_conv_fp_ps_bsp/system.mss ], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:24:20.463
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019/yolo_conv_fp_prj_2019.sdk/design_1_wrapper_hw_platform_0/system.hdf /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019/yolo_conv_fp_prj_2019.sdk/yolo_conv_fp_ps_bsp/system.mss ], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:24:20.463
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019/yolo_conv_fp_prj_2019.sdk/design_1_wrapper_hw_platform_0/system.hdf /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019/yolo_conv_fp_prj_2019.sdk/yolo_conv_fp_ps_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:24:20.465
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019/yolo_conv_fp_prj_2019.sdk/design_1_wrapper_hw_platform_0/system.hdf /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019/yolo_conv_fp_prj_2019.sdk/yolo_conv_fp_ps_bsp/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+"osname": "standalone",
+"osver": "7.0",
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:24:20.465
+!MESSAGE XSCT Command: [::hsi::utils::closesw /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019/yolo_conv_fp_prj_2019.sdk/yolo_conv_fp_ps_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:24:20.466
+!MESSAGE XSCT command with result: [::hsi::utils::closesw /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019/yolo_conv_fp_prj_2019.sdk/yolo_conv_fp_ps_bsp/system.mss], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:24:21.228
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019/yolo_conv_fp_prj_2019.sdk/design_1_wrapper_hw_platform_0/system.hdf /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019/yolo_conv_fp_prj_2019.sdk/yolo_conv_fp_ps_bsp/system.mss ], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:24:21.231
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019/yolo_conv_fp_prj_2019.sdk/design_1_wrapper_hw_platform_0/system.hdf /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019/yolo_conv_fp_prj_2019.sdk/yolo_conv_fp_ps_bsp/system.mss ], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:24:21.231
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019/yolo_conv_fp_prj_2019.sdk/design_1_wrapper_hw_platform_0/system.hdf /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019/yolo_conv_fp_prj_2019.sdk/yolo_conv_fp_ps_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:24:21.233
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019/yolo_conv_fp_prj_2019.sdk/design_1_wrapper_hw_platform_0/system.hdf /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019/yolo_conv_fp_prj_2019.sdk/yolo_conv_fp_ps_bsp/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+"osname": "standalone",
+"osver": "7.0",
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:24:21.233
+!MESSAGE XSCT Command: [::hsi::utils::closesw /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019/yolo_conv_fp_prj_2019.sdk/yolo_conv_fp_ps_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:24:21.234
+!MESSAGE XSCT command with result: [::hsi::utils::closesw /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019/yolo_conv_fp_prj_2019.sdk/yolo_conv_fp_ps_bsp/system.mss], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:24:26.328
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-17
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:24:26.988
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#7]. Thread: Worker-17
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:24:26.988
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-17
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:24:27.118
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zed 210248586321]. Thread: Worker-17
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:24:27.119
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-17
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:24:27.142
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zed 210248586321]. Thread: Worker-17
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:24:27.142
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248586321" && level==1}], Thread: Worker-17
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:24:27.196
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248586321" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-17
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:24:27.196
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248586321" && level==0} -index 1], Thread: Worker-17
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:24:27.225
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248586321" && level==0} -index 1], Result: [null, ]. Thread: Worker-17
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:24:27.225
+!MESSAGE XSCT Command: [fpga -state], Thread: Worker-17
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:24:27.236
+!MESSAGE XSCT command with result: [fpga -state], Result: [null, FPGA is configured]. Thread: Worker-17
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:24:27.236
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-17
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:24:27.237
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#7]. Thread: Worker-17
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:24:27.237
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-17
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:24:27.242
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zed 210248586321]. Thread: Worker-17
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:24:27.243
+!MESSAGE XSCT Command: [version -server], Thread: Worker-17
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:24:27.244
+!MESSAGE XSCT command with result: [version -server], Result: [null, 2019.1]. Thread: Worker-17
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:24:27.244
+!MESSAGE XSCT Command: [version], Thread: Worker-17
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:24:27.244
+!MESSAGE XSCT command with result: [version], Result: [null, xsct 2019.1
+SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.]. Thread: Worker-17
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:24:27.244
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-17
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:24:27.251
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zed 210248586321]. Thread: Worker-17
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:24:27.251
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248586321" && level==1}], Thread: Worker-17
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:24:27.266
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248586321" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-17
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:24:27.267
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-17
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:24:27.274
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zed 210248586321]. Thread: Worker-17
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:24:27.274
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248586321" && level==1}], Thread: Worker-17
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:24:27.290
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248586321" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-17
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:24:27.290
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-17
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:24:27.296
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zed 210248586321]. Thread: Worker-17
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:24:27.296
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248586321" && level==1}], Thread: Worker-17
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:24:27.311
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248586321" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-17
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:24:27.312
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-17
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:24:27.317
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zed 210248586321]. Thread: Worker-17
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:24:27.317
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248586321" && level==1}], Thread: Worker-17
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:24:27.334
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248586321" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-17
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:24:27.335
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-17
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:24:27.342
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zed 210248586321]. Thread: Worker-17
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:24:27.343
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248586321" && level==1}], Thread: Worker-17
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:24:27.358
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248586321" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-17
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:24:27.359
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-17
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:24:27.364
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zed 210248586321]. Thread: Worker-17
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:24:27.365
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248586321" && level==1}], Thread: Worker-17
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:24:27.381
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248586321" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-17
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:24:27.381
+!MESSAGE XSCT Command: [jtag targets -set -filter {name =~ "Digilent Zed 210248586321" && level == 0}], Thread: Worker-17
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:24:27.397
+!MESSAGE XSCT command with result: [jtag targets -set -filter {name =~ "Digilent Zed 210248586321" && level == 0}], Result: [null, ]. Thread: Worker-17
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:24:27.398
+!MESSAGE XSCT Command: [jtag frequency], Thread: Worker-17
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:24:27.398
+!MESSAGE XSCT command with result: [jtag frequency], Result: [null, 15000000]. Thread: Worker-17
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:24:27.399
+!MESSAGE XSCT Command: [source /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019/yolo_conv_fp_prj_2019.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl], Thread: Worker-17
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:24:27.400
+!MESSAGE XSCT command with result: [source /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019/yolo_conv_fp_prj_2019.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl], Result: [null, ]. Thread: Worker-17
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:24:27.401
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248586321"} -index 0], Thread: Worker-17
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:24:27.436
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248586321"} -index 0], Result: [null, ]. Thread: Worker-17
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:24:27.437
+!MESSAGE XSCT Command: [loadhw -hw /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019/yolo_conv_fp_prj_2019.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]], Thread: Worker-17
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:24:27.488
+!MESSAGE XSCT command with result: [loadhw -hw /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019/yolo_conv_fp_prj_2019.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]], Result: [null, design_1_wrapper_5]. Thread: Worker-17
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:24:27.489
+!MESSAGE XSCT Command: [configparams force-mem-access 1], Thread: Worker-17
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:24:27.492
+!MESSAGE XSCT command with result: [configparams force-mem-access 1], Result: [null, ]. Thread: Worker-17
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:24:27.492
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248586321"} -index 0], Thread: Worker-17
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:24:27.514
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248586321"} -index 0], Result: [null, ]. Thread: Worker-17
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:24:27.515
+!MESSAGE XSCT Command: [stop], Thread: Worker-17
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:24:27.526
+!MESSAGE XSCT command with result: [stop], Result: [null, ]. Thread: Worker-17
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:24:27.526
+!MESSAGE XSCT Command: [ps7_init], Thread: Worker-17
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:24:27.804
+!MESSAGE XSCT command with result: [ps7_init], Result: [null, ]. Thread: Worker-17
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:24:27.804
+!MESSAGE XSCT Command: [ps7_post_config], Thread: Worker-17
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:24:27.811
+!MESSAGE XSCT command with result: [ps7_post_config], Result: [null, ]. Thread: Worker-17
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:24:27.811
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248586321"} -index 0], Thread: Worker-17
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:24:27.833
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248586321"} -index 0], Result: [null, ]. Thread: Worker-17
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:24:27.833
+!MESSAGE XSCT Command: [rst -processor], Thread: Worker-17
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:24:27.881
+!MESSAGE XSCT command with result: [rst -processor], Result: [null, ]. Thread: Worker-17
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:24:27.881
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248586321"} -index 0], Thread: Worker-17
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:24:27.904
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248586321"} -index 0], Result: [null, ]. Thread: Worker-17
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:24:27.905
+!MESSAGE XSCT Command: [dow /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019/yolo_conv_fp_prj_2019.sdk/yolo_conv_fp_ps/Debug/yolo_conv_fp_ps.elf], Thread: Worker-17
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:24:41.929
+!MESSAGE XSCT command with result: [dow /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019/yolo_conv_fp_prj_2019.sdk/yolo_conv_fp_ps/Debug/yolo_conv_fp_ps.elf], Result: [null, ]. Thread: Worker-17
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:24:41.930
+!MESSAGE XSCT Command: [configparams force-mem-access 0], Thread: Worker-17
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:24:41.931
+!MESSAGE XSCT command with result: [configparams force-mem-access 0], Result: [null, ]. Thread: Worker-17
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:24:41.935
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248586321"} -index 0], Thread: Worker-17
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:24:41.978
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248586321"} -index 0], Result: [null, ]. Thread: Worker-17
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:24:41.978
+!MESSAGE XSCT Command: [con], Thread: Worker-17
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:24:42.001
+!MESSAGE XSCT command with result: [con], Result: [null, ]. Thread: Worker-17
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:24:42.001
+!MESSAGE XSCT Command: [disconnect tcfchan#7], Thread: Thread-476
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-06-22 15:24:42.004
+!MESSAGE XSCT command with result: [disconnect tcfchan#7], Result: [null, ]. Thread: Thread-476

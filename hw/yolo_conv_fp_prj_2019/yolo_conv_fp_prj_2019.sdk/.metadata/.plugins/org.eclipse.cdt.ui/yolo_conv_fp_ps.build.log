@@ -1,0 +1,8 @@
+15:24:24 **** Incremental Build of configuration Debug for project yolo_conv_fp_ps ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+
+15:24:25 Build Finished (took 579ms)
+

@@ -1,0 +1,316 @@
+
+
+================================================================
+== Vivado HLS Report for 'out_stream_merge'
+================================================================
+* Date:           Sat Jun 22 10:19:39 2019
+
+* Version:        2019.1 (Build 2552052 on Fri May 24 15:28:33 MDT 2019)
+* Project:        yolo_conv_fp_2019
+* Solution:       solution1
+* Product family: zynq
+* Target device:  xc7z020-clg484-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |  10.00|     5.449|        1.25|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+-----+-----+-----+----------+
+    |  Latency  |  Interval | Pipeline |
+    | min | max | min | max |   Type   |
+    +-----+-----+-----+-----+----------+
+    |    4|    4|    4|    4| function |
+    +-----+-----+-----+-----+----------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 2
+HasVarLatency: 0
+IsPipeline: 1
+IsRtlPipelined: 1
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
++ Individual pipeline summary: 
+  * Pipeline-0: initiation interval (II) = 4, depth = 5
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 5
+* Pipeline : 1
+  Pipeline-0 : II = 4, D = 5, States = { 1 2 3 4 5 }
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 4 
+4 --> 5 
+5 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 3.53>
+ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%input_ch_idx_read = call i2 @_ssdm_op_Read.ap_auto.i2(i2 %input_ch_idx)"   --->   Operation 6 'read' 'input_ch_idx_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%trunc_ln228 = trunc i2 %input_ch_idx_read to i1" [yolo_conv_fp_2019/src/yolo_conv.cpp:228]   --->   Operation 7 'trunc' 'trunc_ln228' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%shl_ln = call i3 @_ssdm_op_BitConcatenate.i3.i1.i2(i1 %trunc_ln228, i2 0)" [yolo_conv_fp_2019/src/yolo_conv.cpp:228]   --->   Operation 8 'bitconcatenate' 'shl_ln' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%shl_ln1 = call i4 @_ssdm_op_BitConcatenate.i4.i1.i3(i1 %trunc_ln228, i3 0)" [yolo_conv_fp_2019/src/yolo_conv.cpp:229]   --->   Operation 9 'bitconcatenate' 'shl_ln1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 10 [1/1] (1.30ns)   --->   "%icmp_ln114 = icmp eq i4 %shl_ln1, 0" [yolo_conv_fp_2019/src/yolo_conv.cpp:230]   --->   Operation 10 'icmp' 'icmp_ln114' <Predicate = true> <Delay = 1.30> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.13> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 11 [1/1] (0.00ns)   --->   "br i1 %icmp_ln114, label %branch240, label %branch248" [yolo_conv_fp_2019/src/yolo_conv.cpp:230]   --->   Operation 11 'br' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%tmp_15 = call i1 @_ssdm_op_NbReadReq.ap_fifo.i16P(i16* %out_stream_group_8_V_V, i32 1)" [yolo_conv_fp_2019/src/yolo_conv.cpp:230]   --->   Operation 12 'nbreadreq' 'tmp_15' <Predicate = (!icmp_ln114)> <Delay = 0.00> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 16> <Depth = 2> <FIFO>
+ST_1 : Operation 13 [1/1] (1.76ns)   --->   "br label %1" [yolo_conv_fp_2019/src/yolo_conv.cpp:230]   --->   Operation 13 'br' <Predicate = (!icmp_ln114)> <Delay = 1.76>
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%tmp_s = call i1 @_ssdm_op_NbReadReq.ap_fifo.i16P(i16* %out_stream_group_0_V_V, i32 1)" [yolo_conv_fp_2019/src/yolo_conv.cpp:230]   --->   Operation 14 'nbreadreq' 'tmp_s' <Predicate = (icmp_ln114)> <Delay = 0.00> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 16> <Depth = 2> <FIFO>
+ST_1 : Operation 15 [1/1] (1.76ns)   --->   "br label %1" [yolo_conv_fp_2019/src/yolo_conv.cpp:230]   --->   Operation 15 'br' <Predicate = (icmp_ln114)> <Delay = 1.76>
+ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%phi_ln114 = phi i1 [ %tmp_s, %branch240 ], [ %tmp_15, %branch248 ]" [yolo_conv_fp_2019/src/yolo_conv.cpp:230]   --->   Operation 16 'phi' 'phi_ln114' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 17 [1/1] (0.00ns)   --->   "br i1 %phi_ln114, label %2, label %._crit_edge.0" [yolo_conv_fp_2019/src/yolo_conv.cpp:230]   --->   Operation 17 'br' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 18 [1/1] (0.00ns)   --->   "br i1 %icmp_ln114, label %branch224, label %branch232" [yolo_conv_fp_2019/src/yolo_conv.cpp:234]   --->   Operation 18 'br' <Predicate = (phi_ln114)> <Delay = 0.00>
+ST_1 : Operation 19 [1/1] (0.00ns) (grouped into LUT with out node icmp_ln114_1)   --->   "%or_ln114 = or i4 %shl_ln1, 1" [yolo_conv_fp_2019/src/yolo_conv.cpp:238]   --->   Operation 19 'or' 'or_ln114' <Predicate = (phi_ln114)> <Delay = 0.00>
+ST_1 : Operation 20 [1/1] (1.30ns) (out node of the LUT)   --->   "%icmp_ln114_1 = icmp eq i4 %or_ln114, 1" [yolo_conv_fp_2019/src/yolo_conv.cpp:238]   --->   Operation 20 'icmp' 'icmp_ln114_1' <Predicate = (phi_ln114)> <Delay = 1.30> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.13> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 21 [1/1] (0.00ns)   --->   "br i1 %icmp_ln114_1, label %branch209, label %branch217" [yolo_conv_fp_2019/src/yolo_conv.cpp:238]   --->   Operation 21 'br' <Predicate = (phi_ln114)> <Delay = 0.00>
+ST_1 : Operation 22 [1/1] (0.00ns)   --->   "%tmp_1_1 = call i1 @_ssdm_op_NbReadReq.ap_fifo.i16P(i16* %out_stream_group_9_V_V, i32 1)" [yolo_conv_fp_2019/src/yolo_conv.cpp:238]   --->   Operation 22 'nbreadreq' 'tmp_1_1' <Predicate = (phi_ln114 & !icmp_ln114_1)> <Delay = 0.00> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 16> <Depth = 2> <FIFO>
+ST_1 : Operation 23 [1/1] (1.76ns)   --->   "br label %4" [yolo_conv_fp_2019/src/yolo_conv.cpp:238]   --->   Operation 23 'br' <Predicate = (phi_ln114 & !icmp_ln114_1)> <Delay = 1.76>
+ST_1 : Operation 24 [1/1] (0.00ns)   --->   "%tmp_1_s = call i1 @_ssdm_op_NbReadReq.ap_fifo.i16P(i16* %out_stream_group_1_V_V, i32 1)" [yolo_conv_fp_2019/src/yolo_conv.cpp:238]   --->   Operation 24 'nbreadreq' 'tmp_1_s' <Predicate = (phi_ln114 & icmp_ln114_1)> <Delay = 0.00> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 16> <Depth = 2> <FIFO>
+ST_1 : Operation 25 [1/1] (1.76ns)   --->   "br label %4" [yolo_conv_fp_2019/src/yolo_conv.cpp:238]   --->   Operation 25 'br' <Predicate = (phi_ln114 & icmp_ln114_1)> <Delay = 1.76>
+ST_1 : Operation 26 [1/1] (0.00ns)   --->   "%phi_ln114_1 = phi i1 [ %tmp_1_s, %branch209 ], [ %tmp_1_1, %branch217 ]" [yolo_conv_fp_2019/src/yolo_conv.cpp:238]   --->   Operation 26 'phi' 'phi_ln114_1' <Predicate = (phi_ln114)> <Delay = 0.00>
+ST_1 : Operation 27 [1/1] (1.76ns)   --->   "br i1 %phi_ln114_1, label %5, label %._crit_edge163.0" [yolo_conv_fp_2019/src/yolo_conv.cpp:238]   --->   Operation 27 'br' <Predicate = (phi_ln114)> <Delay = 1.76>
+ST_1 : Operation 28 [1/1] (0.00ns)   --->   "br i1 %icmp_ln114_1, label %branch193, label %branch201" [yolo_conv_fp_2019/src/yolo_conv.cpp:240]   --->   Operation 28 'br' <Predicate = (phi_ln114 & phi_ln114_1)> <Delay = 0.00>
+ST_1 : Operation 29 [1/1] (0.00ns) (grouped into LUT with out node icmp_ln114_2)   --->   "%or_ln114_1 = or i4 %shl_ln1, 2" [yolo_conv_fp_2019/src/yolo_conv.cpp:230]   --->   Operation 29 'or' 'or_ln114_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 30 [1/1] (1.30ns) (out node of the LUT)   --->   "%icmp_ln114_2 = icmp eq i4 %or_ln114_1, 2" [yolo_conv_fp_2019/src/yolo_conv.cpp:230]   --->   Operation 30 'icmp' 'icmp_ln114_2' <Predicate = true> <Delay = 1.30> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.13> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 31 [1/1] (0.00ns)   --->   "%tmp_17 = call i1 @_ssdm_op_NbReadReq.ap_fifo.i16P(i16* %out_stream_group_10_V_V, i32 1)" [yolo_conv_fp_2019/src/yolo_conv.cpp:230]   --->   Operation 31 'nbreadreq' 'tmp_17' <Predicate = (!icmp_ln114_2)> <Delay = 0.00> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 16> <Depth = 2> <FIFO>
+ST_1 : Operation 32 [1/1] (1.76ns)   --->   "br label %6" [yolo_conv_fp_2019/src/yolo_conv.cpp:230]   --->   Operation 32 'br' <Predicate = (!icmp_ln114_2)> <Delay = 1.76>
+ST_1 : Operation 33 [1/1] (0.00ns)   --->   "%tmp_16 = call i1 @_ssdm_op_NbReadReq.ap_fifo.i16P(i16* %out_stream_group_2_V_V, i32 1)" [yolo_conv_fp_2019/src/yolo_conv.cpp:230]   --->   Operation 33 'nbreadreq' 'tmp_16' <Predicate = (icmp_ln114_2)> <Delay = 0.00> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 16> <Depth = 2> <FIFO>
+ST_1 : Operation 34 [1/1] (1.76ns)   --->   "br label %6" [yolo_conv_fp_2019/src/yolo_conv.cpp:230]   --->   Operation 34 'br' <Predicate = (icmp_ln114_2)> <Delay = 1.76>
+ST_1 : Operation 35 [1/1] (0.00ns) (grouped into LUT with out node icmp_ln114_4)   --->   "%or_ln114_3 = or i4 %shl_ln1, 4" [yolo_conv_fp_2019/src/yolo_conv.cpp:230]   --->   Operation 35 'or' 'or_ln114_3' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 36 [1/1] (1.30ns) (out node of the LUT)   --->   "%icmp_ln114_4 = icmp eq i4 %or_ln114_3, 4" [yolo_conv_fp_2019/src/yolo_conv.cpp:230]   --->   Operation 36 'icmp' 'icmp_ln114_4' <Predicate = true> <Delay = 1.30> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.13> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 37 [1/1] (0.00ns)   --->   "%tmp_19 = call i1 @_ssdm_op_NbReadReq.ap_fifo.i16P(i16* %out_stream_group_12_V_V, i32 1)" [yolo_conv_fp_2019/src/yolo_conv.cpp:230]   --->   Operation 37 'nbreadreq' 'tmp_19' <Predicate = (!icmp_ln114_4)> <Delay = 0.00> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 16> <Depth = 2> <FIFO>
+ST_1 : Operation 38 [1/1] (1.76ns)   --->   "br label %11" [yolo_conv_fp_2019/src/yolo_conv.cpp:230]   --->   Operation 38 'br' <Predicate = (!icmp_ln114_4)> <Delay = 1.76>
+ST_1 : Operation 39 [1/1] (0.00ns)   --->   "%tmp_18 = call i1 @_ssdm_op_NbReadReq.ap_fifo.i16P(i16* %out_stream_group_4_V_V, i32 1)" [yolo_conv_fp_2019/src/yolo_conv.cpp:230]   --->   Operation 39 'nbreadreq' 'tmp_18' <Predicate = (icmp_ln114_4)> <Delay = 0.00> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 16> <Depth = 2> <FIFO>
+ST_1 : Operation 40 [1/1] (1.76ns)   --->   "br label %11" [yolo_conv_fp_2019/src/yolo_conv.cpp:230]   --->   Operation 40 'br' <Predicate = (icmp_ln114_4)> <Delay = 1.76>
+ST_1 : Operation 41 [1/1] (0.00ns)   --->   "%or_ln228 = or i3 %shl_ln, 3" [yolo_conv_fp_2019/src/yolo_conv.cpp:228]   --->   Operation 41 'or' 'or_ln228' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 42 [1/1] (1.13ns)   --->   "%icmp_ln114_6 = icmp eq i3 %or_ln228, 3" [yolo_conv_fp_2019/src/yolo_conv.cpp:230]   --->   Operation 42 'icmp' 'icmp_ln114_6' <Predicate = true> <Delay = 1.13> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.13> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 43 [1/1] (0.00ns)   --->   "%tmp_21 = call i1 @_ssdm_op_NbReadReq.ap_fifo.i16P(i16* %out_stream_group_14_V_V, i32 1)" [yolo_conv_fp_2019/src/yolo_conv.cpp:230]   --->   Operation 43 'nbreadreq' 'tmp_21' <Predicate = (!icmp_ln114_6)> <Delay = 0.00> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 16> <Depth = 2> <FIFO>
+ST_1 : Operation 44 [1/1] (1.76ns)   --->   "br label %16" [yolo_conv_fp_2019/src/yolo_conv.cpp:230]   --->   Operation 44 'br' <Predicate = (!icmp_ln114_6)> <Delay = 1.76>
+ST_1 : Operation 45 [1/1] (0.00ns)   --->   "%tmp_20 = call i1 @_ssdm_op_NbReadReq.ap_fifo.i16P(i16* %out_stream_group_6_V_V, i32 1)" [yolo_conv_fp_2019/src/yolo_conv.cpp:230]   --->   Operation 45 'nbreadreq' 'tmp_20' <Predicate = (icmp_ln114_6)> <Delay = 0.00> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 16> <Depth = 2> <FIFO>
+ST_1 : Operation 46 [1/1] (1.76ns)   --->   "br label %16" [yolo_conv_fp_2019/src/yolo_conv.cpp:230]   --->   Operation 46 'br' <Predicate = (icmp_ln114_6)> <Delay = 1.76>
+
+State 2 <SV = 1> <Delay = 5.40>
+ST_2 : Operation 47 [1/1] (0.00ns)   --->   "%tmp_dest_V = call i6 @_ssdm_op_Read.ap_auto.i6(i6 %curr_input_dest_V)"   --->   Operation 47 'read' 'tmp_dest_V' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 48 [1/1] (0.00ns)   --->   "%tmp_id_V = call i5 @_ssdm_op_Read.ap_auto.i5(i5 %curr_input_id_V)"   --->   Operation 48 'read' 'tmp_id_V' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 49 [1/1] (0.00ns)   --->   "%tmp_user_V = call i2 @_ssdm_op_Read.ap_auto.i2(i2 %curr_input_user_V)"   --->   Operation 49 'read' 'tmp_user_V' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 50 [1/1] (0.00ns)   --->   "%tmp_strb_V = call i4 @_ssdm_op_Read.ap_auto.i4(i4 %curr_input_strb_V)"   --->   Operation 50 'read' 'tmp_strb_V' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 51 [1/1] (0.00ns)   --->   "%tmp_keep_V = call i4 @_ssdm_op_Read.ap_auto.i4(i4 %curr_input_keep_V)"   --->   Operation 51 'read' 'tmp_keep_V' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 52 [1/1] (3.63ns)   --->   "%tmp_V_16 = call i16 @_ssdm_op_Read.ap_fifo.volatile.i16P(i16* %out_stream_group_8_V_V)" [yolo_conv_fp_2019/src/yolo_conv.cpp:234]   --->   Operation 52 'read' 'tmp_V_16' <Predicate = (!icmp_ln114 & phi_ln114)> <Delay = 3.63> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 16> <Depth = 2> <FIFO>
+ST_2 : Operation 53 [1/1] (1.76ns)   --->   "br label %3" [yolo_conv_fp_2019/src/yolo_conv.cpp:234]   --->   Operation 53 'br' <Predicate = (!icmp_ln114 & phi_ln114)> <Delay = 1.76>
+ST_2 : Operation 54 [1/1] (3.63ns)   --->   "%tmp_V = call i16 @_ssdm_op_Read.ap_fifo.volatile.i16P(i16* %out_stream_group_0_V_V)" [yolo_conv_fp_2019/src/yolo_conv.cpp:234]   --->   Operation 54 'read' 'tmp_V' <Predicate = (icmp_ln114 & phi_ln114)> <Delay = 3.63> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 16> <Depth = 2> <FIFO>
+ST_2 : Operation 55 [1/1] (1.76ns)   --->   "br label %3" [yolo_conv_fp_2019/src/yolo_conv.cpp:234]   --->   Operation 55 'br' <Predicate = (icmp_ln114 & phi_ln114)> <Delay = 1.76>
+ST_2 : Operation 56 [1/1] (0.00ns)   --->   "%tmp_V_load = phi i16 [ %tmp_V_16, %branch232 ], [ %tmp_V, %branch224 ]"   --->   Operation 56 'phi' 'tmp_V_load' <Predicate = (phi_ln114)> <Delay = 0.00>
+ST_2 : Operation 57 [1/1] (3.63ns)   --->   "%tmp_V_18 = call i16 @_ssdm_op_Read.ap_fifo.volatile.i16P(i16* %out_stream_group_9_V_V)" [yolo_conv_fp_2019/src/yolo_conv.cpp:240]   --->   Operation 57 'read' 'tmp_V_18' <Predicate = (phi_ln114 & !icmp_ln114_1 & phi_ln114_1)> <Delay = 3.63> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 16> <Depth = 2> <FIFO>
+ST_2 : Operation 58 [1/1] (1.76ns)   --->   "br label %._crit_edge163.0" [yolo_conv_fp_2019/src/yolo_conv.cpp:240]   --->   Operation 58 'br' <Predicate = (phi_ln114 & !icmp_ln114_1 & phi_ln114_1)> <Delay = 1.76>
+ST_2 : Operation 59 [1/1] (3.63ns)   --->   "%tmp_V_17 = call i16 @_ssdm_op_Read.ap_fifo.volatile.i16P(i16* %out_stream_group_1_V_V)" [yolo_conv_fp_2019/src/yolo_conv.cpp:240]   --->   Operation 59 'read' 'tmp_V_17' <Predicate = (phi_ln114 & icmp_ln114_1 & phi_ln114_1)> <Delay = 3.63> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 16> <Depth = 2> <FIFO>
+ST_2 : Operation 60 [1/1] (1.76ns)   --->   "br label %._crit_edge163.0" [yolo_conv_fp_2019/src/yolo_conv.cpp:240]   --->   Operation 60 'br' <Predicate = (phi_ln114 & icmp_ln114_1 & phi_ln114_1)> <Delay = 1.76>
+ST_2 : Operation 61 [1/1] (0.00ns)   --->   "%curr_output_0_1_2_0 = phi i16 [ undef, %4 ], [ %tmp_V_18, %branch201 ], [ %tmp_V_17, %branch193 ]"   --->   Operation 61 'phi' 'curr_output_0_1_2_0' <Predicate = (phi_ln114)> <Delay = 0.00>
+ST_2 : Operation 62 [1/1] (0.00ns)   --->   "%tmp_data = call i32 @_ssdm_op_BitConcatenate.i32.i16.i16(i16 %curr_output_0_1_2_0, i16 %tmp_V_load)" [yolo_conv_fp_2019/src/yolo_conv.cpp:257]   --->   Operation 62 'bitconcatenate' 'tmp_data' <Predicate = (phi_ln114)> <Delay = 0.00>
+ST_2 : Operation 63 [1/1] (0.00ns)   --->   "call void @_ssdm_op_Write.axis.volatile.i32P.i4P.i4P.i2P.i1P.i5P.i6P(i32* %outStream_V_data, i4* %outStream_V_keep_V, i4* %outStream_V_strb_V, i2* %outStream_V_user_V, i1* %outStream_V_last_V, i5* %outStream_V_id_V, i6* %outStream_V_dest_V, i32 %tmp_data, i4 %tmp_keep_V, i4 %tmp_strb_V, i2 %tmp_user_V, i1 false, i5 %tmp_id_V, i6 %tmp_dest_V)" [yolo_conv_fp_2019/src/yolo_conv.cpp:257]   --->   Operation 63 'write' <Predicate = (phi_ln114)> <Delay = 0.00> <Core = "AXI4Stream">   --->   Core 5 'AXI4Stream' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
+ST_2 : Operation 64 [1/1] (0.00ns)   --->   "br label %._crit_edge.0" [yolo_conv_fp_2019/src/yolo_conv.cpp:258]   --->   Operation 64 'br' <Predicate = (phi_ln114)> <Delay = 0.00>
+ST_2 : Operation 65 [1/1] (0.00ns)   --->   "br i1 %icmp_ln114_2, label %branch178, label %branch186" [yolo_conv_fp_2019/src/yolo_conv.cpp:230]   --->   Operation 65 'br' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 66 [1/1] (0.00ns)   --->   "%phi_ln114_2 = phi i1 [ %tmp_16, %branch178 ], [ %tmp_17, %branch186 ]" [yolo_conv_fp_2019/src/yolo_conv.cpp:230]   --->   Operation 66 'phi' 'phi_ln114_2' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 67 [1/1] (0.00ns)   --->   "br i1 %icmp_ln114_2, label %branch162, label %branch170" [yolo_conv_fp_2019/src/yolo_conv.cpp:234]   --->   Operation 67 'br' <Predicate = (phi_ln114_2)> <Delay = 0.00>
+ST_2 : Operation 68 [1/1] (0.00ns) (grouped into LUT with out node icmp_ln114_3)   --->   "%or_ln114_2 = or i4 %shl_ln1, 3" [yolo_conv_fp_2019/src/yolo_conv.cpp:238]   --->   Operation 68 'or' 'or_ln114_2' <Predicate = (phi_ln114_2)> <Delay = 0.00>
+ST_2 : Operation 69 [1/1] (1.30ns) (out node of the LUT)   --->   "%icmp_ln114_3 = icmp eq i4 %or_ln114_2, 3" [yolo_conv_fp_2019/src/yolo_conv.cpp:238]   --->   Operation 69 'icmp' 'icmp_ln114_3' <Predicate = (phi_ln114_2)> <Delay = 1.30> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.13> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 70 [1/1] (0.00ns)   --->   "br i1 %icmp_ln114_3, label %branch147, label %branch155" [yolo_conv_fp_2019/src/yolo_conv.cpp:238]   --->   Operation 70 'br' <Predicate = (phi_ln114_2)> <Delay = 0.00>
+ST_2 : Operation 71 [1/1] (0.00ns)   --->   "%tmp_1_3 = call i1 @_ssdm_op_NbReadReq.ap_fifo.i16P(i16* %out_stream_group_11_V_V, i32 1)" [yolo_conv_fp_2019/src/yolo_conv.cpp:238]   --->   Operation 71 'nbreadreq' 'tmp_1_3' <Predicate = (phi_ln114_2 & !icmp_ln114_3)> <Delay = 0.00> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 16> <Depth = 2> <FIFO>
+ST_2 : Operation 72 [1/1] (1.76ns)   --->   "br label %9" [yolo_conv_fp_2019/src/yolo_conv.cpp:238]   --->   Operation 72 'br' <Predicate = (phi_ln114_2 & !icmp_ln114_3)> <Delay = 1.76>
+ST_2 : Operation 73 [1/1] (0.00ns)   --->   "%tmp_1_2 = call i1 @_ssdm_op_NbReadReq.ap_fifo.i16P(i16* %out_stream_group_3_V_V, i32 1)" [yolo_conv_fp_2019/src/yolo_conv.cpp:238]   --->   Operation 73 'nbreadreq' 'tmp_1_2' <Predicate = (phi_ln114_2 & icmp_ln114_3)> <Delay = 0.00> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 16> <Depth = 2> <FIFO>
+ST_2 : Operation 74 [1/1] (1.76ns)   --->   "br label %9" [yolo_conv_fp_2019/src/yolo_conv.cpp:238]   --->   Operation 74 'br' <Predicate = (phi_ln114_2 & icmp_ln114_3)> <Delay = 1.76>
+ST_2 : Operation 75 [1/1] (0.00ns)   --->   "%phi_ln114_3 = phi i1 [ %tmp_1_2, %branch147 ], [ %tmp_1_3, %branch155 ]" [yolo_conv_fp_2019/src/yolo_conv.cpp:238]   --->   Operation 75 'phi' 'phi_ln114_3' <Predicate = (phi_ln114_2)> <Delay = 0.00>
+ST_2 : Operation 76 [1/1] (0.00ns)   --->   "br i1 %icmp_ln114_3, label %branch131, label %branch139" [yolo_conv_fp_2019/src/yolo_conv.cpp:240]   --->   Operation 76 'br' <Predicate = (phi_ln114_2 & phi_ln114_3)> <Delay = 0.00>
+ST_2 : Operation 77 [1/1] (0.00ns)   --->   "br i1 %icmp_ln114_4, label %branch116, label %branch124" [yolo_conv_fp_2019/src/yolo_conv.cpp:230]   --->   Operation 77 'br' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 78 [1/1] (0.00ns)   --->   "%phi_ln114_4 = phi i1 [ %tmp_18, %branch116 ], [ %tmp_19, %branch124 ]" [yolo_conv_fp_2019/src/yolo_conv.cpp:230]   --->   Operation 78 'phi' 'phi_ln114_4' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 79 [1/1] (0.00ns)   --->   "br i1 %icmp_ln114_4, label %branch100, label %branch108" [yolo_conv_fp_2019/src/yolo_conv.cpp:234]   --->   Operation 79 'br' <Predicate = (phi_ln114_4)> <Delay = 0.00>
+ST_2 : Operation 80 [1/1] (0.00ns) (grouped into LUT with out node icmp_ln114_5)   --->   "%or_ln114_4 = or i4 %shl_ln1, 5" [yolo_conv_fp_2019/src/yolo_conv.cpp:238]   --->   Operation 80 'or' 'or_ln114_4' <Predicate = (phi_ln114_4)> <Delay = 0.00>
+ST_2 : Operation 81 [1/1] (1.30ns) (out node of the LUT)   --->   "%icmp_ln114_5 = icmp eq i4 %or_ln114_4, 5" [yolo_conv_fp_2019/src/yolo_conv.cpp:238]   --->   Operation 81 'icmp' 'icmp_ln114_5' <Predicate = (phi_ln114_4)> <Delay = 1.30> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.13> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 82 [1/1] (0.00ns)   --->   "%tmp_1_5 = call i1 @_ssdm_op_NbReadReq.ap_fifo.i16P(i16* %out_stream_group_13_V_V, i32 1)" [yolo_conv_fp_2019/src/yolo_conv.cpp:238]   --->   Operation 82 'nbreadreq' 'tmp_1_5' <Predicate = (phi_ln114_4 & !icmp_ln114_5)> <Delay = 0.00> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 16> <Depth = 2> <FIFO>
+ST_2 : Operation 83 [1/1] (1.76ns)   --->   "br label %14" [yolo_conv_fp_2019/src/yolo_conv.cpp:238]   --->   Operation 83 'br' <Predicate = (phi_ln114_4 & !icmp_ln114_5)> <Delay = 1.76>
+ST_2 : Operation 84 [1/1] (0.00ns)   --->   "%tmp_1_4 = call i1 @_ssdm_op_NbReadReq.ap_fifo.i16P(i16* %out_stream_group_5_V_V, i32 1)" [yolo_conv_fp_2019/src/yolo_conv.cpp:238]   --->   Operation 84 'nbreadreq' 'tmp_1_4' <Predicate = (phi_ln114_4 & icmp_ln114_5)> <Delay = 0.00> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 16> <Depth = 2> <FIFO>
+ST_2 : Operation 85 [1/1] (1.76ns)   --->   "br label %14" [yolo_conv_fp_2019/src/yolo_conv.cpp:238]   --->   Operation 85 'br' <Predicate = (phi_ln114_4 & icmp_ln114_5)> <Delay = 1.76>
+ST_2 : Operation 86 [1/1] (0.00ns)   --->   "%shl_ln2 = call i4 @_ssdm_op_BitConcatenate.i4.i3.i1(i3 %or_ln228, i1 false)" [yolo_conv_fp_2019/src/yolo_conv.cpp:230]   --->   Operation 86 'bitconcatenate' 'shl_ln2' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 87 [1/1] (0.00ns)   --->   "br i1 %icmp_ln114_6, label %branch54, label %branch62" [yolo_conv_fp_2019/src/yolo_conv.cpp:230]   --->   Operation 87 'br' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 88 [1/1] (0.00ns)   --->   "%phi_ln114_6 = phi i1 [ %tmp_20, %branch54 ], [ %tmp_21, %branch62 ]" [yolo_conv_fp_2019/src/yolo_conv.cpp:230]   --->   Operation 88 'phi' 'phi_ln114_6' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 89 [1/1] (0.00ns)   --->   "br i1 %phi_ln114_6, label %17, label %._crit_edge.3" [yolo_conv_fp_2019/src/yolo_conv.cpp:230]   --->   Operation 89 'br' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 90 [1/1] (0.00ns)   --->   "br i1 %icmp_ln114_6, label %branch38, label %branch46" [yolo_conv_fp_2019/src/yolo_conv.cpp:234]   --->   Operation 90 'br' <Predicate = (phi_ln114_6)> <Delay = 0.00>
+ST_2 : Operation 91 [1/1] (0.00ns) (grouped into LUT with out node icmp_ln114_7)   --->   "%or_ln114_5 = or i4 %shl_ln2, 1" [yolo_conv_fp_2019/src/yolo_conv.cpp:238]   --->   Operation 91 'or' 'or_ln114_5' <Predicate = (phi_ln114_6)> <Delay = 0.00>
+ST_2 : Operation 92 [1/1] (1.30ns) (out node of the LUT)   --->   "%icmp_ln114_7 = icmp eq i4 %or_ln114_5, 7" [yolo_conv_fp_2019/src/yolo_conv.cpp:238]   --->   Operation 92 'icmp' 'icmp_ln114_7' <Predicate = (phi_ln114_6)> <Delay = 1.30> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.13> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 93 [1/1] (0.00ns)   --->   "%tmp_1_7 = call i1 @_ssdm_op_NbReadReq.ap_fifo.i16P(i16* %out_stream_group_15_V_V, i32 1)" [yolo_conv_fp_2019/src/yolo_conv.cpp:238]   --->   Operation 93 'nbreadreq' 'tmp_1_7' <Predicate = (phi_ln114_6 & !icmp_ln114_7)> <Delay = 0.00> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 16> <Depth = 2> <FIFO>
+ST_2 : Operation 94 [1/1] (1.76ns)   --->   "br label %19" [yolo_conv_fp_2019/src/yolo_conv.cpp:238]   --->   Operation 94 'br' <Predicate = (phi_ln114_6 & !icmp_ln114_7)> <Delay = 1.76>
+ST_2 : Operation 95 [1/1] (0.00ns)   --->   "%tmp_1_6 = call i1 @_ssdm_op_NbReadReq.ap_fifo.i16P(i16* %out_stream_group_7_V_V, i32 1)" [yolo_conv_fp_2019/src/yolo_conv.cpp:238]   --->   Operation 95 'nbreadreq' 'tmp_1_6' <Predicate = (phi_ln114_6 & icmp_ln114_7)> <Delay = 0.00> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 16> <Depth = 2> <FIFO>
+ST_2 : Operation 96 [1/1] (1.76ns)   --->   "br label %19" [yolo_conv_fp_2019/src/yolo_conv.cpp:238]   --->   Operation 96 'br' <Predicate = (phi_ln114_6 & icmp_ln114_7)> <Delay = 1.76>
+ST_2 : Operation 97 [1/1] (1.13ns)   --->   "%icmp_ln251 = icmp eq i3 %or_ln228, -1" [yolo_conv_fp_2019/src/yolo_conv.cpp:251]   --->   Operation 97 'icmp' 'icmp_ln251' <Predicate = (phi_ln114_6)> <Delay = 1.13> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.13> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+
+State 3 <SV = 2> <Delay = 5.44>
+ST_3 : Operation 98 [1/1] (0.00ns)   --->   "%curr_output_0_1_4_0 = phi i16 [ %curr_output_0_1_2_0, %._crit_edge163.0 ], [ undef, %1 ]" [yolo_conv_fp_2019/src/yolo_conv.cpp:240]   --->   Operation 98 'phi' 'curr_output_0_1_4_0' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 99 [1/1] (1.76ns)   --->   "br i1 %phi_ln114_2, label %7, label %._crit_edge.1" [yolo_conv_fp_2019/src/yolo_conv.cpp:230]   --->   Operation 99 'br' <Predicate = true> <Delay = 1.76>
+ST_3 : Operation 100 [1/1] (3.63ns)   --->   "%tmp_V_20 = call i16 @_ssdm_op_Read.ap_fifo.volatile.i16P(i16* %out_stream_group_10_V_V)" [yolo_conv_fp_2019/src/yolo_conv.cpp:234]   --->   Operation 100 'read' 'tmp_V_20' <Predicate = (!icmp_ln114_2 & phi_ln114_2)> <Delay = 3.63> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 16> <Depth = 2> <FIFO>
+ST_3 : Operation 101 [1/1] (1.76ns)   --->   "br label %8" [yolo_conv_fp_2019/src/yolo_conv.cpp:234]   --->   Operation 101 'br' <Predicate = (!icmp_ln114_2 & phi_ln114_2)> <Delay = 1.76>
+ST_3 : Operation 102 [1/1] (3.63ns)   --->   "%tmp_V_19 = call i16 @_ssdm_op_Read.ap_fifo.volatile.i16P(i16* %out_stream_group_2_V_V)" [yolo_conv_fp_2019/src/yolo_conv.cpp:234]   --->   Operation 102 'read' 'tmp_V_19' <Predicate = (icmp_ln114_2 & phi_ln114_2)> <Delay = 3.63> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 16> <Depth = 2> <FIFO>
+ST_3 : Operation 103 [1/1] (1.76ns)   --->   "br label %8" [yolo_conv_fp_2019/src/yolo_conv.cpp:234]   --->   Operation 103 'br' <Predicate = (icmp_ln114_2 & phi_ln114_2)> <Delay = 1.76>
+ST_3 : Operation 104 [1/1] (0.00ns)   --->   "%tmp_V_load_1 = phi i16 [ %tmp_V_20, %branch170 ], [ %tmp_V_19, %branch162 ]"   --->   Operation 104 'phi' 'tmp_V_load_1' <Predicate = (phi_ln114_2)> <Delay = 0.00>
+ST_3 : Operation 105 [1/1] (1.81ns)   --->   "br i1 %phi_ln114_3, label %10, label %._crit_edge163.1" [yolo_conv_fp_2019/src/yolo_conv.cpp:238]   --->   Operation 105 'br' <Predicate = (phi_ln114_2)> <Delay = 1.81>
+ST_3 : Operation 106 [1/1] (3.63ns)   --->   "%tmp_V_22 = call i16 @_ssdm_op_Read.ap_fifo.volatile.i16P(i16* %out_stream_group_11_V_V)" [yolo_conv_fp_2019/src/yolo_conv.cpp:240]   --->   Operation 106 'read' 'tmp_V_22' <Predicate = (phi_ln114_2 & !icmp_ln114_3 & phi_ln114_3)> <Delay = 3.63> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 16> <Depth = 2> <FIFO>
+ST_3 : Operation 107 [1/1] (1.81ns)   --->   "br label %._crit_edge163.1" [yolo_conv_fp_2019/src/yolo_conv.cpp:240]   --->   Operation 107 'br' <Predicate = (phi_ln114_2 & !icmp_ln114_3 & phi_ln114_3)> <Delay = 1.81>
+ST_3 : Operation 108 [1/1] (3.63ns)   --->   "%tmp_V_21 = call i16 @_ssdm_op_Read.ap_fifo.volatile.i16P(i16* %out_stream_group_3_V_V)" [yolo_conv_fp_2019/src/yolo_conv.cpp:240]   --->   Operation 108 'read' 'tmp_V_21' <Predicate = (phi_ln114_2 & icmp_ln114_3 & phi_ln114_3)> <Delay = 3.63> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 16> <Depth = 2> <FIFO>
+ST_3 : Operation 109 [1/1] (1.81ns)   --->   "br label %._crit_edge163.1" [yolo_conv_fp_2019/src/yolo_conv.cpp:240]   --->   Operation 109 'br' <Predicate = (phi_ln114_2 & icmp_ln114_3 & phi_ln114_3)> <Delay = 1.81>
+ST_3 : Operation 110 [1/1] (0.00ns)   --->   "%curr_output_0_1_2_1 = phi i16 [ %curr_output_0_1_4_0, %9 ], [ %tmp_V_22, %branch139 ], [ %tmp_V_21, %branch131 ]"   --->   Operation 110 'phi' 'curr_output_0_1_2_1' <Predicate = (phi_ln114_2)> <Delay = 0.00>
+ST_3 : Operation 111 [1/1] (0.00ns)   --->   "%tmp_data_1 = call i32 @_ssdm_op_BitConcatenate.i32.i16.i16(i16 %curr_output_0_1_2_1, i16 %tmp_V_load_1)" [yolo_conv_fp_2019/src/yolo_conv.cpp:257]   --->   Operation 111 'bitconcatenate' 'tmp_data_1' <Predicate = (phi_ln114_2)> <Delay = 0.00>
+ST_3 : Operation 112 [1/1] (0.00ns)   --->   "call void @_ssdm_op_Write.axis.volatile.i32P.i4P.i4P.i2P.i1P.i5P.i6P(i32* %outStream_V_data, i4* %outStream_V_keep_V, i4* %outStream_V_strb_V, i2* %outStream_V_user_V, i1* %outStream_V_last_V, i5* %outStream_V_id_V, i6* %outStream_V_dest_V, i32 %tmp_data_1, i4 %tmp_keep_V, i4 %tmp_strb_V, i2 %tmp_user_V, i1 false, i5 %tmp_id_V, i6 %tmp_dest_V)" [yolo_conv_fp_2019/src/yolo_conv.cpp:257]   --->   Operation 112 'write' <Predicate = (phi_ln114_2)> <Delay = 0.00> <Core = "AXI4Stream">   --->   Core 5 'AXI4Stream' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
+ST_3 : Operation 113 [1/1] (1.76ns)   --->   "br label %._crit_edge.1" [yolo_conv_fp_2019/src/yolo_conv.cpp:258]   --->   Operation 113 'br' <Predicate = (phi_ln114_2)> <Delay = 1.76>
+ST_3 : Operation 114 [1/1] (3.63ns)   --->   "%tmp_V_24 = call i16 @_ssdm_op_Read.ap_fifo.volatile.i16P(i16* %out_stream_group_12_V_V)" [yolo_conv_fp_2019/src/yolo_conv.cpp:234]   --->   Operation 114 'read' 'tmp_V_24' <Predicate = (!icmp_ln114_4 & phi_ln114_4)> <Delay = 3.63> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 16> <Depth = 2> <FIFO>
+ST_3 : Operation 115 [1/1] (1.76ns)   --->   "br label %13" [yolo_conv_fp_2019/src/yolo_conv.cpp:234]   --->   Operation 115 'br' <Predicate = (!icmp_ln114_4 & phi_ln114_4)> <Delay = 1.76>
+ST_3 : Operation 116 [1/1] (3.63ns)   --->   "%tmp_V_23 = call i16 @_ssdm_op_Read.ap_fifo.volatile.i16P(i16* %out_stream_group_4_V_V)" [yolo_conv_fp_2019/src/yolo_conv.cpp:234]   --->   Operation 116 'read' 'tmp_V_23' <Predicate = (icmp_ln114_4 & phi_ln114_4)> <Delay = 3.63> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 16> <Depth = 2> <FIFO>
+ST_3 : Operation 117 [1/1] (1.76ns)   --->   "br label %13" [yolo_conv_fp_2019/src/yolo_conv.cpp:234]   --->   Operation 117 'br' <Predicate = (icmp_ln114_4 & phi_ln114_4)> <Delay = 1.76>
+ST_3 : Operation 118 [1/1] (0.00ns)   --->   "br i1 %icmp_ln114_5, label %branch85, label %branch93" [yolo_conv_fp_2019/src/yolo_conv.cpp:238]   --->   Operation 118 'br' <Predicate = (phi_ln114_4)> <Delay = 0.00>
+ST_3 : Operation 119 [1/1] (0.00ns)   --->   "%phi_ln114_5 = phi i1 [ %tmp_1_4, %branch85 ], [ %tmp_1_5, %branch93 ]" [yolo_conv_fp_2019/src/yolo_conv.cpp:238]   --->   Operation 119 'phi' 'phi_ln114_5' <Predicate = (phi_ln114_4)> <Delay = 0.00>
+ST_3 : Operation 120 [1/1] (0.00ns)   --->   "br i1 %icmp_ln114_5, label %branch69, label %branch77" [yolo_conv_fp_2019/src/yolo_conv.cpp:240]   --->   Operation 120 'br' <Predicate = (phi_ln114_4 & phi_ln114_5)> <Delay = 0.00>
+ST_3 : Operation 121 [1/1] (0.00ns)   --->   "br i1 %icmp_ln114_7, label %branch23, label %branch31" [yolo_conv_fp_2019/src/yolo_conv.cpp:238]   --->   Operation 121 'br' <Predicate = (phi_ln114_6)> <Delay = 0.00>
+ST_3 : Operation 122 [1/1] (0.00ns)   --->   "%phi_ln114_7 = phi i1 [ %tmp_1_6, %branch23 ], [ %tmp_1_7, %branch31 ]" [yolo_conv_fp_2019/src/yolo_conv.cpp:238]   --->   Operation 122 'phi' 'phi_ln114_7' <Predicate = (phi_ln114_6)> <Delay = 0.00>
+ST_3 : Operation 123 [1/1] (0.00ns)   --->   "br i1 %icmp_ln114_7, label %branch7, label %branch15" [yolo_conv_fp_2019/src/yolo_conv.cpp:240]   --->   Operation 123 'br' <Predicate = (phi_ln114_6 & phi_ln114_7)> <Delay = 0.00>
+
+State 4 <SV = 3> <Delay = 5.44>
+ST_4 : Operation 124 [1/1] (0.00ns)   --->   "%last_V_read = call i1 @_ssdm_op_Read.ap_auto.i1(i1 %last_V)"   --->   Operation 124 'read' 'last_V_read' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 125 [1/1] (0.00ns)   --->   "%curr_output_0_1_4_1 = phi i16 [ %curr_output_0_1_2_1, %._crit_edge163.1 ], [ %curr_output_0_1_4_0, %6 ]" [yolo_conv_fp_2019/src/yolo_conv.cpp:240]   --->   Operation 125 'phi' 'curr_output_0_1_4_1' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 126 [1/1] (1.76ns)   --->   "br i1 %phi_ln114_4, label %12, label %._crit_edge.2" [yolo_conv_fp_2019/src/yolo_conv.cpp:230]   --->   Operation 126 'br' <Predicate = true> <Delay = 1.76>
+ST_4 : Operation 127 [1/1] (0.00ns)   --->   "%tmp_V_load_2 = phi i16 [ %tmp_V_24, %branch108 ], [ %tmp_V_23, %branch100 ]"   --->   Operation 127 'phi' 'tmp_V_load_2' <Predicate = (phi_ln114_4)> <Delay = 0.00>
+ST_4 : Operation 128 [1/1] (1.81ns)   --->   "br i1 %phi_ln114_5, label %15, label %._crit_edge163.2" [yolo_conv_fp_2019/src/yolo_conv.cpp:238]   --->   Operation 128 'br' <Predicate = (phi_ln114_4)> <Delay = 1.81>
+ST_4 : Operation 129 [1/1] (3.63ns)   --->   "%tmp_V_26 = call i16 @_ssdm_op_Read.ap_fifo.volatile.i16P(i16* %out_stream_group_13_V_V)" [yolo_conv_fp_2019/src/yolo_conv.cpp:240]   --->   Operation 129 'read' 'tmp_V_26' <Predicate = (phi_ln114_4 & !icmp_ln114_5 & phi_ln114_5)> <Delay = 3.63> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 16> <Depth = 2> <FIFO>
+ST_4 : Operation 130 [1/1] (1.81ns)   --->   "br label %._crit_edge163.2" [yolo_conv_fp_2019/src/yolo_conv.cpp:240]   --->   Operation 130 'br' <Predicate = (phi_ln114_4 & !icmp_ln114_5 & phi_ln114_5)> <Delay = 1.81>
+ST_4 : Operation 131 [1/1] (3.63ns)   --->   "%tmp_V_25 = call i16 @_ssdm_op_Read.ap_fifo.volatile.i16P(i16* %out_stream_group_5_V_V)" [yolo_conv_fp_2019/src/yolo_conv.cpp:240]   --->   Operation 131 'read' 'tmp_V_25' <Predicate = (phi_ln114_4 & icmp_ln114_5 & phi_ln114_5)> <Delay = 3.63> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 16> <Depth = 2> <FIFO>
+ST_4 : Operation 132 [1/1] (1.81ns)   --->   "br label %._crit_edge163.2" [yolo_conv_fp_2019/src/yolo_conv.cpp:240]   --->   Operation 132 'br' <Predicate = (phi_ln114_4 & icmp_ln114_5 & phi_ln114_5)> <Delay = 1.81>
+ST_4 : Operation 133 [1/1] (0.00ns)   --->   "%curr_output_0_1_2_2 = phi i16 [ %curr_output_0_1_4_1, %14 ], [ %tmp_V_26, %branch77 ], [ %tmp_V_25, %branch69 ]"   --->   Operation 133 'phi' 'curr_output_0_1_2_2' <Predicate = (phi_ln114_4)> <Delay = 0.00>
+ST_4 : Operation 134 [1/1] (0.00ns)   --->   "%tmp_data_2 = call i32 @_ssdm_op_BitConcatenate.i32.i16.i16(i16 %curr_output_0_1_2_2, i16 %tmp_V_load_2)" [yolo_conv_fp_2019/src/yolo_conv.cpp:257]   --->   Operation 134 'bitconcatenate' 'tmp_data_2' <Predicate = (phi_ln114_4)> <Delay = 0.00>
+ST_4 : Operation 135 [1/1] (0.00ns)   --->   "call void @_ssdm_op_Write.axis.volatile.i32P.i4P.i4P.i2P.i1P.i5P.i6P(i32* %outStream_V_data, i4* %outStream_V_keep_V, i4* %outStream_V_strb_V, i2* %outStream_V_user_V, i1* %outStream_V_last_V, i5* %outStream_V_id_V, i6* %outStream_V_dest_V, i32 %tmp_data_2, i4 %tmp_keep_V, i4 %tmp_strb_V, i2 %tmp_user_V, i1 false, i5 %tmp_id_V, i6 %tmp_dest_V)" [yolo_conv_fp_2019/src/yolo_conv.cpp:257]   --->   Operation 135 'write' <Predicate = (phi_ln114_4)> <Delay = 0.00> <Core = "AXI4Stream">   --->   Core 5 'AXI4Stream' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
+ST_4 : Operation 136 [1/1] (1.76ns)   --->   "br label %._crit_edge.2" [yolo_conv_fp_2019/src/yolo_conv.cpp:258]   --->   Operation 136 'br' <Predicate = (phi_ln114_4)> <Delay = 1.76>
+ST_4 : Operation 137 [1/1] (3.63ns)   --->   "%tmp_V_28 = call i16 @_ssdm_op_Read.ap_fifo.volatile.i16P(i16* %out_stream_group_14_V_V)" [yolo_conv_fp_2019/src/yolo_conv.cpp:234]   --->   Operation 137 'read' 'tmp_V_28' <Predicate = (!icmp_ln114_6 & phi_ln114_6)> <Delay = 3.63> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 16> <Depth = 2> <FIFO>
+ST_4 : Operation 138 [1/1] (1.76ns)   --->   "br label %18" [yolo_conv_fp_2019/src/yolo_conv.cpp:234]   --->   Operation 138 'br' <Predicate = (!icmp_ln114_6 & phi_ln114_6)> <Delay = 1.76>
+ST_4 : Operation 139 [1/1] (3.63ns)   --->   "%tmp_V_27 = call i16 @_ssdm_op_Read.ap_fifo.volatile.i16P(i16* %out_stream_group_6_V_V)" [yolo_conv_fp_2019/src/yolo_conv.cpp:234]   --->   Operation 139 'read' 'tmp_V_27' <Predicate = (icmp_ln114_6 & phi_ln114_6)> <Delay = 3.63> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 16> <Depth = 2> <FIFO>
+ST_4 : Operation 140 [1/1] (1.76ns)   --->   "br label %18" [yolo_conv_fp_2019/src/yolo_conv.cpp:234]   --->   Operation 140 'br' <Predicate = (icmp_ln114_6 & phi_ln114_6)> <Delay = 1.76>
+ST_4 : Operation 141 [1/1] (3.63ns)   --->   "%tmp_V_30 = call i16 @_ssdm_op_Read.ap_fifo.volatile.i16P(i16* %out_stream_group_15_V_V)" [yolo_conv_fp_2019/src/yolo_conv.cpp:240]   --->   Operation 141 'read' 'tmp_V_30' <Predicate = (phi_ln114_6 & !icmp_ln114_7 & phi_ln114_7)> <Delay = 3.63> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 16> <Depth = 2> <FIFO>
+ST_4 : Operation 142 [1/1] (1.81ns)   --->   "br label %._crit_edge163.3" [yolo_conv_fp_2019/src/yolo_conv.cpp:240]   --->   Operation 142 'br' <Predicate = (phi_ln114_6 & !icmp_ln114_7 & phi_ln114_7)> <Delay = 1.81>
+ST_4 : Operation 143 [1/1] (3.63ns)   --->   "%tmp_V_29 = call i16 @_ssdm_op_Read.ap_fifo.volatile.i16P(i16* %out_stream_group_7_V_V)" [yolo_conv_fp_2019/src/yolo_conv.cpp:240]   --->   Operation 143 'read' 'tmp_V_29' <Predicate = (phi_ln114_6 & icmp_ln114_7 & phi_ln114_7)> <Delay = 3.63> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 16> <Depth = 2> <FIFO>
+ST_4 : Operation 144 [1/1] (1.81ns)   --->   "br label %._crit_edge163.3" [yolo_conv_fp_2019/src/yolo_conv.cpp:240]   --->   Operation 144 'br' <Predicate = (phi_ln114_6 & icmp_ln114_7 & phi_ln114_7)> <Delay = 1.81>
+ST_4 : Operation 145 [1/1] (0.97ns)   --->   "%tmp_last_V = and i1 %icmp_ln251, %last_V_read" [yolo_conv_fp_2019/src/yolo_conv.cpp:251]   --->   Operation 145 'and' 'tmp_last_V' <Predicate = (phi_ln114_6)> <Delay = 0.97> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+
+State 5 <SV = 4> <Delay = 1.81>
+ST_5 : Operation 146 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i16* %out_stream_group_15_V_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 146 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 147 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i16* %out_stream_group_14_V_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 147 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 148 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i16* %out_stream_group_13_V_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 148 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 149 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i16* %out_stream_group_12_V_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 149 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 150 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i16* %out_stream_group_11_V_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 150 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 151 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i16* %out_stream_group_10_V_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 151 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 152 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i16* %out_stream_group_9_V_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 152 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 153 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i16* %out_stream_group_8_V_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 153 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 154 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i16* %out_stream_group_7_V_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 154 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 155 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i16* %out_stream_group_6_V_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 155 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 156 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i16* %out_stream_group_5_V_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 156 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 157 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i16* %out_stream_group_4_V_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 157 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 158 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i16* %out_stream_group_3_V_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 158 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 159 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i16* %out_stream_group_2_V_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 159 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 160 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i16* %out_stream_group_1_V_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 160 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 161 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i16* %out_stream_group_0_V_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 161 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 162 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i32* %outStream_V_data, i4* %outStream_V_keep_V, i4* %outStream_V_strb_V, i2* %outStream_V_user_V, i1* %outStream_V_last_V, i5* %outStream_V_id_V, i6* %outStream_V_dest_V, [5 x i8]* @p_str3, i32 0, i32 0, [5 x i8]* @p_str4, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind"   --->   Operation 162 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 163 [1/1] (0.00ns)   --->   "%curr_output_0_1_4_2 = phi i16 [ %curr_output_0_1_2_2, %._crit_edge163.2 ], [ %curr_output_0_1_4_1, %11 ]" [yolo_conv_fp_2019/src/yolo_conv.cpp:240]   --->   Operation 163 'phi' 'curr_output_0_1_4_2' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 164 [1/1] (0.00ns)   --->   "%tmp_V_load_3 = phi i16 [ %tmp_V_28, %branch46 ], [ %tmp_V_27, %branch38 ]"   --->   Operation 164 'phi' 'tmp_V_load_3' <Predicate = (phi_ln114_6)> <Delay = 0.00>
+ST_5 : Operation 165 [1/1] (1.81ns)   --->   "br i1 %phi_ln114_7, label %20, label %._crit_edge163.3" [yolo_conv_fp_2019/src/yolo_conv.cpp:238]   --->   Operation 165 'br' <Predicate = (phi_ln114_6)> <Delay = 1.81>
+ST_5 : Operation 166 [1/1] (0.00ns)   --->   "%curr_output_0_1_2_3 = phi i16 [ %curr_output_0_1_4_2, %19 ], [ %tmp_V_30, %branch15 ], [ %tmp_V_29, %branch7 ]"   --->   Operation 166 'phi' 'curr_output_0_1_2_3' <Predicate = (phi_ln114_6)> <Delay = 0.00>
+ST_5 : Operation 167 [1/1] (0.00ns)   --->   "%tmp_data_3 = call i32 @_ssdm_op_BitConcatenate.i32.i16.i16(i16 %curr_output_0_1_2_3, i16 %tmp_V_load_3)" [yolo_conv_fp_2019/src/yolo_conv.cpp:257]   --->   Operation 167 'bitconcatenate' 'tmp_data_3' <Predicate = (phi_ln114_6)> <Delay = 0.00>
+ST_5 : Operation 168 [1/1] (0.00ns)   --->   "call void @_ssdm_op_Write.axis.volatile.i32P.i4P.i4P.i2P.i1P.i5P.i6P(i32* %outStream_V_data, i4* %outStream_V_keep_V, i4* %outStream_V_strb_V, i2* %outStream_V_user_V, i1* %outStream_V_last_V, i5* %outStream_V_id_V, i6* %outStream_V_dest_V, i32 %tmp_data_3, i4 %tmp_keep_V, i4 %tmp_strb_V, i2 %tmp_user_V, i1 %tmp_last_V, i5 %tmp_id_V, i6 %tmp_dest_V)" [yolo_conv_fp_2019/src/yolo_conv.cpp:257]   --->   Operation 168 'write' <Predicate = (phi_ln114_6)> <Delay = 0.00> <Core = "AXI4Stream">   --->   Core 5 'AXI4Stream' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
+ST_5 : Operation 169 [1/1] (0.00ns)   --->   "br label %._crit_edge.3" [yolo_conv_fp_2019/src/yolo_conv.cpp:258]   --->   Operation 169 'br' <Predicate = (phi_ln114_6)> <Delay = 0.00>
+ST_5 : Operation 170 [1/1] (0.00ns)   --->   "ret void" [yolo_conv_fp_2019/src/yolo_conv.cpp:262]   --->   Operation 170 'ret' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10ns, clock uncertainty: 1.25ns.
+
+ <State 1>: 3.54ns
+The critical path consists of the following:
+	fifo request on port 'out_stream_group_9_V_V' (yolo_conv_fp_2019/src/yolo_conv.cpp:238) [83]  (0 ns)
+	multiplexor before 'phi' operation ('phi_ln114_1', yolo_conv_fp_2019/src/yolo_conv.cpp:238) with incoming values : ('tmp_1_1', yolo_conv_fp_2019/src/yolo_conv.cpp:238) ('tmp_1_s', yolo_conv_fp_2019/src/yolo_conv.cpp:238) [89]  (1.77 ns)
+	'phi' operation ('phi_ln114_1', yolo_conv_fp_2019/src/yolo_conv.cpp:238) with incoming values : ('tmp_1_1', yolo_conv_fp_2019/src/yolo_conv.cpp:238) ('tmp_1_s', yolo_conv_fp_2019/src/yolo_conv.cpp:238) [89]  (0 ns)
+	multiplexor before 'phi' operation ('tmp.V') with incoming values : ('tmp.V', yolo_conv_fp_2019/src/yolo_conv.cpp:240) [100]  (1.77 ns)
+
+ <State 2>: 5.4ns
+The critical path consists of the following:
+	fifo read on port 'out_stream_group_8_V_V' (yolo_conv_fp_2019/src/yolo_conv.cpp:234) [72]  (3.63 ns)
+	multiplexor before 'phi' operation ('tmp.V') with incoming values : ('tmp.V', yolo_conv_fp_2019/src/yolo_conv.cpp:234) [78]  (1.77 ns)
+	'phi' operation ('tmp.V') with incoming values : ('tmp.V', yolo_conv_fp_2019/src/yolo_conv.cpp:234) [78]  (0 ns)
+
+ <State 3>: 5.45ns
+The critical path consists of the following:
+	fifo read on port 'out_stream_group_11_V_V' (yolo_conv_fp_2019/src/yolo_conv.cpp:240) [143]  (3.63 ns)
+	multiplexor before 'phi' operation ('tmp.V') with incoming values : ('tmp.V', yolo_conv_fp_2019/src/yolo_conv.cpp:240) [149]  (1.81 ns)
+	'phi' operation ('tmp.V') with incoming values : ('tmp.V', yolo_conv_fp_2019/src/yolo_conv.cpp:240) [149]  (0 ns)
+
+ <State 4>: 5.45ns
+The critical path consists of the following:
+	fifo read on port 'out_stream_group_13_V_V' (yolo_conv_fp_2019/src/yolo_conv.cpp:240) [192]  (3.63 ns)
+	multiplexor before 'phi' operation ('tmp.V') with incoming values : ('tmp.V', yolo_conv_fp_2019/src/yolo_conv.cpp:240) [198]  (1.81 ns)
+	'phi' operation ('tmp.V') with incoming values : ('tmp.V', yolo_conv_fp_2019/src/yolo_conv.cpp:240) [198]  (0 ns)
+
+ <State 5>: 1.81ns
+The critical path consists of the following:
+	'phi' operation ('curr_output_0_1_4_2', yolo_conv_fp_2019/src/yolo_conv.cpp:240) with incoming values : ('tmp.V', yolo_conv_fp_2019/src/yolo_conv.cpp:240) [203]  (0 ns)
+	multiplexor before 'phi' operation ('tmp.V') with incoming values : ('tmp.V', yolo_conv_fp_2019/src/yolo_conv.cpp:240) [248]  (1.81 ns)
+	'phi' operation ('tmp.V') with incoming values : ('tmp.V', yolo_conv_fp_2019/src/yolo_conv.cpp:240) [248]  (0 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A
