@@ -1543,3 +1543,124 @@ INFO: [SIM 211-3] *************** CSIM finish ***************
 Command   csim_design done; 193.89 sec.
 Command ap_source done; 194.52 sec.
 Execute cleanup_all 
+INFO-FLOW: Workspace /home/xavier/MSc_Project/git_v/Tiny_YOLO_v3_ZYNQ/hw/yolo_conv_fp_2019/solution1 opened at Sun Jun 23 16:15:54 BST 2019
+Execute     config_clock -quiet -name default -period 10 -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+Execute     open_platform DefaultPlatform 
+Execute     import_lib /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/xilinx/zynq/zynq 
+Execute       source /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/xilinx/common/xilinx.lib 
+Execute         source /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/xilinx/interface/xilinx_interface.lib 
+Execute           source /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/xilinx/interface/plb46.lib 
+Execute           source /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/xilinx/interface/fsl.lib 
+Execute           source /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/xilinx/interface/axi4.lib 
+Execute           source /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/xilinx/interface/maxi.lib 
+Execute           source /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/xilinx/interface/saxilite.lib 
+Execute         source /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/xilinx/common/dsp48.lib 
+Execute         source /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/xilinx/ip/xfir.lib 
+Execute         source /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/xilinx/ip/xfft.lib 
+Execute         source /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/xilinx/ip/dds_compiler.lib 
+Execute       source /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/xilinx/common/xilinx.hlp 
+Execute         source /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/xilinx/common/target_info.tcl 
+Execute         source /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/xilinx/interface/maxi.hlp 
+Execute           source /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/xilinx/common/dsp48.hlp 
+Execute       source /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/xilinx/zynq/dsp48e1.hlp 
+Execute       source /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/xilinx/common/xilinx.hlp 
+Execute         source /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/xilinx/common/target_info.tcl 
+Execute         source /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/xilinx/interface/maxi.hlp 
+Execute           source /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/xilinx/common/dsp48.hlp 
+Execute     source /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/xilinx/zynq/zynq.gen 
+Execute       source /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/xilinx/common/xilinx.gen 
+Execute         source /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/xilinx/interface/plb46.gen 
+Execute         source /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/xilinx/interface/fsl.gen 
+Execute         source /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/xilinx/interface/axi4.gen 
+Execute         source /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/xilinx/interface/saxilite.gen 
+Execute           source /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/xilinx/interface/maxi.gen 
+Execute         source /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/xilinx/ip/util.gen 
+Execute         source /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/xilinx/ip/xfft.gen 
+Command         ap_source done; 0.15 sec.
+Execute         source /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/xilinx/ip/xfir.gen 
+Execute         source /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/xilinx/common/dsp48.gen 
+Command       ap_source done; 0.21 sec.
+Command     ap_source done; 0.21 sec.
+Execute     open_platform DefaultPlatform 
+Execute     import_lib /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/xilinx/zynq/zynq_fpv6 
+Execute       source /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/xilinx/common/xilinx_fp.lib 
+Execute       source /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/xilinx/common/xilinx_fp.hlp 
+Execute         source /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/xilinx/common/xilinx.hlp 
+Execute           source /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/xilinx/common/target_info.tcl 
+Execute           source /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute             source /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/xilinx/interface/maxi.hlp 
+Execute             source /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/xilinx/interface/saxilite.hlp 
+Execute           source /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/xilinx/common/dsp48.hlp 
+Execute     source /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute       source /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/xilinx/common/xilinx_fp.gen 
+Execute     set_part xc7z020-clg484-1 
+Execute       ap_part_info -name xc7z020-clg484-1 -data single -quiet 
+Command       ap_part_info done; 0.44 sec.
+Execute       ap_part_info -name xc7z020-clg484-1 -data info 
+Execute       add_library xilinx/zynq/zynq:xc7z020:-clg484:-1 
+Execute         get_default_platform 
+Execute         license_isbetapart xc7z020 
+Command         license_isbetapart done; error code: 1; 
+Execute         ap_part_info -data single -name xc7z020-clg484-1 
+Execute         ap_part_info -name xc7z020-clg484-1 -data resources 
+Execute         ap_part_info -name xc7z020-clg484-1 -data info 
+Execute         ap_part_info -name xc7z020-clg484-1 -data info 
+Execute         config_chip_info -quiet -resource {SLICE 13300} {LUT 53200} {FF 106400} {DSP48E 220} {BRAM 280} {URAM 0} 
+Execute         ap_part_info -name xc7z020-clg484-1 -data info 
+Execute         config_chip_info -quiet -speed slow 
+Execute       add_library xilinx/zynq/zynq_fpv6 
+Execute         get_default_platform 
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg484-1'
+Execute       ap_part_info -name xc7z020-clg484-1 -data info 
+Execute       get_default_platform 
+Command     set_part done; 0.63 sec.
+Execute     ap_part_info -data single -name xc7z020-clg484-1 
+Execute     ap_part_info -name xc7z020-clg484-1 -data resources 
+Execute     ap_part_info -name xc7z020-clg484-1 -data info 
+Execute     ap_part_info -name xc7z020-clg484-1 -data info 
+Execute     config_chip_info -quiet -resource {SLICE 13300} {LUT 53200} {FF 106400} {DSP48E 220} {BRAM 280} {URAM 0} 
+Execute     ap_part_info -name xc7z020-clg484-1 -data info 
+Execute     config_chip_info -quiet -speed slow 
+Execute     config_export -format=ip_catalog 
+Execute     config_export -rtl=verilog 
+Command   open_solution done; 0.96 sec.
+Execute   csim_design -quiet 
+Execute     source /home/xavier/MSc_Project/git_v/Tiny_YOLO_v3_ZYNQ/hw/yolo_conv_fp_2019/solution1/.autopilot/db/global.setting.tcl 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+Execute     source csim/.lst_opt.tcl 
+Execute     is_encrypted /home/xavier/MSc_Project/git_v/Tiny_YOLO_v3_ZYNQ/hw/yolo_conv_fp_2019/tb/layer_input.dat 
+Execute     is_xip /home/xavier/MSc_Project/git_v/Tiny_YOLO_v3_ZYNQ/hw/yolo_conv_fp_2019/tb/layer_input.dat 
+Execute     is_encrypted /home/xavier/MSc_Project/git_v/Tiny_YOLO_v3_ZYNQ/hw/yolo_conv_fp_2019/tb/layer_output_sdk.dat 
+Execute     is_xip /home/xavier/MSc_Project/git_v/Tiny_YOLO_v3_ZYNQ/hw/yolo_conv_fp_2019/tb/layer_output_sdk.dat 
+Execute     is_encrypted /home/xavier/MSc_Project/git_v/Tiny_YOLO_v3_ZYNQ/hw/yolo_conv_fp_2019/tb/yolo_conv_tb.cpp 
+Execute     is_xip /home/xavier/MSc_Project/git_v/Tiny_YOLO_v3_ZYNQ/hw/yolo_conv_fp_2019/tb/yolo_conv_tb.cpp 
+Execute     is_encrypted /home/xavier/MSc_Project/git_v/Tiny_YOLO_v3_ZYNQ/hw/yolo_conv_fp_2019/src/layer_parameter.h 
+Execute     is_xip /home/xavier/MSc_Project/git_v/Tiny_YOLO_v3_ZYNQ/hw/yolo_conv_fp_2019/src/layer_parameter.h 
+Execute     is_encrypted /home/xavier/MSc_Project/git_v/Tiny_YOLO_v3_ZYNQ/hw/yolo_conv_fp_2019/src/weight_file.h 
+Execute     is_xip /home/xavier/MSc_Project/git_v/Tiny_YOLO_v3_ZYNQ/hw/yolo_conv_fp_2019/src/weight_file.h 
+Execute     is_encrypted /home/xavier/MSc_Project/git_v/Tiny_YOLO_v3_ZYNQ/hw/yolo_conv_fp_2019/src/yolo_conv.cpp 
+Execute     is_xip /home/xavier/MSc_Project/git_v/Tiny_YOLO_v3_ZYNQ/hw/yolo_conv_fp_2019/src/yolo_conv.cpp 
+Execute     is_encrypted /home/xavier/MSc_Project/git_v/Tiny_YOLO_v3_ZYNQ/hw/yolo_conv_fp_2019/src/yolo_conv.h 
+Execute     is_xip /home/xavier/MSc_Project/git_v/Tiny_YOLO_v3_ZYNQ/hw/yolo_conv_fp_2019/src/yolo_conv.h 
+Execute     is_encrypted /home/xavier/MSc_Project/git_v/Tiny_YOLO_v3_ZYNQ/hw/yolo_conv_fp_2019/src/yolo_fp.h 
+Execute     is_xip /home/xavier/MSc_Project/git_v/Tiny_YOLO_v3_ZYNQ/hw/yolo_conv_fp_2019/src/yolo_fp.h 
+Execute     is_encrypted /home/xavier/MSc_Project/git_v/Tiny_YOLO_v3_ZYNQ/hw/yolo_conv_fp_2019/src/yolo_stream.h 
+Execute     is_xip /home/xavier/MSc_Project/git_v/Tiny_YOLO_v3_ZYNQ/hw/yolo_conv_fp_2019/src/yolo_stream.h 
+Execute     ap_part_info -name xc7z020-clg484-1 -data info 
+Execute     source run_sim.tcl 
+Command     ap_source done; 175.09 sec.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+Command   csim_design done; 175.33 sec.
+Command ap_source done; 176.31 sec.
+Execute cleanup_all 

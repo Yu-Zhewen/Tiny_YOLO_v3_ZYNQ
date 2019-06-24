@@ -1,0 +1,26 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Mon Jun 24 08:46:21 2019
+# Process ID: 5513
+# Current directory: /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_prj_2019
+# Command line: vivado yolo_max_pool_fp_prj_2019.xpr
+# Log file: /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_prj_2019/vivado.log
+# Journal file: /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_prj_2019/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project yolo_max_pool_fp_prj_2019.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/xavier/MSc_Project/hls/ip_fp'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx_2019_1/Vivado/2019.1/data/ip'.
+open_project: Time (s): cpu = 00:00:21 ; elapsed = 00:00:15 . Memory (MB): peak = 6482.598 ; gain = 164.352 ; free physical = 3665 ; free virtual = 14255
+update_compile_order -fileset sources_1
+launch_sdk -workspace /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_prj_2019/yolo_max_pool_fp_prj_2019.sdk -hwspec /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_prj_2019/yolo_max_pool_fp_prj_2019.sdk/design_1_wrapper.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_prj_2019/yolo_max_pool_fp_prj_2019.sdk -hwspec /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_prj_2019/yolo_max_pool_fp_prj_2019.sdk/design_1_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Jun 24 08:55:14 2019...

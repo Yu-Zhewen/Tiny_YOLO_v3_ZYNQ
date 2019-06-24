@@ -1,0 +1,15 @@
+INFO: [HLS 200-10] Running '/opt/Xilinx_2019_1/Vivado/2019.1/bin/unwrapped/lnx64.o/vivado_hls'
+INFO: [HLS 200-10] For user 'xavier' on host 'Lenovo-XiaoXin-CHAO7000' (Linux_x86_64 version 4.15.0-52-generic) on Sun Jun 23 16:15:54 BST 2019
+INFO: [HLS 200-10] On os Ubuntu 16.04.6 LTS
+INFO: [HLS 200-10] In directory '/home/xavier/MSc_Project/git_v/Tiny_YOLO_v3_ZYNQ/hw'
+Sourcing Tcl script '/home/xavier/MSc_Project/git_v/Tiny_YOLO_v3_ZYNQ/hw/yolo_conv_fp_2019/solution1/csim.tcl'
+INFO: [HLS 200-10] Opening project '/home/xavier/MSc_Project/git_v/Tiny_YOLO_v3_ZYNQ/hw/yolo_conv_fp_2019'.
+INFO: [HLS 200-10] Opening solution '/home/xavier/MSc_Project/git_v/Tiny_YOLO_v3_ZYNQ/hw/yolo_conv_fp_2019/solution1'.
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg484-1'
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+make: 'csim.exe' is up to date.
+1384447
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************

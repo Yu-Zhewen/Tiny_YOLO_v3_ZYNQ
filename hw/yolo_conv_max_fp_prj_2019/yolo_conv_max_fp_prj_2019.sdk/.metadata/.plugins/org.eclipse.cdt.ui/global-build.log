@@ -1,0 +1,605 @@
+10:44:52 **** Build of project yolo_conv_max_fp_ps_bsp ****
+make -k all 
+Running Make include in ps7_cortexa9_0/libsrc/ddrps_v1_0/src
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_4/src
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_4/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_7/src
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_7/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/scugic_v4_0/src
+make -C ps7_cortexa9_0/libsrc/scugic_v4_0/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/emacps_v3_9/src
+make -C ps7_cortexa9_0/libsrc/emacps_v3_9/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/ttcps_v3_9/src
+make -C ps7_cortexa9_0/libsrc/ttcps_v3_9/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/axidma_v9_9/src
+make -C ps7_cortexa9_0/libsrc/axidma_v9_9/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/gpiops_v3_5/src
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_5/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/yolo_conv_top_v1_0/src
+make -C ps7_cortexa9_0/libsrc/yolo_conv_top_v1_0/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/yolo_max_pool_top_v1_0/src
+make -C ps7_cortexa9_0/libsrc/yolo_max_pool_top_v1_0/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/standalone_v7_0/src
+make -C ps7_cortexa9_0/libsrc/standalone_v7_0/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/qspips_v3_6/src
+make -C ps7_cortexa9_0/libsrc/qspips_v3_6/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/xadcps_v2_3/src
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_3/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/sdps_v3_7/src
+make -C ps7_cortexa9_0/libsrc/sdps_v3_7/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_5/src
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_5/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/uartps_v3_7/src
+make -C ps7_cortexa9_0/libsrc/uartps_v3_7/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/usbps_v2_4/src
+make -C ps7_cortexa9_0/libsrc/usbps_v2_4/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_1/src
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_5/src
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_5/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make libs in ps7_cortexa9_0/libsrc/ddrps_v1_0/src
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling ddrps
+arm-none-eabi-ar: creating ../../../lib/libxil.a
+Running Make libs in ps7_cortexa9_0/libsrc/dmaps_v2_4/src
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_4/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling dmaps
+Running Make libs in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_7/src
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_7/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling cpu_cortexa9
+Running Make libs in ps7_cortexa9_0/libsrc/scugic_v4_0/src
+make -C ps7_cortexa9_0/libsrc/scugic_v4_0/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling scugic
+Running Make libs in ps7_cortexa9_0/libsrc/emacps_v3_9/src
+make -C ps7_cortexa9_0/libsrc/emacps_v3_9/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling emacps
+Running Make libs in ps7_cortexa9_0/libsrc/ttcps_v3_9/src
+make -C ps7_cortexa9_0/libsrc/ttcps_v3_9/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling ttcps
+Running Make libs in ps7_cortexa9_0/libsrc/axidma_v9_9/src
+make -C ps7_cortexa9_0/libsrc/axidma_v9_9/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling axidma
+Running Make libs in ps7_cortexa9_0/libsrc/gpiops_v3_5/src
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_5/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling gpiops
+Running Make libs in ps7_cortexa9_0/libsrc/yolo_conv_top_v1_0/src
+make -C ps7_cortexa9_0/libsrc/yolo_conv_top_v1_0/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling yolo_conv_top
+Running Make libs in ps7_cortexa9_0/libsrc/yolo_max_pool_top_v1_0/src
+make -C ps7_cortexa9_0/libsrc/yolo_max_pool_top_v1_0/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling yolo_max_pool_top
+Running Make libs in ps7_cortexa9_0/libsrc/standalone_v7_0/src
+make -C ps7_cortexa9_0/libsrc/standalone_v7_0/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling standalone
+In file included from xtime_l.c:49:
+xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+In file included from sleep.c:53:
+xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+In file included from xil_sleeptimer.c:51:
+xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+In file included from usleep.c:56:
+xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+Running Make libs in ps7_cortexa9_0/libsrc/qspips_v3_6/src
+make -C ps7_cortexa9_0/libsrc/qspips_v3_6/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling qspips
+Running Make libs in ps7_cortexa9_0/libsrc/xadcps_v2_3/src
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_3/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling xadcps
+Running Make libs in ps7_cortexa9_0/libsrc/sdps_v3_7/src
+make -C ps7_cortexa9_0/libsrc/sdps_v3_7/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling sdps
+Running Make libs in ps7_cortexa9_0/libsrc/devcfg_v3_5/src
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_5/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling devcfg
+Running Make libs in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling scuwdt
+Running Make libs in ps7_cortexa9_0/libsrc/uartps_v3_7/src
+make -C ps7_cortexa9_0/libsrc/uartps_v3_7/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling uartps
+Running Make libs in ps7_cortexa9_0/libsrc/usbps_v2_4/src
+make -C ps7_cortexa9_0/libsrc/usbps_v2_4/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling usbps
+Running Make libs in ps7_cortexa9_0/libsrc/scutimer_v2_1/src
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling scutimer
+Running Make libs in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_5/src
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_5/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling coresightps_dcc
+Finished building libraries
+10:45:06 **** Build of configuration Debug for project yolo_conv_max_fp_ps ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../yolo_conv_max_fp_ps_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+Finished building: ../src/main.cc
+ 
+Building target: yolo_conv_max_fp_ps.elf
+Invoking: ARM v7 g++ linker
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../yolo_conv_max_fp_ps_bsp/ps7_cortexa9_0/lib -o "yolo_conv_max_fp_ps.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: yolo_conv_max_fp_ps.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size yolo_conv_max_fp_ps.elf  |tee "yolo_conv_max_fp_ps.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  18736	   1144	  22576	  42456	   a5d8	yolo_conv_max_fp_ps.elf
+Finished building: yolo_conv_max_fp_ps.elf.size
+ 
+10:51:13 **** Clean-only build of configuration Debug for project yolo_conv_max_fp_ps ****
+make clean 
+rm -rf  ./src/main.d  ./src/main.o  yolo_conv_max_fp_ps.elf.size  yolo_conv_max_fp_ps.elf
+ 
+10:51:14 **** Auto Build of configuration Debug for project yolo_conv_max_fp_ps ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -I/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_max_fp_prj_2019/yolo_conv_max_fp_prj_2019.sdk/include -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../yolo_conv_max_fp_ps_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+Finished building: ../src/main.cc
+ 
+Building target: yolo_conv_max_fp_ps.elf
+Invoking: ARM v7 g++ linker
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../yolo_conv_max_fp_ps_bsp/ps7_cortexa9_0/lib -o "yolo_conv_max_fp_ps.elf"  ./src/main.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: yolo_conv_max_fp_ps.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size yolo_conv_max_fp_ps.elf  |tee "yolo_conv_max_fp_ps.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  18736	   1144	  22576	  42456	   a5d8	yolo_conv_max_fp_ps.elf
+Finished building: yolo_conv_max_fp_ps.elf.size
+ 
+10:56:58 **** Clean-only build of configuration Debug for project yolo_conv_max_fp_ps ****
+make clean 
+rm -rf  ./src/main.d  ./src/main.o  yolo_conv_max_fp_ps.elf.size  yolo_conv_max_fp_ps.elf
+ 
+10:56:58 **** Auto Build of configuration Debug for project yolo_conv_max_fp_ps ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.cpp
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -I/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_max_fp_prj_2019/yolo_conv_max_fp_prj_2019.sdk/include -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../yolo_conv_max_fp_ps_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.cpp"
+../src/helloworld.cpp:59:10: fatal error: layer_parameter.h: No such file or directory
+ #include "layer_parameter.h"
+          ^~~~~~~~~~~~~~~~~~~
+compilation terminated.
+src/subdir.mk:21: recipe for target 'src/helloworld.o' failed
+make: *** [src/helloworld.o] Error 1
+10:59:44 **** Auto Build of configuration Debug for project yolo_conv_max_fp_ps ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.cpp
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -I/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_max_fp_prj_2019/yolo_conv_max_fp_prj_2019.sdk/include -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../yolo_conv_max_fp_ps_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.cpp"
+In file included from ../src/helloworld.cpp:52:
+../../yolo_conv_max_fp_ps_bsp/ps7_cortexa9_0/include/xtime_l.h:87:70: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+                                                                      ^
+Finished building: ../src/helloworld.cpp
+ 
+Building target: yolo_conv_max_fp_ps.elf
+Invoking: ARM v7 g++ linker
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../yolo_conv_max_fp_ps_bsp/ps7_cortexa9_0/lib -o "yolo_conv_max_fp_ps.elf"  ./src/helloworld.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: yolo_conv_max_fp_ps.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size yolo_conv_max_fp_ps.elf  |tee "yolo_conv_max_fp_ps.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  75404	2771560	5563016	8409980	 80537c	yolo_conv_max_fp_ps.elf
+Finished building: yolo_conv_max_fp_ps.elf.size
+ 
+11:00:10 **** Auto Build of configuration Debug for project yolo_conv_max_fp_ps ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.cpp
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -I/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_max_fp_prj_2019/yolo_conv_max_fp_prj_2019.sdk/include -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../yolo_conv_max_fp_ps_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.cpp"
+In file included from ../src/helloworld.cpp:52:
+../../yolo_conv_max_fp_ps_bsp/ps7_cortexa9_0/include/xtime_l.h:87:70: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+                                                                      ^
+../src/helloworld.cpp:66:20: error: redefinition of 'XYolo_max_pool_top yolo_max_pool_top'
+ XYolo_max_pool_top yolo_max_pool_top;
+                    ^~~~~~~~~~~~~~~~~
+../src/helloworld.cpp:63:20: note: 'XYolo_max_pool_top yolo_max_pool_top' previously declared here
+ XYolo_max_pool_top yolo_max_pool_top;
+                    ^~~~~~~~~~~~~~~~~
+../src/helloworld.cpp:67:28: error: redefinition of 'XYolo_max_pool_top_Config* yolo_max_pool_top_cfg'
+ XYolo_max_pool_top_Config *yolo_max_pool_top_cfg;
+                            ^~~~~~~~~~~~~~~~~~~~~
+../src/helloworld.cpp:64:28: note: 'XYolo_max_pool_top_Config* yolo_max_pool_top_cfg' previously declared here
+ XYolo_max_pool_top_Config *yolo_max_pool_top_cfg;
+                            ^~~~~~~~~~~~~~~~~~~~~
+src/subdir.mk:21: recipe for target 'src/helloworld.o' failed
+make: *** [src/helloworld.o] Error 1
+11:00:30 **** Auto Build of configuration Debug for project yolo_conv_max_fp_ps ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.cpp
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -I/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_max_fp_prj_2019/yolo_conv_max_fp_prj_2019.sdk/include -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../yolo_conv_max_fp_ps_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.cpp"
+In file included from ../src/helloworld.cpp:52:
+../../yolo_conv_max_fp_ps_bsp/ps7_cortexa9_0/include/xtime_l.h:87:70: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+                                                                      ^
+Finished building: ../src/helloworld.cpp
+ 
+Building target: yolo_conv_max_fp_ps.elf
+Invoking: ARM v7 g++ linker
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../yolo_conv_max_fp_ps_bsp/ps7_cortexa9_0/lib -o "yolo_conv_max_fp_ps.elf"  ./src/helloworld.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: yolo_conv_max_fp_ps.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size yolo_conv_max_fp_ps.elf  |tee "yolo_conv_max_fp_ps.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  75404	2771560	5563016	8409980	 80537c	yolo_conv_max_fp_ps.elf
+Finished building: yolo_conv_max_fp_ps.elf.size
+ 
+11:07:23 **** Auto Build of configuration Debug for project yolo_conv_max_fp_ps ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.cpp
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -I/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_max_fp_prj_2019/yolo_conv_max_fp_prj_2019.sdk/include -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../yolo_conv_max_fp_ps_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.cpp"
+In file included from ../src/helloworld.cpp:52:
+../../yolo_conv_max_fp_ps_bsp/ps7_cortexa9_0/include/xtime_l.h:87:70: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+                                                                      ^
+Finished building: ../src/helloworld.cpp
+ 
+Building target: yolo_conv_max_fp_ps.elf
+Invoking: ARM v7 g++ linker
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../yolo_conv_max_fp_ps_bsp/ps7_cortexa9_0/lib -o "yolo_conv_max_fp_ps.elf"  ./src/helloworld.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: yolo_conv_max_fp_ps.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size yolo_conv_max_fp_ps.elf  |tee "yolo_conv_max_fp_ps.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  75492	2771560	5563016	8410068	 8053d4	yolo_conv_max_fp_ps.elf
+Finished building: yolo_conv_max_fp_ps.elf.size
+ 
+11:07:41 **** Auto Build of configuration Debug for project yolo_conv_max_fp_ps ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.cpp
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -I/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_max_fp_prj_2019/yolo_conv_max_fp_prj_2019.sdk/include -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../yolo_conv_max_fp_ps_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.cpp"
+In file included from ../src/helloworld.cpp:52:
+../../yolo_conv_max_fp_ps_bsp/ps7_cortexa9_0/include/xtime_l.h:87:70: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+                                                                      ^
+Finished building: ../src/helloworld.cpp
+ 
+Building target: yolo_conv_max_fp_ps.elf
+Invoking: ARM v7 g++ linker
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../yolo_conv_max_fp_ps_bsp/ps7_cortexa9_0/lib -o "yolo_conv_max_fp_ps.elf"  ./src/helloworld.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: yolo_conv_max_fp_ps.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size yolo_conv_max_fp_ps.elf  |tee "yolo_conv_max_fp_ps.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  77520	2771568	5563016	8412104	 805bc8	yolo_conv_max_fp_ps.elf
+Finished building: yolo_conv_max_fp_ps.elf.size
+ 
+11:07:48 **** Auto Build of configuration Debug for project yolo_conv_max_fp_ps ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.cpp
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -I/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_max_fp_prj_2019/yolo_conv_max_fp_prj_2019.sdk/include -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../yolo_conv_max_fp_ps_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.cpp"
+In file included from ../src/helloworld.cpp:52:
+../../yolo_conv_max_fp_ps_bsp/ps7_cortexa9_0/include/xtime_l.h:87:70: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+                                                                      ^
+Finished building: ../src/helloworld.cpp
+ 
+Building target: yolo_conv_max_fp_ps.elf
+Invoking: ARM v7 g++ linker
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../yolo_conv_max_fp_ps_bsp/ps7_cortexa9_0/lib -o "yolo_conv_max_fp_ps.elf"  ./src/helloworld.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: yolo_conv_max_fp_ps.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size yolo_conv_max_fp_ps.elf  |tee "yolo_conv_max_fp_ps.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  77520	2771568	5563016	8412104	 805bc8	yolo_conv_max_fp_ps.elf
+Finished building: yolo_conv_max_fp_ps.elf.size
+ 
+11:08:10 **** Auto Build of configuration Debug for project yolo_conv_max_fp_ps ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.cpp
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -I/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_max_fp_prj_2019/yolo_conv_max_fp_prj_2019.sdk/include -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../yolo_conv_max_fp_ps_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.cpp"
+In file included from ../src/helloworld.cpp:52:
+../../yolo_conv_max_fp_ps_bsp/ps7_cortexa9_0/include/xtime_l.h:87:70: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+                                                                      ^
+Finished building: ../src/helloworld.cpp
+ 
+Building target: yolo_conv_max_fp_ps.elf
+Invoking: ARM v7 g++ linker
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../yolo_conv_max_fp_ps_bsp/ps7_cortexa9_0/lib -o "yolo_conv_max_fp_ps.elf"  ./src/helloworld.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: yolo_conv_max_fp_ps.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size yolo_conv_max_fp_ps.elf  |tee "yolo_conv_max_fp_ps.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  77560	2771568	5563016	8412144	 805bf0	yolo_conv_max_fp_ps.elf
+Finished building: yolo_conv_max_fp_ps.elf.size
+ 
+11:08:25 **** Auto Build of configuration Debug for project yolo_conv_max_fp_ps ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.cpp
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -I/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_max_fp_prj_2019/yolo_conv_max_fp_prj_2019.sdk/include -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../yolo_conv_max_fp_ps_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.cpp"
+In file included from ../src/helloworld.cpp:52:
+../../yolo_conv_max_fp_ps_bsp/ps7_cortexa9_0/include/xtime_l.h:87:70: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+                                                                      ^
+Finished building: ../src/helloworld.cpp
+ 
+Building target: yolo_conv_max_fp_ps.elf
+Invoking: ARM v7 g++ linker
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../yolo_conv_max_fp_ps_bsp/ps7_cortexa9_0/lib -o "yolo_conv_max_fp_ps.elf"  ./src/helloworld.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: yolo_conv_max_fp_ps.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size yolo_conv_max_fp_ps.elf  |tee "yolo_conv_max_fp_ps.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  77560	2771568	5563016	8412144	 805bf0	yolo_conv_max_fp_ps.elf
+Finished building: yolo_conv_max_fp_ps.elf.size
+ 
+11:08:50 **** Auto Build of configuration Debug for project yolo_conv_max_fp_ps ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.cpp
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -I/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_max_fp_prj_2019/yolo_conv_max_fp_prj_2019.sdk/include -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../yolo_conv_max_fp_ps_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.cpp"
+In file included from ../src/helloworld.cpp:52:
+../../yolo_conv_max_fp_ps_bsp/ps7_cortexa9_0/include/xtime_l.h:87:70: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+                                                                      ^
+Finished building: ../src/helloworld.cpp
+ 
+Building target: yolo_conv_max_fp_ps.elf
+Invoking: ARM v7 g++ linker
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../yolo_conv_max_fp_ps_bsp/ps7_cortexa9_0/lib -o "yolo_conv_max_fp_ps.elf"  ./src/helloworld.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: yolo_conv_max_fp_ps.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size yolo_conv_max_fp_ps.elf  |tee "yolo_conv_max_fp_ps.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  77560	2771568	5563016	8412144	 805bf0	yolo_conv_max_fp_ps.elf
+Finished building: yolo_conv_max_fp_ps.elf.size
+ 
+11:09:26 **** Auto Build of configuration Debug for project yolo_conv_max_fp_ps ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.cpp
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -I/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_max_fp_prj_2019/yolo_conv_max_fp_prj_2019.sdk/include -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../yolo_conv_max_fp_ps_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.cpp"
+In file included from ../src/helloworld.cpp:52:
+../../yolo_conv_max_fp_ps_bsp/ps7_cortexa9_0/include/xtime_l.h:87:70: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+                                                                      ^
+Finished building: ../src/helloworld.cpp
+ 
+Building target: yolo_conv_max_fp_ps.elf
+Invoking: ARM v7 g++ linker
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../yolo_conv_max_fp_ps_bsp/ps7_cortexa9_0/lib -o "yolo_conv_max_fp_ps.elf"  ./src/helloworld.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: yolo_conv_max_fp_ps.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size yolo_conv_max_fp_ps.elf  |tee "yolo_conv_max_fp_ps.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  77560	2771568	5563016	8412144	 805bf0	yolo_conv_max_fp_ps.elf
+Finished building: yolo_conv_max_fp_ps.elf.size
+ 
+11:09:41 **** Auto Build of configuration Debug for project yolo_conv_max_fp_ps ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.cpp
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -I/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_max_fp_prj_2019/yolo_conv_max_fp_prj_2019.sdk/include -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../yolo_conv_max_fp_ps_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.cpp"
+In file included from ../src/helloworld.cpp:52:
+../../yolo_conv_max_fp_ps_bsp/ps7_cortexa9_0/include/xtime_l.h:87:70: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+                                                                      ^
+Finished building: ../src/helloworld.cpp
+ 
+Building target: yolo_conv_max_fp_ps.elf
+Invoking: ARM v7 g++ linker
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../yolo_conv_max_fp_ps_bsp/ps7_cortexa9_0/lib -o "yolo_conv_max_fp_ps.elf"  ./src/helloworld.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: yolo_conv_max_fp_ps.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size yolo_conv_max_fp_ps.elf  |tee "yolo_conv_max_fp_ps.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  77560	2771568	5563016	8412144	 805bf0	yolo_conv_max_fp_ps.elf
+Finished building: yolo_conv_max_fp_ps.elf.size
+ 
+11:11:25 **** Auto Build of configuration Debug for project yolo_conv_max_fp_ps ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.cpp
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -I/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_max_fp_prj_2019/yolo_conv_max_fp_prj_2019.sdk/include -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../yolo_conv_max_fp_ps_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.cpp"
+In file included from ../src/helloworld.cpp:52:
+../../yolo_conv_max_fp_ps_bsp/ps7_cortexa9_0/include/xtime_l.h:87:70: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+                                                                      ^
+Finished building: ../src/helloworld.cpp
+ 
+Building target: yolo_conv_max_fp_ps.elf
+Invoking: ARM v7 g++ linker
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../yolo_conv_max_fp_ps_bsp/ps7_cortexa9_0/lib -o "yolo_conv_max_fp_ps.elf"  ./src/helloworld.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: yolo_conv_max_fp_ps.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size yolo_conv_max_fp_ps.elf  |tee "yolo_conv_max_fp_ps.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  77560	2771568	1409672	4258800	 40fbf0	yolo_conv_max_fp_ps.elf
+Finished building: yolo_conv_max_fp_ps.elf.size
+ 
+11:12:35 **** Auto Build of configuration Debug for project yolo_conv_max_fp_ps ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.cpp
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -I/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_max_fp_prj_2019/yolo_conv_max_fp_prj_2019.sdk/include -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../yolo_conv_max_fp_ps_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.cpp"
+In file included from ../src/helloworld.cpp:52:
+../../yolo_conv_max_fp_ps_bsp/ps7_cortexa9_0/include/xtime_l.h:87:70: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+                                                                      ^
+Finished building: ../src/helloworld.cpp
+ 
+Building target: yolo_conv_max_fp_ps.elf
+Invoking: ARM v7 g++ linker
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../yolo_conv_max_fp_ps_bsp/ps7_cortexa9_0/lib -o "yolo_conv_max_fp_ps.elf"  ./src/helloworld.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: yolo_conv_max_fp_ps.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size yolo_conv_max_fp_ps.elf  |tee "yolo_conv_max_fp_ps.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  77560	2771568	1409672	4258800	 40fbf0	yolo_conv_max_fp_ps.elf
+Finished building: yolo_conv_max_fp_ps.elf.size
+ 
+11:13:20 **** Auto Build of configuration Debug for project yolo_conv_max_fp_ps ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.cpp
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -I/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_max_fp_prj_2019/yolo_conv_max_fp_prj_2019.sdk/include -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../yolo_conv_max_fp_ps_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.cpp"
+In file included from ../src/helloworld.cpp:52:
+../../yolo_conv_max_fp_ps_bsp/ps7_cortexa9_0/include/xtime_l.h:87:70: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+                                                                      ^
+Finished building: ../src/helloworld.cpp
+ 
+Building target: yolo_conv_max_fp_ps.elf
+Invoking: ARM v7 g++ linker
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../yolo_conv_max_fp_ps_bsp/ps7_cortexa9_0/lib -o "yolo_conv_max_fp_ps.elf"  ./src/helloworld.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: yolo_conv_max_fp_ps.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size yolo_conv_max_fp_ps.elf  |tee "yolo_conv_max_fp_ps.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  77560	2771568	1409672	4258800	 40fbf0	yolo_conv_max_fp_ps.elf
+Finished building: yolo_conv_max_fp_ps.elf.size
+ 
+11:13:39 **** Incremental Build of configuration Debug for project yolo_conv_max_fp_ps ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+11:14:01 **** Auto Build of configuration Debug for project yolo_conv_max_fp_ps ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.cpp
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -I/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_max_fp_prj_2019/yolo_conv_max_fp_prj_2019.sdk/include -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../yolo_conv_max_fp_ps_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.cpp"
+In file included from ../src/helloworld.cpp:52:
+../../yolo_conv_max_fp_ps_bsp/ps7_cortexa9_0/include/xtime_l.h:87:70: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+                                                                      ^
+Finished building: ../src/helloworld.cpp
+ 
+Building target: yolo_conv_max_fp_ps.elf
+Invoking: ARM v7 g++ linker
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../yolo_conv_max_fp_ps_bsp/ps7_cortexa9_0/lib -o "yolo_conv_max_fp_ps.elf"  ./src/helloworld.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: yolo_conv_max_fp_ps.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size yolo_conv_max_fp_ps.elf  |tee "yolo_conv_max_fp_ps.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  77560	2771568	1409672	4258800	 40fbf0	yolo_conv_max_fp_ps.elf
+Finished building: yolo_conv_max_fp_ps.elf.size
+ 
+11:14:27 **** Incremental Build of configuration Debug for project yolo_conv_max_fp_ps ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+11:24:04 **** Incremental Build of configuration Debug for project yolo_conv_max_fp_ps ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+11:33:36 **** Auto Build of configuration Debug for project yolo_conv_max_fp_ps ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.cpp
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -I/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_max_fp_prj_2019/yolo_conv_max_fp_prj_2019.sdk/include -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../yolo_conv_max_fp_ps_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.cpp"
+In file included from ../src/helloworld.cpp:52:
+../../yolo_conv_max_fp_ps_bsp/ps7_cortexa9_0/include/xtime_l.h:87:70: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+                                                                      ^
+Finished building: ../src/helloworld.cpp
+ 
+Building target: yolo_conv_max_fp_ps.elf
+Invoking: ARM v7 g++ linker
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../yolo_conv_max_fp_ps_bsp/ps7_cortexa9_0/lib -o "yolo_conv_max_fp_ps.elf"  ./src/helloworld.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: yolo_conv_max_fp_ps.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size yolo_conv_max_fp_ps.elf  |tee "yolo_conv_max_fp_ps.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  77560	2771568	1409672	4258800	 40fbf0	yolo_conv_max_fp_ps.elf
+Finished building: yolo_conv_max_fp_ps.elf.size
+ 
+11:33:52 **** Auto Build of configuration Debug for project yolo_conv_max_fp_ps ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.cpp
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -I/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_max_fp_prj_2019/yolo_conv_max_fp_prj_2019.sdk/include -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../yolo_conv_max_fp_ps_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.cpp"
+In file included from ../src/helloworld.cpp:52:
+../../yolo_conv_max_fp_ps_bsp/ps7_cortexa9_0/include/xtime_l.h:87:70: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+                                                                      ^
+Finished building: ../src/helloworld.cpp
+ 
+Building target: yolo_conv_max_fp_ps.elf
+Invoking: ARM v7 g++ linker
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../yolo_conv_max_fp_ps_bsp/ps7_cortexa9_0/lib -o "yolo_conv_max_fp_ps.elf"  ./src/helloworld.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: yolo_conv_max_fp_ps.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size yolo_conv_max_fp_ps.elf  |tee "yolo_conv_max_fp_ps.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  77560	2771568	1409672	4258800	 40fbf0	yolo_conv_max_fp_ps.elf
+Finished building: yolo_conv_max_fp_ps.elf.size
+ 

@@ -1,0 +1,197 @@
+10:42:40 INFO  : Registering command handlers for SDK TCF services
+10:42:42 INFO  : Launching XSCT server: xsct -n -interactive /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_max_fp_prj_2019/yolo_conv_max_fp_prj_2019.sdk/temp_xsdb_launch_script.tcl
+10:42:48 INFO  : XSCT server has started successfully.
+10:42:48 INFO  : Successfully done setting XSCT server connection channel  
+10:42:55 INFO  : Successfully done setting SDK workspace  
+10:42:55 INFO  : Processing command line option -hwspec /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_max_fp_prj_2019/yolo_conv_max_fp_prj_2019.sdk/design_1_wrapper.hdf.
+11:12:44 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:12:45 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248586321" && level==0} -index 1' command is executed.
+11:12:47 INFO  : FPGA configured successfully with bitstream "/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_max_fp_prj_2019/yolo_conv_max_fp_prj_2019.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+11:12:52 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248586321" && level==0} -index 1' command is executed.
+11:12:52 INFO  : 'fpga -state' command is executed.
+11:12:52 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:12:53 INFO  : Jtag cable 'Digilent Zed 210248586321' is selected.
+11:12:53 INFO  : 'jtag frequency' command is executed.
+11:12:53 INFO  : Sourcing of '/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_max_fp_prj_2019/yolo_conv_max_fp_prj_2019.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+11:12:53 INFO  : Context for 'APU' is selected.
+11:12:53 INFO  : Hardware design information is loaded from '/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_max_fp_prj_2019/yolo_conv_max_fp_prj_2019.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+11:12:53 INFO  : 'configparams force-mem-access 1' command is executed.
+11:12:53 INFO  : Context for 'APU' is selected.
+11:12:53 INFO  : 'stop' command is executed.
+11:12:53 INFO  : 'ps7_init' command is executed.
+11:12:53 INFO  : 'ps7_post_config' command is executed.
+11:12:53 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:12:53 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+11:12:53 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:12:59 INFO  : The application '/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_max_fp_prj_2019/yolo_conv_max_fp_prj_2019.sdk/yolo_conv_max_fp_ps/Debug/yolo_conv_max_fp_ps.elf' is downloaded to processor 'ps7_cortexa9_0'.
+11:12:59 INFO  : 'configparams force-mem-access 0' command is executed.
+11:12:59 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_max_fp_prj_2019/yolo_conv_max_fp_prj_2019.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248586321"} -index 0
+loadhw -hw /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_max_fp_prj_2019/yolo_conv_max_fp_prj_2019.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248586321"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248586321"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248586321"} -index 0
+dow /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_max_fp_prj_2019/yolo_conv_max_fp_prj_2019.sdk/yolo_conv_max_fp_ps/Debug/yolo_conv_max_fp_ps.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+11:12:59 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:12:59 INFO  : 'con' command is executed.
+11:12:59 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248586321"} -index 0
+con
+----------------End of Script----------------
+
+11:12:59 INFO  : Disconnected from the channel tcfchan#1.
+11:13:32 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:13:32 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248586321" && level==0} -index 1' command is executed.
+11:13:34 INFO  : FPGA configured successfully with bitstream "/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_max_fp_prj_2019/yolo_conv_max_fp_prj_2019.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+11:13:41 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248586321" && level==0} -index 1' command is executed.
+11:13:41 INFO  : 'fpga -state' command is executed.
+11:13:41 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:13:41 INFO  : Jtag cable 'Digilent Zed 210248586321' is selected.
+11:13:41 INFO  : 'jtag frequency' command is executed.
+11:13:41 INFO  : Sourcing of '/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_max_fp_prj_2019/yolo_conv_max_fp_prj_2019.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+11:13:41 INFO  : Context for 'APU' is selected.
+11:13:41 INFO  : Hardware design information is loaded from '/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_max_fp_prj_2019/yolo_conv_max_fp_prj_2019.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+11:13:41 INFO  : 'configparams force-mem-access 1' command is executed.
+11:13:41 INFO  : Context for 'APU' is selected.
+11:13:41 INFO  : 'stop' command is executed.
+11:13:41 INFO  : 'ps7_init' command is executed.
+11:13:41 INFO  : 'ps7_post_config' command is executed.
+11:13:42 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:13:42 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+11:13:42 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:13:47 INFO  : The application '/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_max_fp_prj_2019/yolo_conv_max_fp_prj_2019.sdk/yolo_conv_max_fp_ps/Debug/yolo_conv_max_fp_ps.elf' is downloaded to processor 'ps7_cortexa9_0'.
+11:13:47 INFO  : 'configparams force-mem-access 0' command is executed.
+11:13:47 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_max_fp_prj_2019/yolo_conv_max_fp_prj_2019.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248586321"} -index 0
+loadhw -hw /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_max_fp_prj_2019/yolo_conv_max_fp_prj_2019.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248586321"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248586321"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248586321"} -index 0
+dow /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_max_fp_prj_2019/yolo_conv_max_fp_prj_2019.sdk/yolo_conv_max_fp_ps/Debug/yolo_conv_max_fp_ps.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+11:13:47 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:13:47 INFO  : 'con' command is executed.
+11:13:47 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248586321"} -index 0
+con
+----------------End of Script----------------
+
+11:13:47 INFO  : Disconnected from the channel tcfchan#2.
+11:14:20 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:14:20 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248586321" && level==0} -index 1' command is executed.
+11:14:23 INFO  : FPGA configured successfully with bitstream "/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_max_fp_prj_2019/yolo_conv_max_fp_prj_2019.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+11:14:29 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248586321" && level==0} -index 1' command is executed.
+11:14:29 INFO  : 'fpga -state' command is executed.
+11:14:29 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:14:29 INFO  : Jtag cable 'Digilent Zed 210248586321' is selected.
+11:14:29 INFO  : 'jtag frequency' command is executed.
+11:14:29 INFO  : Sourcing of '/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_max_fp_prj_2019/yolo_conv_max_fp_prj_2019.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+11:14:29 INFO  : Context for 'APU' is selected.
+11:14:29 INFO  : Hardware design information is loaded from '/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_max_fp_prj_2019/yolo_conv_max_fp_prj_2019.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+11:14:29 INFO  : 'configparams force-mem-access 1' command is executed.
+11:14:29 INFO  : Context for 'APU' is selected.
+11:14:29 INFO  : 'stop' command is executed.
+11:14:30 INFO  : 'ps7_init' command is executed.
+11:14:30 INFO  : 'ps7_post_config' command is executed.
+11:14:30 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:14:30 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+11:14:30 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:14:35 INFO  : The application '/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_max_fp_prj_2019/yolo_conv_max_fp_prj_2019.sdk/yolo_conv_max_fp_ps/Debug/yolo_conv_max_fp_ps.elf' is downloaded to processor 'ps7_cortexa9_0'.
+11:14:35 INFO  : 'configparams force-mem-access 0' command is executed.
+11:14:35 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_max_fp_prj_2019/yolo_conv_max_fp_prj_2019.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248586321"} -index 0
+loadhw -hw /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_max_fp_prj_2019/yolo_conv_max_fp_prj_2019.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248586321"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248586321"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248586321"} -index 0
+dow /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_max_fp_prj_2019/yolo_conv_max_fp_prj_2019.sdk/yolo_conv_max_fp_ps/Debug/yolo_conv_max_fp_ps.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+11:14:35 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:14:35 INFO  : 'con' command is executed.
+11:14:35 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248586321"} -index 0
+con
+----------------End of Script----------------
+
+11:14:35 INFO  : Disconnected from the channel tcfchan#3.
+11:23:01 INFO  : Registering command handlers for SDK TCF services
+11:23:03 INFO  : Launching XSCT server: xsct -n -interactive /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_max_fp_prj_2019/yolo_conv_max_fp_prj_2019.sdk/temp_xsdb_launch_script.tcl
+11:23:06 INFO  : XSCT server has started successfully.
+11:23:06 INFO  : Successfully done setting XSCT server connection channel  
+11:23:06 INFO  : Successfully done setting SDK workspace  
+11:23:06 INFO  : Processing command line option -hwspec /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_max_fp_prj_2019/yolo_conv_max_fp_prj_2019.sdk/design_1_wrapper.hdf.
+11:23:06 INFO  : Checking for hwspec changes in the project design_1_wrapper_hw_platform_0.
+11:23:44 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:23:44 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248586321" && level==0} -index 1' command is executed.
+11:23:47 INFO  : FPGA configured successfully with bitstream "/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_max_fp_prj_2019/yolo_conv_max_fp_prj_2019.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+11:24:06 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248586321" && level==0} -index 1' command is executed.
+11:24:06 INFO  : 'fpga -state' command is executed.
+11:24:06 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:24:06 INFO  : Jtag cable 'Digilent Zed 210248586321' is selected.
+11:24:06 INFO  : 'jtag frequency' command is executed.
+11:24:06 INFO  : Sourcing of '/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_max_fp_prj_2019/yolo_conv_max_fp_prj_2019.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+11:24:06 INFO  : Context for 'APU' is selected.
+11:24:06 INFO  : Hardware design information is loaded from '/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_max_fp_prj_2019/yolo_conv_max_fp_prj_2019.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+11:24:06 INFO  : 'configparams force-mem-access 1' command is executed.
+11:24:06 INFO  : Context for 'APU' is selected.
+11:24:06 INFO  : 'stop' command is executed.
+11:24:06 INFO  : 'ps7_init' command is executed.
+11:24:06 INFO  : 'ps7_post_config' command is executed.
+11:24:06 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:24:06 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+11:24:07 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:24:12 INFO  : The application '/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_max_fp_prj_2019/yolo_conv_max_fp_prj_2019.sdk/yolo_conv_max_fp_ps/Debug/yolo_conv_max_fp_ps.elf' is downloaded to processor 'ps7_cortexa9_0'.
+11:24:12 INFO  : 'configparams force-mem-access 0' command is executed.
+11:24:12 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_max_fp_prj_2019/yolo_conv_max_fp_prj_2019.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248586321"} -index 0
+loadhw -hw /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_max_fp_prj_2019/yolo_conv_max_fp_prj_2019.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248586321"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248586321"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248586321"} -index 0
+dow /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_max_fp_prj_2019/yolo_conv_max_fp_prj_2019.sdk/yolo_conv_max_fp_ps/Debug/yolo_conv_max_fp_ps.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+11:24:12 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:24:12 INFO  : 'con' command is executed.
+11:24:12 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248586321"} -index 0
+con
+----------------End of Script----------------
+
+11:24:12 INFO  : Disconnected from the channel tcfchan#1.

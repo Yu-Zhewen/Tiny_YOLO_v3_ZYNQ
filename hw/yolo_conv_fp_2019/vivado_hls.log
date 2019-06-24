@@ -6,8 +6,8 @@
 
 source /opt/Xilinx_2019_1/Vivado/2019.1/scripts/vivado_hls/hls.tcl -notrace
 INFO: [HLS 200-10] Running '/opt/Xilinx_2019_1/Vivado/2019.1/bin/unwrapped/lnx64.o/vivado_hls'
-INFO: [HLS 200-10] For user 'xavier' on host 'Lenovo-XiaoXin-CHAO7000' (Linux_x86_64 version 4.15.0-52-generic) on Sat Jun 22 14:35:13 BST 2019
+INFO: [HLS 200-10] For user 'xavier' on host 'Lenovo-XiaoXin-CHAO7000' (Linux_x86_64 version 4.15.0-52-generic) on Sun Jun 23 16:14:26 BST 2019
 INFO: [HLS 200-10] On os Ubuntu 16.04.6 LTS
-INFO: [HLS 200-10] In directory '/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_2019'
+INFO: [HLS 200-10] In directory '/home/xavier/MSc_Project/git_v/Tiny_YOLO_v3_ZYNQ/hw/yolo_conv_fp_2019'
 INFO: [HLS 200-10] Bringing up Vivado HLS GUI ... 
-INFO: [Common 17-206] Exiting vivado_hls at Sat Jun 22 15:27:33 2019...
+INFO: [Common 17-206] Exiting vivado_hls at Sun Jun 23 16:19:10 2019...

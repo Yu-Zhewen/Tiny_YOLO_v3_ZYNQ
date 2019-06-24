@@ -14,15 +14,14 @@ void yolo_max_pool_top(yolo_stream_type &inStream, yolo_stream_type &outStream)
 #pragma HLS ARRAY_PARTITION variable=val_output complete dim=1
 	float_32_side_channel curr_input;
 
-	for(int out_row=0;out_row<OUTPUT_HEIGHT;out_row++)
+	for(int out_row=0;out_row<OUTPUT_HEIGHT+POOL_PAD;out_row++)
 	{
-		for(int row_stride=0;row_stride<STRIDE;row_stride++)
+	for(int row_stride=0;row_stride<STRIDE;row_stride++)
+	{
+		for(int out_col=0;out_col<OUTPUT_WIDTH+POOL_PAD;out_col++)
 		{
-		for(int out_col=0;out_col<OUTPUT_WIDTH;out_col++)
+		for(int col_stride=0;col_stride<STRIDE;col_stride++)
 		{
-			for(int col_stride=0;col_stride<STRIDE;col_stride++)
-			{
-
 			for(int input_ch_idx=0;input_ch_idx<INPUT_CHANNEL;input_ch_idx++)
 			{
 #pragma HLS PIPELINE
@@ -51,16 +50,16 @@ void yolo_max_pool_top(yolo_stream_type &inStream, yolo_stream_type &outStream)
 				//line buffer for every input channel
 				yolo_line_buffer(curr_input.data,&line_buff_group[input_ch_idx],col_idx);
 
-				//wait for line biffer to fill first conv op
-				if((row_stride==STRIDE-1)&&(col_stride==STRIDE-1))
+
+				if((row_idx>=KERNEL_DIM-1)&&(col_idx>=KERNEL_DIM-1)&&(row_stride==STRIDE-1)&&(col_stride==STRIDE-1))
 				{
 
 					window_group[input_ch_idx] = slide_window(conv_count,&line_buff_group[input_ch_idx]);
 					val_output[input_ch_idx] = window_max_pool(&window_group[input_ch_idx]);
 
 					ap_uint<1> last;
-					if((out_row==OUTPUT_HEIGHT-1)&&
-					   (out_col==OUTPUT_WIDTH-1)&&
+					if((out_row==OUTPUT_HEIGHT+POOL_PAD-1)&&
+					   (out_col==OUTPUT_WIDTH+POOL_PAD-1)&&
 					   (input_ch_idx==INPUT_CHANNEL-1))
 					{
 						last = 1;

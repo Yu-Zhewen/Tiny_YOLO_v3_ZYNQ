@@ -34,13 +34,13 @@ int main(int argc, char *argv[])
 	FILE *fp_h;
 	fp_h = fopen(input_buff,"w");
 
-	float data;
+	short data;
 	input_buff[i] = '\0';
 
-	fprintf(fp_h,"float %s[]={",input_buff);
-	while(fscanf(fp_dat,"%f",&data)!=EOF)
+	fprintf(fp_h,"short %s[]={",input_buff);
+	while(fscanf(fp_dat,"%hd",&data)!=EOF)
 	{
-		fprintf(fp_h,"%f,\n",data);
+		fprintf(fp_h,"%hd,\n",data);
 	}
 	fseek(fp_h,-2,SEEK_CUR);
 	fprintf(fp_h,"};\n");	

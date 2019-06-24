@@ -6,7 +6,10 @@
       <simLog/>
       <mgLog/>
       <packageLog/>
-      <csimLog/>
+      <csimLog>
+        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: nonzero return value." projectName="yolo_max_pool_2019" solutionName="solution1" date="2019-06-23T16:52:52.421+0100"/>
+        <logs message="@E Simulation failed: Function 'main' returns nonzero value '1'." projectName="yolo_max_pool_2019" solutionName="solution1" date="2019-06-23T16:52:52.411+0100"/>
+      </csimLog>
     </logs>
   </errorLogs>
   <warningLogs>

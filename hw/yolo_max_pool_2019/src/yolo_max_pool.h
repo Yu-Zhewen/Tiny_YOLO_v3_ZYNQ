@@ -6,7 +6,7 @@
 #include "hls_video.h"
 
 typedef hls::Window<KERNEL_DIM,KERNEL_DIM,float> window_type;
-typedef hls::LineBuffer<KERNEL_DIM,INPUT_WIDTH,float> line_buff_type;
+typedef hls::LineBuffer<KERNEL_DIM,INPUT_WIDTH+POOL_PAD,float> line_buff_type;
 
 void yolo_max_pool_top(yolo_stream_type &inStream, yolo_stream_type &outStream);
 void yolo_line_buffer(float curr_data, line_buff_type *line_buff, int col_idx);
