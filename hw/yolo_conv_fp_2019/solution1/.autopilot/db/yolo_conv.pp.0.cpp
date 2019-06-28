@@ -35702,6 +35702,11 @@ _ssdm_op_SpecDataflowPipeline(-1, 0, "");
 typedef hls::Window<3,3,fp_data_type> window_type;
 typedef hls::LineBuffer<3,(416 +2*1),fp_data_type> line_buff_type;
 
+typedef struct local_weight_type
+{
+ fp_weight_type data[3*3];
+}local_weight_type;
+
 
 
 void yolo_conv_top(yolo_stream_type &inStream, yolo_stream_type &outStream);
@@ -35709,468 +35714,15 @@ void yolo_conv_core(yolo_stream_type &inStream, yolo_stream_type &outStream);
 void yolo_line_buffer(fp_data_type curr_data, line_buff_type *line_buff, int col_idx);
 window_type slide_window(int conv_count, line_buff_type *line_buff);
 void fork_window(window_type kernel_window, window_type window_group[16]);
-fp_data_type window_macc(window_type *window, fp_weight_type weight[3*3]);
+
+fp_data_type window_macc(window_type *window, local_weight_type weight);
 void write_output(fp_data_type val_output, yolo_inter_stream &out_stream);
 void out_stream_merge(yolo_inter_stream out_stream_group[16], yolo_stream_type &outStream, int input_ch_idx,double_fp_side_channel curr_input,ap_uint<1> last);
 # 2 "yolo_conv_fp_2019/src/yolo_conv.cpp" 2
-# 1 "yolo_conv_fp_2019/src/weight_file.h" 1
 
-
-
-short kernel_bias_fp_bits[]={823,
--3963,
-102,
-160,
--1026,
-266,
--1083,
-895,
--9,
-219,
-204,
-178,
-352,
--17,
-318,
-443};
-
-short kernel_weight_fp_bits[]={391,
-861,
-465,
-1031,
--468,
--946,
--31,
--1728,
--250,
-391,
-650,
-2,
-574,
--734,
--1128,
-109,
--1199,
-45,
--603,
--1,
--260,
-0,
--2,
--219,
--45,
--402,
-135,
--1222,
--524,
-2188,
-558,
-220,
--961,
-791,
-1009,
--1037,
-391,
--1629,
-2179,
--2292,
-1301,
--760,
-2238,
--220,
-742,
-2216,
-1171,
--3207,
-571,
-2523,
-1062,
--1323,
--1778,
-624,
-90,
-204,
-43,
-194,
-229,
-93,
-65,
-133,
-14,
-64,
-276,
-191,
-121,
-210,
-167,
-99,
-173,
-66,
--219,
--174,
--91,
--454,
--575,
--447,
--130,
--177,
--255,
-230,
-256,
--22,
-705,
-814,
-425,
-444,
-558,
-352,
--208,
--196,
-26,
--582,
--642,
--314,
--427,
--516,
--303,
--6,
--45,
-3,
--131,
--187,
--96,
--53,
--99,
--68,
--1816,
--2851,
--1783,
-571,
--9,
-178,
-1739,
-2331,
-1401,
--1982,
--2821,
--1443,
-262,
-681,
-189,
-1443,
-2524,
-1107,
--1066,
--2059,
--862,
-440,
-424,
-190,
-808,
-1402,
-796,
-5459,
-739,
--3225,
-3848,
--901,
--3828,
-1816,
--774,
--4505,
--2704,
--741,
-1575,
--702,
--56,
-2281,
--38,
-491,
-1371,
--3421,
--469,
-1371,
--3479,
-447,
-2787,
--1628,
-1019,
-3263,
-1851,
-3850,
-540,
--252,
-1084,
--1717,
--1535,
--1786,
--2074,
-1054,
-3406,
-210,
--197,
-1550,
--1513,
--1327,
--1385,
--2011,
-701,
-1648,
-616,
--411,
-531,
--507,
--780,
--957,
--794,
--433,
--1218,
-354,
--428,
--1875,
--246,
-199,
-257,
--78,
-352,
--1025,
-336,
--39,
--1537,
--52,
--235,
-258,
--314,
-215,
--351,
-437,
--175,
--1333,
-49,
--102,
-337,
--495,
--1749,
-388,
-2585,
--1570,
--3324,
-4145,
-900,
--3366,
-1949,
--318,
--319,
-1440,
-628,
--3953,
-2277,
-2987,
--2681,
--57,
-517,
--127,
--468,
-1353,
--1734,
--349,
-2504,
--518,
--1249,
--1635,
--455,
-1579,
--2356,
--113,
-2476,
--1688,
-681,
-1612,
--1401,
--276,
-1325,
--2214,
--91,
-2237,
--1414,
-684,
-1050,
--853,
-50,
-748,
--1463,
-153,
-1294,
--1160,
-697,
-622,
-1469,
-2379,
-1419,
--131,
-7,
--24,
--1384,
--2059,
--1618,
-1234,
-2314,
-1068,
--213,
-29,
-29,
--1203,
--1944,
--1327,
-745,
-1358,
-523,
--62,
-187,
-160,
--830,
--1304,
--840,
-1379,
-2,
--1444,
-2336,
--611,
--2008,
-1608,
--101,
--1083,
-1510,
-68,
--1556,
-2403,
--566,
--2141,
-1247,
-0,
--976,
-915,
-260,
--1102,
-1628,
--188,
--1610,
-992,
-175,
--1017,
--538,
--578,
--662,
--734,
--977,
--742,
--269,
--939,
--249,
-435,
-498,
-63,
-315,
-191,
-167,
-290,
--71,
-244,
-324,
-560,
-254,
-294,
-346,
-513,
-290,
-240,
-542,
-493,
-877,
-614,
--818,
--2655,
--2419,
-337,
-1325,
-2258,
-667,
-1301,
-976,
--818,
--2778,
--2699,
-185,
-1174,
-2026,
-623,
-920,
-740,
--402,
--1741,
--1813,
-0,
-421,
-1234,
--1789,
--2549,
--1331,
-388,
--42,
--63,
-1575,
-2520,
-1326,
--1390,
--2331,
--1100,
-585,
-58,
-38,
-1061,
-2171,
-872,
--1049,
--1652,
--868,
-547,
-137,
-27,
-753,
-1524,
-622,
-37,
-204,
-103,
--261,
--337,
-29,
--38,
--403,
--200,
--305,
--353,
--624,
--469,
--538,
--219,
--294,
--559,
--257,
-468,
-535,
-20,
-553,
-780,
-628,
-386,
-574,
-517};
-# 3 "yolo_conv_fp_2019/src/yolo_conv.cpp" 2
 
 void yolo_conv_top(yolo_stream_type &inStream, yolo_stream_type &outStream)
 {
-#pragma HLS ARRAY_PARTITION variable=&kernel_weight_fp_bits block factor=16 dim=1
 #pragma HLS INTERFACE s_axilite port=return
 #pragma HLS INTERFACE axis register both port=&outStream
 #pragma HLS INTERFACE axis register both port=&inStream
@@ -36195,19 +35747,37 @@ void yolo_conv_top(yolo_stream_type &inStream, yolo_stream_type &outStream)
 #pragma HLS ARRAY_PARTITION variable=&activated_output complete dim=1
  double_fp_side_channel curr_input;
 
- fp_weight_type kernel_weight_fp[16*3*3*3];
- fp_weight_type kernel_bias_fp[16];
+ local_weight_type local_mem_group[16][3];
 
- for(int i=0;i<16*3*3*3;i++)
+#pragma HLS ARRAY_PARTITION variable=&local_mem_group complete dim=3
+
+ fp_weight_type kernel_bias_fp[16];
+#pragma HLS ARRAY_PARTITION variable=&kernel_bias_fp complete dim=1
+
+
+ for(int k=0; k<16; k++)
  {
-  fp_weight_type *ptr = (fp_weight_type *)kernel_weight_fp_bits;
-  kernel_weight_fp[i] = ptr[i];
+  for(int i=0;i<3;i++)
+  {
+
+   for(int j=0; j<(3*3 +1)/2; j++)
+   {
+#pragma HLS PIPELINE
+ curr_input = inStream.read();
+    local_mem_group[k][i].data[2*j] = curr_input.data.sub_data_0;
+    if(j!=(3*3 +1)/2-1)
+     local_mem_group[k][i].data[2*j+1] = curr_input.data.sub_data_1;
+   }
+
+  }
  }
 
- for(int i=0;i<16;i++)
+ for(int i=0;i<16/2;i++)
  {
-  fp_weight_type *ptr = (fp_weight_type *)kernel_bias_fp_bits;
-  kernel_bias_fp[i] = ptr[i];
+#pragma HLS PIPELINE
+ curr_input = inStream.read();
+  kernel_bias_fp[i*2] = curr_input.data.sub_data_0;
+  kernel_bias_fp[i*2+1] = curr_input.data.sub_data_1;
  }
 
  for(int row_idx=0;row_idx<(416 +2*1)+1;row_idx++)
@@ -36217,14 +35787,19 @@ void yolo_conv_top(yolo_stream_type &inStream, yolo_stream_type &outStream)
   {
    for(int input_ch_idx=0;input_ch_idx<(3 +1)/2;input_ch_idx++)
    {
-#pragma HLS PIPELINE II=1
+#pragma HLS PIPELINE
 
  int conv_count;
 
+
     if((row_idx>=3 -1)&&(col_idx>=3 -1))
+    {
      conv_count = col_idx - (3 -1);
+    }
     else
+    {
      conv_count = 0;
+    }
 
     if(row_idx != (416 +2*1))
     {
@@ -36249,7 +35824,7 @@ void yolo_conv_top(yolo_stream_type &inStream, yolo_stream_type &outStream)
       yolo_line_buffer(curr_input.data.sub_data_1,&line_buff_group_1[input_ch_idx],col_idx);
 
 
-     if((row_idx>=3 -1)&&(col_idx>=3 -1))
+     if((row_idx>3 -2)&&(col_idx>3 -2))
      {
       window_type kernel_window_0, kernel_window_1;
       kernel_window_0 = slide_window(conv_count,&line_buff_group_0[input_ch_idx]);
@@ -36262,16 +35837,20 @@ void yolo_conv_top(yolo_stream_type &inStream, yolo_stream_type &outStream)
 
       for(int kernel_idx=0; kernel_idx<16; kernel_idx++)
       {
+
        if(input_ch_idx == 0)
        {
         sub0_val_output[kernel_idx] = 0;
         sub1_val_output[kernel_idx] = 0;
        }
 
-       sub0_val_output[kernel_idx] += window_macc(&window_group_0[kernel_idx],&kernel_weight_fp[kernel_idx*3*3*3 +2*input_ch_idx*3*3]);
-       if(!(((3 +1)/2!=(3)/2)&&(input_ch_idx == (3 +1)/2-1)))
-        sub1_val_output[kernel_idx] += window_macc(&window_group_1[kernel_idx],&kernel_weight_fp[kernel_idx*3*3*3 +(2*input_ch_idx+1)*3*3]);
 
+
+
+       sub0_val_output[kernel_idx] += window_macc(&window_group_0[kernel_idx],local_mem_group[kernel_idx][2*input_ch_idx]);
+
+       if(!(((3 +1)/2!=(3)/2)&&(input_ch_idx == (3 +1)/2-1)))
+        sub1_val_output[kernel_idx] += window_macc(&window_group_1[kernel_idx],local_mem_group[kernel_idx][2*input_ch_idx+1]);
 
 
 
@@ -36300,18 +35879,15 @@ void yolo_conv_top(yolo_stream_type &inStream, yolo_stream_type &outStream)
 
      }
     }
-
-
-    if(((row_idx>3 -1)&&(col_idx>3 -1))||
-       ((row_idx==3 -1)&&(col_idx>3 -1))||
-       ((row_idx>3 -1)&&(col_idx==3 -1))||
-       ((row_idx==(416 +2*1))&&(col_idx==0)))
+# 173 "yolo_conv_fp_2019/src/yolo_conv.cpp"
+                if(((row_idx>3 -1)&&(col_idx>=3 -1))||((row_idx==3 -1)&&(col_idx>3 -1)))
     {
-     ap_uint<1> last;
-     if((row_idx==(416 +2*1))&&(col_idx==0)&&(input_ch_idx==(3 +1)/2-1))
-      last = 1;
-     else
-      last = 0;
+
+        ap_uint<1> last;
+        if((row_idx==(416 +2*1))&&(input_ch_idx==(3 +1)/2-1))
+         last = 1;
+        else
+         last = 0;
      out_stream_merge(out_stream_group,outStream,input_ch_idx,curr_input,last);
     }
 
@@ -36319,7 +35895,6 @@ void yolo_conv_top(yolo_stream_type &inStream, yolo_stream_type &outStream)
   }
 
  }
-
 }
 
 void yolo_line_buffer(fp_data_type curr_data, line_buff_type *line_buff, int col_idx)
@@ -36362,8 +35937,9 @@ void fork_window(window_type kernel_window, window_type window_group[16])
  }
 }
 
-fp_data_type window_macc(window_type *window, fp_weight_type weight[3*3])
-{_ssdm_SpecArrayDimSize(weight, 9);
+
+fp_data_type window_macc(window_type *window, local_weight_type weight)
+{
 
  fp_data_type sum = 0;
  for(int win_row=0; win_row < 3; win_row++)
@@ -36372,7 +35948,8 @@ fp_data_type window_macc(window_type *window, fp_weight_type weight[3*3])
   {
    fp_data_type val_in = window->getval(win_row,win_col);
 
-   fp_data_type val_out = val_in * weight[win_row*3 +win_col];
+
+   fp_data_type val_out = val_in * weight.data[win_row*3 +win_col];
    sum += val_out;
   }
  }
@@ -36423,7 +36000,6 @@ void out_stream_merge(yolo_inter_stream out_stream_group[16], yolo_stream_type &
     curr_output.dest = curr_input.dest;
     outStream.write(curr_output);
    }
-
  }
 
 }

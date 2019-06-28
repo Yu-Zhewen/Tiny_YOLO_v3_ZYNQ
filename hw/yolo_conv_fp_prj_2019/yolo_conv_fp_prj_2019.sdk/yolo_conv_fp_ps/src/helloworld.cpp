@@ -57,6 +57,7 @@
 #include "layer_input.h"
 #include "layer_output_sdk.h"
 #include "layer_parameter.h"
+#include "weight_file_pad.h"
 
 //#include "yolo_fp.h"
 
@@ -108,6 +109,14 @@ int main()
     XTime_GetTime(&tStart);
 
     XYolo_conv_top_Start(&yolo_conv_top);
+
+    Xil_DCacheFlushRange((u32)kernel_weight_fp_bits_pad,(KERNEL_DIM*KERNEL_DIM+1)*INPUT_CHANNEL*OUTPUT_CHANNEL*sizeof(short));
+    XAxiDma_SimpleTransfer(&axiDMA,(u32)kernel_weight_fp_bits_pad,(KERNEL_DIM*KERNEL_DIM+1)*INPUT_CHANNEL*OUTPUT_CHANNEL*sizeof(short),XAXIDMA_DMA_TO_DEVICE);
+    while(XAxiDma_Busy(&axiDMA,XAXIDMA_DMA_TO_DEVICE));
+    Xil_DCacheFlushRange((u32)kernel_bias_fp_bits_pad,OUTPUT_CHANNEL*sizeof(short));
+    XAxiDma_SimpleTransfer(&axiDMA,(u32)kernel_bias_fp_bits_pad,OUTPUT_CHANNEL*sizeof(short),XAXIDMA_DMA_TO_DEVICE);
+    while(XAxiDma_Busy(&axiDMA,XAXIDMA_DMA_TO_DEVICE));
+
     Xil_DCacheFlushRange((u32)layer_input,(INPUT_WIDTH-2*PAD)*(INPUT_HEIGHT-2*PAD)*4*sizeof(short));
     Xil_DCacheFlushRange((u32)layer_output_hls,OUTPUT_WIDTH*OUTPUT_HEIGHT*OUTPUT_CHANNEL*sizeof(short));
 

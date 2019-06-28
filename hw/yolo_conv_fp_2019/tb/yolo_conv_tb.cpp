@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <math.h>
 #include "../src/yolo_conv.h"
-//#include "../src/weight_file.h"
+#include "../src/weight_file.h"
 
 int main()
 {
@@ -20,6 +20,61 @@ int main()
 	layer_output_hls = fopen("layer_output_hls.dat","w");
 	layer_output_sdk = fopen("layer_output_sdk.dat","r");
 	error_log = fopen("error.log","w");
+
+//	for(int i=0;i<OUTPUT_CHANNEL*INPUT_CHANNEL*KERNEL_DIM*KERNEL_DIM/2;i++)
+//	{
+//		double_fp_side_channel curr_input;
+//
+//		fp_data_type *weight_p = (fp_data_type *)&kernel_weight_fp_bits[0];
+//		curr_input.data.sub_data_0 = weight_p[2*i];
+//		curr_input.data.sub_data_1 = weight_p[2*i+1];
+//		curr_input.keep = 1;
+//		curr_input.strb = 1;
+//		curr_input.user = 1;
+//		curr_input.id   = 0;
+//		curr_input.dest = 0;
+//
+//		inputStream << curr_input;
+//	}
+	int k = 0;
+
+	for(int i=0;i<OUTPUT_CHANNEL*INPUT_CHANNEL;i++)
+	{
+		for(int j=0;j<(KERNEL_DIM*KERNEL_DIM+1)/2;j++)
+		{
+			double_fp_side_channel curr_input;
+
+			fp_data_type *weight_p = (fp_data_type *)&kernel_weight_fp_bits[0];
+			curr_input.data.sub_data_0 = weight_p[k++];
+			if(j==(KERNEL_DIM*KERNEL_DIM+1)/2-1)
+				curr_input.data.sub_data_1 = 0;
+			else
+				curr_input.data.sub_data_1 = weight_p[k++];
+			curr_input.keep = 1;
+			curr_input.strb = 1;
+			curr_input.user = 1;
+			curr_input.id   = 0;
+			curr_input.dest = 0;
+
+			inputStream << curr_input;
+		}
+	}
+
+	for(int i=0;i<OUTPUT_CHANNEL/2;i++)
+	{
+		double_fp_side_channel curr_input;
+
+		fp_data_type *bias_p = (fp_data_type *)&kernel_bias_fp_bits[0];
+		curr_input.data.sub_data_0 = bias_p[2*i];
+		curr_input.data.sub_data_1 = bias_p[2*i+1];
+		curr_input.keep = 1;
+		curr_input.strb = 1;
+		curr_input.user = 1;
+		curr_input.id   = 0;
+		curr_input.dest = 0;
+
+		inputStream << curr_input;
+	}
 
 	int input_height_max = (INPUT_HEIGHT == REAL_INPUT_HEIGHT) ? INPUT_HEIGHT-2*PAD : INPUT_HEIGHT-PAD;
 

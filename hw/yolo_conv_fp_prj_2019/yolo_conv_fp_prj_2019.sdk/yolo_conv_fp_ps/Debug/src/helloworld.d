@@ -23,7 +23,8 @@ src/helloworld.o src/helloworld.o: ../src/helloworld.cpp \
  ../../yolo_conv_fp_ps_bsp/ps7_cortexa9_0/include/xil_cache.h \
  /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019/yolo_conv_fp_prj_2019.sdk/include/layer_input.h \
  /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019/yolo_conv_fp_prj_2019.sdk/include/layer_output_sdk.h \
- /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019/yolo_conv_fp_prj_2019.sdk/include/layer_parameter.h
+ /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019/yolo_conv_fp_prj_2019.sdk/include/layer_parameter.h \
+ /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019/yolo_conv_fp_prj_2019.sdk/include/weight_file_pad.h
 
 ../../yolo_conv_fp_ps_bsp/ps7_cortexa9_0/include/xil_printf.h:
 
@@ -74,3 +75,5 @@ src/helloworld.o src/helloworld.o: ../src/helloworld.cpp \
 /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019/yolo_conv_fp_prj_2019.sdk/include/layer_output_sdk.h:
 
 /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019/yolo_conv_fp_prj_2019.sdk/include/layer_parameter.h:
+
+/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019/yolo_conv_fp_prj_2019.sdk/include/weight_file_pad.h:

@@ -72,5 +72,4 @@ obj/yolo_conv.o: ../../../src/yolo_conv.cpp ../../../src/yolo_conv.h \
  /opt/Xilinx_2019_1/Vivado/2019.1/include/hls/hls_video_hough.h \
  /opt/Xilinx_2019_1/Vivado/2019.1/include/hls/hls_video_harris.h \
  /opt/Xilinx_2019_1/Vivado/2019.1/include/hls/hls_video_haar.h \
- /opt/Xilinx_2019_1/Vivado/2019.1/include/hls/hls_video_stereobm.h \
- ../../../src/weight_file.h
+ /opt/Xilinx_2019_1/Vivado/2019.1/include/hls/hls_video_stereobm.h

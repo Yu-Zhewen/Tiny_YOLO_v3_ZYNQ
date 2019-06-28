@@ -2,8 +2,8 @@
 # Vivado v2019.1 (64-bit)
 # SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
 # IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
-# Start of session at: Sat Jun 22 10:33:18 2019
-# Process ID: 1381
+# Start of session at: Fri Jun 28 10:55:39 2019
+# Process ID: 21231
 # Current directory: /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019/yolo_conv_fp_prj_2019.runs/synth_1
 # Command line: vivado -log design_1_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_wrapper.tcl
 # Log file: /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019/yolo_conv_fp_prj_2019.runs/synth_1/design_1_wrapper.vds

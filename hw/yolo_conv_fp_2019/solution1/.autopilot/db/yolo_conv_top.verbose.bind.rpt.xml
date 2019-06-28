@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'yolo_conv_top'" level="0">
-<item name = "Date">Sat Jun 22 10:19:46 2019
+<item name = "Date">Fri Jun 28 10:47:27 2019
 </item>
 <item name = "Version">2019.1 (Build 2552052 on Fri May 24 15:28:33 MDT 2019)</item>
 <item name = "Project">yolo_conv_fp_2019</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">10.00, 8.983, 1.25</column>
+<column name="ap_clk">10.00, 10.164, 1.25</column>
 </table>
 </item>
 </section>
@@ -24,27 +24,25 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="6">, min, max, min, max, Type</keys>
-<column name="">2101731, 2101731, 2101731, 2101731, none</column>
+<column name="">5604822, 5604822, 5604822, 5604822, none</column>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="7">Instance, Module, min, max, min, max, Type</keys>
-<column name="grp_window_macc_fu_1132">window_macc, 8, 8, 1, 1, function</column>
-<column name="grp_window_macc_fu_1148">window_macc, 8, 8, 1, 1, function</column>
-<column name="grp_window_macc_fu_1164">window_macc, 8, 8, 1, 1, function</column>
-<column name="grp_window_macc_fu_1180">window_macc, 8, 8, 1, 1, function</column>
-<column name="grp_window_macc_fu_1196">window_macc, 8, 8, 1, 1, function</column>
-<column name="grp_window_macc_fu_1212">window_macc, 8, 8, 1, 1, function</column>
-<column name="grp_out_stream_merge_fu_1228">out_stream_merge, 4, 4, 4, 4, function</column>
-<column name="grp_fork_window_fu_1269">fork_window, 0, 0, 1, 1, function</column>
+<column name="grp_window_macc_fu_3772">window_macc, 6, 6, 1, 1, function</column>
+<column name="grp_window_macc_fu_3794">window_macc, 6, 6, 1, 1, function</column>
+<column name="grp_out_stream_merge_fu_3816">out_stream_merge, 4, 4, 4, 4, function</column>
+<column name="grp_fork_window_fu_3857">fork_window, 0, 0, 1, 1, function</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
 <keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
 <column name="- Loop 1">1, 1, 1, -, -, 2, no</column>
-<column name="- Loop 2">2101727, 2101727, 30, 6, 1, 350284, yes</column>
+<column name="- Loop 2">240, 240, 2, 1, 1, 240, yes</column>
+<column name="- Loop 3">8, 8, 1, 1, 1, 8, yes</column>
+<column name="- Loop 4">5604566, 5604566, 39, 16, 1, 350284, yes</column>
 </table>
 </item>
 </section>

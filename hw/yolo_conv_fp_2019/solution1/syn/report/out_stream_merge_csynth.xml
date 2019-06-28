@@ -11,7 +11,7 @@
 <TopModelName>out_stream_merge</TopModelName>
 <TargetClockPeriod>10.00</TargetClockPeriod>
 <ClockUncertainty>1.25</ClockUncertainty>
-<TargetInitiationInterval>1</TargetInitiationInterval>
+<TargetInitiationInterval>4294967295</TargetInitiationInterval>
 </UserAssignments>
 
 <PerformanceEstimates>

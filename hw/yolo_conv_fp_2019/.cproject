@@ -167,7 +167,7 @@
                             							
                             <option id="gnu.cpp.compiler.option.include.paths.1222448379" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" valueType="includePath">
                                 								
-                                <listOptionValue builtIn="false" value="/home/xavier/MSc_Project/git_v/Tiny_YOLO_v3_ZYNQ/hw"/>
+                                <listOptionValue builtIn="false" value="/home/xavier/MSc_Project/hls/yolo_conv_hls_2019"/>
                                 								
                                 <listOptionValue builtIn="false" value="/opt/Xilinx_2019_1/Vivado/2019.1/include/etc"/>
                                 								
@@ -349,7 +349,7 @@
                             							
                             <option id="gnu.cpp.compiler.option.include.paths.1428846641" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" valueType="includePath">
                                 								
-                                <listOptionValue builtIn="false" value="/home/xavier/MSc_Project/git_v/Tiny_YOLO_v3_ZYNQ/hw"/>
+                                <listOptionValue builtIn="false" value="/home/xavier/MSc_Project/hls/yolo_conv_hls_2019"/>
                                 								
                                 <listOptionValue builtIn="false" value="/opt/Xilinx_2019_1/Vivado/2019.1/include/etc"/>
                                 								

@@ -12,9 +12,13 @@
     "Package": "-clg484",
     "Speed": "-1"
   },
-  "HlsSolution": {
-    
-  },
+  "HlsSolution": {"Config": [
+      "config_export -format=ip_catalog",
+      "config_export -rtl=verilog",
+      "config_export -vivado_optimization_level=2",
+      "config_export -vivado_phys_opt=place",
+      "config_export -vivado_report_level=0"
+    ]},
   "Args": {
     "inStream": {
       "index": "0",
@@ -125,7 +129,7 @@
     "ClockPeriod": "10",
     "IsCombLogic": "0",
     "II": "x",
-    "Latency": "2101731",
+    "Latency": "5604822",
     "Uncertainty": "1.25"
   },
   "Xdc": {"OocClocks": ["create_clock -name ap_clk -period 10.000 [get_ports ap_clk]"]},
@@ -147,12 +151,12 @@
       "impl\/vhdl\/fork_window.vhd",
       "impl\/vhdl\/out_stream_merge.vhd",
       "impl\/vhdl\/window_macc.vhd",
-      "impl\/vhdl\/window_macc_kernel_weight_fp.vhd",
       "impl\/vhdl\/yolo_conv_top_AXILiteS_s_axi.vhd",
       "impl\/vhdl\/yolo_conv_top_line_buff_group_0_va.vhd",
       "impl\/vhdl\/yolo_conv_top_line_buff_group_1_va.vhd",
+      "impl\/vhdl\/yolo_conv_top_local_mem_group_data.vhd",
       "impl\/vhdl\/yolo_conv_top_mul_mul_6ns_16s_22_1_1.vhd",
-      "impl\/vhdl\/yolo_conv_top_mul_mul_14s_16s_30_1_1.vhd",
+      "impl\/vhdl\/yolo_conv_top_mul_mul_16s_16s_32_1_0.vhd",
       "impl\/vhdl\/yolo_conv_top.vhd"
     ],
     "Verilog": [
@@ -160,13 +164,12 @@
       "impl\/verilog\/fork_window.v",
       "impl\/verilog\/out_stream_merge.v",
       "impl\/verilog\/window_macc.v",
-      "impl\/verilog\/window_macc_kernel_weight_fp.v",
-      "impl\/verilog\/window_macc_kernel_weight_fp_rom.dat",
       "impl\/verilog\/yolo_conv_top_AXILiteS_s_axi.v",
       "impl\/verilog\/yolo_conv_top_line_buff_group_0_va.v",
       "impl\/verilog\/yolo_conv_top_line_buff_group_1_va.v",
+      "impl\/verilog\/yolo_conv_top_local_mem_group_data.v",
       "impl\/verilog\/yolo_conv_top_mul_mul_6ns_16s_22_1_1.v",
-      "impl\/verilog\/yolo_conv_top_mul_mul_14s_16s_30_1_1.v",
+      "impl\/verilog\/yolo_conv_top_mul_mul_16s_16s_32_1_0.v",
       "impl\/verilog\/yolo_conv_top.v"
     ],
     "SwDriver": [
@@ -703,35 +706,19 @@
       "Instances": [
         {
           "ModuleName": "window_macc",
-          "InstanceName": "grp_window_macc_fu_1132"
+          "InstanceName": "grp_window_macc_fu_3772"
         },
         {
           "ModuleName": "window_macc",
-          "InstanceName": "grp_window_macc_fu_1148"
-        },
-        {
-          "ModuleName": "window_macc",
-          "InstanceName": "grp_window_macc_fu_1164"
-        },
-        {
-          "ModuleName": "window_macc",
-          "InstanceName": "grp_window_macc_fu_1180"
-        },
-        {
-          "ModuleName": "window_macc",
-          "InstanceName": "grp_window_macc_fu_1196"
-        },
-        {
-          "ModuleName": "window_macc",
-          "InstanceName": "grp_window_macc_fu_1212"
+          "InstanceName": "grp_window_macc_fu_3794"
         },
         {
           "ModuleName": "out_stream_merge",
-          "InstanceName": "grp_out_stream_merge_fu_1228"
+          "InstanceName": "grp_out_stream_merge_fu_3816"
         },
         {
           "ModuleName": "fork_window",
-          "InstanceName": "grp_fork_window_fu_1269"
+          "InstanceName": "grp_fork_window_fu_3857"
         }
       ]
     },
@@ -790,11 +777,11 @@
       },
       "window_macc": {
         "Latency": {
-          "LatencyBest": "8",
-          "LatencyAvg": "8",
-          "LatencyWorst": "8",
+          "LatencyBest": "6",
+          "LatencyAvg": "6",
+          "LatencyWorst": "6",
           "PipelineII": "1",
-          "PipelineDepth": "9",
+          "PipelineDepth": "7",
           "PipelineType": "function"
         },
         "Timing": {
@@ -803,10 +790,10 @@
           "Estimate": "8.066"
         },
         "Area": {
-          "BRAM_18K": "5",
+          "BRAM_18K": "0",
           "DSP48E": "9",
-          "FF": "1381",
-          "LUT": "2442",
+          "FF": "1317",
+          "LUT": "2325",
           "URAM": "0"
         }
       },
@@ -834,17 +821,17 @@
       },
       "yolo_conv_top": {
         "Latency": {
-          "LatencyBest": "2101731",
-          "LatencyAvg": "2101731",
-          "LatencyWorst": "2101731",
-          "PipelineII": "2101732",
+          "LatencyBest": "5604822",
+          "LatencyAvg": "5604822",
+          "LatencyWorst": "5604822",
+          "PipelineII": "5604823",
           "PipelineDepth": "",
           "PipelineType": "none"
         },
         "Timing": {
           "Target": "10.00",
           "Uncertainty": "1.25",
-          "Estimate": "8.983"
+          "Estimate": "10.164"
         },
         "Loops": [
           {
@@ -856,17 +843,31 @@
           },
           {
             "Name": "Loop 2",
+            "TripCount": "240",
+            "Latency": "240",
+            "PipelineII": "1",
+            "PipelineDepth": "2"
+          },
+          {
+            "Name": "Loop 3",
+            "TripCount": "8",
+            "Latency": "8",
+            "PipelineII": "1",
+            "PipelineDepth": "1"
+          },
+          {
+            "Name": "Loop 4",
             "TripCount": "350284",
-            "Latency": "2101727",
-            "PipelineII": "6",
-            "PipelineDepth": "30"
+            "Latency": "5604566",
+            "PipelineII": "16",
+            "PipelineDepth": "39"
           }
         ],
         "Area": {
-          "BRAM_18K": "36",
-          "DSP48E": "70",
-          "FF": "16414",
-          "LUT": "27423",
+          "BRAM_18K": "6",
+          "DSP48E": "34",
+          "FF": "17179",
+          "LUT": "20447",
           "URAM": "0"
         }
       }
@@ -882,7 +883,7 @@
   },
   "GenData": {
     "DataVersion": "0.2",
-    "Time": "2019-06-22 10:20:14 BST",
+    "Time": "2019-06-28 10:47:50 BST",
     "ToolName": "vivado_hls",
     "ToolVersion": "2019.1"
   }

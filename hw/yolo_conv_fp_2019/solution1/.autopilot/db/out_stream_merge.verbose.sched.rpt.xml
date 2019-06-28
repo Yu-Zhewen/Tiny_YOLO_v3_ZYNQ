@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'out_stream_merge'" level="0">
-<item name = "Date">Sat Jun 22 10:19:39 2019
+<item name = "Date">Fri Jun 28 10:47:13 2019
 </item>
 <item name = "Version">2019.1 (Build 2552052 on Fri May 24 15:28:33 MDT 2019)</item>
 <item name = "Project">yolo_conv_fp_2019</item>

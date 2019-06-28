@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
   <source>
-    <originFiles name="layer_parameter.h" path="/home/xavier/MSc_Project/git_v/Tiny_YOLO_v3_ZYNQ/hw/yolo_conv_fp_2019/src/layer_parameter.h"/>
-    <originFiles name="weight_file.h" path="/home/xavier/MSc_Project/git_v/Tiny_YOLO_v3_ZYNQ/hw/yolo_conv_fp_2019/src/weight_file.h"/>
-    <originFiles name="yolo_conv.cpp" path="/home/xavier/MSc_Project/git_v/Tiny_YOLO_v3_ZYNQ/hw/yolo_conv_fp_2019/src/yolo_conv.cpp"/>
-    <originFiles name="yolo_conv.h" path="/home/xavier/MSc_Project/git_v/Tiny_YOLO_v3_ZYNQ/hw/yolo_conv_fp_2019/src/yolo_conv.h"/>
-    <originFiles name="yolo_fp.h" path="/home/xavier/MSc_Project/git_v/Tiny_YOLO_v3_ZYNQ/hw/yolo_conv_fp_2019/src/yolo_fp.h"/>
-    <originFiles name="yolo_stream.h" path="/home/xavier/MSc_Project/git_v/Tiny_YOLO_v3_ZYNQ/hw/yolo_conv_fp_2019/src/yolo_stream.h"/>
+    <originFiles name="layer_parameter.h" path="/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_2019/src/layer_parameter.h"/>
+    <originFiles name="weight_file.h" path="/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_2019/src/weight_file.h"/>
+    <originFiles name="yolo_conv.cpp" path="/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_2019/src/yolo_conv.cpp"/>
+    <originFiles name="yolo_conv.h" path="/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_2019/src/yolo_conv.h"/>
+    <originFiles name="yolo_fp.h" path="/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_2019/src/yolo_fp.h"/>
+    <originFiles name="yolo_stream.h" path="/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_2019/src/yolo_stream.h"/>
   </source>
   <testbench>
-    <originFiles name="layer_input.dat" path="/home/xavier/MSc_Project/git_v/Tiny_YOLO_v3_ZYNQ/hw/yolo_conv_fp_2019/tb/layer_input.dat"/>
-    <originFiles name="layer_output_sdk.dat" path="/home/xavier/MSc_Project/git_v/Tiny_YOLO_v3_ZYNQ/hw/yolo_conv_fp_2019/tb/layer_output_sdk.dat"/>
-    <originFiles name="yolo_conv_tb.cpp" path="/home/xavier/MSc_Project/git_v/Tiny_YOLO_v3_ZYNQ/hw/yolo_conv_fp_2019/tb/yolo_conv_tb.cpp"/>
+    <originFiles name="layer_input.dat" path="/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_2019/tb/layer_input.dat"/>
+    <originFiles name="layer_output_sdk.dat" path="/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_2019/tb/layer_output_sdk.dat"/>
+    <originFiles name="yolo_conv_tb.cpp" path="/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_2019/tb/yolo_conv_tb.cpp"/>
   </testbench>
 </autopilotfilemapping:AutoPilotFileMapping>

@@ -46,7 +46,7 @@ module AESL_axi_s_outStream (
     reg outStream_TDATA_read_en;
     wire [32 - 1:0] outStream_TDATA_read_data;
     
-    fifo #(13312, 32) fifo_outStream_TDATA (
+    fifo #(9984, 32) fifo_outStream_TDATA (
         .reset(1'b0),
         .write_clock(clk),
         .write_en(outStream_TDATA_write_en),
@@ -69,7 +69,7 @@ module AESL_axi_s_outStream (
     reg outStream_TKEEP_read_en;
     wire [4 - 1:0] outStream_TKEEP_read_data;
     
-    fifo #(13312, 4) fifo_outStream_TKEEP (
+    fifo #(9984, 4) fifo_outStream_TKEEP (
         .reset(1'b0),
         .write_clock(clk),
         .write_en(outStream_TKEEP_write_en),
@@ -92,7 +92,7 @@ module AESL_axi_s_outStream (
     reg outStream_TSTRB_read_en;
     wire [4 - 1:0] outStream_TSTRB_read_data;
     
-    fifo #(13312, 4) fifo_outStream_TSTRB (
+    fifo #(9984, 4) fifo_outStream_TSTRB (
         .reset(1'b0),
         .write_clock(clk),
         .write_en(outStream_TSTRB_write_en),
@@ -115,7 +115,7 @@ module AESL_axi_s_outStream (
     reg outStream_TUSER_read_en;
     wire [2 - 1:0] outStream_TUSER_read_data;
     
-    fifo #(13312, 2) fifo_outStream_TUSER (
+    fifo #(9984, 2) fifo_outStream_TUSER (
         .reset(1'b0),
         .write_clock(clk),
         .write_en(outStream_TUSER_write_en),
@@ -138,7 +138,7 @@ module AESL_axi_s_outStream (
     reg outStream_TLAST_read_en;
     wire [1 - 1:0] outStream_TLAST_read_data;
     
-    fifo #(13312, 1) fifo_outStream_TLAST (
+    fifo #(9984, 1) fifo_outStream_TLAST (
         .reset(1'b0),
         .write_clock(clk),
         .write_en(outStream_TLAST_write_en),
@@ -161,7 +161,7 @@ module AESL_axi_s_outStream (
     reg outStream_TID_read_en;
     wire [5 - 1:0] outStream_TID_read_data;
     
-    fifo #(13312, 5) fifo_outStream_TID (
+    fifo #(9984, 5) fifo_outStream_TID (
         .reset(1'b0),
         .write_clock(clk),
         .write_en(outStream_TID_write_en),
@@ -184,7 +184,7 @@ module AESL_axi_s_outStream (
     reg outStream_TDEST_read_en;
     wire [6 - 1:0] outStream_TDEST_read_data;
     
-    fifo #(13312, 6) fifo_outStream_TDEST (
+    fifo #(9984, 6) fifo_outStream_TDEST (
         .reset(1'b0),
         .write_clock(clk),
         .write_en(outStream_TDEST_write_en),

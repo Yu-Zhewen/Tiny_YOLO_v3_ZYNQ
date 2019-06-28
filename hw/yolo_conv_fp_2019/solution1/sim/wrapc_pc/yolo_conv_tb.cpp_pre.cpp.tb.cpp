@@ -103277,6 +103277,11 @@ void FindStereoCorrespondenceBM(
 typedef hls::Window<3,3,fp_data_type> window_type;
 typedef hls::LineBuffer<3,(416+2*1),fp_data_type> line_buff_type;
 
+typedef struct local_weight_type
+{
+ fp_weight_type data[3*3];
+}local_weight_type;
+
 
 
 void yolo_conv_top(yolo_stream_type &inStream, yolo_stream_type &outStream);
@@ -103284,11 +103289,465 @@ void yolo_conv_core(yolo_stream_type &inStream, yolo_stream_type &outStream);
 void yolo_line_buffer(fp_data_type curr_data, line_buff_type *line_buff, int col_idx);
 window_type slide_window(int conv_count, line_buff_type *line_buff);
 void fork_window(window_type kernel_window, window_type window_group[16]);
-fp_data_type window_macc(window_type *window, fp_weight_type weight[3*3]);
+
+fp_data_type window_macc(window_type *window, local_weight_type weight);
 void write_output(fp_data_type val_output, yolo_inter_stream &out_stream);
 void out_stream_merge(yolo_inter_stream out_stream_group[16], yolo_stream_type &outStream, int input_ch_idx,double_fp_side_channel curr_input,ap_uint<1> last);
 # 4 "/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_2019/tb/yolo_conv_tb.cpp" 2
+# 1 "/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_2019/tb/../src/weight_file.h" 1
 
+
+
+short kernel_bias_fp_bits[]={823,
+-3963,
+102,
+160,
+-1026,
+266,
+-1083,
+895,
+-9,
+219,
+204,
+178,
+352,
+-17,
+318,
+443};
+
+short kernel_weight_fp_bits[]={391,
+861,
+465,
+1031,
+-468,
+-946,
+-31,
+-1728,
+-250,
+391,
+650,
+2,
+574,
+-734,
+-1128,
+109,
+-1199,
+45,
+-603,
+-1,
+-260,
+0,
+-2,
+-219,
+-45,
+-402,
+135,
+-1222,
+-524,
+2188,
+558,
+220,
+-961,
+791,
+1009,
+-1037,
+391,
+-1629,
+2179,
+-2292,
+1301,
+-760,
+2238,
+-220,
+742,
+2216,
+1171,
+-3207,
+571,
+2523,
+1062,
+-1323,
+-1778,
+624,
+90,
+204,
+43,
+194,
+229,
+93,
+65,
+133,
+14,
+64,
+276,
+191,
+121,
+210,
+167,
+99,
+173,
+66,
+-219,
+-174,
+-91,
+-454,
+-575,
+-447,
+-130,
+-177,
+-255,
+230,
+256,
+-22,
+705,
+814,
+425,
+444,
+558,
+352,
+-208,
+-196,
+26,
+-582,
+-642,
+-314,
+-427,
+-516,
+-303,
+-6,
+-45,
+3,
+-131,
+-187,
+-96,
+-53,
+-99,
+-68,
+-1816,
+-2851,
+-1783,
+571,
+-9,
+178,
+1739,
+2331,
+1401,
+-1982,
+-2821,
+-1443,
+262,
+681,
+189,
+1443,
+2524,
+1107,
+-1066,
+-2059,
+-862,
+440,
+424,
+190,
+808,
+1402,
+796,
+5459,
+739,
+-3225,
+3848,
+-901,
+-3828,
+1816,
+-774,
+-4505,
+-2704,
+-741,
+1575,
+-702,
+-56,
+2281,
+-38,
+491,
+1371,
+-3421,
+-469,
+1371,
+-3479,
+447,
+2787,
+-1628,
+1019,
+3263,
+1851,
+3850,
+540,
+-252,
+1084,
+-1717,
+-1535,
+-1786,
+-2074,
+1054,
+3406,
+210,
+-197,
+1550,
+-1513,
+-1327,
+-1385,
+-2011,
+701,
+1648,
+616,
+-411,
+531,
+-507,
+-780,
+-957,
+-794,
+-433,
+-1218,
+354,
+-428,
+-1875,
+-246,
+199,
+257,
+-78,
+352,
+-1025,
+336,
+-39,
+-1537,
+-52,
+-235,
+258,
+-314,
+215,
+-351,
+437,
+-175,
+-1333,
+49,
+-102,
+337,
+-495,
+-1749,
+388,
+2585,
+-1570,
+-3324,
+4145,
+900,
+-3366,
+1949,
+-318,
+-319,
+1440,
+628,
+-3953,
+2277,
+2987,
+-2681,
+-57,
+517,
+-127,
+-468,
+1353,
+-1734,
+-349,
+2504,
+-518,
+-1249,
+-1635,
+-455,
+1579,
+-2356,
+-113,
+2476,
+-1688,
+681,
+1612,
+-1401,
+-276,
+1325,
+-2214,
+-91,
+2237,
+-1414,
+684,
+1050,
+-853,
+50,
+748,
+-1463,
+153,
+1294,
+-1160,
+697,
+622,
+1469,
+2379,
+1419,
+-131,
+7,
+-24,
+-1384,
+-2059,
+-1618,
+1234,
+2314,
+1068,
+-213,
+29,
+29,
+-1203,
+-1944,
+-1327,
+745,
+1358,
+523,
+-62,
+187,
+160,
+-830,
+-1304,
+-840,
+1379,
+2,
+-1444,
+2336,
+-611,
+-2008,
+1608,
+-101,
+-1083,
+1510,
+68,
+-1556,
+2403,
+-566,
+-2141,
+1247,
+0,
+-976,
+915,
+260,
+-1102,
+1628,
+-188,
+-1610,
+992,
+175,
+-1017,
+-538,
+-578,
+-662,
+-734,
+-977,
+-742,
+-269,
+-939,
+-249,
+435,
+498,
+63,
+315,
+191,
+167,
+290,
+-71,
+244,
+324,
+560,
+254,
+294,
+346,
+513,
+290,
+240,
+542,
+493,
+877,
+614,
+-818,
+-2655,
+-2419,
+337,
+1325,
+2258,
+667,
+1301,
+976,
+-818,
+-2778,
+-2699,
+185,
+1174,
+2026,
+623,
+920,
+740,
+-402,
+-1741,
+-1813,
+0,
+421,
+1234,
+-1789,
+-2549,
+-1331,
+388,
+-42,
+-63,
+1575,
+2520,
+1326,
+-1390,
+-2331,
+-1100,
+585,
+58,
+38,
+1061,
+2171,
+872,
+-1049,
+-1652,
+-868,
+547,
+137,
+27,
+753,
+1524,
+622,
+37,
+204,
+103,
+-261,
+-337,
+29,
+-38,
+-403,
+-200,
+-305,
+-353,
+-624,
+-469,
+-538,
+-219,
+-294,
+-559,
+-257,
+468,
+535,
+20,
+553,
+780,
+628,
+386,
+574,
+517};
+# 5 "/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_2019/tb/yolo_conv_tb.cpp" 2
 
 #ifndef HLS_FASTSIM
 #ifndef HLS_FASTSIM
@@ -103306,14 +103765,54 @@ int main()
 
  bool flag = false;
 
- static fp_data_type output_data[416*4*16];
+ static fp_data_type output_data[416*3*16];
 
  layer_input = fopen("layer_input.dat","r");
  layer_output_hls = fopen("layer_output_hls.dat","w");
  layer_output_sdk = fopen("layer_output_sdk.dat","r");
  error_log = fopen("error.log","w");
+# 39 "/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_2019/tb/yolo_conv_tb.cpp"
+ int k = 0;
 
- int input_height_max = ((4+2*1) == (416+2*1)) ? (4+2*1)-2*1 : (4+2*1)-1;
+ for(int i=0;i<16*3;i++)
+ {
+  for(int j=0;j<(3*3 +1)/2;j++)
+  {
+   double_fp_side_channel curr_input;
+
+   fp_data_type *weight_p = (fp_data_type *)&kernel_weight_fp_bits[0];
+   curr_input.data.sub_data_0 = weight_p[k++];
+   if(j==(3*3 +1)/2-1)
+    curr_input.data.sub_data_1 = 0;
+   else
+    curr_input.data.sub_data_1 = weight_p[k++];
+   curr_input.keep = 1;
+   curr_input.strb = 1;
+   curr_input.user = 1;
+   curr_input.id = 0;
+   curr_input.dest = 0;
+
+   inputStream << curr_input;
+  }
+ }
+
+ for(int i=0;i<16/2;i++)
+ {
+  double_fp_side_channel curr_input;
+
+  fp_data_type *bias_p = (fp_data_type *)&kernel_bias_fp_bits[0];
+  curr_input.data.sub_data_0 = bias_p[2*i];
+  curr_input.data.sub_data_1 = bias_p[2*i+1];
+  curr_input.keep = 1;
+  curr_input.strb = 1;
+  curr_input.user = 1;
+  curr_input.id = 0;
+  curr_input.dest = 0;
+
+  inputStream << curr_input;
+ }
+
+ int input_height_max = ((3+2*1) == (416+2*1)) ? (3+2*1)-2*1 : (3+2*1)-1;
 
  for(int row_idx=0;row_idx<input_height_max;row_idx++)
  {
@@ -103352,34 +103851,35 @@ int main()
 #ifndef HLS_FASTSIM
 #define yolo_conv_top AESL_WRAP_yolo_conv_top
 #endif
-# 59 "/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_2019/tb/yolo_conv_tb.cpp"
+# 114 "/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_2019/tb/yolo_conv_tb.cpp"
 yolo_conv_top(inputStream,outputStream);
 #undef yolo_conv_top
-# 59 "/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_2019/tb/yolo_conv_tb.cpp"
+# 114 "/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_2019/tb/yolo_conv_tb.cpp"
 
 
- for(int pix_idx=0;pix_idx<((416*4)*((16 +1)/2));pix_idx++)
+ for(int pix_idx=0;pix_idx<((416*3)*((16 +1)/2));pix_idx++)
  {
   double_fp_side_channel curr_output;
   outputStream.read(curr_output);
   output_data[2*pix_idx] = curr_output.data.sub_data_0;
-  if(2*pix_idx+1<416*4*16)
+  if(2*pix_idx+1<416*3*16)
    output_data[2*pix_idx+1] = curr_output.data.sub_data_1;
   if(curr_output.last==1)
    printf("%d\n",pix_idx);
  }
 
- for(int pix_idx=0;pix_idx<416*4*16;pix_idx++)
+ short *ptr = (short *)&output_data[0];
+ for(int pix_idx=0;pix_idx<416*3*16;pix_idx++)
  {
 
-  fprintf(layer_output_hls,"%f\n",output_data[pix_idx].to_float());
-  float ref_data;
-  fscanf(layer_output_sdk,"%f\n",&ref_data);
+  fprintf(layer_output_hls,"%hd\n",ptr[pix_idx]);
+  short ref_data;
+  fscanf(layer_output_sdk,"%hd\n",&ref_data);
 
-  if(fabs(output_data[pix_idx].to_float()-ref_data)>2e-1)
+  if(abs(ptr[pix_idx]-ref_data)>64)
   {
    flag = true;
-   fprintf(error_log,"%d\t%f\t%f\n",pix_idx,ref_data,output_data[pix_idx].to_float());
+   fprintf(error_log,"%d\t%hd\t%hd\n",pix_idx,ref_data,ptr[pix_idx]);
   }
  }
 
@@ -103396,5 +103896,5 @@ yolo_conv_top(inputStream,outputStream);
 
 }
 #endif
-# 97 "/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_2019/tb/yolo_conv_tb.cpp"
+# 153 "/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_2019/tb/yolo_conv_tb.cpp"
 

@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'yolo_conv_top'" level="0">
-<item name = "Date">Sat Jun 22 10:19:42 2019
+<item name = "Date">Fri Jun 28 10:47:21 2019
 </item>
 <item name = "Version">2019.1 (Build 2552052 on Fri May 24 15:28:33 MDT 2019)</item>
 <item name = "Project">yolo_conv_fp_2019</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">10.00, 8.750, 1.25</column>
+<column name="ap_clk">10.00, 10.164, 1.25</column>
 </table>
 </item>
 </section>
@@ -24,7 +24,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="6">, min, max, min, max, Type</keys>
-<column name="">2101731, 2101731, 2101731, 2101731, none</column>
+<column name="">5604822, 5604822, 5604822, 5604822, none</column>
 </table>
 </item>
 <item name = "Detail">
@@ -36,7 +36,9 @@
 <item name = "Loop"><table name="" hasTotal="0">
 <keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
 <column name="- Loop 1">1, 1, 1, -, -, 2, no</column>
-<column name="- Loop 2">2101727, 2101727, 30, 6, 1, 350284, yes</column>
+<column name="- Loop 2">240, 240, 2, 1, 1, 240, yes</column>
+<column name="- Loop 3">8, 8, 1, 1, 1, 8, yes</column>
+<column name="- Loop 4">5604566, 5604566, 39, 16, 1, 350284, yes</column>
 </table>
 </item>
 </section>

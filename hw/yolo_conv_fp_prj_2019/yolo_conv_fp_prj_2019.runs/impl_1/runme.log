@@ -17,13 +17,13 @@ Design is defaulting to srcset: sources_1
 Design is defaulting to constrset: constrs_1
 INFO: [Device 21-403] Loading part xc7z020clg484-1
 INFO: [Project 1-454] Reading design checkpoint '/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019/yolo_conv_fp_prj_2019.srcs/sources_1/bd/design_1/ip/design_1_axi_dma_0_0/design_1_axi_dma_0_0.dcp' for cell 'design_1_i/axi_dma_0'
-INFO: [Project 1-454] Reading design checkpoint '/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019/yolo_conv_fp_prj_2019.srcs/sources_1/bd/design_1/ip/design_1_axi_smc_0/design_1_axi_smc_0.dcp' for cell 'design_1_i/axi_smc'
+INFO: [Project 1-454] Reading design checkpoint '/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019/yolo_conv_fp_prj_2019.srcs/sources_1/bd/design_1/ip/design_1_axi_smc_2/design_1_axi_smc_2.dcp' for cell 'design_1_i/axi_smc'
 INFO: [Project 1-454] Reading design checkpoint '/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019/yolo_conv_fp_prj_2019.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0.dcp' for cell 'design_1_i/processing_system7_0'
-INFO: [Project 1-454] Reading design checkpoint '/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019/yolo_conv_fp_prj_2019.srcs/sources_1/bd/design_1/ip/design_1_rst_ps7_0_100M_0/design_1_rst_ps7_0_100M_0.dcp' for cell 'design_1_i/rst_ps7_0_100M'
-INFO: [Project 1-454] Reading design checkpoint '/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019/yolo_conv_fp_prj_2019.srcs/sources_1/bd/design_1/ip/design_1_yolo_conv_top_0_0/design_1_yolo_conv_top_0_0.dcp' for cell 'design_1_i/yolo_conv_top_0'
-INFO: [Project 1-454] Reading design checkpoint '/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019/yolo_conv_fp_prj_2019.srcs/sources_1/bd/design_1/ip/design_1_xbar_0/design_1_xbar_0.dcp' for cell 'design_1_i/ps7_0_axi_periph/xbar'
-INFO: [Project 1-454] Reading design checkpoint '/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019/yolo_conv_fp_prj_2019.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0.dcp' for cell 'design_1_i/ps7_0_axi_periph/s00_couplers/auto_pc'
-INFO: [Netlist 29-17] Analyzing 1534 Unisim elements for replacement
+INFO: [Project 1-454] Reading design checkpoint '/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019/yolo_conv_fp_prj_2019.srcs/sources_1/bd/design_1/ip/design_1_rst_ps7_0_100M_2/design_1_rst_ps7_0_100M_2.dcp' for cell 'design_1_i/rst_ps7_0_100M'
+INFO: [Project 1-454] Reading design checkpoint '/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019/yolo_conv_fp_prj_2019.srcs/sources_1/bd/design_1/ip/design_1_yolo_conv_top_0_3/design_1_yolo_conv_top_0_3.dcp' for cell 'design_1_i/yolo_conv_top_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019/yolo_conv_fp_prj_2019.srcs/sources_1/bd/design_1/ip/design_1_xbar_2/design_1_xbar_2.dcp' for cell 'design_1_i/ps7_0_axi_periph/xbar'
+INFO: [Project 1-454] Reading design checkpoint '/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019/yolo_conv_fp_prj_2019.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_2/design_1_auto_pc_2.dcp' for cell 'design_1_i/ps7_0_axi_periph/s00_couplers/auto_pc'
+INFO: [Netlist 29-17] Analyzing 1345 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-479] Netlist was created with Vivado 2019.1
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -34,14 +34,14 @@ WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/ho
 WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019/yolo_conv_fp_prj_2019.srcs/sources_1/bd/design_1/ip/design_1_axi_dma_0_0/design_1_axi_dma_0_0.xdc:56]
 WARNING: [Vivado_Tcl 4-919] Waiver ID 'CDC-1' -from list should not be empty. [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019/yolo_conv_fp_prj_2019.srcs/sources_1/bd/design_1/ip/design_1_axi_dma_0_0/design_1_axi_dma_0_0.xdc:61]
 Finished Parsing XDC File [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019/yolo_conv_fp_prj_2019.srcs/sources_1/bd/design_1/ip/design_1_axi_dma_0_0/design_1_axi_dma_0_0.xdc] for cell 'design_1_i/axi_dma_0/U0'
-Parsing XDC File [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019/yolo_conv_fp_prj_2019.srcs/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_1/bd_afc3_psr_aclk_0_board.xdc] for cell 'design_1_i/axi_smc/inst/clk_map/psr_aclk/U0'
-Finished Parsing XDC File [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019/yolo_conv_fp_prj_2019.srcs/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_1/bd_afc3_psr_aclk_0_board.xdc] for cell 'design_1_i/axi_smc/inst/clk_map/psr_aclk/U0'
-Parsing XDC File [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019/yolo_conv_fp_prj_2019.srcs/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_1/bd_afc3_psr_aclk_0.xdc] for cell 'design_1_i/axi_smc/inst/clk_map/psr_aclk/U0'
-Finished Parsing XDC File [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019/yolo_conv_fp_prj_2019.srcs/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_1/bd_afc3_psr_aclk_0.xdc] for cell 'design_1_i/axi_smc/inst/clk_map/psr_aclk/U0'
-Parsing XDC File [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019/yolo_conv_fp_prj_2019.srcs/sources_1/bd/design_1/ip/design_1_rst_ps7_0_100M_0/design_1_rst_ps7_0_100M_0_board.xdc] for cell 'design_1_i/rst_ps7_0_100M/U0'
-Finished Parsing XDC File [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019/yolo_conv_fp_prj_2019.srcs/sources_1/bd/design_1/ip/design_1_rst_ps7_0_100M_0/design_1_rst_ps7_0_100M_0_board.xdc] for cell 'design_1_i/rst_ps7_0_100M/U0'
-Parsing XDC File [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019/yolo_conv_fp_prj_2019.srcs/sources_1/bd/design_1/ip/design_1_rst_ps7_0_100M_0/design_1_rst_ps7_0_100M_0.xdc] for cell 'design_1_i/rst_ps7_0_100M/U0'
-Finished Parsing XDC File [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019/yolo_conv_fp_prj_2019.srcs/sources_1/bd/design_1/ip/design_1_rst_ps7_0_100M_0/design_1_rst_ps7_0_100M_0.xdc] for cell 'design_1_i/rst_ps7_0_100M/U0'
+Parsing XDC File [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019/yolo_conv_fp_prj_2019.srcs/sources_1/bd/design_1/ip/design_1_axi_smc_2/bd_0/ip/ip_1/bd_6e42_psr_aclk_0_board.xdc] for cell 'design_1_i/axi_smc/inst/clk_map/psr_aclk/U0'
+Finished Parsing XDC File [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019/yolo_conv_fp_prj_2019.srcs/sources_1/bd/design_1/ip/design_1_axi_smc_2/bd_0/ip/ip_1/bd_6e42_psr_aclk_0_board.xdc] for cell 'design_1_i/axi_smc/inst/clk_map/psr_aclk/U0'
+Parsing XDC File [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019/yolo_conv_fp_prj_2019.srcs/sources_1/bd/design_1/ip/design_1_axi_smc_2/bd_0/ip/ip_1/bd_6e42_psr_aclk_0.xdc] for cell 'design_1_i/axi_smc/inst/clk_map/psr_aclk/U0'
+Finished Parsing XDC File [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019/yolo_conv_fp_prj_2019.srcs/sources_1/bd/design_1/ip/design_1_axi_smc_2/bd_0/ip/ip_1/bd_6e42_psr_aclk_0.xdc] for cell 'design_1_i/axi_smc/inst/clk_map/psr_aclk/U0'
+Parsing XDC File [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019/yolo_conv_fp_prj_2019.srcs/sources_1/bd/design_1/ip/design_1_rst_ps7_0_100M_2/design_1_rst_ps7_0_100M_2_board.xdc] for cell 'design_1_i/rst_ps7_0_100M/U0'
+Finished Parsing XDC File [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019/yolo_conv_fp_prj_2019.srcs/sources_1/bd/design_1/ip/design_1_rst_ps7_0_100M_2/design_1_rst_ps7_0_100M_2_board.xdc] for cell 'design_1_i/rst_ps7_0_100M/U0'
+Parsing XDC File [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019/yolo_conv_fp_prj_2019.srcs/sources_1/bd/design_1/ip/design_1_rst_ps7_0_100M_2/design_1_rst_ps7_0_100M_2.xdc] for cell 'design_1_i/rst_ps7_0_100M/U0'
+Finished Parsing XDC File [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019/yolo_conv_fp_prj_2019.srcs/sources_1/bd/design_1/ip/design_1_rst_ps7_0_100M_2/design_1_rst_ps7_0_100M_2.xdc] for cell 'design_1_i/rst_ps7_0_100M/U0'
 Parsing XDC File [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019/yolo_conv_fp_prj_2019.srcs/sources_1/bd/design_1/ip/design_1_axi_dma_0_0/design_1_axi_dma_0_0_clocks.xdc] for cell 'design_1_i/axi_dma_0/U0'
 Finished Parsing XDC File [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019/yolo_conv_fp_prj_2019.srcs/sources_1/bd/design_1/ip/design_1_axi_dma_0_0/design_1_axi_dma_0_0_clocks.xdc] for cell 'design_1_i/axi_dma_0/U0'
 Sourcing Tcl File [/opt/Xilinx_2019_1/Vivado/2019.1/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl] for cell 'design_1_i/axi_dma_0/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst'
@@ -95,16 +95,16 @@ Finished Sourcing Tcl File [/opt/Xilinx_2019_1/Vivado/2019.1/data/ip/xpm/xpm_mem
 Sourcing Tcl File [/opt/Xilinx_2019_1/Vivado/2019.1/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'design_1_i/axi_smc/inst/s01_nodes/s01_b_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory'
 Finished Sourcing Tcl File [/opt/Xilinx_2019_1/Vivado/2019.1/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl] for cell 'design_1_i/axi_smc/inst/s01_nodes/s01_b_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory'
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1810.906 ; gain = 0.000 ; free physical = 2435 ; free virtual = 12848
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 1818.848 ; gain = 0.000 ; free physical = 2391 ; free virtual = 12882
 INFO: [Project 1-111] Unisim Transformation Summary:
-  A total of 193 instances were transformed.
-  RAM16X1D => RAM32X1D (RAMD32, RAMD32): 2 instances
+  A total of 481 instances were transformed.
+  RAM16X1D => RAM32X1D (RAMD32, RAMD32): 146 instances
   RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 186 instances
-  RAM32X1D => RAM32X1D (RAMD32, RAMD32): 5 instances
+  RAM32X1D => RAM32X1D (RAMD32, RAMD32): 149 instances
 
 17 Infos, 3 Warnings, 0 Critical Warnings and 0 Errors encountered.
 link_design completed successfully
-link_design: Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1810.906 ; gain = 417.324 ; free physical = 2436 ; free virtual = 12848
+link_design: Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1818.848 ; gain = 425.262 ; free physical = 2392 ; free virtual = 12883
 Command: opt_design
 Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
 INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
@@ -115,57 +115,57 @@ INFO: [DRC 23-27] Running DRC with 4 threads
 INFO: [Project 1-461] DRC finished with 0 Errors
 INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
 
-Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1865.562 ; gain = 54.656 ; free physical = 2429 ; free virtual = 12842
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1871.504 ; gain = 52.656 ; free physical = 2385 ; free virtual = 12877
 
 Starting Cache Timing Information Task
 INFO: [Timing 38-35] Done setting XDC timing constraints.
-Ending Cache Timing Information Task | Checksum: 1f0184794
+Ending Cache Timing Information Task | Checksum: 1db3cdb64
 
-Time (s): cpu = 00:00:10 ; elapsed = 00:00:09 . Memory (MB): peak = 2316.391 ; gain = 450.828 ; free physical = 2003 ; free virtual = 12431
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:09 . Memory (MB): peak = 2315.363 ; gain = 443.859 ; free physical = 1969 ; free virtual = 12460
 
 Starting Logic Optimization Task
 
 Phase 1 Retarget
 INFO: [Opt 31-138] Pushed 14 inverter(s) to 93 load pin(s).
 INFO: [Opt 31-49] Retargeted 0 cell(s).
-Phase 1 Retarget | Checksum: ca10e2a4
+Phase 1 Retarget | Checksum: 10e8c5527
 
-Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 2432.328 ; gain = 0.000 ; free physical = 1916 ; free virtual = 12344
-INFO: [Opt 31-389] Phase Retarget created 96 cells and removed 248 cells
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 2432.270 ; gain = 1.000 ; free physical = 1886 ; free virtual = 12377
+INFO: [Opt 31-389] Phase Retarget created 96 cells and removed 231 cells
 INFO: [Opt 31-1021] In phase Retarget, 30 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
 
 Phase 2 Constant propagation
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Phase 2 Constant propagation | Checksum: 120a54e27
+Phase 2 Constant propagation | Checksum: 17d5a8773
 
-Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 2432.328 ; gain = 0.000 ; free physical = 1916 ; free virtual = 12344
-INFO: [Opt 31-389] Phase Constant propagation created 30 cells and removed 378 cells
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 2432.270 ; gain = 1.000 ; free physical = 1885 ; free virtual = 12376
+INFO: [Opt 31-389] Phase Constant propagation created 30 cells and removed 422 cells
 INFO: [Opt 31-1021] In phase Constant propagation, 40 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
 
 Phase 3 Sweep
-Phase 3 Sweep | Checksum: 154f17dc1
+Phase 3 Sweep | Checksum: 15a096413
 
-Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 2432.328 ; gain = 0.000 ; free physical = 1914 ; free virtual = 12342
-INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 1443 cells
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:04 . Memory (MB): peak = 2432.270 ; gain = 1.000 ; free physical = 1884 ; free virtual = 12375
+INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 1467 cells
 INFO: [Opt 31-1021] In phase Sweep, 50 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
 
 Phase 4 BUFG optimization
-Phase 4 BUFG optimization | Checksum: 154f17dc1
+Phase 4 BUFG optimization | Checksum: 15a096413
 
-Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 2432.328 ; gain = 0.000 ; free physical = 1915 ; free virtual = 12343
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 2432.270 ; gain = 1.000 ; free physical = 1877 ; free virtual = 12368
 INFO: [Opt 31-662] Phase BUFG optimization created 0 cells of which 0 are BUFGs and removed 0 cells.
 
 Phase 5 Shift Register Optimization
 INFO: [Opt 31-1064] SRL Remap converted 0 SRLs to 0 registers and converted 0 registers of register chains to 0 SRLs
-Phase 5 Shift Register Optimization | Checksum: 154f17dc1
+Phase 5 Shift Register Optimization | Checksum: 15a096413
 
-Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 2432.328 ; gain = 0.000 ; free physical = 1912 ; free virtual = 12340
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 2432.270 ; gain = 1.000 ; free physical = 1876 ; free virtual = 12367
 INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
 
 Phase 6 Post Processing Netlist
-Phase 6 Post Processing Netlist | Checksum: 12992ea36
+Phase 6 Post Processing Netlist | Checksum: 1ce76354a
 
-Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 2432.328 ; gain = 0.000 ; free physical = 1911 ; free virtual = 12339
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 2432.270 ; gain = 1.000 ; free physical = 1876 ; free virtual = 12368
 INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 2 cells
 INFO: [Opt 31-1021] In phase Post Processing Netlist, 30 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
 Opt_design Change Summary
@@ -175,9 +175,9 @@ Opt_design Change Summary
 -------------------------------------------------------------------------------------------------------------------------
 |  Phase                        |  #Cells created  |  #Cells Removed  |  #Constrained objects preventing optimizations  |
 -------------------------------------------------------------------------------------------------------------------------
-|  Retarget                     |              96  |             248  |                                             30  |
-|  Constant propagation         |              30  |             378  |                                             40  |
-|  Sweep                        |               0  |            1443  |                                             50  |
+|  Retarget                     |              96  |             231  |                                             30  |
+|  Constant propagation         |              30  |             422  |                                             40  |
+|  Sweep                        |               0  |            1467  |                                             50  |
 |  BUFG optimization            |               0  |               0  |                                              0  |
 |  Shift Register Optimization  |               0  |               0  |                                              0  |
 |  Post Processing Netlist      |               0  |               2  |                                             30  |
@@ -187,56 +187,56 @@ Opt_design Change Summary
 
 Starting Connectivity Check Task
 
-Time (s): cpu = 00:00:00.06 ; elapsed = 00:00:00.06 . Memory (MB): peak = 2432.328 ; gain = 0.000 ; free physical = 1911 ; free virtual = 12339
-Ending Logic Optimization Task | Checksum: 124d54ed2
+Time (s): cpu = 00:00:00.06 ; elapsed = 00:00:00.06 . Memory (MB): peak = 2432.270 ; gain = 0.000 ; free physical = 1876 ; free virtual = 12368
+Ending Logic Optimization Task | Checksum: 1912b0aa7
 
-Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 2432.328 ; gain = 0.000 ; free physical = 1910 ; free virtual = 12339
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 2432.270 ; gain = 1.000 ; free physical = 1876 ; free virtual = 12368
 
 Starting Power Optimization Task
 INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
 INFO: [Timing 38-35] Done setting XDC timing constraints.
 INFO: [Pwropt 34-9] Applying IDT optimizations ...
 INFO: [Pwropt 34-10] Applying ODC optimizations ...
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=2.384 | TNS=0.000 |
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=2.526 | TNS=0.000 |
 Running Vector-less Activity Propagation...
 
 Finished Running Vector-less Activity Propagation
 
 
 Starting PowerOpt Patch Enables Task
-INFO: [Pwropt 34-162] WRITE_MODE attribute of 0 BRAM(s) out of a total of 35 has been updated to save power. Run report_power_opt to get a complete listing of the BRAMs updated.
+INFO: [Pwropt 34-162] WRITE_MODE attribute of 0 BRAM(s) out of a total of 8 has been updated to save power. Run report_power_opt to get a complete listing of the BRAMs updated.
 INFO: [Pwropt 34-201] Structural ODC has moved 0 WE to EN ports
-Number of BRAM Ports augmented: 3 newly gated: 0 Total Ports: 70
-Ending PowerOpt Patch Enables Task | Checksum: 2094eb837
+Number of BRAM Ports augmented: 3 newly gated: 0 Total Ports: 16
+Ending PowerOpt Patch Enables Task | Checksum: 11d722b88
 
-Time (s): cpu = 00:00:00.15 ; elapsed = 00:00:00.16 . Memory (MB): peak = 2742.719 ; gain = 0.000 ; free physical = 1843 ; free virtual = 12279
-Ending Power Optimization Task | Checksum: 2094eb837
+Time (s): cpu = 00:00:00.12 ; elapsed = 00:00:00.13 . Memory (MB): peak = 2721.934 ; gain = 0.000 ; free physical = 1838 ; free virtual = 12329
+Ending Power Optimization Task | Checksum: 11d722b88
 
-Time (s): cpu = 00:00:20 ; elapsed = 00:00:10 . Memory (MB): peak = 2742.719 ; gain = 310.391 ; free physical = 1870 ; free virtual = 12306
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:09 . Memory (MB): peak = 2721.934 ; gain = 289.664 ; free physical = 1860 ; free virtual = 12351
 
 Starting Final Cleanup Task
-Ending Final Cleanup Task | Checksum: 2094eb837
+Ending Final Cleanup Task | Checksum: 11d722b88
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2742.719 ; gain = 0.000 ; free physical = 1870 ; free virtual = 12306
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2721.934 ; gain = 0.000 ; free physical = 1860 ; free virtual = 12352
 
 Starting Netlist Obfuscation Task
-Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2742.719 ; gain = 0.000 ; free physical = 1870 ; free virtual = 12306
-Ending Netlist Obfuscation Task | Checksum: 19415bb8e
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2721.934 ; gain = 0.000 ; free physical = 1860 ; free virtual = 12352
+Ending Netlist Obfuscation Task | Checksum: 11b3d713e
 
-Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2742.719 ; gain = 0.000 ; free physical = 1870 ; free virtual = 12306
+Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2721.934 ; gain = 0.000 ; free physical = 1859 ; free virtual = 12352
 INFO: [Common 17-83] Releasing license: Implementation
 44 Infos, 3 Warnings, 0 Critical Warnings and 0 Errors encountered.
 opt_design completed successfully
-opt_design: Time (s): cpu = 00:00:42 ; elapsed = 00:00:30 . Memory (MB): peak = 2742.719 ; gain = 931.812 ; free physical = 1870 ; free virtual = 12306
-Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2742.719 ; gain = 0.000 ; free physical = 1870 ; free virtual = 12307
+opt_design: Time (s): cpu = 00:00:41 ; elapsed = 00:00:28 . Memory (MB): peak = 2721.934 ; gain = 903.086 ; free physical = 1859 ; free virtual = 12352
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2721.934 ; gain = 0.000 ; free physical = 1859 ; free virtual = 12351
 INFO: [Timing 38-480] Writing timing data to binary archive.
 Writing placer database...
 Writing XDEF routing.
 Writing XDEF routing logical nets.
 Writing XDEF routing special nets.
-Write XDEF Complete: Time (s): cpu = 00:00:00.29 ; elapsed = 00:00:00.08 . Memory (MB): peak = 2742.719 ; gain = 0.000 ; free physical = 1862 ; free virtual = 12303
+Write XDEF Complete: Time (s): cpu = 00:00:00.28 ; elapsed = 00:00:00.08 . Memory (MB): peak = 2721.934 ; gain = 0.000 ; free physical = 1852 ; free virtual = 12348
 INFO: [Common 17-1381] The checkpoint '/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019/yolo_conv_fp_prj_2019.runs/impl_1/design_1_wrapper_opt.dcp' has been generated.
-write_checkpoint: Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 2742.719 ; gain = 0.000 ; free physical = 1867 ; free virtual = 12310
+write_checkpoint: Time (s): cpu = 00:00:09 ; elapsed = 00:00:07 . Memory (MB): peak = 2721.934 ; gain = 0.000 ; free physical = 1846 ; free virtual = 12346
 INFO: [runtcl-4] Executing : report_drc -file design_1_wrapper_drc_opted.rpt -pb design_1_wrapper_drc_opted.pb -rpx design_1_wrapper_drc_opted.rpx
 Command: report_drc -file design_1_wrapper_drc_opted.rpt -pb design_1_wrapper_drc_opted.pb -rpx design_1_wrapper_drc_opted.rpx
 INFO: [IP_Flow 19-1839] IP Catalog is up to date.
@@ -260,37 +260,37 @@ INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 
 Phase 1 Placer Initialization
 
 Phase 1.1 Placer Initialization Netlist Sorting
-Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2790.742 ; gain = 0.000 ; free physical = 1862 ; free virtual = 12306
-Phase 1.1 Placer Initialization Netlist Sorting | Checksum: 12408d500
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2761.953 ; gain = 0.000 ; free physical = 1858 ; free virtual = 12357
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: 9a26032c
 
-Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.08 . Memory (MB): peak = 2790.742 ; gain = 0.000 ; free physical = 1862 ; free virtual = 12306
-Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2790.742 ; gain = 0.000 ; free physical = 1862 ; free virtual = 12306
+Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2761.953 ; gain = 0.000 ; free physical = 1858 ; free virtual = 12357
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2761.953 ; gain = 0.000 ; free physical = 1858 ; free virtual = 12357
 
 Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
 INFO: [Timing 38-35] Done setting XDC timing constraints.
-Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 61b98f77
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 29e5fd1c
 
-Time (s): cpu = 00:00:06 ; elapsed = 00:00:04 . Memory (MB): peak = 2790.742 ; gain = 0.000 ; free physical = 1831 ; free virtual = 12276
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:04 . Memory (MB): peak = 2761.953 ; gain = 0.000 ; free physical = 1821 ; free virtual = 12320
 
 Phase 1.3 Build Placer Netlist Model
-Phase 1.3 Build Placer Netlist Model | Checksum: b64047a0
+Phase 1.3 Build Placer Netlist Model | Checksum: 136806d4c
 
-Time (s): cpu = 00:00:15 ; elapsed = 00:00:09 . Memory (MB): peak = 2790.742 ; gain = 0.000 ; free physical = 1786 ; free virtual = 12232
+Time (s): cpu = 00:00:16 ; elapsed = 00:00:09 . Memory (MB): peak = 2761.953 ; gain = 0.000 ; free physical = 1773 ; free virtual = 12273
 
 Phase 1.4 Constrain Clocks/Macros
-Phase 1.4 Constrain Clocks/Macros | Checksum: b64047a0
+Phase 1.4 Constrain Clocks/Macros | Checksum: 136806d4c
 
-Time (s): cpu = 00:00:15 ; elapsed = 00:00:09 . Memory (MB): peak = 2790.742 ; gain = 0.000 ; free physical = 1786 ; free virtual = 12232
-Phase 1 Placer Initialization | Checksum: b64047a0
+Time (s): cpu = 00:00:16 ; elapsed = 00:00:09 . Memory (MB): peak = 2761.953 ; gain = 0.000 ; free physical = 1773 ; free virtual = 12273
+Phase 1 Placer Initialization | Checksum: 136806d4c
 
-Time (s): cpu = 00:00:15 ; elapsed = 00:00:09 . Memory (MB): peak = 2790.742 ; gain = 0.000 ; free physical = 1786 ; free virtual = 12232
+Time (s): cpu = 00:00:16 ; elapsed = 00:00:09 . Memory (MB): peak = 2761.953 ; gain = 0.000 ; free physical = 1773 ; free virtual = 12273
 
 Phase 2 Global Placement
 
 Phase 2.1 Floorplanning
-Phase 2.1 Floorplanning | Checksum: 53326f4b
+Phase 2.1 Floorplanning | Checksum: 10d501407
 
-Time (s): cpu = 00:00:19 ; elapsed = 00:00:10 . Memory (MB): peak = 2790.742 ; gain = 0.000 ; free physical = 1771 ; free virtual = 12217
+Time (s): cpu = 00:00:20 ; elapsed = 00:00:11 . Memory (MB): peak = 2761.953 ; gain = 0.000 ; free physical = 1756 ; free virtual = 12255
 
 Phase 2.2 Global Placement Core
 
@@ -303,7 +303,7 @@ INFO: [Physopt 32-670] No setup violation found.  Shift Register Optimization wa
 INFO: [Physopt 32-670] No setup violation found.  BRAM Register Optimization was not performed.
 INFO: [Physopt 32-949] No candidate nets found for HD net replication
 INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
-Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2790.742 ; gain = 0.000 ; free physical = 1758 ; free virtual = 12206
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2761.953 ; gain = 0.000 ; free physical = 1740 ; free virtual = 12239
 
 Summary of Physical Synthesis Optimizations
 ============================================
@@ -321,55 +321,55 @@ Summary of Physical Synthesis Optimizations
 ----------------------------------------------------------------------------------------------------------------------------------------
 
 
-Phase 2.2.1 Physical Synthesis In Placer | Checksum: 1f4d9a0e1
+Phase 2.2.1 Physical Synthesis In Placer | Checksum: 12176ff6a
 
-Time (s): cpu = 00:00:51 ; elapsed = 00:00:25 . Memory (MB): peak = 2790.742 ; gain = 0.000 ; free physical = 1757 ; free virtual = 12206
-Phase 2.2 Global Placement Core | Checksum: e758b359
+Time (s): cpu = 00:00:58 ; elapsed = 00:00:27 . Memory (MB): peak = 2761.953 ; gain = 0.000 ; free physical = 1741 ; free virtual = 12240
+Phase 2.2 Global Placement Core | Checksum: 1bab5ca2e
 
-Time (s): cpu = 00:00:53 ; elapsed = 00:00:25 . Memory (MB): peak = 2790.742 ; gain = 0.000 ; free physical = 1757 ; free virtual = 12206
-Phase 2 Global Placement | Checksum: e758b359
+Time (s): cpu = 00:01:00 ; elapsed = 00:00:28 . Memory (MB): peak = 2761.953 ; gain = 0.000 ; free physical = 1735 ; free virtual = 12234
+Phase 2 Global Placement | Checksum: 1bab5ca2e
 
-Time (s): cpu = 00:00:53 ; elapsed = 00:00:25 . Memory (MB): peak = 2790.742 ; gain = 0.000 ; free physical = 1765 ; free virtual = 12214
+Time (s): cpu = 00:01:01 ; elapsed = 00:00:28 . Memory (MB): peak = 2761.953 ; gain = 0.000 ; free physical = 1745 ; free virtual = 12245
 
 Phase 3 Detail Placement
 
 Phase 3.1 Commit Multi Column Macros
-Phase 3.1 Commit Multi Column Macros | Checksum: 19ae5c4c5
+Phase 3.1 Commit Multi Column Macros | Checksum: e8f84302
 
-Time (s): cpu = 00:00:57 ; elapsed = 00:00:27 . Memory (MB): peak = 2790.742 ; gain = 0.000 ; free physical = 1761 ; free virtual = 12209
+Time (s): cpu = 00:01:05 ; elapsed = 00:00:30 . Memory (MB): peak = 2761.953 ; gain = 0.000 ; free physical = 1691 ; free virtual = 12207
 
 Phase 3.2 Commit Most Macros & LUTRAMs
-Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: b5528eb8
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 14d58483e
 
-Time (s): cpu = 00:01:03 ; elapsed = 00:00:30 . Memory (MB): peak = 2790.742 ; gain = 0.000 ; free physical = 1759 ; free virtual = 12208
+Time (s): cpu = 00:01:12 ; elapsed = 00:00:34 . Memory (MB): peak = 2761.953 ; gain = 0.000 ; free physical = 1701 ; free virtual = 12201
 
 Phase 3.3 Area Swap Optimization
-Phase 3.3 Area Swap Optimization | Checksum: 18402cc04
+Phase 3.3 Area Swap Optimization | Checksum: 1ae9533b5
 
-Time (s): cpu = 00:01:04 ; elapsed = 00:00:31 . Memory (MB): peak = 2790.742 ; gain = 0.000 ; free physical = 1758 ; free virtual = 12207
+Time (s): cpu = 00:01:13 ; elapsed = 00:00:34 . Memory (MB): peak = 2761.953 ; gain = 0.000 ; free physical = 1701 ; free virtual = 12201
 
 Phase 3.4 Pipeline Register Optimization
-Phase 3.4 Pipeline Register Optimization | Checksum: 1a066265e
+Phase 3.4 Pipeline Register Optimization | Checksum: 15056e631
 
-Time (s): cpu = 00:01:04 ; elapsed = 00:00:31 . Memory (MB): peak = 2790.742 ; gain = 0.000 ; free physical = 1758 ; free virtual = 12207
+Time (s): cpu = 00:01:13 ; elapsed = 00:00:34 . Memory (MB): peak = 2761.953 ; gain = 0.000 ; free physical = 1701 ; free virtual = 12201
 
 Phase 3.5 Small Shape Detail Placement
-Phase 3.5 Small Shape Detail Placement | Checksum: 162ac6815
+Phase 3.5 Small Shape Detail Placement | Checksum: 1054fecb9
 
-Time (s): cpu = 00:01:10 ; elapsed = 00:00:36 . Memory (MB): peak = 2790.742 ; gain = 0.000 ; free physical = 1747 ; free virtual = 12196
+Time (s): cpu = 00:01:22 ; elapsed = 00:00:42 . Memory (MB): peak = 2761.953 ; gain = 0.000 ; free physical = 1678 ; free virtual = 12178
 
 Phase 3.6 Re-assign LUT pins
-Phase 3.6 Re-assign LUT pins | Checksum: 14e239ca9
+Phase 3.6 Re-assign LUT pins | Checksum: ee577753
 
-Time (s): cpu = 00:01:11 ; elapsed = 00:00:37 . Memory (MB): peak = 2790.742 ; gain = 0.000 ; free physical = 1748 ; free virtual = 12198
+Time (s): cpu = 00:01:23 ; elapsed = 00:00:43 . Memory (MB): peak = 2761.953 ; gain = 0.000 ; free physical = 1680 ; free virtual = 12179
 
 Phase 3.7 Pipeline Register Optimization
-Phase 3.7 Pipeline Register Optimization | Checksum: 14c688cd4
+Phase 3.7 Pipeline Register Optimization | Checksum: 20261e563
 
-Time (s): cpu = 00:01:11 ; elapsed = 00:00:37 . Memory (MB): peak = 2790.742 ; gain = 0.000 ; free physical = 1748 ; free virtual = 12198
-Phase 3 Detail Placement | Checksum: 14c688cd4
+Time (s): cpu = 00:01:24 ; elapsed = 00:00:44 . Memory (MB): peak = 2761.953 ; gain = 0.000 ; free physical = 1680 ; free virtual = 12179
+Phase 3 Detail Placement | Checksum: 20261e563
 
-Time (s): cpu = 00:01:12 ; elapsed = 00:00:38 . Memory (MB): peak = 2790.742 ; gain = 0.000 ; free physical = 1748 ; free virtual = 12198
+Time (s): cpu = 00:01:24 ; elapsed = 00:00:44 . Memory (MB): peak = 2761.953 ; gain = 0.000 ; free physical = 1679 ; free virtual = 12179
 
 Phase 4 Post Placement Optimization and Clean-Up
 
@@ -377,61 +377,60 @@ Phase 4.1 Post Commit Optimization
 INFO: [Timing 38-35] Done setting XDC timing constraints.
 
 Phase 4.1.1 Post Placement Optimization
-Post Placement Optimization Initialization | Checksum: 1998d564a
+Post Placement Optimization Initialization | Checksum: e441db79
 
 Phase 4.1.1.1 BUFG Insertion
-INFO: [Place 46-33] Processed net design_1_i/yolo_conv_top_0/inst/grp_out_stream_merge_fu_1228/grp_window_macc_fu_1132_ap_ce, BUFG insertion was skipped due to placement/routing conflicts.
-INFO: [Place 46-56] BUFG insertion identified 1 candidate nets. Inserted BUFG: 0, Replicated BUFG Driver: 0, Skipped due to Placement/Routing Conflicts: 1, Skipped due to Timing Degradation: 0, Skipped due to Illegal Netlist: 0.
-Phase 4.1.1.1 BUFG Insertion | Checksum: 1998d564a
+INFO: [Place 46-56] BUFG insertion identified 0 candidate nets. Inserted BUFG: 0, Replicated BUFG Driver: 0, Skipped due to Placement/Routing Conflicts: 0, Skipped due to Timing Degradation: 0, Skipped due to Illegal Netlist: 0.
+Phase 4.1.1.1 BUFG Insertion | Checksum: e441db79
 
-Time (s): cpu = 00:01:22 ; elapsed = 00:00:42 . Memory (MB): peak = 2790.742 ; gain = 0.000 ; free physical = 1752 ; free virtual = 12201
-INFO: [Place 30-746] Post Placement Timing Summary WNS=1.263. For the most accurate timing information please run report_timing.
-Phase 4.1.1 Post Placement Optimization | Checksum: 180e37a66
+Time (s): cpu = 00:01:35 ; elapsed = 00:00:48 . Memory (MB): peak = 2761.953 ; gain = 0.000 ; free physical = 1683 ; free virtual = 12183
+INFO: [Place 30-746] Post Placement Timing Summary WNS=0.580. For the most accurate timing information please run report_timing.
+Phase 4.1.1 Post Placement Optimization | Checksum: 91e6c9d3
 
-Time (s): cpu = 00:01:22 ; elapsed = 00:00:42 . Memory (MB): peak = 2790.742 ; gain = 0.000 ; free physical = 1751 ; free virtual = 12201
-Phase 4.1 Post Commit Optimization | Checksum: 180e37a66
+Time (s): cpu = 00:01:36 ; elapsed = 00:00:49 . Memory (MB): peak = 2761.953 ; gain = 0.000 ; free physical = 1681 ; free virtual = 12180
+Phase 4.1 Post Commit Optimization | Checksum: 91e6c9d3
 
-Time (s): cpu = 00:01:22 ; elapsed = 00:00:42 . Memory (MB): peak = 2790.742 ; gain = 0.000 ; free physical = 1751 ; free virtual = 12201
+Time (s): cpu = 00:01:36 ; elapsed = 00:00:49 . Memory (MB): peak = 2761.953 ; gain = 0.000 ; free physical = 1681 ; free virtual = 12181
 
 Phase 4.2 Post Placement Cleanup
-Phase 4.2 Post Placement Cleanup | Checksum: 180e37a66
+Phase 4.2 Post Placement Cleanup | Checksum: 91e6c9d3
 
-Time (s): cpu = 00:01:22 ; elapsed = 00:00:42 . Memory (MB): peak = 2790.742 ; gain = 0.000 ; free physical = 1752 ; free virtual = 12201
+Time (s): cpu = 00:01:37 ; elapsed = 00:00:49 . Memory (MB): peak = 2761.953 ; gain = 0.000 ; free physical = 1681 ; free virtual = 12181
 
 Phase 4.3 Placer Reporting
-Phase 4.3 Placer Reporting | Checksum: 180e37a66
+Phase 4.3 Placer Reporting | Checksum: 91e6c9d3
 
-Time (s): cpu = 00:01:23 ; elapsed = 00:00:42 . Memory (MB): peak = 2790.742 ; gain = 0.000 ; free physical = 1752 ; free virtual = 12201
+Time (s): cpu = 00:01:37 ; elapsed = 00:00:50 . Memory (MB): peak = 2761.953 ; gain = 0.000 ; free physical = 1682 ; free virtual = 12181
 
 Phase 4.4 Final Placement Cleanup
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2790.742 ; gain = 0.000 ; free physical = 1753 ; free virtual = 12202
-Phase 4.4 Final Placement Cleanup | Checksum: 106d4e773
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2761.953 ; gain = 0.000 ; free physical = 1682 ; free virtual = 12181
+Phase 4.4 Final Placement Cleanup | Checksum: e16a2da6
 
-Time (s): cpu = 00:01:23 ; elapsed = 00:00:43 . Memory (MB): peak = 2790.742 ; gain = 0.000 ; free physical = 1753 ; free virtual = 12203
-Phase 4 Post Placement Optimization and Clean-Up | Checksum: 106d4e773
+Time (s): cpu = 00:01:37 ; elapsed = 00:00:50 . Memory (MB): peak = 2761.953 ; gain = 0.000 ; free physical = 1682 ; free virtual = 12181
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: e16a2da6
 
-Time (s): cpu = 00:01:23 ; elapsed = 00:00:43 . Memory (MB): peak = 2790.742 ; gain = 0.000 ; free physical = 1753 ; free virtual = 12203
-Ending Placer Task | Checksum: c79e4d38
+Time (s): cpu = 00:01:37 ; elapsed = 00:00:50 . Memory (MB): peak = 2761.953 ; gain = 0.000 ; free physical = 1682 ; free virtual = 12181
+Ending Placer Task | Checksum: c9b832f2
 
-Time (s): cpu = 00:01:23 ; elapsed = 00:00:43 . Memory (MB): peak = 2790.742 ; gain = 0.000 ; free physical = 1753 ; free virtual = 12203
+Time (s): cpu = 00:01:37 ; elapsed = 00:00:50 . Memory (MB): peak = 2761.953 ; gain = 0.000 ; free physical = 1682 ; free virtual = 12181
 INFO: [Common 17-83] Releasing license: Implementation
-72 Infos, 3 Warnings, 0 Critical Warnings and 0 Errors encountered.
+71 Infos, 3 Warnings, 0 Critical Warnings and 0 Errors encountered.
 place_design completed successfully
-place_design: Time (s): cpu = 00:01:27 ; elapsed = 00:00:45 . Memory (MB): peak = 2790.742 ; gain = 0.000 ; free physical = 1777 ; free virtual = 12227
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2790.742 ; gain = 0.000 ; free physical = 1777 ; free virtual = 12227
+place_design: Time (s): cpu = 00:01:42 ; elapsed = 00:00:52 . Memory (MB): peak = 2761.953 ; gain = 0.000 ; free physical = 1718 ; free virtual = 12217
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2761.953 ; gain = 0.000 ; free physical = 1718 ; free virtual = 12217
 INFO: [Timing 38-480] Writing timing data to binary archive.
 Writing placer database...
 Writing XDEF routing.
 Writing XDEF routing logical nets.
 Writing XDEF routing special nets.
-Write XDEF Complete: Time (s): cpu = 00:00:07 ; elapsed = 00:00:02 . Memory (MB): peak = 2790.742 ; gain = 0.000 ; free physical = 1722 ; free virtual = 12210
+Write XDEF Complete: Time (s): cpu = 00:00:08 ; elapsed = 00:00:02 . Memory (MB): peak = 2761.953 ; gain = 0.000 ; free physical = 1655 ; free virtual = 12196
 INFO: [Common 17-1381] The checkpoint '/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019/yolo_conv_fp_prj_2019.runs/impl_1/design_1_wrapper_placed.dcp' has been generated.
-write_checkpoint: Time (s): cpu = 00:00:11 ; elapsed = 00:00:07 . Memory (MB): peak = 2790.742 ; gain = 0.000 ; free physical = 1763 ; free virtual = 12223
+write_checkpoint: Time (s): cpu = 00:00:12 ; elapsed = 00:00:07 . Memory (MB): peak = 2761.953 ; gain = 0.000 ; free physical = 1704 ; free virtual = 12214
 INFO: [runtcl-4] Executing : report_io -file design_1_wrapper_io_placed.rpt
-report_io: Time (s): cpu = 00:00:00.16 ; elapsed = 00:00:00.20 . Memory (MB): peak = 2790.742 ; gain = 0.000 ; free physical = 1750 ; free virtual = 12210
+report_io: Time (s): cpu = 00:00:00.13 ; elapsed = 00:00:00.20 . Memory (MB): peak = 2761.953 ; gain = 0.000 ; free physical = 1692 ; free virtual = 12202
 INFO: [runtcl-4] Executing : report_utilization -file design_1_wrapper_utilization_placed.rpt -pb design_1_wrapper_utilization_placed.pb
 INFO: [runtcl-4] Executing : report_control_sets -verbose -file design_1_wrapper_control_sets_placed.rpt
-report_control_sets: Time (s): cpu = 00:00:00.49 ; elapsed = 00:00:00.57 . Memory (MB): peak = 2790.742 ; gain = 0.000 ; free physical = 1760 ; free virtual = 12220
+report_control_sets: Time (s): cpu = 00:00:00.59 ; elapsed = 00:00:00.63 . Memory (MB): peak = 2761.953 ; gain = 0.000 ; free physical = 1703 ; free virtual = 12213
 Command: route_design
 Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
 INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
@@ -443,41 +442,41 @@ INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more in
 
 Starting Routing Task
 INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 4 CPUs
-Checksum: PlaceDB: 426c5fad ConstDB: 0 ShapeSum: 8531ed8b RouteDB: 0
+Checksum: PlaceDB: c7fa975 ConstDB: 0 ShapeSum: bd38897d RouteDB: 0
 
 Phase 1 Build RT Design
-Phase 1 Build RT Design | Checksum: 1029e4e07
+Phase 1 Build RT Design | Checksum: 1025ee07d
 
-Time (s): cpu = 00:00:28 ; elapsed = 00:00:20 . Memory (MB): peak = 2790.742 ; gain = 0.000 ; free physical = 1629 ; free virtual = 12089
-Post Restoration Checksum: NetGraph: e736188a NumContArr: 1b68357d Constraints: 0 Timing: 0
+Time (s): cpu = 00:00:30 ; elapsed = 00:00:20 . Memory (MB): peak = 2761.953 ; gain = 0.000 ; free physical = 1566 ; free virtual = 12076
+Post Restoration Checksum: NetGraph: 776c0dbb NumContArr: 8af2d2c2 Constraints: 0 Timing: 0
 
 Phase 2 Router Initialization
 
 Phase 2.1 Create Timer
-Phase 2.1 Create Timer | Checksum: 1029e4e07
+Phase 2.1 Create Timer | Checksum: 1025ee07d
 
-Time (s): cpu = 00:00:29 ; elapsed = 00:00:20 . Memory (MB): peak = 2790.742 ; gain = 0.000 ; free physical = 1600 ; free virtual = 12060
+Time (s): cpu = 00:00:30 ; elapsed = 00:00:20 . Memory (MB): peak = 2761.953 ; gain = 0.000 ; free physical = 1541 ; free virtual = 12051
 
 Phase 2.2 Fix Topology Constraints
-Phase 2.2 Fix Topology Constraints | Checksum: 1029e4e07
+Phase 2.2 Fix Topology Constraints | Checksum: 1025ee07d
 
-Time (s): cpu = 00:00:29 ; elapsed = 00:00:20 . Memory (MB): peak = 2790.742 ; gain = 0.000 ; free physical = 1581 ; free virtual = 12042
+Time (s): cpu = 00:00:30 ; elapsed = 00:00:21 . Memory (MB): peak = 2761.953 ; gain = 0.000 ; free physical = 1522 ; free virtual = 12032
 
 Phase 2.3 Pre Route Cleanup
-Phase 2.3 Pre Route Cleanup | Checksum: 1029e4e07
+Phase 2.3 Pre Route Cleanup | Checksum: 1025ee07d
 
-Time (s): cpu = 00:00:29 ; elapsed = 00:00:20 . Memory (MB): peak = 2790.742 ; gain = 0.000 ; free physical = 1581 ; free virtual = 12042
+Time (s): cpu = 00:00:30 ; elapsed = 00:00:21 . Memory (MB): peak = 2761.953 ; gain = 0.000 ; free physical = 1522 ; free virtual = 12032
  Number of Nodes with overlaps = 0
 
 Phase 2.4 Update Timing
-Phase 2.4 Update Timing | Checksum: 14a703b6b
+Phase 2.4 Update Timing | Checksum: 10ae9006d
 
-Time (s): cpu = 00:00:40 ; elapsed = 00:00:25 . Memory (MB): peak = 2790.742 ; gain = 0.000 ; free physical = 1556 ; free virtual = 12017
-INFO: [Route 35-416] Intermediate Timing Summary | WNS=1.445  | TNS=0.000  | WHS=-0.355 | THS=-321.239|
+Time (s): cpu = 00:00:43 ; elapsed = 00:00:26 . Memory (MB): peak = 2761.953 ; gain = 0.000 ; free physical = 1497 ; free virtual = 12008
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.861  | TNS=0.000  | WHS=-0.356 | THS=-354.258|
 
-Phase 2 Router Initialization | Checksum: 97a2e060
+Phase 2 Router Initialization | Checksum: aa19525c
 
-Time (s): cpu = 00:00:46 ; elapsed = 00:00:28 . Memory (MB): peak = 2790.742 ; gain = 0.000 ; free physical = 1554 ; free virtual = 12015
+Time (s): cpu = 00:00:50 ; elapsed = 00:00:29 . Memory (MB): peak = 2785.184 ; gain = 23.230 ; free physical = 1494 ; free virtual = 12004
 
 Router Utilization Summary
   Global Vertical Routing Utilization    = 0 %
@@ -485,91 +484,92 @@ Router Utilization Summary
   Routable Net Status*
   *Does not include unroutable nets such as driverless and loadless.
   Run report_route_status for detailed report.
-  Number of Failed Nets               = 22653
+  Number of Failed Nets               = 26944
     (Failed Nets is the sum of unrouted and partially routed nets)
-  Number of Unrouted Nets             = 22653
+  Number of Unrouted Nets             = 26944
   Number of Partially Routed Nets     = 0
   Number of Node Overlaps             = 0
 
 
 Phase 3 Initial Routing
-Phase 3 Initial Routing | Checksum: 1806c524e
+Phase 3 Initial Routing | Checksum: 1991b078d
 
-Time (s): cpu = 00:00:59 ; elapsed = 00:00:32 . Memory (MB): peak = 2790.742 ; gain = 0.000 ; free physical = 1551 ; free virtual = 12012
+Time (s): cpu = 00:01:02 ; elapsed = 00:00:33 . Memory (MB): peak = 2785.184 ; gain = 23.230 ; free physical = 1491 ; free virtual = 12001
 
 Phase 4 Rip-up And Reroute
 
 Phase 4.1 Global Iteration 0
- Number of Nodes with overlaps = 2199
- Number of Nodes with overlaps = 250
- Number of Nodes with overlaps = 73
- Number of Nodes with overlaps = 13
- Number of Nodes with overlaps = 8
+ Number of Nodes with overlaps = 3671
+ Number of Nodes with overlaps = 736
+ Number of Nodes with overlaps = 228
+ Number of Nodes with overlaps = 69
+ Number of Nodes with overlaps = 31
+ Number of Nodes with overlaps = 17
  Number of Nodes with overlaps = 3
- Number of Nodes with overlaps = 2
- Number of Nodes with overlaps = 1
  Number of Nodes with overlaps = 0
-INFO: [Route 35-416] Intermediate Timing Summary | WNS=1.069  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.724  | TNS=0.000  | WHS=N/A    | THS=N/A    |
 
-Phase 4.1 Global Iteration 0 | Checksum: 7f32fb3b
+Phase 4.1 Global Iteration 0 | Checksum: 1b5042510
 
-Time (s): cpu = 00:01:26 ; elapsed = 00:00:44 . Memory (MB): peak = 2790.742 ; gain = 0.000 ; free physical = 1545 ; free virtual = 12006
+Time (s): cpu = 00:02:04 ; elapsed = 00:01:04 . Memory (MB): peak = 2785.184 ; gain = 23.230 ; free physical = 1521 ; free virtual = 12033
 
 Phase 4.2 Global Iteration 1
- Number of Nodes with overlaps = 8
- Number of Nodes with overlaps = 4
- Number of Nodes with overlaps = 4
+ Number of Nodes with overlaps = 3
+ Number of Nodes with overlaps = 2
+ Number of Nodes with overlaps = 2
+ Number of Nodes with overlaps = 2
+ Number of Nodes with overlaps = 1
  Number of Nodes with overlaps = 1
  Number of Nodes with overlaps = 1
  Number of Nodes with overlaps = 1
  Number of Nodes with overlaps = 1
  Number of Nodes with overlaps = 0
-INFO: [Route 35-416] Intermediate Timing Summary | WNS=1.061  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.614  | TNS=0.000  | WHS=N/A    | THS=N/A    |
 
-Phase 4.2 Global Iteration 1 | Checksum: 1ea9901ec
+Phase 4.2 Global Iteration 1 | Checksum: 13793f1dd
 
-Time (s): cpu = 00:01:29 ; elapsed = 00:00:48 . Memory (MB): peak = 2790.742 ; gain = 0.000 ; free physical = 1545 ; free virtual = 12006
-Phase 4 Rip-up And Reroute | Checksum: 1ea9901ec
+Time (s): cpu = 00:02:09 ; elapsed = 00:01:09 . Memory (MB): peak = 2785.184 ; gain = 23.230 ; free physical = 1523 ; free virtual = 12034
+Phase 4 Rip-up And Reroute | Checksum: 13793f1dd
 
-Time (s): cpu = 00:01:29 ; elapsed = 00:00:48 . Memory (MB): peak = 2790.742 ; gain = 0.000 ; free physical = 1545 ; free virtual = 12006
+Time (s): cpu = 00:02:09 ; elapsed = 00:01:09 . Memory (MB): peak = 2785.184 ; gain = 23.230 ; free physical = 1523 ; free virtual = 12034
 
 Phase 5 Delay and Skew Optimization
 
 Phase 5.1 Delay CleanUp
-Phase 5.1 Delay CleanUp | Checksum: 1ea9901ec
+Phase 5.1 Delay CleanUp | Checksum: 13793f1dd
 
-Time (s): cpu = 00:01:30 ; elapsed = 00:00:48 . Memory (MB): peak = 2790.742 ; gain = 0.000 ; free physical = 1545 ; free virtual = 12006
+Time (s): cpu = 00:02:09 ; elapsed = 00:01:09 . Memory (MB): peak = 2785.184 ; gain = 23.230 ; free physical = 1523 ; free virtual = 12034
 
 Phase 5.2 Clock Skew Optimization
-Phase 5.2 Clock Skew Optimization | Checksum: 1ea9901ec
+Phase 5.2 Clock Skew Optimization | Checksum: 13793f1dd
 
-Time (s): cpu = 00:01:30 ; elapsed = 00:00:48 . Memory (MB): peak = 2790.742 ; gain = 0.000 ; free physical = 1545 ; free virtual = 12006
-Phase 5 Delay and Skew Optimization | Checksum: 1ea9901ec
+Time (s): cpu = 00:02:09 ; elapsed = 00:01:09 . Memory (MB): peak = 2785.184 ; gain = 23.230 ; free physical = 1523 ; free virtual = 12034
+Phase 5 Delay and Skew Optimization | Checksum: 13793f1dd
 
-Time (s): cpu = 00:01:30 ; elapsed = 00:00:48 . Memory (MB): peak = 2790.742 ; gain = 0.000 ; free physical = 1545 ; free virtual = 12006
+Time (s): cpu = 00:02:09 ; elapsed = 00:01:09 . Memory (MB): peak = 2785.184 ; gain = 23.230 ; free physical = 1523 ; free virtual = 12034
 
 Phase 6 Post Hold Fix
 
 Phase 6.1 Hold Fix Iter
 
 Phase 6.1.1 Update Timing
-Phase 6.1.1 Update Timing | Checksum: 19fa5fc11
+Phase 6.1.1 Update Timing | Checksum: 1dce516d8
 
-Time (s): cpu = 00:01:32 ; elapsed = 00:00:49 . Memory (MB): peak = 2790.742 ; gain = 0.000 ; free physical = 1545 ; free virtual = 12006
-INFO: [Route 35-416] Intermediate Timing Summary | WNS=1.176  | TNS=0.000  | WHS=0.015  | THS=0.000  |
+Time (s): cpu = 00:02:12 ; elapsed = 00:01:10 . Memory (MB): peak = 2785.184 ; gain = 23.230 ; free physical = 1523 ; free virtual = 12034
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.729  | TNS=0.000  | WHS=0.029  | THS=0.000  |
 
-Phase 6.1 Hold Fix Iter | Checksum: 1a23e98e4
+Phase 6.1 Hold Fix Iter | Checksum: 1e7fefdeb
 
-Time (s): cpu = 00:01:32 ; elapsed = 00:00:49 . Memory (MB): peak = 2790.742 ; gain = 0.000 ; free physical = 1545 ; free virtual = 12006
-Phase 6 Post Hold Fix | Checksum: 1a23e98e4
+Time (s): cpu = 00:02:12 ; elapsed = 00:01:11 . Memory (MB): peak = 2785.184 ; gain = 23.230 ; free physical = 1523 ; free virtual = 12034
+Phase 6 Post Hold Fix | Checksum: 1e7fefdeb
 
-Time (s): cpu = 00:01:32 ; elapsed = 00:00:49 . Memory (MB): peak = 2790.742 ; gain = 0.000 ; free physical = 1545 ; free virtual = 12006
+Time (s): cpu = 00:02:12 ; elapsed = 00:01:11 . Memory (MB): peak = 2785.184 ; gain = 23.230 ; free physical = 1523 ; free virtual = 12034
 
 Phase 7 Route finalize
 
 Router Utilization Summary
-  Global Vertical Routing Utilization    = 4.44683 %
-  Global Horizontal Routing Utilization  = 7.26259 %
+  Global Vertical Routing Utilization    = 5.9548 %
+  Global Horizontal Routing Utilization  = 8.107 %
   Routable Net Status*
   *Does not include unroutable nets such as driverless and loadless.
   Run report_route_status for detailed report.
@@ -579,63 +579,63 @@ Router Utilization Summary
   Number of Partially Routed Nets     = 0
   Number of Node Overlaps             = 0
 
-Phase 7 Route finalize | Checksum: 13db6fef3
+Phase 7 Route finalize | Checksum: 1c73d3896
 
-Time (s): cpu = 00:01:32 ; elapsed = 00:00:49 . Memory (MB): peak = 2790.742 ; gain = 0.000 ; free physical = 1545 ; free virtual = 12006
+Time (s): cpu = 00:02:12 ; elapsed = 00:01:11 . Memory (MB): peak = 2785.184 ; gain = 23.230 ; free physical = 1522 ; free virtual = 12033
 
 Phase 8 Verifying routed nets
 
  Verification completed successfully
-Phase 8 Verifying routed nets | Checksum: 13db6fef3
+Phase 8 Verifying routed nets | Checksum: 1c73d3896
 
-Time (s): cpu = 00:01:32 ; elapsed = 00:00:49 . Memory (MB): peak = 2790.742 ; gain = 0.000 ; free physical = 1544 ; free virtual = 12006
+Time (s): cpu = 00:02:12 ; elapsed = 00:01:11 . Memory (MB): peak = 2785.184 ; gain = 23.230 ; free physical = 1521 ; free virtual = 12033
 
 Phase 9 Depositing Routes
-Phase 9 Depositing Routes | Checksum: 153a4a2fe
+Phase 9 Depositing Routes | Checksum: 18b4b2809
 
-Time (s): cpu = 00:01:34 ; elapsed = 00:00:51 . Memory (MB): peak = 2790.742 ; gain = 0.000 ; free physical = 1545 ; free virtual = 12006
+Time (s): cpu = 00:02:15 ; elapsed = 00:01:13 . Memory (MB): peak = 2785.184 ; gain = 23.230 ; free physical = 1523 ; free virtual = 12035
 
 Phase 10 Post Router Timing
-INFO: [Route 35-57] Estimated Timing Summary | WNS=1.176  | TNS=0.000  | WHS=0.015  | THS=0.000  |
+INFO: [Route 35-57] Estimated Timing Summary | WNS=0.729  | TNS=0.000  | WHS=0.029  | THS=0.000  |
 
 INFO: [Route 35-327] The final timing numbers are based on the router estimated timing analysis. For a complete and accurate timing signoff, please run report_timing_summary.
-Phase 10 Post Router Timing | Checksum: 153a4a2fe
+Phase 10 Post Router Timing | Checksum: 18b4b2809
 
-Time (s): cpu = 00:01:34 ; elapsed = 00:00:51 . Memory (MB): peak = 2790.742 ; gain = 0.000 ; free physical = 1545 ; free virtual = 12006
+Time (s): cpu = 00:02:15 ; elapsed = 00:01:13 . Memory (MB): peak = 2785.184 ; gain = 23.230 ; free physical = 1523 ; free virtual = 12035
 INFO: [Route 35-16] Router Completed Successfully
 
-Time (s): cpu = 00:01:35 ; elapsed = 00:00:52 . Memory (MB): peak = 2790.742 ; gain = 0.000 ; free physical = 1575 ; free virtual = 12037
+Time (s): cpu = 00:02:15 ; elapsed = 00:01:13 . Memory (MB): peak = 2785.184 ; gain = 23.230 ; free physical = 1554 ; free virtual = 12066
 
 Routing Is Done.
 INFO: [Common 17-83] Releasing license: Implementation
-90 Infos, 3 Warnings, 0 Critical Warnings and 0 Errors encountered.
+89 Infos, 3 Warnings, 0 Critical Warnings and 0 Errors encountered.
 route_design completed successfully
-route_design: Time (s): cpu = 00:01:40 ; elapsed = 00:00:54 . Memory (MB): peak = 2790.742 ; gain = 0.000 ; free physical = 1575 ; free virtual = 12037
+route_design: Time (s): cpu = 00:02:20 ; elapsed = 00:01:16 . Memory (MB): peak = 2785.184 ; gain = 23.230 ; free physical = 1554 ; free virtual = 12066
 INFO: [Common 17-600] The following parameters have non-default value.
 general.maxThreads
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2790.742 ; gain = 0.000 ; free physical = 1575 ; free virtual = 12037
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2785.184 ; gain = 0.000 ; free physical = 1554 ; free virtual = 12066
 INFO: [Timing 38-480] Writing timing data to binary archive.
 Writing placer database...
 Writing XDEF routing.
 Writing XDEF routing logical nets.
 Writing XDEF routing special nets.
-Write XDEF Complete: Time (s): cpu = 00:00:08 ; elapsed = 00:00:02 . Memory (MB): peak = 2790.742 ; gain = 0.000 ; free physical = 1509 ; free virtual = 12017
+Write XDEF Complete: Time (s): cpu = 00:00:08 ; elapsed = 00:00:03 . Memory (MB): peak = 2785.184 ; gain = 0.000 ; free physical = 1488 ; free virtual = 12052
 INFO: [Common 17-1381] The checkpoint '/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019/yolo_conv_fp_prj_2019.runs/impl_1/design_1_wrapper_routed.dcp' has been generated.
-write_checkpoint: Time (s): cpu = 00:00:12 ; elapsed = 00:00:07 . Memory (MB): peak = 2790.742 ; gain = 0.000 ; free physical = 1558 ; free virtual = 12032
+write_checkpoint: Time (s): cpu = 00:00:13 ; elapsed = 00:00:08 . Memory (MB): peak = 2785.184 ; gain = 0.000 ; free physical = 1538 ; free virtual = 12062
 INFO: [runtcl-4] Executing : report_drc -file design_1_wrapper_drc_routed.rpt -pb design_1_wrapper_drc_routed.pb -rpx design_1_wrapper_drc_routed.rpx
 Command: report_drc -file design_1_wrapper_drc_routed.rpt -pb design_1_wrapper_drc_routed.pb -rpx design_1_wrapper_drc_routed.rpx
 INFO: [IP_Flow 19-1839] IP Catalog is up to date.
 INFO: [DRC 23-27] Running DRC with 4 threads
 INFO: [Coretcl 2-168] The results of DRC are in file /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019/yolo_conv_fp_prj_2019.runs/impl_1/design_1_wrapper_drc_routed.rpt.
 report_drc completed successfully
-report_drc: Time (s): cpu = 00:00:14 ; elapsed = 00:00:05 . Memory (MB): peak = 2799.637 ; gain = 8.895 ; free physical = 1549 ; free virtual = 12022
+report_drc: Time (s): cpu = 00:00:16 ; elapsed = 00:00:06 . Memory (MB): peak = 2822.070 ; gain = 36.887 ; free physical = 1524 ; free virtual = 12049
 INFO: [runtcl-4] Executing : report_methodology -file design_1_wrapper_methodology_drc_routed.rpt -pb design_1_wrapper_methodology_drc_routed.pb -rpx design_1_wrapper_methodology_drc_routed.rpx
 Command: report_methodology -file design_1_wrapper_methodology_drc_routed.rpt -pb design_1_wrapper_methodology_drc_routed.pb -rpx design_1_wrapper_methodology_drc_routed.rpx
 INFO: [Timing 38-35] Done setting XDC timing constraints.
 INFO: [DRC 23-133] Running Methodology with 4 threads
 INFO: [Coretcl 2-1520] The results of Report Methodology are in file /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019/yolo_conv_fp_prj_2019.runs/impl_1/design_1_wrapper_methodology_drc_routed.rpt.
 report_methodology completed successfully
-report_methodology: Time (s): cpu = 00:00:20 ; elapsed = 00:00:07 . Memory (MB): peak = 2864.156 ; gain = 64.520 ; free physical = 1540 ; free virtual = 12015
+report_methodology: Time (s): cpu = 00:00:24 ; elapsed = 00:00:08 . Memory (MB): peak = 2915.590 ; gain = 93.520 ; free physical = 1516 ; free virtual = 12040
 INFO: [runtcl-4] Executing : report_power -file design_1_wrapper_power_routed.rpt -pb design_1_wrapper_power_summary_routed.pb -rpx design_1_wrapper_power_routed.rpx
 Command: report_power -file design_1_wrapper_power_routed.rpt -pb design_1_wrapper_power_summary_routed.pb -rpx design_1_wrapper_power_routed.rpx
 INFO: [Timing 38-35] Done setting XDC timing constraints.
@@ -644,9 +644,9 @@ Running Vector-less Activity Propagation...
 Finished Running Vector-less Activity Propagation
 WARNING: [Power 33-332] Found switching activity that implies high-fanout reset nets being asserted for excessive periods of time which may result in inaccurate power analysis.
 Resolution: To review and fix problems, please run Power Constraints Advisor in the GUI from Tools > Power Constraints Advisor or run report_power with the -advisory option to generate a text report.
-103 Infos, 4 Warnings, 0 Critical Warnings and 0 Errors encountered.
+102 Infos, 4 Warnings, 0 Critical Warnings and 0 Errors encountered.
 report_power completed successfully
-report_power: Time (s): cpu = 00:00:10 ; elapsed = 00:00:07 . Memory (MB): peak = 2864.156 ; gain = 0.000 ; free physical = 1490 ; free virtual = 11975
+report_power: Time (s): cpu = 00:00:13 ; elapsed = 00:00:08 . Memory (MB): peak = 2915.590 ; gain = 0.000 ; free physical = 1468 ; free virtual = 12003
 INFO: [runtcl-4] Executing : report_route_status -file design_1_wrapper_route_status.rpt -pb design_1_wrapper_route_status.pb
 INFO: [runtcl-4] Executing : report_timing_summary -max_paths 10 -file design_1_wrapper_timing_summary_routed.rpt -pb design_1_wrapper_timing_summary_routed.pb -rpx design_1_wrapper_timing_summary_routed.rpx -warn_on_violation 
 INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
@@ -680,13 +680,6 @@ INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc
 Running DRC as a precondition to command write_bitstream
 INFO: [IP_Flow 19-1839] IP Catalog is up to date.
 INFO: [DRC 23-27] Running DRC with 4 threads
-WARNING: [DRC DPIP-1] Input pipelining: DSP design_1_i/yolo_conv_top_0/inst/yolo_conv_top_mul_mul_6ns_16s_22_1_1_U61/yolo_conv_top_mul_mul_6ns_16s_22_1_1_DSP48_1_U/p input design_1_i/yolo_conv_top_0/inst/yolo_conv_top_mul_mul_6ns_16s_22_1_1_U61/yolo_conv_top_mul_mul_6ns_16s_22_1_1_DSP48_1_U/p/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
-WARNING: [DRC DPIP-1] Input pipelining: DSP design_1_i/yolo_conv_top_0/inst/yolo_conv_top_mul_mul_6ns_16s_22_1_1_U62/yolo_conv_top_mul_mul_6ns_16s_22_1_1_DSP48_1_U/p input design_1_i/yolo_conv_top_0/inst/yolo_conv_top_mul_mul_6ns_16s_22_1_1_U62/yolo_conv_top_mul_mul_6ns_16s_22_1_1_DSP48_1_U/p/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
-WARNING: [DRC DPIP-1] Input pipelining: DSP design_1_i/yolo_conv_top_0/inst/yolo_conv_top_mul_mul_6ns_16s_22_1_1_U63/yolo_conv_top_mul_mul_6ns_16s_22_1_1_DSP48_1_U/p input design_1_i/yolo_conv_top_0/inst/yolo_conv_top_mul_mul_6ns_16s_22_1_1_U63/yolo_conv_top_mul_mul_6ns_16s_22_1_1_DSP48_1_U/p/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
-WARNING: [DRC DPIP-1] Input pipelining: DSP design_1_i/yolo_conv_top_0/inst/yolo_conv_top_mul_mul_6ns_16s_22_1_1_U64/yolo_conv_top_mul_mul_6ns_16s_22_1_1_DSP48_1_U/p input design_1_i/yolo_conv_top_0/inst/yolo_conv_top_mul_mul_6ns_16s_22_1_1_U64/yolo_conv_top_mul_mul_6ns_16s_22_1_1_DSP48_1_U/p/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
-WARNING: [DRC DPIP-1] Input pipelining: DSP design_1_i/yolo_conv_top_0/inst/yolo_conv_top_mul_mul_6ns_16s_22_1_1_U65/yolo_conv_top_mul_mul_6ns_16s_22_1_1_DSP48_1_U/p input design_1_i/yolo_conv_top_0/inst/yolo_conv_top_mul_mul_6ns_16s_22_1_1_U65/yolo_conv_top_mul_mul_6ns_16s_22_1_1_DSP48_1_U/p/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
-WARNING: [DRC DPIP-1] Input pipelining: DSP design_1_i/yolo_conv_top_0/inst/yolo_conv_top_mul_mul_6ns_16s_22_1_1_U66/yolo_conv_top_mul_mul_6ns_16s_22_1_1_DSP48_1_U/p input design_1_i/yolo_conv_top_0/inst/yolo_conv_top_mul_mul_6ns_16s_22_1_1_U66/yolo_conv_top_mul_mul_6ns_16s_22_1_1_DSP48_1_U/p/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
-WARNING: [DRC DPIP-1] Input pipelining: DSP design_1_i/yolo_conv_top_0/inst/yolo_conv_top_mul_mul_6ns_16s_22_1_1_U67/yolo_conv_top_mul_mul_6ns_16s_22_1_1_DSP48_1_U/p input design_1_i/yolo_conv_top_0/inst/yolo_conv_top_mul_mul_6ns_16s_22_1_1_U67/yolo_conv_top_mul_mul_6ns_16s_22_1_1_DSP48_1_U/p/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
 WARNING: [DRC DPIP-1] Input pipelining: DSP design_1_i/yolo_conv_top_0/inst/yolo_conv_top_mul_mul_6ns_16s_22_1_1_U68/yolo_conv_top_mul_mul_6ns_16s_22_1_1_DSP48_1_U/p input design_1_i/yolo_conv_top_0/inst/yolo_conv_top_mul_mul_6ns_16s_22_1_1_U68/yolo_conv_top_mul_mul_6ns_16s_22_1_1_DSP48_1_U/p/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
 WARNING: [DRC DPIP-1] Input pipelining: DSP design_1_i/yolo_conv_top_0/inst/yolo_conv_top_mul_mul_6ns_16s_22_1_1_U69/yolo_conv_top_mul_mul_6ns_16s_22_1_1_DSP48_1_U/p input design_1_i/yolo_conv_top_0/inst/yolo_conv_top_mul_mul_6ns_16s_22_1_1_U69/yolo_conv_top_mul_mul_6ns_16s_22_1_1_DSP48_1_U/p/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
 WARNING: [DRC DPIP-1] Input pipelining: DSP design_1_i/yolo_conv_top_0/inst/yolo_conv_top_mul_mul_6ns_16s_22_1_1_U70/yolo_conv_top_mul_mul_6ns_16s_22_1_1_DSP48_1_U/p input design_1_i/yolo_conv_top_0/inst/yolo_conv_top_mul_mul_6ns_16s_22_1_1_U70/yolo_conv_top_mul_mul_6ns_16s_22_1_1_DSP48_1_U/p/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
@@ -696,67 +689,31 @@ WARNING: [DRC DPIP-1] Input pipelining: DSP design_1_i/yolo_conv_top_0/inst/yolo
 WARNING: [DRC DPIP-1] Input pipelining: DSP design_1_i/yolo_conv_top_0/inst/yolo_conv_top_mul_mul_6ns_16s_22_1_1_U74/yolo_conv_top_mul_mul_6ns_16s_22_1_1_DSP48_1_U/p input design_1_i/yolo_conv_top_0/inst/yolo_conv_top_mul_mul_6ns_16s_22_1_1_U74/yolo_conv_top_mul_mul_6ns_16s_22_1_1_DSP48_1_U/p/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
 WARNING: [DRC DPIP-1] Input pipelining: DSP design_1_i/yolo_conv_top_0/inst/yolo_conv_top_mul_mul_6ns_16s_22_1_1_U75/yolo_conv_top_mul_mul_6ns_16s_22_1_1_DSP48_1_U/p input design_1_i/yolo_conv_top_0/inst/yolo_conv_top_mul_mul_6ns_16s_22_1_1_U75/yolo_conv_top_mul_mul_6ns_16s_22_1_1_DSP48_1_U/p/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
 WARNING: [DRC DPIP-1] Input pipelining: DSP design_1_i/yolo_conv_top_0/inst/yolo_conv_top_mul_mul_6ns_16s_22_1_1_U76/yolo_conv_top_mul_mul_6ns_16s_22_1_1_DSP48_1_U/p input design_1_i/yolo_conv_top_0/inst/yolo_conv_top_mul_mul_6ns_16s_22_1_1_U76/yolo_conv_top_mul_mul_6ns_16s_22_1_1_DSP48_1_U/p/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
-WARNING: [DRC DPOP-2] MREG Output pipelining: DSP design_1_i/yolo_conv_top_0/inst/grp_window_macc_fu_1132/yolo_conv_top_mul_mul_14s_16s_30_1_1_U10/yolo_conv_top_mul_mul_14s_16s_30_1_1_DSP48_0_U/p multiplier stage design_1_i/yolo_conv_top_0/inst/grp_window_macc_fu_1132/yolo_conv_top_mul_mul_14s_16s_30_1_1_U10/yolo_conv_top_mul_mul_14s_16s_30_1_1_DSP48_0_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
-WARNING: [DRC DPOP-2] MREG Output pipelining: DSP design_1_i/yolo_conv_top_0/inst/grp_window_macc_fu_1132/yolo_conv_top_mul_mul_14s_16s_30_1_1_U11/yolo_conv_top_mul_mul_14s_16s_30_1_1_DSP48_0_U/p multiplier stage design_1_i/yolo_conv_top_0/inst/grp_window_macc_fu_1132/yolo_conv_top_mul_mul_14s_16s_30_1_1_U11/yolo_conv_top_mul_mul_14s_16s_30_1_1_DSP48_0_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
-WARNING: [DRC DPOP-2] MREG Output pipelining: DSP design_1_i/yolo_conv_top_0/inst/grp_window_macc_fu_1132/yolo_conv_top_mul_mul_14s_16s_30_1_1_U12/yolo_conv_top_mul_mul_14s_16s_30_1_1_DSP48_0_U/p multiplier stage design_1_i/yolo_conv_top_0/inst/grp_window_macc_fu_1132/yolo_conv_top_mul_mul_14s_16s_30_1_1_U12/yolo_conv_top_mul_mul_14s_16s_30_1_1_DSP48_0_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
-WARNING: [DRC DPOP-2] MREG Output pipelining: DSP design_1_i/yolo_conv_top_0/inst/grp_window_macc_fu_1132/yolo_conv_top_mul_mul_14s_16s_30_1_1_U13/yolo_conv_top_mul_mul_14s_16s_30_1_1_DSP48_0_U/p multiplier stage design_1_i/yolo_conv_top_0/inst/grp_window_macc_fu_1132/yolo_conv_top_mul_mul_14s_16s_30_1_1_U13/yolo_conv_top_mul_mul_14s_16s_30_1_1_DSP48_0_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
-WARNING: [DRC DPOP-2] MREG Output pipelining: DSP design_1_i/yolo_conv_top_0/inst/grp_window_macc_fu_1132/yolo_conv_top_mul_mul_14s_16s_30_1_1_U14/yolo_conv_top_mul_mul_14s_16s_30_1_1_DSP48_0_U/p multiplier stage design_1_i/yolo_conv_top_0/inst/grp_window_macc_fu_1132/yolo_conv_top_mul_mul_14s_16s_30_1_1_U14/yolo_conv_top_mul_mul_14s_16s_30_1_1_DSP48_0_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
-WARNING: [DRC DPOP-2] MREG Output pipelining: DSP design_1_i/yolo_conv_top_0/inst/grp_window_macc_fu_1132/yolo_conv_top_mul_mul_14s_16s_30_1_1_U15/yolo_conv_top_mul_mul_14s_16s_30_1_1_DSP48_0_U/p multiplier stage design_1_i/yolo_conv_top_0/inst/grp_window_macc_fu_1132/yolo_conv_top_mul_mul_14s_16s_30_1_1_U15/yolo_conv_top_mul_mul_14s_16s_30_1_1_DSP48_0_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
-WARNING: [DRC DPOP-2] MREG Output pipelining: DSP design_1_i/yolo_conv_top_0/inst/grp_window_macc_fu_1132/yolo_conv_top_mul_mul_14s_16s_30_1_1_U16/yolo_conv_top_mul_mul_14s_16s_30_1_1_DSP48_0_U/p multiplier stage design_1_i/yolo_conv_top_0/inst/grp_window_macc_fu_1132/yolo_conv_top_mul_mul_14s_16s_30_1_1_U16/yolo_conv_top_mul_mul_14s_16s_30_1_1_DSP48_0_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
-WARNING: [DRC DPOP-2] MREG Output pipelining: DSP design_1_i/yolo_conv_top_0/inst/grp_window_macc_fu_1132/yolo_conv_top_mul_mul_14s_16s_30_1_1_U17/yolo_conv_top_mul_mul_14s_16s_30_1_1_DSP48_0_U/p multiplier stage design_1_i/yolo_conv_top_0/inst/grp_window_macc_fu_1132/yolo_conv_top_mul_mul_14s_16s_30_1_1_U17/yolo_conv_top_mul_mul_14s_16s_30_1_1_DSP48_0_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
-WARNING: [DRC DPOP-2] MREG Output pipelining: DSP design_1_i/yolo_conv_top_0/inst/grp_window_macc_fu_1132/yolo_conv_top_mul_mul_14s_16s_30_1_1_U18/yolo_conv_top_mul_mul_14s_16s_30_1_1_DSP48_0_U/p multiplier stage design_1_i/yolo_conv_top_0/inst/grp_window_macc_fu_1132/yolo_conv_top_mul_mul_14s_16s_30_1_1_U18/yolo_conv_top_mul_mul_14s_16s_30_1_1_DSP48_0_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
-WARNING: [DRC DPOP-2] MREG Output pipelining: DSP design_1_i/yolo_conv_top_0/inst/grp_window_macc_fu_1148/yolo_conv_top_mul_mul_14s_16s_30_1_1_U10/yolo_conv_top_mul_mul_14s_16s_30_1_1_DSP48_0_U/p multiplier stage design_1_i/yolo_conv_top_0/inst/grp_window_macc_fu_1148/yolo_conv_top_mul_mul_14s_16s_30_1_1_U10/yolo_conv_top_mul_mul_14s_16s_30_1_1_DSP48_0_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
-WARNING: [DRC DPOP-2] MREG Output pipelining: DSP design_1_i/yolo_conv_top_0/inst/grp_window_macc_fu_1148/yolo_conv_top_mul_mul_14s_16s_30_1_1_U11/yolo_conv_top_mul_mul_14s_16s_30_1_1_DSP48_0_U/p multiplier stage design_1_i/yolo_conv_top_0/inst/grp_window_macc_fu_1148/yolo_conv_top_mul_mul_14s_16s_30_1_1_U11/yolo_conv_top_mul_mul_14s_16s_30_1_1_DSP48_0_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
-WARNING: [DRC DPOP-2] MREG Output pipelining: DSP design_1_i/yolo_conv_top_0/inst/grp_window_macc_fu_1148/yolo_conv_top_mul_mul_14s_16s_30_1_1_U12/yolo_conv_top_mul_mul_14s_16s_30_1_1_DSP48_0_U/p multiplier stage design_1_i/yolo_conv_top_0/inst/grp_window_macc_fu_1148/yolo_conv_top_mul_mul_14s_16s_30_1_1_U12/yolo_conv_top_mul_mul_14s_16s_30_1_1_DSP48_0_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
-WARNING: [DRC DPOP-2] MREG Output pipelining: DSP design_1_i/yolo_conv_top_0/inst/grp_window_macc_fu_1148/yolo_conv_top_mul_mul_14s_16s_30_1_1_U13/yolo_conv_top_mul_mul_14s_16s_30_1_1_DSP48_0_U/p multiplier stage design_1_i/yolo_conv_top_0/inst/grp_window_macc_fu_1148/yolo_conv_top_mul_mul_14s_16s_30_1_1_U13/yolo_conv_top_mul_mul_14s_16s_30_1_1_DSP48_0_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
-WARNING: [DRC DPOP-2] MREG Output pipelining: DSP design_1_i/yolo_conv_top_0/inst/grp_window_macc_fu_1148/yolo_conv_top_mul_mul_14s_16s_30_1_1_U14/yolo_conv_top_mul_mul_14s_16s_30_1_1_DSP48_0_U/p multiplier stage design_1_i/yolo_conv_top_0/inst/grp_window_macc_fu_1148/yolo_conv_top_mul_mul_14s_16s_30_1_1_U14/yolo_conv_top_mul_mul_14s_16s_30_1_1_DSP48_0_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
-WARNING: [DRC DPOP-2] MREG Output pipelining: DSP design_1_i/yolo_conv_top_0/inst/grp_window_macc_fu_1148/yolo_conv_top_mul_mul_14s_16s_30_1_1_U15/yolo_conv_top_mul_mul_14s_16s_30_1_1_DSP48_0_U/p multiplier stage design_1_i/yolo_conv_top_0/inst/grp_window_macc_fu_1148/yolo_conv_top_mul_mul_14s_16s_30_1_1_U15/yolo_conv_top_mul_mul_14s_16s_30_1_1_DSP48_0_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
-WARNING: [DRC DPOP-2] MREG Output pipelining: DSP design_1_i/yolo_conv_top_0/inst/grp_window_macc_fu_1148/yolo_conv_top_mul_mul_14s_16s_30_1_1_U16/yolo_conv_top_mul_mul_14s_16s_30_1_1_DSP48_0_U/p multiplier stage design_1_i/yolo_conv_top_0/inst/grp_window_macc_fu_1148/yolo_conv_top_mul_mul_14s_16s_30_1_1_U16/yolo_conv_top_mul_mul_14s_16s_30_1_1_DSP48_0_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
-WARNING: [DRC DPOP-2] MREG Output pipelining: DSP design_1_i/yolo_conv_top_0/inst/grp_window_macc_fu_1148/yolo_conv_top_mul_mul_14s_16s_30_1_1_U17/yolo_conv_top_mul_mul_14s_16s_30_1_1_DSP48_0_U/p multiplier stage design_1_i/yolo_conv_top_0/inst/grp_window_macc_fu_1148/yolo_conv_top_mul_mul_14s_16s_30_1_1_U17/yolo_conv_top_mul_mul_14s_16s_30_1_1_DSP48_0_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
-WARNING: [DRC DPOP-2] MREG Output pipelining: DSP design_1_i/yolo_conv_top_0/inst/grp_window_macc_fu_1148/yolo_conv_top_mul_mul_14s_16s_30_1_1_U18/yolo_conv_top_mul_mul_14s_16s_30_1_1_DSP48_0_U/p multiplier stage design_1_i/yolo_conv_top_0/inst/grp_window_macc_fu_1148/yolo_conv_top_mul_mul_14s_16s_30_1_1_U18/yolo_conv_top_mul_mul_14s_16s_30_1_1_DSP48_0_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
-WARNING: [DRC DPOP-2] MREG Output pipelining: DSP design_1_i/yolo_conv_top_0/inst/grp_window_macc_fu_1164/yolo_conv_top_mul_mul_14s_16s_30_1_1_U10/yolo_conv_top_mul_mul_14s_16s_30_1_1_DSP48_0_U/p multiplier stage design_1_i/yolo_conv_top_0/inst/grp_window_macc_fu_1164/yolo_conv_top_mul_mul_14s_16s_30_1_1_U10/yolo_conv_top_mul_mul_14s_16s_30_1_1_DSP48_0_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
-WARNING: [DRC DPOP-2] MREG Output pipelining: DSP design_1_i/yolo_conv_top_0/inst/grp_window_macc_fu_1164/yolo_conv_top_mul_mul_14s_16s_30_1_1_U11/yolo_conv_top_mul_mul_14s_16s_30_1_1_DSP48_0_U/p multiplier stage design_1_i/yolo_conv_top_0/inst/grp_window_macc_fu_1164/yolo_conv_top_mul_mul_14s_16s_30_1_1_U11/yolo_conv_top_mul_mul_14s_16s_30_1_1_DSP48_0_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
-WARNING: [DRC DPOP-2] MREG Output pipelining: DSP design_1_i/yolo_conv_top_0/inst/grp_window_macc_fu_1164/yolo_conv_top_mul_mul_14s_16s_30_1_1_U12/yolo_conv_top_mul_mul_14s_16s_30_1_1_DSP48_0_U/p multiplier stage design_1_i/yolo_conv_top_0/inst/grp_window_macc_fu_1164/yolo_conv_top_mul_mul_14s_16s_30_1_1_U12/yolo_conv_top_mul_mul_14s_16s_30_1_1_DSP48_0_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
-WARNING: [DRC DPOP-2] MREG Output pipelining: DSP design_1_i/yolo_conv_top_0/inst/grp_window_macc_fu_1164/yolo_conv_top_mul_mul_14s_16s_30_1_1_U13/yolo_conv_top_mul_mul_14s_16s_30_1_1_DSP48_0_U/p multiplier stage design_1_i/yolo_conv_top_0/inst/grp_window_macc_fu_1164/yolo_conv_top_mul_mul_14s_16s_30_1_1_U13/yolo_conv_top_mul_mul_14s_16s_30_1_1_DSP48_0_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
-WARNING: [DRC DPOP-2] MREG Output pipelining: DSP design_1_i/yolo_conv_top_0/inst/grp_window_macc_fu_1164/yolo_conv_top_mul_mul_14s_16s_30_1_1_U14/yolo_conv_top_mul_mul_14s_16s_30_1_1_DSP48_0_U/p multiplier stage design_1_i/yolo_conv_top_0/inst/grp_window_macc_fu_1164/yolo_conv_top_mul_mul_14s_16s_30_1_1_U14/yolo_conv_top_mul_mul_14s_16s_30_1_1_DSP48_0_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
-WARNING: [DRC DPOP-2] MREG Output pipelining: DSP design_1_i/yolo_conv_top_0/inst/grp_window_macc_fu_1164/yolo_conv_top_mul_mul_14s_16s_30_1_1_U15/yolo_conv_top_mul_mul_14s_16s_30_1_1_DSP48_0_U/p multiplier stage design_1_i/yolo_conv_top_0/inst/grp_window_macc_fu_1164/yolo_conv_top_mul_mul_14s_16s_30_1_1_U15/yolo_conv_top_mul_mul_14s_16s_30_1_1_DSP48_0_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
-WARNING: [DRC DPOP-2] MREG Output pipelining: DSP design_1_i/yolo_conv_top_0/inst/grp_window_macc_fu_1164/yolo_conv_top_mul_mul_14s_16s_30_1_1_U16/yolo_conv_top_mul_mul_14s_16s_30_1_1_DSP48_0_U/p multiplier stage design_1_i/yolo_conv_top_0/inst/grp_window_macc_fu_1164/yolo_conv_top_mul_mul_14s_16s_30_1_1_U16/yolo_conv_top_mul_mul_14s_16s_30_1_1_DSP48_0_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
-WARNING: [DRC DPOP-2] MREG Output pipelining: DSP design_1_i/yolo_conv_top_0/inst/grp_window_macc_fu_1164/yolo_conv_top_mul_mul_14s_16s_30_1_1_U17/yolo_conv_top_mul_mul_14s_16s_30_1_1_DSP48_0_U/p multiplier stage design_1_i/yolo_conv_top_0/inst/grp_window_macc_fu_1164/yolo_conv_top_mul_mul_14s_16s_30_1_1_U17/yolo_conv_top_mul_mul_14s_16s_30_1_1_DSP48_0_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
-WARNING: [DRC DPOP-2] MREG Output pipelining: DSP design_1_i/yolo_conv_top_0/inst/grp_window_macc_fu_1164/yolo_conv_top_mul_mul_14s_16s_30_1_1_U18/yolo_conv_top_mul_mul_14s_16s_30_1_1_DSP48_0_U/p multiplier stage design_1_i/yolo_conv_top_0/inst/grp_window_macc_fu_1164/yolo_conv_top_mul_mul_14s_16s_30_1_1_U18/yolo_conv_top_mul_mul_14s_16s_30_1_1_DSP48_0_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
-WARNING: [DRC DPOP-2] MREG Output pipelining: DSP design_1_i/yolo_conv_top_0/inst/grp_window_macc_fu_1180/yolo_conv_top_mul_mul_14s_16s_30_1_1_U10/yolo_conv_top_mul_mul_14s_16s_30_1_1_DSP48_0_U/p multiplier stage design_1_i/yolo_conv_top_0/inst/grp_window_macc_fu_1180/yolo_conv_top_mul_mul_14s_16s_30_1_1_U10/yolo_conv_top_mul_mul_14s_16s_30_1_1_DSP48_0_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
-WARNING: [DRC DPOP-2] MREG Output pipelining: DSP design_1_i/yolo_conv_top_0/inst/grp_window_macc_fu_1180/yolo_conv_top_mul_mul_14s_16s_30_1_1_U11/yolo_conv_top_mul_mul_14s_16s_30_1_1_DSP48_0_U/p multiplier stage design_1_i/yolo_conv_top_0/inst/grp_window_macc_fu_1180/yolo_conv_top_mul_mul_14s_16s_30_1_1_U11/yolo_conv_top_mul_mul_14s_16s_30_1_1_DSP48_0_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
-WARNING: [DRC DPOP-2] MREG Output pipelining: DSP design_1_i/yolo_conv_top_0/inst/grp_window_macc_fu_1180/yolo_conv_top_mul_mul_14s_16s_30_1_1_U12/yolo_conv_top_mul_mul_14s_16s_30_1_1_DSP48_0_U/p multiplier stage design_1_i/yolo_conv_top_0/inst/grp_window_macc_fu_1180/yolo_conv_top_mul_mul_14s_16s_30_1_1_U12/yolo_conv_top_mul_mul_14s_16s_30_1_1_DSP48_0_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
-WARNING: [DRC DPOP-2] MREG Output pipelining: DSP design_1_i/yolo_conv_top_0/inst/grp_window_macc_fu_1180/yolo_conv_top_mul_mul_14s_16s_30_1_1_U13/yolo_conv_top_mul_mul_14s_16s_30_1_1_DSP48_0_U/p multiplier stage design_1_i/yolo_conv_top_0/inst/grp_window_macc_fu_1180/yolo_conv_top_mul_mul_14s_16s_30_1_1_U13/yolo_conv_top_mul_mul_14s_16s_30_1_1_DSP48_0_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
-WARNING: [DRC DPOP-2] MREG Output pipelining: DSP design_1_i/yolo_conv_top_0/inst/grp_window_macc_fu_1180/yolo_conv_top_mul_mul_14s_16s_30_1_1_U14/yolo_conv_top_mul_mul_14s_16s_30_1_1_DSP48_0_U/p multiplier stage design_1_i/yolo_conv_top_0/inst/grp_window_macc_fu_1180/yolo_conv_top_mul_mul_14s_16s_30_1_1_U14/yolo_conv_top_mul_mul_14s_16s_30_1_1_DSP48_0_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
-WARNING: [DRC DPOP-2] MREG Output pipelining: DSP design_1_i/yolo_conv_top_0/inst/grp_window_macc_fu_1180/yolo_conv_top_mul_mul_14s_16s_30_1_1_U15/yolo_conv_top_mul_mul_14s_16s_30_1_1_DSP48_0_U/p multiplier stage design_1_i/yolo_conv_top_0/inst/grp_window_macc_fu_1180/yolo_conv_top_mul_mul_14s_16s_30_1_1_U15/yolo_conv_top_mul_mul_14s_16s_30_1_1_DSP48_0_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
-WARNING: [DRC DPOP-2] MREG Output pipelining: DSP design_1_i/yolo_conv_top_0/inst/grp_window_macc_fu_1180/yolo_conv_top_mul_mul_14s_16s_30_1_1_U16/yolo_conv_top_mul_mul_14s_16s_30_1_1_DSP48_0_U/p multiplier stage design_1_i/yolo_conv_top_0/inst/grp_window_macc_fu_1180/yolo_conv_top_mul_mul_14s_16s_30_1_1_U16/yolo_conv_top_mul_mul_14s_16s_30_1_1_DSP48_0_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
-WARNING: [DRC DPOP-2] MREG Output pipelining: DSP design_1_i/yolo_conv_top_0/inst/grp_window_macc_fu_1180/yolo_conv_top_mul_mul_14s_16s_30_1_1_U17/yolo_conv_top_mul_mul_14s_16s_30_1_1_DSP48_0_U/p multiplier stage design_1_i/yolo_conv_top_0/inst/grp_window_macc_fu_1180/yolo_conv_top_mul_mul_14s_16s_30_1_1_U17/yolo_conv_top_mul_mul_14s_16s_30_1_1_DSP48_0_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
-WARNING: [DRC DPOP-2] MREG Output pipelining: DSP design_1_i/yolo_conv_top_0/inst/grp_window_macc_fu_1180/yolo_conv_top_mul_mul_14s_16s_30_1_1_U18/yolo_conv_top_mul_mul_14s_16s_30_1_1_DSP48_0_U/p multiplier stage design_1_i/yolo_conv_top_0/inst/grp_window_macc_fu_1180/yolo_conv_top_mul_mul_14s_16s_30_1_1_U18/yolo_conv_top_mul_mul_14s_16s_30_1_1_DSP48_0_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
-WARNING: [DRC DPOP-2] MREG Output pipelining: DSP design_1_i/yolo_conv_top_0/inst/grp_window_macc_fu_1196/yolo_conv_top_mul_mul_14s_16s_30_1_1_U10/yolo_conv_top_mul_mul_14s_16s_30_1_1_DSP48_0_U/p multiplier stage design_1_i/yolo_conv_top_0/inst/grp_window_macc_fu_1196/yolo_conv_top_mul_mul_14s_16s_30_1_1_U10/yolo_conv_top_mul_mul_14s_16s_30_1_1_DSP48_0_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
-WARNING: [DRC DPOP-2] MREG Output pipelining: DSP design_1_i/yolo_conv_top_0/inst/grp_window_macc_fu_1196/yolo_conv_top_mul_mul_14s_16s_30_1_1_U11/yolo_conv_top_mul_mul_14s_16s_30_1_1_DSP48_0_U/p multiplier stage design_1_i/yolo_conv_top_0/inst/grp_window_macc_fu_1196/yolo_conv_top_mul_mul_14s_16s_30_1_1_U11/yolo_conv_top_mul_mul_14s_16s_30_1_1_DSP48_0_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
-WARNING: [DRC DPOP-2] MREG Output pipelining: DSP design_1_i/yolo_conv_top_0/inst/grp_window_macc_fu_1196/yolo_conv_top_mul_mul_14s_16s_30_1_1_U12/yolo_conv_top_mul_mul_14s_16s_30_1_1_DSP48_0_U/p multiplier stage design_1_i/yolo_conv_top_0/inst/grp_window_macc_fu_1196/yolo_conv_top_mul_mul_14s_16s_30_1_1_U12/yolo_conv_top_mul_mul_14s_16s_30_1_1_DSP48_0_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
-WARNING: [DRC DPOP-2] MREG Output pipelining: DSP design_1_i/yolo_conv_top_0/inst/grp_window_macc_fu_1196/yolo_conv_top_mul_mul_14s_16s_30_1_1_U13/yolo_conv_top_mul_mul_14s_16s_30_1_1_DSP48_0_U/p multiplier stage design_1_i/yolo_conv_top_0/inst/grp_window_macc_fu_1196/yolo_conv_top_mul_mul_14s_16s_30_1_1_U13/yolo_conv_top_mul_mul_14s_16s_30_1_1_DSP48_0_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
-WARNING: [DRC DPOP-2] MREG Output pipelining: DSP design_1_i/yolo_conv_top_0/inst/grp_window_macc_fu_1196/yolo_conv_top_mul_mul_14s_16s_30_1_1_U14/yolo_conv_top_mul_mul_14s_16s_30_1_1_DSP48_0_U/p multiplier stage design_1_i/yolo_conv_top_0/inst/grp_window_macc_fu_1196/yolo_conv_top_mul_mul_14s_16s_30_1_1_U14/yolo_conv_top_mul_mul_14s_16s_30_1_1_DSP48_0_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
-WARNING: [DRC DPOP-2] MREG Output pipelining: DSP design_1_i/yolo_conv_top_0/inst/grp_window_macc_fu_1196/yolo_conv_top_mul_mul_14s_16s_30_1_1_U15/yolo_conv_top_mul_mul_14s_16s_30_1_1_DSP48_0_U/p multiplier stage design_1_i/yolo_conv_top_0/inst/grp_window_macc_fu_1196/yolo_conv_top_mul_mul_14s_16s_30_1_1_U15/yolo_conv_top_mul_mul_14s_16s_30_1_1_DSP48_0_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
-WARNING: [DRC DPOP-2] MREG Output pipelining: DSP design_1_i/yolo_conv_top_0/inst/grp_window_macc_fu_1196/yolo_conv_top_mul_mul_14s_16s_30_1_1_U16/yolo_conv_top_mul_mul_14s_16s_30_1_1_DSP48_0_U/p multiplier stage design_1_i/yolo_conv_top_0/inst/grp_window_macc_fu_1196/yolo_conv_top_mul_mul_14s_16s_30_1_1_U16/yolo_conv_top_mul_mul_14s_16s_30_1_1_DSP48_0_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
-WARNING: [DRC DPOP-2] MREG Output pipelining: DSP design_1_i/yolo_conv_top_0/inst/grp_window_macc_fu_1196/yolo_conv_top_mul_mul_14s_16s_30_1_1_U17/yolo_conv_top_mul_mul_14s_16s_30_1_1_DSP48_0_U/p multiplier stage design_1_i/yolo_conv_top_0/inst/grp_window_macc_fu_1196/yolo_conv_top_mul_mul_14s_16s_30_1_1_U17/yolo_conv_top_mul_mul_14s_16s_30_1_1_DSP48_0_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
-WARNING: [DRC DPOP-2] MREG Output pipelining: DSP design_1_i/yolo_conv_top_0/inst/grp_window_macc_fu_1196/yolo_conv_top_mul_mul_14s_16s_30_1_1_U18/yolo_conv_top_mul_mul_14s_16s_30_1_1_DSP48_0_U/p multiplier stage design_1_i/yolo_conv_top_0/inst/grp_window_macc_fu_1196/yolo_conv_top_mul_mul_14s_16s_30_1_1_U18/yolo_conv_top_mul_mul_14s_16s_30_1_1_DSP48_0_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
-WARNING: [DRC DPOP-2] MREG Output pipelining: DSP design_1_i/yolo_conv_top_0/inst/grp_window_macc_fu_1212/yolo_conv_top_mul_mul_14s_16s_30_1_1_U10/yolo_conv_top_mul_mul_14s_16s_30_1_1_DSP48_0_U/p multiplier stage design_1_i/yolo_conv_top_0/inst/grp_window_macc_fu_1212/yolo_conv_top_mul_mul_14s_16s_30_1_1_U10/yolo_conv_top_mul_mul_14s_16s_30_1_1_DSP48_0_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
-WARNING: [DRC DPOP-2] MREG Output pipelining: DSP design_1_i/yolo_conv_top_0/inst/grp_window_macc_fu_1212/yolo_conv_top_mul_mul_14s_16s_30_1_1_U11/yolo_conv_top_mul_mul_14s_16s_30_1_1_DSP48_0_U/p multiplier stage design_1_i/yolo_conv_top_0/inst/grp_window_macc_fu_1212/yolo_conv_top_mul_mul_14s_16s_30_1_1_U11/yolo_conv_top_mul_mul_14s_16s_30_1_1_DSP48_0_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
-WARNING: [DRC DPOP-2] MREG Output pipelining: DSP design_1_i/yolo_conv_top_0/inst/grp_window_macc_fu_1212/yolo_conv_top_mul_mul_14s_16s_30_1_1_U12/yolo_conv_top_mul_mul_14s_16s_30_1_1_DSP48_0_U/p multiplier stage design_1_i/yolo_conv_top_0/inst/grp_window_macc_fu_1212/yolo_conv_top_mul_mul_14s_16s_30_1_1_U12/yolo_conv_top_mul_mul_14s_16s_30_1_1_DSP48_0_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
-WARNING: [DRC DPOP-2] MREG Output pipelining: DSP design_1_i/yolo_conv_top_0/inst/grp_window_macc_fu_1212/yolo_conv_top_mul_mul_14s_16s_30_1_1_U13/yolo_conv_top_mul_mul_14s_16s_30_1_1_DSP48_0_U/p multiplier stage design_1_i/yolo_conv_top_0/inst/grp_window_macc_fu_1212/yolo_conv_top_mul_mul_14s_16s_30_1_1_U13/yolo_conv_top_mul_mul_14s_16s_30_1_1_DSP48_0_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
-WARNING: [DRC DPOP-2] MREG Output pipelining: DSP design_1_i/yolo_conv_top_0/inst/grp_window_macc_fu_1212/yolo_conv_top_mul_mul_14s_16s_30_1_1_U14/yolo_conv_top_mul_mul_14s_16s_30_1_1_DSP48_0_U/p multiplier stage design_1_i/yolo_conv_top_0/inst/grp_window_macc_fu_1212/yolo_conv_top_mul_mul_14s_16s_30_1_1_U14/yolo_conv_top_mul_mul_14s_16s_30_1_1_DSP48_0_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
-WARNING: [DRC DPOP-2] MREG Output pipelining: DSP design_1_i/yolo_conv_top_0/inst/grp_window_macc_fu_1212/yolo_conv_top_mul_mul_14s_16s_30_1_1_U15/yolo_conv_top_mul_mul_14s_16s_30_1_1_DSP48_0_U/p multiplier stage design_1_i/yolo_conv_top_0/inst/grp_window_macc_fu_1212/yolo_conv_top_mul_mul_14s_16s_30_1_1_U15/yolo_conv_top_mul_mul_14s_16s_30_1_1_DSP48_0_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
-WARNING: [DRC DPOP-2] MREG Output pipelining: DSP design_1_i/yolo_conv_top_0/inst/grp_window_macc_fu_1212/yolo_conv_top_mul_mul_14s_16s_30_1_1_U16/yolo_conv_top_mul_mul_14s_16s_30_1_1_DSP48_0_U/p multiplier stage design_1_i/yolo_conv_top_0/inst/grp_window_macc_fu_1212/yolo_conv_top_mul_mul_14s_16s_30_1_1_U16/yolo_conv_top_mul_mul_14s_16s_30_1_1_DSP48_0_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
-WARNING: [DRC DPOP-2] MREG Output pipelining: DSP design_1_i/yolo_conv_top_0/inst/grp_window_macc_fu_1212/yolo_conv_top_mul_mul_14s_16s_30_1_1_U17/yolo_conv_top_mul_mul_14s_16s_30_1_1_DSP48_0_U/p multiplier stage design_1_i/yolo_conv_top_0/inst/grp_window_macc_fu_1212/yolo_conv_top_mul_mul_14s_16s_30_1_1_U17/yolo_conv_top_mul_mul_14s_16s_30_1_1_DSP48_0_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
-WARNING: [DRC DPOP-2] MREG Output pipelining: DSP design_1_i/yolo_conv_top_0/inst/grp_window_macc_fu_1212/yolo_conv_top_mul_mul_14s_16s_30_1_1_U18/yolo_conv_top_mul_mul_14s_16s_30_1_1_DSP48_0_U/p multiplier stage design_1_i/yolo_conv_top_0/inst/grp_window_macc_fu_1212/yolo_conv_top_mul_mul_14s_16s_30_1_1_U18/yolo_conv_top_mul_mul_14s_16s_30_1_1_DSP48_0_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
-WARNING: [DRC DPOP-2] MREG Output pipelining: DSP design_1_i/yolo_conv_top_0/inst/yolo_conv_top_mul_mul_6ns_16s_22_1_1_U61/yolo_conv_top_mul_mul_6ns_16s_22_1_1_DSP48_1_U/p multiplier stage design_1_i/yolo_conv_top_0/inst/yolo_conv_top_mul_mul_6ns_16s_22_1_1_U61/yolo_conv_top_mul_mul_6ns_16s_22_1_1_DSP48_1_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
-WARNING: [DRC DPOP-2] MREG Output pipelining: DSP design_1_i/yolo_conv_top_0/inst/yolo_conv_top_mul_mul_6ns_16s_22_1_1_U62/yolo_conv_top_mul_mul_6ns_16s_22_1_1_DSP48_1_U/p multiplier stage design_1_i/yolo_conv_top_0/inst/yolo_conv_top_mul_mul_6ns_16s_22_1_1_U62/yolo_conv_top_mul_mul_6ns_16s_22_1_1_DSP48_1_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
-WARNING: [DRC DPOP-2] MREG Output pipelining: DSP design_1_i/yolo_conv_top_0/inst/yolo_conv_top_mul_mul_6ns_16s_22_1_1_U63/yolo_conv_top_mul_mul_6ns_16s_22_1_1_DSP48_1_U/p multiplier stage design_1_i/yolo_conv_top_0/inst/yolo_conv_top_mul_mul_6ns_16s_22_1_1_U63/yolo_conv_top_mul_mul_6ns_16s_22_1_1_DSP48_1_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
-WARNING: [DRC DPOP-2] MREG Output pipelining: DSP design_1_i/yolo_conv_top_0/inst/yolo_conv_top_mul_mul_6ns_16s_22_1_1_U64/yolo_conv_top_mul_mul_6ns_16s_22_1_1_DSP48_1_U/p multiplier stage design_1_i/yolo_conv_top_0/inst/yolo_conv_top_mul_mul_6ns_16s_22_1_1_U64/yolo_conv_top_mul_mul_6ns_16s_22_1_1_DSP48_1_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
-WARNING: [DRC DPOP-2] MREG Output pipelining: DSP design_1_i/yolo_conv_top_0/inst/yolo_conv_top_mul_mul_6ns_16s_22_1_1_U65/yolo_conv_top_mul_mul_6ns_16s_22_1_1_DSP48_1_U/p multiplier stage design_1_i/yolo_conv_top_0/inst/yolo_conv_top_mul_mul_6ns_16s_22_1_1_U65/yolo_conv_top_mul_mul_6ns_16s_22_1_1_DSP48_1_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
-WARNING: [DRC DPOP-2] MREG Output pipelining: DSP design_1_i/yolo_conv_top_0/inst/yolo_conv_top_mul_mul_6ns_16s_22_1_1_U66/yolo_conv_top_mul_mul_6ns_16s_22_1_1_DSP48_1_U/p multiplier stage design_1_i/yolo_conv_top_0/inst/yolo_conv_top_mul_mul_6ns_16s_22_1_1_U66/yolo_conv_top_mul_mul_6ns_16s_22_1_1_DSP48_1_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
-WARNING: [DRC DPOP-2] MREG Output pipelining: DSP design_1_i/yolo_conv_top_0/inst/yolo_conv_top_mul_mul_6ns_16s_22_1_1_U67/yolo_conv_top_mul_mul_6ns_16s_22_1_1_DSP48_1_U/p multiplier stage design_1_i/yolo_conv_top_0/inst/yolo_conv_top_mul_mul_6ns_16s_22_1_1_U67/yolo_conv_top_mul_mul_6ns_16s_22_1_1_DSP48_1_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPIP-1] Input pipelining: DSP design_1_i/yolo_conv_top_0/inst/yolo_conv_top_mul_mul_6ns_16s_22_1_1_U77/yolo_conv_top_mul_mul_6ns_16s_22_1_1_DSP48_1_U/p input design_1_i/yolo_conv_top_0/inst/yolo_conv_top_mul_mul_6ns_16s_22_1_1_U77/yolo_conv_top_mul_mul_6ns_16s_22_1_1_DSP48_1_U/p/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP design_1_i/yolo_conv_top_0/inst/yolo_conv_top_mul_mul_6ns_16s_22_1_1_U78/yolo_conv_top_mul_mul_6ns_16s_22_1_1_DSP48_1_U/p input design_1_i/yolo_conv_top_0/inst/yolo_conv_top_mul_mul_6ns_16s_22_1_1_U78/yolo_conv_top_mul_mul_6ns_16s_22_1_1_DSP48_1_U/p/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP design_1_i/yolo_conv_top_0/inst/yolo_conv_top_mul_mul_6ns_16s_22_1_1_U79/yolo_conv_top_mul_mul_6ns_16s_22_1_1_DSP48_1_U/p input design_1_i/yolo_conv_top_0/inst/yolo_conv_top_mul_mul_6ns_16s_22_1_1_U79/yolo_conv_top_mul_mul_6ns_16s_22_1_1_DSP48_1_U/p/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP design_1_i/yolo_conv_top_0/inst/yolo_conv_top_mul_mul_6ns_16s_22_1_1_U80/yolo_conv_top_mul_mul_6ns_16s_22_1_1_DSP48_1_U/p input design_1_i/yolo_conv_top_0/inst/yolo_conv_top_mul_mul_6ns_16s_22_1_1_U80/yolo_conv_top_mul_mul_6ns_16s_22_1_1_DSP48_1_U/p/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP design_1_i/yolo_conv_top_0/inst/yolo_conv_top_mul_mul_6ns_16s_22_1_1_U81/yolo_conv_top_mul_mul_6ns_16s_22_1_1_DSP48_1_U/p input design_1_i/yolo_conv_top_0/inst/yolo_conv_top_mul_mul_6ns_16s_22_1_1_U81/yolo_conv_top_mul_mul_6ns_16s_22_1_1_DSP48_1_U/p/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP design_1_i/yolo_conv_top_0/inst/yolo_conv_top_mul_mul_6ns_16s_22_1_1_U82/yolo_conv_top_mul_mul_6ns_16s_22_1_1_DSP48_1_U/p input design_1_i/yolo_conv_top_0/inst/yolo_conv_top_mul_mul_6ns_16s_22_1_1_U82/yolo_conv_top_mul_mul_6ns_16s_22_1_1_DSP48_1_U/p/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP design_1_i/yolo_conv_top_0/inst/yolo_conv_top_mul_mul_6ns_16s_22_1_1_U83/yolo_conv_top_mul_mul_6ns_16s_22_1_1_DSP48_1_U/p input design_1_i/yolo_conv_top_0/inst/yolo_conv_top_mul_mul_6ns_16s_22_1_1_U83/yolo_conv_top_mul_mul_6ns_16s_22_1_1_DSP48_1_U/p/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP design_1_i/yolo_conv_top_0/inst/grp_window_macc_fu_3772/yolo_conv_top_mul_mul_16s_16s_32_1_0_U10/yolo_conv_top_mul_mul_16s_16s_32_1_0_DSP48_0_U/p multiplier stage design_1_i/yolo_conv_top_0/inst/grp_window_macc_fu_3772/yolo_conv_top_mul_mul_16s_16s_32_1_0_U10/yolo_conv_top_mul_mul_16s_16s_32_1_0_DSP48_0_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP design_1_i/yolo_conv_top_0/inst/grp_window_macc_fu_3772/yolo_conv_top_mul_mul_16s_16s_32_1_0_U11/yolo_conv_top_mul_mul_16s_16s_32_1_0_DSP48_0_U/p multiplier stage design_1_i/yolo_conv_top_0/inst/grp_window_macc_fu_3772/yolo_conv_top_mul_mul_16s_16s_32_1_0_U11/yolo_conv_top_mul_mul_16s_16s_32_1_0_DSP48_0_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP design_1_i/yolo_conv_top_0/inst/grp_window_macc_fu_3772/yolo_conv_top_mul_mul_16s_16s_32_1_0_U12/yolo_conv_top_mul_mul_16s_16s_32_1_0_DSP48_0_U/p multiplier stage design_1_i/yolo_conv_top_0/inst/grp_window_macc_fu_3772/yolo_conv_top_mul_mul_16s_16s_32_1_0_U12/yolo_conv_top_mul_mul_16s_16s_32_1_0_DSP48_0_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP design_1_i/yolo_conv_top_0/inst/grp_window_macc_fu_3772/yolo_conv_top_mul_mul_16s_16s_32_1_0_U13/yolo_conv_top_mul_mul_16s_16s_32_1_0_DSP48_0_U/p multiplier stage design_1_i/yolo_conv_top_0/inst/grp_window_macc_fu_3772/yolo_conv_top_mul_mul_16s_16s_32_1_0_U13/yolo_conv_top_mul_mul_16s_16s_32_1_0_DSP48_0_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP design_1_i/yolo_conv_top_0/inst/grp_window_macc_fu_3772/yolo_conv_top_mul_mul_16s_16s_32_1_0_U14/yolo_conv_top_mul_mul_16s_16s_32_1_0_DSP48_0_U/p multiplier stage design_1_i/yolo_conv_top_0/inst/grp_window_macc_fu_3772/yolo_conv_top_mul_mul_16s_16s_32_1_0_U14/yolo_conv_top_mul_mul_16s_16s_32_1_0_DSP48_0_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP design_1_i/yolo_conv_top_0/inst/grp_window_macc_fu_3772/yolo_conv_top_mul_mul_16s_16s_32_1_0_U15/yolo_conv_top_mul_mul_16s_16s_32_1_0_DSP48_0_U/p multiplier stage design_1_i/yolo_conv_top_0/inst/grp_window_macc_fu_3772/yolo_conv_top_mul_mul_16s_16s_32_1_0_U15/yolo_conv_top_mul_mul_16s_16s_32_1_0_DSP48_0_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP design_1_i/yolo_conv_top_0/inst/grp_window_macc_fu_3772/yolo_conv_top_mul_mul_16s_16s_32_1_0_U16/yolo_conv_top_mul_mul_16s_16s_32_1_0_DSP48_0_U/p multiplier stage design_1_i/yolo_conv_top_0/inst/grp_window_macc_fu_3772/yolo_conv_top_mul_mul_16s_16s_32_1_0_U16/yolo_conv_top_mul_mul_16s_16s_32_1_0_DSP48_0_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP design_1_i/yolo_conv_top_0/inst/grp_window_macc_fu_3772/yolo_conv_top_mul_mul_16s_16s_32_1_0_U17/yolo_conv_top_mul_mul_16s_16s_32_1_0_DSP48_0_U/p multiplier stage design_1_i/yolo_conv_top_0/inst/grp_window_macc_fu_3772/yolo_conv_top_mul_mul_16s_16s_32_1_0_U17/yolo_conv_top_mul_mul_16s_16s_32_1_0_DSP48_0_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP design_1_i/yolo_conv_top_0/inst/grp_window_macc_fu_3772/yolo_conv_top_mul_mul_16s_16s_32_1_0_U18/yolo_conv_top_mul_mul_16s_16s_32_1_0_DSP48_0_U/p multiplier stage design_1_i/yolo_conv_top_0/inst/grp_window_macc_fu_3772/yolo_conv_top_mul_mul_16s_16s_32_1_0_U18/yolo_conv_top_mul_mul_16s_16s_32_1_0_DSP48_0_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP design_1_i/yolo_conv_top_0/inst/grp_window_macc_fu_3794/yolo_conv_top_mul_mul_16s_16s_32_1_0_U10/yolo_conv_top_mul_mul_16s_16s_32_1_0_DSP48_0_U/p multiplier stage design_1_i/yolo_conv_top_0/inst/grp_window_macc_fu_3794/yolo_conv_top_mul_mul_16s_16s_32_1_0_U10/yolo_conv_top_mul_mul_16s_16s_32_1_0_DSP48_0_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP design_1_i/yolo_conv_top_0/inst/grp_window_macc_fu_3794/yolo_conv_top_mul_mul_16s_16s_32_1_0_U11/yolo_conv_top_mul_mul_16s_16s_32_1_0_DSP48_0_U/p multiplier stage design_1_i/yolo_conv_top_0/inst/grp_window_macc_fu_3794/yolo_conv_top_mul_mul_16s_16s_32_1_0_U11/yolo_conv_top_mul_mul_16s_16s_32_1_0_DSP48_0_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP design_1_i/yolo_conv_top_0/inst/grp_window_macc_fu_3794/yolo_conv_top_mul_mul_16s_16s_32_1_0_U12/yolo_conv_top_mul_mul_16s_16s_32_1_0_DSP48_0_U/p multiplier stage design_1_i/yolo_conv_top_0/inst/grp_window_macc_fu_3794/yolo_conv_top_mul_mul_16s_16s_32_1_0_U12/yolo_conv_top_mul_mul_16s_16s_32_1_0_DSP48_0_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP design_1_i/yolo_conv_top_0/inst/grp_window_macc_fu_3794/yolo_conv_top_mul_mul_16s_16s_32_1_0_U13/yolo_conv_top_mul_mul_16s_16s_32_1_0_DSP48_0_U/p multiplier stage design_1_i/yolo_conv_top_0/inst/grp_window_macc_fu_3794/yolo_conv_top_mul_mul_16s_16s_32_1_0_U13/yolo_conv_top_mul_mul_16s_16s_32_1_0_DSP48_0_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP design_1_i/yolo_conv_top_0/inst/grp_window_macc_fu_3794/yolo_conv_top_mul_mul_16s_16s_32_1_0_U14/yolo_conv_top_mul_mul_16s_16s_32_1_0_DSP48_0_U/p multiplier stage design_1_i/yolo_conv_top_0/inst/grp_window_macc_fu_3794/yolo_conv_top_mul_mul_16s_16s_32_1_0_U14/yolo_conv_top_mul_mul_16s_16s_32_1_0_DSP48_0_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP design_1_i/yolo_conv_top_0/inst/grp_window_macc_fu_3794/yolo_conv_top_mul_mul_16s_16s_32_1_0_U15/yolo_conv_top_mul_mul_16s_16s_32_1_0_DSP48_0_U/p multiplier stage design_1_i/yolo_conv_top_0/inst/grp_window_macc_fu_3794/yolo_conv_top_mul_mul_16s_16s_32_1_0_U15/yolo_conv_top_mul_mul_16s_16s_32_1_0_DSP48_0_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP design_1_i/yolo_conv_top_0/inst/grp_window_macc_fu_3794/yolo_conv_top_mul_mul_16s_16s_32_1_0_U16/yolo_conv_top_mul_mul_16s_16s_32_1_0_DSP48_0_U/p multiplier stage design_1_i/yolo_conv_top_0/inst/grp_window_macc_fu_3794/yolo_conv_top_mul_mul_16s_16s_32_1_0_U16/yolo_conv_top_mul_mul_16s_16s_32_1_0_DSP48_0_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP design_1_i/yolo_conv_top_0/inst/grp_window_macc_fu_3794/yolo_conv_top_mul_mul_16s_16s_32_1_0_U17/yolo_conv_top_mul_mul_16s_16s_32_1_0_DSP48_0_U/p multiplier stage design_1_i/yolo_conv_top_0/inst/grp_window_macc_fu_3794/yolo_conv_top_mul_mul_16s_16s_32_1_0_U17/yolo_conv_top_mul_mul_16s_16s_32_1_0_DSP48_0_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP design_1_i/yolo_conv_top_0/inst/grp_window_macc_fu_3794/yolo_conv_top_mul_mul_16s_16s_32_1_0_U18/yolo_conv_top_mul_mul_16s_16s_32_1_0_DSP48_0_U/p multiplier stage design_1_i/yolo_conv_top_0/inst/grp_window_macc_fu_3794/yolo_conv_top_mul_mul_16s_16s_32_1_0_U18/yolo_conv_top_mul_mul_16s_16s_32_1_0_DSP48_0_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
 WARNING: [DRC DPOP-2] MREG Output pipelining: DSP design_1_i/yolo_conv_top_0/inst/yolo_conv_top_mul_mul_6ns_16s_22_1_1_U68/yolo_conv_top_mul_mul_6ns_16s_22_1_1_DSP48_1_U/p multiplier stage design_1_i/yolo_conv_top_0/inst/yolo_conv_top_mul_mul_6ns_16s_22_1_1_U68/yolo_conv_top_mul_mul_6ns_16s_22_1_1_DSP48_1_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
 WARNING: [DRC DPOP-2] MREG Output pipelining: DSP design_1_i/yolo_conv_top_0/inst/yolo_conv_top_mul_mul_6ns_16s_22_1_1_U69/yolo_conv_top_mul_mul_6ns_16s_22_1_1_DSP48_1_U/p multiplier stage design_1_i/yolo_conv_top_0/inst/yolo_conv_top_mul_mul_6ns_16s_22_1_1_U69/yolo_conv_top_mul_mul_6ns_16s_22_1_1_DSP48_1_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
 WARNING: [DRC DPOP-2] MREG Output pipelining: DSP design_1_i/yolo_conv_top_0/inst/yolo_conv_top_mul_mul_6ns_16s_22_1_1_U70/yolo_conv_top_mul_mul_6ns_16s_22_1_1_DSP48_1_U/p multiplier stage design_1_i/yolo_conv_top_0/inst/yolo_conv_top_mul_mul_6ns_16s_22_1_1_U70/yolo_conv_top_mul_mul_6ns_16s_22_1_1_DSP48_1_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
@@ -766,9 +723,16 @@ WARNING: [DRC DPOP-2] MREG Output pipelining: DSP design_1_i/yolo_conv_top_0/ins
 WARNING: [DRC DPOP-2] MREG Output pipelining: DSP design_1_i/yolo_conv_top_0/inst/yolo_conv_top_mul_mul_6ns_16s_22_1_1_U74/yolo_conv_top_mul_mul_6ns_16s_22_1_1_DSP48_1_U/p multiplier stage design_1_i/yolo_conv_top_0/inst/yolo_conv_top_mul_mul_6ns_16s_22_1_1_U74/yolo_conv_top_mul_mul_6ns_16s_22_1_1_DSP48_1_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
 WARNING: [DRC DPOP-2] MREG Output pipelining: DSP design_1_i/yolo_conv_top_0/inst/yolo_conv_top_mul_mul_6ns_16s_22_1_1_U75/yolo_conv_top_mul_mul_6ns_16s_22_1_1_DSP48_1_U/p multiplier stage design_1_i/yolo_conv_top_0/inst/yolo_conv_top_mul_mul_6ns_16s_22_1_1_U75/yolo_conv_top_mul_mul_6ns_16s_22_1_1_DSP48_1_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
 WARNING: [DRC DPOP-2] MREG Output pipelining: DSP design_1_i/yolo_conv_top_0/inst/yolo_conv_top_mul_mul_6ns_16s_22_1_1_U76/yolo_conv_top_mul_mul_6ns_16s_22_1_1_DSP48_1_U/p multiplier stage design_1_i/yolo_conv_top_0/inst/yolo_conv_top_mul_mul_6ns_16s_22_1_1_U76/yolo_conv_top_mul_mul_6ns_16s_22_1_1_DSP48_1_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP design_1_i/yolo_conv_top_0/inst/yolo_conv_top_mul_mul_6ns_16s_22_1_1_U77/yolo_conv_top_mul_mul_6ns_16s_22_1_1_DSP48_1_U/p multiplier stage design_1_i/yolo_conv_top_0/inst/yolo_conv_top_mul_mul_6ns_16s_22_1_1_U77/yolo_conv_top_mul_mul_6ns_16s_22_1_1_DSP48_1_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP design_1_i/yolo_conv_top_0/inst/yolo_conv_top_mul_mul_6ns_16s_22_1_1_U78/yolo_conv_top_mul_mul_6ns_16s_22_1_1_DSP48_1_U/p multiplier stage design_1_i/yolo_conv_top_0/inst/yolo_conv_top_mul_mul_6ns_16s_22_1_1_U78/yolo_conv_top_mul_mul_6ns_16s_22_1_1_DSP48_1_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP design_1_i/yolo_conv_top_0/inst/yolo_conv_top_mul_mul_6ns_16s_22_1_1_U79/yolo_conv_top_mul_mul_6ns_16s_22_1_1_DSP48_1_U/p multiplier stage design_1_i/yolo_conv_top_0/inst/yolo_conv_top_mul_mul_6ns_16s_22_1_1_U79/yolo_conv_top_mul_mul_6ns_16s_22_1_1_DSP48_1_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP design_1_i/yolo_conv_top_0/inst/yolo_conv_top_mul_mul_6ns_16s_22_1_1_U80/yolo_conv_top_mul_mul_6ns_16s_22_1_1_DSP48_1_U/p multiplier stage design_1_i/yolo_conv_top_0/inst/yolo_conv_top_mul_mul_6ns_16s_22_1_1_U80/yolo_conv_top_mul_mul_6ns_16s_22_1_1_DSP48_1_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP design_1_i/yolo_conv_top_0/inst/yolo_conv_top_mul_mul_6ns_16s_22_1_1_U81/yolo_conv_top_mul_mul_6ns_16s_22_1_1_DSP48_1_U/p multiplier stage design_1_i/yolo_conv_top_0/inst/yolo_conv_top_mul_mul_6ns_16s_22_1_1_U81/yolo_conv_top_mul_mul_6ns_16s_22_1_1_DSP48_1_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP design_1_i/yolo_conv_top_0/inst/yolo_conv_top_mul_mul_6ns_16s_22_1_1_U82/yolo_conv_top_mul_mul_6ns_16s_22_1_1_DSP48_1_U/p multiplier stage design_1_i/yolo_conv_top_0/inst/yolo_conv_top_mul_mul_6ns_16s_22_1_1_U82/yolo_conv_top_mul_mul_6ns_16s_22_1_1_DSP48_1_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP design_1_i/yolo_conv_top_0/inst/yolo_conv_top_mul_mul_6ns_16s_22_1_1_U83/yolo_conv_top_mul_mul_6ns_16s_22_1_1_DSP48_1_U/p multiplier stage design_1_i/yolo_conv_top_0/inst/yolo_conv_top_mul_mul_6ns_16s_22_1_1_U83/yolo_conv_top_mul_mul_6ns_16s_22_1_1_DSP48_1_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
 INFO: [DRC REQP-181] writefirst: Synchronous clocking is detected for BRAM (design_1_i/axi_dma_0/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg) in SDP mode with WRITE_FIRST write-mode. This is the preferred mode for best power characteristics, however it may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
 INFO: [DRC REQP-181] writefirst: Synchronous clocking is detected for BRAM (design_1_i/axi_dma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg) in SDP mode with WRITE_FIRST write-mode. This is the preferred mode for best power characteristics, however it may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
-INFO: [Vivado 12-3199] DRC finished with 0 Errors, 86 Warnings, 2 Advisories
+INFO: [Vivado 12-3199] DRC finished with 0 Errors, 50 Warnings, 2 Advisories
 INFO: [Vivado 12-3200] Please refer to the DRC report (report_drc) for more information.
 INFO: [Designutils 20-2272] Running write_bitstream with 4 threads.
 Loading data files...
@@ -780,9 +744,9 @@ Creating bitstream...
 Writing bitstream ./design_1_wrapper.bit...
 INFO: [Vivado 12-1842] Bitgen Completed Successfully.
 INFO: [Project 1-120] WebTalk data collection is mandatory when using a WebPACK part without a full Vivado license. To see the specific WebTalk data collected for your design, open the usage_statistics_webtalk.html or usage_statistics_webtalk.xml file in the implementation directory.
-INFO: [Common 17-186] '/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019/yolo_conv_fp_prj_2019.runs/impl_1/usage_statistics_webtalk.xml' has been successfully sent to Xilinx on Sat Jun 22 10:37:54 2019. For additional details about this file, please refer to the WebTalk help file at /opt/Xilinx_2019_1/Vivado/2019.1/doc/webtalk_introduction.html.
+INFO: [Common 17-186] '/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019/yolo_conv_fp_prj_2019.runs/impl_1/usage_statistics_webtalk.xml' has been successfully sent to Xilinx on Fri Jun 28 11:00:51 2019. For additional details about this file, please refer to the WebTalk help file at /opt/Xilinx_2019_1/Vivado/2019.1/doc/webtalk_introduction.html.
 INFO: [Common 17-83] Releasing license: Implementation
-142 Infos, 90 Warnings, 0 Critical Warnings and 0 Errors encountered.
+141 Infos, 54 Warnings, 0 Critical Warnings and 0 Errors encountered.
 write_bitstream completed successfully
-write_bitstream: Time (s): cpu = 00:00:38 ; elapsed = 00:00:37 . Memory (MB): peak = 3179.008 ; gain = 314.852 ; free physical = 1442 ; free virtual = 11938
-INFO: [Common 17-206] Exiting Vivado at Sat Jun 22 10:37:54 2019...
+write_bitstream: Time (s): cpu = 00:00:42 ; elapsed = 00:00:37 . Memory (MB): peak = 3203.629 ; gain = 288.039 ; free physical = 1420 ; free virtual = 11959
+INFO: [Common 17-206] Exiting Vivado at Fri Jun 28 11:00:51 2019...
