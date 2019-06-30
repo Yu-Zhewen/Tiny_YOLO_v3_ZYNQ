@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <synLog/>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <synLog>
+        <logs message="WARNING: [SCHED 204-69] Unable to schedule 'load' operation ('Window&lt;2, 2, ap_fixed&lt;16, 8, 4, 0, 0> >.val[0].V[1]', yolo_max_pool_fp_2019_64/src/yolo_max_pool.cpp:132->yolo_max_pool_fp_2019_64/src/yolo_max_pool.cpp:82) on array 'line_buff_group_0.val[0].V', yolo_max_pool_fp_2019_64/src/yolo_max_pool.cpp:10 due to limited memory ports. Please consider using a memory core with more ports or partitioning the array 'line_buff_group_0_va'." projectName="yolo_max_pool_fp_2019_64" solutionName="solution1" date="2019-06-30T20:58:31.202+0100" type="Warning"/>
+        <logs message="WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'line_buff_group_3.va' (yolo_max_pool_fp_2019_64/src/yolo_max_pool.cpp:13)." projectName="yolo_max_pool_fp_2019_64" solutionName="solution1" date="2019-06-30T20:58:30.736+0100" type="Warning"/>
+        <logs message="WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'line_buff_group_3.va' (yolo_max_pool_fp_2019_64/src/yolo_max_pool.cpp:13)." projectName="yolo_max_pool_fp_2019_64" solutionName="solution1" date="2019-06-30T20:58:30.386+0100" type="Warning"/>
+        <logs message="WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'line_buff_group_2.va' (yolo_max_pool_fp_2019_64/src/yolo_max_pool.cpp:12)." projectName="yolo_max_pool_fp_2019_64" solutionName="solution1" date="2019-06-30T20:58:30.379+0100" type="Warning"/>
+        <logs message="WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'line_buff_group_2.va' (yolo_max_pool_fp_2019_64/src/yolo_max_pool.cpp:12)." projectName="yolo_max_pool_fp_2019_64" solutionName="solution1" date="2019-06-30T20:58:30.373+0100" type="Warning"/>
+        <logs message="WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'line_buff_group_1.va' (yolo_max_pool_fp_2019_64/src/yolo_max_pool.cpp:11)." projectName="yolo_max_pool_fp_2019_64" solutionName="solution1" date="2019-06-30T20:58:30.368+0100" type="Warning"/>
+        <logs message="WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'line_buff_group_1.va' (yolo_max_pool_fp_2019_64/src/yolo_max_pool.cpp:11)." projectName="yolo_max_pool_fp_2019_64" solutionName="solution1" date="2019-06-30T20:58:30.363+0100" type="Warning"/>
+        <logs message="WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'line_buff_group_0.va' (yolo_max_pool_fp_2019_64/src/yolo_max_pool.cpp:10)." projectName="yolo_max_pool_fp_2019_64" solutionName="solution1" date="2019-06-30T20:58:30.359+0100" type="Warning"/>
+        <logs message="WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'line_buff_group_0.va' (yolo_max_pool_fp_2019_64/src/yolo_max_pool.cpp:10)." projectName="yolo_max_pool_fp_2019_64" solutionName="solution1" date="2019-06-30T20:58:30.353+0100" type="Warning"/>
+      </synLog>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>

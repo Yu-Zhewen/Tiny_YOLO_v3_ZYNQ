@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xd:acceleratorMap xmlns:xd="http://www.xilinx.com/xidane" xd:functionName="yolo_max_pool_top" xd:componentRef="yolo_max_pool_top" xd:initiationInterval="1384472" xd:clockPeriod="10.000" xd:sequential="true" xd:hostMachine="64" xd:reset="control">
+  <xd:controlReg xd:name="control" xd:interfaceRef="s_axi_AXILiteS" xd:busTypeRef="axilite" xd:type="generic_axi_lite" xd:offset="0x0"/>
+  <xd:arg xd:name="inStream.data.sub_data_0" xd:originalName="inStream" xd:direction="in" xd:interfaceRef="inStream" xd:busTypeRef="axis" xd:dataPack="true" xd:bitMapping="15:0" xd:dataWidth="16"/>
+  <xd:arg xd:name="inStream.data.sub_data_1" xd:originalName="inStream" xd:direction="in" xd:interfaceRef="inStream" xd:busTypeRef="axis" xd:dataPack="true" xd:bitMapping="31:16" xd:dataWidth="16"/>
+  <xd:arg xd:name="inStream.data.sub_data_2" xd:originalName="inStream" xd:direction="in" xd:interfaceRef="inStream" xd:busTypeRef="axis" xd:dataPack="true" xd:bitMapping="47:32" xd:dataWidth="16"/>
+  <xd:arg xd:name="inStream.data.sub_data_3" xd:originalName="inStream" xd:direction="in" xd:interfaceRef="inStream" xd:busTypeRef="axis" xd:dataPack="true" xd:bitMapping="63:48" xd:dataWidth="16"/>
+  <xd:arg xd:name="inStream.keep" xd:originalName="inStream" xd:direction="in" xd:interfaceRef="inStream" xd:busTypeRef="axis" xd:dataWidth="8"/>
+  <xd:arg xd:name="inStream.strb" xd:originalName="inStream" xd:direction="in" xd:interfaceRef="inStream" xd:busTypeRef="axis" xd:dataWidth="8"/>
+  <xd:arg xd:name="inStream.user" xd:originalName="inStream" xd:direction="in" xd:interfaceRef="inStream" xd:busTypeRef="axis" xd:dataWidth="2"/>
+  <xd:arg xd:name="inStream.last" xd:originalName="inStream" xd:direction="in" xd:interfaceRef="inStream" xd:busTypeRef="axis" xd:dataWidth="1"/>
+  <xd:arg xd:name="inStream.id" xd:originalName="inStream" xd:direction="in" xd:interfaceRef="inStream" xd:busTypeRef="axis" xd:dataWidth="5"/>
+  <xd:arg xd:name="inStream.dest" xd:originalName="inStream" xd:direction="in" xd:interfaceRef="inStream" xd:busTypeRef="axis" xd:dataWidth="6"/>
+  <xd:arg xd:name="outStream.data.sub_data_0" xd:originalName="outStream" xd:direction="out" xd:interfaceRef="outStream" xd:busTypeRef="axis" xd:dataPack="true" xd:bitMapping="15:0" xd:dataWidth="16"/>
+  <xd:arg xd:name="outStream.data.sub_data_1" xd:originalName="outStream" xd:direction="out" xd:interfaceRef="outStream" xd:busTypeRef="axis" xd:dataPack="true" xd:bitMapping="31:16" xd:dataWidth="16"/>
+  <xd:arg xd:name="outStream.data.sub_data_2" xd:originalName="outStream" xd:direction="out" xd:interfaceRef="outStream" xd:busTypeRef="axis" xd:dataPack="true" xd:bitMapping="47:32" xd:dataWidth="16"/>
+  <xd:arg xd:name="outStream.data.sub_data_3" xd:originalName="outStream" xd:direction="out" xd:interfaceRef="outStream" xd:busTypeRef="axis" xd:dataPack="true" xd:bitMapping="63:48" xd:dataWidth="16"/>
+  <xd:arg xd:name="outStream.keep" xd:originalName="outStream" xd:direction="out" xd:interfaceRef="outStream" xd:busTypeRef="axis" xd:dataWidth="8"/>
+  <xd:arg xd:name="outStream.strb" xd:originalName="outStream" xd:direction="out" xd:interfaceRef="outStream" xd:busTypeRef="axis" xd:dataWidth="8"/>
+  <xd:arg xd:name="outStream.user" xd:originalName="outStream" xd:direction="out" xd:interfaceRef="outStream" xd:busTypeRef="axis" xd:dataWidth="2"/>
+  <xd:arg xd:name="outStream.last" xd:originalName="outStream" xd:direction="out" xd:interfaceRef="outStream" xd:busTypeRef="axis" xd:dataWidth="1"/>
+  <xd:arg xd:name="outStream.id" xd:originalName="outStream" xd:direction="out" xd:interfaceRef="outStream" xd:busTypeRef="axis" xd:dataWidth="5"/>
+  <xd:arg xd:name="outStream.dest" xd:originalName="outStream" xd:direction="out" xd:interfaceRef="outStream" xd:busTypeRef="axis" xd:dataWidth="6"/>
+  <xd:latencyEstimates xd:best-case="1384471" xd:worst-case="1384471" xd:average-case="1384471"/>
+  <xd:resourceEstimates xd:LUT="5772" xd:FF="3130" xd:BRAM="16" xd:DSP="0"/>
+</xd:acceleratorMap>

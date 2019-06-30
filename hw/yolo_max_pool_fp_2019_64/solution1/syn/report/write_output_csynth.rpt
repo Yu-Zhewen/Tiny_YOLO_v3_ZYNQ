@@ -1,0 +1,137 @@
+
+
+================================================================
+== Vivado HLS Report for 'write_output'
+================================================================
+* Date:           Sun Jun 30 20:58:32 2019
+
+* Version:        2019.1 (Build 2552052 on Fri May 24 15:28:33 MDT 2019)
+* Project:        yolo_max_pool_fp_2019_64
+* Solution:       solution1
+* Product family: zynq
+* Target device:  xc7z020-clg484-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |  10.00|     0.000|        1.25|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+-----+-----+-----+----------+
+    |  Latency  |  Interval | Pipeline |
+    | min | max | min | max |   Type   |
+    +-----+-----+-----+-----+----------+
+    |    0|    0|    1|    1| function |
+    +-----+-----+-----+-----+----------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-------+--------+-------+-----+
+|       Name      | BRAM_18K| DSP48E|   FF   |  LUT  | URAM|
++-----------------+---------+-------+--------+-------+-----+
+|DSP              |        -|      -|       -|      -|    -|
+|Expression       |        -|      -|       -|      -|    -|
+|FIFO             |        -|      -|       -|      -|    -|
+|Instance         |        -|      -|       -|      -|    -|
+|Memory           |        -|      -|       -|      -|    -|
+|Multiplexer      |        -|      -|       -|      9|    -|
+|Register         |        -|      -|       1|      -|    -|
++-----------------+---------+-------+--------+-------+-----+
+|Total            |        0|      0|       1|      9|    0|
++-----------------+---------+-------+--------+-------+-----+
+|Available        |      280|    220|  106400|  53200|    0|
++-----------------+---------+-------+--------+-------+-----+
+|Utilization (%)  |        0|      0|   ~0   |   ~0  |    0|
++-----------------+---------+-------+--------+-------+-----+
+
++ Detail: 
+    * Instance: 
+    N/A
+
+    * DSP48E: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    N/A
+
+    * Multiplexer: 
+    +-----------------------+----+-----------+-----+-----------+
+    |          Name         | LUT| Input Size| Bits| Total Bits|
+    +-----------------------+----+-----------+-----+-----------+
+    |outStream_TDATA_blk_n  |   9|          2|    1|          2|
+    +-----------------------+----+-----------+-----+-----------+
+    |Total                  |   9|          2|    1|          2|
+    +-----------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +-----------+---+----+-----+-----------+
+    |    Name   | FF| LUT| Bits| Const Bits|
+    +-----------+---+----+-----+-----------+
+    |ap_CS_fsm  |  1|   0|    1|          0|
+    +-----------+---+----+-----+-----------+
+    |Total      |  1|   0|    1|          0|
+    +-----------+---+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++-----------------------+-----+-----+------------+---------------------+--------------+
+|       RTL Ports       | Dir | Bits|  Protocol  |    Source Object    |    C Type    |
++-----------------------+-----+-----+------------+---------------------+--------------+
+|ap_clk                 |  in |    1| ap_ctrl_hs |     write_output    | return value |
+|ap_rst                 |  in |    1| ap_ctrl_hs |     write_output    | return value |
+|ap_start               |  in |    1| ap_ctrl_hs |     write_output    | return value |
+|ap_done                | out |    1| ap_ctrl_hs |     write_output    | return value |
+|ap_idle                | out |    1| ap_ctrl_hs |     write_output    | return value |
+|ap_ready               | out |    1| ap_ctrl_hs |     write_output    | return value |
+|outStream_TDATA_blk_n  | out |    1| ap_ctrl_hs |     write_output    | return value |
+|ap_ce                  |  in |    1| ap_ctrl_hs |     write_output    | return value |
+|val_output_0_V         |  in |   16|   ap_none  |    val_output_0_V   |    scalar    |
+|val_output_1_V         |  in |   16|   ap_none  |    val_output_1_V   |    scalar    |
+|val_output_2_V         |  in |   16|   ap_none  |    val_output_2_V   |    scalar    |
+|val_output_3_V         |  in |   16|   ap_none  |    val_output_3_V   |    scalar    |
+|curr_input_keep_V      |  in |    8|   ap_none  |  curr_input_keep_V  |    scalar    |
+|curr_input_strb_V      |  in |    8|   ap_none  |  curr_input_strb_V  |    scalar    |
+|curr_input_user_V      |  in |    2|   ap_none  |  curr_input_user_V  |    scalar    |
+|curr_input_id_V        |  in |    5|   ap_none  |   curr_input_id_V   |    scalar    |
+|curr_input_dest_V      |  in |    6|   ap_none  |  curr_input_dest_V  |    scalar    |
+|outStream_TDATA        | out |   64|    axis    |  out_stream_V_data  |    pointer   |
+|outStream_TREADY       |  in |    1|    axis    |  out_stream_V_data  |    pointer   |
+|outStream_TVALID       | out |    1|    axis    | out_stream_V_dest_V |    pointer   |
+|outStream_TDEST        | out |    6|    axis    | out_stream_V_dest_V |    pointer   |
+|outStream_TKEEP        | out |    8|    axis    | out_stream_V_keep_V |    pointer   |
+|outStream_TSTRB        | out |    8|    axis    | out_stream_V_strb_V |    pointer   |
+|outStream_TUSER        | out |    2|    axis    | out_stream_V_user_V |    pointer   |
+|outStream_TLAST        | out |    1|    axis    | out_stream_V_last_V |    pointer   |
+|outStream_TID          | out |    5|    axis    |  out_stream_V_id_V  |    pointer   |
+|last_V                 |  in |    1|   ap_none  |        last_V       |    scalar    |
++-----------------------+-----+-----+------------+---------------------+--------------+
+

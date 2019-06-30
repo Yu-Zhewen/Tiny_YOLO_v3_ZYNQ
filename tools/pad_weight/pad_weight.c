@@ -28,9 +28,17 @@ int main()
 			fprintf(fp,"%hd,\n",kernel_weight_fp_bits[i*KERNEL_DIM*KERNEL_DIM+j]);
 		}
 		if(i==OUTPUT_CHANNEL*INPUT_CHANNEL-1)
-			fprintf(fp,"%hd};\n\n",0);
-		else
+		{
 			fprintf(fp,"%hd,\n",0);
+			fprintf(fp,"%hd,\n",0);
+			fprintf(fp,"%hd};\n\n",0);
+		}
+		else
+		{
+			fprintf(fp,"%hd,\n",0);
+			fprintf(fp,"%hd,\n",0);
+			fprintf(fp,"%hd,\n",0);
+		}
 	}
 	fprintf(fp,"#endif\n");
 

@@ -1,0 +1,254 @@
+<profile>
+
+<section name = "Vivado HLS Report for 'fork_window'" level="0">
+<item name = "Date">Sun Jun 30 19:35:09 2019
+</item>
+<item name = "Version">2019.1 (Build 2552052 on Fri May 24 15:28:33 MDT 2019)</item>
+<item name = "Project">yolo_conv_fp_2019_64</item>
+<item name = "Solution">solution1</item>
+<item name = "Product family">zynq</item>
+<item name = "Target device">xc7z020-clg484-1</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing (ns)">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">10.00, 0.000, 1.25</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency (clock cycles)">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">, min, max, min, max, Type</keys>
+<column name="">0, 0, 1, 1, function</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="7">Instance, Module, min, max, min, max, Type</keys>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Utilization Estimates" level="0">
+<item name = "Summary"><table name="" hasTotal="1">
+<keys size="6">Name, BRAM_18K, DSP48E, FF, LUT, URAM</keys>
+<column name="DSP">-, -, -, -, -</column>
+<column name="Expression">-, -, -, -, -</column>
+<column name="FIFO">-, -, -, -, -</column>
+<column name="Instance">-, -, -, -, -</column>
+<column name="Memory">-, -, -, -, -</column>
+<column name="Multiplexer">-, -, -, -, -</column>
+<column name="Register">-, -, -, -, -</column>
+<specialColumn name="Available">280, 220, 106400, 53200, 0</specialColumn>
+<specialColumn name="Utilization (%)">0, 0, 0, 0, 0</specialColumn>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="1">
+<keys size="7">Instance, Module, BRAM_18K, DSP48E, FF, LUT, URAM</keys>
+</table>
+</item>
+<item name = "DSP48E"><table name="" hasTotal="0">
+<keys size="3">Instance, Module, Expression</keys>
+</table>
+</item>
+<item name = "Memory"><table name="" hasTotal="1">
+<keys size="10">Memory, Module, BRAM_18K, FF, LUT, URAM, Words, Bits, Banks, W*Bits*Banks</keys>
+</table>
+</item>
+<item name = "FIFO"><table name="" hasTotal="1">
+<keys size="8">Name, BRAM_18K, FF, LUT, URAM, Depth, Bits, Size:D*B</keys>
+</table>
+</item>
+<item name = "Expression"><table name="" hasTotal="1">
+<keys size="7">Variable Name, Operation, DSP48E, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
+</table>
+</item>
+<item name = "Multiplexer"><table name="" hasTotal="1">
+<keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
+</table>
+</item>
+<item name = "Register"><table name="" hasTotal="1">
+<keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
+</table>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Interface" level="0">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">RTL Ports, Dir, Bits, Protocol, Source Object, C Type</keys>
+<column name="ap_ready">out, 1, ap_ctrl_hs, fork_window, return value</column>
+<column name="ap_return_0">out, 16, ap_ctrl_hs, fork_window, return value</column>
+<column name="ap_return_1">out, 16, ap_ctrl_hs, fork_window, return value</column>
+<column name="ap_return_2">out, 16, ap_ctrl_hs, fork_window, return value</column>
+<column name="ap_return_3">out, 16, ap_ctrl_hs, fork_window, return value</column>
+<column name="ap_return_4">out, 16, ap_ctrl_hs, fork_window, return value</column>
+<column name="ap_return_5">out, 16, ap_ctrl_hs, fork_window, return value</column>
+<column name="ap_return_6">out, 16, ap_ctrl_hs, fork_window, return value</column>
+<column name="ap_return_7">out, 16, ap_ctrl_hs, fork_window, return value</column>
+<column name="ap_return_8">out, 16, ap_ctrl_hs, fork_window, return value</column>
+<column name="ap_return_9">out, 16, ap_ctrl_hs, fork_window, return value</column>
+<column name="ap_return_10">out, 16, ap_ctrl_hs, fork_window, return value</column>
+<column name="ap_return_11">out, 16, ap_ctrl_hs, fork_window, return value</column>
+<column name="ap_return_12">out, 16, ap_ctrl_hs, fork_window, return value</column>
+<column name="ap_return_13">out, 16, ap_ctrl_hs, fork_window, return value</column>
+<column name="ap_return_14">out, 16, ap_ctrl_hs, fork_window, return value</column>
+<column name="ap_return_15">out, 16, ap_ctrl_hs, fork_window, return value</column>
+<column name="ap_return_16">out, 16, ap_ctrl_hs, fork_window, return value</column>
+<column name="ap_return_17">out, 16, ap_ctrl_hs, fork_window, return value</column>
+<column name="ap_return_18">out, 16, ap_ctrl_hs, fork_window, return value</column>
+<column name="ap_return_19">out, 16, ap_ctrl_hs, fork_window, return value</column>
+<column name="ap_return_20">out, 16, ap_ctrl_hs, fork_window, return value</column>
+<column name="ap_return_21">out, 16, ap_ctrl_hs, fork_window, return value</column>
+<column name="ap_return_22">out, 16, ap_ctrl_hs, fork_window, return value</column>
+<column name="ap_return_23">out, 16, ap_ctrl_hs, fork_window, return value</column>
+<column name="ap_return_24">out, 16, ap_ctrl_hs, fork_window, return value</column>
+<column name="ap_return_25">out, 16, ap_ctrl_hs, fork_window, return value</column>
+<column name="ap_return_26">out, 16, ap_ctrl_hs, fork_window, return value</column>
+<column name="ap_return_27">out, 16, ap_ctrl_hs, fork_window, return value</column>
+<column name="ap_return_28">out, 16, ap_ctrl_hs, fork_window, return value</column>
+<column name="ap_return_29">out, 16, ap_ctrl_hs, fork_window, return value</column>
+<column name="ap_return_30">out, 16, ap_ctrl_hs, fork_window, return value</column>
+<column name="ap_return_31">out, 16, ap_ctrl_hs, fork_window, return value</column>
+<column name="ap_return_32">out, 16, ap_ctrl_hs, fork_window, return value</column>
+<column name="ap_return_33">out, 16, ap_ctrl_hs, fork_window, return value</column>
+<column name="ap_return_34">out, 16, ap_ctrl_hs, fork_window, return value</column>
+<column name="ap_return_35">out, 16, ap_ctrl_hs, fork_window, return value</column>
+<column name="ap_return_36">out, 16, ap_ctrl_hs, fork_window, return value</column>
+<column name="ap_return_37">out, 16, ap_ctrl_hs, fork_window, return value</column>
+<column name="ap_return_38">out, 16, ap_ctrl_hs, fork_window, return value</column>
+<column name="ap_return_39">out, 16, ap_ctrl_hs, fork_window, return value</column>
+<column name="ap_return_40">out, 16, ap_ctrl_hs, fork_window, return value</column>
+<column name="ap_return_41">out, 16, ap_ctrl_hs, fork_window, return value</column>
+<column name="ap_return_42">out, 16, ap_ctrl_hs, fork_window, return value</column>
+<column name="ap_return_43">out, 16, ap_ctrl_hs, fork_window, return value</column>
+<column name="ap_return_44">out, 16, ap_ctrl_hs, fork_window, return value</column>
+<column name="ap_return_45">out, 16, ap_ctrl_hs, fork_window, return value</column>
+<column name="ap_return_46">out, 16, ap_ctrl_hs, fork_window, return value</column>
+<column name="ap_return_47">out, 16, ap_ctrl_hs, fork_window, return value</column>
+<column name="ap_return_48">out, 16, ap_ctrl_hs, fork_window, return value</column>
+<column name="ap_return_49">out, 16, ap_ctrl_hs, fork_window, return value</column>
+<column name="ap_return_50">out, 16, ap_ctrl_hs, fork_window, return value</column>
+<column name="ap_return_51">out, 16, ap_ctrl_hs, fork_window, return value</column>
+<column name="ap_return_52">out, 16, ap_ctrl_hs, fork_window, return value</column>
+<column name="ap_return_53">out, 16, ap_ctrl_hs, fork_window, return value</column>
+<column name="ap_return_54">out, 16, ap_ctrl_hs, fork_window, return value</column>
+<column name="ap_return_55">out, 16, ap_ctrl_hs, fork_window, return value</column>
+<column name="ap_return_56">out, 16, ap_ctrl_hs, fork_window, return value</column>
+<column name="ap_return_57">out, 16, ap_ctrl_hs, fork_window, return value</column>
+<column name="ap_return_58">out, 16, ap_ctrl_hs, fork_window, return value</column>
+<column name="ap_return_59">out, 16, ap_ctrl_hs, fork_window, return value</column>
+<column name="ap_return_60">out, 16, ap_ctrl_hs, fork_window, return value</column>
+<column name="ap_return_61">out, 16, ap_ctrl_hs, fork_window, return value</column>
+<column name="ap_return_62">out, 16, ap_ctrl_hs, fork_window, return value</column>
+<column name="ap_return_63">out, 16, ap_ctrl_hs, fork_window, return value</column>
+<column name="ap_return_64">out, 16, ap_ctrl_hs, fork_window, return value</column>
+<column name="ap_return_65">out, 16, ap_ctrl_hs, fork_window, return value</column>
+<column name="ap_return_66">out, 16, ap_ctrl_hs, fork_window, return value</column>
+<column name="ap_return_67">out, 16, ap_ctrl_hs, fork_window, return value</column>
+<column name="ap_return_68">out, 16, ap_ctrl_hs, fork_window, return value</column>
+<column name="ap_return_69">out, 16, ap_ctrl_hs, fork_window, return value</column>
+<column name="ap_return_70">out, 16, ap_ctrl_hs, fork_window, return value</column>
+<column name="ap_return_71">out, 16, ap_ctrl_hs, fork_window, return value</column>
+<column name="ap_return_72">out, 16, ap_ctrl_hs, fork_window, return value</column>
+<column name="ap_return_73">out, 16, ap_ctrl_hs, fork_window, return value</column>
+<column name="ap_return_74">out, 16, ap_ctrl_hs, fork_window, return value</column>
+<column name="ap_return_75">out, 16, ap_ctrl_hs, fork_window, return value</column>
+<column name="ap_return_76">out, 16, ap_ctrl_hs, fork_window, return value</column>
+<column name="ap_return_77">out, 16, ap_ctrl_hs, fork_window, return value</column>
+<column name="ap_return_78">out, 16, ap_ctrl_hs, fork_window, return value</column>
+<column name="ap_return_79">out, 16, ap_ctrl_hs, fork_window, return value</column>
+<column name="ap_return_80">out, 16, ap_ctrl_hs, fork_window, return value</column>
+<column name="ap_return_81">out, 16, ap_ctrl_hs, fork_window, return value</column>
+<column name="ap_return_82">out, 16, ap_ctrl_hs, fork_window, return value</column>
+<column name="ap_return_83">out, 16, ap_ctrl_hs, fork_window, return value</column>
+<column name="ap_return_84">out, 16, ap_ctrl_hs, fork_window, return value</column>
+<column name="ap_return_85">out, 16, ap_ctrl_hs, fork_window, return value</column>
+<column name="ap_return_86">out, 16, ap_ctrl_hs, fork_window, return value</column>
+<column name="ap_return_87">out, 16, ap_ctrl_hs, fork_window, return value</column>
+<column name="ap_return_88">out, 16, ap_ctrl_hs, fork_window, return value</column>
+<column name="ap_return_89">out, 16, ap_ctrl_hs, fork_window, return value</column>
+<column name="ap_return_90">out, 16, ap_ctrl_hs, fork_window, return value</column>
+<column name="ap_return_91">out, 16, ap_ctrl_hs, fork_window, return value</column>
+<column name="ap_return_92">out, 16, ap_ctrl_hs, fork_window, return value</column>
+<column name="ap_return_93">out, 16, ap_ctrl_hs, fork_window, return value</column>
+<column name="ap_return_94">out, 16, ap_ctrl_hs, fork_window, return value</column>
+<column name="ap_return_95">out, 16, ap_ctrl_hs, fork_window, return value</column>
+<column name="ap_return_96">out, 16, ap_ctrl_hs, fork_window, return value</column>
+<column name="ap_return_97">out, 16, ap_ctrl_hs, fork_window, return value</column>
+<column name="ap_return_98">out, 16, ap_ctrl_hs, fork_window, return value</column>
+<column name="ap_return_99">out, 16, ap_ctrl_hs, fork_window, return value</column>
+<column name="ap_return_100">out, 16, ap_ctrl_hs, fork_window, return value</column>
+<column name="ap_return_101">out, 16, ap_ctrl_hs, fork_window, return value</column>
+<column name="ap_return_102">out, 16, ap_ctrl_hs, fork_window, return value</column>
+<column name="ap_return_103">out, 16, ap_ctrl_hs, fork_window, return value</column>
+<column name="ap_return_104">out, 16, ap_ctrl_hs, fork_window, return value</column>
+<column name="ap_return_105">out, 16, ap_ctrl_hs, fork_window, return value</column>
+<column name="ap_return_106">out, 16, ap_ctrl_hs, fork_window, return value</column>
+<column name="ap_return_107">out, 16, ap_ctrl_hs, fork_window, return value</column>
+<column name="ap_return_108">out, 16, ap_ctrl_hs, fork_window, return value</column>
+<column name="ap_return_109">out, 16, ap_ctrl_hs, fork_window, return value</column>
+<column name="ap_return_110">out, 16, ap_ctrl_hs, fork_window, return value</column>
+<column name="ap_return_111">out, 16, ap_ctrl_hs, fork_window, return value</column>
+<column name="ap_return_112">out, 16, ap_ctrl_hs, fork_window, return value</column>
+<column name="ap_return_113">out, 16, ap_ctrl_hs, fork_window, return value</column>
+<column name="ap_return_114">out, 16, ap_ctrl_hs, fork_window, return value</column>
+<column name="ap_return_115">out, 16, ap_ctrl_hs, fork_window, return value</column>
+<column name="ap_return_116">out, 16, ap_ctrl_hs, fork_window, return value</column>
+<column name="ap_return_117">out, 16, ap_ctrl_hs, fork_window, return value</column>
+<column name="ap_return_118">out, 16, ap_ctrl_hs, fork_window, return value</column>
+<column name="ap_return_119">out, 16, ap_ctrl_hs, fork_window, return value</column>
+<column name="ap_return_120">out, 16, ap_ctrl_hs, fork_window, return value</column>
+<column name="ap_return_121">out, 16, ap_ctrl_hs, fork_window, return value</column>
+<column name="ap_return_122">out, 16, ap_ctrl_hs, fork_window, return value</column>
+<column name="ap_return_123">out, 16, ap_ctrl_hs, fork_window, return value</column>
+<column name="ap_return_124">out, 16, ap_ctrl_hs, fork_window, return value</column>
+<column name="ap_return_125">out, 16, ap_ctrl_hs, fork_window, return value</column>
+<column name="ap_return_126">out, 16, ap_ctrl_hs, fork_window, return value</column>
+<column name="ap_return_127">out, 16, ap_ctrl_hs, fork_window, return value</column>
+<column name="ap_return_128">out, 16, ap_ctrl_hs, fork_window, return value</column>
+<column name="ap_return_129">out, 16, ap_ctrl_hs, fork_window, return value</column>
+<column name="ap_return_130">out, 16, ap_ctrl_hs, fork_window, return value</column>
+<column name="ap_return_131">out, 16, ap_ctrl_hs, fork_window, return value</column>
+<column name="ap_return_132">out, 16, ap_ctrl_hs, fork_window, return value</column>
+<column name="ap_return_133">out, 16, ap_ctrl_hs, fork_window, return value</column>
+<column name="ap_return_134">out, 16, ap_ctrl_hs, fork_window, return value</column>
+<column name="ap_return_135">out, 16, ap_ctrl_hs, fork_window, return value</column>
+<column name="ap_return_136">out, 16, ap_ctrl_hs, fork_window, return value</column>
+<column name="ap_return_137">out, 16, ap_ctrl_hs, fork_window, return value</column>
+<column name="ap_return_138">out, 16, ap_ctrl_hs, fork_window, return value</column>
+<column name="ap_return_139">out, 16, ap_ctrl_hs, fork_window, return value</column>
+<column name="ap_return_140">out, 16, ap_ctrl_hs, fork_window, return value</column>
+<column name="ap_return_141">out, 16, ap_ctrl_hs, fork_window, return value</column>
+<column name="ap_return_142">out, 16, ap_ctrl_hs, fork_window, return value</column>
+<column name="ap_return_143">out, 16, ap_ctrl_hs, fork_window, return value</column>
+<column name="window_group_0_val_s">in, 16, ap_none, window_group_0_val_s, scalar</column>
+<column name="window_group_0_val_9">in, 16, ap_none, window_group_0_val_9, scalar</column>
+<column name="window_group_0_val_10">in, 16, ap_none, window_group_0_val_10, scalar</column>
+<column name="window_group_0_val_11">in, 16, ap_none, window_group_0_val_11, scalar</column>
+<column name="window_group_0_val_12">in, 16, ap_none, window_group_0_val_12, scalar</column>
+<column name="window_group_0_val_13">in, 16, ap_none, window_group_0_val_13, scalar</column>
+<column name="window_group_0_val_14">in, 16, ap_none, window_group_0_val_14, scalar</column>
+<column name="window_group_0_val_15">in, 16, ap_none, window_group_0_val_15, scalar</column>
+<column name="window_group_0_val_16">in, 16, ap_none, window_group_0_val_16, scalar</column>
+</table>
+</item>
+</section>
+</profile>

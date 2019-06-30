@@ -1,0 +1,30 @@
+#-----------------------------------------------------------
+# xsim v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Thu Jun 27 21:21:34 2019
+# Process ID: 12908
+# Current directory: /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_2019/solution1/sim/verilog
+# Command line: xsim -mode tcl -source {xsim.dir/yolo_conv_top/xsim_script.tcl}
+# Log file: /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_2019/solution1/sim/verilog/xsim.log
+# Journal file: /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_2019/solution1/sim/verilog/xsim.jou
+#-----------------------------------------------------------
+source xsim.dir/yolo_conv_top/xsim_script.tcl
+# xsim {yolo_conv_top} -autoloadwcfg -tclbatch {yolo_conv_top.tcl}
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source yolo_conv_top.tcl
+## run all
+////////////////////////////////////////////////////////////////////////////////////
+// Inter-Transaction Progress: Completed Transaction / Total Transaction
+// Intra-Transaction Progress: Measured Latency / Latency Estimation * 100%
+//
+// RTL Simulation : "Inter-Transaction Progress" ["Intra-Transaction Progress"] @ "Simulation Time"
+////////////////////////////////////////////////////////////////////////////////////
+// RTL Simulation : 0 / 1 [0.00%] @ "125000"
+// RTL Simulation : 1 / 1 [100.00%] @ "405785000"
+////////////////////////////////////////////////////////////////////////////////////
+$finish called at time : 405825 ns : File "/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_2019/solution1/sim/verilog/yolo_conv_top.autotb.v" Line 460
+run: Time (s): cpu = 00:00:00 ; elapsed = 00:00:15 . Memory (MB): peak = 1393.719 ; gain = 0.000 ; free physical = 1029 ; free virtual = 9986
+## quit
+INFO: [Common 17-206] Exiting xsim at Thu Jun 27 21:22:01 2019...

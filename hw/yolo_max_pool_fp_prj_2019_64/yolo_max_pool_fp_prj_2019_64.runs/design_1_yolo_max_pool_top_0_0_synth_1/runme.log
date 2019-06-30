@@ -1,0 +1,831 @@
+
+*** Running vivado
+    with args -log design_1_yolo_max_pool_top_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_yolo_max_pool_top_0_0.tcl
+
+
+****** Vivado v2019.1 (64-bit)
+  **** SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
+  **** IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source design_1_yolo_max_pool_top_0_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/xavier/MSc_Project/hls/ip_fp64'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx_2019_1/Vivado/2019.1/data/ip'.
+Command: synth_design -top design_1_yolo_max_pool_top_0_0 -part xc7z020clg484-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 17759 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 1698.875 ; gain = 153.715 ; free physical = 851 ; free virtual = 11793
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'design_1_yolo_max_pool_top_0_0' [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_prj_2019_64/yolo_max_pool_fp_prj_2019_64.srcs/sources_1/bd/design_1/ip/design_1_yolo_max_pool_top_0_0/synth/design_1_yolo_max_pool_top_0_0.v:58]
+INFO: [Synth 8-6157] synthesizing module 'yolo_max_pool_top' [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_prj_2019_64/yolo_max_pool_fp_prj_2019_64.srcs/sources_1/bd/design_1/ipshared/83c8/hdl/verilog/yolo_max_pool_top.v:12]
+	Parameter ap_ST_fsm_state1 bound to: 8'b00000001 
+	Parameter ap_ST_fsm_state2 bound to: 8'b00000010 
+	Parameter ap_ST_fsm_state3 bound to: 8'b00000100 
+	Parameter ap_ST_fsm_state4 bound to: 8'b00001000 
+	Parameter ap_ST_fsm_state5 bound to: 8'b00010000 
+	Parameter ap_ST_fsm_pp0_stage0 bound to: 8'b00100000 
+	Parameter ap_ST_fsm_pp0_stage1 bound to: 8'b01000000 
+	Parameter ap_ST_fsm_state14 bound to: 8'b10000000 
+	Parameter C_S_AXI_AXILITES_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_AXILITES_ADDR_WIDTH bound to: 4 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_AXILITES_WSTRB_WIDTH bound to: 4 - type: integer 
+	Parameter C_S_AXI_WSTRB_WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_prj_2019_64/yolo_max_pool_fp_prj_2019_64.srcs/sources_1/bd/design_1/ipshared/83c8/hdl/verilog/yolo_max_pool_top.v:111]
+INFO: [Synth 8-6157] synthesizing module 'yolo_max_pool_top_AXILiteS_s_axi' [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_prj_2019_64/yolo_max_pool_fp_prj_2019_64.srcs/sources_1/bd/design_1/ipshared/83c8/hdl/verilog/yolo_max_pool_top_AXILiteS_s_axi.v:6]
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 4 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter ADDR_AP_CTRL bound to: 4'b0000 
+	Parameter ADDR_GIE bound to: 4'b0100 
+	Parameter ADDR_IER bound to: 4'b1000 
+	Parameter ADDR_ISR bound to: 4'b1100 
+	Parameter WRIDLE bound to: 2'b00 
+	Parameter WRDATA bound to: 2'b01 
+	Parameter WRRESP bound to: 2'b10 
+	Parameter WRRESET bound to: 2'b11 
+	Parameter RDIDLE bound to: 2'b00 
+	Parameter RDDATA bound to: 2'b01 
+	Parameter RDRESET bound to: 2'b10 
+	Parameter ADDR_BITS bound to: 4 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_prj_2019_64/yolo_max_pool_fp_prj_2019_64.srcs/sources_1/bd/design_1/ipshared/83c8/hdl/verilog/yolo_max_pool_top_AXILiteS_s_axi.v:184]
+INFO: [Synth 8-6155] done synthesizing module 'yolo_max_pool_top_AXILiteS_s_axi' (1#1) [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_prj_2019_64/yolo_max_pool_fp_prj_2019_64.srcs/sources_1/bd/design_1/ipshared/83c8/hdl/verilog/yolo_max_pool_top_AXILiteS_s_axi.v:6]
+INFO: [Synth 8-6157] synthesizing module 'yolo_max_pool_top_line_buff_group_0_va' [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_prj_2019_64/yolo_max_pool_fp_prj_2019_64.srcs/sources_1/bd/design_1/ipshared/83c8/hdl/verilog/yolo_max_pool_top_line_buff_group_0_va.v:52]
+	Parameter DataWidth bound to: 16 - type: integer 
+	Parameter AddressRange bound to: 1672 - type: integer 
+	Parameter AddressWidth bound to: 11 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'yolo_max_pool_top_line_buff_group_0_va_ram' [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_prj_2019_64/yolo_max_pool_fp_prj_2019_64.srcs/sources_1/bd/design_1/ipshared/83c8/hdl/verilog/yolo_max_pool_top_line_buff_group_0_va.v:6]
+	Parameter DWIDTH bound to: 16 - type: integer 
+	Parameter AWIDTH bound to: 11 - type: integer 
+	Parameter MEM_SIZE bound to: 1672 - type: integer 
+INFO: [Synth 8-5534] Detected attribute (* ram_style = "block" *) [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_prj_2019_64/yolo_max_pool_fp_prj_2019_64.srcs/sources_1/bd/design_1/ipshared/83c8/hdl/verilog/yolo_max_pool_top_line_buff_group_0_va.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'yolo_max_pool_top_line_buff_group_0_va_ram' (2#1) [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_prj_2019_64/yolo_max_pool_fp_prj_2019_64.srcs/sources_1/bd/design_1/ipshared/83c8/hdl/verilog/yolo_max_pool_top_line_buff_group_0_va.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'yolo_max_pool_top_line_buff_group_0_va' (3#1) [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_prj_2019_64/yolo_max_pool_fp_prj_2019_64.srcs/sources_1/bd/design_1/ipshared/83c8/hdl/verilog/yolo_max_pool_top_line_buff_group_0_va.v:52]
+INFO: [Synth 8-6157] synthesizing module 'write_output' [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_prj_2019_64/yolo_max_pool_fp_prj_2019_64.srcs/sources_1/bd/design_1/ipshared/83c8/hdl/verilog/write_output.v:10]
+	Parameter ap_ST_fsm_state1 bound to: 1'b1 
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_prj_2019_64/yolo_max_pool_fp_prj_2019_64.srcs/sources_1/bd/design_1/ipshared/83c8/hdl/verilog/write_output.v:76]
+INFO: [Synth 8-6155] done synthesizing module 'write_output' (4#1) [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_prj_2019_64/yolo_max_pool_fp_prj_2019_64.srcs/sources_1/bd/design_1/ipshared/83c8/hdl/verilog/write_output.v:10]
+INFO: [Synth 8-6157] synthesizing module 'yolo_max_pool_top_mux_42_16_1_1' [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_prj_2019_64/yolo_max_pool_fp_prj_2019_64.srcs/sources_1/bd/design_1/ipshared/83c8/hdl/verilog/yolo_max_pool_top_mux_42_16_1_1.v:8]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 16 - type: integer 
+	Parameter din1_WIDTH bound to: 16 - type: integer 
+	Parameter din2_WIDTH bound to: 16 - type: integer 
+	Parameter din3_WIDTH bound to: 16 - type: integer 
+	Parameter din4_WIDTH bound to: 2 - type: integer 
+	Parameter dout_WIDTH bound to: 16 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'yolo_max_pool_top_mux_42_16_1_1' (5#1) [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_prj_2019_64/yolo_max_pool_fp_prj_2019_64.srcs/sources_1/bd/design_1/ipshared/83c8/hdl/verilog/yolo_max_pool_top_mux_42_16_1_1.v:8]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_prj_2019_64/yolo_max_pool_fp_prj_2019_64.srcs/sources_1/bd/design_1/ipshared/83c8/hdl/verilog/yolo_max_pool_top.v:3574]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_prj_2019_64/yolo_max_pool_fp_prj_2019_64.srcs/sources_1/bd/design_1/ipshared/83c8/hdl/verilog/yolo_max_pool_top.v:3580]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_prj_2019_64/yolo_max_pool_fp_prj_2019_64.srcs/sources_1/bd/design_1/ipshared/83c8/hdl/verilog/yolo_max_pool_top.v:3912]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_prj_2019_64/yolo_max_pool_fp_prj_2019_64.srcs/sources_1/bd/design_1/ipshared/83c8/hdl/verilog/yolo_max_pool_top.v:3914]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_prj_2019_64/yolo_max_pool_fp_prj_2019_64.srcs/sources_1/bd/design_1/ipshared/83c8/hdl/verilog/yolo_max_pool_top.v:3916]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_prj_2019_64/yolo_max_pool_fp_prj_2019_64.srcs/sources_1/bd/design_1/ipshared/83c8/hdl/verilog/yolo_max_pool_top.v:3918]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_prj_2019_64/yolo_max_pool_fp_prj_2019_64.srcs/sources_1/bd/design_1/ipshared/83c8/hdl/verilog/yolo_max_pool_top.v:3920]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_prj_2019_64/yolo_max_pool_fp_prj_2019_64.srcs/sources_1/bd/design_1/ipshared/83c8/hdl/verilog/yolo_max_pool_top.v:3922]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_prj_2019_64/yolo_max_pool_fp_prj_2019_64.srcs/sources_1/bd/design_1/ipshared/83c8/hdl/verilog/yolo_max_pool_top.v:3924]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_prj_2019_64/yolo_max_pool_fp_prj_2019_64.srcs/sources_1/bd/design_1/ipshared/83c8/hdl/verilog/yolo_max_pool_top.v:3926]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_prj_2019_64/yolo_max_pool_fp_prj_2019_64.srcs/sources_1/bd/design_1/ipshared/83c8/hdl/verilog/yolo_max_pool_top.v:3928]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_prj_2019_64/yolo_max_pool_fp_prj_2019_64.srcs/sources_1/bd/design_1/ipshared/83c8/hdl/verilog/yolo_max_pool_top.v:3930]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_prj_2019_64/yolo_max_pool_fp_prj_2019_64.srcs/sources_1/bd/design_1/ipshared/83c8/hdl/verilog/yolo_max_pool_top.v:3932]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_prj_2019_64/yolo_max_pool_fp_prj_2019_64.srcs/sources_1/bd/design_1/ipshared/83c8/hdl/verilog/yolo_max_pool_top.v:3934]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_prj_2019_64/yolo_max_pool_fp_prj_2019_64.srcs/sources_1/bd/design_1/ipshared/83c8/hdl/verilog/yolo_max_pool_top.v:3936]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_prj_2019_64/yolo_max_pool_fp_prj_2019_64.srcs/sources_1/bd/design_1/ipshared/83c8/hdl/verilog/yolo_max_pool_top.v:3938]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_prj_2019_64/yolo_max_pool_fp_prj_2019_64.srcs/sources_1/bd/design_1/ipshared/83c8/hdl/verilog/yolo_max_pool_top.v:3940]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_prj_2019_64/yolo_max_pool_fp_prj_2019_64.srcs/sources_1/bd/design_1/ipshared/83c8/hdl/verilog/yolo_max_pool_top.v:3942]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_prj_2019_64/yolo_max_pool_fp_prj_2019_64.srcs/sources_1/bd/design_1/ipshared/83c8/hdl/verilog/yolo_max_pool_top.v:3944]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_prj_2019_64/yolo_max_pool_fp_prj_2019_64.srcs/sources_1/bd/design_1/ipshared/83c8/hdl/verilog/yolo_max_pool_top.v:3946]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_prj_2019_64/yolo_max_pool_fp_prj_2019_64.srcs/sources_1/bd/design_1/ipshared/83c8/hdl/verilog/yolo_max_pool_top.v:3948]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_prj_2019_64/yolo_max_pool_fp_prj_2019_64.srcs/sources_1/bd/design_1/ipshared/83c8/hdl/verilog/yolo_max_pool_top.v:3950]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_prj_2019_64/yolo_max_pool_fp_prj_2019_64.srcs/sources_1/bd/design_1/ipshared/83c8/hdl/verilog/yolo_max_pool_top.v:3952]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_prj_2019_64/yolo_max_pool_fp_prj_2019_64.srcs/sources_1/bd/design_1/ipshared/83c8/hdl/verilog/yolo_max_pool_top.v:3954]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_prj_2019_64/yolo_max_pool_fp_prj_2019_64.srcs/sources_1/bd/design_1/ipshared/83c8/hdl/verilog/yolo_max_pool_top.v:3956]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_prj_2019_64/yolo_max_pool_fp_prj_2019_64.srcs/sources_1/bd/design_1/ipshared/83c8/hdl/verilog/yolo_max_pool_top.v:3958]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_prj_2019_64/yolo_max_pool_fp_prj_2019_64.srcs/sources_1/bd/design_1/ipshared/83c8/hdl/verilog/yolo_max_pool_top.v:3960]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_prj_2019_64/yolo_max_pool_fp_prj_2019_64.srcs/sources_1/bd/design_1/ipshared/83c8/hdl/verilog/yolo_max_pool_top.v:3962]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_prj_2019_64/yolo_max_pool_fp_prj_2019_64.srcs/sources_1/bd/design_1/ipshared/83c8/hdl/verilog/yolo_max_pool_top.v:3964]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_prj_2019_64/yolo_max_pool_fp_prj_2019_64.srcs/sources_1/bd/design_1/ipshared/83c8/hdl/verilog/yolo_max_pool_top.v:3966]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_prj_2019_64/yolo_max_pool_fp_prj_2019_64.srcs/sources_1/bd/design_1/ipshared/83c8/hdl/verilog/yolo_max_pool_top.v:3968]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_prj_2019_64/yolo_max_pool_fp_prj_2019_64.srcs/sources_1/bd/design_1/ipshared/83c8/hdl/verilog/yolo_max_pool_top.v:3970]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_prj_2019_64/yolo_max_pool_fp_prj_2019_64.srcs/sources_1/bd/design_1/ipshared/83c8/hdl/verilog/yolo_max_pool_top.v:3972]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_prj_2019_64/yolo_max_pool_fp_prj_2019_64.srcs/sources_1/bd/design_1/ipshared/83c8/hdl/verilog/yolo_max_pool_top.v:3974]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_prj_2019_64/yolo_max_pool_fp_prj_2019_64.srcs/sources_1/bd/design_1/ipshared/83c8/hdl/verilog/yolo_max_pool_top.v:3976]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_prj_2019_64/yolo_max_pool_fp_prj_2019_64.srcs/sources_1/bd/design_1/ipshared/83c8/hdl/verilog/yolo_max_pool_top.v:3978]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_prj_2019_64/yolo_max_pool_fp_prj_2019_64.srcs/sources_1/bd/design_1/ipshared/83c8/hdl/verilog/yolo_max_pool_top.v:3980]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_prj_2019_64/yolo_max_pool_fp_prj_2019_64.srcs/sources_1/bd/design_1/ipshared/83c8/hdl/verilog/yolo_max_pool_top.v:3982]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_prj_2019_64/yolo_max_pool_fp_prj_2019_64.srcs/sources_1/bd/design_1/ipshared/83c8/hdl/verilog/yolo_max_pool_top.v:3984]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_prj_2019_64/yolo_max_pool_fp_prj_2019_64.srcs/sources_1/bd/design_1/ipshared/83c8/hdl/verilog/yolo_max_pool_top.v:3986]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_prj_2019_64/yolo_max_pool_fp_prj_2019_64.srcs/sources_1/bd/design_1/ipshared/83c8/hdl/verilog/yolo_max_pool_top.v:3988]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_prj_2019_64/yolo_max_pool_fp_prj_2019_64.srcs/sources_1/bd/design_1/ipshared/83c8/hdl/verilog/yolo_max_pool_top.v:4018]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_prj_2019_64/yolo_max_pool_fp_prj_2019_64.srcs/sources_1/bd/design_1/ipshared/83c8/hdl/verilog/yolo_max_pool_top.v:4020]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_prj_2019_64/yolo_max_pool_fp_prj_2019_64.srcs/sources_1/bd/design_1/ipshared/83c8/hdl/verilog/yolo_max_pool_top.v:4022]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_prj_2019_64/yolo_max_pool_fp_prj_2019_64.srcs/sources_1/bd/design_1/ipshared/83c8/hdl/verilog/yolo_max_pool_top.v:4024]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_prj_2019_64/yolo_max_pool_fp_prj_2019_64.srcs/sources_1/bd/design_1/ipshared/83c8/hdl/verilog/yolo_max_pool_top.v:4026]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_prj_2019_64/yolo_max_pool_fp_prj_2019_64.srcs/sources_1/bd/design_1/ipshared/83c8/hdl/verilog/yolo_max_pool_top.v:4028]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_prj_2019_64/yolo_max_pool_fp_prj_2019_64.srcs/sources_1/bd/design_1/ipshared/83c8/hdl/verilog/yolo_max_pool_top.v:4030]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_prj_2019_64/yolo_max_pool_fp_prj_2019_64.srcs/sources_1/bd/design_1/ipshared/83c8/hdl/verilog/yolo_max_pool_top.v:4032]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_prj_2019_64/yolo_max_pool_fp_prj_2019_64.srcs/sources_1/bd/design_1/ipshared/83c8/hdl/verilog/yolo_max_pool_top.v:4034]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_prj_2019_64/yolo_max_pool_fp_prj_2019_64.srcs/sources_1/bd/design_1/ipshared/83c8/hdl/verilog/yolo_max_pool_top.v:4036]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_prj_2019_64/yolo_max_pool_fp_prj_2019_64.srcs/sources_1/bd/design_1/ipshared/83c8/hdl/verilog/yolo_max_pool_top.v:4038]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_prj_2019_64/yolo_max_pool_fp_prj_2019_64.srcs/sources_1/bd/design_1/ipshared/83c8/hdl/verilog/yolo_max_pool_top.v:4040]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_prj_2019_64/yolo_max_pool_fp_prj_2019_64.srcs/sources_1/bd/design_1/ipshared/83c8/hdl/verilog/yolo_max_pool_top.v:4042]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_prj_2019_64/yolo_max_pool_fp_prj_2019_64.srcs/sources_1/bd/design_1/ipshared/83c8/hdl/verilog/yolo_max_pool_top.v:4044]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_prj_2019_64/yolo_max_pool_fp_prj_2019_64.srcs/sources_1/bd/design_1/ipshared/83c8/hdl/verilog/yolo_max_pool_top.v:4046]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_prj_2019_64/yolo_max_pool_fp_prj_2019_64.srcs/sources_1/bd/design_1/ipshared/83c8/hdl/verilog/yolo_max_pool_top.v:4048]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_prj_2019_64/yolo_max_pool_fp_prj_2019_64.srcs/sources_1/bd/design_1/ipshared/83c8/hdl/verilog/yolo_max_pool_top.v:4050]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_prj_2019_64/yolo_max_pool_fp_prj_2019_64.srcs/sources_1/bd/design_1/ipshared/83c8/hdl/verilog/yolo_max_pool_top.v:4052]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_prj_2019_64/yolo_max_pool_fp_prj_2019_64.srcs/sources_1/bd/design_1/ipshared/83c8/hdl/verilog/yolo_max_pool_top.v:4054]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_prj_2019_64/yolo_max_pool_fp_prj_2019_64.srcs/sources_1/bd/design_1/ipshared/83c8/hdl/verilog/yolo_max_pool_top.v:4056]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_prj_2019_64/yolo_max_pool_fp_prj_2019_64.srcs/sources_1/bd/design_1/ipshared/83c8/hdl/verilog/yolo_max_pool_top.v:4058]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_prj_2019_64/yolo_max_pool_fp_prj_2019_64.srcs/sources_1/bd/design_1/ipshared/83c8/hdl/verilog/yolo_max_pool_top.v:4060]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_prj_2019_64/yolo_max_pool_fp_prj_2019_64.srcs/sources_1/bd/design_1/ipshared/83c8/hdl/verilog/yolo_max_pool_top.v:4062]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_prj_2019_64/yolo_max_pool_fp_prj_2019_64.srcs/sources_1/bd/design_1/ipshared/83c8/hdl/verilog/yolo_max_pool_top.v:4064]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_prj_2019_64/yolo_max_pool_fp_prj_2019_64.srcs/sources_1/bd/design_1/ipshared/83c8/hdl/verilog/yolo_max_pool_top.v:4066]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_prj_2019_64/yolo_max_pool_fp_prj_2019_64.srcs/sources_1/bd/design_1/ipshared/83c8/hdl/verilog/yolo_max_pool_top.v:4068]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_prj_2019_64/yolo_max_pool_fp_prj_2019_64.srcs/sources_1/bd/design_1/ipshared/83c8/hdl/verilog/yolo_max_pool_top.v:4070]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_prj_2019_64/yolo_max_pool_fp_prj_2019_64.srcs/sources_1/bd/design_1/ipshared/83c8/hdl/verilog/yolo_max_pool_top.v:4072]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_prj_2019_64/yolo_max_pool_fp_prj_2019_64.srcs/sources_1/bd/design_1/ipshared/83c8/hdl/verilog/yolo_max_pool_top.v:4074]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_prj_2019_64/yolo_max_pool_fp_prj_2019_64.srcs/sources_1/bd/design_1/ipshared/83c8/hdl/verilog/yolo_max_pool_top.v:4076]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_prj_2019_64/yolo_max_pool_fp_prj_2019_64.srcs/sources_1/bd/design_1/ipshared/83c8/hdl/verilog/yolo_max_pool_top.v:4078]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_prj_2019_64/yolo_max_pool_fp_prj_2019_64.srcs/sources_1/bd/design_1/ipshared/83c8/hdl/verilog/yolo_max_pool_top.v:4080]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_prj_2019_64/yolo_max_pool_fp_prj_2019_64.srcs/sources_1/bd/design_1/ipshared/83c8/hdl/verilog/yolo_max_pool_top.v:4082]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_prj_2019_64/yolo_max_pool_fp_prj_2019_64.srcs/sources_1/bd/design_1/ipshared/83c8/hdl/verilog/yolo_max_pool_top.v:4084]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_prj_2019_64/yolo_max_pool_fp_prj_2019_64.srcs/sources_1/bd/design_1/ipshared/83c8/hdl/verilog/yolo_max_pool_top.v:4086]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_prj_2019_64/yolo_max_pool_fp_prj_2019_64.srcs/sources_1/bd/design_1/ipshared/83c8/hdl/verilog/yolo_max_pool_top.v:4088]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_prj_2019_64/yolo_max_pool_fp_prj_2019_64.srcs/sources_1/bd/design_1/ipshared/83c8/hdl/verilog/yolo_max_pool_top.v:4090]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_prj_2019_64/yolo_max_pool_fp_prj_2019_64.srcs/sources_1/bd/design_1/ipshared/83c8/hdl/verilog/yolo_max_pool_top.v:4092]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_prj_2019_64/yolo_max_pool_fp_prj_2019_64.srcs/sources_1/bd/design_1/ipshared/83c8/hdl/verilog/yolo_max_pool_top.v:4094]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_prj_2019_64/yolo_max_pool_fp_prj_2019_64.srcs/sources_1/bd/design_1/ipshared/83c8/hdl/verilog/yolo_max_pool_top.v:4096]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_prj_2019_64/yolo_max_pool_fp_prj_2019_64.srcs/sources_1/bd/design_1/ipshared/83c8/hdl/verilog/yolo_max_pool_top.v:4098]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_prj_2019_64/yolo_max_pool_fp_prj_2019_64.srcs/sources_1/bd/design_1/ipshared/83c8/hdl/verilog/yolo_max_pool_top.v:4100]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_prj_2019_64/yolo_max_pool_fp_prj_2019_64.srcs/sources_1/bd/design_1/ipshared/83c8/hdl/verilog/yolo_max_pool_top.v:4102]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_prj_2019_64/yolo_max_pool_fp_prj_2019_64.srcs/sources_1/bd/design_1/ipshared/83c8/hdl/verilog/yolo_max_pool_top.v:4104]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_prj_2019_64/yolo_max_pool_fp_prj_2019_64.srcs/sources_1/bd/design_1/ipshared/83c8/hdl/verilog/yolo_max_pool_top.v:4106]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_prj_2019_64/yolo_max_pool_fp_prj_2019_64.srcs/sources_1/bd/design_1/ipshared/83c8/hdl/verilog/yolo_max_pool_top.v:4108]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_prj_2019_64/yolo_max_pool_fp_prj_2019_64.srcs/sources_1/bd/design_1/ipshared/83c8/hdl/verilog/yolo_max_pool_top.v:4110]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_prj_2019_64/yolo_max_pool_fp_prj_2019_64.srcs/sources_1/bd/design_1/ipshared/83c8/hdl/verilog/yolo_max_pool_top.v:4112]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_prj_2019_64/yolo_max_pool_fp_prj_2019_64.srcs/sources_1/bd/design_1/ipshared/83c8/hdl/verilog/yolo_max_pool_top.v:4114]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_prj_2019_64/yolo_max_pool_fp_prj_2019_64.srcs/sources_1/bd/design_1/ipshared/83c8/hdl/verilog/yolo_max_pool_top.v:4116]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_prj_2019_64/yolo_max_pool_fp_prj_2019_64.srcs/sources_1/bd/design_1/ipshared/83c8/hdl/verilog/yolo_max_pool_top.v:4118]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_prj_2019_64/yolo_max_pool_fp_prj_2019_64.srcs/sources_1/bd/design_1/ipshared/83c8/hdl/verilog/yolo_max_pool_top.v:4120]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_prj_2019_64/yolo_max_pool_fp_prj_2019_64.srcs/sources_1/bd/design_1/ipshared/83c8/hdl/verilog/yolo_max_pool_top.v:4122]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_prj_2019_64/yolo_max_pool_fp_prj_2019_64.srcs/sources_1/bd/design_1/ipshared/83c8/hdl/verilog/yolo_max_pool_top.v:4124]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_prj_2019_64/yolo_max_pool_fp_prj_2019_64.srcs/sources_1/bd/design_1/ipshared/83c8/hdl/verilog/yolo_max_pool_top.v:4126]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_prj_2019_64/yolo_max_pool_fp_prj_2019_64.srcs/sources_1/bd/design_1/ipshared/83c8/hdl/verilog/yolo_max_pool_top.v:4128]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_prj_2019_64/yolo_max_pool_fp_prj_2019_64.srcs/sources_1/bd/design_1/ipshared/83c8/hdl/verilog/yolo_max_pool_top.v:4130]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_prj_2019_64/yolo_max_pool_fp_prj_2019_64.srcs/sources_1/bd/design_1/ipshared/83c8/hdl/verilog/yolo_max_pool_top.v:4132]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_prj_2019_64/yolo_max_pool_fp_prj_2019_64.srcs/sources_1/bd/design_1/ipshared/83c8/hdl/verilog/yolo_max_pool_top.v:4134]
+INFO: [Common 17-14] Message 'Synth 8-589' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [Synth 8-6014] Unused sequential element phi_mul928_reg_783_reg was removed.  [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_prj_2019_64/yolo_max_pool_fp_prj_2019_64.srcs/sources_1/bd/design_1/ipshared/83c8/hdl/verilog/yolo_max_pool_top.v:2267]
+WARNING: [Synth 8-6014] Unused sequential element phi_mul930_reg_805_reg was removed.  [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_prj_2019_64/yolo_max_pool_fp_prj_2019_64.srcs/sources_1/bd/design_1/ipshared/83c8/hdl/verilog/yolo_max_pool_top.v:2275]
+WARNING: [Synth 8-6014] Unused sequential element phi_mul932_reg_827_reg was removed.  [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_prj_2019_64/yolo_max_pool_fp_prj_2019_64.srcs/sources_1/bd/design_1/ipshared/83c8/hdl/verilog/yolo_max_pool_top.v:2283]
+WARNING: [Synth 8-6014] Unused sequential element phi_mul_reg_761_reg was removed.  [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_prj_2019_64/yolo_max_pool_fp_prj_2019_64.srcs/sources_1/bd/design_1/ipshared/83c8/hdl/verilog/yolo_max_pool_top.v:2291]
+INFO: [Synth 8-6155] done synthesizing module 'yolo_max_pool_top' (6#1) [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_prj_2019_64/yolo_max_pool_fp_prj_2019_64.srcs/sources_1/bd/design_1/ipshared/83c8/hdl/verilog/yolo_max_pool_top.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_yolo_max_pool_top_0_0' (7#1) [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_prj_2019_64/yolo_max_pool_fp_prj_2019_64.srcs/sources_1/bd/design_1/ip/design_1_yolo_max_pool_top_0_0/synth/design_1_yolo_max_pool_top_0_0.v:58]
+WARNING: [Synth 8-3331] design yolo_max_pool_top_line_buff_group_0_va has unconnected port reset
+WARNING: [Synth 8-3331] design yolo_max_pool_top_AXILiteS_s_axi has unconnected port WDATA[31]
+WARNING: [Synth 8-3331] design yolo_max_pool_top_AXILiteS_s_axi has unconnected port WDATA[30]
+WARNING: [Synth 8-3331] design yolo_max_pool_top_AXILiteS_s_axi has unconnected port WDATA[29]
+WARNING: [Synth 8-3331] design yolo_max_pool_top_AXILiteS_s_axi has unconnected port WDATA[28]
+WARNING: [Synth 8-3331] design yolo_max_pool_top_AXILiteS_s_axi has unconnected port WDATA[27]
+WARNING: [Synth 8-3331] design yolo_max_pool_top_AXILiteS_s_axi has unconnected port WDATA[26]
+WARNING: [Synth 8-3331] design yolo_max_pool_top_AXILiteS_s_axi has unconnected port WDATA[25]
+WARNING: [Synth 8-3331] design yolo_max_pool_top_AXILiteS_s_axi has unconnected port WDATA[24]
+WARNING: [Synth 8-3331] design yolo_max_pool_top_AXILiteS_s_axi has unconnected port WDATA[23]
+WARNING: [Synth 8-3331] design yolo_max_pool_top_AXILiteS_s_axi has unconnected port WDATA[22]
+WARNING: [Synth 8-3331] design yolo_max_pool_top_AXILiteS_s_axi has unconnected port WDATA[21]
+WARNING: [Synth 8-3331] design yolo_max_pool_top_AXILiteS_s_axi has unconnected port WDATA[20]
+WARNING: [Synth 8-3331] design yolo_max_pool_top_AXILiteS_s_axi has unconnected port WDATA[19]
+WARNING: [Synth 8-3331] design yolo_max_pool_top_AXILiteS_s_axi has unconnected port WDATA[18]
+WARNING: [Synth 8-3331] design yolo_max_pool_top_AXILiteS_s_axi has unconnected port WDATA[17]
+WARNING: [Synth 8-3331] design yolo_max_pool_top_AXILiteS_s_axi has unconnected port WDATA[16]
+WARNING: [Synth 8-3331] design yolo_max_pool_top_AXILiteS_s_axi has unconnected port WDATA[15]
+WARNING: [Synth 8-3331] design yolo_max_pool_top_AXILiteS_s_axi has unconnected port WDATA[14]
+WARNING: [Synth 8-3331] design yolo_max_pool_top_AXILiteS_s_axi has unconnected port WDATA[13]
+WARNING: [Synth 8-3331] design yolo_max_pool_top_AXILiteS_s_axi has unconnected port WDATA[12]
+WARNING: [Synth 8-3331] design yolo_max_pool_top_AXILiteS_s_axi has unconnected port WDATA[11]
+WARNING: [Synth 8-3331] design yolo_max_pool_top_AXILiteS_s_axi has unconnected port WDATA[10]
+WARNING: [Synth 8-3331] design yolo_max_pool_top_AXILiteS_s_axi has unconnected port WDATA[9]
+WARNING: [Synth 8-3331] design yolo_max_pool_top_AXILiteS_s_axi has unconnected port WDATA[8]
+WARNING: [Synth 8-3331] design yolo_max_pool_top_AXILiteS_s_axi has unconnected port WDATA[6]
+WARNING: [Synth 8-3331] design yolo_max_pool_top_AXILiteS_s_axi has unconnected port WDATA[5]
+WARNING: [Synth 8-3331] design yolo_max_pool_top_AXILiteS_s_axi has unconnected port WDATA[4]
+WARNING: [Synth 8-3331] design yolo_max_pool_top_AXILiteS_s_axi has unconnected port WDATA[3]
+WARNING: [Synth 8-3331] design yolo_max_pool_top_AXILiteS_s_axi has unconnected port WDATA[2]
+WARNING: [Synth 8-3331] design yolo_max_pool_top_AXILiteS_s_axi has unconnected port WSTRB[3]
+WARNING: [Synth 8-3331] design yolo_max_pool_top_AXILiteS_s_axi has unconnected port WSTRB[2]
+WARNING: [Synth 8-3331] design yolo_max_pool_top_AXILiteS_s_axi has unconnected port WSTRB[1]
+WARNING: [Synth 8-3331] design yolo_max_pool_top has unconnected port inStream_TLAST[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 1758.594 ; gain = 213.434 ; free physical = 787 ; free virtual = 11737
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:10 . Memory (MB): peak = 1773.438 ; gain = 228.277 ; free physical = 745 ; free virtual = 11689
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:10 . Memory (MB): peak = 1773.438 ; gain = 228.277 ; free physical = 745 ; free virtual = 11689
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_prj_2019_64/yolo_max_pool_fp_prj_2019_64.srcs/sources_1/bd/design_1/ip/design_1_yolo_max_pool_top_0_0/constraints/yolo_max_pool_top_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_prj_2019_64/yolo_max_pool_fp_prj_2019_64.srcs/sources_1/bd/design_1/ip/design_1_yolo_max_pool_top_0_0/constraints/yolo_max_pool_top_ooc.xdc] for cell 'inst'
+Parsing XDC File [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_prj_2019_64/yolo_max_pool_fp_prj_2019_64.runs/design_1_yolo_max_pool_top_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_prj_2019_64/yolo_max_pool_fp_prj_2019_64.runs/design_1_yolo_max_pool_top_0_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1918.109 ; gain = 0.000 ; free physical = 667 ; free virtual = 11615
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.11 ; elapsed = 00:00:00.09 . Memory (MB): peak = 1926.047 ; gain = 7.938 ; free physical = 666 ; free virtual = 11614
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:18 . Memory (MB): peak = 1926.047 ; gain = 380.887 ; free physical = 713 ; free virtual = 11661
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:18 . Memory (MB): peak = 1926.047 ; gain = 380.887 ; free physical = 712 ; free virtual = 11661
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for inst. (constraint file  /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_prj_2019_64/yolo_max_pool_fp_prj_2019_64.runs/design_1_yolo_max_pool_top_0_0_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:18 . Memory (MB): peak = 1926.047 ; gain = 380.887 ; free physical = 708 ; free virtual = 11656
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'wstate_reg' in module 'yolo_max_pool_top_AXILiteS_s_axi'
+INFO: [Synth 8-802] inferred FSM for state register 'rstate_reg' in module 'yolo_max_pool_top_AXILiteS_s_axi'
+INFO: [Synth 8-4471] merging register 'line_buff_group_1_va_5_reg_4961_reg[10:0]' into 'line_buff_group_0_va_5_reg_4956_reg[10:0]' [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_prj_2019_64/yolo_max_pool_fp_prj_2019_64.srcs/sources_1/bd/design_1/ipshared/83c8/hdl/verilog/yolo_max_pool_top.v:2309]
+INFO: [Synth 8-4471] merging register 'line_buff_group_2_va_5_reg_4966_reg[10:0]' into 'line_buff_group_0_va_5_reg_4956_reg[10:0]' [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_prj_2019_64/yolo_max_pool_fp_prj_2019_64.srcs/sources_1/bd/design_1/ipshared/83c8/hdl/verilog/yolo_max_pool_top.v:2310]
+INFO: [Synth 8-4471] merging register 'line_buff_group_3_va_5_reg_4971_reg[10:0]' into 'line_buff_group_0_va_5_reg_4956_reg[10:0]' [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_prj_2019_64/yolo_max_pool_fp_prj_2019_64.srcs/sources_1/bd/design_1/ipshared/83c8/hdl/verilog/yolo_max_pool_top.v:2311]
+INFO: [Synth 8-4471] merging register 'line_buff_group_1_va_7_reg_5011_reg[10:0]' into 'line_buff_group_0_va_7_reg_4991_reg[10:0]' [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_prj_2019_64/yolo_max_pool_fp_prj_2019_64.srcs/sources_1/bd/design_1/ipshared/83c8/hdl/verilog/yolo_max_pool_top.v:2512]
+INFO: [Synth 8-4471] merging register 'line_buff_group_2_va_7_reg_5031_reg[10:0]' into 'line_buff_group_0_va_7_reg_4991_reg[10:0]' [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_prj_2019_64/yolo_max_pool_fp_prj_2019_64.srcs/sources_1/bd/design_1/ipshared/83c8/hdl/verilog/yolo_max_pool_top.v:2513]
+INFO: [Synth 8-4471] merging register 'line_buff_group_3_va_7_reg_5051_reg[10:0]' into 'line_buff_group_0_va_7_reg_4991_reg[10:0]' [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_prj_2019_64/yolo_max_pool_fp_prj_2019_64.srcs/sources_1/bd/design_1/ipshared/83c8/hdl/verilog/yolo_max_pool_top.v:2514]
+WARNING: [Synth 8-3936] Found unconnected internal register 'add_ln132_1_reg_4951_reg' and it is trimmed from '12' to '11' bits. [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_prj_2019_64/yolo_max_pool_fp_prj_2019_64.srcs/sources_1/bd/design_1/ipshared/83c8/hdl/verilog/yolo_max_pool_top.v:2307]
+WARNING: [Synth 8-3936] Found unconnected internal register 'select_ln43_reg_4838_pp0_iter1_reg_reg' and it is trimmed from '3' to '2' bits. [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_prj_2019_64/yolo_max_pool_fp_prj_2019_64.srcs/sources_1/bd/design_1/ipshared/83c8/hdl/verilog/yolo_max_pool_top.v:2343]
+WARNING: [Synth 8-3936] Found unconnected internal register 'select_ln43_reg_4838_reg' and it is trimmed from '3' to '2' bits. [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_prj_2019_64/yolo_max_pool_fp_prj_2019_64.srcs/sources_1/bd/design_1/ipshared/83c8/hdl/verilog/yolo_max_pool_top.v:2327]
+WARNING: [Synth 8-3936] Found unconnected internal register 'add_ln132_reg_4913_pp0_iter1_reg_reg' and it is trimmed from '12' to '11' bits. [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_prj_2019_64/yolo_max_pool_fp_prj_2019_64.srcs/sources_1/bd/design_1/ipshared/83c8/hdl/verilog/yolo_max_pool_top.v:2338]
+WARNING: [Synth 8-3936] Found unconnected internal register 'add_ln132_reg_4913_reg' and it is trimmed from '12' to '11' bits. [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_prj_2019_64/yolo_max_pool_fp_prj_2019_64.srcs/sources_1/bd/design_1/ipshared/83c8/hdl/verilog/yolo_max_pool_top.v:2318]
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                             0001 |                               11
+*
+                  WRIDLE |                             0010 |                               00
+                  WRDATA |                             0100 |                               01
+                  WRRESP |                             1000 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'wstate_reg' using encoding 'one-hot' in module 'yolo_max_pool_top_AXILiteS_s_axi'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                              001 |                               10
+*
+                  RDIDLE |                              010 |                               00
+                  RDDATA |                              100 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'rstate_reg' using encoding 'one-hot' in module 'yolo_max_pool_top_AXILiteS_s_axi'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:17 ; elapsed = 00:00:21 . Memory (MB): peak = 1926.047 ; gain = 380.887 ; free physical = 657 ; free virtual = 11606
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     13 Bit       Adders := 1     
+	   2 Input     12 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 3     
+	   2 Input      9 Bit       Adders := 5     
+	   2 Input      8 Bit       Adders := 2     
+	   2 Input      5 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 6     
++---XORs : 
+	   2 Input      1 Bit         XORs := 5     
++---Registers : 
+	               64 Bit    Registers := 4     
+	               32 Bit    Registers := 1     
+	               20 Bit    Registers := 1     
+	               16 Bit    Registers := 116   
+	               13 Bit    Registers := 2     
+	               12 Bit    Registers := 3     
+	               11 Bit    Registers := 3     
+	               10 Bit    Registers := 1     
+	                9 Bit    Registers := 4     
+	                8 Bit    Registers := 23    
+	                6 Bit    Registers := 7     
+	                5 Bit    Registers := 9     
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 2     
+	                2 Bit    Registers := 35    
+	                1 Bit    Registers := 69    
++---RAMs : 
+	              26K Bit         RAMs := 8     
++---Muxes : 
+	   2 Input     64 Bit        Muxes := 2     
+	   5 Input     32 Bit        Muxes := 1     
+	   2 Input     20 Bit        Muxes := 2     
+	   2 Input     16 Bit        Muxes := 432   
+	   2 Input     13 Bit        Muxes := 2     
+	   2 Input     12 Bit        Muxes := 2     
+	   2 Input     11 Bit        Muxes := 6     
+	   2 Input      9 Bit        Muxes := 10    
+	   2 Input      8 Bit        Muxes := 16    
+	   3 Input      8 Bit        Muxes := 2     
+	   2 Input      6 Bit        Muxes := 3     
+	   2 Input      5 Bit        Muxes := 5     
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 4     
+	   3 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 5     
+	   2 Input      2 Bit        Muxes := 33    
+	   4 Input      2 Bit        Muxes := 6     
+	   3 Input      2 Bit        Muxes := 7     
+	   2 Input      1 Bit        Muxes := 165   
+	   3 Input      1 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module yolo_max_pool_top_AXILiteS_s_axi 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 8     
++---Muxes : 
+	   5 Input     32 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 3     
+	   3 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 1     
+Module yolo_max_pool_top_line_buff_group_0_va_ram 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 2     
++---RAMs : 
+	              26K Bit         RAMs := 1     
+Module write_output 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module yolo_max_pool_top_mux_42_16_1_1 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 3     
+Module yolo_max_pool_top 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     13 Bit       Adders := 1     
+	   2 Input     12 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 3     
+	   2 Input      9 Bit       Adders := 5     
+	   2 Input      8 Bit       Adders := 2     
+	   2 Input      5 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 6     
++---XORs : 
+	   2 Input      1 Bit         XORs := 3     
++---Registers : 
+	               64 Bit    Registers := 4     
+	               20 Bit    Registers := 1     
+	               16 Bit    Registers := 100   
+	               13 Bit    Registers := 2     
+	               12 Bit    Registers := 3     
+	               11 Bit    Registers := 3     
+	               10 Bit    Registers := 1     
+	                9 Bit    Registers := 4     
+	                8 Bit    Registers := 23    
+	                6 Bit    Registers := 7     
+	                5 Bit    Registers := 9     
+	                3 Bit    Registers := 2     
+	                2 Bit    Registers := 34    
+	                1 Bit    Registers := 60    
++---Muxes : 
+	   2 Input     64 Bit        Muxes := 2     
+	   2 Input     20 Bit        Muxes := 2     
+	   2 Input     16 Bit        Muxes := 375   
+	   2 Input     13 Bit        Muxes := 2     
+	   2 Input     12 Bit        Muxes := 2     
+	   2 Input     11 Bit        Muxes := 6     
+	   2 Input      9 Bit        Muxes := 10    
+	   2 Input      8 Bit        Muxes := 16    
+	   3 Input      8 Bit        Muxes := 2     
+	   2 Input      6 Bit        Muxes := 3     
+	   2 Input      5 Bit        Muxes := 5     
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 3     
+	   2 Input      2 Bit        Muxes := 33    
+	   4 Input      2 Bit        Muxes := 6     
+	   3 Input      2 Bit        Muxes := 7     
+	   2 Input      1 Bit        Muxes := 163   
+	   3 Input      1 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-4471] merging register 'mul_ln203_reg_4907_reg[11:0]' into 'mul_ln203_reg_4907_reg[11:0]' [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_prj_2019_64/yolo_max_pool_fp_prj_2019_64.srcs/sources_1/bd/design_1/ipshared/83c8/hdl/verilog/yolo_max_pool_top.v:2323]
+WARNING: [Synth 8-3936] Found unconnected internal register 'sext_ln203_reg_4943_reg' and it is trimmed from '12' to '11' bits. [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_prj_2019_64/yolo_max_pool_fp_prj_2019_64.srcs/sources_1/bd/design_1/ipshared/83c8/hdl/verilog/yolo_max_pool_top.v:2312]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mul_ln203_reg_4907_reg' and it is trimmed from '12' to '11' bits. [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_prj_2019_64/yolo_max_pool_fp_prj_2019_64.srcs/sources_1/bd/design_1/ipshared/83c8/hdl/verilog/yolo_max_pool_top.v:2323]
+INFO: [Synth 8-5544] ROM "data51" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+WARNING: [Synth 8-3331] design yolo_max_pool_top_AXILiteS_s_axi has unconnected port WDATA[31]
+WARNING: [Synth 8-3331] design yolo_max_pool_top_AXILiteS_s_axi has unconnected port WDATA[30]
+WARNING: [Synth 8-3331] design yolo_max_pool_top_AXILiteS_s_axi has unconnected port WDATA[29]
+WARNING: [Synth 8-3331] design yolo_max_pool_top_AXILiteS_s_axi has unconnected port WDATA[28]
+WARNING: [Synth 8-3331] design yolo_max_pool_top_AXILiteS_s_axi has unconnected port WDATA[27]
+WARNING: [Synth 8-3331] design yolo_max_pool_top_AXILiteS_s_axi has unconnected port WDATA[26]
+WARNING: [Synth 8-3331] design yolo_max_pool_top_AXILiteS_s_axi has unconnected port WDATA[25]
+WARNING: [Synth 8-3331] design yolo_max_pool_top_AXILiteS_s_axi has unconnected port WDATA[24]
+WARNING: [Synth 8-3331] design yolo_max_pool_top_AXILiteS_s_axi has unconnected port WDATA[23]
+WARNING: [Synth 8-3331] design yolo_max_pool_top_AXILiteS_s_axi has unconnected port WDATA[22]
+WARNING: [Synth 8-3331] design yolo_max_pool_top_AXILiteS_s_axi has unconnected port WDATA[21]
+WARNING: [Synth 8-3331] design yolo_max_pool_top_AXILiteS_s_axi has unconnected port WDATA[20]
+WARNING: [Synth 8-3331] design yolo_max_pool_top_AXILiteS_s_axi has unconnected port WDATA[19]
+WARNING: [Synth 8-3331] design yolo_max_pool_top_AXILiteS_s_axi has unconnected port WDATA[18]
+WARNING: [Synth 8-3331] design yolo_max_pool_top_AXILiteS_s_axi has unconnected port WDATA[17]
+WARNING: [Synth 8-3331] design yolo_max_pool_top_AXILiteS_s_axi has unconnected port WDATA[16]
+WARNING: [Synth 8-3331] design yolo_max_pool_top_AXILiteS_s_axi has unconnected port WDATA[15]
+WARNING: [Synth 8-3331] design yolo_max_pool_top_AXILiteS_s_axi has unconnected port WDATA[14]
+WARNING: [Synth 8-3331] design yolo_max_pool_top_AXILiteS_s_axi has unconnected port WDATA[13]
+WARNING: [Synth 8-3331] design yolo_max_pool_top_AXILiteS_s_axi has unconnected port WDATA[12]
+WARNING: [Synth 8-3331] design yolo_max_pool_top_AXILiteS_s_axi has unconnected port WDATA[11]
+WARNING: [Synth 8-3331] design yolo_max_pool_top_AXILiteS_s_axi has unconnected port WDATA[10]
+WARNING: [Synth 8-3331] design yolo_max_pool_top_AXILiteS_s_axi has unconnected port WDATA[9]
+WARNING: [Synth 8-3331] design yolo_max_pool_top_AXILiteS_s_axi has unconnected port WDATA[8]
+WARNING: [Synth 8-3331] design yolo_max_pool_top_AXILiteS_s_axi has unconnected port WDATA[6]
+WARNING: [Synth 8-3331] design yolo_max_pool_top_AXILiteS_s_axi has unconnected port WDATA[5]
+WARNING: [Synth 8-3331] design yolo_max_pool_top_AXILiteS_s_axi has unconnected port WDATA[4]
+WARNING: [Synth 8-3331] design yolo_max_pool_top_AXILiteS_s_axi has unconnected port WDATA[3]
+WARNING: [Synth 8-3331] design yolo_max_pool_top_AXILiteS_s_axi has unconnected port WDATA[2]
+WARNING: [Synth 8-3331] design yolo_max_pool_top_AXILiteS_s_axi has unconnected port WSTRB[3]
+WARNING: [Synth 8-3331] design yolo_max_pool_top_AXILiteS_s_axi has unconnected port WSTRB[2]
+WARNING: [Synth 8-3331] design yolo_max_pool_top_AXILiteS_s_axi has unconnected port WSTRB[1]
+WARNING: [Synth 8-3331] design yolo_max_pool_top has unconnected port inStream_TLAST[0]
+INFO: [Synth 8-3886] merging instance 'inst/sext_ln203_reg_4943_reg[0]' (FDE) to 'inst/line_buff_group_0_va_5_reg_4956_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/sext_ln203_reg_4943_reg[1]' (FDE) to 'inst/line_buff_group_0_va_5_reg_4956_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst/sext_ln203_reg_4943_reg[2]' (FDE) to 'inst/line_buff_group_0_va_5_reg_4956_reg[2]'
+INFO: [Synth 8-3886] merging instance 'inst/sext_ln203_reg_4943_reg[3]' (FDE) to 'inst/line_buff_group_0_va_5_reg_4956_reg[3]'
+INFO: [Synth 8-3886] merging instance 'inst/sext_ln203_reg_4943_reg[4]' (FDE) to 'inst/line_buff_group_0_va_5_reg_4956_reg[4]'
+INFO: [Synth 8-3886] merging instance 'inst/sext_ln203_reg_4943_reg[5]' (FDE) to 'inst/line_buff_group_0_va_5_reg_4956_reg[5]'
+INFO: [Synth 8-3886] merging instance 'inst/sext_ln203_reg_4943_reg[6]' (FDE) to 'inst/line_buff_group_0_va_5_reg_4956_reg[6]'
+INFO: [Synth 8-3886] merging instance 'inst/sext_ln203_reg_4943_reg[7]' (FDE) to 'inst/line_buff_group_0_va_5_reg_4956_reg[7]'
+INFO: [Synth 8-3886] merging instance 'inst/sext_ln203_reg_4943_reg[8]' (FDE) to 'inst/line_buff_group_0_va_5_reg_4956_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/sext_ln203_reg_4943_reg[9]' (FDE) to 'inst/line_buff_group_0_va_5_reg_4956_reg[9]'
+INFO: [Synth 8-3886] merging instance 'inst/sext_ln203_reg_4943_reg[10]' (FDE) to 'inst/line_buff_group_0_va_5_reg_4956_reg[10]'
+INFO: [Synth 8-3886] merging instance 'inst/select_ln43_reg_4838_reg[0]' (FDE) to 'inst/mul_ln203_reg_4907_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst/select_ln43_reg_4838_reg[1]' (FDE) to 'inst/mul_ln203_reg_4907_reg[2]'
+INFO: [Synth 8-3886] merging instance 'inst/mul_ln203_reg_4907_reg[0]' (FDE) to 'inst/mul_ln203_reg_4907_reg[4]'
+INFO: [Synth 8-3886] merging instance 'inst/mul_ln203_reg_4907_reg[1]' (FDE) to 'inst/mul_ln203_reg_4907_reg[5]'
+INFO: [Synth 8-3886] merging instance 'inst/mul_ln203_reg_4907_reg[2]' (FDE) to 'inst/mul_ln203_reg_4907_reg[6]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\mul_ln203_reg_4907_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\shl_ln1_reg_4669_reg[0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\call_ln104_write_output_fu_942/ap_CS_fsm_reg[0] )
+INFO: [Synth 8-3886] merging instance 'inst/yolo_max_pool_top_AXILiteS_s_axi_U/rdata_reg[4]' (FDE) to 'inst/yolo_max_pool_top_AXILiteS_s_axi_U/rdata_reg[5]'
+INFO: [Synth 8-3886] merging instance 'inst/yolo_max_pool_top_AXILiteS_s_axi_U/rdata_reg[5]' (FDE) to 'inst/yolo_max_pool_top_AXILiteS_s_axi_U/rdata_reg[6]'
+INFO: [Synth 8-3886] merging instance 'inst/yolo_max_pool_top_AXILiteS_s_axi_U/rdata_reg[6]' (FDE) to 'inst/yolo_max_pool_top_AXILiteS_s_axi_U/rdata_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/yolo_max_pool_top_AXILiteS_s_axi_U/rdata_reg[8]' (FDE) to 'inst/yolo_max_pool_top_AXILiteS_s_axi_U/rdata_reg[9]'
+INFO: [Synth 8-3886] merging instance 'inst/yolo_max_pool_top_AXILiteS_s_axi_U/rdata_reg[9]' (FDE) to 'inst/yolo_max_pool_top_AXILiteS_s_axi_U/rdata_reg[10]'
+INFO: [Synth 8-3886] merging instance 'inst/yolo_max_pool_top_AXILiteS_s_axi_U/rdata_reg[10]' (FDE) to 'inst/yolo_max_pool_top_AXILiteS_s_axi_U/rdata_reg[11]'
+INFO: [Synth 8-3886] merging instance 'inst/yolo_max_pool_top_AXILiteS_s_axi_U/rdata_reg[11]' (FDE) to 'inst/yolo_max_pool_top_AXILiteS_s_axi_U/rdata_reg[12]'
+INFO: [Synth 8-3886] merging instance 'inst/yolo_max_pool_top_AXILiteS_s_axi_U/rdata_reg[12]' (FDE) to 'inst/yolo_max_pool_top_AXILiteS_s_axi_U/rdata_reg[13]'
+INFO: [Synth 8-3886] merging instance 'inst/yolo_max_pool_top_AXILiteS_s_axi_U/rdata_reg[13]' (FDE) to 'inst/yolo_max_pool_top_AXILiteS_s_axi_U/rdata_reg[14]'
+INFO: [Synth 8-3886] merging instance 'inst/yolo_max_pool_top_AXILiteS_s_axi_U/rdata_reg[14]' (FDE) to 'inst/yolo_max_pool_top_AXILiteS_s_axi_U/rdata_reg[15]'
+INFO: [Synth 8-3886] merging instance 'inst/yolo_max_pool_top_AXILiteS_s_axi_U/rdata_reg[15]' (FDE) to 'inst/yolo_max_pool_top_AXILiteS_s_axi_U/rdata_reg[16]'
+INFO: [Synth 8-3886] merging instance 'inst/yolo_max_pool_top_AXILiteS_s_axi_U/rdata_reg[16]' (FDE) to 'inst/yolo_max_pool_top_AXILiteS_s_axi_U/rdata_reg[17]'
+INFO: [Synth 8-3886] merging instance 'inst/yolo_max_pool_top_AXILiteS_s_axi_U/rdata_reg[17]' (FDE) to 'inst/yolo_max_pool_top_AXILiteS_s_axi_U/rdata_reg[18]'
+INFO: [Synth 8-3886] merging instance 'inst/yolo_max_pool_top_AXILiteS_s_axi_U/rdata_reg[18]' (FDE) to 'inst/yolo_max_pool_top_AXILiteS_s_axi_U/rdata_reg[19]'
+INFO: [Synth 8-3886] merging instance 'inst/yolo_max_pool_top_AXILiteS_s_axi_U/rdata_reg[19]' (FDE) to 'inst/yolo_max_pool_top_AXILiteS_s_axi_U/rdata_reg[20]'
+INFO: [Synth 8-3886] merging instance 'inst/yolo_max_pool_top_AXILiteS_s_axi_U/rdata_reg[20]' (FDE) to 'inst/yolo_max_pool_top_AXILiteS_s_axi_U/rdata_reg[21]'
+INFO: [Synth 8-3886] merging instance 'inst/yolo_max_pool_top_AXILiteS_s_axi_U/rdata_reg[21]' (FDE) to 'inst/yolo_max_pool_top_AXILiteS_s_axi_U/rdata_reg[22]'
+INFO: [Synth 8-3886] merging instance 'inst/yolo_max_pool_top_AXILiteS_s_axi_U/rdata_reg[22]' (FDE) to 'inst/yolo_max_pool_top_AXILiteS_s_axi_U/rdata_reg[23]'
+INFO: [Synth 8-3886] merging instance 'inst/yolo_max_pool_top_AXILiteS_s_axi_U/rdata_reg[23]' (FDE) to 'inst/yolo_max_pool_top_AXILiteS_s_axi_U/rdata_reg[24]'
+INFO: [Synth 8-3886] merging instance 'inst/yolo_max_pool_top_AXILiteS_s_axi_U/rdata_reg[24]' (FDE) to 'inst/yolo_max_pool_top_AXILiteS_s_axi_U/rdata_reg[25]'
+INFO: [Synth 8-3886] merging instance 'inst/yolo_max_pool_top_AXILiteS_s_axi_U/rdata_reg[25]' (FDE) to 'inst/yolo_max_pool_top_AXILiteS_s_axi_U/rdata_reg[26]'
+INFO: [Synth 8-3886] merging instance 'inst/yolo_max_pool_top_AXILiteS_s_axi_U/rdata_reg[26]' (FDE) to 'inst/yolo_max_pool_top_AXILiteS_s_axi_U/rdata_reg[27]'
+INFO: [Synth 8-3886] merging instance 'inst/yolo_max_pool_top_AXILiteS_s_axi_U/rdata_reg[27]' (FDE) to 'inst/yolo_max_pool_top_AXILiteS_s_axi_U/rdata_reg[28]'
+INFO: [Synth 8-3886] merging instance 'inst/yolo_max_pool_top_AXILiteS_s_axi_U/rdata_reg[28]' (FDE) to 'inst/yolo_max_pool_top_AXILiteS_s_axi_U/rdata_reg[29]'
+INFO: [Synth 8-3886] merging instance 'inst/yolo_max_pool_top_AXILiteS_s_axi_U/rdata_reg[29]' (FDE) to 'inst/yolo_max_pool_top_AXILiteS_s_axi_U/rdata_reg[30]'
+INFO: [Synth 8-3886] merging instance 'inst/yolo_max_pool_top_AXILiteS_s_axi_U/rdata_reg[30]' (FDE) to 'inst/yolo_max_pool_top_AXILiteS_s_axi_U/rdata_reg[31]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/yolo_max_pool_top_AXILiteS_s_axi_U/\rdata_reg[31] )
+WARNING: [Synth 8-3332] Sequential element (FSM_onehot_wstate_reg[0]) is unused and will be removed from module yolo_max_pool_top_AXILiteS_s_axi.
+WARNING: [Synth 8-3332] Sequential element (FSM_onehot_rstate_reg[0]) is unused and will be removed from module yolo_max_pool_top_AXILiteS_s_axi.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\conv_count_1_reg_4684_reg[9] )
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:30 ; elapsed = 00:00:34 . Memory (MB): peak = 1926.047 ; gain = 380.887 ; free physical = 504 ; free virtual = 11499
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Preliminary Mapping  Report (see note below)
++--------------------------------------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name                                 | RTL Object | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++--------------------------------------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|yolo_max_pool_top_line_buff_group_0_va_ram: | ram_reg    | 2 K x 16(READ_FIRST)   | W | R | 2 K x 16(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
+|yolo_max_pool_top_line_buff_group_0_va_ram: | ram_reg    | 2 K x 16(READ_FIRST)   | W | R | 2 K x 16(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
+|yolo_max_pool_top_line_buff_group_0_va_ram: | ram_reg    | 2 K x 16(READ_FIRST)   | W | R | 2 K x 16(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
+|yolo_max_pool_top_line_buff_group_0_va_ram: | ram_reg    | 2 K x 16(READ_FIRST)   | W | R | 2 K x 16(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
+|yolo_max_pool_top_line_buff_group_0_va_ram: | ram_reg    | 2 K x 16(READ_FIRST)   | W | R | 2 K x 16(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
+|yolo_max_pool_top_line_buff_group_0_va_ram: | ram_reg    | 2 K x 16(READ_FIRST)   | W | R | 2 K x 16(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
+|yolo_max_pool_top_line_buff_group_0_va_ram: | ram_reg    | 2 K x 16(READ_FIRST)   | W | R | 2 K x 16(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
+|yolo_max_pool_top_line_buff_group_0_va_ram: | ram_reg    | 2 K x 16(READ_FIRST)   | W | R | 2 K x 16(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
++--------------------------------------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6837] The timing for the instance inst/i_1/line_buff_group_0_va_U/yolo_max_pool_top_line_buff_group_0_va_ram_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/i_1/line_buff_group_0_va_U/yolo_max_pool_top_line_buff_group_0_va_ram_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/i_2/line_buff_group_0_va_1_U/yolo_max_pool_top_line_buff_group_0_va_ram_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/i_2/line_buff_group_0_va_1_U/yolo_max_pool_top_line_buff_group_0_va_ram_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/i_3/line_buff_group_1_va_U/yolo_max_pool_top_line_buff_group_0_va_ram_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/i_3/line_buff_group_1_va_U/yolo_max_pool_top_line_buff_group_0_va_ram_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/i_4/line_buff_group_1_va_1_U/yolo_max_pool_top_line_buff_group_0_va_ram_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/i_4/line_buff_group_1_va_1_U/yolo_max_pool_top_line_buff_group_0_va_ram_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/i_5/line_buff_group_2_va_U/yolo_max_pool_top_line_buff_group_0_va_ram_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/i_5/line_buff_group_2_va_U/yolo_max_pool_top_line_buff_group_0_va_ram_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/i_6/line_buff_group_2_va_1_U/yolo_max_pool_top_line_buff_group_0_va_ram_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/i_6/line_buff_group_2_va_1_U/yolo_max_pool_top_line_buff_group_0_va_ram_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/i_7/line_buff_group_3_va_U/yolo_max_pool_top_line_buff_group_0_va_ram_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/i_7/line_buff_group_3_va_U/yolo_max_pool_top_line_buff_group_0_va_ram_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/i_8/line_buff_group_3_va_1_U/yolo_max_pool_top_line_buff_group_0_va_ram_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/i_8/line_buff_group_3_va_1_U/yolo_max_pool_top_line_buff_group_0_va_ram_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:40 ; elapsed = 00:00:45 . Memory (MB): peak = 1926.047 ; gain = 380.887 ; free physical = 300 ; free virtual = 11296
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:44 ; elapsed = 00:00:49 . Memory (MB): peak = 1942.055 ; gain = 396.895 ; free physical = 262 ; free virtual = 11257
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Final Mapping  Report
++--------------------------------------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name                                 | RTL Object | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++--------------------------------------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|yolo_max_pool_top_line_buff_group_0_va_ram: | ram_reg    | 2 K x 16(READ_FIRST)   | W | R | 2 K x 16(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
+|yolo_max_pool_top_line_buff_group_0_va_ram: | ram_reg    | 2 K x 16(READ_FIRST)   | W | R | 2 K x 16(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
+|yolo_max_pool_top_line_buff_group_0_va_ram: | ram_reg    | 2 K x 16(READ_FIRST)   | W | R | 2 K x 16(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
+|yolo_max_pool_top_line_buff_group_0_va_ram: | ram_reg    | 2 K x 16(READ_FIRST)   | W | R | 2 K x 16(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
+|yolo_max_pool_top_line_buff_group_0_va_ram: | ram_reg    | 2 K x 16(READ_FIRST)   | W | R | 2 K x 16(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
+|yolo_max_pool_top_line_buff_group_0_va_ram: | ram_reg    | 2 K x 16(READ_FIRST)   | W | R | 2 K x 16(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
+|yolo_max_pool_top_line_buff_group_0_va_ram: | ram_reg    | 2 K x 16(READ_FIRST)   | W | R | 2 K x 16(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
+|yolo_max_pool_top_line_buff_group_0_va_ram: | ram_reg    | 2 K x 16(READ_FIRST)   | W | R | 2 K x 16(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
++--------------------------------------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6837] The timing for the instance inst/line_buff_group_0_va_U/yolo_max_pool_top_line_buff_group_0_va_ram_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/line_buff_group_0_va_U/yolo_max_pool_top_line_buff_group_0_va_ram_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/line_buff_group_0_va_1_U/yolo_max_pool_top_line_buff_group_0_va_ram_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/line_buff_group_0_va_1_U/yolo_max_pool_top_line_buff_group_0_va_ram_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/line_buff_group_1_va_U/yolo_max_pool_top_line_buff_group_0_va_ram_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/line_buff_group_1_va_U/yolo_max_pool_top_line_buff_group_0_va_ram_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/line_buff_group_1_va_1_U/yolo_max_pool_top_line_buff_group_0_va_ram_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/line_buff_group_1_va_1_U/yolo_max_pool_top_line_buff_group_0_va_ram_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/line_buff_group_2_va_U/yolo_max_pool_top_line_buff_group_0_va_ram_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/line_buff_group_2_va_U/yolo_max_pool_top_line_buff_group_0_va_ram_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/line_buff_group_2_va_1_U/yolo_max_pool_top_line_buff_group_0_va_ram_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/line_buff_group_2_va_1_U/yolo_max_pool_top_line_buff_group_0_va_ram_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/line_buff_group_3_va_U/yolo_max_pool_top_line_buff_group_0_va_ram_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/line_buff_group_3_va_U/yolo_max_pool_top_line_buff_group_0_va_ram_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/line_buff_group_3_va_1_U/yolo_max_pool_top_line_buff_group_0_va_ram_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/line_buff_group_3_va_1_U/yolo_max_pool_top_line_buff_group_0_va_ram_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:48 ; elapsed = 00:00:53 . Memory (MB): peak = 1950.062 ; gain = 404.902 ; free physical = 257 ; free virtual = 11253
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6064] Net line_buff_group_0_va_1_we0 is driving 32 big block pins (URAM, BRAM and DSP loads). Created 4 replicas of its driver. 
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:51 ; elapsed = 00:00:56 . Memory (MB): peak = 1950.062 ; gain = 404.902 ; free physical = 239 ; free virtual = 11235
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:51 ; elapsed = 00:00:56 . Memory (MB): peak = 1950.062 ; gain = 404.902 ; free physical = 239 ; free virtual = 11235
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:51 ; elapsed = 00:00:57 . Memory (MB): peak = 1950.062 ; gain = 404.902 ; free physical = 237 ; free virtual = 11233
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:51 ; elapsed = 00:00:57 . Memory (MB): peak = 1950.062 ; gain = 404.902 ; free physical = 237 ; free virtual = 11233
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:51 ; elapsed = 00:00:57 . Memory (MB): peak = 1950.062 ; gain = 404.902 ; free physical = 236 ; free virtual = 11231
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:51 ; elapsed = 00:00:57 . Memory (MB): peak = 1950.062 ; gain = 404.902 ; free physical = 234 ; free virtual = 11229
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |CARRY4   |    47|
+|2     |LUT1     |     8|
+|3     |LUT2     |    51|
+|4     |LUT3     |   786|
+|5     |LUT4     |   349|
+|6     |LUT5     |   450|
+|7     |LUT6     |   582|
+|8     |MUXF7    |   177|
+|9     |RAMB36E1 |     8|
+|10    |FDRE     |  1967|
+|11    |FDSE     |     5|
++------+---------+------+
+
+Report Instance Areas: 
++------+---------------------------------------------------+----------------------------------------------+------+
+|      |Instance                                           |Module                                        |Cells |
++------+---------------------------------------------------+----------------------------------------------+------+
+|1     |top                                                |                                              |  4430|
+|2     |  inst                                             |yolo_max_pool_top                             |  4430|
+|3     |    line_buff_group_0_va_1_U                       |yolo_max_pool_top_line_buff_group_0_va        |    82|
+|4     |      yolo_max_pool_top_line_buff_group_0_va_ram_U |yolo_max_pool_top_line_buff_group_0_va_ram_23 |    82|
+|5     |    line_buff_group_0_va_U                         |yolo_max_pool_top_line_buff_group_0_va_0      |     2|
+|6     |      yolo_max_pool_top_line_buff_group_0_va_ram_U |yolo_max_pool_top_line_buff_group_0_va_ram_22 |     2|
+|7     |    line_buff_group_1_va_1_U                       |yolo_max_pool_top_line_buff_group_0_va_1      |    82|
+|8     |      yolo_max_pool_top_line_buff_group_0_va_ram_U |yolo_max_pool_top_line_buff_group_0_va_ram_21 |    82|
+|9     |    line_buff_group_1_va_U                         |yolo_max_pool_top_line_buff_group_0_va_2      |     1|
+|10    |      yolo_max_pool_top_line_buff_group_0_va_ram_U |yolo_max_pool_top_line_buff_group_0_va_ram_20 |     1|
+|11    |    line_buff_group_2_va_1_U                       |yolo_max_pool_top_line_buff_group_0_va_3      |    81|
+|12    |      yolo_max_pool_top_line_buff_group_0_va_ram_U |yolo_max_pool_top_line_buff_group_0_va_ram_19 |    81|
+|13    |    line_buff_group_2_va_U                         |yolo_max_pool_top_line_buff_group_0_va_4      |     1|
+|14    |      yolo_max_pool_top_line_buff_group_0_va_ram_U |yolo_max_pool_top_line_buff_group_0_va_ram_18 |     1|
+|15    |    line_buff_group_3_va_1_U                       |yolo_max_pool_top_line_buff_group_0_va_5      |   105|
+|16    |      yolo_max_pool_top_line_buff_group_0_va_ram_U |yolo_max_pool_top_line_buff_group_0_va_ram_17 |   105|
+|17    |    line_buff_group_3_va_U                         |yolo_max_pool_top_line_buff_group_0_va_6      |    20|
+|18    |      yolo_max_pool_top_line_buff_group_0_va_ram_U |yolo_max_pool_top_line_buff_group_0_va_ram    |    20|
+|19    |    yolo_max_pool_top_AXILiteS_s_axi_U             |yolo_max_pool_top_AXILiteS_s_axi              |    69|
+|20    |    yolo_max_pool_top_mux_42_16_1_1_U26            |yolo_max_pool_top_mux_42_16_1_1               |    92|
+|21    |    yolo_max_pool_top_mux_42_16_1_1_U27            |yolo_max_pool_top_mux_42_16_1_1_7             |    32|
+|22    |    yolo_max_pool_top_mux_42_16_1_1_U28            |yolo_max_pool_top_mux_42_16_1_1_8             |    92|
+|23    |    yolo_max_pool_top_mux_42_16_1_1_U29            |yolo_max_pool_top_mux_42_16_1_1_9             |    32|
+|24    |    yolo_max_pool_top_mux_42_16_1_1_U30            |yolo_max_pool_top_mux_42_16_1_1_10            |    92|
+|25    |    yolo_max_pool_top_mux_42_16_1_1_U31            |yolo_max_pool_top_mux_42_16_1_1_11            |    32|
+|26    |    yolo_max_pool_top_mux_42_16_1_1_U32            |yolo_max_pool_top_mux_42_16_1_1_12            |    90|
+|27    |    yolo_max_pool_top_mux_42_16_1_1_U33            |yolo_max_pool_top_mux_42_16_1_1_13            |    34|
+|28    |    yolo_max_pool_top_mux_42_16_1_1_U34            |yolo_max_pool_top_mux_42_16_1_1_14            |    82|
+|29    |    yolo_max_pool_top_mux_42_16_1_1_U35            |yolo_max_pool_top_mux_42_16_1_1_15            |    82|
+|30    |    yolo_max_pool_top_mux_42_16_1_1_U36            |yolo_max_pool_top_mux_42_16_1_1_16            |    84|
++------+---------------------------------------------------+----------------------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:51 ; elapsed = 00:00:57 . Memory (MB): peak = 1950.062 ; gain = 404.902 ; free physical = 234 ; free virtual = 11229
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 42 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:49 ; elapsed = 00:00:54 . Memory (MB): peak = 1950.062 ; gain = 252.293 ; free physical = 303 ; free virtual = 11299
+Synthesis Optimization Complete : Time (s): cpu = 00:00:52 ; elapsed = 00:00:57 . Memory (MB): peak = 1950.070 ; gain = 404.902 ; free physical = 303 ; free virtual = 11299
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 232 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1950.070 ; gain = 0.000 ; free physical = 240 ; free virtual = 11236
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+127 Infos, 180 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:59 ; elapsed = 00:01:04 . Memory (MB): peak = 1950.070 ; gain = 559.453 ; free physical = 360 ; free virtual = 11356
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1950.070 ; gain = 0.000 ; free physical = 355 ; free virtual = 11351
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint '/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_prj_2019_64/yolo_max_pool_fp_prj_2019_64.runs/design_1_yolo_max_pool_top_0_0_synth_1/design_1_yolo_max_pool_top_0_0.dcp' has been generated.
+WARNING: [Common 17-576] 'use_project_ipc' is deprecated. This option is deprecated and no longer used.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP design_1_yolo_max_pool_top_0_0, cache-ID = 3d398d07153fa29e
+INFO: [Coretcl 2-1174] Renamed 29 cell refs.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1974.074 ; gain = 0.000 ; free physical = 341 ; free virtual = 11341
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint '/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_prj_2019_64/yolo_max_pool_fp_prj_2019_64.runs/design_1_yolo_max_pool_top_0_0_synth_1/design_1_yolo_max_pool_top_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file design_1_yolo_max_pool_top_0_0_utilization_synth.rpt -pb design_1_yolo_max_pool_top_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sun Jun 30 21:12:31 2019...

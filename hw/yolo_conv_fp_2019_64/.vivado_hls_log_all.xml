@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <synLog/>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <synLog>
+        <logs message="WARNING: [SCHED 204-68] The II Violation in module 'yolo_conv_top' (Loop: Loop 3): Unable to enforce a carried dependence constraint (II = 5, distance = 1, offset = 1)&#xA;   between 'call' operation ('_ln213', yolo_conv_fp_2019_64/src/yolo_conv.cpp:213) to 'out_stream_merge' and fifo request on port 'out_stream_group[0].V.V', yolo_conv_fp_2019_64/src/yolo_conv.cpp:9 (yolo_conv_fp_2019_64/src/yolo_conv.cpp:184)." projectName="yolo_conv_fp_2019_64" solutionName="solution1" date="2019-06-30T19:34:48.597+0100" type="Warning"/>
+        <logs message="WARNING: [SCHED 204-68] The II Violation in module 'yolo_conv_top' (Loop: Loop 3): Unable to enforce a carried dependence constraint (II = 4, distance = 1, offset = 1)&#xA;   between 'call' operation ('_ln213', yolo_conv_fp_2019_64/src/yolo_conv.cpp:213) to 'out_stream_merge' and fifo request on port 'out_stream_group[0].V.V', yolo_conv_fp_2019_64/src/yolo_conv.cpp:9 (yolo_conv_fp_2019_64/src/yolo_conv.cpp:184)." projectName="yolo_conv_fp_2019_64" solutionName="solution1" date="2019-06-30T19:34:48.451+0100" type="Warning"/>
+        <logs message="WARNING: [SCHED 204-68] The II Violation in module 'out_stream_merge' (Function: out_stream_merge): Unable to enforce a carried dependence constraint (II = 3, distance = 1, offset = 1)&#xA;   between axis write on port 'outStream_V_data' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:347) and axis write on port 'outStream_V_data' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:347)." projectName="yolo_conv_fp_2019_64" solutionName="solution1" date="2019-06-30T19:34:40.808+0100" type="Warning"/>
+        <logs message="WARNING: [SCHED 204-68] The II Violation in module 'out_stream_merge' (Function: out_stream_merge): Unable to enforce a carried dependence constraint (II = 2, distance = 1, offset = 1)&#xA;   between axis write on port 'outStream_V_data' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:347) and axis write on port 'outStream_V_data' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:347)." projectName="yolo_conv_fp_2019_64" solutionName="solution1" date="2019-06-30T19:34:40.787+0100" type="Warning"/>
+        <logs message="WARNING: [SCHED 204-68] The II Violation in module 'out_stream_merge' (Function: out_stream_merge): Unable to enforce a carried dependence constraint (II = 1, distance = 1, offset = 1)&#xA;   between axis write on port 'outStream_V_data' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:347) and axis write on port 'outStream_V_data' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:347)." projectName="yolo_conv_fp_2019_64" solutionName="solution1" date="2019-06-30T19:34:40.774+0100" type="Warning"/>
+        <logs message="WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'line_buff_group_3.va' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:16)." projectName="yolo_conv_fp_2019_64" solutionName="solution1" date="2019-06-30T19:34:37.711+0100" type="Warning"/>
+        <logs message="WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'line_buff_group_3.va' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:16)." projectName="yolo_conv_fp_2019_64" solutionName="solution1" date="2019-06-30T19:34:29.799+0100" type="Warning"/>
+        <logs message="WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'line_buff_group_2.va' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:15)." projectName="yolo_conv_fp_2019_64" solutionName="solution1" date="2019-06-30T19:34:29.783+0100" type="Warning"/>
+        <logs message="WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'line_buff_group_2.va' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:15)." projectName="yolo_conv_fp_2019_64" solutionName="solution1" date="2019-06-30T19:34:29.777+0100" type="Warning"/>
+        <logs message="WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'line_buff_group_1.va' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:14)." projectName="yolo_conv_fp_2019_64" solutionName="solution1" date="2019-06-30T19:34:29.764+0100" type="Warning"/>
+        <logs message="WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'line_buff_group_1.va' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:14)." projectName="yolo_conv_fp_2019_64" solutionName="solution1" date="2019-06-30T19:34:29.745+0100" type="Warning"/>
+        <logs message="WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'line_buff_group_0.va' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:13)." projectName="yolo_conv_fp_2019_64" solutionName="solution1" date="2019-06-30T19:34:29.733+0100" type="Warning"/>
+        <logs message="WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'line_buff_group_0.va' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:13)." projectName="yolo_conv_fp_2019_64" solutionName="solution1" date="2019-06-30T19:34:29.724+0100" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-505] Ignore pipeline pragma in Loop whose tripcount is only 1 (yolo_conv_fp_2019_64/src/yolo_conv.cpp:91) in function 'yolo_conv_top'." projectName="yolo_conv_fp_2019_64" solutionName="solution1" date="2019-06-30T19:34:03.423+0100" type="Warning"/>
+      </synLog>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>
