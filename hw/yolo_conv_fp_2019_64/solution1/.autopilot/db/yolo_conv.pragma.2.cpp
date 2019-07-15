@@ -1,5 +1,5 @@
-# 1 "yolo_conv_fp_2019_64/src/yolo_conv.cpp"
-# 1 "yolo_conv_fp_2019_64/src/yolo_conv.cpp" 1
+# 1 "yolo_conv_fp_2019_64_rec/src/yolo_conv.cpp"
+# 1 "yolo_conv_fp_2019_64_rec/src/yolo_conv.cpp" 1
 # 1 "<built-in>" 1
 # 1 "<built-in>" 3
 # 155 "<built-in>" 3
@@ -149,14 +149,14 @@ extern "C" {
 }
 # 8 "<command line>" 2
 # 1 "<built-in>" 2
-# 1 "yolo_conv_fp_2019_64/src/yolo_conv.cpp" 2
-# 1 "yolo_conv_fp_2019_64/src/yolo_conv.h" 1
+# 1 "yolo_conv_fp_2019_64_rec/src/yolo_conv.cpp" 2
+# 1 "yolo_conv_fp_2019_64_rec/src/yolo_conv.h" 1
 
 
 
-# 1 "yolo_conv_fp_2019_64/src/layer_parameter.h" 1
-# 5 "yolo_conv_fp_2019_64/src/yolo_conv.h" 2
-# 1 "yolo_conv_fp_2019_64/src/yolo_stream.h" 1
+# 1 "yolo_conv_fp_2019_64_rec/src/layer_parameter.h" 1
+# 5 "yolo_conv_fp_2019_64_rec/src/yolo_conv.h" 2
+# 1 "yolo_conv_fp_2019_64_rec/src/yolo_stream.h" 1
 
 
 
@@ -6367,7 +6367,7 @@ inline bool operator!=(
 }
 # 399 "/opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot/ap_fixed.h" 2
 # 368 "/opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot/ap_int.h" 2
-# 5 "yolo_conv_fp_2019_64/src/yolo_stream.h" 2
+# 5 "yolo_conv_fp_2019_64_rec/src/yolo_stream.h" 2
 # 1 "/opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot/hls_stream.h" 1
 # 66 "/opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot/hls_stream.h"
 # 1 "/opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot/etc/autopilot_enum.h" 1
@@ -6565,8 +6565,8 @@ class stream
 
 
 }
-# 6 "yolo_conv_fp_2019_64/src/yolo_stream.h" 2
-# 1 "yolo_conv_fp_2019_64/src/yolo_fp.h" 1
+# 6 "yolo_conv_fp_2019_64_rec/src/yolo_stream.h" 2
+# 1 "yolo_conv_fp_2019_64_rec/src/yolo_fp.h" 1
 
 
 
@@ -6574,7 +6574,7 @@ class stream
 
 typedef ap_fixed<16,8,AP_RND_CONV,AP_SAT> fp_data_type;
 typedef ap_fixed<16,8,AP_RND_CONV,AP_SAT> fp_weight_type;
-# 7 "yolo_conv_fp_2019_64/src/yolo_stream.h" 2
+# 7 "yolo_conv_fp_2019_64_rec/src/yolo_stream.h" 2
 
 typedef struct quad_fp_pack{
  fp_data_type sub_data_0;
@@ -6597,7 +6597,7 @@ template<int D,int U,int TI,int TD>
 typedef ap_axi_fp<64,2,5,6> quad_fp_side_channel;
 typedef hls::stream<quad_fp_side_channel> yolo_quad_stream;
 typedef hls::stream<fp_data_type> yolo_inter_stream;
-# 6 "yolo_conv_fp_2019_64/src/yolo_conv.h" 2
+# 6 "yolo_conv_fp_2019_64_rec/src/yolo_conv.h" 2
 # 1 "/opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot/hls_video.h" 1
 # 48 "/opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot/hls_video.h"
 # 1 "/opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot/hls/hls_axi_io.h" 1
@@ -35699,88 +35699,95 @@ _ssdm_op_SpecDataflowPipeline(-1, 0, "");
 
 }
 # 70 "/opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot/hls_video.h" 2
-# 7 "yolo_conv_fp_2019_64/src/yolo_conv.h" 2
+# 7 "yolo_conv_fp_2019_64_rec/src/yolo_conv.h" 2
 
 typedef hls::Window<3,3,fp_data_type> window_type;
-typedef hls::LineBuffer<3,(416 +2*1),fp_data_type> line_buff_type;
-
+typedef hls::LineBuffer<3,(416 +2),fp_data_type> line_buff_type;
 typedef struct local_weight_type
 {
  fp_weight_type data[3*3];
 }local_weight_type;
 
-
-
-void yolo_conv_top(yolo_quad_stream &inStream, yolo_quad_stream &outStream);
-void yolo_line_buffer(fp_data_type curr_data, line_buff_type *line_buff, int col_idx);
-window_type slide_window(int conv_count, line_buff_type *line_buff);
-void fork_window(window_type kernel_window, window_type window_group[16]);
-
-fp_data_type window_macc(window_type *window, local_weight_type weight);
+void yolo_conv_top(yolo_quad_stream &inStream, yolo_quad_stream &outStream,
+             ap_uint<(5 +1)> output_ch, ap_uint<(5 +1)> input_ch, ap_uint<(5 -2 +1)> fold_output_ch, ap_uint<(5 -2 +1)> fold_input_ch, ap_uint<3> kernel_dim,
+             ap_uint<9> input_h, ap_uint<9> input_w, ap_uint<9> real_input_h,
+             ap_uint<1> leaky,
+       ap_uint<3> fold_win_area);
+fp_data_type post_process(fp_data_type sub0_val_output,fp_data_type sub1_val_output,fp_data_type sub2_val_output,fp_data_type sub3_val_output,
+            bool acc_flag,ap_uint<1> leaky,
+      fp_weight_type bias,ap_uint<(5 -2 +1)> input_ch_idx,fp_data_type val_output);
+void yolo_line_buffer(fp_data_type curr_data, line_buff_type *line_buff, ap_uint<9> col_idx);
+window_type slide_window(ap_uint<9> conv_count, line_buff_type *line_buff, ap_uint<3> kernel_dim);
+fp_data_type window_macc(window_type window, local_weight_type weight, ap_uint<3> kernel_dim);
 void write_output(fp_data_type val_output, yolo_inter_stream &out_stream);
-void out_stream_merge(yolo_inter_stream out_stream_group[16], yolo_quad_stream &outStream, int input_ch_idx,quad_fp_side_channel curr_input,ap_uint<1> last);
-# 2 "yolo_conv_fp_2019_64/src/yolo_conv.cpp" 2
+void out_stream_merge(yolo_inter_stream out_stream_group[32], yolo_quad_stream &outStream, ap_uint<(5 -2 +1)> input_ch_idx,quad_fp_side_channel curr_input,ap_uint<1> last,ap_uint<(5 +1)> output_ch,ap_uint<(5 -2 +1)> fold_output_ch );
+# 2 "yolo_conv_fp_2019_64_rec/src/yolo_conv.cpp" 2
 
 
-void yolo_conv_top(yolo_quad_stream &inStream, yolo_quad_stream &outStream)
+void yolo_conv_top(yolo_quad_stream &inStream, yolo_quad_stream &outStream,
+             ap_uint<(5 +1)> output_ch, ap_uint<(5 +1)> input_ch, ap_uint<(5 -2 +1)> fold_output_ch, ap_uint<(5 -2 +1)> fold_input_ch, ap_uint<3> kernel_dim,
+             ap_uint<9> input_h, ap_uint<9> input_w, ap_uint<9> real_input_h,
+             ap_uint<1> leaky,
+       ap_uint<3> fold_win_area)
 {
-_ssdm_op_SpecInterface(0, "s_axilite", 0, 0, "", 0, 0, "", "", "", 0, 0, 0, 0, "", "");
+_ssdm_op_SpecInterface(&fold_input_ch, "s_axilite", 0, 0, "", 0, 0, "CTRL_BUS", "", "", 0, 0, 0, 0, "", "");
+_ssdm_op_SpecInterface(&fold_output_ch, "s_axilite", 0, 0, "", 0, 0, "CTRL_BUS", "", "", 0, 0, 0, 0, "", "");
+_ssdm_op_SpecInterface(&input_ch, "s_axilite", 0, 0, "", 0, 0, "CTRL_BUS", "", "", 0, 0, 0, 0, "", "");
+_ssdm_op_SpecInterface(&output_ch, "s_axilite", 0, 0, "", 0, 0, "CTRL_BUS", "", "", 0, 0, 0, 0, "", "");
+_ssdm_op_SpecInterface(&fold_win_area, "s_axilite", 0, 0, "", 0, 0, "CTRL_BUS", "", "", 0, 0, 0, 0, "", "");
+_ssdm_op_SpecInterface(&kernel_dim, "s_axilite", 0, 0, "", 0, 0, "CTRL_BUS", "", "", 0, 0, 0, 0, "", "");
+_ssdm_op_SpecInterface(&leaky, "s_axilite", 0, 0, "", 0, 0, "CTRL_BUS", "", "", 0, 0, 0, 0, "", "");
+_ssdm_op_SpecInterface(&real_input_h, "s_axilite", 0, 0, "", 0, 0, "CTRL_BUS", "", "", 0, 0, 0, 0, "", "");
+_ssdm_op_SpecInterface(&input_w, "s_axilite", 0, 0, "", 0, 0, "CTRL_BUS", "", "", 0, 0, 0, 0, "", "");
+_ssdm_op_SpecInterface(&input_h, "s_axilite", 0, 0, "", 0, 0, "CTRL_BUS", "", "", 0, 0, 0, 0, "", "");
+_ssdm_op_SpecInterface(0, "s_axilite", 0, 0, "", 0, 0, "CTRL_BUS", "", "", 0, 0, 0, 0, "", "");
 _ssdm_op_SpecInterface(&outStream, "axis", 1, 1, "both", 0, 0, "", "", "", 0, 0, 0, 0, "", "");
 _ssdm_op_SpecInterface(&inStream, "axis", 1, 1, "both", 0, 0, "", "", "", 0, 0, 0, 0, "", "");
- yolo_inter_stream out_stream_group[16];
+
+ yolo_inter_stream out_stream_group[32];
 _ssdm_SpecArrayPartition( out_stream_group, 1, "COMPLETE", 0, "");
 _ssdm_SpecStream( out_stream_group, 1, 2, "");
 
- line_buff_type line_buff_group_0[3/4+1];
- line_buff_type line_buff_group_1[3/4+1];
- line_buff_type line_buff_group_2[3/4+1];
- line_buff_type line_buff_group_3[3/4+1];
+ line_buff_type line_buff_group_0[32/4];
+ line_buff_type line_buff_group_1[32/4];
+ line_buff_type line_buff_group_2[32/4];
+ line_buff_type line_buff_group_3[32/4];
 
- window_type window_group_0[16];
-_ssdm_SpecArrayPartition( window_group_0, 1, "COMPLETE", 0, "");
- window_type window_group_1[16];
-_ssdm_SpecArrayPartition( window_group_1, 1, "COMPLETE", 0, "");
- window_type window_group_2[16];
-_ssdm_SpecArrayPartition( window_group_2, 1, "COMPLETE", 0, "");
- window_type window_group_3[16];
-_ssdm_SpecArrayPartition( window_group_3, 1, "COMPLETE", 0, "");
-
- fp_data_type sub0_val_output[16];
+ fp_data_type val_output[32];
+_ssdm_SpecArrayPartition( val_output, 1, "COMPLETE", 0, "");
+ fp_data_type sub0_val_output[32];
 _ssdm_SpecArrayPartition( sub0_val_output, 1, "COMPLETE", 0, "");
- fp_data_type sub1_val_output[16];
+ fp_data_type sub1_val_output[32];
 _ssdm_SpecArrayPartition( sub1_val_output, 1, "COMPLETE", 0, "");
- fp_data_type sub2_val_output[16];
+ fp_data_type sub2_val_output[32];
 _ssdm_SpecArrayPartition( sub2_val_output, 1, "COMPLETE", 0, "");
- fp_data_type sub3_val_output[16];
+ fp_data_type sub3_val_output[32];
 _ssdm_SpecArrayPartition( sub3_val_output, 1, "COMPLETE", 0, "");
 
-
- fp_data_type biased_output[16];
-_ssdm_SpecArrayPartition( biased_output, 1, "COMPLETE", 0, "");
- fp_data_type activated_output[16];
-_ssdm_SpecArrayPartition( activated_output, 1, "COMPLETE", 0, "");
  quad_fp_side_channel curr_input;
 
- local_weight_type local_mem_group[16][3];
-
-_ssdm_SpecArrayPartition( local_mem_group, 1, "COMPLETE", 0, "");
+ local_weight_type local_mem_group[32][32];
+_ssdm_SpecArrayPartition( local_mem_group, 1, "BLOCK", 4, "");
 _ssdm_SpecArrayPartition( local_mem_group, 3, "COMPLETE", 0, "");
 
- fp_weight_type kernel_bias_fp[16];
-_ssdm_SpecArrayPartition( kernel_bias_fp, 1, "COMPLETE", 0, "");
+ fp_weight_type kernel_bias_fp[32];
+_ssdm_SpecArrayPartition( kernel_bias_fp, 1, "BLOCK", 4, "");
 
 
- for(int k=0; k<16; k++)
+
+ for(ap_uint<(5 +1)> k=0; k<output_ch; k++)
  {
-  for(int i=0;i<3;i++)
+_ssdm_op_SpecLoopTripCount(16, 16, 16, "");
+ for(ap_uint<(5 +1)> i=0;i<input_ch;i++)
   {
-
-   for(int j=0; j<(3*3 +3)/4; j++)
+_ssdm_op_SpecLoopTripCount(3, 3, 3, "");
+ for(ap_uint<3> j=0; j<fold_win_area; j++)
    {
 _ssdm_op_SpecPipeline(-1, 1, 1, 0, "");
+_ssdm_op_SpecLoopTripCount(3, 3, 3, "");
  curr_input = inStream.read();
     local_mem_group[k][i].data[4*j] = curr_input.data.sub_data_0;
-    if(j!=(3*3 +3)/4-1)
+    if(j!=(kernel_dim*kernel_dim+3)/4-1)
     {
      local_mem_group[k][i].data[4*j+1] = curr_input.data.sub_data_1;
      local_mem_group[k][i].data[4*j+2] = curr_input.data.sub_data_2;
@@ -35791,8 +35798,10 @@ _ssdm_op_SpecPipeline(-1, 1, 1, 0, "");
   }
  }
 
- for(int i=0;i<16/4;i++)
+
+ for(ap_uint<(5 -2 +1)> i=0;i<fold_output_ch;i++)
  {
+_ssdm_op_SpecLoopTripCount(4, 4, 4, "");
 _ssdm_op_SpecPipeline(-1, 1, 1, 0, "");
  curr_input = inStream.read();
   kernel_bias_fp[4*i] = curr_input.data.sub_data_0;
@@ -35801,34 +35810,39 @@ _ssdm_op_SpecPipeline(-1, 1, 1, 0, "");
   kernel_bias_fp[4*i+3] = curr_input.data.sub_data_3;
  }
 
- for(int row_idx=0;row_idx<(416 +2*1)+1;row_idx++)
+ for(ap_uint<9> row_idx=0;row_idx<input_h+1;row_idx++)
 
  {
-  for(int col_idx=0;col_idx<(416 +2*1);col_idx++)
+_ssdm_op_SpecLoopTripCount(419, 419, 419, "");
+ for(ap_uint<9> col_idx=0;col_idx<input_w;col_idx++)
   {
-_ssdm_op_SpecPipeline(-1, 1, 1, 0, "");
- for(int input_ch_idx=0;input_ch_idx<(3 +3)/4;input_ch_idx++)
+_ssdm_op_SpecLoopTripCount(418, 418, 418, "");
+ for(ap_uint<(5 -2 +1)> input_ch_idx=0;input_ch_idx<fold_input_ch;input_ch_idx++)
    {
 _ssdm_op_SpecPipeline(-1, 1, 1, 0, "");
+_ssdm_op_SpecLoopTripCount(1, 1, 1, "");
 
- int conv_count;
+ ap_uint<9> conv_row_count=0,conv_col_count=0;
 
 
-    if((row_idx>=3 -1)&&(col_idx>=3 -1))
+    if((row_idx>kernel_dim-2)&&(col_idx>kernel_dim-2))
     {
-     conv_count = col_idx - (3 -1);
+     conv_row_count = row_idx - (kernel_dim-1);
+     conv_col_count = col_idx - (kernel_dim-1);
     }
     else
     {
-     conv_count = 0;
+     conv_row_count = 0;
+     conv_col_count = 0;
     }
 
-    if(row_idx != (416 +2*1))
+
+    if(row_idx != input_h)
     {
      if(((row_idx == 0)||
-        (row_idx == (416 +2*1)-1)||
+        (row_idx == real_input_h-1)||
         (col_idx == 0)||
-        (col_idx == (416 +2*1)-1))&&1)
+        (col_idx == input_w-1)))
      {
 
       curr_input.data.sub_data_0 = 0;
@@ -35846,91 +35860,116 @@ _ssdm_op_SpecPipeline(-1, 1, 1, 0, "");
      yolo_line_buffer(curr_input.data.sub_data_0,&line_buff_group_0[input_ch_idx],col_idx);
      yolo_line_buffer(curr_input.data.sub_data_1,&line_buff_group_1[input_ch_idx],col_idx);
      yolo_line_buffer(curr_input.data.sub_data_2,&line_buff_group_2[input_ch_idx],col_idx);
-     if(!(((3 +3)/4!=(3)/4)&&(input_ch_idx == (3 +3)/4-1)))
-      yolo_line_buffer(curr_input.data.sub_data_3,&line_buff_group_3[input_ch_idx],col_idx);
+     yolo_line_buffer(curr_input.data.sub_data_3,&line_buff_group_3[input_ch_idx],col_idx);
 
 
-     if((row_idx>3 -2)&&(col_idx>3 -2))
+     if((row_idx>kernel_dim-2)&&(col_idx>kernel_dim-2))
      {
       window_type kernel_window_0, kernel_window_1, kernel_window_2, kernel_window_3;
-      kernel_window_0 = slide_window(conv_count,&line_buff_group_0[input_ch_idx]);
-      kernel_window_1 = slide_window(conv_count,&line_buff_group_1[input_ch_idx]);
-      kernel_window_2 = slide_window(conv_count,&line_buff_group_2[input_ch_idx]);
-      if(!(((3 +3)/4!=(3)/4)&&(input_ch_idx == (3 +3)/4-1)))
-       kernel_window_3 = slide_window(conv_count,&line_buff_group_3[input_ch_idx]);
+
+      kernel_window_0 = slide_window(conv_col_count,&line_buff_group_0[input_ch_idx],kernel_dim);
+      kernel_window_1 = slide_window(conv_col_count,&line_buff_group_1[input_ch_idx],kernel_dim);
+      kernel_window_2 = slide_window(conv_col_count,&line_buff_group_2[input_ch_idx],kernel_dim);
+      kernel_window_3 = slide_window(conv_col_count,&line_buff_group_3[input_ch_idx],kernel_dim);
 
 
-      fork_window(kernel_window_0,window_group_0);
-      fork_window(kernel_window_1,window_group_1);
-      fork_window(kernel_window_2,window_group_2);
-      fork_window(kernel_window_3,window_group_3);
 
-      for(int kernel_idx=0; kernel_idx<16; kernel_idx++)
+      for(ap_uint<(5 +1)> kernel_idx=0; kernel_idx<32; kernel_idx++)
       {
 
-       if(input_ch_idx == 0)
+
+       sub0_val_output[kernel_idx] = window_macc(kernel_window_0,local_mem_group[kernel_idx][4*input_ch_idx],kernel_dim);
+       sub1_val_output[kernel_idx] = window_macc(kernel_window_1,local_mem_group[kernel_idx][4*input_ch_idx+1],kernel_dim);
+       sub2_val_output[kernel_idx] = window_macc(kernel_window_2,local_mem_group[kernel_idx][4*input_ch_idx+2],kernel_dim);
+       if(input_ch==3)
        {
-        sub0_val_output[kernel_idx] = 0;
-        sub1_val_output[kernel_idx] = 0;
-        sub2_val_output[kernel_idx] = 0;
         sub3_val_output[kernel_idx] = 0;
        }
-
-
-       sub0_val_output[kernel_idx] += window_macc(&window_group_0[kernel_idx],local_mem_group[kernel_idx][4*input_ch_idx]);
-       sub1_val_output[kernel_idx] += window_macc(&window_group_1[kernel_idx],local_mem_group[kernel_idx][4*input_ch_idx+1]);
-       sub2_val_output[kernel_idx] += window_macc(&window_group_2[kernel_idx],local_mem_group[kernel_idx][4*input_ch_idx+2]);
-       if(!(((3 +3)/4!=(3)/4)&&(input_ch_idx == (3 +3)/4-1)))
-        sub3_val_output[kernel_idx] += window_macc(&window_group_3[kernel_idx],local_mem_group[kernel_idx][4*input_ch_idx+3]);
-
-
-
-       if(input_ch_idx == (3 +3)/4-1)
+       else
        {
+        sub3_val_output[kernel_idx] = window_macc(kernel_window_3,local_mem_group[kernel_idx][4*input_ch_idx+3],kernel_dim);
+       }
+       val_output[kernel_idx]=post_process(sub0_val_output[kernel_idx],sub1_val_output[kernel_idx],sub2_val_output[kernel_idx],sub3_val_output[kernel_idx],
+                   input_ch_idx == fold_input_ch-1,leaky,
+                kernel_bias_fp[kernel_idx],input_ch_idx,val_output[kernel_idx]);
 
 
-        biased_output[kernel_idx] = sub0_val_output[kernel_idx] + sub1_val_output[kernel_idx]
-                  + sub2_val_output[kernel_idx] + sub3_val_output[kernel_idx]
-               + kernel_bias_fp[kernel_idx];
-
-        if(1&&(biased_output[kernel_idx]<0))
+       if(input_ch_idx == fold_input_ch-1)
+       {
+        if(kernel_idx<output_ch)
         {
-         activated_output[kernel_idx] = biased_output[kernel_idx] * (fp_data_type).1;
-        }
-        else
-        {
-         activated_output[kernel_idx] = biased_output[kernel_idx];
-        }
 
         if(!(out_stream_group[kernel_idx].full()))
 
-         write_output(activated_output[kernel_idx],out_stream_group[kernel_idx]);
+         write_output(val_output[kernel_idx],out_stream_group[kernel_idx]);
+        }
        }
       }
 
 
-
      }
     }
-# 205 "yolo_conv_fp_2019_64/src/yolo_conv.cpp"
-                if(((row_idx>3 -1)&&(col_idx>=3 -1))||((row_idx==3 -1)&&(col_idx>3 -1)))
+
+
+
+
+
+    if(!((conv_row_count == 0)&&(conv_col_count ==0)))
     {
 
         ap_uint<1> last;
-        if((row_idx==(416 +2*1))&&(input_ch_idx==(3 +3)/4-1))
+        if((row_idx==input_h)&&(input_ch_idx==fold_input_ch-1))
          last = 1;
         else
          last = 0;
-     out_stream_merge(out_stream_group,outStream,input_ch_idx,curr_input,last);
+     out_stream_merge(out_stream_group,outStream,input_ch_idx,curr_input,last,output_ch,fold_output_ch);
     }
 
    }
   }
 
  }
+
 }
 
-void yolo_line_buffer(fp_data_type curr_data, line_buff_type *line_buff, int col_idx)
+fp_data_type post_process(fp_data_type sub0_val_output,fp_data_type sub1_val_output,fp_data_type sub2_val_output,fp_data_type sub3_val_output,
+            bool acc_flag,ap_uint<1> leaky,
+      fp_weight_type bias,ap_uint<(5 -2 +1)> input_ch_idx,fp_data_type val_output)
+{
+ fp_data_type biased_output=0,activated_output=0;
+ if(input_ch_idx==0)
+ {
+  val_output=0;
+ }
+
+ val_output += sub0_val_output;
+ val_output += sub1_val_output;
+ val_output += sub2_val_output;
+ val_output += sub3_val_output;
+
+
+
+ if(acc_flag)
+ {
+  biased_output = val_output + bias;
+  if(leaky&&biased_output<0)
+  {
+   activated_output = biased_output * (fp_data_type).1;
+  }
+  else
+  {
+   activated_output = biased_output;
+  }
+
+  return activated_output;
+ }
+ else
+ {
+  return val_output;
+ }
+}
+
+void yolo_line_buffer(fp_data_type curr_data, line_buff_type *line_buff, ap_uint<9> col_idx)
 {
 
  line_buff->shift_up(col_idx);
@@ -35938,13 +35977,13 @@ void yolo_line_buffer(fp_data_type curr_data, line_buff_type *line_buff, int col
 
 }
 
-window_type slide_window(int conv_count, line_buff_type *line_buff)
+window_type slide_window(ap_uint<9> conv_count, line_buff_type *line_buff, ap_uint<3> kernel_dim)
 {
  window_type kernel_window;
 
- for(int win_row=0; win_row < 3; win_row++)
+ for(ap_uint<3> win_row=0; win_row < 3; win_row++)
  {
-  for(int win_col=0; win_col < 3; win_col++)
+  for(ap_uint<3> win_col=0; win_col < 3; win_col++)
   {
    fp_data_type val = (fp_data_type)line_buff->getval(win_row,win_col+conv_count);
    kernel_window.insert(val,win_row,win_col);
@@ -35954,36 +35993,16 @@ window_type slide_window(int conv_count, line_buff_type *line_buff)
  return kernel_window;
 }
 
-void fork_window(window_type kernel_window, window_type window_group[16])
-{_ssdm_SpecArrayDimSize(window_group, 16);
- for(int win_row=0; win_row < 3; win_row++)
- {
-  for(int win_col=0; win_col < 3; win_col++)
-  {
-   fp_data_type val = kernel_window.getval(win_row,win_col);
-
-   for(int win_idx=0; win_idx < 16; win_idx++)
-   {
-    window_group[win_idx].insert(val,win_row,win_col);
-   }
-  }
- }
-}
-
-
-fp_data_type window_macc(window_type *window, local_weight_type weight)
+fp_data_type window_macc(window_type window, local_weight_type weight, ap_uint<3> kernel_dim)
 {
 
- fp_data_type sum = 0;
- for(int win_row=0; win_row < 3; win_row++)
+ ap_fixed<32,16,AP_RND_CONV,AP_SAT> sum = 0;
+ for(ap_uint<3> win_row=0; win_row < 3; win_row++)
  {
-  for(int win_col=0; win_col < 3; win_col++)
+  for(ap_uint<3> win_col=0; win_col < 3; win_col++)
   {
-   fp_data_type val_in = window->getval(win_row,win_col);
-
-
-   fp_data_type val_out = val_in * weight.data[win_row*3 +win_col];
-   sum += val_out;
+   fp_data_type val_in = window.getval(win_row,win_col);
+   sum += val_in * weight.data[win_row*3+win_col];
   }
  }
  return (fp_data_type)sum;
@@ -35994,52 +36013,32 @@ void write_output(fp_data_type val_output, yolo_inter_stream &out_stream)
  out_stream.write(val_output);
 }
 
-void out_stream_merge(yolo_inter_stream out_stream_group[16], yolo_quad_stream &outStream, int input_ch_idx,quad_fp_side_channel curr_input,ap_uint<1> last)
-{_ssdm_SpecArrayDimSize(out_stream_group, 16);
+void out_stream_merge(yolo_inter_stream out_stream_group[32], yolo_quad_stream &outStream, ap_uint<(5 -2 +1)> input_ch_idx,quad_fp_side_channel curr_input,ap_uint<1> last,ap_uint<(5 +1)> output_ch,ap_uint<(5 -2 +1)> fold_output_ch )
+{_ssdm_SpecArrayDimSize(out_stream_group, 32);
 
 
 
 
- for(int i=0; i<(((16 +1)/2 -1)/((3 +1)/2)+1); i++)
+ for(ap_uint<(5 -2 +1)> i=0; i<6; i++)
  {
-  int kernel_idx = i + input_ch_idx*(((16 +1)/2 -1)/((3 +1)/2)+1);
-  if(4*kernel_idx<16)
+  ap_uint<(5 -2 +1)> kernel_idx = i + input_ch_idx*6;
+  if(4*kernel_idx<32)
    if(!(out_stream_group[4*kernel_idx].empty()))
    {
     quad_fp_side_channel curr_output;
 
     curr_output.data.sub_data_0 = out_stream_group[4*kernel_idx].read();
 
-    if(4*kernel_idx+1<16)
-    {
-     if(!(out_stream_group[4*kernel_idx+1].empty()))
-     {
-      curr_output.data.sub_data_1 = out_stream_group[4*kernel_idx+1].read();
-     }
-    }
-    else
-    {
-     curr_output.data.sub_data_1 = 0;
-    }
 
-    if(4*kernel_idx+2<16)
-    {
-     if(!(out_stream_group[4*kernel_idx+2].empty()))
-     {
-      curr_output.data.sub_data_2 = out_stream_group[4*kernel_idx+2].read();
-     }
-    }
-    else
-    {
-     curr_output.data.sub_data_2 = 0;
-    }
 
-    if(4*kernel_idx+3<16)
+
+     curr_output.data.sub_data_1 = out_stream_group[4*kernel_idx+1].read();
+# 323 "yolo_conv_fp_2019_64_rec/src/yolo_conv.cpp"
+     curr_output.data.sub_data_2 = out_stream_group[4*kernel_idx+2].read();
+# 332 "yolo_conv_fp_2019_64_rec/src/yolo_conv.cpp"
+    if(!(out_stream_group[4*kernel_idx+3].empty()))
     {
-     if(!(out_stream_group[4*kernel_idx+3].empty()))
-     {
-      curr_output.data.sub_data_3 = out_stream_group[4*kernel_idx+3].read();
-     }
+     curr_output.data.sub_data_3 = out_stream_group[4*kernel_idx+3].read();
     }
     else
     {
@@ -36049,13 +36048,15 @@ void out_stream_merge(yolo_inter_stream out_stream_group[16], yolo_quad_stream &
     curr_output.keep = curr_input.keep;
     curr_output.strb = curr_input.strb;
     curr_output.user = curr_input.user;
-    if(4*kernel_idx == 16 -1||4*kernel_idx+1 == 16 -1||4*kernel_idx+2 == 16 -1||4*kernel_idx+3 == 16 -1)
+    if(kernel_idx == fold_output_ch-1)
+
      curr_output.last = last;
     else
      curr_output.last = 0;
     curr_output.id = curr_input.id;
     curr_output.dest = curr_input.dest;
     outStream.write(curr_output);
+
    }
  }
 

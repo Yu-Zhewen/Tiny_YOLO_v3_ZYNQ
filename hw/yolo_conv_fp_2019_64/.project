@@ -29,77 +29,77 @@
 		<link>
 			<name>source</name>
 			<type>2</type>
-			<location>/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_2019_64/.apc/.src</location>
+			<location>/home/xavier/Desktop/yolo_conv_fp_2019_64_rec/.apc/.src</location>
 		</link>
 		<link>
 			<name>testbench</name>
 			<type>2</type>
-			<location>/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_2019_64/.apc/.tb</location>
+			<location>/home/xavier/Desktop/yolo_conv_fp_2019_64_rec/.apc/.tb</location>
 		</link>
 		<link>
 			<name>solution1/constraints</name>
 			<type>2</type>
-			<location>/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_2019_64/solution1/.tcls</location>
+			<location>/home/xavier/Desktop/yolo_conv_fp_2019_64_rec/solution1/.tcls</location>
 		</link>
 		<link>
 			<name>source/layer_parameter.h</name>
 			<type>1</type>
-			<location>/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_2019_64/src/layer_parameter.h</location>
+			<location>/home/xavier/Desktop/yolo_conv_fp_2019_64_rec/src/layer_parameter.h</location>
 		</link>
 		<link>
 			<name>source/weight_file.h</name>
 			<type>1</type>
-			<location>/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_2019_64/src/weight_file.h</location>
+			<location>/home/xavier/Desktop/yolo_conv_fp_2019_64_rec/src/weight_file.h</location>
 		</link>
 		<link>
 			<name>source/yolo_conv.cpp</name>
 			<type>1</type>
-			<location>/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_2019_64/src/yolo_conv.cpp</location>
+			<location>/home/xavier/Desktop/yolo_conv_fp_2019_64_rec/src/yolo_conv.cpp</location>
 		</link>
 		<link>
 			<name>source/yolo_conv.h</name>
 			<type>1</type>
-			<location>/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_2019_64/src/yolo_conv.h</location>
+			<location>/home/xavier/Desktop/yolo_conv_fp_2019_64_rec/src/yolo_conv.h</location>
 		</link>
 		<link>
 			<name>source/yolo_fp.h</name>
 			<type>1</type>
-			<location>/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_2019_64/src/yolo_fp.h</location>
+			<location>/home/xavier/Desktop/yolo_conv_fp_2019_64_rec/src/yolo_fp.h</location>
 		</link>
 		<link>
 			<name>source/yolo_stream.h</name>
 			<type>1</type>
-			<location>/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_2019_64/src/yolo_stream.h</location>
+			<location>/home/xavier/Desktop/yolo_conv_fp_2019_64_rec/src/yolo_stream.h</location>
 		</link>
 		<link>
 			<name>testbench/layer_input.dat</name>
 			<type>1</type>
-			<location>/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_2019_64/tb/layer_input.dat</location>
+			<location>/home/xavier/Desktop/yolo_conv_fp_2019_64_rec/tb/layer_input.dat</location>
 		</link>
 		<link>
 			<name>testbench/layer_output_sdk.dat</name>
 			<type>1</type>
-			<location>/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_2019_64/tb/layer_output_sdk.dat</location>
+			<location>/home/xavier/Desktop/yolo_conv_fp_2019_64_rec/tb/layer_output_sdk.dat</location>
 		</link>
 		<link>
 			<name>testbench/yolo_conv_tb.cpp</name>
 			<type>1</type>
-			<location>/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_2019_64/tb/yolo_conv_tb.cpp</location>
+			<location>/home/xavier/Desktop/yolo_conv_fp_2019_64_rec/tb/yolo_conv_tb.cpp</location>
 		</link>
 		<link>
 			<name>solution1/constraints/.xml.directive</name>
 			<type>1</type>
-			<location>/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_2019_64/solution1/solution1.directive</location>
+			<location>/home/xavier/Desktop/yolo_conv_fp_2019_64_rec/solution1/solution1.directive</location>
 		</link>
 		<link>
 			<name>solution1/constraints/directives.tcl</name>
 			<type>1</type>
-			<location>/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_2019_64/solution1/directives.tcl</location>
+			<location>/home/xavier/Desktop/yolo_conv_fp_2019_64_rec/solution1/directives.tcl</location>
 		</link>
 		<link>
 			<name>solution1/constraints/script.tcl</name>
 			<type>1</type>
-			<location>/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_2019_64/solution1/script.tcl</location>
+			<location>/home/xavier/Desktop/yolo_conv_fp_2019_64_rec/solution1/script.tcl</location>
 		</link>
 	</linkedResources>
 </projectDescription>

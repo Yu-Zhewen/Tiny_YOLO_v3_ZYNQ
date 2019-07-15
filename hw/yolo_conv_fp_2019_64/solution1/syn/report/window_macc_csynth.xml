@@ -10,7 +10,7 @@
 <Part>xc7z020-clg484-1</Part>
 <TopModelName>window_macc</TopModelName>
 <TargetClockPeriod>10.00</TargetClockPeriod>
-<ClockUncertainty>1.25</ClockUncertainty>
+<ClockUncertainty>2.00</ClockUncertainty>
 <TargetInitiationInterval>4294967295</TargetInitiationInterval>
 </UserAssignments>
 
@@ -18,15 +18,15 @@
 <PipelineType>function</PipelineType>
 <SummaryOfTimingAnalysis>
 <unit>ns</unit>
-<EstimatedClockPeriod>8.066</EstimatedClockPeriod>
+<EstimatedClockPeriod>7.493</EstimatedClockPeriod>
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
 <unit>clock cycles</unit>
-<Best-caseLatency>6</Best-caseLatency>
-<Average-caseLatency>6</Average-caseLatency>
-<Worst-caseLatency>6</Worst-caseLatency>
+<Best-caseLatency>7</Best-caseLatency>
+<Average-caseLatency>7</Average-caseLatency>
+<Worst-caseLatency>7</Worst-caseLatency>
 <PipelineInitiationInterval>1</PipelineInitiationInterval>
-<PipelineDepth>7</PipelineDepth>
+<PipelineDepth>8</PipelineDepth>
 <Interval-min>1</Interval-min>
 <Interval-max>1</Interval-max>
 </SummaryOfOverallLatency>
@@ -36,8 +36,8 @@
 <Resources>
 <BRAM_18K>0</BRAM_18K>
 <DSP48E>9</DSP48E>
-<FF>1317</FF>
-<LUT>2325</LUT>
+<FF>1421</FF>
+<LUT>1845</LUT>
 <URAM>0</URAM>
 </Resources>
 <AvailableResources>
@@ -95,8 +95,8 @@
 <Attribute>control</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>window_0_0_val_V_r</name>
-<Object>window_0_0_val_V_r</Object>
+<name>p_read</name>
+<Object>p_read</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -106,8 +106,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>window_0_1_val_V_r</name>
-<Object>window_0_1_val_V_r</Object>
+<name>p_read1</name>
+<Object>p_read1</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -117,8 +117,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>window_0_2_val_V_r</name>
-<Object>window_0_2_val_V_r</Object>
+<name>p_read2</name>
+<Object>p_read2</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -128,8 +128,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>window_1_0_val_V_r</name>
-<Object>window_1_0_val_V_r</Object>
+<name>p_read3</name>
+<Object>p_read3</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -139,8 +139,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>window_1_1_val_V_r</name>
-<Object>window_1_1_val_V_r</Object>
+<name>p_read4</name>
+<Object>p_read4</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -150,8 +150,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>window_1_2_val_V_r</name>
-<Object>window_1_2_val_V_r</Object>
+<name>p_read5</name>
+<Object>p_read5</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -161,8 +161,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>window_2_0_val_V_r</name>
-<Object>window_2_0_val_V_r</Object>
+<name>p_read6</name>
+<Object>p_read6</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -172,8 +172,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>window_2_1_val_V_r</name>
-<Object>window_2_1_val_V_r</Object>
+<name>p_read7</name>
+<Object>p_read7</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -183,8 +183,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>window_2_2_val_V_r</name>
-<Object>window_2_2_val_V_r</Object>
+<name>p_read8</name>
+<Object>p_read8</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -205,8 +205,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>p_read110</name>
-<Object>p_read110</Object>
+<name>p_read10</name>
+<Object>p_read10</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -216,8 +216,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>p_read211</name>
-<Object>p_read211</Object>
+<name>p_read11</name>
+<Object>p_read11</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -227,8 +227,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>p_read312</name>
-<Object>p_read312</Object>
+<name>p_read12</name>
+<Object>p_read12</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -238,8 +238,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>p_read413</name>
-<Object>p_read413</Object>
+<name>p_read13</name>
+<Object>p_read13</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -249,8 +249,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>p_read514</name>
-<Object>p_read514</Object>
+<name>p_read14</name>
+<Object>p_read14</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -260,8 +260,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>p_read615</name>
-<Object>p_read615</Object>
+<name>p_read15</name>
+<Object>p_read15</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -271,8 +271,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>p_read716</name>
-<Object>p_read716</Object>
+<name>p_read16</name>
+<Object>p_read16</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -282,8 +282,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>p_read817</name>
-<Object>p_read817</Object>
+<name>p_read17</name>
+<Object>p_read17</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>

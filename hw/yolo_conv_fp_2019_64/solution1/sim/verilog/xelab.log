@@ -4,83 +4,101 @@ Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
 Running: /opt/Xilinx_2019_1/Vivado/2019.1/bin/unwrapped/lnx64.o/xelab xil_defaultlib.apatb_yolo_conv_top_top glbl -prj yolo_conv_top.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims_ver -L xpm --initfile /opt/Xilinx_2019_1/Vivado/2019.1/data/xsim/ip/xsim_ip.ini --lib ieee_proposed=./ieee_proposed -s yolo_conv_top 
 Multi-threading is on. Using 2 slave threads.
 WARNING: [XSIM 43-3431] One or more environment variables have been detected which affect the operation of the C compiler. These are typically not set in standard installations and are not tested by Xilinx, however they may be appropriate for your system, so the flow will attempt to continue.  If errors occur, try running xelab with the "-mt off -v 1" switches to see more information from the C compiler. The following environment variables have been detected:
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_2019/solution1/sim/verilog/glbl.v" into library work
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/xavier/Desktop/yolo_conv_fp_2019_64_rec/solution1/sim/verilog/glbl.v" into library work
 INFO: [VRFC 10-311] analyzing module glbl
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_2019/solution1/sim/verilog/fifo_w16_d2_A.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/xavier/Desktop/yolo_conv_fp_2019_64_rec/solution1/sim/verilog/fifo_w16_d2_A.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module fifo_w16_d2_A_shiftReg
 INFO: [VRFC 10-311] analyzing module fifo_w16_d2_A
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_2019/solution1/sim/verilog/AESL_axi_slave_AXILiteS.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module AESL_axi_slave_AXILiteS
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_2019/solution1/sim/verilog/yolo_conv_top_line_buff_group_0_va.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/xavier/Desktop/yolo_conv_fp_2019_64_rec/solution1/sim/verilog/yolo_conv_top_mac_muladd_3ns_3ns_3ns_6_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module yolo_conv_top_mac_muladd_3ns_3ns_3ns_6_1_1_DSP48_2
+INFO: [VRFC 10-311] analyzing module yolo_conv_top_mac_muladd_3ns_3ns_3ns_6_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/xavier/Desktop/yolo_conv_fp_2019_64_rec/solution1/sim/verilog/yolo_conv_top_line_buff_group_0_va.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module yolo_conv_top_line_buff_group_0_va_ram
 INFO: [VRFC 10-311] analyzing module yolo_conv_top_line_buff_group_0_va
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_2019/solution1/sim/verilog/yolo_conv_top.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/xavier/Desktop/yolo_conv_fp_2019_64_rec/solution1/sim/verilog/yolo_conv_top.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module yolo_conv_top
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_2019/solution1/sim/verilog/yolo_conv_top_mul_mul_16s_16s_32_1_0.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/xavier/Desktop/yolo_conv_fp_2019_64_rec/solution1/sim/verilog/slide_window.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module slide_window
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/xavier/Desktop/yolo_conv_fp_2019_64_rec/solution1/sim/verilog/yolo_conv_top_mul_mul_16s_16s_32_1_0.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module yolo_conv_top_mul_mul_16s_16s_32_1_0_DSP48_0
 INFO: [VRFC 10-311] analyzing module yolo_conv_top_mul_mul_16s_16s_32_1_0
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_2019/solution1/sim/verilog/AESL_axi_s_inStream.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/xavier/Desktop/yolo_conv_fp_2019_64_rec/solution1/sim/verilog/AESL_axi_s_inStream.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module AESL_axi_s_inStream
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_2019/solution1/sim/verilog/window_macc.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/xavier/Desktop/yolo_conv_fp_2019_64_rec/solution1/sim/verilog/window_macc.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module window_macc
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_2019/solution1/sim/verilog/yolo_conv_top_AXILiteS_s_axi.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module yolo_conv_top_AXILiteS_s_axi
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_2019/solution1/sim/verilog/AESL_fifo.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/xavier/Desktop/yolo_conv_fp_2019_64_rec/solution1/sim/verilog/yolo_conv_top_kernel_bias_fp_0_V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module yolo_conv_top_kernel_bias_fp_0_V_ram
+INFO: [VRFC 10-311] analyzing module yolo_conv_top_kernel_bias_fp_0_V
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/xavier/Desktop/yolo_conv_fp_2019_64_rec/solution1/sim/verilog/AESL_fifo.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module fifo
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_2019/solution1/sim/verilog/yolo_conv_top_local_mem_group_0_d.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/xavier/Desktop/yolo_conv_fp_2019_64_rec/solution1/sim/verilog/post_process.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module post_process
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/xavier/Desktop/yolo_conv_fp_2019_64_rec/solution1/sim/verilog/yolo_conv_top_am_addmul_9ns_1ns_13ns_22_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module yolo_conv_top_am_addmul_9ns_1ns_13ns_22_1_1_DSP48_3
+INFO: [VRFC 10-311] analyzing module yolo_conv_top_am_addmul_9ns_1ns_13ns_22_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/xavier/Desktop/yolo_conv_fp_2019_64_rec/solution1/sim/verilog/yolo_conv_top_local_mem_group_0_d.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module yolo_conv_top_local_mem_group_0_d_ram
 INFO: [VRFC 10-311] analyzing module yolo_conv_top_local_mem_group_0_d
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_2019/solution1/sim/verilog/yolo_conv_top_mul_mul_6ns_16s_22_1_1.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module yolo_conv_top_mul_mul_6ns_16s_22_1_1_DSP48_1
-INFO: [VRFC 10-311] analyzing module yolo_conv_top_mul_mul_6ns_16s_22_1_1
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_2019/solution1/sim/verilog/yolo_conv_top_line_buff_group_1_va.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module yolo_conv_top_line_buff_group_1_va_ram
-INFO: [VRFC 10-311] analyzing module yolo_conv_top_line_buff_group_1_va
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_2019/solution1/sim/verilog/yolo_conv_top.autotb.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/xavier/Desktop/yolo_conv_fp_2019_64_rec/solution1/sim/verilog/yolo_conv_top.autotb.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module apatb_yolo_conv_top_top
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_2019/solution1/sim/verilog/fork_window.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module fork_window
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_2019/solution1/sim/verilog/out_stream_merge.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/xavier/Desktop/yolo_conv_fp_2019_64_rec/solution1/sim/verilog/AESL_axi_slave_CTRL_BUS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_axi_slave_CTRL_BUS
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/xavier/Desktop/yolo_conv_fp_2019_64_rec/solution1/sim/verilog/yolo_conv_top_CTRL_BUS_s_axi.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module yolo_conv_top_CTRL_BUS_s_axi
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/xavier/Desktop/yolo_conv_fp_2019_64_rec/solution1/sim/verilog/yolo_conv_top_mul_mul_6ns_16s_22_1_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module yolo_conv_top_mul_mul_6ns_16s_22_1_0_DSP48_1
+INFO: [VRFC 10-311] analyzing module yolo_conv_top_mul_mul_6ns_16s_22_1_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/xavier/Desktop/yolo_conv_fp_2019_64_rec/solution1/sim/verilog/out_stream_merge.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module out_stream_merge
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_2019/solution1/sim/verilog/AESL_axi_s_outStream.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/xavier/Desktop/yolo_conv_fp_2019_64_rec/solution1/sim/verilog/AESL_axi_s_outStream.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module AESL_axi_s_outStream
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/xavier/Desktop/yolo_conv_fp_2019_64_rec/solution1/sim/verilog/yolo_conv_top_mac_muladd_4ns_10ns_9ns_13_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module yolo_conv_top_mac_muladd_4ns_10ns_9ns_13_1_1_DSP48_4
+INFO: [VRFC 10-311] analyzing module yolo_conv_top_mac_muladd_4ns_10ns_9ns_13_1_1
 Starting static elaboration
 Completed static elaboration
 Starting simulation data flow analysis
 Completed simulation data flow analysis
 Time Resolution for simulation is 1ps
-Compiling module xil_defaultlib.yolo_conv_top_AXILiteS_s_axi
+Compiling module xil_defaultlib.yolo_conv_top_CTRL_BUS_s_axi
 Compiling module xil_defaultlib.yolo_conv_top_line_buff_group_0_...
 Compiling module xil_defaultlib.yolo_conv_top_line_buff_group_0_...
-Compiling module xil_defaultlib.yolo_conv_top_line_buff_group_1_...
-Compiling module xil_defaultlib.yolo_conv_top_line_buff_group_1_...
 Compiling module xil_defaultlib.yolo_conv_top_local_mem_group_0_...
 Compiling module xil_defaultlib.yolo_conv_top_local_mem_group_0_...
+Compiling module xil_defaultlib.yolo_conv_top_kernel_bias_fp_0_V...
+Compiling module xil_defaultlib.yolo_conv_top_kernel_bias_fp_0_V...
 Compiling module xil_defaultlib.yolo_conv_top_mul_mul_16s_16s_32...
 Compiling module xil_defaultlib.yolo_conv_top_mul_mul_16s_16s_32...
 Compiling module xil_defaultlib.window_macc
+Compiling module xil_defaultlib.yolo_conv_top_mul_mul_6ns_16s_22...
+Compiling module xil_defaultlib.yolo_conv_top_mul_mul_6ns_16s_22...
+Compiling module xil_defaultlib.post_process
 Compiling module xil_defaultlib.out_stream_merge
-Compiling module xil_defaultlib.fork_window
-Compiling module xil_defaultlib.yolo_conv_top_mul_mul_6ns_16s_22...
-Compiling module xil_defaultlib.yolo_conv_top_mul_mul_6ns_16s_22...
+Compiling module xil_defaultlib.slide_window
+Compiling module xil_defaultlib.yolo_conv_top_mac_muladd_3ns_3ns...
+Compiling module xil_defaultlib.yolo_conv_top_mac_muladd_3ns_3ns...
+Compiling module xil_defaultlib.yolo_conv_top_am_addmul_9ns_1ns_...
+Compiling module xil_defaultlib.yolo_conv_top_am_addmul_9ns_1ns_...
+Compiling module xil_defaultlib.yolo_conv_top_mac_muladd_4ns_10n...
+Compiling module xil_defaultlib.yolo_conv_top_mac_muladd_4ns_10n...
 Compiling module xil_defaultlib.fifo_w16_d2_A_shiftReg
 Compiling module xil_defaultlib.fifo_w16_d2_A
 Compiling module xil_defaultlib.yolo_conv_top
-Compiling module xil_defaultlib.fifo(DEPTH=3576,WIDTH=32)
-Compiling module xil_defaultlib.fifo(DEPTH=3576,WIDTH=4)
-Compiling module xil_defaultlib.fifo(DEPTH=3576,WIDTH=2)
-Compiling module xil_defaultlib.fifo(DEPTH=3576,WIDTH=1)
-Compiling module xil_defaultlib.fifo(DEPTH=3576,WIDTH=5)
-Compiling module xil_defaultlib.fifo(DEPTH=3576,WIDTH=6)
+Compiling module xil_defaultlib.fifo(DEPTH=1812,WIDTH=64)
+Compiling module xil_defaultlib.fifo(DEPTH=1812)
+Compiling module xil_defaultlib.fifo(DEPTH=1812,WIDTH=2)
+Compiling module xil_defaultlib.fifo(DEPTH=1812,WIDTH=1)
+Compiling module xil_defaultlib.fifo(DEPTH=1812,WIDTH=5)
+Compiling module xil_defaultlib.fifo(DEPTH=1812,WIDTH=6)
 Compiling module xil_defaultlib.AESL_axi_s_inStream
-Compiling module xil_defaultlib.fifo(DEPTH=9984,WIDTH=32)
-Compiling module xil_defaultlib.fifo(DEPTH=9984,WIDTH=4)
-Compiling module xil_defaultlib.fifo(DEPTH=9984,WIDTH=2)
-Compiling module xil_defaultlib.fifo(DEPTH=9984,WIDTH=1)
-Compiling module xil_defaultlib.fifo(DEPTH=9984,WIDTH=5)
-Compiling module xil_defaultlib.fifo(DEPTH=9984,WIDTH=6)
+Compiling module xil_defaultlib.fifo(DEPTH=4992,WIDTH=64)
+Compiling module xil_defaultlib.fifo(DEPTH=4992)
+Compiling module xil_defaultlib.fifo(DEPTH=4992,WIDTH=2)
+Compiling module xil_defaultlib.fifo(DEPTH=4992,WIDTH=1)
+Compiling module xil_defaultlib.fifo(DEPTH=4992,WIDTH=5)
+Compiling module xil_defaultlib.fifo(DEPTH=4992,WIDTH=6)
 Compiling module xil_defaultlib.AESL_axi_s_outStream
-Compiling module xil_defaultlib.AESL_axi_slave_AXILiteS
+Compiling module xil_defaultlib.AESL_axi_slave_CTRL_BUS
 Compiling module xil_defaultlib.apatb_yolo_conv_top_top
 Compiling module work.glbl
 Built simulation snapshot yolo_conv_top

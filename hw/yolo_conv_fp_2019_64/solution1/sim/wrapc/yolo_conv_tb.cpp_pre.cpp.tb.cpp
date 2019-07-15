@@ -2,12 +2,12 @@
 // Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
 // Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 // ==============================================================
-# 1 "/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_2019/tb/yolo_conv_tb.cpp"
+# 1 "/home/xavier/Desktop/yolo_conv_fp_2019_64_rec/tb/yolo_conv_tb.cpp"
 # 1 "<built-in>"
 # 1 "<command-line>"
 # 1 "/usr/include/stdc-predef.h" 1 3 4
 # 1 "<command-line>" 2
-# 1 "/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_2019/tb/yolo_conv_tb.cpp"
+# 1 "/home/xavier/Desktop/yolo_conv_fp_2019_64_rec/tb/yolo_conv_tb.cpp"
 # 1 "/usr/include/stdio.h" 1 3 4
 # 27 "/usr/include/stdio.h" 3 4
 # 1 "/usr/include/features.h" 1 3 4
@@ -957,7 +957,7 @@ extern int ftrylockfile (FILE *__stream) throw () ;
 extern void funlockfile (FILE *__stream) throw ();
 # 942 "/usr/include/stdio.h" 3 4
 }
-# 2 "/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_2019/tb/yolo_conv_tb.cpp" 2
+# 2 "/home/xavier/Desktop/yolo_conv_fp_2019_64_rec/tb/yolo_conv_tb.cpp" 2
 # 1 "/opt/Xilinx_2019_1/Vivado/2019.1/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/math.h" 1 3
 # 36 "/opt/Xilinx_2019_1/Vivado/2019.1/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/math.h" 3
 # 1 "/opt/Xilinx_2019_1/Vivado/2019.1/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/cmath" 1 3
@@ -4115,14 +4115,14 @@ using std::scalbln;
 using std::scalbn;
 using std::tgamma;
 using std::trunc;
-# 3 "/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_2019/tb/yolo_conv_tb.cpp" 2
-# 1 "/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_2019/tb/../src/yolo_conv.h" 1
+# 3 "/home/xavier/Desktop/yolo_conv_fp_2019_64_rec/tb/yolo_conv_tb.cpp" 2
+# 1 "/home/xavier/Desktop/yolo_conv_fp_2019_64_rec/tb/../src/yolo_conv.h" 1
 
 
 
-# 1 "/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_2019/tb/../src/layer_parameter.h" 1
-# 5 "/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_2019/tb/../src/yolo_conv.h" 2
-# 1 "/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_2019/tb/../src/yolo_stream.h" 1
+# 1 "/home/xavier/Desktop/yolo_conv_fp_2019_64_rec/tb/../src/layer_parameter.h" 1
+# 5 "/home/xavier/Desktop/yolo_conv_fp_2019_64_rec/tb/../src/yolo_conv.h" 2
+# 1 "/home/xavier/Desktop/yolo_conv_fp_2019_64_rec/tb/../src/yolo_stream.h" 1
 
 
 
@@ -66450,7 +66450,7 @@ inline bool operator!=(
 }
 # 399 "/opt/Xilinx_2019_1/Vivado/2019.1/include/ap_fixed.h" 2
 # 368 "/opt/Xilinx_2019_1/Vivado/2019.1/include/ap_int.h" 2
-# 5 "/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_2019/tb/../src/yolo_stream.h" 2
+# 5 "/home/xavier/Desktop/yolo_conv_fp_2019_64_rec/tb/../src/yolo_stream.h" 2
 # 1 "/opt/Xilinx_2019_1/Vivado/2019.1/include/hls_stream.h" 1
 # 79 "/opt/Xilinx_2019_1/Vivado/2019.1/include/hls_stream.h"
 # 1 "/opt/Xilinx_2019_1/Vivado/2019.1/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/queue" 1 3
@@ -73753,8 +73753,8 @@ class stream
 };
 
 }
-# 6 "/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_2019/tb/../src/yolo_stream.h" 2
-# 1 "/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_2019/tb/../src/yolo_fp.h" 1
+# 6 "/home/xavier/Desktop/yolo_conv_fp_2019_64_rec/tb/../src/yolo_stream.h" 2
+# 1 "/home/xavier/Desktop/yolo_conv_fp_2019_64_rec/tb/../src/yolo_fp.h" 1
 
 
 
@@ -73762,16 +73762,18 @@ class stream
 
 typedef ap_fixed<16,8,AP_RND_CONV,AP_SAT> fp_data_type;
 typedef ap_fixed<16,8,AP_RND_CONV,AP_SAT> fp_weight_type;
-# 7 "/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_2019/tb/../src/yolo_stream.h" 2
+# 7 "/home/xavier/Desktop/yolo_conv_fp_2019_64_rec/tb/../src/yolo_stream.h" 2
 
-typedef struct double_fp_pack{
+typedef struct quad_fp_pack{
  fp_data_type sub_data_0;
  fp_data_type sub_data_1;
-}double_fp_pack;
+ fp_data_type sub_data_2;
+ fp_data_type sub_data_3;
+}quad_fp_pack;
 
 template<int D,int U,int TI,int TD>
   struct ap_axi_fp{
- double_fp_pack data;
+ quad_fp_pack data;
     ap_uint<(D+7)/8> keep;
     ap_uint<(D+7)/8> strb;
     ap_uint<U> user;
@@ -73780,10 +73782,10 @@ template<int D,int U,int TI,int TD>
     ap_uint<TD> dest;
 };
 
-typedef ap_axi_fp<32,2,5,6> double_fp_side_channel;
-typedef hls::stream<double_fp_side_channel> yolo_stream_type;
+typedef ap_axi_fp<64,2,5,6> quad_fp_side_channel;
+typedef hls::stream<quad_fp_side_channel> yolo_quad_stream;
 typedef hls::stream<fp_data_type> yolo_inter_stream;
-# 6 "/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_2019/tb/../src/yolo_conv.h" 2
+# 6 "/home/xavier/Desktop/yolo_conv_fp_2019_64_rec/tb/../src/yolo_conv.h" 2
 # 1 "/opt/Xilinx_2019_1/Vivado/2019.1/include/hls_video.h" 1
 # 48 "/opt/Xilinx_2019_1/Vivado/2019.1/include/hls_video.h"
 # 1 "/opt/Xilinx_2019_1/Vivado/2019.1/include/hls/hls_axi_io.h" 1
@@ -103272,29 +103274,30 @@ void FindStereoCorrespondenceBM(
 
 }
 # 70 "/opt/Xilinx_2019_1/Vivado/2019.1/include/hls_video.h" 2
-# 7 "/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_2019/tb/../src/yolo_conv.h" 2
+# 7 "/home/xavier/Desktop/yolo_conv_fp_2019_64_rec/tb/../src/yolo_conv.h" 2
 
 typedef hls::Window<3,3,fp_data_type> window_type;
-typedef hls::LineBuffer<3,(416+2*1),fp_data_type> line_buff_type;
-
+typedef hls::LineBuffer<3,(416+2),fp_data_type> line_buff_type;
 typedef struct local_weight_type
 {
  fp_weight_type data[3*3];
 }local_weight_type;
 
-
-
-void yolo_conv_top(yolo_stream_type &inStream, yolo_stream_type &outStream);
-void yolo_conv_core(yolo_stream_type &inStream, yolo_stream_type &outStream);
-void yolo_line_buffer(fp_data_type curr_data, line_buff_type *line_buff, int col_idx);
-window_type slide_window(int conv_count, line_buff_type *line_buff);
-void fork_window(window_type kernel_window, window_type window_group[16]);
-
-fp_data_type window_macc(window_type *window, local_weight_type weight);
+void yolo_conv_top(yolo_quad_stream &inStream, yolo_quad_stream &outStream,
+             ap_uint<(5+1)> output_ch, ap_uint<(5+1)> input_ch, ap_uint<(5-2+1)> fold_output_ch, ap_uint<(5-2+1)> fold_input_ch, ap_uint<3> kernel_dim,
+             ap_uint<9> input_h, ap_uint<9> input_w, ap_uint<9> real_input_h,
+             ap_uint<1> leaky,
+       ap_uint<3> fold_win_area);
+fp_data_type post_process(fp_data_type sub0_val_output,fp_data_type sub1_val_output,fp_data_type sub2_val_output,fp_data_type sub3_val_output,
+            bool acc_flag,ap_uint<1> leaky,
+      fp_weight_type bias,ap_uint<(5-2+1)> input_ch_idx,fp_data_type val_output);
+void yolo_line_buffer(fp_data_type curr_data, line_buff_type *line_buff, ap_uint<9> col_idx);
+window_type slide_window(ap_uint<9> conv_count, line_buff_type *line_buff, ap_uint<3> kernel_dim);
+fp_data_type window_macc(window_type window, local_weight_type weight, ap_uint<3> kernel_dim);
 void write_output(fp_data_type val_output, yolo_inter_stream &out_stream);
-void out_stream_merge(yolo_inter_stream out_stream_group[16], yolo_stream_type &outStream, int input_ch_idx,double_fp_side_channel curr_input,ap_uint<1> last);
-# 4 "/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_2019/tb/yolo_conv_tb.cpp" 2
-# 1 "/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_2019/tb/../src/weight_file.h" 1
+void out_stream_merge(yolo_inter_stream out_stream_group[32], yolo_quad_stream &outStream, ap_uint<(5-2+1)> input_ch_idx,quad_fp_side_channel curr_input,ap_uint<1> last,ap_uint<(5+1)> output_ch,ap_uint<(5-2+1)> fold_output_ch );
+# 4 "/home/xavier/Desktop/yolo_conv_fp_2019_64_rec/tb/yolo_conv_tb.cpp" 2
+# 1 "/home/xavier/Desktop/yolo_conv_fp_2019_64_rec/tb/../src/weight_file.h" 1
 
 
 
@@ -103747,16 +103750,16 @@ short kernel_weight_fp_bits[]={391,
 386,
 574,
 517};
-# 5 "/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_2019/tb/yolo_conv_tb.cpp" 2
-
+# 5 "/home/xavier/Desktop/yolo_conv_fp_2019_64_rec/tb/yolo_conv_tb.cpp" 2
+# 21 "/home/xavier/Desktop/yolo_conv_fp_2019_64_rec/tb/yolo_conv_tb.cpp"
 #ifndef HLS_FASTSIM
 #ifndef HLS_FASTSIM
 #include "apatb_yolo_conv_top.h"
 #endif
-# 6 "/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_2019/tb/yolo_conv_tb.cpp"
+# 21 "/home/xavier/Desktop/yolo_conv_fp_2019_64_rec/tb/yolo_conv_tb.cpp"
 int main()
 {
- yolo_stream_type inputStream, outputStream;
+ yolo_quad_stream inputStream("in_stream"), outputStream("out_stream");
 
  FILE *layer_input;
  FILE *layer_output_hls;
@@ -103771,21 +103774,34 @@ int main()
  layer_output_hls = fopen("layer_output_hls.dat","w");
  layer_output_sdk = fopen("layer_output_sdk.dat","r");
  error_log = fopen("error.log","w");
-# 39 "/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_2019/tb/yolo_conv_tb.cpp"
+# 54 "/home/xavier/Desktop/yolo_conv_fp_2019_64_rec/tb/yolo_conv_tb.cpp"
  int k = 0;
 
- for(int i=0;i<16*3;i++)
+ for(int m=0;m<16;m++)
  {
-  for(int j=0;j<(3*3 +1)/2;j++)
+ for(int i=0;i<3;i++)
+ {
+  for(int j=0;j<(3*3 +3)/4;j++)
   {
-   double_fp_side_channel curr_input;
+   quad_fp_side_channel curr_input;
 
-   fp_data_type *weight_p = (fp_data_type *)&kernel_weight_fp_bits[0];
-   curr_input.data.sub_data_0 = weight_p[k++];
-   if(j==(3*3 +1)/2-1)
-    curr_input.data.sub_data_1 = 0;
-   else
-    curr_input.data.sub_data_1 = weight_p[k++];
+
+    fp_data_type *weight_p = (fp_data_type *)&kernel_weight_fp_bits[0];
+    curr_input.data.sub_data_0 = weight_p[k++];
+
+    if(j==(3*3 +3)/4-1)
+    {
+     curr_input.data.sub_data_1 = 0;
+     curr_input.data.sub_data_2 = 0;
+     curr_input.data.sub_data_3 = 0;
+    }
+    else
+    {
+     curr_input.data.sub_data_1 = weight_p[k++];
+     curr_input.data.sub_data_2 = weight_p[k++];
+     curr_input.data.sub_data_3 = weight_p[k++];
+    }
+
    curr_input.keep = 1;
    curr_input.strb = 1;
    curr_input.user = 1;
@@ -103795,14 +103811,19 @@ int main()
    inputStream << curr_input;
   }
  }
+ }
 
- for(int i=0;i<16/2;i++)
+ for(int i=0;i<16/4;i++)
  {
-  double_fp_side_channel curr_input;
+  quad_fp_side_channel curr_input;
 
-  fp_data_type *bias_p = (fp_data_type *)&kernel_bias_fp_bits[0];
-  curr_input.data.sub_data_0 = bias_p[2*i];
-  curr_input.data.sub_data_1 = bias_p[2*i+1];
+
+   fp_data_type *bias_p = (fp_data_type *)&kernel_bias_fp_bits[0];
+   curr_input.data.sub_data_0 = bias_p[4*i];
+   curr_input.data.sub_data_1 = bias_p[4*i+1];
+   curr_input.data.sub_data_2 = bias_p[4*i+2];
+   curr_input.data.sub_data_3 = bias_p[4*i+3];
+
   curr_input.keep = 1;
   curr_input.strb = 1;
   curr_input.user = 1;
@@ -103818,24 +103839,35 @@ int main()
  {
   for(int col_idx=0;col_idx<(416+2*1)-2*1;col_idx++)
   {
-   for(int input_ch_idx=0;input_ch_idx<(3 +1)/2;input_ch_idx++)
+   for(int input_ch_idx=0;input_ch_idx<(3 +3)/4;input_ch_idx++)
    {
-    double_fp_side_channel curr_input;
+    quad_fp_side_channel curr_input;
 
     short input_data_sub0;
     short input_data_sub1;
+    short input_data_sub2;
+    short input_data_sub3;
 
-    fscanf(layer_input,"%hd",&input_data_sub0);
-    if(2*input_ch_idx+1<3)
+
+
+     fscanf(layer_input,"%hd",&input_data_sub0);
      fscanf(layer_input,"%hd",&input_data_sub1);
-    else
-     input_data_sub1 = 0;
+     fscanf(layer_input,"%hd",&input_data_sub2);
+     if(!(((3 +3)/4!=(3)/4)&&(input_ch_idx == (3 +3)/4-1)))
+      fscanf(layer_input,"%hd",&input_data_sub3);
+     else
+      input_data_sub3 = 0;
 
-    fp_data_type *sub0_p = (fp_data_type *)&input_data_sub0;
-    fp_data_type *sub1_p = (fp_data_type *)&input_data_sub1;
+     fp_data_type *sub0_p = (fp_data_type *)&input_data_sub0;
+     fp_data_type *sub1_p = (fp_data_type *)&input_data_sub1;
+     fp_data_type *sub2_p = (fp_data_type *)&input_data_sub2;
+     fp_data_type *sub3_p = (fp_data_type *)&input_data_sub3;
 
-    curr_input.data.sub_data_0 = *sub0_p;
-    curr_input.data.sub_data_1 = *sub1_p;
+     curr_input.data.sub_data_0 = *sub0_p;
+     curr_input.data.sub_data_1 = *sub1_p;
+     curr_input.data.sub_data_2 = *sub2_p;
+     curr_input.data.sub_data_3 = *sub3_p;
+
     curr_input.keep = 1;
     curr_input.strb = 1;
     curr_input.user = 1;
@@ -103847,25 +103879,37 @@ int main()
   }
  }
 
+
     
 #ifndef HLS_FASTSIM
 #define yolo_conv_top AESL_WRAP_yolo_conv_top
 #endif
-# 114 "/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_2019/tb/yolo_conv_tb.cpp"
-yolo_conv_top(inputStream,outputStream);
+# 159 "/home/xavier/Desktop/yolo_conv_fp_2019_64_rec/tb/yolo_conv_tb.cpp"
+yolo_conv_top(inputStream,outputStream,
+            16,3,(16 +3)/4,(3 +3)/4,3,
+      (3+2*1),(416+2*1),(416+2*1),
+      1,
+      (3*3 +3)/4);
 #undef yolo_conv_top
-# 114 "/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_2019/tb/yolo_conv_tb.cpp"
+# 159 "/home/xavier/Desktop/yolo_conv_fp_2019_64_rec/tb/yolo_conv_tb.cpp"
 
 
- for(int pix_idx=0;pix_idx<((416*3)*((16 +1)/2));pix_idx++)
+ for(int pix_idx=0;pix_idx<(416*3);pix_idx++)
  {
-  double_fp_side_channel curr_output;
-  outputStream.read(curr_output);
-  output_data[2*pix_idx] = curr_output.data.sub_data_0;
-  if(2*pix_idx+1<416*3*16)
-   output_data[2*pix_idx+1] = curr_output.data.sub_data_1;
-  if(curr_output.last==1)
-   printf("%d\n",pix_idx);
+
+  for(int ch_idx=0;ch_idx<(16)/4;ch_idx++)
+  {
+   quad_fp_side_channel curr_output;
+   outputStream.read(curr_output);
+
+    output_data[4*(pix_idx*(16)/4+ch_idx)] = curr_output.data.sub_data_0;
+    output_data[4*(pix_idx*(16)/4+ch_idx)+1] = curr_output.data.sub_data_1;
+    output_data[4*(pix_idx*(16)/4+ch_idx)+2] = curr_output.data.sub_data_2;
+    output_data[4*(pix_idx*(16)/4+ch_idx)+3] = curr_output.data.sub_data_3;
+
+   if(curr_output.last==1)
+    printf("%d\n",pix_idx*(32)/4+ch_idx);
+  }
  }
 
  short *ptr = (short *)&output_data[0];
@@ -103888,13 +103932,13 @@ yolo_conv_top(inputStream,outputStream);
  fclose(layer_output_sdk);
  fclose(error_log);
 
-    if (flag)
-            return 1;
-    else
+
+
+
             return 0;
 
 
 }
 #endif
-# 153 "/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_2019/tb/yolo_conv_tb.cpp"
+# 209 "/home/xavier/Desktop/yolo_conv_fp_2019_64_rec/tb/yolo_conv_tb.cpp"
 

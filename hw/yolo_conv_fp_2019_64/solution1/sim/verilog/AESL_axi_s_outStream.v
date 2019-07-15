@@ -25,9 +25,9 @@
 module AESL_axi_s_outStream (
     input clk,
     input reset,
-    input [32 - 1:0] TRAN_outStream_TDATA,
-    input [4 - 1:0] TRAN_outStream_TKEEP,
-    input [4 - 1:0] TRAN_outStream_TSTRB,
+    input [64 - 1:0] TRAN_outStream_TDATA,
+    input [8 - 1:0] TRAN_outStream_TKEEP,
+    input [8 - 1:0] TRAN_outStream_TSTRB,
     input [2 - 1:0] TRAN_outStream_TUSER,
     input TRAN_outStream_TLAST,
     input [5 - 1:0] TRAN_outStream_TID,
@@ -42,11 +42,11 @@ module AESL_axi_s_outStream (
     wire outStream_TDATA_full;
     wire outStream_TDATA_empty;
     reg outStream_TDATA_write_en;
-    reg [32 - 1:0] outStream_TDATA_write_data;
+    reg [64 - 1:0] outStream_TDATA_write_data;
     reg outStream_TDATA_read_en;
-    wire [32 - 1:0] outStream_TDATA_read_data;
+    wire [64 - 1:0] outStream_TDATA_read_data;
     
-    fifo #(9984, 32) fifo_outStream_TDATA (
+    fifo #(4992, 64) fifo_outStream_TDATA (
         .reset(1'b0),
         .write_clock(clk),
         .write_en(outStream_TDATA_write_en),
@@ -65,11 +65,11 @@ module AESL_axi_s_outStream (
     wire outStream_TKEEP_full;
     wire outStream_TKEEP_empty;
     reg outStream_TKEEP_write_en;
-    reg [4 - 1:0] outStream_TKEEP_write_data;
+    reg [8 - 1:0] outStream_TKEEP_write_data;
     reg outStream_TKEEP_read_en;
-    wire [4 - 1:0] outStream_TKEEP_read_data;
+    wire [8 - 1:0] outStream_TKEEP_read_data;
     
-    fifo #(9984, 4) fifo_outStream_TKEEP (
+    fifo #(4992, 8) fifo_outStream_TKEEP (
         .reset(1'b0),
         .write_clock(clk),
         .write_en(outStream_TKEEP_write_en),
@@ -88,11 +88,11 @@ module AESL_axi_s_outStream (
     wire outStream_TSTRB_full;
     wire outStream_TSTRB_empty;
     reg outStream_TSTRB_write_en;
-    reg [4 - 1:0] outStream_TSTRB_write_data;
+    reg [8 - 1:0] outStream_TSTRB_write_data;
     reg outStream_TSTRB_read_en;
-    wire [4 - 1:0] outStream_TSTRB_read_data;
+    wire [8 - 1:0] outStream_TSTRB_read_data;
     
-    fifo #(9984, 4) fifo_outStream_TSTRB (
+    fifo #(4992, 8) fifo_outStream_TSTRB (
         .reset(1'b0),
         .write_clock(clk),
         .write_en(outStream_TSTRB_write_en),
@@ -115,7 +115,7 @@ module AESL_axi_s_outStream (
     reg outStream_TUSER_read_en;
     wire [2 - 1:0] outStream_TUSER_read_data;
     
-    fifo #(9984, 2) fifo_outStream_TUSER (
+    fifo #(4992, 2) fifo_outStream_TUSER (
         .reset(1'b0),
         .write_clock(clk),
         .write_en(outStream_TUSER_write_en),
@@ -138,7 +138,7 @@ module AESL_axi_s_outStream (
     reg outStream_TLAST_read_en;
     wire [1 - 1:0] outStream_TLAST_read_data;
     
-    fifo #(9984, 1) fifo_outStream_TLAST (
+    fifo #(4992, 1) fifo_outStream_TLAST (
         .reset(1'b0),
         .write_clock(clk),
         .write_en(outStream_TLAST_write_en),
@@ -161,7 +161,7 @@ module AESL_axi_s_outStream (
     reg outStream_TID_read_en;
     wire [5 - 1:0] outStream_TID_read_data;
     
-    fifo #(9984, 5) fifo_outStream_TID (
+    fifo #(4992, 5) fifo_outStream_TID (
         .reset(1'b0),
         .write_clock(clk),
         .write_en(outStream_TID_write_en),
@@ -184,7 +184,7 @@ module AESL_axi_s_outStream (
     reg outStream_TDEST_read_en;
     wire [6 - 1:0] outStream_TDEST_read_data;
     
-    fifo #(9984, 6) fifo_outStream_TDEST (
+    fifo #(4992, 6) fifo_outStream_TDEST (
         .reset(1'b0),
         .write_clock(clk),
         .write_en(outStream_TDEST_write_en),
@@ -251,7 +251,7 @@ module AESL_axi_s_outStream (
     
     initial begin : AXI_stream_receiver_outStream_TDATA
         integer fp;
-        reg [32 - 1:0] data;
+        reg [64 - 1:0] data;
         reg [8 * 5:1] str;
         
         transaction_save_outStream_TDATA = 0;
@@ -282,7 +282,7 @@ module AESL_axi_s_outStream (
     
     initial begin : AXI_stream_receiver_outStream_TKEEP
         integer fp;
-        reg [4 - 1:0] data;
+        reg [8 - 1:0] data;
         reg [8 * 5:1] str;
         
         transaction_save_outStream_TKEEP = 0;
@@ -313,7 +313,7 @@ module AESL_axi_s_outStream (
     
     initial begin : AXI_stream_receiver_outStream_TSTRB
         integer fp;
-        reg [4 - 1:0] data;
+        reg [8 - 1:0] data;
         reg [8 * 5:1] str;
         
         transaction_save_outStream_TSTRB = 0;

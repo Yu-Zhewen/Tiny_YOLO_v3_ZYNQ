@@ -1,16 +1,16 @@
-# 1 "/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_2019/src/yolo_conv.cpp"
+# 1 "/home/xavier/Desktop/yolo_conv_fp_2019_64_rec/src/yolo_conv.cpp"
 # 1 "<built-in>"
 # 1 "<command-line>"
 # 1 "/usr/include/stdc-predef.h" 1 3 4
 # 1 "<command-line>" 2
-# 1 "/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_2019/src/yolo_conv.cpp"
-# 1 "/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_2019/src/yolo_conv.h" 1
+# 1 "/home/xavier/Desktop/yolo_conv_fp_2019_64_rec/src/yolo_conv.cpp"
+# 1 "/home/xavier/Desktop/yolo_conv_fp_2019_64_rec/src/yolo_conv.h" 1
 
 
 
-# 1 "/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_2019/src/layer_parameter.h" 1
-# 5 "/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_2019/src/yolo_conv.h" 2
-# 1 "/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_2019/src/yolo_stream.h" 1
+# 1 "/home/xavier/Desktop/yolo_conv_fp_2019_64_rec/src/layer_parameter.h" 1
+# 5 "/home/xavier/Desktop/yolo_conv_fp_2019_64_rec/src/yolo_conv.h" 2
+# 1 "/home/xavier/Desktop/yolo_conv_fp_2019_64_rec/src/yolo_stream.h" 1
 
 
 
@@ -66447,7 +66447,7 @@ inline bool operator!=(
 }
 # 399 "/opt/Xilinx_2019_1/Vivado/2019.1/include/ap_fixed.h" 2
 # 368 "/opt/Xilinx_2019_1/Vivado/2019.1/include/ap_int.h" 2
-# 5 "/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_2019/src/yolo_stream.h" 2
+# 5 "/home/xavier/Desktop/yolo_conv_fp_2019_64_rec/src/yolo_stream.h" 2
 # 1 "/opt/Xilinx_2019_1/Vivado/2019.1/include/hls_stream.h" 1
 # 79 "/opt/Xilinx_2019_1/Vivado/2019.1/include/hls_stream.h"
 # 1 "/opt/Xilinx_2019_1/Vivado/2019.1/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/queue" 1 3
@@ -73750,8 +73750,8 @@ class stream
 };
 
 }
-# 6 "/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_2019/src/yolo_stream.h" 2
-# 1 "/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_2019/src/yolo_fp.h" 1
+# 6 "/home/xavier/Desktop/yolo_conv_fp_2019_64_rec/src/yolo_stream.h" 2
+# 1 "/home/xavier/Desktop/yolo_conv_fp_2019_64_rec/src/yolo_fp.h" 1
 
 
 
@@ -73759,16 +73759,18 @@ class stream
 
 typedef ap_fixed<16,8,AP_RND_CONV,AP_SAT> fp_data_type;
 typedef ap_fixed<16,8,AP_RND_CONV,AP_SAT> fp_weight_type;
-# 7 "/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_2019/src/yolo_stream.h" 2
+# 7 "/home/xavier/Desktop/yolo_conv_fp_2019_64_rec/src/yolo_stream.h" 2
 
-typedef struct double_fp_pack{
+typedef struct quad_fp_pack{
  fp_data_type sub_data_0;
  fp_data_type sub_data_1;
-}double_fp_pack;
+ fp_data_type sub_data_2;
+ fp_data_type sub_data_3;
+}quad_fp_pack;
 
 template<int D,int U,int TI,int TD>
   struct ap_axi_fp{
- double_fp_pack data;
+ quad_fp_pack data;
     ap_uint<(D+7)/8> keep;
     ap_uint<(D+7)/8> strb;
     ap_uint<U> user;
@@ -73777,10 +73779,10 @@ template<int D,int U,int TI,int TD>
     ap_uint<TD> dest;
 };
 
-typedef ap_axi_fp<32,2,5,6> double_fp_side_channel;
-typedef hls::stream<double_fp_side_channel> yolo_stream_type;
+typedef ap_axi_fp<64,2,5,6> quad_fp_side_channel;
+typedef hls::stream<quad_fp_side_channel> yolo_quad_stream;
 typedef hls::stream<fp_data_type> yolo_inter_stream;
-# 6 "/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_2019/src/yolo_conv.h" 2
+# 6 "/home/xavier/Desktop/yolo_conv_fp_2019_64_rec/src/yolo_conv.h" 2
 # 1 "/opt/Xilinx_2019_1/Vivado/2019.1/include/hls_video.h" 1
 # 48 "/opt/Xilinx_2019_1/Vivado/2019.1/include/hls_video.h"
 # 1 "/opt/Xilinx_2019_1/Vivado/2019.1/include/hls/hls_axi_io.h" 1
@@ -103269,129 +103271,156 @@ void FindStereoCorrespondenceBM(
 
 }
 # 70 "/opt/Xilinx_2019_1/Vivado/2019.1/include/hls_video.h" 2
-# 7 "/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_2019/src/yolo_conv.h" 2
+# 7 "/home/xavier/Desktop/yolo_conv_fp_2019_64_rec/src/yolo_conv.h" 2
 
 typedef hls::Window<3,3,fp_data_type> window_type;
-typedef hls::LineBuffer<3,(416+2*1),fp_data_type> line_buff_type;
-
+typedef hls::LineBuffer<3,(416+2),fp_data_type> line_buff_type;
 typedef struct local_weight_type
 {
  fp_weight_type data[3*3];
 }local_weight_type;
 
-
-
-void yolo_conv_top(yolo_stream_type &inStream, yolo_stream_type &outStream);
-void yolo_conv_core(yolo_stream_type &inStream, yolo_stream_type &outStream);
-void yolo_line_buffer(fp_data_type curr_data, line_buff_type *line_buff, int col_idx);
-window_type slide_window(int conv_count, line_buff_type *line_buff);
-void fork_window(window_type kernel_window, window_type window_group[16]);
-
-fp_data_type window_macc(window_type *window, local_weight_type weight);
+void yolo_conv_top(yolo_quad_stream &inStream, yolo_quad_stream &outStream,
+             ap_uint<(5+1)> output_ch, ap_uint<(5+1)> input_ch, ap_uint<(5-2+1)> fold_output_ch, ap_uint<(5-2+1)> fold_input_ch, ap_uint<3> kernel_dim,
+             ap_uint<9> input_h, ap_uint<9> input_w, ap_uint<9> real_input_h,
+             ap_uint<1> leaky,
+       ap_uint<3> fold_win_area);
+fp_data_type post_process(fp_data_type sub0_val_output,fp_data_type sub1_val_output,fp_data_type sub2_val_output,fp_data_type sub3_val_output,
+            bool acc_flag,ap_uint<1> leaky,
+      fp_weight_type bias,ap_uint<(5-2+1)> input_ch_idx,fp_data_type val_output);
+void yolo_line_buffer(fp_data_type curr_data, line_buff_type *line_buff, ap_uint<9> col_idx);
+window_type slide_window(ap_uint<9> conv_count, line_buff_type *line_buff, ap_uint<3> kernel_dim);
+fp_data_type window_macc(window_type window, local_weight_type weight, ap_uint<3> kernel_dim);
 void write_output(fp_data_type val_output, yolo_inter_stream &out_stream);
-void out_stream_merge(yolo_inter_stream out_stream_group[16], yolo_stream_type &outStream, int input_ch_idx,double_fp_side_channel curr_input,ap_uint<1> last);
-# 2 "/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_2019/src/yolo_conv.cpp" 2
+void out_stream_merge(yolo_inter_stream out_stream_group[32], yolo_quad_stream &outStream, ap_uint<(5-2+1)> input_ch_idx,quad_fp_side_channel curr_input,ap_uint<1> last,ap_uint<(5+1)> output_ch,ap_uint<(5-2+1)> fold_output_ch );
+# 2 "/home/xavier/Desktop/yolo_conv_fp_2019_64_rec/src/yolo_conv.cpp" 2
 
 
-void yolo_conv_top(yolo_stream_type &inStream, yolo_stream_type &outStream)
+void yolo_conv_top(yolo_quad_stream &inStream, yolo_quad_stream &outStream,
+             ap_uint<(5+1)> output_ch, ap_uint<(5+1)> input_ch, ap_uint<(5-2+1)> fold_output_ch, ap_uint<(5-2+1)> fold_input_ch, ap_uint<3> kernel_dim,
+             ap_uint<9> input_h, ap_uint<9> input_w, ap_uint<9> real_input_h,
+             ap_uint<1> leaky,
+       ap_uint<3> fold_win_area)
 {
-#pragma HLS INTERFACE s_axilite port=return
+#pragma HLS INTERFACE s_axilite port=fold_input_ch bundle=CTRL_BUS
+#pragma HLS INTERFACE s_axilite port=fold_output_ch bundle=CTRL_BUS
+#pragma HLS INTERFACE s_axilite port=input_ch bundle=CTRL_BUS
+#pragma HLS INTERFACE s_axilite port=output_ch bundle=CTRL_BUS
+#pragma HLS INTERFACE s_axilite port=fold_win_area bundle=CTRL_BUS
+#pragma HLS INTERFACE s_axilite port=kernel_dim bundle=CTRL_BUS
+#pragma HLS INTERFACE s_axilite port=leaky bundle=CTRL_BUS
+#pragma HLS INTERFACE s_axilite port=real_input_h bundle=CTRL_BUS
+#pragma HLS INTERFACE s_axilite port=input_w bundle=CTRL_BUS
+#pragma HLS INTERFACE s_axilite port=input_h bundle=CTRL_BUS
+#pragma HLS INTERFACE s_axilite port=return bundle=CTRL_BUS
 #pragma HLS INTERFACE axis register both port=outStream
 #pragma HLS INTERFACE axis register both port=inStream
- yolo_inter_stream out_stream_group[16];
+
+ yolo_inter_stream out_stream_group[32];
 #pragma HLS ARRAY_PARTITION variable=out_stream_group complete dim=1
 #pragma HLS STREAM variable=out_stream_group depth=2 dim=1
- line_buff_type line_buff_group_0[(3 +1)/2];
- line_buff_type line_buff_group_1[3 -((3 +1)/2)];
- window_type window_group_0[16];
-#pragma HLS ARRAY_PARTITION variable=window_group_0 complete dim=1
- window_type window_group_1[16];
-#pragma HLS ARRAY_PARTITION variable=window_group_1 complete dim=1
 
+ line_buff_type line_buff_group_0[32/4];
+ line_buff_type line_buff_group_1[32/4];
+ line_buff_type line_buff_group_2[32/4];
+ line_buff_type line_buff_group_3[32/4];
 
- fp_data_type sub0_val_output[16];
+ fp_data_type val_output[32];
+#pragma HLS ARRAY_PARTITION variable=val_output complete dim=1
+ fp_data_type sub0_val_output[32];
 #pragma HLS ARRAY_PARTITION variable=sub0_val_output complete dim=1
- fp_data_type sub1_val_output[16];
+ fp_data_type sub1_val_output[32];
 #pragma HLS ARRAY_PARTITION variable=sub1_val_output complete dim=1
- fp_data_type biased_output[16];
-#pragma HLS ARRAY_PARTITION variable=biased_output complete dim=1
- fp_data_type activated_output[16];
-#pragma HLS ARRAY_PARTITION variable=activated_output complete dim=1
- double_fp_side_channel curr_input;
+ fp_data_type sub2_val_output[32];
+#pragma HLS ARRAY_PARTITION variable=sub2_val_output complete dim=1
+ fp_data_type sub3_val_output[32];
+#pragma HLS ARRAY_PARTITION variable=sub3_val_output complete dim=1
 
- local_weight_type local_mem_group[16][3];
-#pragma HLS ARRAY_PARTITION variable=local_mem_group block factor=2 dim=1
+ quad_fp_side_channel curr_input;
+
+ local_weight_type local_mem_group[32][32];
+#pragma HLS ARRAY_PARTITION variable=local_mem_group block factor=4 dim=1
 #pragma HLS ARRAY_PARTITION variable=local_mem_group complete dim=3
 
- fp_weight_type kernel_bias_fp[16];
-#pragma HLS ARRAY_PARTITION variable=kernel_bias_fp complete dim=1
+ fp_weight_type kernel_bias_fp[32];
+#pragma HLS ARRAY_PARTITION variable=kernel_bias_fp block factor=4 dim=1
 
 
 
-
-
-
-
- for(int k=0; k<16; k++)
+ for(ap_uint<(5+1)> k=0; k<output_ch; k++)
  {
- for(int i=0;i<3;i++)
- {
-
-  for(int j=0; j<(3*3 +1)/2; j++)
+#pragma HLS LOOP_TRIPCOUNT min=16 max=16
+  for(ap_uint<(5+1)> i=0;i<input_ch;i++)
   {
-   curr_input = inStream.read();
-
-   local_mem_group[k][i].data[2*j] = curr_input.data.sub_data_0;
-   if(j!=(3*3 +1)/2-1)
-
-    local_mem_group[k][i].data[2*j+1] = curr_input.data.sub_data_1;
-  }
-
- }
- }
-
- for(int i=0;i<16/2;i++)
- {
-  curr_input = inStream.read();
-  kernel_bias_fp[i*2] = curr_input.data.sub_data_0;
-  kernel_bias_fp[i*2+1] = curr_input.data.sub_data_1;
- }
-
- for(int row_idx=0;row_idx<(3+2*1)+1;row_idx++)
-
- {
-  for(int col_idx=0;col_idx<(416+2*1);col_idx++)
-  {
-   for(int input_ch_idx=0;input_ch_idx<(3 +1)/2;input_ch_idx++)
+#pragma HLS LOOP_TRIPCOUNT min=3 max=3
+   for(ap_uint<3> j=0; j<fold_win_area; j++)
    {
 #pragma HLS PIPELINE
-
-    int conv_count;
-    int row_idx_os,col_idx_os;
-
-    if((row_idx>=3 -1)&&(col_idx>=3 -1))
+#pragma HLS LOOP_TRIPCOUNT min=3 max=3
+    curr_input = inStream.read();
+    local_mem_group[k][i].data[4*j] = curr_input.data.sub_data_0;
+    if(j!=(kernel_dim*kernel_dim+3)/4-1)
     {
-     conv_count = col_idx - (3 -1);
-     row_idx_os = row_idx - (3 -1);
-     col_idx_os = col_idx - (3 -1);
+     local_mem_group[k][i].data[4*j+1] = curr_input.data.sub_data_1;
+     local_mem_group[k][i].data[4*j+2] = curr_input.data.sub_data_2;
+     local_mem_group[k][i].data[4*j+3] = curr_input.data.sub_data_3;
+    }
+   }
+
+  }
+ }
+
+
+ for(ap_uint<(5-2+1)> i=0;i<fold_output_ch;i++)
+ {
+#pragma HLS LOOP_TRIPCOUNT min=4 max=4
+#pragma HLS PIPELINE
+  curr_input = inStream.read();
+  kernel_bias_fp[4*i] = curr_input.data.sub_data_0;
+  kernel_bias_fp[4*i+1] = curr_input.data.sub_data_1;
+  kernel_bias_fp[4*i+2] = curr_input.data.sub_data_2;
+  kernel_bias_fp[4*i+3] = curr_input.data.sub_data_3;
+ }
+
+ for(ap_uint<9> row_idx=0;row_idx<input_h+1;row_idx++)
+
+ {
+#pragma HLS LOOP_TRIPCOUNT min=419 max=419
+  for(ap_uint<9> col_idx=0;col_idx<input_w;col_idx++)
+  {
+#pragma HLS LOOP_TRIPCOUNT min=418 max=418
+   for(ap_uint<(5-2+1)> input_ch_idx=0;input_ch_idx<fold_input_ch;input_ch_idx++)
+   {
+#pragma HLS PIPELINE
+#pragma HLS LOOP_TRIPCOUNT min=1 max=1
+
+    ap_uint<9> conv_row_count=0,conv_col_count=0;
+
+
+    if((row_idx>kernel_dim-2)&&(col_idx>kernel_dim-2))
+    {
+     conv_row_count = row_idx - (kernel_dim-1);
+     conv_col_count = col_idx - (kernel_dim-1);
     }
     else
     {
-     conv_count = 0;
-     row_idx_os = 0;
-     col_idx_os = 0;
+     conv_row_count = 0;
+     conv_col_count = 0;
     }
 
-    if(row_idx != (3+2*1))
+
+    if(row_idx != input_h)
     {
      if(((row_idx == 0)||
-        (row_idx == (416+2*1)-1)||
+        (row_idx == real_input_h-1)||
         (col_idx == 0)||
-        (col_idx == (416+2*1)-1))&&1)
+        (col_idx == input_w-1)))
      {
 
       curr_input.data.sub_data_0 = 0;
       curr_input.data.sub_data_1 = 0;
+      curr_input.data.sub_data_2 = 0;
+      curr_input.data.sub_data_3 = 0;
      }
      else
      {
@@ -103401,84 +103430,118 @@ void yolo_conv_top(yolo_stream_type &inStream, yolo_stream_type &outStream)
 
 
      yolo_line_buffer(curr_input.data.sub_data_0,&line_buff_group_0[input_ch_idx],col_idx);
-     if(!(((3 +1)/2!=(3)/2)&&(input_ch_idx == (3 +1)/2-1)))
-      yolo_line_buffer(curr_input.data.sub_data_1,&line_buff_group_1[input_ch_idx],col_idx);
+     yolo_line_buffer(curr_input.data.sub_data_1,&line_buff_group_1[input_ch_idx],col_idx);
+     yolo_line_buffer(curr_input.data.sub_data_2,&line_buff_group_2[input_ch_idx],col_idx);
+     yolo_line_buffer(curr_input.data.sub_data_3,&line_buff_group_3[input_ch_idx],col_idx);
 
 
-     if((row_idx>3 -2)&&(col_idx>3 -2))
+     if((row_idx>kernel_dim-2)&&(col_idx>kernel_dim-2))
      {
-      window_type kernel_window_0, kernel_window_1;
-      kernel_window_0 = slide_window(conv_count,&line_buff_group_0[input_ch_idx]);
-      if(!(((3 +1)/2!=(3)/2)&&(input_ch_idx == (3 +1)/2-1)))
-       kernel_window_1 = slide_window(conv_count,&line_buff_group_1[input_ch_idx]);
+      window_type kernel_window_0, kernel_window_1, kernel_window_2, kernel_window_3;
+
+      kernel_window_0 = slide_window(conv_col_count,&line_buff_group_0[input_ch_idx],kernel_dim);
+      kernel_window_1 = slide_window(conv_col_count,&line_buff_group_1[input_ch_idx],kernel_dim);
+      kernel_window_2 = slide_window(conv_col_count,&line_buff_group_2[input_ch_idx],kernel_dim);
+      kernel_window_3 = slide_window(conv_col_count,&line_buff_group_3[input_ch_idx],kernel_dim);
 
 
-      fork_window(kernel_window_0,window_group_0);
-      fork_window(kernel_window_1,window_group_1);
 
-      for(int kernel_idx=0; kernel_idx<16; kernel_idx++)
+      for(ap_uint<(5+1)> kernel_idx=0; kernel_idx<32; kernel_idx++)
       {
 
-       if(input_ch_idx == 0)
+
+       sub0_val_output[kernel_idx] = window_macc(kernel_window_0,local_mem_group[kernel_idx][4*input_ch_idx],kernel_dim);
+       sub1_val_output[kernel_idx] = window_macc(kernel_window_1,local_mem_group[kernel_idx][4*input_ch_idx+1],kernel_dim);
+       sub2_val_output[kernel_idx] = window_macc(kernel_window_2,local_mem_group[kernel_idx][4*input_ch_idx+2],kernel_dim);
+       if(input_ch==3)
        {
-        sub0_val_output[kernel_idx] = 0;
-        sub1_val_output[kernel_idx] = 0;
+        sub3_val_output[kernel_idx] = 0;
        }
-
-
-
-
-       sub0_val_output[kernel_idx] += window_macc(&window_group_0[kernel_idx],local_mem_group[kernel_idx][2*input_ch_idx]);
-
-       if(!(((3 +1)/2!=(3)/2)&&(input_ch_idx == (3 +1)/2-1)))
-        sub1_val_output[kernel_idx] += window_macc(&window_group_1[kernel_idx],local_mem_group[kernel_idx][2*input_ch_idx+1]);
-
-
-
-       if(input_ch_idx == (3 +1)/2-1)
+       else
        {
+        sub3_val_output[kernel_idx] = window_macc(kernel_window_3,local_mem_group[kernel_idx][4*input_ch_idx+3],kernel_dim);
+       }
+       val_output[kernel_idx]=post_process(sub0_val_output[kernel_idx],sub1_val_output[kernel_idx],sub2_val_output[kernel_idx],sub3_val_output[kernel_idx],
+                   input_ch_idx == fold_input_ch-1,leaky,
+                kernel_bias_fp[kernel_idx],input_ch_idx,val_output[kernel_idx]);
 
 
-        biased_output[kernel_idx] = sub0_val_output[kernel_idx] + sub1_val_output[kernel_idx] + kernel_bias_fp[kernel_idx];
-
-        if(1&&(biased_output[kernel_idx]<0))
+       if(input_ch_idx == fold_input_ch-1)
+       {
+        if(kernel_idx<output_ch)
         {
-         activated_output[kernel_idx] = biased_output[kernel_idx] * (fp_data_type).1;
-        }
-        else
-        {
-         activated_output[kernel_idx] = biased_output[kernel_idx];
-        }
 
         if(!(out_stream_group[kernel_idx].full()))
 
-         write_output(activated_output[kernel_idx],out_stream_group[kernel_idx]);
+         write_output(val_output[kernel_idx],out_stream_group[kernel_idx]);
+        }
        }
       }
 
 
-
      }
     }
-# 183 "/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_2019/src/yolo_conv.cpp"
-    if(((row_idx_os>0)&&(col_idx_os>=0))||((row_idx_os==0)&&(col_idx_os>0)))
+
+
+
+
+
+    if(!((conv_row_count == 0)&&(conv_col_count ==0)))
     {
 
         ap_uint<1> last;
-        if((row_idx==(3+2*1))&&(input_ch_idx==(3 +1)/2-1))
+        if((row_idx==input_h)&&(input_ch_idx==fold_input_ch-1))
          last = 1;
         else
          last = 0;
-     out_stream_merge(out_stream_group,outStream,input_ch_idx,curr_input,last);
+     out_stream_merge(out_stream_group,outStream,input_ch_idx,curr_input,last,output_ch,fold_output_ch);
     }
 
    }
   }
 
  }
+
 }
 
-void yolo_line_buffer(fp_data_type curr_data, line_buff_type *line_buff, int col_idx)
+fp_data_type post_process(fp_data_type sub0_val_output,fp_data_type sub1_val_output,fp_data_type sub2_val_output,fp_data_type sub3_val_output,
+            bool acc_flag,ap_uint<1> leaky,
+      fp_weight_type bias,ap_uint<(5-2+1)> input_ch_idx,fp_data_type val_output)
+{
+ fp_data_type biased_output=0,activated_output=0;
+ if(input_ch_idx==0)
+ {
+  val_output=0;
+ }
+
+ val_output += sub0_val_output;
+ val_output += sub1_val_output;
+ val_output += sub2_val_output;
+ val_output += sub3_val_output;
+
+
+
+ if(acc_flag)
+ {
+  biased_output = val_output + bias;
+  if(leaky&&biased_output<0)
+  {
+   activated_output = biased_output * (fp_data_type).1;
+  }
+  else
+  {
+   activated_output = biased_output;
+  }
+
+  return activated_output;
+ }
+ else
+ {
+  return val_output;
+ }
+}
+
+void yolo_line_buffer(fp_data_type curr_data, line_buff_type *line_buff, ap_uint<9> col_idx)
 {
 
  line_buff->shift_up(col_idx);
@@ -103486,13 +103549,13 @@ void yolo_line_buffer(fp_data_type curr_data, line_buff_type *line_buff, int col
 
 }
 
-window_type slide_window(int conv_count, line_buff_type *line_buff)
+window_type slide_window(ap_uint<9> conv_count, line_buff_type *line_buff, ap_uint<3> kernel_dim)
 {
  window_type kernel_window;
 
- for(int win_row=0; win_row < 3; win_row++)
+ for(ap_uint<3> win_row=0; win_row < 3; win_row++)
  {
-  for(int win_col=0; win_col < 3; win_col++)
+  for(ap_uint<3> win_col=0; win_col < 3; win_col++)
   {
    fp_data_type val = (fp_data_type)line_buff->getval(win_row,win_col+conv_count);
    kernel_window.insert(val,win_row,win_col);
@@ -103502,36 +103565,16 @@ window_type slide_window(int conv_count, line_buff_type *line_buff)
  return kernel_window;
 }
 
-void fork_window(window_type kernel_window, window_type window_group[16])
-{
- for(int win_row=0; win_row < 3; win_row++)
- {
-  for(int win_col=0; win_col < 3; win_col++)
-  {
-   fp_data_type val = kernel_window.getval(win_row,win_col);
-
-   for(int win_idx=0; win_idx < 16; win_idx++)
-   {
-    window_group[win_idx].insert(val,win_row,win_col);
-   }
-  }
- }
-}
-
-
-fp_data_type window_macc(window_type *window, local_weight_type weight)
+fp_data_type window_macc(window_type window, local_weight_type weight, ap_uint<3> kernel_dim)
 {
 
- fp_data_type sum = 0;
- for(int win_row=0; win_row < 3; win_row++)
+ ap_fixed<32,16,AP_RND_CONV,AP_SAT> sum = 0;
+ for(ap_uint<3> win_row=0; win_row < 3; win_row++)
  {
-  for(int win_col=0; win_col < 3; win_col++)
+  for(ap_uint<3> win_col=0; win_col < 3; win_col++)
   {
-   fp_data_type val_in = window->getval(win_row,win_col);
-
-
-   fp_data_type val_out = val_in * weight.data[win_row*3 +win_col];
-   sum += val_out;
+   fp_data_type val_in = window.getval(win_row,win_col);
+   sum += val_in * weight.data[win_row*3+win_col];
   }
  }
  return (fp_data_type)sum;
@@ -103542,44 +103585,50 @@ void write_output(fp_data_type val_output, yolo_inter_stream &out_stream)
  out_stream.write(val_output);
 }
 
-void out_stream_merge(yolo_inter_stream out_stream_group[16], yolo_stream_type &outStream, int input_ch_idx,double_fp_side_channel curr_input,ap_uint<1> last)
+void out_stream_merge(yolo_inter_stream out_stream_group[32], yolo_quad_stream &outStream, ap_uint<(5-2+1)> input_ch_idx,quad_fp_side_channel curr_input,ap_uint<1> last,ap_uint<(5+1)> output_ch,ap_uint<(5-2+1)> fold_output_ch )
 {
 
 
 
 
- for(int i=0; i<(((16 +1)/2-1)/((3 +1)/2)+1); i++)
+ for(ap_uint<(5-2+1)> i=0; i<6; i++)
  {
-  int kernel_idx = i + input_ch_idx*(((16 +1)/2-1)/((3 +1)/2)+1);
-  if(2*kernel_idx<16)
-   if(!(out_stream_group[2*kernel_idx].empty()))
+  ap_uint<(5-2+1)> kernel_idx = i + input_ch_idx*6;
+  if(4*kernel_idx<32)
+   if(!(out_stream_group[4*kernel_idx].empty()))
    {
-    double_fp_side_channel curr_output;
+    quad_fp_side_channel curr_output;
 
-    curr_output.data.sub_data_0 = out_stream_group[2*kernel_idx].read();
+    curr_output.data.sub_data_0 = out_stream_group[4*kernel_idx].read();
 
-    if(2*kernel_idx+1<16)
+
+
+
+     curr_output.data.sub_data_1 = out_stream_group[4*kernel_idx+1].read();
+# 323 "/home/xavier/Desktop/yolo_conv_fp_2019_64_rec/src/yolo_conv.cpp"
+     curr_output.data.sub_data_2 = out_stream_group[4*kernel_idx+2].read();
+# 332 "/home/xavier/Desktop/yolo_conv_fp_2019_64_rec/src/yolo_conv.cpp"
+    if(!(out_stream_group[4*kernel_idx+3].empty()))
     {
-     if(!(out_stream_group[2*kernel_idx+1].empty()))
-     {
-      curr_output.data.sub_data_1 = out_stream_group[2*kernel_idx+1].read();
-     }
+     curr_output.data.sub_data_3 = out_stream_group[4*kernel_idx+3].read();
     }
     else
     {
-     curr_output.data.sub_data_1 = 0;
+     curr_output.data.sub_data_3 = 0;
     }
 
     curr_output.keep = curr_input.keep;
     curr_output.strb = curr_input.strb;
     curr_output.user = curr_input.user;
-    if(2*kernel_idx == 16 -1||2*kernel_idx == 16 -2)
+    if(kernel_idx == fold_output_ch-1)
+
      curr_output.last = last;
     else
      curr_output.last = 0;
     curr_output.id = curr_input.id;
     curr_output.dest = curr_input.dest;
     outStream.write(curr_output);
+
    }
  }
 

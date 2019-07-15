@@ -25,9 +25,9 @@
 module AESL_axi_s_inStream (
     input clk,
     input reset,
-    output [32 - 1:0] TRAN_inStream_TDATA,
-    output [4 - 1:0] TRAN_inStream_TKEEP,
-    output [4 - 1:0] TRAN_inStream_TSTRB,
+    output [64 - 1:0] TRAN_inStream_TDATA,
+    output [8 - 1:0] TRAN_inStream_TKEEP,
+    output [8 - 1:0] TRAN_inStream_TSTRB,
     output [2 - 1:0] TRAN_inStream_TUSER,
     output TRAN_inStream_TLAST,
     output [5 - 1:0] TRAN_inStream_TID,
@@ -42,11 +42,11 @@ module AESL_axi_s_inStream (
     wire inStream_TDATA_full;
     wire inStream_TDATA_empty;
     reg inStream_TDATA_write_en;
-    reg [32 - 1:0] inStream_TDATA_write_data;
+    reg [64 - 1:0] inStream_TDATA_write_data;
     reg inStream_TDATA_read_en;
-    wire [32 - 1:0] inStream_TDATA_read_data;
+    wire [64 - 1:0] inStream_TDATA_read_data;
     
-    fifo #(3576, 32) fifo_inStream_TDATA (
+    fifo #(1812, 64) fifo_inStream_TDATA (
         .reset(1'b0),
         .write_clock(clk),
         .write_en(inStream_TDATA_write_en),
@@ -66,11 +66,11 @@ module AESL_axi_s_inStream (
     wire inStream_TKEEP_full;
     wire inStream_TKEEP_empty;
     reg inStream_TKEEP_write_en;
-    reg [4 - 1:0] inStream_TKEEP_write_data;
+    reg [8 - 1:0] inStream_TKEEP_write_data;
     reg inStream_TKEEP_read_en;
-    wire [4 - 1:0] inStream_TKEEP_read_data;
+    wire [8 - 1:0] inStream_TKEEP_read_data;
     
-    fifo #(3576, 4) fifo_inStream_TKEEP (
+    fifo #(1812, 8) fifo_inStream_TKEEP (
         .reset(1'b0),
         .write_clock(clk),
         .write_en(inStream_TKEEP_write_en),
@@ -90,11 +90,11 @@ module AESL_axi_s_inStream (
     wire inStream_TSTRB_full;
     wire inStream_TSTRB_empty;
     reg inStream_TSTRB_write_en;
-    reg [4 - 1:0] inStream_TSTRB_write_data;
+    reg [8 - 1:0] inStream_TSTRB_write_data;
     reg inStream_TSTRB_read_en;
-    wire [4 - 1:0] inStream_TSTRB_read_data;
+    wire [8 - 1:0] inStream_TSTRB_read_data;
     
-    fifo #(3576, 4) fifo_inStream_TSTRB (
+    fifo #(1812, 8) fifo_inStream_TSTRB (
         .reset(1'b0),
         .write_clock(clk),
         .write_en(inStream_TSTRB_write_en),
@@ -118,7 +118,7 @@ module AESL_axi_s_inStream (
     reg inStream_TUSER_read_en;
     wire [2 - 1:0] inStream_TUSER_read_data;
     
-    fifo #(3576, 2) fifo_inStream_TUSER (
+    fifo #(1812, 2) fifo_inStream_TUSER (
         .reset(1'b0),
         .write_clock(clk),
         .write_en(inStream_TUSER_write_en),
@@ -142,7 +142,7 @@ module AESL_axi_s_inStream (
     reg inStream_TLAST_read_en;
     wire [1 - 1:0] inStream_TLAST_read_data;
     
-    fifo #(3576, 1) fifo_inStream_TLAST (
+    fifo #(1812, 1) fifo_inStream_TLAST (
         .reset(1'b0),
         .write_clock(clk),
         .write_en(inStream_TLAST_write_en),
@@ -166,7 +166,7 @@ module AESL_axi_s_inStream (
     reg inStream_TID_read_en;
     wire [5 - 1:0] inStream_TID_read_data;
     
-    fifo #(3576, 5) fifo_inStream_TID (
+    fifo #(1812, 5) fifo_inStream_TID (
         .reset(1'b0),
         .write_clock(clk),
         .write_en(inStream_TID_write_en),
@@ -190,7 +190,7 @@ module AESL_axi_s_inStream (
     reg inStream_TDEST_read_en;
     wire [6 - 1:0] inStream_TDEST_read_data;
     
-    fifo #(3576, 6) fifo_inStream_TDEST (
+    fifo #(1812, 6) fifo_inStream_TDEST (
         .reset(1'b0),
         .write_clock(clk),
         .write_en(inStream_TDEST_write_en),
@@ -257,7 +257,7 @@ module AESL_axi_s_inStream (
     initial begin : AXI_stream_driver_inStream_TDATA
         integer fp;
         reg [199:0] token;
-        reg [32 - 1:0] data;
+        reg [64 - 1:0] data;
         reg [199:0] data_integer;
         integer fp_ingress_status;
         reg [199:0] token_ingress_status;
@@ -338,7 +338,7 @@ module AESL_axi_s_inStream (
     initial begin : AXI_stream_driver_inStream_TKEEP
         integer fp;
         reg [199:0] token;
-        reg [4 - 1:0] data;
+        reg [8 - 1:0] data;
         reg [199:0] data_integer;
         integer fp_ingress_status;
         reg [199:0] token_ingress_status;
@@ -419,7 +419,7 @@ module AESL_axi_s_inStream (
     initial begin : AXI_stream_driver_inStream_TSTRB
         integer fp;
         reg [199:0] token;
-        reg [4 - 1:0] data;
+        reg [8 - 1:0] data;
         reg [199:0] data_integer;
         integer fp_ingress_status;
         reg [199:0] token_ingress_status;

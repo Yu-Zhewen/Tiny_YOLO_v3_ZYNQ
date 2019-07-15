@@ -28,6 +28,16 @@
 `define AESL_DEPTH_outStream_V_last_V 1
 `define AESL_DEPTH_outStream_V_id_V 1
 `define AESL_DEPTH_outStream_V_dest_V 1
+`define AESL_DEPTH_output_ch_V 1
+`define AESL_DEPTH_input_ch_V 1
+`define AESL_DEPTH_fold_output_ch_V 1
+`define AESL_DEPTH_fold_input_ch_V 1
+`define AESL_DEPTH_kernel_dim_V 1
+`define AESL_DEPTH_input_h_V 1
+`define AESL_DEPTH_input_w_V 1
+`define AESL_DEPTH_real_input_h_V 1
+`define AESL_DEPTH_leaky_V 1
+`define AESL_DEPTH_fold_win_area_V 1
 `define AUTOTB_TVIN_inStream_V_data  "../tv/cdatafile/c.yolo_conv_top.autotvin_inStream_V_data.dat"
 `define AUTOTB_TVIN_inStream_V_keep_V  "../tv/cdatafile/c.yolo_conv_top.autotvin_inStream_V_keep_V.dat"
 `define AUTOTB_TVIN_inStream_V_strb_V  "../tv/cdatafile/c.yolo_conv_top.autotvin_inStream_V_strb_V.dat"
@@ -42,6 +52,16 @@
 `define AUTOTB_TVIN_outStream_V_last_V  "../tv/cdatafile/c.yolo_conv_top.autotvin_outStream_V_last_V.dat"
 `define AUTOTB_TVIN_outStream_V_id_V  "../tv/cdatafile/c.yolo_conv_top.autotvin_outStream_V_id_V.dat"
 `define AUTOTB_TVIN_outStream_V_dest_V  "../tv/cdatafile/c.yolo_conv_top.autotvin_outStream_V_dest_V.dat"
+`define AUTOTB_TVIN_output_ch_V  "../tv/cdatafile/c.yolo_conv_top.autotvin_output_ch_V.dat"
+`define AUTOTB_TVIN_input_ch_V  "../tv/cdatafile/c.yolo_conv_top.autotvin_input_ch_V.dat"
+`define AUTOTB_TVIN_fold_output_ch_V  "../tv/cdatafile/c.yolo_conv_top.autotvin_fold_output_ch_V.dat"
+`define AUTOTB_TVIN_fold_input_ch_V  "../tv/cdatafile/c.yolo_conv_top.autotvin_fold_input_ch_V.dat"
+`define AUTOTB_TVIN_kernel_dim_V  "../tv/cdatafile/c.yolo_conv_top.autotvin_kernel_dim_V.dat"
+`define AUTOTB_TVIN_input_h_V  "../tv/cdatafile/c.yolo_conv_top.autotvin_input_h_V.dat"
+`define AUTOTB_TVIN_input_w_V  "../tv/cdatafile/c.yolo_conv_top.autotvin_input_w_V.dat"
+`define AUTOTB_TVIN_real_input_h_V  "../tv/cdatafile/c.yolo_conv_top.autotvin_real_input_h_V.dat"
+`define AUTOTB_TVIN_leaky_V  "../tv/cdatafile/c.yolo_conv_top.autotvin_leaky_V.dat"
+`define AUTOTB_TVIN_fold_win_area_V  "../tv/cdatafile/c.yolo_conv_top.autotvin_fold_win_area_V.dat"
 `define AUTOTB_TVIN_inStream_V_data_out_wrapc  "../tv/rtldatafile/rtl.yolo_conv_top.autotvin_inStream_V_data.dat"
 `define AUTOTB_TVIN_inStream_V_keep_V_out_wrapc  "../tv/rtldatafile/rtl.yolo_conv_top.autotvin_inStream_V_keep_V.dat"
 `define AUTOTB_TVIN_inStream_V_strb_V_out_wrapc  "../tv/rtldatafile/rtl.yolo_conv_top.autotvin_inStream_V_strb_V.dat"
@@ -56,6 +76,16 @@
 `define AUTOTB_TVIN_outStream_V_last_V_out_wrapc  "../tv/rtldatafile/rtl.yolo_conv_top.autotvin_outStream_V_last_V.dat"
 `define AUTOTB_TVIN_outStream_V_id_V_out_wrapc  "../tv/rtldatafile/rtl.yolo_conv_top.autotvin_outStream_V_id_V.dat"
 `define AUTOTB_TVIN_outStream_V_dest_V_out_wrapc  "../tv/rtldatafile/rtl.yolo_conv_top.autotvin_outStream_V_dest_V.dat"
+`define AUTOTB_TVIN_output_ch_V_out_wrapc  "../tv/rtldatafile/rtl.yolo_conv_top.autotvin_output_ch_V.dat"
+`define AUTOTB_TVIN_input_ch_V_out_wrapc  "../tv/rtldatafile/rtl.yolo_conv_top.autotvin_input_ch_V.dat"
+`define AUTOTB_TVIN_fold_output_ch_V_out_wrapc  "../tv/rtldatafile/rtl.yolo_conv_top.autotvin_fold_output_ch_V.dat"
+`define AUTOTB_TVIN_fold_input_ch_V_out_wrapc  "../tv/rtldatafile/rtl.yolo_conv_top.autotvin_fold_input_ch_V.dat"
+`define AUTOTB_TVIN_kernel_dim_V_out_wrapc  "../tv/rtldatafile/rtl.yolo_conv_top.autotvin_kernel_dim_V.dat"
+`define AUTOTB_TVIN_input_h_V_out_wrapc  "../tv/rtldatafile/rtl.yolo_conv_top.autotvin_input_h_V.dat"
+`define AUTOTB_TVIN_input_w_V_out_wrapc  "../tv/rtldatafile/rtl.yolo_conv_top.autotvin_input_w_V.dat"
+`define AUTOTB_TVIN_real_input_h_V_out_wrapc  "../tv/rtldatafile/rtl.yolo_conv_top.autotvin_real_input_h_V.dat"
+`define AUTOTB_TVIN_leaky_V_out_wrapc  "../tv/rtldatafile/rtl.yolo_conv_top.autotvin_leaky_V.dat"
+`define AUTOTB_TVIN_fold_win_area_V_out_wrapc  "../tv/rtldatafile/rtl.yolo_conv_top.autotvin_fold_win_area_V.dat"
 `define AUTOTB_TVOUT_outStream_V_data  "../tv/cdatafile/c.yolo_conv_top.autotvout_outStream_V_data.dat"
 `define AUTOTB_TVOUT_outStream_V_keep_V  "../tv/cdatafile/c.yolo_conv_top.autotvout_outStream_V_keep_V.dat"
 `define AUTOTB_TVOUT_outStream_V_strb_V  "../tv/cdatafile/c.yolo_conv_top.autotvout_outStream_V_strb_V.dat"
@@ -74,21 +104,31 @@ module `AUTOTB_TOP;
 
 parameter AUTOTB_TRANSACTION_NUM = 1;
 parameter PROGRESS_TIMEOUT = 10000000;
-parameter LATENCY_ESTIMATION = 40548;
-parameter LENGTH_inStream_V_data = 3576;
-parameter LENGTH_inStream_V_keep_V = 3576;
-parameter LENGTH_inStream_V_strb_V = 3576;
-parameter LENGTH_inStream_V_user_V = 3576;
-parameter LENGTH_inStream_V_last_V = 3576;
-parameter LENGTH_inStream_V_id_V = 3576;
-parameter LENGTH_inStream_V_dest_V = 3576;
-parameter LENGTH_outStream_V_data = 9984;
-parameter LENGTH_outStream_V_keep_V = 9984;
-parameter LENGTH_outStream_V_strb_V = 9984;
-parameter LENGTH_outStream_V_user_V = 9984;
-parameter LENGTH_outStream_V_last_V = 9984;
-parameter LENGTH_outStream_V_id_V = 9984;
-parameter LENGTH_outStream_V_dest_V = 9984;
+parameter LATENCY_ESTIMATION = 2802505;
+parameter LENGTH_inStream_V_data = 1812;
+parameter LENGTH_inStream_V_keep_V = 1812;
+parameter LENGTH_inStream_V_strb_V = 1812;
+parameter LENGTH_inStream_V_user_V = 1812;
+parameter LENGTH_inStream_V_last_V = 1812;
+parameter LENGTH_inStream_V_id_V = 1812;
+parameter LENGTH_inStream_V_dest_V = 1812;
+parameter LENGTH_outStream_V_data = 4992;
+parameter LENGTH_outStream_V_keep_V = 4992;
+parameter LENGTH_outStream_V_strb_V = 4992;
+parameter LENGTH_outStream_V_user_V = 4992;
+parameter LENGTH_outStream_V_last_V = 4992;
+parameter LENGTH_outStream_V_id_V = 4992;
+parameter LENGTH_outStream_V_dest_V = 4992;
+parameter LENGTH_output_ch_V = 1;
+parameter LENGTH_input_ch_V = 1;
+parameter LENGTH_fold_output_ch_V = 1;
+parameter LENGTH_fold_input_ch_V = 1;
+parameter LENGTH_kernel_dim_V = 1;
+parameter LENGTH_input_h_V = 1;
+parameter LENGTH_input_w_V = 1;
+parameter LENGTH_real_input_h_V = 1;
+parameter LENGTH_leaky_V = 1;
+parameter LENGTH_fold_win_area_V = 1;
 
 task read_token;
     input integer fp;
@@ -118,38 +158,38 @@ reg AESL_done_delay2 = 0;
 reg AESL_ready_delay = 0;
 wire ready;
 wire ready_wire;
-wire [3 : 0] AXILiteS_AWADDR;
-wire  AXILiteS_AWVALID;
-wire  AXILiteS_AWREADY;
-wire  AXILiteS_WVALID;
-wire  AXILiteS_WREADY;
-wire [31 : 0] AXILiteS_WDATA;
-wire [3 : 0] AXILiteS_WSTRB;
-wire [3 : 0] AXILiteS_ARADDR;
-wire  AXILiteS_ARVALID;
-wire  AXILiteS_ARREADY;
-wire  AXILiteS_RVALID;
-wire  AXILiteS_RREADY;
-wire [31 : 0] AXILiteS_RDATA;
-wire [1 : 0] AXILiteS_RRESP;
-wire  AXILiteS_BVALID;
-wire  AXILiteS_BREADY;
-wire [1 : 0] AXILiteS_BRESP;
-wire  AXILiteS_INTERRUPT;
-wire [31 : 0] inStream_TDATA;
+wire [6 : 0] CTRL_BUS_AWADDR;
+wire  CTRL_BUS_AWVALID;
+wire  CTRL_BUS_AWREADY;
+wire  CTRL_BUS_WVALID;
+wire  CTRL_BUS_WREADY;
+wire [31 : 0] CTRL_BUS_WDATA;
+wire [3 : 0] CTRL_BUS_WSTRB;
+wire [6 : 0] CTRL_BUS_ARADDR;
+wire  CTRL_BUS_ARVALID;
+wire  CTRL_BUS_ARREADY;
+wire  CTRL_BUS_RVALID;
+wire  CTRL_BUS_RREADY;
+wire [31 : 0] CTRL_BUS_RDATA;
+wire [1 : 0] CTRL_BUS_RRESP;
+wire  CTRL_BUS_BVALID;
+wire  CTRL_BUS_BREADY;
+wire [1 : 0] CTRL_BUS_BRESP;
+wire  CTRL_BUS_INTERRUPT;
+wire [63 : 0] inStream_TDATA;
 wire  inStream_TVALID;
 wire  inStream_TREADY;
-wire [3 : 0] inStream_TKEEP;
-wire [3 : 0] inStream_TSTRB;
+wire [7 : 0] inStream_TKEEP;
+wire [7 : 0] inStream_TSTRB;
 wire [1 : 0] inStream_TUSER;
 wire [0 : 0] inStream_TLAST;
 wire [4 : 0] inStream_TID;
 wire [5 : 0] inStream_TDEST;
-wire [31 : 0] outStream_TDATA;
+wire [63 : 0] outStream_TDATA;
 wire  outStream_TVALID;
 wire  outStream_TREADY;
-wire [3 : 0] outStream_TKEEP;
-wire [3 : 0] outStream_TSTRB;
+wire [7 : 0] outStream_TKEEP;
+wire [7 : 0] outStream_TSTRB;
 wire [1 : 0] outStream_TUSER;
 wire [0 : 0] outStream_TLAST;
 wire [4 : 0] outStream_TID;
@@ -163,6 +203,7 @@ reg ready_last_n;
 reg ready_delay_last_n;
 reg done_delay_last_n;
 reg interface_done = 0;
+wire CTRL_BUS_write_data_finish;
 wire AESL_slave_start;
 reg AESL_slave_start_lock = 0;
 wire AESL_slave_write_start_in;
@@ -181,24 +222,24 @@ wire ap_rst_n;
 wire ap_rst_n_n;
 
 `AUTOTB_DUT `AUTOTB_DUT_INST(
-    .s_axi_AXILiteS_AWADDR(AXILiteS_AWADDR),
-    .s_axi_AXILiteS_AWVALID(AXILiteS_AWVALID),
-    .s_axi_AXILiteS_AWREADY(AXILiteS_AWREADY),
-    .s_axi_AXILiteS_WVALID(AXILiteS_WVALID),
-    .s_axi_AXILiteS_WREADY(AXILiteS_WREADY),
-    .s_axi_AXILiteS_WDATA(AXILiteS_WDATA),
-    .s_axi_AXILiteS_WSTRB(AXILiteS_WSTRB),
-    .s_axi_AXILiteS_ARADDR(AXILiteS_ARADDR),
-    .s_axi_AXILiteS_ARVALID(AXILiteS_ARVALID),
-    .s_axi_AXILiteS_ARREADY(AXILiteS_ARREADY),
-    .s_axi_AXILiteS_RVALID(AXILiteS_RVALID),
-    .s_axi_AXILiteS_RREADY(AXILiteS_RREADY),
-    .s_axi_AXILiteS_RDATA(AXILiteS_RDATA),
-    .s_axi_AXILiteS_RRESP(AXILiteS_RRESP),
-    .s_axi_AXILiteS_BVALID(AXILiteS_BVALID),
-    .s_axi_AXILiteS_BREADY(AXILiteS_BREADY),
-    .s_axi_AXILiteS_BRESP(AXILiteS_BRESP),
-    .interrupt(AXILiteS_INTERRUPT),
+    .s_axi_CTRL_BUS_AWADDR(CTRL_BUS_AWADDR),
+    .s_axi_CTRL_BUS_AWVALID(CTRL_BUS_AWVALID),
+    .s_axi_CTRL_BUS_AWREADY(CTRL_BUS_AWREADY),
+    .s_axi_CTRL_BUS_WVALID(CTRL_BUS_WVALID),
+    .s_axi_CTRL_BUS_WREADY(CTRL_BUS_WREADY),
+    .s_axi_CTRL_BUS_WDATA(CTRL_BUS_WDATA),
+    .s_axi_CTRL_BUS_WSTRB(CTRL_BUS_WSTRB),
+    .s_axi_CTRL_BUS_ARADDR(CTRL_BUS_ARADDR),
+    .s_axi_CTRL_BUS_ARVALID(CTRL_BUS_ARVALID),
+    .s_axi_CTRL_BUS_ARREADY(CTRL_BUS_ARREADY),
+    .s_axi_CTRL_BUS_RVALID(CTRL_BUS_RVALID),
+    .s_axi_CTRL_BUS_RREADY(CTRL_BUS_RREADY),
+    .s_axi_CTRL_BUS_RDATA(CTRL_BUS_RDATA),
+    .s_axi_CTRL_BUS_RRESP(CTRL_BUS_RRESP),
+    .s_axi_CTRL_BUS_BVALID(CTRL_BUS_BVALID),
+    .s_axi_CTRL_BUS_BREADY(CTRL_BUS_BREADY),
+    .s_axi_CTRL_BUS_BRESP(CTRL_BUS_BRESP),
+    .interrupt(CTRL_BUS_INTERRUPT),
     .ap_clk(ap_clk),
     .ap_rst_n(ap_rst_n),
     .inStream_TDATA(inStream_TDATA),
@@ -228,7 +269,7 @@ assign AESL_reset = rst;
 assign AESL_start = start;
 assign AESL_ce = ce;
 assign AESL_continue = tb_continue;
-  assign AESL_slave_write_start_in = slave_start_status ;
+  assign AESL_slave_write_start_in = slave_start_status  & CTRL_BUS_write_data_finish;
   assign AESL_slave_start = AESL_slave_write_start_finish;
   assign AESL_done = slave_done_status ;
 
@@ -282,6 +323,16 @@ begin
         slave_done_status <= 1;
     end
 end
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -373,35 +424,36 @@ end
 
 assign outStream_TREADY = reg_outStream_TREADY;
 
-AESL_axi_slave_AXILiteS AESL_AXI_SLAVE_AXILiteS(
+AESL_axi_slave_CTRL_BUS AESL_AXI_SLAVE_CTRL_BUS(
     .clk   (AESL_clock),
     .reset (AESL_reset),
-    .TRAN_s_axi_AXILiteS_AWADDR (AXILiteS_AWADDR),
-    .TRAN_s_axi_AXILiteS_AWVALID (AXILiteS_AWVALID),
-    .TRAN_s_axi_AXILiteS_AWREADY (AXILiteS_AWREADY),
-    .TRAN_s_axi_AXILiteS_WVALID (AXILiteS_WVALID),
-    .TRAN_s_axi_AXILiteS_WREADY (AXILiteS_WREADY),
-    .TRAN_s_axi_AXILiteS_WDATA (AXILiteS_WDATA),
-    .TRAN_s_axi_AXILiteS_WSTRB (AXILiteS_WSTRB),
-    .TRAN_s_axi_AXILiteS_ARADDR (AXILiteS_ARADDR),
-    .TRAN_s_axi_AXILiteS_ARVALID (AXILiteS_ARVALID),
-    .TRAN_s_axi_AXILiteS_ARREADY (AXILiteS_ARREADY),
-    .TRAN_s_axi_AXILiteS_RVALID (AXILiteS_RVALID),
-    .TRAN_s_axi_AXILiteS_RREADY (AXILiteS_RREADY),
-    .TRAN_s_axi_AXILiteS_RDATA (AXILiteS_RDATA),
-    .TRAN_s_axi_AXILiteS_RRESP (AXILiteS_RRESP),
-    .TRAN_s_axi_AXILiteS_BVALID (AXILiteS_BVALID),
-    .TRAN_s_axi_AXILiteS_BREADY (AXILiteS_BREADY),
-    .TRAN_s_axi_AXILiteS_BRESP (AXILiteS_BRESP),
-    .TRAN_AXILiteS_interrupt (AXILiteS_INTERRUPT),
-    .TRAN_AXILiteS_ready_out (AESL_ready),
-    .TRAN_AXILiteS_ready_in (AESL_slave_ready),
-    .TRAN_AXILiteS_done_out (AESL_slave_output_done),
-    .TRAN_AXILiteS_idle_out (AESL_idle),
-    .TRAN_AXILiteS_write_start_in     (AESL_slave_write_start_in),
-    .TRAN_AXILiteS_write_start_finish (AESL_slave_write_start_finish),
-    .TRAN_AXILiteS_transaction_done_in (AESL_done_delay),
-    .TRAN_AXILiteS_start_in  (AESL_slave_start)
+    .TRAN_s_axi_CTRL_BUS_AWADDR (CTRL_BUS_AWADDR),
+    .TRAN_s_axi_CTRL_BUS_AWVALID (CTRL_BUS_AWVALID),
+    .TRAN_s_axi_CTRL_BUS_AWREADY (CTRL_BUS_AWREADY),
+    .TRAN_s_axi_CTRL_BUS_WVALID (CTRL_BUS_WVALID),
+    .TRAN_s_axi_CTRL_BUS_WREADY (CTRL_BUS_WREADY),
+    .TRAN_s_axi_CTRL_BUS_WDATA (CTRL_BUS_WDATA),
+    .TRAN_s_axi_CTRL_BUS_WSTRB (CTRL_BUS_WSTRB),
+    .TRAN_s_axi_CTRL_BUS_ARADDR (CTRL_BUS_ARADDR),
+    .TRAN_s_axi_CTRL_BUS_ARVALID (CTRL_BUS_ARVALID),
+    .TRAN_s_axi_CTRL_BUS_ARREADY (CTRL_BUS_ARREADY),
+    .TRAN_s_axi_CTRL_BUS_RVALID (CTRL_BUS_RVALID),
+    .TRAN_s_axi_CTRL_BUS_RREADY (CTRL_BUS_RREADY),
+    .TRAN_s_axi_CTRL_BUS_RDATA (CTRL_BUS_RDATA),
+    .TRAN_s_axi_CTRL_BUS_RRESP (CTRL_BUS_RRESP),
+    .TRAN_s_axi_CTRL_BUS_BVALID (CTRL_BUS_BVALID),
+    .TRAN_s_axi_CTRL_BUS_BREADY (CTRL_BUS_BREADY),
+    .TRAN_s_axi_CTRL_BUS_BRESP (CTRL_BUS_BRESP),
+    .TRAN_CTRL_BUS_interrupt (CTRL_BUS_INTERRUPT),
+    .TRAN_CTRL_BUS_write_data_finish(CTRL_BUS_write_data_finish),
+    .TRAN_CTRL_BUS_ready_out (AESL_ready),
+    .TRAN_CTRL_BUS_ready_in (AESL_slave_ready),
+    .TRAN_CTRL_BUS_done_out (AESL_slave_output_done),
+    .TRAN_CTRL_BUS_idle_out (AESL_idle),
+    .TRAN_CTRL_BUS_write_start_in     (AESL_slave_write_start_in),
+    .TRAN_CTRL_BUS_write_start_finish (AESL_slave_write_start_finish),
+    .TRAN_CTRL_BUS_transaction_done_in (AESL_done_delay),
+    .TRAN_CTRL_BUS_start_in  (AESL_slave_start)
 );
 
 initial begin : generate_AESL_ready_cnt_proc
@@ -508,6 +560,36 @@ reg [31:0] size_outStream_V_id_V_backup;
 reg end_outStream_V_dest_V;
 reg [31:0] size_outStream_V_dest_V;
 reg [31:0] size_outStream_V_dest_V_backup;
+reg end_output_ch_V;
+reg [31:0] size_output_ch_V;
+reg [31:0] size_output_ch_V_backup;
+reg end_input_ch_V;
+reg [31:0] size_input_ch_V;
+reg [31:0] size_input_ch_V_backup;
+reg end_fold_output_ch_V;
+reg [31:0] size_fold_output_ch_V;
+reg [31:0] size_fold_output_ch_V_backup;
+reg end_fold_input_ch_V;
+reg [31:0] size_fold_input_ch_V;
+reg [31:0] size_fold_input_ch_V_backup;
+reg end_kernel_dim_V;
+reg [31:0] size_kernel_dim_V;
+reg [31:0] size_kernel_dim_V_backup;
+reg end_input_h_V;
+reg [31:0] size_input_h_V;
+reg [31:0] size_input_h_V_backup;
+reg end_input_w_V;
+reg [31:0] size_input_w_V;
+reg [31:0] size_input_w_V_backup;
+reg end_real_input_h_V;
+reg [31:0] size_real_input_h_V;
+reg [31:0] size_real_input_h_V_backup;
+reg end_leaky_V;
+reg [31:0] size_leaky_V;
+reg [31:0] size_leaky_V_backup;
+reg end_fold_win_area_V;
+reg [31:0] size_fold_win_area_V;
+reg [31:0] size_fold_win_area_V_backup;
 
 initial begin : initial_process
     integer proc_rand;

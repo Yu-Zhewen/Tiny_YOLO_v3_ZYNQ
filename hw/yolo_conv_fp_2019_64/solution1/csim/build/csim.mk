@@ -73,7 +73,7 @@ all: $(TARGET)
 
 $(ObjDir)/yolo_conv_tb.o: ../../../tb/yolo_conv_tb.cpp $(ObjDir)/.dir
 	$(Echo) "   Compiling ../../../tb/yolo_conv_tb.cpp in $(BuildMode) mode" $(AVE_DIR_DLOG)
-	$(Verb)  $(CC) ${CCFLAG} -c -MMD -Wno-unknown-pragmas  $(IFLAG) $(DFLAG) $< -o $@ ; \
+	$(Verb)  $(CC) ${CCFLAG} -c -MMD -Wno-unknown-pragmas -Wno-unknown-pragmas  $(IFLAG) $(DFLAG) $< -o $@ ; \
 
 -include $(ObjDir)/yolo_conv_tb.d
 

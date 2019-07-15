@@ -37,12 +37,12 @@ typedef uint32_t u32;
 #else
 typedef struct {
     u16 DeviceId;
-    u32 Axilites_BaseAddress;
+    u32 Ctrl_bus_BaseAddress;
 } XYolo_conv_top_Config;
 #endif
 
 typedef struct {
-    u32 Axilites_BaseAddress;
+    u32 Ctrl_bus_BaseAddress;
     u32 IsReady;
 } XYolo_conv_top;
 
@@ -84,6 +84,26 @@ u32 XYolo_conv_top_IsReady(XYolo_conv_top *InstancePtr);
 void XYolo_conv_top_EnableAutoRestart(XYolo_conv_top *InstancePtr);
 void XYolo_conv_top_DisableAutoRestart(XYolo_conv_top *InstancePtr);
 
+void XYolo_conv_top_Set_output_ch_V(XYolo_conv_top *InstancePtr, u32 Data);
+u32 XYolo_conv_top_Get_output_ch_V(XYolo_conv_top *InstancePtr);
+void XYolo_conv_top_Set_input_ch_V(XYolo_conv_top *InstancePtr, u32 Data);
+u32 XYolo_conv_top_Get_input_ch_V(XYolo_conv_top *InstancePtr);
+void XYolo_conv_top_Set_fold_output_ch_V(XYolo_conv_top *InstancePtr, u32 Data);
+u32 XYolo_conv_top_Get_fold_output_ch_V(XYolo_conv_top *InstancePtr);
+void XYolo_conv_top_Set_fold_input_ch_V(XYolo_conv_top *InstancePtr, u32 Data);
+u32 XYolo_conv_top_Get_fold_input_ch_V(XYolo_conv_top *InstancePtr);
+void XYolo_conv_top_Set_kernel_dim_V(XYolo_conv_top *InstancePtr, u32 Data);
+u32 XYolo_conv_top_Get_kernel_dim_V(XYolo_conv_top *InstancePtr);
+void XYolo_conv_top_Set_input_h_V(XYolo_conv_top *InstancePtr, u32 Data);
+u32 XYolo_conv_top_Get_input_h_V(XYolo_conv_top *InstancePtr);
+void XYolo_conv_top_Set_input_w_V(XYolo_conv_top *InstancePtr, u32 Data);
+u32 XYolo_conv_top_Get_input_w_V(XYolo_conv_top *InstancePtr);
+void XYolo_conv_top_Set_real_input_h_V(XYolo_conv_top *InstancePtr, u32 Data);
+u32 XYolo_conv_top_Get_real_input_h_V(XYolo_conv_top *InstancePtr);
+void XYolo_conv_top_Set_leaky_V(XYolo_conv_top *InstancePtr, u32 Data);
+u32 XYolo_conv_top_Get_leaky_V(XYolo_conv_top *InstancePtr);
+void XYolo_conv_top_Set_fold_win_area_V(XYolo_conv_top *InstancePtr, u32 Data);
+u32 XYolo_conv_top_Get_fold_win_area_V(XYolo_conv_top *InstancePtr);
 
 void XYolo_conv_top_InterruptGlobalEnable(XYolo_conv_top *InstancePtr);
 void XYolo_conv_top_InterruptGlobalDisable(XYolo_conv_top *InstancePtr);

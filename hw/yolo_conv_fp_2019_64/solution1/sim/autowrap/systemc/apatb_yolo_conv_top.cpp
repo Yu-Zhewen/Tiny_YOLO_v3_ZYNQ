@@ -26,16 +26,18 @@ using namespace sc_dt;
 
 
 // [dump_struct_tree [build_nameSpaceTree] dumpedStructList] ---------->
-    typedef struct double_fp_pack {
+    typedef struct quad_fp_pack {
         ap_fixed<16, 8, (ap_q_mode) 4, (ap_o_mode)0, 0> sub_data_0;
         ap_fixed<16, 8, (ap_q_mode) 4, (ap_o_mode)0, 0> sub_data_1;
-       } double_fp_pack;
+        ap_fixed<16, 8, (ap_q_mode) 4, (ap_o_mode)0, 0> sub_data_2;
+        ap_fixed<16, 8, (ap_q_mode) 4, (ap_o_mode)0, 0> sub_data_3;
+       } quad_fp_pack;
 
           template< int D ,int U ,int TI ,int TD > struct ap_axi_fp;
-          template<> struct ap_axi_fp<32, 2, 5, 6> {
-              double_fp_pack data;
-              ap_uint<4> keep;
-              ap_uint<4> strb;
+          template<> struct ap_axi_fp<64, 2, 5, 6> {
+              quad_fp_pack data;
+              ap_uint<8> keep;
+              ap_uint<8> strb;
               ap_uint<2> user;
               ap_uint<1> last;
               ap_uint<5> id;
@@ -110,6 +112,26 @@ using namespace sc_dt;
 #define AUTOTB_TVIN_outStream_V_dest_V  "../tv/cdatafile/c.yolo_conv_top.autotvin_outStream_V_dest_V.dat"
 #define WRAPC_STREAM_SIZE_OUT_outStream_V_dest_V  "../tv/stream_size/stream_size_out_outStream_V_dest_V.dat"
 #define WRAPC_STREAM_EGRESS_STATUS_outStream_V_dest_V  "../tv/stream_size/stream_egress_status_outStream_V_dest_V.dat"
+// wrapc file define: "output_ch_V"
+#define AUTOTB_TVIN_output_ch_V  "../tv/cdatafile/c.yolo_conv_top.autotvin_output_ch_V.dat"
+// wrapc file define: "input_ch_V"
+#define AUTOTB_TVIN_input_ch_V  "../tv/cdatafile/c.yolo_conv_top.autotvin_input_ch_V.dat"
+// wrapc file define: "fold_output_ch_V"
+#define AUTOTB_TVIN_fold_output_ch_V  "../tv/cdatafile/c.yolo_conv_top.autotvin_fold_output_ch_V.dat"
+// wrapc file define: "fold_input_ch_V"
+#define AUTOTB_TVIN_fold_input_ch_V  "../tv/cdatafile/c.yolo_conv_top.autotvin_fold_input_ch_V.dat"
+// wrapc file define: "kernel_dim_V"
+#define AUTOTB_TVIN_kernel_dim_V  "../tv/cdatafile/c.yolo_conv_top.autotvin_kernel_dim_V.dat"
+// wrapc file define: "input_h_V"
+#define AUTOTB_TVIN_input_h_V  "../tv/cdatafile/c.yolo_conv_top.autotvin_input_h_V.dat"
+// wrapc file define: "input_w_V"
+#define AUTOTB_TVIN_input_w_V  "../tv/cdatafile/c.yolo_conv_top.autotvin_input_w_V.dat"
+// wrapc file define: "real_input_h_V"
+#define AUTOTB_TVIN_real_input_h_V  "../tv/cdatafile/c.yolo_conv_top.autotvin_real_input_h_V.dat"
+// wrapc file define: "leaky_V"
+#define AUTOTB_TVIN_leaky_V  "../tv/cdatafile/c.yolo_conv_top.autotvin_leaky_V.dat"
+// wrapc file define: "fold_win_area_V"
+#define AUTOTB_TVIN_fold_win_area_V  "../tv/cdatafile/c.yolo_conv_top.autotvin_fold_win_area_V.dat"
 
 #define INTER_TCL  "../tv/cdatafile/ref.tcl"
 
@@ -146,6 +168,16 @@ class INTER_TCL_FILE {
 			outStream_V_last_V_depth = 0;
 			outStream_V_id_V_depth = 0;
 			outStream_V_dest_V_depth = 0;
+			output_ch_V_depth = 0;
+			input_ch_V_depth = 0;
+			fold_output_ch_V_depth = 0;
+			fold_input_ch_V_depth = 0;
+			kernel_dim_V_depth = 0;
+			input_h_V_depth = 0;
+			input_w_V_depth = 0;
+			real_input_h_V_depth = 0;
+			leaky_V_depth = 0;
+			fold_win_area_V_depth = 0;
 			trans_num =0;
 		}
 
@@ -179,6 +211,16 @@ class INTER_TCL_FILE {
 			total_list << "{outStream_V_last_V " << outStream_V_last_V_depth << "}\n";
 			total_list << "{outStream_V_id_V " << outStream_V_id_V_depth << "}\n";
 			total_list << "{outStream_V_dest_V " << outStream_V_dest_V_depth << "}\n";
+			total_list << "{output_ch_V " << output_ch_V_depth << "}\n";
+			total_list << "{input_ch_V " << input_ch_V_depth << "}\n";
+			total_list << "{fold_output_ch_V " << fold_output_ch_V_depth << "}\n";
+			total_list << "{fold_input_ch_V " << fold_input_ch_V_depth << "}\n";
+			total_list << "{kernel_dim_V " << kernel_dim_V_depth << "}\n";
+			total_list << "{input_h_V " << input_h_V_depth << "}\n";
+			total_list << "{input_w_V " << input_w_V_depth << "}\n";
+			total_list << "{real_input_h_V " << real_input_h_V_depth << "}\n";
+			total_list << "{leaky_V " << leaky_V_depth << "}\n";
+			total_list << "{fold_win_area_V " << fold_win_area_V_depth << "}\n";
 			return total_list.str();
 		}
 
@@ -200,6 +242,16 @@ class INTER_TCL_FILE {
 		int outStream_V_last_V_depth;
 		int outStream_V_id_V_depth;
 		int outStream_V_dest_V_depth;
+		int output_ch_V_depth;
+		int input_ch_V_depth;
+		int fold_output_ch_V_depth;
+		int fold_input_ch_V_depth;
+		int kernel_dim_V_depth;
+		int input_h_V_depth;
+		int input_w_V_depth;
+		int real_input_h_V_depth;
+		int leaky_V_depth;
+		int fold_win_area_V_depth;
 		int trans_num;
 
 	private:
@@ -208,12 +260,32 @@ class INTER_TCL_FILE {
 };
 
 extern void yolo_conv_top (
-hls::stream<ap_axi_fp<32, 2, 5, 6 > > (&inStream),
-hls::stream<ap_axi_fp<32, 2, 5, 6 > > (&outStream));
+hls::stream<ap_axi_fp<64, 2, 5, 6 > > (&inStream),
+hls::stream<ap_axi_fp<64, 2, 5, 6 > > (&outStream),
+ap_uint<6> output_ch,
+ap_uint<6> input_ch,
+ap_uint<4> fold_output_ch,
+ap_uint<4> fold_input_ch,
+ap_uint<3> kernel_dim,
+ap_uint<9> input_h,
+ap_uint<9> input_w,
+ap_uint<9> real_input_h,
+ap_uint<1> leaky,
+ap_uint<3> fold_win_area);
 
 void AESL_WRAP_yolo_conv_top (
-hls::stream<ap_axi_fp<32, 2, 5, 6 > > (&inStream),
-hls::stream<ap_axi_fp<32, 2, 5, 6 > > (&outStream))
+hls::stream<ap_axi_fp<64, 2, 5, 6 > > (&inStream),
+hls::stream<ap_axi_fp<64, 2, 5, 6 > > (&outStream),
+ap_uint<6> output_ch,
+ap_uint<6> input_ch,
+ap_uint<4> fold_output_ch,
+ap_uint<4> fold_input_ch,
+ap_uint<3> kernel_dim,
+ap_uint<9> input_h,
+ap_uint<9> input_w,
+ap_uint<9> real_input_h,
+ap_uint<1> leaky,
+ap_uint<3> fold_win_area)
 {
 	refine_signal_handler();
 	fstream wrapc_switch_file_token;
@@ -243,7 +315,7 @@ hls::stream<ap_axi_fp<32, 2, 5, 6 > > (&outStream))
 		}
 
 		// define output stream variables: "outStream"
-		std::vector<ap_axi_fp<32, 2, 5, 6 > > aesl_tmp_3;
+		std::vector<ap_axi_fp<64, 2, 5, 6 > > aesl_tmp_3;
 		int aesl_tmp_4;
 		int aesl_tmp_5 = 0;
 
@@ -270,7 +342,7 @@ hls::stream<ap_axi_fp<32, 2, 5, 6 > > (&outStream))
 		{
 			aesl_fh.read(AUTOTB_TVOUT_PC_outStream_V_data, AESL_token); // data
 
-			std::vector<sc_bv<32> > outStream_V_data_pc_buffer;
+			std::vector<sc_bv<64> > outStream_V_data_pc_buffer;
 			int i = 0;
 
 			while (AESL_token != "[[/transaction]]")
@@ -346,7 +418,7 @@ hls::stream<ap_axi_fp<32, 2, 5, 6 > > (&outStream))
 
 				for (int tmp_aesl_tmp_3 = 0; tmp_aesl_tmp_3 < aesl_tmp_4 - aesl_tmp_3_size; tmp_aesl_tmp_3++)
 				{
-					ap_axi_fp<32, 2, 5, 6 > tmp;
+					ap_axi_fp<64, 2, 5, 6 > tmp;
 					aesl_tmp_3.push_back(tmp);
 				}
 			}
@@ -368,6 +440,20 @@ hls::stream<ap_axi_fp<32, 2, 5, 6 > > (&outStream))
 						// celement: outStream.V.data.sub_data_1.V(15, 0)
 						// {
 							sc_lv<16>* outStream_V_data_sub_data_1_V_lv0_0_0_1_lv1_0_0_1 = new sc_lv<16>[aesl_tmp_4 - aesl_tmp_5];
+						// }
+					// }
+					// bitslice(47, 32)
+					// {
+						// celement: outStream.V.data.sub_data_2.V(15, 0)
+						// {
+							sc_lv<16>* outStream_V_data_sub_data_2_V_lv0_0_0_1_lv1_0_0_1 = new sc_lv<16>[aesl_tmp_4 - aesl_tmp_5];
+						// }
+					// }
+					// bitslice(63, 48)
+					// {
+						// celement: outStream.V.data.sub_data_3.V(15, 0)
+						// {
+							sc_lv<16>* outStream_V_data_sub_data_3_V_lv0_0_0_1_lv1_0_0_1 = new sc_lv<16>[aesl_tmp_4 - aesl_tmp_5];
 						// }
 					// }
 
@@ -405,6 +491,46 @@ hls::stream<ap_axi_fp<32, 2, 5, 6 > > (&outStream))
 									if (&(aesl_tmp_3[0].data.sub_data_1) != NULL) // check the null address if the c port is array or others
 									{
 										outStream_V_data_sub_data_1_V_lv0_0_0_1_lv1_0_0_1[hls_map_index].range(15, 0) = sc_bv<16>(outStream_V_data_pc_buffer[hls_map_index].range(31, 16));
+										hls_map_index++;
+									}
+								}
+							}
+						}
+					}
+					// bitslice(47, 32)
+					{
+						int hls_map_index = 0;
+						// celement: outStream.V.data.sub_data_2.V(15, 0)
+						{
+							// carray: (aesl_tmp_5) => (aesl_tmp_4 - 1) @ (1)
+							for (int i_0 = aesl_tmp_5; i_0 <= aesl_tmp_4 - 1; i_0 += 1)
+							{
+								// carray: (0) => (0) @ (1)
+								for (int i_1 = 0; i_1 <= 0; i_1 += 1)
+								{
+									if (&(aesl_tmp_3[0].data.sub_data_2) != NULL) // check the null address if the c port is array or others
+									{
+										outStream_V_data_sub_data_2_V_lv0_0_0_1_lv1_0_0_1[hls_map_index].range(15, 0) = sc_bv<16>(outStream_V_data_pc_buffer[hls_map_index].range(47, 32));
+										hls_map_index++;
+									}
+								}
+							}
+						}
+					}
+					// bitslice(63, 48)
+					{
+						int hls_map_index = 0;
+						// celement: outStream.V.data.sub_data_3.V(15, 0)
+						{
+							// carray: (aesl_tmp_5) => (aesl_tmp_4 - 1) @ (1)
+							for (int i_0 = aesl_tmp_5; i_0 <= aesl_tmp_4 - 1; i_0 += 1)
+							{
+								// carray: (0) => (0) @ (1)
+								for (int i_1 = 0; i_1 <= 0; i_1 += 1)
+								{
+									if (&(aesl_tmp_3[0].data.sub_data_3) != NULL) // check the null address if the c port is array or others
+									{
+										outStream_V_data_sub_data_3_V_lv0_0_0_1_lv1_0_0_1[hls_map_index].range(15, 0) = sc_bv<16>(outStream_V_data_pc_buffer[hls_map_index].range(63, 48));
 										hls_map_index++;
 									}
 								}
@@ -464,6 +590,58 @@ hls::stream<ap_axi_fp<32, 2, 5, 6 > > (&outStream))
 							}
 						}
 					}
+					// bitslice(47, 32)
+					{
+						int hls_map_index = 0;
+						// celement: outStream.V.data.sub_data_2.V(15, 0)
+						{
+							// carray: (aesl_tmp_5) => (aesl_tmp_4 - 1) @ (1)
+							for (int i_0 = aesl_tmp_5; i_0 <= aesl_tmp_4 - 1; i_0 += 1)
+							{
+								// carray: (0) => (0) @ (1)
+								for (int i_1 = 0; i_1 <= 0; i_1 += 1)
+								{
+									// sub                    : i_0 i_1
+									// ori_name               : aesl_tmp_3[i_0].data.sub_data_2
+									// sub_1st_elem           : 0 0
+									// ori_name_1st_elem      : aesl_tmp_3[0].data.sub_data_2
+									// output_left_conversion : (aesl_tmp_3[i_0].data.sub_data_2).range()
+									// output_type_conversion : (outStream_V_data_sub_data_2_V_lv0_0_0_1_lv1_0_0_1[hls_map_index]).to_string(SC_BIN).c_str()
+									if (&(aesl_tmp_3[0].data.sub_data_2) != NULL) // check the null address if the c port is array or others
+									{
+										(aesl_tmp_3[i_0].data.sub_data_2).range() = (outStream_V_data_sub_data_2_V_lv0_0_0_1_lv1_0_0_1[hls_map_index]).to_string(SC_BIN).c_str();
+										hls_map_index++;
+									}
+								}
+							}
+						}
+					}
+					// bitslice(63, 48)
+					{
+						int hls_map_index = 0;
+						// celement: outStream.V.data.sub_data_3.V(15, 0)
+						{
+							// carray: (aesl_tmp_5) => (aesl_tmp_4 - 1) @ (1)
+							for (int i_0 = aesl_tmp_5; i_0 <= aesl_tmp_4 - 1; i_0 += 1)
+							{
+								// carray: (0) => (0) @ (1)
+								for (int i_1 = 0; i_1 <= 0; i_1 += 1)
+								{
+									// sub                    : i_0 i_1
+									// ori_name               : aesl_tmp_3[i_0].data.sub_data_3
+									// sub_1st_elem           : 0 0
+									// ori_name_1st_elem      : aesl_tmp_3[0].data.sub_data_3
+									// output_left_conversion : (aesl_tmp_3[i_0].data.sub_data_3).range()
+									// output_type_conversion : (outStream_V_data_sub_data_3_V_lv0_0_0_1_lv1_0_0_1[hls_map_index]).to_string(SC_BIN).c_str()
+									if (&(aesl_tmp_3[0].data.sub_data_3) != NULL) // check the null address if the c port is array or others
+									{
+										(aesl_tmp_3[i_0].data.sub_data_3).range() = (outStream_V_data_sub_data_3_V_lv0_0_0_1_lv1_0_0_1[hls_map_index]).to_string(SC_BIN).c_str();
+										hls_map_index++;
+									}
+								}
+							}
+						}
+					}
 				}
 			}
 		}
@@ -480,7 +658,7 @@ hls::stream<ap_axi_fp<32, 2, 5, 6 > > (&outStream))
 		{
 			aesl_fh.read(AUTOTB_TVOUT_PC_outStream_V_keep_V, AESL_token); // data
 
-			std::vector<sc_bv<4> > outStream_V_keep_V_pc_buffer;
+			std::vector<sc_bv<8> > outStream_V_keep_V_pc_buffer;
 			int i = 0;
 
 			while (AESL_token != "[[/transaction]]")
@@ -556,7 +734,7 @@ hls::stream<ap_axi_fp<32, 2, 5, 6 > > (&outStream))
 
 				for (int tmp_aesl_tmp_3 = 0; tmp_aesl_tmp_3 < aesl_tmp_4 - aesl_tmp_3_size; tmp_aesl_tmp_3++)
 				{
-					ap_axi_fp<32, 2, 5, 6 > tmp;
+					ap_axi_fp<64, 2, 5, 6 > tmp;
 					aesl_tmp_3.push_back(tmp);
 				}
 			}
@@ -566,18 +744,18 @@ hls::stream<ap_axi_fp<32, 2, 5, 6 > > (&outStream))
 			{
 				// RTL Name: outStream_V_keep_V
 				{
-					// bitslice(3, 0)
+					// bitslice(7, 0)
 					// {
-						// celement: outStream.V.keep.V(3, 0)
+						// celement: outStream.V.keep.V(7, 0)
 						// {
-							sc_lv<4>* outStream_V_keep_V_lv0_0_0_1_lv1_0_0_1 = new sc_lv<4>[aesl_tmp_4 - aesl_tmp_5];
+							sc_lv<8>* outStream_V_keep_V_lv0_0_0_1_lv1_0_0_1 = new sc_lv<8>[aesl_tmp_4 - aesl_tmp_5];
 						// }
 					// }
 
-					// bitslice(3, 0)
+					// bitslice(7, 0)
 					{
 						int hls_map_index = 0;
-						// celement: outStream.V.keep.V(3, 0)
+						// celement: outStream.V.keep.V(7, 0)
 						{
 							// carray: (aesl_tmp_5) => (aesl_tmp_4 - 1) @ (1)
 							for (int i_0 = aesl_tmp_5; i_0 <= aesl_tmp_4 - 1; i_0 += 1)
@@ -587,7 +765,7 @@ hls::stream<ap_axi_fp<32, 2, 5, 6 > > (&outStream))
 								{
 									if (&(aesl_tmp_3[0].keep) != NULL) // check the null address if the c port is array or others
 									{
-										outStream_V_keep_V_lv0_0_0_1_lv1_0_0_1[hls_map_index].range(3, 0) = sc_bv<4>(outStream_V_keep_V_pc_buffer[hls_map_index].range(3, 0));
+										outStream_V_keep_V_lv0_0_0_1_lv1_0_0_1[hls_map_index].range(7, 0) = sc_bv<8>(outStream_V_keep_V_pc_buffer[hls_map_index].range(7, 0));
 										hls_map_index++;
 									}
 								}
@@ -595,10 +773,10 @@ hls::stream<ap_axi_fp<32, 2, 5, 6 > > (&outStream))
 						}
 					}
 
-					// bitslice(3, 0)
+					// bitslice(7, 0)
 					{
 						int hls_map_index = 0;
-						// celement: outStream.V.keep.V(3, 0)
+						// celement: outStream.V.keep.V(7, 0)
 						{
 							// carray: (aesl_tmp_5) => (aesl_tmp_4 - 1) @ (1)
 							for (int i_0 = aesl_tmp_5; i_0 <= aesl_tmp_4 - 1; i_0 += 1)
@@ -637,7 +815,7 @@ hls::stream<ap_axi_fp<32, 2, 5, 6 > > (&outStream))
 		{
 			aesl_fh.read(AUTOTB_TVOUT_PC_outStream_V_strb_V, AESL_token); // data
 
-			std::vector<sc_bv<4> > outStream_V_strb_V_pc_buffer;
+			std::vector<sc_bv<8> > outStream_V_strb_V_pc_buffer;
 			int i = 0;
 
 			while (AESL_token != "[[/transaction]]")
@@ -713,7 +891,7 @@ hls::stream<ap_axi_fp<32, 2, 5, 6 > > (&outStream))
 
 				for (int tmp_aesl_tmp_3 = 0; tmp_aesl_tmp_3 < aesl_tmp_4 - aesl_tmp_3_size; tmp_aesl_tmp_3++)
 				{
-					ap_axi_fp<32, 2, 5, 6 > tmp;
+					ap_axi_fp<64, 2, 5, 6 > tmp;
 					aesl_tmp_3.push_back(tmp);
 				}
 			}
@@ -723,18 +901,18 @@ hls::stream<ap_axi_fp<32, 2, 5, 6 > > (&outStream))
 			{
 				// RTL Name: outStream_V_strb_V
 				{
-					// bitslice(3, 0)
+					// bitslice(7, 0)
 					// {
-						// celement: outStream.V.strb.V(3, 0)
+						// celement: outStream.V.strb.V(7, 0)
 						// {
-							sc_lv<4>* outStream_V_strb_V_lv0_0_0_1_lv1_0_0_1 = new sc_lv<4>[aesl_tmp_4 - aesl_tmp_5];
+							sc_lv<8>* outStream_V_strb_V_lv0_0_0_1_lv1_0_0_1 = new sc_lv<8>[aesl_tmp_4 - aesl_tmp_5];
 						// }
 					// }
 
-					// bitslice(3, 0)
+					// bitslice(7, 0)
 					{
 						int hls_map_index = 0;
-						// celement: outStream.V.strb.V(3, 0)
+						// celement: outStream.V.strb.V(7, 0)
 						{
 							// carray: (aesl_tmp_5) => (aesl_tmp_4 - 1) @ (1)
 							for (int i_0 = aesl_tmp_5; i_0 <= aesl_tmp_4 - 1; i_0 += 1)
@@ -744,7 +922,7 @@ hls::stream<ap_axi_fp<32, 2, 5, 6 > > (&outStream))
 								{
 									if (&(aesl_tmp_3[0].strb) != NULL) // check the null address if the c port is array or others
 									{
-										outStream_V_strb_V_lv0_0_0_1_lv1_0_0_1[hls_map_index].range(3, 0) = sc_bv<4>(outStream_V_strb_V_pc_buffer[hls_map_index].range(3, 0));
+										outStream_V_strb_V_lv0_0_0_1_lv1_0_0_1[hls_map_index].range(7, 0) = sc_bv<8>(outStream_V_strb_V_pc_buffer[hls_map_index].range(7, 0));
 										hls_map_index++;
 									}
 								}
@@ -752,10 +930,10 @@ hls::stream<ap_axi_fp<32, 2, 5, 6 > > (&outStream))
 						}
 					}
 
-					// bitslice(3, 0)
+					// bitslice(7, 0)
 					{
 						int hls_map_index = 0;
-						// celement: outStream.V.strb.V(3, 0)
+						// celement: outStream.V.strb.V(7, 0)
 						{
 							// carray: (aesl_tmp_5) => (aesl_tmp_4 - 1) @ (1)
 							for (int i_0 = aesl_tmp_5; i_0 <= aesl_tmp_4 - 1; i_0 += 1)
@@ -870,7 +1048,7 @@ hls::stream<ap_axi_fp<32, 2, 5, 6 > > (&outStream))
 
 				for (int tmp_aesl_tmp_3 = 0; tmp_aesl_tmp_3 < aesl_tmp_4 - aesl_tmp_3_size; tmp_aesl_tmp_3++)
 				{
-					ap_axi_fp<32, 2, 5, 6 > tmp;
+					ap_axi_fp<64, 2, 5, 6 > tmp;
 					aesl_tmp_3.push_back(tmp);
 				}
 			}
@@ -1027,7 +1205,7 @@ hls::stream<ap_axi_fp<32, 2, 5, 6 > > (&outStream))
 
 				for (int tmp_aesl_tmp_3 = 0; tmp_aesl_tmp_3 < aesl_tmp_4 - aesl_tmp_3_size; tmp_aesl_tmp_3++)
 				{
-					ap_axi_fp<32, 2, 5, 6 > tmp;
+					ap_axi_fp<64, 2, 5, 6 > tmp;
 					aesl_tmp_3.push_back(tmp);
 				}
 			}
@@ -1184,7 +1362,7 @@ hls::stream<ap_axi_fp<32, 2, 5, 6 > > (&outStream))
 
 				for (int tmp_aesl_tmp_3 = 0; tmp_aesl_tmp_3 < aesl_tmp_4 - aesl_tmp_3_size; tmp_aesl_tmp_3++)
 				{
-					ap_axi_fp<32, 2, 5, 6 > tmp;
+					ap_axi_fp<64, 2, 5, 6 > tmp;
 					aesl_tmp_3.push_back(tmp);
 				}
 			}
@@ -1341,7 +1519,7 @@ hls::stream<ap_axi_fp<32, 2, 5, 6 > > (&outStream))
 
 				for (int tmp_aesl_tmp_3 = 0; tmp_aesl_tmp_3 < aesl_tmp_4 - aesl_tmp_3_size; tmp_aesl_tmp_3++)
 				{
-					ap_axi_fp<32, 2, 5, 6 > tmp;
+					ap_axi_fp<64, 2, 5, 6 > tmp;
 					aesl_tmp_3.push_back(tmp);
 				}
 			}
@@ -1551,12 +1729,52 @@ hls::stream<ap_axi_fp<32, 2, 5, 6 > > (&outStream))
 		char* wrapc_stream_egress_status_outStream_V_dest_V = new char[50];
 		aesl_fh.touch(WRAPC_STREAM_EGRESS_STATUS_outStream_V_dest_V);
 
+		// "output_ch_V"
+		char* tvin_output_ch_V = new char[50];
+		aesl_fh.touch(AUTOTB_TVIN_output_ch_V);
+
+		// "input_ch_V"
+		char* tvin_input_ch_V = new char[50];
+		aesl_fh.touch(AUTOTB_TVIN_input_ch_V);
+
+		// "fold_output_ch_V"
+		char* tvin_fold_output_ch_V = new char[50];
+		aesl_fh.touch(AUTOTB_TVIN_fold_output_ch_V);
+
+		// "fold_input_ch_V"
+		char* tvin_fold_input_ch_V = new char[50];
+		aesl_fh.touch(AUTOTB_TVIN_fold_input_ch_V);
+
+		// "kernel_dim_V"
+		char* tvin_kernel_dim_V = new char[50];
+		aesl_fh.touch(AUTOTB_TVIN_kernel_dim_V);
+
+		// "input_h_V"
+		char* tvin_input_h_V = new char[50];
+		aesl_fh.touch(AUTOTB_TVIN_input_h_V);
+
+		// "input_w_V"
+		char* tvin_input_w_V = new char[50];
+		aesl_fh.touch(AUTOTB_TVIN_input_w_V);
+
+		// "real_input_h_V"
+		char* tvin_real_input_h_V = new char[50];
+		aesl_fh.touch(AUTOTB_TVIN_real_input_h_V);
+
+		// "leaky_V"
+		char* tvin_leaky_V = new char[50];
+		aesl_fh.touch(AUTOTB_TVIN_leaky_V);
+
+		// "fold_win_area_V"
+		char* tvin_fold_win_area_V = new char[50];
+		aesl_fh.touch(AUTOTB_TVIN_fold_win_area_V);
+
 		CodeState = DUMP_INPUTS;
 		static INTER_TCL_FILE tcl_file(INTER_TCL);
 		int leading_zero;
 
 		// dump stream tvin: "inStream"
-		std::vector<ap_axi_fp<32, 2, 5, 6 > > aesl_tmp_0;
+		std::vector<ap_axi_fp<64, 2, 5, 6 > > aesl_tmp_0;
 		int aesl_tmp_1 = 0;
 		while (!inStream.empty())
 		{
@@ -1565,13 +1783,433 @@ hls::stream<ap_axi_fp<32, 2, 5, 6 > > (&outStream))
 		}
 
 		// dump stream tvin: "outStream"
-		std::vector<ap_axi_fp<32, 2, 5, 6 > > aesl_tmp_3;
+		std::vector<ap_axi_fp<64, 2, 5, 6 > > aesl_tmp_3;
 		int aesl_tmp_4 = 0;
 		while (!outStream.empty())
 		{
 			aesl_tmp_3.push_back(outStream.read());
 			aesl_tmp_4++;
 		}
+
+		// [[transaction]]
+		sprintf(tvin_output_ch_V, "[[transaction]] %d\n", AESL_transaction);
+		aesl_fh.write(AUTOTB_TVIN_output_ch_V, tvin_output_ch_V);
+
+		sc_bv<6> output_ch_V_tvin_wrapc_buffer;
+
+		// RTL Name: output_ch_V
+		{
+			// bitslice(5, 0)
+			{
+				// celement: output_ch.V(5, 0)
+				{
+					// carray: (0) => (0) @ (0)
+					{
+						// sub                   : 
+						// ori_name              : output_ch
+						// sub_1st_elem          : 
+						// ori_name_1st_elem     : output_ch
+						// regulate_c_name       : output_ch_V
+						// input_type_conversion : (output_ch).to_string(2).c_str()
+						if (&(output_ch) != NULL) // check the null address if the c port is array or others
+						{
+							sc_lv<6> output_ch_V_tmp_mem;
+							output_ch_V_tmp_mem = (output_ch).to_string(2).c_str();
+							output_ch_V_tvin_wrapc_buffer.range(5, 0) = output_ch_V_tmp_mem.range(5, 0);
+						}
+					}
+				}
+			}
+		}
+
+		// dump tv to file
+		for (int i = 0; i < 1; i++)
+		{
+			sprintf(tvin_output_ch_V, "%s\n", (output_ch_V_tvin_wrapc_buffer).to_string(SC_HEX).c_str());
+			aesl_fh.write(AUTOTB_TVIN_output_ch_V, tvin_output_ch_V);
+		}
+
+		tcl_file.set_num(1, &tcl_file.output_ch_V_depth);
+		sprintf(tvin_output_ch_V, "[[/transaction]] \n");
+		aesl_fh.write(AUTOTB_TVIN_output_ch_V, tvin_output_ch_V);
+
+		// [[transaction]]
+		sprintf(tvin_input_ch_V, "[[transaction]] %d\n", AESL_transaction);
+		aesl_fh.write(AUTOTB_TVIN_input_ch_V, tvin_input_ch_V);
+
+		sc_bv<6> input_ch_V_tvin_wrapc_buffer;
+
+		// RTL Name: input_ch_V
+		{
+			// bitslice(5, 0)
+			{
+				// celement: input_ch.V(5, 0)
+				{
+					// carray: (0) => (0) @ (0)
+					{
+						// sub                   : 
+						// ori_name              : input_ch
+						// sub_1st_elem          : 
+						// ori_name_1st_elem     : input_ch
+						// regulate_c_name       : input_ch_V
+						// input_type_conversion : (input_ch).to_string(2).c_str()
+						if (&(input_ch) != NULL) // check the null address if the c port is array or others
+						{
+							sc_lv<6> input_ch_V_tmp_mem;
+							input_ch_V_tmp_mem = (input_ch).to_string(2).c_str();
+							input_ch_V_tvin_wrapc_buffer.range(5, 0) = input_ch_V_tmp_mem.range(5, 0);
+						}
+					}
+				}
+			}
+		}
+
+		// dump tv to file
+		for (int i = 0; i < 1; i++)
+		{
+			sprintf(tvin_input_ch_V, "%s\n", (input_ch_V_tvin_wrapc_buffer).to_string(SC_HEX).c_str());
+			aesl_fh.write(AUTOTB_TVIN_input_ch_V, tvin_input_ch_V);
+		}
+
+		tcl_file.set_num(1, &tcl_file.input_ch_V_depth);
+		sprintf(tvin_input_ch_V, "[[/transaction]] \n");
+		aesl_fh.write(AUTOTB_TVIN_input_ch_V, tvin_input_ch_V);
+
+		// [[transaction]]
+		sprintf(tvin_fold_output_ch_V, "[[transaction]] %d\n", AESL_transaction);
+		aesl_fh.write(AUTOTB_TVIN_fold_output_ch_V, tvin_fold_output_ch_V);
+
+		sc_bv<4> fold_output_ch_V_tvin_wrapc_buffer;
+
+		// RTL Name: fold_output_ch_V
+		{
+			// bitslice(3, 0)
+			{
+				// celement: fold_output_ch.V(3, 0)
+				{
+					// carray: (0) => (0) @ (0)
+					{
+						// sub                   : 
+						// ori_name              : fold_output_ch
+						// sub_1st_elem          : 
+						// ori_name_1st_elem     : fold_output_ch
+						// regulate_c_name       : fold_output_ch_V
+						// input_type_conversion : (fold_output_ch).to_string(2).c_str()
+						if (&(fold_output_ch) != NULL) // check the null address if the c port is array or others
+						{
+							sc_lv<4> fold_output_ch_V_tmp_mem;
+							fold_output_ch_V_tmp_mem = (fold_output_ch).to_string(2).c_str();
+							fold_output_ch_V_tvin_wrapc_buffer.range(3, 0) = fold_output_ch_V_tmp_mem.range(3, 0);
+						}
+					}
+				}
+			}
+		}
+
+		// dump tv to file
+		for (int i = 0; i < 1; i++)
+		{
+			sprintf(tvin_fold_output_ch_V, "%s\n", (fold_output_ch_V_tvin_wrapc_buffer).to_string(SC_HEX).c_str());
+			aesl_fh.write(AUTOTB_TVIN_fold_output_ch_V, tvin_fold_output_ch_V);
+		}
+
+		tcl_file.set_num(1, &tcl_file.fold_output_ch_V_depth);
+		sprintf(tvin_fold_output_ch_V, "[[/transaction]] \n");
+		aesl_fh.write(AUTOTB_TVIN_fold_output_ch_V, tvin_fold_output_ch_V);
+
+		// [[transaction]]
+		sprintf(tvin_fold_input_ch_V, "[[transaction]] %d\n", AESL_transaction);
+		aesl_fh.write(AUTOTB_TVIN_fold_input_ch_V, tvin_fold_input_ch_V);
+
+		sc_bv<4> fold_input_ch_V_tvin_wrapc_buffer;
+
+		// RTL Name: fold_input_ch_V
+		{
+			// bitslice(3, 0)
+			{
+				// celement: fold_input_ch.V(3, 0)
+				{
+					// carray: (0) => (0) @ (0)
+					{
+						// sub                   : 
+						// ori_name              : fold_input_ch
+						// sub_1st_elem          : 
+						// ori_name_1st_elem     : fold_input_ch
+						// regulate_c_name       : fold_input_ch_V
+						// input_type_conversion : (fold_input_ch).to_string(2).c_str()
+						if (&(fold_input_ch) != NULL) // check the null address if the c port is array or others
+						{
+							sc_lv<4> fold_input_ch_V_tmp_mem;
+							fold_input_ch_V_tmp_mem = (fold_input_ch).to_string(2).c_str();
+							fold_input_ch_V_tvin_wrapc_buffer.range(3, 0) = fold_input_ch_V_tmp_mem.range(3, 0);
+						}
+					}
+				}
+			}
+		}
+
+		// dump tv to file
+		for (int i = 0; i < 1; i++)
+		{
+			sprintf(tvin_fold_input_ch_V, "%s\n", (fold_input_ch_V_tvin_wrapc_buffer).to_string(SC_HEX).c_str());
+			aesl_fh.write(AUTOTB_TVIN_fold_input_ch_V, tvin_fold_input_ch_V);
+		}
+
+		tcl_file.set_num(1, &tcl_file.fold_input_ch_V_depth);
+		sprintf(tvin_fold_input_ch_V, "[[/transaction]] \n");
+		aesl_fh.write(AUTOTB_TVIN_fold_input_ch_V, tvin_fold_input_ch_V);
+
+		// [[transaction]]
+		sprintf(tvin_kernel_dim_V, "[[transaction]] %d\n", AESL_transaction);
+		aesl_fh.write(AUTOTB_TVIN_kernel_dim_V, tvin_kernel_dim_V);
+
+		sc_bv<3> kernel_dim_V_tvin_wrapc_buffer;
+
+		// RTL Name: kernel_dim_V
+		{
+			// bitslice(2, 0)
+			{
+				// celement: kernel_dim.V(2, 0)
+				{
+					// carray: (0) => (0) @ (0)
+					{
+						// sub                   : 
+						// ori_name              : kernel_dim
+						// sub_1st_elem          : 
+						// ori_name_1st_elem     : kernel_dim
+						// regulate_c_name       : kernel_dim_V
+						// input_type_conversion : (kernel_dim).to_string(2).c_str()
+						if (&(kernel_dim) != NULL) // check the null address if the c port is array or others
+						{
+							sc_lv<3> kernel_dim_V_tmp_mem;
+							kernel_dim_V_tmp_mem = (kernel_dim).to_string(2).c_str();
+							kernel_dim_V_tvin_wrapc_buffer.range(2, 0) = kernel_dim_V_tmp_mem.range(2, 0);
+						}
+					}
+				}
+			}
+		}
+
+		// dump tv to file
+		for (int i = 0; i < 1; i++)
+		{
+			sprintf(tvin_kernel_dim_V, "%s\n", (kernel_dim_V_tvin_wrapc_buffer).to_string(SC_HEX).c_str());
+			aesl_fh.write(AUTOTB_TVIN_kernel_dim_V, tvin_kernel_dim_V);
+		}
+
+		tcl_file.set_num(1, &tcl_file.kernel_dim_V_depth);
+		sprintf(tvin_kernel_dim_V, "[[/transaction]] \n");
+		aesl_fh.write(AUTOTB_TVIN_kernel_dim_V, tvin_kernel_dim_V);
+
+		// [[transaction]]
+		sprintf(tvin_input_h_V, "[[transaction]] %d\n", AESL_transaction);
+		aesl_fh.write(AUTOTB_TVIN_input_h_V, tvin_input_h_V);
+
+		sc_bv<9> input_h_V_tvin_wrapc_buffer;
+
+		// RTL Name: input_h_V
+		{
+			// bitslice(8, 0)
+			{
+				// celement: input_h.V(8, 0)
+				{
+					// carray: (0) => (0) @ (0)
+					{
+						// sub                   : 
+						// ori_name              : input_h
+						// sub_1st_elem          : 
+						// ori_name_1st_elem     : input_h
+						// regulate_c_name       : input_h_V
+						// input_type_conversion : (input_h).to_string(2).c_str()
+						if (&(input_h) != NULL) // check the null address if the c port is array or others
+						{
+							sc_lv<9> input_h_V_tmp_mem;
+							input_h_V_tmp_mem = (input_h).to_string(2).c_str();
+							input_h_V_tvin_wrapc_buffer.range(8, 0) = input_h_V_tmp_mem.range(8, 0);
+						}
+					}
+				}
+			}
+		}
+
+		// dump tv to file
+		for (int i = 0; i < 1; i++)
+		{
+			sprintf(tvin_input_h_V, "%s\n", (input_h_V_tvin_wrapc_buffer).to_string(SC_HEX).c_str());
+			aesl_fh.write(AUTOTB_TVIN_input_h_V, tvin_input_h_V);
+		}
+
+		tcl_file.set_num(1, &tcl_file.input_h_V_depth);
+		sprintf(tvin_input_h_V, "[[/transaction]] \n");
+		aesl_fh.write(AUTOTB_TVIN_input_h_V, tvin_input_h_V);
+
+		// [[transaction]]
+		sprintf(tvin_input_w_V, "[[transaction]] %d\n", AESL_transaction);
+		aesl_fh.write(AUTOTB_TVIN_input_w_V, tvin_input_w_V);
+
+		sc_bv<9> input_w_V_tvin_wrapc_buffer;
+
+		// RTL Name: input_w_V
+		{
+			// bitslice(8, 0)
+			{
+				// celement: input_w.V(8, 0)
+				{
+					// carray: (0) => (0) @ (0)
+					{
+						// sub                   : 
+						// ori_name              : input_w
+						// sub_1st_elem          : 
+						// ori_name_1st_elem     : input_w
+						// regulate_c_name       : input_w_V
+						// input_type_conversion : (input_w).to_string(2).c_str()
+						if (&(input_w) != NULL) // check the null address if the c port is array or others
+						{
+							sc_lv<9> input_w_V_tmp_mem;
+							input_w_V_tmp_mem = (input_w).to_string(2).c_str();
+							input_w_V_tvin_wrapc_buffer.range(8, 0) = input_w_V_tmp_mem.range(8, 0);
+						}
+					}
+				}
+			}
+		}
+
+		// dump tv to file
+		for (int i = 0; i < 1; i++)
+		{
+			sprintf(tvin_input_w_V, "%s\n", (input_w_V_tvin_wrapc_buffer).to_string(SC_HEX).c_str());
+			aesl_fh.write(AUTOTB_TVIN_input_w_V, tvin_input_w_V);
+		}
+
+		tcl_file.set_num(1, &tcl_file.input_w_V_depth);
+		sprintf(tvin_input_w_V, "[[/transaction]] \n");
+		aesl_fh.write(AUTOTB_TVIN_input_w_V, tvin_input_w_V);
+
+		// [[transaction]]
+		sprintf(tvin_real_input_h_V, "[[transaction]] %d\n", AESL_transaction);
+		aesl_fh.write(AUTOTB_TVIN_real_input_h_V, tvin_real_input_h_V);
+
+		sc_bv<9> real_input_h_V_tvin_wrapc_buffer;
+
+		// RTL Name: real_input_h_V
+		{
+			// bitslice(8, 0)
+			{
+				// celement: real_input_h.V(8, 0)
+				{
+					// carray: (0) => (0) @ (0)
+					{
+						// sub                   : 
+						// ori_name              : real_input_h
+						// sub_1st_elem          : 
+						// ori_name_1st_elem     : real_input_h
+						// regulate_c_name       : real_input_h_V
+						// input_type_conversion : (real_input_h).to_string(2).c_str()
+						if (&(real_input_h) != NULL) // check the null address if the c port is array or others
+						{
+							sc_lv<9> real_input_h_V_tmp_mem;
+							real_input_h_V_tmp_mem = (real_input_h).to_string(2).c_str();
+							real_input_h_V_tvin_wrapc_buffer.range(8, 0) = real_input_h_V_tmp_mem.range(8, 0);
+						}
+					}
+				}
+			}
+		}
+
+		// dump tv to file
+		for (int i = 0; i < 1; i++)
+		{
+			sprintf(tvin_real_input_h_V, "%s\n", (real_input_h_V_tvin_wrapc_buffer).to_string(SC_HEX).c_str());
+			aesl_fh.write(AUTOTB_TVIN_real_input_h_V, tvin_real_input_h_V);
+		}
+
+		tcl_file.set_num(1, &tcl_file.real_input_h_V_depth);
+		sprintf(tvin_real_input_h_V, "[[/transaction]] \n");
+		aesl_fh.write(AUTOTB_TVIN_real_input_h_V, tvin_real_input_h_V);
+
+		// [[transaction]]
+		sprintf(tvin_leaky_V, "[[transaction]] %d\n", AESL_transaction);
+		aesl_fh.write(AUTOTB_TVIN_leaky_V, tvin_leaky_V);
+
+		sc_bv<1> leaky_V_tvin_wrapc_buffer;
+
+		// RTL Name: leaky_V
+		{
+			// bitslice(0, 0)
+			{
+				// celement: leaky.V(0, 0)
+				{
+					// carray: (0) => (0) @ (0)
+					{
+						// sub                   : 
+						// ori_name              : leaky
+						// sub_1st_elem          : 
+						// ori_name_1st_elem     : leaky
+						// regulate_c_name       : leaky_V
+						// input_type_conversion : (leaky).to_string(2).c_str()
+						if (&(leaky) != NULL) // check the null address if the c port is array or others
+						{
+							sc_lv<1> leaky_V_tmp_mem;
+							leaky_V_tmp_mem = (leaky).to_string(2).c_str();
+							leaky_V_tvin_wrapc_buffer.range(0, 0) = leaky_V_tmp_mem.range(0, 0);
+						}
+					}
+				}
+			}
+		}
+
+		// dump tv to file
+		for (int i = 0; i < 1; i++)
+		{
+			sprintf(tvin_leaky_V, "%s\n", (leaky_V_tvin_wrapc_buffer).to_string(SC_HEX).c_str());
+			aesl_fh.write(AUTOTB_TVIN_leaky_V, tvin_leaky_V);
+		}
+
+		tcl_file.set_num(1, &tcl_file.leaky_V_depth);
+		sprintf(tvin_leaky_V, "[[/transaction]] \n");
+		aesl_fh.write(AUTOTB_TVIN_leaky_V, tvin_leaky_V);
+
+		// [[transaction]]
+		sprintf(tvin_fold_win_area_V, "[[transaction]] %d\n", AESL_transaction);
+		aesl_fh.write(AUTOTB_TVIN_fold_win_area_V, tvin_fold_win_area_V);
+
+		sc_bv<3> fold_win_area_V_tvin_wrapc_buffer;
+
+		// RTL Name: fold_win_area_V
+		{
+			// bitslice(2, 0)
+			{
+				// celement: fold_win_area.V(2, 0)
+				{
+					// carray: (0) => (0) @ (0)
+					{
+						// sub                   : 
+						// ori_name              : fold_win_area
+						// sub_1st_elem          : 
+						// ori_name_1st_elem     : fold_win_area
+						// regulate_c_name       : fold_win_area_V
+						// input_type_conversion : (fold_win_area).to_string(2).c_str()
+						if (&(fold_win_area) != NULL) // check the null address if the c port is array or others
+						{
+							sc_lv<3> fold_win_area_V_tmp_mem;
+							fold_win_area_V_tmp_mem = (fold_win_area).to_string(2).c_str();
+							fold_win_area_V_tvin_wrapc_buffer.range(2, 0) = fold_win_area_V_tmp_mem.range(2, 0);
+						}
+					}
+				}
+			}
+		}
+
+		// dump tv to file
+		for (int i = 0; i < 1; i++)
+		{
+			sprintf(tvin_fold_win_area_V, "%s\n", (fold_win_area_V_tvin_wrapc_buffer).to_string(SC_HEX).c_str());
+			aesl_fh.write(AUTOTB_TVIN_fold_win_area_V, tvin_fold_win_area_V);
+		}
+
+		tcl_file.set_num(1, &tcl_file.fold_win_area_V_depth);
+		sprintf(tvin_fold_win_area_V, "[[/transaction]] \n");
+		aesl_fh.write(AUTOTB_TVIN_fold_win_area_V, tvin_fold_win_area_V);
 
 		// push back input stream: "inStream"
 		for (int i = 0; i < aesl_tmp_1; i++)
@@ -1588,7 +2226,7 @@ hls::stream<ap_axi_fp<32, 2, 5, 6 > > (&outStream))
 // [call_c_dut] ---------->
 
 		CodeState = CALL_C_DUT;
-		yolo_conv_top(inStream, outStream);
+		yolo_conv_top(inStream, outStream, output_ch, input_ch, fold_output_ch, fold_input_ch, kernel_dim, input_h, input_w, real_input_h, leaky, fold_win_area);
 
 		CodeState = DUMP_OUTPUTS;
 		// record input size to tv3: "inStream"
@@ -1609,7 +2247,7 @@ hls::stream<ap_axi_fp<32, 2, 5, 6 > > (&outStream))
 		aesl_fh.write(AUTOTB_TVIN_inStream_V_data, tvin_inStream_V_data);
 		aesl_fh.write(WRAPC_STREAM_INGRESS_STATUS_inStream_V_data, tvin_inStream_V_data);
 
-		sc_bv<32>* inStream_V_data_tvin_wrapc_buffer = new sc_bv<32>[aesl_tmp_1 - aesl_tmp_2];
+		sc_bv<64>* inStream_V_data_tvin_wrapc_buffer = new sc_bv<64>[aesl_tmp_1 - aesl_tmp_2];
 
 		// RTL Name: inStream_V_data
 		{
@@ -1669,6 +2307,62 @@ hls::stream<ap_axi_fp<32, 2, 5, 6 > > (&outStream))
 					}
 				}
 			}
+			// bitslice(47, 32)
+			{
+				int hls_map_index = 0;
+				// celement: inStream.V.data.sub_data_2.V(15, 0)
+				{
+					// carray: (0) => (aesl_tmp_1 - aesl_tmp_2 - 1) @ (1)
+					for (int i_0 = 0; i_0 <= aesl_tmp_1 - aesl_tmp_2 - 1; i_0 += 1)
+					{
+						// carray: (0) => (0) @ (1)
+						for (int i_1 = 0; i_1 <= 0; i_1 += 1)
+						{
+							// sub                   : i_0 i_1
+							// ori_name              : aesl_tmp_0[i_0].data.sub_data_2
+							// sub_1st_elem          : 0 0
+							// ori_name_1st_elem     : aesl_tmp_0[0].data.sub_data_2
+							// regulate_c_name       : inStream_V_data_sub_data_2_V
+							// input_type_conversion : (aesl_tmp_0[i_0].data.sub_data_2).range().to_string(SC_BIN).c_str()
+							if (&(aesl_tmp_0[0].data.sub_data_2) != NULL) // check the null address if the c port is array or others
+							{
+								sc_lv<16> inStream_V_data_sub_data_2_V_tmp_mem;
+								inStream_V_data_sub_data_2_V_tmp_mem = (aesl_tmp_0[i_0].data.sub_data_2).range().to_string(SC_BIN).c_str();
+								inStream_V_data_tvin_wrapc_buffer[hls_map_index].range(47, 32) = inStream_V_data_sub_data_2_V_tmp_mem.range(15, 0);
+                                 		       hls_map_index++;
+							}
+						}
+					}
+				}
+			}
+			// bitslice(63, 48)
+			{
+				int hls_map_index = 0;
+				// celement: inStream.V.data.sub_data_3.V(15, 0)
+				{
+					// carray: (0) => (aesl_tmp_1 - aesl_tmp_2 - 1) @ (1)
+					for (int i_0 = 0; i_0 <= aesl_tmp_1 - aesl_tmp_2 - 1; i_0 += 1)
+					{
+						// carray: (0) => (0) @ (1)
+						for (int i_1 = 0; i_1 <= 0; i_1 += 1)
+						{
+							// sub                   : i_0 i_1
+							// ori_name              : aesl_tmp_0[i_0].data.sub_data_3
+							// sub_1st_elem          : 0 0
+							// ori_name_1st_elem     : aesl_tmp_0[0].data.sub_data_3
+							// regulate_c_name       : inStream_V_data_sub_data_3_V
+							// input_type_conversion : (aesl_tmp_0[i_0].data.sub_data_3).range().to_string(SC_BIN).c_str()
+							if (&(aesl_tmp_0[0].data.sub_data_3) != NULL) // check the null address if the c port is array or others
+							{
+								sc_lv<16> inStream_V_data_sub_data_3_V_tmp_mem;
+								inStream_V_data_sub_data_3_V_tmp_mem = (aesl_tmp_0[i_0].data.sub_data_3).range().to_string(SC_BIN).c_str();
+								inStream_V_data_tvin_wrapc_buffer[hls_map_index].range(63, 48) = inStream_V_data_sub_data_3_V_tmp_mem.range(15, 0);
+                                 		       hls_map_index++;
+							}
+						}
+					}
+				}
+			}
 		}
 
 		// dump tv to file
@@ -1719,14 +2413,14 @@ hls::stream<ap_axi_fp<32, 2, 5, 6 > > (&outStream))
 		aesl_fh.write(AUTOTB_TVIN_inStream_V_keep_V, tvin_inStream_V_keep_V);
 		aesl_fh.write(WRAPC_STREAM_INGRESS_STATUS_inStream_V_keep_V, tvin_inStream_V_keep_V);
 
-		sc_bv<4>* inStream_V_keep_V_tvin_wrapc_buffer = new sc_bv<4>[aesl_tmp_1 - aesl_tmp_2];
+		sc_bv<8>* inStream_V_keep_V_tvin_wrapc_buffer = new sc_bv<8>[aesl_tmp_1 - aesl_tmp_2];
 
 		// RTL Name: inStream_V_keep_V
 		{
-			// bitslice(3, 0)
+			// bitslice(7, 0)
 			{
 				int hls_map_index = 0;
-				// celement: inStream.V.keep.V(3, 0)
+				// celement: inStream.V.keep.V(7, 0)
 				{
 					// carray: (0) => (aesl_tmp_1 - aesl_tmp_2 - 1) @ (1)
 					for (int i_0 = 0; i_0 <= aesl_tmp_1 - aesl_tmp_2 - 1; i_0 += 1)
@@ -1742,9 +2436,9 @@ hls::stream<ap_axi_fp<32, 2, 5, 6 > > (&outStream))
 							// input_type_conversion : (aesl_tmp_0[i_0].keep).to_string(2).c_str()
 							if (&(aesl_tmp_0[0].keep) != NULL) // check the null address if the c port is array or others
 							{
-								sc_lv<4> inStream_V_keep_V_tmp_mem;
+								sc_lv<8> inStream_V_keep_V_tmp_mem;
 								inStream_V_keep_V_tmp_mem = (aesl_tmp_0[i_0].keep).to_string(2).c_str();
-								inStream_V_keep_V_tvin_wrapc_buffer[hls_map_index].range(3, 0) = inStream_V_keep_V_tmp_mem.range(3, 0);
+								inStream_V_keep_V_tvin_wrapc_buffer[hls_map_index].range(7, 0) = inStream_V_keep_V_tmp_mem.range(7, 0);
                                  		       hls_map_index++;
 							}
 						}
@@ -1801,14 +2495,14 @@ hls::stream<ap_axi_fp<32, 2, 5, 6 > > (&outStream))
 		aesl_fh.write(AUTOTB_TVIN_inStream_V_strb_V, tvin_inStream_V_strb_V);
 		aesl_fh.write(WRAPC_STREAM_INGRESS_STATUS_inStream_V_strb_V, tvin_inStream_V_strb_V);
 
-		sc_bv<4>* inStream_V_strb_V_tvin_wrapc_buffer = new sc_bv<4>[aesl_tmp_1 - aesl_tmp_2];
+		sc_bv<8>* inStream_V_strb_V_tvin_wrapc_buffer = new sc_bv<8>[aesl_tmp_1 - aesl_tmp_2];
 
 		// RTL Name: inStream_V_strb_V
 		{
-			// bitslice(3, 0)
+			// bitslice(7, 0)
 			{
 				int hls_map_index = 0;
-				// celement: inStream.V.strb.V(3, 0)
+				// celement: inStream.V.strb.V(7, 0)
 				{
 					// carray: (0) => (aesl_tmp_1 - aesl_tmp_2 - 1) @ (1)
 					for (int i_0 = 0; i_0 <= aesl_tmp_1 - aesl_tmp_2 - 1; i_0 += 1)
@@ -1824,9 +2518,9 @@ hls::stream<ap_axi_fp<32, 2, 5, 6 > > (&outStream))
 							// input_type_conversion : (aesl_tmp_0[i_0].strb).to_string(2).c_str()
 							if (&(aesl_tmp_0[0].strb) != NULL) // check the null address if the c port is array or others
 							{
-								sc_lv<4> inStream_V_strb_V_tmp_mem;
+								sc_lv<8> inStream_V_strb_V_tmp_mem;
 								inStream_V_strb_V_tmp_mem = (aesl_tmp_0[i_0].strb).to_string(2).c_str();
-								inStream_V_strb_V_tvin_wrapc_buffer[hls_map_index].range(3, 0) = inStream_V_strb_V_tmp_mem.range(3, 0);
+								inStream_V_strb_V_tvin_wrapc_buffer[hls_map_index].range(7, 0) = inStream_V_strb_V_tmp_mem.range(7, 0);
                                  		       hls_map_index++;
 							}
 						}
@@ -2210,7 +2904,7 @@ hls::stream<ap_axi_fp<32, 2, 5, 6 > > (&outStream))
 		sprintf(tvout_outStream_V_data, "[[transaction]] %d\n", AESL_transaction);
 		aesl_fh.write(AUTOTB_TVOUT_outStream_V_data, tvout_outStream_V_data);
 
-		sc_bv<32>* outStream_V_data_tvout_wrapc_buffer = new sc_bv<32>[aesl_tmp_4 - aesl_tmp_5];
+		sc_bv<64>* outStream_V_data_tvout_wrapc_buffer = new sc_bv<64>[aesl_tmp_4 - aesl_tmp_5];
 
 		// RTL Name: outStream_V_data
 		{
@@ -2270,6 +2964,62 @@ hls::stream<ap_axi_fp<32, 2, 5, 6 > > (&outStream))
 					}
 				}
 			}
+			// bitslice(47, 32)
+			{
+				int hls_map_index = 0;
+				// celement: outStream.V.data.sub_data_2.V(15, 0)
+				{
+					// carray: (aesl_tmp_5) => (aesl_tmp_4 - 1) @ (1)
+					for (int i_0 = aesl_tmp_5; i_0 <= aesl_tmp_4 - 1; i_0 += 1)
+					{
+						// carray: (0) => (0) @ (1)
+						for (int i_1 = 0; i_1 <= 0; i_1 += 1)
+						{
+							// sub                   : i_0 i_1
+							// ori_name              : aesl_tmp_3[i_0].data.sub_data_2
+							// sub_1st_elem          : 0 0
+							// ori_name_1st_elem     : aesl_tmp_3[0].data.sub_data_2
+							// regulate_c_name       : outStream_V_data_sub_data_2_V
+							// input_type_conversion : (aesl_tmp_3[i_0].data.sub_data_2).range().to_string(SC_BIN).c_str()
+							if (&(aesl_tmp_3[0].data.sub_data_2) != NULL) // check the null address if the c port is array or others
+							{
+								sc_lv<16> outStream_V_data_sub_data_2_V_tmp_mem;
+								outStream_V_data_sub_data_2_V_tmp_mem = (aesl_tmp_3[i_0].data.sub_data_2).range().to_string(SC_BIN).c_str();
+								outStream_V_data_tvout_wrapc_buffer[hls_map_index].range(47, 32) = outStream_V_data_sub_data_2_V_tmp_mem.range(15, 0);
+                                 		       hls_map_index++;
+							}
+						}
+					}
+				}
+			}
+			// bitslice(63, 48)
+			{
+				int hls_map_index = 0;
+				// celement: outStream.V.data.sub_data_3.V(15, 0)
+				{
+					// carray: (aesl_tmp_5) => (aesl_tmp_4 - 1) @ (1)
+					for (int i_0 = aesl_tmp_5; i_0 <= aesl_tmp_4 - 1; i_0 += 1)
+					{
+						// carray: (0) => (0) @ (1)
+						for (int i_1 = 0; i_1 <= 0; i_1 += 1)
+						{
+							// sub                   : i_0 i_1
+							// ori_name              : aesl_tmp_3[i_0].data.sub_data_3
+							// sub_1st_elem          : 0 0
+							// ori_name_1st_elem     : aesl_tmp_3[0].data.sub_data_3
+							// regulate_c_name       : outStream_V_data_sub_data_3_V
+							// input_type_conversion : (aesl_tmp_3[i_0].data.sub_data_3).range().to_string(SC_BIN).c_str()
+							if (&(aesl_tmp_3[0].data.sub_data_3) != NULL) // check the null address if the c port is array or others
+							{
+								sc_lv<16> outStream_V_data_sub_data_3_V_tmp_mem;
+								outStream_V_data_sub_data_3_V_tmp_mem = (aesl_tmp_3[i_0].data.sub_data_3).range().to_string(SC_BIN).c_str();
+								outStream_V_data_tvout_wrapc_buffer[hls_map_index].range(63, 48) = outStream_V_data_sub_data_3_V_tmp_mem.range(15, 0);
+                                 		       hls_map_index++;
+							}
+						}
+					}
+				}
+			}
 		}
 
 		// dump tv to file
@@ -2298,14 +3048,14 @@ hls::stream<ap_axi_fp<32, 2, 5, 6 > > (&outStream))
 		sprintf(tvout_outStream_V_keep_V, "[[transaction]] %d\n", AESL_transaction);
 		aesl_fh.write(AUTOTB_TVOUT_outStream_V_keep_V, tvout_outStream_V_keep_V);
 
-		sc_bv<4>* outStream_V_keep_V_tvout_wrapc_buffer = new sc_bv<4>[aesl_tmp_4 - aesl_tmp_5];
+		sc_bv<8>* outStream_V_keep_V_tvout_wrapc_buffer = new sc_bv<8>[aesl_tmp_4 - aesl_tmp_5];
 
 		// RTL Name: outStream_V_keep_V
 		{
-			// bitslice(3, 0)
+			// bitslice(7, 0)
 			{
 				int hls_map_index = 0;
-				// celement: outStream.V.keep.V(3, 0)
+				// celement: outStream.V.keep.V(7, 0)
 				{
 					// carray: (aesl_tmp_5) => (aesl_tmp_4 - 1) @ (1)
 					for (int i_0 = aesl_tmp_5; i_0 <= aesl_tmp_4 - 1; i_0 += 1)
@@ -2321,9 +3071,9 @@ hls::stream<ap_axi_fp<32, 2, 5, 6 > > (&outStream))
 							// input_type_conversion : (aesl_tmp_3[i_0].keep).to_string(2).c_str()
 							if (&(aesl_tmp_3[0].keep) != NULL) // check the null address if the c port is array or others
 							{
-								sc_lv<4> outStream_V_keep_V_tmp_mem;
+								sc_lv<8> outStream_V_keep_V_tmp_mem;
 								outStream_V_keep_V_tmp_mem = (aesl_tmp_3[i_0].keep).to_string(2).c_str();
-								outStream_V_keep_V_tvout_wrapc_buffer[hls_map_index].range(3, 0) = outStream_V_keep_V_tmp_mem.range(3, 0);
+								outStream_V_keep_V_tvout_wrapc_buffer[hls_map_index].range(7, 0) = outStream_V_keep_V_tmp_mem.range(7, 0);
                                  		       hls_map_index++;
 							}
 						}
@@ -2358,14 +3108,14 @@ hls::stream<ap_axi_fp<32, 2, 5, 6 > > (&outStream))
 		sprintf(tvout_outStream_V_strb_V, "[[transaction]] %d\n", AESL_transaction);
 		aesl_fh.write(AUTOTB_TVOUT_outStream_V_strb_V, tvout_outStream_V_strb_V);
 
-		sc_bv<4>* outStream_V_strb_V_tvout_wrapc_buffer = new sc_bv<4>[aesl_tmp_4 - aesl_tmp_5];
+		sc_bv<8>* outStream_V_strb_V_tvout_wrapc_buffer = new sc_bv<8>[aesl_tmp_4 - aesl_tmp_5];
 
 		// RTL Name: outStream_V_strb_V
 		{
-			// bitslice(3, 0)
+			// bitslice(7, 0)
 			{
 				int hls_map_index = 0;
-				// celement: outStream.V.strb.V(3, 0)
+				// celement: outStream.V.strb.V(7, 0)
 				{
 					// carray: (aesl_tmp_5) => (aesl_tmp_4 - 1) @ (1)
 					for (int i_0 = aesl_tmp_5; i_0 <= aesl_tmp_4 - 1; i_0 += 1)
@@ -2381,9 +3131,9 @@ hls::stream<ap_axi_fp<32, 2, 5, 6 > > (&outStream))
 							// input_type_conversion : (aesl_tmp_3[i_0].strb).to_string(2).c_str()
 							if (&(aesl_tmp_3[0].strb) != NULL) // check the null address if the c port is array or others
 							{
-								sc_lv<4> outStream_V_strb_V_tmp_mem;
+								sc_lv<8> outStream_V_strb_V_tmp_mem;
 								outStream_V_strb_V_tmp_mem = (aesl_tmp_3[i_0].strb).to_string(2).c_str();
-								outStream_V_strb_V_tvout_wrapc_buffer[hls_map_index].range(3, 0) = outStream_V_strb_V_tmp_mem.range(3, 0);
+								outStream_V_strb_V_tvout_wrapc_buffer[hls_map_index].range(7, 0) = outStream_V_strb_V_tmp_mem.range(7, 0);
                                  		       hls_map_index++;
 							}
 						}
@@ -2710,6 +3460,26 @@ hls::stream<ap_axi_fp<32, 2, 5, 6 > > (&outStream))
 		delete [] tvout_outStream_V_dest_V;
 		delete [] tvin_outStream_V_dest_V;
 		delete [] wrapc_stream_size_out_outStream_V_dest_V;
+		// release memory allocation: "output_ch_V"
+		delete [] tvin_output_ch_V;
+		// release memory allocation: "input_ch_V"
+		delete [] tvin_input_ch_V;
+		// release memory allocation: "fold_output_ch_V"
+		delete [] tvin_fold_output_ch_V;
+		// release memory allocation: "fold_input_ch_V"
+		delete [] tvin_fold_input_ch_V;
+		// release memory allocation: "kernel_dim_V"
+		delete [] tvin_kernel_dim_V;
+		// release memory allocation: "input_h_V"
+		delete [] tvin_input_h_V;
+		// release memory allocation: "input_w_V"
+		delete [] tvin_input_w_V;
+		// release memory allocation: "real_input_h_V"
+		delete [] tvin_real_input_h_V;
+		// release memory allocation: "leaky_V"
+		delete [] tvin_leaky_V;
+		// release memory allocation: "fold_win_area_V"
+		delete [] tvin_fold_win_area_V;
 
 		AESL_transaction++;
 

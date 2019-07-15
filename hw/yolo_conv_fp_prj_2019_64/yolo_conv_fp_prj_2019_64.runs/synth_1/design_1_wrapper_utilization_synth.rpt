@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.1 (lin64) Build 2552052 Fri May 24 14:47:09 MDT 2019
-| Date         : Sun Jun 30 20:06:50 2019
+| Date         : Mon Jul 15 14:46:01 2019
 | Host         : Lenovo-XiaoXin-CHAO7000 running 64-bit Ubuntu 16.04.6 LTS
 | Command      : report_utilization -file design_1_wrapper_utilization_synth.rpt -pb design_1_wrapper_utilization_synth.pb
 | Design       : design_1_wrapper
@@ -175,13 +175,13 @@ Table of Contents
 +---------------------------------+------+
 |             Ref Name            | Used |
 +---------------------------------+------+
-| design_1_yolo_conv_top_0_0      |    1 |
-| design_1_xbar_0                 |    1 |
-| design_1_rst_ps7_0_100M_0       |    1 |
+| design_1_yolo_conv_top_0_7      |    1 |
+| design_1_xbar_7                 |    1 |
+| design_1_rst_ps7_0_100M_7       |    1 |
 | design_1_processing_system7_0_0 |    1 |
-| design_1_axi_smc_0              |    1 |
+| design_1_axi_smc_7              |    1 |
 | design_1_axi_dma_0_0            |    1 |
-| design_1_auto_pc_0              |    1 |
+| design_1_auto_pc_7              |    1 |
 +---------------------------------+------+
 
 

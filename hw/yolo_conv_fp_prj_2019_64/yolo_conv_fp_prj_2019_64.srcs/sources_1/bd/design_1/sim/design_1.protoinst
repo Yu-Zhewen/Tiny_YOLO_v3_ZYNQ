@@ -703,28 +703,28 @@
 						"TVALID": { "actual": "outStream_TVALID"}
 					}
 				},
-				"/yolo_conv_top_0/s_axi_AXILiteS": {
+				"/yolo_conv_top_0/s_axi_CTRL_BUS": {
 					"interface": "xilinx.com:interface:aximm:1.0",
 					"ports": {
 						"ACLK": { "actual": "ap_clk"},
-						"ARADDR": { "actual": "s_axi_AXILiteS_ARADDR"},
+						"ARADDR": { "actual": "s_axi_CTRL_BUS_ARADDR"},
 						"ARESETN": { "actual": "ap_rst_n"},
-						"ARREADY": { "actual": "s_axi_AXILiteS_ARREADY"},
-						"ARVALID": { "actual": "s_axi_AXILiteS_ARVALID"},
-						"AWADDR": { "actual": "s_axi_AXILiteS_AWADDR"},
-						"AWREADY": { "actual": "s_axi_AXILiteS_AWREADY"},
-						"AWVALID": { "actual": "s_axi_AXILiteS_AWVALID"},
-						"BREADY": { "actual": "s_axi_AXILiteS_BREADY"},
-						"BRESP": { "actual": "s_axi_AXILiteS_BRESP"},
-						"BVALID": { "actual": "s_axi_AXILiteS_BVALID"},
-						"RDATA": { "actual": "s_axi_AXILiteS_RDATA"},
-						"RREADY": { "actual": "s_axi_AXILiteS_RREADY"},
-						"RRESP": { "actual": "s_axi_AXILiteS_RRESP"},
-						"RVALID": { "actual": "s_axi_AXILiteS_RVALID"},
-						"WDATA": { "actual": "s_axi_AXILiteS_WDATA"},
-						"WREADY": { "actual": "s_axi_AXILiteS_WREADY"},
-						"WSTRB": { "actual": "s_axi_AXILiteS_WSTRB"},
-						"WVALID": { "actual": "s_axi_AXILiteS_WVALID"}
+						"ARREADY": { "actual": "s_axi_CTRL_BUS_ARREADY"},
+						"ARVALID": { "actual": "s_axi_CTRL_BUS_ARVALID"},
+						"AWADDR": { "actual": "s_axi_CTRL_BUS_AWADDR"},
+						"AWREADY": { "actual": "s_axi_CTRL_BUS_AWREADY"},
+						"AWVALID": { "actual": "s_axi_CTRL_BUS_AWVALID"},
+						"BREADY": { "actual": "s_axi_CTRL_BUS_BREADY"},
+						"BRESP": { "actual": "s_axi_CTRL_BUS_BRESP"},
+						"BVALID": { "actual": "s_axi_CTRL_BUS_BVALID"},
+						"RDATA": { "actual": "s_axi_CTRL_BUS_RDATA"},
+						"RREADY": { "actual": "s_axi_CTRL_BUS_RREADY"},
+						"RRESP": { "actual": "s_axi_CTRL_BUS_RRESP"},
+						"RVALID": { "actual": "s_axi_CTRL_BUS_RVALID"},
+						"WDATA": { "actual": "s_axi_CTRL_BUS_WDATA"},
+						"WREADY": { "actual": "s_axi_CTRL_BUS_WREADY"},
+						"WSTRB": { "actual": "s_axi_CTRL_BUS_WSTRB"},
+						"WVALID": { "actual": "s_axi_CTRL_BUS_WVALID"}
 					}
 				}
 			}
