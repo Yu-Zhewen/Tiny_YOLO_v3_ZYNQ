@@ -36,21 +36,6 @@ int main()
 	layer_output_sdk = fopen("layer_output_sdk.dat","r");
 	error_log = fopen("error.log","w");
 
-//	for(int i=0;i<OUTPUT_CHANNEL*INPUT_CHANNEL*KERNEL_DIM*KERNEL_DIM/2;i++)
-//	{
-//		double_fp_side_channel curr_input;
-//
-//		fp_data_type *weight_p = (fp_data_type *)&kernel_weight_fp_bits[0];
-//		curr_input.data.sub_data_0 = weight_p[2*i];
-//		curr_input.data.sub_data_1 = weight_p[2*i+1];
-//		curr_input.keep = 1;
-//		curr_input.strb = 1;
-//		curr_input.user = 1;
-//		curr_input.id   = 0;
-//		curr_input.dest = 0;
-//
-//		inputStream << curr_input;
-//	}
 	int k = 0;
 
 	for(int m=0;m<OUTPUT_CHANNEL;m++)
@@ -157,7 +142,7 @@ int main()
 
 
     yolo_conv_top(inputStream,outputStream,
-    		      OUTPUT_CHANNEL,INPUT_CHANNEL,(OUTPUT_CHANNEL+3)/4,(INPUT_CHANNEL+3)/4,KERNEL_DIM,
+    		      OUTPUT_CHANNEL,INPUT_CHANNEL,(OUTPUT_CHANNEL+3)/4,(INPUT_CHANNEL+3)/4,//KERNEL_DIM,
 				  INPUT_HEIGHT,INPUT_WIDTH,REAL_INPUT_HEIGHT,
 				  LEAKY,
 				  (KERNEL_DIM*KERNEL_DIM+3)/4);
@@ -176,7 +161,7 @@ int main()
 				output_data[4*(pix_idx*(OUTPUT_CHANNEL)/4+ch_idx)+3] = curr_output.data.sub_data_3;
 
 			if(curr_output.last==1)
-				printf("%d\n",pix_idx*(MAX_KERNEL_NUM)/4+ch_idx);
+				printf("%d\n",pix_idx*(OUTPUT_CHANNEL)/4+ch_idx);
 		}
 	}
 
@@ -200,9 +185,9 @@ int main()
 	fclose(layer_output_sdk);
 	fclose(error_log);
 
-//    if (flag)
-//            return 1;
-//    else
+    if (flag)
+            return 1;
+    else
             return 0;
 
 

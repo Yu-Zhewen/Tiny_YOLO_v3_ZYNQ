@@ -109,16 +109,16 @@ reg    ap_idle_pp0;
 wire    ap_CS_fsm_pp0_stage2;
 wire    ap_block_state3_pp0_stage2_iter0;
 wire    ap_block_pp0_stage2_11001;
-wire   [12:0] mul_ln265_fu_139_p2;
-reg   [12:0] mul_ln265_reg_252;
+wire   [12:0] mul_ln271_fu_139_p2;
+reg   [12:0] mul_ln271_reg_252;
 reg    ap_block_state1_pp0_stage0_iter0;
 wire    ap_block_state4_pp0_stage0_iter1;
 reg    ap_block_pp0_stage0_11001;
 wire    ap_CS_fsm_pp0_stage1;
 wire    ap_block_state2_pp0_stage1_iter0;
 wire    ap_block_pp0_stage1_11001;
-wire   [12:0] add_ln265_2_fu_193_p2;
-reg   [12:0] add_ln265_2_reg_289;
+wire   [12:0] add_ln271_2_fu_193_p2;
+reg   [12:0] add_ln271_2_reg_289;
 reg   [15:0] line_buff_val_0_V_l_reg_294;
 reg   [15:0] line_buff_val_0_V_l_1_reg_299;
 reg   [15:0] line_buff_val_1_V_l_reg_319;
@@ -129,26 +129,26 @@ reg    ap_enable_reg_pp0_iter0_reg;
 reg    ap_block_pp0_stage0_subdone;
 reg    ap_block_pp0_stage2_subdone;
 reg   [8:0] ap_port_reg_conv_count_V;
-wire  signed [63:0] sext_ln265_fu_154_p1;
+wire  signed [63:0] sext_ln271_fu_154_p1;
 wire    ap_block_pp0_stage1;
-wire  signed [63:0] sext_ln265_1_fu_176_p1;
-wire  signed [63:0] sext_ln265_2_fu_198_p1;
+wire  signed [63:0] sext_ln271_1_fu_176_p1;
+wire  signed [63:0] sext_ln271_2_fu_198_p1;
 wire    ap_block_pp0_stage2;
-wire   [3:0] mul_ln265_fu_139_p0;
-wire   [12:0] zext_ln265_1_fu_145_p1;
-wire   [12:0] add_ln265_fu_149_p2;
+wire   [3:0] mul_ln271_fu_139_p0;
+wire   [12:0] zext_ln271_1_fu_145_p1;
+wire   [12:0] add_ln271_fu_149_p2;
 wire   [8:0] add_ln1353_fu_161_p2;
-wire   [12:0] zext_ln265_2_fu_167_p1;
-wire   [12:0] add_ln265_1_fu_171_p2;
+wire   [12:0] zext_ln271_2_fu_167_p1;
+wire   [12:0] add_ln271_1_fu_171_p2;
 wire   [8:0] add_ln1353_1_fu_183_p2;
-wire   [12:0] zext_ln265_3_fu_189_p1;
+wire   [12:0] zext_ln271_3_fu_189_p1;
 reg   [2:0] ap_NS_fsm;
 reg    ap_idle_pp0_0to0;
 reg    ap_reset_idle_pp0;
 reg    ap_idle_pp0_1to1;
 reg    ap_block_pp0_stage1_subdone;
 wire    ap_enable_pp0;
-wire   [12:0] mul_ln265_fu_139_p00;
+wire   [12:0] mul_ln271_fu_139_p00;
 
 // power-on initialization
 initial begin
@@ -189,7 +189,7 @@ end
 
 always @ (posedge ap_clk) begin
     if (((1'b1 == ap_ce) & (1'b1 == ap_CS_fsm_pp0_stage1) & (1'b0 == ap_block_pp0_stage1_11001))) begin
-        add_ln265_2_reg_289 <= add_ln265_2_fu_193_p2;
+        add_ln271_2_reg_289 <= add_ln271_2_fu_193_p2;
     end
 end
 
@@ -212,7 +212,7 @@ end
 
 always @ (posedge ap_clk) begin
     if (((1'b0 == ap_block_pp0_stage0_11001) & (1'b1 == ap_ce) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
-        mul_ln265_reg_252[12 : 1] <= mul_ln265_fu_139_p2[12 : 1];
+        mul_ln271_reg_252[12 : 1] <= mul_ln271_fu_139_p2[12 : 1];
     end
 end
 
@@ -283,9 +283,9 @@ end
 always @ (*) begin
     if ((ap_enable_reg_pp0_iter0 == 1'b1)) begin
         if (((1'b1 == ap_CS_fsm_pp0_stage2) & (1'b0 == ap_block_pp0_stage2))) begin
-            line_buff_val_0_V_address0 = sext_ln265_2_fu_198_p1;
+            line_buff_val_0_V_address0 = sext_ln271_2_fu_198_p1;
         end else if (((1'b1 == ap_CS_fsm_pp0_stage1) & (1'b0 == ap_block_pp0_stage1))) begin
-            line_buff_val_0_V_address0 = sext_ln265_fu_154_p1;
+            line_buff_val_0_V_address0 = sext_ln271_fu_154_p1;
         end else begin
             line_buff_val_0_V_address0 = 'bx;
         end
@@ -313,9 +313,9 @@ end
 always @ (*) begin
     if ((ap_enable_reg_pp0_iter0 == 1'b1)) begin
         if (((1'b1 == ap_CS_fsm_pp0_stage2) & (1'b0 == ap_block_pp0_stage2))) begin
-            line_buff_val_1_V_address0 = sext_ln265_2_fu_198_p1;
+            line_buff_val_1_V_address0 = sext_ln271_2_fu_198_p1;
         end else if (((1'b1 == ap_CS_fsm_pp0_stage1) & (1'b0 == ap_block_pp0_stage1))) begin
-            line_buff_val_1_V_address0 = sext_ln265_fu_154_p1;
+            line_buff_val_1_V_address0 = sext_ln271_fu_154_p1;
         end else begin
             line_buff_val_1_V_address0 = 'bx;
         end
@@ -343,9 +343,9 @@ end
 always @ (*) begin
     if ((ap_enable_reg_pp0_iter0 == 1'b1)) begin
         if (((1'b1 == ap_CS_fsm_pp0_stage2) & (1'b0 == ap_block_pp0_stage2))) begin
-            line_buff_val_2_V_address0 = sext_ln265_2_fu_198_p1;
+            line_buff_val_2_V_address0 = sext_ln271_2_fu_198_p1;
         end else if (((1'b1 == ap_CS_fsm_pp0_stage1) & (1'b0 == ap_block_pp0_stage1))) begin
-            line_buff_val_2_V_address0 = sext_ln265_fu_154_p1;
+            line_buff_val_2_V_address0 = sext_ln271_fu_154_p1;
         end else begin
             line_buff_val_2_V_address0 = 'bx;
         end
@@ -405,11 +405,11 @@ assign add_ln1353_1_fu_183_p2 = (ap_port_reg_conv_count_V + 9'd2);
 
 assign add_ln1353_fu_161_p2 = (ap_port_reg_conv_count_V + 9'd1);
 
-assign add_ln265_1_fu_171_p2 = (mul_ln265_reg_252 + zext_ln265_2_fu_167_p1);
+assign add_ln271_1_fu_171_p2 = (mul_ln271_reg_252 + zext_ln271_2_fu_167_p1);
 
-assign add_ln265_2_fu_193_p2 = (mul_ln265_reg_252 + zext_ln265_3_fu_189_p1);
+assign add_ln271_2_fu_193_p2 = (mul_ln271_reg_252 + zext_ln271_3_fu_189_p1);
 
-assign add_ln265_fu_149_p2 = (mul_ln265_reg_252 + zext_ln265_1_fu_145_p1);
+assign add_ln271_fu_149_p2 = (mul_ln271_reg_252 + zext_ln271_1_fu_145_p1);
 
 assign ap_CS_fsm_pp0_stage0 = ap_CS_fsm[32'd0];
 
@@ -473,32 +473,32 @@ assign ap_return_7 = line_buff_val_2_V_l_1_reg_334;
 
 assign ap_return_8 = line_buff_val_2_V_q0;
 
-assign line_buff_val_0_V_address1 = sext_ln265_1_fu_176_p1;
+assign line_buff_val_0_V_address1 = sext_ln271_1_fu_176_p1;
 
-assign line_buff_val_1_V_address1 = sext_ln265_1_fu_176_p1;
+assign line_buff_val_1_V_address1 = sext_ln271_1_fu_176_p1;
 
-assign line_buff_val_2_V_address1 = sext_ln265_1_fu_176_p1;
+assign line_buff_val_2_V_address1 = sext_ln271_1_fu_176_p1;
 
-assign mul_ln265_fu_139_p0 = mul_ln265_fu_139_p00;
+assign mul_ln271_fu_139_p0 = mul_ln271_fu_139_p00;
 
-assign mul_ln265_fu_139_p00 = line_buff_val_V_offset;
+assign mul_ln271_fu_139_p00 = line_buff_val_V_offset;
 
-assign mul_ln265_fu_139_p2 = (mul_ln265_fu_139_p0 * $signed('h1A2));
+assign mul_ln271_fu_139_p2 = (mul_ln271_fu_139_p0 * $signed('h1A2));
 
-assign sext_ln265_1_fu_176_p1 = $signed(add_ln265_1_fu_171_p2);
+assign sext_ln271_1_fu_176_p1 = $signed(add_ln271_1_fu_171_p2);
 
-assign sext_ln265_2_fu_198_p1 = $signed(add_ln265_2_reg_289);
+assign sext_ln271_2_fu_198_p1 = $signed(add_ln271_2_reg_289);
 
-assign sext_ln265_fu_154_p1 = $signed(add_ln265_fu_149_p2);
+assign sext_ln271_fu_154_p1 = $signed(add_ln271_fu_149_p2);
 
-assign zext_ln265_1_fu_145_p1 = ap_port_reg_conv_count_V;
+assign zext_ln271_1_fu_145_p1 = ap_port_reg_conv_count_V;
 
-assign zext_ln265_2_fu_167_p1 = add_ln1353_fu_161_p2;
+assign zext_ln271_2_fu_167_p1 = add_ln1353_fu_161_p2;
 
-assign zext_ln265_3_fu_189_p1 = add_ln1353_1_fu_183_p2;
+assign zext_ln271_3_fu_189_p1 = add_ln1353_1_fu_183_p2;
 
 always @ (posedge ap_clk) begin
-    mul_ln265_reg_252[0] <= 1'b0;
+    mul_ln271_reg_252[0] <= 1'b0;
 end
 
 endmodule //slide_window

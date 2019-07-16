@@ -7,5 +7,6 @@
 #define MAX_KERNEL_NUM 32
 #define MAX_INPUT_CH 32
 #define MAX_LINE_BUFF_WIDTH (416+2)
+#define MAX_KERNEL_DIM 3
 
 #endif

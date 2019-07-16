@@ -13,8 +13,8 @@ preplace inst ps7_0_axi_periph -pg 1 -lvl 2 -x 560 -y 140 -defaultsOSRD
 preplace netloc processing_system7_0_FCLK_CLK0 1 0 7 20 290 390 290 720 180 1100 30 1490 30 1780 570 2250
 preplace netloc processing_system7_0_FCLK_RESET0_N 1 0 7 20 580 NJ 580 NJ 580 NJ 580 NJ 580 NJ 580 2240
 preplace netloc rst_ps7_0_100M_peripheral_aresetn 1 1 4 400 300 730 270 1120 270 1480J
-preplace netloc processing_system7_0_DDR 1 6 1 NJ 350
 preplace netloc processing_system7_0_FIXED_IO 1 6 1 NJ 370
+preplace netloc processing_system7_0_DDR 1 6 1 NJ 350
 preplace netloc axi_dma_0_M_AXI_MM2S 1 4 1 N 90
 preplace netloc axi_smc_M00_AXI 1 5 1 1770 120n
 preplace netloc processing_system7_0_M_AXI_GP0 1 1 6 410 280 NJ 280 NJ 280 NJ 280 NJ 280 2250
@@ -28,6 +28,6 @@ pagesize -pg 1 -db -bbox -sgen 0 0 2390 590
 "
 }
 {
-   "da_axi4_cnt":"24",
+   "da_axi4_cnt":"28",
    "da_ps7_cnt":"1"
 }

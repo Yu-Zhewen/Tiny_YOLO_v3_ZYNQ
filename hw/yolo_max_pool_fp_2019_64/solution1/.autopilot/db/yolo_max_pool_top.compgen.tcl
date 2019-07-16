@@ -1,49 +1,43 @@
 # This script segment is generated automatically by AutoPilot
 
 set id 18
-set name yolo_max_pool_top_mux_42_16_1_1
-set corename simcore_mux
-set op mux
+set name yolo_max_pool_top_mul_mul_17ns_9ns_26_1_1
+set corename simcore_mul
+set op mul
 set stage_num 1
 set max_latency -1
 set registered_input 1
-set din0_width 16
-set din0_signed 0
-set din1_width 16
-set din1_signed 0
-set din2_width 16
-set din2_signed 0
-set din3_width 16
-set din3_signed 0
-set din4_width 2
-set din4_signed 0
-set dout_width 16
+set in0_width 17
+set in0_signed 0
+set in1_width 9
+set in1_signed 0
+set out_width 26
+set exp i0*i1
+set arg_lists {i0 {17 0 +} i1 {9 0 +} p {26 0 +} acc {0} }
+set TrueReset 0
 if {${::AESL::PGuard_simmodel_gen}} {
-if {[info proc ap_gen_simcore_mux] == "ap_gen_simcore_mux"} {
-eval "ap_gen_simcore_mux { \
+if {[info proc ap_gen_simcore_mul] == "ap_gen_simcore_mul"} {
+eval "ap_gen_simcore_mul { \
     id ${id} \
     name ${name} \
     corename ${corename} \
     op ${op} \
     reset_level 1 \
     sync_rst true \
+    true_reset ${TrueReset} \
     stage_num ${stage_num} \
     max_latency ${max_latency} \
     registered_input ${registered_input} \
-    din0_width ${din0_width} \
-    din0_signed ${din0_signed} \
-    din1_width ${din1_width} \
-    din1_signed ${din1_signed} \
-    din2_width ${din2_width} \
-    din2_signed ${din2_signed} \
-    din3_width ${din3_width} \
-    din3_signed ${din3_signed} \
-    din4_width ${din4_width} \
-    din4_signed ${din4_signed} \
-    dout_width ${dout_width} \
+    in0_width ${in0_width} \
+    in0_signed ${in0_signed} \
+    in1_width ${in1_width} \
+    in1_signed ${in1_signed} \
+    out_width ${out_width} \
+    exp ${exp} \
+    arg_lists {${arg_lists}} \
 }"
 } else {
-puts "@W \[IMPL-100\] Cannot find ap_gen_simcore_mux, check your AutoPilot builtin lib"
+puts "@W \[IMPL-100\] Cannot find ap_gen_simcore_mul, check your AutoPilot builtin lib"
 }
 }
 
@@ -53,47 +47,44 @@ if {${::AESL::PGuard_rtl_comp_handler}} {
 }
 
 
-set op mux
-set corename MuxnS
+set op mul
+set corename DSP48
 if {${::AESL::PGuard_autocg_gen} && ${::AESL::PGuard_autocg_ipmgen}} {
-if {[info proc ::AESL_LIB_VIRTEX::xil_gen_pipemux] == "::AESL_LIB_VIRTEX::xil_gen_pipemux"} {
-eval "::AESL_LIB_VIRTEX::xil_gen_pipemux { \
+if {[info proc ::AESL_LIB_VIRTEX::xil_gen_dsp48] == "::AESL_LIB_VIRTEX::xil_gen_dsp48"} {
+eval "::AESL_LIB_VIRTEX::xil_gen_dsp48 { \
     id ${id} \
     name ${name} \
     corename ${corename} \
     op ${op} \
     reset_level 1 \
     sync_rst true \
+    true_reset ${TrueReset} \
     stage_num ${stage_num} \
     max_latency ${max_latency} \
     registered_input ${registered_input} \
-    din0_width ${din0_width} \
-    din0_signed ${din0_signed} \
-    din1_width ${din1_width} \
-    din1_signed ${din1_signed} \
-    din2_width ${din2_width} \
-    din2_signed ${din2_signed} \
-    din3_width ${din3_width} \
-    din3_signed ${din3_signed} \
-    din4_width ${din4_width} \
-    din4_signed ${din4_signed} \
-    dout_width ${dout_width} \
+    in0_width ${in0_width} \
+    in0_signed ${in0_signed} \
+    in1_width ${in1_width} \
+    in1_signed ${in1_signed} \
+    out_width ${out_width} \
+    exp ${exp} \
+    arg_lists {${arg_lists}} \
 }"
 } else {
-puts "@W \[IMPL-101\] Cannot find ::AESL_LIB_VIRTEX::xil_gen_pipemux, check your platform lib"
+puts "@W \[IMPL-101\] Cannot find ::AESL_LIB_VIRTEX::xil_gen_dsp48, check your platform lib"
 }
 }
 
 
 # Memory (RAM/ROM)  definition:
-set ID 38
+set ID 20
 set hasByteEnable 0
 set MemName yolo_max_pool_top_line_buff_group_0_va
 set CoreName ap_simcore_mem
 set PortList { 2 1 }
 set DataWd 16
-set AddrRange 1672
-set AddrWd 11
+set AddrRange 3344
+set AddrWd 12
 set impl_style block
 set TrueReset 0
 set HasInitializer 0
@@ -178,40 +169,88 @@ if {${::AESL::PGuard_autoexp_gen}} {
 }
 
 set axilite_register_dict [dict create]
-set port_AXILiteS {
+set port_CTRL_BUS {
 ap_start { }
 ap_done { }
 ap_ready { }
 ap_idle { }
+output_h_V { 
+	dir I
+	width 9
+	depth 1
+	mode ap_none
+	offset 16
+	offset_end 23
 }
-dict set axilite_register_dict AXILiteS $port_AXILiteS
+output_w_V { 
+	dir I
+	width 9
+	depth 1
+	mode ap_none
+	offset 24
+	offset_end 31
+}
+input_h_V { 
+	dir I
+	width 9
+	depth 1
+	mode ap_none
+	offset 32
+	offset_end 39
+}
+input_w_V { 
+	dir I
+	width 9
+	depth 1
+	mode ap_none
+	offset 40
+	offset_end 47
+}
+input_fold_ch_V { 
+	dir I
+	width 4
+	depth 1
+	mode ap_none
+	offset 48
+	offset_end 55
+}
+stride_V { 
+	dir I
+	width 2
+	depth 1
+	mode ap_none
+	offset 56
+	offset_end 63
+}
+}
+dict set axilite_register_dict CTRL_BUS $port_CTRL_BUS
 
 
 # Native S_AXILite:
 if {${::AESL::PGuard_simmodel_gen}} {
 	if {[info proc ::AESL_LIB_XILADAPTER::s_axilite_gen] == "::AESL_LIB_XILADAPTER::s_axilite_gen"} {
 		eval "::AESL_LIB_XILADAPTER::s_axilite_gen { \
-			id 39 \
-			corename yolo_max_pool_top_AXILiteS_axilite \
-			name yolo_max_pool_top_AXILiteS_s_axi \
-			ports {$port_AXILiteS} \
+			id 21 \
+			corename yolo_max_pool_top_CTRL_BUS_axilite \
+			name yolo_max_pool_top_CTRL_BUS_s_axi \
+			ports {$port_CTRL_BUS} \
 			op interface \
 			is_flushable 0 \ 
 		} "
 	} else {
-		puts "@W \[IMPL-110\] Cannot find AXI Lite interface model in the library. Ignored generation of AXI Lite  interface for 'AXILiteS'"
+		puts "@W \[IMPL-110\] Cannot find AXI Lite interface model in the library. Ignored generation of AXI Lite  interface for 'CTRL_BUS'"
 	}
 }
 
 if {${::AESL::PGuard_rtl_comp_handler}} {
-	::AP::rtl_comp_handler yolo_max_pool_top_AXILiteS_s_axi
+	::AP::rtl_comp_handler yolo_max_pool_top_CTRL_BUS_s_axi
 }
 
 # Native AXIS:
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::native_axis_add] == "::AESL_LIB_XILADAPTER::native_axis_add"} {
 eval "::AESL_LIB_XILADAPTER::native_axis_add { \
-    id 40 \
+    id 22 \
     name inStream_V_data \
     reset_level 0 \
     sync_rst true \
@@ -230,7 +269,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::native_axis_add] == "::AESL_LIB_XILADAPTER::native_axis_add"} {
 eval "::AESL_LIB_XILADAPTER::native_axis_add { \
-    id 41 \
+    id 23 \
     name inStream_V_keep_V \
     reset_level 0 \
     sync_rst true \
@@ -249,7 +288,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::native_axis_add] == "::AESL_LIB_XILADAPTER::native_axis_add"} {
 eval "::AESL_LIB_XILADAPTER::native_axis_add { \
-    id 42 \
+    id 24 \
     name inStream_V_strb_V \
     reset_level 0 \
     sync_rst true \
@@ -268,7 +307,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::native_axis_add] == "::AESL_LIB_XILADAPTER::native_axis_add"} {
 eval "::AESL_LIB_XILADAPTER::native_axis_add { \
-    id 43 \
+    id 25 \
     name inStream_V_user_V \
     reset_level 0 \
     sync_rst true \
@@ -287,7 +326,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::native_axis_add] == "::AESL_LIB_XILADAPTER::native_axis_add"} {
 eval "::AESL_LIB_XILADAPTER::native_axis_add { \
-    id 44 \
+    id 26 \
     name inStream_V_last_V \
     reset_level 0 \
     sync_rst true \
@@ -306,7 +345,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::native_axis_add] == "::AESL_LIB_XILADAPTER::native_axis_add"} {
 eval "::AESL_LIB_XILADAPTER::native_axis_add { \
-    id 45 \
+    id 27 \
     name inStream_V_id_V \
     reset_level 0 \
     sync_rst true \
@@ -325,7 +364,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::native_axis_add] == "::AESL_LIB_XILADAPTER::native_axis_add"} {
 eval "::AESL_LIB_XILADAPTER::native_axis_add { \
-    id 46 \
+    id 28 \
     name inStream_V_dest_V \
     reset_level 0 \
     sync_rst true \
@@ -344,7 +383,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::native_axis_add] == "::AESL_LIB_XILADAPTER::native_axis_add"} {
 eval "::AESL_LIB_XILADAPTER::native_axis_add { \
-    id 47 \
+    id 29 \
     name outStream_V_data \
     reset_level 0 \
     sync_rst true \
@@ -363,7 +402,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::native_axis_add] == "::AESL_LIB_XILADAPTER::native_axis_add"} {
 eval "::AESL_LIB_XILADAPTER::native_axis_add { \
-    id 48 \
+    id 30 \
     name outStream_V_keep_V \
     reset_level 0 \
     sync_rst true \
@@ -382,7 +421,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::native_axis_add] == "::AESL_LIB_XILADAPTER::native_axis_add"} {
 eval "::AESL_LIB_XILADAPTER::native_axis_add { \
-    id 49 \
+    id 31 \
     name outStream_V_strb_V \
     reset_level 0 \
     sync_rst true \
@@ -401,7 +440,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::native_axis_add] == "::AESL_LIB_XILADAPTER::native_axis_add"} {
 eval "::AESL_LIB_XILADAPTER::native_axis_add { \
-    id 50 \
+    id 32 \
     name outStream_V_user_V \
     reset_level 0 \
     sync_rst true \
@@ -420,7 +459,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::native_axis_add] == "::AESL_LIB_XILADAPTER::native_axis_add"} {
 eval "::AESL_LIB_XILADAPTER::native_axis_add { \
-    id 51 \
+    id 33 \
     name outStream_V_last_V \
     reset_level 0 \
     sync_rst true \
@@ -439,7 +478,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::native_axis_add] == "::AESL_LIB_XILADAPTER::native_axis_add"} {
 eval "::AESL_LIB_XILADAPTER::native_axis_add { \
-    id 52 \
+    id 34 \
     name outStream_V_id_V \
     reset_level 0 \
     sync_rst true \
@@ -458,7 +497,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::native_axis_add] == "::AESL_LIB_XILADAPTER::native_axis_add"} {
 eval "::AESL_LIB_XILADAPTER::native_axis_add { \
-    id 53 \
+    id 35 \
     name outStream_V_dest_V \
     reset_level 0 \
     sync_rst true \

@@ -1,4 +1,4 @@
-<project xmlns="com.autoesl.autopilot.project" top="yolo_max_pool_top" name="yolo_max_pool_fp_2019_64">
+<project xmlns="com.autoesl.autopilot.project" name="yolo_max_pool_fp_2019_64" top="yolo_max_pool_top">
     <includePaths/>
     <libraryPaths/>
     <Simulation>

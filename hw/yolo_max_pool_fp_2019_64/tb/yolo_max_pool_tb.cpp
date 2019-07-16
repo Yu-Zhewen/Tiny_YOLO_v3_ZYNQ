@@ -2,6 +2,16 @@
 #include <math.h>
 #include "../src/yolo_max_pool.h"
 
+#define STRIDE 2//1
+#define PAD (KERNEL_DIM-1)
+#define POOL_PAD 0//1
+#define INPUT_CHANNEL 16//512
+#define INPUT_WIDTH (416+2*PAD)//13
+#define INPUT_HEIGHT (416+2*PAD)
+#define OUTPUT_CHANNEL INPUT_CHANNEL
+#define OUTPUT_WIDTH ((INPUT_WIDTH-PAD-KERNEL_DIM)/STRIDE+1)
+#define OUTPUT_HEIGHT ((INPUT_HEIGHT-PAD-KERNEL_DIM)/STRIDE+1)
+
 int main()
 {
 	yolo_quad_stream inputStream, outputStream;
@@ -47,7 +57,10 @@ int main()
 		inputStream << curr_input;
 	}
 
-    yolo_max_pool_top(inputStream,outputStream);
+    yolo_max_pool_top(inputStream,outputStream,
+    		          OUTPUT_HEIGHT+POOL_PAD,OUTPUT_WIDTH+POOL_PAD,
+					  INPUT_HEIGHT-2*PAD,INPUT_WIDTH-2*PAD,INPUT_CHANNEL/4,
+					  STRIDE);
 
 	for(int pix_idx=0;pix_idx<((OUTPUT_WIDTH*OUTPUT_HEIGHT)*OUTPUT_CHANNEL/4);pix_idx++)
 	{

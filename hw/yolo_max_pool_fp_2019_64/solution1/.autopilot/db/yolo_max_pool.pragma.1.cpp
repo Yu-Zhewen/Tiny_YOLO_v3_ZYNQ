@@ -35702,72 +35702,75 @@ _ssdm_op_SpecDataflowPipeline(-1, 0, "");
 # 7 "yolo_max_pool_fp_2019_64/src/yolo_max_pool.h" 2
 
 typedef hls::Window<2,2,fp_data_type> window_type;
-typedef hls::LineBuffer<2,(416 +2*(2 -1))+0,fp_data_type> line_buff_type;
+typedef hls::LineBuffer<2,418,fp_data_type> line_buff_type;
 
-void yolo_max_pool_top(yolo_quad_stream &inStream, yolo_quad_stream &outStream);
-void yolo_line_buffer(fp_data_type curr_data, line_buff_type *line_buff, int col_idx);
-window_type slide_window(int conv_count, line_buff_type *line_buff);
-fp_data_type window_max_pool(window_type *window);
+void yolo_max_pool_top(yolo_quad_stream &inStream, yolo_quad_stream &outStream,
+                 ap_uint<9> output_h, ap_uint<9> output_w,
+        ap_uint<9> input_h, ap_uint<9> input_w, ap_uint<(5 -2 +1)> input_fold_ch,
+        ap_uint<2> stride);
+void yolo_line_buffer(fp_data_type curr_data, line_buff_type *line_buff, ap_uint<9> col_idx);
+window_type slide_window(ap_uint<9> conv_count, line_buff_type *line_buff);
+fp_data_type window_max_pool(window_type window);
 void write_output(fp_data_type val_output_0, fp_data_type val_output_1, fp_data_type val_output_2, fp_data_type val_output_3, quad_fp_side_channel curr_input, yolo_quad_stream &out_stream, ap_uint<1> last);
 # 2 "yolo_max_pool_fp_2019_64/src/yolo_max_pool.cpp" 2
 
 
-void yolo_max_pool_top(yolo_quad_stream &inStream, yolo_quad_stream &outStream)
+void yolo_max_pool_top(yolo_quad_stream &inStream, yolo_quad_stream &outStream,
+                 ap_uint<9> output_h, ap_uint<9> output_w,
+        ap_uint<9> input_h, ap_uint<9> input_w, ap_uint<(5 -2 +1)> input_fold_ch,
+        ap_uint<2> stride)
 {
-_ssdm_op_SpecInterface(0, "s_axilite", 0, 0, "", 0, 0, "", "", "", 0, 0, 0, 0, "", "");
+_ssdm_op_SpecInterface(&stride, "s_axilite", 0, 0, "", 0, 0, "CTRL_BUS", "", "", 0, 0, 0, 0, "", "");
+_ssdm_op_SpecInterface(&input_fold_ch, "s_axilite", 0, 0, "", 0, 0, "CTRL_BUS", "", "", 0, 0, 0, 0, "", "");
+_ssdm_op_SpecInterface(&input_w, "s_axilite", 0, 0, "", 0, 0, "CTRL_BUS", "", "", 0, 0, 0, 0, "", "");
+_ssdm_op_SpecInterface(&input_h, "s_axilite", 0, 0, "", 0, 0, "CTRL_BUS", "", "", 0, 0, 0, 0, "", "");
+_ssdm_op_SpecInterface(&output_w, "s_axilite", 0, 0, "", 0, 0, "CTRL_BUS", "", "", 0, 0, 0, 0, "", "");
+_ssdm_op_SpecInterface(&output_h, "s_axilite", 0, 0, "", 0, 0, "CTRL_BUS", "", "", 0, 0, 0, 0, "", "");
+_ssdm_op_SpecInterface(0, "s_axilite", 0, 0, "", 0, 0, "CTRL_BUS", "", "", 0, 0, 0, 0, "", "");
 _ssdm_op_SpecInterface(&outStream, "axis", 1, 1, "both", 0, 0, "", "", "", 0, 0, 0, 0, "", "");
 _ssdm_op_SpecInterface(&inStream, "axis", 1, 1, "both", 0, 0, "", "", "", 0, 0, 0, 0, "", "");
 
- line_buff_type line_buff_group_0[16/4];
- line_buff_type line_buff_group_1[16/4];
- line_buff_type line_buff_group_2[16/4];
- line_buff_type line_buff_group_3[16/4];
-
- window_type window_group_0[16/4];
-_ssdm_SpecArrayPartition( window_group_0, 1, "COMPLETE", 0, "");
- window_type window_group_1[16/4];
-_ssdm_SpecArrayPartition( window_group_1, 1, "COMPLETE", 0, "");
- window_type window_group_2[16/4];
-_ssdm_SpecArrayPartition( window_group_2, 1, "COMPLETE", 0, "");
- window_type window_group_3[16/4];
-_ssdm_SpecArrayPartition( window_group_3, 1, "COMPLETE", 0, "");
-
-
- fp_data_type val_output_0[16/4];
-_ssdm_SpecArrayPartition( val_output_0, 1, "COMPLETE", 0, "");
- fp_data_type val_output_1[16/4];
-_ssdm_SpecArrayPartition( val_output_1, 1, "COMPLETE", 0, "");
- fp_data_type val_output_2[16/4];
-_ssdm_SpecArrayPartition( val_output_2, 1, "COMPLETE", 0, "");
- fp_data_type val_output_3[16/4];
-_ssdm_SpecArrayPartition( val_output_3, 1, "COMPLETE", 0, "");
-
-
+ line_buff_type line_buff_group_0[32/4];
+ line_buff_type line_buff_group_1[32/4];
+ line_buff_type line_buff_group_2[32/4];
+ line_buff_type line_buff_group_3[32/4];
+# 47 "yolo_max_pool_fp_2019_64/src/yolo_max_pool.cpp"
  quad_fp_side_channel curr_input;
 
- for(int out_row=0;out_row<(((416 +2*(2 -1))-(2 -1)-2)/2 +1)+0;out_row++)
+ for(ap_uint<9> out_row=0;out_row<output_h;out_row++)
  {
- for(int row_stride=0;row_stride<2;row_stride++)
+_ssdm_op_SpecLoopTripCount(208, 208, 208, "");
+ for(ap_uint<2> row_stride=0;row_stride<stride;row_stride++)
  {
-  for(int out_col=0;out_col<(((416 +2*(2 -1))-(2 -1)-2)/2 +1)+0;out_col++)
+_ssdm_op_SpecLoopTripCount(2, 2, 2, "");
+ for(ap_uint<9> out_col=0;out_col<output_w;out_col++)
   {
-  for(int col_stride=0;col_stride<2;col_stride++)
+_ssdm_op_SpecLoopTripCount(208, 208, 208, "");
+ for(ap_uint<2> col_stride=0;col_stride<stride;col_stride++)
   {
-   for(int input_ch_idx=0;input_ch_idx<16/4;input_ch_idx++)
+_ssdm_op_SpecLoopTripCount(2, 2, 2, "");
+ for(ap_uint<(5 -2 +1)> input_ch_idx=0;input_ch_idx<input_fold_ch;input_ch_idx++)
    {
 _ssdm_op_SpecPipeline(-1, 1, 1, 0, "");
+_ssdm_op_SpecLoopTripCount(4, 4, 4, "");
 
- int row_idx = out_row*2 +row_stride;
-    int col_idx = out_col*2 +col_stride;
-    int conv_count;
+ ap_uint<9> row_idx = out_row*stride+row_stride;
+    ap_uint<9> col_idx = out_col*stride+col_stride;
+    ap_uint<9> conv_count;
 
-    if((row_idx>=2 -1)&&(col_idx>=2 -1))
+    if((row_idx>2 -2)&&(col_idx>2 -2))
      conv_count = col_idx - (2 -1);
     else
      conv_count = 0;
 
 
-    if((row_idx>=((416 +2*(2 -1))-2*(2 -1)))||(col_idx>=((416 +2*(2 -1))-2*(2 -1))))
+
+    if(row_idx<input_h&&col_idx<input_w)
+    {
+
+     curr_input = inStream.read();
+    }
+    else
     {
 
      curr_input.data.sub_data_0 = -128;;
@@ -35775,11 +35778,8 @@ _ssdm_op_SpecPipeline(-1, 1, 1, 0, "");
      curr_input.data.sub_data_2 = -128;;
      curr_input.data.sub_data_3 = -128;;
     }
-    else
-    {
 
-     curr_input = inStream.read();
-    }
+
 
 
     yolo_line_buffer(curr_input.data.sub_data_0,&line_buff_group_0[input_ch_idx],col_idx);
@@ -35787,23 +35787,33 @@ _ssdm_op_SpecPipeline(-1, 1, 1, 0, "");
     yolo_line_buffer(curr_input.data.sub_data_2,&line_buff_group_2[input_ch_idx],col_idx);
     yolo_line_buffer(curr_input.data.sub_data_3,&line_buff_group_3[input_ch_idx],col_idx);
 
-    if((row_idx>=2 -1)&&(col_idx>=2 -1)&&(row_stride==2 -1)&&(col_stride==2 -1))
+    if((row_idx>2 -2)&&(col_idx>2 -2)&&(row_stride==stride-1)&&(col_stride==stride-1))
     {
 
-     window_group_0[input_ch_idx] = slide_window(conv_count,&line_buff_group_0[input_ch_idx]);
-     window_group_1[input_ch_idx] = slide_window(conv_count,&line_buff_group_1[input_ch_idx]);
-     window_group_2[input_ch_idx] = slide_window(conv_count,&line_buff_group_2[input_ch_idx]);
-     window_group_3[input_ch_idx] = slide_window(conv_count,&line_buff_group_3[input_ch_idx]);
+     window_type window_0;
+     window_type window_1;
+     window_type window_2;
+     window_type window_3;
 
-     val_output_0[input_ch_idx] = window_max_pool(&window_group_0[input_ch_idx]);
-     val_output_1[input_ch_idx] = window_max_pool(&window_group_1[input_ch_idx]);
-     val_output_2[input_ch_idx] = window_max_pool(&window_group_2[input_ch_idx]);
-     val_output_3[input_ch_idx] = window_max_pool(&window_group_3[input_ch_idx]);
+     fp_data_type val_output_0;
+     fp_data_type val_output_1;
+     fp_data_type val_output_2;
+     fp_data_type val_output_3;
+
+     window_0 = slide_window(conv_count,&line_buff_group_0[input_ch_idx]);
+     window_1 = slide_window(conv_count,&line_buff_group_1[input_ch_idx]);
+     window_2 = slide_window(conv_count,&line_buff_group_2[input_ch_idx]);
+     window_3 = slide_window(conv_count,&line_buff_group_3[input_ch_idx]);
+
+     val_output_0 = window_max_pool(window_0);
+     val_output_1 = window_max_pool(window_1);
+     val_output_2 = window_max_pool(window_2);
+     val_output_3 = window_max_pool(window_3);
 
      ap_uint<1> last;
-     if((out_row==(((416 +2*(2 -1))-(2 -1)-2)/2 +1)+0 -1)&&
-        (out_col==(((416 +2*(2 -1))-(2 -1)-2)/2 +1)+0 -1)&&
-        (input_ch_idx==16/4-1))
+     if((out_row==output_h-1)&&
+        (out_col==output_w-1)&&
+        (input_ch_idx==input_fold_ch-1))
      {
       last = 1;
      }
@@ -35812,7 +35822,7 @@ _ssdm_op_SpecPipeline(-1, 1, 1, 0, "");
       last = 0;
      }
 
-     write_output(val_output_0[input_ch_idx],val_output_1[input_ch_idx],val_output_2[input_ch_idx],val_output_3[input_ch_idx],curr_input,outStream,last);
+     write_output(val_output_0,val_output_1,val_output_2,val_output_3,curr_input,outStream,last);
     }
 
 
@@ -35824,7 +35834,7 @@ _ssdm_op_SpecPipeline(-1, 1, 1, 0, "");
 }
 }}
 
-void yolo_line_buffer(fp_data_type curr_data, line_buff_type *line_buff, int col_idx)
+void yolo_line_buffer(fp_data_type curr_data, line_buff_type *line_buff, ap_uint<9> col_idx)
 {
 
  line_buff->shift_up(col_idx);
@@ -35832,13 +35842,13 @@ void yolo_line_buffer(fp_data_type curr_data, line_buff_type *line_buff, int col
 
 }
 
-window_type slide_window(int conv_count, line_buff_type *line_buff)
+window_type slide_window(ap_uint<9> conv_count, line_buff_type *line_buff)
 {
  window_type kernel_window;
 
- for(int win_row=0; win_row < 2; win_row++)
+ for(ap_uint<2> win_row=0; win_row < 2; win_row++)
  {
-  for(int win_col=0; win_col < 2; win_col++)
+  for(ap_uint<2> win_col=0; win_col < 2; win_col++)
   {
    fp_data_type val = (fp_data_type)line_buff->getval(win_row,win_col+conv_count);
    kernel_window.insert(val,win_row,win_col);
@@ -35848,14 +35858,14 @@ window_type slide_window(int conv_count, line_buff_type *line_buff)
  return kernel_window;
 }
 
-fp_data_type window_max_pool(window_type *window)
+fp_data_type window_max_pool(window_type window)
 {
  fp_data_type max = -128;;
- for(int win_row=0; win_row < 2; win_row++)
+ for(ap_uint<2> win_row=0; win_row < 2; win_row++)
  {
-  for(int win_col=0; win_col < 2; win_col++)
+  for(ap_uint<2> win_col=0; win_col < 2; win_col++)
   {
-   fp_data_type val = window->getval(win_row,win_col);
+   fp_data_type val = window.getval(win_row,win_col);
    if(val>max)
     max = val;
   }

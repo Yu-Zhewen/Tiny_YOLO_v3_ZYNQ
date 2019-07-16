@@ -169,7 +169,7 @@
 
 <Node id="28" bw="0" op_0_bw="0" op_1_bw="64" op_2_bw="8" op_3_bw="8" op_4_bw="2" op_5_bw="1" op_6_bw="5" op_7_bw="6" op_8_bw="0" op_9_bw="32" op_10_bw="32" op_11_bw="0" op_12_bw="32" op_13_bw="32" op_14_bw="0" op_15_bw="0" op_16_bw="0" op_17_bw="32" op_18_bw="32" op_19_bw="32" op_20_bw="32" op_21_bw="0" op_22_bw="0">
 <![CDATA[
-:10  call void (...)* @_ssdm_op_SpecInterface(i64* %out_stream_V_data, i8* %out_stream_V_keep_V, i8* %out_stream_V_strb_V, i2* %out_stream_V_user_V, i1* %out_stream_V_last_V, i5* %out_stream_V_id_V, i6* %out_stream_V_dest_V, [5 x i8]* @p_str2, i32 0, i32 0, [5 x i8]* @p_str3, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind
+:10  call void (...)* @_ssdm_op_SpecInterface(i64* %out_stream_V_data, i8* %out_stream_V_keep_V, i8* %out_stream_V_strb_V, i2* %out_stream_V_user_V, i1* %out_stream_V_last_V, i5* %out_stream_V_id_V, i6* %out_stream_V_dest_V, [5 x i8]* @p_str3, i32 0, i32 0, [5 x i8]* @p_str4, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind
 
 ]]></Node>
 <StgValue><ssdm name="specinterface_ln0"/></StgValue>
@@ -202,7 +202,7 @@
 :12  call void @_ssdm_op_Write.axis.volatile.i64P.i8P.i8P.i2P.i1P.i5P.i6P(i64* %out_stream_V_data, i8* %out_stream_V_keep_V, i8* %out_stream_V_strb_V, i2* %out_stream_V_user_V, i1* %out_stream_V_last_V, i5* %out_stream_V_id_V, i6* %out_stream_V_dest_V, i64 %tmp_data, i8 %tmp_keep_V, i8 %tmp_strb_V, i2 %tmp_user_V, i1 %tmp_last_V, i5 %tmp_id_V, i6 %tmp_dest_V)
 
 ]]></Node>
-<StgValue><ssdm name="write_ln171"/></StgValue>
+<StgValue><ssdm name="write_ln201"/></StgValue>
 </operation>
 
 <operation id="15" st_id="1" stage="1" lat="1">
@@ -217,7 +217,7 @@
 :13  ret void
 
 ]]></Node>
-<StgValue><ssdm name="ret_ln172"/></StgValue>
+<StgValue><ssdm name="ret_ln202"/></StgValue>
 </operation>
 </state>
 </state_list>
@@ -335,13 +335,13 @@
 </dataflow>
 <dataflow id="68" from="out_stream_V_dest_V" to="specinterface_ln0" fromId="32" toId="12">
 </dataflow>
-<dataflow id="70" from="p_str2" to="specinterface_ln0" fromId="69" toId="12">
+<dataflow id="70" from="p_str3" to="specinterface_ln0" fromId="69" toId="12">
 </dataflow>
 <dataflow id="72" from="StgValue_71" to="specinterface_ln0" fromId="71" toId="12">
 </dataflow>
 <dataflow id="73" from="StgValue_71" to="specinterface_ln0" fromId="71" toId="12">
 </dataflow>
-<dataflow id="75" from="p_str3" to="specinterface_ln0" fromId="74" toId="12">
+<dataflow id="75" from="p_str4" to="specinterface_ln0" fromId="74" toId="12">
 </dataflow>
 <dataflow id="76" from="StgValue_71" to="specinterface_ln0" fromId="71" toId="12">
 </dataflow>
@@ -375,35 +375,35 @@
 </dataflow>
 <dataflow id="93" from="val_output_0_V_read" to="tmp_data" fromId="11" toId="13">
 </dataflow>
-<dataflow id="95" from="_ssdm_op_Write.axis.volatile.i64P.i8P.i8P.i2P.i1P.i5P.i6P" to="write_ln171" fromId="94" toId="14">
+<dataflow id="95" from="_ssdm_op_Write.axis.volatile.i64P.i8P.i8P.i2P.i1P.i5P.i6P" to="write_ln201" fromId="94" toId="14">
 </dataflow>
-<dataflow id="96" from="out_stream_V_data" to="write_ln171" fromId="26" toId="14">
+<dataflow id="96" from="out_stream_V_data" to="write_ln201" fromId="26" toId="14">
 </dataflow>
-<dataflow id="97" from="out_stream_V_keep_V" to="write_ln171" fromId="27" toId="14">
+<dataflow id="97" from="out_stream_V_keep_V" to="write_ln201" fromId="27" toId="14">
 </dataflow>
-<dataflow id="98" from="out_stream_V_strb_V" to="write_ln171" fromId="28" toId="14">
+<dataflow id="98" from="out_stream_V_strb_V" to="write_ln201" fromId="28" toId="14">
 </dataflow>
-<dataflow id="99" from="out_stream_V_user_V" to="write_ln171" fromId="29" toId="14">
+<dataflow id="99" from="out_stream_V_user_V" to="write_ln201" fromId="29" toId="14">
 </dataflow>
-<dataflow id="100" from="out_stream_V_last_V" to="write_ln171" fromId="30" toId="14">
+<dataflow id="100" from="out_stream_V_last_V" to="write_ln201" fromId="30" toId="14">
 </dataflow>
-<dataflow id="101" from="out_stream_V_id_V" to="write_ln171" fromId="31" toId="14">
+<dataflow id="101" from="out_stream_V_id_V" to="write_ln201" fromId="31" toId="14">
 </dataflow>
-<dataflow id="102" from="out_stream_V_dest_V" to="write_ln171" fromId="32" toId="14">
+<dataflow id="102" from="out_stream_V_dest_V" to="write_ln201" fromId="32" toId="14">
 </dataflow>
-<dataflow id="103" from="tmp_data" to="write_ln171" fromId="13" toId="14">
+<dataflow id="103" from="tmp_data" to="write_ln201" fromId="13" toId="14">
 </dataflow>
-<dataflow id="104" from="tmp_keep_V" to="write_ln171" fromId="7" toId="14">
+<dataflow id="104" from="tmp_keep_V" to="write_ln201" fromId="7" toId="14">
 </dataflow>
-<dataflow id="105" from="tmp_strb_V" to="write_ln171" fromId="6" toId="14">
+<dataflow id="105" from="tmp_strb_V" to="write_ln201" fromId="6" toId="14">
 </dataflow>
-<dataflow id="106" from="tmp_user_V" to="write_ln171" fromId="5" toId="14">
+<dataflow id="106" from="tmp_user_V" to="write_ln201" fromId="5" toId="14">
 </dataflow>
-<dataflow id="107" from="tmp_last_V" to="write_ln171" fromId="2" toId="14">
+<dataflow id="107" from="tmp_last_V" to="write_ln201" fromId="2" toId="14">
 </dataflow>
-<dataflow id="108" from="tmp_id_V" to="write_ln171" fromId="4" toId="14">
+<dataflow id="108" from="tmp_id_V" to="write_ln201" fromId="4" toId="14">
 </dataflow>
-<dataflow id="109" from="tmp_dest_V" to="write_ln171" fromId="3" toId="14">
+<dataflow id="109" from="tmp_dest_V" to="write_ln201" fromId="3" toId="14">
 </dataflow>
 </dataflows>
 

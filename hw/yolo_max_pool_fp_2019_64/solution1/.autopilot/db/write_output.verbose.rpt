@@ -3,7 +3,7 @@
 ================================================================
 == Vivado HLS Report for 'write_output'
 ================================================================
-* Date:           Sun Jun 30 20:58:32 2019
+* Date:           Mon Jul 15 20:22:35 2019
 
 * Version:        2019.1 (Build 2552052 on Fri May 24 15:28:33 MDT 2019)
 * Project:        yolo_max_pool_fp_2019_64
@@ -185,10 +185,10 @@ ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%val_output_3_V_read = call i16 @_ss
 ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%val_output_2_V_read = call i16 @_ssdm_op_Read.ap_auto.i16(i16 %val_output_2_V)"   --->   Operation 9 'read' 'val_output_2_V_read' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%val_output_1_V_read = call i16 @_ssdm_op_Read.ap_auto.i16(i16 %val_output_1_V)"   --->   Operation 10 'read' 'val_output_1_V_read' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%val_output_0_V_read = call i16 @_ssdm_op_Read.ap_auto.i16(i16 %val_output_0_V)"   --->   Operation 11 'read' 'val_output_0_V_read' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 12 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i64* %out_stream_V_data, i8* %out_stream_V_keep_V, i8* %out_stream_V_strb_V, i2* %out_stream_V_user_V, i1* %out_stream_V_last_V, i5* %out_stream_V_id_V, i6* %out_stream_V_dest_V, [5 x i8]* @p_str2, i32 0, i32 0, [5 x i8]* @p_str3, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind"   --->   Operation 12 'specinterface' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%tmp_data = call i64 @_ssdm_op_BitConcatenate.i64.i16.i16.i16.i16(i16 %val_output_3_V_read, i16 %val_output_2_V_read, i16 %val_output_1_V_read, i16 %val_output_0_V_read)" [yolo_max_pool_fp_2019_64/src/yolo_max_pool.cpp:171]   --->   Operation 13 'bitconcatenate' 'tmp_data' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 14 [1/1] (0.00ns)   --->   "call void @_ssdm_op_Write.axis.volatile.i64P.i8P.i8P.i2P.i1P.i5P.i6P(i64* %out_stream_V_data, i8* %out_stream_V_keep_V, i8* %out_stream_V_strb_V, i2* %out_stream_V_user_V, i1* %out_stream_V_last_V, i5* %out_stream_V_id_V, i6* %out_stream_V_dest_V, i64 %tmp_data, i8 %tmp_keep_V, i8 %tmp_strb_V, i2 %tmp_user_V, i1 %tmp_last_V, i5 %tmp_id_V, i6 %tmp_dest_V)" [yolo_max_pool_fp_2019_64/src/yolo_max_pool.cpp:171]   --->   Operation 14 'write' <Predicate = true> <Delay = 0.00> <Core = "AXI4Stream">   --->   Core 5 'AXI4Stream' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
-ST_1 : Operation 15 [1/1] (0.00ns)   --->   "ret void" [yolo_max_pool_fp_2019_64/src/yolo_max_pool.cpp:172]   --->   Operation 15 'ret' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i64* %out_stream_V_data, i8* %out_stream_V_keep_V, i8* %out_stream_V_strb_V, i2* %out_stream_V_user_V, i1* %out_stream_V_last_V, i5* %out_stream_V_id_V, i6* %out_stream_V_dest_V, [5 x i8]* @p_str3, i32 0, i32 0, [5 x i8]* @p_str4, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind"   --->   Operation 12 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%tmp_data = call i64 @_ssdm_op_BitConcatenate.i64.i16.i16.i16.i16(i16 %val_output_3_V_read, i16 %val_output_2_V_read, i16 %val_output_1_V_read, i16 %val_output_0_V_read)" [yolo_max_pool_fp_2019_64/src/yolo_max_pool.cpp:201]   --->   Operation 13 'bitconcatenate' 'tmp_data' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "call void @_ssdm_op_Write.axis.volatile.i64P.i8P.i8P.i2P.i1P.i5P.i6P(i64* %out_stream_V_data, i8* %out_stream_V_keep_V, i8* %out_stream_V_strb_V, i2* %out_stream_V_user_V, i1* %out_stream_V_last_V, i5* %out_stream_V_id_V, i6* %out_stream_V_dest_V, i64 %tmp_data, i8 %tmp_keep_V, i8 %tmp_strb_V, i2 %tmp_user_V, i1 %tmp_last_V, i5 %tmp_id_V, i6 %tmp_dest_V)" [yolo_max_pool_fp_2019_64/src/yolo_max_pool.cpp:201]   --->   Operation 14 'write' <Predicate = true> <Delay = 0.00> <Core = "AXI4Stream">   --->   Core 5 'AXI4Stream' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
+ST_1 : Operation 15 [1/1] (0.00ns)   --->   "ret void" [yolo_max_pool_fp_2019_64/src/yolo_max_pool.cpp:202]   --->   Operation 15 'ret' <Predicate = true> <Delay = 0.00>
 
 
 ============================================================
@@ -237,8 +237,8 @@ val_output_1_V_read (read          ) [ 00]
 val_output_0_V_read (read          ) [ 00]
 specinterface_ln0   (specinterface ) [ 00]
 tmp_data            (bitconcatenate) [ 00]
-write_ln171         (write         ) [ 00]
-ret_ln172           (ret           ) [ 00]
+write_ln201         (write         ) [ 00]
+ret_ln202           (ret           ) [ 00]
 </LifeTime>
 
 <model>
@@ -465,7 +465,7 @@ ret_ln172           (ret           ) [ 00]
 <pin id="49" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="p_str2"/></StgValue>
+<StgValue><ssdm name="p_str3"/></StgValue>
 </bind>
 </comp>
 
@@ -483,7 +483,7 @@ ret_ln172           (ret           ) [ 00]
 <pin id="53" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="p_str3"/></StgValue>
+<StgValue><ssdm name="p_str4"/></StgValue>
 </bind>
 </comp>
 
@@ -634,7 +634,7 @@ ret_ln172           (ret           ) [ 00]
 </bind>
 </comp>
 
-<comp id="120" class="1004" name="write_ln171_write_fu_120">
+<comp id="120" class="1004" name="write_ln201_write_fu_120">
 <pin_list>
 <pin id="121" dir="0" index="0" bw="0" slack="0"/>
 <pin id="122" dir="0" index="1" bw="64" slack="0"/>
@@ -655,7 +655,7 @@ ret_ln172           (ret           ) [ 00]
 </pin_list>
 <bind>
 <opcode="write(1151) " fcode="write"/>
-<opset="write_ln171/1 "/>
+<opset="write_ln201/1 "/>
 </bind>
 </comp>
 
@@ -791,7 +791,7 @@ ret_ln172           (ret           ) [ 00]
 	Port: write_output : last_V | {1 }
   - Chain level:
 	State 1
-		write_ln171 : 1
+		write_ln201 : 1
 
 
 ============================================================
@@ -813,7 +813,7 @@ ret_ln172           (ret           ) [ 00]
 |          | val_output_1_V_read_read_fu_108 |
 |          | val_output_0_V_read_read_fu_114 |
 |----------|---------------------------------|
-|   write  |     write_ln171_write_fu_120    |
+|   write  |     write_ln201_write_fu_120    |
 |----------|---------------------------------|
 |bitconcatenate|         tmp_data_fu_151         |
 |----------|---------------------------------|

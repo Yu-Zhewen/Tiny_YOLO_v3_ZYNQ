@@ -2,12 +2,12 @@
 # xsim v2019.1 (64-bit)
 # SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
 # IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
-# Start of session at: Mon Jul 15 11:54:52 2019
-# Process ID: 10727
-# Current directory: /home/xavier/Desktop/yolo_conv_fp_2019_64_rec/solution1/sim/verilog
+# Start of session at: Tue Jul 16 08:55:46 2019
+# Process ID: 6408
+# Current directory: /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_2019_64/solution1/sim/verilog
 # Command line: xsim -mode tcl -source {xsim.dir/yolo_conv_top/xsim_script.tcl}
-# Log file: /home/xavier/Desktop/yolo_conv_fp_2019_64_rec/solution1/sim/verilog/xsim.log
-# Journal file: /home/xavier/Desktop/yolo_conv_fp_2019_64_rec/solution1/sim/verilog/xsim.jou
+# Log file: /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_2019_64/solution1/sim/verilog/xsim.log
+# Journal file: /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_2019_64/solution1/sim/verilog/xsim.jou
 #-----------------------------------------------------------
 source xsim.dir/yolo_conv_top/xsim_script.tcl
 # xsim {yolo_conv_top} -autoloadwcfg -tclbatch {yolo_conv_top.tcl}
@@ -22,9 +22,9 @@ source yolo_conv_top.tcl
 // RTL Simulation : "Inter-Transaction Progress" ["Intra-Transaction Progress"] @ "Simulation Time"
 ////////////////////////////////////////////////////////////////////////////////////
 // RTL Simulation : 0 / 1 [0.00%] @ "125000"
-// RTL Simulation : 1 / 1 [100.00%] @ "404745000"
+// RTL Simulation : 1 / 1 [100.00%] @ "404645000"
 ////////////////////////////////////////////////////////////////////////////////////
-$finish called at time : 404785 ns : File "/home/xavier/Desktop/yolo_conv_fp_2019_64_rec/solution1/sim/verilog/yolo_conv_top.autotb.v" Line 512
-run: Time (s): cpu = 00:00:00 ; elapsed = 00:00:39 . Memory (MB): peak = 1392.801 ; gain = 0.000 ; free physical = 1802 ; free virtual = 12393
+$finish called at time : 404685 ns : File "/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_2019_64/solution1/sim/verilog/yolo_conv_top.autotb.v" Line 507
+run: Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:39 . Memory (MB): peak = 1377.332 ; gain = 0.000 ; free physical = 1206 ; free virtual = 12283
 ## quit
-INFO: [Common 17-206] Exiting xsim at Mon Jul 15 11:55:44 2019...
+INFO: [Common 17-206] Exiting xsim at Tue Jul 16 08:56:53 2019...

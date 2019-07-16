@@ -120,8 +120,6 @@ using namespace sc_dt;
 #define AUTOTB_TVIN_fold_output_ch_V  "../tv/cdatafile/c.yolo_conv_top.autotvin_fold_output_ch_V.dat"
 // wrapc file define: "fold_input_ch_V"
 #define AUTOTB_TVIN_fold_input_ch_V  "../tv/cdatafile/c.yolo_conv_top.autotvin_fold_input_ch_V.dat"
-// wrapc file define: "kernel_dim_V"
-#define AUTOTB_TVIN_kernel_dim_V  "../tv/cdatafile/c.yolo_conv_top.autotvin_kernel_dim_V.dat"
 // wrapc file define: "input_h_V"
 #define AUTOTB_TVIN_input_h_V  "../tv/cdatafile/c.yolo_conv_top.autotvin_input_h_V.dat"
 // wrapc file define: "input_w_V"
@@ -172,7 +170,6 @@ class INTER_TCL_FILE {
 			input_ch_V_depth = 0;
 			fold_output_ch_V_depth = 0;
 			fold_input_ch_V_depth = 0;
-			kernel_dim_V_depth = 0;
 			input_h_V_depth = 0;
 			input_w_V_depth = 0;
 			real_input_h_V_depth = 0;
@@ -215,7 +212,6 @@ class INTER_TCL_FILE {
 			total_list << "{input_ch_V " << input_ch_V_depth << "}\n";
 			total_list << "{fold_output_ch_V " << fold_output_ch_V_depth << "}\n";
 			total_list << "{fold_input_ch_V " << fold_input_ch_V_depth << "}\n";
-			total_list << "{kernel_dim_V " << kernel_dim_V_depth << "}\n";
 			total_list << "{input_h_V " << input_h_V_depth << "}\n";
 			total_list << "{input_w_V " << input_w_V_depth << "}\n";
 			total_list << "{real_input_h_V " << real_input_h_V_depth << "}\n";
@@ -246,7 +242,6 @@ class INTER_TCL_FILE {
 		int input_ch_V_depth;
 		int fold_output_ch_V_depth;
 		int fold_input_ch_V_depth;
-		int kernel_dim_V_depth;
 		int input_h_V_depth;
 		int input_w_V_depth;
 		int real_input_h_V_depth;
@@ -266,7 +261,6 @@ ap_uint<6> output_ch,
 ap_uint<6> input_ch,
 ap_uint<4> fold_output_ch,
 ap_uint<4> fold_input_ch,
-ap_uint<3> kernel_dim,
 ap_uint<9> input_h,
 ap_uint<9> input_w,
 ap_uint<9> real_input_h,
@@ -280,7 +274,6 @@ ap_uint<6> output_ch,
 ap_uint<6> input_ch,
 ap_uint<4> fold_output_ch,
 ap_uint<4> fold_input_ch,
-ap_uint<3> kernel_dim,
 ap_uint<9> input_h,
 ap_uint<9> input_w,
 ap_uint<9> real_input_h,
@@ -1745,10 +1738,6 @@ ap_uint<3> fold_win_area)
 		char* tvin_fold_input_ch_V = new char[50];
 		aesl_fh.touch(AUTOTB_TVIN_fold_input_ch_V);
 
-		// "kernel_dim_V"
-		char* tvin_kernel_dim_V = new char[50];
-		aesl_fh.touch(AUTOTB_TVIN_kernel_dim_V);
-
 		// "input_h_V"
 		char* tvin_input_h_V = new char[50];
 		aesl_fh.touch(AUTOTB_TVIN_input_h_V);
@@ -1958,48 +1947,6 @@ ap_uint<3> fold_win_area)
 		tcl_file.set_num(1, &tcl_file.fold_input_ch_V_depth);
 		sprintf(tvin_fold_input_ch_V, "[[/transaction]] \n");
 		aesl_fh.write(AUTOTB_TVIN_fold_input_ch_V, tvin_fold_input_ch_V);
-
-		// [[transaction]]
-		sprintf(tvin_kernel_dim_V, "[[transaction]] %d\n", AESL_transaction);
-		aesl_fh.write(AUTOTB_TVIN_kernel_dim_V, tvin_kernel_dim_V);
-
-		sc_bv<3> kernel_dim_V_tvin_wrapc_buffer;
-
-		// RTL Name: kernel_dim_V
-		{
-			// bitslice(2, 0)
-			{
-				// celement: kernel_dim.V(2, 0)
-				{
-					// carray: (0) => (0) @ (0)
-					{
-						// sub                   : 
-						// ori_name              : kernel_dim
-						// sub_1st_elem          : 
-						// ori_name_1st_elem     : kernel_dim
-						// regulate_c_name       : kernel_dim_V
-						// input_type_conversion : (kernel_dim).to_string(2).c_str()
-						if (&(kernel_dim) != NULL) // check the null address if the c port is array or others
-						{
-							sc_lv<3> kernel_dim_V_tmp_mem;
-							kernel_dim_V_tmp_mem = (kernel_dim).to_string(2).c_str();
-							kernel_dim_V_tvin_wrapc_buffer.range(2, 0) = kernel_dim_V_tmp_mem.range(2, 0);
-						}
-					}
-				}
-			}
-		}
-
-		// dump tv to file
-		for (int i = 0; i < 1; i++)
-		{
-			sprintf(tvin_kernel_dim_V, "%s\n", (kernel_dim_V_tvin_wrapc_buffer).to_string(SC_HEX).c_str());
-			aesl_fh.write(AUTOTB_TVIN_kernel_dim_V, tvin_kernel_dim_V);
-		}
-
-		tcl_file.set_num(1, &tcl_file.kernel_dim_V_depth);
-		sprintf(tvin_kernel_dim_V, "[[/transaction]] \n");
-		aesl_fh.write(AUTOTB_TVIN_kernel_dim_V, tvin_kernel_dim_V);
 
 		// [[transaction]]
 		sprintf(tvin_input_h_V, "[[transaction]] %d\n", AESL_transaction);
@@ -2226,7 +2173,7 @@ ap_uint<3> fold_win_area)
 // [call_c_dut] ---------->
 
 		CodeState = CALL_C_DUT;
-		yolo_conv_top(inStream, outStream, output_ch, input_ch, fold_output_ch, fold_input_ch, kernel_dim, input_h, input_w, real_input_h, leaky, fold_win_area);
+		yolo_conv_top(inStream, outStream, output_ch, input_ch, fold_output_ch, fold_input_ch, input_h, input_w, real_input_h, leaky, fold_win_area);
 
 		CodeState = DUMP_OUTPUTS;
 		// record input size to tv3: "inStream"
@@ -3468,8 +3415,6 @@ ap_uint<3> fold_win_area)
 		delete [] tvin_fold_output_ch_V;
 		// release memory allocation: "fold_input_ch_V"
 		delete [] tvin_fold_input_ch_V;
-		// release memory allocation: "kernel_dim_V"
-		delete [] tvin_kernel_dim_V;
 		// release memory allocation: "input_h_V"
 		delete [] tvin_input_h_V;
 		// release memory allocation: "input_w_V"

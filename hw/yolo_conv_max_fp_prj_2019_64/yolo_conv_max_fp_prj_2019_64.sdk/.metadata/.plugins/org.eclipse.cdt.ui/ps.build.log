@@ -1,0 +1,8 @@
+11:33:21 **** Incremental Build of configuration Debug for project ps ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+
+11:33:22 Build Finished (took 579ms)
+

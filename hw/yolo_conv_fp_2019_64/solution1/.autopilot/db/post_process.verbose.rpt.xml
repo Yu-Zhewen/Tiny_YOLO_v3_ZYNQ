@@ -1,10 +1,10 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'post_process'" level="0">
-<item name = "Date">Mon Jul 15 11:51:59 2019
+<item name = "Date">Tue Jul 16 08:53:15 2019
 </item>
 <item name = "Version">2019.1 (Build 2552052 on Fri May 24 15:28:33 MDT 2019)</item>
-<item name = "Project">yolo_conv_fp_2019_64_rec</item>
+<item name = "Project">yolo_conv_fp_2019_64</item>
 <item name = "Solution">solution1</item>
 <item name = "Product family">zynq</item>
 <item name = "Target device">xc7z020-clg484-1</item>
@@ -84,13 +84,13 @@
 <column name="p_Val2_3_fu_152_p2">+, 0, 0, 23, 16, 16</column>
 <column name="p_Val2_6_fu_240_p2">+, 0, 0, 23, 16, 16</column>
 <column name="p_Val2_9_fu_327_p2">+, 0, 0, 23, 16, 16</column>
-<column name="ret_V_10_fu_226_p2">+, 0, 0, 24, 17, 17</column>
-<column name="ret_V_11_fu_313_p2">+, 0, 0, 24, 17, 17</column>
-<column name="ret_V_12_fu_393_p2">+, 0, 0, 24, 17, 17</column>
-<column name="ret_V_13_fu_480_p2">+, 0, 0, 24, 17, 17</column>
+<column name="ret_V_6_fu_226_p2">+, 0, 0, 24, 17, 17</column>
+<column name="ret_V_7_fu_313_p2">+, 0, 0, 24, 17, 17</column>
+<column name="ret_V_8_fu_393_p2">+, 0, 0, 24, 17, 17</column>
+<column name="ret_V_9_fu_480_p2">+, 0, 0, 24, 17, 17</column>
 <column name="ret_V_fu_138_p2">+, 0, 0, 24, 17, 17</column>
-<column name="and_ln232_1_fu_736_p2">and, 0, 0, 2, 1, 1</column>
-<column name="and_ln232_fu_732_p2">and, 0, 0, 2, 1, 1</column>
+<column name="and_ln238_1_fu_736_p2">and, 0, 0, 2, 1, 1</column>
+<column name="and_ln238_fu_732_p2">and, 0, 0, 2, 1, 1</column>
 <column name="and_ln415_fu_625_p2">and, 0, 0, 2, 1, 1</column>
 <column name="and_ln781_fu_707_p2">and, 0, 0, 2, 1, 1</column>
 <column name="and_ln786_fu_712_p2">and, 0, 0, 2, 1, 1</column>
@@ -118,8 +118,8 @@
 <column name="p_Val2_4_fu_212_p3">select, 0, 0, 16, 1, 16</column>
 <column name="p_Val2_7_fu_298_p3">select, 0, 0, 16, 1, 16</column>
 <column name="p_Val2_s_fu_122_p3">select, 0, 0, 16, 1, 1</column>
-<column name="select_ln213_fu_749_p3">select, 0, 0, 16, 1, 16</column>
-<column name="select_ln232_fu_742_p3">select, 0, 0, 16, 1, 16</column>
+<column name="select_ln219_fu_749_p3">select, 0, 0, 16, 1, 16</column>
+<column name="select_ln238_fu_742_p3">select, 0, 0, 16, 1, 16</column>
 <column name="select_ln340_10_fu_282_p3">select, 0, 0, 16, 1, 15</column>
 <column name="select_ln340_11_fu_364_p3">select, 0, 0, 16, 1, 15</column>
 <column name="select_ln340_12_fu_450_p3">select, 0, 0, 16, 1, 15</column>

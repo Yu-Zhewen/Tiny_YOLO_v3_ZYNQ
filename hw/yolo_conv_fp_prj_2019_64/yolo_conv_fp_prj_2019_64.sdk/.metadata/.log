@@ -1,59 +1,59 @@
-!SESSION 2019-07-15 15:05:01.317 -----------------------------------------------
+!SESSION 2019-07-15 22:43:16.861 -----------------------------------------------
 eclipse.buildId=2019.1
 java.version=1.8.0_112
 java.vendor=Oracle Corporation
 BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
 Command-line arguments:  -os linux -ws gtk -arch x86_64 -data /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk
 
-!ENTRY org.eclipse.ui 2 0 2019-07-15 15:05:11.768
+!ENTRY org.eclipse.ui 2 0 2019-07-15 22:43:19.994
 !MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
-!SUBENTRY 1 org.eclipse.ui 2 0 2019-07-15 15:05:11.768
+!SUBENTRY 1 org.eclipse.ui 2 0 2019-07-15 22:43:19.994
 !MESSAGE Commands should really have a category: plug-in='com.xilinx.sdk.appwiz', id='com.xilinx.sdk.app.commands.ChangeAtfBuiltReferences', categoryId='com.xilinx.sdk.app.commands.category'
 
-!ENTRY org.eclipse.ui 2 0 2019-07-15 15:05:15.204
+!ENTRY org.eclipse.ui 2 0 2019-07-15 22:43:20.752
 !MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
-!SUBENTRY 1 org.eclipse.ui 2 0 2019-07-15 15:05:15.204
+!SUBENTRY 1 org.eclipse.ui 2 0 2019-07-15 22:43:20.752
 !MESSAGE Commands should really have a category: plug-in='com.xilinx.sdk.appwiz', id='com.xilinx.sdk.app.commands.ChangeAtfBuiltReferences', categoryId='com.xilinx.sdk.app.commands.category'
 
-!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 15:05:31.096
+!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 22:43:28.255
+!MESSAGE XSCT Command: [::hsi::utils::init_repo], Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 22:43:28.256
 !MESSAGE XSCT Command: [set sdk::sdk_chan tcfchan#0], Thread: Thread-14
 
-!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 15:05:31.096
-!MESSAGE XSCT Command: [::hsi::utils::init_repo], Thread: Worker-2
+!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 22:43:28.448
+!MESSAGE XSCT command with result: [::hsi::utils::init_repo], Result: [null, ]. Thread: Worker-1
 
-!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 15:05:31.115
+!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 22:43:28.448
 !MESSAGE XSCT command with result: [set sdk::sdk_chan tcfchan#0], Result: [null, tcfchan#0]. Thread: Thread-14
 
-!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 15:05:31.116
+!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 22:43:28.450
 !MESSAGE XSCT Command: [setws /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk], Thread: Thread-14
 
-!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 15:05:57.636
-!MESSAGE XSCT command with result: [::hsi::utils::init_repo], Result: [null, ]. Thread: Worker-2
-
-!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 15:05:57.639
+!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 22:43:28.451
 !MESSAGE XSCT command with result: [setws /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk], Result: [null, ]. Thread: Thread-14
 
-!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 15:05:58.072
-!MESSAGE XSCT Command: [::hsi::utils::openhw /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/design_1_wrapper_hw_platform_0/system.hdf], Thread: Worker-5
+!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 22:43:28.514
+!MESSAGE XSCT Command: [::hsi::utils::openhw /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/design_1_wrapper_hw_platform_0/system.hdf], Thread: Worker-4
 
-!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 15:06:07.826
-!MESSAGE XSCT command with result: [::hsi::utils::openhw /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/design_1_wrapper_hw_platform_0/system.hdf], Result: [null, ]. Thread: Worker-5
+!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 22:43:32.227
+!MESSAGE XSCT command with result: [::hsi::utils::openhw /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/design_1_wrapper_hw_platform_0/system.hdf], Result: [null, ]. Thread: Worker-4
 
-!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 15:06:07.836
-!MESSAGE XSCT Command: [::hsi::utils::get_design_properties -json /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/design_1_wrapper_hw_platform_0/system.hdf], Thread: Worker-5
+!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 22:43:32.236
+!MESSAGE XSCT Command: [::hsi::utils::get_design_properties -json /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/design_1_wrapper_hw_platform_0/system.hdf], Thread: Worker-4
 
-!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 15:06:07.839
+!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 22:43:32.238
 !MESSAGE XSCT command with result: [::hsi::utils::get_design_properties -json /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/design_1_wrapper_hw_platform_0/system.hdf], Result: [null, {"device": "7z020",
 "family": "zynq",
-"timestamp": "Mon Jul 15 14:37:03 2019",
+"timestamp": "Mon Jul 15 22:17:46 2019",
 "vivado_version": "2019.1",
 "part": "xc7z020clg484-1",
-}]. Thread: Worker-5
+}]. Thread: Worker-4
 
-!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 15:06:07.843
-!MESSAGE XSCT Command: [::hsi::utils::get_all_periphs -json /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/design_1_wrapper_hw_platform_0/system.hdf], Thread: Worker-5
+!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 22:43:32.243
+!MESSAGE XSCT Command: [::hsi::utils::get_all_periphs -json /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/design_1_wrapper_hw_platform_0/system.hdf], Thread: Worker-4
 
-!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 15:06:07.862
+!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 22:43:32.255
 !MESSAGE XSCT command with result: [::hsi::utils::get_all_periphs -json /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/design_1_wrapper_hw_platform_0/system.hdf], Result: [null, {"axi_dma_0": {"hier_name": "axi_dma_0",
 "type": "axi_dma",
 "version": "7.1",
@@ -279,12 +279,12 @@ Command-line arguments:  -os linux -ws gtk -arch x86_64 -data /home/xavier/MSc_P
 "version": "1.00.a",
 "ip_type": "PERIPHERAL",
 },
-}]. Thread: Worker-5
+}]. Thread: Worker-4
 
-!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 15:06:08.095
+!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 22:43:32.318
 !MESSAGE XSCT Command: [::hsi::utils::get_addr_ranges -json /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/design_1_wrapper_hw_platform_0/system.hdf ps7_cortexa9_0], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 15:06:08.113
+!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 22:43:32.336
 !MESSAGE XSCT command with result: [::hsi::utils::get_addr_ranges -json /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/design_1_wrapper_hw_platform_0/system.hdf ps7_cortexa9_0], Result: [null, {"axi_dma_0_S_AXI_LITE": {"name": "axi_dma_0",
 "base": "0x40400000",
 "high": "0x4040FFFF",
@@ -683,10 +683,10 @@ Command-line arguments:  -os linux -ws gtk -arch x86_64 -data /home/xavier/MSc_P
 },
 }]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 15:06:08.164
+!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 22:43:32.384
 !MESSAGE XSCT Command: [::hsi::utils::get_all_register_data -json /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/design_1_wrapper_hw_platform_0/system.hdf ps7_cortexa9_0], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 15:06:08.213
+!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 22:43:32.431
 !MESSAGE XSCT command with result: [::hsi::utils::get_all_register_data -json /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/design_1_wrapper_hw_platform_0/system.hdf ps7_cortexa9_0], Result: [null, {"axi_dma_0": {"MM2S_DMACR": {"description": "MM2S DMA Control Register",
 "address_offset": "0x0",
 "access": "read-write",
@@ -1771,37 +1771,8 @@ Note: This value must be greater than or equal to the largest expected packet to
 },
 },
 },
-"kernel_dim_V": {"description": "Data signal of kernel_dim_V",
-"address_offset": "48",
-"access": "write-only",
-"size": "32",
-"interface": "s_axi_CTRL_BUS",
-"fields": {"kernel_dim_V": {"access": "write-only",
-"bit_offset": "0",
-"bit_range": "",
-"bit_width": "3",
-"desc": "Bit 2 to 0 Data signal of kernel_dim_V",
-"enum_values": "",
-"lsb": "",
-"mod_write_val": "",
-"msb": "",
-"read_action": "",
-},
-"RESERVED": {"access": "read-only",
-"bit_offset": "3",
-"bit_range": "",
-"bit_width": "29",
-"desc": "Reserved.  0s on read.",
-"enum_values": "",
-"lsb": "",
-"mod_write_val": "",
-"msb": "",
-"read_action": "modify",
-},
-},
-},
 "input_h_V": {"description": "Data signal of input_h_V",
-"address_offset": "56",
+"address_offset": "48",
 "access": "write-only",
 "size": "32",
 "interface": "s_axi_CTRL_BUS",
@@ -1830,7 +1801,7 @@ Note: This value must be greater than or equal to the largest expected packet to
 },
 },
 "input_w_V": {"description": "Data signal of input_w_V",
-"address_offset": "64",
+"address_offset": "56",
 "access": "write-only",
 "size": "32",
 "interface": "s_axi_CTRL_BUS",
@@ -1859,7 +1830,7 @@ Note: This value must be greater than or equal to the largest expected packet to
 },
 },
 "real_input_h_V": {"description": "Data signal of real_input_h_V",
-"address_offset": "72",
+"address_offset": "64",
 "access": "write-only",
 "size": "32",
 "interface": "s_axi_CTRL_BUS",
@@ -1888,7 +1859,7 @@ Note: This value must be greater than or equal to the largest expected packet to
 },
 },
 "leaky_V": {"description": "Data signal of leaky_V",
-"address_offset": "80",
+"address_offset": "72",
 "access": "write-only",
 "size": "32",
 "interface": "s_axi_CTRL_BUS",
@@ -1917,7 +1888,7 @@ Note: This value must be greater than or equal to the largest expected packet to
 },
 },
 "fold_win_area_V": {"description": "Data signal of fold_win_area_V",
-"address_offset": "88",
+"address_offset": "80",
 "access": "write-only",
 "size": "32",
 "interface": "s_axi_CTRL_BUS",
@@ -1948,10 +1919,10 @@ Note: This value must be greater than or equal to the largest expected packet to
 },
 }]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 15:06:08.221
+!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 22:43:32.441
 !MESSAGE XSCT Command: [::hsi::utils::get_all_register_data -json /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/design_1_wrapper_hw_platform_0/system.hdf ps7_cortexa9_1], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 15:06:08.274
+!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 22:43:32.487
 !MESSAGE XSCT command with result: [::hsi::utils::get_all_register_data -json /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/design_1_wrapper_hw_platform_0/system.hdf ps7_cortexa9_1], Result: [null, {"axi_dma_0": {"MM2S_DMACR": {"description": "MM2S DMA Control Register",
 "address_offset": "0x0",
 "access": "read-write",
@@ -3036,37 +3007,8 @@ Note: This value must be greater than or equal to the largest expected packet to
 },
 },
 },
-"kernel_dim_V": {"description": "Data signal of kernel_dim_V",
-"address_offset": "48",
-"access": "write-only",
-"size": "32",
-"interface": "s_axi_CTRL_BUS",
-"fields": {"kernel_dim_V": {"access": "write-only",
-"bit_offset": "0",
-"bit_range": "",
-"bit_width": "3",
-"desc": "Bit 2 to 0 Data signal of kernel_dim_V",
-"enum_values": "",
-"lsb": "",
-"mod_write_val": "",
-"msb": "",
-"read_action": "",
-},
-"RESERVED": {"access": "read-only",
-"bit_offset": "3",
-"bit_range": "",
-"bit_width": "29",
-"desc": "Reserved.  0s on read.",
-"enum_values": "",
-"lsb": "",
-"mod_write_val": "",
-"msb": "",
-"read_action": "modify",
-},
-},
-},
 "input_h_V": {"description": "Data signal of input_h_V",
-"address_offset": "56",
+"address_offset": "48",
 "access": "write-only",
 "size": "32",
 "interface": "s_axi_CTRL_BUS",
@@ -3095,7 +3037,7 @@ Note: This value must be greater than or equal to the largest expected packet to
 },
 },
 "input_w_V": {"description": "Data signal of input_w_V",
-"address_offset": "64",
+"address_offset": "56",
 "access": "write-only",
 "size": "32",
 "interface": "s_axi_CTRL_BUS",
@@ -3124,7 +3066,7 @@ Note: This value must be greater than or equal to the largest expected packet to
 },
 },
 "real_input_h_V": {"description": "Data signal of real_input_h_V",
-"address_offset": "72",
+"address_offset": "64",
 "access": "write-only",
 "size": "32",
 "interface": "s_axi_CTRL_BUS",
@@ -3153,7 +3095,7 @@ Note: This value must be greater than or equal to the largest expected packet to
 },
 },
 "leaky_V": {"description": "Data signal of leaky_V",
-"address_offset": "80",
+"address_offset": "72",
 "access": "write-only",
 "size": "32",
 "interface": "s_axi_CTRL_BUS",
@@ -3182,7 +3124,7 @@ Note: This value must be greater than or equal to the largest expected packet to
 },
 },
 "fold_win_area_V": {"description": "Data signal of fold_win_area_V",
-"address_offset": "88",
+"address_offset": "80",
 "access": "write-only",
 "size": "32",
 "interface": "s_axi_CTRL_BUS",
@@ -3213,10 +3155,10 @@ Note: This value must be greater than or equal to the largest expected packet to
 },
 }]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 15:06:17.098
+!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 22:43:54.690
 !MESSAGE XSCT Command: [hsi::utils::get_supported_os -json /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/design_1_wrapper_hw_platform_0/system.hdf], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 15:06:17.113
+!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 22:43:54.710
 !MESSAGE XSCT command with result: [hsi::utils::get_supported_os -json /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/design_1_wrapper_hw_platform_0/system.hdf], Result: [null, {"ps7_cortexa9_0": {"freertos10_xilinx_v1_3": {"name": "freertos10_xilinx",
 "version": "1.3",
 "desc": "This Xilinx FreeRTOS port is based on FreeRTOS kernel version 10.1.1",
@@ -3249,40 +3191,40 @@ Note: This value must be greater than or equal to the largest expected packet to
 },
 }]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 15:06:17.137
+!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 22:43:54.728
 !MESSAGE XSCT Command: [::hsi::utils::openhw /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/design_1_wrapper_hw_platform_0/system.hdf], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 15:06:17.138
+!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 22:43:54.730
 !MESSAGE XSCT command with result: [::hsi::utils::openhw /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/design_1_wrapper_hw_platform_0/system.hdf], Result: [null, ]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 15:06:17.145
+!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 22:43:54.737
 !MESSAGE XSCT Command: [::hsi::utils::openhw /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/design_1_wrapper_hw_platform_0/system.hdf], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 15:06:17.147
+!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 22:43:54.738
 !MESSAGE XSCT command with result: [::hsi::utils::openhw /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/design_1_wrapper_hw_platform_0/system.hdf], Result: [null, ]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 15:06:17.147
+!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 22:43:54.739
 !MESSAGE XSCT Command: [::hsi::utils::openhw /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/design_1_wrapper_hw_platform_0/system.hdf], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 15:06:17.148
+!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 22:43:54.740
 !MESSAGE XSCT command with result: [::hsi::utils::openhw /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/design_1_wrapper_hw_platform_0/system.hdf], Result: [null, ]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 15:06:17.149
+!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 22:43:54.741
 !MESSAGE XSCT Command: [::hsi::utils::openhw /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/design_1_wrapper_hw_platform_0/system.hdf], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 15:06:17.150
+!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 22:43:54.742
 !MESSAGE XSCT command with result: [::hsi::utils::openhw /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/design_1_wrapper_hw_platform_0/system.hdf], Result: [null, ]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 15:06:17.158
+!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 22:43:54.750
 !MESSAGE XSCT Command: [::hsi::utils::openhw /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/design_1_wrapper_hw_platform_0/system.hdf], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 15:06:17.159
+!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 22:43:54.751
 !MESSAGE XSCT command with result: [::hsi::utils::openhw /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/design_1_wrapper_hw_platform_0/system.hdf], Result: [null, ]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 15:06:17.159
+!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 22:43:54.752
 !MESSAGE XSCT Command: [::hsi::utils::get_all_app_details -json], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 15:06:17.172
+!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 22:43:54.770
 !MESSAGE XSCT command with result: [::hsi::utils::get_all_app_details -json], Result: [null, {"lwip_tcp_perf_server": {"userdefname": "lwIP TCP Perf Server",
 "description": "The LwIP TCP Perf Server application is used for creating TCP server and measure downlink performance using light-weight IP stack (lwIP). This application sets up the board to use default IPv4 address 192.168.1.10 and IPv6 link local address when ipv6_enable is true, with MAC address 00:0a:35:00:01:02. The application creates TCP server on board and starts listening for TCP client connections. It will display client connection information with interim and average TCP statistics for data transfer.",
 "supp_proc": "psu_cortexa53 psu_cortexr5 ps7_cortexa9 microblaze",
@@ -3550,46 +3492,46 @@ Don't forget to modify blconfig.h to reflect the physical address where your SRE
 },
 }]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 15:06:17.176
+!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 22:43:54.776
 !MESSAGE XSCT Command: [::hsi::utils::is_app_supported_on_hw_sw  -hw /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/design_1_wrapper_hw_platform_0/system.hdf -os standalone -processor ps7_cortexa9_0 -app hello_world -sw {} -arch {}], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 15:06:17.276
+!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 22:43:54.813
 !MESSAGE XSCT command with result: [::hsi::utils::is_app_supported_on_hw_sw  -hw /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/design_1_wrapper_hw_platform_0/system.hdf -os standalone -processor ps7_cortexa9_0 -app hello_world -sw {} -arch {}], Result: [null, 1]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 15:06:17.278
+!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 22:43:54.815
 !MESSAGE XSCT Command: [::hsi::utils::is_app_supported_on_hw_sw  -hw /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/design_1_wrapper_hw_platform_0/system.hdf -os standalone -processor ps7_cortexa9_0 -app hello_world -sw {} -arch {}], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 15:06:17.314
+!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 22:43:54.850
 !MESSAGE XSCT command with result: [::hsi::utils::is_app_supported_on_hw_sw  -hw /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/design_1_wrapper_hw_platform_0/system.hdf -os standalone -processor ps7_cortexa9_0 -app hello_world -sw {} -arch {}], Result: [null, 1]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 15:06:19.366
+!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 22:43:56.359
 !MESSAGE XSCT Command: [::hsi::utils::openhw /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/design_1_wrapper_hw_platform_0/system.hdf], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 15:06:19.367
+!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 22:43:56.361
 !MESSAGE XSCT command with result: [::hsi::utils::openhw /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/design_1_wrapper_hw_platform_0/system.hdf], Result: [null, ]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 15:06:19.548
+!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 22:43:56.597
 !MESSAGE XSCT Command: [::hsi::utils::openhw /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/design_1_wrapper_hw_platform_0/system.hdf], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 15:06:19.551
+!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 22:43:56.600
 !MESSAGE XSCT command with result: [::hsi::utils::openhw /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/design_1_wrapper_hw_platform_0/system.hdf], Result: [null, ]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 15:06:21.115
+!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 22:43:57.919
 !MESSAGE XSCT Command: [::hsi::utils::openhw /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/design_1_wrapper_hw_platform_0/system.hdf], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 15:06:21.117
+!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 22:43:57.922
 !MESSAGE XSCT command with result: [::hsi::utils::openhw /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/design_1_wrapper_hw_platform_0/system.hdf], Result: [null, ]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 15:06:21.119
+!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 22:43:57.923
 !MESSAGE XSCT Command: [::hsi::utils::openhw /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/design_1_wrapper_hw_platform_0/system.hdf], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 15:06:21.121
+!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 22:43:57.924
 !MESSAGE XSCT command with result: [::hsi::utils::openhw /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/design_1_wrapper_hw_platform_0/system.hdf], Result: [null, ]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 15:06:21.122
+!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 22:43:57.924
 !MESSAGE XSCT Command: [::hsi::utils::get_all_app_details -json], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 15:06:21.133
+!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 22:43:57.931
 !MESSAGE XSCT command with result: [::hsi::utils::get_all_app_details -json], Result: [null, {"lwip_tcp_perf_server": {"userdefname": "lwIP TCP Perf Server",
 "description": "The LwIP TCP Perf Server application is used for creating TCP server and measure downlink performance using light-weight IP stack (lwIP). This application sets up the board to use default IPv4 address 192.168.1.10 and IPv6 link local address when ipv6_enable is true, with MAC address 00:0a:35:00:01:02. The application creates TCP server on board and starts listening for TCP client connections. It will display client connection information with interim and average TCP statistics for data transfer.",
 "supp_proc": "psu_cortexa53 psu_cortexr5 ps7_cortexa9 microblaze",
@@ -3857,58 +3799,58 @@ Don't forget to modify blconfig.h to reflect the physical address where your SRE
 },
 }]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 15:06:22.599
+!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 22:43:59.030
 !MESSAGE XSCT Command: [::hsi::utils::write_sw_mss -hw /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/design_1_wrapper_hw_platform_0/system.hdf -sw ps_bsp -dir /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/ps_bsp -processor ps7_cortexa9_0 -os standalone -app empty_application], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 15:06:22.677
+!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 22:43:59.084
 !MESSAGE XSCT command with result: [::hsi::utils::write_sw_mss -hw /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/design_1_wrapper_hw_platform_0/system.hdf -sw ps_bsp -dir /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/ps_bsp -processor ps7_cortexa9_0 -os standalone -app empty_application], Result: [null, ]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 15:06:22.925
+!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 22:43:59.156
 !MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/design_1_wrapper_hw_platform_0/system.hdf /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/ps_bsp/system.mss ], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 15:06:22.926
+!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 22:43:59.157
 !MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/design_1_wrapper_hw_platform_0/system.hdf /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/ps_bsp/system.mss ], Result: [null, ]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 15:06:22.927
+!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 22:43:59.158
 !MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/design_1_wrapper_hw_platform_0/system.hdf /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/ps_bsp/system.mss], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 15:06:22.928
+!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 22:43:59.159
 !MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/design_1_wrapper_hw_platform_0/system.hdf /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/ps_bsp/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
 "osname": "standalone",
 "osver": "7.0",
 }]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 15:06:22.929
+!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 22:43:59.160
 !MESSAGE XSCT Command: [::hsi::utils::generate_bsp_sources /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/design_1_wrapper_hw_platform_0/system.hdf /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/ps_bsp/system.mss /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/ps_bsp], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 15:06:30.182
+!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 22:43:59.933
 !MESSAGE XSCT command with result: [::hsi::utils::generate_bsp_sources /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/design_1_wrapper_hw_platform_0/system.hdf /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/ps_bsp/system.mss /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/ps_bsp], Result: [null, ]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 15:06:30.886
+!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 22:44:01.982
 !MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/design_1_wrapper_hw_platform_0/system.hdf /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/ps_bsp/system.mss ], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 15:06:30.887
+!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 22:44:01.983
 !MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/design_1_wrapper_hw_platform_0/system.hdf /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/ps_bsp/system.mss ], Result: [null, ]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 15:06:30.890
+!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 22:44:01.984
 !MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/design_1_wrapper_hw_platform_0/system.hdf /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/ps_bsp/system.mss], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 15:06:30.892
+!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 22:44:01.986
 !MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/design_1_wrapper_hw_platform_0/system.hdf /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/ps_bsp/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
 "osname": "standalone",
 "osver": "7.0",
 }]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 15:06:30.930
+!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 22:44:02.011
 !MESSAGE XSCT Command: [::hsi::utils::get_connected_periphs /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/design_1_wrapper_hw_platform_0/system.hdf ps7_cortexa9_0], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 15:06:30.932
+!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 22:44:02.013
 !MESSAGE XSCT command with result: [::hsi::utils::get_connected_periphs /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/design_1_wrapper_hw_platform_0/system.hdf ps7_cortexa9_0], Result: [null, axi_dma_0 ps7_afi_0 ps7_afi_1 ps7_afi_2 ps7_afi_3 ps7_coresight_comp_0 ps7_ddr_0 ps7_ddrc_0 ps7_dev_cfg_0 ps7_dma_ns ps7_dma_s ps7_ethernet_0 ps7_globaltimer_0 ps7_gpio_0 ps7_gpv_0 ps7_intc_dist_0 ps7_iop_bus_config_0 ps7_l2cachec_0 ps7_ocmc_0 ps7_pl310_0 ps7_pmu_0 ps7_qspi_0 ps7_qspi_linear_0 ps7_ram_0 ps7_ram_1 ps7_scuc_0 ps7_scugic_0 ps7_scutimer_0 ps7_scuwdt_0 ps7_sd_0 ps7_slcr_0 ps7_ttc_0 ps7_uart_1 ps7_usb_0 ps7_xadc_0 yolo_conv_top_0]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 15:06:30.935
+!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 22:44:02.014
 !MESSAGE XSCT Command: [::hsi::utils::get_drivers_for_sw -json /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/design_1_wrapper_hw_platform_0/system.hdf /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/ps_bsp/system.mss], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 15:06:30.946
+!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 22:44:02.020
 !MESSAGE XSCT command with result: [::hsi::utils::get_drivers_for_sw -json /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/design_1_wrapper_hw_platform_0/system.hdf /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/ps_bsp/system.mss], Result: [null, {"axi_dma_0": {"name": "axidma",
 "ver": "9.9",
 },
@@ -4022,10 +3964,10 @@ Don't forget to modify blconfig.h to reflect the physical address where your SRE
 },
 }]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 15:06:30.948
+!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 22:44:02.022
 !MESSAGE XSCT Command: [hsi::utils::get_drivers_for_hw -json /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/design_1_wrapper_hw_platform_0/system.hdf], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 15:06:31.059
+!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 22:44:02.121
 !MESSAGE XSCT command with result: [hsi::utils::get_drivers_for_hw -json /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/design_1_wrapper_hw_platform_0/system.hdf], Result: [null, {"axi_dma_0": {"version": "7.1",
 "driver_info": {"generic": {"name": "generic",
 "version": "2.0",
@@ -4463,49 +4405,49 @@ Don't forget to modify blconfig.h to reflect the physical address where your SRE
 },
 }]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 15:06:31.871
+!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 22:44:02.349
 !MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/design_1_wrapper_hw_platform_0/system.hdf /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/ps_bsp/system.mss ], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 15:06:31.872
+!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 22:44:02.350
 !MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/design_1_wrapper_hw_platform_0/system.hdf /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/ps_bsp/system.mss ], Result: [null, ]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 15:06:31.873
+!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 22:44:02.350
 !MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/design_1_wrapper_hw_platform_0/system.hdf /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/ps_bsp/system.mss], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 15:06:31.874
+!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 22:44:02.351
 !MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/design_1_wrapper_hw_platform_0/system.hdf /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/ps_bsp/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
 "osname": "standalone",
 "osver": "7.0",
 }]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 15:06:31.883
+!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 22:44:02.361
 !MESSAGE XSCT Command: [::hsi::utils::get_libs_from_sw /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/design_1_wrapper_hw_platform_0/system.hdf /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/ps_bsp/system.mss], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 15:06:31.885
+!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 22:44:02.362
 !MESSAGE XSCT command with result: [::hsi::utils::get_libs_from_sw /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/design_1_wrapper_hw_platform_0/system.hdf /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/ps_bsp/system.mss], Result: [null, ]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 15:06:31.971
+!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 22:44:02.428
 !MESSAGE XSCT Command: [::hsi::utils::closesw /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/ps_bsp/system.mss], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 15:06:31.972
+!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 22:44:02.429
 !MESSAGE XSCT command with result: [::hsi::utils::closesw /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/ps_bsp/system.mss], Result: [null, ]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 15:06:35.753
+!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 22:44:02.532
 !MESSAGE XSCT Command: [::hsi::utils::get_libs_from_sw /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/design_1_wrapper_hw_platform_0/system.hdf /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/ps_bsp/system.mss], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 15:06:35.758
+!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 22:44:02.535
 !MESSAGE XSCT command with result: [::hsi::utils::get_libs_from_sw /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/design_1_wrapper_hw_platform_0/system.hdf /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/ps_bsp/system.mss], Result: [null, ]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 15:06:35.759
+!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 22:44:02.541
 !MESSAGE XSCT Command: [::hsi::utils::get_sw_libs -json /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/design_1_wrapper_hw_platform_0/system.hdf /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/ps_bsp/system.mss], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 15:06:35.761
+!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 22:44:02.543
 !MESSAGE XSCT command with result: [::hsi::utils::get_sw_libs -json /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/design_1_wrapper_hw_platform_0/system.hdf /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/ps_bsp/system.mss], Result: [null, {}]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 15:06:35.762
+!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 22:44:02.544
 !MESSAGE XSCT Command: [::hsi::utils::get_drivers_for_sw -json /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/design_1_wrapper_hw_platform_0/system.hdf /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/ps_bsp/system.mss], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 15:06:35.769
+!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 22:44:02.552
 !MESSAGE XSCT command with result: [::hsi::utils::get_drivers_for_sw -json /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/design_1_wrapper_hw_platform_0/system.hdf /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/ps_bsp/system.mss], Result: [null, {"axi_dma_0": {"name": "axidma",
 "ver": "9.9",
 },
@@ -4619,85 +4561,85 @@ Don't forget to modify blconfig.h to reflect the physical address where your SRE
 },
 }]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 15:06:35.770
+!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 22:44:02.553
 !MESSAGE XSCT Command: [::hsi::utils::get_libs_from_sw /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/design_1_wrapper_hw_platform_0/system.hdf /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/ps_bsp/system.mss], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 15:06:35.772
+!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 22:44:02.555
 !MESSAGE XSCT command with result: [::hsi::utils::get_libs_from_sw /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/design_1_wrapper_hw_platform_0/system.hdf /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/ps_bsp/system.mss], Result: [null, ]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 15:06:35.772
+!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 22:44:02.556
 !MESSAGE XSCT Command: [::hsi::utils::get_sw_libs -json /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/design_1_wrapper_hw_platform_0/system.hdf /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/ps_bsp/system.mss], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 15:06:35.774
+!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 22:44:02.557
 !MESSAGE XSCT command with result: [::hsi::utils::get_sw_libs -json /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/design_1_wrapper_hw_platform_0/system.hdf /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/ps_bsp/system.mss], Result: [null, {}]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 15:06:35.775
+!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 22:44:02.559
 !MESSAGE XSCT Command: [::hsi::utils::closesw /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/ps_bsp/system.mss], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 15:06:35.776
+!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 22:44:02.562
 !MESSAGE XSCT command with result: [::hsi::utils::closesw /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/ps_bsp/system.mss], Result: [null, ]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 15:06:35.826
+!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 22:44:02.607
 !MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/design_1_wrapper_hw_platform_0/system.hdf /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/ps_bsp/system.mss ], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 15:06:35.829
+!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 22:44:02.609
 !MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/design_1_wrapper_hw_platform_0/system.hdf /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/ps_bsp/system.mss ], Result: [null, ]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 15:06:35.829
+!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 22:44:02.619
 !MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/design_1_wrapper_hw_platform_0/system.hdf /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/ps_bsp/system.mss], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 15:06:35.831
+!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 22:44:02.621
 !MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/design_1_wrapper_hw_platform_0/system.hdf /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/ps_bsp/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
 "osname": "standalone",
 "osver": "7.0",
 }]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 15:06:35.832
+!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 22:44:02.622
 !MESSAGE XSCT Command: [::hsi::utils::openhw /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/design_1_wrapper_hw_platform_0/system.hdf], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 15:06:35.833
+!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 22:44:02.623
 !MESSAGE XSCT command with result: [::hsi::utils::openhw /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/design_1_wrapper_hw_platform_0/system.hdf], Result: [null, ]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 15:06:35.833
+!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 22:44:02.626
 !MESSAGE XSCT Command: [::hsi::utils::opensw /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/ps_bsp/system.mss], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 15:06:35.835
+!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 22:44:02.627
 !MESSAGE XSCT command with result: [::hsi::utils::opensw /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/ps_bsp/system.mss], Result: [null, ]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 15:06:35.835
+!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 22:44:02.658
 !MESSAGE XSCT Command: [::hsi::utils::generate_app_template -hw /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/design_1_wrapper_hw_platform_0/system.hdf -sw /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/ps_bsp/system.mss -app empty_application -processor ps7_cortexa9_0 -os standalone -dir /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/ps/src], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 15:06:36.102
+!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 22:44:02.694
 !MESSAGE XSCT command with result: [::hsi::utils::generate_app_template -hw /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/design_1_wrapper_hw_platform_0/system.hdf -sw /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/ps_bsp/system.mss -app empty_application -processor ps7_cortexa9_0 -os standalone -dir /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/ps/src], Result: [null, ]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 15:06:36.669
+!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 22:44:03.525
 !MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/design_1_wrapper_hw_platform_0/system.hdf /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/ps_bsp/system.mss ], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 15:06:36.673
+!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 22:44:03.527
 !MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/design_1_wrapper_hw_platform_0/system.hdf /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/ps_bsp/system.mss ], Result: [null, ]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 15:06:36.674
+!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 22:44:03.527
 !MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/design_1_wrapper_hw_platform_0/system.hdf /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/ps_bsp/system.mss], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 15:06:36.685
+!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 22:44:03.529
 !MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/design_1_wrapper_hw_platform_0/system.hdf /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/ps_bsp/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
 "osname": "standalone",
 "osver": "7.0",
 }]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 15:06:36.724
+!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 22:44:03.543
 !MESSAGE XSCT Command: [::hsi::utils::get_libs_from_sw /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/design_1_wrapper_hw_platform_0/system.hdf /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/ps_bsp/system.mss], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 15:06:36.728
+!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 22:44:03.545
 !MESSAGE XSCT command with result: [::hsi::utils::get_libs_from_sw /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/design_1_wrapper_hw_platform_0/system.hdf /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/ps_bsp/system.mss], Result: [null, ]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 15:06:36.771
+!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 22:44:03.575
 !MESSAGE XSCT Command: [::hsi::utils::closesw /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/ps_bsp/system.mss], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 15:06:36.772
+!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 22:44:03.576
 !MESSAGE XSCT command with result: [::hsi::utils::closesw /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/ps_bsp/system.mss], Result: [null, ]. Thread: main
 
-!ENTRY org.eclipse.cdt.core 4 0 2019-07-15 15:06:36.975
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-15 22:44:03.678
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -4724,10 +4666,7 @@ java.lang.NullPointerException
 	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
 
-!ENTRY org.eclipse.cdt.core 1 0 2019-07-15 15:06:37.290
-!MESSAGE Indexed 'ps' (1 sources, 0 headers) in 0.439 sec: 1 declarations; 0 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
-
-!ENTRY org.eclipse.cdt.core 4 0 2019-07-15 15:06:37.552
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-15 22:44:04.225
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -4738,7 +4677,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2019-07-15 15:06:37.566
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-15 22:44:04.233
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -4749,7 +4688,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2019-07-15 15:06:37.590
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-15 22:44:04.246
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -4760,7 +4699,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2019-07-15 15:06:37.595
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-15 22:44:04.250
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -4771,7 +4710,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2019-07-15 15:06:37.598
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-15 22:44:04.258
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -4782,7 +4721,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2019-07-15 15:06:37.602
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-15 22:44:04.263
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -4793,7 +4732,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2019-07-15 15:06:37.614
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-15 22:44:04.268
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -4804,7 +4743,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2019-07-15 15:06:37.618
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-15 22:44:04.272
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -4815,7 +4754,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2019-07-15 15:06:37.625
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-15 22:44:04.287
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -4826,7 +4765,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2019-07-15 15:06:37.628
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-15 22:44:04.293
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -4837,7 +4776,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2019-07-15 15:06:37.636
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-15 22:44:04.294
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -4848,7 +4787,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2019-07-15 15:06:37.641
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-15 22:44:04.301
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -4859,7 +4798,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2019-07-15 15:06:37.654
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-15 22:44:04.302
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -4870,7 +4809,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2019-07-15 15:06:37.657
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-15 22:44:04.305
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -4881,7 +4820,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2019-07-15 15:06:37.660
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-15 22:44:04.313
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -4892,7 +4831,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2019-07-15 15:06:37.664
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-15 22:44:04.319
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -4903,7 +4842,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2019-07-15 15:06:37.675
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-15 22:44:04.325
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -4914,7 +4853,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2019-07-15 15:06:37.679
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-15 22:44:04.328
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -4925,7 +4864,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2019-07-15 15:06:37.694
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-15 22:44:04.333
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -4936,7 +4875,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2019-07-15 15:06:37.700
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-15 22:44:04.338
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -4947,7 +4886,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2019-07-15 15:06:37.812
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-15 22:44:04.350
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -4958,7 +4897,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2019-07-15 15:06:37.822
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-15 22:44:04.353
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -4969,7 +4908,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2019-07-15 15:06:37.833
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-15 22:44:04.357
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -4980,7 +4919,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2019-07-15 15:06:37.845
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-15 22:44:04.360
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -4991,7 +4930,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2019-07-15 15:06:37.859
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-15 22:44:04.371
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -5002,7 +4941,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2019-07-15 15:06:37.870
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-15 22:44:04.373
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -5013,7 +4952,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2019-07-15 15:06:37.883
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-15 22:44:04.383
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -5024,7 +4963,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2019-07-15 15:06:37.895
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-15 22:44:04.387
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -5035,7 +4974,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2019-07-15 15:06:37.901
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-15 22:44:04.390
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -5046,7 +4985,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2019-07-15 15:06:37.915
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-15 22:44:04.394
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -5057,7 +4996,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2019-07-15 15:06:37.921
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-15 22:44:04.399
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -5068,7 +5007,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2019-07-15 15:06:37.928
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-15 22:44:04.403
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -5079,7 +5018,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2019-07-15 15:06:37.943
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-15 22:44:04.409
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -5090,7 +5029,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2019-07-15 15:06:37.948
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-15 22:44:04.412
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -5101,7 +5040,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2019-07-15 15:06:37.956
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-15 22:44:04.417
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -5112,7 +5051,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2019-07-15 15:06:37.960
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-15 22:44:04.420
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -5123,7 +5062,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2019-07-15 15:06:37.971
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-15 22:44:04.426
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -5134,7 +5073,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2019-07-15 15:06:37.978
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-15 22:44:04.429
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -5145,7 +5084,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2019-07-15 15:06:37.983
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-15 22:44:04.433
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -5156,7 +5095,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2019-07-15 15:06:37.988
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-15 22:44:04.436
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -5167,7 +5106,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2019-07-15 15:06:37.992
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-15 22:44:04.440
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -5178,7 +5117,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2019-07-15 15:06:38.762
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-15 22:44:04.468
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -5189,7 +5128,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2019-07-15 15:06:38.872
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-15 22:44:04.492
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -5200,7 +5139,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2019-07-15 15:06:38.883
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-15 22:44:04.502
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -5211,7 +5150,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2019-07-15 15:06:38.886
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-15 22:44:04.504
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -5222,7 +5161,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2019-07-15 15:06:45.885
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-15 22:44:05.212
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -5233,7 +5172,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2019-07-15 15:06:45.898
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-15 22:44:05.216
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -5244,7 +5183,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2019-07-15 15:06:45.900
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-15 22:44:05.217
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -5255,7 +5194,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2019-07-15 15:06:45.902
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-15 22:44:05.224
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -5266,7 +5205,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2019-07-15 15:06:45.907
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-15 22:44:05.227
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -5277,7 +5216,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2019-07-15 15:06:45.909
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-15 22:44:05.228
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -5288,7 +5227,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2019-07-15 15:06:46.674
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-15 22:44:05.779
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -5299,7 +5238,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2019-07-15 15:06:46.677
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-15 22:44:05.783
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -5310,7 +5249,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2019-07-15 15:06:46.681
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-15 22:44:05.784
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -5321,7 +5260,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2019-07-15 15:06:47.696
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-15 22:44:06.684
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -5332,7 +5271,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2019-07-15 15:06:47.699
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-15 22:44:06.686
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -5343,7 +5282,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2019-07-15 15:06:47.701
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-15 22:44:06.687
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -5354,7 +5293,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2019-07-15 15:06:48.004
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-15 22:44:07.005
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -5365,7 +5304,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2019-07-15 15:06:48.008
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-15 22:44:07.010
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -5376,7 +5315,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2019-07-15 15:06:48.009
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-15 22:44:07.010
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -5387,7 +5326,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2019-07-15 15:06:48.900
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-15 22:44:07.822
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -5398,7 +5337,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2019-07-15 15:06:48.903
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-15 22:44:07.826
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -5409,7 +5348,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2019-07-15 15:06:48.904
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-15 22:44:07.827
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -5420,7 +5359,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2019-07-15 15:06:49.669
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-15 22:44:08.575
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -5431,7 +5370,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2019-07-15 15:06:49.673
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-15 22:44:08.579
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -5442,7 +5381,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2019-07-15 15:06:49.674
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-15 22:44:08.579
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -5453,7 +5392,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2019-07-15 15:06:50.090
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-15 22:44:09.392
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -5464,7 +5403,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2019-07-15 15:06:50.092
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-15 22:44:09.396
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -5475,7 +5414,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2019-07-15 15:06:50.098
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-15 22:44:09.399
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -5486,7 +5425,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2019-07-15 15:06:50.651
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-15 22:44:09.697
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -5497,7 +5436,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2019-07-15 15:06:50.666
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-15 22:44:09.715
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -5508,7 +5447,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2019-07-15 15:06:50.667
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-15 22:44:09.716
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -5519,7 +5458,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2019-07-15 15:06:50.667
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-15 22:44:09.717
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -5530,7 +5469,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2019-07-15 15:06:50.705
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-15 22:44:09.753
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -5541,7 +5480,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2019-07-15 15:06:50.706
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-15 22:44:09.754
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -5552,7 +5491,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2019-07-15 15:06:50.706
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-15 22:44:09.755
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -5563,7 +5502,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2019-07-15 15:06:50.707
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-15 22:44:09.755
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -5574,7 +5513,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2019-07-15 15:06:52.641
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-15 22:44:11.567
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -5585,7 +5524,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2019-07-15 15:06:52.642
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-15 22:44:11.568
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -5596,7 +5535,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2019-07-15 15:06:52.643
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-15 22:44:11.569
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -5607,7 +5546,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2019-07-15 15:06:52.643
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-15 22:44:11.569
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -5618,7 +5557,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2019-07-15 15:06:52.735
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-15 22:44:11.662
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -5629,7 +5568,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2019-07-15 15:06:52.736
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-15 22:44:11.663
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -5640,7 +5579,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2019-07-15 15:06:52.736
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-15 22:44:11.664
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -5651,7 +5590,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2019-07-15 15:06:52.737
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-15 22:44:11.664
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -5662,7 +5601,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2019-07-15 15:06:52.812
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-15 22:44:11.740
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -5673,7 +5612,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2019-07-15 15:06:52.816
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-15 22:44:11.744
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -5684,7 +5623,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2019-07-15 15:06:52.816
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-15 22:44:11.747
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -5695,7 +5634,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2019-07-15 15:06:53.590
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-15 22:44:12.566
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -5706,7 +5645,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2019-07-15 15:06:53.592
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-15 22:44:12.570
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -5717,7 +5656,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2019-07-15 15:06:53.596
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-15 22:44:12.580
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -5728,7 +5667,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2019-07-15 15:06:54.704
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-15 22:44:13.456
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -5739,7 +5678,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2019-07-15 15:06:54.707
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-15 22:44:13.460
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -5750,7 +5689,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2019-07-15 15:06:54.708
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-15 22:44:13.461
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -5760,8 +5699,29 @@ java.lang.NullPointerException
 	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 22:44:14.418
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/design_1_wrapper_hw_platform_0/system.hdf /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/ps_bsp/system.mss ], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 22:44:14.420
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/design_1_wrapper_hw_platform_0/system.hdf /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/ps_bsp/system.mss ], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 22:44:14.421
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/design_1_wrapper_hw_platform_0/system.hdf /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/ps_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 22:44:14.423
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/design_1_wrapper_hw_platform_0/system.hdf /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/ps_bsp/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+"osname": "standalone",
+"osver": "7.0",
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 22:44:14.424
+!MESSAGE XSCT Command: [::hsi::utils::closesw /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/ps_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 22:44:14.425
+!MESSAGE XSCT command with result: [::hsi::utils::closesw /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/ps_bsp/system.mss], Result: [null, ]. Thread: main
 
-!ENTRY org.eclipse.cdt.core 4 0 2019-07-15 15:06:55.767
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-15 22:44:14.708
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -5772,7 +5732,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2019-07-15 15:06:55.769
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-15 22:44:14.712
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -5783,7 +5743,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2019-07-15 15:06:55.771
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-15 22:44:14.714
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -5794,7 +5754,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2019-07-15 15:06:56.327
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-15 22:44:15.231
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -5805,7 +5765,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2019-07-15 15:06:56.330
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-15 22:44:15.234
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -5816,7 +5776,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2019-07-15 15:06:56.331
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-15 22:44:15.235
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -5827,7 +5787,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2019-07-15 15:06:56.522
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-15 22:44:15.449
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -5838,7 +5798,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2019-07-15 15:06:56.525
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-15 22:44:15.452
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -5849,7 +5809,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2019-07-15 15:06:56.527
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-15 22:44:15.453
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -5860,7 +5820,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2019-07-15 15:06:57.193
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-15 22:44:16.251
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -5871,7 +5831,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2019-07-15 15:06:57.196
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-15 22:44:16.255
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -5882,7 +5842,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2019-07-15 15:06:57.198
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-15 22:44:16.256
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -5893,7 +5853,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2019-07-15 15:06:58.029
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-15 22:44:17.045
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -5904,7 +5864,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2019-07-15 15:06:58.031
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-15 22:44:17.048
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -5915,7 +5875,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2019-07-15 15:06:58.041
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-15 22:44:17.049
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -5926,7 +5886,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2019-07-15 15:06:58.291
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-15 22:44:17.253
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -5937,7 +5897,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2019-07-15 15:06:58.294
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-15 22:44:17.257
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -5948,7 +5908,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2019-07-15 15:06:58.299
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-15 22:44:17.257
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -5959,7 +5919,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2019-07-15 15:06:58.382
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-15 22:44:17.340
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -5970,7 +5930,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2019-07-15 15:06:58.427
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-15 22:44:17.347
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -5995,160 +5955,121 @@ java.lang.NullPointerException
 	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
 
-!ENTRY org.eclipse.cdt.core 1 0 2019-07-15 15:07:01.737
-!MESSAGE Indexed 'ps_bsp' (129 sources, 157 headers) in 3.12 sec: 6,926 declarations; 35,891 references; 79 unresolved inclusions; 5 syntax errors; 71 unresolved names (0.17%)
+!ENTRY org.eclipse.cdt.core 1 0 2019-07-15 22:44:17.551
+!MESSAGE Indexed 'ps' (0 sources, 0 headers) in 0.034 sec: 0 declarations; 0 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
 
-!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 15:07:11.080
-!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/design_1_wrapper_hw_platform_0/system.hdf /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/ps_bsp/system.mss ], Thread: main
+!ENTRY org.eclipse.cdt.core 1 0 2019-07-15 22:44:20.658
+!MESSAGE Indexed 'ps_bsp' (129 sources, 157 headers) in 3.08 sec: 6,910 declarations; 35,822 references; 79 unresolved inclusions; 5 syntax errors; 71 unresolved names (0.17%)
 
-!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 15:07:11.082
-!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/design_1_wrapper_hw_platform_0/system.hdf /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/ps_bsp/system.mss ], Result: [null, ]. Thread: main
-
-!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 15:07:11.083
-!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/design_1_wrapper_hw_platform_0/system.hdf /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/ps_bsp/system.mss], Thread: main
-
-!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 15:07:11.084
-!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/design_1_wrapper_hw_platform_0/system.hdf /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/ps_bsp/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
-"osname": "standalone",
-"osver": "7.0",
-}]. Thread: main
-
-!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 15:07:11.085
-!MESSAGE XSCT Command: [::hsi::utils::closesw /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/ps_bsp/system.mss], Thread: main
-
-!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 15:07:11.085
-!MESSAGE XSCT command with result: [::hsi::utils::closesw /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/ps_bsp/system.mss], Result: [null, ]. Thread: main
-
-!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 15:07:12.718
-!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/design_1_wrapper_hw_platform_0/system.hdf /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/ps_bsp/system.mss ], Thread: main
-
-!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 15:07:12.721
-!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/design_1_wrapper_hw_platform_0/system.hdf /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/ps_bsp/system.mss ], Result: [null, ]. Thread: main
-
-!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 15:07:12.721
-!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/design_1_wrapper_hw_platform_0/system.hdf /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/ps_bsp/system.mss], Thread: main
-
-!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 15:07:12.725
-!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/design_1_wrapper_hw_platform_0/system.hdf /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/ps_bsp/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
-"osname": "standalone",
-"osver": "7.0",
-}]. Thread: main
-
-!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 15:07:12.725
-!MESSAGE XSCT Command: [::hsi::utils::closesw /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/ps_bsp/system.mss], Thread: main
-
-!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 15:07:12.726
-!MESSAGE XSCT command with result: [::hsi::utils::closesw /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/ps_bsp/system.mss], Result: [null, ]. Thread: main
-
-!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 15:07:35.115
-!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/design_1_wrapper_hw_platform_0/system.hdf /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/ps_bsp/system.mss ], Thread: main
-
-!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 15:07:35.118
-!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/design_1_wrapper_hw_platform_0/system.hdf /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/ps_bsp/system.mss ], Result: [null, ]. Thread: main
-
-!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 15:07:35.123
-!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/design_1_wrapper_hw_platform_0/system.hdf /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/ps_bsp/system.mss], Thread: main
-
-!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 15:07:35.129
-!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/design_1_wrapper_hw_platform_0/system.hdf /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/ps_bsp/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
-"osname": "standalone",
-"osver": "7.0",
-}]. Thread: main
-
-!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 15:07:35.140
-!MESSAGE XSCT Command: [::hsi::utils::closesw /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/ps_bsp/system.mss], Thread: main
-
-!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 15:07:35.145
-!MESSAGE XSCT command with result: [::hsi::utils::closesw /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/ps_bsp/system.mss], Result: [null, ]. Thread: main
-
-!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 15:09:33.311
+!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 22:45:13.568
 !MESSAGE XSCT Command: [::hsi::utils::get_hw_files_on_hw /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/design_1_wrapper_hw_platform_0/system.hdf bit], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 15:09:33.312
+!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 22:45:13.569
 !MESSAGE XSCT command with result: [::hsi::utils::get_hw_files_on_hw /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/design_1_wrapper_hw_platform_0/system.hdf bit], Result: [null, design_1_wrapper.bit]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 15:09:33.313
+!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 22:45:13.570
 !MESSAGE XSCT Command: [::hsi::utils::get_addr_tag_info -json /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/design_1_wrapper_hw_platform_0/system.hdf ], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 15:09:33.315
+!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 22:45:13.573
 !MESSAGE XSCT command with result: [::hsi::utils::get_addr_tag_info -json /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/design_1_wrapper_hw_platform_0/system.hdf ], Result: [null, {"ps7_cortexa9_0": "",
 "ps7_cortexa9_1": "",
 }]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 15:09:34.378
+!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 22:45:15.219
 !MESSAGE XSCT Command: [::hsi::utils::get_bram_blocks /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/design_1_wrapper_hw_platform_0/system.hdf ], Thread: ModalContext
 
-!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 15:09:34.381
+!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 22:45:15.226
 !MESSAGE XSCT command with result: [::hsi::utils::get_bram_blocks /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/design_1_wrapper_hw_platform_0/system.hdf ], Result: [null, ]. Thread: ModalContext
 
-!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 15:09:34.384
+!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 22:45:15.246
 !MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: ModalContext
 
-!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 15:09:36.426
+!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 22:45:16.067
 !MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#1]. Thread: ModalContext
 
-!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 15:09:36.429
+!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 22:45:16.073
 !MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
 
-!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 15:09:37.144
+!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 22:45:16.229
 !MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Zed 210248586321]. Thread: ModalContext
 
-!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 15:09:37.147
+!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 22:45:16.233
 !MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
 
-!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 15:09:37.154
+!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 22:45:16.241
 !MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Zed 210248586321]. Thread: ModalContext
 
-!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 15:09:37.154
+!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 22:45:16.241
 !MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248586321" && level==1}], Thread: ModalContext
 
-!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 15:09:37.173
+!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 22:45:16.258
 !MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248586321" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
      3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: ModalContext
 
-!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 15:09:37.174
+!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 22:45:16.259
 !MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248586321" && level==0} -index 1], Thread: ModalContext
 
-!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 15:09:37.218
+!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 22:45:16.281
 !MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248586321" && level==0} -index 1], Result: [null, ]. Thread: ModalContext
 
-!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 15:09:37.219
+!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 22:45:16.282
 !MESSAGE XSCT Command: [fpga -file /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit], Thread: ModalContext
 
-!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 15:09:39.569
+!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 22:45:18.620
 !MESSAGE XSCT command with result: [fpga -file /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit], Result: [null, ]. Thread: ModalContext
 
-!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 15:09:40.371
+!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 22:45:19.421
 !MESSAGE XSCT Command: [::hsi::utils::get_bram_blocks /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/design_1_wrapper_hw_platform_0/system.hdf ], Thread: ModalContext
 
-!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 15:09:40.380
+!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 22:45:19.427
 !MESSAGE XSCT command with result: [::hsi::utils::get_bram_blocks /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/design_1_wrapper_hw_platform_0/system.hdf ], Result: [null, ]. Thread: ModalContext
 
-!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 15:09:55.942
+!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 22:45:20.303
 !MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/design_1_wrapper_hw_platform_0/system.hdf /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/ps_bsp/system.mss ], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 15:09:55.946
+!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 22:45:20.305
 !MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/design_1_wrapper_hw_platform_0/system.hdf /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/ps_bsp/system.mss ], Result: [null, ]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 15:09:55.950
+!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 22:45:20.305
 !MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/design_1_wrapper_hw_platform_0/system.hdf /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/ps_bsp/system.mss], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 15:09:55.952
+!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 22:45:20.307
 !MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/design_1_wrapper_hw_platform_0/system.hdf /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/ps_bsp/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
 "osname": "standalone",
 "osver": "7.0",
 }]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 15:09:55.954
+!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 22:45:20.307
 !MESSAGE XSCT Command: [::hsi::utils::closesw /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/ps_bsp/system.mss], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 15:09:55.958
+!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 22:45:20.308
 !MESSAGE XSCT command with result: [::hsi::utils::closesw /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/ps_bsp/system.mss], Result: [null, ]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 15:09:59.437
-!MESSAGE XSCT Command: [::hsi::utils::get_ps_config_params -json /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/design_1_wrapper_hw_platform_0/system.hdf], Thread: Worker-2
+!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 22:45:25.872
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/design_1_wrapper_hw_platform_0/system.hdf /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/ps_bsp/system.mss ], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 15:09:59.447
+!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 22:45:25.875
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/design_1_wrapper_hw_platform_0/system.hdf /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/ps_bsp/system.mss ], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 22:45:25.876
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/design_1_wrapper_hw_platform_0/system.hdf /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/ps_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 22:45:25.878
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/design_1_wrapper_hw_platform_0/system.hdf /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/ps_bsp/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+"osname": "standalone",
+"osver": "7.0",
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 22:45:25.878
+!MESSAGE XSCT Command: [::hsi::utils::closesw /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/ps_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 22:45:25.879
+!MESSAGE XSCT command with result: [::hsi::utils::closesw /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/ps_bsp/system.mss], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 22:45:28.840
+!MESSAGE XSCT Command: [::hsi::utils::get_ps_config_params -json /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/design_1_wrapper_hw_platform_0/system.hdf], Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 22:45:28.847
 !MESSAGE XSCT command with result: [::hsi::utils::get_ps_config_params -json /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/design_1_wrapper_hw_platform_0/system.hdf], Result: [null, {"PCW_APU_PERIPHERAL_FREQMHZ": "666.666667",
 "PCW_DDR_HPRLPR_QUEUE_PARTITION": "HPR(0)/LPR(32)",
 "PCW_DDR_HPR_TO_CRITICAL_PRIORITY_LEVEL": "15",
@@ -6161,60 +6082,60 @@ java.lang.NullPointerException
 "PCW_FPGA0_PERIPHERAL_FREQMHZ": "100.000000",
 "PCW_UIPARAM_DDR_BUS_WIDTH": "32 Bit",
 "PCW_UIPARAM_DDR_FREQ_MHZ": "533.333313",
-}]. Thread: Worker-2
+}]. Thread: Worker-1
 
-!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 15:09:59.448
-!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/design_1_wrapper_hw_platform_0/system.hdf ps7_cortexa9_0 C_DEBUG_ENABLED], Thread: Worker-2
+!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 22:45:28.847
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/design_1_wrapper_hw_platform_0/system.hdf ps7_cortexa9_0 C_DEBUG_ENABLED], Thread: Worker-1
 
-!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 15:09:59.450
-!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/design_1_wrapper_hw_platform_0/system.hdf ps7_cortexa9_0 C_DEBUG_ENABLED], Result: [null, ]. Thread: Worker-2
+!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 22:45:28.848
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/design_1_wrapper_hw_platform_0/system.hdf ps7_cortexa9_0 C_DEBUG_ENABLED], Result: [null, ]. Thread: Worker-1
 
-!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 15:09:59.451
-!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/design_1_wrapper_hw_platform_0/system.hdf ps7_cortexa9_0 C_DEBUG_EVENT_COUNTERS], Thread: Worker-2
+!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 22:45:28.849
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/design_1_wrapper_hw_platform_0/system.hdf ps7_cortexa9_0 C_DEBUG_EVENT_COUNTERS], Thread: Worker-1
 
-!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 15:09:59.453
-!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/design_1_wrapper_hw_platform_0/system.hdf ps7_cortexa9_0 C_DEBUG_EVENT_COUNTERS], Result: [null, ]. Thread: Worker-2
+!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 22:45:28.850
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/design_1_wrapper_hw_platform_0/system.hdf ps7_cortexa9_0 C_DEBUG_EVENT_COUNTERS], Result: [null, ]. Thread: Worker-1
 
-!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 15:09:59.453
-!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/design_1_wrapper_hw_platform_0/system.hdf ps7_cortexa9_0 C_DEBUG_LATENCY_COUNTERS], Thread: Worker-2
+!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 22:45:28.850
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/design_1_wrapper_hw_platform_0/system.hdf ps7_cortexa9_0 C_DEBUG_LATENCY_COUNTERS], Thread: Worker-1
 
-!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 15:09:59.454
-!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/design_1_wrapper_hw_platform_0/system.hdf ps7_cortexa9_0 C_DEBUG_LATENCY_COUNTERS], Result: [null, ]. Thread: Worker-2
+!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 22:45:28.851
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/design_1_wrapper_hw_platform_0/system.hdf ps7_cortexa9_0 C_DEBUG_LATENCY_COUNTERS], Result: [null, ]. Thread: Worker-1
 
-!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 15:09:59.455
-!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/design_1_wrapper_hw_platform_0/system.hdf ps7_cortexa9_0 C_DEBUG_COUNTER_WIDTH], Thread: Worker-2
+!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 22:45:28.854
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/design_1_wrapper_hw_platform_0/system.hdf ps7_cortexa9_0 C_DEBUG_COUNTER_WIDTH], Thread: Worker-1
 
-!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 15:09:59.456
-!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/design_1_wrapper_hw_platform_0/system.hdf ps7_cortexa9_0 C_DEBUG_COUNTER_WIDTH], Result: [null, ]. Thread: Worker-2
+!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 22:45:28.858
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/design_1_wrapper_hw_platform_0/system.hdf ps7_cortexa9_0 C_DEBUG_COUNTER_WIDTH], Result: [null, ]. Thread: Worker-1
 
-!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 15:09:59.458
-!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/design_1_wrapper_hw_platform_0/system.hdf ps7_cortexa9_0 C_FREQ], Thread: Worker-2
+!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 22:45:28.858
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/design_1_wrapper_hw_platform_0/system.hdf ps7_cortexa9_0 C_FREQ], Thread: Worker-1
 
-!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 15:09:59.459
-!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/design_1_wrapper_hw_platform_0/system.hdf ps7_cortexa9_0 C_FREQ], Result: [null, ]. Thread: Worker-2
+!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 22:45:28.859
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/design_1_wrapper_hw_platform_0/system.hdf ps7_cortexa9_0 C_FREQ], Result: [null, ]. Thread: Worker-1
 
-!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 15:09:59.459
-!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/design_1_wrapper_hw_platform_0/system.hdf ps7_cortexa9_0 C_CPU_CLK_FREQ_HZ], Thread: Worker-2
+!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 22:45:28.859
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/design_1_wrapper_hw_platform_0/system.hdf ps7_cortexa9_0 C_CPU_CLK_FREQ_HZ], Thread: Worker-1
 
-!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 15:09:59.461
-!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/design_1_wrapper_hw_platform_0/system.hdf ps7_cortexa9_0 C_CPU_CLK_FREQ_HZ], Result: [null, 666666687]. Thread: Worker-2
+!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 22:45:28.860
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/design_1_wrapper_hw_platform_0/system.hdf ps7_cortexa9_0 C_CPU_CLK_FREQ_HZ], Result: [null, 666666687]. Thread: Worker-1
 
-!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 15:09:59.461
-!MESSAGE XSCT Command: [::hsi::utils::get_cpu_nr -json /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/design_1_wrapper_hw_platform_0/system.hdf], Thread: Worker-2
+!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 22:45:28.862
+!MESSAGE XSCT Command: [::hsi::utils::get_cpu_nr -json /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/design_1_wrapper_hw_platform_0/system.hdf], Thread: Worker-1
 
-!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 15:09:59.464
+!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 22:45:28.864
 !MESSAGE XSCT command with result: [::hsi::utils::get_cpu_nr -json /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/design_1_wrapper_hw_platform_0/system.hdf], Result: [null, {"ps7_cortexa9_0": {"bscan": "",
 "index": "0",
 },
 "ps7_cortexa9_1": {"bscan": "",
 "index": "1",
 },
-}]. Thread: Worker-2
+}]. Thread: Worker-1
 
-!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 15:09:59.465
-!MESSAGE XSCT Command: [::hsi::utils::get_addr_ranges -json /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/design_1_wrapper_hw_platform_0/system.hdf ps7_cortexa9_1], Thread: Worker-2
+!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 22:45:28.866
+!MESSAGE XSCT Command: [::hsi::utils::get_addr_ranges -json /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/design_1_wrapper_hw_platform_0/system.hdf ps7_cortexa9_1], Thread: Worker-1
 
-!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 15:09:59.479
+!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 22:45:28.882
 !MESSAGE XSCT command with result: [::hsi::utils::get_addr_ranges -json /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/design_1_wrapper_hw_platform_0/system.hdf ps7_cortexa9_1], Result: [null, {"axi_dma_0_S_AXI_LITE": {"name": "axi_dma_0",
 "base": "0x40400000",
 "high": "0x4040FFFF",
@@ -6611,292 +6532,292 @@ java.lang.NullPointerException
 "acctype": "",
 "tz": "",
 },
-}]. Thread: Worker-2
+}]. Thread: Worker-1
 
-!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 15:09:59.480
-!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/design_1_wrapper_hw_platform_0/system.hdf ps7_cortexa9_1 C_DEBUG_ENABLED], Thread: Worker-2
+!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 22:45:28.883
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/design_1_wrapper_hw_platform_0/system.hdf ps7_cortexa9_1 C_DEBUG_ENABLED], Thread: Worker-1
 
-!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 15:09:59.482
-!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/design_1_wrapper_hw_platform_0/system.hdf ps7_cortexa9_1 C_DEBUG_ENABLED], Result: [null, ]. Thread: Worker-2
+!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 22:45:28.885
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/design_1_wrapper_hw_platform_0/system.hdf ps7_cortexa9_1 C_DEBUG_ENABLED], Result: [null, ]. Thread: Worker-1
 
-!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 15:09:59.482
-!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/design_1_wrapper_hw_platform_0/system.hdf ps7_cortexa9_1 C_DEBUG_EVENT_COUNTERS], Thread: Worker-2
+!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 22:45:28.886
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/design_1_wrapper_hw_platform_0/system.hdf ps7_cortexa9_1 C_DEBUG_EVENT_COUNTERS], Thread: Worker-1
 
-!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 15:09:59.485
-!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/design_1_wrapper_hw_platform_0/system.hdf ps7_cortexa9_1 C_DEBUG_EVENT_COUNTERS], Result: [null, ]. Thread: Worker-2
+!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 22:45:28.889
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/design_1_wrapper_hw_platform_0/system.hdf ps7_cortexa9_1 C_DEBUG_EVENT_COUNTERS], Result: [null, ]. Thread: Worker-1
 
-!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 15:09:59.486
-!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/design_1_wrapper_hw_platform_0/system.hdf ps7_cortexa9_1 C_DEBUG_LATENCY_COUNTERS], Thread: Worker-2
+!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 22:45:28.889
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/design_1_wrapper_hw_platform_0/system.hdf ps7_cortexa9_1 C_DEBUG_LATENCY_COUNTERS], Thread: Worker-1
 
-!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 15:09:59.490
-!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/design_1_wrapper_hw_platform_0/system.hdf ps7_cortexa9_1 C_DEBUG_LATENCY_COUNTERS], Result: [null, ]. Thread: Worker-2
+!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 22:45:28.891
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/design_1_wrapper_hw_platform_0/system.hdf ps7_cortexa9_1 C_DEBUG_LATENCY_COUNTERS], Result: [null, ]. Thread: Worker-1
 
-!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 15:09:59.491
-!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/design_1_wrapper_hw_platform_0/system.hdf ps7_cortexa9_1 C_DEBUG_COUNTER_WIDTH], Thread: Worker-2
+!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 22:45:28.894
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/design_1_wrapper_hw_platform_0/system.hdf ps7_cortexa9_1 C_DEBUG_COUNTER_WIDTH], Thread: Worker-1
 
-!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 15:09:59.492
-!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/design_1_wrapper_hw_platform_0/system.hdf ps7_cortexa9_1 C_DEBUG_COUNTER_WIDTH], Result: [null, ]. Thread: Worker-2
+!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 22:45:28.895
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/design_1_wrapper_hw_platform_0/system.hdf ps7_cortexa9_1 C_DEBUG_COUNTER_WIDTH], Result: [null, ]. Thread: Worker-1
 
-!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 15:09:59.493
-!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/design_1_wrapper_hw_platform_0/system.hdf ps7_cortexa9_1 C_FREQ], Thread: Worker-2
+!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 22:45:28.895
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/design_1_wrapper_hw_platform_0/system.hdf ps7_cortexa9_1 C_FREQ], Thread: Worker-1
 
-!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 15:09:59.494
-!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/design_1_wrapper_hw_platform_0/system.hdf ps7_cortexa9_1 C_FREQ], Result: [null, ]. Thread: Worker-2
+!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 22:45:28.896
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/design_1_wrapper_hw_platform_0/system.hdf ps7_cortexa9_1 C_FREQ], Result: [null, ]. Thread: Worker-1
 
-!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 15:09:59.494
-!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/design_1_wrapper_hw_platform_0/system.hdf ps7_cortexa9_1 C_CPU_CLK_FREQ_HZ], Thread: Worker-2
+!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 22:45:28.896
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/design_1_wrapper_hw_platform_0/system.hdf ps7_cortexa9_1 C_CPU_CLK_FREQ_HZ], Thread: Worker-1
 
-!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 15:09:59.495
-!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/design_1_wrapper_hw_platform_0/system.hdf ps7_cortexa9_1 C_CPU_CLK_FREQ_HZ], Result: [null, 666666687]. Thread: Worker-2
+!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 22:45:28.897
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/design_1_wrapper_hw_platform_0/system.hdf ps7_cortexa9_1 C_CPU_CLK_FREQ_HZ], Result: [null, 666666687]. Thread: Worker-1
 
-!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 15:09:59.499
-!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-2
+!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 22:45:28.900
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-1
 
-!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 15:09:59.502
-!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#1]. Thread: Worker-2
+!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 22:45:28.901
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#1]. Thread: Worker-1
 
-!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 15:09:59.510
-!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-2
+!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 22:45:28.902
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-1
 
-!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 15:09:59.522
-!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Zed 210248586321]. Thread: Worker-2
+!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 22:45:28.908
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Zed 210248586321]. Thread: Worker-1
 
-!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 15:09:59.522
-!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-2
+!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 22:45:28.908
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-1
 
-!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 15:09:59.529
-!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Zed 210248586321]. Thread: Worker-2
+!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 22:45:28.915
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Zed 210248586321]. Thread: Worker-1
 
-!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 15:09:59.529
-!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248586321" && level==1}], Thread: Worker-2
+!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 22:45:28.915
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248586321" && level==1}], Thread: Worker-1
 
-!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 15:09:59.545
+!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 22:45:28.932
 !MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248586321" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
-     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-2
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-1
 
-!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 15:09:59.546
-!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248586321" && level==0} -index 1], Thread: Worker-2
+!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 22:45:28.933
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248586321" && level==0} -index 1], Thread: Worker-1
 
-!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 15:09:59.578
-!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248586321" && level==0} -index 1], Result: [null, ]. Thread: Worker-2
+!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 22:45:28.955
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248586321" && level==0} -index 1], Result: [null, ]. Thread: Worker-1
 
-!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 15:09:59.578
-!MESSAGE XSCT Command: [fpga -state], Thread: Worker-2
+!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 22:45:28.955
+!MESSAGE XSCT Command: [fpga -state], Thread: Worker-1
 
-!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 15:09:59.586
-!MESSAGE XSCT command with result: [fpga -state], Result: [null, FPGA is configured]. Thread: Worker-2
+!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 22:45:28.958
+!MESSAGE XSCT command with result: [fpga -state], Result: [null, FPGA is configured]. Thread: Worker-1
 
-!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 15:09:59.587
-!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-2
+!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 22:45:28.958
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-1
 
-!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 15:09:59.588
-!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#1]. Thread: Worker-2
+!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 22:45:28.961
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#1]. Thread: Worker-1
 
-!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 15:09:59.594
-!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-2
+!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 22:45:28.961
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-1
 
-!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 15:09:59.609
-!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Zed 210248586321]. Thread: Worker-2
+!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 22:45:28.968
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Zed 210248586321]. Thread: Worker-1
 
-!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 15:09:59.611
-!MESSAGE XSCT Command: [version -server], Thread: Worker-2
+!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 22:45:28.969
+!MESSAGE XSCT Command: [version -server], Thread: Worker-1
 
-!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 15:09:59.617
-!MESSAGE XSCT command with result: [version -server], Result: [null, 2019.1]. Thread: Worker-2
+!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 22:45:28.970
+!MESSAGE XSCT command with result: [version -server], Result: [null, 2019.1]. Thread: Worker-1
 
-!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 15:09:59.618
-!MESSAGE XSCT Command: [version], Thread: Worker-2
+!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 22:45:28.971
+!MESSAGE XSCT Command: [version], Thread: Worker-1
 
-!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 15:09:59.618
+!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 22:45:28.972
 !MESSAGE XSCT command with result: [version], Result: [null, xsct 2019.1
 SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
-Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.]. Thread: Worker-2
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.]. Thread: Worker-1
 
-!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 15:09:59.620
-!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-2
+!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 22:45:28.973
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-1
 
-!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 15:09:59.627
-!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Zed 210248586321]. Thread: Worker-2
+!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 22:45:28.984
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Zed 210248586321]. Thread: Worker-1
 
-!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 15:09:59.627
-!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248586321" && level==1}], Thread: Worker-2
+!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 22:45:28.984
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248586321" && level==1}], Thread: Worker-1
 
-!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 15:09:59.645
+!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 22:45:29.010
 !MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248586321" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
-     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-2
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-1
 
-!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 15:09:59.646
-!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-2
+!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 22:45:29.011
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-1
 
-!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 15:09:59.652
-!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Zed 210248586321]. Thread: Worker-2
+!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 22:45:29.021
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Zed 210248586321]. Thread: Worker-1
 
-!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 15:09:59.653
-!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248586321" && level==1}], Thread: Worker-2
+!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 22:45:29.022
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248586321" && level==1}], Thread: Worker-1
 
-!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 15:09:59.672
+!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 22:45:29.039
 !MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248586321" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
-     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-2
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-1
 
-!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 15:09:59.674
-!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-2
+!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 22:45:29.040
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-1
 
-!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 15:09:59.682
-!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Zed 210248586321]. Thread: Worker-2
+!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 22:45:29.047
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Zed 210248586321]. Thread: Worker-1
 
-!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 15:09:59.682
-!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248586321" && level==1}], Thread: Worker-2
+!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 22:45:29.047
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248586321" && level==1}], Thread: Worker-1
 
-!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 15:09:59.710
+!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 22:45:29.066
 !MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248586321" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
-     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-2
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-1
 
-!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 15:09:59.710
-!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-2
+!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 22:45:29.067
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-1
 
-!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 15:09:59.719
-!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Zed 210248586321]. Thread: Worker-2
+!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 22:45:29.072
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Zed 210248586321]. Thread: Worker-1
 
-!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 15:09:59.719
-!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248586321" && level==1}], Thread: Worker-2
+!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 22:45:29.073
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248586321" && level==1}], Thread: Worker-1
 
-!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 15:09:59.745
+!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 22:45:29.089
 !MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248586321" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
-     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-2
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-1
 
-!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 15:09:59.745
-!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-2
+!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 22:45:29.090
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-1
 
-!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 15:09:59.754
-!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Zed 210248586321]. Thread: Worker-2
+!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 22:45:29.097
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Zed 210248586321]. Thread: Worker-1
 
-!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 15:09:59.754
-!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248586321" && level==1}], Thread: Worker-2
+!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 22:45:29.097
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248586321" && level==1}], Thread: Worker-1
 
-!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 15:09:59.770
+!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 22:45:29.116
 !MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248586321" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
-     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-2
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-1
 
-!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 15:09:59.770
-!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-2
+!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 22:45:29.116
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-1
 
-!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 15:09:59.776
-!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Zed 210248586321]. Thread: Worker-2
+!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 22:45:29.122
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Zed 210248586321]. Thread: Worker-1
 
-!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 15:09:59.777
-!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248586321" && level==1}], Thread: Worker-2
+!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 22:45:29.122
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248586321" && level==1}], Thread: Worker-1
 
-!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 15:09:59.794
+!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 22:45:29.144
 !MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248586321" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
-     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-2
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-1
 
-!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 15:09:59.795
-!MESSAGE XSCT Command: [jtag targets -set -filter {name =~ "Digilent Zed 210248586321" && level == 0}], Thread: Worker-2
+!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 22:45:29.144
+!MESSAGE XSCT Command: [jtag targets -set -filter {name =~ "Digilent Zed 210248586321" && level == 0}], Thread: Worker-1
 
-!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 15:09:59.821
-!MESSAGE XSCT command with result: [jtag targets -set -filter {name =~ "Digilent Zed 210248586321" && level == 0}], Result: [null, ]. Thread: Worker-2
+!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 22:45:29.161
+!MESSAGE XSCT command with result: [jtag targets -set -filter {name =~ "Digilent Zed 210248586321" && level == 0}], Result: [null, ]. Thread: Worker-1
 
-!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 15:09:59.821
-!MESSAGE XSCT Command: [jtag frequency], Thread: Worker-2
+!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 22:45:29.161
+!MESSAGE XSCT Command: [jtag frequency], Thread: Worker-1
 
-!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 15:09:59.823
-!MESSAGE XSCT command with result: [jtag frequency], Result: [null, 15000000]. Thread: Worker-2
+!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 22:45:29.162
+!MESSAGE XSCT command with result: [jtag frequency], Result: [null, 15000000]. Thread: Worker-1
 
-!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 15:09:59.823
-!MESSAGE XSCT Command: [source /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl], Thread: Worker-2
+!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 22:45:29.163
+!MESSAGE XSCT Command: [source /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl], Thread: Worker-1
 
-!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 15:09:59.824
-!MESSAGE XSCT command with result: [source /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl], Result: [null, ]. Thread: Worker-2
+!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 22:45:29.164
+!MESSAGE XSCT command with result: [source /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl], Result: [null, ]. Thread: Worker-1
 
-!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 15:09:59.825
-!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248586321"} -index 0], Thread: Worker-2
+!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 22:45:29.164
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248586321"} -index 0], Thread: Worker-1
 
-!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 15:09:59.847
-!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248586321"} -index 0], Result: [null, ]. Thread: Worker-2
+!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 22:45:29.185
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248586321"} -index 0], Result: [null, ]. Thread: Worker-1
 
-!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 15:09:59.847
-!MESSAGE XSCT Command: [loadhw -hw /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]], Thread: Worker-2
+!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 22:45:29.185
+!MESSAGE XSCT Command: [loadhw -hw /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]], Thread: Worker-1
 
-!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 15:09:59.896
-!MESSAGE XSCT command with result: [loadhw -hw /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]], Result: [null, design_1_wrapper]. Thread: Worker-2
+!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 22:45:29.219
+!MESSAGE XSCT command with result: [loadhw -hw /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]], Result: [null, design_1_wrapper]. Thread: Worker-1
 
-!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 15:09:59.896
-!MESSAGE XSCT Command: [configparams force-mem-access 1], Thread: Worker-2
+!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 22:45:29.219
+!MESSAGE XSCT Command: [configparams force-mem-access 1], Thread: Worker-1
 
-!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 15:09:59.898
-!MESSAGE XSCT command with result: [configparams force-mem-access 1], Result: [null, ]. Thread: Worker-2
+!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 22:45:29.221
+!MESSAGE XSCT command with result: [configparams force-mem-access 1], Result: [null, ]. Thread: Worker-1
 
-!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 15:09:59.898
-!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248586321"} -index 0], Thread: Worker-2
+!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 22:45:29.222
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248586321"} -index 0], Thread: Worker-1
 
-!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 15:09:59.927
-!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248586321"} -index 0], Result: [null, ]. Thread: Worker-2
+!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 22:45:29.245
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248586321"} -index 0], Result: [null, ]. Thread: Worker-1
 
-!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 15:09:59.928
-!MESSAGE XSCT Command: [stop], Thread: Worker-2
+!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 22:45:29.245
+!MESSAGE XSCT Command: [stop], Thread: Worker-1
 
-!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 15:09:59.997
-!MESSAGE XSCT command with result: [stop], Result: [null, ]. Thread: Worker-2
+!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 22:45:29.287
+!MESSAGE XSCT command with result: [stop], Result: [null, ]. Thread: Worker-1
 
-!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 15:09:59.997
-!MESSAGE XSCT Command: [ps7_init], Thread: Worker-2
+!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 22:45:29.288
+!MESSAGE XSCT Command: [ps7_init], Thread: Worker-1
 
-!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 15:10:00.346
-!MESSAGE XSCT command with result: [ps7_init], Result: [null, ]. Thread: Worker-2
+!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 22:45:29.575
+!MESSAGE XSCT command with result: [ps7_init], Result: [null, ]. Thread: Worker-1
 
-!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 15:10:00.346
-!MESSAGE XSCT Command: [ps7_post_config], Thread: Worker-2
+!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 22:45:29.575
+!MESSAGE XSCT Command: [ps7_post_config], Thread: Worker-1
 
-!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 15:10:00.352
-!MESSAGE XSCT command with result: [ps7_post_config], Result: [null, ]. Thread: Worker-2
+!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 22:45:29.581
+!MESSAGE XSCT command with result: [ps7_post_config], Result: [null, ]. Thread: Worker-1
 
-!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 15:10:00.352
-!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248586321"} -index 0], Thread: Worker-2
+!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 22:45:29.581
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248586321"} -index 0], Thread: Worker-1
 
-!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 15:10:00.377
-!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248586321"} -index 0], Result: [null, ]. Thread: Worker-2
+!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 22:45:29.607
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248586321"} -index 0], Result: [null, ]. Thread: Worker-1
 
-!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 15:10:00.377
-!MESSAGE XSCT Command: [rst -processor], Thread: Worker-2
+!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 22:45:29.607
+!MESSAGE XSCT Command: [rst -processor], Thread: Worker-1
 
-!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 15:10:00.403
-!MESSAGE XSCT command with result: [rst -processor], Result: [null, ]. Thread: Worker-2
+!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 22:45:29.629
+!MESSAGE XSCT command with result: [rst -processor], Result: [null, ]. Thread: Worker-1
 
-!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 15:10:00.404
-!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248586321"} -index 0], Thread: Worker-2
+!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 22:45:29.630
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248586321"} -index 0], Thread: Worker-1
 
-!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 15:10:00.446
-!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248586321"} -index 0], Result: [null, ]. Thread: Worker-2
+!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 22:45:29.651
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248586321"} -index 0], Result: [null, ]. Thread: Worker-1
 
-!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 15:10:00.447
-!MESSAGE XSCT Command: [dow /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/ps/Debug/ps.elf], Thread: Worker-2
+!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 22:45:29.651
+!MESSAGE XSCT Command: [dow /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/ps/Debug/ps.elf], Thread: Worker-1
 
-!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 15:10:14.008
-!MESSAGE XSCT command with result: [dow /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/ps/Debug/ps.elf], Result: [null, ]. Thread: Worker-2
+!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 22:45:43.436
+!MESSAGE XSCT command with result: [dow /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/ps/Debug/ps.elf], Result: [null, ]. Thread: Worker-1
 
-!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 15:10:14.008
-!MESSAGE XSCT Command: [configparams force-mem-access 0], Thread: Worker-2
+!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 22:45:43.436
+!MESSAGE XSCT Command: [configparams force-mem-access 0], Thread: Worker-1
 
-!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 15:10:14.010
-!MESSAGE XSCT command with result: [configparams force-mem-access 0], Result: [null, ]. Thread: Worker-2
+!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 22:45:43.437
+!MESSAGE XSCT command with result: [configparams force-mem-access 0], Result: [null, ]. Thread: Worker-1
 
-!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 15:10:14.102
-!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248586321"} -index 0], Thread: Worker-2
+!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 22:45:43.451
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248586321"} -index 0], Thread: Worker-1
 
-!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 15:10:14.140
-!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248586321"} -index 0], Result: [null, ]. Thread: Worker-2
+!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 22:45:43.480
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248586321"} -index 0], Result: [null, ]. Thread: Worker-1
 
-!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 15:10:14.141
-!MESSAGE XSCT Command: [con], Thread: Worker-2
+!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 22:45:43.481
+!MESSAGE XSCT Command: [con], Thread: Worker-1
 
-!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 15:10:14.164
-!MESSAGE XSCT command with result: [con], Result: [null, ]. Thread: Worker-2
+!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 22:45:43.503
+!MESSAGE XSCT command with result: [con], Result: [null, ]. Thread: Worker-1
 
-!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 15:10:14.174
-!MESSAGE XSCT Command: [disconnect tcfchan#1], Thread: Thread-161
+!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 22:45:43.514
+!MESSAGE XSCT Command: [disconnect tcfchan#1], Thread: Thread-149
 
-!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 15:10:14.177
-!MESSAGE XSCT command with result: [disconnect tcfchan#1], Result: [null, ]. Thread: Thread-161
+!ENTRY com.xilinx.sdk.utils 0 0 2019-07-15 22:45:43.518
+!MESSAGE XSCT command with result: [disconnect tcfchan#1], Result: [null, ]. Thread: Thread-149
 
-!ENTRY com.xilinx.sdk.utils 1 0 2019-07-15 15:10:48.995
+!ENTRY com.xilinx.sdk.utils 1 0 2019-07-15 22:48:14.627
 !MESSAGE Executed Webtalk command

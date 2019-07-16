@@ -11,8 +11,8 @@ entity yolo_max_pool_top_line_buff_group_0_va_ram is
     generic(
             MEM_TYPE    : string := "block"; 
             DWIDTH     : integer := 16; 
-            AWIDTH     : integer := 11; 
-            MEM_SIZE    : integer := 1672
+            AWIDTH     : integer := 12; 
+            MEM_SIZE    : integer := 3344
     ); 
     port (
           addr0     : in std_logic_vector(AWIDTH-1 downto 0); 
@@ -97,8 +97,8 @@ use IEEE.std_logic_1164.all;
 entity yolo_max_pool_top_line_buff_group_0_va is
     generic (
         DataWidth : INTEGER := 16;
-        AddressRange : INTEGER := 1672;
-        AddressWidth : INTEGER := 11);
+        AddressRange : INTEGER := 3344;
+        AddressWidth : INTEGER := 12);
     port (
         reset : IN STD_LOGIC;
         clk : IN STD_LOGIC;

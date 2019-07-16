@@ -2,10 +2,10 @@
 <Root MajorVersion="0" MinorVersion="37">
   <CompositeFile CompositeFileTopName="design_1" CanBeSetAsTop="false" CanDisplayChildGraph="true">
     <Description>Composite Fileset</Description>
-    <Generation Name="SYNTHESIS" State="GENERATED" Timestamp="1563197823"/>
-    <Generation Name="IMPLEMENTATION" State="GENERATED" Timestamp="1563197823"/>
-    <Generation Name="SIMULATION" State="GENERATED" Timestamp="1563197823"/>
-    <Generation Name="HW_HANDOFF" State="GENERATED" Timestamp="1563197823"/>
+    <Generation Name="SYNTHESIS" State="GENERATED" Timestamp="1563225467"/>
+    <Generation Name="IMPLEMENTATION" State="GENERATED" Timestamp="1563225467"/>
+    <Generation Name="SIMULATION" State="GENERATED" Timestamp="1563225467"/>
+    <Generation Name="HW_HANDOFF" State="GENERATED" Timestamp="1563225467"/>
     <FileCollection Name="SOURCES" Type="SOURCES">
       <File Name="ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0.xci" Type="IP">
         <Instance HierarchyPath="processing_system7_0"/>
@@ -34,7 +34,7 @@
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="SIMULATION"/>
       </File>
-      <File Name="ip/design_1_yolo_conv_top_0_7/design_1_yolo_conv_top_0_7.xci" Type="IP">
+      <File Name="ip/design_1_yolo_conv_top_0_8/design_1_yolo_conv_top_0_8.xci" Type="IP">
         <Instance HierarchyPath="yolo_conv_top_0"/>
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
         <Library Name="xil_defaultlib"/>
@@ -42,7 +42,7 @@
         <UsedIn Val="IMPLEMENTATION"/>
         <UsedIn Val="SIMULATION"/>
       </File>
-      <File Name="ip/design_1_axi_smc_7/design_1_axi_smc_7.xci" Type="IP">
+      <File Name="ip/design_1_axi_smc_8/design_1_axi_smc_8.xci" Type="IP">
         <Instance HierarchyPath="axi_smc"/>
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
         <Library Name="xil_defaultlib"/>
@@ -50,7 +50,7 @@
         <UsedIn Val="IMPLEMENTATION"/>
         <UsedIn Val="SIMULATION"/>
       </File>
-      <File Name="ip/design_1_rst_ps7_0_100M_7/design_1_rst_ps7_0_100M_7.xci" Type="IP">
+      <File Name="ip/design_1_rst_ps7_0_100M_8/design_1_rst_ps7_0_100M_8.xci" Type="IP">
         <Instance HierarchyPath="rst_ps7_0_100M"/>
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
         <Library Name="xil_defaultlib"/>
@@ -58,7 +58,7 @@
         <UsedIn Val="IMPLEMENTATION"/>
         <UsedIn Val="SIMULATION"/>
       </File>
-      <File Name="ip/design_1_xbar_7/design_1_xbar_7.xci" Type="IP">
+      <File Name="ip/design_1_xbar_8/design_1_xbar_8.xci" Type="IP">
         <Instance HierarchyPath="ps7_0_axi_periph/xbar"/>
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
         <Library Name="xil_defaultlib"/>
@@ -66,7 +66,7 @@
         <UsedIn Val="IMPLEMENTATION"/>
         <UsedIn Val="SIMULATION"/>
       </File>
-      <File Name="ip/design_1_auto_pc_7/design_1_auto_pc_7.xci" Type="IP">
+      <File Name="ip/design_1_auto_pc_8/design_1_auto_pc_8.xci" Type="IP">
         <Instance HierarchyPath="ps7_0_axi_periph/s00_couplers/auto_pc"/>
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
         <Library Name="xil_defaultlib"/>
@@ -74,7 +74,7 @@
         <UsedIn Val="IMPLEMENTATION"/>
         <UsedIn Val="SIMULATION"/>
       </File>
-      <File Name="ip/design_1_ps7_0_axi_periph_7/design_1_ps7_0_axi_periph_7.xci" Type="IP">
+      <File Name="ip/design_1_ps7_0_axi_periph_8/design_1_ps7_0_axi_periph_8.xci" Type="IP">
         <Instance HierarchyPath="ps7_0_axi_periph"/>
         <Properties IsEditable="false" IsVisible="false" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
         <Library Name="xil_defaultlib"/>

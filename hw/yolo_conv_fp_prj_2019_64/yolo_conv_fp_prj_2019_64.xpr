@@ -73,11 +73,11 @@
         <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="ip/design_1_axi_dma_0_0/design_1_axi_dma_0_0.xci">
           <Proxy FileSetName="design_1_axi_dma_0_0"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="ip/design_1_axi_smc_7/design_1_axi_smc_7.xci">
-          <Proxy FileSetName="design_1_axi_smc_7"/>
+        <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="ip/design_1_yolo_conv_top_0_8/design_1_yolo_conv_top_0_8.xci">
+          <Proxy FileSetName="design_1_yolo_conv_top_0_8"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="ip/design_1_yolo_conv_top_0_7/design_1_yolo_conv_top_0_7.xci">
-          <Proxy FileSetName="design_1_yolo_conv_top_0_7"/>
+        <CompFileExtendedInfo CompFileName="design_1.bd" FileRelPathName="ip/design_1_axi_smc_8/design_1_axi_smc_8.xci">
+          <Proxy FileSetName="design_1_axi_smc_8"/>
         </CompFileExtendedInfo>
       </File>
       <File Path="$PSRCDIR/sources_1/bd/design_1/hdl/design_1_wrapper.v">
@@ -129,15 +129,15 @@
         <Option Name="UseBlackboxStub" Val="1"/>
       </Config>
     </FileSet>
-    <FileSet Name="design_1_axi_smc_7" Type="BlockSrcs" RelSrcDir="$PSRCDIR/design_1_axi_smc_7">
+    <FileSet Name="design_1_yolo_conv_top_0_8" Type="BlockSrcs" RelSrcDir="$PSRCDIR/design_1_yolo_conv_top_0_8">
       <Config>
-        <Option Name="TopModule" Val="design_1_axi_smc_7"/>
+        <Option Name="TopModule" Val="design_1_yolo_conv_top_0_8"/>
         <Option Name="UseBlackboxStub" Val="1"/>
       </Config>
     </FileSet>
-    <FileSet Name="design_1_yolo_conv_top_0_7" Type="BlockSrcs" RelSrcDir="$PSRCDIR/design_1_yolo_conv_top_0_7">
+    <FileSet Name="design_1_axi_smc_8" Type="BlockSrcs" RelSrcDir="$PSRCDIR/design_1_axi_smc_8">
       <Config>
-        <Option Name="TopModule" Val="design_1_yolo_conv_top_0_7"/>
+        <Option Name="TopModule" Val="design_1_axi_smc_8"/>
         <Option Name="UseBlackboxStub" Val="1"/>
       </Config>
     </FileSet>
@@ -194,7 +194,7 @@
       <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2019"/>
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
     </Run>
-    <Run Id="design_1_axi_smc_7_synth_1" Type="Ft3:Synth" SrcSet="design_1_axi_smc_7" Part="xc7z020clg484-1" ConstrsSet="design_1_axi_smc_7" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/design_1_axi_smc_7_synth_1" IncludeInArchive="true">
+    <Run Id="design_1_yolo_conv_top_0_8_synth_1" Type="Ft3:Synth" SrcSet="design_1_yolo_conv_top_0_8" Part="xc7z020clg484-1" ConstrsSet="design_1_yolo_conv_top_0_8" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/design_1_yolo_conv_top_0_8_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019">
           <Desc>Vivado Synthesis Defaults</Desc>
@@ -205,7 +205,7 @@
       <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2019"/>
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
     </Run>
-    <Run Id="design_1_yolo_conv_top_0_7_synth_1" Type="Ft3:Synth" SrcSet="design_1_yolo_conv_top_0_7" Part="xc7z020clg484-1" ConstrsSet="design_1_yolo_conv_top_0_7" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/design_1_yolo_conv_top_0_7_synth_1" IncludeInArchive="true">
+    <Run Id="design_1_axi_smc_8_synth_1" Type="Ft3:Synth" SrcSet="design_1_axi_smc_8" Part="xc7z020clg484-1" ConstrsSet="design_1_axi_smc_8" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/design_1_axi_smc_8_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019">
           <Desc>Vivado Synthesis Defaults</Desc>
@@ -265,7 +265,7 @@
       <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2019"/>
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
     </Run>
-    <Run Id="design_1_axi_smc_7_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg484-1" ConstrsSet="design_1_axi_smc_7" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="design_1_axi_smc_7_synth_1" IncludeInArchive="false" GenFullBitstream="true">
+    <Run Id="design_1_yolo_conv_top_0_8_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg484-1" ConstrsSet="design_1_yolo_conv_top_0_8" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="design_1_yolo_conv_top_0_8_synth_1" IncludeInArchive="false" GenFullBitstream="true">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2019">
           <Desc>Default settings for Implementation.</Desc>
@@ -283,7 +283,7 @@
       <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2019"/>
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
     </Run>
-    <Run Id="design_1_yolo_conv_top_0_7_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg484-1" ConstrsSet="design_1_yolo_conv_top_0_7" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="design_1_yolo_conv_top_0_7_synth_1" IncludeInArchive="false" GenFullBitstream="true">
+    <Run Id="design_1_axi_smc_8_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg484-1" ConstrsSet="design_1_axi_smc_8" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="design_1_axi_smc_8_synth_1" IncludeInArchive="false" GenFullBitstream="true">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2019">
           <Desc>Default settings for Implementation.</Desc>

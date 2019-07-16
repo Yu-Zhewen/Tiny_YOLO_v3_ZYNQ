@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2019.1 (lin64) Build 2552052 Fri May 24 14:47:09 MDT 2019
-| Date             : Sun Jun 30 21:19:20 2019
+| Date             : Mon Jul 15 22:06:12 2019
 | Host             : Lenovo-XiaoXin-CHAO7000 running 64-bit Ubuntu 16.04.6 LTS
 | Command          : report_power -file design_1_wrapper_power_routed.rpt -pb design_1_wrapper_power_summary_routed.pb -rpx design_1_wrapper_power_routed.rpx
 | Design           : design_1_wrapper
@@ -30,14 +30,14 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 1.740        |
+| Total On-Chip Power (W)  | 1.772        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 1.596        |
-| Device Static (W)        | 0.144        |
+| Dynamic (W)              | 1.627        |
+| Device Static (W)        | 0.145        |
 | Effective TJA (C/W)      | 11.5         |
-| Max Ambient (C)          | 64.9         |
-| Junction Temperature (C) | 45.1         |
+| Max Ambient (C)          | 64.6         |
+| Junction Temperature (C) | 45.4         |
 | Confidence Level         | Medium       |
 | Setting File             | ---          |
 | Simulation Activity File | ---          |
@@ -52,20 +52,21 @@ Table of Contents
 +--------------------------+-----------+----------+-----------+-----------------+
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
-| Clocks                   |     0.027 |        3 |       --- |             --- |
-| Slice Logic              |     0.010 |    18122 |       --- |             --- |
-|   LUT as Logic           |     0.008 |     6023 |     53200 |           11.32 |
+| Clocks                   |     0.026 |        3 |       --- |             --- |
+| Slice Logic              |     0.011 |    16630 |       --- |             --- |
+|   LUT as Logic           |     0.009 |     5517 |     53200 |           10.37 |
 |   LUT as Distributed RAM |    <0.001 |      430 |     17400 |            2.47 |
-|   Register               |    <0.001 |     8461 |    106400 |            7.95 |
-|   CARRY4                 |    <0.001 |      155 |     13300 |            1.17 |
-|   F7/F8 Muxes            |    <0.001 |      232 |     53200 |            0.44 |
-|   LUT as Shift Register  |    <0.001 |      198 |     17400 |            1.14 |
-|   Others                 |     0.000 |      597 |       --- |             --- |
-| Signals                  |     0.012 |    12178 |       --- |             --- |
-| Block RAM                |     0.013 |       11 |       140 |            7.86 |
+|   Register               |    <0.001 |     7831 |    106400 |            7.36 |
+|   CARRY4                 |    <0.001 |      216 |     13300 |            1.62 |
+|   LUT as Shift Register  |    <0.001 |      199 |     17400 |            1.14 |
+|   F7/F8 Muxes            |    <0.001 |       57 |     53200 |            0.11 |
+|   Others                 |     0.000 |      592 |       --- |             --- |
+| Signals                  |     0.017 |    11723 |       --- |             --- |
+| Block RAM                |     0.038 |       19 |       140 |           13.57 |
+| DSPs                     |    <0.001 |        2 |       220 |            0.91 |
 | PS7                      |     1.533 |        1 |       --- |             --- |
-| Static Power             |     0.144 |          |           |                 |
-| Total                    |     1.740 |          |           |                 |
+| Static Power             |     0.145 |          |           |                 |
+| Total                    |     1.772 |          |           |                 |
 +--------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -75,8 +76,8 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.077 |       0.062 |      0.016 |
-| Vccaux    |       1.800 |     0.015 |       0.000 |      0.015 |
+| Vccint    |       1.000 |     0.106 |       0.090 |      0.016 |
+| Vccaux    |       1.800 |     0.016 |       0.000 |      0.016 |
 | Vcco33    |       3.300 |     0.000 |       0.000 |      0.000 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
 | Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |
@@ -84,7 +85,7 @@ Table of Contents
 | Vcco135   |       1.350 |     0.000 |       0.000 |      0.000 |
 | Vcco12    |       1.200 |     0.000 |       0.000 |      0.000 |
 | Vccaux_io |       1.800 |     0.000 |       0.000 |      0.000 |
-| Vccbram   |       1.000 |     0.003 |       0.001 |      0.002 |
+| Vccbram   |       1.000 |     0.005 |       0.003 |      0.002 |
 | MGTAVcc   |       1.000 |     0.000 |       0.000 |      0.000 |
 | MGTAVtt   |       1.200 |     0.000 |       0.000 |      0.000 |
 | MGTVccaux |       1.800 |     0.000 |       0.000 |      0.000 |
@@ -151,18 +152,18 @@ Table of Contents
 +--------------------------+-----------+
 | Name                     | Power (W) |
 +--------------------------+-----------+
-| design_1_wrapper         |     1.596 |
-|   design_1_i             |     1.596 |
-|     axi_dma_0            |     0.011 |
-|       U0                 |     0.011 |
+| design_1_wrapper         |     1.627 |
+|   design_1_i             |     1.627 |
+|     axi_dma_0            |     0.012 |
+|       U0                 |     0.012 |
 |     axi_smc              |     0.023 |
 |       inst               |     0.023 |
 |     processing_system7_0 |     1.534 |
 |       inst               |     1.534 |
 |     ps7_0_axi_periph     |     0.004 |
 |       s00_couplers       |     0.003 |
-|     yolo_max_pool_top_0  |     0.024 |
-|       inst               |     0.024 |
+|     yolo_max_pool_top_0  |     0.053 |
+|       inst               |     0.053 |
 +--------------------------+-----------+
 
 

@@ -1,10 +1,10 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'yolo_conv_top'" level="0">
-<item name = "Date">Mon Jul 15 11:51:51 2019
+<item name = "Date">Tue Jul 16 08:53:06 2019
 </item>
 <item name = "Version">2019.1 (Build 2552052 on Fri May 24 15:28:33 MDT 2019)</item>
-<item name = "Project">yolo_conv_fp_2019_64_rec</item>
+<item name = "Project">yolo_conv_fp_2019_64</item>
 <item name = "Solution">solution1</item>
 <item name = "Product family">zynq</item>
 <item name = "Target device">xc7z020-clg484-1</item>
@@ -31,18 +31,18 @@
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="7">Instance, Module, min, max, min, max, Type</keys>
-<column name="grp_window_macc_fu_11768">window_macc, 7, 7, 1, 1, function</column>
-<column name="grp_window_macc_fu_11790">window_macc, 7, 7, 1, 1, function</column>
-<column name="grp_window_macc_fu_11812">window_macc, 7, 7, 1, 1, function</column>
-<column name="grp_window_macc_fu_11834">window_macc, 7, 7, 1, 1, function</column>
-<column name="grp_window_macc_fu_11856">window_macc, 7, 7, 1, 1, function</column>
-<column name="grp_window_macc_fu_11878">window_macc, 7, 7, 1, 1, function</column>
-<column name="grp_window_macc_fu_11900">window_macc, 7, 7, 1, 1, function</column>
-<column name="grp_window_macc_fu_11922">window_macc, 7, 7, 1, 1, function</column>
-<column name="grp_post_process_fu_11944">post_process, 5, 5, 1, 1, function</column>
-<column name="grp_post_process_fu_11958">post_process, 5, 5, 1, 1, function</column>
-<column name="grp_out_stream_merge_fu_12002">out_stream_merge, 6, 6, 6, 6, function</column>
-<column name="grp_slide_window_fu_12060">slide_window, 3, 3, 3, 3, function</column>
+<column name="grp_window_macc_fu_11766">window_macc, 7, 7, 1, 1, function</column>
+<column name="grp_window_macc_fu_11788">window_macc, 7, 7, 1, 1, function</column>
+<column name="grp_window_macc_fu_11810">window_macc, 7, 7, 1, 1, function</column>
+<column name="grp_window_macc_fu_11832">window_macc, 7, 7, 1, 1, function</column>
+<column name="grp_window_macc_fu_11854">window_macc, 7, 7, 1, 1, function</column>
+<column name="grp_window_macc_fu_11876">window_macc, 7, 7, 1, 1, function</column>
+<column name="grp_window_macc_fu_11898">window_macc, 7, 7, 1, 1, function</column>
+<column name="grp_window_macc_fu_11920">window_macc, 7, 7, 1, 1, function</column>
+<column name="grp_post_process_fu_11942">post_process, 5, 5, 1, 1, function</column>
+<column name="grp_post_process_fu_11956">post_process, 5, 5, 1, 1, function</column>
+<column name="grp_out_stream_merge_fu_12000">out_stream_merge, 6, 6, 6, 6, function</column>
+<column name="grp_slide_window_fu_12058">slide_window, 3, 3, 3, 3, function</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">

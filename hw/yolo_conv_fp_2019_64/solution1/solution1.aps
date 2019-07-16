@@ -59,7 +59,7 @@
         <value string="solution1"/>
     </name>
     <project>
-        <value string="yolo_conv_fp_2019_64_rec"/>
+        <value string="yolo_conv_fp_2019_64"/>
     </project>
     <targetInfo>
         <TargetInfo value="xc7z020:-clg484:-1"/>

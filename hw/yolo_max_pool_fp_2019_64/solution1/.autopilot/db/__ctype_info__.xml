@@ -207,5 +207,65 @@
 <CFractionWidth>0</CFractionWidth>
 <InvalidType>0</InvalidType>
 </RtlPorts>
+<RtlPorts>
+<name>output_h_V</name>
+<CType>
+<TypeName>ap_uint 9</TypeName>
+<TypeWidth>9</TypeWidth>
+<PhysicalWidth>9</PhysicalWidth>
+</CType>
+<CFractionWidth>0</CFractionWidth>
+<InvalidType>0</InvalidType>
+</RtlPorts>
+<RtlPorts>
+<name>output_w_V</name>
+<CType>
+<TypeName>ap_uint 9</TypeName>
+<TypeWidth>9</TypeWidth>
+<PhysicalWidth>9</PhysicalWidth>
+</CType>
+<CFractionWidth>0</CFractionWidth>
+<InvalidType>0</InvalidType>
+</RtlPorts>
+<RtlPorts>
+<name>input_h_V</name>
+<CType>
+<TypeName>ap_uint 9</TypeName>
+<TypeWidth>9</TypeWidth>
+<PhysicalWidth>9</PhysicalWidth>
+</CType>
+<CFractionWidth>0</CFractionWidth>
+<InvalidType>0</InvalidType>
+</RtlPorts>
+<RtlPorts>
+<name>input_w_V</name>
+<CType>
+<TypeName>ap_uint 9</TypeName>
+<TypeWidth>9</TypeWidth>
+<PhysicalWidth>9</PhysicalWidth>
+</CType>
+<CFractionWidth>0</CFractionWidth>
+<InvalidType>0</InvalidType>
+</RtlPorts>
+<RtlPorts>
+<name>input_fold_ch_V</name>
+<CType>
+<TypeName>ap_uint 4</TypeName>
+<TypeWidth>4</TypeWidth>
+<PhysicalWidth>4</PhysicalWidth>
+</CType>
+<CFractionWidth>0</CFractionWidth>
+<InvalidType>0</InvalidType>
+</RtlPorts>
+<RtlPorts>
+<name>stride_V</name>
+<CType>
+<TypeName>ap_uint 2</TypeName>
+<TypeWidth>2</TypeWidth>
+<PhysicalWidth>2</PhysicalWidth>
+</CType>
+<CFractionWidth>0</CFractionWidth>
+<InvalidType>0</InvalidType>
+</RtlPorts>
 </InterfaceSummary>
 

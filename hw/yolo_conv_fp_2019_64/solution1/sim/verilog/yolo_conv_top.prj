@@ -1,6 +1,5 @@
 sv work "glbl.v"
 sv xil_defaultlib "fifo_w16_d2_A.v"
-sv xil_defaultlib "yolo_conv_top_mac_muladd_3ns_3ns_3ns_6_1_1.v"
 sv xil_defaultlib "yolo_conv_top_line_buff_group_0_va.v"
 sv xil_defaultlib "yolo_conv_top.v"
 sv xil_defaultlib "slide_window.v"

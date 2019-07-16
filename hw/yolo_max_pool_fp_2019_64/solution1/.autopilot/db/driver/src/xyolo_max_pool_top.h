@@ -37,12 +37,12 @@ typedef uint32_t u32;
 #else
 typedef struct {
     u16 DeviceId;
-    u32 Axilites_BaseAddress;
+    u32 Ctrl_bus_BaseAddress;
 } XYolo_max_pool_top_Config;
 #endif
 
 typedef struct {
-    u32 Axilites_BaseAddress;
+    u32 Ctrl_bus_BaseAddress;
     u32 IsReady;
 } XYolo_max_pool_top;
 
@@ -84,6 +84,18 @@ u32 XYolo_max_pool_top_IsReady(XYolo_max_pool_top *InstancePtr);
 void XYolo_max_pool_top_EnableAutoRestart(XYolo_max_pool_top *InstancePtr);
 void XYolo_max_pool_top_DisableAutoRestart(XYolo_max_pool_top *InstancePtr);
 
+void XYolo_max_pool_top_Set_output_h_V(XYolo_max_pool_top *InstancePtr, u32 Data);
+u32 XYolo_max_pool_top_Get_output_h_V(XYolo_max_pool_top *InstancePtr);
+void XYolo_max_pool_top_Set_output_w_V(XYolo_max_pool_top *InstancePtr, u32 Data);
+u32 XYolo_max_pool_top_Get_output_w_V(XYolo_max_pool_top *InstancePtr);
+void XYolo_max_pool_top_Set_input_h_V(XYolo_max_pool_top *InstancePtr, u32 Data);
+u32 XYolo_max_pool_top_Get_input_h_V(XYolo_max_pool_top *InstancePtr);
+void XYolo_max_pool_top_Set_input_w_V(XYolo_max_pool_top *InstancePtr, u32 Data);
+u32 XYolo_max_pool_top_Get_input_w_V(XYolo_max_pool_top *InstancePtr);
+void XYolo_max_pool_top_Set_input_fold_ch_V(XYolo_max_pool_top *InstancePtr, u32 Data);
+u32 XYolo_max_pool_top_Get_input_fold_ch_V(XYolo_max_pool_top *InstancePtr);
+void XYolo_max_pool_top_Set_stride_V(XYolo_max_pool_top *InstancePtr, u32 Data);
+u32 XYolo_max_pool_top_Get_stride_V(XYolo_max_pool_top *InstancePtr);
 
 void XYolo_max_pool_top_InterruptGlobalEnable(XYolo_max_pool_top *InstancePtr);
 void XYolo_max_pool_top_InterruptGlobalDisable(XYolo_max_pool_top *InstancePtr);

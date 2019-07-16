@@ -40,7 +40,6 @@ port (
     input_ch_V            :out  STD_LOGIC_VECTOR(5 downto 0);
     fold_output_ch_V      :out  STD_LOGIC_VECTOR(3 downto 0);
     fold_input_ch_V       :out  STD_LOGIC_VECTOR(3 downto 0);
-    kernel_dim_V          :out  STD_LOGIC_VECTOR(2 downto 0);
     input_h_V             :out  STD_LOGIC_VECTOR(8 downto 0);
     input_w_V             :out  STD_LOGIC_VECTOR(8 downto 0);
     real_input_h_V        :out  STD_LOGIC_VECTOR(8 downto 0);
@@ -84,30 +83,26 @@ end entity yolo_conv_top_CTRL_BUS_s_axi;
 --        bit 3~0 - fold_input_ch_V[3:0] (Read/Write)
 --        others  - reserved
 -- 0x2c : reserved
--- 0x30 : Data signal of kernel_dim_V
---        bit 2~0 - kernel_dim_V[2:0] (Read/Write)
---        others  - reserved
--- 0x34 : reserved
--- 0x38 : Data signal of input_h_V
+-- 0x30 : Data signal of input_h_V
 --        bit 8~0 - input_h_V[8:0] (Read/Write)
 --        others  - reserved
--- 0x3c : reserved
--- 0x40 : Data signal of input_w_V
+-- 0x34 : reserved
+-- 0x38 : Data signal of input_w_V
 --        bit 8~0 - input_w_V[8:0] (Read/Write)
 --        others  - reserved
--- 0x44 : reserved
--- 0x48 : Data signal of real_input_h_V
+-- 0x3c : reserved
+-- 0x40 : Data signal of real_input_h_V
 --        bit 8~0 - real_input_h_V[8:0] (Read/Write)
 --        others  - reserved
--- 0x4c : reserved
--- 0x50 : Data signal of leaky_V
+-- 0x44 : reserved
+-- 0x48 : Data signal of leaky_V
 --        bit 0  - leaky_V[0] (Read/Write)
 --        others - reserved
--- 0x54 : reserved
--- 0x58 : Data signal of fold_win_area_V
+-- 0x4c : reserved
+-- 0x50 : Data signal of fold_win_area_V
 --        bit 2~0 - fold_win_area_V[2:0] (Read/Write)
 --        others  - reserved
--- 0x5c : reserved
+-- 0x54 : reserved
 -- (SC = Self Clear, COR = Clear on Read, TOW = Toggle on Write, COH = Clear on Handshake)
 
 architecture behave of yolo_conv_top_CTRL_BUS_s_axi is
@@ -127,18 +122,16 @@ architecture behave of yolo_conv_top_CTRL_BUS_s_axi is
     constant ADDR_FOLD_OUTPUT_CH_V_CTRL   : INTEGER := 16#24#;
     constant ADDR_FOLD_INPUT_CH_V_DATA_0  : INTEGER := 16#28#;
     constant ADDR_FOLD_INPUT_CH_V_CTRL    : INTEGER := 16#2c#;
-    constant ADDR_KERNEL_DIM_V_DATA_0     : INTEGER := 16#30#;
-    constant ADDR_KERNEL_DIM_V_CTRL       : INTEGER := 16#34#;
-    constant ADDR_INPUT_H_V_DATA_0        : INTEGER := 16#38#;
-    constant ADDR_INPUT_H_V_CTRL          : INTEGER := 16#3c#;
-    constant ADDR_INPUT_W_V_DATA_0        : INTEGER := 16#40#;
-    constant ADDR_INPUT_W_V_CTRL          : INTEGER := 16#44#;
-    constant ADDR_REAL_INPUT_H_V_DATA_0   : INTEGER := 16#48#;
-    constant ADDR_REAL_INPUT_H_V_CTRL     : INTEGER := 16#4c#;
-    constant ADDR_LEAKY_V_DATA_0          : INTEGER := 16#50#;
-    constant ADDR_LEAKY_V_CTRL            : INTEGER := 16#54#;
-    constant ADDR_FOLD_WIN_AREA_V_DATA_0  : INTEGER := 16#58#;
-    constant ADDR_FOLD_WIN_AREA_V_CTRL    : INTEGER := 16#5c#;
+    constant ADDR_INPUT_H_V_DATA_0        : INTEGER := 16#30#;
+    constant ADDR_INPUT_H_V_CTRL          : INTEGER := 16#34#;
+    constant ADDR_INPUT_W_V_DATA_0        : INTEGER := 16#38#;
+    constant ADDR_INPUT_W_V_CTRL          : INTEGER := 16#3c#;
+    constant ADDR_REAL_INPUT_H_V_DATA_0   : INTEGER := 16#40#;
+    constant ADDR_REAL_INPUT_H_V_CTRL     : INTEGER := 16#44#;
+    constant ADDR_LEAKY_V_DATA_0          : INTEGER := 16#48#;
+    constant ADDR_LEAKY_V_CTRL            : INTEGER := 16#4c#;
+    constant ADDR_FOLD_WIN_AREA_V_DATA_0  : INTEGER := 16#50#;
+    constant ADDR_FOLD_WIN_AREA_V_CTRL    : INTEGER := 16#54#;
     constant ADDR_BITS         : INTEGER := 7;
 
     signal waddr               : UNSIGNED(ADDR_BITS-1 downto 0);
@@ -165,7 +158,6 @@ architecture behave of yolo_conv_top_CTRL_BUS_s_axi is
     signal int_input_ch_V      : UNSIGNED(5 downto 0) := (others => '0');
     signal int_fold_output_ch_V : UNSIGNED(3 downto 0) := (others => '0');
     signal int_fold_input_ch_V : UNSIGNED(3 downto 0) := (others => '0');
-    signal int_kernel_dim_V    : UNSIGNED(2 downto 0) := (others => '0');
     signal int_input_h_V       : UNSIGNED(8 downto 0) := (others => '0');
     signal int_input_w_V       : UNSIGNED(8 downto 0) := (others => '0');
     signal int_real_input_h_V  : UNSIGNED(8 downto 0) := (others => '0');
@@ -300,8 +292,6 @@ begin
                         rdata_data <= RESIZE(int_fold_output_ch_V(3 downto 0), 32);
                     when ADDR_FOLD_INPUT_CH_V_DATA_0 =>
                         rdata_data <= RESIZE(int_fold_input_ch_V(3 downto 0), 32);
-                    when ADDR_KERNEL_DIM_V_DATA_0 =>
-                        rdata_data <= RESIZE(int_kernel_dim_V(2 downto 0), 32);
                     when ADDR_INPUT_H_V_DATA_0 =>
                         rdata_data <= RESIZE(int_input_h_V(8 downto 0), 32);
                     when ADDR_INPUT_W_V_DATA_0 =>
@@ -327,7 +317,6 @@ begin
     input_ch_V           <= STD_LOGIC_VECTOR(int_input_ch_V);
     fold_output_ch_V     <= STD_LOGIC_VECTOR(int_fold_output_ch_V);
     fold_input_ch_V      <= STD_LOGIC_VECTOR(int_fold_input_ch_V);
-    kernel_dim_V         <= STD_LOGIC_VECTOR(int_kernel_dim_V);
     input_h_V            <= STD_LOGIC_VECTOR(int_input_h_V);
     input_w_V            <= STD_LOGIC_VECTOR(int_input_w_V);
     real_input_h_V       <= STD_LOGIC_VECTOR(int_real_input_h_V);
@@ -498,17 +487,6 @@ begin
             if (ACLK_EN = '1') then
                 if (w_hs = '1' and waddr = ADDR_FOLD_INPUT_CH_V_DATA_0) then
                     int_fold_input_ch_V(3 downto 0) <= (UNSIGNED(WDATA(3 downto 0)) and wmask(3 downto 0)) or ((not wmask(3 downto 0)) and int_fold_input_ch_V(3 downto 0));
-                end if;
-            end if;
-        end if;
-    end process;
-
-    process (ACLK)
-    begin
-        if (ACLK'event and ACLK = '1') then
-            if (ACLK_EN = '1') then
-                if (w_hs = '1' and waddr = ADDR_KERNEL_DIM_V_DATA_0) then
-                    int_kernel_dim_V(2 downto 0) <= (UNSIGNED(WDATA(2 downto 0)) and wmask(2 downto 0)) or ((not wmask(2 downto 0)) and int_kernel_dim_V(2 downto 0));
                 end if;
             end if;
         end if;

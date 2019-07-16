@@ -1,0 +1,256 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Tue Jul 16 09:04:01 2019
+# Process ID: 6834
+# Current directory: /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_max_fp_prj_2019_64
+# Command line: vivado yolo_conv_max_fp_prj_2019_64.xpr
+# Log file: /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_max_fp_prj_2019_64/vivado.log
+# Journal file: /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_max_fp_prj_2019_64/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project yolo_conv_max_fp_prj_2019_64.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/xavier/MSc_Project/hls/ip_fp64'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx_2019_1/Vivado/2019.1/data/ip'.
+WARNING: [BD 41-1661] One or more IPs have been locked in the design 'design_1.bd'. Please run report_ip_status for more details and recommendations on how to fix this issue.
+List of locked IPs:
+design_1_yolo_conv_top_0_0
+
+open_project: Time (s): cpu = 00:00:26 ; elapsed = 00:00:32 . Memory (MB): peak = 6458.945 ; gain = 122.980 ; free physical = 2213 ; free virtual = 13751
+update_compile_order -fileset sources_1
+open_bd_design {/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_max_fp_prj_2019_64/yolo_conv_max_fp_prj_2019_64.srcs/sources_1/bd/design_1/design_1.bd}
+Adding component instance block -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0
+Adding component instance block -- xilinx.com:ip:axi_dma:7.1 - axi_dma_0
+Adding component instance block -- xilinx.com:hls:yolo_conv_top:1.0 - yolo_conv_top_0
+Adding component instance block -- xilinx.com:hls:yolo_max_pool_top:1.0 - yolo_max_pool_top_0
+Adding component instance block -- xilinx.com:ip:smartconnect:1.0 - axi_smc
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - rst_ps7_0_100M
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - ps7_0_axi_periph
+Adding component instance block -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Successfully read diagram <design_1> from BD file </home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_max_fp_prj_2019_64/yolo_conv_max_fp_prj_2019_64.srcs/sources_1/bd/design_1/design_1.bd>
+open_bd_design: Time (s): cpu = 00:00:19 ; elapsed = 00:00:13 . Memory (MB): peak = 6602.008 ; gain = 0.000 ; free physical = 1635 ; free virtual = 13601
+startgroup
+delete_bd_objs [get_bd_intf_nets processing_system7_0_M_AXI_GP0] [get_bd_intf_nets ps7_0_axi_periph_M01_AXI] [get_bd_intf_nets ps7_0_axi_periph_M02_AXI] [get_bd_intf_nets ps7_0_axi_periph_M00_AXI] [get_bd_cells ps7_0_axi_periph]
+delete_bd_objs [get_bd_intf_nets axi_dma_0_M_AXIS_MM2S] [get_bd_intf_nets axi_dma_0_M_AXI_MM2S] [get_bd_intf_nets axi_dma_0_M_AXI_S2MM] [get_bd_intf_nets axi_smc_M00_AXI] [get_bd_intf_nets yolo_max_pool_top_0_outStream] [get_bd_nets rst_ps7_0_100M_peripheral_aresetn] [get_bd_nets processing_system7_0_FCLK_RESET0_N] [get_bd_intf_nets yolo_conv_top_0_outStream] [get_bd_cells axi_smc] [get_bd_cells yolo_max_pool_top_0] [get_bd_cells yolo_conv_top_0] [get_bd_cells rst_ps7_0_100M]
+endgroup
+delete_bd_objs [get_bd_nets processing_system7_0_FCLK_CLK0]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:axis_switch:1.1 axis_switch_0
+endgroup
+set_property location {1.5 650 520} [get_bd_cells axis_switch_0]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:hls:yolo_conv_top:1.0 yolo_conv_top_0
+create_bd_cell -type ip -vlnv xilinx.com:hls:yolo_max_pool_top:1.0 yolo_max_pool_top_0
+endgroup
+startgroup
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {Auto} Clk_slave {Auto} Clk_xbar {Auto} Master {/axi_dma_0/M_AXI_MM2S} Slave {/processing_system7_0/S_AXI_HP0} intc_ip {Auto} master_apm {0}}  [get_bd_intf_pins processing_system7_0/S_AXI_HP0]
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {Auto} Clk_slave {Auto} Clk_xbar {Auto} Master {/processing_system7_0/M_AXI_GP0} Slave {/axi_dma_0/S_AXI_LITE} intc_ip {New AXI Interconnect} master_apm {0}}  [get_bd_intf_pins axi_dma_0/S_AXI_LITE]
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {Auto} Clk_slave {Auto} Clk_xbar {Auto} Master {/processing_system7_0/M_AXI_GP0} Slave {/yolo_conv_top_0/s_axi_CTRL_BUS} intc_ip {New AXI Interconnect} master_apm {0}}  [get_bd_intf_pins yolo_conv_top_0/s_axi_CTRL_BUS]
+Slave segment </yolo_conv_top_0/s_axi_CTRL_BUS/Reg> is being mapped into address space </processing_system7_0/Data> at <0x43C0_0000 [ 64K ]>
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {Auto} Clk_slave {Auto} Clk_xbar {Auto} Master {/processing_system7_0/M_AXI_GP0} Slave {/yolo_max_pool_top_0/s_axi_CTRL_BUS} intc_ip {New AXI Interconnect} master_apm {0}}  [get_bd_intf_pins yolo_max_pool_top_0/s_axi_CTRL_BUS]
+Slave segment </yolo_max_pool_top_0/s_axi_CTRL_BUS/Reg> is being mapped into address space </processing_system7_0/Data> at <0x43C1_0000 [ 64K ]>
+endgroup
+set_property location {2 560 547} [get_bd_cells axis_switch_0]
+connect_bd_intf_net [get_bd_intf_pins yolo_conv_top_0/inStream] [get_bd_intf_pins axi_dma_0/M_AXIS_MM2S]
+connect_bd_intf_net [get_bd_intf_pins yolo_conv_top_0/outStream] [get_bd_intf_pins yolo_max_pool_top_0/inStream]
+connect_bd_intf_net [get_bd_intf_pins yolo_max_pool_top_0/outStream] [get_bd_intf_pins axis_switch_0/S01_AXIS]
+delete_bd_objs [get_bd_intf_nets yolo_conv_top_0_outStream]
+connect_bd_intf_net [get_bd_intf_pins axis_switch_0/S00_AXIS] [get_bd_intf_pins yolo_conv_top_0/outStream]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:axis_broadcaster:1.1 axis_broadcaster_0
+endgroup
+delete_bd_objs [get_bd_cells axis_broadcaster_0]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:axis_switch:1.1 axis_switch_1
+endgroup
+set_property -dict [list CONFIG.NUM_SI {1} CONFIG.NUM_MI {2} CONFIG.DECODER_REG {1}] [get_bd_cells axis_switch_1]
+delete_bd_objs [get_bd_intf_nets yolo_conv_top_0_outStream]
+connect_bd_intf_net [get_bd_intf_pins yolo_conv_top_0/outStream] [get_bd_intf_pins axis_switch_1/S00_AXIS]
+connect_bd_intf_net [get_bd_intf_pins axis_switch_1/M00_AXIS] [get_bd_intf_pins yolo_max_pool_top_0/inStream]
+delete_bd_objs [get_bd_intf_nets yolo_max_pool_top_0_outStream]
+connect_bd_intf_net [get_bd_intf_pins yolo_max_pool_top_0/outStream] [get_bd_intf_pins axis_switch_0/S00_AXIS]
+connect_bd_intf_net [get_bd_intf_pins axis_switch_1/M01_AXIS] [get_bd_intf_pins axis_switch_0/S01_AXIS]
+connect_bd_intf_net [get_bd_intf_pins axis_switch_0/M00_AXIS] [get_bd_intf_pins axi_dma_0/S_AXIS_S2MM]
+startgroup
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {Auto} Clk_slave {/processing_system7_0/FCLK_CLK0 (100 MHz)} Clk_xbar {/processing_system7_0/FCLK_CLK0 (100 MHz)} Master {/axi_dma_0/M_AXI_S2MM} Slave {/processing_system7_0/S_AXI_HP0} intc_ip {/axi_smc} master_apm {0}}  [get_bd_intf_pins axi_dma_0/M_AXI_S2MM]
+apply_bd_automation -rule xilinx.com:bd_rule:clkrst -config {Clk "/processing_system7_0/FCLK_CLK0 (100 MHz)" }  [get_bd_pins axis_switch_0/aclk]
+INFO: [BD 5-455] Automation on '/axis_switch_1/aclk' will not be run, since it is obsolete due to previously run automations
+endgroup
+regenerate_bd_layout -routing
+regenerate_bd_layout
+validate_bd_design
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+startgroup
+endgroup
+startgroup
+set_property -dict [list CONFIG.ROUTING_MODE {1}] [get_bd_cells axis_switch_0]
+endgroup
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {/processing_system7_0/FCLK_CLK0 (100 MHz)} Clk_slave {Auto} Clk_xbar {/processing_system7_0/FCLK_CLK0 (100 MHz)} Master {/processing_system7_0/M_AXI_GP0} Slave {/axis_switch_0/S_AXI_CTRL} intc_ip {/ps7_0_axi_periph} master_apm {0}}  [get_bd_intf_pins axis_switch_0/S_AXI_CTRL]
+Slave segment </axis_switch_0/S_AXI_CTRL/Reg> is being mapped into address space </processing_system7_0/Data> at <0x43C2_0000 [ 64K ]>
+regenerate_bd_layout
+regenerate_bd_layout -routing
+regenerate_bd_layout
+regenerate_bd_layout
+regenerate_bd_layout -routing
+regenerate_bd_layout
+regenerate_bd_layout -routing
+startgroup
+set_property -dict [list CONFIG.ROUTING_MODE {1}] [get_bd_cells axis_switch_1]
+endgroup
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {/processing_system7_0/FCLK_CLK0 (100 MHz)} Clk_slave {Auto} Clk_xbar {/processing_system7_0/FCLK_CLK0 (100 MHz)} Master {/processing_system7_0/M_AXI_GP0} Slave {/axis_switch_1/S_AXI_CTRL} intc_ip {/ps7_0_axi_periph} master_apm {0}}  [get_bd_intf_pins axis_switch_1/S_AXI_CTRL]
+Slave segment </axis_switch_1/S_AXI_CTRL/Reg> is being mapped into address space </processing_system7_0/Data> at <0x43C3_0000 [ 64K ]>
+regenerate_bd_layout
+regenerate_bd_layout -routing
+validate_bd_design
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+regenerate_bd_layout
+regenerate_bd_layout -routing
+delete_bd_objs [get_bd_intf_nets yolo_conv_top_0_outStream]
+delete_bd_objs [get_bd_intf_nets axis_switch_1_M00_AXIS]
+delete_bd_objs [get_bd_intf_nets ps7_0_axi_periph_M04_AXI] [get_bd_intf_nets axis_switch_1_M01_AXIS] [get_bd_cells axis_switch_1]
+connect_bd_intf_net [get_bd_intf_pins yolo_conv_top_0/outStream] [get_bd_intf_pins yolo_max_pool_top_0/inStream]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:axis_interconnect:2.1 axis_interconnect_0
+endgroup
+WARNING: [IP_Flow 19-474] Invalid Parameter 'Component_Name'
+set_property -dict [list CONFIG.ROUTING_MODE {1}] [get_bd_cells axis_interconnect_0]
+WARNING: [IP_Flow 19-474] Invalid Parameter 'Component_Name'
+delete_bd_objs [get_bd_intf_nets yolo_conv_top_0_outStream]
+delete_bd_objs [get_bd_cells axis_interconnect_0]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:axis_interconnect:2.1 axis_interconnect_0
+endgroup
+delete_bd_objs [get_bd_cells axis_interconnect_0]
+startgroup
+delete_bd_objs [get_bd_intf_nets ps7_0_axi_periph_M01_AXI] [get_bd_intf_nets processing_system7_0_M_AXI_GP0] [get_bd_intf_nets ps7_0_axi_periph_M00_AXI] [get_bd_intf_nets ps7_0_axi_periph_M02_AXI] [get_bd_intf_nets ps7_0_axi_periph_M03_AXI] [get_bd_cells ps7_0_axi_periph]
+delete_bd_objs [get_bd_intf_nets axi_dma_0_M_AXI_S2MM] [get_bd_nets processing_system7_0_FCLK_RESET0_N] [get_bd_intf_nets axi_smc_M00_AXI] [get_bd_intf_nets axi_dma_0_M_AXI_MM2S] [get_bd_intf_nets yolo_max_pool_top_0_outStream] [get_bd_intf_nets axis_switch_0_M00_AXIS] [get_bd_cells axis_switch_0] [get_bd_cells yolo_max_pool_top_0] [get_bd_cells rst_ps7_0_100M] [get_bd_cells axi_smc]
+endgroup
+startgroup
+delete_bd_objs [get_bd_intf_nets axi_dma_0_M_AXIS_MM2S]
+delete_bd_objs [get_bd_nets rst_ps7_0_100M_peripheral_aresetn] [get_bd_nets processing_system7_0_FCLK_CLK0]
+endgroup
+set_property location {4.5 1518 154} [get_bd_cells yolo_conv_top_0]
+set_property location {1.5 1909 143} [get_bd_cells yolo_conv_top_0]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:hls:yolo_max_pool_top:1.0 yolo_max_pool_top_0
+endgroup
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:axis_switch:1.1 axis_switch_0
+endgroup
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:axis_switch:1.1 axis_switch_1
+endgroup
+set_property -dict [list CONFIG.ROUTING_MODE {1}] [get_bd_cells axis_switch_0]
+set_property -dict [list CONFIG.ROUTING_MODE {1}] [get_bd_cells axis_switch_1]
+set_property -dict [list CONFIG.NUM_SI {1} CONFIG.NUM_MI {2} CONFIG.DECODER_REG {1}] [get_bd_cells axis_switch_0]
+startgroup
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {Auto} Clk_slave {Auto} Clk_xbar {Auto} Master {/axi_dma_0/M_AXI_MM2S} Slave {/processing_system7_0/S_AXI_HP0} intc_ip {Auto} master_apm {0}}  [get_bd_intf_pins processing_system7_0/S_AXI_HP0]
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {Auto} Clk_slave {Auto} Clk_xbar {Auto} Master {/processing_system7_0/M_AXI_GP0} Slave {/axi_dma_0/S_AXI_LITE} intc_ip {New AXI Interconnect} master_apm {0}}  [get_bd_intf_pins axi_dma_0/S_AXI_LITE]
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {Auto} Clk_slave {Auto} Clk_xbar {Auto} Master {/processing_system7_0/M_AXI_GP0} Slave {/yolo_conv_top_0/s_axi_CTRL_BUS} intc_ip {New AXI Interconnect} master_apm {0}}  [get_bd_intf_pins yolo_conv_top_0/s_axi_CTRL_BUS]
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {Auto} Clk_slave {Auto} Clk_xbar {Auto} Master {/processing_system7_0/M_AXI_GP0} Slave {/yolo_max_pool_top_0/s_axi_CTRL_BUS} intc_ip {New AXI Interconnect} master_apm {0}}  [get_bd_intf_pins yolo_max_pool_top_0/s_axi_CTRL_BUS]
+Slave segment </yolo_max_pool_top_0/s_axi_CTRL_BUS/Reg> is being mapped into address space </processing_system7_0/Data> at <0x43C1_0000 [ 64K ]>
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {Auto} Clk_slave {Auto} Clk_xbar {Auto} Master {/processing_system7_0/M_AXI_GP0} Slave {/axis_switch_0/S_AXI_CTRL} intc_ip {New AXI Interconnect} master_apm {0}}  [get_bd_intf_pins axis_switch_0/S_AXI_CTRL]
+Slave segment </axis_switch_0/S_AXI_CTRL/Reg> is being mapped into address space </processing_system7_0/Data> at <0x43C2_0000 [ 64K ]>
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {Auto} Clk_slave {Auto} Clk_xbar {Auto} Master {/processing_system7_0/M_AXI_GP0} Slave {/axis_switch_1/S_AXI_CTRL} intc_ip {New AXI Interconnect} master_apm {0}}  [get_bd_intf_pins axis_switch_1/S_AXI_CTRL]
+Slave segment </axis_switch_1/S_AXI_CTRL/Reg> is being mapped into address space </processing_system7_0/Data> at <0x43C3_0000 [ 64K ]>
+endgroup
+set_property location {2 517 313} [get_bd_cells yolo_conv_top_0]
+connect_bd_intf_net [get_bd_intf_pins axi_dma_0/M_AXIS_MM2S] [get_bd_intf_pins yolo_conv_top_0/inStream]
+connect_bd_intf_net [get_bd_intf_pins axis_switch_0/S00_AXIS] [get_bd_intf_pins yolo_conv_top_0/outStream]
+connect_bd_intf_net [get_bd_intf_pins axis_switch_0/M00_AXIS] [get_bd_intf_pins yolo_max_pool_top_0/inStream]
+connect_bd_intf_net [get_bd_intf_pins yolo_max_pool_top_0/outStream] [get_bd_intf_pins axis_switch_1/S00_AXIS]
+connect_bd_intf_net [get_bd_intf_pins axis_switch_1/M00_AXIS] [get_bd_intf_pins axi_dma_0/S_AXIS_S2MM]
+connect_bd_intf_net [get_bd_intf_pins axis_switch_0/M01_AXIS] [get_bd_intf_pins axis_switch_1/S01_AXIS]
+startgroup
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {Auto} Clk_slave {/processing_system7_0/FCLK_CLK0 (100 MHz)} Clk_xbar {/processing_system7_0/FCLK_CLK0 (100 MHz)} Master {/axi_dma_0/M_AXI_S2MM} Slave {/processing_system7_0/S_AXI_HP0} intc_ip {/axi_smc} master_apm {0}}  [get_bd_intf_pins axi_dma_0/M_AXI_S2MM]
+apply_bd_automation -rule xilinx.com:bd_rule:clkrst -config {Clk "/processing_system7_0/FCLK_CLK0 (100 MHz)" }  [get_bd_pins axis_switch_0/aclk]
+INFO: [BD 5-455] Automation on '/axis_switch_1/aclk' will not be run, since it is obsolete due to previously run automations
+endgroup
+regenerate_bd_layout
+regenerate_bd_layout -routing
+regenerate_bd_layout
+validate_bd_design
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+save_bd_design
+Wrote  : </home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_max_fp_prj_2019_64/yolo_conv_max_fp_prj_2019_64.srcs/sources_1/bd/design_1/design_1.bd> 
+Wrote  : </home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_max_fp_prj_2019_64/yolo_conv_max_fp_prj_2019_64.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 3
+INFO: [BD 41-1662] The design 'design_1.bd' is already validated. Therefore parameter propagation will not be re-run.
+VHDL Output written to : /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_max_fp_prj_2019_64/yolo_conv_max_fp_prj_2019_64.srcs/sources_1/bd/design_1/synth/design_1.v
+VHDL Output written to : /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_max_fp_prj_2019_64/yolo_conv_max_fp_prj_2019_64.srcs/sources_1/bd/design_1/sim/design_1.v
+VHDL Output written to : /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_max_fp_prj_2019_64/yolo_conv_max_fp_prj_2019_64.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_dma_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block yolo_conv_top_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block yolo_max_pool_top_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axis_switch_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axis_switch_1 .
+Exporting to file /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_max_fp_prj_2019_64/yolo_conv_max_fp_prj_2019_64.srcs/sources_1/bd/design_1/ip/design_1_axi_smc_2/bd_0/hw_handoff/design_1_axi_smc_2.hwh
+Generated Block Design Tcl file /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_max_fp_prj_2019_64/yolo_conv_max_fp_prj_2019_64.srcs/sources_1/bd/design_1/ip/design_1_axi_smc_2/bd_0/hw_handoff/design_1_axi_smc_2_bd.tcl
+Generated Hardware Definition File /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_max_fp_prj_2019_64/yolo_conv_max_fp_prj_2019_64.srcs/sources_1/bd/design_1/ip/design_1_axi_smc_2/bd_0/synth/design_1_axi_smc_2.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_smc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_ps7_0_100M .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/xbar .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_max_fp_prj_2019_64/yolo_conv_max_fp_prj_2019_64.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_2/design_1_auto_pc_2_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc .
+Exporting to file /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_max_fp_prj_2019_64/yolo_conv_max_fp_prj_2019_64.srcs/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Block Design Tcl file /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_max_fp_prj_2019_64/yolo_conv_max_fp_prj_2019_64.srcs/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl
+Generated Hardware Definition File /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_max_fp_prj_2019_64/yolo_conv_max_fp_prj_2019_64.srcs/sources_1/bd/design_1/synth/design_1.hwdef
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_pc_2, cache-ID = c7981aa4510def98; cache size = 23.982 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_rst_ps7_0_100M_2, cache-ID = 34bfec66c547985c; cache size = 23.982 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_yolo_max_pool_top_0_2, cache-ID = db793049feacbb93; cache size = 23.982 MB.
+[Tue Jul 16 09:39:41 2019] Launched design_1_axi_smc_2_synth_1, design_1_axis_switch_1_1_synth_1, design_1_axis_switch_0_1_synth_1, design_1_yolo_conv_top_0_1_synth_1, design_1_xbar_4_synth_1, synth_1...
+Run output will be captured here:
+design_1_axi_smc_2_synth_1: /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_max_fp_prj_2019_64/yolo_conv_max_fp_prj_2019_64.runs/design_1_axi_smc_2_synth_1/runme.log
+design_1_axis_switch_1_1_synth_1: /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_max_fp_prj_2019_64/yolo_conv_max_fp_prj_2019_64.runs/design_1_axis_switch_1_1_synth_1/runme.log
+design_1_axis_switch_0_1_synth_1: /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_max_fp_prj_2019_64/yolo_conv_max_fp_prj_2019_64.runs/design_1_axis_switch_0_1_synth_1/runme.log
+design_1_yolo_conv_top_0_1_synth_1: /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_max_fp_prj_2019_64/yolo_conv_max_fp_prj_2019_64.runs/design_1_yolo_conv_top_0_1_synth_1/runme.log
+design_1_xbar_4_synth_1: /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_max_fp_prj_2019_64/yolo_conv_max_fp_prj_2019_64.runs/design_1_xbar_4_synth_1/runme.log
+synth_1: /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_max_fp_prj_2019_64/yolo_conv_max_fp_prj_2019_64.runs/synth_1/runme.log
+[Tue Jul 16 09:39:42 2019] Launched impl_1...
+Run output will be captured here: /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_max_fp_prj_2019_64/yolo_conv_max_fp_prj_2019_64.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:16 ; elapsed = 00:00:14 . Memory (MB): peak = 7628.000 ; gain = 156.305 ; free physical = 658 ; free virtual = 12674
+open_run impl_1
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: [Netlist 29-17] Analyzing 1311 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2019.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Constraints 18-5170] The checkpoint was created with non-default parameter values which do not match the current Vivado settings.  Mismatching parameters are:
+  general.maxThreads
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 8539.777 ; gain = 63.965 ; free physical = 3264 ; free virtual = 12475
+Restored from archive | CPU: 5.410000 secs | Memory: 68.382996 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 8539.777 ; gain = 63.965 ; free physical = 3264 ; free virtual = 12475
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 8539.777 ; gain = 0.000 ; free physical = 3281 ; free virtual = 12493
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 108 instances were transformed.
+  RAM16X1D => RAM32X1D (RAMD32, RAMD32): 1 instances
+  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 107 instances
+
+open_run: Time (s): cpu = 00:00:45 ; elapsed = 00:00:36 . Memory (MB): peak = 8718.477 ; gain = 1090.477 ; free physical = 3109 ; free virtual = 12329
+open_report: Time (s): cpu = 00:00:23 ; elapsed = 00:00:09 . Memory (MB): peak = 8839.004 ; gain = 96.996 ; free physical = 2899 ; free virtual = 12120
+file mkdir /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_max_fp_prj_2019_64/yolo_conv_max_fp_prj_2019_64.sdk
+file copy -force /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_max_fp_prj_2019_64/yolo_conv_max_fp_prj_2019_64.runs/impl_1/design_1_wrapper.sysdef /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_max_fp_prj_2019_64/yolo_conv_max_fp_prj_2019_64.sdk/design_1_wrapper.hdf
+
+launch_sdk -workspace /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_max_fp_prj_2019_64/yolo_conv_max_fp_prj_2019_64.sdk -hwspec /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_max_fp_prj_2019_64/yolo_conv_max_fp_prj_2019_64.sdk/design_1_wrapper.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_max_fp_prj_2019_64/yolo_conv_max_fp_prj_2019_64.sdk -hwspec /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_max_fp_prj_2019_64/yolo_conv_max_fp_prj_2019_64.sdk/design_1_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+open_bd_design {/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_max_fp_prj_2019_64/yolo_conv_max_fp_prj_2019_64.srcs/sources_1/bd/design_1/design_1.bd}
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Jul 16 11:34:17 2019...

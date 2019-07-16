@@ -12,9 +12,10 @@
     "Package": "-clg484",
     "Speed": "-1"
   },
-  "HlsSolution": {
-    
-  },
+  "HlsSolution": {"Config": [
+      "config_export -format=ip_catalog",
+      "config_export -rtl=verilog"
+    ]},
   "Args": {
     "inStream": {
       "index": "0",
@@ -131,6 +132,60 @@
           }
         }
       }
+    },
+    "output_h": {
+      "index": "2",
+      "type": {
+        "dataType": "ap_uint",
+        "dataWidth": "9",
+        "interfaceRef": "s_axi_CTRL_BUS",
+        "registerRefs": ["output_h_V"]
+      }
+    },
+    "output_w": {
+      "index": "3",
+      "type": {
+        "dataType": "ap_uint",
+        "dataWidth": "9",
+        "interfaceRef": "s_axi_CTRL_BUS",
+        "registerRefs": ["output_w_V"]
+      }
+    },
+    "input_h": {
+      "index": "4",
+      "type": {
+        "dataType": "ap_uint",
+        "dataWidth": "9",
+        "interfaceRef": "s_axi_CTRL_BUS",
+        "registerRefs": ["input_h_V"]
+      }
+    },
+    "input_w": {
+      "index": "5",
+      "type": {
+        "dataType": "ap_uint",
+        "dataWidth": "9",
+        "interfaceRef": "s_axi_CTRL_BUS",
+        "registerRefs": ["input_w_V"]
+      }
+    },
+    "input_fold_ch": {
+      "index": "6",
+      "type": {
+        "dataType": "ap_uint",
+        "dataWidth": "4",
+        "interfaceRef": "s_axi_CTRL_BUS",
+        "registerRefs": ["input_fold_ch_V"]
+      }
+    },
+    "stride": {
+      "index": "7",
+      "type": {
+        "dataType": "ap_uint",
+        "dataWidth": "2",
+        "interfaceRef": "s_axi_CTRL_BUS",
+        "registerRefs": ["stride_V"]
+      }
     }
   },
   "Return": {
@@ -141,7 +196,7 @@
     "ClockPeriod": "10",
     "IsCombLogic": "0",
     "II": "x",
-    "Latency": "1384471",
+    "Latency": "1384491",
     "Uncertainty": "1.25"
   },
   "Xdc": {"OocClocks": ["create_clock -name ap_clk -period 10.000 [get_ports ap_clk]"]},
@@ -160,16 +215,16 @@
     "CSource": ["..\/src\/yolo_max_pool.cpp"],
     "Vhdl": [
       "impl\/vhdl\/write_output.vhd",
-      "impl\/vhdl\/yolo_max_pool_top_AXILiteS_s_axi.vhd",
+      "impl\/vhdl\/yolo_max_pool_top_CTRL_BUS_s_axi.vhd",
       "impl\/vhdl\/yolo_max_pool_top_line_buff_group_0_va.vhd",
-      "impl\/vhdl\/yolo_max_pool_top_mux_42_16_1_1.vhd",
+      "impl\/vhdl\/yolo_max_pool_top_mul_mul_17ns_9ns_26_1_1.vhd",
       "impl\/vhdl\/yolo_max_pool_top.vhd"
     ],
     "Verilog": [
       "impl\/verilog\/write_output.v",
-      "impl\/verilog\/yolo_max_pool_top_AXILiteS_s_axi.v",
+      "impl\/verilog\/yolo_max_pool_top_CTRL_BUS_s_axi.v",
       "impl\/verilog\/yolo_max_pool_top_line_buff_group_0_va.v",
-      "impl\/verilog\/yolo_max_pool_top_mux_42_16_1_1.v",
+      "impl\/verilog\/yolo_max_pool_top_mul_mul_17ns_9ns_26_1_1.v",
       "impl\/verilog\/yolo_max_pool_top.v"
     ],
     "SwDriver": [
@@ -198,7 +253,7 @@
       "ctype": {"CLK": {"Type": "bool"}},
       "bundle_name": "ap_clk",
       "bundle_role": "default",
-      "buses": "s_axi_AXILiteS inStream outStream",
+      "buses": "s_axi_CTRL_BUS inStream outStream",
       "reset": "ap_rst_n"
     },
     "ap_rst_n": {
@@ -276,7 +331,7 @@
     "interrupt": {
       "type": "interrupt",
       "ctype": {"INTERRUPT": {"Type": "bool"}},
-      "bundle_name": "AXILiteS",
+      "bundle_name": "CTRL_BUS",
       "bundle_role": "interrupt"
     },
     "outStream": {
@@ -344,13 +399,13 @@
         "TUSER": "2"
       }
     },
-    "s_axi_AXILiteS": {
+    "s_axi_CTRL_BUS": {
       "type": "axi4lite",
       "is_adaptor": "true",
       "mode": "slave",
-      "port_prefix": "s_axi_AXILiteS",
-      "param_prefix": "C_S_AXI_AXILITES",
-      "addr_bits": "4",
+      "port_prefix": "s_axi_CTRL_BUS",
+      "param_prefix": "C_S_AXI_CTRL_BUS",
+      "addr_bits": "6",
       "registers": [
         {
           "offset": "0x00",
@@ -507,6 +562,156 @@
               "description": "Reserved.  0s on read."
             }
           ]
+        },
+        {
+          "offset": "0x10",
+          "name": "output_h_V",
+          "access": "W",
+          "reset_value": "0x0",
+          "description": "Data signal of output_h_V",
+          "fields": [
+            {
+              "offset": "0",
+              "width": "9",
+              "name": "output_h_V",
+              "access": "W",
+              "reset_value": "0",
+              "description": "Bit 8 to 0 Data signal of output_h_V"
+            },
+            {
+              "offset": "9",
+              "width": "23",
+              "name": "RESERVED",
+              "access": "R",
+              "reset_value": "0",
+              "description": "Reserved.  0s on read."
+            }
+          ]
+        },
+        {
+          "offset": "0x18",
+          "name": "output_w_V",
+          "access": "W",
+          "reset_value": "0x0",
+          "description": "Data signal of output_w_V",
+          "fields": [
+            {
+              "offset": "0",
+              "width": "9",
+              "name": "output_w_V",
+              "access": "W",
+              "reset_value": "0",
+              "description": "Bit 8 to 0 Data signal of output_w_V"
+            },
+            {
+              "offset": "9",
+              "width": "23",
+              "name": "RESERVED",
+              "access": "R",
+              "reset_value": "0",
+              "description": "Reserved.  0s on read."
+            }
+          ]
+        },
+        {
+          "offset": "0x20",
+          "name": "input_h_V",
+          "access": "W",
+          "reset_value": "0x0",
+          "description": "Data signal of input_h_V",
+          "fields": [
+            {
+              "offset": "0",
+              "width": "9",
+              "name": "input_h_V",
+              "access": "W",
+              "reset_value": "0",
+              "description": "Bit 8 to 0 Data signal of input_h_V"
+            },
+            {
+              "offset": "9",
+              "width": "23",
+              "name": "RESERVED",
+              "access": "R",
+              "reset_value": "0",
+              "description": "Reserved.  0s on read."
+            }
+          ]
+        },
+        {
+          "offset": "0x28",
+          "name": "input_w_V",
+          "access": "W",
+          "reset_value": "0x0",
+          "description": "Data signal of input_w_V",
+          "fields": [
+            {
+              "offset": "0",
+              "width": "9",
+              "name": "input_w_V",
+              "access": "W",
+              "reset_value": "0",
+              "description": "Bit 8 to 0 Data signal of input_w_V"
+            },
+            {
+              "offset": "9",
+              "width": "23",
+              "name": "RESERVED",
+              "access": "R",
+              "reset_value": "0",
+              "description": "Reserved.  0s on read."
+            }
+          ]
+        },
+        {
+          "offset": "0x30",
+          "name": "input_fold_ch_V",
+          "access": "W",
+          "reset_value": "0x0",
+          "description": "Data signal of input_fold_ch_V",
+          "fields": [
+            {
+              "offset": "0",
+              "width": "4",
+              "name": "input_fold_ch_V",
+              "access": "W",
+              "reset_value": "0",
+              "description": "Bit 3 to 0 Data signal of input_fold_ch_V"
+            },
+            {
+              "offset": "4",
+              "width": "28",
+              "name": "RESERVED",
+              "access": "R",
+              "reset_value": "0",
+              "description": "Reserved.  0s on read."
+            }
+          ]
+        },
+        {
+          "offset": "0x38",
+          "name": "stride_V",
+          "access": "W",
+          "reset_value": "0x0",
+          "description": "Data signal of stride_V",
+          "fields": [
+            {
+              "offset": "0",
+              "width": "2",
+              "name": "stride_V",
+              "access": "W",
+              "reset_value": "0",
+              "description": "Bit 1 to 0 Data signal of stride_V"
+            },
+            {
+              "offset": "2",
+              "width": "30",
+              "name": "RESERVED",
+              "access": "R",
+              "reset_value": "0",
+              "description": "Reserved.  0s on read."
+            }
+          ]
         }
       ],
       "ctype": {
@@ -530,11 +735,11 @@
         },
         "AWADDR": {
           "Type": "integer unsigned",
-          "Width": "4"
+          "Width": "6"
         },
         "WDATA": {
-          "Type": "null",
-          "Width": "32"
+          "Type": "integer unsigned",
+          "Width": "2"
         },
         "WSTRB": {
           "Type": "integer unsigned",
@@ -542,17 +747,17 @@
         },
         "ARADDR": {
           "Type": "integer unsigned",
-          "Width": "4"
+          "Width": "6"
         },
         "RDATA": {
-          "Type": "null",
-          "Width": "32"
+          "Type": "integer unsigned",
+          "Width": "2"
         }
       },
       "data_width": "32",
       "port_width": {
-        "ARADDR": "4",
-        "AWADDR": "4",
+        "ARADDR": "6",
+        "AWADDR": "6",
         "RDATA": "32",
         "WDATA": "32",
         "WSTRB": "4"
@@ -560,71 +765,71 @@
     }
   },
   "RtlPorts": {
-    "s_axi_AXILiteS_AWVALID": {
+    "s_axi_CTRL_BUS_AWVALID": {
       "dir": "in",
       "width": "1"
     },
-    "s_axi_AXILiteS_AWREADY": {
+    "s_axi_CTRL_BUS_AWREADY": {
       "dir": "out",
       "width": "1"
     },
-    "s_axi_AXILiteS_AWADDR": {
+    "s_axi_CTRL_BUS_AWADDR": {
       "dir": "in",
-      "width": "4"
+      "width": "6"
     },
-    "s_axi_AXILiteS_WVALID": {
+    "s_axi_CTRL_BUS_WVALID": {
       "dir": "in",
       "width": "1"
     },
-    "s_axi_AXILiteS_WREADY": {
+    "s_axi_CTRL_BUS_WREADY": {
       "dir": "out",
       "width": "1"
     },
-    "s_axi_AXILiteS_WDATA": {
+    "s_axi_CTRL_BUS_WDATA": {
       "dir": "in",
       "width": "32"
     },
-    "s_axi_AXILiteS_WSTRB": {
+    "s_axi_CTRL_BUS_WSTRB": {
       "dir": "in",
       "width": "4"
     },
-    "s_axi_AXILiteS_ARVALID": {
+    "s_axi_CTRL_BUS_ARVALID": {
       "dir": "in",
       "width": "1"
     },
-    "s_axi_AXILiteS_ARREADY": {
+    "s_axi_CTRL_BUS_ARREADY": {
       "dir": "out",
       "width": "1"
     },
-    "s_axi_AXILiteS_ARADDR": {
+    "s_axi_CTRL_BUS_ARADDR": {
       "dir": "in",
-      "width": "4"
+      "width": "6"
     },
-    "s_axi_AXILiteS_RVALID": {
+    "s_axi_CTRL_BUS_RVALID": {
       "dir": "out",
       "width": "1"
     },
-    "s_axi_AXILiteS_RREADY": {
+    "s_axi_CTRL_BUS_RREADY": {
       "dir": "in",
       "width": "1"
     },
-    "s_axi_AXILiteS_RDATA": {
+    "s_axi_CTRL_BUS_RDATA": {
       "dir": "out",
       "width": "32"
     },
-    "s_axi_AXILiteS_RRESP": {
+    "s_axi_CTRL_BUS_RRESP": {
       "dir": "out",
       "width": "2"
     },
-    "s_axi_AXILiteS_BVALID": {
+    "s_axi_CTRL_BUS_BVALID": {
       "dir": "out",
       "width": "1"
     },
-    "s_axi_AXILiteS_BREADY": {
+    "s_axi_CTRL_BUS_BREADY": {
       "dir": "in",
       "width": "1"
     },
-    "s_axi_AXILiteS_BRESP": {
+    "s_axi_CTRL_BUS_BRESP": {
       "dir": "out",
       "width": "2"
     },
@@ -721,7 +926,7 @@
       "ModuleName": "yolo_max_pool_top",
       "Instances": [{
           "ModuleName": "write_output",
-          "InstanceName": "call_ln104_write_output_fu_942"
+          "InstanceName": "call_ln134_write_output_fu_772"
         }]
     },
     "Info": {
@@ -765,60 +970,60 @@
       },
       "yolo_max_pool_top": {
         "Latency": {
-          "LatencyBest": "1384471",
-          "LatencyAvg": "1384471",
-          "LatencyWorst": "1384471",
-          "PipelineII": "1384472",
+          "LatencyBest": "1384491",
+          "LatencyAvg": "1384491",
+          "LatencyWorst": "1384491",
+          "PipelineII": "1384492",
           "PipelineDepth": "",
           "PipelineType": "none"
         },
         "Timing": {
           "Target": "10.00",
           "Uncertainty": "1.25",
-          "Estimate": "8.197"
+          "Estimate": "8.118"
         },
         "Loops": [
           {
             "Name": "Loop 1",
-            "TripCount": "4",
-            "Latency": "3",
+            "TripCount": "8",
+            "Latency": "7",
             "PipelineII": "",
             "PipelineDepth": "1"
           },
           {
             "Name": "Loop 2",
-            "TripCount": "4",
-            "Latency": "3",
+            "TripCount": "8",
+            "Latency": "7",
             "PipelineII": "",
             "PipelineDepth": "1"
           },
           {
             "Name": "Loop 3",
-            "TripCount": "4",
-            "Latency": "3",
+            "TripCount": "8",
+            "Latency": "7",
             "PipelineII": "",
             "PipelineDepth": "1"
           },
           {
             "Name": "Loop 4",
-            "TripCount": "4",
-            "Latency": "3",
+            "TripCount": "8",
+            "Latency": "7",
             "PipelineII": "",
             "PipelineDepth": "1"
           },
           {
             "Name": "Loop 5",
             "TripCount": "692224",
-            "Latency": "1384453",
+            "Latency": "1384455",
             "PipelineII": "2",
-            "PipelineDepth": "8"
+            "PipelineDepth": "10"
           }
         ],
         "Area": {
-          "BRAM_18K": "16",
-          "DSP48E": "0",
-          "FF": "3130",
-          "LUT": "5772",
+          "BRAM_18K": "32",
+          "DSP48E": "1",
+          "FF": "1947",
+          "LUT": "3308",
           "URAM": "0"
         }
       }
@@ -834,7 +1039,7 @@
   },
   "GenData": {
     "DataVersion": "0.2",
-    "Time": "2019-06-30 20:58:36 BST",
+    "Time": "2019-07-15 20:22:38 BST",
     "ToolName": "vivado_hls",
     "ToolVersion": "2019.1"
   }

@@ -850,46 +850,10 @@
           </spirit:field>
         </spirit:register>
         <spirit:register>
-          <spirit:name>kernel_dim_V</spirit:name>
-          <spirit:displayName>kernel_dim_V</spirit:displayName>
-          <spirit:description>Data signal of kernel_dim_V</spirit:description>
-          <spirit:addressOffset>48</spirit:addressOffset>
-          <spirit:size spirit:format="long">32</spirit:size>
-          <spirit:access>write-only</spirit:access>
-          <spirit:reset>
-            <spirit:value spirit:format="long">0</spirit:value>
-          </spirit:reset>
-          <spirit:field>
-            <spirit:name>kernel_dim_V</spirit:name>
-            <spirit:description>Bit 2 to 0 Data signal of kernel_dim_V</spirit:description>
-            <spirit:bitOffset>0</spirit:bitOffset>
-            <spirit:bitWidth spirit:format="long">3</spirit:bitWidth>
-            <spirit:access>write-only</spirit:access>
-            <spirit:writeValueConstraint>
-              <spirit:minimum>0</spirit:minimum>
-              <spirit:maximum>0</spirit:maximum>
-            </spirit:writeValueConstraint>
-            <spirit:testable spirit:testConstraint="unconstrained">false</spirit:testable>
-          </spirit:field>
-          <spirit:field>
-            <spirit:name>RESERVED</spirit:name>
-            <spirit:description>Reserved.  0s on read.</spirit:description>
-            <spirit:bitOffset>3</spirit:bitOffset>
-            <spirit:bitWidth spirit:format="long">29</spirit:bitWidth>
-            <spirit:access>read-only</spirit:access>
-            <spirit:writeValueConstraint>
-              <spirit:minimum>0</spirit:minimum>
-              <spirit:maximum>0</spirit:maximum>
-            </spirit:writeValueConstraint>
-            <spirit:readAction>modify</spirit:readAction>
-            <spirit:testable spirit:testConstraint="unconstrained">false</spirit:testable>
-          </spirit:field>
-        </spirit:register>
-        <spirit:register>
           <spirit:name>input_h_V</spirit:name>
           <spirit:displayName>input_h_V</spirit:displayName>
           <spirit:description>Data signal of input_h_V</spirit:description>
-          <spirit:addressOffset>56</spirit:addressOffset>
+          <spirit:addressOffset>48</spirit:addressOffset>
           <spirit:size spirit:format="long">32</spirit:size>
           <spirit:access>write-only</spirit:access>
           <spirit:reset>
@@ -925,7 +889,7 @@
           <spirit:name>input_w_V</spirit:name>
           <spirit:displayName>input_w_V</spirit:displayName>
           <spirit:description>Data signal of input_w_V</spirit:description>
-          <spirit:addressOffset>64</spirit:addressOffset>
+          <spirit:addressOffset>56</spirit:addressOffset>
           <spirit:size spirit:format="long">32</spirit:size>
           <spirit:access>write-only</spirit:access>
           <spirit:reset>
@@ -961,7 +925,7 @@
           <spirit:name>real_input_h_V</spirit:name>
           <spirit:displayName>real_input_h_V</spirit:displayName>
           <spirit:description>Data signal of real_input_h_V</spirit:description>
-          <spirit:addressOffset>72</spirit:addressOffset>
+          <spirit:addressOffset>64</spirit:addressOffset>
           <spirit:size spirit:format="long">32</spirit:size>
           <spirit:access>write-only</spirit:access>
           <spirit:reset>
@@ -997,7 +961,7 @@
           <spirit:name>leaky_V</spirit:name>
           <spirit:displayName>leaky_V</spirit:displayName>
           <spirit:description>Data signal of leaky_V</spirit:description>
-          <spirit:addressOffset>80</spirit:addressOffset>
+          <spirit:addressOffset>72</spirit:addressOffset>
           <spirit:size spirit:format="long">32</spirit:size>
           <spirit:access>write-only</spirit:access>
           <spirit:reset>
@@ -1033,7 +997,7 @@
           <spirit:name>fold_win_area_V</spirit:name>
           <spirit:displayName>fold_win_area_V</spirit:displayName>
           <spirit:description>Data signal of fold_win_area_V</spirit:description>
-          <spirit:addressOffset>88</spirit:addressOffset>
+          <spirit:addressOffset>80</spirit:addressOffset>
           <spirit:size spirit:format="long">32</spirit:size>
           <spirit:access>write-only</spirit:access>
           <spirit:reset>
@@ -1082,7 +1046,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>03f57107</spirit:value>
+            <spirit:value>5ba139ac</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1098,7 +1062,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>6cf69601</spirit:value>
+            <spirit:value>99fdcfac</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1114,7 +1078,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>d787a7b6</spirit:value>
+            <spirit:value>c6046070</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1130,7 +1094,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>956cee4e</spirit:value>
+            <spirit:value>fe4213b3</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1144,7 +1108,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>56da1e74</spirit:value>
+            <spirit:value>09ba95f5</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1871,10 +1835,6 @@
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/verilog/yolo_conv_top_mac_muladd_3ns_3ns_3ns_6_1_1.v</spirit:name>
-        <spirit:fileType>verilogSource</spirit:fileType>
-      </spirit:file>
-      <spirit:file>
         <spirit:name>hdl/verilog/yolo_conv_top_mac_muladd_4ns_10ns_9ns_13_1_1.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
@@ -1940,11 +1900,6 @@
       </spirit:file>
       <spirit:file>
         <spirit:name>hdl/verilog/yolo_conv_top_local_mem_group_0_d.v</spirit:name>
-        <spirit:fileType>verilogSource</spirit:fileType>
-        <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>hdl/verilog/yolo_conv_top_mac_muladd_3ns_3ns_3ns_6_1_1.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
@@ -2017,10 +1972,6 @@
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/vhdl/yolo_conv_top_mac_muladd_3ns_3ns_3ns_6_1_1.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-      </spirit:file>
-      <spirit:file>
         <spirit:name>hdl/vhdl/yolo_conv_top_mac_muladd_4ns_10ns_9ns_13_1_1.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
@@ -2035,7 +1986,7 @@
       <spirit:file>
         <spirit:name>hdl/vhdl/yolo_conv_top.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:userFileType>CHECKSUM_fa915b14</spirit:userFileType>
+        <spirit:userFileType>CHECKSUM_330822a4</spirit:userFileType>
       </spirit:file>
     </spirit:fileSet>
     <spirit:fileSet>
@@ -2087,11 +2038,6 @@
       </spirit:file>
       <spirit:file>
         <spirit:name>hdl/vhdl/yolo_conv_top_local_mem_group_0_d.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>hdl/vhdl/yolo_conv_top_mac_muladd_3ns_3ns_3ns_6_1_1.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
@@ -2227,14 +2173,14 @@
       </xilinx:taxonomies>
       <xilinx:displayName>Yolo_conv_top</xilinx:displayName>
       <xilinx:definitionSource>HLS</xilinx:definitionSource>
-      <xilinx:coreRevision>1907151406</xilinx:coreRevision>
-      <xilinx:coreCreationDateTime>2019-07-15T13:07:30Z</xilinx:coreCreationDateTime>
+      <xilinx:coreRevision>1907160901</xilinx:coreRevision>
+      <xilinx:coreCreationDateTime>2019-07-16T08:02:29Z</xilinx:coreCreationDateTime>
     </xilinx:coreExtensions>
     <xilinx:packagingInfo>
       <xilinx:xilinxVersion>2019.1</xilinx:xilinxVersion>
       <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="9408b4b9"/>
-      <xilinx:checksum xilinx:scope="memoryMaps" xilinx:value="35107c9b"/>
-      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="497638b8"/>
+      <xilinx:checksum xilinx:scope="memoryMaps" xilinx:value="d2b2c230"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="1c623a58"/>
       <xilinx:checksum xilinx:scope="ports" xilinx:value="2f0c18eb"/>
       <xilinx:checksum xilinx:scope="hdlParameters" xilinx:value="274ab10d"/>
       <xilinx:checksum xilinx:scope="parameters" xilinx:value="22e9d2f2"/>

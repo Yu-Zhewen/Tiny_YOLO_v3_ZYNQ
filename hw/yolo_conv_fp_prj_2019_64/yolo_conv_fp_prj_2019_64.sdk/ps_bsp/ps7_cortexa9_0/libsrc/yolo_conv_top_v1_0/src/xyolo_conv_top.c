@@ -141,23 +141,6 @@ u32 XYolo_conv_top_Get_fold_input_ch_V(XYolo_conv_top *InstancePtr) {
     return Data;
 }
 
-void XYolo_conv_top_Set_kernel_dim_V(XYolo_conv_top *InstancePtr, u32 Data) {
-    Xil_AssertVoid(InstancePtr != NULL);
-    Xil_AssertVoid(InstancePtr->IsReady == XIL_COMPONENT_IS_READY);
-
-    XYolo_conv_top_WriteReg(InstancePtr->Ctrl_bus_BaseAddress, XYOLO_CONV_TOP_CTRL_BUS_ADDR_KERNEL_DIM_V_DATA, Data);
-}
-
-u32 XYolo_conv_top_Get_kernel_dim_V(XYolo_conv_top *InstancePtr) {
-    u32 Data;
-
-    Xil_AssertNonvoid(InstancePtr != NULL);
-    Xil_AssertNonvoid(InstancePtr->IsReady == XIL_COMPONENT_IS_READY);
-
-    Data = XYolo_conv_top_ReadReg(InstancePtr->Ctrl_bus_BaseAddress, XYOLO_CONV_TOP_CTRL_BUS_ADDR_KERNEL_DIM_V_DATA);
-    return Data;
-}
-
 void XYolo_conv_top_Set_input_h_V(XYolo_conv_top *InstancePtr, u32 Data) {
     Xil_AssertVoid(InstancePtr != NULL);
     Xil_AssertVoid(InstancePtr->IsReady == XIL_COMPONENT_IS_READY);

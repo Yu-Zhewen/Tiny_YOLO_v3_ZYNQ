@@ -17,7 +17,6 @@ set depth_list {
 {input_ch_V 1}
 {fold_output_ch_V 1}
 {fold_input_ch_V 1}
-{kernel_dim_V 1}
 {input_h_V 1}
 {input_w_V 1}
 {real_input_h_V 1}

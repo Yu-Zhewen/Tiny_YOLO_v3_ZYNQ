@@ -173,17 +173,8 @@
         "registerRefs": ["fold_input_ch_V"]
       }
     },
-    "kernel_dim": {
-      "index": "6",
-      "type": {
-        "dataType": "ap_uint",
-        "dataWidth": "3",
-        "interfaceRef": "s_axi_CTRL_BUS",
-        "registerRefs": ["kernel_dim_V"]
-      }
-    },
     "input_h": {
-      "index": "7",
+      "index": "6",
       "type": {
         "dataType": "ap_uint",
         "dataWidth": "9",
@@ -192,7 +183,7 @@
       }
     },
     "input_w": {
-      "index": "8",
+      "index": "7",
       "type": {
         "dataType": "ap_uint",
         "dataWidth": "9",
@@ -201,7 +192,7 @@
       }
     },
     "real_input_h": {
-      "index": "9",
+      "index": "8",
       "type": {
         "dataType": "ap_uint",
         "dataWidth": "9",
@@ -210,7 +201,7 @@
       }
     },
     "leaky": {
-      "index": "10",
+      "index": "9",
       "type": {
         "dataType": "ap_uint",
         "dataWidth": "1",
@@ -219,7 +210,7 @@
       }
     },
     "fold_win_area": {
-      "index": "11",
+      "index": "10",
       "type": {
         "dataType": "ap_uint",
         "dataWidth": "3",
@@ -264,7 +255,6 @@
       "impl\/vhdl\/yolo_conv_top_kernel_bias_fp_0_V.vhd",
       "impl\/vhdl\/yolo_conv_top_line_buff_group_0_va.vhd",
       "impl\/vhdl\/yolo_conv_top_local_mem_group_0_d.vhd",
-      "impl\/vhdl\/yolo_conv_top_mac_muladd_3ns_3ns_3ns_6_1_1.vhd",
       "impl\/vhdl\/yolo_conv_top_mac_muladd_4ns_10ns_9ns_13_1_1.vhd",
       "impl\/vhdl\/yolo_conv_top_mul_mul_6ns_16s_22_1_0.vhd",
       "impl\/vhdl\/yolo_conv_top_mul_mul_16s_16s_32_1_0.vhd",
@@ -281,7 +271,6 @@
       "impl\/verilog\/yolo_conv_top_kernel_bias_fp_0_V.v",
       "impl\/verilog\/yolo_conv_top_line_buff_group_0_va.v",
       "impl\/verilog\/yolo_conv_top_local_mem_group_0_d.v",
-      "impl\/verilog\/yolo_conv_top_mac_muladd_3ns_3ns_3ns_6_1_1.v",
       "impl\/verilog\/yolo_conv_top_mac_muladd_4ns_10ns_9ns_13_1_1.v",
       "impl\/verilog\/yolo_conv_top_mul_mul_6ns_16s_22_1_0.v",
       "impl\/verilog\/yolo_conv_top_mul_mul_16s_16s_32_1_0.v",
@@ -298,9 +287,9 @@
       "impl\/misc\/drivers\/yolo_conv_top_v1_0\/src\/xyolo_conv_top_sinit.c"
     ],
     "Misc": ["impl\/misc\/logo.png"],
-    "DesignXml": "\/home\/xavier\/Desktop\/yolo_conv_fp_2019_64_rec\/solution1\/.autopilot\/db\/yolo_conv_top.design.xml",
-    "DebugDir": "\/home\/xavier\/Desktop\/yolo_conv_fp_2019_64_rec\/solution1\/.debug",
-    "ProtoInst": ["\/home\/xavier\/Desktop\/yolo_conv_fp_2019_64_rec\/solution1\/.debug\/yolo_conv_top.protoinst"]
+    "DesignXml": "\/home\/xavier\/MSc_Project\/hls\/yolo_conv_hls_2019\/yolo_conv_fp_2019_64\/solution1\/.autopilot\/db\/yolo_conv_top.design.xml",
+    "DebugDir": "\/home\/xavier\/MSc_Project\/hls\/yolo_conv_hls_2019\/yolo_conv_fp_2019_64\/solution1\/.debug",
+    "ProtoInst": ["\/home\/xavier\/MSc_Project\/hls\/yolo_conv_hls_2019\/yolo_conv_fp_2019_64\/solution1\/.debug\/yolo_conv_top.protoinst"]
   },
   "SubcoreInfo": {
     "HasXpmMemory": false,
@@ -725,31 +714,6 @@
         },
         {
           "offset": "0x30",
-          "name": "kernel_dim_V",
-          "access": "W",
-          "reset_value": "0x0",
-          "description": "Data signal of kernel_dim_V",
-          "fields": [
-            {
-              "offset": "0",
-              "width": "3",
-              "name": "kernel_dim_V",
-              "access": "W",
-              "reset_value": "0",
-              "description": "Bit 2 to 0 Data signal of kernel_dim_V"
-            },
-            {
-              "offset": "3",
-              "width": "29",
-              "name": "RESERVED",
-              "access": "R",
-              "reset_value": "0",
-              "description": "Reserved.  0s on read."
-            }
-          ]
-        },
-        {
-          "offset": "0x38",
           "name": "input_h_V",
           "access": "W",
           "reset_value": "0x0",
@@ -774,7 +738,7 @@
           ]
         },
         {
-          "offset": "0x40",
+          "offset": "0x38",
           "name": "input_w_V",
           "access": "W",
           "reset_value": "0x0",
@@ -799,7 +763,7 @@
           ]
         },
         {
-          "offset": "0x48",
+          "offset": "0x40",
           "name": "real_input_h_V",
           "access": "W",
           "reset_value": "0x0",
@@ -824,7 +788,7 @@
           ]
         },
         {
-          "offset": "0x50",
+          "offset": "0x48",
           "name": "leaky_V",
           "access": "W",
           "reset_value": "0x0",
@@ -849,7 +813,7 @@
           ]
         },
         {
-          "offset": "0x58",
+          "offset": "0x50",
           "name": "fold_win_area_V",
           "access": "W",
           "reset_value": "0x0",
@@ -1087,51 +1051,51 @@
       "Instances": [
         {
           "ModuleName": "window_macc",
-          "InstanceName": "grp_window_macc_fu_11768"
+          "InstanceName": "grp_window_macc_fu_11766"
         },
         {
           "ModuleName": "window_macc",
-          "InstanceName": "grp_window_macc_fu_11790"
+          "InstanceName": "grp_window_macc_fu_11788"
         },
         {
           "ModuleName": "window_macc",
-          "InstanceName": "grp_window_macc_fu_11812"
+          "InstanceName": "grp_window_macc_fu_11810"
         },
         {
           "ModuleName": "window_macc",
-          "InstanceName": "grp_window_macc_fu_11834"
+          "InstanceName": "grp_window_macc_fu_11832"
         },
         {
           "ModuleName": "window_macc",
-          "InstanceName": "grp_window_macc_fu_11856"
+          "InstanceName": "grp_window_macc_fu_11854"
         },
         {
           "ModuleName": "window_macc",
-          "InstanceName": "grp_window_macc_fu_11878"
+          "InstanceName": "grp_window_macc_fu_11876"
         },
         {
           "ModuleName": "window_macc",
-          "InstanceName": "grp_window_macc_fu_11900"
+          "InstanceName": "grp_window_macc_fu_11898"
         },
         {
           "ModuleName": "window_macc",
-          "InstanceName": "grp_window_macc_fu_11922"
+          "InstanceName": "grp_window_macc_fu_11920"
         },
         {
           "ModuleName": "post_process",
-          "InstanceName": "grp_post_process_fu_11944"
+          "InstanceName": "grp_post_process_fu_11942"
         },
         {
           "ModuleName": "post_process",
-          "InstanceName": "grp_post_process_fu_11958"
+          "InstanceName": "grp_post_process_fu_11956"
         },
         {
           "ModuleName": "out_stream_merge",
-          "InstanceName": "grp_out_stream_merge_fu_12002"
+          "InstanceName": "grp_out_stream_merge_fu_12000"
         },
         {
           "ModuleName": "slide_window",
-          "InstanceName": "grp_slide_window_fu_12060"
+          "InstanceName": "grp_slide_window_fu_12058"
         }
       ]
     },
@@ -1328,9 +1292,9 @@
         ],
         "Area": {
           "BRAM_18K": "88",
-          "DSP48E": "77",
-          "FF": "38407",
-          "LUT": "39291",
+          "DSP48E": "76",
+          "FF": "38371",
+          "LUT": "39190",
           "URAM": "0"
         }
       }
@@ -1346,7 +1310,7 @@
   },
   "GenData": {
     "DataVersion": "0.2",
-    "Time": "2019-07-15 11:52:20 BST",
+    "Time": "2019-07-16 08:53:36 BST",
     "ToolName": "vivado_hls",
     "ToolVersion": "2019.1"
   }

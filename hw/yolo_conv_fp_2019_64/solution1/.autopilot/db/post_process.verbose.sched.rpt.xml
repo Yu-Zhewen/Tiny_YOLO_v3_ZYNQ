@@ -1,10 +1,10 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'post_process'" level="0">
-<item name = "Date">Mon Jul 15 11:51:17 2019
+<item name = "Date">Tue Jul 16 08:52:30 2019
 </item>
 <item name = "Version">2019.1 (Build 2552052 on Fri May 24 15:28:33 MDT 2019)</item>
-<item name = "Project">yolo_conv_fp_2019_64_rec</item>
+<item name = "Project">yolo_conv_fp_2019_64</item>
 <item name = "Solution">solution1</item>
 <item name = "Product family">zynq</item>
 <item name = "Target device">xc7z020-clg484-1</item>

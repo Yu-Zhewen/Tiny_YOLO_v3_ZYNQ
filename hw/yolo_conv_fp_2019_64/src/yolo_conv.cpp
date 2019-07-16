@@ -2,7 +2,7 @@
 //#include "weight_file.h"
 
 void yolo_conv_top(yolo_quad_stream &inStream, yolo_quad_stream &outStream,
-		           ap_uint<MAX_CH_BIT> output_ch, ap_uint<MAX_CH_BIT> input_ch, ap_uint<MAX_FOLD_CH_BIT> fold_output_ch, ap_uint<MAX_FOLD_CH_BIT> fold_input_ch, ap_uint<3> kernel_dim,
+		           ap_uint<MAX_CH_BIT> output_ch, ap_uint<MAX_CH_BIT> input_ch, ap_uint<MAX_FOLD_CH_BIT> fold_output_ch, ap_uint<MAX_FOLD_CH_BIT> fold_input_ch, //ap_uint<3> kernel_dim,
 		           ap_uint<9> input_h, ap_uint<9> input_w, ap_uint<9> real_input_h,
 		           ap_uint<1> leaky,
 				   ap_uint<3> fold_win_area)
@@ -12,7 +12,7 @@ void yolo_conv_top(yolo_quad_stream &inStream, yolo_quad_stream &outStream,
 #pragma HLS INTERFACE s_axilite port=input_ch bundle=CTRL_BUS
 #pragma HLS INTERFACE s_axilite port=output_ch bundle=CTRL_BUS
 #pragma HLS INTERFACE s_axilite port=fold_win_area bundle=CTRL_BUS
-#pragma HLS INTERFACE s_axilite port=kernel_dim bundle=CTRL_BUS
+//#pragma HLS INTERFACE s_axilite port=kernel_dim bundle=CTRL_BUS
 #pragma HLS INTERFACE s_axilite port=leaky bundle=CTRL_BUS
 #pragma HLS INTERFACE s_axilite port=real_input_h bundle=CTRL_BUS
 #pragma HLS INTERFACE s_axilite port=input_w bundle=CTRL_BUS
@@ -32,14 +32,15 @@ void yolo_conv_top(yolo_quad_stream &inStream, yolo_quad_stream &outStream,
 
 	fp_data_type val_output[MAX_KERNEL_NUM];
 #pragma HLS ARRAY_PARTITION variable=val_output complete dim=1
-	fp_data_type sub0_val_output[MAX_KERNEL_NUM];
-#pragma HLS ARRAY_PARTITION variable=sub0_val_output complete dim=1
-	fp_data_type sub1_val_output[MAX_KERNEL_NUM];
-#pragma HLS ARRAY_PARTITION variable=sub1_val_output complete dim=1
-	fp_data_type sub2_val_output[MAX_KERNEL_NUM];
-#pragma HLS ARRAY_PARTITION variable=sub2_val_output complete dim=1
-	fp_data_type sub3_val_output[MAX_KERNEL_NUM];
-#pragma HLS ARRAY_PARTITION variable=sub3_val_output complete dim=1
+//	fp_data_type sub0_val_output[MAX_KERNEL_NUM];
+//#pragma HLS ARRAY_PARTITION variable=sub0_val_output complete dim=1
+//	fp_data_type sub1_val_output[MAX_KERNEL_NUM];
+//#pragma HLS ARRAY_PARTITION variable=sub1_val_output complete dim=1
+//	fp_data_type sub2_val_output[MAX_KERNEL_NUM];
+//#pragma HLS ARRAY_PARTITION variable=sub2_val_output complete dim=1
+//	fp_data_type sub3_val_output[MAX_KERNEL_NUM];
+//#pragma HLS ARRAY_PARTITION variable=sub3_val_output complete dim=1
+
 
 	quad_fp_side_channel curr_input;
 
@@ -64,7 +65,7 @@ void yolo_conv_top(yolo_quad_stream &inStream, yolo_quad_stream &outStream,
 #pragma HLS LOOP_TRIPCOUNT min=3 max=3
 				curr_input = inStream.read();
 				local_mem_group[k][i].data[4*j] = curr_input.data.sub_data_0;
-				if(j!=(kernel_dim*kernel_dim+3)/4-1)
+				if(j!=(MAX_KERNEL_DIM*MAX_KERNEL_DIM+3)/4-1)
 				{
 					local_mem_group[k][i].data[4*j+1] = curr_input.data.sub_data_1;
 					local_mem_group[k][i].data[4*j+2] = curr_input.data.sub_data_2;
@@ -102,10 +103,10 @@ void yolo_conv_top(yolo_quad_stream &inStream, yolo_quad_stream &outStream,
 				ap_uint<9> conv_row_count=0,conv_col_count=0;
 
 
-				if((row_idx>kernel_dim-2)&&(col_idx>kernel_dim-2))
+				if((row_idx>MAX_KERNEL_DIM-2)&&(col_idx>MAX_KERNEL_DIM-2))
 				{
-					conv_row_count = row_idx - (kernel_dim-1);
-					conv_col_count = col_idx - (kernel_dim-1);
+					conv_row_count = row_idx - (MAX_KERNEL_DIM-1);
+					conv_col_count = col_idx - (MAX_KERNEL_DIM-1);
 				}
 				else
 				{
@@ -140,33 +141,38 @@ void yolo_conv_top(yolo_quad_stream &inStream, yolo_quad_stream &outStream,
 					yolo_line_buffer(curr_input.data.sub_data_3,&line_buff_group_3[input_ch_idx],col_idx);
 
 					//wait for line biffer to fill first conv op
-					if((row_idx>kernel_dim-2)&&(col_idx>kernel_dim-2))
+					if((row_idx>MAX_KERNEL_DIM-2)&&(col_idx>MAX_KERNEL_DIM-2))
 					{
 						window_type kernel_window_0, kernel_window_1, kernel_window_2, kernel_window_3;
 
-						kernel_window_0 = slide_window(conv_col_count,&line_buff_group_0[input_ch_idx],kernel_dim);
-						kernel_window_1 = slide_window(conv_col_count,&line_buff_group_1[input_ch_idx],kernel_dim);
-						kernel_window_2 = slide_window(conv_col_count,&line_buff_group_2[input_ch_idx],kernel_dim);
-						kernel_window_3 = slide_window(conv_col_count,&line_buff_group_3[input_ch_idx],kernel_dim);
+						kernel_window_0 = slide_window(conv_col_count,&line_buff_group_0[input_ch_idx],MAX_KERNEL_DIM);
+						kernel_window_1 = slide_window(conv_col_count,&line_buff_group_1[input_ch_idx],MAX_KERNEL_DIM);
+						kernel_window_2 = slide_window(conv_col_count,&line_buff_group_2[input_ch_idx],MAX_KERNEL_DIM);
+						kernel_window_3 = slide_window(conv_col_count,&line_buff_group_3[input_ch_idx],MAX_KERNEL_DIM);
 						//copy data to allow parallelism
 
 
 						for(ap_uint<MAX_CH_BIT> kernel_idx=0; kernel_idx<MAX_KERNEL_NUM; kernel_idx++)
 						{
 
+							fp_data_type sub0_val_output;
+							fp_data_type sub1_val_output;
+							fp_data_type sub2_val_output;
+							fp_data_type sub3_val_output;
+
 							//core of conv, macc
-							sub0_val_output[kernel_idx] = window_macc(kernel_window_0,local_mem_group[kernel_idx][4*input_ch_idx],kernel_dim);
-							sub1_val_output[kernel_idx] = window_macc(kernel_window_1,local_mem_group[kernel_idx][4*input_ch_idx+1],kernel_dim);
-							sub2_val_output[kernel_idx] = window_macc(kernel_window_2,local_mem_group[kernel_idx][4*input_ch_idx+2],kernel_dim);
+							sub0_val_output = window_macc(kernel_window_0,local_mem_group[kernel_idx][4*input_ch_idx],MAX_KERNEL_DIM);
+							sub1_val_output = window_macc(kernel_window_1,local_mem_group[kernel_idx][4*input_ch_idx+1],MAX_KERNEL_DIM);
+							sub2_val_output = window_macc(kernel_window_2,local_mem_group[kernel_idx][4*input_ch_idx+2],MAX_KERNEL_DIM);
 							if(input_ch==3)
 							{
-								sub3_val_output[kernel_idx] = 0;
+								sub3_val_output = 0;
 							}
 							else
 							{
-								sub3_val_output[kernel_idx] = window_macc(kernel_window_3,local_mem_group[kernel_idx][4*input_ch_idx+3],kernel_dim);
+								sub3_val_output = window_macc(kernel_window_3,local_mem_group[kernel_idx][4*input_ch_idx+3],MAX_KERNEL_DIM);
 							}
-							val_output[kernel_idx]=post_process(sub0_val_output[kernel_idx],sub1_val_output[kernel_idx],sub2_val_output[kernel_idx],sub3_val_output[kernel_idx],
+							val_output[kernel_idx]=post_process(sub0_val_output,sub1_val_output,sub2_val_output,sub3_val_output,
 					   										 input_ch_idx == fold_input_ch-1,leaky,
 															 kernel_bias_fp[kernel_idx],input_ch_idx,val_output[kernel_idx]);
 
@@ -305,28 +311,8 @@ void out_stream_merge(yolo_inter_stream out_stream_group[MAX_KERNEL_NUM], yolo_q
 				quad_fp_side_channel curr_output;
 
 				curr_output.data.sub_data_0 = out_stream_group[4*kernel_idx].read();
-
-
-				//if(!(out_stream_group[4*kernel_idx+1].empty()))
-				//{
-					curr_output.data.sub_data_1 = out_stream_group[4*kernel_idx+1].read();
-				//}
-
-				//else
-				//{
-				//	curr_output.data.sub_data_1 = 0;
-				//}
-
-
-				//if(!(out_stream_group[4*kernel_idx+2].empty()))
-				//{
-					curr_output.data.sub_data_2 = out_stream_group[4*kernel_idx+2].read();
-				//}
-
-				//else
-				//{
-				//	curr_output.data.sub_data_2 = 0;
-				//}
+				curr_output.data.sub_data_1 = out_stream_group[4*kernel_idx+1].read();
+				curr_output.data.sub_data_2 = out_stream_group[4*kernel_idx+2].read();
 
 
 				if(!(out_stream_group[4*kernel_idx+3].empty()))
@@ -341,11 +327,12 @@ void out_stream_merge(yolo_inter_stream out_stream_group[MAX_KERNEL_NUM], yolo_q
 				curr_output.keep = curr_input.keep;
 				curr_output.strb = curr_input.strb;
 				curr_output.user = curr_input.user;
+
 				if(kernel_idx == fold_output_ch-1)
-				//if(4*kernel_idx == output_ch-1||4*kernel_idx+1 == output_ch-1||4*kernel_idx+2 == output_ch-1||4*kernel_idx+3 == output_ch-1)
 					curr_output.last = last;
 				else
 					curr_output.last = 0;
+
 				curr_output.id = curr_input.id;
 				curr_output.dest = curr_input.dest;
 				outStream.write(curr_output);

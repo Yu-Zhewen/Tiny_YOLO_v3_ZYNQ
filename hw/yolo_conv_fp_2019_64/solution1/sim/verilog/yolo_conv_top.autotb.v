@@ -32,7 +32,6 @@
 `define AESL_DEPTH_input_ch_V 1
 `define AESL_DEPTH_fold_output_ch_V 1
 `define AESL_DEPTH_fold_input_ch_V 1
-`define AESL_DEPTH_kernel_dim_V 1
 `define AESL_DEPTH_input_h_V 1
 `define AESL_DEPTH_input_w_V 1
 `define AESL_DEPTH_real_input_h_V 1
@@ -56,7 +55,6 @@
 `define AUTOTB_TVIN_input_ch_V  "../tv/cdatafile/c.yolo_conv_top.autotvin_input_ch_V.dat"
 `define AUTOTB_TVIN_fold_output_ch_V  "../tv/cdatafile/c.yolo_conv_top.autotvin_fold_output_ch_V.dat"
 `define AUTOTB_TVIN_fold_input_ch_V  "../tv/cdatafile/c.yolo_conv_top.autotvin_fold_input_ch_V.dat"
-`define AUTOTB_TVIN_kernel_dim_V  "../tv/cdatafile/c.yolo_conv_top.autotvin_kernel_dim_V.dat"
 `define AUTOTB_TVIN_input_h_V  "../tv/cdatafile/c.yolo_conv_top.autotvin_input_h_V.dat"
 `define AUTOTB_TVIN_input_w_V  "../tv/cdatafile/c.yolo_conv_top.autotvin_input_w_V.dat"
 `define AUTOTB_TVIN_real_input_h_V  "../tv/cdatafile/c.yolo_conv_top.autotvin_real_input_h_V.dat"
@@ -80,7 +78,6 @@
 `define AUTOTB_TVIN_input_ch_V_out_wrapc  "../tv/rtldatafile/rtl.yolo_conv_top.autotvin_input_ch_V.dat"
 `define AUTOTB_TVIN_fold_output_ch_V_out_wrapc  "../tv/rtldatafile/rtl.yolo_conv_top.autotvin_fold_output_ch_V.dat"
 `define AUTOTB_TVIN_fold_input_ch_V_out_wrapc  "../tv/rtldatafile/rtl.yolo_conv_top.autotvin_fold_input_ch_V.dat"
-`define AUTOTB_TVIN_kernel_dim_V_out_wrapc  "../tv/rtldatafile/rtl.yolo_conv_top.autotvin_kernel_dim_V.dat"
 `define AUTOTB_TVIN_input_h_V_out_wrapc  "../tv/rtldatafile/rtl.yolo_conv_top.autotvin_input_h_V.dat"
 `define AUTOTB_TVIN_input_w_V_out_wrapc  "../tv/rtldatafile/rtl.yolo_conv_top.autotvin_input_w_V.dat"
 `define AUTOTB_TVIN_real_input_h_V_out_wrapc  "../tv/rtldatafile/rtl.yolo_conv_top.autotvin_real_input_h_V.dat"
@@ -123,7 +120,6 @@ parameter LENGTH_output_ch_V = 1;
 parameter LENGTH_input_ch_V = 1;
 parameter LENGTH_fold_output_ch_V = 1;
 parameter LENGTH_fold_input_ch_V = 1;
-parameter LENGTH_kernel_dim_V = 1;
 parameter LENGTH_input_h_V = 1;
 parameter LENGTH_input_w_V = 1;
 parameter LENGTH_real_input_h_V = 1;
@@ -323,7 +319,6 @@ begin
         slave_done_status <= 1;
     end
 end
-
 
 
 
@@ -572,9 +567,6 @@ reg [31:0] size_fold_output_ch_V_backup;
 reg end_fold_input_ch_V;
 reg [31:0] size_fold_input_ch_V;
 reg [31:0] size_fold_input_ch_V_backup;
-reg end_kernel_dim_V;
-reg [31:0] size_kernel_dim_V;
-reg [31:0] size_kernel_dim_V_backup;
 reg end_input_h_V;
 reg [31:0] size_input_h_V;
 reg [31:0] size_input_h_V_backup;

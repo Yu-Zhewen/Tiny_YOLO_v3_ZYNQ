@@ -21,10 +21,10 @@ src/helloworld.o src/helloworld.o: ../src/helloworld.cpp \
  ../../ps_bsp/ps7_cortexa9_0/include/xaxidma_hw.h \
  ../../ps_bsp/ps7_cortexa9_0/include/xdebug.h \
  ../../ps_bsp/ps7_cortexa9_0/include/xil_cache.h \
- /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/include/layer_input.h \
- /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/include/layer_output_sdk.h \
- /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/include/layer_parameter.h \
- /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/include/weight_file_pad.h
+ /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/include/layer_input.h \
+ /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/include/layer_output_sdk.h \
+ /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/include/layer_parameter.h \
+ /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/include/weight_file_pad.h
 
 ../../ps_bsp/ps7_cortexa9_0/include/xil_printf.h:
 
@@ -70,10 +70,10 @@ src/helloworld.o src/helloworld.o: ../src/helloworld.cpp \
 
 ../../ps_bsp/ps7_cortexa9_0/include/xil_cache.h:
 
-/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/include/layer_input.h:
+/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/include/layer_input.h:
 
-/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/include/layer_output_sdk.h:
+/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/include/layer_output_sdk.h:
 
-/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/include/layer_parameter.h:
+/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/include/layer_parameter.h:
 
-/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/include/weight_file_pad.h:
+/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019_64/yolo_conv_fp_prj_2019_64.sdk/include/weight_file_pad.h:

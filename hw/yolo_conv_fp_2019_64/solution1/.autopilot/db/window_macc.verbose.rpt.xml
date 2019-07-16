@@ -1,10 +1,10 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'window_macc'" level="0">
-<item name = "Date">Mon Jul 15 11:51:59 2019
+<item name = "Date">Tue Jul 16 08:53:14 2019
 </item>
 <item name = "Version">2019.1 (Build 2552052 on Fri May 24 15:28:33 MDT 2019)</item>
-<item name = "Project">yolo_conv_fp_2019_64_rec</item>
+<item name = "Project">yolo_conv_fp_2019_64</item>
 <item name = "Solution">solution1</item>
 <item name = "Product family">zynq</item>
 <item name = "Target device">xc7z020-clg484-1</item>
@@ -260,12 +260,12 @@
 <column name="p_read_int_reg">16, 0, 16, 0</column>
 <column name="select_ln340_11_reg_1344">32, 0, 32, 0</column>
 <column name="select_ln340_14_reg_1388">32, 0, 32, 0</column>
-<column name="tmp_54_reg_1318">1, 0, 1, 0</column>
-<column name="tmp_55_reg_1331">1, 0, 1, 0</column>
-<column name="tmp_60_reg_1362">1, 0, 1, 0</column>
-<column name="tmp_61_reg_1375">1, 0, 1, 0</column>
-<column name="tmp_66_reg_1406">1, 0, 1, 0</column>
-<column name="tmp_67_reg_1419">1, 0, 1, 0</column>
+<column name="tmp_56_reg_1318">1, 0, 1, 0</column>
+<column name="tmp_57_reg_1331">1, 0, 1, 0</column>
+<column name="tmp_62_reg_1362">1, 0, 1, 0</column>
+<column name="tmp_63_reg_1375">1, 0, 1, 0</column>
+<column name="tmp_68_reg_1406">1, 0, 1, 0</column>
+<column name="tmp_69_reg_1419">1, 0, 1, 0</column>
 <column name="p_read_10_reg_1270">64, 32, 16, 0</column>
 <column name="p_read_11_reg_1275">64, 32, 16, 0</column>
 <column name="p_read_12_reg_1280">64, 32, 16, 0</column>

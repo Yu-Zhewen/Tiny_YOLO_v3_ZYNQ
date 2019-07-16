@@ -98,7 +98,6 @@ proc check_tvin_file {} {
          "c.yolo_conv_top.autotvin_input_ch_V.dat"
          "c.yolo_conv_top.autotvin_fold_output_ch_V.dat"
          "c.yolo_conv_top.autotvin_fold_input_ch_V.dat"
-         "c.yolo_conv_top.autotvin_kernel_dim_V.dat"
          "c.yolo_conv_top.autotvin_input_h_V.dat"
          "c.yolo_conv_top.autotvin_input_w_V.dat"
          "c.yolo_conv_top.autotvin_real_input_h_V.dat"

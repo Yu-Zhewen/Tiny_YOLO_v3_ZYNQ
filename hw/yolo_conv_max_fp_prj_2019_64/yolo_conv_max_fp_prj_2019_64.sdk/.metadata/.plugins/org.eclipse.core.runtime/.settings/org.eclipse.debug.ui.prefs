@@ -1,0 +1,8 @@
+eclipse.preferences.version=1
+org.eclipse.debug.ui.MemoryView.orientation=0
+org.eclipse.debug.ui.PREF_LAUNCH_PERSPECTIVES=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?>\n<launchPerspectives/>\n
+org.eclipse.debug.ui.switch_perspective_on_suspend=never
+pref_state_memento.org.eclipse.debug.ui.DebugVieworg.eclipse.debug.ui.DebugView=<?xml version\="1.0" encoding\="UTF-8"?>\n<DebugViewMemento org.eclipse.debug.ui.BREADCRUMB_DROPDOWN_AUTO_EXPAND\="false"/>
+pref_state_memento.org.eclipse.debug.ui.VariableView=<?xml version\="1.0" encoding\="UTF-8"?>\n<VariablesViewMemento org.eclipse.debug.ui.SASH_DETAILS_PART\="315" org.eclipse.debug.ui.SASH_VIEW_PART\="684">\n<COLUMN_SIZES IMemento.internal.id\="Type" SIZE\="305"/>\n<COLUMN_SIZES IMemento.internal.id\="Value" SIZE\="307"/>\n<COLUMN_SIZES IMemento.internal.id\="Name" SIZE\="305"/>\n<PRESENTATION_CONTEXT_PROPERTIES IMemento.internal.id\="org.eclipse.debug.ui.VariableView"/>\n</VariablesViewMemento>
+preferredDetailPanes=DefaultDetailPane\:DefaultDetailPane|org.eclipse.tcf.debug.DetailPaneFactory\:org.eclipse.tcf.debug.DetailPaneFactory|
+preferredTargets=default,org.eclipse.tcf.debug.toggleTCFBreakpoint\:default|org.eclipse.cdt.debug.ui.toggleCBreakpointTarget,org.eclipse.cdt.debug.ui.toggleCDynamicPrintfTarget,org.eclipse.tcf.debug.toggleTCFBreakpoint\:org.eclipse.tcf.debug.toggleTCFBreakpoint|org.eclipse.cdt.debug.ui.toggleCBreakpointTarget,org.eclipse.cdt.debug.ui.toggleCDynamicPrintfTarget\:org.eclipse.cdt.debug.ui.toggleCBreakpointTarget|org.eclipse.tcf.debug.toggleTCFBreakpoint\:org.eclipse.tcf.debug.toggleTCFBreakpoint|

@@ -112,7 +112,6 @@ int main()
     XYolo_conv_top_Set_input_ch_V(&yolo_conv_top,INPUT_CHANNEL);
     XYolo_conv_top_Set_fold_output_ch_V(&yolo_conv_top,OUTPUT_CHANNEL/4);
     XYolo_conv_top_Set_fold_input_ch_V(&yolo_conv_top,(INPUT_CHANNEL+3)/4);
-    XYolo_conv_top_Set_kernel_dim_V(&yolo_conv_top,KERNEL_DIM);
     XYolo_conv_top_Set_input_h_V(&yolo_conv_top,INPUT_HEIGHT);
     XYolo_conv_top_Set_input_w_V(&yolo_conv_top,INPUT_WIDTH);
     XYolo_conv_top_Set_real_input_h_V(&yolo_conv_top,REAL_INPUT_HEIGHT);

@@ -248,16 +248,6 @@
 <InvalidType>0</InvalidType>
 </RtlPorts>
 <RtlPorts>
-<name>kernel_dim_V</name>
-<CType>
-<TypeName>ap_uint 3</TypeName>
-<TypeWidth>3</TypeWidth>
-<PhysicalWidth>3</PhysicalWidth>
-</CType>
-<CFractionWidth>0</CFractionWidth>
-<InvalidType>0</InvalidType>
-</RtlPorts>
-<RtlPorts>
 <name>input_h_V</name>
 <CType>
 <TypeName>ap_uint 9</TypeName>

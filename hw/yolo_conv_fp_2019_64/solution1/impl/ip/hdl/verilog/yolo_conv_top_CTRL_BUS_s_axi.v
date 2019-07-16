@@ -37,7 +37,6 @@ module yolo_conv_top_CTRL_BUS_s_axi
     output wire [5:0]                    input_ch_V,
     output wire [3:0]                    fold_output_ch_V,
     output wire [3:0]                    fold_input_ch_V,
-    output wire [2:0]                    kernel_dim_V,
     output wire [8:0]                    input_h_V,
     output wire [8:0]                    input_w_V,
     output wire [8:0]                    real_input_h_V,
@@ -79,30 +78,26 @@ module yolo_conv_top_CTRL_BUS_s_axi
 //        bit 3~0 - fold_input_ch_V[3:0] (Read/Write)
 //        others  - reserved
 // 0x2c : reserved
-// 0x30 : Data signal of kernel_dim_V
-//        bit 2~0 - kernel_dim_V[2:0] (Read/Write)
-//        others  - reserved
-// 0x34 : reserved
-// 0x38 : Data signal of input_h_V
+// 0x30 : Data signal of input_h_V
 //        bit 8~0 - input_h_V[8:0] (Read/Write)
 //        others  - reserved
-// 0x3c : reserved
-// 0x40 : Data signal of input_w_V
+// 0x34 : reserved
+// 0x38 : Data signal of input_w_V
 //        bit 8~0 - input_w_V[8:0] (Read/Write)
 //        others  - reserved
-// 0x44 : reserved
-// 0x48 : Data signal of real_input_h_V
+// 0x3c : reserved
+// 0x40 : Data signal of real_input_h_V
 //        bit 8~0 - real_input_h_V[8:0] (Read/Write)
 //        others  - reserved
-// 0x4c : reserved
-// 0x50 : Data signal of leaky_V
+// 0x44 : reserved
+// 0x48 : Data signal of leaky_V
 //        bit 0  - leaky_V[0] (Read/Write)
 //        others - reserved
-// 0x54 : reserved
-// 0x58 : Data signal of fold_win_area_V
+// 0x4c : reserved
+// 0x50 : Data signal of fold_win_area_V
 //        bit 2~0 - fold_win_area_V[2:0] (Read/Write)
 //        others  - reserved
-// 0x5c : reserved
+// 0x54 : reserved
 // (SC = Self Clear, COR = Clear on Read, TOW = Toggle on Write, COH = Clear on Handshake)
 
 //------------------------Parameter----------------------
@@ -119,18 +114,16 @@ localparam
     ADDR_FOLD_OUTPUT_CH_V_CTRL   = 7'h24,
     ADDR_FOLD_INPUT_CH_V_DATA_0  = 7'h28,
     ADDR_FOLD_INPUT_CH_V_CTRL    = 7'h2c,
-    ADDR_KERNEL_DIM_V_DATA_0     = 7'h30,
-    ADDR_KERNEL_DIM_V_CTRL       = 7'h34,
-    ADDR_INPUT_H_V_DATA_0        = 7'h38,
-    ADDR_INPUT_H_V_CTRL          = 7'h3c,
-    ADDR_INPUT_W_V_DATA_0        = 7'h40,
-    ADDR_INPUT_W_V_CTRL          = 7'h44,
-    ADDR_REAL_INPUT_H_V_DATA_0   = 7'h48,
-    ADDR_REAL_INPUT_H_V_CTRL     = 7'h4c,
-    ADDR_LEAKY_V_DATA_0          = 7'h50,
-    ADDR_LEAKY_V_CTRL            = 7'h54,
-    ADDR_FOLD_WIN_AREA_V_DATA_0  = 7'h58,
-    ADDR_FOLD_WIN_AREA_V_CTRL    = 7'h5c,
+    ADDR_INPUT_H_V_DATA_0        = 7'h30,
+    ADDR_INPUT_H_V_CTRL          = 7'h34,
+    ADDR_INPUT_W_V_DATA_0        = 7'h38,
+    ADDR_INPUT_W_V_CTRL          = 7'h3c,
+    ADDR_REAL_INPUT_H_V_DATA_0   = 7'h40,
+    ADDR_REAL_INPUT_H_V_CTRL     = 7'h44,
+    ADDR_LEAKY_V_DATA_0          = 7'h48,
+    ADDR_LEAKY_V_CTRL            = 7'h4c,
+    ADDR_FOLD_WIN_AREA_V_DATA_0  = 7'h50,
+    ADDR_FOLD_WIN_AREA_V_CTRL    = 7'h54,
     WRIDLE                       = 2'd0,
     WRDATA                       = 2'd1,
     WRRESP                       = 2'd2,
@@ -165,7 +158,6 @@ localparam
     reg  [5:0]                    int_input_ch_V = 'b0;
     reg  [3:0]                    int_fold_output_ch_V = 'b0;
     reg  [3:0]                    int_fold_input_ch_V = 'b0;
-    reg  [2:0]                    int_kernel_dim_V = 'b0;
     reg  [8:0]                    int_input_h_V = 'b0;
     reg  [8:0]                    int_input_w_V = 'b0;
     reg  [8:0]                    int_real_input_h_V = 'b0;
@@ -290,9 +282,6 @@ always @(posedge ACLK) begin
                 ADDR_FOLD_INPUT_CH_V_DATA_0: begin
                     rdata <= int_fold_input_ch_V[3:0];
                 end
-                ADDR_KERNEL_DIM_V_DATA_0: begin
-                    rdata <= int_kernel_dim_V[2:0];
-                end
                 ADDR_INPUT_H_V_DATA_0: begin
                     rdata <= int_input_h_V[8:0];
                 end
@@ -321,7 +310,6 @@ assign output_ch_V      = int_output_ch_V;
 assign input_ch_V       = int_input_ch_V;
 assign fold_output_ch_V = int_fold_output_ch_V;
 assign fold_input_ch_V  = int_fold_input_ch_V;
-assign kernel_dim_V     = int_kernel_dim_V;
 assign input_h_V        = int_input_h_V;
 assign input_w_V        = int_input_w_V;
 assign real_input_h_V   = int_real_input_h_V;
@@ -460,16 +448,6 @@ always @(posedge ACLK) begin
     else if (ACLK_EN) begin
         if (w_hs && waddr == ADDR_FOLD_INPUT_CH_V_DATA_0)
             int_fold_input_ch_V[3:0] <= (WDATA[31:0] & wmask) | (int_fold_input_ch_V[3:0] & ~wmask);
-    end
-end
-
-// int_kernel_dim_V[2:0]
-always @(posedge ACLK) begin
-    if (ARESET)
-        int_kernel_dim_V[2:0] <= 0;
-    else if (ACLK_EN) begin
-        if (w_hs && waddr == ADDR_KERNEL_DIM_V_DATA_0)
-            int_kernel_dim_V[2:0] <= (WDATA[31:0] & wmask) | (int_kernel_dim_V[2:0] & ~wmask);
     end
 end
 

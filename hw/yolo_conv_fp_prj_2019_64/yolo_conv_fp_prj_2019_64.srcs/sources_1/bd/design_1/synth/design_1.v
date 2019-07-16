@@ -1,7 +1,7 @@
 //Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2019.1 (lin64) Build 2552052 Fri May 24 14:47:09 MDT 2019
-//Date        : Mon Jul 15 14:36:58 2019
+//Date        : Mon Jul 15 22:17:42 2019
 //Host        : Lenovo-XiaoXin-CHAO7000 running 64-bit Ubuntu 16.04.6 LTS
 //Command     : generate_target design_1.bd
 //Design      : design_1
@@ -282,7 +282,7 @@ module design_1
         .s_axis_s2mm_tlast(yolo_conv_top_0_outStream_TLAST),
         .s_axis_s2mm_tready(yolo_conv_top_0_outStream_TREADY),
         .s_axis_s2mm_tvalid(yolo_conv_top_0_outStream_TVALID));
-  design_1_axi_smc_7 axi_smc
+  design_1_axi_smc_8 axi_smc
        (.M00_AXI_araddr(axi_smc_M00_AXI_ARADDR),
         .M00_AXI_arburst(axi_smc_M00_AXI_ARBURST),
         .M00_AXI_arcache(axi_smc_M00_AXI_ARCACHE),
@@ -454,7 +454,7 @@ module design_1
         .S_AXI_HP0_WSTRB(axi_smc_M00_AXI_WSTRB),
         .S_AXI_HP0_WVALID(axi_smc_M00_AXI_WVALID),
         .USB0_VBUS_PWRFAULT(1'b0));
-  design_1_ps7_0_axi_periph_7 ps7_0_axi_periph
+  design_1_ps7_0_axi_periph_8 ps7_0_axi_periph
        (.ACLK(processing_system7_0_FCLK_CLK0),
         .ARESETN(rst_ps7_0_100M_peripheral_aresetn),
         .M00_ACLK(processing_system7_0_FCLK_CLK0),
@@ -534,14 +534,14 @@ module design_1
         .S00_AXI_wready(processing_system7_0_M_AXI_GP0_WREADY),
         .S00_AXI_wstrb(processing_system7_0_M_AXI_GP0_WSTRB),
         .S00_AXI_wvalid(processing_system7_0_M_AXI_GP0_WVALID));
-  design_1_rst_ps7_0_100M_7 rst_ps7_0_100M
+  design_1_rst_ps7_0_100M_8 rst_ps7_0_100M
        (.aux_reset_in(1'b1),
         .dcm_locked(1'b1),
         .ext_reset_in(processing_system7_0_FCLK_RESET0_N),
         .mb_debug_sys_rst(1'b0),
         .peripheral_aresetn(rst_ps7_0_100M_peripheral_aresetn),
         .slowest_sync_clk(processing_system7_0_FCLK_CLK0));
-  design_1_yolo_conv_top_0_7 yolo_conv_top_0
+  design_1_yolo_conv_top_0_8 yolo_conv_top_0
        (.ap_clk(processing_system7_0_FCLK_CLK0),
         .ap_rst_n(rst_ps7_0_100M_peripheral_aresetn),
         .inStream_TDATA(axi_dma_0_M_AXIS_MM2S_TDATA),
@@ -577,7 +577,7 @@ module design_1
         .s_axi_CTRL_BUS_WVALID(ps7_0_axi_periph_M01_AXI_WVALID));
 endmodule
 
-module design_1_ps7_0_axi_periph_7
+module design_1_ps7_0_axi_periph_8
    (ACLK,
     ARESETN,
     M00_ACLK,
@@ -1075,7 +1075,7 @@ module design_1_ps7_0_axi_periph_7
         .S_AXI_wready(ps7_0_axi_periph_to_s00_couplers_WREADY),
         .S_AXI_wstrb(ps7_0_axi_periph_to_s00_couplers_WSTRB),
         .S_AXI_wvalid(ps7_0_axi_periph_to_s00_couplers_WVALID));
-  design_1_xbar_7 xbar
+  design_1_xbar_8 xbar
        (.aclk(ps7_0_axi_periph_ACLK_net),
         .aresetn(ps7_0_axi_periph_ARESETN_net),
         .m_axi_araddr({xbar_to_m01_couplers_ARADDR,xbar_to_m00_couplers_ARADDR}),
@@ -1616,7 +1616,7 @@ module s00_couplers_imp_UYSKKA
   assign s00_couplers_to_auto_pc_WLAST = S_AXI_wlast;
   assign s00_couplers_to_auto_pc_WSTRB = S_AXI_wstrb[3:0];
   assign s00_couplers_to_auto_pc_WVALID = S_AXI_wvalid;
-  design_1_auto_pc_7 auto_pc
+  design_1_auto_pc_8 auto_pc
        (.aclk(S_ACLK_1),
         .aresetn(S_ARESETN_1),
         .m_axi_araddr(auto_pc_to_s00_couplers_ARADDR),

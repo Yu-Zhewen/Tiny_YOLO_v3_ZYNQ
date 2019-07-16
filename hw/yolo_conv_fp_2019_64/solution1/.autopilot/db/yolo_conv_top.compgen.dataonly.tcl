@@ -38,15 +38,15 @@ fold_input_ch_V {
 	offset 40
 	offset_end 47
 }
-kernel_dim_V { 
+input_h_V { 
 	dir I
-	width 3
+	width 9
 	depth 1
 	mode ap_none
 	offset 48
 	offset_end 55
 }
-input_h_V { 
+input_w_V { 
 	dir I
 	width 9
 	depth 1
@@ -54,7 +54,7 @@ input_h_V {
 	offset 56
 	offset_end 63
 }
-input_w_V { 
+real_input_h_V { 
 	dir I
 	width 9
 	depth 1
@@ -62,29 +62,21 @@ input_w_V {
 	offset 64
 	offset_end 71
 }
-real_input_h_V { 
-	dir I
-	width 9
-	depth 1
-	mode ap_none
-	offset 72
-	offset_end 79
-}
 leaky_V { 
 	dir I
 	width 1
 	depth 1
 	mode ap_none
-	offset 80
-	offset_end 87
+	offset 72
+	offset_end 79
 }
 fold_win_area_V { 
 	dir I
 	width 3
 	depth 1
 	mode ap_none
-	offset 88
-	offset_end 95
+	offset 80
+	offset_end 87
 }
 }
 dict set axilite_register_dict CTRL_BUS $port_CTRL_BUS

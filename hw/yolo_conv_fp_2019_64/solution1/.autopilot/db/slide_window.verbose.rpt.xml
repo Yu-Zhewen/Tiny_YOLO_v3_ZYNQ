@@ -1,10 +1,10 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'slide_window'" level="0">
-<item name = "Date">Mon Jul 15 11:51:58 2019
+<item name = "Date">Tue Jul 16 08:53:14 2019
 </item>
 <item name = "Version">2019.1 (Build 2552052 on Fri May 24 15:28:33 MDT 2019)</item>
-<item name = "Project">yolo_conv_fp_2019_64_rec</item>
+<item name = "Project">yolo_conv_fp_2019_64</item>
 <item name = "Solution">solution1</item>
 <item name = "Product family">zynq</item>
 <item name = "Target device">xc7z020-clg484-1</item>
@@ -77,12 +77,12 @@
 </item>
 <item name = "Expression"><table name="" hasTotal="1">
 <keys size="7">Variable Name, Operation, DSP48E, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
-<column name="mul_ln265_fu_139_p2">*, 0, 0, 51, 4, 9</column>
+<column name="mul_ln271_fu_139_p2">*, 0, 0, 51, 4, 9</column>
 <column name="add_ln1353_1_fu_183_p2">+, 0, 0, 15, 9, 2</column>
 <column name="add_ln1353_fu_161_p2">+, 0, 0, 15, 9, 1</column>
-<column name="add_ln265_1_fu_171_p2">+, 0, 0, 17, 13, 13</column>
-<column name="add_ln265_2_fu_193_p2">+, 0, 0, 17, 13, 13</column>
-<column name="add_ln265_fu_149_p2">+, 0, 0, 17, 13, 13</column>
+<column name="add_ln271_1_fu_171_p2">+, 0, 0, 17, 13, 13</column>
+<column name="add_ln271_2_fu_193_p2">+, 0, 0, 17, 13, 13</column>
+<column name="add_ln271_fu_149_p2">+, 0, 0, 17, 13, 13</column>
 <column name="ap_block_pp0_stage0_11001">and, 0, 0, 2, 1, 1</column>
 <column name="ap_block_pp0_stage0_subdone">or, 0, 0, 2, 1, 1</column>
 <column name="ap_enable_pp0">xor, 0, 0, 2, 1, 2</column>
@@ -100,7 +100,7 @@
 </item>
 <item name = "Register"><table name="" hasTotal="1">
 <keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
-<column name="add_ln265_2_reg_289">13, 0, 13, 0</column>
+<column name="add_ln271_2_reg_289">13, 0, 13, 0</column>
 <column name="ap_CS_fsm">3, 0, 3, 0</column>
 <column name="ap_enable_reg_pp0_iter0_reg">1, 0, 1, 0</column>
 <column name="ap_enable_reg_pp0_iter1">1, 0, 1, 0</column>
@@ -111,7 +111,7 @@
 <column name="line_buff_val_1_V_l_reg_319">16, 0, 16, 0</column>
 <column name="line_buff_val_2_V_l_1_reg_334">16, 0, 16, 0</column>
 <column name="line_buff_val_2_V_l_reg_329">16, 0, 16, 0</column>
-<column name="mul_ln265_reg_252">12, 0, 13, 1</column>
+<column name="mul_ln271_reg_252">12, 0, 13, 1</column>
 </table>
 </item>
 </section>
