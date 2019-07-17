@@ -1,0 +1,40 @@
+{
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0.19  2019-03-26 bk=1.5019 VDI=41 GEI=35 GUI=JA:9.0 TLS
+#  -string -flagsOSRD
+preplace port DDR -pg 1 -lvl 8 -x 2750 -y 360 -defaultsOSRD
+preplace port FIXED_IO -pg 1 -lvl 8 -x 2750 -y 380 -defaultsOSRD
+preplace inst processing_system7_0 -pg 1 -lvl 7 -x 2490 -y 440 -defaultsOSRD
+preplace inst yolo_acc_top_0 -pg 1 -lvl 4 -x 1340 -y 240 -defaultsOSRD
+preplace inst axi_dma -pg 1 -lvl 5 -x 1730 -y 260 -defaultsOSRD
+preplace inst axi_mem_intercon -pg 1 -lvl 6 -x 2110 -y 150 -defaultsOSRD
+preplace inst rst_ps7_0_100M -pg 1 -lvl 1 -x 210 -y 690 -defaultsOSRD
+preplace inst axi_dma_1 -pg 1 -lvl 3 -x 930 -y 290 -defaultsOSRD
+preplace inst axi_mem_intercon_1 -pg 1 -lvl 6 -x 2110 -y 440 -defaultsOSRD
+preplace inst ps7_0_axi_periph -pg 1 -lvl 2 -x 560 -y 320 -defaultsOSRD
+preplace netloc processing_system7_0_FCLK_CLK0 1 0 8 20 400 390 150 750 150 1150 140 1530 140 1950 560 2260 580 2730
+preplace netloc processing_system7_0_FCLK_RESET0_N 1 0 8 30 590 NJ 590 NJ 590 NJ 590 NJ 590 NJ 590 NJ 590 2720
+preplace netloc rst_ps7_0_100M_peripheral_aresetn 1 1 5 400 160 740 200 1120 340 1520 120 1940
+preplace netloc processing_system7_0_DDR 1 7 1 NJ 360
+preplace netloc processing_system7_0_FIXED_IO 1 7 1 NJ 380
+preplace netloc yolo_acc_top_0_outStream 1 4 1 N 230
+preplace netloc axi_dma_M_AXIS_MM2S 1 3 3 1160 370 1550J 380 1920
+preplace netloc axi_dma_M_AXI_S2MM 1 5 1 1910 60n
+preplace netloc axi_mem_intercon_M00_AXI 1 6 1 2260 150n
+preplace netloc axi_dma_M_AXI_MM2S 1 5 1 1920 80n
+preplace netloc axi_dma_1_M_AXIS_MM2S 1 3 1 1110 240n
+preplace netloc axi_dma_1_M_AXI_MM2S 1 3 3 1140 390 NJ 390 1960J
+preplace netloc axi_mem_intercon_1_M00_AXI 1 6 1 N 440
+preplace netloc processing_system7_0_M_AXI_GP0 1 1 7 410 130 NJ 130 NJ 130 NJ 130 1930J 300 NJ 300 2730
+preplace netloc ps7_0_axi_periph_M00_AXI 1 2 2 720J 390 1130
+preplace netloc ps7_0_axi_periph_M01_AXI 1 2 3 710J 380 NJ 380 1540
+preplace netloc ps7_0_axi_periph_M02_AXI 1 2 1 730 260n
+levelinfo -pg 1 0 210 560 930 1340 1730 2110 2490 2750
+pagesize -pg 1 -db -bbox -sgen 0 0 2870 790
+"
+}
+{
+   "da_axi4_cnt":"22",
+   "da_axi4_s2mm_cnt":"2",
+   "da_ps7_cnt":"1"
+}

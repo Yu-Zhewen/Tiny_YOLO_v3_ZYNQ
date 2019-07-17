@@ -1,0 +1,10 @@
+sv work "glbl.v"
+sv xil_defaultlib "AESL_axi_s_inStream_a.v"
+sv xil_defaultlib "yolo_acc_top.autotb.v"
+sv xil_defaultlib "AESL_fifo.v"
+sv xil_defaultlib "AESL_axi_s_inStream_b.v"
+sv xil_defaultlib "yolo_acc_top_CTRL_BUS_s_axi.v"
+sv xil_defaultlib "AESL_axi_slave_CTRL_BUS.v"
+sv xil_defaultlib "yolo_acc_top.v"
+sv xil_defaultlib "AESL_axi_s_outStream.v"
+

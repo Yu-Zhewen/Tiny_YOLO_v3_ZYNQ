@@ -1,0 +1,6 @@
+#ifndef LAYER_PARAMETER_H
+#define LAYER_PARAMETER_H
+
+#define MAX_KERNEL_NUM 32
+
+#endif
