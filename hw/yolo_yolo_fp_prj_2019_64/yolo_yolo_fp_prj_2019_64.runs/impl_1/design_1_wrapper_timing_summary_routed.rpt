@@ -1,0 +1,1511 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.1 (lin64) Build 2552052 Fri May 24 14:47:09 MDT 2019
+| Date         : Wed Jul 17 10:54:50 2019
+| Host         : Lenovo-XiaoXin-CHAO7000 running 64-bit Ubuntu 16.04.6 LTS
+| Command      : report_timing_summary -max_paths 10 -file design_1_wrapper_timing_summary_routed.rpt -pb design_1_wrapper_timing_summary_routed.pb -rpx design_1_wrapper_timing_summary_routed.rpx -warn_on_violation
+| Design       : design_1_wrapper
+| Device       : 7z020-clg484
+| Speed File   : -1  PRODUCTION 1.11 2014-09-11
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Timing Summary Report
+
+------------------------------------------------------------------------------------------------
+| Timer Settings
+| --------------
+------------------------------------------------------------------------------------------------
+
+  Enable Multi Corner Analysis               :  Yes
+  Enable Pessimism Removal                   :  Yes
+  Pessimism Removal Resolution               :  Nearest Common Node
+  Enable Input Delay Default Clock           :  No
+  Enable Preset / Clear Arcs                 :  No
+  Disable Flight Delays                      :  No
+  Ignore I/O Paths                           :  No
+  Timing Early Launch at Borrowing Latches   :  No
+  Borrow Time for Max Delay Exceptions       :  Yes
+
+  Corner  Analyze    Analyze    
+  Name    Max Paths  Min Paths  
+  ------  ---------  ---------  
+  Slow    Yes        Yes        
+  Fast    Yes        Yes        
+
+
+
+check_timing report
+
+Table of Contents
+-----------------
+1. checking no_clock
+2. checking constant_clock
+3. checking pulse_width_clock
+4. checking unconstrained_internal_endpoints
+5. checking no_input_delay
+6. checking no_output_delay
+7. checking multiple_clock
+8. checking generated_clocks
+9. checking loops
+10. checking partial_input_delay
+11. checking partial_output_delay
+12. checking latch_loops
+
+1. checking no_clock
+--------------------
+ There are 0 register/latch pins with no clock.
+
+
+2. checking constant_clock
+--------------------------
+ There are 0 register/latch pins with constant_clock.
+
+
+3. checking pulse_width_clock
+-----------------------------
+ There are 0 register/latch pins which need pulse_width check
+
+
+4. checking unconstrained_internal_endpoints
+--------------------------------------------
+ There are 0 pins that are not constrained for maximum delay.
+
+ There are 0 pins that are not constrained for maximum delay due to constant clock.
+
+
+5. checking no_input_delay
+--------------------------
+ There are 0 input ports with no input delay specified.
+
+ There are 0 input ports with no input delay but user has a false path constraint.
+
+
+6. checking no_output_delay
+---------------------------
+ There are 0 ports with no output delay specified.
+
+ There are 0 ports with no output delay but user has a false path constraint
+
+ There are 0 ports with no output delay but with a timing clock defined on it or propagating through it
+
+
+7. checking multiple_clock
+--------------------------
+ There are 0 register/latch pins with multiple clocks.
+
+
+8. checking generated_clocks
+----------------------------
+ There are 0 generated clocks that are not connected to a clock source.
+
+
+9. checking loops
+-----------------
+ There are 0 combinational loops in the design.
+
+
+10. checking partial_input_delay
+--------------------------------
+ There are 0 input ports with partial input delay specified.
+
+
+11. checking partial_output_delay
+---------------------------------
+ There are 0 ports with partial output delay specified.
+
+
+12. checking latch_loops
+------------------------
+ There are 0 combinational latch loops in the design through latch input
+
+
+
+------------------------------------------------------------------------------------------------
+| Design Timing Summary
+| ---------------------
+------------------------------------------------------------------------------------------------
+
+    WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+    -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+      0.889        0.000                      0                36248        0.020        0.000                      0                36248        3.750        0.000                       0                 14018  
+
+
+All user specified timing constraints are met.
+
+
+------------------------------------------------------------------------------------------------
+| Clock Summary
+| -------------
+------------------------------------------------------------------------------------------------
+
+Clock       Waveform(ns)       Period(ns)      Frequency(MHz)
+-----       ------------       ----------      --------------
+clk_fpga_0  {0.000 5.000}      10.000          100.000         
+
+
+------------------------------------------------------------------------------------------------
+| Intra Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+Clock             WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+-----             -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+clk_fpga_0          0.889        0.000                      0                36248        0.020        0.000                      0                36248        3.750        0.000                       0                 14018  
+
+
+------------------------------------------------------------------------------------------------
+| Inter Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+
+
+------------------------------------------------------------------------------------------------
+| Other Path Groups Table
+| -----------------------
+------------------------------------------------------------------------------------------------
+
+Path Group    From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------    ----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+
+
+------------------------------------------------------------------------------------------------
+| Timing Details
+| --------------
+------------------------------------------------------------------------------------------------
+
+
+---------------------------------------------------------------------------------------------------
+From Clock:  clk_fpga_0
+  To Clock:  clk_fpga_0
+
+Setup :            0  Failing Endpoints,  Worst Slack        0.889ns,  Total Violation        0.000ns
+Hold  :            0  Failing Endpoints,  Worst Slack        0.020ns,  Total Violation        0.000ns
+PW    :            0  Failing Endpoints,  Worst Slack        3.750ns,  Total Violation        0.000ns
+---------------------------------------------------------------------------------------------------
+
+
+Max Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             0.889ns  (required time - arrival time)
+  Source:                 design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_329/grp_exp_16_8_s_fu_59/r_V_6_fu_491_p2__1/CLK
+                            (rising edge-triggered cell DSP48E1 clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_329/grp_exp_16_8_s_fu_59/y_lo_s_V_reg_656_reg[24]/D
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk_fpga_0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (clk_fpga_0 rise@10.000ns - clk_fpga_0 rise@0.000ns)
+  Data Path Delay:        8.916ns  (logic 7.523ns (84.379%)  route 1.393ns (15.621%))
+  Logic Levels:           11  (CARRY4=9 DSP48E1=1 LUT2=1)
+  Clock Path Skew:        -0.151ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    2.798ns = ( 12.799 - 10.000 ) 
+    Source Clock Delay      (SCD):    3.179ns
+    Clock Pessimism Removal (CPR):    0.230ns
+  Clock Uncertainty:      0.154ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.300ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  design_1_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.193     1.193    design_1_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.101     1.294 r  design_1_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=14019, routed)       1.885     3.179    design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_329/grp_exp_16_8_s_fu_59/ap_clk
+    DSP48_X3Y14          DSP48E1                                      r  design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_329/grp_exp_16_8_s_fu_59/r_V_6_fu_491_p2__1/CLK
+  -------------------------------------------------------------------    -------------------
+    DSP48_X3Y14          DSP48E1 (Prop_dsp48e1_CLK_PCOUT[47])
+                                                      4.206     7.385 r  design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_329/grp_exp_16_8_s_fu_59/r_V_6_fu_491_p2__1/PCOUT[47]
+                         net (fo=1, routed)           0.002     7.387    design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_329/grp_exp_16_8_s_fu_59/r_V_6_fu_491_p2__1_n_106
+    DSP48_X3Y15          DSP48E1 (Prop_dsp48e1_PCIN[47]_P[0])
+                                                      1.518     8.905 r  design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_329/grp_exp_16_8_s_fu_59/r_V_6_fu_491_p2__2/P[0]
+                         net (fo=2, routed)           1.391    10.295    design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_329/grp_exp_16_8_s_fu_59/r_V_6_fu_491_p2__2_n_105
+    SLICE_X94Y27         LUT2 (Prop_lut2_I0_O)        0.124    10.419 r  design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_329/grp_exp_16_8_s_fu_59/y_lo_s_V_reg_656[2]_i_14/O
+                         net (fo=1, routed)           0.000    10.419    design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_329/grp_exp_16_8_s_fu_59/y_lo_s_V_reg_656[2]_i_14_n_0
+    SLICE_X94Y27         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.533    10.952 r  design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_329/grp_exp_16_8_s_fu_59/y_lo_s_V_reg_656_reg[2]_i_7/CO[3]
+                         net (fo=1, routed)           0.000    10.952    design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_329/grp_exp_16_8_s_fu_59/y_lo_s_V_reg_656_reg[2]_i_7_n_0
+    SLICE_X94Y28         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    11.069 r  design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_329/grp_exp_16_8_s_fu_59/y_lo_s_V_reg_656_reg[2]_i_2/CO[3]
+                         net (fo=1, routed)           0.000    11.069    design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_329/grp_exp_16_8_s_fu_59/y_lo_s_V_reg_656_reg[2]_i_2_n_0
+    SLICE_X94Y29         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    11.186 r  design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_329/grp_exp_16_8_s_fu_59/y_lo_s_V_reg_656_reg[2]_i_1/CO[3]
+                         net (fo=1, routed)           0.000    11.186    design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_329/grp_exp_16_8_s_fu_59/y_lo_s_V_reg_656_reg[2]_i_1_n_0
+    SLICE_X94Y30         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    11.303 r  design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_329/grp_exp_16_8_s_fu_59/y_lo_s_V_reg_656_reg[6]_i_1/CO[3]
+                         net (fo=1, routed)           0.000    11.303    design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_329/grp_exp_16_8_s_fu_59/y_lo_s_V_reg_656_reg[6]_i_1_n_0
+    SLICE_X94Y31         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    11.420 r  design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_329/grp_exp_16_8_s_fu_59/y_lo_s_V_reg_656_reg[10]_i_1/CO[3]
+                         net (fo=1, routed)           0.000    11.420    design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_329/grp_exp_16_8_s_fu_59/y_lo_s_V_reg_656_reg[10]_i_1_n_0
+    SLICE_X94Y32         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    11.537 r  design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_329/grp_exp_16_8_s_fu_59/y_lo_s_V_reg_656_reg[14]_i_1/CO[3]
+                         net (fo=1, routed)           0.000    11.537    design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_329/grp_exp_16_8_s_fu_59/y_lo_s_V_reg_656_reg[14]_i_1_n_0
+    SLICE_X94Y33         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    11.654 r  design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_329/grp_exp_16_8_s_fu_59/y_lo_s_V_reg_656_reg[18]_i_1/CO[3]
+                         net (fo=1, routed)           0.000    11.654    design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_329/grp_exp_16_8_s_fu_59/y_lo_s_V_reg_656_reg[18]_i_1_n_0
+    SLICE_X94Y34         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    11.771 r  design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_329/grp_exp_16_8_s_fu_59/y_lo_s_V_reg_656_reg[22]_i_1/CO[3]
+                         net (fo=1, routed)           0.000    11.771    design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_329/grp_exp_16_8_s_fu_59/y_lo_s_V_reg_656_reg[22]_i_1_n_0
+    SLICE_X94Y35         CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.323    12.094 r  design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_329/grp_exp_16_8_s_fu_59/y_lo_s_V_reg_656_reg[24]_i_2/O[1]
+                         net (fo=1, routed)           0.000    12.094    design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_329/grp_exp_16_8_s_fu_59/r_V_6_fu_491_p2__3[49]
+    SLICE_X94Y35         FDRE                                         r  design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_329/grp_exp_16_8_s_fu_59/y_lo_s_V_reg_656_reg[24]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                     10.000    10.000 r  
+    PS7_X0Y0             PS7                          0.000    10.000 r  design_1_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.088    11.088    design_1_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    11.179 r  design_1_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=14019, routed)       1.619    12.799    design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_329/grp_exp_16_8_s_fu_59/ap_clk
+    SLICE_X94Y35         FDRE                                         r  design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_329/grp_exp_16_8_s_fu_59/y_lo_s_V_reg_656_reg[24]/C
+                         clock pessimism              0.230    13.028    
+                         clock uncertainty           -0.154    12.874    
+    SLICE_X94Y35         FDRE (Setup_fdre_C_D)        0.109    12.983    design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_329/grp_exp_16_8_s_fu_59/y_lo_s_V_reg_656_reg[24]
+  -------------------------------------------------------------------
+                         required time                         12.983    
+                         arrival time                         -12.094    
+  -------------------------------------------------------------------
+                         slack                                  0.889    
+
+Slack (MET) :             0.993ns  (required time - arrival time)
+  Source:                 design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_329/grp_exp_16_8_s_fu_59/r_V_6_fu_491_p2__1/CLK
+                            (rising edge-triggered cell DSP48E1 clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_329/grp_exp_16_8_s_fu_59/y_lo_s_V_reg_656_reg[23]/D
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk_fpga_0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (clk_fpga_0 rise@10.000ns - clk_fpga_0 rise@0.000ns)
+  Data Path Delay:        8.812ns  (logic 7.419ns (84.194%)  route 1.393ns (15.806%))
+  Logic Levels:           11  (CARRY4=9 DSP48E1=1 LUT2=1)
+  Clock Path Skew:        -0.151ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    2.798ns = ( 12.799 - 10.000 ) 
+    Source Clock Delay      (SCD):    3.179ns
+    Clock Pessimism Removal (CPR):    0.230ns
+  Clock Uncertainty:      0.154ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.300ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  design_1_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.193     1.193    design_1_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.101     1.294 r  design_1_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=14019, routed)       1.885     3.179    design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_329/grp_exp_16_8_s_fu_59/ap_clk
+    DSP48_X3Y14          DSP48E1                                      r  design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_329/grp_exp_16_8_s_fu_59/r_V_6_fu_491_p2__1/CLK
+  -------------------------------------------------------------------    -------------------
+    DSP48_X3Y14          DSP48E1 (Prop_dsp48e1_CLK_PCOUT[47])
+                                                      4.206     7.385 r  design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_329/grp_exp_16_8_s_fu_59/r_V_6_fu_491_p2__1/PCOUT[47]
+                         net (fo=1, routed)           0.002     7.387    design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_329/grp_exp_16_8_s_fu_59/r_V_6_fu_491_p2__1_n_106
+    DSP48_X3Y15          DSP48E1 (Prop_dsp48e1_PCIN[47]_P[0])
+                                                      1.518     8.905 r  design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_329/grp_exp_16_8_s_fu_59/r_V_6_fu_491_p2__2/P[0]
+                         net (fo=2, routed)           1.391    10.295    design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_329/grp_exp_16_8_s_fu_59/r_V_6_fu_491_p2__2_n_105
+    SLICE_X94Y27         LUT2 (Prop_lut2_I0_O)        0.124    10.419 r  design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_329/grp_exp_16_8_s_fu_59/y_lo_s_V_reg_656[2]_i_14/O
+                         net (fo=1, routed)           0.000    10.419    design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_329/grp_exp_16_8_s_fu_59/y_lo_s_V_reg_656[2]_i_14_n_0
+    SLICE_X94Y27         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.533    10.952 r  design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_329/grp_exp_16_8_s_fu_59/y_lo_s_V_reg_656_reg[2]_i_7/CO[3]
+                         net (fo=1, routed)           0.000    10.952    design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_329/grp_exp_16_8_s_fu_59/y_lo_s_V_reg_656_reg[2]_i_7_n_0
+    SLICE_X94Y28         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    11.069 r  design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_329/grp_exp_16_8_s_fu_59/y_lo_s_V_reg_656_reg[2]_i_2/CO[3]
+                         net (fo=1, routed)           0.000    11.069    design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_329/grp_exp_16_8_s_fu_59/y_lo_s_V_reg_656_reg[2]_i_2_n_0
+    SLICE_X94Y29         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    11.186 r  design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_329/grp_exp_16_8_s_fu_59/y_lo_s_V_reg_656_reg[2]_i_1/CO[3]
+                         net (fo=1, routed)           0.000    11.186    design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_329/grp_exp_16_8_s_fu_59/y_lo_s_V_reg_656_reg[2]_i_1_n_0
+    SLICE_X94Y30         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    11.303 r  design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_329/grp_exp_16_8_s_fu_59/y_lo_s_V_reg_656_reg[6]_i_1/CO[3]
+                         net (fo=1, routed)           0.000    11.303    design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_329/grp_exp_16_8_s_fu_59/y_lo_s_V_reg_656_reg[6]_i_1_n_0
+    SLICE_X94Y31         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    11.420 r  design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_329/grp_exp_16_8_s_fu_59/y_lo_s_V_reg_656_reg[10]_i_1/CO[3]
+                         net (fo=1, routed)           0.000    11.420    design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_329/grp_exp_16_8_s_fu_59/y_lo_s_V_reg_656_reg[10]_i_1_n_0
+    SLICE_X94Y32         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    11.537 r  design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_329/grp_exp_16_8_s_fu_59/y_lo_s_V_reg_656_reg[14]_i_1/CO[3]
+                         net (fo=1, routed)           0.000    11.537    design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_329/grp_exp_16_8_s_fu_59/y_lo_s_V_reg_656_reg[14]_i_1_n_0
+    SLICE_X94Y33         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    11.654 r  design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_329/grp_exp_16_8_s_fu_59/y_lo_s_V_reg_656_reg[18]_i_1/CO[3]
+                         net (fo=1, routed)           0.000    11.654    design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_329/grp_exp_16_8_s_fu_59/y_lo_s_V_reg_656_reg[18]_i_1_n_0
+    SLICE_X94Y34         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    11.771 r  design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_329/grp_exp_16_8_s_fu_59/y_lo_s_V_reg_656_reg[22]_i_1/CO[3]
+                         net (fo=1, routed)           0.000    11.771    design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_329/grp_exp_16_8_s_fu_59/y_lo_s_V_reg_656_reg[22]_i_1_n_0
+    SLICE_X94Y35         CARRY4 (Prop_carry4_CI_O[0])
+                                                      0.219    11.990 r  design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_329/grp_exp_16_8_s_fu_59/y_lo_s_V_reg_656_reg[24]_i_2/O[0]
+                         net (fo=1, routed)           0.000    11.990    design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_329/grp_exp_16_8_s_fu_59/r_V_6_fu_491_p2__3[48]
+    SLICE_X94Y35         FDRE                                         r  design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_329/grp_exp_16_8_s_fu_59/y_lo_s_V_reg_656_reg[23]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                     10.000    10.000 r  
+    PS7_X0Y0             PS7                          0.000    10.000 r  design_1_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.088    11.088    design_1_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    11.179 r  design_1_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=14019, routed)       1.619    12.799    design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_329/grp_exp_16_8_s_fu_59/ap_clk
+    SLICE_X94Y35         FDRE                                         r  design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_329/grp_exp_16_8_s_fu_59/y_lo_s_V_reg_656_reg[23]/C
+                         clock pessimism              0.230    13.028    
+                         clock uncertainty           -0.154    12.874    
+    SLICE_X94Y35         FDRE (Setup_fdre_C_D)        0.109    12.983    design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_329/grp_exp_16_8_s_fu_59/y_lo_s_V_reg_656_reg[23]
+  -------------------------------------------------------------------
+                         required time                         12.983    
+                         arrival time                         -11.990    
+  -------------------------------------------------------------------
+                         slack                                  0.993    
+
+Slack (MET) :             1.005ns  (required time - arrival time)
+  Source:                 design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_329/grp_exp_16_8_s_fu_59/r_V_6_fu_491_p2__1/CLK
+                            (rising edge-triggered cell DSP48E1 clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_329/grp_exp_16_8_s_fu_59/y_lo_s_V_reg_656_reg[20]/D
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk_fpga_0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (clk_fpga_0 rise@10.000ns - clk_fpga_0 rise@0.000ns)
+  Data Path Delay:        8.799ns  (logic 7.406ns (84.171%)  route 1.393ns (15.829%))
+  Logic Levels:           10  (CARRY4=8 DSP48E1=1 LUT2=1)
+  Clock Path Skew:        -0.152ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    2.797ns = ( 12.797 - 10.000 ) 
+    Source Clock Delay      (SCD):    3.179ns
+    Clock Pessimism Removal (CPR):    0.230ns
+  Clock Uncertainty:      0.154ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.300ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  design_1_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.193     1.193    design_1_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.101     1.294 r  design_1_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=14019, routed)       1.885     3.179    design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_329/grp_exp_16_8_s_fu_59/ap_clk
+    DSP48_X3Y14          DSP48E1                                      r  design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_329/grp_exp_16_8_s_fu_59/r_V_6_fu_491_p2__1/CLK
+  -------------------------------------------------------------------    -------------------
+    DSP48_X3Y14          DSP48E1 (Prop_dsp48e1_CLK_PCOUT[47])
+                                                      4.206     7.385 r  design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_329/grp_exp_16_8_s_fu_59/r_V_6_fu_491_p2__1/PCOUT[47]
+                         net (fo=1, routed)           0.002     7.387    design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_329/grp_exp_16_8_s_fu_59/r_V_6_fu_491_p2__1_n_106
+    DSP48_X3Y15          DSP48E1 (Prop_dsp48e1_PCIN[47]_P[0])
+                                                      1.518     8.905 r  design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_329/grp_exp_16_8_s_fu_59/r_V_6_fu_491_p2__2/P[0]
+                         net (fo=2, routed)           1.391    10.295    design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_329/grp_exp_16_8_s_fu_59/r_V_6_fu_491_p2__2_n_105
+    SLICE_X94Y27         LUT2 (Prop_lut2_I0_O)        0.124    10.419 r  design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_329/grp_exp_16_8_s_fu_59/y_lo_s_V_reg_656[2]_i_14/O
+                         net (fo=1, routed)           0.000    10.419    design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_329/grp_exp_16_8_s_fu_59/y_lo_s_V_reg_656[2]_i_14_n_0
+    SLICE_X94Y27         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.533    10.952 r  design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_329/grp_exp_16_8_s_fu_59/y_lo_s_V_reg_656_reg[2]_i_7/CO[3]
+                         net (fo=1, routed)           0.000    10.952    design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_329/grp_exp_16_8_s_fu_59/y_lo_s_V_reg_656_reg[2]_i_7_n_0
+    SLICE_X94Y28         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    11.069 r  design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_329/grp_exp_16_8_s_fu_59/y_lo_s_V_reg_656_reg[2]_i_2/CO[3]
+                         net (fo=1, routed)           0.000    11.069    design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_329/grp_exp_16_8_s_fu_59/y_lo_s_V_reg_656_reg[2]_i_2_n_0
+    SLICE_X94Y29         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    11.186 r  design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_329/grp_exp_16_8_s_fu_59/y_lo_s_V_reg_656_reg[2]_i_1/CO[3]
+                         net (fo=1, routed)           0.000    11.186    design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_329/grp_exp_16_8_s_fu_59/y_lo_s_V_reg_656_reg[2]_i_1_n_0
+    SLICE_X94Y30         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    11.303 r  design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_329/grp_exp_16_8_s_fu_59/y_lo_s_V_reg_656_reg[6]_i_1/CO[3]
+                         net (fo=1, routed)           0.000    11.303    design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_329/grp_exp_16_8_s_fu_59/y_lo_s_V_reg_656_reg[6]_i_1_n_0
+    SLICE_X94Y31         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    11.420 r  design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_329/grp_exp_16_8_s_fu_59/y_lo_s_V_reg_656_reg[10]_i_1/CO[3]
+                         net (fo=1, routed)           0.000    11.420    design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_329/grp_exp_16_8_s_fu_59/y_lo_s_V_reg_656_reg[10]_i_1_n_0
+    SLICE_X94Y32         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    11.537 r  design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_329/grp_exp_16_8_s_fu_59/y_lo_s_V_reg_656_reg[14]_i_1/CO[3]
+                         net (fo=1, routed)           0.000    11.537    design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_329/grp_exp_16_8_s_fu_59/y_lo_s_V_reg_656_reg[14]_i_1_n_0
+    SLICE_X94Y33         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    11.654 r  design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_329/grp_exp_16_8_s_fu_59/y_lo_s_V_reg_656_reg[18]_i_1/CO[3]
+                         net (fo=1, routed)           0.000    11.654    design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_329/grp_exp_16_8_s_fu_59/y_lo_s_V_reg_656_reg[18]_i_1_n_0
+    SLICE_X94Y34         CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.323    11.977 r  design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_329/grp_exp_16_8_s_fu_59/y_lo_s_V_reg_656_reg[22]_i_1/O[1]
+                         net (fo=1, routed)           0.000    11.977    design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_329/grp_exp_16_8_s_fu_59/r_V_6_fu_491_p2__3[45]
+    SLICE_X94Y34         FDRE                                         r  design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_329/grp_exp_16_8_s_fu_59/y_lo_s_V_reg_656_reg[20]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                     10.000    10.000 r  
+    PS7_X0Y0             PS7                          0.000    10.000 r  design_1_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.088    11.088    design_1_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    11.179 r  design_1_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=14019, routed)       1.618    12.797    design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_329/grp_exp_16_8_s_fu_59/ap_clk
+    SLICE_X94Y34         FDRE                                         r  design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_329/grp_exp_16_8_s_fu_59/y_lo_s_V_reg_656_reg[20]/C
+                         clock pessimism              0.230    13.027    
+                         clock uncertainty           -0.154    12.873    
+    SLICE_X94Y34         FDRE (Setup_fdre_C_D)        0.109    12.982    design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_329/grp_exp_16_8_s_fu_59/y_lo_s_V_reg_656_reg[20]
+  -------------------------------------------------------------------
+                         required time                         12.982    
+                         arrival time                         -11.977    
+  -------------------------------------------------------------------
+                         slack                                  1.005    
+
+Slack (MET) :             1.013ns  (required time - arrival time)
+  Source:                 design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_329/grp_exp_16_8_s_fu_59/r_V_6_fu_491_p2__1/CLK
+                            (rising edge-triggered cell DSP48E1 clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_329/grp_exp_16_8_s_fu_59/y_lo_s_V_reg_656_reg[22]/D
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk_fpga_0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (clk_fpga_0 rise@10.000ns - clk_fpga_0 rise@0.000ns)
+  Data Path Delay:        8.791ns  (logic 7.398ns (84.156%)  route 1.393ns (15.844%))
+  Logic Levels:           10  (CARRY4=8 DSP48E1=1 LUT2=1)
+  Clock Path Skew:        -0.152ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    2.797ns = ( 12.797 - 10.000 ) 
+    Source Clock Delay      (SCD):    3.179ns
+    Clock Pessimism Removal (CPR):    0.230ns
+  Clock Uncertainty:      0.154ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.300ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  design_1_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.193     1.193    design_1_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.101     1.294 r  design_1_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=14019, routed)       1.885     3.179    design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_329/grp_exp_16_8_s_fu_59/ap_clk
+    DSP48_X3Y14          DSP48E1                                      r  design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_329/grp_exp_16_8_s_fu_59/r_V_6_fu_491_p2__1/CLK
+  -------------------------------------------------------------------    -------------------
+    DSP48_X3Y14          DSP48E1 (Prop_dsp48e1_CLK_PCOUT[47])
+                                                      4.206     7.385 r  design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_329/grp_exp_16_8_s_fu_59/r_V_6_fu_491_p2__1/PCOUT[47]
+                         net (fo=1, routed)           0.002     7.387    design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_329/grp_exp_16_8_s_fu_59/r_V_6_fu_491_p2__1_n_106
+    DSP48_X3Y15          DSP48E1 (Prop_dsp48e1_PCIN[47]_P[0])
+                                                      1.518     8.905 r  design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_329/grp_exp_16_8_s_fu_59/r_V_6_fu_491_p2__2/P[0]
+                         net (fo=2, routed)           1.391    10.295    design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_329/grp_exp_16_8_s_fu_59/r_V_6_fu_491_p2__2_n_105
+    SLICE_X94Y27         LUT2 (Prop_lut2_I0_O)        0.124    10.419 r  design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_329/grp_exp_16_8_s_fu_59/y_lo_s_V_reg_656[2]_i_14/O
+                         net (fo=1, routed)           0.000    10.419    design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_329/grp_exp_16_8_s_fu_59/y_lo_s_V_reg_656[2]_i_14_n_0
+    SLICE_X94Y27         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.533    10.952 r  design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_329/grp_exp_16_8_s_fu_59/y_lo_s_V_reg_656_reg[2]_i_7/CO[3]
+                         net (fo=1, routed)           0.000    10.952    design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_329/grp_exp_16_8_s_fu_59/y_lo_s_V_reg_656_reg[2]_i_7_n_0
+    SLICE_X94Y28         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    11.069 r  design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_329/grp_exp_16_8_s_fu_59/y_lo_s_V_reg_656_reg[2]_i_2/CO[3]
+                         net (fo=1, routed)           0.000    11.069    design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_329/grp_exp_16_8_s_fu_59/y_lo_s_V_reg_656_reg[2]_i_2_n_0
+    SLICE_X94Y29         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    11.186 r  design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_329/grp_exp_16_8_s_fu_59/y_lo_s_V_reg_656_reg[2]_i_1/CO[3]
+                         net (fo=1, routed)           0.000    11.186    design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_329/grp_exp_16_8_s_fu_59/y_lo_s_V_reg_656_reg[2]_i_1_n_0
+    SLICE_X94Y30         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    11.303 r  design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_329/grp_exp_16_8_s_fu_59/y_lo_s_V_reg_656_reg[6]_i_1/CO[3]
+                         net (fo=1, routed)           0.000    11.303    design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_329/grp_exp_16_8_s_fu_59/y_lo_s_V_reg_656_reg[6]_i_1_n_0
+    SLICE_X94Y31         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    11.420 r  design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_329/grp_exp_16_8_s_fu_59/y_lo_s_V_reg_656_reg[10]_i_1/CO[3]
+                         net (fo=1, routed)           0.000    11.420    design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_329/grp_exp_16_8_s_fu_59/y_lo_s_V_reg_656_reg[10]_i_1_n_0
+    SLICE_X94Y32         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    11.537 r  design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_329/grp_exp_16_8_s_fu_59/y_lo_s_V_reg_656_reg[14]_i_1/CO[3]
+                         net (fo=1, routed)           0.000    11.537    design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_329/grp_exp_16_8_s_fu_59/y_lo_s_V_reg_656_reg[14]_i_1_n_0
+    SLICE_X94Y33         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    11.654 r  design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_329/grp_exp_16_8_s_fu_59/y_lo_s_V_reg_656_reg[18]_i_1/CO[3]
+                         net (fo=1, routed)           0.000    11.654    design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_329/grp_exp_16_8_s_fu_59/y_lo_s_V_reg_656_reg[18]_i_1_n_0
+    SLICE_X94Y34         CARRY4 (Prop_carry4_CI_O[3])
+                                                      0.315    11.969 r  design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_329/grp_exp_16_8_s_fu_59/y_lo_s_V_reg_656_reg[22]_i_1/O[3]
+                         net (fo=1, routed)           0.000    11.969    design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_329/grp_exp_16_8_s_fu_59/r_V_6_fu_491_p2__3[47]
+    SLICE_X94Y34         FDRE                                         r  design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_329/grp_exp_16_8_s_fu_59/y_lo_s_V_reg_656_reg[22]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                     10.000    10.000 r  
+    PS7_X0Y0             PS7                          0.000    10.000 r  design_1_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.088    11.088    design_1_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    11.179 r  design_1_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=14019, routed)       1.618    12.797    design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_329/grp_exp_16_8_s_fu_59/ap_clk
+    SLICE_X94Y34         FDRE                                         r  design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_329/grp_exp_16_8_s_fu_59/y_lo_s_V_reg_656_reg[22]/C
+                         clock pessimism              0.230    13.027    
+                         clock uncertainty           -0.154    12.873    
+    SLICE_X94Y34         FDRE (Setup_fdre_C_D)        0.109    12.982    design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_329/grp_exp_16_8_s_fu_59/y_lo_s_V_reg_656_reg[22]
+  -------------------------------------------------------------------
+                         required time                         12.982    
+                         arrival time                         -11.969    
+  -------------------------------------------------------------------
+                         slack                                  1.013    
+
+Slack (MET) :             1.030ns  (required time - arrival time)
+  Source:                 design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_318/grp_exp_16_8_s_fu_59/r_V_6_fu_491_p2__1/CLK
+                            (rising edge-triggered cell DSP48E1 clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_318/grp_exp_16_8_s_fu_59/y_lo_s_V_reg_656_reg[24]/D
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk_fpga_0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (clk_fpga_0 rise@10.000ns - clk_fpga_0 rise@0.000ns)
+  Data Path Delay:        8.761ns  (logic 7.530ns (85.949%)  route 1.231ns (14.051%))
+  Logic Levels:           11  (CARRY4=9 DSP48E1=1 LUT2=1)
+  Clock Path Skew:        -0.117ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    2.796ns = ( 12.796 - 10.000 ) 
+    Source Clock Delay      (SCD):    3.181ns
+    Clock Pessimism Removal (CPR):    0.268ns
+  Clock Uncertainty:      0.154ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.300ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  design_1_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.193     1.193    design_1_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.101     1.294 r  design_1_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=14019, routed)       1.887     3.181    design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_318/grp_exp_16_8_s_fu_59/ap_clk
+    DSP48_X3Y4           DSP48E1                                      r  design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_318/grp_exp_16_8_s_fu_59/r_V_6_fu_491_p2__1/CLK
+  -------------------------------------------------------------------    -------------------
+    DSP48_X3Y4           DSP48E1 (Prop_dsp48e1_CLK_PCOUT[47])
+                                                      4.206     7.387 r  design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_318/grp_exp_16_8_s_fu_59/r_V_6_fu_491_p2__1/PCOUT[47]
+                         net (fo=1, routed)           0.002     7.389    design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_318/grp_exp_16_8_s_fu_59/r_V_6_fu_491_p2__1_n_106
+    DSP48_X3Y5           DSP48E1 (Prop_dsp48e1_PCIN[47]_P[0])
+                                                      1.518     8.907 r  design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_318/grp_exp_16_8_s_fu_59/r_V_6_fu_491_p2__2/P[0]
+                         net (fo=2, routed)           1.229    10.135    design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_318/grp_exp_16_8_s_fu_59/r_V_6_fu_491_p2__2_n_105
+    SLICE_X93Y5          LUT2 (Prop_lut2_I0_O)        0.124    10.259 r  design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_318/grp_exp_16_8_s_fu_59/y_lo_s_V_reg_656[2]_i_14/O
+                         net (fo=1, routed)           0.000    10.259    design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_318/grp_exp_16_8_s_fu_59/y_lo_s_V_reg_656[2]_i_14_n_0
+    SLICE_X93Y5          CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.550    10.809 r  design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_318/grp_exp_16_8_s_fu_59/y_lo_s_V_reg_656_reg[2]_i_7/CO[3]
+                         net (fo=1, routed)           0.000    10.809    design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_318/grp_exp_16_8_s_fu_59/y_lo_s_V_reg_656_reg[2]_i_7_n_0
+    SLICE_X93Y6          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114    10.923 r  design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_318/grp_exp_16_8_s_fu_59/y_lo_s_V_reg_656_reg[2]_i_2/CO[3]
+                         net (fo=1, routed)           0.000    10.923    design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_318/grp_exp_16_8_s_fu_59/y_lo_s_V_reg_656_reg[2]_i_2_n_0
+    SLICE_X93Y7          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114    11.037 r  design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_318/grp_exp_16_8_s_fu_59/y_lo_s_V_reg_656_reg[2]_i_1/CO[3]
+                         net (fo=1, routed)           0.000    11.037    design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_318/grp_exp_16_8_s_fu_59/y_lo_s_V_reg_656_reg[2]_i_1_n_0
+    SLICE_X93Y8          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114    11.151 r  design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_318/grp_exp_16_8_s_fu_59/y_lo_s_V_reg_656_reg[6]_i_1/CO[3]
+                         net (fo=1, routed)           0.000    11.151    design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_318/grp_exp_16_8_s_fu_59/y_lo_s_V_reg_656_reg[6]_i_1_n_0
+    SLICE_X93Y9          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114    11.265 r  design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_318/grp_exp_16_8_s_fu_59/y_lo_s_V_reg_656_reg[10]_i_1/CO[3]
+                         net (fo=1, routed)           0.000    11.265    design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_318/grp_exp_16_8_s_fu_59/y_lo_s_V_reg_656_reg[10]_i_1_n_0
+    SLICE_X93Y10         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114    11.379 r  design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_318/grp_exp_16_8_s_fu_59/y_lo_s_V_reg_656_reg[14]_i_1/CO[3]
+                         net (fo=1, routed)           0.000    11.379    design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_318/grp_exp_16_8_s_fu_59/y_lo_s_V_reg_656_reg[14]_i_1_n_0
+    SLICE_X93Y11         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114    11.493 r  design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_318/grp_exp_16_8_s_fu_59/y_lo_s_V_reg_656_reg[18]_i_1/CO[3]
+                         net (fo=1, routed)           0.000    11.493    design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_318/grp_exp_16_8_s_fu_59/y_lo_s_V_reg_656_reg[18]_i_1_n_0
+    SLICE_X93Y12         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114    11.607 r  design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_318/grp_exp_16_8_s_fu_59/y_lo_s_V_reg_656_reg[22]_i_1/CO[3]
+                         net (fo=1, routed)           0.000    11.607    design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_318/grp_exp_16_8_s_fu_59/y_lo_s_V_reg_656_reg[22]_i_1_n_0
+    SLICE_X93Y13         CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.334    11.941 r  design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_318/grp_exp_16_8_s_fu_59/y_lo_s_V_reg_656_reg[24]_i_2/O[1]
+                         net (fo=1, routed)           0.000    11.941    design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_318/grp_exp_16_8_s_fu_59/r_V_6_fu_491_p2__3[49]
+    SLICE_X93Y13         FDRE                                         r  design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_318/grp_exp_16_8_s_fu_59/y_lo_s_V_reg_656_reg[24]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                     10.000    10.000 r  
+    PS7_X0Y0             PS7                          0.000    10.000 r  design_1_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.088    11.088    design_1_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    11.179 r  design_1_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=14019, routed)       1.617    12.797    design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_318/grp_exp_16_8_s_fu_59/ap_clk
+    SLICE_X93Y13         FDRE                                         r  design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_318/grp_exp_16_8_s_fu_59/y_lo_s_V_reg_656_reg[24]/C
+                         clock pessimism              0.268    13.064    
+                         clock uncertainty           -0.154    12.910    
+    SLICE_X93Y13         FDRE (Setup_fdre_C_D)        0.062    12.972    design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_318/grp_exp_16_8_s_fu_59/y_lo_s_V_reg_656_reg[24]
+  -------------------------------------------------------------------
+                         required time                         12.972    
+                         arrival time                         -11.941    
+  -------------------------------------------------------------------
+                         slack                                  1.030    
+
+Slack (MET) :             1.083ns  (required time - arrival time)
+  Source:                 design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_296/grp_exp_16_8_s_fu_59/r_V_6_fu_491_p2__1/CLK
+                            (rising edge-triggered cell DSP48E1 clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_296/grp_exp_16_8_s_fu_59/y_lo_s_V_reg_656_reg[24]/D
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk_fpga_0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (clk_fpga_0 rise@10.000ns - clk_fpga_0 rise@0.000ns)
+  Data Path Delay:        8.720ns  (logic 7.523ns (86.271%)  route 1.197ns (13.729%))
+  Logic Levels:           11  (CARRY4=9 DSP48E1=1 LUT2=1)
+  Clock Path Skew:        -0.152ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    2.788ns = ( 12.788 - 10.000 ) 
+    Source Clock Delay      (SCD):    3.170ns
+    Clock Pessimism Removal (CPR):    0.230ns
+  Clock Uncertainty:      0.154ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.300ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  design_1_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.193     1.193    design_1_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.101     1.294 r  design_1_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=14019, routed)       1.876     3.170    design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_296/grp_exp_16_8_s_fu_59/ap_clk
+    DSP48_X3Y8           DSP48E1                                      r  design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_296/grp_exp_16_8_s_fu_59/r_V_6_fu_491_p2__1/CLK
+  -------------------------------------------------------------------    -------------------
+    DSP48_X3Y8           DSP48E1 (Prop_dsp48e1_CLK_PCOUT[47])
+                                                      4.206     7.376 r  design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_296/grp_exp_16_8_s_fu_59/r_V_6_fu_491_p2__1/PCOUT[47]
+                         net (fo=1, routed)           0.002     7.378    design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_296/grp_exp_16_8_s_fu_59/r_V_6_fu_491_p2__1_n_106
+    DSP48_X3Y9           DSP48E1 (Prop_dsp48e1_PCIN[47]_P[0])
+                                                      1.518     8.896 r  design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_296/grp_exp_16_8_s_fu_59/r_V_6_fu_491_p2__2/P[0]
+                         net (fo=2, routed)           1.186    10.082    design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_296/grp_exp_16_8_s_fu_59/r_V_6_fu_491_p2__2_n_105
+    SLICE_X94Y18         LUT2 (Prop_lut2_I0_O)        0.124    10.206 r  design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_296/grp_exp_16_8_s_fu_59/y_lo_s_V_reg_656[2]_i_14/O
+                         net (fo=1, routed)           0.000    10.206    design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_296/grp_exp_16_8_s_fu_59/y_lo_s_V_reg_656[2]_i_14_n_0
+    SLICE_X94Y18         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.533    10.739 r  design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_296/grp_exp_16_8_s_fu_59/y_lo_s_V_reg_656_reg[2]_i_7/CO[3]
+                         net (fo=1, routed)           0.000    10.739    design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_296/grp_exp_16_8_s_fu_59/y_lo_s_V_reg_656_reg[2]_i_7_n_0
+    SLICE_X94Y19         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    10.856 r  design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_296/grp_exp_16_8_s_fu_59/y_lo_s_V_reg_656_reg[2]_i_2/CO[3]
+                         net (fo=1, routed)           0.000    10.856    design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_296/grp_exp_16_8_s_fu_59/y_lo_s_V_reg_656_reg[2]_i_2_n_0
+    SLICE_X94Y20         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    10.973 r  design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_296/grp_exp_16_8_s_fu_59/y_lo_s_V_reg_656_reg[2]_i_1/CO[3]
+                         net (fo=1, routed)           0.000    10.973    design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_296/grp_exp_16_8_s_fu_59/y_lo_s_V_reg_656_reg[2]_i_1_n_0
+    SLICE_X94Y21         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    11.090 r  design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_296/grp_exp_16_8_s_fu_59/y_lo_s_V_reg_656_reg[6]_i_1/CO[3]
+                         net (fo=1, routed)           0.000    11.090    design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_296/grp_exp_16_8_s_fu_59/y_lo_s_V_reg_656_reg[6]_i_1_n_0
+    SLICE_X94Y22         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    11.207 r  design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_296/grp_exp_16_8_s_fu_59/y_lo_s_V_reg_656_reg[10]_i_1/CO[3]
+                         net (fo=1, routed)           0.000    11.207    design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_296/grp_exp_16_8_s_fu_59/y_lo_s_V_reg_656_reg[10]_i_1_n_0
+    SLICE_X94Y23         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    11.324 r  design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_296/grp_exp_16_8_s_fu_59/y_lo_s_V_reg_656_reg[14]_i_1/CO[3]
+                         net (fo=1, routed)           0.000    11.324    design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_296/grp_exp_16_8_s_fu_59/y_lo_s_V_reg_656_reg[14]_i_1_n_0
+    SLICE_X94Y24         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    11.441 r  design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_296/grp_exp_16_8_s_fu_59/y_lo_s_V_reg_656_reg[18]_i_1/CO[3]
+                         net (fo=1, routed)           0.009    11.450    design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_296/grp_exp_16_8_s_fu_59/y_lo_s_V_reg_656_reg[18]_i_1_n_0
+    SLICE_X94Y25         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    11.567 r  design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_296/grp_exp_16_8_s_fu_59/y_lo_s_V_reg_656_reg[22]_i_1/CO[3]
+                         net (fo=1, routed)           0.000    11.567    design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_296/grp_exp_16_8_s_fu_59/y_lo_s_V_reg_656_reg[22]_i_1_n_0
+    SLICE_X94Y26         CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.323    11.890 r  design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_296/grp_exp_16_8_s_fu_59/y_lo_s_V_reg_656_reg[24]_i_2/O[1]
+                         net (fo=1, routed)           0.000    11.890    design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_296/grp_exp_16_8_s_fu_59/r_V_6_fu_491_p2__3[49]
+    SLICE_X94Y26         FDRE                                         r  design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_296/grp_exp_16_8_s_fu_59/y_lo_s_V_reg_656_reg[24]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                     10.000    10.000 r  
+    PS7_X0Y0             PS7                          0.000    10.000 r  design_1_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.088    11.088    design_1_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    11.179 r  design_1_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=14019, routed)       1.609    12.788    design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_296/grp_exp_16_8_s_fu_59/ap_clk
+    SLICE_X94Y26         FDRE                                         r  design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_296/grp_exp_16_8_s_fu_59/y_lo_s_V_reg_656_reg[24]/C
+                         clock pessimism              0.230    13.018    
+                         clock uncertainty           -0.154    12.864    
+    SLICE_X94Y26         FDRE (Setup_fdre_C_D)        0.109    12.973    design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_296/grp_exp_16_8_s_fu_59/y_lo_s_V_reg_656_reg[24]
+  -------------------------------------------------------------------
+                         required time                         12.973    
+                         arrival time                         -11.890    
+  -------------------------------------------------------------------
+                         slack                                  1.083    
+
+Slack (MET) :             1.089ns  (required time - arrival time)
+  Source:                 design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_329/grp_exp_16_8_s_fu_59/r_V_6_fu_491_p2__1/CLK
+                            (rising edge-triggered cell DSP48E1 clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_329/grp_exp_16_8_s_fu_59/y_lo_s_V_reg_656_reg[21]/D
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk_fpga_0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (clk_fpga_0 rise@10.000ns - clk_fpga_0 rise@0.000ns)
+  Data Path Delay:        8.715ns  (logic 7.322ns (84.018%)  route 1.393ns (15.982%))
+  Logic Levels:           10  (CARRY4=8 DSP48E1=1 LUT2=1)
+  Clock Path Skew:        -0.152ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    2.797ns = ( 12.797 - 10.000 ) 
+    Source Clock Delay      (SCD):    3.179ns
+    Clock Pessimism Removal (CPR):    0.230ns
+  Clock Uncertainty:      0.154ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.300ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  design_1_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.193     1.193    design_1_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.101     1.294 r  design_1_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=14019, routed)       1.885     3.179    design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_329/grp_exp_16_8_s_fu_59/ap_clk
+    DSP48_X3Y14          DSP48E1                                      r  design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_329/grp_exp_16_8_s_fu_59/r_V_6_fu_491_p2__1/CLK
+  -------------------------------------------------------------------    -------------------
+    DSP48_X3Y14          DSP48E1 (Prop_dsp48e1_CLK_PCOUT[47])
+                                                      4.206     7.385 r  design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_329/grp_exp_16_8_s_fu_59/r_V_6_fu_491_p2__1/PCOUT[47]
+                         net (fo=1, routed)           0.002     7.387    design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_329/grp_exp_16_8_s_fu_59/r_V_6_fu_491_p2__1_n_106
+    DSP48_X3Y15          DSP48E1 (Prop_dsp48e1_PCIN[47]_P[0])
+                                                      1.518     8.905 r  design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_329/grp_exp_16_8_s_fu_59/r_V_6_fu_491_p2__2/P[0]
+                         net (fo=2, routed)           1.391    10.295    design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_329/grp_exp_16_8_s_fu_59/r_V_6_fu_491_p2__2_n_105
+    SLICE_X94Y27         LUT2 (Prop_lut2_I0_O)        0.124    10.419 r  design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_329/grp_exp_16_8_s_fu_59/y_lo_s_V_reg_656[2]_i_14/O
+                         net (fo=1, routed)           0.000    10.419    design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_329/grp_exp_16_8_s_fu_59/y_lo_s_V_reg_656[2]_i_14_n_0
+    SLICE_X94Y27         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.533    10.952 r  design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_329/grp_exp_16_8_s_fu_59/y_lo_s_V_reg_656_reg[2]_i_7/CO[3]
+                         net (fo=1, routed)           0.000    10.952    design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_329/grp_exp_16_8_s_fu_59/y_lo_s_V_reg_656_reg[2]_i_7_n_0
+    SLICE_X94Y28         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    11.069 r  design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_329/grp_exp_16_8_s_fu_59/y_lo_s_V_reg_656_reg[2]_i_2/CO[3]
+                         net (fo=1, routed)           0.000    11.069    design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_329/grp_exp_16_8_s_fu_59/y_lo_s_V_reg_656_reg[2]_i_2_n_0
+    SLICE_X94Y29         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    11.186 r  design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_329/grp_exp_16_8_s_fu_59/y_lo_s_V_reg_656_reg[2]_i_1/CO[3]
+                         net (fo=1, routed)           0.000    11.186    design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_329/grp_exp_16_8_s_fu_59/y_lo_s_V_reg_656_reg[2]_i_1_n_0
+    SLICE_X94Y30         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    11.303 r  design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_329/grp_exp_16_8_s_fu_59/y_lo_s_V_reg_656_reg[6]_i_1/CO[3]
+                         net (fo=1, routed)           0.000    11.303    design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_329/grp_exp_16_8_s_fu_59/y_lo_s_V_reg_656_reg[6]_i_1_n_0
+    SLICE_X94Y31         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    11.420 r  design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_329/grp_exp_16_8_s_fu_59/y_lo_s_V_reg_656_reg[10]_i_1/CO[3]
+                         net (fo=1, routed)           0.000    11.420    design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_329/grp_exp_16_8_s_fu_59/y_lo_s_V_reg_656_reg[10]_i_1_n_0
+    SLICE_X94Y32         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    11.537 r  design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_329/grp_exp_16_8_s_fu_59/y_lo_s_V_reg_656_reg[14]_i_1/CO[3]
+                         net (fo=1, routed)           0.000    11.537    design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_329/grp_exp_16_8_s_fu_59/y_lo_s_V_reg_656_reg[14]_i_1_n_0
+    SLICE_X94Y33         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    11.654 r  design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_329/grp_exp_16_8_s_fu_59/y_lo_s_V_reg_656_reg[18]_i_1/CO[3]
+                         net (fo=1, routed)           0.000    11.654    design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_329/grp_exp_16_8_s_fu_59/y_lo_s_V_reg_656_reg[18]_i_1_n_0
+    SLICE_X94Y34         CARRY4 (Prop_carry4_CI_O[2])
+                                                      0.239    11.893 r  design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_329/grp_exp_16_8_s_fu_59/y_lo_s_V_reg_656_reg[22]_i_1/O[2]
+                         net (fo=1, routed)           0.000    11.893    design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_329/grp_exp_16_8_s_fu_59/r_V_6_fu_491_p2__3[46]
+    SLICE_X94Y34         FDRE                                         r  design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_329/grp_exp_16_8_s_fu_59/y_lo_s_V_reg_656_reg[21]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                     10.000    10.000 r  
+    PS7_X0Y0             PS7                          0.000    10.000 r  design_1_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.088    11.088    design_1_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    11.179 r  design_1_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=14019, routed)       1.618    12.797    design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_329/grp_exp_16_8_s_fu_59/ap_clk
+    SLICE_X94Y34         FDRE                                         r  design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_329/grp_exp_16_8_s_fu_59/y_lo_s_V_reg_656_reg[21]/C
+                         clock pessimism              0.230    13.027    
+                         clock uncertainty           -0.154    12.873    
+    SLICE_X94Y34         FDRE (Setup_fdre_C_D)        0.109    12.982    design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_329/grp_exp_16_8_s_fu_59/y_lo_s_V_reg_656_reg[21]
+  -------------------------------------------------------------------
+                         required time                         12.982    
+                         arrival time                         -11.893    
+  -------------------------------------------------------------------
+                         slack                                  1.089    
+
+Slack (MET) :             1.109ns  (required time - arrival time)
+  Source:                 design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_329/grp_exp_16_8_s_fu_59/r_V_6_fu_491_p2__1/CLK
+                            (rising edge-triggered cell DSP48E1 clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_329/grp_exp_16_8_s_fu_59/y_lo_s_V_reg_656_reg[19]/D
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk_fpga_0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (clk_fpga_0 rise@10.000ns - clk_fpga_0 rise@0.000ns)
+  Data Path Delay:        8.695ns  (logic 7.302ns (83.982%)  route 1.393ns (16.018%))
+  Logic Levels:           10  (CARRY4=8 DSP48E1=1 LUT2=1)
+  Clock Path Skew:        -0.152ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    2.797ns = ( 12.797 - 10.000 ) 
+    Source Clock Delay      (SCD):    3.179ns
+    Clock Pessimism Removal (CPR):    0.230ns
+  Clock Uncertainty:      0.154ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.300ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  design_1_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.193     1.193    design_1_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.101     1.294 r  design_1_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=14019, routed)       1.885     3.179    design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_329/grp_exp_16_8_s_fu_59/ap_clk
+    DSP48_X3Y14          DSP48E1                                      r  design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_329/grp_exp_16_8_s_fu_59/r_V_6_fu_491_p2__1/CLK
+  -------------------------------------------------------------------    -------------------
+    DSP48_X3Y14          DSP48E1 (Prop_dsp48e1_CLK_PCOUT[47])
+                                                      4.206     7.385 r  design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_329/grp_exp_16_8_s_fu_59/r_V_6_fu_491_p2__1/PCOUT[47]
+                         net (fo=1, routed)           0.002     7.387    design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_329/grp_exp_16_8_s_fu_59/r_V_6_fu_491_p2__1_n_106
+    DSP48_X3Y15          DSP48E1 (Prop_dsp48e1_PCIN[47]_P[0])
+                                                      1.518     8.905 r  design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_329/grp_exp_16_8_s_fu_59/r_V_6_fu_491_p2__2/P[0]
+                         net (fo=2, routed)           1.391    10.295    design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_329/grp_exp_16_8_s_fu_59/r_V_6_fu_491_p2__2_n_105
+    SLICE_X94Y27         LUT2 (Prop_lut2_I0_O)        0.124    10.419 r  design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_329/grp_exp_16_8_s_fu_59/y_lo_s_V_reg_656[2]_i_14/O
+                         net (fo=1, routed)           0.000    10.419    design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_329/grp_exp_16_8_s_fu_59/y_lo_s_V_reg_656[2]_i_14_n_0
+    SLICE_X94Y27         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.533    10.952 r  design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_329/grp_exp_16_8_s_fu_59/y_lo_s_V_reg_656_reg[2]_i_7/CO[3]
+                         net (fo=1, routed)           0.000    10.952    design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_329/grp_exp_16_8_s_fu_59/y_lo_s_V_reg_656_reg[2]_i_7_n_0
+    SLICE_X94Y28         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    11.069 r  design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_329/grp_exp_16_8_s_fu_59/y_lo_s_V_reg_656_reg[2]_i_2/CO[3]
+                         net (fo=1, routed)           0.000    11.069    design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_329/grp_exp_16_8_s_fu_59/y_lo_s_V_reg_656_reg[2]_i_2_n_0
+    SLICE_X94Y29         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    11.186 r  design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_329/grp_exp_16_8_s_fu_59/y_lo_s_V_reg_656_reg[2]_i_1/CO[3]
+                         net (fo=1, routed)           0.000    11.186    design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_329/grp_exp_16_8_s_fu_59/y_lo_s_V_reg_656_reg[2]_i_1_n_0
+    SLICE_X94Y30         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    11.303 r  design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_329/grp_exp_16_8_s_fu_59/y_lo_s_V_reg_656_reg[6]_i_1/CO[3]
+                         net (fo=1, routed)           0.000    11.303    design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_329/grp_exp_16_8_s_fu_59/y_lo_s_V_reg_656_reg[6]_i_1_n_0
+    SLICE_X94Y31         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    11.420 r  design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_329/grp_exp_16_8_s_fu_59/y_lo_s_V_reg_656_reg[10]_i_1/CO[3]
+                         net (fo=1, routed)           0.000    11.420    design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_329/grp_exp_16_8_s_fu_59/y_lo_s_V_reg_656_reg[10]_i_1_n_0
+    SLICE_X94Y32         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    11.537 r  design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_329/grp_exp_16_8_s_fu_59/y_lo_s_V_reg_656_reg[14]_i_1/CO[3]
+                         net (fo=1, routed)           0.000    11.537    design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_329/grp_exp_16_8_s_fu_59/y_lo_s_V_reg_656_reg[14]_i_1_n_0
+    SLICE_X94Y33         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    11.654 r  design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_329/grp_exp_16_8_s_fu_59/y_lo_s_V_reg_656_reg[18]_i_1/CO[3]
+                         net (fo=1, routed)           0.000    11.654    design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_329/grp_exp_16_8_s_fu_59/y_lo_s_V_reg_656_reg[18]_i_1_n_0
+    SLICE_X94Y34         CARRY4 (Prop_carry4_CI_O[0])
+                                                      0.219    11.873 r  design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_329/grp_exp_16_8_s_fu_59/y_lo_s_V_reg_656_reg[22]_i_1/O[0]
+                         net (fo=1, routed)           0.000    11.873    design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_329/grp_exp_16_8_s_fu_59/r_V_6_fu_491_p2__3[44]
+    SLICE_X94Y34         FDRE                                         r  design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_329/grp_exp_16_8_s_fu_59/y_lo_s_V_reg_656_reg[19]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                     10.000    10.000 r  
+    PS7_X0Y0             PS7                          0.000    10.000 r  design_1_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.088    11.088    design_1_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    11.179 r  design_1_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=14019, routed)       1.618    12.797    design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_329/grp_exp_16_8_s_fu_59/ap_clk
+    SLICE_X94Y34         FDRE                                         r  design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_329/grp_exp_16_8_s_fu_59/y_lo_s_V_reg_656_reg[19]/C
+                         clock pessimism              0.230    13.027    
+                         clock uncertainty           -0.154    12.873    
+    SLICE_X94Y34         FDRE (Setup_fdre_C_D)        0.109    12.982    design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_329/grp_exp_16_8_s_fu_59/y_lo_s_V_reg_656_reg[19]
+  -------------------------------------------------------------------
+                         required time                         12.982    
+                         arrival time                         -11.873    
+  -------------------------------------------------------------------
+                         slack                                  1.109    
+
+Slack (MET) :             1.121ns  (required time - arrival time)
+  Source:                 design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_329/grp_exp_16_8_s_fu_59/r_V_6_fu_491_p2__1/CLK
+                            (rising edge-triggered cell DSP48E1 clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_329/grp_exp_16_8_s_fu_59/y_lo_s_V_reg_656_reg[16]/D
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk_fpga_0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (clk_fpga_0 rise@10.000ns - clk_fpga_0 rise@0.000ns)
+  Data Path Delay:        8.682ns  (logic 7.289ns (83.958%)  route 1.393ns (16.042%))
+  Logic Levels:           9  (CARRY4=7 DSP48E1=1 LUT2=1)
+  Clock Path Skew:        -0.153ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    2.796ns = ( 12.797 - 10.000 ) 
+    Source Clock Delay      (SCD):    3.179ns
+    Clock Pessimism Removal (CPR):    0.230ns
+  Clock Uncertainty:      0.154ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.300ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  design_1_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.193     1.193    design_1_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.101     1.294 r  design_1_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=14019, routed)       1.885     3.179    design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_329/grp_exp_16_8_s_fu_59/ap_clk
+    DSP48_X3Y14          DSP48E1                                      r  design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_329/grp_exp_16_8_s_fu_59/r_V_6_fu_491_p2__1/CLK
+  -------------------------------------------------------------------    -------------------
+    DSP48_X3Y14          DSP48E1 (Prop_dsp48e1_CLK_PCOUT[47])
+                                                      4.206     7.385 r  design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_329/grp_exp_16_8_s_fu_59/r_V_6_fu_491_p2__1/PCOUT[47]
+                         net (fo=1, routed)           0.002     7.387    design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_329/grp_exp_16_8_s_fu_59/r_V_6_fu_491_p2__1_n_106
+    DSP48_X3Y15          DSP48E1 (Prop_dsp48e1_PCIN[47]_P[0])
+                                                      1.518     8.905 r  design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_329/grp_exp_16_8_s_fu_59/r_V_6_fu_491_p2__2/P[0]
+                         net (fo=2, routed)           1.391    10.295    design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_329/grp_exp_16_8_s_fu_59/r_V_6_fu_491_p2__2_n_105
+    SLICE_X94Y27         LUT2 (Prop_lut2_I0_O)        0.124    10.419 r  design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_329/grp_exp_16_8_s_fu_59/y_lo_s_V_reg_656[2]_i_14/O
+                         net (fo=1, routed)           0.000    10.419    design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_329/grp_exp_16_8_s_fu_59/y_lo_s_V_reg_656[2]_i_14_n_0
+    SLICE_X94Y27         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.533    10.952 r  design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_329/grp_exp_16_8_s_fu_59/y_lo_s_V_reg_656_reg[2]_i_7/CO[3]
+                         net (fo=1, routed)           0.000    10.952    design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_329/grp_exp_16_8_s_fu_59/y_lo_s_V_reg_656_reg[2]_i_7_n_0
+    SLICE_X94Y28         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    11.069 r  design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_329/grp_exp_16_8_s_fu_59/y_lo_s_V_reg_656_reg[2]_i_2/CO[3]
+                         net (fo=1, routed)           0.000    11.069    design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_329/grp_exp_16_8_s_fu_59/y_lo_s_V_reg_656_reg[2]_i_2_n_0
+    SLICE_X94Y29         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    11.186 r  design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_329/grp_exp_16_8_s_fu_59/y_lo_s_V_reg_656_reg[2]_i_1/CO[3]
+                         net (fo=1, routed)           0.000    11.186    design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_329/grp_exp_16_8_s_fu_59/y_lo_s_V_reg_656_reg[2]_i_1_n_0
+    SLICE_X94Y30         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    11.303 r  design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_329/grp_exp_16_8_s_fu_59/y_lo_s_V_reg_656_reg[6]_i_1/CO[3]
+                         net (fo=1, routed)           0.000    11.303    design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_329/grp_exp_16_8_s_fu_59/y_lo_s_V_reg_656_reg[6]_i_1_n_0
+    SLICE_X94Y31         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    11.420 r  design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_329/grp_exp_16_8_s_fu_59/y_lo_s_V_reg_656_reg[10]_i_1/CO[3]
+                         net (fo=1, routed)           0.000    11.420    design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_329/grp_exp_16_8_s_fu_59/y_lo_s_V_reg_656_reg[10]_i_1_n_0
+    SLICE_X94Y32         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    11.537 r  design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_329/grp_exp_16_8_s_fu_59/y_lo_s_V_reg_656_reg[14]_i_1/CO[3]
+                         net (fo=1, routed)           0.000    11.537    design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_329/grp_exp_16_8_s_fu_59/y_lo_s_V_reg_656_reg[14]_i_1_n_0
+    SLICE_X94Y33         CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.323    11.860 r  design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_329/grp_exp_16_8_s_fu_59/y_lo_s_V_reg_656_reg[18]_i_1/O[1]
+                         net (fo=1, routed)           0.000    11.860    design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_329/grp_exp_16_8_s_fu_59/r_V_6_fu_491_p2__3[41]
+    SLICE_X94Y33         FDRE                                         r  design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_329/grp_exp_16_8_s_fu_59/y_lo_s_V_reg_656_reg[16]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                     10.000    10.000 r  
+    PS7_X0Y0             PS7                          0.000    10.000 r  design_1_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.088    11.088    design_1_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    11.179 r  design_1_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=14019, routed)       1.617    12.797    design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_329/grp_exp_16_8_s_fu_59/ap_clk
+    SLICE_X94Y33         FDRE                                         r  design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_329/grp_exp_16_8_s_fu_59/y_lo_s_V_reg_656_reg[16]/C
+                         clock pessimism              0.230    13.026    
+                         clock uncertainty           -0.154    12.872    
+    SLICE_X94Y33         FDRE (Setup_fdre_C_D)        0.109    12.981    design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_329/grp_exp_16_8_s_fu_59/y_lo_s_V_reg_656_reg[16]
+  -------------------------------------------------------------------
+                         required time                         12.981    
+                         arrival time                         -11.860    
+  -------------------------------------------------------------------
+                         slack                                  1.121    
+
+Slack (MET) :             1.129ns  (required time - arrival time)
+  Source:                 design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_329/grp_exp_16_8_s_fu_59/r_V_6_fu_491_p2__1/CLK
+                            (rising edge-triggered cell DSP48E1 clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_329/grp_exp_16_8_s_fu_59/y_lo_s_V_reg_656_reg[18]/D
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk_fpga_0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (clk_fpga_0 rise@10.000ns - clk_fpga_0 rise@0.000ns)
+  Data Path Delay:        8.674ns  (logic 7.281ns (83.943%)  route 1.393ns (16.057%))
+  Logic Levels:           9  (CARRY4=7 DSP48E1=1 LUT2=1)
+  Clock Path Skew:        -0.153ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    2.796ns = ( 12.797 - 10.000 ) 
+    Source Clock Delay      (SCD):    3.179ns
+    Clock Pessimism Removal (CPR):    0.230ns
+  Clock Uncertainty:      0.154ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.300ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  design_1_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.193     1.193    design_1_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.101     1.294 r  design_1_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=14019, routed)       1.885     3.179    design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_329/grp_exp_16_8_s_fu_59/ap_clk
+    DSP48_X3Y14          DSP48E1                                      r  design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_329/grp_exp_16_8_s_fu_59/r_V_6_fu_491_p2__1/CLK
+  -------------------------------------------------------------------    -------------------
+    DSP48_X3Y14          DSP48E1 (Prop_dsp48e1_CLK_PCOUT[47])
+                                                      4.206     7.385 r  design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_329/grp_exp_16_8_s_fu_59/r_V_6_fu_491_p2__1/PCOUT[47]
+                         net (fo=1, routed)           0.002     7.387    design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_329/grp_exp_16_8_s_fu_59/r_V_6_fu_491_p2__1_n_106
+    DSP48_X3Y15          DSP48E1 (Prop_dsp48e1_PCIN[47]_P[0])
+                                                      1.518     8.905 r  design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_329/grp_exp_16_8_s_fu_59/r_V_6_fu_491_p2__2/P[0]
+                         net (fo=2, routed)           1.391    10.295    design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_329/grp_exp_16_8_s_fu_59/r_V_6_fu_491_p2__2_n_105
+    SLICE_X94Y27         LUT2 (Prop_lut2_I0_O)        0.124    10.419 r  design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_329/grp_exp_16_8_s_fu_59/y_lo_s_V_reg_656[2]_i_14/O
+                         net (fo=1, routed)           0.000    10.419    design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_329/grp_exp_16_8_s_fu_59/y_lo_s_V_reg_656[2]_i_14_n_0
+    SLICE_X94Y27         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.533    10.952 r  design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_329/grp_exp_16_8_s_fu_59/y_lo_s_V_reg_656_reg[2]_i_7/CO[3]
+                         net (fo=1, routed)           0.000    10.952    design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_329/grp_exp_16_8_s_fu_59/y_lo_s_V_reg_656_reg[2]_i_7_n_0
+    SLICE_X94Y28         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    11.069 r  design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_329/grp_exp_16_8_s_fu_59/y_lo_s_V_reg_656_reg[2]_i_2/CO[3]
+                         net (fo=1, routed)           0.000    11.069    design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_329/grp_exp_16_8_s_fu_59/y_lo_s_V_reg_656_reg[2]_i_2_n_0
+    SLICE_X94Y29         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    11.186 r  design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_329/grp_exp_16_8_s_fu_59/y_lo_s_V_reg_656_reg[2]_i_1/CO[3]
+                         net (fo=1, routed)           0.000    11.186    design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_329/grp_exp_16_8_s_fu_59/y_lo_s_V_reg_656_reg[2]_i_1_n_0
+    SLICE_X94Y30         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    11.303 r  design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_329/grp_exp_16_8_s_fu_59/y_lo_s_V_reg_656_reg[6]_i_1/CO[3]
+                         net (fo=1, routed)           0.000    11.303    design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_329/grp_exp_16_8_s_fu_59/y_lo_s_V_reg_656_reg[6]_i_1_n_0
+    SLICE_X94Y31         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    11.420 r  design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_329/grp_exp_16_8_s_fu_59/y_lo_s_V_reg_656_reg[10]_i_1/CO[3]
+                         net (fo=1, routed)           0.000    11.420    design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_329/grp_exp_16_8_s_fu_59/y_lo_s_V_reg_656_reg[10]_i_1_n_0
+    SLICE_X94Y32         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    11.537 r  design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_329/grp_exp_16_8_s_fu_59/y_lo_s_V_reg_656_reg[14]_i_1/CO[3]
+                         net (fo=1, routed)           0.000    11.537    design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_329/grp_exp_16_8_s_fu_59/y_lo_s_V_reg_656_reg[14]_i_1_n_0
+    SLICE_X94Y33         CARRY4 (Prop_carry4_CI_O[3])
+                                                      0.315    11.852 r  design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_329/grp_exp_16_8_s_fu_59/y_lo_s_V_reg_656_reg[18]_i_1/O[3]
+                         net (fo=1, routed)           0.000    11.852    design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_329/grp_exp_16_8_s_fu_59/r_V_6_fu_491_p2__3[43]
+    SLICE_X94Y33         FDRE                                         r  design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_329/grp_exp_16_8_s_fu_59/y_lo_s_V_reg_656_reg[18]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                     10.000    10.000 r  
+    PS7_X0Y0             PS7                          0.000    10.000 r  design_1_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.088    11.088    design_1_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    11.179 r  design_1_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=14019, routed)       1.617    12.797    design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_329/grp_exp_16_8_s_fu_59/ap_clk
+    SLICE_X94Y33         FDRE                                         r  design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_329/grp_exp_16_8_s_fu_59/y_lo_s_V_reg_656_reg[18]/C
+                         clock pessimism              0.230    13.026    
+                         clock uncertainty           -0.154    12.872    
+    SLICE_X94Y33         FDRE (Setup_fdre_C_D)        0.109    12.981    design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_329/grp_exp_16_8_s_fu_59/y_lo_s_V_reg_656_reg[18]
+  -------------------------------------------------------------------
+                         required time                         12.981    
+                         arrival time                         -11.852    
+  -------------------------------------------------------------------
+                         slack                                  1.129    
+
+
+
+
+
+Min Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             0.020ns  (arrival time - required time)
+  Source:                 design_1_i/yolo_yolo_top_0/inst/ap_phi_reg_pp0_iter26_tmp_data_sub_data_3_s_reg_287_reg[15]/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            design_1_i/yolo_yolo_top_0/inst/ap_phi_reg_pp0_iter27_tmp_data_sub_data_3_s_reg_287_reg[15]/D
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk_fpga_0
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_fpga_0 rise@0.000ns - clk_fpga_0 rise@0.000ns)
+  Data Path Delay:        0.340ns  (logic 0.164ns (48.215%)  route 0.176ns (51.785%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.256ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.185ns
+    Source Clock Delay      (SCD):    0.894ns
+    Clock Pessimism Removal (CPR):    0.035ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  design_1_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           0.310     0.310    design_1_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     0.336 r  design_1_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=14019, routed)       0.558     0.894    design_1_i/yolo_yolo_top_0/inst/ap_clk
+    SLICE_X46Y34         FDRE                                         r  design_1_i/yolo_yolo_top_0/inst/ap_phi_reg_pp0_iter26_tmp_data_sub_data_3_s_reg_287_reg[15]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X46Y34         FDRE (Prop_fdre_C_Q)         0.164     1.058 r  design_1_i/yolo_yolo_top_0/inst/ap_phi_reg_pp0_iter26_tmp_data_sub_data_3_s_reg_287_reg[15]/Q
+                         net (fo=1, routed)           0.176     1.234    design_1_i/yolo_yolo_top_0/inst/ap_phi_reg_pp0_iter26_tmp_data_sub_data_3_s_reg_287[15]
+    SLICE_X50Y34         FDRE                                         r  design_1_i/yolo_yolo_top_0/inst/ap_phi_reg_pp0_iter27_tmp_data_sub_data_3_s_reg_287_reg[15]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  design_1_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           0.337     0.337    design_1_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     0.366 r  design_1_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=14019, routed)       0.819     1.185    design_1_i/yolo_yolo_top_0/inst/ap_clk
+    SLICE_X50Y34         FDRE                                         r  design_1_i/yolo_yolo_top_0/inst/ap_phi_reg_pp0_iter27_tmp_data_sub_data_3_s_reg_287_reg[15]/C
+                         clock pessimism             -0.035     1.150    
+    SLICE_X50Y34         FDRE (Hold_fdre_C_D)         0.064     1.214    design_1_i/yolo_yolo_top_0/inst/ap_phi_reg_pp0_iter27_tmp_data_sub_data_3_s_reg_287_reg[15]
+  -------------------------------------------------------------------
+                         required time                         -1.214    
+                         arrival time                           1.234    
+  -------------------------------------------------------------------
+                         slack                                  0.020    
+
+Slack (MET) :             0.020ns  (arrival time - required time)
+  Source:                 design_1_i/axi_smc/inst/s01_entry_pipeline/s01_mmu/inst/w_sreg/m_vector_i_reg[1084]/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            design_1_i/axi_smc/inst/s01_nodes/s01_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_0_31_78_83/RAMC_D1/I
+                            (rising edge-triggered cell RAMD32 clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk_fpga_0
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_fpga_0 rise@0.000ns - clk_fpga_0 rise@0.000ns)
+  Data Path Delay:        0.348ns  (logic 0.128ns (36.831%)  route 0.220ns (63.169%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.266ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.190ns
+    Source Clock Delay      (SCD):    0.889ns
+    Clock Pessimism Removal (CPR):    0.035ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  design_1_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           0.310     0.310    design_1_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     0.336 r  design_1_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=14019, routed)       0.553     0.889    design_1_i/axi_smc/inst/s01_entry_pipeline/s01_mmu/inst/w_sreg/aclk
+    SLICE_X51Y52         FDRE                                         r  design_1_i/axi_smc/inst/s01_entry_pipeline/s01_mmu/inst/w_sreg/m_vector_i_reg[1084]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X51Y52         FDRE (Prop_fdre_C_Q)         0.128     1.017 r  design_1_i/axi_smc/inst/s01_entry_pipeline/s01_mmu/inst/w_sreg/m_vector_i_reg[1084]/Q
+                         net (fo=1, routed)           0.220     1.236    design_1_i/axi_smc/inst/s01_nodes/s01_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_0_31_78_83/DIC1
+    SLICE_X46Y53         RAMD32                                       r  design_1_i/axi_smc/inst/s01_nodes/s01_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_0_31_78_83/RAMC_D1/I
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  design_1_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           0.337     0.337    design_1_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     0.366 r  design_1_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=14019, routed)       0.824     1.190    design_1_i/axi_smc/inst/s01_nodes/s01_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_0_31_78_83/WCLK
+    SLICE_X46Y53         RAMD32                                       r  design_1_i/axi_smc/inst/s01_nodes/s01_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_0_31_78_83/RAMC_D1/CLK
+                         clock pessimism             -0.035     1.155    
+    SLICE_X46Y53         RAMD32 (Hold_ramd32_CLK_I)
+                                                      0.061     1.216    design_1_i/axi_smc/inst/s01_nodes/s01_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_0_31_78_83/RAMC_D1
+  -------------------------------------------------------------------
+                         required time                         -1.216    
+                         arrival time                           1.236    
+  -------------------------------------------------------------------
+                         slack                                  0.020    
+
+Slack (MET) :             0.021ns  (arrival time - required time)
+  Source:                 design_1_i/yolo_yolo_top_0/inst/ap_phi_reg_pp0_iter22_tmp_data_sub_data_2_s_reg_278_reg[4]/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            design_1_i/yolo_yolo_top_0/inst/ap_phi_reg_pp0_iter23_tmp_data_sub_data_2_s_reg_278_reg[4]/D
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk_fpga_0
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_fpga_0 rise@0.000ns - clk_fpga_0 rise@0.000ns)
+  Data Path Delay:        0.285ns  (logic 0.128ns (44.899%)  route 0.157ns (55.101%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.258ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.180ns
+    Source Clock Delay      (SCD):    0.887ns
+    Clock Pessimism Removal (CPR):    0.035ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  design_1_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           0.310     0.310    design_1_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     0.336 r  design_1_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=14019, routed)       0.551     0.887    design_1_i/yolo_yolo_top_0/inst/ap_clk
+    SLICE_X49Y28         FDRE                                         r  design_1_i/yolo_yolo_top_0/inst/ap_phi_reg_pp0_iter22_tmp_data_sub_data_2_s_reg_278_reg[4]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X49Y28         FDRE (Prop_fdre_C_Q)         0.128     1.015 r  design_1_i/yolo_yolo_top_0/inst/ap_phi_reg_pp0_iter22_tmp_data_sub_data_2_s_reg_278_reg[4]/Q
+                         net (fo=1, routed)           0.157     1.172    design_1_i/yolo_yolo_top_0/inst/ap_phi_reg_pp0_iter22_tmp_data_sub_data_2_s_reg_278[4]
+    SLICE_X50Y29         FDRE                                         r  design_1_i/yolo_yolo_top_0/inst/ap_phi_reg_pp0_iter23_tmp_data_sub_data_2_s_reg_278_reg[4]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  design_1_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           0.337     0.337    design_1_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     0.366 r  design_1_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=14019, routed)       0.814     1.180    design_1_i/yolo_yolo_top_0/inst/ap_clk
+    SLICE_X50Y29         FDRE                                         r  design_1_i/yolo_yolo_top_0/inst/ap_phi_reg_pp0_iter23_tmp_data_sub_data_2_s_reg_278_reg[4]/C
+                         clock pessimism             -0.035     1.145    
+    SLICE_X50Y29         FDRE (Hold_fdre_C_D)         0.006     1.151    design_1_i/yolo_yolo_top_0/inst/ap_phi_reg_pp0_iter23_tmp_data_sub_data_2_s_reg_278_reg[4]
+  -------------------------------------------------------------------
+                         required time                         -1.151    
+                         arrival time                           1.172    
+  -------------------------------------------------------------------
+                         slack                                  0.021    
+
+Slack (MET) :             0.022ns  (arrival time - required time)
+  Source:                 design_1_i/yolo_yolo_top_0/inst/ap_phi_reg_pp0_iter26_tmp_data_sub_data_3_s_reg_287_reg[12]/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            design_1_i/yolo_yolo_top_0/inst/ap_phi_reg_pp0_iter27_tmp_data_sub_data_3_s_reg_287_reg[12]/D
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk_fpga_0
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_fpga_0 rise@0.000ns - clk_fpga_0 rise@0.000ns)
+  Data Path Delay:        0.338ns  (logic 0.164ns (48.500%)  route 0.174ns (51.500%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.256ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.185ns
+    Source Clock Delay      (SCD):    0.894ns
+    Clock Pessimism Removal (CPR):    0.035ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  design_1_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           0.310     0.310    design_1_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     0.336 r  design_1_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=14019, routed)       0.558     0.894    design_1_i/yolo_yolo_top_0/inst/ap_clk
+    SLICE_X46Y34         FDRE                                         r  design_1_i/yolo_yolo_top_0/inst/ap_phi_reg_pp0_iter26_tmp_data_sub_data_3_s_reg_287_reg[12]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X46Y34         FDRE (Prop_fdre_C_Q)         0.164     1.058 r  design_1_i/yolo_yolo_top_0/inst/ap_phi_reg_pp0_iter26_tmp_data_sub_data_3_s_reg_287_reg[12]/Q
+                         net (fo=1, routed)           0.174     1.232    design_1_i/yolo_yolo_top_0/inst/ap_phi_reg_pp0_iter26_tmp_data_sub_data_3_s_reg_287[12]
+    SLICE_X50Y34         FDRE                                         r  design_1_i/yolo_yolo_top_0/inst/ap_phi_reg_pp0_iter27_tmp_data_sub_data_3_s_reg_287_reg[12]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  design_1_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           0.337     0.337    design_1_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     0.366 r  design_1_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=14019, routed)       0.819     1.185    design_1_i/yolo_yolo_top_0/inst/ap_clk
+    SLICE_X50Y34         FDRE                                         r  design_1_i/yolo_yolo_top_0/inst/ap_phi_reg_pp0_iter27_tmp_data_sub_data_3_s_reg_287_reg[12]/C
+                         clock pessimism             -0.035     1.150    
+    SLICE_X50Y34         FDRE (Hold_fdre_C_D)         0.060     1.210    design_1_i/yolo_yolo_top_0/inst/ap_phi_reg_pp0_iter27_tmp_data_sub_data_3_s_reg_287_reg[12]
+  -------------------------------------------------------------------
+                         required time                         -1.210    
+                         arrival time                           1.232    
+  -------------------------------------------------------------------
+                         slack                                  0.022    
+
+Slack (MET) :             0.025ns  (arrival time - required time)
+  Source:                 design_1_i/axi_dma_0/U0/INCLUDE_S2MM_SOF_EOF_GENERATOR.I_S2MM_DMA_MNGR/GEN_S2MM_DMA_CONTROL.GEN_SIMPLE_DMA_MODE.I_S2MM_SMPL_SM/GEN_CMD_BTT_EQL_23.cmnd_data_reg[47]/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            design_1_i/axi_dma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/I_CMD_STATUS/I_CMD_FIFO/USE_SINGLE_REG.sig_regfifo_dout_reg_reg[47]/D
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk_fpga_0
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_fpga_0 rise@0.000ns - clk_fpga_0 rise@0.000ns)
+  Data Path Delay:        0.357ns  (logic 0.141ns (39.510%)  route 0.216ns (60.490%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.261ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.174ns
+    Source Clock Delay      (SCD):    0.878ns
+    Clock Pessimism Removal (CPR):    0.035ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  design_1_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           0.310     0.310    design_1_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     0.336 r  design_1_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=14019, routed)       0.542     0.878    design_1_i/axi_dma_0/U0/INCLUDE_S2MM_SOF_EOF_GENERATOR.I_S2MM_DMA_MNGR/GEN_S2MM_DMA_CONTROL.GEN_SIMPLE_DMA_MODE.I_S2MM_SMPL_SM/s_axi_lite_aclk
+    SLICE_X48Y74         FDRE                                         r  design_1_i/axi_dma_0/U0/INCLUDE_S2MM_SOF_EOF_GENERATOR.I_S2MM_DMA_MNGR/GEN_S2MM_DMA_CONTROL.GEN_SIMPLE_DMA_MODE.I_S2MM_SMPL_SM/GEN_CMD_BTT_EQL_23.cmnd_data_reg[47]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X48Y74         FDRE (Prop_fdre_C_Q)         0.141     1.019 r  design_1_i/axi_dma_0/U0/INCLUDE_S2MM_SOF_EOF_GENERATOR.I_S2MM_DMA_MNGR/GEN_S2MM_DMA_CONTROL.GEN_SIMPLE_DMA_MODE.I_S2MM_SMPL_SM/GEN_CMD_BTT_EQL_23.cmnd_data_reg[47]/Q
+                         net (fo=1, routed)           0.216     1.234    design_1_i/axi_dma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/I_CMD_STATUS/I_CMD_FIFO/USE_SINGLE_REG.sig_regfifo_dout_reg_reg[66]_0[40]
+    SLICE_X51Y71         FDRE                                         r  design_1_i/axi_dma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/I_CMD_STATUS/I_CMD_FIFO/USE_SINGLE_REG.sig_regfifo_dout_reg_reg[47]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  design_1_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           0.337     0.337    design_1_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     0.366 r  design_1_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=14019, routed)       0.808     1.174    design_1_i/axi_dma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/I_CMD_STATUS/I_CMD_FIFO/m_axi_s2mm_aclk
+    SLICE_X51Y71         FDRE                                         r  design_1_i/axi_dma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/I_CMD_STATUS/I_CMD_FIFO/USE_SINGLE_REG.sig_regfifo_dout_reg_reg[47]/C
+                         clock pessimism             -0.035     1.139    
+    SLICE_X51Y71         FDRE (Hold_fdre_C_D)         0.071     1.210    design_1_i/axi_dma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/I_CMD_STATUS/I_CMD_FIFO/USE_SINGLE_REG.sig_regfifo_dout_reg_reg[47]
+  -------------------------------------------------------------------
+                         required time                         -1.210    
+                         arrival time                           1.234    
+  -------------------------------------------------------------------
+                         slack                                  0.025    
+
+Slack (MET) :             0.025ns  (arrival time - required time)
+  Source:                 design_1_i/yolo_yolo_top_0/inst/ap_phi_reg_pp0_iter22_tmp_data_sub_data_2_s_reg_278_reg[3]/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            design_1_i/yolo_yolo_top_0/inst/ap_phi_reg_pp0_iter23_tmp_data_sub_data_2_s_reg_278_reg[3]/D
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk_fpga_0
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_fpga_0 rise@0.000ns - clk_fpga_0 rise@0.000ns)
+  Data Path Delay:        0.354ns  (logic 0.141ns (39.811%)  route 0.213ns (60.189%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.259ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.179ns
+    Source Clock Delay      (SCD):    0.885ns
+    Clock Pessimism Removal (CPR):    0.035ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  design_1_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           0.310     0.310    design_1_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     0.336 r  design_1_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=14019, routed)       0.549     0.885    design_1_i/yolo_yolo_top_0/inst/ap_clk
+    SLICE_X48Y26         FDRE                                         r  design_1_i/yolo_yolo_top_0/inst/ap_phi_reg_pp0_iter22_tmp_data_sub_data_2_s_reg_278_reg[3]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X48Y26         FDRE (Prop_fdre_C_Q)         0.141     1.026 r  design_1_i/yolo_yolo_top_0/inst/ap_phi_reg_pp0_iter22_tmp_data_sub_data_2_s_reg_278_reg[3]/Q
+                         net (fo=1, routed)           0.213     1.239    design_1_i/yolo_yolo_top_0/inst/ap_phi_reg_pp0_iter22_tmp_data_sub_data_2_s_reg_278[3]
+    SLICE_X51Y28         FDRE                                         r  design_1_i/yolo_yolo_top_0/inst/ap_phi_reg_pp0_iter23_tmp_data_sub_data_2_s_reg_278_reg[3]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  design_1_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           0.337     0.337    design_1_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     0.366 r  design_1_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=14019, routed)       0.813     1.179    design_1_i/yolo_yolo_top_0/inst/ap_clk
+    SLICE_X51Y28         FDRE                                         r  design_1_i/yolo_yolo_top_0/inst/ap_phi_reg_pp0_iter23_tmp_data_sub_data_2_s_reg_278_reg[3]/C
+                         clock pessimism             -0.035     1.144    
+    SLICE_X51Y28         FDRE (Hold_fdre_C_D)         0.070     1.214    design_1_i/yolo_yolo_top_0/inst/ap_phi_reg_pp0_iter23_tmp_data_sub_data_2_s_reg_278_reg[3]
+  -------------------------------------------------------------------
+                         required time                         -1.214    
+                         arrival time                           1.239    
+  -------------------------------------------------------------------
+                         slack                                  0.025    
+
+Slack (MET) :             0.026ns  (arrival time - required time)
+  Source:                 design_1_i/axi_dma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/I_ADDR_CNTL/sig_next_addr_reg_reg[25]/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            design_1_i/axi_smc/inst/s01_entry_pipeline/s01_mmu/inst/aw_sreg/skid_buffer_reg[1086]/D
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk_fpga_0
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_fpga_0 rise@0.000ns - clk_fpga_0 rise@0.000ns)
+  Data Path Delay:        0.315ns  (logic 0.148ns (47.019%)  route 0.167ns (52.981%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.266ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.183ns
+    Source Clock Delay      (SCD):    0.882ns
+    Clock Pessimism Removal (CPR):    0.035ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  design_1_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           0.310     0.310    design_1_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     0.336 r  design_1_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=14019, routed)       0.546     0.882    design_1_i/axi_dma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/I_ADDR_CNTL/m_axi_s2mm_aclk
+    SLICE_X50Y67         FDRE                                         r  design_1_i/axi_dma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/I_ADDR_CNTL/sig_next_addr_reg_reg[25]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X50Y67         FDRE (Prop_fdre_C_Q)         0.148     1.030 r  design_1_i/axi_dma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/I_ADDR_CNTL/sig_next_addr_reg_reg[25]/Q
+                         net (fo=2, routed)           0.167     1.196    design_1_i/axi_smc/inst/s01_entry_pipeline/s01_mmu/inst/aw_sreg/skid_buffer_reg[1144]_0[30]
+    SLICE_X49Y66         FDRE                                         r  design_1_i/axi_smc/inst/s01_entry_pipeline/s01_mmu/inst/aw_sreg/skid_buffer_reg[1086]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  design_1_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           0.337     0.337    design_1_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     0.366 r  design_1_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=14019, routed)       0.817     1.183    design_1_i/axi_smc/inst/s01_entry_pipeline/s01_mmu/inst/aw_sreg/aclk
+    SLICE_X49Y66         FDRE                                         r  design_1_i/axi_smc/inst/s01_entry_pipeline/s01_mmu/inst/aw_sreg/skid_buffer_reg[1086]/C
+                         clock pessimism             -0.035     1.148    
+    SLICE_X49Y66         FDRE (Hold_fdre_C_D)         0.022     1.170    design_1_i/axi_smc/inst/s01_entry_pipeline/s01_mmu/inst/aw_sreg/skid_buffer_reg[1086]
+  -------------------------------------------------------------------
+                         required time                         -1.170    
+                         arrival time                           1.196    
+  -------------------------------------------------------------------
+                         slack                                  0.026    
+
+Slack (MET) :             0.032ns  (arrival time - required time)
+  Source:                 design_1_i/yolo_yolo_top_0/inst/ap_phi_reg_pp0_iter26_tmp_data_sub_data_1_s_reg_269_reg[13]/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            design_1_i/yolo_yolo_top_0/inst/ap_phi_reg_pp0_iter27_tmp_data_sub_data_1_s_reg_269_reg[13]/D
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk_fpga_0
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_fpga_0 rise@0.000ns - clk_fpga_0 rise@0.000ns)
+  Data Path Delay:        0.367ns  (logic 0.141ns (38.432%)  route 0.226ns (61.568%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.258ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.185ns
+    Source Clock Delay      (SCD):    0.892ns
+    Clock Pessimism Removal (CPR):    0.035ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  design_1_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           0.310     0.310    design_1_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     0.336 r  design_1_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=14019, routed)       0.556     0.892    design_1_i/yolo_yolo_top_0/inst/ap_clk
+    SLICE_X47Y32         FDRE                                         r  design_1_i/yolo_yolo_top_0/inst/ap_phi_reg_pp0_iter26_tmp_data_sub_data_1_s_reg_269_reg[13]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X47Y32         FDRE (Prop_fdre_C_Q)         0.141     1.033 r  design_1_i/yolo_yolo_top_0/inst/ap_phi_reg_pp0_iter26_tmp_data_sub_data_1_s_reg_269_reg[13]/Q
+                         net (fo=1, routed)           0.226     1.258    design_1_i/yolo_yolo_top_0/inst/ap_phi_reg_pp0_iter26_tmp_data_sub_data_1_s_reg_269[13]
+    SLICE_X50Y34         FDRE                                         r  design_1_i/yolo_yolo_top_0/inst/ap_phi_reg_pp0_iter27_tmp_data_sub_data_1_s_reg_269_reg[13]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  design_1_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           0.337     0.337    design_1_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     0.366 r  design_1_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=14019, routed)       0.819     1.185    design_1_i/yolo_yolo_top_0/inst/ap_clk
+    SLICE_X50Y34         FDRE                                         r  design_1_i/yolo_yolo_top_0/inst/ap_phi_reg_pp0_iter27_tmp_data_sub_data_1_s_reg_269_reg[13]/C
+                         clock pessimism             -0.035     1.150    
+    SLICE_X50Y34         FDRE (Hold_fdre_C_D)         0.076     1.226    design_1_i/yolo_yolo_top_0/inst/ap_phi_reg_pp0_iter27_tmp_data_sub_data_1_s_reg_269_reg[13]
+  -------------------------------------------------------------------
+                         required time                         -1.226    
+                         arrival time                           1.258    
+  -------------------------------------------------------------------
+                         slack                                  0.032    
+
+Slack (MET) :             0.033ns  (arrival time - required time)
+  Source:                 design_1_i/axi_dma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_INCLUDE_REALIGNER.I_S2MM_REALIGNER/GEN_INCLUDE_DRE.I_S2MM_DRE_BLOCK/GEN_DELAY_REG[2].sig_delay_data_reg_reg[2][3]/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            design_1_i/axi_dma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_INCLUDE_REALIGNER.I_S2MM_REALIGNER/GEN_INCLUDE_DRE.I_S2MM_DRE_BLOCK/GEN_OUTPUT_REG[2].sig_output_data_reg_reg[2][3]/D
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk_fpga_0
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_fpga_0 rise@0.000ns - clk_fpga_0 rise@0.000ns)
+  Data Path Delay:        0.399ns  (logic 0.209ns (52.412%)  route 0.190ns (47.588%))
+  Logic Levels:           1  (LUT6=1)
+  Clock Path Skew:        0.273ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.219ns
+    Source Clock Delay      (SCD):    0.916ns
+    Clock Pessimism Removal (CPR):    0.030ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  design_1_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           0.310     0.310    design_1_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     0.336 r  design_1_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=14019, routed)       0.580     0.916    design_1_i/axi_dma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_INCLUDE_REALIGNER.I_S2MM_REALIGNER/GEN_INCLUDE_DRE.I_S2MM_DRE_BLOCK/m_axi_s2mm_aclk
+    SLICE_X62Y50         FDRE                                         r  design_1_i/axi_dma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_INCLUDE_REALIGNER.I_S2MM_REALIGNER/GEN_INCLUDE_DRE.I_S2MM_DRE_BLOCK/GEN_DELAY_REG[2].sig_delay_data_reg_reg[2][3]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X62Y50         FDRE (Prop_fdre_C_Q)         0.164     1.080 r  design_1_i/axi_dma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_INCLUDE_REALIGNER.I_S2MM_REALIGNER/GEN_INCLUDE_DRE.I_S2MM_DRE_BLOCK/GEN_DELAY_REG[2].sig_delay_data_reg_reg[2][3]/Q
+                         net (fo=1, routed)           0.190     1.269    design_1_i/axi_dma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_INCLUDE_REALIGNER.I_S2MM_REALIGNER/GEN_INCLUDE_DRE.I_S2MM_DRE_BLOCK/GEN_DELAY_REG[2].sig_delay_data_reg_reg[2]_46[3]
+    SLICE_X57Y49         LUT6 (Prop_lut6_I0_O)        0.045     1.314 r  design_1_i/axi_dma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_INCLUDE_REALIGNER.I_S2MM_REALIGNER/GEN_INCLUDE_DRE.I_S2MM_DRE_BLOCK/GEN_OUTPUT_REG[2].sig_output_data_reg[2][3]_i_1__0/O
+                         net (fo=1, routed)           0.000     1.314    design_1_i/axi_dma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_INCLUDE_REALIGNER.I_S2MM_REALIGNER/GEN_INCLUDE_DRE.I_S2MM_DRE_BLOCK/sig_final_mux_bus[2]_9[3]
+    SLICE_X57Y49         FDRE                                         r  design_1_i/axi_dma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_INCLUDE_REALIGNER.I_S2MM_REALIGNER/GEN_INCLUDE_DRE.I_S2MM_DRE_BLOCK/GEN_OUTPUT_REG[2].sig_output_data_reg_reg[2][3]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  design_1_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           0.337     0.337    design_1_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     0.366 r  design_1_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=14019, routed)       0.853     1.219    design_1_i/axi_dma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_INCLUDE_REALIGNER.I_S2MM_REALIGNER/GEN_INCLUDE_DRE.I_S2MM_DRE_BLOCK/m_axi_s2mm_aclk
+    SLICE_X57Y49         FDRE                                         r  design_1_i/axi_dma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_INCLUDE_REALIGNER.I_S2MM_REALIGNER/GEN_INCLUDE_DRE.I_S2MM_DRE_BLOCK/GEN_OUTPUT_REG[2].sig_output_data_reg_reg[2][3]/C
+                         clock pessimism             -0.030     1.189    
+    SLICE_X57Y49         FDRE (Hold_fdre_C_D)         0.092     1.281    design_1_i/axi_dma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_INCLUDE_REALIGNER.I_S2MM_REALIGNER/GEN_INCLUDE_DRE.I_S2MM_DRE_BLOCK/GEN_OUTPUT_REG[2].sig_output_data_reg_reg[2][3]
+  -------------------------------------------------------------------
+                         required time                         -1.281    
+                         arrival time                           1.314    
+  -------------------------------------------------------------------
+                         slack                                  0.033    
+
+Slack (MET) :             0.034ns  (arrival time - required time)
+  Source:                 design_1_i/yolo_yolo_top_0/inst/ap_phi_reg_pp0_iter22_tmp_data_sub_data_2_s_reg_278_reg[13]/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            design_1_i/yolo_yolo_top_0/inst/ap_phi_reg_pp0_iter23_tmp_data_sub_data_2_s_reg_278_reg[13]/D
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk_fpga_0
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_fpga_0 rise@0.000ns - clk_fpga_0 rise@0.000ns)
+  Data Path Delay:        0.355ns  (logic 0.141ns (39.726%)  route 0.214ns (60.274%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.258ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.180ns
+    Source Clock Delay      (SCD):    0.887ns
+    Clock Pessimism Removal (CPR):    0.035ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  design_1_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           0.310     0.310    design_1_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     0.336 r  design_1_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=14019, routed)       0.551     0.887    design_1_i/yolo_yolo_top_0/inst/ap_clk
+    SLICE_X48Y28         FDRE                                         r  design_1_i/yolo_yolo_top_0/inst/ap_phi_reg_pp0_iter22_tmp_data_sub_data_2_s_reg_278_reg[13]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X48Y28         FDRE (Prop_fdre_C_Q)         0.141     1.028 r  design_1_i/yolo_yolo_top_0/inst/ap_phi_reg_pp0_iter22_tmp_data_sub_data_2_s_reg_278_reg[13]/Q
+                         net (fo=1, routed)           0.214     1.241    design_1_i/yolo_yolo_top_0/inst/ap_phi_reg_pp0_iter22_tmp_data_sub_data_2_s_reg_278[13]
+    SLICE_X50Y29         FDRE                                         r  design_1_i/yolo_yolo_top_0/inst/ap_phi_reg_pp0_iter23_tmp_data_sub_data_2_s_reg_278_reg[13]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  design_1_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           0.337     0.337    design_1_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     0.366 r  design_1_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=14019, routed)       0.814     1.180    design_1_i/yolo_yolo_top_0/inst/ap_clk
+    SLICE_X50Y29         FDRE                                         r  design_1_i/yolo_yolo_top_0/inst/ap_phi_reg_pp0_iter23_tmp_data_sub_data_2_s_reg_278_reg[13]/C
+                         clock pessimism             -0.035     1.145    
+    SLICE_X50Y29         FDRE (Hold_fdre_C_D)         0.063     1.208    design_1_i/yolo_yolo_top_0/inst/ap_phi_reg_pp0_iter23_tmp_data_sub_data_2_s_reg_278_reg[13]
+  -------------------------------------------------------------------
+                         required time                         -1.208    
+                         arrival time                           1.241    
+  -------------------------------------------------------------------
+                         slack                                  0.034    
+
+
+
+
+
+Pulse Width Checks
+--------------------------------------------------------------------------------------
+Clock Name:         clk_fpga_0
+Waveform(ns):       { 0.000 5.000 }
+Period(ns):         10.000
+Sources:            { design_1_i/processing_system7_0/inst/PS7_i/FCLKCLK[0] }
+
+Check Type        Corner  Lib Pin             Reference Pin  Required(ns)  Actual(ns)  Slack(ns)  Location      Pin
+Min Period        n/a     DSP48E1/CLK         n/a            3.884         10.000      6.116      DSP48_X3Y7    design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_296/grp_exp_16_8_s_fu_59/r_V_5_fu_432_p2__0/CLK
+Min Period        n/a     DSP48E1/CLK         n/a            3.884         10.000      6.116      DSP48_X2Y3    design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_307/grp_exp_16_8_s_fu_59/r_V_5_fu_432_p2__0/CLK
+Min Period        n/a     DSP48E1/CLK         n/a            3.884         10.000      6.116      DSP48_X4Y3    design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_318/grp_exp_16_8_s_fu_59/r_V_5_fu_432_p2__0/CLK
+Min Period        n/a     DSP48E1/CLK         n/a            3.884         10.000      6.116      DSP48_X4Y13   design_1_i/yolo_yolo_top_0/inst/grp_logistic_activate_fu_329/grp_exp_16_8_s_fu_59/r_V_5_fu_432_p2__0/CLK
+Min Period        n/a     DSP48E1/CLK         n/a            3.884         10.000      6.116      DSP48_X2Y16   design_1_i/yolo_yolo_top_0/inst/bound4_reg_809_reg/CLK
+Min Period        n/a     RAMB36E1/CLKARDCLK  n/a            2.576         10.000      7.424      RAMB36_X0Y7   design_1_i/axi_dma_0/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_0/CLKARDCLK
+Min Period        n/a     RAMB36E1/CLKBWRCLK  n/a            2.576         10.000      7.424      RAMB36_X0Y7   design_1_i/axi_dma_0/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_0/CLKBWRCLK
+Min Period        n/a     RAMB18E1/CLKARDCLK  n/a            2.576         10.000      7.424      RAMB18_X0Y12  design_1_i/axi_dma_0/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_1/CLKARDCLK
+Min Period        n/a     RAMB18E1/CLKBWRCLK  n/a            2.576         10.000      7.424      RAMB18_X0Y12  design_1_i/axi_dma_0/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_1/CLKBWRCLK
+Min Period        n/a     RAMB36E1/CLKARDCLK  n/a            2.576         10.000      7.424      RAMB36_X3Y9   design_1_i/axi_dma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_0/CLKARDCLK
+Low Pulse Width   Slow    RAMD32/CLK          n/a            1.250         5.000       3.750      SLICE_X32Y68  design_1_i/axi_smc/inst/m00_nodes/m00_aw_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_0_31_78_83/RAMA/CLK
+Low Pulse Width   Slow    RAMD32/CLK          n/a            1.250         5.000       3.750      SLICE_X32Y68  design_1_i/axi_smc/inst/m00_nodes/m00_aw_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_0_31_78_83/RAMA_D1/CLK
+Low Pulse Width   Slow    RAMD32/CLK          n/a            1.250         5.000       3.750      SLICE_X32Y68  design_1_i/axi_smc/inst/m00_nodes/m00_aw_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_0_31_78_83/RAMB/CLK
+Low Pulse Width   Slow    RAMD32/CLK          n/a            1.250         5.000       3.750      SLICE_X32Y68  design_1_i/axi_smc/inst/m00_nodes/m00_aw_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_0_31_78_83/RAMB_D1/CLK
+Low Pulse Width   Slow    RAMD32/CLK          n/a            1.250         5.000       3.750      SLICE_X32Y68  design_1_i/axi_smc/inst/m00_nodes/m00_aw_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_0_31_78_83/RAMC/CLK
+Low Pulse Width   Slow    RAMD32/CLK          n/a            1.250         5.000       3.750      SLICE_X32Y68  design_1_i/axi_smc/inst/m00_nodes/m00_aw_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_0_31_78_83/RAMC_D1/CLK
+Low Pulse Width   Slow    RAMS32/CLK          n/a            1.250         5.000       3.750      SLICE_X32Y68  design_1_i/axi_smc/inst/m00_nodes/m00_aw_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_0_31_78_83/RAMD/CLK
+Low Pulse Width   Slow    RAMS32/CLK          n/a            1.250         5.000       3.750      SLICE_X32Y68  design_1_i/axi_smc/inst/m00_nodes/m00_aw_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_0_31_78_83/RAMD_D1/CLK
+Low Pulse Width   Slow    RAMD32/CLK          n/a            1.250         5.000       3.750      SLICE_X34Y68  design_1_i/axi_smc/inst/s01_nodes/s01_aw_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_0_31_78_83/RAMA/CLK
+Low Pulse Width   Slow    RAMD32/CLK          n/a            1.250         5.000       3.750      SLICE_X34Y68  design_1_i/axi_smc/inst/s01_nodes/s01_aw_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_0_31_78_83/RAMA_D1/CLK
+High Pulse Width  Slow    RAMD32/CLK          n/a            1.250         5.000       3.750      SLICE_X30Y42  design_1_i/axi_smc/inst/m00_nodes/m00_ar_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_0_31_0_5/RAMA/CLK
+High Pulse Width  Slow    RAMD32/CLK          n/a            1.250         5.000       3.750      SLICE_X30Y42  design_1_i/axi_smc/inst/m00_nodes/m00_ar_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_0_31_0_5/RAMA_D1/CLK
+High Pulse Width  Slow    RAMD32/CLK          n/a            1.250         5.000       3.750      SLICE_X30Y42  design_1_i/axi_smc/inst/m00_nodes/m00_ar_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_0_31_0_5/RAMB/CLK
+High Pulse Width  Slow    RAMD32/CLK          n/a            1.250         5.000       3.750      SLICE_X30Y42  design_1_i/axi_smc/inst/m00_nodes/m00_ar_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_0_31_0_5/RAMB_D1/CLK
+High Pulse Width  Slow    RAMD32/CLK          n/a            1.250         5.000       3.750      SLICE_X30Y42  design_1_i/axi_smc/inst/m00_nodes/m00_ar_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_0_31_0_5/RAMC/CLK
+High Pulse Width  Slow    RAMD32/CLK          n/a            1.250         5.000       3.750      SLICE_X30Y42  design_1_i/axi_smc/inst/m00_nodes/m00_ar_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_0_31_0_5/RAMC_D1/CLK
+High Pulse Width  Slow    RAMS32/CLK          n/a            1.250         5.000       3.750      SLICE_X30Y42  design_1_i/axi_smc/inst/m00_nodes/m00_ar_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_0_31_0_5/RAMD/CLK
+High Pulse Width  Slow    RAMS32/CLK          n/a            1.250         5.000       3.750      SLICE_X30Y42  design_1_i/axi_smc/inst/m00_nodes/m00_ar_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_0_31_0_5/RAMD_D1/CLK
+High Pulse Width  Slow    RAMD32/CLK          n/a            1.250         5.000       3.750      SLICE_X26Y53  design_1_i/axi_smc/inst/m00_nodes/m00_ar_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_0_31_114_119/RAMA/CLK
+High Pulse Width  Slow    RAMD32/CLK          n/a            1.250         5.000       3.750      SLICE_X26Y53  design_1_i/axi_smc/inst/m00_nodes/m00_ar_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_0_31_114_119/RAMA_D1/CLK
+
+
+

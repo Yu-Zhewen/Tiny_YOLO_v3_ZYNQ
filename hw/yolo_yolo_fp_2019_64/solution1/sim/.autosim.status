@@ -1,0 +1,11 @@
+set status(tv_done) 0
+set status(tvin) "yolo_yolo_top.autotvin.dat"
+set status(wrapc_done) 1
+set status(bc_done) 0
+set status(bc_tb_done) 0
+set status(bc_tb_new_done) 0
+set status(tvout) "yolo_yolo_top.autotvout.dat"
+set status(sc_done) 0
+set status(cas_done) 0
+set status(hdl_tvin) ""
+set status(hdl_tvout) ""

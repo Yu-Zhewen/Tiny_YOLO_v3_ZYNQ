@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Wed Jul 17 10:37:57 2019
+# Process ID: 12790
+# Current directory: /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_yolo_fp_2019_64/solution1/sim/verilog
+# Command line: wbtcv -mode batch -source /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_yolo_fp_2019_64/solution1/sim/verilog/xsim.dir/yolo_yolo_top/webtalk/xsim_webtalk.tcl -notrace
+# Log file: /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_yolo_fp_2019_64/solution1/sim/verilog/webtalk.log
+# Journal file: /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_yolo_fp_2019_64/solution1/sim/verilog/webtalk.jou
+#-----------------------------------------------------------
+source /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_yolo_fp_2019_64/solution1/sim/verilog/xsim.dir/yolo_yolo_top/webtalk/xsim_webtalk.tcl -notrace

@@ -1,0 +1,2437 @@
+10:59:33 **** Build of project yolo_yolo_ps_bsp ****
+make -k all 
+Running Make include in ps7_cortexa9_0/libsrc/ddrps_v1_0/src
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_4/src
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_4/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_7/src
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_7/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/scugic_v4_0/src
+make -C ps7_cortexa9_0/libsrc/scugic_v4_0/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/emacps_v3_9/src
+make -C ps7_cortexa9_0/libsrc/emacps_v3_9/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/ttcps_v3_9/src
+make -C ps7_cortexa9_0/libsrc/ttcps_v3_9/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/axidma_v9_9/src
+make -C ps7_cortexa9_0/libsrc/axidma_v9_9/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/gpiops_v3_5/src
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_5/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/standalone_v7_0/src
+make -C ps7_cortexa9_0/libsrc/standalone_v7_0/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/qspips_v3_6/src
+make -C ps7_cortexa9_0/libsrc/qspips_v3_6/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/xadcps_v2_3/src
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_3/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/sdps_v3_7/src
+make -C ps7_cortexa9_0/libsrc/sdps_v3_7/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_5/src
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_5/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/uartps_v3_7/src
+make -C ps7_cortexa9_0/libsrc/uartps_v3_7/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/yolo_yolo_top_v1_0/src
+make -C ps7_cortexa9_0/libsrc/yolo_yolo_top_v1_0/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/usbps_v2_4/src
+make -C ps7_cortexa9_0/libsrc/usbps_v2_4/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_1/src
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_5/src
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_5/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make libs in ps7_cortexa9_0/libsrc/ddrps_v1_0/src
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling ddrps
+arm-none-eabi-ar: creating ../../../lib/libxil.a
+Running Make libs in ps7_cortexa9_0/libsrc/dmaps_v2_4/src
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_4/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling dmaps
+Running Make libs in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_7/src
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_7/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling cpu_cortexa9
+Running Make libs in ps7_cortexa9_0/libsrc/scugic_v4_0/src
+make -C ps7_cortexa9_0/libsrc/scugic_v4_0/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling scugic
+Running Make libs in ps7_cortexa9_0/libsrc/emacps_v3_9/src
+make -C ps7_cortexa9_0/libsrc/emacps_v3_9/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling emacps
+Running Make libs in ps7_cortexa9_0/libsrc/ttcps_v3_9/src
+make -C ps7_cortexa9_0/libsrc/ttcps_v3_9/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling ttcps
+Running Make libs in ps7_cortexa9_0/libsrc/axidma_v9_9/src
+make -C ps7_cortexa9_0/libsrc/axidma_v9_9/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling axidma
+Running Make libs in ps7_cortexa9_0/libsrc/gpiops_v3_5/src
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_5/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling gpiops
+Running Make libs in ps7_cortexa9_0/libsrc/standalone_v7_0/src
+make -C ps7_cortexa9_0/libsrc/standalone_v7_0/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling standalone
+In file included from xtime_l.c:49:
+xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+In file included from sleep.c:53:
+xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+In file included from xil_sleeptimer.c:51:
+xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+In file included from usleep.c:56:
+xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+Running Make libs in ps7_cortexa9_0/libsrc/qspips_v3_6/src
+make -C ps7_cortexa9_0/libsrc/qspips_v3_6/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling qspips
+Running Make libs in ps7_cortexa9_0/libsrc/xadcps_v2_3/src
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_3/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling xadcps
+Running Make libs in ps7_cortexa9_0/libsrc/sdps_v3_7/src
+make -C ps7_cortexa9_0/libsrc/sdps_v3_7/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling sdps
+Running Make libs in ps7_cortexa9_0/libsrc/devcfg_v3_5/src
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_5/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling devcfg
+Running Make libs in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling scuwdt
+Running Make libs in ps7_cortexa9_0/libsrc/uartps_v3_7/src
+make -C ps7_cortexa9_0/libsrc/uartps_v3_7/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling uartps
+Running Make libs in ps7_cortexa9_0/libsrc/yolo_yolo_top_v1_0/src
+make -C ps7_cortexa9_0/libsrc/yolo_yolo_top_v1_0/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling yolo_yolo_top
+Running Make libs in ps7_cortexa9_0/libsrc/usbps_v2_4/src
+make -C ps7_cortexa9_0/libsrc/usbps_v2_4/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling usbps
+Running Make libs in ps7_cortexa9_0/libsrc/scutimer_v2_1/src
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling scutimer
+Running Make libs in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_5/src
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_5/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling coresightps_dcc
+Finished building libraries
+10:59:50 **** Build of configuration Debug for project yolo_yolo_ps ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../yolo_yolo_ps_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+Finished building: ../src/main.cc
+ 
+Building target: yolo_yolo_ps.elf
+Invoking: ARM v7 g++ linker
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../yolo_yolo_ps_bsp/ps7_cortexa9_0/lib -o "yolo_yolo_ps.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: yolo_yolo_ps.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size yolo_yolo_ps.elf  |tee "yolo_yolo_ps.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  18736	   1144	  22576	  42456	   a5d8	yolo_yolo_ps.elf
+Finished building: yolo_yolo_ps.elf.size
+ 
+11:03:23 **** Clean-only build of configuration Debug for project yolo_yolo_ps ****
+make clean 
+rm -rf  ./src/main.d  ./src/main.o  yolo_yolo_ps.elf.size  yolo_yolo_ps.elf
+ 
+
+****  of configuration Debug for project yolo_yolo_ps ****
+
+Nothing to build for project yolo_yolo_ps
+11:04:51 **** Clean-only build of configuration Debug for project yolo_yolo_ps ****
+make clean 
+rm -rf  ./src/main.d  ./src/main.o  yolo_yolo_ps.elf.size  yolo_yolo_ps.elf
+ 
+11:04:51 **** Auto Build of configuration Debug for project yolo_yolo_ps ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.cpp
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -I/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_yolo_fp_prj_2019_64/yolo_yolo_fp_prj_2019_64.sdk/include -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../yolo_yolo_ps_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.cpp"
+../src/helloworld.cpp:54:10: fatal error: xyolo_conv_top.h: No such file or directory
+ #include "xyolo_conv_top.h"
+          ^~~~~~~~~~~~~~~~~~
+compilation terminated.
+src/subdir.mk:21: recipe for target 'src/helloworld.o' failed
+make: *** [src/helloworld.o] Error 1
+11:05:02 **** Auto Build of configuration Debug for project yolo_yolo_ps ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.cpp
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -I/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_yolo_fp_prj_2019_64/yolo_yolo_fp_prj_2019_64.sdk/include -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../yolo_yolo_ps_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.cpp"
+../src/helloworld.cpp:57:10: fatal error: layer_input.h: No such file or directory
+ #include "layer_input.h"
+          ^~~~~~~~~~~~~~~
+compilation terminated.
+src/subdir.mk:21: recipe for target 'src/helloworld.o' failed
+make: *** [src/helloworld.o] Error 1
+11:05:10 **** Auto Build of configuration Debug for project yolo_yolo_ps ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.cpp
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -I/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_yolo_fp_prj_2019_64/yolo_yolo_fp_prj_2019_64.sdk/include -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../yolo_yolo_ps_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.cpp"
+../src/helloworld.cpp:58:10: fatal error: layer_output_sdk.h: No such file or directory
+ #include "layer_output_sdk.h"
+          ^~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+src/subdir.mk:21: recipe for target 'src/helloworld.o' failed
+make: *** [src/helloworld.o] Error 1
+11:05:16 **** Auto Build of configuration Debug for project yolo_yolo_ps ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.cpp
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -I/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_yolo_fp_prj_2019_64/yolo_yolo_fp_prj_2019_64.sdk/include -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../yolo_yolo_ps_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.cpp"
+../src/helloworld.cpp:60:10: fatal error: weight_file_pad.h: No such file or directory
+ #include "weight_file_pad.h"
+          ^~~~~~~~~~~~~~~~~~~
+compilation terminated.
+src/subdir.mk:21: recipe for target 'src/helloworld.o' failed
+make: *** [src/helloworld.o] Error 1
+11:05:24 **** Auto Build of configuration Debug for project yolo_yolo_ps ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.cpp
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -I/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_yolo_fp_prj_2019_64/yolo_yolo_fp_prj_2019_64.sdk/include -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../yolo_yolo_ps_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.cpp"
+In file included from ../src/helloworld.cpp:52:
+../../yolo_yolo_ps_bsp/ps7_cortexa9_0/include/xtime_l.h:87:70: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+                                                                      ^
+../src/helloworld.cpp:63:1: error: 'XYolo_conv_top' does not name a type; did you mean 'XYolo_yolo_top'?
+ XYolo_conv_top yolo_conv_top;
+ ^~~~~~~~~~~~~~
+ XYolo_yolo_top
+../src/helloworld.cpp:64:1: error: 'XYolo_conv_top_Config' does not name a type; did you mean 'XYolo_yolo_top_Config'?
+ XYolo_conv_top_Config *yolo_conv_top_cfg;
+ ^~~~~~~~~~~~~~~~~~~~~
+ XYolo_yolo_top_Config
+../src/helloworld.cpp: In function 'void initPeripherals()':
+../src/helloworld.cpp:73:2: error: 'yolo_conv_top_cfg' was not declared in this scope
+  yolo_conv_top_cfg = XYolo_conv_top_LookupConfig(XPAR_YOLO_CONV_TOP_0_DEVICE_ID);
+  ^~~~~~~~~~~~~~~~~
+../src/helloworld.cpp:73:50: error: 'XPAR_YOLO_CONV_TOP_0_DEVICE_ID' was not declared in this scope
+  yolo_conv_top_cfg = XYolo_conv_top_LookupConfig(XPAR_YOLO_CONV_TOP_0_DEVICE_ID);
+                                                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/helloworld.cpp:73:50: note: suggested alternative: 'XPAR_YOLO_YOLO_TOP_0_DEVICE_ID'
+  yolo_conv_top_cfg = XYolo_conv_top_LookupConfig(XPAR_YOLO_CONV_TOP_0_DEVICE_ID);
+                                                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                                                  XPAR_YOLO_YOLO_TOP_0_DEVICE_ID
+../src/helloworld.cpp:73:22: error: 'XYolo_conv_top_LookupConfig' was not declared in this scope
+  yolo_conv_top_cfg = XYolo_conv_top_LookupConfig(XPAR_YOLO_CONV_TOP_0_DEVICE_ID);
+                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/helloworld.cpp:73:22: note: suggested alternative: 'XYolo_yolo_top_LookupConfig'
+  yolo_conv_top_cfg = XYolo_conv_top_LookupConfig(XPAR_YOLO_CONV_TOP_0_DEVICE_ID);
+                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+                      XYolo_yolo_top_LookupConfig
+../src/helloworld.cpp:76:46: error: 'yolo_conv_top' was not declared in this scope
+   int status = XYolo_conv_top_CfgInitialize(&yolo_conv_top,yolo_conv_top_cfg);
+                                              ^~~~~~~~~~~~~
+../src/helloworld.cpp:76:46: note: suggested alternative: 'XYolo_yolo_top'
+   int status = XYolo_conv_top_CfgInitialize(&yolo_conv_top,yolo_conv_top_cfg);
+                                              ^~~~~~~~~~~~~
+                                              XYolo_yolo_top
+../src/helloworld.cpp:76:16: error: 'XYolo_conv_top_CfgInitialize' was not declared in this scope
+   int status = XYolo_conv_top_CfgInitialize(&yolo_conv_top,yolo_conv_top_cfg);
+                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/helloworld.cpp:76:16: note: suggested alternative: 'XYolo_yolo_top_CfgInitialize'
+   int status = XYolo_conv_top_CfgInitialize(&yolo_conv_top,yolo_conv_top_cfg);
+                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                XYolo_yolo_top_CfgInitialize
+../src/helloworld.cpp: At global scope:
+../src/helloworld.cpp:97:24: error: 'OUTPUT_WIDTH' was not declared in this scope
+ short layer_output_hls[OUTPUT_WIDTH*OUTPUT_HEIGHT*OUTPUT_CHANNEL];
+                        ^~~~~~~~~~~~
+../src/helloworld.cpp:97:24: note: suggested alternative: 'YOLO_INPUT_WIDTH'
+ short layer_output_hls[OUTPUT_WIDTH*OUTPUT_HEIGHT*OUTPUT_CHANNEL];
+                        ^~~~~~~~~~~~
+                        YOLO_INPUT_WIDTH
+../src/helloworld.cpp:97:37: error: 'OUTPUT_HEIGHT' was not declared in this scope
+ short layer_output_hls[OUTPUT_WIDTH*OUTPUT_HEIGHT*OUTPUT_CHANNEL];
+                                     ^~~~~~~~~~~~~
+../src/helloworld.cpp:97:37: note: suggested alternative: 'YOLO_INPUT_HEIGHT'
+ short layer_output_hls[OUTPUT_WIDTH*OUTPUT_HEIGHT*OUTPUT_CHANNEL];
+                                     ^~~~~~~~~~~~~
+                                     YOLO_INPUT_HEIGHT
+../src/helloworld.cpp:97:51: error: 'OUTPUT_CHANNEL' was not declared in this scope
+ short layer_output_hls[OUTPUT_WIDTH*OUTPUT_HEIGHT*OUTPUT_CHANNEL];
+                                                   ^~~~~~~~~~~~~~
+../src/helloworld.cpp: In function 'int main()':
+../src/helloworld.cpp:110:37: error: 'yolo_conv_top' was not declared in this scope
+     XYolo_conv_top_Set_output_ch_V(&yolo_conv_top,OUTPUT_CHANNEL);
+                                     ^~~~~~~~~~~~~
+../src/helloworld.cpp:110:37: note: suggested alternative: 'XYolo_yolo_top'
+     XYolo_conv_top_Set_output_ch_V(&yolo_conv_top,OUTPUT_CHANNEL);
+                                     ^~~~~~~~~~~~~
+                                     XYolo_yolo_top
+../src/helloworld.cpp:110:51: error: 'OUTPUT_CHANNEL' was not declared in this scope
+     XYolo_conv_top_Set_output_ch_V(&yolo_conv_top,OUTPUT_CHANNEL);
+                                                   ^~~~~~~~~~~~~~
+../src/helloworld.cpp:110:5: error: 'XYolo_conv_top_Set_output_ch_V' was not declared in this scope
+     XYolo_conv_top_Set_output_ch_V(&yolo_conv_top,OUTPUT_CHANNEL);
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/helloworld.cpp:110:5: note: suggested alternative: 'XYolo_yolo_top_Set_input_h_V'
+     XYolo_conv_top_Set_output_ch_V(&yolo_conv_top,OUTPUT_CHANNEL);
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     XYolo_yolo_top_Set_input_h_V
+../src/helloworld.cpp:111:50: error: 'INPUT_CHANNEL' was not declared in this scope
+     XYolo_conv_top_Set_input_ch_V(&yolo_conv_top,INPUT_CHANNEL);
+                                                  ^~~~~~~~~~~~~
+../src/helloworld.cpp:111:5: error: 'XYolo_conv_top_Set_input_ch_V' was not declared in this scope
+     XYolo_conv_top_Set_input_ch_V(&yolo_conv_top,INPUT_CHANNEL);
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/helloworld.cpp:111:5: note: suggested alternative: 'XYolo_yolo_top_Set_input_h_V'
+     XYolo_conv_top_Set_input_ch_V(&yolo_conv_top,INPUT_CHANNEL);
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     XYolo_yolo_top_Set_input_h_V
+../src/helloworld.cpp:112:5: error: 'XYolo_conv_top_Set_fold_output_ch_V' was not declared in this scope
+     XYolo_conv_top_Set_fold_output_ch_V(&yolo_conv_top,OUTPUT_CHANNEL/4);
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/helloworld.cpp:112:5: note: suggested alternative: 'XYolo_yolo_top_Set_input_h_V'
+     XYolo_conv_top_Set_fold_output_ch_V(&yolo_conv_top,OUTPUT_CHANNEL/4);
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     XYolo_yolo_top_Set_input_h_V
+../src/helloworld.cpp:113:5: error: 'XYolo_conv_top_Set_fold_input_ch_V' was not declared in this scope
+     XYolo_conv_top_Set_fold_input_ch_V(&yolo_conv_top,(INPUT_CHANNEL+3)/4);
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/helloworld.cpp:113:5: note: suggested alternative: 'XYolo_yolo_top_Set_input_h_V'
+     XYolo_conv_top_Set_fold_input_ch_V(&yolo_conv_top,(INPUT_CHANNEL+3)/4);
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     XYolo_yolo_top_Set_input_h_V
+../src/helloworld.cpp:114:52: error: 'KERNEL_DIM' was not declared in this scope
+     XYolo_conv_top_Set_kernel_dim_V(&yolo_conv_top,KERNEL_DIM);
+                                                    ^~~~~~~~~~
+../src/helloworld.cpp:114:52: note: suggested alternative: 'MAX_KERNEL_NUM'
+     XYolo_conv_top_Set_kernel_dim_V(&yolo_conv_top,KERNEL_DIM);
+                                                    ^~~~~~~~~~
+                                                    MAX_KERNEL_NUM
+../src/helloworld.cpp:114:5: error: 'XYolo_conv_top_Set_kernel_dim_V' was not declared in this scope
+     XYolo_conv_top_Set_kernel_dim_V(&yolo_conv_top,KERNEL_DIM);
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/helloworld.cpp:114:5: note: suggested alternative: 'XYolo_yolo_top_Set_input_w_V'
+     XYolo_conv_top_Set_kernel_dim_V(&yolo_conv_top,KERNEL_DIM);
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     XYolo_yolo_top_Set_input_w_V
+../src/helloworld.cpp:115:49: error: 'INPUT_HEIGHT' was not declared in this scope
+     XYolo_conv_top_Set_input_h_V(&yolo_conv_top,INPUT_HEIGHT);
+                                                 ^~~~~~~~~~~~
+../src/helloworld.cpp:115:49: note: suggested alternative: 'YOLO_INPUT_HEIGHT'
+     XYolo_conv_top_Set_input_h_V(&yolo_conv_top,INPUT_HEIGHT);
+                                                 ^~~~~~~~~~~~
+                                                 YOLO_INPUT_HEIGHT
+../src/helloworld.cpp:115:5: error: 'XYolo_conv_top_Set_input_h_V' was not declared in this scope
+     XYolo_conv_top_Set_input_h_V(&yolo_conv_top,INPUT_HEIGHT);
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/helloworld.cpp:115:5: note: suggested alternative: 'XYolo_yolo_top_Set_input_h_V'
+     XYolo_conv_top_Set_input_h_V(&yolo_conv_top,INPUT_HEIGHT);
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     XYolo_yolo_top_Set_input_h_V
+../src/helloworld.cpp:116:49: error: 'INPUT_WIDTH' was not declared in this scope
+     XYolo_conv_top_Set_input_w_V(&yolo_conv_top,INPUT_WIDTH);
+                                                 ^~~~~~~~~~~
+../src/helloworld.cpp:116:49: note: suggested alternative: 'YOLO_INPUT_WIDTH'
+     XYolo_conv_top_Set_input_w_V(&yolo_conv_top,INPUT_WIDTH);
+                                                 ^~~~~~~~~~~
+                                                 YOLO_INPUT_WIDTH
+../src/helloworld.cpp:116:5: error: 'XYolo_conv_top_Set_input_w_V' was not declared in this scope
+     XYolo_conv_top_Set_input_w_V(&yolo_conv_top,INPUT_WIDTH);
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/helloworld.cpp:116:5: note: suggested alternative: 'XYolo_yolo_top_Set_input_w_V'
+     XYolo_conv_top_Set_input_w_V(&yolo_conv_top,INPUT_WIDTH);
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     XYolo_yolo_top_Set_input_w_V
+../src/helloworld.cpp:117:54: error: 'REAL_INPUT_HEIGHT' was not declared in this scope
+     XYolo_conv_top_Set_real_input_h_V(&yolo_conv_top,REAL_INPUT_HEIGHT);
+                                                      ^~~~~~~~~~~~~~~~~
+../src/helloworld.cpp:117:54: note: suggested alternative: 'YOLO_INPUT_HEIGHT'
+     XYolo_conv_top_Set_real_input_h_V(&yolo_conv_top,REAL_INPUT_HEIGHT);
+                                                      ^~~~~~~~~~~~~~~~~
+                                                      YOLO_INPUT_HEIGHT
+../src/helloworld.cpp:117:5: error: 'XYolo_conv_top_Set_real_input_h_V' was not declared in this scope
+     XYolo_conv_top_Set_real_input_h_V(&yolo_conv_top,REAL_INPUT_HEIGHT);
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/helloworld.cpp:117:5: note: suggested alternative: 'XYolo_yolo_top_Set_input_h_V'
+     XYolo_conv_top_Set_real_input_h_V(&yolo_conv_top,REAL_INPUT_HEIGHT);
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     XYolo_yolo_top_Set_input_h_V
+../src/helloworld.cpp:118:47: error: 'LEAKY' was not declared in this scope
+     XYolo_conv_top_Set_leaky_V(&yolo_conv_top,LEAKY);
+                                               ^~~~~
+../src/helloworld.cpp:118:5: error: 'XYolo_conv_top_Set_leaky_V' was not declared in this scope
+     XYolo_conv_top_Set_leaky_V(&yolo_conv_top,LEAKY);
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/helloworld.cpp:118:5: note: suggested alternative: 'XYolo_yolo_top_Set_input_w_V'
+     XYolo_conv_top_Set_leaky_V(&yolo_conv_top,LEAKY);
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~
+     XYolo_yolo_top_Set_input_w_V
+../src/helloworld.cpp:119:5: error: 'XYolo_conv_top_Set_fold_win_area_V' was not declared in this scope
+     XYolo_conv_top_Set_fold_win_area_V(&yolo_conv_top,(KERNEL_DIM*KERNEL_DIM+3)/4);
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/helloworld.cpp:119:5: note: suggested alternative: 'XYolo_yolo_top_Set_input_w_V'
+     XYolo_conv_top_Set_fold_win_area_V(&yolo_conv_top,(KERNEL_DIM*KERNEL_DIM+3)/4);
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     XYolo_yolo_top_Set_input_w_V
+../src/helloworld.cpp:121:5: error: 'XYolo_conv_top_Start' was not declared in this scope
+     XYolo_conv_top_Start(&yolo_conv_top);
+     ^~~~~~~~~~~~~~~~~~~~
+../src/helloworld.cpp:121:5: note: suggested alternative: 'XYolo_yolo_top_Start'
+     XYolo_conv_top_Start(&yolo_conv_top);
+     ^~~~~~~~~~~~~~~~~~~~
+     XYolo_yolo_top_Start
+../src/helloworld.cpp:123:31: error: 'kernel_weight_fp_bits_pad' was not declared in this scope
+     Xil_DCacheFlushRange((u32)kernel_weight_fp_bits_pad,(KERNEL_DIM*KERNEL_DIM+3)*INPUT_CHANNEL*OUTPUT_CHANNEL*sizeof(short));
+                               ^~~~~~~~~~~~~~~~~~~~~~~~~
+../src/helloworld.cpp:126:31: error: 'kernel_bias_fp_bits_pad' was not declared in this scope
+     Xil_DCacheFlushRange((u32)kernel_bias_fp_bits_pad,OUTPUT_CHANNEL*sizeof(short));
+                               ^~~~~~~~~~~~~~~~~~~~~~~
+../src/helloworld.cpp:130:31: error: 'layer_input' was not declared in this scope
+     Xil_DCacheFlushRange((u32)layer_input,(INPUT_WIDTH-2*PAD)*(INPUT_HEIGHT-2*PAD)*4*sizeof(short));
+                               ^~~~~~~~~~~
+../src/helloworld.cpp:130:58: error: 'PAD' was not declared in this scope
+     Xil_DCacheFlushRange((u32)layer_input,(INPUT_WIDTH-2*PAD)*(INPUT_HEIGHT-2*PAD)*4*sizeof(short));
+                                                          ^~~
+../src/helloworld.cpp:131:31: error: 'layer_output_hls' was not declared in this scope
+     Xil_DCacheFlushRange((u32)layer_output_hls,OUTPUT_WIDTH*OUTPUT_HEIGHT*OUTPUT_CHANNEL*sizeof(short));
+                               ^~~~~~~~~~~~~~~~
+../src/helloworld.cpp:131:31: note: suggested alternative: 'layer_input_reduce'
+     Xil_DCacheFlushRange((u32)layer_output_hls,OUTPUT_WIDTH*OUTPUT_HEIGHT*OUTPUT_CHANNEL*sizeof(short));
+                               ^~~~~~~~~~~~~~~~
+                               layer_input_reduce
+../src/helloworld.cpp:131:48: error: 'OUTPUT_WIDTH' was not declared in this scope
+     Xil_DCacheFlushRange((u32)layer_output_hls,OUTPUT_WIDTH*OUTPUT_HEIGHT*OUTPUT_CHANNEL*sizeof(short));
+                                                ^~~~~~~~~~~~
+../src/helloworld.cpp:131:48: note: suggested alternative: 'YOLO_INPUT_WIDTH'
+     Xil_DCacheFlushRange((u32)layer_output_hls,OUTPUT_WIDTH*OUTPUT_HEIGHT*OUTPUT_CHANNEL*sizeof(short));
+                                                ^~~~~~~~~~~~
+                                                YOLO_INPUT_WIDTH
+../src/helloworld.cpp:131:61: error: 'OUTPUT_HEIGHT' was not declared in this scope
+     Xil_DCacheFlushRange((u32)layer_output_hls,OUTPUT_WIDTH*OUTPUT_HEIGHT*OUTPUT_CHANNEL*sizeof(short));
+                                                             ^~~~~~~~~~~~~
+../src/helloworld.cpp:131:61: note: suggested alternative: 'YOLO_INPUT_HEIGHT'
+     Xil_DCacheFlushRange((u32)layer_output_hls,OUTPUT_WIDTH*OUTPUT_HEIGHT*OUTPUT_CHANNEL*sizeof(short));
+                                                             ^~~~~~~~~~~~~
+                                                             YOLO_INPUT_HEIGHT
+../src/helloworld.cpp:142:9: error: 'XYolo_conv_top_IsDone' was not declared in this scope
+  while(!XYolo_conv_top_IsDone(&yolo_conv_top));
+         ^~~~~~~~~~~~~~~~~~~~~
+../src/helloworld.cpp:142:9: note: suggested alternative: 'XYolo_yolo_top_IsDone'
+  while(!XYolo_conv_top_IsDone(&yolo_conv_top));
+         ^~~~~~~~~~~~~~~~~~~~~
+         XYolo_yolo_top_IsDone
+../src/helloworld.cpp:151:15: error: 'layer_output_sdk' was not declared in this scope
+   short ref = layer_output_sdk[idx];
+               ^~~~~~~~~~~~~~~~
+../src/helloworld.cpp:151:15: note: suggested alternative: 'layer_output_sdk_reduce'
+   short ref = layer_output_sdk[idx];
+               ^~~~~~~~~~~~~~~~
+               layer_output_sdk_reduce
+make: *** [src/helloworld.o] Error 1
+src/subdir.mk:21: recipe for target 'src/helloworld.o' failed
+11:05:40 **** Auto Build of configuration Debug for project yolo_yolo_ps ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.cpp
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -I/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_yolo_fp_prj_2019_64/yolo_yolo_fp_prj_2019_64.sdk/include -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../yolo_yolo_ps_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.cpp"
+In file included from ../src/helloworld.cpp:52:
+../../yolo_yolo_ps_bsp/ps7_cortexa9_0/include/xtime_l.h:87:70: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+                                                                      ^
+../src/helloworld.cpp: In function 'void initPeripherals()':
+../src/helloworld.cpp:73:2: error: 'yolo_conv_top_cfg' was not declared in this scope
+  yolo_conv_top_cfg = XYolo_conv_top_LookupConfig(XPAR_YOLO_CONV_TOP_0_DEVICE_ID);
+  ^~~~~~~~~~~~~~~~~
+../src/helloworld.cpp:73:2: note: suggested alternative: 'yolo_yolo_top_cfg'
+  yolo_conv_top_cfg = XYolo_conv_top_LookupConfig(XPAR_YOLO_CONV_TOP_0_DEVICE_ID);
+  ^~~~~~~~~~~~~~~~~
+  yolo_yolo_top_cfg
+../src/helloworld.cpp:73:50: error: 'XPAR_YOLO_CONV_TOP_0_DEVICE_ID' was not declared in this scope
+  yolo_conv_top_cfg = XYolo_conv_top_LookupConfig(XPAR_YOLO_CONV_TOP_0_DEVICE_ID);
+                                                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/helloworld.cpp:73:50: note: suggested alternative: 'XPAR_YOLO_YOLO_TOP_0_DEVICE_ID'
+  yolo_conv_top_cfg = XYolo_conv_top_LookupConfig(XPAR_YOLO_CONV_TOP_0_DEVICE_ID);
+                                                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                                                  XPAR_YOLO_YOLO_TOP_0_DEVICE_ID
+../src/helloworld.cpp:73:22: error: 'XYolo_conv_top_LookupConfig' was not declared in this scope
+  yolo_conv_top_cfg = XYolo_conv_top_LookupConfig(XPAR_YOLO_CONV_TOP_0_DEVICE_ID);
+                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/helloworld.cpp:73:22: note: suggested alternative: 'XYolo_yolo_top_LookupConfig'
+  yolo_conv_top_cfg = XYolo_conv_top_LookupConfig(XPAR_YOLO_CONV_TOP_0_DEVICE_ID);
+                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+                      XYolo_yolo_top_LookupConfig
+../src/helloworld.cpp:76:46: error: 'yolo_conv_top' was not declared in this scope
+   int status = XYolo_conv_top_CfgInitialize(&yolo_conv_top,yolo_conv_top_cfg);
+                                              ^~~~~~~~~~~~~
+../src/helloworld.cpp:76:46: note: suggested alternative: 'yolo_yolo_top'
+   int status = XYolo_conv_top_CfgInitialize(&yolo_conv_top,yolo_conv_top_cfg);
+                                              ^~~~~~~~~~~~~
+                                              yolo_yolo_top
+../src/helloworld.cpp:76:16: error: 'XYolo_conv_top_CfgInitialize' was not declared in this scope
+   int status = XYolo_conv_top_CfgInitialize(&yolo_conv_top,yolo_conv_top_cfg);
+                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/helloworld.cpp:76:16: note: suggested alternative: 'XYolo_yolo_top_CfgInitialize'
+   int status = XYolo_conv_top_CfgInitialize(&yolo_conv_top,yolo_conv_top_cfg);
+                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                XYolo_yolo_top_CfgInitialize
+../src/helloworld.cpp: At global scope:
+../src/helloworld.cpp:97:24: error: 'OUTPUT_WIDTH' was not declared in this scope
+ short layer_output_hls[OUTPUT_WIDTH*OUTPUT_HEIGHT*OUTPUT_CHANNEL];
+                        ^~~~~~~~~~~~
+../src/helloworld.cpp:97:24: note: suggested alternative: 'YOLO_INPUT_WIDTH'
+ short layer_output_hls[OUTPUT_WIDTH*OUTPUT_HEIGHT*OUTPUT_CHANNEL];
+                        ^~~~~~~~~~~~
+                        YOLO_INPUT_WIDTH
+../src/helloworld.cpp:97:37: error: 'OUTPUT_HEIGHT' was not declared in this scope
+ short layer_output_hls[OUTPUT_WIDTH*OUTPUT_HEIGHT*OUTPUT_CHANNEL];
+                                     ^~~~~~~~~~~~~
+../src/helloworld.cpp:97:37: note: suggested alternative: 'YOLO_INPUT_HEIGHT'
+ short layer_output_hls[OUTPUT_WIDTH*OUTPUT_HEIGHT*OUTPUT_CHANNEL];
+                                     ^~~~~~~~~~~~~
+                                     YOLO_INPUT_HEIGHT
+../src/helloworld.cpp:97:51: error: 'OUTPUT_CHANNEL' was not declared in this scope
+ short layer_output_hls[OUTPUT_WIDTH*OUTPUT_HEIGHT*OUTPUT_CHANNEL];
+                                                   ^~~~~~~~~~~~~~
+../src/helloworld.cpp: In function 'int main()':
+../src/helloworld.cpp:110:37: error: 'yolo_conv_top' was not declared in this scope
+     XYolo_conv_top_Set_output_ch_V(&yolo_conv_top,OUTPUT_CHANNEL);
+                                     ^~~~~~~~~~~~~
+../src/helloworld.cpp:110:37: note: suggested alternative: 'yolo_yolo_top'
+     XYolo_conv_top_Set_output_ch_V(&yolo_conv_top,OUTPUT_CHANNEL);
+                                     ^~~~~~~~~~~~~
+                                     yolo_yolo_top
+../src/helloworld.cpp:110:51: error: 'OUTPUT_CHANNEL' was not declared in this scope
+     XYolo_conv_top_Set_output_ch_V(&yolo_conv_top,OUTPUT_CHANNEL);
+                                                   ^~~~~~~~~~~~~~
+../src/helloworld.cpp:110:5: error: 'XYolo_conv_top_Set_output_ch_V' was not declared in this scope
+     XYolo_conv_top_Set_output_ch_V(&yolo_conv_top,OUTPUT_CHANNEL);
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/helloworld.cpp:110:5: note: suggested alternative: 'XYolo_yolo_top_Set_input_h_V'
+     XYolo_conv_top_Set_output_ch_V(&yolo_conv_top,OUTPUT_CHANNEL);
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     XYolo_yolo_top_Set_input_h_V
+../src/helloworld.cpp:111:50: error: 'INPUT_CHANNEL' was not declared in this scope
+     XYolo_conv_top_Set_input_ch_V(&yolo_conv_top,INPUT_CHANNEL);
+                                                  ^~~~~~~~~~~~~
+../src/helloworld.cpp:111:5: error: 'XYolo_conv_top_Set_input_ch_V' was not declared in this scope
+     XYolo_conv_top_Set_input_ch_V(&yolo_conv_top,INPUT_CHANNEL);
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/helloworld.cpp:111:5: note: suggested alternative: 'XYolo_yolo_top_Set_input_h_V'
+     XYolo_conv_top_Set_input_ch_V(&yolo_conv_top,INPUT_CHANNEL);
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     XYolo_yolo_top_Set_input_h_V
+../src/helloworld.cpp:112:5: error: 'XYolo_conv_top_Set_fold_output_ch_V' was not declared in this scope
+     XYolo_conv_top_Set_fold_output_ch_V(&yolo_conv_top,OUTPUT_CHANNEL/4);
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/helloworld.cpp:112:5: note: suggested alternative: 'XYolo_yolo_top_Set_input_h_V'
+     XYolo_conv_top_Set_fold_output_ch_V(&yolo_conv_top,OUTPUT_CHANNEL/4);
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     XYolo_yolo_top_Set_input_h_V
+../src/helloworld.cpp:113:5: error: 'XYolo_conv_top_Set_fold_input_ch_V' was not declared in this scope
+     XYolo_conv_top_Set_fold_input_ch_V(&yolo_conv_top,(INPUT_CHANNEL+3)/4);
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/helloworld.cpp:113:5: note: suggested alternative: 'XYolo_yolo_top_Set_input_h_V'
+     XYolo_conv_top_Set_fold_input_ch_V(&yolo_conv_top,(INPUT_CHANNEL+3)/4);
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     XYolo_yolo_top_Set_input_h_V
+../src/helloworld.cpp:114:52: error: 'KERNEL_DIM' was not declared in this scope
+     XYolo_conv_top_Set_kernel_dim_V(&yolo_conv_top,KERNEL_DIM);
+                                                    ^~~~~~~~~~
+../src/helloworld.cpp:114:52: note: suggested alternative: 'MAX_KERNEL_NUM'
+     XYolo_conv_top_Set_kernel_dim_V(&yolo_conv_top,KERNEL_DIM);
+                                                    ^~~~~~~~~~
+                                                    MAX_KERNEL_NUM
+../src/helloworld.cpp:114:5: error: 'XYolo_conv_top_Set_kernel_dim_V' was not declared in this scope
+     XYolo_conv_top_Set_kernel_dim_V(&yolo_conv_top,KERNEL_DIM);
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/helloworld.cpp:114:5: note: suggested alternative: 'XYolo_yolo_top_Set_input_w_V'
+     XYolo_conv_top_Set_kernel_dim_V(&yolo_conv_top,KERNEL_DIM);
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     XYolo_yolo_top_Set_input_w_V
+../src/helloworld.cpp:115:49: error: 'INPUT_HEIGHT' was not declared in this scope
+     XYolo_conv_top_Set_input_h_V(&yolo_conv_top,INPUT_HEIGHT);
+                                                 ^~~~~~~~~~~~
+../src/helloworld.cpp:115:49: note: suggested alternative: 'YOLO_INPUT_HEIGHT'
+     XYolo_conv_top_Set_input_h_V(&yolo_conv_top,INPUT_HEIGHT);
+                                                 ^~~~~~~~~~~~
+                                                 YOLO_INPUT_HEIGHT
+../src/helloworld.cpp:115:5: error: 'XYolo_conv_top_Set_input_h_V' was not declared in this scope
+     XYolo_conv_top_Set_input_h_V(&yolo_conv_top,INPUT_HEIGHT);
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/helloworld.cpp:115:5: note: suggested alternative: 'XYolo_yolo_top_Set_input_h_V'
+     XYolo_conv_top_Set_input_h_V(&yolo_conv_top,INPUT_HEIGHT);
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     XYolo_yolo_top_Set_input_h_V
+../src/helloworld.cpp:116:49: error: 'INPUT_WIDTH' was not declared in this scope
+     XYolo_conv_top_Set_input_w_V(&yolo_conv_top,INPUT_WIDTH);
+                                                 ^~~~~~~~~~~
+../src/helloworld.cpp:116:49: note: suggested alternative: 'YOLO_INPUT_WIDTH'
+     XYolo_conv_top_Set_input_w_V(&yolo_conv_top,INPUT_WIDTH);
+                                                 ^~~~~~~~~~~
+                                                 YOLO_INPUT_WIDTH
+../src/helloworld.cpp:116:5: error: 'XYolo_conv_top_Set_input_w_V' was not declared in this scope
+     XYolo_conv_top_Set_input_w_V(&yolo_conv_top,INPUT_WIDTH);
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/helloworld.cpp:116:5: note: suggested alternative: 'XYolo_yolo_top_Set_input_w_V'
+     XYolo_conv_top_Set_input_w_V(&yolo_conv_top,INPUT_WIDTH);
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     XYolo_yolo_top_Set_input_w_V
+../src/helloworld.cpp:117:54: error: 'REAL_INPUT_HEIGHT' was not declared in this scope
+     XYolo_conv_top_Set_real_input_h_V(&yolo_conv_top,REAL_INPUT_HEIGHT);
+                                                      ^~~~~~~~~~~~~~~~~
+../src/helloworld.cpp:117:54: note: suggested alternative: 'YOLO_INPUT_HEIGHT'
+     XYolo_conv_top_Set_real_input_h_V(&yolo_conv_top,REAL_INPUT_HEIGHT);
+                                                      ^~~~~~~~~~~~~~~~~
+                                                      YOLO_INPUT_HEIGHT
+../src/helloworld.cpp:117:5: error: 'XYolo_conv_top_Set_real_input_h_V' was not declared in this scope
+     XYolo_conv_top_Set_real_input_h_V(&yolo_conv_top,REAL_INPUT_HEIGHT);
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/helloworld.cpp:117:5: note: suggested alternative: 'XYolo_yolo_top_Set_input_h_V'
+     XYolo_conv_top_Set_real_input_h_V(&yolo_conv_top,REAL_INPUT_HEIGHT);
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     XYolo_yolo_top_Set_input_h_V
+../src/helloworld.cpp:118:47: error: 'LEAKY' was not declared in this scope
+     XYolo_conv_top_Set_leaky_V(&yolo_conv_top,LEAKY);
+                                               ^~~~~
+../src/helloworld.cpp:118:5: error: 'XYolo_conv_top_Set_leaky_V' was not declared in this scope
+     XYolo_conv_top_Set_leaky_V(&yolo_conv_top,LEAKY);
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/helloworld.cpp:118:5: note: suggested alternative: 'XYolo_yolo_top_Set_input_w_V'
+     XYolo_conv_top_Set_leaky_V(&yolo_conv_top,LEAKY);
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~
+     XYolo_yolo_top_Set_input_w_V
+../src/helloworld.cpp:119:5: error: 'XYolo_conv_top_Set_fold_win_area_V' was not declared in this scope
+     XYolo_conv_top_Set_fold_win_area_V(&yolo_conv_top,(KERNEL_DIM*KERNEL_DIM+3)/4);
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/helloworld.cpp:119:5: note: suggested alternative: 'XYolo_yolo_top_Set_input_w_V'
+     XYolo_conv_top_Set_fold_win_area_V(&yolo_conv_top,(KERNEL_DIM*KERNEL_DIM+3)/4);
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     XYolo_yolo_top_Set_input_w_V
+../src/helloworld.cpp:121:5: error: 'XYolo_conv_top_Start' was not declared in this scope
+     XYolo_conv_top_Start(&yolo_conv_top);
+     ^~~~~~~~~~~~~~~~~~~~
+../src/helloworld.cpp:121:5: note: suggested alternative: 'XYolo_yolo_top_Start'
+     XYolo_conv_top_Start(&yolo_conv_top);
+     ^~~~~~~~~~~~~~~~~~~~
+     XYolo_yolo_top_Start
+../src/helloworld.cpp:123:31: error: 'kernel_weight_fp_bits_pad' was not declared in this scope
+     Xil_DCacheFlushRange((u32)kernel_weight_fp_bits_pad,(KERNEL_DIM*KERNEL_DIM+3)*INPUT_CHANNEL*OUTPUT_CHANNEL*sizeof(short));
+                               ^~~~~~~~~~~~~~~~~~~~~~~~~
+../src/helloworld.cpp:126:31: error: 'kernel_bias_fp_bits_pad' was not declared in this scope
+     Xil_DCacheFlushRange((u32)kernel_bias_fp_bits_pad,OUTPUT_CHANNEL*sizeof(short));
+                               ^~~~~~~~~~~~~~~~~~~~~~~
+../src/helloworld.cpp:130:31: error: 'layer_input' was not declared in this scope
+     Xil_DCacheFlushRange((u32)layer_input,(INPUT_WIDTH-2*PAD)*(INPUT_HEIGHT-2*PAD)*4*sizeof(short));
+                               ^~~~~~~~~~~
+../src/helloworld.cpp:130:58: error: 'PAD' was not declared in this scope
+     Xil_DCacheFlushRange((u32)layer_input,(INPUT_WIDTH-2*PAD)*(INPUT_HEIGHT-2*PAD)*4*sizeof(short));
+                                                          ^~~
+../src/helloworld.cpp:131:31: error: 'layer_output_hls' was not declared in this scope
+     Xil_DCacheFlushRange((u32)layer_output_hls,OUTPUT_WIDTH*OUTPUT_HEIGHT*OUTPUT_CHANNEL*sizeof(short));
+                               ^~~~~~~~~~~~~~~~
+../src/helloworld.cpp:131:31: note: suggested alternative: 'layer_input_reduce'
+     Xil_DCacheFlushRange((u32)layer_output_hls,OUTPUT_WIDTH*OUTPUT_HEIGHT*OUTPUT_CHANNEL*sizeof(short));
+                               ^~~~~~~~~~~~~~~~
+                               layer_input_reduce
+../src/helloworld.cpp:131:48: error: 'OUTPUT_WIDTH' was not declared in this scope
+     Xil_DCacheFlushRange((u32)layer_output_hls,OUTPUT_WIDTH*OUTPUT_HEIGHT*OUTPUT_CHANNEL*sizeof(short));
+                                                ^~~~~~~~~~~~
+../src/helloworld.cpp:131:48: note: suggested alternative: 'YOLO_INPUT_WIDTH'
+     Xil_DCacheFlushRange((u32)layer_output_hls,OUTPUT_WIDTH*OUTPUT_HEIGHT*OUTPUT_CHANNEL*sizeof(short));
+                                                ^~~~~~~~~~~~
+                                                YOLO_INPUT_WIDTH
+../src/helloworld.cpp:131:61: error: 'OUTPUT_HEIGHT' was not declared in this scope
+     Xil_DCacheFlushRange((u32)layer_output_hls,OUTPUT_WIDTH*OUTPUT_HEIGHT*OUTPUT_CHANNEL*sizeof(short));
+                                                             ^~~~~~~~~~~~~
+../src/helloworld.cpp:131:61: note: suggested alternative: 'YOLO_INPUT_HEIGHT'
+     Xil_DCacheFlushRange((u32)layer_output_hls,OUTPUT_WIDTH*OUTPUT_HEIGHT*OUTPUT_CHANNEL*sizeof(short));
+                                                             ^~~~~~~~~~~~~
+                                                             YOLO_INPUT_HEIGHT
+../src/helloworld.cpp:142:9: error: 'XYolo_conv_top_IsDone' was not declared in this scope
+  while(!XYolo_conv_top_IsDone(&yolo_conv_top));
+         ^~~~~~~~~~~~~~~~~~~~~
+../src/helloworld.cpp:142:9: note: suggested alternative: 'XYolo_yolo_top_IsDone'
+  while(!XYolo_conv_top_IsDone(&yolo_conv_top));
+         ^~~~~~~~~~~~~~~~~~~~~
+         XYolo_yolo_top_IsDone
+../src/helloworld.cpp:151:15: error: 'layer_output_sdk' was not declared in this scope
+   short ref = layer_output_sdk[idx];
+               ^~~~~~~~~~~~~~~~
+../src/helloworld.cpp:151:15: note: suggested alternative: 'layer_output_sdk_reduce'
+   short ref = layer_output_sdk[idx];
+               ^~~~~~~~~~~~~~~~
+               layer_output_sdk_reduce
+src/subdir.mk:21: recipe for target 'src/helloworld.o' failed
+make: *** [src/helloworld.o] Error 1
+11:06:32 **** Auto Build of configuration Debug for project yolo_yolo_ps ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.cpp
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -I/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_yolo_fp_prj_2019_64/yolo_yolo_fp_prj_2019_64.sdk/include -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../yolo_yolo_ps_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.cpp"
+In file included from ../src/helloworld.cpp:52:
+../../yolo_yolo_ps_bsp/ps7_cortexa9_0/include/xtime_l.h:87:70: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+                                                                      ^
+../src/helloworld.cpp: In function 'void initPeripherals()':
+../src/helloworld.cpp:74:5: error: 'yolo_conv_top_cfg' was not declared in this scope
+  if(yolo_conv_top_cfg)
+     ^~~~~~~~~~~~~~~~~
+../src/helloworld.cpp:74:5: note: suggested alternative: 'yolo_yolo_top_cfg'
+  if(yolo_conv_top_cfg)
+     ^~~~~~~~~~~~~~~~~
+     yolo_yolo_top_cfg
+../src/helloworld.cpp:76:46: error: 'yolo_conv_top' was not declared in this scope
+   int status = XYolo_conv_top_CfgInitialize(&yolo_conv_top,yolo_conv_top_cfg);
+                                              ^~~~~~~~~~~~~
+../src/helloworld.cpp:76:46: note: suggested alternative: 'yolo_yolo_top'
+   int status = XYolo_conv_top_CfgInitialize(&yolo_conv_top,yolo_conv_top_cfg);
+                                              ^~~~~~~~~~~~~
+                                              yolo_yolo_top
+../src/helloworld.cpp:76:16: error: 'XYolo_conv_top_CfgInitialize' was not declared in this scope
+   int status = XYolo_conv_top_CfgInitialize(&yolo_conv_top,yolo_conv_top_cfg);
+                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/helloworld.cpp:76:16: note: suggested alternative: 'XYolo_yolo_top_CfgInitialize'
+   int status = XYolo_conv_top_CfgInitialize(&yolo_conv_top,yolo_conv_top_cfg);
+                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                XYolo_yolo_top_CfgInitialize
+../src/helloworld.cpp: At global scope:
+../src/helloworld.cpp:97:24: error: 'OUTPUT_WIDTH' was not declared in this scope
+ short layer_output_hls[OUTPUT_WIDTH*OUTPUT_HEIGHT*OUTPUT_CHANNEL];
+                        ^~~~~~~~~~~~
+../src/helloworld.cpp:97:24: note: suggested alternative: 'YOLO_INPUT_WIDTH'
+ short layer_output_hls[OUTPUT_WIDTH*OUTPUT_HEIGHT*OUTPUT_CHANNEL];
+                        ^~~~~~~~~~~~
+                        YOLO_INPUT_WIDTH
+../src/helloworld.cpp:97:37: error: 'OUTPUT_HEIGHT' was not declared in this scope
+ short layer_output_hls[OUTPUT_WIDTH*OUTPUT_HEIGHT*OUTPUT_CHANNEL];
+                                     ^~~~~~~~~~~~~
+../src/helloworld.cpp:97:37: note: suggested alternative: 'YOLO_INPUT_HEIGHT'
+ short layer_output_hls[OUTPUT_WIDTH*OUTPUT_HEIGHT*OUTPUT_CHANNEL];
+                                     ^~~~~~~~~~~~~
+                                     YOLO_INPUT_HEIGHT
+../src/helloworld.cpp:97:51: error: 'OUTPUT_CHANNEL' was not declared in this scope
+ short layer_output_hls[OUTPUT_WIDTH*OUTPUT_HEIGHT*OUTPUT_CHANNEL];
+                                                   ^~~~~~~~~~~~~~
+../src/helloworld.cpp: In function 'int main()':
+../src/helloworld.cpp:110:37: error: 'yolo_conv_top' was not declared in this scope
+     XYolo_conv_top_Set_output_ch_V(&yolo_conv_top,OUTPUT_CHANNEL);
+                                     ^~~~~~~~~~~~~
+../src/helloworld.cpp:110:37: note: suggested alternative: 'yolo_yolo_top'
+     XYolo_conv_top_Set_output_ch_V(&yolo_conv_top,OUTPUT_CHANNEL);
+                                     ^~~~~~~~~~~~~
+                                     yolo_yolo_top
+../src/helloworld.cpp:110:51: error: 'OUTPUT_CHANNEL' was not declared in this scope
+     XYolo_conv_top_Set_output_ch_V(&yolo_conv_top,OUTPUT_CHANNEL);
+                                                   ^~~~~~~~~~~~~~
+../src/helloworld.cpp:110:5: error: 'XYolo_conv_top_Set_output_ch_V' was not declared in this scope
+     XYolo_conv_top_Set_output_ch_V(&yolo_conv_top,OUTPUT_CHANNEL);
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/helloworld.cpp:110:5: note: suggested alternative: 'XYolo_yolo_top_Set_input_h_V'
+     XYolo_conv_top_Set_output_ch_V(&yolo_conv_top,OUTPUT_CHANNEL);
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     XYolo_yolo_top_Set_input_h_V
+../src/helloworld.cpp:111:50: error: 'INPUT_CHANNEL' was not declared in this scope
+     XYolo_conv_top_Set_input_ch_V(&yolo_conv_top,INPUT_CHANNEL);
+                                                  ^~~~~~~~~~~~~
+../src/helloworld.cpp:111:5: error: 'XYolo_conv_top_Set_input_ch_V' was not declared in this scope
+     XYolo_conv_top_Set_input_ch_V(&yolo_conv_top,INPUT_CHANNEL);
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/helloworld.cpp:111:5: note: suggested alternative: 'XYolo_yolo_top_Set_input_h_V'
+     XYolo_conv_top_Set_input_ch_V(&yolo_conv_top,INPUT_CHANNEL);
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     XYolo_yolo_top_Set_input_h_V
+../src/helloworld.cpp:112:5: error: 'XYolo_conv_top_Set_fold_output_ch_V' was not declared in this scope
+     XYolo_conv_top_Set_fold_output_ch_V(&yolo_conv_top,OUTPUT_CHANNEL/4);
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/helloworld.cpp:112:5: note: suggested alternative: 'XYolo_yolo_top_Set_input_h_V'
+     XYolo_conv_top_Set_fold_output_ch_V(&yolo_conv_top,OUTPUT_CHANNEL/4);
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     XYolo_yolo_top_Set_input_h_V
+../src/helloworld.cpp:113:5: error: 'XYolo_conv_top_Set_fold_input_ch_V' was not declared in this scope
+     XYolo_conv_top_Set_fold_input_ch_V(&yolo_conv_top,(INPUT_CHANNEL+3)/4);
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/helloworld.cpp:113:5: note: suggested alternative: 'XYolo_yolo_top_Set_input_h_V'
+     XYolo_conv_top_Set_fold_input_ch_V(&yolo_conv_top,(INPUT_CHANNEL+3)/4);
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     XYolo_yolo_top_Set_input_h_V
+../src/helloworld.cpp:114:52: error: 'KERNEL_DIM' was not declared in this scope
+     XYolo_conv_top_Set_kernel_dim_V(&yolo_conv_top,KERNEL_DIM);
+                                                    ^~~~~~~~~~
+../src/helloworld.cpp:114:52: note: suggested alternative: 'MAX_KERNEL_NUM'
+     XYolo_conv_top_Set_kernel_dim_V(&yolo_conv_top,KERNEL_DIM);
+                                                    ^~~~~~~~~~
+                                                    MAX_KERNEL_NUM
+../src/helloworld.cpp:114:5: error: 'XYolo_conv_top_Set_kernel_dim_V' was not declared in this scope
+     XYolo_conv_top_Set_kernel_dim_V(&yolo_conv_top,KERNEL_DIM);
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/helloworld.cpp:114:5: note: suggested alternative: 'XYolo_yolo_top_Set_input_w_V'
+     XYolo_conv_top_Set_kernel_dim_V(&yolo_conv_top,KERNEL_DIM);
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     XYolo_yolo_top_Set_input_w_V
+../src/helloworld.cpp:115:49: error: 'INPUT_HEIGHT' was not declared in this scope
+     XYolo_conv_top_Set_input_h_V(&yolo_conv_top,INPUT_HEIGHT);
+                                                 ^~~~~~~~~~~~
+../src/helloworld.cpp:115:49: note: suggested alternative: 'YOLO_INPUT_HEIGHT'
+     XYolo_conv_top_Set_input_h_V(&yolo_conv_top,INPUT_HEIGHT);
+                                                 ^~~~~~~~~~~~
+                                                 YOLO_INPUT_HEIGHT
+../src/helloworld.cpp:115:5: error: 'XYolo_conv_top_Set_input_h_V' was not declared in this scope
+     XYolo_conv_top_Set_input_h_V(&yolo_conv_top,INPUT_HEIGHT);
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/helloworld.cpp:115:5: note: suggested alternative: 'XYolo_yolo_top_Set_input_h_V'
+     XYolo_conv_top_Set_input_h_V(&yolo_conv_top,INPUT_HEIGHT);
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     XYolo_yolo_top_Set_input_h_V
+../src/helloworld.cpp:116:49: error: 'INPUT_WIDTH' was not declared in this scope
+     XYolo_conv_top_Set_input_w_V(&yolo_conv_top,INPUT_WIDTH);
+                                                 ^~~~~~~~~~~
+../src/helloworld.cpp:116:49: note: suggested alternative: 'YOLO_INPUT_WIDTH'
+     XYolo_conv_top_Set_input_w_V(&yolo_conv_top,INPUT_WIDTH);
+                                                 ^~~~~~~~~~~
+                                                 YOLO_INPUT_WIDTH
+../src/helloworld.cpp:116:5: error: 'XYolo_conv_top_Set_input_w_V' was not declared in this scope
+     XYolo_conv_top_Set_input_w_V(&yolo_conv_top,INPUT_WIDTH);
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/helloworld.cpp:116:5: note: suggested alternative: 'XYolo_yolo_top_Set_input_w_V'
+     XYolo_conv_top_Set_input_w_V(&yolo_conv_top,INPUT_WIDTH);
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     XYolo_yolo_top_Set_input_w_V
+../src/helloworld.cpp:117:54: error: 'REAL_INPUT_HEIGHT' was not declared in this scope
+     XYolo_conv_top_Set_real_input_h_V(&yolo_conv_top,REAL_INPUT_HEIGHT);
+                                                      ^~~~~~~~~~~~~~~~~
+../src/helloworld.cpp:117:54: note: suggested alternative: 'YOLO_INPUT_HEIGHT'
+     XYolo_conv_top_Set_real_input_h_V(&yolo_conv_top,REAL_INPUT_HEIGHT);
+                                                      ^~~~~~~~~~~~~~~~~
+                                                      YOLO_INPUT_HEIGHT
+../src/helloworld.cpp:117:5: error: 'XYolo_conv_top_Set_real_input_h_V' was not declared in this scope
+     XYolo_conv_top_Set_real_input_h_V(&yolo_conv_top,REAL_INPUT_HEIGHT);
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/helloworld.cpp:117:5: note: suggested alternative: 'XYolo_yolo_top_Set_input_h_V'
+     XYolo_conv_top_Set_real_input_h_V(&yolo_conv_top,REAL_INPUT_HEIGHT);
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     XYolo_yolo_top_Set_input_h_V
+../src/helloworld.cpp:118:47: error: 'LEAKY' was not declared in this scope
+     XYolo_conv_top_Set_leaky_V(&yolo_conv_top,LEAKY);
+                                               ^~~~~
+../src/helloworld.cpp:118:5: error: 'XYolo_conv_top_Set_leaky_V' was not declared in this scope
+     XYolo_conv_top_Set_leaky_V(&yolo_conv_top,LEAKY);
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/helloworld.cpp:118:5: note: suggested alternative: 'XYolo_yolo_top_Set_input_w_V'
+     XYolo_conv_top_Set_leaky_V(&yolo_conv_top,LEAKY);
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~
+     XYolo_yolo_top_Set_input_w_V
+../src/helloworld.cpp:119:5: error: 'XYolo_conv_top_Set_fold_win_area_V' was not declared in this scope
+     XYolo_conv_top_Set_fold_win_area_V(&yolo_conv_top,(KERNEL_DIM*KERNEL_DIM+3)/4);
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/helloworld.cpp:119:5: note: suggested alternative: 'XYolo_yolo_top_Set_input_w_V'
+     XYolo_conv_top_Set_fold_win_area_V(&yolo_conv_top,(KERNEL_DIM*KERNEL_DIM+3)/4);
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     XYolo_yolo_top_Set_input_w_V
+../src/helloworld.cpp:121:5: error: 'XYolo_conv_top_Start' was not declared in this scope
+     XYolo_conv_top_Start(&yolo_conv_top);
+     ^~~~~~~~~~~~~~~~~~~~
+../src/helloworld.cpp:121:5: note: suggested alternative: 'XYolo_yolo_top_Start'
+     XYolo_conv_top_Start(&yolo_conv_top);
+     ^~~~~~~~~~~~~~~~~~~~
+     XYolo_yolo_top_Start
+../src/helloworld.cpp:123:31: error: 'kernel_weight_fp_bits_pad' was not declared in this scope
+     Xil_DCacheFlushRange((u32)kernel_weight_fp_bits_pad,(KERNEL_DIM*KERNEL_DIM+3)*INPUT_CHANNEL*OUTPUT_CHANNEL*sizeof(short));
+                               ^~~~~~~~~~~~~~~~~~~~~~~~~
+../src/helloworld.cpp:126:31: error: 'kernel_bias_fp_bits_pad' was not declared in this scope
+     Xil_DCacheFlushRange((u32)kernel_bias_fp_bits_pad,OUTPUT_CHANNEL*sizeof(short));
+                               ^~~~~~~~~~~~~~~~~~~~~~~
+../src/helloworld.cpp:130:31: error: 'layer_input' was not declared in this scope
+     Xil_DCacheFlushRange((u32)layer_input,(INPUT_WIDTH-2*PAD)*(INPUT_HEIGHT-2*PAD)*4*sizeof(short));
+                               ^~~~~~~~~~~
+../src/helloworld.cpp:130:58: error: 'PAD' was not declared in this scope
+     Xil_DCacheFlushRange((u32)layer_input,(INPUT_WIDTH-2*PAD)*(INPUT_HEIGHT-2*PAD)*4*sizeof(short));
+                                                          ^~~
+../src/helloworld.cpp:131:31: error: 'layer_output_hls' was not declared in this scope
+     Xil_DCacheFlushRange((u32)layer_output_hls,OUTPUT_WIDTH*OUTPUT_HEIGHT*OUTPUT_CHANNEL*sizeof(short));
+                               ^~~~~~~~~~~~~~~~
+../src/helloworld.cpp:131:31: note: suggested alternative: 'layer_input_reduce'
+     Xil_DCacheFlushRange((u32)layer_output_hls,OUTPUT_WIDTH*OUTPUT_HEIGHT*OUTPUT_CHANNEL*sizeof(short));
+                               ^~~~~~~~~~~~~~~~
+                               layer_input_reduce
+../src/helloworld.cpp:131:48: error: 'OUTPUT_WIDTH' was not declared in this scope
+     Xil_DCacheFlushRange((u32)layer_output_hls,OUTPUT_WIDTH*OUTPUT_HEIGHT*OUTPUT_CHANNEL*sizeof(short));
+                                                ^~~~~~~~~~~~
+../src/helloworld.cpp:131:48: note: suggested alternative: 'YOLO_INPUT_WIDTH'
+     Xil_DCacheFlushRange((u32)layer_output_hls,OUTPUT_WIDTH*OUTPUT_HEIGHT*OUTPUT_CHANNEL*sizeof(short));
+                                                ^~~~~~~~~~~~
+                                                YOLO_INPUT_WIDTH
+../src/helloworld.cpp:131:61: error: 'OUTPUT_HEIGHT' was not declared in this scope
+     Xil_DCacheFlushRange((u32)layer_output_hls,OUTPUT_WIDTH*OUTPUT_HEIGHT*OUTPUT_CHANNEL*sizeof(short));
+                                                             ^~~~~~~~~~~~~
+../src/helloworld.cpp:131:61: note: suggested alternative: 'YOLO_INPUT_HEIGHT'
+     Xil_DCacheFlushRange((u32)layer_output_hls,OUTPUT_WIDTH*OUTPUT_HEIGHT*OUTPUT_CHANNEL*sizeof(short));
+                                                             ^~~~~~~~~~~~~
+                                                             YOLO_INPUT_HEIGHT
+../src/helloworld.cpp:142:9: error: 'XYolo_conv_top_IsDone' was not declared in this scope
+  while(!XYolo_conv_top_IsDone(&yolo_conv_top));
+         ^~~~~~~~~~~~~~~~~~~~~
+../src/helloworld.cpp:142:9: note: suggested alternative: 'XYolo_yolo_top_IsDone'
+  while(!XYolo_conv_top_IsDone(&yolo_conv_top));
+         ^~~~~~~~~~~~~~~~~~~~~
+         XYolo_yolo_top_IsDone
+../src/helloworld.cpp:151:15: error: 'layer_output_sdk' was not declared in this scope
+   short ref = layer_output_sdk[idx];
+               ^~~~~~~~~~~~~~~~
+../src/helloworld.cpp:151:15: note: suggested alternative: 'layer_output_sdk_reduce'
+   short ref = layer_output_sdk[idx];
+               ^~~~~~~~~~~~~~~~
+               layer_output_sdk_reduce
+make: *** [src/helloworld.o] Error 1
+src/subdir.mk:21: recipe for target 'src/helloworld.o' failed
+11:06:58 **** Auto Build of configuration Debug for project yolo_yolo_ps ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.cpp
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -I/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_yolo_fp_prj_2019_64/yolo_yolo_fp_prj_2019_64.sdk/include -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../yolo_yolo_ps_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.cpp"
+In file included from ../src/helloworld.cpp:52:
+../../yolo_yolo_ps_bsp/ps7_cortexa9_0/include/xtime_l.h:87:70: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+                                                                      ^
+../src/helloworld.cpp:97:24: error: 'OUTPUT_WIDTH' was not declared in this scope
+ short layer_output_hls[OUTPUT_WIDTH*OUTPUT_HEIGHT*OUTPUT_CHANNEL];
+                        ^~~~~~~~~~~~
+../src/helloworld.cpp:97:24: note: suggested alternative: 'YOLO_INPUT_WIDTH'
+ short layer_output_hls[OUTPUT_WIDTH*OUTPUT_HEIGHT*OUTPUT_CHANNEL];
+                        ^~~~~~~~~~~~
+                        YOLO_INPUT_WIDTH
+../src/helloworld.cpp:97:37: error: 'OUTPUT_HEIGHT' was not declared in this scope
+ short layer_output_hls[OUTPUT_WIDTH*OUTPUT_HEIGHT*OUTPUT_CHANNEL];
+                                     ^~~~~~~~~~~~~
+../src/helloworld.cpp:97:37: note: suggested alternative: 'YOLO_INPUT_HEIGHT'
+ short layer_output_hls[OUTPUT_WIDTH*OUTPUT_HEIGHT*OUTPUT_CHANNEL];
+                                     ^~~~~~~~~~~~~
+                                     YOLO_INPUT_HEIGHT
+../src/helloworld.cpp:97:51: error: 'OUTPUT_CHANNEL' was not declared in this scope
+ short layer_output_hls[OUTPUT_WIDTH*OUTPUT_HEIGHT*OUTPUT_CHANNEL];
+                                                   ^~~~~~~~~~~~~~
+../src/helloworld.cpp: In function 'int main()':
+../src/helloworld.cpp:110:37: error: 'yolo_conv_top' was not declared in this scope
+     XYolo_conv_top_Set_output_ch_V(&yolo_conv_top,OUTPUT_CHANNEL);
+                                     ^~~~~~~~~~~~~
+../src/helloworld.cpp:110:37: note: suggested alternative: 'yolo_yolo_top'
+     XYolo_conv_top_Set_output_ch_V(&yolo_conv_top,OUTPUT_CHANNEL);
+                                     ^~~~~~~~~~~~~
+                                     yolo_yolo_top
+../src/helloworld.cpp:110:51: error: 'OUTPUT_CHANNEL' was not declared in this scope
+     XYolo_conv_top_Set_output_ch_V(&yolo_conv_top,OUTPUT_CHANNEL);
+                                                   ^~~~~~~~~~~~~~
+../src/helloworld.cpp:110:5: error: 'XYolo_conv_top_Set_output_ch_V' was not declared in this scope
+     XYolo_conv_top_Set_output_ch_V(&yolo_conv_top,OUTPUT_CHANNEL);
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/helloworld.cpp:110:5: note: suggested alternative: 'XYolo_yolo_top_Set_input_h_V'
+     XYolo_conv_top_Set_output_ch_V(&yolo_conv_top,OUTPUT_CHANNEL);
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     XYolo_yolo_top_Set_input_h_V
+../src/helloworld.cpp:111:50: error: 'INPUT_CHANNEL' was not declared in this scope
+     XYolo_conv_top_Set_input_ch_V(&yolo_conv_top,INPUT_CHANNEL);
+                                                  ^~~~~~~~~~~~~
+../src/helloworld.cpp:111:5: error: 'XYolo_conv_top_Set_input_ch_V' was not declared in this scope
+     XYolo_conv_top_Set_input_ch_V(&yolo_conv_top,INPUT_CHANNEL);
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/helloworld.cpp:111:5: note: suggested alternative: 'XYolo_yolo_top_Set_input_h_V'
+     XYolo_conv_top_Set_input_ch_V(&yolo_conv_top,INPUT_CHANNEL);
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     XYolo_yolo_top_Set_input_h_V
+../src/helloworld.cpp:112:5: error: 'XYolo_conv_top_Set_fold_output_ch_V' was not declared in this scope
+     XYolo_conv_top_Set_fold_output_ch_V(&yolo_conv_top,OUTPUT_CHANNEL/4);
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/helloworld.cpp:112:5: note: suggested alternative: 'XYolo_yolo_top_Set_input_h_V'
+     XYolo_conv_top_Set_fold_output_ch_V(&yolo_conv_top,OUTPUT_CHANNEL/4);
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     XYolo_yolo_top_Set_input_h_V
+../src/helloworld.cpp:113:5: error: 'XYolo_conv_top_Set_fold_input_ch_V' was not declared in this scope
+     XYolo_conv_top_Set_fold_input_ch_V(&yolo_conv_top,(INPUT_CHANNEL+3)/4);
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/helloworld.cpp:113:5: note: suggested alternative: 'XYolo_yolo_top_Set_input_h_V'
+     XYolo_conv_top_Set_fold_input_ch_V(&yolo_conv_top,(INPUT_CHANNEL+3)/4);
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     XYolo_yolo_top_Set_input_h_V
+../src/helloworld.cpp:114:52: error: 'KERNEL_DIM' was not declared in this scope
+     XYolo_conv_top_Set_kernel_dim_V(&yolo_conv_top,KERNEL_DIM);
+                                                    ^~~~~~~~~~
+../src/helloworld.cpp:114:52: note: suggested alternative: 'MAX_KERNEL_NUM'
+     XYolo_conv_top_Set_kernel_dim_V(&yolo_conv_top,KERNEL_DIM);
+                                                    ^~~~~~~~~~
+                                                    MAX_KERNEL_NUM
+../src/helloworld.cpp:114:5: error: 'XYolo_conv_top_Set_kernel_dim_V' was not declared in this scope
+     XYolo_conv_top_Set_kernel_dim_V(&yolo_conv_top,KERNEL_DIM);
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/helloworld.cpp:114:5: note: suggested alternative: 'XYolo_yolo_top_Set_input_w_V'
+     XYolo_conv_top_Set_kernel_dim_V(&yolo_conv_top,KERNEL_DIM);
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     XYolo_yolo_top_Set_input_w_V
+../src/helloworld.cpp:115:49: error: 'INPUT_HEIGHT' was not declared in this scope
+     XYolo_conv_top_Set_input_h_V(&yolo_conv_top,INPUT_HEIGHT);
+                                                 ^~~~~~~~~~~~
+../src/helloworld.cpp:115:49: note: suggested alternative: 'YOLO_INPUT_HEIGHT'
+     XYolo_conv_top_Set_input_h_V(&yolo_conv_top,INPUT_HEIGHT);
+                                                 ^~~~~~~~~~~~
+                                                 YOLO_INPUT_HEIGHT
+../src/helloworld.cpp:115:5: error: 'XYolo_conv_top_Set_input_h_V' was not declared in this scope
+     XYolo_conv_top_Set_input_h_V(&yolo_conv_top,INPUT_HEIGHT);
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/helloworld.cpp:115:5: note: suggested alternative: 'XYolo_yolo_top_Set_input_h_V'
+     XYolo_conv_top_Set_input_h_V(&yolo_conv_top,INPUT_HEIGHT);
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     XYolo_yolo_top_Set_input_h_V
+../src/helloworld.cpp:116:49: error: 'INPUT_WIDTH' was not declared in this scope
+     XYolo_conv_top_Set_input_w_V(&yolo_conv_top,INPUT_WIDTH);
+                                                 ^~~~~~~~~~~
+../src/helloworld.cpp:116:49: note: suggested alternative: 'YOLO_INPUT_WIDTH'
+     XYolo_conv_top_Set_input_w_V(&yolo_conv_top,INPUT_WIDTH);
+                                                 ^~~~~~~~~~~
+                                                 YOLO_INPUT_WIDTH
+../src/helloworld.cpp:116:5: error: 'XYolo_conv_top_Set_input_w_V' was not declared in this scope
+     XYolo_conv_top_Set_input_w_V(&yolo_conv_top,INPUT_WIDTH);
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/helloworld.cpp:116:5: note: suggested alternative: 'XYolo_yolo_top_Set_input_w_V'
+     XYolo_conv_top_Set_input_w_V(&yolo_conv_top,INPUT_WIDTH);
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     XYolo_yolo_top_Set_input_w_V
+../src/helloworld.cpp:117:54: error: 'REAL_INPUT_HEIGHT' was not declared in this scope
+     XYolo_conv_top_Set_real_input_h_V(&yolo_conv_top,REAL_INPUT_HEIGHT);
+                                                      ^~~~~~~~~~~~~~~~~
+../src/helloworld.cpp:117:54: note: suggested alternative: 'YOLO_INPUT_HEIGHT'
+     XYolo_conv_top_Set_real_input_h_V(&yolo_conv_top,REAL_INPUT_HEIGHT);
+                                                      ^~~~~~~~~~~~~~~~~
+                                                      YOLO_INPUT_HEIGHT
+../src/helloworld.cpp:117:5: error: 'XYolo_conv_top_Set_real_input_h_V' was not declared in this scope
+     XYolo_conv_top_Set_real_input_h_V(&yolo_conv_top,REAL_INPUT_HEIGHT);
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/helloworld.cpp:117:5: note: suggested alternative: 'XYolo_yolo_top_Set_input_h_V'
+     XYolo_conv_top_Set_real_input_h_V(&yolo_conv_top,REAL_INPUT_HEIGHT);
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     XYolo_yolo_top_Set_input_h_V
+../src/helloworld.cpp:118:47: error: 'LEAKY' was not declared in this scope
+     XYolo_conv_top_Set_leaky_V(&yolo_conv_top,LEAKY);
+                                               ^~~~~
+../src/helloworld.cpp:118:5: error: 'XYolo_conv_top_Set_leaky_V' was not declared in this scope
+     XYolo_conv_top_Set_leaky_V(&yolo_conv_top,LEAKY);
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/helloworld.cpp:118:5: note: suggested alternative: 'XYolo_yolo_top_Set_input_w_V'
+     XYolo_conv_top_Set_leaky_V(&yolo_conv_top,LEAKY);
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~
+     XYolo_yolo_top_Set_input_w_V
+../src/helloworld.cpp:119:5: error: 'XYolo_conv_top_Set_fold_win_area_V' was not declared in this scope
+     XYolo_conv_top_Set_fold_win_area_V(&yolo_conv_top,(KERNEL_DIM*KERNEL_DIM+3)/4);
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/helloworld.cpp:119:5: note: suggested alternative: 'XYolo_yolo_top_Set_input_w_V'
+     XYolo_conv_top_Set_fold_win_area_V(&yolo_conv_top,(KERNEL_DIM*KERNEL_DIM+3)/4);
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     XYolo_yolo_top_Set_input_w_V
+../src/helloworld.cpp:121:5: error: 'XYolo_conv_top_Start' was not declared in this scope
+     XYolo_conv_top_Start(&yolo_conv_top);
+     ^~~~~~~~~~~~~~~~~~~~
+../src/helloworld.cpp:121:5: note: suggested alternative: 'XYolo_yolo_top_Start'
+     XYolo_conv_top_Start(&yolo_conv_top);
+     ^~~~~~~~~~~~~~~~~~~~
+     XYolo_yolo_top_Start
+../src/helloworld.cpp:123:31: error: 'kernel_weight_fp_bits_pad' was not declared in this scope
+     Xil_DCacheFlushRange((u32)kernel_weight_fp_bits_pad,(KERNEL_DIM*KERNEL_DIM+3)*INPUT_CHANNEL*OUTPUT_CHANNEL*sizeof(short));
+                               ^~~~~~~~~~~~~~~~~~~~~~~~~
+../src/helloworld.cpp:126:31: error: 'kernel_bias_fp_bits_pad' was not declared in this scope
+     Xil_DCacheFlushRange((u32)kernel_bias_fp_bits_pad,OUTPUT_CHANNEL*sizeof(short));
+                               ^~~~~~~~~~~~~~~~~~~~~~~
+../src/helloworld.cpp:130:31: error: 'layer_input' was not declared in this scope
+     Xil_DCacheFlushRange((u32)layer_input,(INPUT_WIDTH-2*PAD)*(INPUT_HEIGHT-2*PAD)*4*sizeof(short));
+                               ^~~~~~~~~~~
+../src/helloworld.cpp:130:58: error: 'PAD' was not declared in this scope
+     Xil_DCacheFlushRange((u32)layer_input,(INPUT_WIDTH-2*PAD)*(INPUT_HEIGHT-2*PAD)*4*sizeof(short));
+                                                          ^~~
+../src/helloworld.cpp:131:31: error: 'layer_output_hls' was not declared in this scope
+     Xil_DCacheFlushRange((u32)layer_output_hls,OUTPUT_WIDTH*OUTPUT_HEIGHT*OUTPUT_CHANNEL*sizeof(short));
+                               ^~~~~~~~~~~~~~~~
+../src/helloworld.cpp:131:31: note: suggested alternative: 'layer_input_reduce'
+     Xil_DCacheFlushRange((u32)layer_output_hls,OUTPUT_WIDTH*OUTPUT_HEIGHT*OUTPUT_CHANNEL*sizeof(short));
+                               ^~~~~~~~~~~~~~~~
+                               layer_input_reduce
+../src/helloworld.cpp:131:48: error: 'OUTPUT_WIDTH' was not declared in this scope
+     Xil_DCacheFlushRange((u32)layer_output_hls,OUTPUT_WIDTH*OUTPUT_HEIGHT*OUTPUT_CHANNEL*sizeof(short));
+                                                ^~~~~~~~~~~~
+../src/helloworld.cpp:131:48: note: suggested alternative: 'YOLO_INPUT_WIDTH'
+     Xil_DCacheFlushRange((u32)layer_output_hls,OUTPUT_WIDTH*OUTPUT_HEIGHT*OUTPUT_CHANNEL*sizeof(short));
+                                                ^~~~~~~~~~~~
+                                                YOLO_INPUT_WIDTH
+../src/helloworld.cpp:131:61: error: 'OUTPUT_HEIGHT' was not declared in this scope
+     Xil_DCacheFlushRange((u32)layer_output_hls,OUTPUT_WIDTH*OUTPUT_HEIGHT*OUTPUT_CHANNEL*sizeof(short));
+                                                             ^~~~~~~~~~~~~
+../src/helloworld.cpp:131:61: note: suggested alternative: 'YOLO_INPUT_HEIGHT'
+     Xil_DCacheFlushRange((u32)layer_output_hls,OUTPUT_WIDTH*OUTPUT_HEIGHT*OUTPUT_CHANNEL*sizeof(short));
+                                                             ^~~~~~~~~~~~~
+                                                             YOLO_INPUT_HEIGHT
+../src/helloworld.cpp:142:9: error: 'XYolo_conv_top_IsDone' was not declared in this scope
+  while(!XYolo_conv_top_IsDone(&yolo_conv_top));
+         ^~~~~~~~~~~~~~~~~~~~~
+../src/helloworld.cpp:142:9: note: suggested alternative: 'XYolo_yolo_top_IsDone'
+  while(!XYolo_conv_top_IsDone(&yolo_conv_top));
+         ^~~~~~~~~~~~~~~~~~~~~
+         XYolo_yolo_top_IsDone
+../src/helloworld.cpp:151:15: error: 'layer_output_sdk' was not declared in this scope
+src/subdir.mk:21: recipe for target 'src/helloworld.o' failed
+   short ref = layer_output_sdk[idx];
+               ^~~~~~~~~~~~~~~~
+../src/helloworld.cpp:151:15: note: suggested alternative: 'layer_output_sdk_reduce'
+   short ref = layer_output_sdk[idx];
+               ^~~~~~~~~~~~~~~~
+               layer_output_sdk_reduce
+make: *** [src/helloworld.o] Error 1
+11:07:25 **** Auto Build of configuration Debug for project yolo_yolo_ps ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.cpp
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -I/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_yolo_fp_prj_2019_64/yolo_yolo_fp_prj_2019_64.sdk/include -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../yolo_yolo_ps_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.cpp"
+In file included from ../src/helloworld.cpp:52:
+../../yolo_yolo_ps_bsp/ps7_cortexa9_0/include/xtime_l.h:87:70: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+                                                                      ^
+../src/helloworld.cpp: In function 'int main()':
+../src/helloworld.cpp:110:37: error: 'yolo_conv_top' was not declared in this scope
+     XYolo_conv_top_Set_output_ch_V(&yolo_conv_top,OUTPUT_CHANNEL);
+                                     ^~~~~~~~~~~~~
+../src/helloworld.cpp:110:37: note: suggested alternative: 'yolo_yolo_top'
+     XYolo_conv_top_Set_output_ch_V(&yolo_conv_top,OUTPUT_CHANNEL);
+                                     ^~~~~~~~~~~~~
+                                     yolo_yolo_top
+../src/helloworld.cpp:110:51: error: 'OUTPUT_CHANNEL' was not declared in this scope
+     XYolo_conv_top_Set_output_ch_V(&yolo_conv_top,OUTPUT_CHANNEL);
+                                                   ^~~~~~~~~~~~~~
+../src/helloworld.cpp:110:5: error: 'XYolo_conv_top_Set_output_ch_V' was not declared in this scope
+     XYolo_conv_top_Set_output_ch_V(&yolo_conv_top,OUTPUT_CHANNEL);
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/helloworld.cpp:110:5: note: suggested alternative: 'XYolo_yolo_top_Set_input_h_V'
+     XYolo_conv_top_Set_output_ch_V(&yolo_conv_top,OUTPUT_CHANNEL);
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     XYolo_yolo_top_Set_input_h_V
+../src/helloworld.cpp:111:50: error: 'INPUT_CHANNEL' was not declared in this scope
+     XYolo_conv_top_Set_input_ch_V(&yolo_conv_top,INPUT_CHANNEL);
+                                                  ^~~~~~~~~~~~~
+../src/helloworld.cpp:111:5: error: 'XYolo_conv_top_Set_input_ch_V' was not declared in this scope
+     XYolo_conv_top_Set_input_ch_V(&yolo_conv_top,INPUT_CHANNEL);
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/helloworld.cpp:111:5: note: suggested alternative: 'XYolo_yolo_top_Set_input_h_V'
+     XYolo_conv_top_Set_input_ch_V(&yolo_conv_top,INPUT_CHANNEL);
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     XYolo_yolo_top_Set_input_h_V
+../src/helloworld.cpp:112:5: error: 'XYolo_conv_top_Set_fold_output_ch_V' was not declared in this scope
+     XYolo_conv_top_Set_fold_output_ch_V(&yolo_conv_top,OUTPUT_CHANNEL/4);
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/helloworld.cpp:112:5: note: suggested alternative: 'XYolo_yolo_top_Set_input_h_V'
+     XYolo_conv_top_Set_fold_output_ch_V(&yolo_conv_top,OUTPUT_CHANNEL/4);
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     XYolo_yolo_top_Set_input_h_V
+../src/helloworld.cpp:113:5: error: 'XYolo_conv_top_Set_fold_input_ch_V' was not declared in this scope
+     XYolo_conv_top_Set_fold_input_ch_V(&yolo_conv_top,(INPUT_CHANNEL+3)/4);
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/helloworld.cpp:113:5: note: suggested alternative: 'XYolo_yolo_top_Set_input_h_V'
+     XYolo_conv_top_Set_fold_input_ch_V(&yolo_conv_top,(INPUT_CHANNEL+3)/4);
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     XYolo_yolo_top_Set_input_h_V
+../src/helloworld.cpp:114:52: error: 'KERNEL_DIM' was not declared in this scope
+     XYolo_conv_top_Set_kernel_dim_V(&yolo_conv_top,KERNEL_DIM);
+                                                    ^~~~~~~~~~
+../src/helloworld.cpp:114:52: note: suggested alternative: 'MAX_KERNEL_NUM'
+     XYolo_conv_top_Set_kernel_dim_V(&yolo_conv_top,KERNEL_DIM);
+                                                    ^~~~~~~~~~
+                                                    MAX_KERNEL_NUM
+../src/helloworld.cpp:114:5: error: 'XYolo_conv_top_Set_kernel_dim_V' was not declared in this scope
+     XYolo_conv_top_Set_kernel_dim_V(&yolo_conv_top,KERNEL_DIM);
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/helloworld.cpp:114:5: note: suggested alternative: 'XYolo_yolo_top_Set_input_w_V'
+     XYolo_conv_top_Set_kernel_dim_V(&yolo_conv_top,KERNEL_DIM);
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     XYolo_yolo_top_Set_input_w_V
+../src/helloworld.cpp:115:49: error: 'INPUT_HEIGHT' was not declared in this scope
+     XYolo_conv_top_Set_input_h_V(&yolo_conv_top,INPUT_HEIGHT);
+                                                 ^~~~~~~~~~~~
+../src/helloworld.cpp:115:49: note: suggested alternative: 'YOLO_INPUT_HEIGHT'
+     XYolo_conv_top_Set_input_h_V(&yolo_conv_top,INPUT_HEIGHT);
+                                                 ^~~~~~~~~~~~
+                                                 YOLO_INPUT_HEIGHT
+../src/helloworld.cpp:115:5: error: 'XYolo_conv_top_Set_input_h_V' was not declared in this scope
+     XYolo_conv_top_Set_input_h_V(&yolo_conv_top,INPUT_HEIGHT);
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/helloworld.cpp:115:5: note: suggested alternative: 'XYolo_yolo_top_Set_input_h_V'
+     XYolo_conv_top_Set_input_h_V(&yolo_conv_top,INPUT_HEIGHT);
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     XYolo_yolo_top_Set_input_h_V
+../src/helloworld.cpp:116:49: error: 'INPUT_WIDTH' was not declared in this scope
+     XYolo_conv_top_Set_input_w_V(&yolo_conv_top,INPUT_WIDTH);
+                                                 ^~~~~~~~~~~
+../src/helloworld.cpp:116:49: note: suggested alternative: 'YOLO_INPUT_WIDTH'
+     XYolo_conv_top_Set_input_w_V(&yolo_conv_top,INPUT_WIDTH);
+                                                 ^~~~~~~~~~~
+                                                 YOLO_INPUT_WIDTH
+../src/helloworld.cpp:116:5: error: 'XYolo_conv_top_Set_input_w_V' was not declared in this scope
+     XYolo_conv_top_Set_input_w_V(&yolo_conv_top,INPUT_WIDTH);
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/helloworld.cpp:116:5: note: suggested alternative: 'XYolo_yolo_top_Set_input_w_V'
+     XYolo_conv_top_Set_input_w_V(&yolo_conv_top,INPUT_WIDTH);
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     XYolo_yolo_top_Set_input_w_V
+../src/helloworld.cpp:117:54: error: 'REAL_INPUT_HEIGHT' was not declared in this scope
+     XYolo_conv_top_Set_real_input_h_V(&yolo_conv_top,REAL_INPUT_HEIGHT);
+                                                      ^~~~~~~~~~~~~~~~~
+../src/helloworld.cpp:117:54: note: suggested alternative: 'YOLO_INPUT_HEIGHT'
+     XYolo_conv_top_Set_real_input_h_V(&yolo_conv_top,REAL_INPUT_HEIGHT);
+                                                      ^~~~~~~~~~~~~~~~~
+                                                      YOLO_INPUT_HEIGHT
+../src/helloworld.cpp:117:5: error: 'XYolo_conv_top_Set_real_input_h_V' was not declared in this scope
+     XYolo_conv_top_Set_real_input_h_V(&yolo_conv_top,REAL_INPUT_HEIGHT);
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/helloworld.cpp:117:5: note: suggested alternative: 'XYolo_yolo_top_Set_input_h_V'
+     XYolo_conv_top_Set_real_input_h_V(&yolo_conv_top,REAL_INPUT_HEIGHT);
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     XYolo_yolo_top_Set_input_h_V
+../src/helloworld.cpp:118:47: error: 'LEAKY' was not declared in this scope
+     XYolo_conv_top_Set_leaky_V(&yolo_conv_top,LEAKY);
+                                               ^~~~~
+../src/helloworld.cpp:118:5: error: 'XYolo_conv_top_Set_leaky_V' was not declared in this scope
+     XYolo_conv_top_Set_leaky_V(&yolo_conv_top,LEAKY);
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/helloworld.cpp:118:5: note: suggested alternative: 'XYolo_yolo_top_Set_input_w_V'
+     XYolo_conv_top_Set_leaky_V(&yolo_conv_top,LEAKY);
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~
+     XYolo_yolo_top_Set_input_w_V
+../src/helloworld.cpp:119:5: error: 'XYolo_conv_top_Set_fold_win_area_V' was not declared in this scope
+     XYolo_conv_top_Set_fold_win_area_V(&yolo_conv_top,(KERNEL_DIM*KERNEL_DIM+3)/4);
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/helloworld.cpp:119:5: note: suggested alternative: 'XYolo_yolo_top_Set_input_w_V'
+     XYolo_conv_top_Set_fold_win_area_V(&yolo_conv_top,(KERNEL_DIM*KERNEL_DIM+3)/4);
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     XYolo_yolo_top_Set_input_w_V
+../src/helloworld.cpp:121:5: error: 'XYolo_conv_top_Start' was not declared in this scope
+     XYolo_conv_top_Start(&yolo_conv_top);
+     ^~~~~~~~~~~~~~~~~~~~
+../src/helloworld.cpp:121:5: note: suggested alternative: 'XYolo_yolo_top_Start'
+     XYolo_conv_top_Start(&yolo_conv_top);
+     ^~~~~~~~~~~~~~~~~~~~
+     XYolo_yolo_top_Start
+../src/helloworld.cpp:123:31: error: 'kernel_weight_fp_bits_pad' was not declared in this scope
+     Xil_DCacheFlushRange((u32)kernel_weight_fp_bits_pad,(KERNEL_DIM*KERNEL_DIM+3)*INPUT_CHANNEL*OUTPUT_CHANNEL*sizeof(short));
+                               ^~~~~~~~~~~~~~~~~~~~~~~~~
+../src/helloworld.cpp:126:31: error: 'kernel_bias_fp_bits_pad' was not declared in this scope
+     Xil_DCacheFlushRange((u32)kernel_bias_fp_bits_pad,OUTPUT_CHANNEL*sizeof(short));
+                               ^~~~~~~~~~~~~~~~~~~~~~~
+../src/helloworld.cpp:130:31: error: 'layer_input' was not declared in this scope
+     Xil_DCacheFlushRange((u32)layer_input,(INPUT_WIDTH-2*PAD)*(INPUT_HEIGHT-2*PAD)*4*sizeof(short));
+                               ^~~~~~~~~~~
+../src/helloworld.cpp:130:58: error: 'PAD' was not declared in this scope
+     Xil_DCacheFlushRange((u32)layer_input,(INPUT_WIDTH-2*PAD)*(INPUT_HEIGHT-2*PAD)*4*sizeof(short));
+                                                          ^~~
+../src/helloworld.cpp:131:48: error: 'OUTPUT_WIDTH' was not declared in this scope
+     Xil_DCacheFlushRange((u32)layer_output_hls,OUTPUT_WIDTH*OUTPUT_HEIGHT*OUTPUT_CHANNEL*sizeof(short));
+                                                ^~~~~~~~~~~~
+../src/helloworld.cpp:131:48: note: suggested alternative: 'YOLO_INPUT_WIDTH'
+     Xil_DCacheFlushRange((u32)layer_output_hls,OUTPUT_WIDTH*OUTPUT_HEIGHT*OUTPUT_CHANNEL*sizeof(short));
+                                                ^~~~~~~~~~~~
+                                                YOLO_INPUT_WIDTH
+../src/helloworld.cpp:131:61: error: 'OUTPUT_HEIGHT' was not declared in this scope
+     Xil_DCacheFlushRange((u32)layer_output_hls,OUTPUT_WIDTH*OUTPUT_HEIGHT*OUTPUT_CHANNEL*sizeof(short));
+                                                             ^~~~~~~~~~~~~
+../src/helloworld.cpp:131:61: note: suggested alternative: 'YOLO_INPUT_HEIGHT'
+     Xil_DCacheFlushRange((u32)layer_output_hls,OUTPUT_WIDTH*OUTPUT_HEIGHT*OUTPUT_CHANNEL*sizeof(short));
+                                                             ^~~~~~~~~~~~~
+                                                             YOLO_INPUT_HEIGHT
+../src/helloworld.cpp:142:9: error: 'XYolo_conv_top_IsDone' was not declared in this scope
+  while(!XYolo_conv_top_IsDone(&yolo_conv_top));
+         ^~~~~~~~~~~~~~~~~~~~~
+../src/helloworld.cpp:142:9: note: suggested alternative: 'XYolo_yolo_top_IsDone'
+  while(!XYolo_conv_top_IsDone(&yolo_conv_top));
+         ^~~~~~~~~~~~~~~~~~~~~
+         XYolo_yolo_top_IsDone
+../src/helloworld.cpp:151:15: error: 'layer_output_sdk' was not declared in this scope
+   short ref = layer_output_sdk[idx];
+               ^~~~~~~~~~~~~~~~
+../src/helloworld.cpp:151:15: note: suggested alternative: 'layer_output_hls'
+   short ref = layer_output_sdk[idx];
+               ^~~~~~~~~~~~~~~~
+               layer_output_hls
+src/subdir.mk:21: recipe for target 'src/helloworld.o' failed
+make: *** [src/helloworld.o] Error 1
+11:07:48 **** Auto Build of configuration Debug for project yolo_yolo_ps ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.cpp
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -I/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_yolo_fp_prj_2019_64/yolo_yolo_fp_prj_2019_64.sdk/include -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../yolo_yolo_ps_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.cpp"
+In file included from ../src/helloworld.cpp:52:
+../../yolo_yolo_ps_bsp/ps7_cortexa9_0/include/xtime_l.h:87:70: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+                                                                      ^
+../src/helloworld.cpp: In function 'int main()':
+../src/helloworld.cpp:112:27: error: 'yolo_conv_top' was not declared in this scope
+     XYolo_conv_top_Start(&yolo_conv_top);
+                           ^~~~~~~~~~~~~
+../src/helloworld.cpp:112:27: note: suggested alternative: 'yolo_yolo_top'
+     XYolo_conv_top_Start(&yolo_conv_top);
+                           ^~~~~~~~~~~~~
+                           yolo_yolo_top
+../src/helloworld.cpp:112:5: error: 'XYolo_conv_top_Start' was not declared in this scope
+     XYolo_conv_top_Start(&yolo_conv_top);
+     ^~~~~~~~~~~~~~~~~~~~
+../src/helloworld.cpp:112:5: note: suggested alternative: 'XYolo_yolo_top_Start'
+     XYolo_conv_top_Start(&yolo_conv_top);
+     ^~~~~~~~~~~~~~~~~~~~
+     XYolo_yolo_top_Start
+../src/helloworld.cpp:114:31: error: 'kernel_weight_fp_bits_pad' was not declared in this scope
+     Xil_DCacheFlushRange((u32)kernel_weight_fp_bits_pad,(KERNEL_DIM*KERNEL_DIM+3)*INPUT_CHANNEL*OUTPUT_CHANNEL*sizeof(short));
+                               ^~~~~~~~~~~~~~~~~~~~~~~~~
+../src/helloworld.cpp:114:58: error: 'KERNEL_DIM' was not declared in this scope
+     Xil_DCacheFlushRange((u32)kernel_weight_fp_bits_pad,(KERNEL_DIM*KERNEL_DIM+3)*INPUT_CHANNEL*OUTPUT_CHANNEL*sizeof(short));
+                                                          ^~~~~~~~~~
+../src/helloworld.cpp:114:58: note: suggested alternative: 'MAX_KERNEL_NUM'
+     Xil_DCacheFlushRange((u32)kernel_weight_fp_bits_pad,(KERNEL_DIM*KERNEL_DIM+3)*INPUT_CHANNEL*OUTPUT_CHANNEL*sizeof(short));
+                                                          ^~~~~~~~~~
+                                                          MAX_KERNEL_NUM
+../src/helloworld.cpp:114:83: error: 'INPUT_CHANNEL' was not declared in this scope
+     Xil_DCacheFlushRange((u32)kernel_weight_fp_bits_pad,(KERNEL_DIM*KERNEL_DIM+3)*INPUT_CHANNEL*OUTPUT_CHANNEL*sizeof(short));
+                                                                                   ^~~~~~~~~~~~~
+../src/helloworld.cpp:114:97: error: 'OUTPUT_CHANNEL' was not declared in this scope
+     Xil_DCacheFlushRange((u32)kernel_weight_fp_bits_pad,(KERNEL_DIM*KERNEL_DIM+3)*INPUT_CHANNEL*OUTPUT_CHANNEL*sizeof(short));
+                                                                                                 ^~~~~~~~~~~~~~
+../src/helloworld.cpp:117:31: error: 'kernel_bias_fp_bits_pad' was not declared in this scope
+     Xil_DCacheFlushRange((u32)kernel_bias_fp_bits_pad,OUTPUT_CHANNEL*sizeof(short));
+                               ^~~~~~~~~~~~~~~~~~~~~~~
+../src/helloworld.cpp:121:31: error: 'layer_input' was not declared in this scope
+     Xil_DCacheFlushRange((u32)layer_input,(INPUT_WIDTH-2*PAD)*(INPUT_HEIGHT-2*PAD)*4*sizeof(short));
+                               ^~~~~~~~~~~
+../src/helloworld.cpp:121:44: error: 'INPUT_WIDTH' was not declared in this scope
+     Xil_DCacheFlushRange((u32)layer_input,(INPUT_WIDTH-2*PAD)*(INPUT_HEIGHT-2*PAD)*4*sizeof(short));
+                                            ^~~~~~~~~~~
+../src/helloworld.cpp:121:44: note: suggested alternative: 'YOLO_INPUT_WIDTH'
+     Xil_DCacheFlushRange((u32)layer_input,(INPUT_WIDTH-2*PAD)*(INPUT_HEIGHT-2*PAD)*4*sizeof(short));
+                                            ^~~~~~~~~~~
+                                            YOLO_INPUT_WIDTH
+../src/helloworld.cpp:121:58: error: 'PAD' was not declared in this scope
+     Xil_DCacheFlushRange((u32)layer_input,(INPUT_WIDTH-2*PAD)*(INPUT_HEIGHT-2*PAD)*4*sizeof(short));
+                                                          ^~~
+../src/helloworld.cpp:121:64: error: 'INPUT_HEIGHT' was not declared in this scope
+     Xil_DCacheFlushRange((u32)layer_input,(INPUT_WIDTH-2*PAD)*(INPUT_HEIGHT-2*PAD)*4*sizeof(short));
+                                                                ^~~~~~~~~~~~
+../src/helloworld.cpp:121:64: note: suggested alternative: 'YOLO_INPUT_HEIGHT'
+     Xil_DCacheFlushRange((u32)layer_input,(INPUT_WIDTH-2*PAD)*(INPUT_HEIGHT-2*PAD)*4*sizeof(short));
+                                                                ^~~~~~~~~~~~
+                                                                YOLO_INPUT_HEIGHT
+../src/helloworld.cpp:122:48: error: 'OUTPUT_WIDTH' was not declared in this scope
+     Xil_DCacheFlushRange((u32)layer_output_hls,OUTPUT_WIDTH*OUTPUT_HEIGHT*OUTPUT_CHANNEL*sizeof(short));
+                                                ^~~~~~~~~~~~
+../src/helloworld.cpp:122:48: note: suggested alternative: 'YOLO_INPUT_WIDTH'
+     Xil_DCacheFlushRange((u32)layer_output_hls,OUTPUT_WIDTH*OUTPUT_HEIGHT*OUTPUT_CHANNEL*sizeof(short));
+                                                ^~~~~~~~~~~~
+                                                YOLO_INPUT_WIDTH
+../src/helloworld.cpp:122:61: error: 'OUTPUT_HEIGHT' was not declared in this scope
+     Xil_DCacheFlushRange((u32)layer_output_hls,OUTPUT_WIDTH*OUTPUT_HEIGHT*OUTPUT_CHANNEL*sizeof(short));
+                                                             ^~~~~~~~~~~~~
+../src/helloworld.cpp:122:61: note: suggested alternative: 'YOLO_INPUT_HEIGHT'
+     Xil_DCacheFlushRange((u32)layer_output_hls,OUTPUT_WIDTH*OUTPUT_HEIGHT*OUTPUT_CHANNEL*sizeof(short));
+                                                             ^~~~~~~~~~~~~
+                                                             YOLO_INPUT_HEIGHT
+../src/helloworld.cpp:133:9: error: 'XYolo_conv_top_IsDone' was not declared in this scope
+  while(!XYolo_conv_top_IsDone(&yolo_conv_top));
+         ^~~~~~~~~~~~~~~~~~~~~
+../src/helloworld.cpp:133:9: note: suggested alternative: 'XYolo_yolo_top_IsDone'
+  while(!XYolo_conv_top_IsDone(&yolo_conv_top));
+         ^~~~~~~~~~~~~~~~~~~~~
+         XYolo_yolo_top_IsDone
+../src/helloworld.cpp:142:15: error: 'layer_output_sdk' was not declared in this scope
+   short ref = layer_output_sdk[idx];
+               ^~~~~~~~~~~~~~~~
+../src/helloworld.cpp:142:15: note: suggested alternative: 'layer_output_hls'
+   short ref = layer_output_sdk[idx];
+               ^~~~~~~~~~~~~~~~
+               layer_output_hls
+src/subdir.mk:21: recipe for target 'src/helloworld.o' failed
+make: *** [src/helloworld.o] Error 1
+11:08:21 **** Auto Build of configuration Debug for project yolo_yolo_ps ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.cpp
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -I/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_yolo_fp_prj_2019_64/yolo_yolo_fp_prj_2019_64.sdk/include -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../yolo_yolo_ps_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.cpp"
+In file included from ../src/helloworld.cpp:52:
+../../yolo_yolo_ps_bsp/ps7_cortexa9_0/include/xtime_l.h:87:70: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+                                                                      ^
+../src/helloworld.cpp: In function 'int main()':
+../src/helloworld.cpp:110:38: error: too few arguments to function 'void XYolo_yolo_top_Set_activate_en_V(XYolo_yolo_top*, u32)'
+     XYolo_yolo_top_Set_activate_en_V();
+                                      ^
+In file included from ../src/helloworld.cpp:54:
+../../yolo_yolo_ps_bsp/ps7_cortexa9_0/include/xyolo_yolo_top.h:87:6: note: declared here
+ void XYolo_yolo_top_Set_activate_en_V(XYolo_yolo_top *InstancePtr, u32 Data);
+      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/helloworld.cpp:111:34: error: too few arguments to function 'void XYolo_yolo_top_Set_input_h_V(XYolo_yolo_top*, u32)'
+     XYolo_yolo_top_Set_input_h_V();
+                                  ^
+In file included from ../src/helloworld.cpp:54:
+../../yolo_yolo_ps_bsp/ps7_cortexa9_0/include/xyolo_yolo_top.h:89:6: note: declared here
+ void XYolo_yolo_top_Set_input_h_V(XYolo_yolo_top *InstancePtr, u32 Data);
+      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/helloworld.cpp:112:34: error: too few arguments to function 'void XYolo_yolo_top_Set_input_w_V(XYolo_yolo_top*, u32)'
+     XYolo_yolo_top_Set_input_w_V();
+                                  ^
+In file included from ../src/helloworld.cpp:54:
+../../yolo_yolo_ps_bsp/ps7_cortexa9_0/include/xyolo_yolo_top.h:91:6: note: declared here
+ void XYolo_yolo_top_Set_input_w_V(XYolo_yolo_top *InstancePtr, u32 Data);
+      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/helloworld.cpp:114:27: error: 'yolo_conv_top' was not declared in this scope
+     XYolo_conv_top_Start(&yolo_conv_top);
+                           ^~~~~~~~~~~~~
+../src/helloworld.cpp:114:27: note: suggested alternative: 'yolo_yolo_top'
+     XYolo_conv_top_Start(&yolo_conv_top);
+                           ^~~~~~~~~~~~~
+                           yolo_yolo_top
+../src/helloworld.cpp:114:5: error: 'XYolo_conv_top_Start' was not declared in this scope
+     XYolo_conv_top_Start(&yolo_conv_top);
+     ^~~~~~~~~~~~~~~~~~~~
+../src/helloworld.cpp:114:5: note: suggested alternative: 'XYolo_yolo_top_Start'
+     XYolo_conv_top_Start(&yolo_conv_top);
+     ^~~~~~~~~~~~~~~~~~~~
+     XYolo_yolo_top_Start
+../src/helloworld.cpp:116:31: error: 'kernel_weight_fp_bits_pad' was not declared in this scope
+     Xil_DCacheFlushRange((u32)kernel_weight_fp_bits_pad,(KERNEL_DIM*KERNEL_DIM+3)*INPUT_CHANNEL*OUTPUT_CHANNEL*sizeof(short));
+                               ^~~~~~~~~~~~~~~~~~~~~~~~~
+../src/helloworld.cpp:116:58: error: 'KERNEL_DIM' was not declared in this scope
+     Xil_DCacheFlushRange((u32)kernel_weight_fp_bits_pad,(KERNEL_DIM*KERNEL_DIM+3)*INPUT_CHANNEL*OUTPUT_CHANNEL*sizeof(short));
+                                                          ^~~~~~~~~~
+../src/helloworld.cpp:116:58: note: suggested alternative: 'MAX_KERNEL_NUM'
+     Xil_DCacheFlushRange((u32)kernel_weight_fp_bits_pad,(KERNEL_DIM*KERNEL_DIM+3)*INPUT_CHANNEL*OUTPUT_CHANNEL*sizeof(short));
+                                                          ^~~~~~~~~~
+                                                          MAX_KERNEL_NUM
+../src/helloworld.cpp:116:83: error: 'INPUT_CHANNEL' was not declared in this scope
+     Xil_DCacheFlushRange((u32)kernel_weight_fp_bits_pad,(KERNEL_DIM*KERNEL_DIM+3)*INPUT_CHANNEL*OUTPUT_CHANNEL*sizeof(short));
+                                                                                   ^~~~~~~~~~~~~
+../src/helloworld.cpp:116:97: error: 'OUTPUT_CHANNEL' was not declared in this scope
+     Xil_DCacheFlushRange((u32)kernel_weight_fp_bits_pad,(KERNEL_DIM*KERNEL_DIM+3)*INPUT_CHANNEL*OUTPUT_CHANNEL*sizeof(short));
+                                                                                                 ^~~~~~~~~~~~~~
+../src/helloworld.cpp:119:31: error: 'kernel_bias_fp_bits_pad' was not declared in this scope
+     Xil_DCacheFlushRange((u32)kernel_bias_fp_bits_pad,OUTPUT_CHANNEL*sizeof(short));
+                               ^~~~~~~~~~~~~~~~~~~~~~~
+../src/helloworld.cpp:123:31: error: 'layer_input' was not declared in this scope
+     Xil_DCacheFlushRange((u32)layer_input,(INPUT_WIDTH-2*PAD)*(INPUT_HEIGHT-2*PAD)*4*sizeof(short));
+                               ^~~~~~~~~~~
+../src/helloworld.cpp:123:44: error: 'INPUT_WIDTH' was not declared in this scope
+     Xil_DCacheFlushRange((u32)layer_input,(INPUT_WIDTH-2*PAD)*(INPUT_HEIGHT-2*PAD)*4*sizeof(short));
+                                            ^~~~~~~~~~~
+../src/helloworld.cpp:123:44: note: suggested alternative: 'YOLO_INPUT_WIDTH'
+     Xil_DCacheFlushRange((u32)layer_input,(INPUT_WIDTH-2*PAD)*(INPUT_HEIGHT-2*PAD)*4*sizeof(short));
+                                            ^~~~~~~~~~~
+                                            YOLO_INPUT_WIDTH
+../src/helloworld.cpp:123:58: error: 'PAD' was not declared in this scope
+     Xil_DCacheFlushRange((u32)layer_input,(INPUT_WIDTH-2*PAD)*(INPUT_HEIGHT-2*PAD)*4*sizeof(short));
+                                                          ^~~
+../src/helloworld.cpp:123:64: error: 'INPUT_HEIGHT' was not declared in this scope
+     Xil_DCacheFlushRange((u32)layer_input,(INPUT_WIDTH-2*PAD)*(INPUT_HEIGHT-2*PAD)*4*sizeof(short));
+                                                                ^~~~~~~~~~~~
+../src/helloworld.cpp:123:64: note: suggested alternative: 'YOLO_INPUT_HEIGHT'
+     Xil_DCacheFlushRange((u32)layer_input,(INPUT_WIDTH-2*PAD)*(INPUT_HEIGHT-2*PAD)*4*sizeof(short));
+                                                                ^~~~~~~~~~~~
+                                                                YOLO_INPUT_HEIGHT
+../src/helloworld.cpp:124:48: error: 'OUTPUT_WIDTH' was not declared in this scope
+     Xil_DCacheFlushRange((u32)layer_output_hls,OUTPUT_WIDTH*OUTPUT_HEIGHT*OUTPUT_CHANNEL*sizeof(short));
+                                                ^~~~~~~~~~~~
+../src/helloworld.cpp:124:48: note: suggested alternative: 'YOLO_INPUT_WIDTH'
+     Xil_DCacheFlushRange((u32)layer_output_hls,OUTPUT_WIDTH*OUTPUT_HEIGHT*OUTPUT_CHANNEL*sizeof(short));
+                                                ^~~~~~~~~~~~
+                                                YOLO_INPUT_WIDTH
+../src/helloworld.cpp:124:61: error: 'OUTPUT_HEIGHT' was not declared in this scope
+     Xil_DCacheFlushRange((u32)layer_output_hls,OUTPUT_WIDTH*OUTPUT_HEIGHT*OUTPUT_CHANNEL*sizeof(short));
+                                                             ^~~~~~~~~~~~~
+../src/helloworld.cpp:124:61: note: suggested alternative: 'YOLO_INPUT_HEIGHT'
+     Xil_DCacheFlushRange((u32)layer_output_hls,OUTPUT_WIDTH*OUTPUT_HEIGHT*OUTPUT_CHANNEL*sizeof(short));
+                                                             ^~~~~~~~~~~~~
+                                                             YOLO_INPUT_HEIGHT
+../src/helloworld.cpp:135:9: error: 'XYolo_conv_top_IsDone' was not declared in this scope
+  while(!XYolo_conv_top_IsDone(&yolo_conv_top));
+         ^~~~~~~~~~~~~~~~~~~~~
+../src/helloworld.cpp:135:9: note: suggested alternative: 'XYolo_yolo_top_IsDone'
+  while(!XYolo_conv_top_IsDone(&yolo_conv_top));
+         ^~~~~~~~~~~~~~~~~~~~~
+         XYolo_yolo_top_IsDone
+../src/helloworld.cpp:144:15: error: 'layer_output_sdk' was not declared in this scope
+   short ref = layer_output_sdk[idx];
+               ^~~~~~~~~~~~~~~~
+../src/helloworld.cpp:144:15: note: suggested alternative: 'layer_output_hls'
+   short ref = layer_output_sdk[idx];
+               ^~~~~~~~~~~~~~~~
+               layer_output_hls
+src/subdir.mk:21: recipe for target 'src/helloworld.o' failed
+make: *** [src/helloworld.o] Error 1
+11:09:16 **** Auto Build of configuration Debug for project yolo_yolo_ps ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.cpp
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -I/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_yolo_fp_prj_2019_64/yolo_yolo_fp_prj_2019_64.sdk/include -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../yolo_yolo_ps_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.cpp"
+In file included from ../src/helloworld.cpp:52:
+../../yolo_yolo_ps_bsp/ps7_cortexa9_0/include/xtime_l.h:87:70: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+                                                                      ^
+../src/helloworld.cpp: In function 'int main()':
+../src/helloworld.cpp:110:48: error: invalid conversion from 'unsigned int' to 'XYolo_yolo_top*' [-fpermissive]
+     XYolo_yolo_top_Set_activate_en_V(0xfffffff3);
+                                                ^
+../src/helloworld.cpp:110:48: error: too few arguments to function 'void XYolo_yolo_top_Set_activate_en_V(XYolo_yolo_top*, u32)'
+In file included from ../src/helloworld.cpp:54:
+../../yolo_yolo_ps_bsp/ps7_cortexa9_0/include/xyolo_yolo_top.h:87:6: note: declared here
+ void XYolo_yolo_top_Set_activate_en_V(XYolo_yolo_top *InstancePtr, u32 Data);
+      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/helloworld.cpp:111:51: error: invalid conversion from 'int' to 'XYolo_yolo_top*' [-fpermissive]
+     XYolo_yolo_top_Set_input_h_V(YOLO_INPUT_HEIGHT);
+                                                   ^
+../src/helloworld.cpp:111:51: error: too few arguments to function 'void XYolo_yolo_top_Set_input_h_V(XYolo_yolo_top*, u32)'
+In file included from ../src/helloworld.cpp:54:
+../../yolo_yolo_ps_bsp/ps7_cortexa9_0/include/xyolo_yolo_top.h:89:6: note: declared here
+ void XYolo_yolo_top_Set_input_h_V(XYolo_yolo_top *InstancePtr, u32 Data);
+      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/helloworld.cpp:112:50: error: invalid conversion from 'int' to 'XYolo_yolo_top*' [-fpermissive]
+     XYolo_yolo_top_Set_input_w_V(YOLO_INPUT_WIDTH);
+                                                  ^
+../src/helloworld.cpp:112:50: error: too few arguments to function 'void XYolo_yolo_top_Set_input_w_V(XYolo_yolo_top*, u32)'
+In file included from ../src/helloworld.cpp:54:
+../../yolo_yolo_ps_bsp/ps7_cortexa9_0/include/xyolo_yolo_top.h:91:6: note: declared here
+ void XYolo_yolo_top_Set_input_w_V(XYolo_yolo_top *InstancePtr, u32 Data);
+      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/helloworld.cpp:114:27: error: 'yolo_conv_top' was not declared in this scope
+     XYolo_conv_top_Start(&yolo_conv_top);
+                           ^~~~~~~~~~~~~
+../src/helloworld.cpp:114:27: note: suggested alternative: 'yolo_yolo_top'
+     XYolo_conv_top_Start(&yolo_conv_top);
+                           ^~~~~~~~~~~~~
+                           yolo_yolo_top
+../src/helloworld.cpp:114:5: error: 'XYolo_conv_top_Start' was not declared in this scope
+     XYolo_conv_top_Start(&yolo_conv_top);
+     ^~~~~~~~~~~~~~~~~~~~
+../src/helloworld.cpp:114:5: note: suggested alternative: 'XYolo_yolo_top_Start'
+     XYolo_conv_top_Start(&yolo_conv_top);
+     ^~~~~~~~~~~~~~~~~~~~
+     XYolo_yolo_top_Start
+../src/helloworld.cpp:116:31: error: 'kernel_weight_fp_bits_pad' was not declared in this scope
+     Xil_DCacheFlushRange((u32)kernel_weight_fp_bits_pad,(KERNEL_DIM*KERNEL_DIM+3)*INPUT_CHANNEL*OUTPUT_CHANNEL*sizeof(short));
+                               ^~~~~~~~~~~~~~~~~~~~~~~~~
+../src/helloworld.cpp:116:58: error: 'KERNEL_DIM' was not declared in this scope
+     Xil_DCacheFlushRange((u32)kernel_weight_fp_bits_pad,(KERNEL_DIM*KERNEL_DIM+3)*INPUT_CHANNEL*OUTPUT_CHANNEL*sizeof(short));
+                                                          ^~~~~~~~~~
+../src/helloworld.cpp:116:58: note: suggested alternative: 'MAX_KERNEL_NUM'
+     Xil_DCacheFlushRange((u32)kernel_weight_fp_bits_pad,(KERNEL_DIM*KERNEL_DIM+3)*INPUT_CHANNEL*OUTPUT_CHANNEL*sizeof(short));
+                                                          ^~~~~~~~~~
+                                                          MAX_KERNEL_NUM
+../src/helloworld.cpp:116:83: error: 'INPUT_CHANNEL' was not declared in this scope
+     Xil_DCacheFlushRange((u32)kernel_weight_fp_bits_pad,(KERNEL_DIM*KERNEL_DIM+3)*INPUT_CHANNEL*OUTPUT_CHANNEL*sizeof(short));
+                                                                                   ^~~~~~~~~~~~~
+../src/helloworld.cpp:116:97: error: 'OUTPUT_CHANNEL' was not declared in this scope
+     Xil_DCacheFlushRange((u32)kernel_weight_fp_bits_pad,(KERNEL_DIM*KERNEL_DIM+3)*INPUT_CHANNEL*OUTPUT_CHANNEL*sizeof(short));
+                                                                                                 ^~~~~~~~~~~~~~
+../src/helloworld.cpp:119:31: error: 'kernel_bias_fp_bits_pad' was not declared in this scope
+     Xil_DCacheFlushRange((u32)kernel_bias_fp_bits_pad,OUTPUT_CHANNEL*sizeof(short));
+                               ^~~~~~~~~~~~~~~~~~~~~~~
+../src/helloworld.cpp:123:31: error: 'layer_input' was not declared in this scope
+     Xil_DCacheFlushRange((u32)layer_input,(INPUT_WIDTH-2*PAD)*(INPUT_HEIGHT-2*PAD)*4*sizeof(short));
+                               ^~~~~~~~~~~
+../src/helloworld.cpp:123:44: error: 'INPUT_WIDTH' was not declared in this scope
+     Xil_DCacheFlushRange((u32)layer_input,(INPUT_WIDTH-2*PAD)*(INPUT_HEIGHT-2*PAD)*4*sizeof(short));
+                                            ^~~~~~~~~~~
+../src/helloworld.cpp:123:44: note: suggested alternative: 'YOLO_INPUT_WIDTH'
+     Xil_DCacheFlushRange((u32)layer_input,(INPUT_WIDTH-2*PAD)*(INPUT_HEIGHT-2*PAD)*4*sizeof(short));
+                                            ^~~~~~~~~~~
+                                            YOLO_INPUT_WIDTH
+../src/helloworld.cpp:123:58: error: 'PAD' was not declared in this scope
+     Xil_DCacheFlushRange((u32)layer_input,(INPUT_WIDTH-2*PAD)*(INPUT_HEIGHT-2*PAD)*4*sizeof(short));
+                                                          ^~~
+../src/helloworld.cpp:123:64: error: 'INPUT_HEIGHT' was not declared in this scope
+     Xil_DCacheFlushRange((u32)layer_input,(INPUT_WIDTH-2*PAD)*(INPUT_HEIGHT-2*PAD)*4*sizeof(short));
+                                                                ^~~~~~~~~~~~
+../src/helloworld.cpp:123:64: note: suggested alternative: 'YOLO_INPUT_HEIGHT'
+     Xil_DCacheFlushRange((u32)layer_input,(INPUT_WIDTH-2*PAD)*(INPUT_HEIGHT-2*PAD)*4*sizeof(short));
+                                                                ^~~~~~~~~~~~
+                                                                YOLO_INPUT_HEIGHT
+../src/helloworld.cpp:124:48: error: 'OUTPUT_WIDTH' was not declared in this scope
+     Xil_DCacheFlushRange((u32)layer_output_hls,OUTPUT_WIDTH*OUTPUT_HEIGHT*OUTPUT_CHANNEL*sizeof(short));
+                                                ^~~~~~~~~~~~
+../src/helloworld.cpp:124:48: note: suggested alternative: 'YOLO_INPUT_WIDTH'
+     Xil_DCacheFlushRange((u32)layer_output_hls,OUTPUT_WIDTH*OUTPUT_HEIGHT*OUTPUT_CHANNEL*sizeof(short));
+                                                ^~~~~~~~~~~~
+                                                YOLO_INPUT_WIDTH
+../src/helloworld.cpp:124:61: error: 'OUTPUT_HEIGHT' was not declared in this scope
+     Xil_DCacheFlushRange((u32)layer_output_hls,OUTPUT_WIDTH*OUTPUT_HEIGHT*OUTPUT_CHANNEL*sizeof(short));
+                                                             ^~~~~~~~~~~~~
+../src/helloworld.cpp:124:61: note: suggested alternative: 'YOLO_INPUT_HEIGHT'
+     Xil_DCacheFlushRange((u32)layer_output_hls,OUTPUT_WIDTH*OUTPUT_HEIGHT*OUTPUT_CHANNEL*sizeof(short));
+                                                             ^~~~~~~~~~~~~
+                                                             YOLO_INPUT_HEIGHT
+../src/helloworld.cpp:135:9: error: 'XYolo_conv_top_IsDone' was not declared in this scope
+  while(!XYolo_conv_top_IsDone(&yolo_conv_top));
+         ^~~~~~~~~~~~~~~~~~~~~
+../src/helloworld.cpp:135:9: note: suggested alternative: 'XYolo_yolo_top_IsDone'
+  while(!XYolo_conv_top_IsDone(&yolo_conv_top));
+         ^~~~~~~~~~~~~~~~~~~~~
+         XYolo_yolo_top_IsDone
+../src/helloworld.cpp:144:15: error: 'layer_output_sdk' was not declared in this scope
+   short ref = layer_output_sdk[idx];
+               ^~~~~~~~~~~~~~~~
+../src/helloworld.cpp:144:15: note: suggested alternative: 'layer_output_hls'
+   short ref = layer_output_sdk[idx];
+               ^~~~~~~~~~~~~~~~
+               layer_output_hls
+make: *** [src/helloworld.o] Error 1
+src/subdir.mk:21: recipe for target 'src/helloworld.o' failed
+11:09:44 **** Auto Build of configuration Debug for project yolo_yolo_ps ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.cpp
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -I/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_yolo_fp_prj_2019_64/yolo_yolo_fp_prj_2019_64.sdk/include -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../yolo_yolo_ps_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.cpp"
+In file included from ../src/helloworld.cpp:52:
+../../yolo_yolo_ps_bsp/ps7_cortexa9_0/include/xtime_l.h:87:70: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+                                                                      ^
+../src/helloworld.cpp: In function 'int main()':
+../src/helloworld.cpp:114:27: error: 'yolo_conv_top' was not declared in this scope
+     XYolo_conv_top_Start(&yolo_conv_top);
+                           ^~~~~~~~~~~~~
+../src/helloworld.cpp:114:27: note: suggested alternative: 'yolo_yolo_top'
+     XYolo_conv_top_Start(&yolo_conv_top);
+                           ^~~~~~~~~~~~~
+                           yolo_yolo_top
+../src/helloworld.cpp:114:5: error: 'XYolo_conv_top_Start' was not declared in this scope
+     XYolo_conv_top_Start(&yolo_conv_top);
+     ^~~~~~~~~~~~~~~~~~~~
+../src/helloworld.cpp:114:5: note: suggested alternative: 'XYolo_yolo_top_Start'
+     XYolo_conv_top_Start(&yolo_conv_top);
+     ^~~~~~~~~~~~~~~~~~~~
+     XYolo_yolo_top_Start
+../src/helloworld.cpp:116:31: error: 'kernel_weight_fp_bits_pad' was not declared in this scope
+     Xil_DCacheFlushRange((u32)kernel_weight_fp_bits_pad,(KERNEL_DIM*KERNEL_DIM+3)*INPUT_CHANNEL*OUTPUT_CHANNEL*sizeof(short));
+                               ^~~~~~~~~~~~~~~~~~~~~~~~~
+../src/helloworld.cpp:116:58: error: 'KERNEL_DIM' was not declared in this scope
+     Xil_DCacheFlushRange((u32)kernel_weight_fp_bits_pad,(KERNEL_DIM*KERNEL_DIM+3)*INPUT_CHANNEL*OUTPUT_CHANNEL*sizeof(short));
+                                                          ^~~~~~~~~~
+../src/helloworld.cpp:116:58: note: suggested alternative: 'MAX_KERNEL_NUM'
+     Xil_DCacheFlushRange((u32)kernel_weight_fp_bits_pad,(KERNEL_DIM*KERNEL_DIM+3)*INPUT_CHANNEL*OUTPUT_CHANNEL*sizeof(short));
+                                                          ^~~~~~~~~~
+                                                          MAX_KERNEL_NUM
+../src/helloworld.cpp:116:83: error: 'INPUT_CHANNEL' was not declared in this scope
+     Xil_DCacheFlushRange((u32)kernel_weight_fp_bits_pad,(KERNEL_DIM*KERNEL_DIM+3)*INPUT_CHANNEL*OUTPUT_CHANNEL*sizeof(short));
+                                                                                   ^~~~~~~~~~~~~
+../src/helloworld.cpp:116:97: error: 'OUTPUT_CHANNEL' was not declared in this scope
+     Xil_DCacheFlushRange((u32)kernel_weight_fp_bits_pad,(KERNEL_DIM*KERNEL_DIM+3)*INPUT_CHANNEL*OUTPUT_CHANNEL*sizeof(short));
+                                                                                                 ^~~~~~~~~~~~~~
+../src/helloworld.cpp:119:31: error: 'kernel_bias_fp_bits_pad' was not declared in this scope
+     Xil_DCacheFlushRange((u32)kernel_bias_fp_bits_pad,OUTPUT_CHANNEL*sizeof(short));
+                               ^~~~~~~~~~~~~~~~~~~~~~~
+../src/helloworld.cpp:123:31: error: 'layer_input' was not declared in this scope
+     Xil_DCacheFlushRange((u32)layer_input,(INPUT_WIDTH-2*PAD)*(INPUT_HEIGHT-2*PAD)*4*sizeof(short));
+                               ^~~~~~~~~~~
+../src/helloworld.cpp:123:44: error: 'INPUT_WIDTH' was not declared in this scope
+     Xil_DCacheFlushRange((u32)layer_input,(INPUT_WIDTH-2*PAD)*(INPUT_HEIGHT-2*PAD)*4*sizeof(short));
+                                            ^~~~~~~~~~~
+../src/helloworld.cpp:123:44: note: suggested alternative: 'YOLO_INPUT_WIDTH'
+     Xil_DCacheFlushRange((u32)layer_input,(INPUT_WIDTH-2*PAD)*(INPUT_HEIGHT-2*PAD)*4*sizeof(short));
+                                            ^~~~~~~~~~~
+                                            YOLO_INPUT_WIDTH
+../src/helloworld.cpp:123:58: error: 'PAD' was not declared in this scope
+     Xil_DCacheFlushRange((u32)layer_input,(INPUT_WIDTH-2*PAD)*(INPUT_HEIGHT-2*PAD)*4*sizeof(short));
+                                                          ^~~
+../src/helloworld.cpp:123:64: error: 'INPUT_HEIGHT' was not declared in this scope
+     Xil_DCacheFlushRange((u32)layer_input,(INPUT_WIDTH-2*PAD)*(INPUT_HEIGHT-2*PAD)*4*sizeof(short));
+                                                                ^~~~~~~~~~~~
+../src/helloworld.cpp:123:64: note: suggested alternative: 'YOLO_INPUT_HEIGHT'
+     Xil_DCacheFlushRange((u32)layer_input,(INPUT_WIDTH-2*PAD)*(INPUT_HEIGHT-2*PAD)*4*sizeof(short));
+                                                                ^~~~~~~~~~~~
+                                                                YOLO_INPUT_HEIGHT
+../src/helloworld.cpp:124:48: error: 'OUTPUT_WIDTH' was not declared in this scope
+     Xil_DCacheFlushRange((u32)layer_output_hls,OUTPUT_WIDTH*OUTPUT_HEIGHT*OUTPUT_CHANNEL*sizeof(short));
+                                                ^~~~~~~~~~~~
+../src/helloworld.cpp:124:48: note: suggested alternative: 'YOLO_INPUT_WIDTH'
+     Xil_DCacheFlushRange((u32)layer_output_hls,OUTPUT_WIDTH*OUTPUT_HEIGHT*OUTPUT_CHANNEL*sizeof(short));
+                                                ^~~~~~~~~~~~
+                                                YOLO_INPUT_WIDTH
+../src/helloworld.cpp:124:61: error: 'OUTPUT_HEIGHT' was not declared in this scope
+     Xil_DCacheFlushRange((u32)layer_output_hls,OUTPUT_WIDTH*OUTPUT_HEIGHT*OUTPUT_CHANNEL*sizeof(short));
+                                                             ^~~~~~~~~~~~~
+../src/helloworld.cpp:124:61: note: suggested alternative: 'YOLO_INPUT_HEIGHT'
+     Xil_DCacheFlushRange((u32)layer_output_hls,OUTPUT_WIDTH*OUTPUT_HEIGHT*OUTPUT_CHANNEL*sizeof(short));
+                                                             ^~~~~~~~~~~~~
+                                                             YOLO_INPUT_HEIGHT
+../src/helloworld.cpp:135:9: error: 'XYolo_conv_top_IsDone' was not declared in this scope
+  while(!XYolo_conv_top_IsDone(&yolo_conv_top));
+         ^~~~~~~~~~~~~~~~~~~~~
+../src/helloworld.cpp:135:9: note: suggested alternative: 'XYolo_yolo_top_IsDone'
+  while(!XYolo_conv_top_IsDone(&yolo_conv_top));
+         ^~~~~~~~~~~~~~~~~~~~~
+         XYolo_yolo_top_IsDone
+../src/helloworld.cpp:144:15: error: 'layer_output_sdk' was not declared in this scope
+   short ref = layer_output_sdk[idx];
+               ^~~~~~~~~~~~~~~~
+../src/helloworld.cpp:144:15: note: suggested alternative: 'layer_output_hls'
+   short ref = layer_output_sdk[idx];
+               ^~~~~~~~~~~~~~~~
+               layer_output_hls
+src/subdir.mk:21: recipe for target 'src/helloworld.o' failed
+make: *** [src/helloworld.o] Error 1
+11:10:00 **** Auto Build of configuration Debug for project yolo_yolo_ps ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.cpp
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -I/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_yolo_fp_prj_2019_64/yolo_yolo_fp_prj_2019_64.sdk/include -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../yolo_yolo_ps_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.cpp"
+In file included from ../src/helloworld.cpp:52:
+../../yolo_yolo_ps_bsp/ps7_cortexa9_0/include/xtime_l.h:87:70: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+                                                                      ^
+../src/helloworld.cpp: In function 'int main()':
+../src/helloworld.cpp:116:31: error: 'kernel_weight_fp_bits_pad' was not declared in this scope
+     Xil_DCacheFlushRange((u32)kernel_weight_fp_bits_pad,(KERNEL_DIM*KERNEL_DIM+3)*INPUT_CHANNEL*OUTPUT_CHANNEL*sizeof(short));
+                               ^~~~~~~~~~~~~~~~~~~~~~~~~
+../src/helloworld.cpp:116:58: error: 'KERNEL_DIM' was not declared in this scope
+     Xil_DCacheFlushRange((u32)kernel_weight_fp_bits_pad,(KERNEL_DIM*KERNEL_DIM+3)*INPUT_CHANNEL*OUTPUT_CHANNEL*sizeof(short));
+                                                          ^~~~~~~~~~
+../src/helloworld.cpp:116:58: note: suggested alternative: 'MAX_KERNEL_NUM'
+     Xil_DCacheFlushRange((u32)kernel_weight_fp_bits_pad,(KERNEL_DIM*KERNEL_DIM+3)*INPUT_CHANNEL*OUTPUT_CHANNEL*sizeof(short));
+                                                          ^~~~~~~~~~
+                                                          MAX_KERNEL_NUM
+../src/helloworld.cpp:116:83: error: 'INPUT_CHANNEL' was not declared in this scope
+     Xil_DCacheFlushRange((u32)kernel_weight_fp_bits_pad,(KERNEL_DIM*KERNEL_DIM+3)*INPUT_CHANNEL*OUTPUT_CHANNEL*sizeof(short));
+                                                                                   ^~~~~~~~~~~~~
+../src/helloworld.cpp:116:97: error: 'OUTPUT_CHANNEL' was not declared in this scope
+     Xil_DCacheFlushRange((u32)kernel_weight_fp_bits_pad,(KERNEL_DIM*KERNEL_DIM+3)*INPUT_CHANNEL*OUTPUT_CHANNEL*sizeof(short));
+                                                                                                 ^~~~~~~~~~~~~~
+../src/helloworld.cpp:119:31: error: 'kernel_bias_fp_bits_pad' was not declared in this scope
+     Xil_DCacheFlushRange((u32)kernel_bias_fp_bits_pad,OUTPUT_CHANNEL*sizeof(short));
+                               ^~~~~~~~~~~~~~~~~~~~~~~
+../src/helloworld.cpp:123:31: error: 'layer_input' was not declared in this scope
+     Xil_DCacheFlushRange((u32)layer_input,(INPUT_WIDTH-2*PAD)*(INPUT_HEIGHT-2*PAD)*4*sizeof(short));
+                               ^~~~~~~~~~~
+../src/helloworld.cpp:123:44: error: 'INPUT_WIDTH' was not declared in this scope
+     Xil_DCacheFlushRange((u32)layer_input,(INPUT_WIDTH-2*PAD)*(INPUT_HEIGHT-2*PAD)*4*sizeof(short));
+                                            ^~~~~~~~~~~
+../src/helloworld.cpp:123:44: note: suggested alternative: 'YOLO_INPUT_WIDTH'
+     Xil_DCacheFlushRange((u32)layer_input,(INPUT_WIDTH-2*PAD)*(INPUT_HEIGHT-2*PAD)*4*sizeof(short));
+                                            ^~~~~~~~~~~
+                                            YOLO_INPUT_WIDTH
+../src/helloworld.cpp:123:58: error: 'PAD' was not declared in this scope
+     Xil_DCacheFlushRange((u32)layer_input,(INPUT_WIDTH-2*PAD)*(INPUT_HEIGHT-2*PAD)*4*sizeof(short));
+                                                          ^~~
+../src/helloworld.cpp:123:64: error: 'INPUT_HEIGHT' was not declared in this scope
+     Xil_DCacheFlushRange((u32)layer_input,(INPUT_WIDTH-2*PAD)*(INPUT_HEIGHT-2*PAD)*4*sizeof(short));
+                                                                ^~~~~~~~~~~~
+../src/helloworld.cpp:123:64: note: suggested alternative: 'YOLO_INPUT_HEIGHT'
+     Xil_DCacheFlushRange((u32)layer_input,(INPUT_WIDTH-2*PAD)*(INPUT_HEIGHT-2*PAD)*4*sizeof(short));
+                                                                ^~~~~~~~~~~~
+                                                                YOLO_INPUT_HEIGHT
+../src/helloworld.cpp:124:48: error: 'OUTPUT_WIDTH' was not declared in this scope
+     Xil_DCacheFlushRange((u32)layer_output_hls,OUTPUT_WIDTH*OUTPUT_HEIGHT*OUTPUT_CHANNEL*sizeof(short));
+                                                ^~~~~~~~~~~~
+../src/helloworld.cpp:124:48: note: suggested alternative: 'YOLO_INPUT_WIDTH'
+     Xil_DCacheFlushRange((u32)layer_output_hls,OUTPUT_WIDTH*OUTPUT_HEIGHT*OUTPUT_CHANNEL*sizeof(short));
+                                                ^~~~~~~~~~~~
+                                                YOLO_INPUT_WIDTH
+../src/helloworld.cpp:124:61: error: 'OUTPUT_HEIGHT' was not declared in this scope
+     Xil_DCacheFlushRange((u32)layer_output_hls,OUTPUT_WIDTH*OUTPUT_HEIGHT*OUTPUT_CHANNEL*sizeof(short));
+                                                             ^~~~~~~~~~~~~
+../src/helloworld.cpp:124:61: note: suggested alternative: 'YOLO_INPUT_HEIGHT'
+     Xil_DCacheFlushRange((u32)layer_output_hls,OUTPUT_WIDTH*OUTPUT_HEIGHT*OUTPUT_CHANNEL*sizeof(short));
+                                                             ^~~~~~~~~~~~~
+                                                             YOLO_INPUT_HEIGHT
+../src/helloworld.cpp:135:32: error: 'yolo_conv_top' was not declared in this scope
+  while(!XYolo_conv_top_IsDone(&yolo_conv_top));
+                                ^~~~~~~~~~~~~
+../src/helloworld.cpp:135:32: note: suggested alternative: 'yolo_yolo_top'
+  while(!XYolo_conv_top_IsDone(&yolo_conv_top));
+                                ^~~~~~~~~~~~~
+                                yolo_yolo_top
+../src/helloworld.cpp:135:9: error: 'XYolo_conv_top_IsDone' was not declared in this scope
+  while(!XYolo_conv_top_IsDone(&yolo_conv_top));
+         ^~~~~~~~~~~~~~~~~~~~~
+../src/helloworld.cpp:135:9: note: suggested alternative: 'XYolo_yolo_top_IsDone'
+  while(!XYolo_conv_top_IsDone(&yolo_conv_top));
+         ^~~~~~~~~~~~~~~~~~~~~
+         XYolo_yolo_top_IsDone
+../src/helloworld.cpp:144:15: error: 'layer_output_sdk' was not declared in this scope
+   short ref = layer_output_sdk[idx];
+               ^~~~~~~~~~~~~~~~
+../src/helloworld.cpp:144:15: note: suggested alternative: 'layer_output_hls'
+   short ref = layer_output_sdk[idx];
+               ^~~~~~~~~~~~~~~~
+               layer_output_hls
+make: *** [src/helloworld.o] Error 1
+src/subdir.mk:21: recipe for target 'src/helloworld.o' failed
+11:10:13 **** Auto Build of configuration Debug for project yolo_yolo_ps ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.cpp
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -I/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_yolo_fp_prj_2019_64/yolo_yolo_fp_prj_2019_64.sdk/include -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../yolo_yolo_ps_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.cpp"
+In file included from ../src/helloworld.cpp:52:
+../../yolo_yolo_ps_bsp/ps7_cortexa9_0/include/xtime_l.h:87:70: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+                                                                      ^
+../src/helloworld.cpp: In function 'int main()':
+../src/helloworld.cpp:117:31: error: 'layer_input' was not declared in this scope
+     Xil_DCacheFlushRange((u32)layer_input,(INPUT_WIDTH-2*PAD)*(INPUT_HEIGHT-2*PAD)*4*sizeof(short));
+                               ^~~~~~~~~~~
+../src/helloworld.cpp:117:44: error: 'INPUT_WIDTH' was not declared in this scope
+     Xil_DCacheFlushRange((u32)layer_input,(INPUT_WIDTH-2*PAD)*(INPUT_HEIGHT-2*PAD)*4*sizeof(short));
+                                            ^~~~~~~~~~~
+../src/helloworld.cpp:117:44: note: suggested alternative: 'YOLO_INPUT_WIDTH'
+     Xil_DCacheFlushRange((u32)layer_input,(INPUT_WIDTH-2*PAD)*(INPUT_HEIGHT-2*PAD)*4*sizeof(short));
+                                            ^~~~~~~~~~~
+                                            YOLO_INPUT_WIDTH
+../src/helloworld.cpp:117:58: error: 'PAD' was not declared in this scope
+     Xil_DCacheFlushRange((u32)layer_input,(INPUT_WIDTH-2*PAD)*(INPUT_HEIGHT-2*PAD)*4*sizeof(short));
+                                                          ^~~
+../src/helloworld.cpp:117:64: error: 'INPUT_HEIGHT' was not declared in this scope
+     Xil_DCacheFlushRange((u32)layer_input,(INPUT_WIDTH-2*PAD)*(INPUT_HEIGHT-2*PAD)*4*sizeof(short));
+                                                                ^~~~~~~~~~~~
+../src/helloworld.cpp:117:64: note: suggested alternative: 'YOLO_INPUT_HEIGHT'
+     Xil_DCacheFlushRange((u32)layer_input,(INPUT_WIDTH-2*PAD)*(INPUT_HEIGHT-2*PAD)*4*sizeof(short));
+                                                                ^~~~~~~~~~~~
+                                                                YOLO_INPUT_HEIGHT
+../src/helloworld.cpp:118:48: error: 'OUTPUT_WIDTH' was not declared in this scope
+     Xil_DCacheFlushRange((u32)layer_output_hls,OUTPUT_WIDTH*OUTPUT_HEIGHT*OUTPUT_CHANNEL*sizeof(short));
+                                                ^~~~~~~~~~~~
+../src/helloworld.cpp:118:48: note: suggested alternative: 'YOLO_INPUT_WIDTH'
+     Xil_DCacheFlushRange((u32)layer_output_hls,OUTPUT_WIDTH*OUTPUT_HEIGHT*OUTPUT_CHANNEL*sizeof(short));
+                                                ^~~~~~~~~~~~
+                                                YOLO_INPUT_WIDTH
+../src/helloworld.cpp:118:61: error: 'OUTPUT_HEIGHT' was not declared in this scope
+     Xil_DCacheFlushRange((u32)layer_output_hls,OUTPUT_WIDTH*OUTPUT_HEIGHT*OUTPUT_CHANNEL*sizeof(short));
+                                                             ^~~~~~~~~~~~~
+../src/helloworld.cpp:118:61: note: suggested alternative: 'YOLO_INPUT_HEIGHT'
+     Xil_DCacheFlushRange((u32)layer_output_hls,OUTPUT_WIDTH*OUTPUT_HEIGHT*OUTPUT_CHANNEL*sizeof(short));
+                                                             ^~~~~~~~~~~~~
+                                                             YOLO_INPUT_HEIGHT
+../src/helloworld.cpp:118:75: error: 'OUTPUT_CHANNEL' was not declared in this scope
+     Xil_DCacheFlushRange((u32)layer_output_hls,OUTPUT_WIDTH*OUTPUT_HEIGHT*OUTPUT_CHANNEL*sizeof(short));
+                                                                           ^~~~~~~~~~~~~~
+../src/helloworld.cpp:129:32: error: 'yolo_conv_top' was not declared in this scope
+  while(!XYolo_conv_top_IsDone(&yolo_conv_top));
+                                ^~~~~~~~~~~~~
+../src/helloworld.cpp:129:32: note: suggested alternative: 'yolo_yolo_top'
+  while(!XYolo_conv_top_IsDone(&yolo_conv_top));
+                                ^~~~~~~~~~~~~
+                                yolo_yolo_top
+../src/helloworld.cpp:129:9: error: 'XYolo_conv_top_IsDone' was not declared in this scope
+  while(!XYolo_conv_top_IsDone(&yolo_conv_top));
+         ^~~~~~~~~~~~~~~~~~~~~
+../src/helloworld.cpp:129:9: note: suggested alternative: 'XYolo_yolo_top_IsDone'
+  while(!XYolo_conv_top_IsDone(&yolo_conv_top));
+         ^~~~~~~~~~~~~~~~~~~~~
+         XYolo_yolo_top_IsDone
+../src/helloworld.cpp:138:15: error: 'layer_output_sdk' was not declared in this scope
+   short ref = layer_output_sdk[idx];
+               ^~~~~~~~~~~~~~~~
+../src/helloworld.cpp:138:15: note: suggested alternative: 'layer_output_hls'
+   short ref = layer_output_sdk[idx];
+               ^~~~~~~~~~~~~~~~
+               layer_output_hls
+src/subdir.mk:21: recipe for target 'src/helloworld.o' failed
+make: *** [src/helloworld.o] Error 1
+11:13:23 **** Auto Build of configuration Debug for project yolo_yolo_ps ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.cpp
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -I/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_yolo_fp_prj_2019_64/yolo_yolo_fp_prj_2019_64.sdk/include -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../yolo_yolo_ps_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.cpp"
+In file included from ../src/helloworld.cpp:52:
+../../yolo_yolo_ps_bsp/ps7_cortexa9_0/include/xtime_l.h:87:70: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+                                                                      ^
+../src/helloworld.cpp: In function 'int main()':
+../src/helloworld.cpp:118:31: error: 'layer_output_hls_reduce' was not declared in this scope
+     Xil_DCacheFlushRange((u32)layer_output_hls_reduce,YOLO_INPUT_HEIGHT*YOLO_INPUT_WIDTH*MAX_KERNEL_NUM*sizeof(short));
+                               ^~~~~~~~~~~~~~~~~~~~~~~
+../src/helloworld.cpp:118:31: note: suggested alternative: 'layer_output_sdk_reduce'
+     Xil_DCacheFlushRange((u32)layer_output_hls_reduce,YOLO_INPUT_HEIGHT*YOLO_INPUT_WIDTH*MAX_KERNEL_NUM*sizeof(short));
+                               ^~~~~~~~~~~~~~~~~~~~~~~
+                               layer_output_sdk_reduce
+../src/helloworld.cpp:121:41: error: 'layer_input' was not declared in this scope
+     XAxiDma_SimpleTransfer(&axiDMA,(u32)layer_input,(INPUT_WIDTH-2*PAD)*(INPUT_HEIGHT-2*PAD)*4*sizeof(short),XAXIDMA_DMA_TO_DEVICE);
+                                         ^~~~~~~~~~~
+../src/helloworld.cpp:121:54: error: 'INPUT_WIDTH' was not declared in this scope
+     XAxiDma_SimpleTransfer(&axiDMA,(u32)layer_input,(INPUT_WIDTH-2*PAD)*(INPUT_HEIGHT-2*PAD)*4*sizeof(short),XAXIDMA_DMA_TO_DEVICE);
+                                                      ^~~~~~~~~~~
+../src/helloworld.cpp:121:54: note: suggested alternative: 'YOLO_INPUT_WIDTH'
+     XAxiDma_SimpleTransfer(&axiDMA,(u32)layer_input,(INPUT_WIDTH-2*PAD)*(INPUT_HEIGHT-2*PAD)*4*sizeof(short),XAXIDMA_DMA_TO_DEVICE);
+                                                      ^~~~~~~~~~~
+                                                      YOLO_INPUT_WIDTH
+../src/helloworld.cpp:121:68: error: 'PAD' was not declared in this scope
+     XAxiDma_SimpleTransfer(&axiDMA,(u32)layer_input,(INPUT_WIDTH-2*PAD)*(INPUT_HEIGHT-2*PAD)*4*sizeof(short),XAXIDMA_DMA_TO_DEVICE);
+                                                                    ^~~
+../src/helloworld.cpp:121:74: error: 'INPUT_HEIGHT' was not declared in this scope
+     XAxiDma_SimpleTransfer(&axiDMA,(u32)layer_input,(INPUT_WIDTH-2*PAD)*(INPUT_HEIGHT-2*PAD)*4*sizeof(short),XAXIDMA_DMA_TO_DEVICE);
+                                                                          ^~~~~~~~~~~~
+../src/helloworld.cpp:121:74: note: suggested alternative: 'YOLO_INPUT_HEIGHT'
+     XAxiDma_SimpleTransfer(&axiDMA,(u32)layer_input,(INPUT_WIDTH-2*PAD)*(INPUT_HEIGHT-2*PAD)*4*sizeof(short),XAXIDMA_DMA_TO_DEVICE);
+                                                                          ^~~~~~~~~~~~
+                                                                          YOLO_INPUT_HEIGHT
+../src/helloworld.cpp:124:55: error: 'OUTPUT_WIDTH' was not declared in this scope
+  XAxiDma_SimpleTransfer(&axiDMA,(u32)layer_output_hls,OUTPUT_WIDTH*OUTPUT_HEIGHT*OUTPUT_CHANNEL*sizeof(short),XAXIDMA_DEVICE_TO_DMA);
+                                                       ^~~~~~~~~~~~
+../src/helloworld.cpp:124:55: note: suggested alternative: 'YOLO_INPUT_WIDTH'
+  XAxiDma_SimpleTransfer(&axiDMA,(u32)layer_output_hls,OUTPUT_WIDTH*OUTPUT_HEIGHT*OUTPUT_CHANNEL*sizeof(short),XAXIDMA_DEVICE_TO_DMA);
+                                                       ^~~~~~~~~~~~
+                                                       YOLO_INPUT_WIDTH
+../src/helloworld.cpp:124:68: error: 'OUTPUT_HEIGHT' was not declared in this scope
+  XAxiDma_SimpleTransfer(&axiDMA,(u32)layer_output_hls,OUTPUT_WIDTH*OUTPUT_HEIGHT*OUTPUT_CHANNEL*sizeof(short),XAXIDMA_DEVICE_TO_DMA);
+                                                                    ^~~~~~~~~~~~~
+../src/helloworld.cpp:124:68: note: suggested alternative: 'YOLO_INPUT_HEIGHT'
+  XAxiDma_SimpleTransfer(&axiDMA,(u32)layer_output_hls,OUTPUT_WIDTH*OUTPUT_HEIGHT*OUTPUT_CHANNEL*sizeof(short),XAXIDMA_DEVICE_TO_DMA);
+                                                                    ^~~~~~~~~~~~~
+                                                                    YOLO_INPUT_HEIGHT
+../src/helloworld.cpp:124:82: error: 'OUTPUT_CHANNEL' was not declared in this scope
+  XAxiDma_SimpleTransfer(&axiDMA,(u32)layer_output_hls,OUTPUT_WIDTH*OUTPUT_HEIGHT*OUTPUT_CHANNEL*sizeof(short),XAXIDMA_DEVICE_TO_DMA);
+                                                                                  ^~~~~~~~~~~~~~
+../src/helloworld.cpp:129:32: error: 'yolo_conv_top' was not declared in this scope
+  while(!XYolo_conv_top_IsDone(&yolo_conv_top));
+                                ^~~~~~~~~~~~~
+../src/helloworld.cpp:129:32: note: suggested alternative: 'yolo_yolo_top'
+  while(!XYolo_conv_top_IsDone(&yolo_conv_top));
+                                ^~~~~~~~~~~~~
+                                yolo_yolo_top
+../src/helloworld.cpp:129:9: error: 'XYolo_conv_top_IsDone' was not declared in this scope
+  while(!XYolo_conv_top_IsDone(&yolo_conv_top));
+         ^~~~~~~~~~~~~~~~~~~~~
+../src/helloworld.cpp:129:9: note: suggested alternative: 'XYolo_yolo_top_IsDone'
+  while(!XYolo_conv_top_IsDone(&yolo_conv_top));
+         ^~~~~~~~~~~~~~~~~~~~~
+         XYolo_yolo_top_IsDone
+../src/helloworld.cpp:138:15: error: 'layer_output_sdk' was not declared in this scope
+   short ref = layer_output_sdk[idx];
+               ^~~~~~~~~~~~~~~~
+../src/helloworld.cpp:138:15: note: suggested alternative: 'layer_output_hls'
+   short ref = layer_output_sdk[idx];
+               ^~~~~~~~~~~~~~~~
+               layer_output_hls
+src/subdir.mk:21: recipe for target 'src/helloworld.o' failed
+make: *** [src/helloworld.o] Error 1
+11:13:59 **** Auto Build of configuration Debug for project yolo_yolo_ps ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.cpp
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -I/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_yolo_fp_prj_2019_64/yolo_yolo_fp_prj_2019_64.sdk/include -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../yolo_yolo_ps_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.cpp"
+In file included from ../src/helloworld.cpp:52:
+../../yolo_yolo_ps_bsp/ps7_cortexa9_0/include/xtime_l.h:87:70: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+                                                                      ^
+../src/helloworld.cpp: In function 'int main()':
+../src/helloworld.cpp:121:41: error: 'layer_input' was not declared in this scope
+     XAxiDma_SimpleTransfer(&axiDMA,(u32)layer_input,(INPUT_WIDTH-2*PAD)*(INPUT_HEIGHT-2*PAD)*4*sizeof(short),XAXIDMA_DMA_TO_DEVICE);
+                                         ^~~~~~~~~~~
+../src/helloworld.cpp:121:54: error: 'INPUT_WIDTH' was not declared in this scope
+     XAxiDma_SimpleTransfer(&axiDMA,(u32)layer_input,(INPUT_WIDTH-2*PAD)*(INPUT_HEIGHT-2*PAD)*4*sizeof(short),XAXIDMA_DMA_TO_DEVICE);
+                                                      ^~~~~~~~~~~
+../src/helloworld.cpp:121:54: note: suggested alternative: 'YOLO_INPUT_WIDTH'
+     XAxiDma_SimpleTransfer(&axiDMA,(u32)layer_input,(INPUT_WIDTH-2*PAD)*(INPUT_HEIGHT-2*PAD)*4*sizeof(short),XAXIDMA_DMA_TO_DEVICE);
+                                                      ^~~~~~~~~~~
+                                                      YOLO_INPUT_WIDTH
+../src/helloworld.cpp:121:68: error: 'PAD' was not declared in this scope
+     XAxiDma_SimpleTransfer(&axiDMA,(u32)layer_input,(INPUT_WIDTH-2*PAD)*(INPUT_HEIGHT-2*PAD)*4*sizeof(short),XAXIDMA_DMA_TO_DEVICE);
+                                                                    ^~~
+../src/helloworld.cpp:121:74: error: 'INPUT_HEIGHT' was not declared in this scope
+     XAxiDma_SimpleTransfer(&axiDMA,(u32)layer_input,(INPUT_WIDTH-2*PAD)*(INPUT_HEIGHT-2*PAD)*4*sizeof(short),XAXIDMA_DMA_TO_DEVICE);
+                                                                          ^~~~~~~~~~~~
+../src/helloworld.cpp:121:74: note: suggested alternative: 'YOLO_INPUT_HEIGHT'
+     XAxiDma_SimpleTransfer(&axiDMA,(u32)layer_input,(INPUT_WIDTH-2*PAD)*(INPUT_HEIGHT-2*PAD)*4*sizeof(short),XAXIDMA_DMA_TO_DEVICE);
+                                                                          ^~~~~~~~~~~~
+                                                                          YOLO_INPUT_HEIGHT
+../src/helloworld.cpp:124:55: error: 'OUTPUT_WIDTH' was not declared in this scope
+  XAxiDma_SimpleTransfer(&axiDMA,(u32)layer_output_hls,OUTPUT_WIDTH*OUTPUT_HEIGHT*OUTPUT_CHANNEL*sizeof(short),XAXIDMA_DEVICE_TO_DMA);
+                                                       ^~~~~~~~~~~~
+../src/helloworld.cpp:124:55: note: suggested alternative: 'YOLO_INPUT_WIDTH'
+  XAxiDma_SimpleTransfer(&axiDMA,(u32)layer_output_hls,OUTPUT_WIDTH*OUTPUT_HEIGHT*OUTPUT_CHANNEL*sizeof(short),XAXIDMA_DEVICE_TO_DMA);
+                                                       ^~~~~~~~~~~~
+                                                       YOLO_INPUT_WIDTH
+../src/helloworld.cpp:124:68: error: 'OUTPUT_HEIGHT' was not declared in this scope
+  XAxiDma_SimpleTransfer(&axiDMA,(u32)layer_output_hls,OUTPUT_WIDTH*OUTPUT_HEIGHT*OUTPUT_CHANNEL*sizeof(short),XAXIDMA_DEVICE_TO_DMA);
+                                                                    ^~~~~~~~~~~~~
+../src/helloworld.cpp:124:68: note: suggested alternative: 'YOLO_INPUT_HEIGHT'
+  XAxiDma_SimpleTransfer(&axiDMA,(u32)layer_output_hls,OUTPUT_WIDTH*OUTPUT_HEIGHT*OUTPUT_CHANNEL*sizeof(short),XAXIDMA_DEVICE_TO_DMA);
+                                                                    ^~~~~~~~~~~~~
+                                                                    YOLO_INPUT_HEIGHT
+../src/helloworld.cpp:124:82: error: 'OUTPUT_CHANNEL' was not declared in this scope
+  XAxiDma_SimpleTransfer(&axiDMA,(u32)layer_output_hls,OUTPUT_WIDTH*OUTPUT_HEIGHT*OUTPUT_CHANNEL*sizeof(short),XAXIDMA_DEVICE_TO_DMA);
+                                                                                  ^~~~~~~~~~~~~~
+../src/helloworld.cpp:129:32: error: 'yolo_conv_top' was not declared in this scope
+  while(!XYolo_conv_top_IsDone(&yolo_conv_top));
+                                ^~~~~~~~~~~~~
+../src/helloworld.cpp:129:32: note: suggested alternative: 'yolo_yolo_top'
+  while(!XYolo_conv_top_IsDone(&yolo_conv_top));
+                                ^~~~~~~~~~~~~
+                                yolo_yolo_top
+../src/helloworld.cpp:129:9: error: 'XYolo_conv_top_IsDone' was not declared in this scope
+  while(!XYolo_conv_top_IsDone(&yolo_conv_top));
+         ^~~~~~~~~~~~~~~~~~~~~
+../src/helloworld.cpp:129:9: note: suggested alternative: 'XYolo_yolo_top_IsDone'
+  while(!XYolo_conv_top_IsDone(&yolo_conv_top));
+         ^~~~~~~~~~~~~~~~~~~~~
+         XYolo_yolo_top_IsDone
+../src/helloworld.cpp:138:15: error: 'layer_output_sdk' was not declared in this scope
+   short ref = layer_output_sdk[idx];
+               ^~~~~~~~~~~~~~~~
+../src/helloworld.cpp:138:15: note: suggested alternative: 'layer_output_hls'
+   short ref = layer_output_sdk[idx];
+               ^~~~~~~~~~~~~~~~
+               layer_output_hls
+make: *** [src/helloworld.o] Error 1
+src/subdir.mk:21: recipe for target 'src/helloworld.o' failed
+11:14:30 **** Auto Build of configuration Debug for project yolo_yolo_ps ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.cpp
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -I/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_yolo_fp_prj_2019_64/yolo_yolo_fp_prj_2019_64.sdk/include -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../yolo_yolo_ps_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.cpp"
+In file included from ../src/helloworld.cpp:52:
+../../yolo_yolo_ps_bsp/ps7_cortexa9_0/include/xtime_l.h:87:70: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+                                                                      ^
+../src/helloworld.cpp: In function 'int main()':
+../src/helloworld.cpp:127:50: error: 'OUTPUT_WIDTH' was not declared in this scope
+  Xil_DCacheInvalidateRange((u32)layer_output_hls,OUTPUT_WIDTH*OUTPUT_HEIGHT*OUTPUT_CHANNEL*sizeof(short));
+                                                  ^~~~~~~~~~~~
+../src/helloworld.cpp:127:50: note: suggested alternative: 'YOLO_INPUT_WIDTH'
+  Xil_DCacheInvalidateRange((u32)layer_output_hls,OUTPUT_WIDTH*OUTPUT_HEIGHT*OUTPUT_CHANNEL*sizeof(short));
+                                                  ^~~~~~~~~~~~
+                                                  YOLO_INPUT_WIDTH
+../src/helloworld.cpp:127:63: error: 'OUTPUT_HEIGHT' was not declared in this scope
+  Xil_DCacheInvalidateRange((u32)layer_output_hls,OUTPUT_WIDTH*OUTPUT_HEIGHT*OUTPUT_CHANNEL*sizeof(short));
+                                                               ^~~~~~~~~~~~~
+../src/helloworld.cpp:127:63: note: suggested alternative: 'YOLO_INPUT_HEIGHT'
+  Xil_DCacheInvalidateRange((u32)layer_output_hls,OUTPUT_WIDTH*OUTPUT_HEIGHT*OUTPUT_CHANNEL*sizeof(short));
+                                                               ^~~~~~~~~~~~~
+                                                               YOLO_INPUT_HEIGHT
+../src/helloworld.cpp:127:77: error: 'OUTPUT_CHANNEL' was not declared in this scope
+  Xil_DCacheInvalidateRange((u32)layer_output_hls,OUTPUT_WIDTH*OUTPUT_HEIGHT*OUTPUT_CHANNEL*sizeof(short));
+                                                                             ^~~~~~~~~~~~~~
+../src/helloworld.cpp:129:32: error: 'yolo_conv_top' was not declared in this scope
+  while(!XYolo_conv_top_IsDone(&yolo_conv_top));
+                                ^~~~~~~~~~~~~
+../src/helloworld.cpp:129:32: note: suggested alternative: 'yolo_yolo_top'
+  while(!XYolo_conv_top_IsDone(&yolo_conv_top));
+                                ^~~~~~~~~~~~~
+                                yolo_yolo_top
+../src/helloworld.cpp:129:9: error: 'XYolo_conv_top_IsDone' was not declared in this scope
+  while(!XYolo_conv_top_IsDone(&yolo_conv_top));
+         ^~~~~~~~~~~~~~~~~~~~~
+../src/helloworld.cpp:129:9: note: suggested alternative: 'XYolo_yolo_top_IsDone'
+  while(!XYolo_conv_top_IsDone(&yolo_conv_top));
+         ^~~~~~~~~~~~~~~~~~~~~
+         XYolo_yolo_top_IsDone
+../src/helloworld.cpp:138:15: error: 'layer_output_sdk' was not declared in this scope
+   short ref = layer_output_sdk[idx];
+               ^~~~~~~~~~~~~~~~
+../src/helloworld.cpp:138:15: note: suggested alternative: 'layer_output_hls'
+   short ref = layer_output_sdk[idx];
+               ^~~~~~~~~~~~~~~~
+               layer_output_hls
+make: *** [src/helloworld.o] Error 1
+src/subdir.mk:21: recipe for target 'src/helloworld.o' failed
+11:14:41 **** Auto Build of configuration Debug for project yolo_yolo_ps ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.cpp
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -I/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_yolo_fp_prj_2019_64/yolo_yolo_fp_prj_2019_64.sdk/include -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../yolo_yolo_ps_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.cpp"
+In file included from ../src/helloworld.cpp:52:
+../../yolo_yolo_ps_bsp/ps7_cortexa9_0/include/xtime_l.h:87:70: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+                                                                      ^
+../src/helloworld.cpp: In function 'int main()':
+../src/helloworld.cpp:129:32: error: 'yolo_conv_top' was not declared in this scope
+  while(!XYolo_conv_top_IsDone(&yolo_conv_top));
+                                ^~~~~~~~~~~~~
+../src/helloworld.cpp:129:32: note: suggested alternative: 'yolo_yolo_top'
+  while(!XYolo_conv_top_IsDone(&yolo_conv_top));
+                                ^~~~~~~~~~~~~
+                                yolo_yolo_top
+../src/helloworld.cpp:129:9: error: 'XYolo_conv_top_IsDone' was not declared in this scope
+  while(!XYolo_conv_top_IsDone(&yolo_conv_top));
+         ^~~~~~~~~~~~~~~~~~~~~
+../src/helloworld.cpp:129:9: note: suggested alternative: 'XYolo_yolo_top_IsDone'
+  while(!XYolo_conv_top_IsDone(&yolo_conv_top));
+         ^~~~~~~~~~~~~~~~~~~~~
+         XYolo_yolo_top_IsDone
+../src/helloworld.cpp:136:20: error: 'OUTPUT_WIDTH' was not declared in this scope
+  for(int idx=0;idx<OUTPUT_WIDTH*OUTPUT_HEIGHT*OUTPUT_CHANNEL;idx++)
+                    ^~~~~~~~~~~~
+../src/helloworld.cpp:136:20: note: suggested alternative: 'YOLO_INPUT_WIDTH'
+  for(int idx=0;idx<OUTPUT_WIDTH*OUTPUT_HEIGHT*OUTPUT_CHANNEL;idx++)
+                    ^~~~~~~~~~~~
+                    YOLO_INPUT_WIDTH
+../src/helloworld.cpp:136:33: error: 'OUTPUT_HEIGHT' was not declared in this scope
+  for(int idx=0;idx<OUTPUT_WIDTH*OUTPUT_HEIGHT*OUTPUT_CHANNEL;idx++)
+                                 ^~~~~~~~~~~~~
+../src/helloworld.cpp:136:33: note: suggested alternative: 'YOLO_INPUT_HEIGHT'
+  for(int idx=0;idx<OUTPUT_WIDTH*OUTPUT_HEIGHT*OUTPUT_CHANNEL;idx++)
+                                 ^~~~~~~~~~~~~
+                                 YOLO_INPUT_HEIGHT
+../src/helloworld.cpp:136:47: error: 'OUTPUT_CHANNEL' was not declared in this scope
+  for(int idx=0;idx<OUTPUT_WIDTH*OUTPUT_HEIGHT*OUTPUT_CHANNEL;idx++)
+                                               ^~~~~~~~~~~~~~
+../src/helloworld.cpp:138:15: error: 'layer_output_sdk' was not declared in this scope
+   short ref = layer_output_sdk[idx];
+               ^~~~~~~~~~~~~~~~
+../src/helloworld.cpp:138:15: note: suggested alternative: 'layer_output_hls'
+   short ref = layer_output_sdk[idx];
+               ^~~~~~~~~~~~~~~~
+               layer_output_hls
+src/subdir.mk:21: recipe for target 'src/helloworld.o' failed
+make: *** [src/helloworld.o] Error 1
+11:15:21 **** Auto Build of configuration Debug for project yolo_yolo_ps ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.cpp
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -I/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_yolo_fp_prj_2019_64/yolo_yolo_fp_prj_2019_64.sdk/include -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../yolo_yolo_ps_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.cpp"
+In file included from ../src/helloworld.cpp:52:
+../../yolo_yolo_ps_bsp/ps7_cortexa9_0/include/xtime_l.h:87:70: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+                                                                      ^
+../src/helloworld.cpp: In function 'int main()':
+../src/helloworld.cpp:129:32: error: 'yolo_conv_top' was not declared in this scope
+  while(!XYolo_conv_top_IsDone(&yolo_conv_top));
+                                ^~~~~~~~~~~~~
+../src/helloworld.cpp:129:32: note: suggested alternative: 'yolo_yolo_top'
+  while(!XYolo_conv_top_IsDone(&yolo_conv_top));
+                                ^~~~~~~~~~~~~
+                                yolo_yolo_top
+../src/helloworld.cpp:129:9: error: 'XYolo_conv_top_IsDone' was not declared in this scope
+  while(!XYolo_conv_top_IsDone(&yolo_conv_top));
+         ^~~~~~~~~~~~~~~~~~~~~
+../src/helloworld.cpp:129:9: note: suggested alternative: 'XYolo_yolo_top_IsDone'
+  while(!XYolo_conv_top_IsDone(&yolo_conv_top));
+         ^~~~~~~~~~~~~~~~~~~~~
+         XYolo_yolo_top_IsDone
+../src/helloworld.cpp:136:20: error: 'OUTPUT_WIDTH' was not declared in this scope
+  for(int idx=0;idx<OUTPUT_WIDTH*OUTPUT_HEIGHT*OUTPUT_CHANNEL;idx++)
+                    ^~~~~~~~~~~~
+../src/helloworld.cpp:136:20: note: suggested alternative: 'YOLO_INPUT_WIDTH'
+  for(int idx=0;idx<OUTPUT_WIDTH*OUTPUT_HEIGHT*OUTPUT_CHANNEL;idx++)
+                    ^~~~~~~~~~~~
+                    YOLO_INPUT_WIDTH
+../src/helloworld.cpp:136:33: error: 'OUTPUT_HEIGHT' was not declared in this scope
+  for(int idx=0;idx<OUTPUT_WIDTH*OUTPUT_HEIGHT*OUTPUT_CHANNEL;idx++)
+                                 ^~~~~~~~~~~~~
+../src/helloworld.cpp:136:33: note: suggested alternative: 'YOLO_INPUT_HEIGHT'
+  for(int idx=0;idx<OUTPUT_WIDTH*OUTPUT_HEIGHT*OUTPUT_CHANNEL;idx++)
+                                 ^~~~~~~~~~~~~
+                                 YOLO_INPUT_HEIGHT
+../src/helloworld.cpp:136:47: error: 'OUTPUT_CHANNEL' was not declared in this scope
+  for(int idx=0;idx<OUTPUT_WIDTH*OUTPUT_HEIGHT*OUTPUT_CHANNEL;idx++)
+                                               ^~~~~~~~~~~~~~
+../src/helloworld.cpp:138:15: error: 'layer_output_sdk_reducr' was not declared in this scope
+   short ref = layer_output_sdk_reducr[idx];
+               ^~~~~~~~~~~~~~~~~~~~~~~
+../src/helloworld.cpp:138:15: note: suggested alternative: 'layer_output_sdk_reduce'
+   short ref = layer_output_sdk_reducr[idx];
+               ^~~~~~~~~~~~~~~~~~~~~~~
+               layer_output_sdk_reduce
+../src/helloworld.cpp:139:15: error: 'layer_output_hls_reducr' was not declared in this scope
+   short get = layer_output_hls_reducr[idx];
+               ^~~~~~~~~~~~~~~~~~~~~~~
+../src/helloworld.cpp:139:15: note: suggested alternative: 'layer_output_hls_reduce'
+   short get = layer_output_hls_reducr[idx];
+               ^~~~~~~~~~~~~~~~~~~~~~~
+               layer_output_hls_reduce
+make: *** [src/helloworld.o] Error 1
+src/subdir.mk:21: recipe for target 'src/helloworld.o' failed
+11:15:35 **** Auto Build of configuration Debug for project yolo_yolo_ps ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.cpp
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -I/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_yolo_fp_prj_2019_64/yolo_yolo_fp_prj_2019_64.sdk/include -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../yolo_yolo_ps_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.cpp"
+In file included from ../src/helloworld.cpp:52:
+../../yolo_yolo_ps_bsp/ps7_cortexa9_0/include/xtime_l.h:87:70: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+                                                                      ^
+../src/helloworld.cpp: In function 'int main()':
+../src/helloworld.cpp:129:32: error: 'yolo_conv_top' was not declared in this scope
+  while(!XYolo_conv_top_IsDone(&yolo_conv_top));
+                                ^~~~~~~~~~~~~
+../src/helloworld.cpp:129:32: note: suggested alternative: 'yolo_yolo_top'
+  while(!XYolo_conv_top_IsDone(&yolo_conv_top));
+                                ^~~~~~~~~~~~~
+                                yolo_yolo_top
+../src/helloworld.cpp:129:9: error: 'XYolo_conv_top_IsDone' was not declared in this scope
+  while(!XYolo_conv_top_IsDone(&yolo_conv_top));
+         ^~~~~~~~~~~~~~~~~~~~~
+../src/helloworld.cpp:129:9: note: suggested alternative: 'XYolo_yolo_top_IsDone'
+  while(!XYolo_conv_top_IsDone(&yolo_conv_top));
+         ^~~~~~~~~~~~~~~~~~~~~
+         XYolo_yolo_top_IsDone
+../src/helloworld.cpp:136:20: error: 'OUTPUT_WIDTH' was not declared in this scope
+  for(int idx=0;idx<OUTPUT_WIDTH*OUTPUT_HEIGHT*OUTPUT_CHANNEL;idx++)
+                    ^~~~~~~~~~~~
+../src/helloworld.cpp:136:20: note: suggested alternative: 'YOLO_INPUT_WIDTH'
+  for(int idx=0;idx<OUTPUT_WIDTH*OUTPUT_HEIGHT*OUTPUT_CHANNEL;idx++)
+                    ^~~~~~~~~~~~
+                    YOLO_INPUT_WIDTH
+../src/helloworld.cpp:136:33: error: 'OUTPUT_HEIGHT' was not declared in this scope
+  for(int idx=0;idx<OUTPUT_WIDTH*OUTPUT_HEIGHT*OUTPUT_CHANNEL;idx++)
+                                 ^~~~~~~~~~~~~
+../src/helloworld.cpp:136:33: note: suggested alternative: 'YOLO_INPUT_HEIGHT'
+  for(int idx=0;idx<OUTPUT_WIDTH*OUTPUT_HEIGHT*OUTPUT_CHANNEL;idx++)
+                                 ^~~~~~~~~~~~~
+                                 YOLO_INPUT_HEIGHT
+../src/helloworld.cpp:136:47: error: 'OUTPUT_CHANNEL' was not declared in this scope
+  for(int idx=0;idx<OUTPUT_WIDTH*OUTPUT_HEIGHT*OUTPUT_CHANNEL;idx++)
+                                               ^~~~~~~~~~~~~~
+../src/helloworld.cpp:138:15: error: 'layer_output_sdk_reducr' was not declared in this scope
+   short ref = layer_output_sdk_reducr[idx];
+               ^~~~~~~~~~~~~~~~~~~~~~~
+../src/helloworld.cpp:138:15: note: suggested alternative: 'layer_output_sdk_reduce'
+   short ref = layer_output_sdk_reducr[idx];
+               ^~~~~~~~~~~~~~~~~~~~~~~
+               layer_output_sdk_reduce
+../src/helloworld.cpp:139:15: error: 'layer_output_hls_reducr' was not declared in this scope
+   short get = layer_output_hls_reducr[idx];
+               ^~~~~~~~~~~~~~~~~~~~~~~
+../src/helloworld.cpp:139:15: note: suggested alternative: 'layer_output_hls_reduce'
+   short get = layer_output_hls_reducr[idx];
+               ^~~~~~~~~~~~~~~~~~~~~~~
+               layer_output_hls_reduce
+src/subdir.mk:21: recipe for target 'src/helloworld.o' failed
+make: *** [src/helloworld.o] Error 1
+11:16:01 **** Auto Build of configuration Debug for project yolo_yolo_ps ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.cpp
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -I/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_yolo_fp_prj_2019_64/yolo_yolo_fp_prj_2019_64.sdk/include -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../yolo_yolo_ps_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.cpp"
+In file included from ../src/helloworld.cpp:52:
+../../yolo_yolo_ps_bsp/ps7_cortexa9_0/include/xtime_l.h:87:70: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+                                                                      ^
+../src/helloworld.cpp: In function 'int main()':
+../src/helloworld.cpp:136:20: error: 'OUTPUT_WIDTH' was not declared in this scope
+  for(int idx=0;idx<OUTPUT_WIDTH*OUTPUT_HEIGHT*OUTPUT_CHANNEL;idx++)
+                    ^~~~~~~~~~~~
+../src/helloworld.cpp:136:20: note: suggested alternative: 'YOLO_INPUT_WIDTH'
+  for(int idx=0;idx<OUTPUT_WIDTH*OUTPUT_HEIGHT*OUTPUT_CHANNEL;idx++)
+                    ^~~~~~~~~~~~
+                    YOLO_INPUT_WIDTH
+../src/helloworld.cpp:136:33: error: 'OUTPUT_HEIGHT' was not declared in this scope
+  for(int idx=0;idx<OUTPUT_WIDTH*OUTPUT_HEIGHT*OUTPUT_CHANNEL;idx++)
+                                 ^~~~~~~~~~~~~
+../src/helloworld.cpp:136:33: note: suggested alternative: 'YOLO_INPUT_HEIGHT'
+  for(int idx=0;idx<OUTPUT_WIDTH*OUTPUT_HEIGHT*OUTPUT_CHANNEL;idx++)
+                                 ^~~~~~~~~~~~~
+                                 YOLO_INPUT_HEIGHT
+../src/helloworld.cpp:136:47: error: 'OUTPUT_CHANNEL' was not declared in this scope
+  for(int idx=0;idx<OUTPUT_WIDTH*OUTPUT_HEIGHT*OUTPUT_CHANNEL;idx++)
+                                               ^~~~~~~~~~~~~~
+../src/helloworld.cpp:138:15: error: 'layer_output_sdk_reducr' was not declared in this scope
+   short ref = layer_output_sdk_reducr[idx];
+               ^~~~~~~~~~~~~~~~~~~~~~~
+../src/helloworld.cpp:138:15: note: suggested alternative: 'layer_output_sdk_reduce'
+   short ref = layer_output_sdk_reducr[idx];
+               ^~~~~~~~~~~~~~~~~~~~~~~
+               layer_output_sdk_reduce
+../src/helloworld.cpp:139:15: error: 'layer_output_hls_reducr' was not declared in this scope
+   short get = layer_output_hls_reducr[idx];
+               ^~~~~~~~~~~~~~~~~~~~~~~
+../src/helloworld.cpp:139:15: note: suggested alternative: 'layer_output_hls_reduce'
+   short get = layer_output_hls_reducr[idx];
+               ^~~~~~~~~~~~~~~~~~~~~~~
+               layer_output_hls_reduce
+src/subdir.mk:21: recipe for target 'src/helloworld.o' failed
+make: *** [src/helloworld.o] Error 1
+11:16:10 **** Auto Build of configuration Debug for project yolo_yolo_ps ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.cpp
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -I/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_yolo_fp_prj_2019_64/yolo_yolo_fp_prj_2019_64.sdk/include -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../yolo_yolo_ps_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.cpp"
+In file included from ../src/helloworld.cpp:52:
+../../yolo_yolo_ps_bsp/ps7_cortexa9_0/include/xtime_l.h:87:70: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+                                                                      ^
+../src/helloworld.cpp: In function 'int main()':
+../src/helloworld.cpp:138:15: error: 'layer_output_sdk_reducr' was not declared in this scope
+   short ref = layer_output_sdk_reducr[idx];
+               ^~~~~~~~~~~~~~~~~~~~~~~
+../src/helloworld.cpp:138:15: note: suggested alternative: 'layer_output_sdk_reduce'
+   short ref = layer_output_sdk_reducr[idx];
+               ^~~~~~~~~~~~~~~~~~~~~~~
+               layer_output_sdk_reduce
+../src/helloworld.cpp:139:15: error: 'layer_output_hls_reducr' was not declared in this scope
+   short get = layer_output_hls_reducr[idx];
+               ^~~~~~~~~~~~~~~~~~~~~~~
+../src/helloworld.cpp:139:15: note: suggested alternative: 'layer_output_hls_reduce'
+   short get = layer_output_hls_reducr[idx];
+               ^~~~~~~~~~~~~~~~~~~~~~~
+               layer_output_hls_reduce
+src/subdir.mk:21: recipe for target 'src/helloworld.o' failed
+make: *** [src/helloworld.o] Error 1
+11:16:16 **** Auto Build of configuration Debug for project yolo_yolo_ps ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.cpp
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -I/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_yolo_fp_prj_2019_64/yolo_yolo_fp_prj_2019_64.sdk/include -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../yolo_yolo_ps_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.cpp"
+In file included from ../src/helloworld.cpp:52:
+../../yolo_yolo_ps_bsp/ps7_cortexa9_0/include/xtime_l.h:87:70: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+                                                                      ^
+Finished building: ../src/helloworld.cpp
+ 
+Building target: yolo_yolo_ps.elf
+Invoking: ARM v7 g++ linker
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../yolo_yolo_ps_bsp/ps7_cortexa9_0/lib -o "yolo_yolo_ps.elf"  ./src/helloworld.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: yolo_yolo_ps.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size yolo_yolo_ps.elf  |tee "yolo_yolo_ps.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  76156	  24296	  36040	 136492	  2152c	yolo_yolo_ps.elf
+Finished building: yolo_yolo_ps.elf.size
+ 
+11:18:29 **** Auto Build of configuration Debug for project yolo_yolo_ps ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.cpp
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -I/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_yolo_fp_prj_2019_64/yolo_yolo_fp_prj_2019_64.sdk/include -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../yolo_yolo_ps_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.cpp"
+In file included from ../src/helloworld.cpp:52:
+../../yolo_yolo_ps_bsp/ps7_cortexa9_0/include/xtime_l.h:87:70: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+                                                                      ^
+Finished building: ../src/helloworld.cpp
+ 
+Building target: yolo_yolo_ps.elf
+Invoking: ARM v7 g++ linker
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../yolo_yolo_ps_bsp/ps7_cortexa9_0/lib -o "yolo_yolo_ps.elf"  ./src/helloworld.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: yolo_yolo_ps.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size yolo_yolo_ps.elf  |tee "yolo_yolo_ps.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  76156	  24296	  36040	 136492	  2152c	yolo_yolo_ps.elf
+Finished building: yolo_yolo_ps.elf.size
+ 
+11:18:34 **** Incremental Build of configuration Debug for project yolo_yolo_ps ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+11:18:45 **** Auto Build of configuration Debug for project yolo_yolo_ps ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.cpp
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -I/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_yolo_fp_prj_2019_64/yolo_yolo_fp_prj_2019_64.sdk/include -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../yolo_yolo_ps_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.cpp"
+In file included from ../src/helloworld.cpp:52:
+../../yolo_yolo_ps_bsp/ps7_cortexa9_0/include/xtime_l.h:87:70: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+                                                                      ^
+Finished building: ../src/helloworld.cpp
+ 
+Building target: yolo_yolo_ps.elf
+Invoking: ARM v7 g++ linker
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../yolo_yolo_ps_bsp/ps7_cortexa9_0/lib -o "yolo_yolo_ps.elf"  ./src/helloworld.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: yolo_yolo_ps.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size yolo_yolo_ps.elf  |tee "yolo_yolo_ps.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  76156	  24296	  36040	 136492	  2152c	yolo_yolo_ps.elf
+Finished building: yolo_yolo_ps.elf.size
+ 
+11:18:50 **** Incremental Build of configuration Debug for project yolo_yolo_ps ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+11:19:05 **** Auto Build of configuration Debug for project yolo_yolo_ps ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.cpp
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -I/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_yolo_fp_prj_2019_64/yolo_yolo_fp_prj_2019_64.sdk/include -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../yolo_yolo_ps_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.cpp"
+In file included from ../src/helloworld.cpp:52:
+../../yolo_yolo_ps_bsp/ps7_cortexa9_0/include/xtime_l.h:87:70: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+                                                                      ^
+Finished building: ../src/helloworld.cpp
+ 
+Building target: yolo_yolo_ps.elf
+Invoking: ARM v7 g++ linker
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../yolo_yolo_ps_bsp/ps7_cortexa9_0/lib -o "yolo_yolo_ps.elf"  ./src/helloworld.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: yolo_yolo_ps.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size yolo_yolo_ps.elf  |tee "yolo_yolo_ps.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  76156	  24296	  36040	 136492	  2152c	yolo_yolo_ps.elf
+Finished building: yolo_yolo_ps.elf.size
+ 
+11:19:13 **** Incremental Build of configuration Debug for project yolo_yolo_ps ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+11:19:28 **** Auto Build of configuration Debug for project yolo_yolo_ps ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/helloworld.cpp
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O0 -g3 -I/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_yolo_fp_prj_2019_64/yolo_yolo_fp_prj_2019_64.sdk/include -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../yolo_yolo_ps_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.cpp"
+In file included from ../src/helloworld.cpp:52:
+../../yolo_yolo_ps_bsp/ps7_cortexa9_0/include/xtime_l.h:87:70: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+                                                                      ^
+Finished building: ../src/helloworld.cpp
+ 
+Building target: yolo_yolo_ps.elf
+Invoking: ARM v7 g++ linker
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../yolo_yolo_ps_bsp/ps7_cortexa9_0/lib -o "yolo_yolo_ps.elf"  ./src/helloworld.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: yolo_yolo_ps.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size yolo_yolo_ps.elf  |tee "yolo_yolo_ps.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  76156	  24296	  36040	 136492	  2152c	yolo_yolo_ps.elf
+Finished building: yolo_yolo_ps.elf.size
+ 

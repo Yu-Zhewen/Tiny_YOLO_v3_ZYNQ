@@ -1,0 +1,634 @@
+
+
+================================================================
+== Vivado HLS Report for 'yolo_yolo_top'
+================================================================
+* Date:           Wed Jul 17 10:35:50 2019
+
+* Version:        2019.1 (Build 2552052 on Fri May 24 15:28:33 MDT 2019)
+* Project:        yolo_yolo_fp_2019_64
+* Solution:       solution1
+* Product family: zynq
+* Target device:  xc7z020-clg484-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |  10.00|     8.750|        1.25|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +------+------+------+------+---------+
+    |   Latency   |   Interval  | Pipeline|
+    |  min |  max |  min |  max |   Type  |
+    +------+------+------+------+---------+
+    |  1384|  1384|  1384|  1384|   none  |
+    +------+------+------+------+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +----------+------+------+----------+-----------+-----------+------+----------+
+        |          |   Latency   | Iteration|  Initiation Interval  | Trip |          |
+        | Loop Name|  min |  max |  Latency |  achieved |   target  | Count| Pipelined|
+        +----------+------+------+----------+-----------+-----------+------+----------+
+        |- Loop 1  |  1382|  1382|        32|          1|          1|  1352|    yes   |
+        +----------+------+------+----------+-----------+-----------+------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 1
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
++ Individual pipeline summary: 
+  * Pipeline-0: initiation interval (II) = 1, depth = 32
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 34
+* Pipeline : 1
+  Pipeline-0 : II = 1, D = 32, States = { 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 }
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 34 3 
+3 --> 4 
+4 --> 5 
+5 --> 6 
+6 --> 7 
+7 --> 8 
+8 --> 9 
+9 --> 10 
+10 --> 11 
+11 --> 12 
+12 --> 13 
+13 --> 14 
+14 --> 15 
+15 --> 16 
+16 --> 17 
+17 --> 18 
+18 --> 19 
+19 --> 20 
+20 --> 21 
+21 --> 22 
+22 --> 23 
+23 --> 24 
+24 --> 25 
+25 --> 26 
+26 --> 27 
+27 --> 28 
+28 --> 29 
+29 --> 30 
+30 --> 31 
+31 --> 32 
+32 --> 33 
+33 --> 2 
+34 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 5.17>
+ST_1 : Operation 35 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i64* %outStream_V_data), !map !459"   --->   Operation 35 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 36 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i64* %inStream_V_data), !map !474"   --->   Operation 36 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 37 [1/1] (1.00ns)   --->   "%input_w_V_read = call i5 @_ssdm_op_Read.s_axilite.i5(i5 %input_w_V)"   --->   Operation 37 'read' 'input_w_V_read' <Predicate = true> <Delay = 1.00> <Core = "s_axilite">   --->   Core 10 's_axilite' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write'>
+ST_1 : Operation 38 [1/1] (1.00ns)   --->   "%input_h_V_read = call i5 @_ssdm_op_Read.s_axilite.i5(i5 %input_h_V)"   --->   Operation 38 'read' 'input_h_V_read' <Predicate = true> <Delay = 1.00> <Core = "s_axilite">   --->   Core 10 's_axilite' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write'>
+ST_1 : Operation 39 [1/1] (1.00ns)   --->   "%activate_en_V_read = call i32 @_ssdm_op_Read.s_axilite.i32(i32 %activate_en_V)"   --->   Operation 39 'read' 'activate_en_V_read' <Predicate = true> <Delay = 1.00> <Core = "s_axilite">   --->   Core 10 's_axilite' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write'>
+ST_1 : Operation 40 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i8* %inStream_V_keep_V), !map !487"   --->   Operation 40 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 41 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i8* %inStream_V_strb_V), !map !491"   --->   Operation 41 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 42 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i2* %inStream_V_user_V), !map !495"   --->   Operation 42 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 43 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i1* %inStream_V_last_V), !map !499"   --->   Operation 43 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 44 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i5* %inStream_V_id_V), !map !503"   --->   Operation 44 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 45 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i6* %inStream_V_dest_V), !map !507"   --->   Operation 45 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 46 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i8* %outStream_V_keep_V), !map !511"   --->   Operation 46 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 47 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i8* %outStream_V_strb_V), !map !515"   --->   Operation 47 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 48 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i2* %outStream_V_user_V), !map !519"   --->   Operation 48 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 49 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i1* %outStream_V_last_V), !map !523"   --->   Operation 49 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 50 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i5* %outStream_V_id_V), !map !527"   --->   Operation 50 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 51 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i6* %outStream_V_dest_V), !map !531"   --->   Operation 51 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 52 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i32 %activate_en_V), !map !535"   --->   Operation 52 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 53 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i5 %input_h_V), !map !541"   --->   Operation 53 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 54 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i5 %input_w_V), !map !545"   --->   Operation 54 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 55 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecTopModule([14 x i8]* @yolo_yolo_top_str) nounwind"   --->   Operation 55 'spectopmodule' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 56 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i5 %input_w_V, [10 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str1, i32 0, i32 0, [9 x i8]* @p_str2, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind" [yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:7]   --->   Operation 56 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 57 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i5 %input_h_V, [10 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str1, i32 0, i32 0, [9 x i8]* @p_str2, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind" [yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:8]   --->   Operation 57 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 58 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i32 %activate_en_V, [10 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str1, i32 0, i32 0, [9 x i8]* @p_str2, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind" [yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:9]   --->   Operation 58 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 59 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i32 0, [10 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str1, i32 0, i32 0, [9 x i8]* @p_str2, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind" [yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:10]   --->   Operation 59 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 60 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i64* %outStream_V_data, i8* %outStream_V_keep_V, i8* %outStream_V_strb_V, i2* %outStream_V_user_V, i1* %outStream_V_last_V, i5* %outStream_V_id_V, i6* %outStream_V_dest_V, [5 x i8]* @p_str3, i32 1, i32 1, [5 x i8]* @p_str4, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind" [yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:11]   --->   Operation 60 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 61 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i64* %inStream_V_data, i8* %inStream_V_keep_V, i8* %inStream_V_strb_V, i2* %inStream_V_user_V, i1* %inStream_V_last_V, i5* %inStream_V_id_V, i6* %inStream_V_dest_V, [5 x i8]* @p_str3, i32 1, i32 1, [5 x i8]* @p_str4, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind" [yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:12]   --->   Operation 61 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 62 [1/1] (0.00ns)   --->   "%zext_ln1354 = zext i5 %input_w_V_read to i6" [yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:55]   --->   Operation 62 'zext' 'zext_ln1354' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 63 [1/1] (1.78ns)   --->   "%add_ln1354 = add i6 -1, %zext_ln1354" [yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:55]   --->   Operation 63 'add' 'add_ln1354' <Predicate = true> <Delay = 1.78> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.78> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 64 [1/1] (0.00ns)   --->   "%zext_ln1354_1 = zext i5 %input_h_V_read to i6" [yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:56]   --->   Operation 64 'zext' 'zext_ln1354_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 65 [1/1] (1.78ns)   --->   "%add_ln1354_1 = add i6 -1, %zext_ln1354_1" [yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:56]   --->   Operation 65 'add' 'add_ln1354_1' <Predicate = true> <Delay = 1.78> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.78> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 66 [1/1] (0.00ns)   --->   "%trunc_ln791 = trunc i32 %activate_en_V_read to i29" [yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:29]   --->   Operation 66 'trunc' 'trunc_ln791' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 67 [1/1] (0.00ns)   --->   "%tmp = call i8 @_ssdm_op_BitConcatenate.i8.i5.i3(i5 %input_w_V_read, i3 0)"   --->   Operation 67 'bitconcatenate' 'tmp' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 68 [1/1] (0.00ns)   --->   "%bound = zext i8 %tmp to i9"   --->   Operation 68 'zext' 'bound' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 69 [1/1] (0.00ns)   --->   "%cast2_cast = zext i5 %input_h_V_read to i13"   --->   Operation 69 'zext' 'cast2_cast' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 70 [1/1] (0.00ns)   --->   "%cast3_cast = zext i8 %tmp to i13"   --->   Operation 70 'zext' 'cast3_cast' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 71 [1/1] (4.17ns)   --->   "%bound4 = mul i13 %cast3_cast, %cast2_cast"   --->   Operation 71 'mul' 'bound4' <Predicate = true> <Delay = 4.17> <Core = "Mul">   --->   Core 16 'Mul' <Latency = 0> <II = 1> <Delay = 4.17> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 72 [1/1] (1.42ns)   --->   "%icmp_ln54_3 = icmp ne i6 %add_ln1354, 0" [yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:54]   --->   Operation 72 'icmp' 'icmp_ln54_3' <Predicate = true> <Delay = 1.42> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.42> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 73 [1/1] (1.76ns)   --->   "br label %1" [yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:14]   --->   Operation 73 'br' <Predicate = true> <Delay = 1.76>
+
+State 2 <SV = 1> <Delay = 8.10>
+ST_2 : Operation 74 [1/1] (0.00ns)   --->   "%indvar_flatten17 = phi i13 [ 0, %0 ], [ %add_ln14, %hls_label_2_end ]" [yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:14]   --->   Operation 74 'phi' 'indvar_flatten17' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 75 [1/1] (0.00ns)   --->   "%i_op_assign = phi i5 [ 0, %0 ], [ %select_ln14, %hls_label_2_end ]" [yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:14]   --->   Operation 75 'phi' 'i_op_assign' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 76 [1/1] (0.00ns)   --->   "%indvar_flatten = phi i9 [ 0, %0 ], [ %select_ln17_1, %hls_label_2_end ]" [yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:17]   --->   Operation 76 'phi' 'indvar_flatten' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 77 [1/1] (0.00ns)   --->   "%i_op_assign_1 = phi i5 [ 0, %0 ], [ %select_ln17, %hls_label_2_end ]" [yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:17]   --->   Operation 77 'phi' 'i_op_assign_1' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 78 [1/1] (0.00ns)   --->   "%input_ch_idx_0 = phi i4 [ 0, %0 ], [ %input_ch_idx, %hls_label_2_end ]"   --->   Operation 78 'phi' 'input_ch_idx_0' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 79 [1/1] (0.00ns)   --->   "%zext_ln17 = zext i5 %i_op_assign to i6" [yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:17]   --->   Operation 79 'zext' 'zext_ln17' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 80 [1/1] (1.42ns)   --->   "%icmp_ln54_2 = icmp ne i6 %zext_ln17, %add_ln1354_1" [yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:54]   --->   Operation 80 'icmp' 'icmp_ln54_2' <Predicate = true> <Delay = 1.42> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.42> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 81 [1/1] (0.00ns)   --->   "%zext_ln20 = zext i5 %i_op_assign_1 to i6" [yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:20]   --->   Operation 81 'zext' 'zext_ln20' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 82 [1/1] (1.42ns)   --->   "%icmp_ln54_1 = icmp ne i6 %zext_ln20, %add_ln1354" [yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:54]   --->   Operation 82 'icmp' 'icmp_ln54_1' <Predicate = true> <Delay = 1.42> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.42> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 83 [1/1] (0.97ns)   --->   "%or_ln54 = or i1 %icmp_ln54_1, %icmp_ln54_2" [yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:54]   --->   Operation 83 'or' 'or_ln54' <Predicate = true> <Delay = 0.97> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 84 [1/1] (2.09ns)   --->   "%icmp_ln14 = icmp eq i13 %indvar_flatten17, %bound4" [yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:14]   --->   Operation 84 'icmp' 'icmp_ln14' <Predicate = true> <Delay = 2.09> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.42> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 85 [1/1] (1.67ns)   --->   "%add_ln14 = add i13 %indvar_flatten17, 1" [yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:14]   --->   Operation 85 'add' 'add_ln14' <Predicate = true> <Delay = 1.67> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.78> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 86 [1/1] (0.00ns)   --->   "br i1 %icmp_ln14, label %9, label %hls_label_2_begin" [yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:14]   --->   Operation 86 'br' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 87 [1/1] (1.66ns)   --->   "%icmp_ln17 = icmp eq i9 %indvar_flatten, %bound" [yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:17]   --->   Operation 87 'icmp' 'icmp_ln17' <Predicate = (!icmp_ln14)> <Delay = 1.66> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.42> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 88 [1/1] (1.21ns)   --->   "%select_ln1598 = select i1 %icmp_ln17, i5 0, i5 %i_op_assign_1" [yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:14]   --->   Operation 88 'select' 'select_ln1598' <Predicate = (!icmp_ln14)> <Delay = 1.21> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.96> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_2 : Operation 89 [1/1] (1.78ns)   --->   "%add_ln14_1 = add i5 1, %i_op_assign" [yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:14]   --->   Operation 89 'add' 'add_ln14_1' <Predicate = (!icmp_ln14)> <Delay = 1.78> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.78> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 90 [1/1] (0.00ns)   --->   "%zext_ln17_1 = zext i5 %add_ln14_1 to i6" [yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:17]   --->   Operation 90 'zext' 'zext_ln17_1' <Predicate = (!icmp_ln14)> <Delay = 0.00>
+ST_2 : Operation 91 [1/1] (1.42ns)   --->   "%icmp_ln54_4 = icmp ne i6 %zext_ln17_1, %add_ln1354_1" [yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:54]   --->   Operation 91 'icmp' 'icmp_ln54_4' <Predicate = (!icmp_ln14)> <Delay = 1.42> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.42> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 92 [1/1] (0.00ns) (grouped into LUT with out node select_ln1598_4)   --->   "%select_ln1598_1 = select i1 %icmp_ln17, i1 %icmp_ln54_4, i1 %icmp_ln54_2" [yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:14]   --->   Operation 92 'select' 'select_ln1598_1' <Predicate = (!icmp_ln14)> <Delay = 0.00> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.96> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_2 : Operation 93 [1/1] (0.00ns) (grouped into LUT with out node select_ln1598_2)   --->   "%or_ln54_2 = or i1 %icmp_ln54_3, %icmp_ln54_4" [yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:54]   --->   Operation 93 'or' 'or_ln54_2' <Predicate = (!icmp_ln14)> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 94 [1/1] (0.99ns) (out node of the LUT)   --->   "%select_ln1598_2 = select i1 %icmp_ln17, i1 %or_ln54_2, i1 %or_ln54" [yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:14]   --->   Operation 94 'select' 'select_ln1598_2' <Predicate = (!icmp_ln14)> <Delay = 0.99> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.96> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_2 : Operation 95 [1/1] (0.00ns) (grouped into LUT with out node and_ln1598)   --->   "%xor_ln1598 = xor i1 %icmp_ln17, true" [yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:14]   --->   Operation 95 'xor' 'xor_ln1598' <Predicate = (!icmp_ln14)> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 96 [1/1] (1.30ns)   --->   "%icmp_ln20 = icmp eq i4 %input_ch_idx_0, -8" [yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:20]   --->   Operation 96 'icmp' 'icmp_ln20' <Predicate = (!icmp_ln14)> <Delay = 1.30> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.42> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 97 [1/1] (0.97ns) (out node of the LUT)   --->   "%and_ln1598 = and i1 %icmp_ln20, %xor_ln1598" [yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:14]   --->   Operation 97 'and' 'and_ln1598' <Predicate = (!icmp_ln14)> <Delay = 0.97> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 98 [1/1] (1.21ns)   --->   "%select_ln14 = select i1 %icmp_ln17, i5 %add_ln14_1, i5 %i_op_assign" [yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:14]   --->   Operation 98 'select' 'select_ln14' <Predicate = (!icmp_ln14)> <Delay = 1.21> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.96> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_2 : Operation 99 [1/1] (1.78ns)   --->   "%col_idx = add i5 1, %select_ln1598" [yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:17]   --->   Operation 99 'add' 'col_idx' <Predicate = (!icmp_ln14)> <Delay = 1.78> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.78> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 100 [1/1] (0.00ns) (grouped into LUT with out node select_ln1598_3)   --->   "%or_ln1598 = or i1 %and_ln1598, %icmp_ln17" [yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:17]   --->   Operation 100 'or' 'or_ln1598' <Predicate = (!icmp_ln14)> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 101 [1/1] (1.02ns) (out node of the LUT)   --->   "%select_ln1598_3 = select i1 %or_ln1598, i4 0, i4 %input_ch_idx_0" [yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:17]   --->   Operation 101 'select' 'select_ln1598_3' <Predicate = (!icmp_ln14)> <Delay = 1.02> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.96> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_2 : Operation 102 [1/1] (0.00ns)   --->   "%zext_ln20_1 = zext i5 %col_idx to i6" [yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:20]   --->   Operation 102 'zext' 'zext_ln20_1' <Predicate = (!icmp_ln14)> <Delay = 0.00>
+ST_2 : Operation 103 [1/1] (1.42ns)   --->   "%icmp_ln54_5 = icmp ne i6 %zext_ln20_1, %add_ln1354" [yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:54]   --->   Operation 103 'icmp' 'icmp_ln54_5' <Predicate = (!icmp_ln14)> <Delay = 1.42> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.42> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 104 [1/1] (0.00ns) (grouped into LUT with out node select_ln1598_4)   --->   "%or_ln54_3 = or i1 %icmp_ln54_5, %select_ln1598_1" [yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:54]   --->   Operation 104 'or' 'or_ln54_3' <Predicate = (!icmp_ln14)> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 105 [1/1] (0.99ns) (out node of the LUT)   --->   "%select_ln1598_4 = select i1 %and_ln1598, i1 %or_ln54_3, i1 %select_ln1598_2" [yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:17]   --->   Operation 105 'select' 'select_ln1598_4' <Predicate = (!icmp_ln14)> <Delay = 0.99> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.96> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_2 : Operation 106 [1/1] (1.21ns)   --->   "%select_ln17 = select i1 %and_ln1598, i5 %col_idx, i5 %select_ln1598" [yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:17]   --->   Operation 106 'select' 'select_ln17' <Predicate = (!icmp_ln14)> <Delay = 1.21> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.96> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_2 : Operation 107 [1/1] (0.00ns)   --->   "%empty_18 = call { i64, i8, i8, i2, i1, i5, i6 } @_ssdm_op_Read.axis.volatile.i64P.i8P.i8P.i2P.i1P.i5P.i6P(i64* %inStream_V_data, i8* %inStream_V_keep_V, i8* %inStream_V_strb_V, i2* %inStream_V_user_V, i1* %inStream_V_last_V, i5* %inStream_V_id_V, i6* %inStream_V_dest_V)" [yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:27]   --->   Operation 107 'read' 'empty_18' <Predicate = (!icmp_ln14)> <Delay = 0.00> <Core = "AXI4Stream">   --->   Core 5 'AXI4Stream' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
+ST_2 : Operation 108 [1/1] (0.00ns)   --->   "%tmp_data = extractvalue { i64, i8, i8, i2, i1, i5, i6 } %empty_18, 0" [yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:27]   --->   Operation 108 'extractvalue' 'tmp_data' <Predicate = (!icmp_ln14)> <Delay = 0.00>
+ST_2 : Operation 109 [1/1] (0.00ns)   --->   "%tmp_keep_V = extractvalue { i64, i8, i8, i2, i1, i5, i6 } %empty_18, 1" [yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:27]   --->   Operation 109 'extractvalue' 'tmp_keep_V' <Predicate = (!icmp_ln14)> <Delay = 0.00>
+ST_2 : Operation 110 [1/1] (0.00ns)   --->   "%tmp_strb_V = extractvalue { i64, i8, i8, i2, i1, i5, i6 } %empty_18, 2" [yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:27]   --->   Operation 110 'extractvalue' 'tmp_strb_V' <Predicate = (!icmp_ln14)> <Delay = 0.00>
+ST_2 : Operation 111 [1/1] (0.00ns)   --->   "%tmp_user_V = extractvalue { i64, i8, i8, i2, i1, i5, i6 } %empty_18, 3" [yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:27]   --->   Operation 111 'extractvalue' 'tmp_user_V' <Predicate = (!icmp_ln14)> <Delay = 0.00>
+ST_2 : Operation 112 [1/1] (0.00ns)   --->   "%tmp_id_V = extractvalue { i64, i8, i8, i2, i1, i5, i6 } %empty_18, 5" [yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:27]   --->   Operation 112 'extractvalue' 'tmp_id_V' <Predicate = (!icmp_ln14)> <Delay = 0.00>
+ST_2 : Operation 113 [1/1] (0.00ns)   --->   "%tmp_dest_V = extractvalue { i64, i8, i8, i2, i1, i5, i6 } %empty_18, 6" [yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:27]   --->   Operation 113 'extractvalue' 'tmp_dest_V' <Predicate = (!icmp_ln14)> <Delay = 0.00>
+ST_2 : Operation 114 [1/1] (0.00ns)   --->   "%trunc_ln203 = trunc i64 %tmp_data to i16" [yolo_yolo_fp_2019_64/src/yolo_stream.h:8->yolo_yolo_fp_2019_64/src/yolo_stream.h:16->yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:27]   --->   Operation 114 'trunc' 'trunc_ln203' <Predicate = (!icmp_ln14)> <Delay = 0.00>
+ST_2 : Operation 115 [1/1] (0.00ns)   --->   "%p_02_new8 = call i16 @_ssdm_op_PartSelect.i16.i64.i32.i32(i64 %tmp_data, i32 16, i32 31)" [yolo_yolo_fp_2019_64/src/yolo_stream.h:8->yolo_yolo_fp_2019_64/src/yolo_stream.h:16->yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:27]   --->   Operation 115 'partselect' 'p_02_new8' <Predicate = (!icmp_ln14)> <Delay = 0.00>
+ST_2 : Operation 116 [1/1] (0.00ns)   --->   "%p_01_new = call i16 @_ssdm_op_PartSelect.i16.i64.i32.i32(i64 %tmp_data, i32 32, i32 47)" [yolo_yolo_fp_2019_64/src/yolo_stream.h:8->yolo_yolo_fp_2019_64/src/yolo_stream.h:16->yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:27]   --->   Operation 116 'partselect' 'p_01_new' <Predicate = (!icmp_ln14)> <Delay = 0.00>
+ST_2 : Operation 117 [1/1] (0.00ns)   --->   "%p_0_new = call i16 @_ssdm_op_PartSelect.i16.i64.i32.i32(i64 %tmp_data, i32 48, i32 63)" [yolo_yolo_fp_2019_64/src/yolo_stream.h:8->yolo_yolo_fp_2019_64/src/yolo_stream.h:16->yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:27]   --->   Operation 117 'partselect' 'p_0_new' <Predicate = (!icmp_ln14)> <Delay = 0.00>
+ST_2 : Operation 118 [1/1] (0.00ns)   --->   "%trunc_ln29 = trunc i4 %select_ln1598_3 to i3" [yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:29]   --->   Operation 118 'trunc' 'trunc_ln29' <Predicate = (!icmp_ln14)> <Delay = 0.00>
+ST_2 : Operation 119 [1/1] (0.00ns)   --->   "%bvh_d_index = call i5 @_ssdm_op_BitConcatenate.i5.i3.i2(i3 %trunc_ln29, i2 0)" [yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:29]   --->   Operation 119 'bitconcatenate' 'bvh_d_index' <Predicate = (!icmp_ln14)> <Delay = 0.00>
+ST_2 : Operation 120 [1/1] (0.00ns) (grouped into LUT with out node p_Result_s)   --->   "%zext_ln29 = zext i5 %bvh_d_index to i29" [yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:29]   --->   Operation 120 'zext' 'zext_ln29' <Predicate = (!icmp_ln14)> <Delay = 0.00>
+ST_2 : Operation 121 [1/1] (0.00ns) (grouped into LUT with out node p_Result_s)   --->   "%shl_ln791 = shl i29 1, %zext_ln29" [yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:29]   --->   Operation 121 'shl' 'shl_ln791' <Predicate = (!icmp_ln14)> <Delay = 0.00> <Core = "Shift">   --->   Core 28 'Shift' <Latency = 0> <II = 1> <Delay = 2.66> <FuncUnit> <Opcode : 'shl' 'lshr' 'ashr'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 122 [1/1] (0.00ns) (grouped into LUT with out node p_Result_s)   --->   "%and_ln791 = and i29 %shl_ln791, %trunc_ln791" [yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:29]   --->   Operation 122 'and' 'and_ln791' <Predicate = (!icmp_ln14)> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 123 [1/1] (2.66ns) (out node of the LUT)   --->   "%p_Result_s = icmp eq i29 %and_ln791, 0" [yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:29]   --->   Operation 123 'icmp' 'p_Result_s' <Predicate = (!icmp_ln14)> <Delay = 2.66> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.42> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 124 [1/1] (1.76ns)   --->   "br i1 %p_Result_s, label %3, label %2" [yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:29]   --->   Operation 124 'br' <Predicate = (!icmp_ln14)> <Delay = 1.76>
+ST_2 : Operation 125 [1/1] (0.00ns) (grouped into LUT with out node p_Result_1)   --->   "%bvh_d_index_1 = or i5 %bvh_d_index, 1" [yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:34]   --->   Operation 125 'or' 'bvh_d_index_1' <Predicate = (!icmp_ln14)> <Delay = 0.00>
+ST_2 : Operation 126 [1/1] (0.00ns) (grouped into LUT with out node p_Result_1)   --->   "%zext_ln34 = zext i5 %bvh_d_index_1 to i32" [yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:34]   --->   Operation 126 'zext' 'zext_ln34' <Predicate = (!icmp_ln14)> <Delay = 0.00>
+ST_2 : Operation 127 [1/1] (0.00ns) (grouped into LUT with out node p_Result_1)   --->   "%shl_ln791_1 = shl i32 1, %zext_ln34" [yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:34]   --->   Operation 127 'shl' 'shl_ln791_1' <Predicate = (!icmp_ln14)> <Delay = 0.00> <Core = "Shift">   --->   Core 28 'Shift' <Latency = 0> <II = 1> <Delay = 2.66> <FuncUnit> <Opcode : 'shl' 'lshr' 'ashr'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 128 [1/1] (0.00ns) (grouped into LUT with out node p_Result_1)   --->   "%and_ln791_1 = and i32 %shl_ln791_1, %activate_en_V_read" [yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:34]   --->   Operation 128 'and' 'and_ln791_1' <Predicate = (!icmp_ln14)> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 129 [1/1] (2.66ns) (out node of the LUT)   --->   "%p_Result_1 = icmp eq i32 %and_ln791_1, 0" [yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:34]   --->   Operation 129 'icmp' 'p_Result_1' <Predicate = (!icmp_ln14)> <Delay = 2.66> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.42> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 130 [1/1] (1.76ns)   --->   "br i1 %p_Result_1, label %5, label %4" [yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:34]   --->   Operation 130 'br' <Predicate = (!icmp_ln14)> <Delay = 1.76>
+ST_2 : Operation 131 [1/1] (0.00ns) (grouped into LUT with out node p_Result_2)   --->   "%bvh_d_index_2 = or i5 %bvh_d_index, 2" [yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:39]   --->   Operation 131 'or' 'bvh_d_index_2' <Predicate = (!icmp_ln14)> <Delay = 0.00>
+ST_2 : Operation 132 [1/1] (0.00ns) (grouped into LUT with out node p_Result_2)   --->   "%zext_ln39 = zext i5 %bvh_d_index_2 to i32" [yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:39]   --->   Operation 132 'zext' 'zext_ln39' <Predicate = (!icmp_ln14)> <Delay = 0.00>
+ST_2 : Operation 133 [1/1] (0.00ns) (grouped into LUT with out node p_Result_2)   --->   "%shl_ln791_2 = shl i32 1, %zext_ln39" [yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:39]   --->   Operation 133 'shl' 'shl_ln791_2' <Predicate = (!icmp_ln14)> <Delay = 0.00> <Core = "Shift">   --->   Core 28 'Shift' <Latency = 0> <II = 1> <Delay = 2.66> <FuncUnit> <Opcode : 'shl' 'lshr' 'ashr'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 134 [1/1] (0.00ns) (grouped into LUT with out node p_Result_2)   --->   "%and_ln791_2 = and i32 %shl_ln791_2, %activate_en_V_read" [yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:39]   --->   Operation 134 'and' 'and_ln791_2' <Predicate = (!icmp_ln14)> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 135 [1/1] (2.66ns) (out node of the LUT)   --->   "%p_Result_2 = icmp eq i32 %and_ln791_2, 0" [yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:39]   --->   Operation 135 'icmp' 'p_Result_2' <Predicate = (!icmp_ln14)> <Delay = 2.66> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.42> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 136 [1/1] (1.76ns)   --->   "br i1 %p_Result_2, label %7, label %6" [yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:39]   --->   Operation 136 'br' <Predicate = (!icmp_ln14)> <Delay = 1.76>
+ST_2 : Operation 137 [1/1] (0.00ns) (grouped into LUT with out node p_Result_3)   --->   "%bvh_d_index_3 = or i5 %bvh_d_index, 3" [yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:44]   --->   Operation 137 'or' 'bvh_d_index_3' <Predicate = (!icmp_ln14)> <Delay = 0.00>
+ST_2 : Operation 138 [1/1] (0.00ns) (grouped into LUT with out node p_Result_3)   --->   "%zext_ln44 = zext i5 %bvh_d_index_3 to i32" [yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:44]   --->   Operation 138 'zext' 'zext_ln44' <Predicate = (!icmp_ln14)> <Delay = 0.00>
+ST_2 : Operation 139 [1/1] (0.00ns) (grouped into LUT with out node p_Result_3)   --->   "%shl_ln791_3 = shl i32 1, %zext_ln44" [yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:44]   --->   Operation 139 'shl' 'shl_ln791_3' <Predicate = (!icmp_ln14)> <Delay = 0.00> <Core = "Shift">   --->   Core 28 'Shift' <Latency = 0> <II = 1> <Delay = 2.66> <FuncUnit> <Opcode : 'shl' 'lshr' 'ashr'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 140 [1/1] (0.00ns) (grouped into LUT with out node p_Result_3)   --->   "%and_ln791_3 = and i32 %shl_ln791_3, %activate_en_V_read" [yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:44]   --->   Operation 140 'and' 'and_ln791_3' <Predicate = (!icmp_ln14)> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 141 [1/1] (2.66ns) (out node of the LUT)   --->   "%p_Result_3 = icmp eq i32 %and_ln791_3, 0" [yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:44]   --->   Operation 141 'icmp' 'p_Result_3' <Predicate = (!icmp_ln14)> <Delay = 2.66> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.42> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 142 [1/1] (1.76ns)   --->   "br i1 %p_Result_3, label %hls_label_2_end, label %8" [yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:44]   --->   Operation 142 'br' <Predicate = (!icmp_ln14)> <Delay = 1.76>
+ST_2 : Operation 143 [1/1] (1.30ns)   --->   "%icmp_ln54 = icmp ne i4 %select_ln1598_3, 7" [yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:54]   --->   Operation 143 'icmp' 'icmp_ln54' <Predicate = (!icmp_ln14)> <Delay = 1.30> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.42> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 144 [1/1] (0.00ns) (grouped into LUT with out node tmp_last_V)   --->   "%or_ln54_1 = or i1 %select_ln1598_4, %icmp_ln54" [yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:54]   --->   Operation 144 'or' 'or_ln54_1' <Predicate = (!icmp_ln14)> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 145 [1/1] (0.97ns) (out node of the LUT)   --->   "%tmp_last_V = xor i1 %or_ln54_1, true" [yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:54]   --->   Operation 145 'xor' 'tmp_last_V' <Predicate = (!icmp_ln14)> <Delay = 0.97> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 146 [1/1] (1.73ns)   --->   "%input_ch_idx = add i4 %select_ln1598_3, 1" [yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:20]   --->   Operation 146 'add' 'input_ch_idx' <Predicate = (!icmp_ln14)> <Delay = 1.73> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.78> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 147 [1/1] (1.82ns)   --->   "%add_ln17 = add i9 %indvar_flatten, 1" [yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:17]   --->   Operation 147 'add' 'add_ln17' <Predicate = (!icmp_ln14)> <Delay = 1.82> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.78> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 148 [1/1] (0.96ns)   --->   "%select_ln17_1 = select i1 %icmp_ln17, i9 1, i9 %add_ln17" [yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:17]   --->   Operation 148 'select' 'select_ln17_1' <Predicate = (!icmp_ln14)> <Delay = 0.96> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.96> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+
+State 3 <SV = 2> <Delay = 6.10>
+ST_3 : Operation 149 [29/29] (6.10ns)   --->   "%op_V_assign = call fastcc i16 @logistic_activate(i16 %trunc_ln203)" [yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:30]   --->   Operation 149 'call' 'op_V_assign' <Predicate = (!icmp_ln14 & !p_Result_s)> <Delay = 6.10> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_3 : Operation 150 [29/29] (6.10ns)   --->   "%op_V_assign_1 = call fastcc i16 @logistic_activate(i16 %p_02_new8)" [yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:35]   --->   Operation 150 'call' 'op_V_assign_1' <Predicate = (!icmp_ln14 & !p_Result_1)> <Delay = 6.10> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_3 : Operation 151 [29/29] (6.10ns)   --->   "%op_V_assign_2 = call fastcc i16 @logistic_activate(i16 %p_01_new)" [yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:40]   --->   Operation 151 'call' 'op_V_assign_2' <Predicate = (!icmp_ln14 & !p_Result_2)> <Delay = 6.10> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_3 : Operation 152 [29/29] (6.10ns)   --->   "%op_V_assign_3 = call fastcc i16 @logistic_activate(i16 %p_0_new)" [yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:45]   --->   Operation 152 'call' 'op_V_assign_3' <Predicate = (!icmp_ln14 & !p_Result_3)> <Delay = 6.10> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 4 <SV = 3> <Delay = 8.75>
+ST_4 : Operation 153 [28/29] (8.75ns)   --->   "%op_V_assign = call fastcc i16 @logistic_activate(i16 %trunc_ln203)" [yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:30]   --->   Operation 153 'call' 'op_V_assign' <Predicate = (!icmp_ln14 & !p_Result_s)> <Delay = 8.75> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_4 : Operation 154 [28/29] (8.75ns)   --->   "%op_V_assign_1 = call fastcc i16 @logistic_activate(i16 %p_02_new8)" [yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:35]   --->   Operation 154 'call' 'op_V_assign_1' <Predicate = (!icmp_ln14 & !p_Result_1)> <Delay = 8.75> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_4 : Operation 155 [28/29] (8.75ns)   --->   "%op_V_assign_2 = call fastcc i16 @logistic_activate(i16 %p_01_new)" [yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:40]   --->   Operation 155 'call' 'op_V_assign_2' <Predicate = (!icmp_ln14 & !p_Result_2)> <Delay = 8.75> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_4 : Operation 156 [28/29] (8.75ns)   --->   "%op_V_assign_3 = call fastcc i16 @logistic_activate(i16 %p_0_new)" [yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:45]   --->   Operation 156 'call' 'op_V_assign_3' <Predicate = (!icmp_ln14 & !p_Result_3)> <Delay = 8.75> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 5 <SV = 4> <Delay = 8.75>
+ST_5 : Operation 157 [27/29] (8.75ns)   --->   "%op_V_assign = call fastcc i16 @logistic_activate(i16 %trunc_ln203)" [yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:30]   --->   Operation 157 'call' 'op_V_assign' <Predicate = (!icmp_ln14 & !p_Result_s)> <Delay = 8.75> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_5 : Operation 158 [27/29] (8.75ns)   --->   "%op_V_assign_1 = call fastcc i16 @logistic_activate(i16 %p_02_new8)" [yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:35]   --->   Operation 158 'call' 'op_V_assign_1' <Predicate = (!icmp_ln14 & !p_Result_1)> <Delay = 8.75> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_5 : Operation 159 [27/29] (8.75ns)   --->   "%op_V_assign_2 = call fastcc i16 @logistic_activate(i16 %p_01_new)" [yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:40]   --->   Operation 159 'call' 'op_V_assign_2' <Predicate = (!icmp_ln14 & !p_Result_2)> <Delay = 8.75> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_5 : Operation 160 [27/29] (8.75ns)   --->   "%op_V_assign_3 = call fastcc i16 @logistic_activate(i16 %p_0_new)" [yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:45]   --->   Operation 160 'call' 'op_V_assign_3' <Predicate = (!icmp_ln14 & !p_Result_3)> <Delay = 8.75> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 6 <SV = 5> <Delay = 8.75>
+ST_6 : Operation 161 [26/29] (8.75ns)   --->   "%op_V_assign = call fastcc i16 @logistic_activate(i16 %trunc_ln203)" [yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:30]   --->   Operation 161 'call' 'op_V_assign' <Predicate = (!icmp_ln14 & !p_Result_s)> <Delay = 8.75> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_6 : Operation 162 [26/29] (8.75ns)   --->   "%op_V_assign_1 = call fastcc i16 @logistic_activate(i16 %p_02_new8)" [yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:35]   --->   Operation 162 'call' 'op_V_assign_1' <Predicate = (!icmp_ln14 & !p_Result_1)> <Delay = 8.75> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_6 : Operation 163 [26/29] (8.75ns)   --->   "%op_V_assign_2 = call fastcc i16 @logistic_activate(i16 %p_01_new)" [yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:40]   --->   Operation 163 'call' 'op_V_assign_2' <Predicate = (!icmp_ln14 & !p_Result_2)> <Delay = 8.75> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_6 : Operation 164 [26/29] (8.75ns)   --->   "%op_V_assign_3 = call fastcc i16 @logistic_activate(i16 %p_0_new)" [yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:45]   --->   Operation 164 'call' 'op_V_assign_3' <Predicate = (!icmp_ln14 & !p_Result_3)> <Delay = 8.75> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 7 <SV = 6> <Delay = 8.75>
+ST_7 : Operation 165 [25/29] (8.75ns)   --->   "%op_V_assign = call fastcc i16 @logistic_activate(i16 %trunc_ln203)" [yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:30]   --->   Operation 165 'call' 'op_V_assign' <Predicate = (!icmp_ln14 & !p_Result_s)> <Delay = 8.75> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_7 : Operation 166 [25/29] (8.75ns)   --->   "%op_V_assign_1 = call fastcc i16 @logistic_activate(i16 %p_02_new8)" [yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:35]   --->   Operation 166 'call' 'op_V_assign_1' <Predicate = (!icmp_ln14 & !p_Result_1)> <Delay = 8.75> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_7 : Operation 167 [25/29] (8.75ns)   --->   "%op_V_assign_2 = call fastcc i16 @logistic_activate(i16 %p_01_new)" [yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:40]   --->   Operation 167 'call' 'op_V_assign_2' <Predicate = (!icmp_ln14 & !p_Result_2)> <Delay = 8.75> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_7 : Operation 168 [25/29] (8.75ns)   --->   "%op_V_assign_3 = call fastcc i16 @logistic_activate(i16 %p_0_new)" [yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:45]   --->   Operation 168 'call' 'op_V_assign_3' <Predicate = (!icmp_ln14 & !p_Result_3)> <Delay = 8.75> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 8 <SV = 7> <Delay = 8.75>
+ST_8 : Operation 169 [24/29] (8.75ns)   --->   "%op_V_assign = call fastcc i16 @logistic_activate(i16 %trunc_ln203)" [yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:30]   --->   Operation 169 'call' 'op_V_assign' <Predicate = (!icmp_ln14 & !p_Result_s)> <Delay = 8.75> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_8 : Operation 170 [24/29] (8.75ns)   --->   "%op_V_assign_1 = call fastcc i16 @logistic_activate(i16 %p_02_new8)" [yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:35]   --->   Operation 170 'call' 'op_V_assign_1' <Predicate = (!icmp_ln14 & !p_Result_1)> <Delay = 8.75> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_8 : Operation 171 [24/29] (8.75ns)   --->   "%op_V_assign_2 = call fastcc i16 @logistic_activate(i16 %p_01_new)" [yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:40]   --->   Operation 171 'call' 'op_V_assign_2' <Predicate = (!icmp_ln14 & !p_Result_2)> <Delay = 8.75> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_8 : Operation 172 [24/29] (8.75ns)   --->   "%op_V_assign_3 = call fastcc i16 @logistic_activate(i16 %p_0_new)" [yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:45]   --->   Operation 172 'call' 'op_V_assign_3' <Predicate = (!icmp_ln14 & !p_Result_3)> <Delay = 8.75> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 9 <SV = 8> <Delay = 8.75>
+ST_9 : Operation 173 [23/29] (8.75ns)   --->   "%op_V_assign = call fastcc i16 @logistic_activate(i16 %trunc_ln203)" [yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:30]   --->   Operation 173 'call' 'op_V_assign' <Predicate = (!icmp_ln14 & !p_Result_s)> <Delay = 8.75> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_9 : Operation 174 [23/29] (8.75ns)   --->   "%op_V_assign_1 = call fastcc i16 @logistic_activate(i16 %p_02_new8)" [yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:35]   --->   Operation 174 'call' 'op_V_assign_1' <Predicate = (!icmp_ln14 & !p_Result_1)> <Delay = 8.75> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_9 : Operation 175 [23/29] (8.75ns)   --->   "%op_V_assign_2 = call fastcc i16 @logistic_activate(i16 %p_01_new)" [yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:40]   --->   Operation 175 'call' 'op_V_assign_2' <Predicate = (!icmp_ln14 & !p_Result_2)> <Delay = 8.75> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_9 : Operation 176 [23/29] (8.75ns)   --->   "%op_V_assign_3 = call fastcc i16 @logistic_activate(i16 %p_0_new)" [yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:45]   --->   Operation 176 'call' 'op_V_assign_3' <Predicate = (!icmp_ln14 & !p_Result_3)> <Delay = 8.75> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 10 <SV = 9> <Delay = 8.75>
+ST_10 : Operation 177 [22/29] (8.75ns)   --->   "%op_V_assign = call fastcc i16 @logistic_activate(i16 %trunc_ln203)" [yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:30]   --->   Operation 177 'call' 'op_V_assign' <Predicate = (!icmp_ln14 & !p_Result_s)> <Delay = 8.75> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_10 : Operation 178 [22/29] (8.75ns)   --->   "%op_V_assign_1 = call fastcc i16 @logistic_activate(i16 %p_02_new8)" [yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:35]   --->   Operation 178 'call' 'op_V_assign_1' <Predicate = (!icmp_ln14 & !p_Result_1)> <Delay = 8.75> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_10 : Operation 179 [22/29] (8.75ns)   --->   "%op_V_assign_2 = call fastcc i16 @logistic_activate(i16 %p_01_new)" [yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:40]   --->   Operation 179 'call' 'op_V_assign_2' <Predicate = (!icmp_ln14 & !p_Result_2)> <Delay = 8.75> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_10 : Operation 180 [22/29] (8.75ns)   --->   "%op_V_assign_3 = call fastcc i16 @logistic_activate(i16 %p_0_new)" [yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:45]   --->   Operation 180 'call' 'op_V_assign_3' <Predicate = (!icmp_ln14 & !p_Result_3)> <Delay = 8.75> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 11 <SV = 10> <Delay = 8.75>
+ST_11 : Operation 181 [21/29] (8.75ns)   --->   "%op_V_assign = call fastcc i16 @logistic_activate(i16 %trunc_ln203)" [yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:30]   --->   Operation 181 'call' 'op_V_assign' <Predicate = (!icmp_ln14 & !p_Result_s)> <Delay = 8.75> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_11 : Operation 182 [21/29] (8.75ns)   --->   "%op_V_assign_1 = call fastcc i16 @logistic_activate(i16 %p_02_new8)" [yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:35]   --->   Operation 182 'call' 'op_V_assign_1' <Predicate = (!icmp_ln14 & !p_Result_1)> <Delay = 8.75> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_11 : Operation 183 [21/29] (8.75ns)   --->   "%op_V_assign_2 = call fastcc i16 @logistic_activate(i16 %p_01_new)" [yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:40]   --->   Operation 183 'call' 'op_V_assign_2' <Predicate = (!icmp_ln14 & !p_Result_2)> <Delay = 8.75> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_11 : Operation 184 [21/29] (8.75ns)   --->   "%op_V_assign_3 = call fastcc i16 @logistic_activate(i16 %p_0_new)" [yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:45]   --->   Operation 184 'call' 'op_V_assign_3' <Predicate = (!icmp_ln14 & !p_Result_3)> <Delay = 8.75> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 12 <SV = 11> <Delay = 8.75>
+ST_12 : Operation 185 [20/29] (8.75ns)   --->   "%op_V_assign = call fastcc i16 @logistic_activate(i16 %trunc_ln203)" [yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:30]   --->   Operation 185 'call' 'op_V_assign' <Predicate = (!icmp_ln14 & !p_Result_s)> <Delay = 8.75> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_12 : Operation 186 [20/29] (8.75ns)   --->   "%op_V_assign_1 = call fastcc i16 @logistic_activate(i16 %p_02_new8)" [yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:35]   --->   Operation 186 'call' 'op_V_assign_1' <Predicate = (!icmp_ln14 & !p_Result_1)> <Delay = 8.75> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_12 : Operation 187 [20/29] (8.75ns)   --->   "%op_V_assign_2 = call fastcc i16 @logistic_activate(i16 %p_01_new)" [yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:40]   --->   Operation 187 'call' 'op_V_assign_2' <Predicate = (!icmp_ln14 & !p_Result_2)> <Delay = 8.75> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_12 : Operation 188 [20/29] (8.75ns)   --->   "%op_V_assign_3 = call fastcc i16 @logistic_activate(i16 %p_0_new)" [yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:45]   --->   Operation 188 'call' 'op_V_assign_3' <Predicate = (!icmp_ln14 & !p_Result_3)> <Delay = 8.75> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 13 <SV = 12> <Delay = 8.75>
+ST_13 : Operation 189 [19/29] (8.75ns)   --->   "%op_V_assign = call fastcc i16 @logistic_activate(i16 %trunc_ln203)" [yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:30]   --->   Operation 189 'call' 'op_V_assign' <Predicate = (!icmp_ln14 & !p_Result_s)> <Delay = 8.75> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_13 : Operation 190 [19/29] (8.75ns)   --->   "%op_V_assign_1 = call fastcc i16 @logistic_activate(i16 %p_02_new8)" [yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:35]   --->   Operation 190 'call' 'op_V_assign_1' <Predicate = (!icmp_ln14 & !p_Result_1)> <Delay = 8.75> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_13 : Operation 191 [19/29] (8.75ns)   --->   "%op_V_assign_2 = call fastcc i16 @logistic_activate(i16 %p_01_new)" [yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:40]   --->   Operation 191 'call' 'op_V_assign_2' <Predicate = (!icmp_ln14 & !p_Result_2)> <Delay = 8.75> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_13 : Operation 192 [19/29] (8.75ns)   --->   "%op_V_assign_3 = call fastcc i16 @logistic_activate(i16 %p_0_new)" [yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:45]   --->   Operation 192 'call' 'op_V_assign_3' <Predicate = (!icmp_ln14 & !p_Result_3)> <Delay = 8.75> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 14 <SV = 13> <Delay = 8.75>
+ST_14 : Operation 193 [18/29] (8.75ns)   --->   "%op_V_assign = call fastcc i16 @logistic_activate(i16 %trunc_ln203)" [yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:30]   --->   Operation 193 'call' 'op_V_assign' <Predicate = (!icmp_ln14 & !p_Result_s)> <Delay = 8.75> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_14 : Operation 194 [18/29] (8.75ns)   --->   "%op_V_assign_1 = call fastcc i16 @logistic_activate(i16 %p_02_new8)" [yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:35]   --->   Operation 194 'call' 'op_V_assign_1' <Predicate = (!icmp_ln14 & !p_Result_1)> <Delay = 8.75> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_14 : Operation 195 [18/29] (8.75ns)   --->   "%op_V_assign_2 = call fastcc i16 @logistic_activate(i16 %p_01_new)" [yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:40]   --->   Operation 195 'call' 'op_V_assign_2' <Predicate = (!icmp_ln14 & !p_Result_2)> <Delay = 8.75> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_14 : Operation 196 [18/29] (8.75ns)   --->   "%op_V_assign_3 = call fastcc i16 @logistic_activate(i16 %p_0_new)" [yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:45]   --->   Operation 196 'call' 'op_V_assign_3' <Predicate = (!icmp_ln14 & !p_Result_3)> <Delay = 8.75> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 15 <SV = 14> <Delay = 8.75>
+ST_15 : Operation 197 [17/29] (8.75ns)   --->   "%op_V_assign = call fastcc i16 @logistic_activate(i16 %trunc_ln203)" [yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:30]   --->   Operation 197 'call' 'op_V_assign' <Predicate = (!icmp_ln14 & !p_Result_s)> <Delay = 8.75> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_15 : Operation 198 [17/29] (8.75ns)   --->   "%op_V_assign_1 = call fastcc i16 @logistic_activate(i16 %p_02_new8)" [yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:35]   --->   Operation 198 'call' 'op_V_assign_1' <Predicate = (!icmp_ln14 & !p_Result_1)> <Delay = 8.75> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_15 : Operation 199 [17/29] (8.75ns)   --->   "%op_V_assign_2 = call fastcc i16 @logistic_activate(i16 %p_01_new)" [yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:40]   --->   Operation 199 'call' 'op_V_assign_2' <Predicate = (!icmp_ln14 & !p_Result_2)> <Delay = 8.75> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_15 : Operation 200 [17/29] (8.75ns)   --->   "%op_V_assign_3 = call fastcc i16 @logistic_activate(i16 %p_0_new)" [yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:45]   --->   Operation 200 'call' 'op_V_assign_3' <Predicate = (!icmp_ln14 & !p_Result_3)> <Delay = 8.75> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 16 <SV = 15> <Delay = 8.75>
+ST_16 : Operation 201 [16/29] (8.75ns)   --->   "%op_V_assign = call fastcc i16 @logistic_activate(i16 %trunc_ln203)" [yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:30]   --->   Operation 201 'call' 'op_V_assign' <Predicate = (!icmp_ln14 & !p_Result_s)> <Delay = 8.75> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_16 : Operation 202 [16/29] (8.75ns)   --->   "%op_V_assign_1 = call fastcc i16 @logistic_activate(i16 %p_02_new8)" [yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:35]   --->   Operation 202 'call' 'op_V_assign_1' <Predicate = (!icmp_ln14 & !p_Result_1)> <Delay = 8.75> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_16 : Operation 203 [16/29] (8.75ns)   --->   "%op_V_assign_2 = call fastcc i16 @logistic_activate(i16 %p_01_new)" [yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:40]   --->   Operation 203 'call' 'op_V_assign_2' <Predicate = (!icmp_ln14 & !p_Result_2)> <Delay = 8.75> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_16 : Operation 204 [16/29] (8.75ns)   --->   "%op_V_assign_3 = call fastcc i16 @logistic_activate(i16 %p_0_new)" [yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:45]   --->   Operation 204 'call' 'op_V_assign_3' <Predicate = (!icmp_ln14 & !p_Result_3)> <Delay = 8.75> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 17 <SV = 16> <Delay = 8.75>
+ST_17 : Operation 205 [15/29] (8.75ns)   --->   "%op_V_assign = call fastcc i16 @logistic_activate(i16 %trunc_ln203)" [yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:30]   --->   Operation 205 'call' 'op_V_assign' <Predicate = (!icmp_ln14 & !p_Result_s)> <Delay = 8.75> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_17 : Operation 206 [15/29] (8.75ns)   --->   "%op_V_assign_1 = call fastcc i16 @logistic_activate(i16 %p_02_new8)" [yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:35]   --->   Operation 206 'call' 'op_V_assign_1' <Predicate = (!icmp_ln14 & !p_Result_1)> <Delay = 8.75> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_17 : Operation 207 [15/29] (8.75ns)   --->   "%op_V_assign_2 = call fastcc i16 @logistic_activate(i16 %p_01_new)" [yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:40]   --->   Operation 207 'call' 'op_V_assign_2' <Predicate = (!icmp_ln14 & !p_Result_2)> <Delay = 8.75> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_17 : Operation 208 [15/29] (8.75ns)   --->   "%op_V_assign_3 = call fastcc i16 @logistic_activate(i16 %p_0_new)" [yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:45]   --->   Operation 208 'call' 'op_V_assign_3' <Predicate = (!icmp_ln14 & !p_Result_3)> <Delay = 8.75> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 18 <SV = 17> <Delay = 8.75>
+ST_18 : Operation 209 [14/29] (8.75ns)   --->   "%op_V_assign = call fastcc i16 @logistic_activate(i16 %trunc_ln203)" [yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:30]   --->   Operation 209 'call' 'op_V_assign' <Predicate = (!icmp_ln14 & !p_Result_s)> <Delay = 8.75> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_18 : Operation 210 [14/29] (8.75ns)   --->   "%op_V_assign_1 = call fastcc i16 @logistic_activate(i16 %p_02_new8)" [yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:35]   --->   Operation 210 'call' 'op_V_assign_1' <Predicate = (!icmp_ln14 & !p_Result_1)> <Delay = 8.75> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_18 : Operation 211 [14/29] (8.75ns)   --->   "%op_V_assign_2 = call fastcc i16 @logistic_activate(i16 %p_01_new)" [yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:40]   --->   Operation 211 'call' 'op_V_assign_2' <Predicate = (!icmp_ln14 & !p_Result_2)> <Delay = 8.75> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_18 : Operation 212 [14/29] (8.75ns)   --->   "%op_V_assign_3 = call fastcc i16 @logistic_activate(i16 %p_0_new)" [yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:45]   --->   Operation 212 'call' 'op_V_assign_3' <Predicate = (!icmp_ln14 & !p_Result_3)> <Delay = 8.75> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 19 <SV = 18> <Delay = 8.75>
+ST_19 : Operation 213 [13/29] (8.75ns)   --->   "%op_V_assign = call fastcc i16 @logistic_activate(i16 %trunc_ln203)" [yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:30]   --->   Operation 213 'call' 'op_V_assign' <Predicate = (!icmp_ln14 & !p_Result_s)> <Delay = 8.75> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_19 : Operation 214 [13/29] (8.75ns)   --->   "%op_V_assign_1 = call fastcc i16 @logistic_activate(i16 %p_02_new8)" [yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:35]   --->   Operation 214 'call' 'op_V_assign_1' <Predicate = (!icmp_ln14 & !p_Result_1)> <Delay = 8.75> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_19 : Operation 215 [13/29] (8.75ns)   --->   "%op_V_assign_2 = call fastcc i16 @logistic_activate(i16 %p_01_new)" [yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:40]   --->   Operation 215 'call' 'op_V_assign_2' <Predicate = (!icmp_ln14 & !p_Result_2)> <Delay = 8.75> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_19 : Operation 216 [13/29] (8.75ns)   --->   "%op_V_assign_3 = call fastcc i16 @logistic_activate(i16 %p_0_new)" [yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:45]   --->   Operation 216 'call' 'op_V_assign_3' <Predicate = (!icmp_ln14 & !p_Result_3)> <Delay = 8.75> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 20 <SV = 19> <Delay = 8.75>
+ST_20 : Operation 217 [12/29] (8.75ns)   --->   "%op_V_assign = call fastcc i16 @logistic_activate(i16 %trunc_ln203)" [yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:30]   --->   Operation 217 'call' 'op_V_assign' <Predicate = (!icmp_ln14 & !p_Result_s)> <Delay = 8.75> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_20 : Operation 218 [12/29] (8.75ns)   --->   "%op_V_assign_1 = call fastcc i16 @logistic_activate(i16 %p_02_new8)" [yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:35]   --->   Operation 218 'call' 'op_V_assign_1' <Predicate = (!icmp_ln14 & !p_Result_1)> <Delay = 8.75> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_20 : Operation 219 [12/29] (8.75ns)   --->   "%op_V_assign_2 = call fastcc i16 @logistic_activate(i16 %p_01_new)" [yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:40]   --->   Operation 219 'call' 'op_V_assign_2' <Predicate = (!icmp_ln14 & !p_Result_2)> <Delay = 8.75> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_20 : Operation 220 [12/29] (8.75ns)   --->   "%op_V_assign_3 = call fastcc i16 @logistic_activate(i16 %p_0_new)" [yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:45]   --->   Operation 220 'call' 'op_V_assign_3' <Predicate = (!icmp_ln14 & !p_Result_3)> <Delay = 8.75> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 21 <SV = 20> <Delay = 8.75>
+ST_21 : Operation 221 [11/29] (8.75ns)   --->   "%op_V_assign = call fastcc i16 @logistic_activate(i16 %trunc_ln203)" [yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:30]   --->   Operation 221 'call' 'op_V_assign' <Predicate = (!icmp_ln14 & !p_Result_s)> <Delay = 8.75> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_21 : Operation 222 [11/29] (8.75ns)   --->   "%op_V_assign_1 = call fastcc i16 @logistic_activate(i16 %p_02_new8)" [yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:35]   --->   Operation 222 'call' 'op_V_assign_1' <Predicate = (!icmp_ln14 & !p_Result_1)> <Delay = 8.75> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_21 : Operation 223 [11/29] (8.75ns)   --->   "%op_V_assign_2 = call fastcc i16 @logistic_activate(i16 %p_01_new)" [yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:40]   --->   Operation 223 'call' 'op_V_assign_2' <Predicate = (!icmp_ln14 & !p_Result_2)> <Delay = 8.75> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_21 : Operation 224 [11/29] (8.75ns)   --->   "%op_V_assign_3 = call fastcc i16 @logistic_activate(i16 %p_0_new)" [yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:45]   --->   Operation 224 'call' 'op_V_assign_3' <Predicate = (!icmp_ln14 & !p_Result_3)> <Delay = 8.75> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 22 <SV = 21> <Delay = 8.75>
+ST_22 : Operation 225 [10/29] (8.75ns)   --->   "%op_V_assign = call fastcc i16 @logistic_activate(i16 %trunc_ln203)" [yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:30]   --->   Operation 225 'call' 'op_V_assign' <Predicate = (!icmp_ln14 & !p_Result_s)> <Delay = 8.75> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_22 : Operation 226 [10/29] (8.75ns)   --->   "%op_V_assign_1 = call fastcc i16 @logistic_activate(i16 %p_02_new8)" [yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:35]   --->   Operation 226 'call' 'op_V_assign_1' <Predicate = (!icmp_ln14 & !p_Result_1)> <Delay = 8.75> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_22 : Operation 227 [10/29] (8.75ns)   --->   "%op_V_assign_2 = call fastcc i16 @logistic_activate(i16 %p_01_new)" [yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:40]   --->   Operation 227 'call' 'op_V_assign_2' <Predicate = (!icmp_ln14 & !p_Result_2)> <Delay = 8.75> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_22 : Operation 228 [10/29] (8.75ns)   --->   "%op_V_assign_3 = call fastcc i16 @logistic_activate(i16 %p_0_new)" [yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:45]   --->   Operation 228 'call' 'op_V_assign_3' <Predicate = (!icmp_ln14 & !p_Result_3)> <Delay = 8.75> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 23 <SV = 22> <Delay = 8.75>
+ST_23 : Operation 229 [9/29] (8.75ns)   --->   "%op_V_assign = call fastcc i16 @logistic_activate(i16 %trunc_ln203)" [yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:30]   --->   Operation 229 'call' 'op_V_assign' <Predicate = (!icmp_ln14 & !p_Result_s)> <Delay = 8.75> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_23 : Operation 230 [9/29] (8.75ns)   --->   "%op_V_assign_1 = call fastcc i16 @logistic_activate(i16 %p_02_new8)" [yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:35]   --->   Operation 230 'call' 'op_V_assign_1' <Predicate = (!icmp_ln14 & !p_Result_1)> <Delay = 8.75> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_23 : Operation 231 [9/29] (8.75ns)   --->   "%op_V_assign_2 = call fastcc i16 @logistic_activate(i16 %p_01_new)" [yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:40]   --->   Operation 231 'call' 'op_V_assign_2' <Predicate = (!icmp_ln14 & !p_Result_2)> <Delay = 8.75> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_23 : Operation 232 [9/29] (8.75ns)   --->   "%op_V_assign_3 = call fastcc i16 @logistic_activate(i16 %p_0_new)" [yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:45]   --->   Operation 232 'call' 'op_V_assign_3' <Predicate = (!icmp_ln14 & !p_Result_3)> <Delay = 8.75> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 24 <SV = 23> <Delay = 8.75>
+ST_24 : Operation 233 [8/29] (8.75ns)   --->   "%op_V_assign = call fastcc i16 @logistic_activate(i16 %trunc_ln203)" [yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:30]   --->   Operation 233 'call' 'op_V_assign' <Predicate = (!icmp_ln14 & !p_Result_s)> <Delay = 8.75> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_24 : Operation 234 [8/29] (8.75ns)   --->   "%op_V_assign_1 = call fastcc i16 @logistic_activate(i16 %p_02_new8)" [yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:35]   --->   Operation 234 'call' 'op_V_assign_1' <Predicate = (!icmp_ln14 & !p_Result_1)> <Delay = 8.75> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_24 : Operation 235 [8/29] (8.75ns)   --->   "%op_V_assign_2 = call fastcc i16 @logistic_activate(i16 %p_01_new)" [yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:40]   --->   Operation 235 'call' 'op_V_assign_2' <Predicate = (!icmp_ln14 & !p_Result_2)> <Delay = 8.75> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_24 : Operation 236 [8/29] (8.75ns)   --->   "%op_V_assign_3 = call fastcc i16 @logistic_activate(i16 %p_0_new)" [yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:45]   --->   Operation 236 'call' 'op_V_assign_3' <Predicate = (!icmp_ln14 & !p_Result_3)> <Delay = 8.75> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 25 <SV = 24> <Delay = 8.75>
+ST_25 : Operation 237 [7/29] (8.75ns)   --->   "%op_V_assign = call fastcc i16 @logistic_activate(i16 %trunc_ln203)" [yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:30]   --->   Operation 237 'call' 'op_V_assign' <Predicate = (!icmp_ln14 & !p_Result_s)> <Delay = 8.75> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_25 : Operation 238 [7/29] (8.75ns)   --->   "%op_V_assign_1 = call fastcc i16 @logistic_activate(i16 %p_02_new8)" [yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:35]   --->   Operation 238 'call' 'op_V_assign_1' <Predicate = (!icmp_ln14 & !p_Result_1)> <Delay = 8.75> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_25 : Operation 239 [7/29] (8.75ns)   --->   "%op_V_assign_2 = call fastcc i16 @logistic_activate(i16 %p_01_new)" [yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:40]   --->   Operation 239 'call' 'op_V_assign_2' <Predicate = (!icmp_ln14 & !p_Result_2)> <Delay = 8.75> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_25 : Operation 240 [7/29] (8.75ns)   --->   "%op_V_assign_3 = call fastcc i16 @logistic_activate(i16 %p_0_new)" [yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:45]   --->   Operation 240 'call' 'op_V_assign_3' <Predicate = (!icmp_ln14 & !p_Result_3)> <Delay = 8.75> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 26 <SV = 25> <Delay = 8.75>
+ST_26 : Operation 241 [6/29] (8.75ns)   --->   "%op_V_assign = call fastcc i16 @logistic_activate(i16 %trunc_ln203)" [yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:30]   --->   Operation 241 'call' 'op_V_assign' <Predicate = (!icmp_ln14 & !p_Result_s)> <Delay = 8.75> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_26 : Operation 242 [6/29] (8.75ns)   --->   "%op_V_assign_1 = call fastcc i16 @logistic_activate(i16 %p_02_new8)" [yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:35]   --->   Operation 242 'call' 'op_V_assign_1' <Predicate = (!icmp_ln14 & !p_Result_1)> <Delay = 8.75> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_26 : Operation 243 [6/29] (8.75ns)   --->   "%op_V_assign_2 = call fastcc i16 @logistic_activate(i16 %p_01_new)" [yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:40]   --->   Operation 243 'call' 'op_V_assign_2' <Predicate = (!icmp_ln14 & !p_Result_2)> <Delay = 8.75> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_26 : Operation 244 [6/29] (8.75ns)   --->   "%op_V_assign_3 = call fastcc i16 @logistic_activate(i16 %p_0_new)" [yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:45]   --->   Operation 244 'call' 'op_V_assign_3' <Predicate = (!icmp_ln14 & !p_Result_3)> <Delay = 8.75> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 27 <SV = 26> <Delay = 8.75>
+ST_27 : Operation 245 [5/29] (8.75ns)   --->   "%op_V_assign = call fastcc i16 @logistic_activate(i16 %trunc_ln203)" [yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:30]   --->   Operation 245 'call' 'op_V_assign' <Predicate = (!icmp_ln14 & !p_Result_s)> <Delay = 8.75> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_27 : Operation 246 [5/29] (8.75ns)   --->   "%op_V_assign_1 = call fastcc i16 @logistic_activate(i16 %p_02_new8)" [yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:35]   --->   Operation 246 'call' 'op_V_assign_1' <Predicate = (!icmp_ln14 & !p_Result_1)> <Delay = 8.75> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_27 : Operation 247 [5/29] (8.75ns)   --->   "%op_V_assign_2 = call fastcc i16 @logistic_activate(i16 %p_01_new)" [yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:40]   --->   Operation 247 'call' 'op_V_assign_2' <Predicate = (!icmp_ln14 & !p_Result_2)> <Delay = 8.75> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_27 : Operation 248 [5/29] (8.75ns)   --->   "%op_V_assign_3 = call fastcc i16 @logistic_activate(i16 %p_0_new)" [yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:45]   --->   Operation 248 'call' 'op_V_assign_3' <Predicate = (!icmp_ln14 & !p_Result_3)> <Delay = 8.75> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 28 <SV = 27> <Delay = 8.75>
+ST_28 : Operation 249 [4/29] (8.75ns)   --->   "%op_V_assign = call fastcc i16 @logistic_activate(i16 %trunc_ln203)" [yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:30]   --->   Operation 249 'call' 'op_V_assign' <Predicate = (!icmp_ln14 & !p_Result_s)> <Delay = 8.75> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_28 : Operation 250 [4/29] (8.75ns)   --->   "%op_V_assign_1 = call fastcc i16 @logistic_activate(i16 %p_02_new8)" [yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:35]   --->   Operation 250 'call' 'op_V_assign_1' <Predicate = (!icmp_ln14 & !p_Result_1)> <Delay = 8.75> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_28 : Operation 251 [4/29] (8.75ns)   --->   "%op_V_assign_2 = call fastcc i16 @logistic_activate(i16 %p_01_new)" [yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:40]   --->   Operation 251 'call' 'op_V_assign_2' <Predicate = (!icmp_ln14 & !p_Result_2)> <Delay = 8.75> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_28 : Operation 252 [4/29] (8.75ns)   --->   "%op_V_assign_3 = call fastcc i16 @logistic_activate(i16 %p_0_new)" [yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:45]   --->   Operation 252 'call' 'op_V_assign_3' <Predicate = (!icmp_ln14 & !p_Result_3)> <Delay = 8.75> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 29 <SV = 28> <Delay = 8.75>
+ST_29 : Operation 253 [3/29] (8.75ns)   --->   "%op_V_assign = call fastcc i16 @logistic_activate(i16 %trunc_ln203)" [yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:30]   --->   Operation 253 'call' 'op_V_assign' <Predicate = (!icmp_ln14 & !p_Result_s)> <Delay = 8.75> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_29 : Operation 254 [3/29] (8.75ns)   --->   "%op_V_assign_1 = call fastcc i16 @logistic_activate(i16 %p_02_new8)" [yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:35]   --->   Operation 254 'call' 'op_V_assign_1' <Predicate = (!icmp_ln14 & !p_Result_1)> <Delay = 8.75> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_29 : Operation 255 [3/29] (8.75ns)   --->   "%op_V_assign_2 = call fastcc i16 @logistic_activate(i16 %p_01_new)" [yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:40]   --->   Operation 255 'call' 'op_V_assign_2' <Predicate = (!icmp_ln14 & !p_Result_2)> <Delay = 8.75> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_29 : Operation 256 [3/29] (8.75ns)   --->   "%op_V_assign_3 = call fastcc i16 @logistic_activate(i16 %p_0_new)" [yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:45]   --->   Operation 256 'call' 'op_V_assign_3' <Predicate = (!icmp_ln14 & !p_Result_3)> <Delay = 8.75> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 30 <SV = 29> <Delay = 8.75>
+ST_30 : Operation 257 [2/29] (8.75ns)   --->   "%op_V_assign = call fastcc i16 @logistic_activate(i16 %trunc_ln203)" [yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:30]   --->   Operation 257 'call' 'op_V_assign' <Predicate = (!icmp_ln14 & !p_Result_s)> <Delay = 8.75> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_30 : Operation 258 [2/29] (8.75ns)   --->   "%op_V_assign_1 = call fastcc i16 @logistic_activate(i16 %p_02_new8)" [yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:35]   --->   Operation 258 'call' 'op_V_assign_1' <Predicate = (!icmp_ln14 & !p_Result_1)> <Delay = 8.75> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_30 : Operation 259 [2/29] (8.75ns)   --->   "%op_V_assign_2 = call fastcc i16 @logistic_activate(i16 %p_01_new)" [yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:40]   --->   Operation 259 'call' 'op_V_assign_2' <Predicate = (!icmp_ln14 & !p_Result_2)> <Delay = 8.75> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_30 : Operation 260 [2/29] (8.75ns)   --->   "%op_V_assign_3 = call fastcc i16 @logistic_activate(i16 %p_0_new)" [yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:45]   --->   Operation 260 'call' 'op_V_assign_3' <Predicate = (!icmp_ln14 & !p_Result_3)> <Delay = 8.75> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 31 <SV = 30> <Delay = 8.65>
+ST_31 : Operation 261 [1/29] (8.65ns)   --->   "%op_V_assign = call fastcc i16 @logistic_activate(i16 %trunc_ln203)" [yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:30]   --->   Operation 261 'call' 'op_V_assign' <Predicate = (!icmp_ln14 & !p_Result_s)> <Delay = 8.65> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_31 : Operation 262 [1/29] (8.65ns)   --->   "%op_V_assign_1 = call fastcc i16 @logistic_activate(i16 %p_02_new8)" [yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:35]   --->   Operation 262 'call' 'op_V_assign_1' <Predicate = (!icmp_ln14 & !p_Result_1)> <Delay = 8.65> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_31 : Operation 263 [1/29] (8.65ns)   --->   "%op_V_assign_2 = call fastcc i16 @logistic_activate(i16 %p_01_new)" [yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:40]   --->   Operation 263 'call' 'op_V_assign_2' <Predicate = (!icmp_ln14 & !p_Result_2)> <Delay = 8.65> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_31 : Operation 264 [1/29] (8.65ns)   --->   "%op_V_assign_3 = call fastcc i16 @logistic_activate(i16 %p_0_new)" [yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:45]   --->   Operation 264 'call' 'op_V_assign_3' <Predicate = (!icmp_ln14 & !p_Result_3)> <Delay = 8.65> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 32 <SV = 31> <Delay = 1.76>
+ST_32 : Operation 265 [1/1] (1.76ns)   --->   "br label %3" [yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:30]   --->   Operation 265 'br' <Predicate = (!icmp_ln14 & !p_Result_s)> <Delay = 1.76>
+ST_32 : Operation 266 [1/1] (0.00ns)   --->   "%tmp_data_sub_data_0_s = phi i16 [ %op_V_assign, %2 ], [ %trunc_ln203, %hls_label_2_begin ]" [yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:30]   --->   Operation 266 'phi' 'tmp_data_sub_data_0_s' <Predicate = (!icmp_ln14)> <Delay = 0.00>
+ST_32 : Operation 267 [1/1] (1.76ns)   --->   "br label %5" [yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:35]   --->   Operation 267 'br' <Predicate = (!icmp_ln14 & !p_Result_1)> <Delay = 1.76>
+ST_32 : Operation 268 [1/1] (0.00ns)   --->   "%tmp_data_sub_data_1_s = phi i16 [ %op_V_assign_1, %4 ], [ %p_02_new8, %3 ]" [yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:35]   --->   Operation 268 'phi' 'tmp_data_sub_data_1_s' <Predicate = (!icmp_ln14)> <Delay = 0.00>
+ST_32 : Operation 269 [1/1] (1.76ns)   --->   "br label %7" [yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:40]   --->   Operation 269 'br' <Predicate = (!icmp_ln14 & !p_Result_2)> <Delay = 1.76>
+ST_32 : Operation 270 [1/1] (0.00ns)   --->   "%tmp_data_sub_data_2_s = phi i16 [ %op_V_assign_2, %6 ], [ %p_01_new, %5 ]" [yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:40]   --->   Operation 270 'phi' 'tmp_data_sub_data_2_s' <Predicate = (!icmp_ln14)> <Delay = 0.00>
+ST_32 : Operation 271 [1/1] (1.76ns)   --->   "br label %hls_label_2_end" [yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:45]   --->   Operation 271 'br' <Predicate = (!icmp_ln14 & !p_Result_3)> <Delay = 1.76>
+ST_32 : Operation 272 [1/1] (0.00ns)   --->   "%tmp_data_sub_data_3_s = phi i16 [ %op_V_assign_3, %8 ], [ %p_0_new, %7 ]" [yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:45]   --->   Operation 272 'phi' 'tmp_data_sub_data_3_s' <Predicate = (!icmp_ln14)> <Delay = 0.00>
+ST_32 : Operation 273 [1/1] (0.00ns)   --->   "%tmp_data_1 = call i64 @_ssdm_op_BitConcatenate.i64.i16.i16.i16.i16(i16 %tmp_data_sub_data_3_s, i16 %tmp_data_sub_data_2_s, i16 %tmp_data_sub_data_1_s, i16 %tmp_data_sub_data_0_s)" [yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:63]   --->   Operation 273 'bitconcatenate' 'tmp_data_1' <Predicate = (!icmp_ln14)> <Delay = 0.00>
+ST_32 : Operation 274 [2/2] (0.00ns)   --->   "call void @_ssdm_op_Write.axis.volatile.i64P.i8P.i8P.i2P.i1P.i5P.i6P(i64* %outStream_V_data, i8* %outStream_V_keep_V, i8* %outStream_V_strb_V, i2* %outStream_V_user_V, i1* %outStream_V_last_V, i5* %outStream_V_id_V, i6* %outStream_V_dest_V, i64 %tmp_data_1, i8 %tmp_keep_V, i8 %tmp_strb_V, i2 %tmp_user_V, i1 %tmp_last_V, i5 %tmp_id_V, i6 %tmp_dest_V)" [yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:63]   --->   Operation 274 'write' <Predicate = (!icmp_ln14)> <Delay = 0.00> <Core = "AXI4Stream">   --->   Core 5 'AXI4Stream' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
+
+State 33 <SV = 32> <Delay = 0.00>
+ST_33 : Operation 275 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecLoopTripCount(i64 1352, i64 1352, i64 1352)"   --->   Operation 275 'speclooptripcount' <Predicate = (!icmp_ln14)> <Delay = 0.00>
+ST_33 : Operation 276 [1/1] (0.00ns)   --->   "%tmp_2 = call i32 (...)* @_ssdm_op_SpecRegionBegin([12 x i8]* @p_str7)" [yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:21]   --->   Operation 276 'specregionbegin' 'tmp_2' <Predicate = (!icmp_ln14)> <Delay = 0.00>
+ST_33 : Operation 277 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecPipeline(i32 -1, i32 1, i32 1, i32 0, [1 x i8]* @p_str1) nounwind" [yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:23]   --->   Operation 277 'specpipeline' <Predicate = (!icmp_ln14)> <Delay = 0.00>
+ST_33 : Operation 278 [1/2] (0.00ns)   --->   "call void @_ssdm_op_Write.axis.volatile.i64P.i8P.i8P.i2P.i1P.i5P.i6P(i64* %outStream_V_data, i8* %outStream_V_keep_V, i8* %outStream_V_strb_V, i2* %outStream_V_user_V, i1* %outStream_V_last_V, i5* %outStream_V_id_V, i6* %outStream_V_dest_V, i64 %tmp_data_1, i8 %tmp_keep_V, i8 %tmp_strb_V, i2 %tmp_user_V, i1 %tmp_last_V, i5 %tmp_id_V, i6 %tmp_dest_V)" [yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:63]   --->   Operation 278 'write' <Predicate = (!icmp_ln14)> <Delay = 0.00> <Core = "AXI4Stream">   --->   Core 5 'AXI4Stream' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
+ST_33 : Operation 279 [1/1] (0.00ns)   --->   "%empty = call i32 (...)* @_ssdm_op_SpecRegionEnd([12 x i8]* @p_str7, i32 %tmp_2)" [yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:65]   --->   Operation 279 'specregionend' 'empty' <Predicate = (!icmp_ln14)> <Delay = 0.00>
+ST_33 : Operation 280 [1/1] (0.00ns)   --->   "br label %1"   --->   Operation 280 'br' <Predicate = (!icmp_ln14)> <Delay = 0.00>
+
+State 34 <SV = 2> <Delay = 0.00>
+ST_34 : Operation 281 [1/1] (0.00ns)   --->   "ret void" [yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:69]   --->   Operation 281 'ret' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10ns, clock uncertainty: 1.25ns.
+
+ <State 1>: 5.17ns
+The critical path consists of the following:
+	s_axi read on port 'input_w_V' [23]  (1 ns)
+	'mul' operation ('bound4') [57]  (4.17 ns)
+
+ <State 2>: 8.1ns
+The critical path consists of the following:
+	'phi' operation ('indvar_flatten', yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:17) with incoming values : ('select_ln17_1', yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:17) [63]  (0 ns)
+	'icmp' operation ('icmp_ln17', yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:17) [76]  (1.66 ns)
+	'xor' operation ('xor_ln1598', yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:14) [84]  (0 ns)
+	'and' operation ('and_ln1598', yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:14) [86]  (0.978 ns)
+	'or' operation ('or_ln1598', yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:17) [89]  (0 ns)
+	'select' operation ('select_ln1598_3', yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:17) [90]  (1.02 ns)
+	'or' operation ('index', yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:34) [121]  (0 ns)
+	'shl' operation ('shl_ln791_1', yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:34) [123]  (0 ns)
+	'and' operation ('and_ln791_1', yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:34) [124]  (0 ns)
+	'icmp' operation ('__Result__', yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:34) [125]  (2.67 ns)
+	multiplexor before 'phi' operation ('tmp.data.sub_data_1.V', yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:35) with incoming values : ('p_02_new8', yolo_yolo_fp_2019_64/src/yolo_stream.h:8->yolo_yolo_fp_2019_64/src/yolo_stream.h:16->yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:27) ('op_V_assign_1', yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:35) [131]  (1.77 ns)
+
+ <State 3>: 6.1ns
+The critical path consists of the following:
+	'call' operation ('op_V_assign', yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:30) to 'logistic_activate' [117]  (6.1 ns)
+
+ <State 4>: 8.75ns
+The critical path consists of the following:
+	'call' operation ('op_V_assign', yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:30) to 'logistic_activate' [117]  (8.75 ns)
+
+ <State 5>: 8.75ns
+The critical path consists of the following:
+	'call' operation ('op_V_assign', yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:30) to 'logistic_activate' [117]  (8.75 ns)
+
+ <State 6>: 8.75ns
+The critical path consists of the following:
+	'call' operation ('op_V_assign', yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:30) to 'logistic_activate' [117]  (8.75 ns)
+
+ <State 7>: 8.75ns
+The critical path consists of the following:
+	'call' operation ('op_V_assign', yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:30) to 'logistic_activate' [117]  (8.75 ns)
+
+ <State 8>: 8.75ns
+The critical path consists of the following:
+	'call' operation ('op_V_assign', yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:30) to 'logistic_activate' [117]  (8.75 ns)
+
+ <State 9>: 8.75ns
+The critical path consists of the following:
+	'call' operation ('op_V_assign', yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:30) to 'logistic_activate' [117]  (8.75 ns)
+
+ <State 10>: 8.75ns
+The critical path consists of the following:
+	'call' operation ('op_V_assign', yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:30) to 'logistic_activate' [117]  (8.75 ns)
+
+ <State 11>: 8.75ns
+The critical path consists of the following:
+	'call' operation ('op_V_assign', yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:30) to 'logistic_activate' [117]  (8.75 ns)
+
+ <State 12>: 8.75ns
+The critical path consists of the following:
+	'call' operation ('op_V_assign', yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:30) to 'logistic_activate' [117]  (8.75 ns)
+
+ <State 13>: 8.75ns
+The critical path consists of the following:
+	'call' operation ('op_V_assign', yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:30) to 'logistic_activate' [117]  (8.75 ns)
+
+ <State 14>: 8.75ns
+The critical path consists of the following:
+	'call' operation ('op_V_assign', yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:30) to 'logistic_activate' [117]  (8.75 ns)
+
+ <State 15>: 8.75ns
+The critical path consists of the following:
+	'call' operation ('op_V_assign', yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:30) to 'logistic_activate' [117]  (8.75 ns)
+
+ <State 16>: 8.75ns
+The critical path consists of the following:
+	'call' operation ('op_V_assign', yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:30) to 'logistic_activate' [117]  (8.75 ns)
+
+ <State 17>: 8.75ns
+The critical path consists of the following:
+	'call' operation ('op_V_assign', yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:30) to 'logistic_activate' [117]  (8.75 ns)
+
+ <State 18>: 8.75ns
+The critical path consists of the following:
+	'call' operation ('op_V_assign', yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:30) to 'logistic_activate' [117]  (8.75 ns)
+
+ <State 19>: 8.75ns
+The critical path consists of the following:
+	'call' operation ('op_V_assign', yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:30) to 'logistic_activate' [117]  (8.75 ns)
+
+ <State 20>: 8.75ns
+The critical path consists of the following:
+	'call' operation ('op_V_assign', yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:30) to 'logistic_activate' [117]  (8.75 ns)
+
+ <State 21>: 8.75ns
+The critical path consists of the following:
+	'call' operation ('op_V_assign', yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:30) to 'logistic_activate' [117]  (8.75 ns)
+
+ <State 22>: 8.75ns
+The critical path consists of the following:
+	'call' operation ('op_V_assign', yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:30) to 'logistic_activate' [117]  (8.75 ns)
+
+ <State 23>: 8.75ns
+The critical path consists of the following:
+	'call' operation ('op_V_assign', yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:30) to 'logistic_activate' [117]  (8.75 ns)
+
+ <State 24>: 8.75ns
+The critical path consists of the following:
+	'call' operation ('op_V_assign', yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:30) to 'logistic_activate' [117]  (8.75 ns)
+
+ <State 25>: 8.75ns
+The critical path consists of the following:
+	'call' operation ('op_V_assign', yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:30) to 'logistic_activate' [117]  (8.75 ns)
+
+ <State 26>: 8.75ns
+The critical path consists of the following:
+	'call' operation ('op_V_assign', yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:30) to 'logistic_activate' [117]  (8.75 ns)
+
+ <State 27>: 8.75ns
+The critical path consists of the following:
+	'call' operation ('op_V_assign', yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:30) to 'logistic_activate' [117]  (8.75 ns)
+
+ <State 28>: 8.75ns
+The critical path consists of the following:
+	'call' operation ('op_V_assign', yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:30) to 'logistic_activate' [117]  (8.75 ns)
+
+ <State 29>: 8.75ns
+The critical path consists of the following:
+	'call' operation ('op_V_assign', yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:30) to 'logistic_activate' [117]  (8.75 ns)
+
+ <State 30>: 8.75ns
+The critical path consists of the following:
+	'call' operation ('op_V_assign', yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:30) to 'logistic_activate' [117]  (8.75 ns)
+
+ <State 31>: 8.66ns
+The critical path consists of the following:
+	'call' operation ('op_V_assign', yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:30) to 'logistic_activate' [117]  (8.66 ns)
+
+ <State 32>: 1.77ns
+The critical path consists of the following:
+	multiplexor before 'phi' operation ('tmp.data.sub_data_0.V', yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:30) with incoming values : ('trunc_ln203', yolo_yolo_fp_2019_64/src/yolo_stream.h:8->yolo_yolo_fp_2019_64/src/yolo_stream.h:16->yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:27) ('op_V_assign', yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:30) [120]  (1.77 ns)
+	'phi' operation ('tmp.data.sub_data_0.V', yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:30) with incoming values : ('trunc_ln203', yolo_yolo_fp_2019_64/src/yolo_stream.h:8->yolo_yolo_fp_2019_64/src/yolo_stream.h:16->yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:27) ('op_V_assign', yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:30) [120]  (0 ns)
+
+ <State 33>: 0ns
+The critical path consists of the following:
+
+ <State 34>: 0ns
+The critical path consists of the following:
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+	State 7
+	State 8
+	State 9
+	State 10
+	State 11
+	State 12
+	State 13
+	State 14
+	State 15
+	State 16
+	State 17
+	State 18
+	State 19
+	State 20
+	State 21
+	State 22
+	State 23
+	State 24
+	State 25
+	State 26
+	State 27
+	State 28
+	State 29
+	State 30
+	State 31
+	State 32
+	State 33
+	State 34
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A
