@@ -1,4 +1,4 @@
-short kernel_bias_fp_bits_pad[]={-103,
+short group_4_biases[]={-103,
 -276,
 138,
 -145,
@@ -255,7 +255,7 @@ short kernel_bias_fp_bits_pad[]={-103,
 81,
 -393};
 
-short kernel_weight_fp_bits_pad[]={6,
+short group_4_weights[]={6,
 -3,
 -4,
 -7,

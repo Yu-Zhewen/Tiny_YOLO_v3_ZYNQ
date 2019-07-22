@@ -1,7 +1,4 @@
-#ifndef WEIGHT_FILE_PAD_H
-#define WEIGHT_FILE_PAD_H
-
-short kernel_bias_fp_bits_pad[]={219,
+short group_1_biases[]={219,
 615,
 169,
 363,
@@ -34,7 +31,7 @@ short kernel_bias_fp_bits_pad[]={219,
 -31,
 380};
 
-short kernel_weight_fp_bits_pad[]={3,
+short group_1_weights[]={3,
 -10,
 -1,
 23,
@@ -6179,4 +6176,3 @@ short kernel_weight_fp_bits_pad[]={3,
 0,
 0};
 
-#endif
