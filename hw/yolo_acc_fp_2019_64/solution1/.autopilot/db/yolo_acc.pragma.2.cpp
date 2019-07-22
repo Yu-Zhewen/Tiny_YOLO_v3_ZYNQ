@@ -6601,36 +6601,77 @@ typedef hls::stream<fp_data_type> yolo_inter_stream;
 
 void yolo_acc_top(yolo_quad_stream &inStream_a, yolo_quad_stream &inStream_b,
             yolo_quad_stream &outStream,
-      ap_uint<6> input_h, ap_uint<6> input_w);
+      ap_uint<9> input_h, ap_uint<9> input_w,
+      ap_uint<(5 -2 +1)> fold_input_ch,
+      ap_uint<1> leaky, ap_uint<1> bias_en);
+fp_data_type post_process_unit(fp_data_type data_in, fp_weight_type bias, ap_uint<1> bias_en, ap_uint<1> leaky);
 # 2 "yolo_acc_fp_2019_64/src/yolo_acc.cpp" 2
+
 
 void yolo_acc_top(yolo_quad_stream &inStream_a, yolo_quad_stream &inStream_b,
             yolo_quad_stream &outStream,
-      ap_uint<6> input_h, ap_uint<6> input_w)
+      ap_uint<9> input_h, ap_uint<9> input_w,
+      ap_uint<(5 -2 +1)> fold_input_ch,
+      ap_uint<1> leaky, ap_uint<1> bias_en)
 {
-_ssdm_op_SpecInterface(&input_w, "s_axilite", 1, 1, "", 0, 0, "CTRL_BUS", "", "", 0, 0, 0, 0, "", "");
+_ssdm_op_SpecInterface(&bias_en, "s_axilite", 0, 0, "", 0, 0, "CTRL_BUS", "", "", 0, 0, 0, 0, "", "");
+_ssdm_op_SpecInterface(&leaky, "s_axilite", 0, 0, "", 0, 0, "CTRL_BUS", "", "", 0, 0, 0, 0, "", "");
+_ssdm_op_SpecInterface(&fold_input_ch, "s_axilite", 0, 0, "", 0, 0, "CTRL_BUS", "", "", 0, 0, 0, 0, "", "");
+_ssdm_op_SpecInterface(&input_w, "s_axilite", 0, 0, "", 0, 0, "CTRL_BUS", "", "", 0, 0, 0, 0, "", "");
 _ssdm_op_SpecInterface(&input_h, "s_axilite", 0, 0, "", 0, 0, "CTRL_BUS", "", "", 0, 0, 0, 0, "", "");
 _ssdm_op_SpecInterface(0, "s_axilite", 0, 0, "", 0, 0, "CTRL_BUS", "", "", 0, 0, 0, 0, "", "");
 _ssdm_op_SpecInterface(&outStream, "axis", 1, 1, "both", 0, 0, "", "", "", 0, 0, 0, 0, "", "");
 _ssdm_op_SpecInterface(&inStream_a, "axis", 1, 1, "both", 0, 0, "", "", "", 0, 0, 0, 0, "", "");
 _ssdm_op_SpecInterface(&inStream_b, "axis", 1, 1, "both", 0, 0, "", "", "", 0, 0, 0, 0, "", "");
 
+ fp_weight_type kernel_bias_fp[32];
+_ssdm_SpecArrayPartition( kernel_bias_fp, 1, "CYCLIC", 2, "");
+
+ for(ap_uint<(5 -2 +1)> i=0;i<fold_input_ch;i++)
+ {
+_ssdm_op_SpecLoopTripCount(4, 4, 4, "");
+_ssdm_op_SpecPipeline(-1, 1, 1, 0, "");
+ if(bias_en==1)
+  {
+  quad_fp_side_channel curr_input;
+  curr_input = inStream_b.read();
+  kernel_bias_fp[4*i] = curr_input.data.sub_data_0;
+  kernel_bias_fp[4*i+1] = curr_input.data.sub_data_1;
+  kernel_bias_fp[4*i+2] = curr_input.data.sub_data_2;
+  kernel_bias_fp[4*i+3] = curr_input.data.sub_data_3;
+  }
+ }
+
+
+
  for(int row_idx=0;row_idx<input_h;row_idx++)
  {
-  for(int col_idx=0;col_idx<input_w;col_idx++)
+_ssdm_op_SpecLoopTripCount(416, 416, 416, "");
+ for(int col_idx=0;col_idx<input_w;col_idx++)
   {
-   for(int input_ch_idx=0;input_ch_idx<32/4;input_ch_idx++)
+_ssdm_op_SpecLoopTripCount(416, 416, 416, "");
+ for(int input_ch_idx=0;input_ch_idx<fold_input_ch;input_ch_idx++)
    {
-    quad_fp_side_channel curr_input_a,curr_input_b;
+_ssdm_op_SpecLoopTripCount(4, 4, 4, "");
+_ssdm_op_SpecPipeline(-1, 1, 1, 0, "");
+ quad_fp_side_channel curr_input_a,curr_input_b;
     quad_fp_side_channel curr_output;
+
+    fp_data_type output_acc_0, output_acc_1, output_acc_2,output_acc_3;
 
     curr_input_a = inStream_a.read();
     curr_input_b = inStream_b.read();
 
-    curr_output.data.sub_data_0 = curr_input_a.data.sub_data_0 + curr_input_b.data.sub_data_0;
-    curr_output.data.sub_data_1 = curr_input_a.data.sub_data_1 + curr_input_b.data.sub_data_1;
-    curr_output.data.sub_data_2 = curr_input_a.data.sub_data_2 + curr_input_b.data.sub_data_2;
-    curr_output.data.sub_data_3 = curr_input_a.data.sub_data_3 + curr_input_b.data.sub_data_3;
+    output_acc_0 = curr_input_a.data.sub_data_0 + curr_input_b.data.sub_data_0;
+    output_acc_1 = curr_input_a.data.sub_data_1 + curr_input_b.data.sub_data_1;
+    output_acc_2 = curr_input_a.data.sub_data_2 + curr_input_b.data.sub_data_2;
+    output_acc_3 = curr_input_a.data.sub_data_3 + curr_input_b.data.sub_data_3;
+
+    curr_output.data.sub_data_0 = post_process_unit(output_acc_0,kernel_bias_fp[4*input_ch_idx],bias_en,leaky);
+    curr_output.data.sub_data_1 = post_process_unit(output_acc_1,kernel_bias_fp[4*input_ch_idx+1],bias_en,leaky);
+    curr_output.data.sub_data_2 = post_process_unit(output_acc_2,kernel_bias_fp[4*input_ch_idx+2],bias_en,leaky);
+    curr_output.data.sub_data_3 = post_process_unit(output_acc_3,kernel_bias_fp[4*input_ch_idx+3],bias_en,leaky);
+
 
     curr_output.keep = curr_input_a.keep;
     curr_output.strb = curr_input_a.strb;
@@ -6652,4 +6693,27 @@ _ssdm_op_SpecInterface(&inStream_b, "axis", 1, 1, "both", 0, 0, "", "", "", 0, 0
   }
  }
 
+}
+
+fp_data_type post_process_unit(fp_data_type data_in, fp_weight_type bias, ap_uint<1> bias_en, ap_uint<1> leaky)
+{
+ fp_data_type biased_output=0,activated_output=0;
+ if(bias_en)
+ {
+  biased_output = data_in + bias;
+  if(leaky&&biased_output<0)
+  {
+   activated_output = biased_output * (fp_data_type).1;
+  }
+  else
+  {
+   activated_output = biased_output;
+  }
+
+  return activated_output;
+ }
+ else
+ {
+  return data_in;
+ }
 }

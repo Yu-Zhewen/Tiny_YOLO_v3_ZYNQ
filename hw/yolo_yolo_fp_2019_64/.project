@@ -37,16 +37,6 @@
 			<location>/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_yolo_fp_2019_64/.apc/.tb</location>
 		</link>
 		<link>
-			<name>.reference/ap_fixed.h</name>
-			<type>1</type>
-			<location>/opt/Xilinx_2019_1/Vivado/2019.1/include/ap_fixed.h</location>
-		</link>
-		<link>
-			<name>.reference/hls_exp_apfixed.h</name>
-			<type>1</type>
-			<location>/opt/Xilinx_2019_1/Vivado/2019.1/include/hls_exp_apfixed.h</location>
-		</link>
-		<link>
 			<name>solution1/constraints</name>
 			<type>2</type>
 			<location>/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_yolo_fp_2019_64/solution1/.tcls</location>

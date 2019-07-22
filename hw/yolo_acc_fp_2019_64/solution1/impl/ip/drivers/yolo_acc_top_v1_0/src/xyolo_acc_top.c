@@ -107,6 +107,57 @@ u32 XYolo_acc_top_Get_input_w_V(XYolo_acc_top *InstancePtr) {
     return Data;
 }
 
+void XYolo_acc_top_Set_fold_input_ch_V(XYolo_acc_top *InstancePtr, u32 Data) {
+    Xil_AssertVoid(InstancePtr != NULL);
+    Xil_AssertVoid(InstancePtr->IsReady == XIL_COMPONENT_IS_READY);
+
+    XYolo_acc_top_WriteReg(InstancePtr->Ctrl_bus_BaseAddress, XYOLO_ACC_TOP_CTRL_BUS_ADDR_FOLD_INPUT_CH_V_DATA, Data);
+}
+
+u32 XYolo_acc_top_Get_fold_input_ch_V(XYolo_acc_top *InstancePtr) {
+    u32 Data;
+
+    Xil_AssertNonvoid(InstancePtr != NULL);
+    Xil_AssertNonvoid(InstancePtr->IsReady == XIL_COMPONENT_IS_READY);
+
+    Data = XYolo_acc_top_ReadReg(InstancePtr->Ctrl_bus_BaseAddress, XYOLO_ACC_TOP_CTRL_BUS_ADDR_FOLD_INPUT_CH_V_DATA);
+    return Data;
+}
+
+void XYolo_acc_top_Set_leaky_V(XYolo_acc_top *InstancePtr, u32 Data) {
+    Xil_AssertVoid(InstancePtr != NULL);
+    Xil_AssertVoid(InstancePtr->IsReady == XIL_COMPONENT_IS_READY);
+
+    XYolo_acc_top_WriteReg(InstancePtr->Ctrl_bus_BaseAddress, XYOLO_ACC_TOP_CTRL_BUS_ADDR_LEAKY_V_DATA, Data);
+}
+
+u32 XYolo_acc_top_Get_leaky_V(XYolo_acc_top *InstancePtr) {
+    u32 Data;
+
+    Xil_AssertNonvoid(InstancePtr != NULL);
+    Xil_AssertNonvoid(InstancePtr->IsReady == XIL_COMPONENT_IS_READY);
+
+    Data = XYolo_acc_top_ReadReg(InstancePtr->Ctrl_bus_BaseAddress, XYOLO_ACC_TOP_CTRL_BUS_ADDR_LEAKY_V_DATA);
+    return Data;
+}
+
+void XYolo_acc_top_Set_bias_en_V(XYolo_acc_top *InstancePtr, u32 Data) {
+    Xil_AssertVoid(InstancePtr != NULL);
+    Xil_AssertVoid(InstancePtr->IsReady == XIL_COMPONENT_IS_READY);
+
+    XYolo_acc_top_WriteReg(InstancePtr->Ctrl_bus_BaseAddress, XYOLO_ACC_TOP_CTRL_BUS_ADDR_BIAS_EN_V_DATA, Data);
+}
+
+u32 XYolo_acc_top_Get_bias_en_V(XYolo_acc_top *InstancePtr) {
+    u32 Data;
+
+    Xil_AssertNonvoid(InstancePtr != NULL);
+    Xil_AssertNonvoid(InstancePtr->IsReady == XIL_COMPONENT_IS_READY);
+
+    Data = XYolo_acc_top_ReadReg(InstancePtr->Ctrl_bus_BaseAddress, XYOLO_ACC_TOP_CTRL_BUS_ADDR_BIAS_EN_V_DATA);
+    return Data;
+}
+
 void XYolo_acc_top_InterruptGlobalEnable(XYolo_acc_top *InstancePtr) {
     Xil_AssertVoid(InstancePtr != NULL);
     Xil_AssertVoid(InstancePtr->IsReady == XIL_COMPONENT_IS_READY);

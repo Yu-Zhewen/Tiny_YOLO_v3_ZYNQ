@@ -40,19 +40,34 @@ module AESL_axi_slave_CTRL_BUS (
 //------------------------Parameter----------------------
 `define TV_IN_input_h_V "./c.yolo_acc_top.autotvin_input_h_V.dat"
 `define TV_IN_input_w_V "./c.yolo_acc_top.autotvin_input_w_V.dat"
-parameter ADDR_WIDTH = 5;
+`define TV_IN_fold_input_ch_V "./c.yolo_acc_top.autotvin_fold_input_ch_V.dat"
+`define TV_IN_leaky_V "./c.yolo_acc_top.autotvin_leaky_V.dat"
+`define TV_IN_bias_en_V "./c.yolo_acc_top.autotvin_bias_en_V.dat"
+parameter ADDR_WIDTH = 6;
 parameter DATA_WIDTH = 32;
 parameter input_h_V_DEPTH = 1;
 reg [31 : 0] input_h_V_OPERATE_DEPTH = 0;
-parameter input_h_V_c_bitwidth = 6;
+parameter input_h_V_c_bitwidth = 9;
 parameter input_w_V_DEPTH = 1;
 reg [31 : 0] input_w_V_OPERATE_DEPTH = 0;
-parameter input_w_V_c_bitwidth = 6;
+parameter input_w_V_c_bitwidth = 9;
+parameter fold_input_ch_V_DEPTH = 1;
+reg [31 : 0] fold_input_ch_V_OPERATE_DEPTH = 0;
+parameter fold_input_ch_V_c_bitwidth = 4;
+parameter leaky_V_DEPTH = 1;
+reg [31 : 0] leaky_V_OPERATE_DEPTH = 0;
+parameter leaky_V_c_bitwidth = 1;
+parameter bias_en_V_DEPTH = 1;
+reg [31 : 0] bias_en_V_OPERATE_DEPTH = 0;
+parameter bias_en_V_c_bitwidth = 1;
 parameter START_ADDR = 0;
 parameter yolo_acc_top_continue_addr = 0;
 parameter yolo_acc_top_auto_start_addr = 0;
 parameter input_h_V_data_in_addr = 16;
 parameter input_w_V_data_in_addr = 24;
+parameter fold_input_ch_V_data_in_addr = 32;
+parameter leaky_V_data_in_addr = 40;
+parameter bias_en_V_data_in_addr = 48;
 parameter STATUS_ADDR = 0;
 
 output [ADDR_WIDTH - 1 : 0] TRAN_s_axi_CTRL_BUS_AWADDR;
@@ -99,6 +114,12 @@ reg [DATA_WIDTH - 1 : 0] mem_input_h_V [input_h_V_DEPTH - 1 : 0];
 reg input_h_V_write_data_finish;
 reg [DATA_WIDTH - 1 : 0] mem_input_w_V [input_w_V_DEPTH - 1 : 0];
 reg input_w_V_write_data_finish;
+reg [DATA_WIDTH - 1 : 0] mem_fold_input_ch_V [fold_input_ch_V_DEPTH - 1 : 0];
+reg fold_input_ch_V_write_data_finish;
+reg [DATA_WIDTH - 1 : 0] mem_leaky_V [leaky_V_DEPTH - 1 : 0];
+reg leaky_V_write_data_finish;
+reg [DATA_WIDTH - 1 : 0] mem_bias_en_V [bias_en_V_DEPTH - 1 : 0];
+reg bias_en_V_write_data_finish;
 reg AESL_ready_out_index_reg = 0;
 reg AESL_write_start_finish = 0;
 reg AESL_ready_reg;
@@ -110,6 +131,9 @@ reg process_0_finish = 0;
 reg process_1_finish = 0;
 reg process_2_finish = 0;
 reg process_3_finish = 0;
+reg process_4_finish = 0;
+reg process_5_finish = 0;
+reg process_6_finish = 0;
 //write input_h_V reg
 reg [31 : 0] write_input_h_V_count = 0;
 reg write_input_h_V_run_flag = 0;
@@ -118,6 +142,18 @@ reg write_one_input_h_V_data_done = 0;
 reg [31 : 0] write_input_w_V_count = 0;
 reg write_input_w_V_run_flag = 0;
 reg write_one_input_w_V_data_done = 0;
+//write fold_input_ch_V reg
+reg [31 : 0] write_fold_input_ch_V_count = 0;
+reg write_fold_input_ch_V_run_flag = 0;
+reg write_one_fold_input_ch_V_data_done = 0;
+//write leaky_V reg
+reg [31 : 0] write_leaky_V_count = 0;
+reg write_leaky_V_run_flag = 0;
+reg write_one_leaky_V_data_done = 0;
+//write bias_en_V reg
+reg [31 : 0] write_bias_en_V_count = 0;
+reg write_bias_en_V_run_flag = 0;
+reg write_one_bias_en_V_data_done = 0;
 reg [31 : 0] write_start_count = 0;
 reg write_start_run_flag = 0;
 
@@ -140,13 +176,13 @@ assign TRAN_CTRL_BUS_write_start_finish = AESL_write_start_finish;
 assign TRAN_CTRL_BUS_done_out = AESL_done_index_reg;
 assign TRAN_CTRL_BUS_ready_out = AESL_ready_out_index_reg;
 assign TRAN_CTRL_BUS_idle_out = AESL_idle_index_reg;
-assign TRAN_CTRL_BUS_write_data_finish = 1 & input_h_V_write_data_finish & input_w_V_write_data_finish;
+assign TRAN_CTRL_BUS_write_data_finish = 1 & input_h_V_write_data_finish & input_w_V_write_data_finish & fold_input_ch_V_write_data_finish & leaky_V_write_data_finish & bias_en_V_write_data_finish;
 always @(TRAN_CTRL_BUS_ready_in or ready_initial) 
 begin
     AESL_ready_reg <= TRAN_CTRL_BUS_ready_in | ready_initial;
 end
 
-always @(reset or process_0_finish or process_1_finish or process_2_finish or process_3_finish ) begin
+always @(reset or process_0_finish or process_1_finish or process_2_finish or process_3_finish or process_4_finish or process_5_finish or process_6_finish ) begin
     if (reset == 0) begin
         ongoing_process_number <= 0;
     end
@@ -160,6 +196,15 @@ always @(reset or process_0_finish or process_1_finish or process_2_finish or pr
             ongoing_process_number <= ongoing_process_number + 1;
     end
     else if (ongoing_process_number == 3 && process_3_finish == 1) begin
+            ongoing_process_number <= ongoing_process_number + 1;
+    end
+    else if (ongoing_process_number == 4 && process_4_finish == 1) begin
+            ongoing_process_number <= ongoing_process_number + 1;
+    end
+    else if (ongoing_process_number == 5 && process_5_finish == 1) begin
+            ongoing_process_number <= ongoing_process_number + 1;
+    end
+    else if (ongoing_process_number == 6 && process_6_finish == 1) begin
             ongoing_process_number <= 0;
     end
 end
@@ -474,6 +519,225 @@ initial begin : write_input_w_V
         @(posedge clk);
     end    
 end
+always @(reset or posedge clk) begin
+    if (reset == 0) begin
+        fold_input_ch_V_write_data_finish <= 0;
+        write_fold_input_ch_V_run_flag <= 0; 
+        write_fold_input_ch_V_count = 0;
+        count_operate_depth_by_bitwidth_and_depth (fold_input_ch_V_c_bitwidth, fold_input_ch_V_DEPTH, fold_input_ch_V_OPERATE_DEPTH);
+    end
+    else begin
+        if (TRAN_CTRL_BUS_start_in === 1) begin
+            fold_input_ch_V_write_data_finish <= 0;
+        end
+        if (AESL_ready_reg === 1) begin
+            write_fold_input_ch_V_run_flag <= 1; 
+            write_fold_input_ch_V_count = 0;
+        end
+        if (write_one_fold_input_ch_V_data_done === 1) begin
+            write_fold_input_ch_V_count = write_fold_input_ch_V_count + 1;
+            if (write_fold_input_ch_V_count == fold_input_ch_V_OPERATE_DEPTH) begin
+                write_fold_input_ch_V_run_flag <= 0; 
+                fold_input_ch_V_write_data_finish <= 1;
+            end
+        end
+    end
+end
+
+initial begin : write_fold_input_ch_V
+    integer write_fold_input_ch_V_resp;
+    integer process_num ;
+    integer get_ack;
+    integer four_byte_num;
+    integer c_bitwidth;
+    integer i;
+    integer j;
+    reg [31 : 0] fold_input_ch_V_data_tmp_reg;
+    wait(reset === 1);
+    @(posedge clk);
+    c_bitwidth = fold_input_ch_V_c_bitwidth;
+    process_num = 3;
+    count_c_data_four_byte_num_by_bitwidth (c_bitwidth , four_byte_num) ;
+    while (1) begin
+        process_3_finish <= 0;
+
+        if (ongoing_process_number === process_num && process_busy === 0 ) begin
+            get_ack = 1;
+            if (write_fold_input_ch_V_run_flag === 1 && get_ack === 1) begin
+                process_busy = 1;
+                //write fold_input_ch_V data 
+                for (i = 0 ; i < four_byte_num ; i = i+1) begin
+                    if (fold_input_ch_V_c_bitwidth < 32) begin
+                        fold_input_ch_V_data_tmp_reg = mem_fold_input_ch_V[write_fold_input_ch_V_count];
+                    end
+                    else begin
+                        for (j=0 ; j<32 ; j = j + 1) begin
+                            if (i*32 + j < fold_input_ch_V_c_bitwidth) begin
+                                fold_input_ch_V_data_tmp_reg[j] = mem_fold_input_ch_V[write_fold_input_ch_V_count][i*32 + j];
+                            end
+                            else begin
+                                fold_input_ch_V_data_tmp_reg[j] = 0;
+                            end
+                        end
+                    end
+                    write (fold_input_ch_V_data_in_addr + write_fold_input_ch_V_count * four_byte_num * 4 + i * 4, fold_input_ch_V_data_tmp_reg, write_fold_input_ch_V_resp);
+                end
+                process_busy = 0;
+                write_one_fold_input_ch_V_data_done <= 1;
+                @(posedge clk);
+                write_one_fold_input_ch_V_data_done <= 0;
+            end   
+            process_3_finish <= 1;
+        end
+        @(posedge clk);
+    end    
+end
+always @(reset or posedge clk) begin
+    if (reset == 0) begin
+        leaky_V_write_data_finish <= 0;
+        write_leaky_V_run_flag <= 0; 
+        write_leaky_V_count = 0;
+        count_operate_depth_by_bitwidth_and_depth (leaky_V_c_bitwidth, leaky_V_DEPTH, leaky_V_OPERATE_DEPTH);
+    end
+    else begin
+        if (TRAN_CTRL_BUS_start_in === 1) begin
+            leaky_V_write_data_finish <= 0;
+        end
+        if (AESL_ready_reg === 1) begin
+            write_leaky_V_run_flag <= 1; 
+            write_leaky_V_count = 0;
+        end
+        if (write_one_leaky_V_data_done === 1) begin
+            write_leaky_V_count = write_leaky_V_count + 1;
+            if (write_leaky_V_count == leaky_V_OPERATE_DEPTH) begin
+                write_leaky_V_run_flag <= 0; 
+                leaky_V_write_data_finish <= 1;
+            end
+        end
+    end
+end
+
+initial begin : write_leaky_V
+    integer write_leaky_V_resp;
+    integer process_num ;
+    integer get_ack;
+    integer four_byte_num;
+    integer c_bitwidth;
+    integer i;
+    integer j;
+    reg [31 : 0] leaky_V_data_tmp_reg;
+    wait(reset === 1);
+    @(posedge clk);
+    c_bitwidth = leaky_V_c_bitwidth;
+    process_num = 4;
+    count_c_data_four_byte_num_by_bitwidth (c_bitwidth , four_byte_num) ;
+    while (1) begin
+        process_4_finish <= 0;
+
+        if (ongoing_process_number === process_num && process_busy === 0 ) begin
+            get_ack = 1;
+            if (write_leaky_V_run_flag === 1 && get_ack === 1) begin
+                process_busy = 1;
+                //write leaky_V data 
+                for (i = 0 ; i < four_byte_num ; i = i+1) begin
+                    if (leaky_V_c_bitwidth < 32) begin
+                        leaky_V_data_tmp_reg = mem_leaky_V[write_leaky_V_count];
+                    end
+                    else begin
+                        for (j=0 ; j<32 ; j = j + 1) begin
+                            if (i*32 + j < leaky_V_c_bitwidth) begin
+                                leaky_V_data_tmp_reg[j] = mem_leaky_V[write_leaky_V_count][i*32 + j];
+                            end
+                            else begin
+                                leaky_V_data_tmp_reg[j] = 0;
+                            end
+                        end
+                    end
+                    write (leaky_V_data_in_addr + write_leaky_V_count * four_byte_num * 4 + i * 4, leaky_V_data_tmp_reg, write_leaky_V_resp);
+                end
+                process_busy = 0;
+                write_one_leaky_V_data_done <= 1;
+                @(posedge clk);
+                write_one_leaky_V_data_done <= 0;
+            end   
+            process_4_finish <= 1;
+        end
+        @(posedge clk);
+    end    
+end
+always @(reset or posedge clk) begin
+    if (reset == 0) begin
+        bias_en_V_write_data_finish <= 0;
+        write_bias_en_V_run_flag <= 0; 
+        write_bias_en_V_count = 0;
+        count_operate_depth_by_bitwidth_and_depth (bias_en_V_c_bitwidth, bias_en_V_DEPTH, bias_en_V_OPERATE_DEPTH);
+    end
+    else begin
+        if (TRAN_CTRL_BUS_start_in === 1) begin
+            bias_en_V_write_data_finish <= 0;
+        end
+        if (AESL_ready_reg === 1) begin
+            write_bias_en_V_run_flag <= 1; 
+            write_bias_en_V_count = 0;
+        end
+        if (write_one_bias_en_V_data_done === 1) begin
+            write_bias_en_V_count = write_bias_en_V_count + 1;
+            if (write_bias_en_V_count == bias_en_V_OPERATE_DEPTH) begin
+                write_bias_en_V_run_flag <= 0; 
+                bias_en_V_write_data_finish <= 1;
+            end
+        end
+    end
+end
+
+initial begin : write_bias_en_V
+    integer write_bias_en_V_resp;
+    integer process_num ;
+    integer get_ack;
+    integer four_byte_num;
+    integer c_bitwidth;
+    integer i;
+    integer j;
+    reg [31 : 0] bias_en_V_data_tmp_reg;
+    wait(reset === 1);
+    @(posedge clk);
+    c_bitwidth = bias_en_V_c_bitwidth;
+    process_num = 5;
+    count_c_data_four_byte_num_by_bitwidth (c_bitwidth , four_byte_num) ;
+    while (1) begin
+        process_5_finish <= 0;
+
+        if (ongoing_process_number === process_num && process_busy === 0 ) begin
+            get_ack = 1;
+            if (write_bias_en_V_run_flag === 1 && get_ack === 1) begin
+                process_busy = 1;
+                //write bias_en_V data 
+                for (i = 0 ; i < four_byte_num ; i = i+1) begin
+                    if (bias_en_V_c_bitwidth < 32) begin
+                        bias_en_V_data_tmp_reg = mem_bias_en_V[write_bias_en_V_count];
+                    end
+                    else begin
+                        for (j=0 ; j<32 ; j = j + 1) begin
+                            if (i*32 + j < bias_en_V_c_bitwidth) begin
+                                bias_en_V_data_tmp_reg[j] = mem_bias_en_V[write_bias_en_V_count][i*32 + j];
+                            end
+                            else begin
+                                bias_en_V_data_tmp_reg[j] = 0;
+                            end
+                        end
+                    end
+                    write (bias_en_V_data_in_addr + write_bias_en_V_count * four_byte_num * 4 + i * 4, bias_en_V_data_tmp_reg, write_bias_en_V_resp);
+                end
+                process_busy = 0;
+                write_one_bias_en_V_data_done <= 1;
+                @(posedge clk);
+                write_one_bias_en_V_data_done <= 0;
+            end   
+            process_5_finish <= 1;
+        end
+        @(posedge clk);
+    end    
+end
 
 always @(reset or posedge clk) begin
     if (reset == 0) begin
@@ -500,9 +764,9 @@ initial begin : write_start
     integer write_start_resp;
     wait(reset === 1);
     @(posedge clk);
-    process_num = 3;
+    process_num = 6;
     while (1) begin
-        process_3_finish = 0;
+        process_6_finish = 0;
         if (ongoing_process_number === process_num && process_busy === 0 ) begin
             if (write_start_run_flag === 1) begin
                 process_busy = 1;
@@ -514,7 +778,7 @@ initial begin : write_start
                 @(posedge clk);
                 AESL_write_start_finish <= 0;
             end
-            process_3_finish <= 1;
+            process_6_finish <= 1;
         end 
         @(posedge clk);
     end
@@ -707,6 +971,288 @@ initial begin : read_input_w_V_file_process
       if (factor == 2) begin
           if (i%factor != 0) begin
               mem_input_w_V [i/factor] = mem_tmp;
+          end
+      end 
+      read_token(fp, token); 
+      if(token != "[[/transaction]]") begin 
+          $display("ERROR: Simulation using HLS TB failed.");
+          $finish; 
+      end 
+      read_token(fp, token); 
+      transaction_idx = transaction_idx + 1; 
+  end 
+  $fclose(fp); 
+end 
+ 
+//------------------------Read file------------------------ 
+ 
+// Read data from file 
+initial begin : read_fold_input_ch_V_file_process 
+  integer fp; 
+  integer ret; 
+  integer factor; 
+  reg [127 : 0] token; 
+  reg [127 : 0] token_tmp; 
+  //reg [fold_input_ch_V_c_bitwidth - 1 : 0] token_tmp; 
+  reg [DATA_WIDTH - 1 : 0] mem_tmp; 
+  reg [ 8*5 : 1] str;
+  integer transaction_idx; 
+  integer i; 
+  transaction_idx = 0; 
+  mem_tmp [DATA_WIDTH - 1 : 0] = 0;
+  count_seperate_factor_by_bitwidth (fold_input_ch_V_c_bitwidth , factor);
+  fp = $fopen(`TV_IN_fold_input_ch_V ,"r"); 
+  if(fp == 0) begin                               // Failed to open file 
+      $display("Failed to open file \"%s\"!", `TV_IN_fold_input_ch_V); 
+      $finish; 
+  end 
+  read_token(fp, token); 
+  if (token != "[[[runtime]]]") begin             // Illegal format 
+      $display("ERROR: Simulation using HLS TB failed.");
+      $finish; 
+  end 
+  read_token(fp, token); 
+  while (token != "[[[/runtime]]]") begin 
+      if (token != "[[transaction]]") begin 
+          $display("ERROR: Simulation using HLS TB failed.");
+          $finish; 
+      end 
+      read_token(fp, token);                        // skip transaction number 
+      @(posedge clk);
+      # 0.2;
+      while(AESL_ready_reg !== 1) begin
+          @(posedge clk); 
+          # 0.2;
+      end
+      for(i = 0; i < fold_input_ch_V_DEPTH; i = i + 1) begin 
+          read_token(fp, token); 
+          ret = $sscanf(token, "0x%x", token_tmp); 
+          if (factor == 4) begin
+              if (i%factor == 0) begin
+                  mem_tmp [7 : 0] = token_tmp;
+              end
+              if (i%factor == 1) begin
+                  mem_tmp [15 : 8] = token_tmp;
+              end
+              if (i%factor == 2) begin
+                  mem_tmp [23 : 16] = token_tmp;
+              end
+              if (i%factor == 3) begin
+                  mem_tmp [31 : 24] = token_tmp;
+                  mem_fold_input_ch_V [i/factor] = mem_tmp;
+                  mem_tmp [DATA_WIDTH - 1 : 0] = 0;
+              end
+          end
+          if (factor == 2) begin
+              if (i%factor == 0) begin
+                  mem_tmp [15 : 0] = token_tmp;
+              end
+              if (i%factor == 1) begin
+                  mem_tmp [31 : 16] = token_tmp;
+                  mem_fold_input_ch_V [i/factor] = mem_tmp;
+                  mem_tmp [DATA_WIDTH - 1: 0] = 0;
+              end
+          end
+          if (factor == 1) begin
+              mem_fold_input_ch_V [i] = token_tmp;
+          end
+      end 
+      if (factor == 4) begin
+          if (i%factor != 0) begin
+              mem_fold_input_ch_V [i/factor] = mem_tmp;
+          end
+      end
+      if (factor == 2) begin
+          if (i%factor != 0) begin
+              mem_fold_input_ch_V [i/factor] = mem_tmp;
+          end
+      end 
+      read_token(fp, token); 
+      if(token != "[[/transaction]]") begin 
+          $display("ERROR: Simulation using HLS TB failed.");
+          $finish; 
+      end 
+      read_token(fp, token); 
+      transaction_idx = transaction_idx + 1; 
+  end 
+  $fclose(fp); 
+end 
+ 
+//------------------------Read file------------------------ 
+ 
+// Read data from file 
+initial begin : read_leaky_V_file_process 
+  integer fp; 
+  integer ret; 
+  integer factor; 
+  reg [127 : 0] token; 
+  reg [127 : 0] token_tmp; 
+  //reg [leaky_V_c_bitwidth - 1 : 0] token_tmp; 
+  reg [DATA_WIDTH - 1 : 0] mem_tmp; 
+  reg [ 8*5 : 1] str;
+  integer transaction_idx; 
+  integer i; 
+  transaction_idx = 0; 
+  mem_tmp [DATA_WIDTH - 1 : 0] = 0;
+  count_seperate_factor_by_bitwidth (leaky_V_c_bitwidth , factor);
+  fp = $fopen(`TV_IN_leaky_V ,"r"); 
+  if(fp == 0) begin                               // Failed to open file 
+      $display("Failed to open file \"%s\"!", `TV_IN_leaky_V); 
+      $finish; 
+  end 
+  read_token(fp, token); 
+  if (token != "[[[runtime]]]") begin             // Illegal format 
+      $display("ERROR: Simulation using HLS TB failed.");
+      $finish; 
+  end 
+  read_token(fp, token); 
+  while (token != "[[[/runtime]]]") begin 
+      if (token != "[[transaction]]") begin 
+          $display("ERROR: Simulation using HLS TB failed.");
+          $finish; 
+      end 
+      read_token(fp, token);                        // skip transaction number 
+      @(posedge clk);
+      # 0.2;
+      while(AESL_ready_reg !== 1) begin
+          @(posedge clk); 
+          # 0.2;
+      end
+      for(i = 0; i < leaky_V_DEPTH; i = i + 1) begin 
+          read_token(fp, token); 
+          ret = $sscanf(token, "0x%x", token_tmp); 
+          if (factor == 4) begin
+              if (i%factor == 0) begin
+                  mem_tmp [7 : 0] = token_tmp;
+              end
+              if (i%factor == 1) begin
+                  mem_tmp [15 : 8] = token_tmp;
+              end
+              if (i%factor == 2) begin
+                  mem_tmp [23 : 16] = token_tmp;
+              end
+              if (i%factor == 3) begin
+                  mem_tmp [31 : 24] = token_tmp;
+                  mem_leaky_V [i/factor] = mem_tmp;
+                  mem_tmp [DATA_WIDTH - 1 : 0] = 0;
+              end
+          end
+          if (factor == 2) begin
+              if (i%factor == 0) begin
+                  mem_tmp [15 : 0] = token_tmp;
+              end
+              if (i%factor == 1) begin
+                  mem_tmp [31 : 16] = token_tmp;
+                  mem_leaky_V [i/factor] = mem_tmp;
+                  mem_tmp [DATA_WIDTH - 1: 0] = 0;
+              end
+          end
+          if (factor == 1) begin
+              mem_leaky_V [i] = token_tmp;
+          end
+      end 
+      if (factor == 4) begin
+          if (i%factor != 0) begin
+              mem_leaky_V [i/factor] = mem_tmp;
+          end
+      end
+      if (factor == 2) begin
+          if (i%factor != 0) begin
+              mem_leaky_V [i/factor] = mem_tmp;
+          end
+      end 
+      read_token(fp, token); 
+      if(token != "[[/transaction]]") begin 
+          $display("ERROR: Simulation using HLS TB failed.");
+          $finish; 
+      end 
+      read_token(fp, token); 
+      transaction_idx = transaction_idx + 1; 
+  end 
+  $fclose(fp); 
+end 
+ 
+//------------------------Read file------------------------ 
+ 
+// Read data from file 
+initial begin : read_bias_en_V_file_process 
+  integer fp; 
+  integer ret; 
+  integer factor; 
+  reg [127 : 0] token; 
+  reg [127 : 0] token_tmp; 
+  //reg [bias_en_V_c_bitwidth - 1 : 0] token_tmp; 
+  reg [DATA_WIDTH - 1 : 0] mem_tmp; 
+  reg [ 8*5 : 1] str;
+  integer transaction_idx; 
+  integer i; 
+  transaction_idx = 0; 
+  mem_tmp [DATA_WIDTH - 1 : 0] = 0;
+  count_seperate_factor_by_bitwidth (bias_en_V_c_bitwidth , factor);
+  fp = $fopen(`TV_IN_bias_en_V ,"r"); 
+  if(fp == 0) begin                               // Failed to open file 
+      $display("Failed to open file \"%s\"!", `TV_IN_bias_en_V); 
+      $finish; 
+  end 
+  read_token(fp, token); 
+  if (token != "[[[runtime]]]") begin             // Illegal format 
+      $display("ERROR: Simulation using HLS TB failed.");
+      $finish; 
+  end 
+  read_token(fp, token); 
+  while (token != "[[[/runtime]]]") begin 
+      if (token != "[[transaction]]") begin 
+          $display("ERROR: Simulation using HLS TB failed.");
+          $finish; 
+      end 
+      read_token(fp, token);                        // skip transaction number 
+      @(posedge clk);
+      # 0.2;
+      while(AESL_ready_reg !== 1) begin
+          @(posedge clk); 
+          # 0.2;
+      end
+      for(i = 0; i < bias_en_V_DEPTH; i = i + 1) begin 
+          read_token(fp, token); 
+          ret = $sscanf(token, "0x%x", token_tmp); 
+          if (factor == 4) begin
+              if (i%factor == 0) begin
+                  mem_tmp [7 : 0] = token_tmp;
+              end
+              if (i%factor == 1) begin
+                  mem_tmp [15 : 8] = token_tmp;
+              end
+              if (i%factor == 2) begin
+                  mem_tmp [23 : 16] = token_tmp;
+              end
+              if (i%factor == 3) begin
+                  mem_tmp [31 : 24] = token_tmp;
+                  mem_bias_en_V [i/factor] = mem_tmp;
+                  mem_tmp [DATA_WIDTH - 1 : 0] = 0;
+              end
+          end
+          if (factor == 2) begin
+              if (i%factor == 0) begin
+                  mem_tmp [15 : 0] = token_tmp;
+              end
+              if (i%factor == 1) begin
+                  mem_tmp [31 : 16] = token_tmp;
+                  mem_bias_en_V [i/factor] = mem_tmp;
+                  mem_tmp [DATA_WIDTH - 1: 0] = 0;
+              end
+          end
+          if (factor == 1) begin
+              mem_bias_en_V [i] = token_tmp;
+          end
+      end 
+      if (factor == 4) begin
+          if (i%factor != 0) begin
+              mem_bias_en_V [i/factor] = mem_tmp;
+          end
+      end
+      if (factor == 2) begin
+          if (i%factor != 0) begin
+              mem_bias_en_V [i/factor] = mem_tmp;
           end
       end 
       read_token(fp, token); 

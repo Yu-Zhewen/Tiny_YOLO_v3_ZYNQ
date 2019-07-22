@@ -278,16 +278,6 @@
 <InvalidType>0</InvalidType>
 </RtlPorts>
 <RtlPorts>
-<name>leaky_V</name>
-<CType>
-<TypeName>ap_uint 1</TypeName>
-<TypeWidth>1</TypeWidth>
-<PhysicalWidth>1</PhysicalWidth>
-</CType>
-<CFractionWidth>0</CFractionWidth>
-<InvalidType>0</InvalidType>
-</RtlPorts>
-<RtlPorts>
 <name>fold_win_area_V</name>
 <CType>
 <TypeName>ap_uint 3</TypeName>

@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'window_macc'" level="0">
-<item name = "Date">Tue Jul 16 08:52:30 2019
+<item name = "Date">Sat Jul 20 19:03:14 2019
 </item>
 <item name = "Version">2019.1 (Build 2552052 on Fri May 24 15:28:33 MDT 2019)</item>
 <item name = "Project">yolo_conv_fp_2019_64</item>

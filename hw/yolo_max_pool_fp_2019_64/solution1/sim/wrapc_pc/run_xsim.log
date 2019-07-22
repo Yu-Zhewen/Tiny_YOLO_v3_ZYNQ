@@ -10,6 +10,9 @@ INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/xavier/MSc_Project/hls/
 INFO: [VRFC 10-311] analyzing module glbl
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/sim/verilog/write_output.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module write_output
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/sim/verilog/yolo_max_pool_top_mul_mul_9ns_17ns_26_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module yolo_max_pool_top_mul_mul_9ns_17ns_26_1_1_DSP48_0
+INFO: [VRFC 10-311] analyzing module yolo_max_pool_top_mul_mul_9ns_17ns_26_1_1
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/sim/verilog/yolo_max_pool_top_CTRL_BUS_s_axi.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module yolo_max_pool_top_CTRL_BUS_s_axi
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/sim/verilog/yolo_max_pool_top_line_buff_group_0_va.v" into library xil_defaultlib
@@ -21,9 +24,6 @@ INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/xavier/MSc_Project/hls/
 INFO: [VRFC 10-311] analyzing module AESL_axi_s_inStream
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/sim/verilog/AESL_fifo.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module fifo
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/sim/verilog/yolo_max_pool_top_mul_mul_17ns_9ns_26_1_1.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module yolo_max_pool_top_mul_mul_17ns_9ns_26_1_1_DSP48_0
-INFO: [VRFC 10-311] analyzing module yolo_max_pool_top_mul_mul_17ns_9ns_26_1_1
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/sim/verilog/AESL_axi_slave_CTRL_BUS.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module AESL_axi_slave_CTRL_BUS
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/sim/verilog/AESL_axi_s_outStream.v" into library xil_defaultlib
@@ -39,8 +39,8 @@ Compiling module xil_defaultlib.yolo_max_pool_top_CTRL_BUS_s_axi
 Compiling module xil_defaultlib.yolo_max_pool_top_line_buff_grou...
 Compiling module xil_defaultlib.yolo_max_pool_top_line_buff_grou...
 Compiling module xil_defaultlib.write_output
-Compiling module xil_defaultlib.yolo_max_pool_top_mul_mul_17ns_9...
-Compiling module xil_defaultlib.yolo_max_pool_top_mul_mul_17ns_9...
+Compiling module xil_defaultlib.yolo_max_pool_top_mul_mul_9ns_17...
+Compiling module xil_defaultlib.yolo_max_pool_top_mul_mul_9ns_17...
 Compiling module xil_defaultlib.yolo_max_pool_top
 Compiling module xil_defaultlib.fifo(DEPTH=692224,WIDTH=64)
 Compiling module xil_defaultlib.fifo(DEPTH=692224)
@@ -67,8 +67,8 @@ Built simulation snapshot yolo_max_pool_top
     ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 
 source /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/sim/verilog/xsim.dir/yolo_max_pool_top/webtalk/xsim_webtalk.tcl -notrace
-INFO: [Common 17-186] '/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/sim/verilog/xsim.dir/yolo_max_pool_top/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Mon Jul 15 20:25:33 2019. For additional details about this file, please refer to the WebTalk help file at /opt/Xilinx_2019_1/Vivado/2019.1/doc/webtalk_introduction.html.
-INFO: [Common 17-206] Exiting Webtalk at Mon Jul 15 20:25:33 2019...
+INFO: [Common 17-186] '/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/sim/verilog/xsim.dir/yolo_max_pool_top/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Fri Jul 19 15:54:56 2019. For additional details about this file, please refer to the WebTalk help file at /opt/Xilinx_2019_1/Vivado/2019.1/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Fri Jul 19 15:54:56 2019...
 
 ****** xsim v2019.1 (64-bit)
   **** SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
@@ -91,7 +91,7 @@ source yolo_max_pool_top.tcl
 // RTL Simulation : 1 / 1 [100.00%] @ "13845665000"
 ////////////////////////////////////////////////////////////////////////////////////
 $finish called at time : 13845705 ns : File "/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/sim/verilog/yolo_max_pool_top.autotb.v" Line 492
-run: Time (s): cpu = 00:00:00 ; elapsed = 00:02:14 . Memory (MB): peak = 1392.805 ; gain = 0.000 ; free physical = 1003 ; free virtual = 11258
+run: Time (s): cpu = 00:00:00.02 ; elapsed = 00:02:08 . Memory (MB): peak = 1392.805 ; gain = 0.000 ; free physical = 2150 ; free virtual = 11961
 ## quit
-INFO: [Common 17-206] Exiting xsim at Mon Jul 15 20:28:02 2019...
+INFO: [Common 17-206] Exiting xsim at Fri Jul 19 15:57:17 2019...
 173055

@@ -166,25 +166,25 @@ set RtlHierarchyInfo {[
 				"BlockSignal" : [
 					{"Name" : "outStream_TDATA_blk_n", "Type" : "RtlSignal"}],
 				"SubConnect" : [
-					{"ID" : "10", "SubInstance" : "call_ln134_write_output_fu_772", "Port" : "out_stream_V_data"}]},
+					{"ID" : "10", "SubInstance" : "call_ln112_write_output_fu_778", "Port" : "out_stream_V_data"}]},
 			{"Name" : "outStream_V_keep_V", "Type" : "Axis", "Direction" : "O",
 				"SubConnect" : [
-					{"ID" : "10", "SubInstance" : "call_ln134_write_output_fu_772", "Port" : "out_stream_V_keep_V"}]},
+					{"ID" : "10", "SubInstance" : "call_ln112_write_output_fu_778", "Port" : "out_stream_V_keep_V"}]},
 			{"Name" : "outStream_V_strb_V", "Type" : "Axis", "Direction" : "O",
 				"SubConnect" : [
-					{"ID" : "10", "SubInstance" : "call_ln134_write_output_fu_772", "Port" : "out_stream_V_strb_V"}]},
+					{"ID" : "10", "SubInstance" : "call_ln112_write_output_fu_778", "Port" : "out_stream_V_strb_V"}]},
 			{"Name" : "outStream_V_user_V", "Type" : "Axis", "Direction" : "O",
 				"SubConnect" : [
-					{"ID" : "10", "SubInstance" : "call_ln134_write_output_fu_772", "Port" : "out_stream_V_user_V"}]},
+					{"ID" : "10", "SubInstance" : "call_ln112_write_output_fu_778", "Port" : "out_stream_V_user_V"}]},
 			{"Name" : "outStream_V_last_V", "Type" : "Axis", "Direction" : "O",
 				"SubConnect" : [
-					{"ID" : "10", "SubInstance" : "call_ln134_write_output_fu_772", "Port" : "out_stream_V_last_V"}]},
+					{"ID" : "10", "SubInstance" : "call_ln112_write_output_fu_778", "Port" : "out_stream_V_last_V"}]},
 			{"Name" : "outStream_V_id_V", "Type" : "Axis", "Direction" : "O",
 				"SubConnect" : [
-					{"ID" : "10", "SubInstance" : "call_ln134_write_output_fu_772", "Port" : "out_stream_V_id_V"}]},
+					{"ID" : "10", "SubInstance" : "call_ln112_write_output_fu_778", "Port" : "out_stream_V_id_V"}]},
 			{"Name" : "outStream_V_dest_V", "Type" : "Axis", "Direction" : "O",
 				"SubConnect" : [
-					{"ID" : "10", "SubInstance" : "call_ln134_write_output_fu_772", "Port" : "out_stream_V_dest_V"}]},
+					{"ID" : "10", "SubInstance" : "call_ln112_write_output_fu_778", "Port" : "out_stream_V_dest_V"}]},
 			{"Name" : "output_h_V", "Type" : "None", "Direction" : "I"},
 			{"Name" : "output_w_V", "Type" : "None", "Direction" : "I"},
 			{"Name" : "input_h_V", "Type" : "None", "Direction" : "I"},
@@ -192,7 +192,7 @@ set RtlHierarchyInfo {[
 			{"Name" : "input_fold_ch_V", "Type" : "None", "Direction" : "I"},
 			{"Name" : "stride_V", "Type" : "None", "Direction" : "I"}],
 		"SubInstanceBlock" : [
-			{"SubInstance" : "call_ln134_write_output_fu_772", "SubBlockPort" : ["outStream_TDATA_blk_n"]}]},
+			{"SubInstance" : "call_ln112_write_output_fu_778", "SubBlockPort" : ["outStream_TDATA_blk_n"]}]},
 	{"ID" : "1", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.yolo_max_pool_top_CTRL_BUS_s_axi_U", "Parent" : "0"},
 	{"ID" : "2", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.line_buff_group_0_va_U", "Parent" : "0"},
 	{"ID" : "3", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.line_buff_group_0_va_1_U", "Parent" : "0"},
@@ -202,7 +202,7 @@ set RtlHierarchyInfo {[
 	{"ID" : "7", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.line_buff_group_2_va_1_U", "Parent" : "0"},
 	{"ID" : "8", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.line_buff_group_3_va_U", "Parent" : "0"},
 	{"ID" : "9", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.line_buff_group_3_va_1_U", "Parent" : "0"},
-	{"ID" : "10", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.call_ln134_write_output_fu_772", "Parent" : "0",
+	{"ID" : "10", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.call_ln112_write_output_fu_778", "Parent" : "0",
 		"CDFG" : "write_output",
 		"Protocol" : "ap_ctrl_hs",
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1",
@@ -235,7 +235,7 @@ set RtlHierarchyInfo {[
 			{"Name" : "out_stream_V_id_V", "Type" : "Axis", "Direction" : "O"},
 			{"Name" : "out_stream_V_dest_V", "Type" : "Axis", "Direction" : "O"},
 			{"Name" : "last_V", "Type" : "None", "Direction" : "I"}]},
-	{"ID" : "11", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.yolo_max_pool_top_mul_mul_17ns_9ns_26_1_1_U18", "Parent" : "0"}]}
+	{"ID" : "11", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.yolo_max_pool_top_mul_mul_9ns_17ns_26_1_1_U18", "Parent" : "0"}]}
 
 
 set ArgLastReadFirstWriteLatency {

@@ -1,19 +1,19 @@
 # This script segment is generated automatically by AutoPilot
 
 set id 18
-set name yolo_max_pool_top_mul_mul_17ns_9ns_26_1_1
+set name yolo_max_pool_top_mul_mul_9ns_17ns_26_1_1
 set corename simcore_mul
 set op mul
 set stage_num 1
 set max_latency -1
 set registered_input 1
-set in0_width 17
+set in0_width 9
 set in0_signed 0
-set in1_width 9
+set in1_width 17
 set in1_signed 0
 set out_width 26
 set exp i0*i1
-set arg_lists {i0 {17 0 +} i1 {9 0 +} p {26 0 +} acc {0} }
+set arg_lists {i0 {9 0 +} i1 {17 0 +} p {26 0 +} acc {0} }
 set TrueReset 0
 if {${::AESL::PGuard_simmodel_gen}} {
 if {[info proc ap_gen_simcore_mul] == "ap_gen_simcore_mul"} {

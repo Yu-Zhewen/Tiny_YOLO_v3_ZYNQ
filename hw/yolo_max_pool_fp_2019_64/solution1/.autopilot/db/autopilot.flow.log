@@ -1,628 +1,4 @@
-INFO-FLOW: Workspace /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1 opened at Mon Jul 15 20:21:22 BST 2019
-Execute     config_clock -quiet -name default -period 10 -default=false 
-INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
-Execute     open_platform DefaultPlatform 
-Execute     import_lib /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/xilinx/zynq/zynq 
-Execute       source /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/xilinx/common/xilinx.lib 
-Execute         source /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/xilinx/interface/xilinx_interface.lib 
-Execute           source /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/xilinx/interface/plb46.lib 
-Execute           source /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/xilinx/interface/fsl.lib 
-Execute           source /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/xilinx/interface/axi4.lib 
-Execute           source /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/xilinx/interface/maxi.lib 
-Execute           source /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/xilinx/interface/saxilite.lib 
-Execute         source /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/xilinx/common/dsp48.lib 
-Execute         source /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/xilinx/ip/xfir.lib 
-Execute         source /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/xilinx/ip/xfft.lib 
-Execute         source /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/xilinx/ip/dds_compiler.lib 
-Execute       source /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/xilinx/common/xilinx.hlp 
-Execute         source /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/xilinx/common/target_info.tcl 
-Execute         source /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/xilinx/interface/xilinx_interface.hlp 
-Execute           source /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/xilinx/interface/maxi.hlp 
-Execute           source /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/xilinx/interface/saxilite.hlp 
-Execute         source /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/xilinx/common/dsp48.hlp 
-Execute       source /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/xilinx/zynq/dsp48e1.hlp 
-Execute       source /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/xilinx/common/xilinx.hlp 
-Execute         source /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/xilinx/common/target_info.tcl 
-Execute         source /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/xilinx/interface/xilinx_interface.hlp 
-Execute           source /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/xilinx/interface/maxi.hlp 
-Execute           source /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/xilinx/interface/saxilite.hlp 
-Execute         source /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/xilinx/common/dsp48.hlp 
-Execute     source /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/xilinx/zynq/zynq.gen 
-Execute       source /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/xilinx/common/xilinx.gen 
-Execute         source /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/xilinx/interface/plb46.gen 
-Execute         source /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/xilinx/interface/fsl.gen 
-Execute         source /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/xilinx/interface/axi4.gen 
-Execute         source /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/xilinx/interface/nativeAXI4.gen 
-Execute           source /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/xilinx/interface/saxilite.gen 
-Execute           source /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/xilinx/interface/maxi.gen 
-Execute         source /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
-Execute         source /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
-Execute         source /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/xilinx/ip/dds_compiler.gen 
-Execute         source /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/xilinx/ip/util.gen 
-Execute         source /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/xilinx/ip/xfft.gen 
-Command         ap_source done; 0.11 sec.
-Execute         source /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/xilinx/ip/xfir.gen 
-Execute         source /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/xilinx/common/dsp48.gen 
-Command       ap_source done; 0.15 sec.
-Command     ap_source done; 0.15 sec.
-Execute     open_platform DefaultPlatform 
-Execute     import_lib /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/xilinx/zynq/zynq_fpv6 
-Execute       source /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/xilinx/common/xilinx_fp.lib 
-Execute       source /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/xilinx/common/xilinx_fp.hlp 
-Execute         source /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/xilinx/common/xilinx.hlp 
-Execute           source /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/xilinx/common/target_info.tcl 
-Execute           source /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/xilinx/interface/xilinx_interface.hlp 
-Execute             source /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/xilinx/interface/maxi.hlp 
-Execute             source /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/xilinx/interface/saxilite.hlp 
-Execute           source /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/xilinx/common/dsp48.hlp 
-Execute     source /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/xilinx/zynq/zynq_fpv6.gen 
-Execute       source /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/xilinx/common/xilinx_fp.gen 
-Execute     set_part xc7z020-clg484-1 
-Execute       ap_part_info -name xc7z020-clg484-1 -data single -quiet 
-Command       ap_part_info done; 0.32 sec.
-Execute       ap_part_info -name xc7z020-clg484-1 -data info 
-Execute       add_library xilinx/zynq/zynq:xc7z020:-clg484:-1 
-Execute         get_default_platform 
-Execute         license_isbetapart xc7z020 
-Command         license_isbetapart done; error code: 1; 
-Execute         ap_part_info -data single -name xc7z020-clg484-1 
-Execute         ap_part_info -name xc7z020-clg484-1 -data resources 
-Execute         ap_part_info -name xc7z020-clg484-1 -data info 
-Execute         ap_part_info -name xc7z020-clg484-1 -data info 
-Execute         config_chip_info -quiet -resource {SLICE 13300} {LUT 53200} {FF 106400} {DSP48E 220} {BRAM 280} {URAM 0} 
-Execute         ap_part_info -name xc7z020-clg484-1 -data info 
-Execute         config_chip_info -quiet -speed slow 
-Execute       add_library xilinx/zynq/zynq_fpv6 
-Execute         get_default_platform 
-INFO: [HLS 200-10] Setting target device to 'xc7z020-clg484-1'
-Execute       ap_part_info -name xc7z020-clg484-1 -data info 
-Execute       get_default_platform 
-Command     set_part done; 0.42 sec.
-Execute     ap_part_info -data single -name xc7z020-clg484-1 
-Execute     ap_part_info -name xc7z020-clg484-1 -data resources 
-Execute     ap_part_info -name xc7z020-clg484-1 -data info 
-Execute     ap_part_info -name xc7z020-clg484-1 -data info 
-Execute     config_chip_info -quiet -resource {SLICE 13300} {LUT 53200} {FF 106400} {DSP48E 220} {BRAM 280} {URAM 0} 
-Execute     ap_part_info -name xc7z020-clg484-1 -data info 
-Execute     config_chip_info -quiet -speed slow 
-Execute     config_export -format=ip_catalog 
-Execute     config_export -rtl=verilog 
-Command   open_solution done; 0.61 sec.
-Execute   set_part xc7z020-clg484-1 -tool vivado 
-Execute     ap_part_info -name xc7z020-clg484-1 -data single -quiet 
-Execute     ap_part_info -name xc7z020-clg484-1 -data info 
-Execute     add_library xilinx/zynq/zynq:xc7z020:-clg484:-1 
-Execute       get_default_platform 
-Execute       license_isbetapart xc7z020 
-Command       license_isbetapart done; error code: 1; 
-Execute       ap_part_info -data single -name xc7z020-clg484-1 
-Execute       ap_part_info -name xc7z020-clg484-1 -data resources 
-Execute       ap_part_info -name xc7z020-clg484-1 -data info 
-Execute       ap_part_info -name xc7z020-clg484-1 -data info 
-Execute       config_chip_info -quiet -resource {SLICE 13300} {LUT 53200} {FF 106400} {DSP48E 220} {BRAM 280} {URAM 0} 
-Execute       ap_part_info -name xc7z020-clg484-1 -data info 
-Execute       config_chip_info -quiet -speed slow 
-Execute     add_library xilinx/zynq/zynq_fpv6 
-Execute       get_default_platform 
-Execute     ap_part_info -name xc7z020-clg484-1 -data info 
-Execute     get_default_platform 
-Execute   create_clock -period 10 -name default 
-Execute     config_clock -quiet -name default -period 10 -default=false 
-INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
-Execute   config_export -format ip_catalog -rtl verilog 
-Execute   csynth_design 
-Execute     get_config_compile -dump_cfg 
-Execute     get_config_compile -effort 
-Execute     get_config_compile -enable_clang39 
-Execute     get_config_compile -g 
-Execute     get_config_compile -ng 
-Execute     get_config_compile -opt_fp 
-Execute     get_config_compile -skip_cdt 
-Execute     get_config_compile -skip_syncheck 
-Execute     get_config_compile -skip_transform 
-Execute     get_config_compile -keep_printf 
-Execute     elaborate -effort=medium -skip_syncheck=0 -keep_printf=0 -skip_cdt=0 -skip_transform=0 -ng=0 -g=0 -opt_fp=0 -from_csynth_design=1 
-Execute       get_config_schedule -relax_ii_for_timing 
-INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
-Execute       get_config_schedule -suppress_dependence_error_break 
-INFO: [HLS 200-10] Analyzing design file 'yolo_max_pool_fp_2019_64/src/yolo_max_pool.cpp' ... 
-INFO-FLOW: Compiling one TU...
-Execute       is_m_axi_addr64 
-INFO-FLOW: Handling yolo_max_pool_fp_2019_64/src/yolo_max_pool.cpp as C++
-Execute       ap_part_info -name xc7z020-clg484-1 -data info 
-Execute       is_encrypted yolo_max_pool_fp_2019_64/src/yolo_max_pool.cpp 
-Execute       ap_part_info -name xc7z020-clg484-1 -data info 
-INFO-FLOW: Running: GCC PP
-INFO-FLOW: Source preprocessing
-Execute       clang  -fno-limit-debug-info -gcc-toolchain "/opt/Xilinx_2019_1/Vivado/2019.1/lnx64/tools/gcc" -hls  -fno-exceptions  -D__llvm__  -E "yolo_max_pool_fp_2019_64/src/yolo_max_pool.cpp"     -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit  -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "/opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot" -I "/opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__  -o "/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/yolo_max_pool.pp.0.cpp" 
-INFO-FLOW: exec /opt/Xilinx_2019_1/Vivado/2019.1/lnx64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain /opt/Xilinx_2019_1/Vivado/2019.1/lnx64/tools/gcc -hls -fno-exceptions -D__llvm__ -E yolo_max_pool_fp_2019_64/src/yolo_max_pool.cpp -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot -I /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -o /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/yolo_max_pool.pp.0.cpp
-Command       clang done; 2.01 sec.
-Execute       tidy_31 xilinx-xfmat-array-geometry /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/yolo_max_pool.pp.0.cpp std=gnu++98 
-INFO-FLOW: exec /opt/Xilinx_2019_1/Vivado/2019.1/lnx64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-xfmat-array-geometry -quiet -fix /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/yolo_max_pool.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0
-Command       tidy_31 done; 6.55 sec.
-INFO-FLOW: Syntax Checking before pre-processing...
-Execute       clang -syntaxcheck -src /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/yolo_max_pool.pp.0.cpp  -fno-limit-debug-info -gcc-toolchain "/opt/Xilinx_2019_1/Vivado/2019.1/lnx64/tools/gcc" -hls    -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit  -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "/opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot" -I "/opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__  "/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/yolo_max_pool.pp.0.cpp"  -o "/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/useless.bc"  
-INFO-FLOW: exec /opt/Xilinx_2019_1/Vivado/2019.1/lnx64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain /opt/Xilinx_2019_1/Vivado/2019.1/lnx64/tools/gcc -hls -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot -I /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/yolo_max_pool.pp.0.cpp -o /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/useless.bc
-Command       clang done; 5.82 sec.
-INFO-FLOW: Done: GCC PP time: 14.4 seconds per iteration
-Execute       source /opt/Xilinx_2019_1/Vivado/2019.1/tps/tcl/tcllib1.11.1/yaml/huddle.tcl 
-Execute       source /opt/Xilinx_2019_1/Vivado/2019.1/tps/tcl/tcllib1.11.1/yaml/json2huddle.tcl 
-Execute         source /opt/Xilinx_2019_1/Vivado/2019.1/tps/tcl/tcllib1.11.1/try/try.tcl 
-Execute       list_core -type functional_unit 
-Execute       tidy_31 xilinx-systemc-detector /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/yolo_max_pool.pp.0.cpp std=gnu++98 -directive=/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/.systemc_flag 
-INFO-FLOW: exec /opt/Xilinx_2019_1/Vivado/2019.1/lnx64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-systemc-detector -import-directive=/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/.systemc_flag -quiet -fix-errors /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/yolo_max_pool.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0
-Command       tidy_31 done; 5.96 sec.
-INFO-FLOW: Running: tidy-3.1 CDT preprocess
-Execute       tidy_31 xilinx-directive2pragma /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/yolo_max_pool.pp.0.cpp std=gnu++98 -directive=/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/all.directive.json 
-INFO-FLOW: exec /opt/Xilinx_2019_1/Vivado/2019.1/lnx64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-directive2pragma -import-directive=/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/all.directive.json -quiet -fix-errors /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/yolo_max_pool.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0
-Command       tidy_31 done; 5.96 sec.
-Execute       get_config_dataflow -strict_mode 
-Execute       ap_eval exec -ignorestderr /opt/Xilinx_2019_1/Vivado/2019.1/lnx64/tools/clang-3.9-csynth/bin/xilinx-dataflow-lawyer -export-fixes=/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/xilinx-dataflow-lawyer.yolo_max_pool.pp.0.cpp.diag.yml /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/yolo_max_pool.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0 -fstrict-dataflow > /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/xilinx-dataflow-lawyer.yolo_max_pool.pp.0.cpp.out.log 2> /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/xilinx-dataflow-lawyer.yolo_max_pool.pp.0.cpp.err.log 
-Command       ap_eval done; 5.08 sec.
-Execute       tidy_31 -errorcheck xilinx-constantarray-param,xilinx-resource-pragma-transformer,xilinx-xfmat-array-geometry /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/yolo_max_pool.pp.0.cpp std=gnu++98 
-Execute         ap_eval exec -ignorestderr /opt/Xilinx_2019_1/Vivado/2019.1/lnx64/tools/clang-3.9-csynth/bin/tidy-3.1 -export-fixes=/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/tidy-3.1.yolo_max_pool.pp.0.cpp.diag.yml -header-filter=.* -checks=-*,xilinx-constantarray-param,xilinx-resource-pragma-transformer,xilinx-xfmat-array-geometry -quiet -fix-errors /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/yolo_max_pool.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0 > /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/tidy-3.1.yolo_max_pool.pp.0.cpp.out.log 2> /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/tidy-3.1.yolo_max_pool.pp.0.cpp.err.log 
-Command         ap_eval done; 11.98 sec.
-Execute         source /opt/Xilinx_2019_1/Vivado/2019.1/tps/tcl/tcllib1.11.1/yaml/yaml.tcl 
-Execute           source /opt/Xilinx_2019_1/Vivado/2019.1/tps/tcl/tcllib1.11.1/cmdline/cmdline.tcl 
-Execute         ap_eval exec -ignorestderr /opt/Xilinx_2019_1/Vivado/2019.1/lnx64/tools/clang-3.9-csynth/bin/xilinx-legacy-rewriter /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/yolo_max_pool.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0 > /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/xilinx-legacy-rewriter.yolo_max_pool.pp.0.cpp.out.log 2> /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/xilinx-legacy-rewriter.yolo_max_pool.pp.0.cpp.err.log 
-Command         ap_eval done; 4.88 sec.
-Command       tidy_31 done; 17.56 sec.
-INFO-FLOW: Done: tidy-3.1 CDT preprocess time: 28.6 seconds per iteration
-INFO-FLOW: Pragma Handling...
-Execute       tidy_31 xilinx-ssdm-intrinsics-arguments /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/yolo_max_pool.pragma.1.cpp std=gnu++98 
-INFO-FLOW: exec /opt/Xilinx_2019_1/Vivado/2019.1/lnx64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-ssdm-intrinsics-arguments -quiet -fix-errors /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/yolo_max_pool.pragma.1.cpp -- -std=gnu++98 -fhls -ferror-limit=0
-Command       tidy_31 done; 9.22 sec.
-Execute       ap_part_info -name xc7z020-clg484-1 -data info 
-INFO-FLOW: Processing labels
-Execute       clang -src /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/yolo_max_pool.pragma.2.cpp  -fno-limit-debug-info -gcc-toolchain /opt/Xilinx_2019_1/Vivado/2019.1/lnx64/tools/gcc -hls -hls-analyze-label -hls-analyze-pragma -fno-exceptions  -D__llvm__  -w  "/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/yolo_max_pool.pragma.2.cpp"    -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "/opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot" -I "/opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -g -o "/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/yolo_max_pool.bc" 
-INFO-FLOW: exec /opt/Xilinx_2019_1/Vivado/2019.1/lnx64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain /opt/Xilinx_2019_1/Vivado/2019.1/lnx64/tools/gcc -hls -hls-analyze-label -hls-analyze-pragma -fno-exceptions -D__llvm__ -w /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/yolo_max_pool.pragma.2.cpp -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot -I /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -g -o /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/yolo_max_pool.bc
-Command       clang done; 6.19 sec.
-INFO-FLOW: Linking Debug ...
-Execute       llvm-ld /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/yolo_max_pool.g.bc -hls-opt -except-internalize yolo_max_pool_top -L/opt/Xilinx_2019_1/Vivado/2019.1/lnx64/lib -lhlsm -lhlsmc++ -o /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/a.g 
-Command       llvm-ld done; 1.4 sec.
-INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:01:05 ; elapsed = 00:01:07 . Memory (MB): peak = 892.023 ; gain = 192.000 ; free physical = 1853 ; free virtual = 11917
-INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:01:05 ; elapsed = 00:01:07 . Memory (MB): peak = 892.023 ; gain = 192.000 ; free physical = 1853 ; free virtual = 11917
-Execute       get_config_sdx -target 
-Execute       opt_and_import_c a -opt_level=2 -skip_syncheck=0 -ng=0 -keep_printf=0 
-Execute         cleanup_all_models 
-INFO: [HLS 200-10] Starting code transformations ...
-Execute         transform -promote-dbg-pointer /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/a.pp.bc -o /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/a.pp.0.bc -f 
-Command         transform done; 0.18 sec.
-Execute         llvm-ld /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/a.pp.0.bc -disable-opt -L/opt/Xilinx_2019_1/Vivado/2019.1/lnx64/lib -lfloatconversion -o /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/a.g.0 
-Command         llvm-ld done; 1.38 sec.
-INFO-FLOW: Running Standard Transforms...
-Execute         transform -hls -share-std-xform -demangle-name -inline-byval-memcpy -always-inline -promote-dbg-pointer -interface-preproc -mem2reg -scalarrepl -mem2reg -keep-read-access -instcombine -dce -promote-dbg-pointer -bitop-raise -loop-simplify -indvarspre -indvars -loop-simplify -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -basicaa -simplifycfg -mem2reg -globalopt -global-constprop -deadargelim -instcombine -simplifycfg -prune-eh -simplifycfg -scalarrepl -instcombine -reassociate -licm -simplifycfg -loop-simplify -indvars -instcombine -simplifycfg -mem2reg -loop-simplify -indvars -instcombine -gvn -gvn -instcombine -adce -break-crit-edges -simplifycfg -loop-delete -global-array-opt -dce -dse -adce -find-syn-modules -top yolo_max_pool_top -deadargelim -mem2reg -instcombine -dce -presyn-prepare -auto-rom-infer -interface-preproc -syn-check -check-rec-only -find-region -simplifycfg -func-extr -function-inline -globaldce -mem2reg -instcombine -dce -gvn -globaldce -adce -adse -constprop -instcombine -bit-constprop -instcombine -dce -simplifycfg -bitop-raise -simplifycfg -dce -loop-delete -reassociate -globalopt -global-privatize -mem2reg -dce -global-constprop -pointer-simplify -constprop -dce -func-inst -deadargelim -auto-shift-reg-idiom -promote-dbg-pointer -norm-name /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/a.g.0.bc -o /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/a.g.1.bc -f -phase std-opt 
-INFO: [HLS 200-489] Unrolling loop 'Loop-1' (/opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot/hls/hls_video_mem.h:727) in function 'hls::LineBuffer<2, 418, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0>, 0>::shift_pixels_up(int)' completely with a factor of 1.
-INFO: [XFORM 203-603] Inlining function 'hls::LineBuffer<2, 418, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0>, 0>::shift_pixels_up' into 'hls::LineBuffer<2, 418, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0>, 0>::shift_up' (/opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot/hls/hls_video_mem.h:863).
-INFO: [XFORM 203-603] Inlining function 'hls::LineBuffer<2, 418, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0>, 0>::shift_up' into 'yolo_line_buffer' (yolo_max_pool_fp_2019_64/src/yolo_max_pool.cpp:149).
-INFO: [XFORM 203-603] Inlining function 'hls::LineBuffer<2, 418, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0>, 0>::insert_bottom_row' into 'hls::LineBuffer<2, 418, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0>, 0>::insert_top' (/opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot/hls/hls_video_mem.h:883).
-INFO: [XFORM 203-603] Inlining function 'hls::LineBuffer<2, 418, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0>, 0>::insert_top' into 'yolo_line_buffer' (yolo_max_pool_fp_2019_64/src/yolo_max_pool.cpp:150).
-INFO: [XFORM 203-603] Inlining function 'hls::LineBuffer<2, 418, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0>, 0>::getval' into 'slide_window' (yolo_max_pool_fp_2019_64/src/yolo_max_pool.cpp:162).
-INFO: [XFORM 203-603] Inlining function 'hls::Window<2, 2, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0> >::insert_pixel' into 'hls::Window<2, 2, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0> >::insert' (/opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot/hls/hls_video_mem.h:573).
-INFO: [XFORM 203-603] Inlining function 'hls::Window<2, 2, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0> >::insert' into 'slide_window' (yolo_max_pool_fp_2019_64/src/yolo_max_pool.cpp:163).
-INFO: [XFORM 203-603] Inlining function 'hls::Window<2, 2, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0> >::getval' into 'window_max_pool' (yolo_max_pool_fp_2019_64/src/yolo_max_pool.cpp:177).
-Command         transform done; 0.46 sec.
-INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:01:07 ; elapsed = 00:01:09 . Memory (MB): peak = 914.781 ; gain = 214.758 ; free physical = 1802 ; free virtual = 11875
-INFO: [HLS 200-10] Checking synthesizability ...
-INFO-FLOW: Checking Synthesizability 1/2..
-Execute         transform -hls -syn-check -check-rec-only -disaggr -scalarrepl -norm-name -dce -mem2reg -instcombine -function-uniquify -directive-preproc -mem2reg -dse -dce -auto-rom-infer -dce -pag -array-normalize -instcombine -dce -warn-fifo-pointer -array-seg-normalize -instcombine -dce -array-flatten -instcombine -dce -array-burst -dce -deadargelim -promote-global-argument -simplifycfg -mem2reg -globaldce -dce -deadargelim -dce -instcombine -function-inline -globaldce -dce -doublePtrSimplify -doublePtrElim -dce -doublePtrSimplify -promote-dbg-pointer -dce -scalarrepl -dse -adse -instcombine -ptrLegalization -simplifycfg -dce -instcombine -pointer-simplify -ptrArgReplace -dce -instcombine -resolve-double-ptr -disaggr -scalarrepl -norm-name -dce -mem2reg -instcombine -ptrLegalization -simplifycfg -deadargelim -instcombine -dce -inst-simplify -function-uniquify -directive-preproc -mem2reg -dse -dce -globaldce -check-dspbuiltin /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/a.g.1.bc -o /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/a.g.2.prechk.bc -f 
-Command         transform done; 0.39 sec.
-INFO-FLOW: Checking Synthesizability 2/2..
-Execute         transform -syn-check /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/a.g.2.prechk.bc -o /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/a.g.2.bc -f -phase syn-check 
-Command         transform done; 0.19 sec.
-INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:01:08 ; elapsed = 00:01:10 . Memory (MB): peak = 916.934 ; gain = 216.910 ; free physical = 1754 ; free virtual = 11831
-INFO-FLOW: Compiler optimizing ...
-INFO-FLOW: Share syncheck's 1.bc for syn flow: copy /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/a.g.1.bc to /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/a.o.1.bc
-INFO-FLOW: Presyn 1...
-Execute         transform -hls -tmp /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db -interface-port-rename -type-info -function-uniquify -directive-preproc -mem2reg -dse -dce -disaggr -scalarrepl -norm-name -deadargelim -mem2reg -instcombine -dce -simplifycfg -auto-rom-infer -dce -function-uniquify -resource-proc -clib-intrinsic-prepare -dce -func-buffer -dce -pag -array-normalize -func-legal -instcombine -gvn -constprop -dce -simplifycfg -mem2reg -globaldce -resolve-double-ptr -dce -deadargelim -dce -instcombine -ptrArgReplace -mem2reg -dce -array-seg-normalize -deadargelim -instcombine -dce -pointer-simplify -dce -port-alignment -dce -interface-preproc -data-pack -instcombine -dce -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -loop-simplify -indvars -instcombine -gvn -loop-simplify -mem2reg -dce -find-region -instcombine -auto-loop-pipeline -inst-simplify -interface-preproc -cfgopt -instcombine -indvars -auto-loop-unroll -loop-simplify -loop-bound -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -clean-region -attach-range -gvn -inst-simplify -constprop -simplifycfg -dce -pointer-simplify -dce -globalopt -constprop -dce -array-promote -constprop -dce -ptrArgReplace -mem2reg -simplifycfg -dce -auto-par -instcombine -dce -array-transform-check -array-reshape -instcombine -simplifycfg -dce -ptrArgReplace -deadargelim -mem2reg -instcombine -simplifycfg -dce -indvars -loop-simplify -loop-bound -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -duplicate-dataflow-processes -globaldce -instcombine -array-partition -instcombine -simplifycfg -dce -ptrArgReplace -global-constprop -deadargelim -mem2reg -func-legal -dce -global-constprop -deadargelim -mem2reg -simplifycfg -dce -merge-param -deadargelim -globalopt -constprop -dce -array-promote -constprop -dce -ptrArgReplace -mem2reg -simplifycfg -dce -mem-intrinsic-preproc -dce -global-internalize -global-privatize -mem2reg -globaldce -promote-global-argument -ptrArgReplace -mem2reg -dce -globalopt -mergereturn -simplify-global-access -mem2reg -dce -pointer-simplify -dce -functionattrs -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -dce -norm-name -function-inline -complex-op-raise -inst-simplify -globaldce -func-inst -constprop -instcombine -simplifycfg -dce -func-legal -dce -loop-bound -arraycheck -bitwidthmin -on-by-dataflow -loop-delete -instcombine -simplifycfg -globaldce -dce -gvn -deadargelim -dce -loop-simplify -clean-region -simplifycfg -propagate-stable-arguments -loop-stream -instcombine -simplifycfg -dce -globaldce -duplicate-dataflow-processes -stream-intrinsic-preproc -dce -check-ap-stream -loop-simplify -eliminate-keepreads -extract-dataflow-in-loop -loop-simplify -dce -gvn -deadargelim -dse -check-dataflow-syntax -legalize-stream-variable -legalize-global -extract-subproc -dce -dead-channel-elimination -canonicalize-gep -globaldce -dce -gvn -deadargelim -annotate-dataflow-channels -scalar-propagation -deadargelim -globaldce -mem2reg -check-dataflow-channels -function-stream -dce -globaldce -prop-fifo-spec -internal-stream-gen -canonicalize-gep -globaldce -dce -gvn -deadargelim -mergereturn -indvars -loop-simplify -instcombine -array-stream -array-seg-normalize -array-partition -func-legal -instcombine -simplifycfg -dce -bundle-memfifo-ops -deadargelim -function-uniquify -directive-preproc -mem2reg -dse -dce -group-axi-access -licm -simplifycfg -dce -loop-delete -norm-name /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/a.o.1.bc -o /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/a.o.1.tmp.bc -f 
-INFO: [XFORM 203-1101] Packing variable 'outStream.V.data' (yolo_max_pool_fp_2019_64/src/yolo_max_pool.cpp:4) into a 64-bit variable.
-INFO: [XFORM 203-1101] Packing variable 'inStream.V.data' (yolo_max_pool_fp_2019_64/src/yolo_max_pool.cpp:4) into a 64-bit variable.
-INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'Loop-5.1.1.1.1' (yolo_max_pool_fp_2019_64/src/yolo_max_pool.cpp:61) in function 'yolo_max_pool_top' for pipelining.
-INFO: [XFORM 203-502] Unrolling all loops for pipelining in function 'window_max_pool' (yolo_max_pool_fp_2019_64/src/yolo_max_pool.cpp:170).
-INFO: [XFORM 203-502] Unrolling all loops for pipelining in function 'slide_window' (yolo_max_pool_fp_2019_64/src/yolo_max_pool.cpp:154).
-INFO: [HLS 200-489] Unrolling loop 'Loop-5.1.1.1.1.1' (/opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot/hls/hls_video_mem.h:49) in function 'yolo_max_pool_top' completely with a factor of 2.
-INFO: [HLS 200-489] Unrolling loop 'Loop-5.1.1.1.1.1.1' (/opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot/hls/hls_video_mem.h:49) in function 'yolo_max_pool_top' completely with a factor of 2.
-INFO: [HLS 200-489] Unrolling loop 'Loop-5.1.1.1.1.2' (/opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot/hls/hls_video_mem.h:49) in function 'yolo_max_pool_top' completely with a factor of 2.
-INFO: [HLS 200-489] Unrolling loop 'Loop-5.1.1.1.1.2.1' (/opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot/hls/hls_video_mem.h:49) in function 'yolo_max_pool_top' completely with a factor of 2.
-INFO: [HLS 200-489] Unrolling loop 'Loop-5.1.1.1.1.3' (/opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot/hls/hls_video_mem.h:49) in function 'yolo_max_pool_top' completely with a factor of 2.
-INFO: [HLS 200-489] Unrolling loop 'Loop-5.1.1.1.1.3.1' (/opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot/hls/hls_video_mem.h:49) in function 'yolo_max_pool_top' completely with a factor of 2.
-INFO: [HLS 200-489] Unrolling loop 'Loop-5.1.1.1.1.4' (/opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot/hls/hls_video_mem.h:49) in function 'yolo_max_pool_top' completely with a factor of 2.
-INFO: [HLS 200-489] Unrolling loop 'Loop-5.1.1.1.1.4.1' (/opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot/hls/hls_video_mem.h:49) in function 'yolo_max_pool_top' completely with a factor of 2.
-INFO: [HLS 200-489] Unrolling loop 'Loop-1' (yolo_max_pool_fp_2019_64/src/yolo_max_pool.cpp:173) in function 'window_max_pool' completely with a factor of 2.
-INFO: [HLS 200-489] Unrolling loop 'Loop-1.1' (yolo_max_pool_fp_2019_64/src/yolo_max_pool.cpp:175) in function 'window_max_pool' completely with a factor of 2.
-INFO: [HLS 200-489] Unrolling loop 'Loop-1' (yolo_max_pool_fp_2019_64/src/yolo_max_pool.cpp:158) in function 'slide_window' completely with a factor of 2.
-INFO: [HLS 200-489] Unrolling loop 'Loop-1.1' (yolo_max_pool_fp_2019_64/src/yolo_max_pool.cpp:160) in function 'slide_window' completely with a factor of 2.
-INFO: [XFORM 203-102] Partitioning array 'window.val.V.0' automatically.
-INFO: [XFORM 203-102] Partitioning array 'window.val.V.1' automatically.
-INFO: [XFORM 203-101] Partitioning array 'line_buff_group_0.val.V' (yolo_max_pool_fp_2019_64/src/yolo_max_pool.cpp:19) in dimension 2 completely.
-INFO: [XFORM 203-101] Partitioning array 'line_buff_group_1.val.V' (yolo_max_pool_fp_2019_64/src/yolo_max_pool.cpp:20) in dimension 2 completely.
-INFO: [XFORM 203-101] Partitioning array 'line_buff_group_2.val.V' (yolo_max_pool_fp_2019_64/src/yolo_max_pool.cpp:21) in dimension 2 completely.
-INFO: [XFORM 203-101] Partitioning array 'line_buff_group_3.val.V' (yolo_max_pool_fp_2019_64/src/yolo_max_pool.cpp:22) in dimension 2 completely.
-INFO: [XFORM 203-101] Partitioning array 'window_0.val.V' (yolo_max_pool_fp_2019_64/src/yolo_max_pool.cpp:102) in dimension 1 completely.
-INFO: [XFORM 203-101] Partitioning array 'window_1.val.V' (yolo_max_pool_fp_2019_64/src/yolo_max_pool.cpp:103) in dimension 1 completely.
-INFO: [XFORM 203-101] Partitioning array 'window_2.val.V' (yolo_max_pool_fp_2019_64/src/yolo_max_pool.cpp:104) in dimension 1 completely.
-INFO: [XFORM 203-101] Partitioning array 'window_3.val.V' (yolo_max_pool_fp_2019_64/src/yolo_max_pool.cpp:105) in dimension 1 completely.
-INFO: [XFORM 203-101] Partitioning array 'window_0.val.V' (yolo_max_pool_fp_2019_64/src/yolo_max_pool.cpp:102) in dimension 2 completely.
-INFO: [XFORM 203-101] Partitioning array 'window_1.val.V' (yolo_max_pool_fp_2019_64/src/yolo_max_pool.cpp:103) in dimension 2 completely.
-INFO: [XFORM 203-101] Partitioning array 'window_2.val.V' (yolo_max_pool_fp_2019_64/src/yolo_max_pool.cpp:104) in dimension 2 completely.
-INFO: [XFORM 203-101] Partitioning array 'window_3.val.V' (yolo_max_pool_fp_2019_64/src/yolo_max_pool.cpp:105) in dimension 2 completely.
-INFO: [XFORM 203-602] Inlining function 'yolo_line_buffer' into 'yolo_max_pool_top' (yolo_max_pool_fp_2019_64/src/yolo_max_pool.cpp:94) automatically.
-INFO: [XFORM 203-602] Inlining function 'window_max_pool' into 'yolo_max_pool_top' (yolo_max_pool_fp_2019_64/src/yolo_max_pool.cpp:117) automatically.
-Command         transform done; 0.74 sec.
-INFO-FLOW: Presyn 2...
-Execute         transform -hls -keep-callgraph -scalarrepl -mem2reg -port-alignment -attach-range -dce -pipe-mux-gen -indvars -loop-bound -inst-simplify -instcombine -dce -merge-array-access -mem2reg -dce -clean-region -mergereturn -if-conv -instcombine -dce -constprop -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -scalarrepl -mem2reg -global-constprop -deadargelim -deadargelim -instcombine -dce -simplifycfg -ptrArgReplace -mem2reg -function-inline -globaldce -mem2reg -instcombine -dce -expr-balance -instcombine -dce -bitwidthmin -interface-preproc -directive-preproc -inst-rectify -instcombine -dce -functionattrs -constprop -instcombine -bit-constprop -simplify-global-access -globalopt -globaldce -inst-simplify -instcombine -elimdeaddata -dce -loop-delete -simplifycfg -loop-simplify -auto-burst -norm-name /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/a.o.1.tmp.bc -o /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/a.o.2.bc -f -phase presyn 
-INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (yolo_max_pool_fp_2019_64/src/yolo_max_pool.cpp:112:60) to (yolo_max_pool_fp_2019_64/src/yolo_max_pool.cpp:135:5) in function 'yolo_max_pool_top'... converting 4 basic blocks.
-INFO: [XFORM 203-602] Inlining function 'slide_window' into 'yolo_max_pool_top' (yolo_max_pool_fp_2019_64/src/yolo_max_pool.cpp:112) automatically.
-Command         transform done; 0.37 sec.
-INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:01:09 ; elapsed = 00:01:11 . Memory (MB): peak = 981.016 ; gain = 280.992 ; free physical = 1688 ; free virtual = 11771
-INFO-FLOW: Building ssdm...
-Execute         transform -hls -function-uniquify -auto-function-inline -globaldce -ptrArgReplace -mem2reg -dce -reset-lda -loop-simplify -indvars -licm -loop-dep -loop-bound -licm -loop-simplify -flattenloopnest -array-flatten -gvn -instcombine -dce -array-map -dce -func-legal -gvn -adce -instcombine -cfgopt -simplifycfg -loop-simplify -array-burst -promote-global-argument -dce -ptrLegalization -axi4-lower -array-seg-normalize -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -gvn -gvn -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -dse -adse -adce -licm -inst-simplify -dce -globaldce -instcombine -array-stream -eliminate-keepreads -instcombine -dce -deadargelim -doublePtrSimplify -doublePtrElim -dce -doublePtrSimplify -promote-dbg-pointer -dce -scalarrepl -mem2reg -disaggr -norm-name -mem2reg -instcombine -dse -adse -adce -ptrLegalization -dce -auto-rom-infer -array-flatten -dce -instcombine -check-doubleptr -loop-rot -constprop -cfgopt -simplifycfg -loop-simplify -indvars -pointer-simplify -dce -loop-bound -loop-simplify -loop-preproc -constprop -global-constprop -gvn -mem2reg -instcombine -dce -loop-bound -loop-merge -dce -bitwidthmin -deadargelim -dce -canonicalize-dataflow -dce -scalar-propagation -deadargelim -globaldce -mem2reg -read-loop-dep -interface-preproc -directive-preproc -interface-gen -bram-byte-enable -deadargelim -inst-simplify -dce -gvn -mem2reg -instcombine -dce -adse -loop-bound -instcombine -cfgopt -simplifycfg -loop-simplify -clean-region -io-protocol -find-region -mem2reg -bitop-raise -complex-op-raise -inst-simplify -inst-rectify -instcombine -adce -deadargelim -loop-simplify -phi-opt -bitop-raise -cfgopt -simplifycfg -strip-dead-prototypes -interface-lower -bitop-lower -intrinsic-lower -auto-function-inline -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -inst-simplify -simplifycfg -loop-simplify -mergereturn -inst-simplify -inst-rectify -dce -load-elim -bitop-lower -loop-rewind -pointer-simplify -dce -cfgopt -dce -loop-bound -loop-dep -read-loop-dep -dce -check-stream -norm-name -legalize -validate-dataflow -inst-clarity -bitwidth -dump-loop-dep-to-ir -check-all-ssdm -cdfg-build /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/a.o.2.bc -o /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/a.o.3.bc -f -phase build-ssdm 
-INFO: [XFORM 203-541] Flattening a loop nest 'Loop-5.1.1.1' (yolo_max_pool_fp_2019_64/src/yolo_max_pool.cpp:58:30) in function 'yolo_max_pool_top'.
-INFO: [XFORM 203-541] Flattening a loop nest 'Loop-5.1.1' (yolo_max_pool_fp_2019_64/src/yolo_max_pool.cpp:55:27) in function 'yolo_max_pool_top'.
-INFO: [XFORM 203-541] Flattening a loop nest 'Loop-5.1' (yolo_max_pool_fp_2019_64/src/yolo_max_pool.cpp:52:30) in function 'yolo_max_pool_top'.
-INFO: [XFORM 203-541] Flattening a loop nest 'Loop-5' (yolo_max_pool_fp_2019_64/src/yolo_max_pool.cpp:49:27) in function 'yolo_max_pool_top'.
-WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'line_buff_group_0.va' (yolo_max_pool_fp_2019_64/src/yolo_max_pool.cpp:19).
-WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'line_buff_group_0.va' (yolo_max_pool_fp_2019_64/src/yolo_max_pool.cpp:19).
-WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'line_buff_group_1.va' (yolo_max_pool_fp_2019_64/src/yolo_max_pool.cpp:20).
-WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'line_buff_group_1.va' (yolo_max_pool_fp_2019_64/src/yolo_max_pool.cpp:20).
-WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'line_buff_group_2.va' (yolo_max_pool_fp_2019_64/src/yolo_max_pool.cpp:21).
-WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'line_buff_group_2.va' (yolo_max_pool_fp_2019_64/src/yolo_max_pool.cpp:21).
-WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'line_buff_group_3.va' (yolo_max_pool_fp_2019_64/src/yolo_max_pool.cpp:22).
-WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'line_buff_group_3.va' (yolo_max_pool_fp_2019_64/src/yolo_max_pool.cpp:22).
-Command         transform done; 0.67 sec.
-INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:01:09 ; elapsed = 00:01:12 . Memory (MB): peak = 981.016 ; gain = 280.992 ; free physical = 1667 ; free virtual = 11753
-INFO-FLOW: Finish building internal data model.
-Command       opt_and_import_c done; 4.4 sec.
-Command     elaborate done; 70.59 sec.
-Execute     autosyn -from_csynth_design=1 
-INFO: [HLS 200-10] Starting hardware synthesis ...
-INFO-FLOW: Synthesizing C/C++ design ...
-INFO: [HLS 200-10] Synthesizing 'yolo_max_pool_top' ...
-Execute       ap_set_top_model yolo_max_pool_top 
-Execute       get_model_list yolo_max_pool_top -filter all-wo-channel -topdown 
-Execute       preproc_iomode -model yolo_max_pool_top 
-Execute       preproc_iomode -model write_output 
-Execute       get_model_list yolo_max_pool_top -filter all-wo-channel 
-INFO-FLOW: Model list for configure: write_output yolo_max_pool_top
-INFO-FLOW: Configuring Module : write_output ...
-Execute       set_default_model write_output 
-Execute       apply_spec_resource_limit write_output 
-INFO-FLOW: Configuring Module : yolo_max_pool_top ...
-Execute       set_default_model yolo_max_pool_top 
-Execute       apply_spec_resource_limit yolo_max_pool_top 
-INFO-FLOW: Model list for preprocess: write_output yolo_max_pool_top
-INFO-FLOW: Preprocessing Module: write_output ...
-Execute       set_default_model write_output 
-Execute       cdfg_preprocess -model write_output 
-Execute       rtl_gen_preprocess write_output 
-INFO-FLOW: Preprocessing Module: yolo_max_pool_top ...
-Execute       set_default_model yolo_max_pool_top 
-Execute       cdfg_preprocess -model yolo_max_pool_top 
-Execute       rtl_gen_preprocess yolo_max_pool_top 
-INFO-FLOW: Model list for synthesis: write_output yolo_max_pool_top
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-42] -- Implementing module 'write_output' 
-INFO: [HLS 200-10] ----------------------------------------------------------------
-Execute       set_default_model write_output 
-Execute       schedule -model write_output 
-INFO: [SCHED 204-11] Starting scheduling ...
-INFO: [SCHED 204-61] Pipelining function 'write_output'.
-INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 1.
-INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 71.62 seconds; current allocated memory: 240.424 MB.
-Execute       syn_report -verbosereport -o /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/write_output.verbose.sched.rpt 
-Execute       db_write -o /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/write_output.sched.adb -f 
-INFO-FLOW: Finish scheduling write_output.
-Execute       set_default_model write_output 
-Execute       bind -model write_output 
-BIND OPTION: model=write_output
-INFO: [BIND 205-100] Starting micro-architecture generation ...
-INFO: [BIND 205-101] Performing variable lifetime analysis.
-INFO: [BIND 205-101] Exploring resource sharing.
-INFO: [BIND 205-101] Binding ...
-INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 0.01 seconds; current allocated memory: 240.540 MB.
-Execute       syn_report -verbosereport -o /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/write_output.verbose.bind.rpt 
-Execute       db_write -o /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/write_output.bind.adb -f 
-INFO-FLOW: Finish binding write_output.
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-42] -- Implementing module 'yolo_max_pool_top' 
-INFO: [HLS 200-10] ----------------------------------------------------------------
-Execute       set_default_model yolo_max_pool_top 
-Execute       schedule -model yolo_max_pool_top 
-INFO: [SCHED 204-11] Starting scheduling ...
-INFO: [SCHED 204-61] Pipelining loop 'Loop 5'.
-WARNING: [SCHED 204-69] Unable to schedule 'load' operation ('Window<2, 2, ap_fixed<16, 8, 4, 0, 0> >.val[0].V[1]', yolo_max_pool_fp_2019_64/src/yolo_max_pool.cpp:162->yolo_max_pool_fp_2019_64/src/yolo_max_pool.cpp:112) on array 'line_buff_group_0.val[0].V', yolo_max_pool_fp_2019_64/src/yolo_max_pool.cpp:19 due to limited memory ports. Please consider using a memory core with more ports or partitioning the array 'line_buff_group_0_va'.
-INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 2, Depth = 10.
-INFO: [SCHED 204-11] Finished scheduling.
-Command       schedule done; 0.47 sec.
-INFO: [HLS 200-111]  Elapsed time: 0.48 seconds; current allocated memory: 241.792 MB.
-Execute       syn_report -verbosereport -o /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/yolo_max_pool_top.verbose.sched.rpt 
-INFO: [HLS 200-434] Only 1 loops out of a total 5 loops have been pipelined in this design.
-Command       syn_report done; 0.18 sec.
-Execute       db_write -o /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/yolo_max_pool_top.sched.adb -f 
-INFO-FLOW: Finish scheduling yolo_max_pool_top.
-Execute       set_default_model yolo_max_pool_top 
-Execute       bind -model yolo_max_pool_top 
-BIND OPTION: model=yolo_max_pool_top
-INFO: [BIND 205-100] Starting micro-architecture generation ...
-INFO: [BIND 205-101] Performing variable lifetime analysis.
-INFO: [BIND 205-101] Exploring resource sharing.
-INFO: [BIND 205-101] Binding ...
-INFO: [BIND 205-100] Finished micro-architecture generation.
-Command       bind done; 0.17 sec.
-INFO: [HLS 200-111]  Elapsed time: 0.38 seconds; current allocated memory: 243.535 MB.
-Execute       syn_report -verbosereport -o /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/yolo_max_pool_top.verbose.bind.rpt 
-Command       syn_report done; 0.42 sec.
-Execute       db_write -o /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/yolo_max_pool_top.bind.adb -f 
-INFO-FLOW: Finish binding yolo_max_pool_top.
-Execute       get_model_list yolo_max_pool_top -filter all-wo-channel 
-INFO-FLOW: Preprocessing for RTLGen ...
-Execute       rtl_gen_preprocess write_output 
-Execute       rtl_gen_preprocess yolo_max_pool_top 
-INFO-FLOW: Model list for RTL generation: write_output yolo_max_pool_top
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-10] -- Generating RTL for module 'write_output' 
-INFO: [HLS 200-10] ----------------------------------------------------------------
-Execute       get_config_rtl -module_prefix 
-Execute       get_config_rtl -module_auto_prefix 
-Execute       create_rtl_model write_output -vendor xilinx -mg_file /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/write_output.compgen.tcl 
-INFO: [RTGEN 206-100] Finished creating RTL model for 'write_output'.
-INFO: [HLS 200-111]  Elapsed time: 0.49 seconds; current allocated memory: 243.919 MB.
-Execute       source /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/yolo_max_pool_top.rtl_wrap.cfg.tcl 
-Execute       gen_rtl write_output -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/syn/systemc/write_output -synmodules write_output yolo_max_pool_top 
-Execute       gen_rtl write_output -style xilinx -f -lang vhdl -o /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/syn/vhdl/write_output 
-Execute       gen_rtl write_output -style xilinx -f -lang vlog -o /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/syn/verilog/write_output 
-Execute       syn_report -csynth -model write_output -o /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/syn/report/write_output_csynth.rpt 
-Execute       syn_report -rtlxml -model write_output -o /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/syn/report/write_output_csynth.xml 
-Execute       syn_report -verbosereport -model write_output -o /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/write_output.verbose.rpt 
-Execute       db_write -model write_output -f -o /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/write_output.adb 
-Execute       gen_tb_info write_output -p /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db -o /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/write_output 
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-10] -- Generating RTL for module 'yolo_max_pool_top' 
-INFO: [HLS 200-10] ----------------------------------------------------------------
-Execute       get_config_rtl -module_prefix 
-Execute       get_config_rtl -module_auto_prefix 
-Execute       create_rtl_model yolo_max_pool_top -vendor xilinx -mg_file /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/yolo_max_pool_top.compgen.tcl 
-INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_max_pool_top/inStream_V_data' to 'axis' (register, both mode).
-INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_max_pool_top/inStream_V_keep_V' to 'axis' (register, both mode).
-INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_max_pool_top/inStream_V_strb_V' to 'axis' (register, both mode).
-INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_max_pool_top/inStream_V_user_V' to 'axis' (register, both mode).
-INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_max_pool_top/inStream_V_last_V' to 'axis' (register, both mode).
-INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_max_pool_top/inStream_V_id_V' to 'axis' (register, both mode).
-INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_max_pool_top/inStream_V_dest_V' to 'axis' (register, both mode).
-INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_max_pool_top/outStream_V_data' to 'axis' (register, both mode).
-INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_max_pool_top/outStream_V_keep_V' to 'axis' (register, both mode).
-INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_max_pool_top/outStream_V_strb_V' to 'axis' (register, both mode).
-INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_max_pool_top/outStream_V_user_V' to 'axis' (register, both mode).
-INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_max_pool_top/outStream_V_last_V' to 'axis' (register, both mode).
-INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_max_pool_top/outStream_V_id_V' to 'axis' (register, both mode).
-INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_max_pool_top/outStream_V_dest_V' to 'axis' (register, both mode).
-INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_max_pool_top/output_h_V' to 's_axilite & ap_none'.
-INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_max_pool_top/output_w_V' to 's_axilite & ap_none'.
-INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_max_pool_top/input_h_V' to 's_axilite & ap_none'.
-INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_max_pool_top/input_w_V' to 's_axilite & ap_none'.
-INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_max_pool_top/input_fold_ch_V' to 's_axilite & ap_none'.
-INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_max_pool_top/stride_V' to 's_axilite & ap_none'.
-INFO: [RTGEN 206-500] Setting interface mode on function 'yolo_max_pool_top' to 's_axilite & ap_ctrl_hs'.
-INFO: [RTGEN 206-100] Bundling port 'return', 'output_h_V', 'output_w_V', 'input_h_V', 'input_w_V', 'input_fold_ch_V' and 'stride_V' to AXI-Lite port CTRL_BUS.
-INFO: [RTGEN 206-100] Generating core module 'yolo_max_pool_top_mul_mul_17ns_9ns_26_1_1': 1 instance(s).
-INFO: [RTGEN 206-100] Finished creating RTL model for 'yolo_max_pool_top'.
-Command       create_rtl_model done; 0.24 sec.
-INFO: [HLS 200-111]  Elapsed time: 0.27 seconds; current allocated memory: 248.123 MB.
-Execute       source /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/yolo_max_pool_top.rtl_wrap.cfg.tcl 
-Execute       gen_rtl yolo_max_pool_top -istop -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/syn/systemc/yolo_max_pool_top -synmodules write_output yolo_max_pool_top 
-Execute       gen_rtl yolo_max_pool_top -istop -style xilinx -f -lang vhdl -o /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/syn/vhdl/yolo_max_pool_top 
-Command       gen_rtl done; 0.31 sec.
-Execute       gen_rtl yolo_max_pool_top -istop -style xilinx -f -lang vlog -o /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/syn/verilog/yolo_max_pool_top 
-Command       gen_rtl done; 0.15 sec.
-Execute       syn_report -csynth -model yolo_max_pool_top -o /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/syn/report/yolo_max_pool_top_csynth.rpt 
-Command       syn_report done; 0.17 sec.
-Execute       syn_report -rtlxml -model yolo_max_pool_top -o /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/syn/report/yolo_max_pool_top_csynth.xml 
-Command       syn_report done; 0.15 sec.
-Execute       syn_report -verbosereport -model yolo_max_pool_top -o /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/yolo_max_pool_top.verbose.rpt 
-Command       syn_report done; 0.58 sec.
-Execute       db_write -model yolo_max_pool_top -f -o /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/yolo_max_pool_top.adb 
-Command       db_write done; 0.28 sec.
-Execute       gen_tb_info yolo_max_pool_top -p /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db -o /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/yolo_max_pool_top 
-Execute       export_constraint_db -f -tool general -o /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/yolo_max_pool_top.constraint.tcl 
-Execute       syn_report -designview -model yolo_max_pool_top -o /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/yolo_max_pool_top.design.xml 
-Command       syn_report done; 0.29 sec.
-Execute       get_config_rtl -disable_wave_debug 
-Execute       syn_report -wcfg -model yolo_max_pool_top -o /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/yolo_max_pool_top_dataflow_ana.wcfg 
-Execute       syn_report -protoinst -model yolo_max_pool_top -o /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/yolo_max_pool_top.protoinst 
-Execute       get_config_debug -directory 
-Execute       sc_get_clocks yolo_max_pool_top 
-Execute       get_config_export -vivado_clock 
-Execute       sc_get_portdomain yolo_max_pool_top 
-INFO-FLOW: Model list for RTL component generation: write_output yolo_max_pool_top
-INFO-FLOW: Handling components in module [write_output] ... 
-Execute       source /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/write_output.compgen.tcl 
-INFO-FLOW: Handling components in module [yolo_max_pool_top] ... 
-Execute       source /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/yolo_max_pool_top.compgen.tcl 
-INFO-FLOW: Found component yolo_max_pool_top_mul_mul_17ns_9ns_26_1_1.
-INFO-FLOW: Append model yolo_max_pool_top_mul_mul_17ns_9ns_26_1_1
-INFO-FLOW: Found component yolo_max_pool_top_line_buff_group_0_va.
-INFO-FLOW: Append model yolo_max_pool_top_line_buff_group_0_va
-INFO-FLOW: Found component yolo_max_pool_top_CTRL_BUS_s_axi.
-INFO-FLOW: Append model yolo_max_pool_top_CTRL_BUS_s_axi
-INFO-FLOW: Append model write_output
-INFO-FLOW: Append model yolo_max_pool_top
-INFO-FLOW: Generating RTL model list ...
-INFO-FLOW: All models in this session: yolo_max_pool_top_mul_mul_17ns_9ns_26_1_1 yolo_max_pool_top_line_buff_group_0_va yolo_max_pool_top_CTRL_BUS_s_axi write_output yolo_max_pool_top
-INFO-FLOW: To file: write model yolo_max_pool_top_mul_mul_17ns_9ns_26_1_1
-INFO-FLOW: To file: write model yolo_max_pool_top_line_buff_group_0_va
-INFO-FLOW: To file: write model yolo_max_pool_top_CTRL_BUS_s_axi
-INFO-FLOW: To file: write model write_output
-INFO-FLOW: To file: write model yolo_max_pool_top
-INFO-FLOW: Finished generating RTL model list.
-
-
-INFO-FLOW: RTL Generation done.
-INFO-FLOW: CAS Generation done.
-INFO-FLOW: CBC Generation done.
-INFO-FLOW: DBG:CMD: auto_generate_csynth_design
-INFO-FLOW: DBG:CMD:     auto_generate --sim-model -phase csynth_design -d /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1
-Execute       source /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/global.setting.tcl 
-INFO-FLOW: DBG:CMD: read_platform_lib /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/global.setting.tcl
-Execute       source /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/generic/autopilot/common.gen 
-Execute         source /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/generic/autopilot/APCoreGen.gen 
-Execute       source /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/generic/autopilot/op.gen 
-Execute       source /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/generic/autopilot/op_simcore.gen 
-Execute       source /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/generic/autopilot/interface.gen 
-Execute       source /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/global.setting.tcl 
-Execute       source /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/xilinx/zynq/zynq.gen 
-Execute         source /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/xilinx/common/xilinx.gen 
-Execute           source /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/xilinx/interface/plb46.gen 
-Execute           source /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/xilinx/interface/fsl.gen 
-Execute           source /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/xilinx/interface/axi4.gen 
-Execute           source /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/xilinx/interface/nativeAXI4.gen 
-Execute             source /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/xilinx/interface/saxilite.gen 
-Execute             source /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/xilinx/interface/maxi.gen 
-Execute           source /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
-Execute           source /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
-Execute           source /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/xilinx/ip/dds_compiler.gen 
-Execute           source /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/xilinx/ip/util.gen 
-Execute           source /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/xilinx/ip/xfft.gen 
-Execute           source /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/xilinx/ip/xfir.gen 
-Execute           source /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/xilinx/common/dsp48.gen 
-Command         ap_source done; 0.12 sec.
-Command       ap_source done; 0.12 sec.
-Execute       source /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/xilinx/zynq/zynq_fpv6.gen 
-Execute         source /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/xilinx/common/xilinx_fp.gen 
-INFO-FLOW: DBG:CMD:   using AESL_AUTOCG::g_clock_period=10.000 (was NA)
-INFO-FLOW: DBG:CMD:       generate_ip_cores sim=1 export=0 expOnly=0 dstVlogDir=syn/verilog
-Execute       source /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/global.setting.tcl 
-Execute       ap_part_info -name xc7z020-clg484-1 -data names -quiet 
-Execute       ap_part_info -name xc7z020-clg484-1 -data info -quiet 
-Execute       source /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/global.setting.tcl 
-Execute       source /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/global.setting.tcl 
-Execute       source /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/write_output.compgen.tcl 
-Execute       source /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/yolo_max_pool_top.compgen.tcl 
-Execute         ap_part_info -name xc7z020-clg484-1 -data names -quiet 
-Execute         ap_part_info -name xc7z020-clg484-1 -data info -quiet 
-INFO: [RTMG 210-278] Implementing memory 'yolo_max_pool_top_line_buff_group_0_va_ram (RAM)' using block RAMs.
-Execute         ap_part_info -name xc7z020-clg484-1 -data names -quiet 
-Execute         ap_part_info -name xc7z020-clg484-1 -data info -quiet 
-Execute         source ./CTRL_BUS.slave.tcl 
-Execute         is_m_axi_addr64 
-INFO-FLOW: DBG:CMD:     auto_generate -export -impltomg_flag -rtl both -tool Vivado -pcore_version 1.00.a -phase csynth_design -d /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1
-Execute       source /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/global.setting.tcl 
-INFO-FLOW: DBG:CMD: read_platform_lib /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/global.setting.tcl
-Execute       source /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/generic/autopilot/common.gen 
-Execute         source /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/generic/autopilot/APCoreGen.gen 
-Execute       source /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/generic/autopilot/op.gen 
-Execute       source /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/generic/autopilot/op_simcore.gen 
-Execute       source /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/generic/autopilot/interface.gen 
-Execute       source /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/global.setting.tcl 
-Execute       source /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/xilinx/zynq/zynq.gen 
-Execute         source /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/xilinx/common/xilinx.gen 
-Execute           source /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/xilinx/interface/plb46.gen 
-Execute           source /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/xilinx/interface/fsl.gen 
-Execute           source /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/xilinx/interface/axi4.gen 
-Execute           source /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/xilinx/interface/nativeAXI4.gen 
-Execute             source /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/xilinx/interface/saxilite.gen 
-Execute             source /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/xilinx/interface/maxi.gen 
-Execute           source /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
-Execute           source /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
-Execute           source /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/xilinx/ip/dds_compiler.gen 
-Execute           source /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/xilinx/ip/util.gen 
-Execute           source /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/xilinx/ip/xfft.gen 
-Execute           source /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/xilinx/ip/xfir.gen 
-Execute           source /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/xilinx/common/dsp48.gen 
-Command         ap_source done; 0.11 sec.
-Command       ap_source done; 0.11 sec.
-Execute       source /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/xilinx/zynq/zynq_fpv6.gen 
-Execute         source /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/xilinx/common/xilinx_fp.gen 
-INFO-FLOW: DBG:CMD:       initCTypeInfo top_module=yolo_max_pool_top xml_exists=0
-Execute       source /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/yolo_max_pool_top.rtl_wrap.cfg.tcl 
-Execute       source /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/yolo_max_pool_top.rtl_wrap.cfg.tcl 
-Execute       source /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/yolo_max_pool_top.rtl_wrap.cfg.tcl 
-Execute       source /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/yolo_max_pool_top.tbgen.tcl 
-Execute       source /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/yolo_max_pool_top.tbgen.tcl 
-INFO-FLOW: DBG:CMD:       export_impl_rtl
-INFO-FLOW: DBG:CMD:       generate_ip_cores sim=0 export=0 expOnly=0 dstVlogDir=impl/.verilog
-Execute       source /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/global.setting.tcl 
-Execute       source /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/write_output.compgen.tcl 
-Execute       source /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/yolo_max_pool_top.compgen.tcl 
-INFO-FLOW: DBG:CMD:       generate_ip_cores sim=0 export=1 expOnly=1 dstVlogDir=impl/.pcores/verilog
-Execute       source /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/global.setting.tcl 
-Execute       source /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/write_output.compgen.tcl 
-Execute       source /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/yolo_max_pool_top.compgen.tcl 
-Execute         ap_part_info -name xc7z020-clg484-1 -data names -quiet 
-Execute         ap_part_info -name xc7z020-clg484-1 -data info -quiet 
-Execute         ap_part_info -name xc7z020-clg484-1 -data names -quiet 
-Execute         ap_part_info -name xc7z020-clg484-1 -data info -quiet 
-Execute         ap_part_info -name xc7z020-clg484-1 -data names -quiet 
-Execute         ap_part_info -name xc7z020-clg484-1 -data info -quiet 
-Execute         ap_part_info -name xc7z020-clg484-1 -data names -quiet 
-Execute         ap_part_info -name xc7z020-clg484-1 -data info -quiet 
-Execute         ap_part_info -name xc7z020-clg484-1 -data names -quiet 
-Execute         ap_part_info -name xc7z020-clg484-1 -data info -quiet 
-Execute         ap_part_info -name xc7z020-clg484-1 -data names -quiet 
-Execute         ap_part_info -name xc7z020-clg484-1 -data info -quiet 
-Execute       ap_part_info -name xc7z020-clg484-1 -data names -quiet 
-Execute       ap_part_info -name xc7z020-clg484-1 -data info -quiet 
-INFO-FLOW: DBG:CMD:       generate_ip_cores sim=0 export=0 expOnly=0 dstVlogDir=impl/.pcores/verilog_sim
-Execute       source /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/global.setting.tcl 
-Execute       source /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/write_output.compgen.tcl 
-Execute       source /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/yolo_max_pool_top.compgen.tcl 
-Execute       ap_part_info -name xc7z020-clg484-1 -data names -quiet 
-Execute       ap_part_info -name xc7z020-clg484-1 -data info -quiet 
-Execute       ap_part_info -name xc7z020-clg484-1 -data names -quiet 
-Execute       ap_part_info -name xc7z020-clg484-1 -data info -quiet 
-Execute       source /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/global.setting.tcl 
-Execute       ap_part_info -name xc7z020-clg484-1 -data names -quiet 
-Execute       ap_part_info -name xc7z020-clg484-1 -data info -quiet 
-Execute       source /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/yolo_max_pool_top.constraint.tcl 
-Execute       source /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/yolo_max_pool_top.tbgen.tcl 
-INFO-FLOW: DBG:CMD:       hasPcoreIpAdapter=false #gSsdmPorts=28
-INFO-FLOW: DBG:CMD: Skipping loadAnalyze_DB, #g_database=20
-INFO-FLOW: DBG:CMD:       generate_json is_phase_csynth=1 g_has_adaptors=false generate_bd_files=1 #modelList=5 #gSsdmPorts=28
-Execute       source /opt/Xilinx_2019_1/Vivado/2019.1/tps/tcl/tcllib1.11.1/fileutil/fileutil.tcl 
-Execute       source /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/global.setting.tcl 
-Execute       source /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/global.setting.tcl 
-Execute       get_config_export -xo 
-Execute       source /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/yolo_max_pool_top.tbgen.tcl 
-Execute       source /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/yolo_max_pool_top.compgen.dataonly.tcl 
-Execute       source /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/yolo_max_pool_top.compgen.dataonly.tcl 
-Execute       source /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/yolo_max_pool_top.tbgen.tcl 
-Execute       source /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/yolo_max_pool_top.tbgen.tcl 
-Execute       source /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/yolo_max_pool_top.tbgen.tcl 
-Execute       source /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/yolo_max_pool_top.tbgen.tcl 
-Execute       source /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/yolo_max_pool_top.tbgen.tcl 
-Execute       source /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/yolo_max_pool_top.tbgen.tcl 
-Execute       source /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/yolo_max_pool_top.tbgen.tcl 
-Execute       source /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/global.setting.tcl 
-Execute       get_config_sdx -target 
-Execute       source /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/yolo_max_pool_top.rtl_wrap.cfg.tcl 
-Execute       source /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/yolo_max_pool_top.compgen.dataonly.tcl 
-Execute       source /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/global.setting.tcl 
-Execute       ap_part_info -name xc7z020-clg484-1 -data names -quiet 
-Execute       ap_part_info -name xc7z020-clg484-1 -data info -quiet 
-Execute       source /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/yolo_max_pool_top.constraint.tcl 
-Execute       sc_get_clocks yolo_max_pool_top 
-Execute       ap_part_info -name xc7z020-clg484-1 -data names -quiet 
-Execute       ap_part_info -name xc7z020-clg484-1 -data info -quiet 
-Execute       source /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/global.setting.tcl 
-Execute       get_config_debug -directory 
-Execute       source /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/write_output.tbgen.tcl 
-Execute       source /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/yolo_max_pool_top.tbgen.tcl 
-Execute       get_config_sdx -target 
-Execute       get_config_sdx -profile 
-Execute       get_config_rtl -kernel_profile 
-Execute       get_config_rtl -stall_sig_gen 
-Execute       get_config_rtl -profile 
-INFO-FLOW: DBG:CMD: add_json_sdx_info kernel file does not exist, skipping opencl info: /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/kernel.internal.xml
-INFO-FLOW: DBG:CMD:       delete-temp-dirs (skipped for debug)
-INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:01:13 ; elapsed = 00:01:16 . Memory (MB): peak = 1042.781 ; gain = 342.758 ; free physical = 1642 ; free virtual = 11735
-INFO: [VHDL 208-304] Generating VHDL RTL for yolo_max_pool_top.
-INFO: [VLOG 209-307] Generating Verilog RTL for yolo_max_pool_top.
-Command     autosyn done; 4.37 sec.
-Command   csynth_design done; 74.97 sec.
-Command ap_source done; 75.69 sec.
-Execute cleanup_all 
-INFO-FLOW: Workspace /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1 opened at Mon Jul 15 20:23:39 BST 2019
+INFO-FLOW: Workspace /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1 opened at Fri Jul 19 15:51:24 BST 2019
 Execute     config_clock -quiet -name default -period 10 -default=false 
 INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
 Execute     open_platform DefaultPlatform 
@@ -711,6 +87,631 @@ Execute     config_chip_info -quiet -speed slow
 Execute     config_export -format=ip_catalog 
 Execute     config_export -rtl=verilog 
 Command   open_solution done; 0.54 sec.
+Execute   set_part xc7z020-clg484-1 -tool vivado 
+Execute     ap_part_info -name xc7z020-clg484-1 -data single -quiet 
+Execute     ap_part_info -name xc7z020-clg484-1 -data info 
+Execute     add_library xilinx/zynq/zynq:xc7z020:-clg484:-1 
+Execute       get_default_platform 
+Execute       license_isbetapart xc7z020 
+Command       license_isbetapart done; error code: 1; 
+Execute       ap_part_info -data single -name xc7z020-clg484-1 
+Execute       ap_part_info -name xc7z020-clg484-1 -data resources 
+Execute       ap_part_info -name xc7z020-clg484-1 -data info 
+Execute       ap_part_info -name xc7z020-clg484-1 -data info 
+Execute       config_chip_info -quiet -resource {SLICE 13300} {LUT 53200} {FF 106400} {DSP48E 220} {BRAM 280} {URAM 0} 
+Execute       ap_part_info -name xc7z020-clg484-1 -data info 
+Execute       config_chip_info -quiet -speed slow 
+Execute     add_library xilinx/zynq/zynq_fpv6 
+Execute       get_default_platform 
+Execute     ap_part_info -name xc7z020-clg484-1 -data info 
+Execute     get_default_platform 
+Execute   create_clock -period 10 -name default 
+Execute     config_clock -quiet -name default -period 10 -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+Execute   config_export -format ip_catalog -rtl verilog 
+Execute   csynth_design 
+Execute     get_config_compile -dump_cfg 
+Execute     get_config_compile -effort 
+Execute     get_config_compile -enable_clang39 
+Execute     get_config_compile -g 
+Execute     get_config_compile -ng 
+Execute     get_config_compile -opt_fp 
+Execute     get_config_compile -skip_cdt 
+Execute     get_config_compile -skip_syncheck 
+Execute     get_config_compile -skip_transform 
+Execute     get_config_compile -keep_printf 
+Execute     elaborate -effort=medium -skip_syncheck=0 -keep_printf=0 -skip_cdt=0 -skip_transform=0 -ng=0 -g=0 -opt_fp=0 -from_csynth_design=1 
+Execute       get_config_schedule -relax_ii_for_timing 
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+Execute       get_config_schedule -suppress_dependence_error_break 
+INFO: [HLS 200-10] Analyzing design file 'yolo_max_pool_fp_2019_64/src/yolo_max_pool.cpp' ... 
+INFO-FLOW: Compiling one TU...
+Execute       is_m_axi_addr64 
+INFO-FLOW: Handling yolo_max_pool_fp_2019_64/src/yolo_max_pool.cpp as C++
+Execute       ap_part_info -name xc7z020-clg484-1 -data info 
+Execute       is_encrypted yolo_max_pool_fp_2019_64/src/yolo_max_pool.cpp 
+Execute       ap_part_info -name xc7z020-clg484-1 -data info 
+INFO-FLOW: Running: GCC PP
+INFO-FLOW: Source preprocessing
+Execute       clang  -fno-limit-debug-info -gcc-toolchain "/opt/Xilinx_2019_1/Vivado/2019.1/lnx64/tools/gcc" -hls  -fno-exceptions  -D__llvm__  -E "yolo_max_pool_fp_2019_64/src/yolo_max_pool.cpp"     -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit  -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "/opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot" -I "/opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__  -o "/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/yolo_max_pool.pp.0.cpp" 
+INFO-FLOW: exec /opt/Xilinx_2019_1/Vivado/2019.1/lnx64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain /opt/Xilinx_2019_1/Vivado/2019.1/lnx64/tools/gcc -hls -fno-exceptions -D__llvm__ -E yolo_max_pool_fp_2019_64/src/yolo_max_pool.cpp -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot -I /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -o /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/yolo_max_pool.pp.0.cpp
+Command       clang done; 2.02 sec.
+Execute       tidy_31 xilinx-xfmat-array-geometry /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/yolo_max_pool.pp.0.cpp std=gnu++98 
+INFO-FLOW: exec /opt/Xilinx_2019_1/Vivado/2019.1/lnx64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-xfmat-array-geometry -quiet -fix /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/yolo_max_pool.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0
+Command       tidy_31 done; 6.73 sec.
+INFO-FLOW: Syntax Checking before pre-processing...
+Execute       clang -syntaxcheck -src /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/yolo_max_pool.pp.0.cpp  -fno-limit-debug-info -gcc-toolchain "/opt/Xilinx_2019_1/Vivado/2019.1/lnx64/tools/gcc" -hls    -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit  -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "/opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot" -I "/opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__  "/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/yolo_max_pool.pp.0.cpp"  -o "/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/useless.bc"  
+INFO-FLOW: exec /opt/Xilinx_2019_1/Vivado/2019.1/lnx64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain /opt/Xilinx_2019_1/Vivado/2019.1/lnx64/tools/gcc -hls -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot -I /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/yolo_max_pool.pp.0.cpp -o /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/useless.bc
+Command       clang done; 5.7 sec.
+INFO-FLOW: Done: GCC PP time: 14.5 seconds per iteration
+Execute       source /opt/Xilinx_2019_1/Vivado/2019.1/tps/tcl/tcllib1.11.1/yaml/huddle.tcl 
+Execute       source /opt/Xilinx_2019_1/Vivado/2019.1/tps/tcl/tcllib1.11.1/yaml/json2huddle.tcl 
+Execute         source /opt/Xilinx_2019_1/Vivado/2019.1/tps/tcl/tcllib1.11.1/try/try.tcl 
+Execute       list_core -type functional_unit 
+Execute       tidy_31 xilinx-systemc-detector /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/yolo_max_pool.pp.0.cpp std=gnu++98 -directive=/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/.systemc_flag 
+INFO-FLOW: exec /opt/Xilinx_2019_1/Vivado/2019.1/lnx64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-systemc-detector -import-directive=/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/.systemc_flag -quiet -fix-errors /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/yolo_max_pool.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0
+Command       tidy_31 done; 5.84 sec.
+INFO-FLOW: Running: tidy-3.1 CDT preprocess
+Execute       tidy_31 xilinx-directive2pragma /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/yolo_max_pool.pp.0.cpp std=gnu++98 -directive=/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/all.directive.json 
+INFO-FLOW: exec /opt/Xilinx_2019_1/Vivado/2019.1/lnx64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-directive2pragma -import-directive=/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/all.directive.json -quiet -fix-errors /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/yolo_max_pool.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0
+Command       tidy_31 done; 5.84 sec.
+Execute       get_config_dataflow -strict_mode 
+Execute       ap_eval exec -ignorestderr /opt/Xilinx_2019_1/Vivado/2019.1/lnx64/tools/clang-3.9-csynth/bin/xilinx-dataflow-lawyer -export-fixes=/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/xilinx-dataflow-lawyer.yolo_max_pool.pp.0.cpp.diag.yml /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/yolo_max_pool.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0 -fstrict-dataflow > /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/xilinx-dataflow-lawyer.yolo_max_pool.pp.0.cpp.out.log 2> /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/xilinx-dataflow-lawyer.yolo_max_pool.pp.0.cpp.err.log 
+Command       ap_eval done; 4.84 sec.
+Execute       tidy_31 -errorcheck xilinx-constantarray-param,xilinx-resource-pragma-transformer,xilinx-xfmat-array-geometry /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/yolo_max_pool.pp.0.cpp std=gnu++98 
+Execute         ap_eval exec -ignorestderr /opt/Xilinx_2019_1/Vivado/2019.1/lnx64/tools/clang-3.9-csynth/bin/tidy-3.1 -export-fixes=/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/tidy-3.1.yolo_max_pool.pp.0.cpp.diag.yml -header-filter=.* -checks=-*,xilinx-constantarray-param,xilinx-resource-pragma-transformer,xilinx-xfmat-array-geometry -quiet -fix-errors /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/yolo_max_pool.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0 > /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/tidy-3.1.yolo_max_pool.pp.0.cpp.out.log 2> /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/tidy-3.1.yolo_max_pool.pp.0.cpp.err.log 
+Command         ap_eval done; 11.35 sec.
+Execute         source /opt/Xilinx_2019_1/Vivado/2019.1/tps/tcl/tcllib1.11.1/yaml/yaml.tcl 
+Execute           source /opt/Xilinx_2019_1/Vivado/2019.1/tps/tcl/tcllib1.11.1/cmdline/cmdline.tcl 
+Execute         ap_eval exec -ignorestderr /opt/Xilinx_2019_1/Vivado/2019.1/lnx64/tools/clang-3.9-csynth/bin/xilinx-legacy-rewriter /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/yolo_max_pool.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0 > /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/xilinx-legacy-rewriter.yolo_max_pool.pp.0.cpp.out.log 2> /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/xilinx-legacy-rewriter.yolo_max_pool.pp.0.cpp.err.log 
+Command         ap_eval done; 4.88 sec.
+Command       tidy_31 done; 16.92 sec.
+INFO-FLOW: Done: tidy-3.1 CDT preprocess time: 27.6 seconds per iteration
+INFO-FLOW: Pragma Handling...
+Execute       tidy_31 xilinx-ssdm-intrinsics-arguments /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/yolo_max_pool.pragma.1.cpp std=gnu++98 
+INFO-FLOW: exec /opt/Xilinx_2019_1/Vivado/2019.1/lnx64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-ssdm-intrinsics-arguments -quiet -fix-errors /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/yolo_max_pool.pragma.1.cpp -- -std=gnu++98 -fhls -ferror-limit=0
+Command       tidy_31 done; 9 sec.
+Execute       ap_part_info -name xc7z020-clg484-1 -data info 
+INFO-FLOW: Processing labels
+Execute       clang -src /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/yolo_max_pool.pragma.2.cpp  -fno-limit-debug-info -gcc-toolchain /opt/Xilinx_2019_1/Vivado/2019.1/lnx64/tools/gcc -hls -hls-analyze-label -hls-analyze-pragma -fno-exceptions  -D__llvm__  -w  "/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/yolo_max_pool.pragma.2.cpp"    -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "/opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot" -I "/opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -g -o "/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/yolo_max_pool.bc" 
+INFO-FLOW: exec /opt/Xilinx_2019_1/Vivado/2019.1/lnx64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain /opt/Xilinx_2019_1/Vivado/2019.1/lnx64/tools/gcc -hls -hls-analyze-label -hls-analyze-pragma -fno-exceptions -D__llvm__ -w /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/yolo_max_pool.pragma.2.cpp -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot -I /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -g -o /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/yolo_max_pool.bc
+Command       clang done; 6.01 sec.
+INFO-FLOW: Linking Debug ...
+Execute       llvm-ld /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/yolo_max_pool.g.bc -hls-opt -except-internalize yolo_max_pool_top -L/opt/Xilinx_2019_1/Vivado/2019.1/lnx64/lib -lhlsm -lhlsmc++ -o /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/a.g 
+Command       llvm-ld done; 1.37 sec.
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:01:04 ; elapsed = 00:01:06 . Memory (MB): peak = 892.023 ; gain = 192.000 ; free physical = 2853 ; free virtual = 12385
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:01:04 ; elapsed = 00:01:06 . Memory (MB): peak = 892.023 ; gain = 192.000 ; free physical = 2853 ; free virtual = 12385
+Execute       get_config_sdx -target 
+Execute       opt_and_import_c a -opt_level=2 -skip_syncheck=0 -ng=0 -keep_printf=0 
+Execute         cleanup_all_models 
+INFO: [HLS 200-10] Starting code transformations ...
+Execute         transform -promote-dbg-pointer /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/a.pp.bc -o /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/a.pp.0.bc -f 
+Command         transform done; 0.16 sec.
+Execute         llvm-ld /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/a.pp.0.bc -disable-opt -L/opt/Xilinx_2019_1/Vivado/2019.1/lnx64/lib -lfloatconversion -o /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/a.g.0 
+Command         llvm-ld done; 1.34 sec.
+INFO-FLOW: Running Standard Transforms...
+Execute         transform -hls -share-std-xform -demangle-name -inline-byval-memcpy -always-inline -promote-dbg-pointer -interface-preproc -mem2reg -scalarrepl -mem2reg -keep-read-access -instcombine -dce -promote-dbg-pointer -bitop-raise -loop-simplify -indvarspre -indvars -loop-simplify -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -basicaa -simplifycfg -mem2reg -globalopt -global-constprop -deadargelim -instcombine -simplifycfg -prune-eh -simplifycfg -scalarrepl -instcombine -reassociate -licm -simplifycfg -loop-simplify -indvars -instcombine -simplifycfg -mem2reg -loop-simplify -indvars -instcombine -gvn -gvn -instcombine -adce -break-crit-edges -simplifycfg -loop-delete -global-array-opt -dce -dse -adce -find-syn-modules -top yolo_max_pool_top -deadargelim -mem2reg -instcombine -dce -presyn-prepare -auto-rom-infer -interface-preproc -syn-check -check-rec-only -find-region -simplifycfg -func-extr -function-inline -globaldce -mem2reg -instcombine -dce -gvn -globaldce -adce -adse -constprop -instcombine -bit-constprop -instcombine -dce -simplifycfg -bitop-raise -simplifycfg -dce -loop-delete -reassociate -globalopt -global-privatize -mem2reg -dce -global-constprop -pointer-simplify -constprop -dce -func-inst -deadargelim -auto-shift-reg-idiom -promote-dbg-pointer -norm-name /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/a.g.0.bc -o /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/a.g.1.bc -f -phase std-opt 
+INFO: [HLS 200-489] Unrolling loop 'Loop-1' (/opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot/hls/hls_video_mem.h:727) in function 'hls::LineBuffer<2, 418, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0>, 0>::shift_pixels_up(int)' completely with a factor of 1.
+INFO: [XFORM 203-603] Inlining function 'hls::LineBuffer<2, 418, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0>, 0>::shift_pixels_up' into 'hls::LineBuffer<2, 418, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0>, 0>::shift_up' (/opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot/hls/hls_video_mem.h:863).
+INFO: [XFORM 203-603] Inlining function 'hls::LineBuffer<2, 418, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0>, 0>::shift_up' into 'yolo_line_buffer' (yolo_max_pool_fp_2019_64/src/yolo_max_pool.cpp:127).
+INFO: [XFORM 203-603] Inlining function 'hls::LineBuffer<2, 418, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0>, 0>::insert_bottom_row' into 'hls::LineBuffer<2, 418, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0>, 0>::insert_top' (/opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot/hls/hls_video_mem.h:883).
+INFO: [XFORM 203-603] Inlining function 'hls::LineBuffer<2, 418, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0>, 0>::insert_top' into 'yolo_line_buffer' (yolo_max_pool_fp_2019_64/src/yolo_max_pool.cpp:128).
+INFO: [XFORM 203-603] Inlining function 'hls::LineBuffer<2, 418, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0>, 0>::getval' into 'slide_window' (yolo_max_pool_fp_2019_64/src/yolo_max_pool.cpp:140).
+INFO: [XFORM 203-603] Inlining function 'hls::Window<2, 2, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0> >::insert_pixel' into 'hls::Window<2, 2, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0> >::insert' (/opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot/hls/hls_video_mem.h:573).
+INFO: [XFORM 203-603] Inlining function 'hls::Window<2, 2, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0> >::insert' into 'slide_window' (yolo_max_pool_fp_2019_64/src/yolo_max_pool.cpp:141).
+INFO: [XFORM 203-603] Inlining function 'hls::Window<2, 2, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0> >::getval' into 'window_max_pool' (yolo_max_pool_fp_2019_64/src/yolo_max_pool.cpp:155).
+Command         transform done; 0.44 sec.
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:01:06 ; elapsed = 00:01:08 . Memory (MB): peak = 892.023 ; gain = 192.000 ; free physical = 2802 ; free virtual = 12343
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO-FLOW: Checking Synthesizability 1/2..
+Execute         transform -hls -syn-check -check-rec-only -disaggr -scalarrepl -norm-name -dce -mem2reg -instcombine -function-uniquify -directive-preproc -mem2reg -dse -dce -auto-rom-infer -dce -pag -array-normalize -instcombine -dce -warn-fifo-pointer -array-seg-normalize -instcombine -dce -array-flatten -instcombine -dce -array-burst -dce -deadargelim -promote-global-argument -simplifycfg -mem2reg -globaldce -dce -deadargelim -dce -instcombine -function-inline -globaldce -dce -doublePtrSimplify -doublePtrElim -dce -doublePtrSimplify -promote-dbg-pointer -dce -scalarrepl -dse -adse -instcombine -ptrLegalization -simplifycfg -dce -instcombine -pointer-simplify -ptrArgReplace -dce -instcombine -resolve-double-ptr -disaggr -scalarrepl -norm-name -dce -mem2reg -instcombine -ptrLegalization -simplifycfg -deadargelim -instcombine -dce -inst-simplify -function-uniquify -directive-preproc -mem2reg -dse -dce -globaldce -check-dspbuiltin /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/a.g.1.bc -o /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/a.g.2.prechk.bc -f 
+Command         transform done; 0.36 sec.
+INFO-FLOW: Checking Synthesizability 2/2..
+Execute         transform -syn-check /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/a.g.2.prechk.bc -o /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/a.g.2.bc -f -phase syn-check 
+Command         transform done; 0.19 sec.
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:01:06 ; elapsed = 00:01:08 . Memory (MB): peak = 896.297 ; gain = 196.273 ; free physical = 2757 ; free virtual = 12302
+INFO-FLOW: Compiler optimizing ...
+INFO-FLOW: Share syncheck's 1.bc for syn flow: copy /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/a.g.1.bc to /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/a.o.1.bc
+INFO-FLOW: Presyn 1...
+Execute         transform -hls -tmp /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db -interface-port-rename -type-info -function-uniquify -directive-preproc -mem2reg -dse -dce -disaggr -scalarrepl -norm-name -deadargelim -mem2reg -instcombine -dce -simplifycfg -auto-rom-infer -dce -function-uniquify -resource-proc -clib-intrinsic-prepare -dce -func-buffer -dce -pag -array-normalize -func-legal -instcombine -gvn -constprop -dce -simplifycfg -mem2reg -globaldce -resolve-double-ptr -dce -deadargelim -dce -instcombine -ptrArgReplace -mem2reg -dce -array-seg-normalize -deadargelim -instcombine -dce -pointer-simplify -dce -port-alignment -dce -interface-preproc -data-pack -instcombine -dce -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -loop-simplify -indvars -instcombine -gvn -loop-simplify -mem2reg -dce -find-region -instcombine -auto-loop-pipeline -inst-simplify -interface-preproc -cfgopt -instcombine -indvars -auto-loop-unroll -loop-simplify -loop-bound -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -clean-region -attach-range -gvn -inst-simplify -constprop -simplifycfg -dce -pointer-simplify -dce -globalopt -constprop -dce -array-promote -constprop -dce -ptrArgReplace -mem2reg -simplifycfg -dce -auto-par -instcombine -dce -array-transform-check -array-reshape -instcombine -simplifycfg -dce -ptrArgReplace -deadargelim -mem2reg -instcombine -simplifycfg -dce -indvars -loop-simplify -loop-bound -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -duplicate-dataflow-processes -globaldce -instcombine -array-partition -instcombine -simplifycfg -dce -ptrArgReplace -global-constprop -deadargelim -mem2reg -func-legal -dce -global-constprop -deadargelim -mem2reg -simplifycfg -dce -merge-param -deadargelim -globalopt -constprop -dce -array-promote -constprop -dce -ptrArgReplace -mem2reg -simplifycfg -dce -mem-intrinsic-preproc -dce -global-internalize -global-privatize -mem2reg -globaldce -promote-global-argument -ptrArgReplace -mem2reg -dce -globalopt -mergereturn -simplify-global-access -mem2reg -dce -pointer-simplify -dce -functionattrs -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -dce -norm-name -function-inline -complex-op-raise -inst-simplify -globaldce -func-inst -constprop -instcombine -simplifycfg -dce -func-legal -dce -loop-bound -arraycheck -bitwidthmin -on-by-dataflow -loop-delete -instcombine -simplifycfg -globaldce -dce -gvn -deadargelim -dce -loop-simplify -clean-region -simplifycfg -propagate-stable-arguments -loop-stream -instcombine -simplifycfg -dce -globaldce -duplicate-dataflow-processes -stream-intrinsic-preproc -dce -check-ap-stream -loop-simplify -eliminate-keepreads -extract-dataflow-in-loop -loop-simplify -dce -gvn -deadargelim -dse -check-dataflow-syntax -legalize-stream-variable -legalize-global -extract-subproc -dce -dead-channel-elimination -canonicalize-gep -globaldce -dce -gvn -deadargelim -annotate-dataflow-channels -scalar-propagation -deadargelim -globaldce -mem2reg -check-dataflow-channels -function-stream -dce -globaldce -prop-fifo-spec -internal-stream-gen -canonicalize-gep -globaldce -dce -gvn -deadargelim -mergereturn -indvars -loop-simplify -instcombine -array-stream -array-seg-normalize -array-partition -func-legal -instcombine -simplifycfg -dce -bundle-memfifo-ops -deadargelim -function-uniquify -directive-preproc -mem2reg -dse -dce -group-axi-access -licm -simplifycfg -dce -loop-delete -norm-name /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/a.o.1.bc -o /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/a.o.1.tmp.bc -f 
+INFO: [XFORM 203-1101] Packing variable 'outStream.V.data' (yolo_max_pool_fp_2019_64/src/yolo_max_pool.cpp:4) into a 64-bit variable.
+INFO: [XFORM 203-1101] Packing variable 'inStream.V.data' (yolo_max_pool_fp_2019_64/src/yolo_max_pool.cpp:4) into a 64-bit variable.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'Loop-5.1.1.1.1' (yolo_max_pool_fp_2019_64/src/yolo_max_pool.cpp:39) in function 'yolo_max_pool_top' for pipelining.
+INFO: [XFORM 203-502] Unrolling all loops for pipelining in function 'window_max_pool' (yolo_max_pool_fp_2019_64/src/yolo_max_pool.cpp:148).
+INFO: [XFORM 203-502] Unrolling all loops for pipelining in function 'slide_window' (yolo_max_pool_fp_2019_64/src/yolo_max_pool.cpp:132).
+INFO: [HLS 200-489] Unrolling loop 'Loop-5.1.1.1.1.1' (/opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot/hls/hls_video_mem.h:49) in function 'yolo_max_pool_top' completely with a factor of 2.
+INFO: [HLS 200-489] Unrolling loop 'Loop-5.1.1.1.1.1.1' (/opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot/hls/hls_video_mem.h:49) in function 'yolo_max_pool_top' completely with a factor of 2.
+INFO: [HLS 200-489] Unrolling loop 'Loop-5.1.1.1.1.2' (/opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot/hls/hls_video_mem.h:49) in function 'yolo_max_pool_top' completely with a factor of 2.
+INFO: [HLS 200-489] Unrolling loop 'Loop-5.1.1.1.1.2.1' (/opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot/hls/hls_video_mem.h:49) in function 'yolo_max_pool_top' completely with a factor of 2.
+INFO: [HLS 200-489] Unrolling loop 'Loop-5.1.1.1.1.3' (/opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot/hls/hls_video_mem.h:49) in function 'yolo_max_pool_top' completely with a factor of 2.
+INFO: [HLS 200-489] Unrolling loop 'Loop-5.1.1.1.1.3.1' (/opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot/hls/hls_video_mem.h:49) in function 'yolo_max_pool_top' completely with a factor of 2.
+INFO: [HLS 200-489] Unrolling loop 'Loop-5.1.1.1.1.4' (/opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot/hls/hls_video_mem.h:49) in function 'yolo_max_pool_top' completely with a factor of 2.
+INFO: [HLS 200-489] Unrolling loop 'Loop-5.1.1.1.1.4.1' (/opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot/hls/hls_video_mem.h:49) in function 'yolo_max_pool_top' completely with a factor of 2.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1' (yolo_max_pool_fp_2019_64/src/yolo_max_pool.cpp:151) in function 'window_max_pool' completely with a factor of 2.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1' (yolo_max_pool_fp_2019_64/src/yolo_max_pool.cpp:153) in function 'window_max_pool' completely with a factor of 2.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1' (yolo_max_pool_fp_2019_64/src/yolo_max_pool.cpp:136) in function 'slide_window' completely with a factor of 2.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1' (yolo_max_pool_fp_2019_64/src/yolo_max_pool.cpp:138) in function 'slide_window' completely with a factor of 2.
+INFO: [XFORM 203-102] Partitioning array 'window.val.V.0' automatically.
+INFO: [XFORM 203-102] Partitioning array 'window.val.V.1' automatically.
+INFO: [XFORM 203-101] Partitioning array 'line_buff_group_0.val.V' (yolo_max_pool_fp_2019_64/src/yolo_max_pool.cpp:19) in dimension 2 completely.
+INFO: [XFORM 203-101] Partitioning array 'line_buff_group_1.val.V' (yolo_max_pool_fp_2019_64/src/yolo_max_pool.cpp:20) in dimension 2 completely.
+INFO: [XFORM 203-101] Partitioning array 'line_buff_group_2.val.V' (yolo_max_pool_fp_2019_64/src/yolo_max_pool.cpp:21) in dimension 2 completely.
+INFO: [XFORM 203-101] Partitioning array 'line_buff_group_3.val.V' (yolo_max_pool_fp_2019_64/src/yolo_max_pool.cpp:22) in dimension 2 completely.
+INFO: [XFORM 203-101] Partitioning array 'window_0.val.V' (yolo_max_pool_fp_2019_64/src/yolo_max_pool.cpp:80) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'window_1.val.V' (yolo_max_pool_fp_2019_64/src/yolo_max_pool.cpp:81) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'window_2.val.V' (yolo_max_pool_fp_2019_64/src/yolo_max_pool.cpp:82) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'window_3.val.V' (yolo_max_pool_fp_2019_64/src/yolo_max_pool.cpp:83) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'window_0.val.V' (yolo_max_pool_fp_2019_64/src/yolo_max_pool.cpp:80) in dimension 2 completely.
+INFO: [XFORM 203-101] Partitioning array 'window_1.val.V' (yolo_max_pool_fp_2019_64/src/yolo_max_pool.cpp:81) in dimension 2 completely.
+INFO: [XFORM 203-101] Partitioning array 'window_2.val.V' (yolo_max_pool_fp_2019_64/src/yolo_max_pool.cpp:82) in dimension 2 completely.
+INFO: [XFORM 203-101] Partitioning array 'window_3.val.V' (yolo_max_pool_fp_2019_64/src/yolo_max_pool.cpp:83) in dimension 2 completely.
+INFO: [XFORM 203-602] Inlining function 'yolo_line_buffer' into 'yolo_max_pool_top' (yolo_max_pool_fp_2019_64/src/yolo_max_pool.cpp:72) automatically.
+INFO: [XFORM 203-602] Inlining function 'window_max_pool' into 'yolo_max_pool_top' (yolo_max_pool_fp_2019_64/src/yolo_max_pool.cpp:95) automatically.
+Command         transform done; 0.74 sec.
+INFO-FLOW: Presyn 2...
+Execute         transform -hls -keep-callgraph -scalarrepl -mem2reg -port-alignment -attach-range -dce -pipe-mux-gen -indvars -loop-bound -inst-simplify -instcombine -dce -merge-array-access -mem2reg -dce -clean-region -mergereturn -if-conv -instcombine -dce -constprop -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -scalarrepl -mem2reg -global-constprop -deadargelim -deadargelim -instcombine -dce -simplifycfg -ptrArgReplace -mem2reg -function-inline -globaldce -mem2reg -instcombine -dce -expr-balance -instcombine -dce -bitwidthmin -interface-preproc -directive-preproc -inst-rectify -instcombine -dce -functionattrs -constprop -instcombine -bit-constprop -simplify-global-access -globalopt -globaldce -inst-simplify -instcombine -elimdeaddata -dce -loop-delete -simplifycfg -loop-simplify -auto-burst -norm-name /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/a.o.1.tmp.bc -o /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/a.o.2.bc -f -phase presyn 
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (yolo_max_pool_fp_2019_64/src/yolo_max_pool.cpp:90:17) to (yolo_max_pool_fp_2019_64/src/yolo_max_pool.cpp:113:5) in function 'yolo_max_pool_top'... converting 4 basic blocks.
+INFO: [XFORM 203-602] Inlining function 'slide_window' into 'yolo_max_pool_top' (yolo_max_pool_fp_2019_64/src/yolo_max_pool.cpp:90) automatically.
+Command         transform done; 0.36 sec.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:01:07 ; elapsed = 00:01:09 . Memory (MB): peak = 960.383 ; gain = 260.359 ; free physical = 2691 ; free virtual = 12243
+INFO-FLOW: Building ssdm...
+Execute         transform -hls -function-uniquify -auto-function-inline -globaldce -ptrArgReplace -mem2reg -dce -reset-lda -loop-simplify -indvars -licm -loop-dep -loop-bound -licm -loop-simplify -flattenloopnest -array-flatten -gvn -instcombine -dce -array-map -dce -func-legal -gvn -adce -instcombine -cfgopt -simplifycfg -loop-simplify -array-burst -promote-global-argument -dce -ptrLegalization -axi4-lower -array-seg-normalize -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -gvn -gvn -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -dse -adse -adce -licm -inst-simplify -dce -globaldce -instcombine -array-stream -eliminate-keepreads -instcombine -dce -deadargelim -doublePtrSimplify -doublePtrElim -dce -doublePtrSimplify -promote-dbg-pointer -dce -scalarrepl -mem2reg -disaggr -norm-name -mem2reg -instcombine -dse -adse -adce -ptrLegalization -dce -auto-rom-infer -array-flatten -dce -instcombine -check-doubleptr -loop-rot -constprop -cfgopt -simplifycfg -loop-simplify -indvars -pointer-simplify -dce -loop-bound -loop-simplify -loop-preproc -constprop -global-constprop -gvn -mem2reg -instcombine -dce -loop-bound -loop-merge -dce -bitwidthmin -deadargelim -dce -canonicalize-dataflow -dce -scalar-propagation -deadargelim -globaldce -mem2reg -read-loop-dep -interface-preproc -directive-preproc -interface-gen -bram-byte-enable -deadargelim -inst-simplify -dce -gvn -mem2reg -instcombine -dce -adse -loop-bound -instcombine -cfgopt -simplifycfg -loop-simplify -clean-region -io-protocol -find-region -mem2reg -bitop-raise -complex-op-raise -inst-simplify -inst-rectify -instcombine -adce -deadargelim -loop-simplify -phi-opt -bitop-raise -cfgopt -simplifycfg -strip-dead-prototypes -interface-lower -bitop-lower -intrinsic-lower -auto-function-inline -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -inst-simplify -simplifycfg -loop-simplify -mergereturn -inst-simplify -inst-rectify -dce -load-elim -bitop-lower -loop-rewind -pointer-simplify -dce -cfgopt -dce -loop-bound -loop-dep -read-loop-dep -dce -check-stream -norm-name -legalize -validate-dataflow -inst-clarity -bitwidth -dump-loop-dep-to-ir -check-all-ssdm -cdfg-build /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/a.o.2.bc -o /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/a.o.3.bc -f -phase build-ssdm 
+INFO: [XFORM 203-541] Flattening a loop nest 'Loop-5.1.1.1' (yolo_max_pool_fp_2019_64/src/yolo_max_pool.cpp:36:23) in function 'yolo_max_pool_top'.
+INFO: [XFORM 203-541] Flattening a loop nest 'Loop-5.1.1' (yolo_max_pool_fp_2019_64/src/yolo_max_pool.cpp:33:20) in function 'yolo_max_pool_top'.
+INFO: [XFORM 203-541] Flattening a loop nest 'Loop-5.1' (yolo_max_pool_fp_2019_64/src/yolo_max_pool.cpp:30:23) in function 'yolo_max_pool_top'.
+INFO: [XFORM 203-541] Flattening a loop nest 'Loop-5' (yolo_max_pool_fp_2019_64/src/yolo_max_pool.cpp:27:20) in function 'yolo_max_pool_top'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'line_buff_group_0.va' (yolo_max_pool_fp_2019_64/src/yolo_max_pool.cpp:19).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'line_buff_group_0.va' (yolo_max_pool_fp_2019_64/src/yolo_max_pool.cpp:19).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'line_buff_group_1.va' (yolo_max_pool_fp_2019_64/src/yolo_max_pool.cpp:20).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'line_buff_group_1.va' (yolo_max_pool_fp_2019_64/src/yolo_max_pool.cpp:20).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'line_buff_group_2.va' (yolo_max_pool_fp_2019_64/src/yolo_max_pool.cpp:21).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'line_buff_group_2.va' (yolo_max_pool_fp_2019_64/src/yolo_max_pool.cpp:21).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'line_buff_group_3.va' (yolo_max_pool_fp_2019_64/src/yolo_max_pool.cpp:22).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'line_buff_group_3.va' (yolo_max_pool_fp_2019_64/src/yolo_max_pool.cpp:22).
+Command         transform done; 0.64 sec.
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:01:08 ; elapsed = 00:01:10 . Memory (MB): peak = 960.383 ; gain = 260.359 ; free physical = 2666 ; free virtual = 12220
+INFO-FLOW: Finish building internal data model.
+Command       opt_and_import_c done; 4.25 sec.
+Command     elaborate done; 68.98 sec.
+Execute     autosyn -from_csynth_design=1 
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO-FLOW: Synthesizing C/C++ design ...
+INFO: [HLS 200-10] Synthesizing 'yolo_max_pool_top' ...
+Execute       ap_set_top_model yolo_max_pool_top 
+Execute       get_model_list yolo_max_pool_top -filter all-wo-channel -topdown 
+Execute       preproc_iomode -model yolo_max_pool_top 
+Execute       preproc_iomode -model write_output 
+Execute       get_model_list yolo_max_pool_top -filter all-wo-channel 
+INFO-FLOW: Model list for configure: write_output yolo_max_pool_top
+INFO-FLOW: Configuring Module : write_output ...
+Execute       set_default_model write_output 
+Execute       apply_spec_resource_limit write_output 
+INFO-FLOW: Configuring Module : yolo_max_pool_top ...
+Execute       set_default_model yolo_max_pool_top 
+Execute       apply_spec_resource_limit yolo_max_pool_top 
+INFO-FLOW: Model list for preprocess: write_output yolo_max_pool_top
+INFO-FLOW: Preprocessing Module: write_output ...
+Execute       set_default_model write_output 
+Execute       cdfg_preprocess -model write_output 
+Execute       rtl_gen_preprocess write_output 
+INFO-FLOW: Preprocessing Module: yolo_max_pool_top ...
+Execute       set_default_model yolo_max_pool_top 
+Execute       cdfg_preprocess -model yolo_max_pool_top 
+Execute       rtl_gen_preprocess yolo_max_pool_top 
+INFO-FLOW: Model list for synthesis: write_output yolo_max_pool_top
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'write_output' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model write_output 
+Execute       schedule -model write_output 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining function 'write_output'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 1.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 69.92 seconds; current allocated memory: 238.735 MB.
+Execute       syn_report -verbosereport -o /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/write_output.verbose.sched.rpt 
+Execute       db_write -o /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/write_output.sched.adb -f 
+INFO-FLOW: Finish scheduling write_output.
+Execute       set_default_model write_output 
+Execute       bind -model write_output 
+BIND OPTION: model=write_output
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.02 seconds; current allocated memory: 238.851 MB.
+Execute       syn_report -verbosereport -o /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/write_output.verbose.bind.rpt 
+Execute       db_write -o /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/write_output.bind.adb -f 
+INFO-FLOW: Finish binding write_output.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'yolo_max_pool_top' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model yolo_max_pool_top 
+Execute       schedule -model yolo_max_pool_top 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 5'.
+WARNING: [SCHED 204-69] Unable to schedule 'load' operation ('Window<2, 2, ap_fixed<16, 8, 4, 0, 0> >.val[0].V[1]', yolo_max_pool_fp_2019_64/src/yolo_max_pool.cpp:140->yolo_max_pool_fp_2019_64/src/yolo_max_pool.cpp:90) on array 'line_buff_group_0.val[0].V', yolo_max_pool_fp_2019_64/src/yolo_max_pool.cpp:19 due to limited memory ports. Please consider using a memory core with more ports or partitioning the array 'line_buff_group_0_va'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 2, Depth = 10.
+INFO: [SCHED 204-11] Finished scheduling.
+Command       schedule done; 0.45 sec.
+INFO: [HLS 200-111]  Elapsed time: 0.48 seconds; current allocated memory: 240.131 MB.
+Execute       syn_report -verbosereport -o /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/yolo_max_pool_top.verbose.sched.rpt 
+INFO: [HLS 200-434] Only 1 loops out of a total 5 loops have been pipelined in this design.
+Command       syn_report done; 0.18 sec.
+Execute       db_write -o /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/yolo_max_pool_top.sched.adb -f 
+INFO-FLOW: Finish scheduling yolo_max_pool_top.
+Execute       set_default_model yolo_max_pool_top 
+Execute       bind -model yolo_max_pool_top 
+BIND OPTION: model=yolo_max_pool_top
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+Command       bind done; 0.18 sec.
+INFO: [HLS 200-111]  Elapsed time: 0.4 seconds; current allocated memory: 241.926 MB.
+Execute       syn_report -verbosereport -o /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/yolo_max_pool_top.verbose.bind.rpt 
+Command       syn_report done; 0.42 sec.
+Execute       db_write -o /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/yolo_max_pool_top.bind.adb -f 
+INFO-FLOW: Finish binding yolo_max_pool_top.
+Execute       get_model_list yolo_max_pool_top -filter all-wo-channel 
+INFO-FLOW: Preprocessing for RTLGen ...
+Execute       rtl_gen_preprocess write_output 
+Execute       rtl_gen_preprocess yolo_max_pool_top 
+INFO-FLOW: Model list for RTL generation: write_output yolo_max_pool_top
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'write_output' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       get_config_rtl -module_prefix 
+Execute       get_config_rtl -module_auto_prefix 
+Execute       create_rtl_model write_output -vendor xilinx -mg_file /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/write_output.compgen.tcl 
+INFO: [RTGEN 206-100] Finished creating RTL model for 'write_output'.
+INFO: [HLS 200-111]  Elapsed time: 0.48 seconds; current allocated memory: 242.326 MB.
+Execute       source /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/yolo_max_pool_top.rtl_wrap.cfg.tcl 
+Execute       gen_rtl write_output -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/syn/systemc/write_output -synmodules write_output yolo_max_pool_top 
+Execute       gen_rtl write_output -style xilinx -f -lang vhdl -o /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/syn/vhdl/write_output 
+Execute       gen_rtl write_output -style xilinx -f -lang vlog -o /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/syn/verilog/write_output 
+Execute       syn_report -csynth -model write_output -o /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/syn/report/write_output_csynth.rpt 
+Execute       syn_report -rtlxml -model write_output -o /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/syn/report/write_output_csynth.xml 
+Execute       syn_report -verbosereport -model write_output -o /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/write_output.verbose.rpt 
+Execute       db_write -model write_output -f -o /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/write_output.adb 
+Execute       gen_tb_info write_output -p /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db -o /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/write_output 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'yolo_max_pool_top' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       get_config_rtl -module_prefix 
+Execute       get_config_rtl -module_auto_prefix 
+Execute       create_rtl_model yolo_max_pool_top -vendor xilinx -mg_file /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/yolo_max_pool_top.compgen.tcl 
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_max_pool_top/inStream_V_data' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_max_pool_top/inStream_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_max_pool_top/inStream_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_max_pool_top/inStream_V_user_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_max_pool_top/inStream_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_max_pool_top/inStream_V_id_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_max_pool_top/inStream_V_dest_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_max_pool_top/outStream_V_data' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_max_pool_top/outStream_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_max_pool_top/outStream_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_max_pool_top/outStream_V_user_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_max_pool_top/outStream_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_max_pool_top/outStream_V_id_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_max_pool_top/outStream_V_dest_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_max_pool_top/output_h_V' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_max_pool_top/output_w_V' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_max_pool_top/input_h_V' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_max_pool_top/input_w_V' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_max_pool_top/input_fold_ch_V' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_max_pool_top/stride_V' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'yolo_max_pool_top' to 's_axilite & ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Bundling port 'return', 'output_h_V', 'output_w_V', 'input_h_V', 'input_w_V', 'input_fold_ch_V' and 'stride_V' to AXI-Lite port CTRL_BUS.
+INFO: [RTGEN 206-100] Generating core module 'yolo_max_pool_top_mul_mul_9ns_17ns_26_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'yolo_max_pool_top'.
+Command       create_rtl_model done; 0.18 sec.
+INFO: [HLS 200-111]  Elapsed time: 0.21 seconds; current allocated memory: 246.593 MB.
+Execute       source /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/yolo_max_pool_top.rtl_wrap.cfg.tcl 
+Execute       gen_rtl yolo_max_pool_top -istop -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/syn/systemc/yolo_max_pool_top -synmodules write_output yolo_max_pool_top 
+Execute       gen_rtl yolo_max_pool_top -istop -style xilinx -f -lang vhdl -o /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/syn/vhdl/yolo_max_pool_top 
+Command       gen_rtl done; 0.3 sec.
+Execute       gen_rtl yolo_max_pool_top -istop -style xilinx -f -lang vlog -o /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/syn/verilog/yolo_max_pool_top 
+Command       gen_rtl done; 0.15 sec.
+Execute       syn_report -csynth -model yolo_max_pool_top -o /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/syn/report/yolo_max_pool_top_csynth.rpt 
+Command       syn_report done; 0.16 sec.
+Execute       syn_report -rtlxml -model yolo_max_pool_top -o /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/syn/report/yolo_max_pool_top_csynth.xml 
+Command       syn_report done; 0.14 sec.
+Execute       syn_report -verbosereport -model yolo_max_pool_top -o /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/yolo_max_pool_top.verbose.rpt 
+Command       syn_report done; 0.59 sec.
+Execute       db_write -model yolo_max_pool_top -f -o /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/yolo_max_pool_top.adb 
+Command       db_write done; 0.28 sec.
+Execute       gen_tb_info yolo_max_pool_top -p /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db -o /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/yolo_max_pool_top 
+Execute       export_constraint_db -f -tool general -o /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/yolo_max_pool_top.constraint.tcl 
+Execute       syn_report -designview -model yolo_max_pool_top -o /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/yolo_max_pool_top.design.xml 
+Command       syn_report done; 0.29 sec.
+Execute       get_config_rtl -disable_wave_debug 
+Execute       syn_report -wcfg -model yolo_max_pool_top -o /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/yolo_max_pool_top_dataflow_ana.wcfg 
+Execute       syn_report -protoinst -model yolo_max_pool_top -o /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/yolo_max_pool_top.protoinst 
+Execute       get_config_debug -directory 
+Execute       sc_get_clocks yolo_max_pool_top 
+Execute       get_config_export -vivado_clock 
+Execute       sc_get_portdomain yolo_max_pool_top 
+INFO-FLOW: Model list for RTL component generation: write_output yolo_max_pool_top
+INFO-FLOW: Handling components in module [write_output] ... 
+Execute       source /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/write_output.compgen.tcl 
+INFO-FLOW: Handling components in module [yolo_max_pool_top] ... 
+Execute       source /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/yolo_max_pool_top.compgen.tcl 
+INFO-FLOW: Found component yolo_max_pool_top_mul_mul_9ns_17ns_26_1_1.
+INFO-FLOW: Append model yolo_max_pool_top_mul_mul_9ns_17ns_26_1_1
+INFO-FLOW: Found component yolo_max_pool_top_line_buff_group_0_va.
+INFO-FLOW: Append model yolo_max_pool_top_line_buff_group_0_va
+INFO-FLOW: Found component yolo_max_pool_top_CTRL_BUS_s_axi.
+INFO-FLOW: Append model yolo_max_pool_top_CTRL_BUS_s_axi
+INFO-FLOW: Append model write_output
+INFO-FLOW: Append model yolo_max_pool_top
+INFO-FLOW: Generating RTL model list ...
+INFO-FLOW: All models in this session: yolo_max_pool_top_mul_mul_9ns_17ns_26_1_1 yolo_max_pool_top_line_buff_group_0_va yolo_max_pool_top_CTRL_BUS_s_axi write_output yolo_max_pool_top
+INFO-FLOW: To file: write model yolo_max_pool_top_mul_mul_9ns_17ns_26_1_1
+INFO-FLOW: To file: write model yolo_max_pool_top_line_buff_group_0_va
+INFO-FLOW: To file: write model yolo_max_pool_top_CTRL_BUS_s_axi
+INFO-FLOW: To file: write model write_output
+INFO-FLOW: To file: write model yolo_max_pool_top
+INFO-FLOW: Finished generating RTL model list.
+
+
+INFO-FLOW: RTL Generation done.
+INFO-FLOW: CAS Generation done.
+INFO-FLOW: CBC Generation done.
+INFO-FLOW: DBG:CMD: auto_generate_csynth_design
+INFO-FLOW: DBG:CMD:     auto_generate --sim-model -phase csynth_design -d /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1
+Execute       source /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD: read_platform_lib /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/global.setting.tcl
+Execute       source /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/generic/autopilot/common.gen 
+Execute         source /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/generic/autopilot/APCoreGen.gen 
+Execute       source /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/generic/autopilot/op.gen 
+Execute       source /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/generic/autopilot/op_simcore.gen 
+Execute       source /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/generic/autopilot/interface.gen 
+Execute       source /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/global.setting.tcl 
+Execute       source /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/xilinx/zynq/zynq.gen 
+Execute         source /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/xilinx/common/xilinx.gen 
+Execute           source /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/xilinx/interface/plb46.gen 
+Execute           source /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/xilinx/interface/fsl.gen 
+Execute           source /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/xilinx/interface/axi4.gen 
+Execute           source /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute             source /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/xilinx/interface/saxilite.gen 
+Execute             source /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/xilinx/interface/maxi.gen 
+Execute           source /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute           source /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute           source /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute           source /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/xilinx/ip/util.gen 
+Execute           source /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/xilinx/ip/xfft.gen 
+Execute           source /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/xilinx/ip/xfir.gen 
+Execute           source /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/xilinx/common/dsp48.gen 
+Command         ap_source done; 0.11 sec.
+Command       ap_source done; 0.11 sec.
+Execute       source /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute         source /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/xilinx/common/xilinx_fp.gen 
+INFO-FLOW: DBG:CMD:   using AESL_AUTOCG::g_clock_period=10.000 (was NA)
+INFO-FLOW: DBG:CMD:       generate_ip_cores sim=1 export=0 expOnly=0 dstVlogDir=syn/verilog
+Execute       source /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/global.setting.tcl 
+Execute       ap_part_info -name xc7z020-clg484-1 -data names -quiet 
+Execute       ap_part_info -name xc7z020-clg484-1 -data info -quiet 
+Execute       source /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/global.setting.tcl 
+Execute       source /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/global.setting.tcl 
+Execute       source /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/write_output.compgen.tcl 
+Execute       source /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/yolo_max_pool_top.compgen.tcl 
+Execute         ap_part_info -name xc7z020-clg484-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg484-1 -data info -quiet 
+INFO: [RTMG 210-278] Implementing memory 'yolo_max_pool_top_line_buff_group_0_va_ram (RAM)' using block RAMs.
+Execute         ap_part_info -name xc7z020-clg484-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg484-1 -data info -quiet 
+Execute         source ./CTRL_BUS.slave.tcl 
+Execute         is_m_axi_addr64 
+Command       ap_source done; 0.12 sec.
+INFO-FLOW: DBG:CMD:     auto_generate -export -impltomg_flag -rtl both -tool Vivado -pcore_version 1.00.a -phase csynth_design -d /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1
+Execute       source /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD: read_platform_lib /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/global.setting.tcl
+Execute       source /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/generic/autopilot/common.gen 
+Execute         source /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/generic/autopilot/APCoreGen.gen 
+Execute       source /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/generic/autopilot/op.gen 
+Execute       source /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/generic/autopilot/op_simcore.gen 
+Execute       source /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/generic/autopilot/interface.gen 
+Execute       source /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/global.setting.tcl 
+Execute       source /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/xilinx/zynq/zynq.gen 
+Execute         source /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/xilinx/common/xilinx.gen 
+Execute           source /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/xilinx/interface/plb46.gen 
+Execute           source /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/xilinx/interface/fsl.gen 
+Execute           source /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/xilinx/interface/axi4.gen 
+Execute           source /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute             source /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/xilinx/interface/saxilite.gen 
+Execute             source /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/xilinx/interface/maxi.gen 
+Execute           source /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute           source /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute           source /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute           source /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/xilinx/ip/util.gen 
+Execute           source /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/xilinx/ip/xfft.gen 
+Execute           source /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/xilinx/ip/xfir.gen 
+Execute           source /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/xilinx/common/dsp48.gen 
+Command         ap_source done; 0.13 sec.
+Command       ap_source done; 0.13 sec.
+Execute       source /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute         source /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/xilinx/common/xilinx_fp.gen 
+INFO-FLOW: DBG:CMD:       initCTypeInfo top_module=yolo_max_pool_top xml_exists=0
+Execute       source /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/yolo_max_pool_top.rtl_wrap.cfg.tcl 
+Execute       source /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/yolo_max_pool_top.rtl_wrap.cfg.tcl 
+Execute       source /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/yolo_max_pool_top.rtl_wrap.cfg.tcl 
+Execute       source /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/yolo_max_pool_top.tbgen.tcl 
+Execute       source /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/yolo_max_pool_top.tbgen.tcl 
+INFO-FLOW: DBG:CMD:       export_impl_rtl
+INFO-FLOW: DBG:CMD:       generate_ip_cores sim=0 export=0 expOnly=0 dstVlogDir=impl/.verilog
+Execute       source /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/global.setting.tcl 
+Execute       source /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/write_output.compgen.tcl 
+Execute       source /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/yolo_max_pool_top.compgen.tcl 
+INFO-FLOW: DBG:CMD:       generate_ip_cores sim=0 export=1 expOnly=1 dstVlogDir=impl/.pcores/verilog
+Execute       source /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/global.setting.tcl 
+Execute       source /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/write_output.compgen.tcl 
+Execute       source /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/yolo_max_pool_top.compgen.tcl 
+Execute         ap_part_info -name xc7z020-clg484-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg484-1 -data info -quiet 
+Execute         ap_part_info -name xc7z020-clg484-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg484-1 -data info -quiet 
+Execute         ap_part_info -name xc7z020-clg484-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg484-1 -data info -quiet 
+Execute         ap_part_info -name xc7z020-clg484-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg484-1 -data info -quiet 
+Execute         ap_part_info -name xc7z020-clg484-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg484-1 -data info -quiet 
+Execute         ap_part_info -name xc7z020-clg484-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg484-1 -data info -quiet 
+Execute       ap_part_info -name xc7z020-clg484-1 -data names -quiet 
+Execute       ap_part_info -name xc7z020-clg484-1 -data info -quiet 
+INFO-FLOW: DBG:CMD:       generate_ip_cores sim=0 export=0 expOnly=0 dstVlogDir=impl/.pcores/verilog_sim
+Execute       source /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/global.setting.tcl 
+Execute       source /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/write_output.compgen.tcl 
+Execute       source /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/yolo_max_pool_top.compgen.tcl 
+Execute       ap_part_info -name xc7z020-clg484-1 -data names -quiet 
+Execute       ap_part_info -name xc7z020-clg484-1 -data info -quiet 
+Execute       ap_part_info -name xc7z020-clg484-1 -data names -quiet 
+Execute       ap_part_info -name xc7z020-clg484-1 -data info -quiet 
+Execute       source /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/global.setting.tcl 
+Execute       ap_part_info -name xc7z020-clg484-1 -data names -quiet 
+Execute       ap_part_info -name xc7z020-clg484-1 -data info -quiet 
+Execute       source /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/yolo_max_pool_top.constraint.tcl 
+Execute       source /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/yolo_max_pool_top.tbgen.tcl 
+INFO-FLOW: DBG:CMD:       hasPcoreIpAdapter=false #gSsdmPorts=28
+INFO-FLOW: DBG:CMD: Skipping loadAnalyze_DB, #g_database=20
+INFO-FLOW: DBG:CMD:       generate_json is_phase_csynth=1 g_has_adaptors=false generate_bd_files=1 #modelList=5 #gSsdmPorts=28
+Execute       source /opt/Xilinx_2019_1/Vivado/2019.1/tps/tcl/tcllib1.11.1/fileutil/fileutil.tcl 
+Execute       source /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/global.setting.tcl 
+Execute       source /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/global.setting.tcl 
+Execute       get_config_export -xo 
+Execute       source /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/yolo_max_pool_top.tbgen.tcl 
+Execute       source /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/yolo_max_pool_top.compgen.dataonly.tcl 
+Execute       source /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/yolo_max_pool_top.compgen.dataonly.tcl 
+Execute       source /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/yolo_max_pool_top.tbgen.tcl 
+Execute       source /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/yolo_max_pool_top.tbgen.tcl 
+Execute       source /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/yolo_max_pool_top.tbgen.tcl 
+Execute       source /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/yolo_max_pool_top.tbgen.tcl 
+Execute       source /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/yolo_max_pool_top.tbgen.tcl 
+Execute       source /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/yolo_max_pool_top.tbgen.tcl 
+Execute       source /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/yolo_max_pool_top.tbgen.tcl 
+Execute       source /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/global.setting.tcl 
+Execute       get_config_sdx -target 
+Execute       source /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/yolo_max_pool_top.rtl_wrap.cfg.tcl 
+Execute       source /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/yolo_max_pool_top.compgen.dataonly.tcl 
+Execute       source /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/global.setting.tcl 
+Execute       ap_part_info -name xc7z020-clg484-1 -data names -quiet 
+Execute       ap_part_info -name xc7z020-clg484-1 -data info -quiet 
+Execute       source /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/yolo_max_pool_top.constraint.tcl 
+Execute       sc_get_clocks yolo_max_pool_top 
+Execute       ap_part_info -name xc7z020-clg484-1 -data names -quiet 
+Execute       ap_part_info -name xc7z020-clg484-1 -data info -quiet 
+Execute       source /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/global.setting.tcl 
+Execute       get_config_debug -directory 
+Execute       source /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/write_output.tbgen.tcl 
+Execute       source /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/yolo_max_pool_top.tbgen.tcl 
+Execute       get_config_sdx -target 
+Execute       get_config_sdx -profile 
+Execute       get_config_rtl -kernel_profile 
+Execute       get_config_rtl -stall_sig_gen 
+Execute       get_config_rtl -profile 
+INFO-FLOW: DBG:CMD: add_json_sdx_info kernel file does not exist, skipping opencl info: /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/kernel.internal.xml
+INFO-FLOW: DBG:CMD:       delete-temp-dirs (skipped for debug)
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:01:11 ; elapsed = 00:01:15 . Memory (MB): peak = 960.383 ; gain = 260.359 ; free physical = 2642 ; free virtual = 12204
+INFO: [VHDL 208-304] Generating VHDL RTL for yolo_max_pool_top.
+INFO: [VLOG 209-307] Generating Verilog RTL for yolo_max_pool_top.
+Command     autosyn done; 4.74 sec.
+Command   csynth_design done; 73.72 sec.
+Command ap_source done; 74.36 sec.
+Execute cleanup_all 
+INFO-FLOW: Workspace /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1 opened at Fri Jul 19 15:53:09 BST 2019
+Execute     config_clock -quiet -name default -period 10 -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+Execute     open_platform DefaultPlatform 
+Execute     import_lib /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/xilinx/zynq/zynq 
+Execute       source /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/xilinx/common/xilinx.lib 
+Execute         source /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/xilinx/interface/xilinx_interface.lib 
+Execute           source /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/xilinx/interface/plb46.lib 
+Execute           source /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/xilinx/interface/fsl.lib 
+Execute           source /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/xilinx/interface/axi4.lib 
+Execute           source /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/xilinx/interface/maxi.lib 
+Execute           source /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/xilinx/interface/saxilite.lib 
+Execute         source /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/xilinx/common/dsp48.lib 
+Execute         source /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/xilinx/ip/xfir.lib 
+Execute         source /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/xilinx/ip/xfft.lib 
+Execute         source /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/xilinx/ip/dds_compiler.lib 
+Execute       source /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/xilinx/common/xilinx.hlp 
+Execute         source /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/xilinx/common/target_info.tcl 
+Execute         source /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/xilinx/interface/maxi.hlp 
+Execute           source /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/xilinx/common/dsp48.hlp 
+Execute       source /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/xilinx/zynq/dsp48e1.hlp 
+Execute       source /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/xilinx/common/xilinx.hlp 
+Execute         source /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/xilinx/common/target_info.tcl 
+Execute         source /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/xilinx/interface/maxi.hlp 
+Execute           source /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/xilinx/common/dsp48.hlp 
+Execute     source /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/xilinx/zynq/zynq.gen 
+Execute       source /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/xilinx/common/xilinx.gen 
+Execute         source /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/xilinx/interface/plb46.gen 
+Execute         source /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/xilinx/interface/fsl.gen 
+Execute         source /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/xilinx/interface/axi4.gen 
+Execute         source /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/xilinx/interface/saxilite.gen 
+Execute           source /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/xilinx/interface/maxi.gen 
+Execute         source /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/xilinx/ip/util.gen 
+Execute         source /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/xilinx/ip/xfft.gen 
+Command         ap_source done; 0.12 sec.
+Execute         source /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/xilinx/ip/xfir.gen 
+Execute         source /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/xilinx/common/dsp48.gen 
+Command       ap_source done; 0.16 sec.
+Command     ap_source done; 0.16 sec.
+Execute     open_platform DefaultPlatform 
+Execute     import_lib /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/xilinx/zynq/zynq_fpv6 
+Execute       source /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/xilinx/common/xilinx_fp.lib 
+Execute       source /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/xilinx/common/xilinx_fp.hlp 
+Execute         source /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/xilinx/common/xilinx.hlp 
+Execute           source /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/xilinx/common/target_info.tcl 
+Execute           source /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute             source /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/xilinx/interface/maxi.hlp 
+Execute             source /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/xilinx/interface/saxilite.hlp 
+Execute           source /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/xilinx/common/dsp48.hlp 
+Execute     source /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute       source /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/xilinx/common/xilinx_fp.gen 
+Execute     set_part xc7z020-clg484-1 
+Execute       ap_part_info -name xc7z020-clg484-1 -data single -quiet 
+Command       ap_part_info done; 0.3 sec.
+Execute       ap_part_info -name xc7z020-clg484-1 -data info 
+Execute       add_library xilinx/zynq/zynq:xc7z020:-clg484:-1 
+Execute         get_default_platform 
+Execute         license_isbetapart xc7z020 
+Command         license_isbetapart done; error code: 1; 
+Execute         ap_part_info -data single -name xc7z020-clg484-1 
+Execute         ap_part_info -name xc7z020-clg484-1 -data resources 
+Execute         ap_part_info -name xc7z020-clg484-1 -data info 
+Execute         ap_part_info -name xc7z020-clg484-1 -data info 
+Execute         config_chip_info -quiet -resource {SLICE 13300} {LUT 53200} {FF 106400} {DSP48E 220} {BRAM 280} {URAM 0} 
+Execute         ap_part_info -name xc7z020-clg484-1 -data info 
+Execute         config_chip_info -quiet -speed slow 
+Execute       add_library xilinx/zynq/zynq_fpv6 
+Execute         get_default_platform 
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg484-1'
+Execute       ap_part_info -name xc7z020-clg484-1 -data info 
+Execute       get_default_platform 
+Command     set_part done; 0.39 sec.
+Execute     ap_part_info -data single -name xc7z020-clg484-1 
+Execute     ap_part_info -name xc7z020-clg484-1 -data resources 
+Execute     ap_part_info -name xc7z020-clg484-1 -data info 
+Execute     ap_part_info -name xc7z020-clg484-1 -data info 
+Execute     config_chip_info -quiet -resource {SLICE 13300} {LUT 53200} {FF 106400} {DSP48E 220} {BRAM 280} {URAM 0} 
+Execute     ap_part_info -name xc7z020-clg484-1 -data info 
+Execute     config_chip_info -quiet -speed slow 
+Execute     config_export -format=ip_catalog 
+Execute     config_export -rtl=verilog 
+Command   open_solution done; 0.61 sec.
 Execute   cosim_design 
 Execute     source /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/global.setting.tcl 
 Execute     source /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/global.setting.tcl 
@@ -749,14 +750,14 @@ Execute     ap_part_info -name xc7z020-clg484-1 -data info -quiet
 Execute     source /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/global.setting.tcl 
 Execute     source /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/yolo_max_pool_top.rtl_wrap.cfg.tcl 
 Execute     source /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/yolo_max_pool_top.tbgen.tcl 
-Execute     is_encrypted /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/tb/yolo_max_pool_tb.cpp 
-Execute     is_encrypted /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/tb/layer_output_sdk.dat 
 Execute     is_encrypted /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/tb/layer_input.dat 
-Execute     is_encrypted /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/src/yolo_stream.h 
-Execute     is_encrypted /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/src/yolo_max_pool.h 
-Execute     is_encrypted /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/src/yolo_max_pool.cpp 
-Execute     is_encrypted /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/src/yolo_fp.h 
+Execute     is_encrypted /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/tb/layer_output_sdk.dat 
+Execute     is_encrypted /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/tb/yolo_max_pool_tb.cpp 
 Execute     is_encrypted /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/src/layer_parameter.h 
+Execute     is_encrypted /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/src/yolo_fp.h 
+Execute     is_encrypted /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/src/yolo_max_pool.cpp 
+Execute     is_encrypted /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/src/yolo_max_pool.h 
+Execute     is_encrypted /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/src/yolo_stream.h 
 Execute     source /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/yolo_max_pool_top.tbgen.tcl 
 Execute     source /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/yolo_max_pool_top.tbgen.tcl 
 INFO: [COSIM 212-47] Using XSIM for RTL simulation.
@@ -765,18 +766,18 @@ Execute     ap_part_info -name xc7z020-clg484-1 -data info
 INFO-FLOW: TB processing: /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/tb/yolo_max_pool_tb.cpp /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/./sim/autowrap/testbench/yolo_max_pool_tb.cpp_pre.cpp
 Execute     tidy_31 xilinx-tb-xfmat /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/./sim/autowrap/testbench/yolo_max_pool_tb.cpp_pre.cpp std=c++11 
 INFO-FLOW: exec /opt/Xilinx_2019_1/Vivado/2019.1/lnx64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-tb-xfmat -quiet -fix-errors /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/./sim/autowrap/testbench/yolo_max_pool_tb.cpp_pre.cpp -- -std=c++11 -fhls -ferror-limit=0
-Command     tidy_31 done; 8.07 sec.
+Command     tidy_31 done; 7.8 sec.
 Execute     tidy_31 xilinx-tb31-process /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/./sim/autowrap/testbench/yolo_max_pool_tb.cpp_pre.cpp.tb.cpp std=c++11 
 INFO-FLOW: exec /opt/Xilinx_2019_1/Vivado/2019.1/lnx64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-tb31-process -quiet -fix-errors /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/./sim/autowrap/testbench/yolo_max_pool_tb.cpp_pre.cpp.tb.cpp -- -std=c++11 -fhls -ferror-limit=0
-Command     tidy_31 done; 10.07 sec.
+Command     tidy_31 done; 9.82 sec.
 Execute     ap_part_info -name xc7z020-clg484-1 -data info 
 INFO-FLOW: TB processing: /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/src/yolo_max_pool.cpp /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/./sim/autowrap/testbench/yolo_max_pool.cpp_pre.cpp
 Execute     tidy_31 xilinx-tb-xfmat /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/./sim/autowrap/testbench/yolo_max_pool.cpp_pre.cpp std=c++11 
 INFO-FLOW: exec /opt/Xilinx_2019_1/Vivado/2019.1/lnx64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-tb-xfmat -quiet -fix-errors /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/./sim/autowrap/testbench/yolo_max_pool.cpp_pre.cpp -- -std=c++11 -fhls -ferror-limit=0
-Command     tidy_31 done; 8.25 sec.
+Command     tidy_31 done; 8.01 sec.
 Execute     tidy_31 xilinx-tb31-process /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/./sim/autowrap/testbench/yolo_max_pool.cpp_pre.cpp.tb.cpp std=c++11 
 INFO-FLOW: exec /opt/Xilinx_2019_1/Vivado/2019.1/lnx64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-tb31-process -quiet -fix-errors /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/./sim/autowrap/testbench/yolo_max_pool.cpp_pre.cpp.tb.cpp -- -std=c++11 -fhls -ferror-limit=0
-Command     tidy_31 done; 8.26 sec.
+Command     tidy_31 done; 7.94 sec.
 Execute     source /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/./sim/autowrap/testbench/tb.status.tcl 
 Execute     source /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/global.setting.tcl 
 Execute     source /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/.autopilot/db/yolo_max_pool_top.rtl_wrap.cfg.tcl 
@@ -787,7 +788,7 @@ Execute     source /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool
 Execute     ap_part_info -name xc7z020-clg484-1 -data info 
 Execute     source .run_sim.tcl 
 INFO: [COSIM 212-302] Starting C TB testing ... 
-Command     ap_source done; 44.61 sec.
+Command     ap_source done; 39.14 sec.
 INFO: [COSIM 212-333] Generating C post check test bench ...
 Execute     ap_part_info -name xc7z020-clg484-1 -data info 
 INFO: [COSIM 212-12] Generating RTL test bench ...
@@ -831,13 +832,13 @@ Execute       source .sim.status.tcl
 INFO: [COSIM 212-323] Starting verilog simulation. 
 INFO: [COSIM 212-15] Starting XSIM ...
 INFO: [COSIM 212-316] Starting C post checking ...
-Command     ap_source done; 167.96 sec.
+Command     ap_source done; 160.5 sec.
 INFO: [COSIM 212-1000] *** C/RTL co-simulation finished: PASS ***
 INFO: [COSIM 212-211] II is measurable only when transaction number is greater than 1 in RTL simulation. Otherwise, they will be marked as all NA. If user wants to calculate them, please make sure there are at least 2 transactions in RTL simulation.
-Command   cosim_design done; 271.51 sec.
-Command ap_source done; 272.05 sec.
+Command   cosim_design done; 256.56 sec.
+Command ap_source done; 257.17 sec.
 Execute cleanup_all 
-INFO-FLOW: Workspace /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1 opened at Mon Jul 15 20:32:26 BST 2019
+INFO-FLOW: Workspace /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1 opened at Fri Jul 19 15:57:40 BST 2019
 Execute     config_clock -quiet -name default -period 10 -default=false 
 INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
 Execute     open_platform DefaultPlatform 
@@ -897,7 +898,7 @@ Execute     source /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/xilinx/zyn
 Execute       source /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/xilinx/common/xilinx_fp.gen 
 Execute     set_part xc7z020-clg484-1 
 Execute       ap_part_info -name xc7z020-clg484-1 -data single -quiet 
-Command       ap_part_info done; 0.3 sec.
+Command       ap_part_info done; 0.29 sec.
 Execute       ap_part_info -name xc7z020-clg484-1 -data info 
 Execute       add_library xilinx/zynq/zynq:xc7z020:-clg484:-1 
 Execute         get_default_platform 
@@ -915,7 +916,7 @@ Execute         get_default_platform
 INFO: [HLS 200-10] Setting target device to 'xc7z020-clg484-1'
 Execute       ap_part_info -name xc7z020-clg484-1 -data info 
 Execute       get_default_platform 
-Command     set_part done; 0.39 sec.
+Command     set_part done; 0.38 sec.
 Execute     ap_part_info -data single -name xc7z020-clg484-1 
 Execute     ap_part_info -name xc7z020-clg484-1 -data resources 
 Execute     ap_part_info -name xc7z020-clg484-1 -data info 
@@ -925,7 +926,7 @@ Execute     ap_part_info -name xc7z020-clg484-1 -data info
 Execute     config_chip_info -quiet -speed slow 
 Execute     config_export -format=ip_catalog 
 Execute     config_export -rtl=verilog 
-Command   open_solution done; 0.56 sec.
+Command   open_solution done; 0.54 sec.
 Execute   export_design -rtl verilog -format ip_catalog 
 Execute     get_config_export -acc 
 Execute     get_config_export -clock_margin 
@@ -978,8 +979,8 @@ Execute         source /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/xilinx
 Execute         source /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/xilinx/ip/xfft.gen 
 Execute         source /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/xilinx/ip/xfir.gen 
 Execute         source /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/xilinx/common/dsp48.gen 
-Command       ap_source done; 0.13 sec.
-Command     ap_source done; 0.13 sec.
+Command       ap_source done; 0.11 sec.
+Command     ap_source done; 0.11 sec.
 Execute     source /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/xilinx/zynq/zynq_fpv6.gen 
 Execute       source /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/xilinx/common/xilinx_fp.gen 
 INFO-FLOW: DBG:CMD:   using AESL_AUTOCG::g_clock_period=10.000 (was NA)
@@ -1158,6 +1159,6 @@ Execute       source /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/xilinx/c
 Execute     ap_part_info -name xc7z020-clg484-1 -data names -quiet 
 Execute     ap_part_info -name xc7z020-clg484-1 -data info -quiet 
 INFO-FLOW: DBG:CMD:     exec /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/impl/ip/pack.sh
-Command   export_design done; 10.69 sec.
-Command ap_source done; 11.25 sec.
+Command   export_design done; 10.37 sec.
+Command ap_source done; 10.91 sec.
 Execute cleanup_all 

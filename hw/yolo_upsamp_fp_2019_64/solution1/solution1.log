@@ -1,0 +1,252 @@
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg484-1'
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:01:04 ; elapsed = 00:01:07 . Memory (MB): peak = 892.023 ; gain = 192.000 ; free physical = 591 ; free virtual = 10032
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:01:04 ; elapsed = 00:01:07 . Memory (MB): peak = 892.023 ; gain = 192.000 ; free physical = 591 ; free virtual = 10032
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [XFORM 203-603] Inlining function 'hls::LineBuffer<1, 13, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0>, 0>::insert_bottom_row' into 'hls::LineBuffer<1, 13, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0>, 0>::insert_top' (/opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot/hls/hls_video_mem.h:883).
+INFO: [XFORM 203-603] Inlining function 'hls::LineBuffer<1, 13, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0>, 0>::insert_top' into 'yolo_upsamp_top' (yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:33).
+INFO: [XFORM 203-603] Inlining function 'hls::LineBuffer<1, 13, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0>, 0>::insert_top' into 'yolo_upsamp_top' (yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:32).
+INFO: [XFORM 203-603] Inlining function 'hls::LineBuffer<1, 13, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0>, 0>::insert_top' into 'yolo_upsamp_top' (yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:31).
+INFO: [XFORM 203-603] Inlining function 'hls::LineBuffer<1, 13, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0>, 0>::insert_top' into 'yolo_upsamp_top' (yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:30).
+INFO: [XFORM 203-603] Inlining function 'hls::LineBuffer<1, 13, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0>, 0>::getval' into 'yolo_upsamp_top' (yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:44).
+INFO: [XFORM 203-603] Inlining function 'hls::LineBuffer<1, 13, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0>, 0>::getval' into 'yolo_upsamp_top' (yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:45).
+INFO: [XFORM 203-603] Inlining function 'hls::LineBuffer<1, 13, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0>, 0>::getval' into 'yolo_upsamp_top' (yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:46).
+INFO: [XFORM 203-603] Inlining function 'hls::LineBuffer<1, 13, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0>, 0>::getval' into 'yolo_upsamp_top' (yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:47).
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:01:06 ; elapsed = 00:01:09 . Memory (MB): peak = 892.023 ; gain = 192.000 ; free physical = 536 ; free virtual = 9991
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:01:07 ; elapsed = 00:01:10 . Memory (MB): peak = 893.938 ; gain = 193.914 ; free physical = 495 ; free virtual = 9954
+INFO: [XFORM 203-1101] Packing variable 'outStream.V.data' (yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:3) into a 64-bit variable.
+INFO: [XFORM 203-1101] Packing variable 'inStream.V.data' (yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:3) into a 64-bit variable.
+INFO: [XFORM 203-101] Partitioning array 'line_buff_group_0.val.V' (yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:9) in dimension 2 completely.
+INFO: [XFORM 203-101] Partitioning array 'line_buff_group_1.val.V' (yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:10) in dimension 2 completely.
+INFO: [XFORM 203-101] Partitioning array 'line_buff_group_2.val.V' (yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:11) in dimension 2 completely.
+INFO: [XFORM 203-101] Partitioning array 'line_buff_group_3.val.V' (yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:12) in dimension 2 completely.
+INFO: [XFORM 203-11] Balancing expressions in function 'yolo_upsamp_top' (yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:3)...4 expression(s) balanced.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:01:07 ; elapsed = 00:01:11 . Memory (MB): peak = 894.000 ; gain = 193.977 ; free physical = 432 ; free virtual = 9898
+INFO: [XFORM 203-541] Flattening a loop nest 'Loop-5.1.1.1' (yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:21:23) in function 'yolo_upsamp_top'.
+INFO: [XFORM 203-541] Flattening a loop nest 'Loop-5.1.1' (yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:19:20) in function 'yolo_upsamp_top'.
+INFO: [XFORM 203-541] Flattening a loop nest 'Loop-5.1' (yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:17:22) in function 'yolo_upsamp_top'.
+INFO: [XFORM 203-541] Flattening a loop nest 'Loop-5' (yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:15:19) in function 'yolo_upsamp_top'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'line_buff_group_0.va' (yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:9).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'line_buff_group_0.va' (yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:9).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'line_buff_group_1.va' (yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:10).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'line_buff_group_1.va' (yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:10).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'line_buff_group_2.va' (yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:11).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'line_buff_group_2.va' (yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:11).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'line_buff_group_3.va' (yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:12).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'line_buff_group_3.va' (yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:12).
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:01:08 ; elapsed = 00:01:11 . Memory (MB): peak = 894.000 ; gain = 193.977 ; free physical = 417 ; free virtual = 9885
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'yolo_upsamp_top' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'yolo_upsamp_top' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 5'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 4.
+WARNING: [SCHED 204-21] Estimated clock period (10.2115ns) exceeds the target (target clock period: 10ns, clock uncertainty: 1.25ns, effective delay budget: 8.75ns).
+WARNING: [SCHED 204-21] The critical path in module 'yolo_upsamp_top' consists of the following:
+	'phi' operation ('indvar_flatten72', yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:17) with incoming values : ('select_ln17_5', yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:17) [94]  (0 ns)
+	'icmp' operation ('icmp_ln17', yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:17) [114]  (1.77 ns)
+	'xor' operation ('xor_ln52', yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:52) [118]  (0.978 ns)
+	'and' operation ('and_ln52_10', yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:52) [130]  (0.978 ns)
+	'or' operation ('or_ln17', yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:17) [133]  (0.978 ns)
+	'select' operation ('select_ln17', yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:17) [134]  (1.02 ns)
+	'add' operation ('col_idx', yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:19) [148]  (1.74 ns)
+	'select' operation ('select_ln52_4', yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:52) [154]  (1.02 ns)
+	blocking operation 1.72 ns on control path)
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 71.75 seconds; current allocated memory: 219.920 MB.
+INFO: [HLS 200-434] Only 1 loops out of a total 5 loops have been pipelined in this design.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101]==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 2ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg484-1'
+INFO: [HLS 200-435] Setting 'config_sdx -optimization_level' configuration: config_export -vivado_optimization_level=2
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: config_export -vivado_optimization_level=2
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: set_clock_uncertainty default
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 1.25ns.
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+WARNING: [HLS 200-483] The 'config_sdx -optimization_level' command is deprecated and will be removed in a future release. Use 'config_export -vivado_optimization_level' as its replacement.
+INFO: [HLS 200-435] Setting 'config_sdx -optimization_level' configuration: config_export -vivado_optimization_level=2
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: config_export -vivado_optimization_level=2
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: set_clock_uncertainty default
+WARNING: [HLS 200-484] The 'config_sdx -optimization_level' command is deprecated and will be removed in a future release.
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 2ns.
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:01:03 ; elapsed = 00:01:05 . Memory (MB): peak = 828.023 ; gain = 128.000 ; free physical = 583 ; free virtual = 9958
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:01:03 ; elapsed = 00:01:05 . Memory (MB): peak = 828.023 ; gain = 128.000 ; free physical = 583 ; free virtual = 9958
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [XFORM 203-603] Inlining function 'hls::LineBuffer<1, 13, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0>, 0>::insert_bottom_row' into 'hls::LineBuffer<1, 13, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0>, 0>::insert_top' (/opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot/hls/hls_video_mem.h:883).
+INFO: [XFORM 203-603] Inlining function 'hls::LineBuffer<1, 13, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0>, 0>::insert_top' into 'yolo_upsamp_top' (yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:33).
+INFO: [XFORM 203-603] Inlining function 'hls::LineBuffer<1, 13, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0>, 0>::insert_top' into 'yolo_upsamp_top' (yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:32).
+INFO: [XFORM 203-603] Inlining function 'hls::LineBuffer<1, 13, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0>, 0>::insert_top' into 'yolo_upsamp_top' (yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:31).
+INFO: [XFORM 203-603] Inlining function 'hls::LineBuffer<1, 13, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0>, 0>::insert_top' into 'yolo_upsamp_top' (yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:30).
+INFO: [XFORM 203-603] Inlining function 'hls::LineBuffer<1, 13, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0>, 0>::getval' into 'yolo_upsamp_top' (yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:44).
+INFO: [XFORM 203-603] Inlining function 'hls::LineBuffer<1, 13, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0>, 0>::getval' into 'yolo_upsamp_top' (yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:45).
+INFO: [XFORM 203-603] Inlining function 'hls::LineBuffer<1, 13, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0>, 0>::getval' into 'yolo_upsamp_top' (yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:46).
+INFO: [XFORM 203-603] Inlining function 'hls::LineBuffer<1, 13, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0>, 0>::getval' into 'yolo_upsamp_top' (yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:47).
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:01:05 ; elapsed = 00:01:07 . Memory (MB): peak = 892.023 ; gain = 192.000 ; free physical = 535 ; free virtual = 9919
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:01:05 ; elapsed = 00:01:07 . Memory (MB): peak = 895.938 ; gain = 195.914 ; free physical = 493 ; free virtual = 9880
+INFO: [XFORM 203-1101] Packing variable 'outStream.V.data' (yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:3) into a 64-bit variable.
+INFO: [XFORM 203-1101] Packing variable 'inStream.V.data' (yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:3) into a 64-bit variable.
+INFO: [XFORM 203-101] Partitioning array 'line_buff_group_0.val.V' (yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:9) in dimension 2 completely.
+INFO: [XFORM 203-101] Partitioning array 'line_buff_group_1.val.V' (yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:10) in dimension 2 completely.
+INFO: [XFORM 203-101] Partitioning array 'line_buff_group_2.val.V' (yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:11) in dimension 2 completely.
+INFO: [XFORM 203-101] Partitioning array 'line_buff_group_3.val.V' (yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:12) in dimension 2 completely.
+INFO: [XFORM 203-11] Balancing expressions in function 'yolo_upsamp_top' (yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:3)...4 expression(s) balanced.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:01:06 ; elapsed = 00:01:08 . Memory (MB): peak = 966.000 ; gain = 265.977 ; free physical = 432 ; free virtual = 9825
+INFO: [XFORM 203-541] Flattening a loop nest 'Loop-5.1.1.1' (yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:21:23) in function 'yolo_upsamp_top'.
+INFO: [XFORM 203-541] Flattening a loop nest 'Loop-5.1.1' (yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:19:20) in function 'yolo_upsamp_top'.
+INFO: [XFORM 203-541] Flattening a loop nest 'Loop-5.1' (yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:17:22) in function 'yolo_upsamp_top'.
+INFO: [XFORM 203-541] Flattening a loop nest 'Loop-5' (yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:15:19) in function 'yolo_upsamp_top'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'line_buff_group_0.va' (yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:9).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'line_buff_group_0.va' (yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:9).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'line_buff_group_1.va' (yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:10).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'line_buff_group_1.va' (yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:10).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'line_buff_group_2.va' (yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:11).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'line_buff_group_2.va' (yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:11).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'line_buff_group_3.va' (yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:12).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'line_buff_group_3.va' (yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:12).
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:01:07 ; elapsed = 00:01:09 . Memory (MB): peak = 966.000 ; gain = 265.977 ; free physical = 417 ; free virtual = 9812
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'yolo_upsamp_top' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'yolo_upsamp_top' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 5'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 5.
+WARNING: [SCHED 204-21] Estimated clock period (9.634ns) exceeds the target (target clock period: 10ns, clock uncertainty: 2ns, effective delay budget: 8ns).
+WARNING: [SCHED 204-21] The critical path in module 'yolo_upsamp_top' consists of the following:
+	'mul' operation of DSP[187] ('mul_ln203_1', /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot/hls/hls_video_mem.h:765->/opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot/hls/hls_video_mem.h:883->yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:30) [186]  (3.36 ns)
+	'add' operation of DSP[187] ('add_ln203_1', /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot/hls/hls_video_mem.h:765->/opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot/hls/hls_video_mem.h:883->yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:30) [187]  (3.02 ns)
+	'getelementptr' operation ('line_buff_group_0_va_1', /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot/hls/hls_video_mem.h:765->/opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot/hls/hls_video_mem.h:883->yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:30) [189]  (0 ns)
+	'store' operation ('line_buff_group_0_va_1_write_ln765', /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot/hls/hls_video_mem.h:765->/opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot/hls/hls_video_mem.h:883->yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:30) of variable 'curr_input.data.sub_data_0.V', yolo_upsamp_fp_2019_64/src/yolo_stream.h:8->yolo_upsamp_fp_2019_64/src/yolo_stream.h:16->yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:29 on array 'line_buff_group_0.val[0].V', yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:9 [193]  (3.25 ns)
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 2ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg484-1'
+INFO: [HLS 200-435] Setting 'config_sdx -optimization_level' configuration: config_export -vivado_optimization_level=2
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: config_export -vivado_optimization_level=2
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: set_clock_uncertainty default
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 1.25ns.
+WARNING: [HLS 200-483] The 'config_sdx -optimization_level' command is deprecated and will be removed in a future release. Use 'config_export -vivado_optimization_level' as its replacement.
+INFO: [HLS 200-435] Setting 'config_sdx -optimization_level' configuration: config_export -vivado_optimization_level=2
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: config_export -vivado_optimization_level=2
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: set_clock_uncertainty default
+WARNING: [HLS 200-484] The 'config_sdx -optimization_level' command is deprecated and will be removed in a future release.
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 2ns.
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:01:05 ; elapsed = 00:01:08 . Memory (MB): peak = 892.023 ; gain = 192.000 ; free physical = 586 ; free virtual = 9935
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:01:05 ; elapsed = 00:01:08 . Memory (MB): peak = 892.023 ; gain = 192.000 ; free physical = 586 ; free virtual = 9935
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [XFORM 203-603] Inlining function 'hls::LineBuffer<1, 13, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0>, 0>::insert_bottom_row' into 'hls::LineBuffer<1, 13, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0>, 0>::insert_top' (/opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot/hls/hls_video_mem.h:883).
+INFO: [XFORM 203-603] Inlining function 'hls::LineBuffer<1, 13, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0>, 0>::insert_top' into 'yolo_upsamp_top' (yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:33).
+INFO: [XFORM 203-603] Inlining function 'hls::LineBuffer<1, 13, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0>, 0>::insert_top' into 'yolo_upsamp_top' (yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:32).
+INFO: [XFORM 203-603] Inlining function 'hls::LineBuffer<1, 13, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0>, 0>::insert_top' into 'yolo_upsamp_top' (yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:31).
+INFO: [XFORM 203-603] Inlining function 'hls::LineBuffer<1, 13, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0>, 0>::insert_top' into 'yolo_upsamp_top' (yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:30).
+INFO: [XFORM 203-603] Inlining function 'hls::LineBuffer<1, 13, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0>, 0>::getval' into 'yolo_upsamp_top' (yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:44).
+INFO: [XFORM 203-603] Inlining function 'hls::LineBuffer<1, 13, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0>, 0>::getval' into 'yolo_upsamp_top' (yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:45).
+INFO: [XFORM 203-603] Inlining function 'hls::LineBuffer<1, 13, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0>, 0>::getval' into 'yolo_upsamp_top' (yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:46).
+INFO: [XFORM 203-603] Inlining function 'hls::LineBuffer<1, 13, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0>, 0>::getval' into 'yolo_upsamp_top' (yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:47).
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:01:07 ; elapsed = 00:01:09 . Memory (MB): peak = 892.023 ; gain = 192.000 ; free physical = 538 ; free virtual = 9894
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:01:07 ; elapsed = 00:01:10 . Memory (MB): peak = 893.938 ; gain = 193.914 ; free physical = 496 ; free virtual = 9857
+INFO: [XFORM 203-1101] Packing variable 'outStream.V.data' (yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:3) into a 64-bit variable.
+INFO: [XFORM 203-1101] Packing variable 'inStream.V.data' (yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:3) into a 64-bit variable.
+INFO: [XFORM 203-101] Partitioning array 'line_buff_group_0.val.V' (yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:9) in dimension 2 completely.
+INFO: [XFORM 203-101] Partitioning array 'line_buff_group_1.val.V' (yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:10) in dimension 2 completely.
+INFO: [XFORM 203-101] Partitioning array 'line_buff_group_2.val.V' (yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:11) in dimension 2 completely.
+INFO: [XFORM 203-101] Partitioning array 'line_buff_group_3.val.V' (yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:12) in dimension 2 completely.
+INFO: [XFORM 203-11] Balancing expressions in function 'yolo_upsamp_top' (yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:3)...4 expression(s) balanced.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:01:08 ; elapsed = 00:01:10 . Memory (MB): peak = 966.000 ; gain = 265.977 ; free physical = 434 ; free virtual = 9801
+INFO: [XFORM 203-541] Flattening a loop nest 'Loop-5.1.1.1' (yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:21:23) in function 'yolo_upsamp_top'.
+INFO: [XFORM 203-541] Flattening a loop nest 'Loop-5.1.1' (yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:19:20) in function 'yolo_upsamp_top'.
+INFO: [XFORM 203-541] Flattening a loop nest 'Loop-5.1' (yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:17:22) in function 'yolo_upsamp_top'.
+INFO: [XFORM 203-541] Flattening a loop nest 'Loop-5' (yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:15:19) in function 'yolo_upsamp_top'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'line_buff_group_0.va' (yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:9).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'line_buff_group_0.va' (yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:9).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'line_buff_group_1.va' (yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:10).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'line_buff_group_1.va' (yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:10).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'line_buff_group_2.va' (yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:11).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'line_buff_group_2.va' (yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:11).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'line_buff_group_3.va' (yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:12).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'line_buff_group_3.va' (yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:12).
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:01:09 ; elapsed = 00:01:11 . Memory (MB): peak = 966.000 ; gain = 265.977 ; free physical = 420 ; free virtual = 9788
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'yolo_upsamp_top' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'yolo_upsamp_top' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 5'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 5.
+WARNING: [SCHED 204-21] Estimated clock period (9.634ns) exceeds the target (target clock period: 10ns, clock uncertainty: 2ns, effective delay budget: 8ns).
+WARNING: [SCHED 204-21] The critical path in module 'yolo_upsamp_top' consists of the following:
+	'mul' operation of DSP[187] ('mul_ln203_1', /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot/hls/hls_video_mem.h:765->/opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot/hls/hls_video_mem.h:883->yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:30) [186]  (3.36 ns)
+	'add' operation of DSP[187] ('add_ln203_1', /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot/hls/hls_video_mem.h:765->/opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot/hls/hls_video_mem.h:883->yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:30) [187]  (3.02 ns)
+	'getelementptr' operation ('line_buff_group_0_va_1', /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot/hls/hls_video_mem.h:765->/opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot/hls/hls_video_mem.h:883->yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:30) [189]  (0 ns)
+	'store' operation ('line_buff_group_0_va_1_write_ln765', /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot/hls/hls_video_mem.h:765->/opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot/hls/hls_video_mem.h:883->yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:30) of variable 'curr_input.data.sub_data_0.V', yolo_upsamp_fp_2019_64/src/yolo_stream.h:8->yolo_upsamp_fp_2019_64/src/yolo_stream.h:16->yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:29 on array 'line_buff_group_0.val[0].V', yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:9 [193]  (3.25 ns)
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================

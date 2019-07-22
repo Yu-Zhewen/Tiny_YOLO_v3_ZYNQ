@@ -98,8 +98,6 @@ void XYolo_conv_top_Set_input_w_V(XYolo_conv_top *InstancePtr, u32 Data);
 u32 XYolo_conv_top_Get_input_w_V(XYolo_conv_top *InstancePtr);
 void XYolo_conv_top_Set_real_input_h_V(XYolo_conv_top *InstancePtr, u32 Data);
 u32 XYolo_conv_top_Get_real_input_h_V(XYolo_conv_top *InstancePtr);
-void XYolo_conv_top_Set_leaky_V(XYolo_conv_top *InstancePtr, u32 Data);
-u32 XYolo_conv_top_Get_leaky_V(XYolo_conv_top *InstancePtr);
 void XYolo_conv_top_Set_fold_win_area_V(XYolo_conv_top *InstancePtr, u32 Data);
 u32 XYolo_conv_top_Get_fold_win_area_V(XYolo_conv_top *InstancePtr);
 

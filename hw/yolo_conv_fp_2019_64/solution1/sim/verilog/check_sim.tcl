@@ -101,7 +101,6 @@ proc check_tvin_file {} {
          "c.yolo_conv_top.autotvin_input_h_V.dat"
          "c.yolo_conv_top.autotvin_input_w_V.dat"
          "c.yolo_conv_top.autotvin_real_input_h_V.dat"
-         "c.yolo_conv_top.autotvin_leaky_V.dat"
          "c.yolo_conv_top.autotvin_fold_win_area_V.dat"
          "c.yolo_conv_top.autotvout_outStream_V_data.dat"
          "c.yolo_conv_top.autotvout_outStream_V_keep_V.dat"

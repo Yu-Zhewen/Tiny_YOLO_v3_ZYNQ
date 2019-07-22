@@ -21,51 +21,29 @@ void yolo_max_pool_top(yolo_quad_stream &inStream, yolo_quad_stream &outStream,
 	line_buff_type line_buff_group_2[MAX_KERNEL_NUM/4];
 	line_buff_type line_buff_group_3[MAX_KERNEL_NUM/4];
 
-//	window_type window_group_0[MAX_KERNEL_NUM/4];
-//#pragma HLS ARRAY_PARTITION variable=window_group_0 complete dim=1
-//	window_type window_group_1[MAX_KERNEL_NUM/4];
-//#pragma HLS ARRAY_PARTITION variable=window_group_1 complete dim=1
-//	window_type window_group_2[MAX_KERNEL_NUM/4];
-//#pragma HLS ARRAY_PARTITION variable=window_group_2 complete dim=1
-//	window_type window_group_3[MAX_KERNEL_NUM/4];
-//#pragma HLS ARRAY_PARTITION variable=window_group_3 complete dim=1
-//
-//
-//	fp_data_type val_output_0[MAX_KERNEL_NUM/4];
-//#pragma HLS ARRAY_PARTITION variable=val_output_0 complete dim=1
-//	fp_data_type val_output_1[MAX_KERNEL_NUM/4];
-//#pragma HLS ARRAY_PARTITION variable=val_output_1 complete dim=1
-//	fp_data_type val_output_2[MAX_KERNEL_NUM/4];
-//#pragma HLS ARRAY_PARTITION variable=val_output_2 complete dim=1
-//	fp_data_type val_output_3[MAX_KERNEL_NUM/4];
-//#pragma HLS ARRAY_PARTITION variable=val_output_3 complete dim=1
-
-
-
-
 
 	quad_fp_side_channel curr_input;
 
-	for(ap_uint<9> out_row=0;out_row<output_h;out_row++)
+	for(int out_row=0;out_row<output_h;out_row++)
 	{
 #pragma HLS LOOP_TRIPCOUNT min=208 max=208 avg=208
-	for(ap_uint<2> row_stride=0;row_stride<stride;row_stride++)
+	for(int row_stride=0;row_stride<stride;row_stride++)
 	{
 #pragma HLS LOOP_TRIPCOUNT min=2 max=2 avg=2
-		for(ap_uint<9> out_col=0;out_col<output_w;out_col++)
+		for(int out_col=0;out_col<output_w;out_col++)
 		{
 #pragma HLS LOOP_TRIPCOUNT min=208 max=208 avg=208
-		for(ap_uint<2> col_stride=0;col_stride<stride;col_stride++)
+		for(int col_stride=0;col_stride<stride;col_stride++)
 		{
 #pragma HLS LOOP_TRIPCOUNT min=2 max=2 avg=2
-			for(ap_uint<MAX_FOLD_CH_BIT> input_ch_idx=0;input_ch_idx<input_fold_ch;input_ch_idx++)
+			for(int input_ch_idx=0;input_ch_idx<input_fold_ch;input_ch_idx++)
 			{
 #pragma HLS PIPELINE
 #pragma HLS LOOP_TRIPCOUNT min=4 max=4 avg=4
 
-				ap_uint<9>  row_idx = out_row*stride+row_stride;
-				ap_uint<9>  col_idx = out_col*stride+col_stride;
-				ap_uint<9>  conv_count;
+				int  row_idx = out_row*stride+row_stride;
+				int  col_idx = out_col*stride+col_stride;
+				int  conv_count;
 
 				if((row_idx>KERNEL_DIM-2)&&(col_idx>KERNEL_DIM-2))
 					conv_count = col_idx - (KERNEL_DIM-1);
@@ -143,7 +121,7 @@ void yolo_max_pool_top(yolo_quad_stream &inStream, yolo_quad_stream &outStream,
 }
 }}
 
-void yolo_line_buffer(fp_data_type curr_data, line_buff_type *line_buff, ap_uint<9> col_idx)
+void yolo_line_buffer(fp_data_type curr_data, line_buff_type *line_buff, int col_idx)
 {
 
 	line_buff->shift_up(col_idx);
@@ -151,13 +129,13 @@ void yolo_line_buffer(fp_data_type curr_data, line_buff_type *line_buff, ap_uint
 
 }
 
-window_type slide_window(ap_uint<9> conv_count, line_buff_type *line_buff)
+window_type slide_window(int conv_count, line_buff_type *line_buff)
 {
 	window_type kernel_window;
 
-	for(ap_uint<2> win_row=0; win_row < KERNEL_DIM; win_row++)
+	for(int win_row=0; win_row < KERNEL_DIM; win_row++)
 	{
-		for(ap_uint<2> win_col=0; win_col < KERNEL_DIM; win_col++)
+		for(int win_col=0; win_col < KERNEL_DIM; win_col++)
 		{
 			fp_data_type val = (fp_data_type)line_buff->getval(win_row,win_col+conv_count);
 			kernel_window.insert(val,win_row,win_col);
@@ -170,9 +148,9 @@ window_type slide_window(ap_uint<9> conv_count, line_buff_type *line_buff)
 fp_data_type window_max_pool(window_type window)
 {
 	fp_data_type max = -FP_MAX;
-	for(ap_uint<2> win_row=0; win_row < KERNEL_DIM; win_row++)
+	for(int win_row=0; win_row < KERNEL_DIM; win_row++)
 	{
-		for(ap_uint<2> win_col=0; win_col < KERNEL_DIM; win_col++)
+		for(int win_col=0; win_col < KERNEL_DIM; win_col++)
 		{
 			fp_data_type val = window.getval(win_row,win_col);
 			if(val>max)

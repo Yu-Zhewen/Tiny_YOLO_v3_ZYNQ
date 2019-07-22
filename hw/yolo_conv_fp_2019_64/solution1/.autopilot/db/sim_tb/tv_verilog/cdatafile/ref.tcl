@@ -1,11 +1,11 @@
 set depth_list {
-{inStream_V_data 1812}
-{inStream_V_keep_V 1812}
-{inStream_V_strb_V 1812}
-{inStream_V_user_V 1812}
-{inStream_V_last_V 1812}
-{inStream_V_id_V 1812}
-{inStream_V_dest_V 1812}
+{inStream_V_data 1808}
+{inStream_V_keep_V 1808}
+{inStream_V_strb_V 1808}
+{inStream_V_user_V 1808}
+{inStream_V_last_V 1808}
+{inStream_V_id_V 1808}
+{inStream_V_dest_V 1808}
 {outStream_V_data 4992}
 {outStream_V_keep_V 4992}
 {outStream_V_strb_V 4992}
@@ -20,7 +20,6 @@ set depth_list {
 {input_h_V 1}
 {input_w_V 1}
 {real_input_h_V 1}
-{leaky_V 1}
 {fold_win_area_V 1}
 }
 set trans_num 1

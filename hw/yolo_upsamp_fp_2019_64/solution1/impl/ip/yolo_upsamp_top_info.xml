@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project>
+  <core name="" type="" target="">
+    <kernel name="yolo_upsamp_top" language="c" vlnv="xilinx.com:hls:yolo_upsamp_top:1.0" attributes="" hash="" preferredWorkGroupSizeMultiple="0" workGroupSize="1" debug="false" interrupt="true">
+      <port name="S_AXI_CTRL_BUS" mode="slave" range="0x1000" portType="addressable" base="0x00000000"/>
+      <compileWorkGroupSize x="1" y="1" z="1"/>
+    </kernel>
+  </core>
+</project>

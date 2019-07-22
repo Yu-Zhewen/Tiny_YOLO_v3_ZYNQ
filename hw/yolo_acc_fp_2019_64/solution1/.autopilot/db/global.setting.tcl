@@ -13,7 +13,7 @@ set FftOrFirFlag 0
 set NbRWValue 0
 set intNbAccess 0
 set NewDSPMapping 1
-set HasDSPModule 0
+set HasDSPModule 1
 set ResetLevelFlag 0
 set ResetStyle control
 set ResetSyncFlag 1
@@ -43,12 +43,12 @@ set TargetInfo xc7z020:-clg484:-1
 set SourceFiles {sc {} c ../src/yolo_acc.cpp}
 set SourceFlags {sc {} c {{}}}
 set DirectiveFile /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_acc_fp_2019_64/solution1/solution1.directive
-set TBFiles {verilog ../tb/yolo_acc_tb.cpp bc ../tb/yolo_acc_tb.cpp vhdl ../tb/yolo_acc_tb.cpp sc ../tb/yolo_acc_tb.cpp cas ../tb/yolo_acc_tb.cpp c {}}
+set TBFiles {verilog {../tb/yolo_acc_tb.cpp ../tb/weight_file.h ../tb/layer_output_sdk.dat ../tb/layer_input.dat} bc {../tb/yolo_acc_tb.cpp ../tb/weight_file.h ../tb/layer_output_sdk.dat ../tb/layer_input.dat} sc {../tb/yolo_acc_tb.cpp ../tb/weight_file.h ../tb/layer_output_sdk.dat ../tb/layer_input.dat} vhdl {../tb/yolo_acc_tb.cpp ../tb/weight_file.h ../tb/layer_output_sdk.dat ../tb/layer_input.dat} c {} cas {../tb/yolo_acc_tb.cpp ../tb/weight_file.h ../tb/layer_output_sdk.dat ../tb/layer_input.dat}}
 set SpecLanguage C
 set TVInFiles {bc {} c {} sc {} cas {} vhdl {} verilog {}}
 set TVOutFiles {bc {} c {} sc {} cas {} vhdl {} verilog {}}
-set TBTops {verilog {} bc {} vhdl {} sc {} cas {} c {}}
-set TBInstNames {verilog {} bc {} vhdl {} sc {} cas {} c {}}
+set TBTops {verilog {} bc {} sc {} vhdl {} c {} cas {}}
+set TBInstNames {verilog {} bc {} sc {} vhdl {} c {} cas {}}
 set XDCFiles {}
 set ExtraGlobalOptions {"area_timing" 1 "clock_gate" 1 "impl_flow" map "power_gate" 0}
 set TBTVFileNotFound {}

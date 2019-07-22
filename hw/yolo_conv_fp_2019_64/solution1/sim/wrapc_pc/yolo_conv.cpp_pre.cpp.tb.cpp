@@ -103287,23 +103287,20 @@ typedef struct local_weight_type
 void yolo_conv_top(yolo_quad_stream &inStream, yolo_quad_stream &outStream,
              ap_uint<(5+1)> output_ch, ap_uint<(5+1)> input_ch, ap_uint<(5-2+1)> fold_output_ch, ap_uint<(5-2+1)> fold_input_ch,
              ap_uint<9> input_h, ap_uint<9> input_w, ap_uint<9> real_input_h,
-             ap_uint<1> leaky,
        ap_uint<3> fold_win_area);
 fp_data_type post_process(fp_data_type sub0_val_output,fp_data_type sub1_val_output,fp_data_type sub2_val_output,fp_data_type sub3_val_output,
-            bool acc_flag,ap_uint<1> leaky,
-      fp_weight_type bias,ap_uint<(5-2+1)> input_ch_idx,fp_data_type val_output);
-void yolo_line_buffer(fp_data_type curr_data, line_buff_type *line_buff, ap_uint<9> col_idx);
-window_type slide_window(ap_uint<9> conv_count, line_buff_type *line_buff, ap_uint<3> kernel_dim);
-fp_data_type window_macc(window_type window, local_weight_type weight, ap_uint<3> kernel_dim);
+        int input_ch_idx,fp_data_type val_output);
+void yolo_line_buffer(fp_data_type curr_data, line_buff_type *line_buff, int col_idx);
+window_type slide_window(int conv_count, line_buff_type *line_buff);
+fp_data_type window_macc(window_type window, local_weight_type weight);
 void write_output(fp_data_type val_output, yolo_inter_stream &out_stream);
-void out_stream_merge(yolo_inter_stream out_stream_group[32], yolo_quad_stream &outStream, ap_uint<(5-2+1)> input_ch_idx,quad_fp_side_channel curr_input,ap_uint<1> last,ap_uint<(5+1)> output_ch,ap_uint<(5-2+1)> fold_output_ch );
+void out_stream_merge(yolo_inter_stream out_stream_group[32], yolo_quad_stream &outStream, int input_ch_idx,quad_fp_side_channel curr_input,ap_uint<1> last,int output_ch,int fold_output_ch );
 # 2 "/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_2019_64/src/yolo_conv.cpp" 2
 
 
 void yolo_conv_top(yolo_quad_stream &inStream, yolo_quad_stream &outStream,
              ap_uint<(5+1)> output_ch, ap_uint<(5+1)> input_ch, ap_uint<(5-2+1)> fold_output_ch, ap_uint<(5-2+1)> fold_input_ch,
              ap_uint<9> input_h, ap_uint<9> input_w, ap_uint<9> real_input_h,
-             ap_uint<1> leaky,
        ap_uint<3> fold_win_area)
 {
 #pragma HLS INTERFACE s_axilite port=fold_input_ch bundle=CTRL_BUS
@@ -103312,7 +103309,7 @@ void yolo_conv_top(yolo_quad_stream &inStream, yolo_quad_stream &outStream,
 #pragma HLS INTERFACE s_axilite port=output_ch bundle=CTRL_BUS
 #pragma HLS INTERFACE s_axilite port=fold_win_area bundle=CTRL_BUS
 
-#pragma HLS INTERFACE s_axilite port=leaky bundle=CTRL_BUS
+
 #pragma HLS INTERFACE s_axilite port=real_input_h bundle=CTRL_BUS
 #pragma HLS INTERFACE s_axilite port=input_w bundle=CTRL_BUS
 #pragma HLS INTERFACE s_axilite port=input_h bundle=CTRL_BUS
@@ -103331,25 +103328,25 @@ void yolo_conv_top(yolo_quad_stream &inStream, yolo_quad_stream &outStream,
 
  fp_data_type val_output[32];
 #pragma HLS ARRAY_PARTITION variable=val_output complete dim=1
-# 45 "/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_2019_64/src/yolo_conv.cpp"
+
  quad_fp_side_channel curr_input;
 
  local_weight_type local_mem_group[32][32];
 #pragma HLS ARRAY_PARTITION variable=local_mem_group block factor=4 dim=1
 #pragma HLS ARRAY_PARTITION variable=local_mem_group complete dim=3
 
- fp_weight_type kernel_bias_fp[32];
-#pragma HLS ARRAY_PARTITION variable=kernel_bias_fp block factor=4 dim=1
 
 
 
- for(ap_uint<(5+1)> k=0; k<output_ch; k++)
+
+
+ for(int k=0; k<output_ch; k++)
  {
 #pragma HLS LOOP_TRIPCOUNT min=16 max=16
-  for(ap_uint<(5+1)> i=0;i<input_ch;i++)
+  for(int i=0;i<input_ch;i++)
   {
 #pragma HLS LOOP_TRIPCOUNT min=3 max=3
-   for(ap_uint<3> j=0; j<fold_win_area; j++)
+   for(int j=0; j<fold_win_area; j++)
    {
 #pragma HLS PIPELINE
 #pragma HLS LOOP_TRIPCOUNT min=3 max=3
@@ -103365,32 +103362,20 @@ void yolo_conv_top(yolo_quad_stream &inStream, yolo_quad_stream &outStream,
 
   }
  }
-
-
- for(ap_uint<(5-2+1)> i=0;i<fold_output_ch;i++)
- {
-#pragma HLS LOOP_TRIPCOUNT min=4 max=4
-#pragma HLS PIPELINE
-  curr_input = inStream.read();
-  kernel_bias_fp[4*i] = curr_input.data.sub_data_0;
-  kernel_bias_fp[4*i+1] = curr_input.data.sub_data_1;
-  kernel_bias_fp[4*i+2] = curr_input.data.sub_data_2;
-  kernel_bias_fp[4*i+3] = curr_input.data.sub_data_3;
- }
-
- for(ap_uint<9> row_idx=0;row_idx<input_h+1;row_idx++)
+# 81 "/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_2019_64/src/yolo_conv.cpp"
+ for(int row_idx=0;row_idx<input_h+1;row_idx++)
 
  {
 #pragma HLS LOOP_TRIPCOUNT min=419 max=419
-  for(ap_uint<9> col_idx=0;col_idx<input_w;col_idx++)
+  for(int col_idx=0;col_idx<input_w;col_idx++)
   {
 #pragma HLS LOOP_TRIPCOUNT min=418 max=418
-   for(ap_uint<(5-2+1)> input_ch_idx=0;input_ch_idx<fold_input_ch;input_ch_idx++)
+   for(int input_ch_idx=0;input_ch_idx<fold_input_ch;input_ch_idx++)
    {
 #pragma HLS PIPELINE
 #pragma HLS LOOP_TRIPCOUNT min=1 max=1
 
-    ap_uint<9> conv_row_count=0,conv_col_count=0;
+    int conv_row_count=0,conv_col_count=0;
 
 
     if((row_idx>3 -2)&&(col_idx>3 -2))
@@ -103435,14 +103420,14 @@ void yolo_conv_top(yolo_quad_stream &inStream, yolo_quad_stream &outStream,
      {
       window_type kernel_window_0, kernel_window_1, kernel_window_2, kernel_window_3;
 
-      kernel_window_0 = slide_window(conv_col_count,&line_buff_group_0[input_ch_idx],3);
-      kernel_window_1 = slide_window(conv_col_count,&line_buff_group_1[input_ch_idx],3);
-      kernel_window_2 = slide_window(conv_col_count,&line_buff_group_2[input_ch_idx],3);
-      kernel_window_3 = slide_window(conv_col_count,&line_buff_group_3[input_ch_idx],3);
+      kernel_window_0 = slide_window(conv_col_count,&line_buff_group_0[input_ch_idx]);
+      kernel_window_1 = slide_window(conv_col_count,&line_buff_group_1[input_ch_idx]);
+      kernel_window_2 = slide_window(conv_col_count,&line_buff_group_2[input_ch_idx]);
+      kernel_window_3 = slide_window(conv_col_count,&line_buff_group_3[input_ch_idx]);
 
 
 
-      for(ap_uint<(5+1)> kernel_idx=0; kernel_idx<32; kernel_idx++)
+      for(int kernel_idx=0; kernel_idx<32; kernel_idx++)
       {
 
        fp_data_type sub0_val_output;
@@ -103451,20 +103436,19 @@ void yolo_conv_top(yolo_quad_stream &inStream, yolo_quad_stream &outStream,
        fp_data_type sub3_val_output;
 
 
-       sub0_val_output = window_macc(kernel_window_0,local_mem_group[kernel_idx][4*input_ch_idx],3);
-       sub1_val_output = window_macc(kernel_window_1,local_mem_group[kernel_idx][4*input_ch_idx+1],3);
-       sub2_val_output = window_macc(kernel_window_2,local_mem_group[kernel_idx][4*input_ch_idx+2],3);
+       sub0_val_output = window_macc(kernel_window_0,local_mem_group[kernel_idx][4*input_ch_idx]);
+       sub1_val_output = window_macc(kernel_window_1,local_mem_group[kernel_idx][4*input_ch_idx+1]);
+       sub2_val_output = window_macc(kernel_window_2,local_mem_group[kernel_idx][4*input_ch_idx+2]);
        if(input_ch==3)
        {
         sub3_val_output = 0;
        }
        else
        {
-        sub3_val_output = window_macc(kernel_window_3,local_mem_group[kernel_idx][4*input_ch_idx+3],3);
+        sub3_val_output = window_macc(kernel_window_3,local_mem_group[kernel_idx][4*input_ch_idx+3]);
        }
        val_output[kernel_idx]=post_process(sub0_val_output,sub1_val_output,sub2_val_output,sub3_val_output,
-                   input_ch_idx == fold_input_ch-1,leaky,
-                kernel_bias_fp[kernel_idx],input_ch_idx,val_output[kernel_idx]);
+                input_ch_idx,val_output[kernel_idx]);
 
 
        if(input_ch_idx == fold_input_ch-1)
@@ -103506,8 +103490,7 @@ void yolo_conv_top(yolo_quad_stream &inStream, yolo_quad_stream &outStream,
 }
 
 fp_data_type post_process(fp_data_type sub0_val_output,fp_data_type sub1_val_output,fp_data_type sub2_val_output,fp_data_type sub3_val_output,
-            bool acc_flag,ap_uint<1> leaky,
-      fp_weight_type bias,ap_uint<(5-2+1)> input_ch_idx,fp_data_type val_output)
+        int input_ch_idx,fp_data_type val_output)
 {
  fp_data_type biased_output=0,activated_output=0;
  if(input_ch_idx==0)
@@ -103519,30 +103502,12 @@ fp_data_type post_process(fp_data_type sub0_val_output,fp_data_type sub1_val_out
  val_output += sub1_val_output;
  val_output += sub2_val_output;
  val_output += sub3_val_output;
-
-
-
- if(acc_flag)
- {
-  biased_output = val_output + bias;
-  if(leaky&&biased_output<0)
-  {
-   activated_output = biased_output * (fp_data_type).1;
-  }
-  else
-  {
-   activated_output = biased_output;
-  }
-
-  return activated_output;
- }
- else
- {
+# 239 "/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_2019_64/src/yolo_conv.cpp"
   return val_output;
- }
+
 }
 
-void yolo_line_buffer(fp_data_type curr_data, line_buff_type *line_buff, ap_uint<9> col_idx)
+void yolo_line_buffer(fp_data_type curr_data, line_buff_type *line_buff, int col_idx)
 {
 
  line_buff->shift_up(col_idx);
@@ -103550,13 +103515,13 @@ void yolo_line_buffer(fp_data_type curr_data, line_buff_type *line_buff, ap_uint
 
 }
 
-window_type slide_window(ap_uint<9> conv_count, line_buff_type *line_buff, ap_uint<3> kernel_dim)
+window_type slide_window(int conv_count, line_buff_type *line_buff)
 {
  window_type kernel_window;
 
- for(ap_uint<3> win_row=0; win_row < 3; win_row++)
+ for(int win_row=0; win_row < 3; win_row++)
  {
-  for(ap_uint<3> win_col=0; win_col < 3; win_col++)
+  for(int win_col=0; win_col < 3; win_col++)
   {
    fp_data_type val = (fp_data_type)line_buff->getval(win_row,win_col+conv_count);
    kernel_window.insert(val,win_row,win_col);
@@ -103566,13 +103531,13 @@ window_type slide_window(ap_uint<9> conv_count, line_buff_type *line_buff, ap_ui
  return kernel_window;
 }
 
-fp_data_type window_macc(window_type window, local_weight_type weight, ap_uint<3> kernel_dim)
+fp_data_type window_macc(window_type window, local_weight_type weight)
 {
 
  ap_fixed<32,16,AP_RND_CONV,AP_SAT> sum = 0;
- for(ap_uint<3> win_row=0; win_row < 3; win_row++)
+ for(int win_row=0; win_row < 3; win_row++)
  {
-  for(ap_uint<3> win_col=0; win_col < 3; win_col++)
+  for(int win_col=0; win_col < 3; win_col++)
   {
    fp_data_type val_in = window.getval(win_row,win_col);
    sum += val_in * weight.data[win_row*3+win_col];
@@ -103586,15 +103551,15 @@ void write_output(fp_data_type val_output, yolo_inter_stream &out_stream)
  out_stream.write(val_output);
 }
 
-void out_stream_merge(yolo_inter_stream out_stream_group[32], yolo_quad_stream &outStream, ap_uint<(5-2+1)> input_ch_idx,quad_fp_side_channel curr_input,ap_uint<1> last,ap_uint<(5+1)> output_ch,ap_uint<(5-2+1)> fold_output_ch )
+void out_stream_merge(yolo_inter_stream out_stream_group[32], yolo_quad_stream &outStream, int input_ch_idx,quad_fp_side_channel curr_input,ap_uint<1> last,int output_ch,int fold_output_ch )
 {
 
 
 
 
- for(ap_uint<(5-2+1)> i=0; i<6; i++)
+ for(int i=0; i<6; i++)
  {
-  ap_uint<(5-2+1)> kernel_idx = i + input_ch_idx*6;
+  int kernel_idx = i + input_ch_idx*6;
   if(4*kernel_idx<32)
    if(!(out_stream_group[4*kernel_idx].empty()))
    {

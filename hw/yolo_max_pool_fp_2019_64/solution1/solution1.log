@@ -707,3 +707,148 @@ Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ==============================================================
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg484-1'
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'yolo_max_pool_fp_2019_64/src/yolo_max_pool.cpp' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:01:04 ; elapsed = 00:01:06 . Memory (MB): peak = 892.023 ; gain = 192.000 ; free physical = 2853 ; free virtual = 12385
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:01:04 ; elapsed = 00:01:06 . Memory (MB): peak = 892.023 ; gain = 192.000 ; free physical = 2853 ; free virtual = 12385
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-489] Unrolling loop 'Loop-1' (/opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot/hls/hls_video_mem.h:727) in function 'hls::LineBuffer<2, 418, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0>, 0>::shift_pixels_up(int)' completely with a factor of 1.
+INFO: [XFORM 203-603] Inlining function 'hls::LineBuffer<2, 418, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0>, 0>::shift_pixels_up' into 'hls::LineBuffer<2, 418, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0>, 0>::shift_up' (/opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot/hls/hls_video_mem.h:863).
+INFO: [XFORM 203-603] Inlining function 'hls::LineBuffer<2, 418, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0>, 0>::shift_up' into 'yolo_line_buffer' (yolo_max_pool_fp_2019_64/src/yolo_max_pool.cpp:127).
+INFO: [XFORM 203-603] Inlining function 'hls::LineBuffer<2, 418, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0>, 0>::insert_bottom_row' into 'hls::LineBuffer<2, 418, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0>, 0>::insert_top' (/opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot/hls/hls_video_mem.h:883).
+INFO: [XFORM 203-603] Inlining function 'hls::LineBuffer<2, 418, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0>, 0>::insert_top' into 'yolo_line_buffer' (yolo_max_pool_fp_2019_64/src/yolo_max_pool.cpp:128).
+INFO: [XFORM 203-603] Inlining function 'hls::LineBuffer<2, 418, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0>, 0>::getval' into 'slide_window' (yolo_max_pool_fp_2019_64/src/yolo_max_pool.cpp:140).
+INFO: [XFORM 203-603] Inlining function 'hls::Window<2, 2, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0> >::insert_pixel' into 'hls::Window<2, 2, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0> >::insert' (/opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot/hls/hls_video_mem.h:573).
+INFO: [XFORM 203-603] Inlining function 'hls::Window<2, 2, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0> >::insert' into 'slide_window' (yolo_max_pool_fp_2019_64/src/yolo_max_pool.cpp:141).
+INFO: [XFORM 203-603] Inlining function 'hls::Window<2, 2, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0> >::getval' into 'window_max_pool' (yolo_max_pool_fp_2019_64/src/yolo_max_pool.cpp:155).
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:01:06 ; elapsed = 00:01:08 . Memory (MB): peak = 892.023 ; gain = 192.000 ; free physical = 2802 ; free virtual = 12343
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:01:06 ; elapsed = 00:01:08 . Memory (MB): peak = 896.297 ; gain = 196.273 ; free physical = 2757 ; free virtual = 12302
+INFO: [XFORM 203-1101] Packing variable 'outStream.V.data' (yolo_max_pool_fp_2019_64/src/yolo_max_pool.cpp:4) into a 64-bit variable.
+INFO: [XFORM 203-1101] Packing variable 'inStream.V.data' (yolo_max_pool_fp_2019_64/src/yolo_max_pool.cpp:4) into a 64-bit variable.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'Loop-5.1.1.1.1' (yolo_max_pool_fp_2019_64/src/yolo_max_pool.cpp:39) in function 'yolo_max_pool_top' for pipelining.
+INFO: [XFORM 203-502] Unrolling all loops for pipelining in function 'window_max_pool' (yolo_max_pool_fp_2019_64/src/yolo_max_pool.cpp:148).
+INFO: [XFORM 203-502] Unrolling all loops for pipelining in function 'slide_window' (yolo_max_pool_fp_2019_64/src/yolo_max_pool.cpp:132).
+INFO: [HLS 200-489] Unrolling loop 'Loop-5.1.1.1.1.1' (/opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot/hls/hls_video_mem.h:49) in function 'yolo_max_pool_top' completely with a factor of 2.
+INFO: [HLS 200-489] Unrolling loop 'Loop-5.1.1.1.1.1.1' (/opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot/hls/hls_video_mem.h:49) in function 'yolo_max_pool_top' completely with a factor of 2.
+INFO: [HLS 200-489] Unrolling loop 'Loop-5.1.1.1.1.2' (/opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot/hls/hls_video_mem.h:49) in function 'yolo_max_pool_top' completely with a factor of 2.
+INFO: [HLS 200-489] Unrolling loop 'Loop-5.1.1.1.1.2.1' (/opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot/hls/hls_video_mem.h:49) in function 'yolo_max_pool_top' completely with a factor of 2.
+INFO: [HLS 200-489] Unrolling loop 'Loop-5.1.1.1.1.3' (/opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot/hls/hls_video_mem.h:49) in function 'yolo_max_pool_top' completely with a factor of 2.
+INFO: [HLS 200-489] Unrolling loop 'Loop-5.1.1.1.1.3.1' (/opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot/hls/hls_video_mem.h:49) in function 'yolo_max_pool_top' completely with a factor of 2.
+INFO: [HLS 200-489] Unrolling loop 'Loop-5.1.1.1.1.4' (/opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot/hls/hls_video_mem.h:49) in function 'yolo_max_pool_top' completely with a factor of 2.
+INFO: [HLS 200-489] Unrolling loop 'Loop-5.1.1.1.1.4.1' (/opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot/hls/hls_video_mem.h:49) in function 'yolo_max_pool_top' completely with a factor of 2.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1' (yolo_max_pool_fp_2019_64/src/yolo_max_pool.cpp:151) in function 'window_max_pool' completely with a factor of 2.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1' (yolo_max_pool_fp_2019_64/src/yolo_max_pool.cpp:153) in function 'window_max_pool' completely with a factor of 2.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1' (yolo_max_pool_fp_2019_64/src/yolo_max_pool.cpp:136) in function 'slide_window' completely with a factor of 2.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1' (yolo_max_pool_fp_2019_64/src/yolo_max_pool.cpp:138) in function 'slide_window' completely with a factor of 2.
+INFO: [XFORM 203-102] Partitioning array 'window.val.V.0' automatically.
+INFO: [XFORM 203-102] Partitioning array 'window.val.V.1' automatically.
+INFO: [XFORM 203-101] Partitioning array 'line_buff_group_0.val.V' (yolo_max_pool_fp_2019_64/src/yolo_max_pool.cpp:19) in dimension 2 completely.
+INFO: [XFORM 203-101] Partitioning array 'line_buff_group_1.val.V' (yolo_max_pool_fp_2019_64/src/yolo_max_pool.cpp:20) in dimension 2 completely.
+INFO: [XFORM 203-101] Partitioning array 'line_buff_group_2.val.V' (yolo_max_pool_fp_2019_64/src/yolo_max_pool.cpp:21) in dimension 2 completely.
+INFO: [XFORM 203-101] Partitioning array 'line_buff_group_3.val.V' (yolo_max_pool_fp_2019_64/src/yolo_max_pool.cpp:22) in dimension 2 completely.
+INFO: [XFORM 203-101] Partitioning array 'window_0.val.V' (yolo_max_pool_fp_2019_64/src/yolo_max_pool.cpp:80) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'window_1.val.V' (yolo_max_pool_fp_2019_64/src/yolo_max_pool.cpp:81) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'window_2.val.V' (yolo_max_pool_fp_2019_64/src/yolo_max_pool.cpp:82) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'window_3.val.V' (yolo_max_pool_fp_2019_64/src/yolo_max_pool.cpp:83) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'window_0.val.V' (yolo_max_pool_fp_2019_64/src/yolo_max_pool.cpp:80) in dimension 2 completely.
+INFO: [XFORM 203-101] Partitioning array 'window_1.val.V' (yolo_max_pool_fp_2019_64/src/yolo_max_pool.cpp:81) in dimension 2 completely.
+INFO: [XFORM 203-101] Partitioning array 'window_2.val.V' (yolo_max_pool_fp_2019_64/src/yolo_max_pool.cpp:82) in dimension 2 completely.
+INFO: [XFORM 203-101] Partitioning array 'window_3.val.V' (yolo_max_pool_fp_2019_64/src/yolo_max_pool.cpp:83) in dimension 2 completely.
+INFO: [XFORM 203-602] Inlining function 'yolo_line_buffer' into 'yolo_max_pool_top' (yolo_max_pool_fp_2019_64/src/yolo_max_pool.cpp:72) automatically.
+INFO: [XFORM 203-602] Inlining function 'window_max_pool' into 'yolo_max_pool_top' (yolo_max_pool_fp_2019_64/src/yolo_max_pool.cpp:95) automatically.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (yolo_max_pool_fp_2019_64/src/yolo_max_pool.cpp:90:17) to (yolo_max_pool_fp_2019_64/src/yolo_max_pool.cpp:113:5) in function 'yolo_max_pool_top'... converting 4 basic blocks.
+INFO: [XFORM 203-602] Inlining function 'slide_window' into 'yolo_max_pool_top' (yolo_max_pool_fp_2019_64/src/yolo_max_pool.cpp:90) automatically.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:01:07 ; elapsed = 00:01:09 . Memory (MB): peak = 960.383 ; gain = 260.359 ; free physical = 2691 ; free virtual = 12243
+INFO: [XFORM 203-541] Flattening a loop nest 'Loop-5.1.1.1' (yolo_max_pool_fp_2019_64/src/yolo_max_pool.cpp:36:23) in function 'yolo_max_pool_top'.
+INFO: [XFORM 203-541] Flattening a loop nest 'Loop-5.1.1' (yolo_max_pool_fp_2019_64/src/yolo_max_pool.cpp:33:20) in function 'yolo_max_pool_top'.
+INFO: [XFORM 203-541] Flattening a loop nest 'Loop-5.1' (yolo_max_pool_fp_2019_64/src/yolo_max_pool.cpp:30:23) in function 'yolo_max_pool_top'.
+INFO: [XFORM 203-541] Flattening a loop nest 'Loop-5' (yolo_max_pool_fp_2019_64/src/yolo_max_pool.cpp:27:20) in function 'yolo_max_pool_top'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'line_buff_group_0.va' (yolo_max_pool_fp_2019_64/src/yolo_max_pool.cpp:19).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'line_buff_group_0.va' (yolo_max_pool_fp_2019_64/src/yolo_max_pool.cpp:19).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'line_buff_group_1.va' (yolo_max_pool_fp_2019_64/src/yolo_max_pool.cpp:20).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'line_buff_group_1.va' (yolo_max_pool_fp_2019_64/src/yolo_max_pool.cpp:20).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'line_buff_group_2.va' (yolo_max_pool_fp_2019_64/src/yolo_max_pool.cpp:21).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'line_buff_group_2.va' (yolo_max_pool_fp_2019_64/src/yolo_max_pool.cpp:21).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'line_buff_group_3.va' (yolo_max_pool_fp_2019_64/src/yolo_max_pool.cpp:22).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'line_buff_group_3.va' (yolo_max_pool_fp_2019_64/src/yolo_max_pool.cpp:22).
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:01:08 ; elapsed = 00:01:10 . Memory (MB): peak = 960.383 ; gain = 260.359 ; free physical = 2666 ; free virtual = 12220
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'yolo_max_pool_top' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'write_output' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining function 'write_output'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 1.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 69.92 seconds; current allocated memory: 238.735 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.02 seconds; current allocated memory: 238.851 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'yolo_max_pool_top' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 5'.
+WARNING: [SCHED 204-69] Unable to schedule 'load' operation ('Window<2, 2, ap_fixed<16, 8, 4, 0, 0> >.val[0].V[1]', yolo_max_pool_fp_2019_64/src/yolo_max_pool.cpp:140->yolo_max_pool_fp_2019_64/src/yolo_max_pool.cpp:90) on array 'line_buff_group_0.val[0].V', yolo_max_pool_fp_2019_64/src/yolo_max_pool.cpp:19 due to limited memory ports. Please consider using a memory core with more ports or partitioning the array 'line_buff_group_0_va'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 2, Depth = 10.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.48 seconds; current allocated memory: 240.131 MB.
+INFO: [HLS 200-434] Only 1 loops out of a total 5 loops have been pipelined in this design.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.4 seconds; current allocated memory: 241.926 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'write_output' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'write_output'.
+INFO: [HLS 200-111]  Elapsed time: 0.48 seconds; current allocated memory: 242.326 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'yolo_max_pool_top' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_max_pool_top/inStream_V_data' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_max_pool_top/inStream_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_max_pool_top/inStream_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_max_pool_top/inStream_V_user_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_max_pool_top/inStream_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_max_pool_top/inStream_V_id_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_max_pool_top/inStream_V_dest_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_max_pool_top/outStream_V_data' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_max_pool_top/outStream_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_max_pool_top/outStream_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_max_pool_top/outStream_V_user_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_max_pool_top/outStream_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_max_pool_top/outStream_V_id_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_max_pool_top/outStream_V_dest_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_max_pool_top/output_h_V' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_max_pool_top/output_w_V' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_max_pool_top/input_h_V' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_max_pool_top/input_w_V' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_max_pool_top/input_fold_ch_V' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_max_pool_top/stride_V' to 's_axilite & ap_none'.
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================

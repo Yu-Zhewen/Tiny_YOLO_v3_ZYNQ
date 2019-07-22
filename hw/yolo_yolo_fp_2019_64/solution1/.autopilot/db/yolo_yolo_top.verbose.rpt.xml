@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'yolo_yolo_top'" level="0">
-<item name = "Date">Wed Jul 17 10:35:52 2019
+<item name = "Date">Wed Jul 17 14:24:23 2019
 </item>
 <item name = "Version">2019.1 (Build 2552052 on Fri May 24 15:28:33 MDT 2019)</item>
 <item name = "Project">yolo_yolo_fp_2019_64</item>
@@ -90,12 +90,12 @@
 <column name="bound4_fu_384_p2">*, 0, 0, 41, 8, 5</column>
 <column name="add_ln1354_1_fu_354_p2">+, 0, 0, 15, 2, 6</column>
 <column name="add_ln1354_fu_344_p2">+, 0, 0, 15, 2, 6</column>
-<column name="add_ln14_1_fu_444_p2">+, 0, 0, 15, 1, 5</column>
 <column name="add_ln14_fu_425_p2">+, 0, 0, 17, 13, 1</column>
 <column name="add_ln17_fu_753_p2">+, 0, 0, 15, 9, 1</column>
-<column name="col_idx_fu_506_p2">+, 0, 0, 15, 1, 5</column>
-<column name="input_ch_idx_fu_747_p2">+, 0, 0, 13, 4, 1</column>
-<column name="and_ln1598_fu_492_p2">and, 0, 0, 2, 1, 1</column>
+<column name="add_ln700_fu_444_p2">+, 0, 0, 15, 1, 5</column>
+<column name="col_idx_V_fu_506_p2">+, 0, 0, 15, 1, 5</column>
+<column name="input_ch_idx_V_fu_747_p2">+, 0, 0, 13, 4, 1</column>
+<column name="and_ln17_fu_492_p2">and, 0, 0, 2, 1, 1</column>
 <column name="and_ln791_1_fu_664_p2">and, 0, 0, 32, 32, 32</column>
 <column name="and_ln791_2_fu_691_p2">and, 0, 0, 32, 32, 32</column>
 <column name="and_ln791_3_fu_718_p2">and, 0, 0, 32, 32, 32</column>
@@ -170,19 +170,19 @@
 <column name="bvh_d_index_1_fu_648_p2">or, 0, 0, 5, 5, 1</column>
 <column name="bvh_d_index_2_fu_675_p2">or, 0, 0, 5, 5, 2</column>
 <column name="bvh_d_index_3_fu_702_p2">or, 0, 0, 5, 5, 2</column>
-<column name="or_ln1598_fu_512_p2">or, 0, 0, 2, 1, 1</column>
+<column name="or_ln20_fu_512_p2">or, 0, 0, 2, 1, 1</column>
 <column name="or_ln54_1_fu_735_p2">or, 0, 0, 2, 1, 1</column>
 <column name="or_ln54_2_fu_467_p2">or, 0, 0, 2, 1, 1</column>
 <column name="or_ln54_3_fu_535_p2">or, 0, 0, 2, 1, 1</column>
 <column name="or_ln54_fu_414_p2">or, 0, 0, 2, 1, 1</column>
 <column name="select_ln14_fu_498_p3">select, 0, 0, 5, 1, 5</column>
-<column name="select_ln1598_1_fu_459_p3">select, 0, 0, 2, 1, 1</column>
-<column name="select_ln1598_2_fu_472_p3">select, 0, 0, 2, 1, 1</column>
-<column name="select_ln1598_3_fu_518_p3">select, 0, 0, 4, 1, 1</column>
-<column name="select_ln1598_4_fu_541_p3">select, 0, 0, 2, 1, 1</column>
-<column name="select_ln1598_fu_436_p3">select, 0, 0, 5, 1, 1</column>
-<column name="select_ln17_1_fu_759_p3">select, 0, 0, 9, 1, 1</column>
-<column name="select_ln17_fu_549_p3">select, 0, 0, 5, 1, 5</column>
+<column name="select_ln17_1_fu_459_p3">select, 0, 0, 2, 1, 1</column>
+<column name="select_ln17_2_fu_472_p3">select, 0, 0, 2, 1, 1</column>
+<column name="select_ln17_3_fu_549_p3">select, 0, 0, 5, 1, 5</column>
+<column name="select_ln17_4_fu_759_p3">select, 0, 0, 9, 1, 1</column>
+<column name="select_ln17_fu_436_p3">select, 0, 0, 5, 1, 1</column>
+<column name="select_ln20_1_fu_541_p3">select, 0, 0, 2, 1, 1</column>
+<column name="select_ln20_fu_518_p3">select, 0, 0, 4, 1, 1</column>
 <column name="shl_ln791_1_fu_658_p2">shl, 0, 0, 101, 1, 32</column>
 <column name="shl_ln791_2_fu_685_p2">shl, 0, 0, 101, 1, 32</column>
 <column name="shl_ln791_3_fu_712_p2">shl, 0, 0, 101, 1, 32</column>
@@ -190,7 +190,7 @@
 <column name="ap_enable_pp0">xor, 0, 0, 2, 1, 2</column>
 <column name="ap_enable_reg_pp0_iter1">xor, 0, 0, 2, 2, 1</column>
 <column name="tmp_last_V_fu_741_p2">xor, 0, 0, 2, 1, 2</column>
-<column name="xor_ln1598_fu_480_p2">xor, 0, 0, 2, 1, 2</column>
+<column name="xor_ln17_fu_480_p2">xor, 0, 0, 2, 1, 2</column>
 </table>
 </item>
 <item name = "Multiplexer"><table name="" hasTotal="1">
@@ -206,8 +206,6 @@
 <column name="ap_phi_reg_pp0_iter1_tmp_data_sub_data_1_s_reg_269">9, 2, 16, 32</column>
 <column name="ap_phi_reg_pp0_iter1_tmp_data_sub_data_2_s_reg_278">9, 2, 16, 32</column>
 <column name="ap_phi_reg_pp0_iter1_tmp_data_sub_data_3_s_reg_287">9, 2, 16, 32</column>
-<column name="i_op_assign_1_reg_238">9, 2, 5, 10</column>
-<column name="i_op_assign_reg_216">9, 2, 5, 10</column>
 <column name="inStream_TDATA_blk_n">9, 2, 1, 2</column>
 <column name="inStream_V_data_0_data_out">9, 2, 64, 128</column>
 <column name="inStream_V_data_0_state">15, 3, 2, 6</column>
@@ -223,7 +221,6 @@
 <column name="inStream_V_user_V_0_state">15, 3, 2, 6</column>
 <column name="indvar_flatten17_reg_205">9, 2, 13, 26</column>
 <column name="indvar_flatten_reg_227">9, 2, 9, 18</column>
-<column name="input_ch_idx_0_reg_249">9, 2, 4, 8</column>
 <column name="outStream_TDATA_blk_n">9, 2, 1, 2</column>
 <column name="outStream_V_data_1_data_out">9, 2, 64, 128</column>
 <column name="outStream_V_data_1_state">15, 3, 2, 6</column>
@@ -239,6 +236,9 @@
 <column name="outStream_V_strb_V_1_state">15, 3, 2, 6</column>
 <column name="outStream_V_user_V_1_data_out">9, 2, 2, 4</column>
 <column name="outStream_V_user_V_1_state">15, 3, 2, 6</column>
+<column name="t_V_1_reg_238">9, 2, 5, 10</column>
+<column name="t_V_2_reg_249">9, 2, 4, 8</column>
+<column name="t_V_reg_216">9, 2, 5, 10</column>
 </table>
 </item>
 <item name = "Register"><table name="" hasTotal="1">
@@ -405,8 +405,6 @@
 <column name="grp_logistic_activate_fu_307_ap_start_reg">1, 0, 1, 0</column>
 <column name="grp_logistic_activate_fu_318_ap_start_reg">1, 0, 1, 0</column>
 <column name="grp_logistic_activate_fu_329_ap_start_reg">1, 0, 1, 0</column>
-<column name="i_op_assign_1_reg_238">5, 0, 5, 0</column>
-<column name="i_op_assign_reg_216">5, 0, 5, 0</column>
 <column name="icmp_ln14_reg_819">1, 0, 1, 0</column>
 <column name="icmp_ln54_3_reg_814">1, 0, 1, 0</column>
 <column name="inStream_V_data_0_payload_A">64, 0, 64, 0</column>
@@ -441,7 +439,6 @@
 <column name="inStream_V_user_V_0_state">2, 0, 2, 0</column>
 <column name="indvar_flatten17_reg_205">13, 0, 13, 0</column>
 <column name="indvar_flatten_reg_227">9, 0, 9, 0</column>
-<column name="input_ch_idx_0_reg_249">4, 0, 4, 0</column>
 <column name="op_V_assign_1_reg_923">16, 0, 16, 0</column>
 <column name="op_V_assign_2_reg_928">16, 0, 16, 0</column>
 <column name="op_V_assign_3_reg_933">16, 0, 16, 0</column>
@@ -488,6 +485,9 @@
 <column name="p_Result_2_reg_895">1, 0, 1, 0</column>
 <column name="p_Result_3_reg_899">1, 0, 1, 0</column>
 <column name="p_Result_s_reg_887">1, 0, 1, 0</column>
+<column name="t_V_1_reg_238">5, 0, 5, 0</column>
+<column name="t_V_2_reg_249">4, 0, 4, 0</column>
+<column name="t_V_reg_216">5, 0, 5, 0</column>
 <column name="tmp_dest_V_reg_858">6, 0, 6, 0</column>
 <column name="tmp_id_V_reg_853">5, 0, 5, 0</column>
 <column name="tmp_keep_V_reg_838">8, 0, 8, 0</column>

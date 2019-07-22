@@ -13,7 +13,7 @@
 						"AP_START": { "actual": "ap_start"}
 					}
 				},
-				"call_ln134_write_output_fu_772/call_ln134_write_output_fu_772_activity": {
+				"call_ln112_write_output_fu_778/call_ln112_write_output_fu_778_activity": {
 					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
 					"ports": {
 						"AP_CLK": { "actual": "ap_clk"},

@@ -49,14 +49,10 @@
 //        bit 8~0 - real_input_h_V[8:0] (Read/Write)
 //        others  - reserved
 // 0x44 : reserved
-// 0x48 : Data signal of leaky_V
-//        bit 0  - leaky_V[0] (Read/Write)
-//        others - reserved
-// 0x4c : reserved
-// 0x50 : Data signal of fold_win_area_V
+// 0x48 : Data signal of fold_win_area_V
 //        bit 2~0 - fold_win_area_V[2:0] (Read/Write)
 //        others  - reserved
-// 0x54 : reserved
+// 0x4c : reserved
 // (SC = Self Clear, COR = Clear on Read, TOW = Toggle on Write, COH = Clear on Handshake)
 
 #define XYOLO_CONV_TOP_CTRL_BUS_ADDR_AP_CTRL               0x00
@@ -77,8 +73,6 @@
 #define XYOLO_CONV_TOP_CTRL_BUS_BITS_INPUT_W_V_DATA        9
 #define XYOLO_CONV_TOP_CTRL_BUS_ADDR_REAL_INPUT_H_V_DATA   0x40
 #define XYOLO_CONV_TOP_CTRL_BUS_BITS_REAL_INPUT_H_V_DATA   9
-#define XYOLO_CONV_TOP_CTRL_BUS_ADDR_LEAKY_V_DATA          0x48
-#define XYOLO_CONV_TOP_CTRL_BUS_BITS_LEAKY_V_DATA          1
-#define XYOLO_CONV_TOP_CTRL_BUS_ADDR_FOLD_WIN_AREA_V_DATA  0x50
+#define XYOLO_CONV_TOP_CTRL_BUS_ADDR_FOLD_WIN_AREA_V_DATA  0x48
 #define XYOLO_CONV_TOP_CTRL_BUS_BITS_FOLD_WIN_AREA_V_DATA  3
 

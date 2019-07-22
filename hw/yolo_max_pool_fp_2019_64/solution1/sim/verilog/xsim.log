@@ -2,8 +2,8 @@
 # xsim v2019.1 (64-bit)
 # SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
 # IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
-# Start of session at: Mon Jul 15 20:25:35 2019
-# Process ID: 3575
+# Start of session at: Fri Jul 19 15:54:57 2019
+# Process ID: 31874
 # Current directory: /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/sim/verilog
 # Command line: xsim -mode tcl -source {xsim.dir/yolo_max_pool_top/xsim_script.tcl}
 # Log file: /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/sim/verilog/xsim.log
@@ -25,6 +25,6 @@ source yolo_max_pool_top.tcl
 // RTL Simulation : 1 / 1 [100.00%] @ "13845665000"
 ////////////////////////////////////////////////////////////////////////////////////
 $finish called at time : 13845705 ns : File "/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/sim/verilog/yolo_max_pool_top.autotb.v" Line 492
-run: Time (s): cpu = 00:00:00 ; elapsed = 00:02:14 . Memory (MB): peak = 1392.805 ; gain = 0.000 ; free physical = 1003 ; free virtual = 11258
+run: Time (s): cpu = 00:00:00.02 ; elapsed = 00:02:08 . Memory (MB): peak = 1392.805 ; gain = 0.000 ; free physical = 2150 ; free virtual = 11961
 ## quit
-INFO: [Common 17-206] Exiting xsim at Mon Jul 15 20:28:02 2019...
+INFO: [Common 17-206] Exiting xsim at Fri Jul 19 15:57:17 2019...

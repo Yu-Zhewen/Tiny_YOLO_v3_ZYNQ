@@ -1,5 +1,6 @@
 INFO: [SIM 2] *************** CSIM start ***************
 INFO: [SIM 4] CSIM will launch GCC as the compiler.
+   Compiling ../../../tb/yolo_conv_tb.cpp in debug mode
    Compiling ../../../src/yolo_conv.cpp in debug mode
    Generating csim.exe
 4991

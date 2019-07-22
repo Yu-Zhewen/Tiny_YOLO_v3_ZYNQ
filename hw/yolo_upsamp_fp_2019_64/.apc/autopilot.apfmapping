@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="yolo_stream.h" path="/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_upsamp_fp_2019_64/src/yolo_stream.h"/>
+    <originFiles name="yolo_fp.h" path="/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_upsamp_fp_2019_64/src/yolo_fp.h"/>
+    <originFiles name="yolo_upsamp.cpp" path="/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp"/>
+    <originFiles name="yolo_upsamp.h" path="/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_upsamp_fp_2019_64/src/yolo_upsamp.h"/>
+  </source>
+  <testbench>
+    <originFiles name="yolo_upsamp_tb.cpp" path="/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_upsamp_fp_2019_64/src/yolo_upsamp_tb.cpp"/>
+    <originFiles name="layer_output_sdk.dat" path="/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_upsamp_fp_2019_64/tb/layer_output_sdk.dat"/>
+    <originFiles name="layer_input.dat" path="/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_upsamp_fp_2019_64/tb/layer_input.dat"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

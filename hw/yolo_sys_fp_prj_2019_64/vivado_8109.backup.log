@@ -1,0 +1,35 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Mon Jul 22 08:47:09 2019
+# Process ID: 8109
+# Current directory: /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_sys_fp_prj_2019_64
+# Command line: vivado yolo_sys_fp_prj_2019_64.xpr
+# Log file: /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_sys_fp_prj_2019_64/vivado.log
+# Journal file: /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_sys_fp_prj_2019_64/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /home/xavier/MSc_Project/git_v/Tiny_YOLO_v3_ZYNQ/hw/yolo_conv_fp_prj_2019/yolo_conv_fp_prj_2019.xpr
+INFO: [Project 1-313] Project file moved from '/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_prj_2019' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [filemgmt 56-1] IP Repository Path: Directory not found as '/home/xavier/MSc_Project/git_v/Tiny_YOLO_v3_ZYNQ/ip_fp'; using path '/home/xavier/MSc_Project/hls/ip_fp' instead.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/xavier/MSc_Project/hls/ip_fp'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx_2019_1/Vivado/2019.1/data/ip'.
+open_project: Time (s): cpu = 00:00:21 ; elapsed = 00:00:11 . Memory (MB): peak = 6461.094 ; gain = 144.012 ; free physical = 2461 ; free virtual = 13330
+update_compile_order -fileset sources_1
+open_bd_design {/home/xavier/MSc_Project/git_v/Tiny_YOLO_v3_ZYNQ/hw/yolo_conv_fp_prj_2019/yolo_conv_fp_prj_2019.srcs/sources_1/bd/design_1/design_1.bd}
+Adding component instance block -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0
+Adding component instance block -- xilinx.com:ip:axi_dma:7.1 - axi_dma_0
+Adding component instance block -- xilinx.com:hls:yolo_conv_top:1.0 - yolo_conv_top_0
+Adding component instance block -- xilinx.com:ip:smartconnect:1.0 - axi_smc
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - rst_ps7_0_100M
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - ps7_0_axi_periph
+Adding component instance block -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Successfully read diagram <design_1> from BD file </home/xavier/MSc_Project/git_v/Tiny_YOLO_v3_ZYNQ/hw/yolo_conv_fp_prj_2019/yolo_conv_fp_prj_2019.srcs/sources_1/bd/design_1/design_1.bd>
+open_bd_design: Time (s): cpu = 00:00:15 ; elapsed = 00:00:11 . Memory (MB): peak = 6586.945 ; gain = 14.797 ; free physical = 2277 ; free virtual = 13211
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Jul 22 08:48:10 2019...

@@ -217,14 +217,14 @@
       "impl\/vhdl\/write_output.vhd",
       "impl\/vhdl\/yolo_max_pool_top_CTRL_BUS_s_axi.vhd",
       "impl\/vhdl\/yolo_max_pool_top_line_buff_group_0_va.vhd",
-      "impl\/vhdl\/yolo_max_pool_top_mul_mul_17ns_9ns_26_1_1.vhd",
+      "impl\/vhdl\/yolo_max_pool_top_mul_mul_9ns_17ns_26_1_1.vhd",
       "impl\/vhdl\/yolo_max_pool_top.vhd"
     ],
     "Verilog": [
       "impl\/verilog\/write_output.v",
       "impl\/verilog\/yolo_max_pool_top_CTRL_BUS_s_axi.v",
       "impl\/verilog\/yolo_max_pool_top_line_buff_group_0_va.v",
-      "impl\/verilog\/yolo_max_pool_top_mul_mul_17ns_9ns_26_1_1.v",
+      "impl\/verilog\/yolo_max_pool_top_mul_mul_9ns_17ns_26_1_1.v",
       "impl\/verilog\/yolo_max_pool_top.v"
     ],
     "SwDriver": [
@@ -926,7 +926,7 @@
       "ModuleName": "yolo_max_pool_top",
       "Instances": [{
           "ModuleName": "write_output",
-          "InstanceName": "call_ln134_write_output_fu_772"
+          "InstanceName": "call_ln112_write_output_fu_778"
         }]
     },
     "Info": {
@@ -1022,8 +1022,8 @@
         "Area": {
           "BRAM_18K": "32",
           "DSP48E": "1",
-          "FF": "1947",
-          "LUT": "3308",
+          "FF": "2105",
+          "LUT": "3422",
           "URAM": "0"
         }
       }
@@ -1039,7 +1039,7 @@
   },
   "GenData": {
     "DataVersion": "0.2",
-    "Time": "2019-07-15 20:22:38 BST",
+    "Time": "2019-07-19 15:52:38 BST",
     "ToolName": "vivado_hls",
     "ToolVersion": "2019.1"
   }

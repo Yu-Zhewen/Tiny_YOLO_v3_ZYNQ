@@ -5,10 +5,10 @@
 <ModuleName>yolo_max_pool_top</ModuleName>
 <InstancesList>
 <Instance>
-<InstName>call_ln134_write_output_fu_772</InstName>
+<InstName>call_ln112_write_output_fu_778</InstName>
 <ModuleName>write_output</ModuleName>
 <IsCompInst>true</IsCompInst>
-<ID>772</ID>
+<ID>778</ID>
 </Instance>
 </InstancesList>
 </TopModule>
@@ -399,8 +399,8 @@
 <Resources>
 <BRAM_18K>32</BRAM_18K>
 <DSP48E>1</DSP48E>
-<FF>1947</FF>
-<LUT>3308</LUT>
+<FF>2105</FF>
+<LUT>3422</LUT>
 <URAM>0</URAM>
 </Resources>
 </AreaEstimates>

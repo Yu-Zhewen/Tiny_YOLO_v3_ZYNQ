@@ -73790,8 +73790,467 @@ typedef hls::stream<fp_data_type> yolo_inter_stream;
 
 void yolo_acc_top(yolo_quad_stream &inStream_a, yolo_quad_stream &inStream_b,
             yolo_quad_stream &outStream,
-      ap_uint<6> input_h, ap_uint<6> input_w);
+      ap_uint<9> input_h, ap_uint<9> input_w,
+      ap_uint<(5-2+1)> fold_input_ch,
+      ap_uint<1> leaky, ap_uint<1> bias_en);
+fp_data_type post_process_unit(fp_data_type data_in, fp_weight_type bias, ap_uint<1> bias_en, ap_uint<1> leaky);
 # 2 "/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_acc_fp_2019_64/tb/yolo_acc_tb.cpp" 2
+# 1 "/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_acc_fp_2019_64/tb/weight_file.h" 1
+
+
+
+short kernel_bias_fp_bits[]={823,
+-3963,
+102,
+160,
+-1026,
+266,
+-1083,
+895,
+-9,
+219,
+204,
+178,
+352,
+-17,
+318,
+443};
+
+short kernel_weight_fp_bits[]={391,
+861,
+465,
+1031,
+-468,
+-946,
+-31,
+-1728,
+-250,
+391,
+650,
+2,
+574,
+-734,
+-1128,
+109,
+-1199,
+45,
+-603,
+-1,
+-260,
+0,
+-2,
+-219,
+-45,
+-402,
+135,
+-1222,
+-524,
+2188,
+558,
+220,
+-961,
+791,
+1009,
+-1037,
+391,
+-1629,
+2179,
+-2292,
+1301,
+-760,
+2238,
+-220,
+742,
+2216,
+1171,
+-3207,
+571,
+2523,
+1062,
+-1323,
+-1778,
+624,
+90,
+204,
+43,
+194,
+229,
+93,
+65,
+133,
+14,
+64,
+276,
+191,
+121,
+210,
+167,
+99,
+173,
+66,
+-219,
+-174,
+-91,
+-454,
+-575,
+-447,
+-130,
+-177,
+-255,
+230,
+256,
+-22,
+705,
+814,
+425,
+444,
+558,
+352,
+-208,
+-196,
+26,
+-582,
+-642,
+-314,
+-427,
+-516,
+-303,
+-6,
+-45,
+3,
+-131,
+-187,
+-96,
+-53,
+-99,
+-68,
+-1816,
+-2851,
+-1783,
+571,
+-9,
+178,
+1739,
+2331,
+1401,
+-1982,
+-2821,
+-1443,
+262,
+681,
+189,
+1443,
+2524,
+1107,
+-1066,
+-2059,
+-862,
+440,
+424,
+190,
+808,
+1402,
+796,
+5459,
+739,
+-3225,
+3848,
+-901,
+-3828,
+1816,
+-774,
+-4505,
+-2704,
+-741,
+1575,
+-702,
+-56,
+2281,
+-38,
+491,
+1371,
+-3421,
+-469,
+1371,
+-3479,
+447,
+2787,
+-1628,
+1019,
+3263,
+1851,
+3850,
+540,
+-252,
+1084,
+-1717,
+-1535,
+-1786,
+-2074,
+1054,
+3406,
+210,
+-197,
+1550,
+-1513,
+-1327,
+-1385,
+-2011,
+701,
+1648,
+616,
+-411,
+531,
+-507,
+-780,
+-957,
+-794,
+-433,
+-1218,
+354,
+-428,
+-1875,
+-246,
+199,
+257,
+-78,
+352,
+-1025,
+336,
+-39,
+-1537,
+-52,
+-235,
+258,
+-314,
+215,
+-351,
+437,
+-175,
+-1333,
+49,
+-102,
+337,
+-495,
+-1749,
+388,
+2585,
+-1570,
+-3324,
+4145,
+900,
+-3366,
+1949,
+-318,
+-319,
+1440,
+628,
+-3953,
+2277,
+2987,
+-2681,
+-57,
+517,
+-127,
+-468,
+1353,
+-1734,
+-349,
+2504,
+-518,
+-1249,
+-1635,
+-455,
+1579,
+-2356,
+-113,
+2476,
+-1688,
+681,
+1612,
+-1401,
+-276,
+1325,
+-2214,
+-91,
+2237,
+-1414,
+684,
+1050,
+-853,
+50,
+748,
+-1463,
+153,
+1294,
+-1160,
+697,
+622,
+1469,
+2379,
+1419,
+-131,
+7,
+-24,
+-1384,
+-2059,
+-1618,
+1234,
+2314,
+1068,
+-213,
+29,
+29,
+-1203,
+-1944,
+-1327,
+745,
+1358,
+523,
+-62,
+187,
+160,
+-830,
+-1304,
+-840,
+1379,
+2,
+-1444,
+2336,
+-611,
+-2008,
+1608,
+-101,
+-1083,
+1510,
+68,
+-1556,
+2403,
+-566,
+-2141,
+1247,
+0,
+-976,
+915,
+260,
+-1102,
+1628,
+-188,
+-1610,
+992,
+175,
+-1017,
+-538,
+-578,
+-662,
+-734,
+-977,
+-742,
+-269,
+-939,
+-249,
+435,
+498,
+63,
+315,
+191,
+167,
+290,
+-71,
+244,
+324,
+560,
+254,
+294,
+346,
+513,
+290,
+240,
+542,
+493,
+877,
+614,
+-818,
+-2655,
+-2419,
+337,
+1325,
+2258,
+667,
+1301,
+976,
+-818,
+-2778,
+-2699,
+185,
+1174,
+2026,
+623,
+920,
+740,
+-402,
+-1741,
+-1813,
+0,
+421,
+1234,
+-1789,
+-2549,
+-1331,
+388,
+-42,
+-63,
+1575,
+2520,
+1326,
+-1390,
+-2331,
+-1100,
+585,
+58,
+38,
+1061,
+2171,
+872,
+-1049,
+-1652,
+-868,
+547,
+137,
+27,
+753,
+1524,
+622,
+37,
+204,
+103,
+-261,
+-337,
+29,
+-38,
+-403,
+-200,
+-305,
+-353,
+-624,
+-469,
+-538,
+-219,
+-294,
+-559,
+-257,
+468,
+535,
+20,
+553,
+780,
+628,
+386,
+574,
+517};
+# 3 "/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_acc_fp_2019_64/tb/yolo_acc_tb.cpp" 2
+
+
 
 
 
@@ -73800,23 +74259,70 @@ void yolo_acc_top(yolo_quad_stream &inStream_a, yolo_quad_stream &inStream_b,
 #ifndef HLS_FASTSIM
 #include "apatb_yolo_acc_top.h"
 #endif
-# 6 "/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_acc_fp_2019_64/tb/yolo_acc_tb.cpp"
+# 9 "/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_acc_fp_2019_64/tb/yolo_acc_tb.cpp"
 int main()
 {
  yolo_quad_stream inputStream_a("in_stream_a"), inputStream_b("in_stream_b"),
             outputStream("out_stream");
  bool flag = false;
+ FILE *layer_input;
+ FILE *layer_output_hls;
+ FILE *layer_output_sdk;
+ FILE *error_log;
+ static fp_data_type output_data[416*416*4*4];
 
- for(int i=0;i<52*52;i++)
+ layer_input = fopen("layer_input.dat","r");
+ layer_output_hls = fopen("layer_output_hls.dat","w");
+ layer_output_sdk = fopen("layer_output_sdk.dat","r");
+ error_log = fopen("error.log","w");
+
+ for(int i=0;i<4;i++)
  {
-  for(int j=0;j<32/4;j++)
+  quad_fp_side_channel curr_input;
+
+
+  fp_data_type *bias_p = (fp_data_type *)&kernel_bias_fp_bits[0];
+  curr_input.data.sub_data_0 = bias_p[4*i];
+  curr_input.data.sub_data_1 = bias_p[4*i+1];
+  curr_input.data.sub_data_2 = bias_p[4*i+2];
+  curr_input.data.sub_data_3 = bias_p[4*i+3];
+
+  curr_input.keep = 1;
+  curr_input.strb = 1;
+  curr_input.user = 1;
+  curr_input.id = 0;
+  curr_input.dest = 0;
+
+  inputStream_b << curr_input;
+ }
+
+
+
+ for(int i=0;i<416*416;i++)
+ {
+  for(int j=0;j<4;j++)
   {
    quad_fp_side_channel curr_input_a,curr_input_b;
 
-   curr_input_a.data.sub_data_0 = (fp_data_type)1.;
-   curr_input_a.data.sub_data_1 = (fp_data_type)-1.;
-   curr_input_a.data.sub_data_2 = (fp_data_type)0.5;
-   curr_input_a.data.sub_data_3 = (fp_data_type)-0.5;
+   short input_data_sub0;
+   short input_data_sub1;
+   short input_data_sub2;
+   short input_data_sub3;
+
+   fscanf(layer_input,"%hd",&input_data_sub0);
+   fscanf(layer_input,"%hd",&input_data_sub1);
+   fscanf(layer_input,"%hd",&input_data_sub2);
+   fscanf(layer_input,"%hd",&input_data_sub3);
+
+   fp_data_type *sub0_p = (fp_data_type *)&input_data_sub0;
+   fp_data_type *sub1_p = (fp_data_type *)&input_data_sub1;
+   fp_data_type *sub2_p = (fp_data_type *)&input_data_sub2;
+   fp_data_type *sub3_p = (fp_data_type *)&input_data_sub3;
+
+   curr_input_a.data.sub_data_0 = *sub0_p;
+   curr_input_a.data.sub_data_1 = *sub1_p;
+   curr_input_a.data.sub_data_2 = *sub2_p;
+   curr_input_a.data.sub_data_3 = *sub3_p;
 
    curr_input_a.keep = 1;
    curr_input_a.strb = 1;
@@ -73824,10 +74330,10 @@ int main()
    curr_input_a.id = 0;
    curr_input_a.dest = 0;
 
-   curr_input_b.data.sub_data_0 = (fp_data_type)1.;
-   curr_input_b.data.sub_data_1 = (fp_data_type)-1.;
-   curr_input_b.data.sub_data_2 = (fp_data_type)0.5;
-   curr_input_b.data.sub_data_3 = (fp_data_type)-0.5;
+   curr_input_b.data.sub_data_0 = 0;
+   curr_input_b.data.sub_data_1 = 0;
+   curr_input_b.data.sub_data_2 = 0;
+   curr_input_b.data.sub_data_3 = 0;
 
    curr_input_b.keep = 1;
    curr_input_b.strb = 1;
@@ -73844,47 +74350,49 @@ int main()
 #ifndef HLS_FASTSIM
 #define yolo_acc_top AESL_WRAP_yolo_acc_top
 #endif
-# 45 "/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_acc_fp_2019_64/tb/yolo_acc_tb.cpp"
+# 95 "/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_acc_fp_2019_64/tb/yolo_acc_tb.cpp"
 yolo_acc_top(inputStream_a,inputStream_b,
            outputStream,
-     52,52);
+     416,416,
+     4,
+     1,1);
 #undef yolo_acc_top
-# 45 "/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_acc_fp_2019_64/tb/yolo_acc_tb.cpp"
+# 95 "/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_acc_fp_2019_64/tb/yolo_acc_tb.cpp"
 
 
- for(int i=0;i<52*52;i++)
+ for(int pix_idx=0;pix_idx<416*416;pix_idx++)
  {
-  for(int j=0;j<32/4;j++)
+
+  for(int ch_idx=0;ch_idx<4;ch_idx++)
   {
    quad_fp_side_channel curr_output;
    outputStream.read(curr_output);
 
+    output_data[4*(pix_idx*4 +ch_idx)] = curr_output.data.sub_data_0;
+    output_data[4*(pix_idx*4 +ch_idx)+1] = curr_output.data.sub_data_1;
+    output_data[4*(pix_idx*4 +ch_idx)+2] = curr_output.data.sub_data_2;
+    output_data[4*(pix_idx*4 +ch_idx)+3] = curr_output.data.sub_data_3;
+
    if(curr_output.last==1)
-    printf("last:%d\n",i*32/4+j);
-
-   if((short)(curr_output.data.sub_data_0.range())!=512)
-   {
-    printf("*(%d,%d)%hd\n",i,j,(short)(curr_output.data.sub_data_0.range()));
-    flag = true;
-   }
-   if((short)(curr_output.data.sub_data_1.range())!=-512)
-   {
-    printf("**(%d,%d)%hd\n",i,j,(short)(curr_output.data.sub_data_1.range()));
-    flag = true;
-   }
-   if((short)(curr_output.data.sub_data_2.range())!=256)
-   {
-    printf("***(%d,%d)%hd\n",i,j,(short)(curr_output.data.sub_data_2.range()));
-    flag = true;
-   }
-   if((short)(curr_output.data.sub_data_3.range())!=-256)
-   {
-    printf("****(%d,%d)%hd\n",i,j,(short)(curr_output.data.sub_data_3.range()));
-    flag = true;
-   }
-
+    printf("%d\n",pix_idx*4 +ch_idx);
   }
  }
+
+ short *ptr = (short *)&output_data[0];
+ for(int pix_idx=0;pix_idx<416*416*4;pix_idx++)
+ {
+
+  fprintf(layer_output_hls,"%hd\n",ptr[pix_idx]);
+  short ref_data;
+  fscanf(layer_output_sdk,"%hd\n",&ref_data);
+
+  if(abs(ptr[pix_idx]-ref_data)>64)
+  {
+   flag = true;
+   fprintf(error_log,"%d\t%hd\t%hd\n",pix_idx,ref_data,ptr[pix_idx]);
+  }
+ }
+
 
     if (flag)
             return 1;
@@ -73893,5 +74401,5 @@ yolo_acc_top(inputStream_a,inputStream_b,
 
 }
 #endif
-# 88 "/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_acc_fp_2019_64/tb/yolo_acc_tb.cpp"
+# 140 "/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_acc_fp_2019_64/tb/yolo_acc_tb.cpp"
 

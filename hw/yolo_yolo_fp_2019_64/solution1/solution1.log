@@ -1056,3 +1056,97 @@ Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ==============================================================
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg484-1'
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'yolo_yolo_fp_2019_64/src/yolo_yolo.cpp' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:59 ; elapsed = 00:01:06 . Memory (MB): peak = 892.023 ; gain = 192.000 ; free physical = 1296 ; free virtual = 11220
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:59 ; elapsed = 00:01:06 . Memory (MB): peak = 892.023 ; gain = 192.000 ; free physical = 1296 ; free virtual = 11220
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:01:03 ; elapsed = 00:01:11 . Memory (MB): peak = 898.988 ; gain = 198.965 ; free physical = 1118 ; free virtual = 11075
+INFO: [HLS 200-10] Checking synthesizability ...
+WARNING: [SYNCHK 200-23] /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot/hls_exp_apfixed.h:191: variable-indexed range selection may cause suboptimal QoR.
+INFO: [SYNCHK 200-10] 0 error(s), 1 warning(s).
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:01:04 ; elapsed = 00:01:12 . Memory (MB): peak = 1024.871 ; gain = 324.848 ; free physical = 1048 ; free virtual = 11015
+INFO: [XFORM 203-1101] Packing variable 'outStream.V.data' (yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:3) into a 64-bit variable.
+INFO: [XFORM 203-1101] Packing variable 'inStream.V.data' (yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:3) into a 64-bit variable.
+INFO: [XFORM 203-502] Unrolling all loops for pipelining in function 'exp_reduce::exp<16, 8>' (/opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot/hls_exp_apfixed.h:41:29).
+INFO: [HLS 200-489] Unrolling loop 'Loop-1' (/opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot/hls_exp_apfixed.h:190) in function 'exp_reduce::exp<16, 8>' completely with a factor of 8.
+INFO: [HLS 200-489] Unrolling loop 'Loop-2' (/opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot/hls_exp_apfixed.h:197) in function 'exp_reduce::exp<16, 8>' completely with a factor of 22.
+INFO: [HLS 200-489] Unrolling loop 'Loop-3' (/opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot/hls_exp_apfixed.h:254) in function 'exp_reduce::exp<16, 8>' completely with a factor of 4.
+INFO: [HLS 200-489] Unrolling loop 'Loop-4' (/opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot/hls_exp_apfixed.h:260) in function 'exp_reduce::exp<16, 8>' completely with a factor of 4.
+INFO: [HLS 200-489] Unrolling loop 'Loop-5' (/opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot/hls_exp_apfixed.h:263) in function 'exp_reduce::exp<16, 8>' completely with a factor of 18.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:77:96) to (yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:77:96) in function 'logistic_activate'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (/opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot/hls_exp_apfixed.h:41:1) to (/opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot/hls_exp_apfixed.h:867:1) in function 'exp_reduce::exp<16, 8>'... converting 5 basic blocks.
+INFO: [XFORM 203-11] Balancing expressions in function 'exp_reduce::exp<16, 8>' (/opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot/hls_exp_apfixed.h:41:1)...8 expression(s) balanced.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:01:06 ; elapsed = 00:01:13 . Memory (MB): peak = 1104.809 ; gain = 404.785 ; free physical = 904 ; free virtual = 10887
+INFO: [XFORM 203-541] Flattening a loop nest 'Loop-1.1' (yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:17:27) in function 'yolo_yolo_top'.
+INFO: [XFORM 203-541] Flattening a loop nest 'Loop-1' (yolo_yolo_fp_2019_64/src/yolo_yolo.cpp:14:27) in function 'yolo_yolo_top'.
+WARNING: [XFORM 203-631] Renaming function 'exp_reduce::exp<16, 8>' to 'exp<16, 8>' (/opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot/hls_exp_apfixed.h:41:1)
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:01:06 ; elapsed = 00:01:14 . Memory (MB): peak = 1168.805 ; gain = 468.781 ; free physical = 854 ; free virtual = 10841
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'yolo_yolo_top' ...
+WARNING: [SYN 201-103] Legalizing function name 'exp<16, 8>' to 'exp_16_8_s'.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'exp_16_8_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining function 'exp<16, 8>'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 6.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 74.86 seconds; current allocated memory: 403.815 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.23 seconds; current allocated memory: 404.154 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'logistic_activate' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining function 'logistic_activate'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 29.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.11 seconds; current allocated memory: 404.385 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.07 seconds; current allocated memory: 404.599 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'yolo_yolo_top' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 1'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 32.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.23 seconds; current allocated memory: 405.236 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.42 seconds; current allocated memory: 406.279 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'exp_16_8_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'exp_16_8_s'.
+INFO: [HLS 200-111]  Elapsed time: 0.47 seconds; current allocated memory: 407.323 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'logistic_activate' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Generating core module 'yolo_yolo_top_sdiv_18ns_17s_18_22_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'logistic_activate'.
+INFO: [HLS 200-111]  Elapsed time: 0.31 seconds; current allocated memory: 409.563 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------

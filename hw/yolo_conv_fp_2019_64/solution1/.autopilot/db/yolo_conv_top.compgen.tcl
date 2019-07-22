@@ -1,6 +1,6 @@
 # This script segment is generated automatically by AutoPilot
 
-set id 92
+set id 87
 set name yolo_conv_top_am_addmul_9ns_1ns_13ns_22_1_1
 set corename simcore_am
 set op am
@@ -82,7 +82,7 @@ puts "@W \[IMPL-101\] Cannot find ::AESL_LIB_VIRTEX::xil_gen_dsp48, check your p
 }
 
 
-set id 93
+set id 88
 set name yolo_conv_top_mac_muladd_4ns_10ns_9ns_13_1_1
 set corename simcore_mac
 set op mac
@@ -165,7 +165,7 @@ puts "@W \[IMPL-101\] Cannot find ::AESL_LIB_VIRTEX::xil_gen_dsp48, check your p
 
 
 # Memory (RAM/ROM)  definition:
-set ID 96
+set ID 91
 set hasByteEnable 0
 set MemName yolo_conv_top_line_buff_group_0_va
 set CoreName ap_simcore_mem
@@ -250,7 +250,7 @@ if {[info proc ::AESL_LIB_VIRTEX::xil_gen_RAM] == "::AESL_LIB_VIRTEX::xil_gen_RA
 
 
 # Memory (RAM/ROM)  definition:
-set ID 97
+set ID 92
 set hasByteEnable 0
 set MemName yolo_conv_top_local_mem_group_0_d
 set CoreName ap_simcore_mem
@@ -334,93 +334,8 @@ if {[info proc ::AESL_LIB_VIRTEX::xil_gen_RAM] == "::AESL_LIB_VIRTEX::xil_gen_RA
 }
 
 
-# Memory (RAM/ROM)  definition:
-set ID 98
-set hasByteEnable 0
-set MemName yolo_conv_top_kernel_bias_fp_0_V
-set CoreName ap_simcore_mem
-set PortList { 2 2 }
-set DataWd 16
-set AddrRange 8
-set AddrWd 3
-set impl_style block
-set TrueReset 0
-set HasInitializer 0
-set IsROM 0
-set ROMData {}
-set NumOfStage 2
-set MaxLatency -1
-set DelayBudget 2.322
-set ClkPeriod 10
-set RegisteredInput 0
-if {${::AESL::PGuard_simmodel_gen}} {
-if {[info proc ap_gen_simcore_mem] == "ap_gen_simcore_mem"} {
-    eval "ap_gen_simcore_mem { \
-    id ${ID} \
-    name ${MemName} \
-    corename ${CoreName}  \
-    op mem \
-    hasByteEnable ${hasByteEnable} \
-    reset_level 1 \
-    sync_rst true \
-    stage_num ${NumOfStage}  \
-    registered_input ${RegisteredInput} \
-    port_num 2 \
-    port_list \{${PortList}\} \
-    data_wd ${DataWd} \
-    addr_wd ${AddrWd} \
-    addr_range ${AddrRange} \
-    style ${impl_style} \
-    true_reset ${TrueReset} \
-    delay_budget ${DelayBudget} \
-    clk_period ${ClkPeriod} \
-    HasInitializer ${HasInitializer} \
-    rom_data \{${ROMData}\} \
- } "
-} else {
-    puts "@W \[IMPL-102\] Cannot find ap_gen_simcore_mem, check your platform lib"
-}
-}
-
-
-if {${::AESL::PGuard_rtl_comp_handler}} {
-  ::AP::rtl_comp_handler $MemName
-}
-
-
-set CoreName RAM
-if {${::AESL::PGuard_autocg_gen} && ${::AESL::PGuard_autocg_ipmgen}} {
-if {[info proc ::AESL_LIB_VIRTEX::xil_gen_RAM] == "::AESL_LIB_VIRTEX::xil_gen_RAM"} {
-    eval "::AESL_LIB_VIRTEX::xil_gen_RAM { \
-    id ${ID} \
-    name ${MemName} \
-    corename ${CoreName}  \
-    op mem \
-    hasByteEnable ${hasByteEnable} \
-    reset_level 1 \
-    sync_rst true \
-    stage_num ${NumOfStage}  \
-    registered_input ${RegisteredInput} \
-    port_num 2 \
-    port_list \{${PortList}\} \
-    data_wd ${DataWd} \
-    addr_wd ${AddrWd} \
-    addr_range ${AddrRange} \
-    style ${impl_style} \
-    true_reset ${TrueReset} \
-    delay_budget ${DelayBudget} \
-    clk_period ${ClkPeriod} \
-    HasInitializer ${HasInitializer} \
-    rom_data \{${ROMData}\} \
- } "
-  } else {
-    puts "@W \[IMPL-104\] Cannot find ::AESL_LIB_VIRTEX::xil_gen_RAM, check your platform lib"
-  }
-}
-
-
 # FIFO definition:
-set ID 99
+set ID 93
 set FifoName fifo_w16_d2_A
 set InstName out_stream_group_0_s_U
 set CoreName ap_simcore_fifo
@@ -489,7 +404,7 @@ puts "@W \[IMPL-107\] Cannot find ::AESL_LIB_VIRTEX::xil_gen_FIFO, check your pl
 
 
 # FIFO definition:
-set ID 100
+set ID 94
 set FifoName fifo_w16_d2_A
 set InstName out_stream_group_1_s_U
 set CoreName ap_simcore_fifo
@@ -558,7 +473,7 @@ puts "@W \[IMPL-107\] Cannot find ::AESL_LIB_VIRTEX::xil_gen_FIFO, check your pl
 
 
 # FIFO definition:
-set ID 101
+set ID 95
 set FifoName fifo_w16_d2_A
 set InstName out_stream_group_2_s_U
 set CoreName ap_simcore_fifo
@@ -627,7 +542,7 @@ puts "@W \[IMPL-107\] Cannot find ::AESL_LIB_VIRTEX::xil_gen_FIFO, check your pl
 
 
 # FIFO definition:
-set ID 102
+set ID 96
 set FifoName fifo_w16_d2_A
 set InstName out_stream_group_3_s_U
 set CoreName ap_simcore_fifo
@@ -696,7 +611,7 @@ puts "@W \[IMPL-107\] Cannot find ::AESL_LIB_VIRTEX::xil_gen_FIFO, check your pl
 
 
 # FIFO definition:
-set ID 103
+set ID 97
 set FifoName fifo_w16_d2_A
 set InstName out_stream_group_4_s_U
 set CoreName ap_simcore_fifo
@@ -765,7 +680,7 @@ puts "@W \[IMPL-107\] Cannot find ::AESL_LIB_VIRTEX::xil_gen_FIFO, check your pl
 
 
 # FIFO definition:
-set ID 104
+set ID 98
 set FifoName fifo_w16_d2_A
 set InstName out_stream_group_5_s_U
 set CoreName ap_simcore_fifo
@@ -834,7 +749,7 @@ puts "@W \[IMPL-107\] Cannot find ::AESL_LIB_VIRTEX::xil_gen_FIFO, check your pl
 
 
 # FIFO definition:
-set ID 105
+set ID 99
 set FifoName fifo_w16_d2_A
 set InstName out_stream_group_6_s_U
 set CoreName ap_simcore_fifo
@@ -903,7 +818,7 @@ puts "@W \[IMPL-107\] Cannot find ::AESL_LIB_VIRTEX::xil_gen_FIFO, check your pl
 
 
 # FIFO definition:
-set ID 106
+set ID 100
 set FifoName fifo_w16_d2_A
 set InstName out_stream_group_7_s_U
 set CoreName ap_simcore_fifo
@@ -972,7 +887,7 @@ puts "@W \[IMPL-107\] Cannot find ::AESL_LIB_VIRTEX::xil_gen_FIFO, check your pl
 
 
 # FIFO definition:
-set ID 107
+set ID 101
 set FifoName fifo_w16_d2_A
 set InstName out_stream_group_8_s_U
 set CoreName ap_simcore_fifo
@@ -1041,7 +956,7 @@ puts "@W \[IMPL-107\] Cannot find ::AESL_LIB_VIRTEX::xil_gen_FIFO, check your pl
 
 
 # FIFO definition:
-set ID 108
+set ID 102
 set FifoName fifo_w16_d2_A
 set InstName out_stream_group_9_s_U
 set CoreName ap_simcore_fifo
@@ -1110,7 +1025,7 @@ puts "@W \[IMPL-107\] Cannot find ::AESL_LIB_VIRTEX::xil_gen_FIFO, check your pl
 
 
 # FIFO definition:
-set ID 109
+set ID 103
 set FifoName fifo_w16_d2_A
 set InstName out_stream_group_10_U
 set CoreName ap_simcore_fifo
@@ -1179,7 +1094,7 @@ puts "@W \[IMPL-107\] Cannot find ::AESL_LIB_VIRTEX::xil_gen_FIFO, check your pl
 
 
 # FIFO definition:
-set ID 110
+set ID 104
 set FifoName fifo_w16_d2_A
 set InstName out_stream_group_11_U
 set CoreName ap_simcore_fifo
@@ -1248,7 +1163,7 @@ puts "@W \[IMPL-107\] Cannot find ::AESL_LIB_VIRTEX::xil_gen_FIFO, check your pl
 
 
 # FIFO definition:
-set ID 111
+set ID 105
 set FifoName fifo_w16_d2_A
 set InstName out_stream_group_12_U
 set CoreName ap_simcore_fifo
@@ -1317,7 +1232,7 @@ puts "@W \[IMPL-107\] Cannot find ::AESL_LIB_VIRTEX::xil_gen_FIFO, check your pl
 
 
 # FIFO definition:
-set ID 112
+set ID 106
 set FifoName fifo_w16_d2_A
 set InstName out_stream_group_13_U
 set CoreName ap_simcore_fifo
@@ -1386,7 +1301,7 @@ puts "@W \[IMPL-107\] Cannot find ::AESL_LIB_VIRTEX::xil_gen_FIFO, check your pl
 
 
 # FIFO definition:
-set ID 113
+set ID 107
 set FifoName fifo_w16_d2_A
 set InstName out_stream_group_14_U
 set CoreName ap_simcore_fifo
@@ -1455,7 +1370,7 @@ puts "@W \[IMPL-107\] Cannot find ::AESL_LIB_VIRTEX::xil_gen_FIFO, check your pl
 
 
 # FIFO definition:
-set ID 114
+set ID 108
 set FifoName fifo_w16_d2_A
 set InstName out_stream_group_15_U
 set CoreName ap_simcore_fifo
@@ -1524,7 +1439,7 @@ puts "@W \[IMPL-107\] Cannot find ::AESL_LIB_VIRTEX::xil_gen_FIFO, check your pl
 
 
 # FIFO definition:
-set ID 115
+set ID 109
 set FifoName fifo_w16_d2_A
 set InstName out_stream_group_16_U
 set CoreName ap_simcore_fifo
@@ -1593,7 +1508,7 @@ puts "@W \[IMPL-107\] Cannot find ::AESL_LIB_VIRTEX::xil_gen_FIFO, check your pl
 
 
 # FIFO definition:
-set ID 116
+set ID 110
 set FifoName fifo_w16_d2_A
 set InstName out_stream_group_17_U
 set CoreName ap_simcore_fifo
@@ -1662,7 +1577,7 @@ puts "@W \[IMPL-107\] Cannot find ::AESL_LIB_VIRTEX::xil_gen_FIFO, check your pl
 
 
 # FIFO definition:
-set ID 117
+set ID 111
 set FifoName fifo_w16_d2_A
 set InstName out_stream_group_18_U
 set CoreName ap_simcore_fifo
@@ -1731,7 +1646,7 @@ puts "@W \[IMPL-107\] Cannot find ::AESL_LIB_VIRTEX::xil_gen_FIFO, check your pl
 
 
 # FIFO definition:
-set ID 118
+set ID 112
 set FifoName fifo_w16_d2_A
 set InstName out_stream_group_19_U
 set CoreName ap_simcore_fifo
@@ -1800,7 +1715,7 @@ puts "@W \[IMPL-107\] Cannot find ::AESL_LIB_VIRTEX::xil_gen_FIFO, check your pl
 
 
 # FIFO definition:
-set ID 119
+set ID 113
 set FifoName fifo_w16_d2_A
 set InstName out_stream_group_20_U
 set CoreName ap_simcore_fifo
@@ -1869,7 +1784,7 @@ puts "@W \[IMPL-107\] Cannot find ::AESL_LIB_VIRTEX::xil_gen_FIFO, check your pl
 
 
 # FIFO definition:
-set ID 120
+set ID 114
 set FifoName fifo_w16_d2_A
 set InstName out_stream_group_21_U
 set CoreName ap_simcore_fifo
@@ -1938,7 +1853,7 @@ puts "@W \[IMPL-107\] Cannot find ::AESL_LIB_VIRTEX::xil_gen_FIFO, check your pl
 
 
 # FIFO definition:
-set ID 121
+set ID 115
 set FifoName fifo_w16_d2_A
 set InstName out_stream_group_22_U
 set CoreName ap_simcore_fifo
@@ -2007,7 +1922,7 @@ puts "@W \[IMPL-107\] Cannot find ::AESL_LIB_VIRTEX::xil_gen_FIFO, check your pl
 
 
 # FIFO definition:
-set ID 122
+set ID 116
 set FifoName fifo_w16_d2_A
 set InstName out_stream_group_23_U
 set CoreName ap_simcore_fifo
@@ -2076,7 +1991,7 @@ puts "@W \[IMPL-107\] Cannot find ::AESL_LIB_VIRTEX::xil_gen_FIFO, check your pl
 
 
 # FIFO definition:
-set ID 123
+set ID 117
 set FifoName fifo_w16_d2_A
 set InstName out_stream_group_24_U
 set CoreName ap_simcore_fifo
@@ -2145,7 +2060,7 @@ puts "@W \[IMPL-107\] Cannot find ::AESL_LIB_VIRTEX::xil_gen_FIFO, check your pl
 
 
 # FIFO definition:
-set ID 124
+set ID 118
 set FifoName fifo_w16_d2_A
 set InstName out_stream_group_25_U
 set CoreName ap_simcore_fifo
@@ -2214,7 +2129,7 @@ puts "@W \[IMPL-107\] Cannot find ::AESL_LIB_VIRTEX::xil_gen_FIFO, check your pl
 
 
 # FIFO definition:
-set ID 125
+set ID 119
 set FifoName fifo_w16_d2_A
 set InstName out_stream_group_26_U
 set CoreName ap_simcore_fifo
@@ -2283,7 +2198,7 @@ puts "@W \[IMPL-107\] Cannot find ::AESL_LIB_VIRTEX::xil_gen_FIFO, check your pl
 
 
 # FIFO definition:
-set ID 126
+set ID 120
 set FifoName fifo_w16_d2_A
 set InstName out_stream_group_27_U
 set CoreName ap_simcore_fifo
@@ -2352,7 +2267,7 @@ puts "@W \[IMPL-107\] Cannot find ::AESL_LIB_VIRTEX::xil_gen_FIFO, check your pl
 
 
 # FIFO definition:
-set ID 127
+set ID 121
 set FifoName fifo_w16_d2_A
 set InstName out_stream_group_28_U
 set CoreName ap_simcore_fifo
@@ -2421,7 +2336,7 @@ puts "@W \[IMPL-107\] Cannot find ::AESL_LIB_VIRTEX::xil_gen_FIFO, check your pl
 
 
 # FIFO definition:
-set ID 128
+set ID 122
 set FifoName fifo_w16_d2_A
 set InstName out_stream_group_29_U
 set CoreName ap_simcore_fifo
@@ -2490,7 +2405,7 @@ puts "@W \[IMPL-107\] Cannot find ::AESL_LIB_VIRTEX::xil_gen_FIFO, check your pl
 
 
 # FIFO definition:
-set ID 129
+set ID 123
 set FifoName fifo_w16_d2_A
 set InstName out_stream_group_30_U
 set CoreName ap_simcore_fifo
@@ -2559,7 +2474,7 @@ puts "@W \[IMPL-107\] Cannot find ::AESL_LIB_VIRTEX::xil_gen_FIFO, check your pl
 
 
 # FIFO definition:
-set ID 130
+set ID 124
 set FifoName fifo_w16_d2_A
 set InstName out_stream_group_31_U
 set CoreName ap_simcore_fifo
@@ -2696,21 +2611,13 @@ real_input_h_V {
 	offset 64
 	offset_end 71
 }
-leaky_V { 
-	dir I
-	width 1
-	depth 1
-	mode ap_none
-	offset 72
-	offset_end 79
-}
 fold_win_area_V { 
 	dir I
 	width 3
 	depth 1
 	mode ap_none
-	offset 80
-	offset_end 87
+	offset 72
+	offset_end 79
 }
 }
 dict set axilite_register_dict CTRL_BUS $port_CTRL_BUS
@@ -2720,7 +2627,7 @@ dict set axilite_register_dict CTRL_BUS $port_CTRL_BUS
 if {${::AESL::PGuard_simmodel_gen}} {
 	if {[info proc ::AESL_LIB_XILADAPTER::s_axilite_gen] == "::AESL_LIB_XILADAPTER::s_axilite_gen"} {
 		eval "::AESL_LIB_XILADAPTER::s_axilite_gen { \
-			id 131 \
+			id 125 \
 			corename yolo_conv_top_CTRL_BUS_axilite \
 			name yolo_conv_top_CTRL_BUS_s_axi \
 			ports {$port_CTRL_BUS} \
@@ -2740,7 +2647,7 @@ if {${::AESL::PGuard_rtl_comp_handler}} {
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::native_axis_add] == "::AESL_LIB_XILADAPTER::native_axis_add"} {
 eval "::AESL_LIB_XILADAPTER::native_axis_add { \
-    id 132 \
+    id 126 \
     name inStream_V_data \
     reset_level 0 \
     sync_rst true \
@@ -2759,7 +2666,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::native_axis_add] == "::AESL_LIB_XILADAPTER::native_axis_add"} {
 eval "::AESL_LIB_XILADAPTER::native_axis_add { \
-    id 133 \
+    id 127 \
     name inStream_V_keep_V \
     reset_level 0 \
     sync_rst true \
@@ -2778,7 +2685,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::native_axis_add] == "::AESL_LIB_XILADAPTER::native_axis_add"} {
 eval "::AESL_LIB_XILADAPTER::native_axis_add { \
-    id 134 \
+    id 128 \
     name inStream_V_strb_V \
     reset_level 0 \
     sync_rst true \
@@ -2797,7 +2704,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::native_axis_add] == "::AESL_LIB_XILADAPTER::native_axis_add"} {
 eval "::AESL_LIB_XILADAPTER::native_axis_add { \
-    id 135 \
+    id 129 \
     name inStream_V_user_V \
     reset_level 0 \
     sync_rst true \
@@ -2816,7 +2723,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::native_axis_add] == "::AESL_LIB_XILADAPTER::native_axis_add"} {
 eval "::AESL_LIB_XILADAPTER::native_axis_add { \
-    id 136 \
+    id 130 \
     name inStream_V_last_V \
     reset_level 0 \
     sync_rst true \
@@ -2835,7 +2742,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::native_axis_add] == "::AESL_LIB_XILADAPTER::native_axis_add"} {
 eval "::AESL_LIB_XILADAPTER::native_axis_add { \
-    id 137 \
+    id 131 \
     name inStream_V_id_V \
     reset_level 0 \
     sync_rst true \
@@ -2854,7 +2761,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::native_axis_add] == "::AESL_LIB_XILADAPTER::native_axis_add"} {
 eval "::AESL_LIB_XILADAPTER::native_axis_add { \
-    id 138 \
+    id 132 \
     name inStream_V_dest_V \
     reset_level 0 \
     sync_rst true \
@@ -2873,7 +2780,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::native_axis_add] == "::AESL_LIB_XILADAPTER::native_axis_add"} {
 eval "::AESL_LIB_XILADAPTER::native_axis_add { \
-    id 139 \
+    id 133 \
     name outStream_V_data \
     reset_level 0 \
     sync_rst true \
@@ -2892,7 +2799,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::native_axis_add] == "::AESL_LIB_XILADAPTER::native_axis_add"} {
 eval "::AESL_LIB_XILADAPTER::native_axis_add { \
-    id 140 \
+    id 134 \
     name outStream_V_keep_V \
     reset_level 0 \
     sync_rst true \
@@ -2911,7 +2818,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::native_axis_add] == "::AESL_LIB_XILADAPTER::native_axis_add"} {
 eval "::AESL_LIB_XILADAPTER::native_axis_add { \
-    id 141 \
+    id 135 \
     name outStream_V_strb_V \
     reset_level 0 \
     sync_rst true \
@@ -2930,7 +2837,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::native_axis_add] == "::AESL_LIB_XILADAPTER::native_axis_add"} {
 eval "::AESL_LIB_XILADAPTER::native_axis_add { \
-    id 142 \
+    id 136 \
     name outStream_V_user_V \
     reset_level 0 \
     sync_rst true \
@@ -2949,7 +2856,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::native_axis_add] == "::AESL_LIB_XILADAPTER::native_axis_add"} {
 eval "::AESL_LIB_XILADAPTER::native_axis_add { \
-    id 143 \
+    id 137 \
     name outStream_V_last_V \
     reset_level 0 \
     sync_rst true \
@@ -2968,7 +2875,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::native_axis_add] == "::AESL_LIB_XILADAPTER::native_axis_add"} {
 eval "::AESL_LIB_XILADAPTER::native_axis_add { \
-    id 144 \
+    id 138 \
     name outStream_V_id_V \
     reset_level 0 \
     sync_rst true \
@@ -2987,7 +2894,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::native_axis_add] == "::AESL_LIB_XILADAPTER::native_axis_add"} {
 eval "::AESL_LIB_XILADAPTER::native_axis_add { \
-    id 145 \
+    id 139 \
     name outStream_V_dest_V \
     reset_level 0 \
     sync_rst true \

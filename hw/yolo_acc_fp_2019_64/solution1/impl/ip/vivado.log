@@ -2,8 +2,8 @@
 # Vivado v2019.1 (64-bit)
 # SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
 # IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
-# Start of session at: Wed Jul 17 15:06:19 2019
-# Process ID: 28022
+# Start of session at: Sat Jul 20 20:23:10 2019
+# Process ID: 10163
 # Current directory: /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_acc_fp_2019_64/solution1/impl/ip
 # Command line: vivado -notrace -mode batch -source run_ippack.tcl
 # Log file: /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_acc_fp_2019_64/solution1/impl/ip/vivado.log
@@ -13,4 +13,4 @@ source run_ippack.tcl -notrace
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx_2019_1/Vivado/2019.1/data/ip'.
-INFO: [Common 17-206] Exiting Vivado at Wed Jul 17 15:06:33 2019...
+INFO: [Common 17-206] Exiting Vivado at Sat Jul 20 20:23:33 2019...

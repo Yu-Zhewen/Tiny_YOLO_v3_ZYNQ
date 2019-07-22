@@ -28,5 +28,5 @@
   <xd:arg xd:name="input_fold_ch" xd:originalName="input_fold_ch" xd:direction="in" xd:interfaceRef="s_axi_CTRL_BUS" xd:busTypeRef="axilite" xd:offset="0x30" xd:handshakeRef="ap_none" xd:dataWidth="4"/>
   <xd:arg xd:name="stride" xd:originalName="stride" xd:direction="in" xd:interfaceRef="s_axi_CTRL_BUS" xd:busTypeRef="axilite" xd:offset="0x38" xd:handshakeRef="ap_none" xd:dataWidth="2"/>
   <xd:latencyEstimates xd:best-case="1384491" xd:worst-case="1384491" xd:average-case="1384491"/>
-  <xd:resourceEstimates xd:LUT="3308" xd:FF="1947" xd:BRAM="32" xd:DSP="1"/>
+  <xd:resourceEstimates xd:LUT="3422" xd:FF="2105" xd:BRAM="32" xd:DSP="1"/>
 </xd:acceleratorMap>

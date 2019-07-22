@@ -40,7 +40,6 @@ module yolo_conv_top_CTRL_BUS_s_axi
     output wire [8:0]                    input_h_V,
     output wire [8:0]                    input_w_V,
     output wire [8:0]                    real_input_h_V,
-    output wire [0:0]                    leaky_V,
     output wire [2:0]                    fold_win_area_V
 );
 //------------------------Address Info-------------------
@@ -90,14 +89,10 @@ module yolo_conv_top_CTRL_BUS_s_axi
 //        bit 8~0 - real_input_h_V[8:0] (Read/Write)
 //        others  - reserved
 // 0x44 : reserved
-// 0x48 : Data signal of leaky_V
-//        bit 0  - leaky_V[0] (Read/Write)
-//        others - reserved
-// 0x4c : reserved
-// 0x50 : Data signal of fold_win_area_V
+// 0x48 : Data signal of fold_win_area_V
 //        bit 2~0 - fold_win_area_V[2:0] (Read/Write)
 //        others  - reserved
-// 0x54 : reserved
+// 0x4c : reserved
 // (SC = Self Clear, COR = Clear on Read, TOW = Toggle on Write, COH = Clear on Handshake)
 
 //------------------------Parameter----------------------
@@ -120,10 +115,8 @@ localparam
     ADDR_INPUT_W_V_CTRL          = 7'h3c,
     ADDR_REAL_INPUT_H_V_DATA_0   = 7'h40,
     ADDR_REAL_INPUT_H_V_CTRL     = 7'h44,
-    ADDR_LEAKY_V_DATA_0          = 7'h48,
-    ADDR_LEAKY_V_CTRL            = 7'h4c,
-    ADDR_FOLD_WIN_AREA_V_DATA_0  = 7'h50,
-    ADDR_FOLD_WIN_AREA_V_CTRL    = 7'h54,
+    ADDR_FOLD_WIN_AREA_V_DATA_0  = 7'h48,
+    ADDR_FOLD_WIN_AREA_V_CTRL    = 7'h4c,
     WRIDLE                       = 2'd0,
     WRDATA                       = 2'd1,
     WRRESP                       = 2'd2,
@@ -161,7 +154,6 @@ localparam
     reg  [8:0]                    int_input_h_V = 'b0;
     reg  [8:0]                    int_input_w_V = 'b0;
     reg  [8:0]                    int_real_input_h_V = 'b0;
-    reg  [0:0]                    int_leaky_V = 'b0;
     reg  [2:0]                    int_fold_win_area_V = 'b0;
 
 //------------------------Instantiation------------------
@@ -291,9 +283,6 @@ always @(posedge ACLK) begin
                 ADDR_REAL_INPUT_H_V_DATA_0: begin
                     rdata <= int_real_input_h_V[8:0];
                 end
-                ADDR_LEAKY_V_DATA_0: begin
-                    rdata <= int_leaky_V[0:0];
-                end
                 ADDR_FOLD_WIN_AREA_V_DATA_0: begin
                     rdata <= int_fold_win_area_V[2:0];
                 end
@@ -313,7 +302,6 @@ assign fold_input_ch_V  = int_fold_input_ch_V;
 assign input_h_V        = int_input_h_V;
 assign input_w_V        = int_input_w_V;
 assign real_input_h_V   = int_real_input_h_V;
-assign leaky_V          = int_leaky_V;
 assign fold_win_area_V  = int_fold_win_area_V;
 // int_ap_start
 always @(posedge ACLK) begin
@@ -478,16 +466,6 @@ always @(posedge ACLK) begin
     else if (ACLK_EN) begin
         if (w_hs && waddr == ADDR_REAL_INPUT_H_V_DATA_0)
             int_real_input_h_V[8:0] <= (WDATA[31:0] & wmask) | (int_real_input_h_V[8:0] & ~wmask);
-    end
-end
-
-// int_leaky_V[0:0]
-always @(posedge ACLK) begin
-    if (ARESET)
-        int_leaky_V[0:0] <= 0;
-    else if (ACLK_EN) begin
-        if (w_hs && waddr == ADDR_LEAKY_V_DATA_0)
-            int_leaky_V[0:0] <= (WDATA[31:0] & wmask) | (int_leaky_V[0:0] & ~wmask);
     end
 end
 

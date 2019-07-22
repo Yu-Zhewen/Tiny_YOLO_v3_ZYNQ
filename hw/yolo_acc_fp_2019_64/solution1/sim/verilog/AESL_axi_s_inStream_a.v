@@ -46,7 +46,7 @@ module AESL_axi_s_inStream_a (
     reg inStream_a_TDATA_read_en;
     wire [64 - 1:0] inStream_a_TDATA_read_data;
     
-    fifo #(21632, 64) fifo_inStream_a_TDATA (
+    fifo #(692224, 64) fifo_inStream_a_TDATA (
         .reset(1'b0),
         .write_clock(clk),
         .write_en(inStream_a_TDATA_write_en),
@@ -70,7 +70,7 @@ module AESL_axi_s_inStream_a (
     reg inStream_a_TKEEP_read_en;
     wire [8 - 1:0] inStream_a_TKEEP_read_data;
     
-    fifo #(21632, 8) fifo_inStream_a_TKEEP (
+    fifo #(692224, 8) fifo_inStream_a_TKEEP (
         .reset(1'b0),
         .write_clock(clk),
         .write_en(inStream_a_TKEEP_write_en),
@@ -94,7 +94,7 @@ module AESL_axi_s_inStream_a (
     reg inStream_a_TSTRB_read_en;
     wire [8 - 1:0] inStream_a_TSTRB_read_data;
     
-    fifo #(21632, 8) fifo_inStream_a_TSTRB (
+    fifo #(692224, 8) fifo_inStream_a_TSTRB (
         .reset(1'b0),
         .write_clock(clk),
         .write_en(inStream_a_TSTRB_write_en),
@@ -118,7 +118,7 @@ module AESL_axi_s_inStream_a (
     reg inStream_a_TUSER_read_en;
     wire [2 - 1:0] inStream_a_TUSER_read_data;
     
-    fifo #(21632, 2) fifo_inStream_a_TUSER (
+    fifo #(692224, 2) fifo_inStream_a_TUSER (
         .reset(1'b0),
         .write_clock(clk),
         .write_en(inStream_a_TUSER_write_en),
@@ -142,7 +142,7 @@ module AESL_axi_s_inStream_a (
     reg inStream_a_TLAST_read_en;
     wire [1 - 1:0] inStream_a_TLAST_read_data;
     
-    fifo #(21632, 1) fifo_inStream_a_TLAST (
+    fifo #(692224, 1) fifo_inStream_a_TLAST (
         .reset(1'b0),
         .write_clock(clk),
         .write_en(inStream_a_TLAST_write_en),
@@ -166,7 +166,7 @@ module AESL_axi_s_inStream_a (
     reg inStream_a_TID_read_en;
     wire [5 - 1:0] inStream_a_TID_read_data;
     
-    fifo #(21632, 5) fifo_inStream_a_TID (
+    fifo #(692224, 5) fifo_inStream_a_TID (
         .reset(1'b0),
         .write_clock(clk),
         .write_en(inStream_a_TID_write_en),
@@ -190,7 +190,7 @@ module AESL_axi_s_inStream_a (
     reg inStream_a_TDEST_read_en;
     wire [6 - 1:0] inStream_a_TDEST_read_data;
     
-    fifo #(21632, 6) fifo_inStream_a_TDEST (
+    fifo #(692224, 6) fifo_inStream_a_TDEST (
         .reset(1'b0),
         .write_clock(clk),
         .write_en(inStream_a_TDEST_write_en),

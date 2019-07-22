@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'yolo_conv_top'" level="0">
-<item name = "Date">Tue Jul 16 08:53:06 2019
+<item name = "Date">Sat Jul 20 19:03:48 2019
 </item>
 <item name = "Version">2019.1 (Build 2552052 on Fri May 24 15:28:33 MDT 2019)</item>
 <item name = "Project">yolo_conv_fp_2019_64</item>
@@ -24,25 +24,25 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="6">, min, max, min, max, Type</keys>
-<column name="">2802505, 2802505, 2802505, 2802505, none</column>
+<column name="">2802489, 2802489, 2802489, 2802489, none</column>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="7">Instance, Module, min, max, min, max, Type</keys>
-<column name="grp_window_macc_fu_11766">window_macc, 7, 7, 1, 1, function</column>
-<column name="grp_window_macc_fu_11788">window_macc, 7, 7, 1, 1, function</column>
-<column name="grp_window_macc_fu_11810">window_macc, 7, 7, 1, 1, function</column>
-<column name="grp_window_macc_fu_11832">window_macc, 7, 7, 1, 1, function</column>
-<column name="grp_window_macc_fu_11854">window_macc, 7, 7, 1, 1, function</column>
-<column name="grp_window_macc_fu_11876">window_macc, 7, 7, 1, 1, function</column>
-<column name="grp_window_macc_fu_11898">window_macc, 7, 7, 1, 1, function</column>
-<column name="grp_window_macc_fu_11920">window_macc, 7, 7, 1, 1, function</column>
-<column name="grp_post_process_fu_11942">post_process, 5, 5, 1, 1, function</column>
-<column name="grp_post_process_fu_11956">post_process, 5, 5, 1, 1, function</column>
-<column name="grp_out_stream_merge_fu_12000">out_stream_merge, 6, 6, 6, 6, function</column>
-<column name="grp_slide_window_fu_12058">slide_window, 3, 3, 3, 3, function</column>
+<column name="grp_window_macc_fu_11214">window_macc, 7, 7, 1, 1, function</column>
+<column name="grp_window_macc_fu_11236">window_macc, 7, 7, 1, 1, function</column>
+<column name="grp_window_macc_fu_11258">window_macc, 7, 7, 1, 1, function</column>
+<column name="grp_window_macc_fu_11280">window_macc, 7, 7, 1, 1, function</column>
+<column name="grp_window_macc_fu_11302">window_macc, 7, 7, 1, 1, function</column>
+<column name="grp_window_macc_fu_11324">window_macc, 7, 7, 1, 1, function</column>
+<column name="grp_window_macc_fu_11346">window_macc, 7, 7, 1, 1, function</column>
+<column name="grp_window_macc_fu_11368">window_macc, 7, 7, 1, 1, function</column>
+<column name="grp_out_stream_merge_fu_11390">out_stream_merge, 6, 6, 6, 6, function</column>
+<column name="grp_post_process_fu_11448">post_process, 2, 2, 1, 1, function</column>
+<column name="grp_post_process_fu_11459">post_process, 2, 2, 1, 1, function</column>
+<column name="grp_slide_window_fu_11500">slide_window, 3, 3, 3, 3, function</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
@@ -52,8 +52,7 @@
 <column name="- Loop 3">7, 7, 1, -, -, 8, no</column>
 <column name="- Loop 4">7, 7, 1, -, -, 8, no</column>
 <column name="- Loop 5">144, 144, 2, 1, 1, 144, yes</column>
-<column name="- Loop 6">8, 8, 3, 2, 1, 4, yes</column>
-<column name="- Loop 7">2802310, 2802310, 55, 16, 1, 175142, yes</column>
+<column name="- Loop 6">2802307, 2802307, 52, 16, 1, 175142, yes</column>
 </table>
 </item>
 </section>

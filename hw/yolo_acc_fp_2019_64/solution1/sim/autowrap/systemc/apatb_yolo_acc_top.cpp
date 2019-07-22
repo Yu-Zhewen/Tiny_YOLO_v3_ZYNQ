@@ -144,6 +144,12 @@ using namespace sc_dt;
 #define AUTOTB_TVIN_input_h_V  "../tv/cdatafile/c.yolo_acc_top.autotvin_input_h_V.dat"
 // wrapc file define: "input_w_V"
 #define AUTOTB_TVIN_input_w_V  "../tv/cdatafile/c.yolo_acc_top.autotvin_input_w_V.dat"
+// wrapc file define: "fold_input_ch_V"
+#define AUTOTB_TVIN_fold_input_ch_V  "../tv/cdatafile/c.yolo_acc_top.autotvin_fold_input_ch_V.dat"
+// wrapc file define: "leaky_V"
+#define AUTOTB_TVIN_leaky_V  "../tv/cdatafile/c.yolo_acc_top.autotvin_leaky_V.dat"
+// wrapc file define: "bias_en_V"
+#define AUTOTB_TVIN_bias_en_V  "../tv/cdatafile/c.yolo_acc_top.autotvin_bias_en_V.dat"
 
 #define INTER_TCL  "../tv/cdatafile/ref.tcl"
 
@@ -189,6 +195,9 @@ class INTER_TCL_FILE {
 			outStream_V_dest_V_depth = 0;
 			input_h_V_depth = 0;
 			input_w_V_depth = 0;
+			fold_input_ch_V_depth = 0;
+			leaky_V_depth = 0;
+			bias_en_V_depth = 0;
 			trans_num =0;
 		}
 
@@ -231,6 +240,9 @@ class INTER_TCL_FILE {
 			total_list << "{outStream_V_dest_V " << outStream_V_dest_V_depth << "}\n";
 			total_list << "{input_h_V " << input_h_V_depth << "}\n";
 			total_list << "{input_w_V " << input_w_V_depth << "}\n";
+			total_list << "{fold_input_ch_V " << fold_input_ch_V_depth << "}\n";
+			total_list << "{leaky_V " << leaky_V_depth << "}\n";
+			total_list << "{bias_en_V " << bias_en_V_depth << "}\n";
 			return total_list.str();
 		}
 
@@ -261,6 +273,9 @@ class INTER_TCL_FILE {
 		int outStream_V_dest_V_depth;
 		int input_h_V_depth;
 		int input_w_V_depth;
+		int fold_input_ch_V_depth;
+		int leaky_V_depth;
+		int bias_en_V_depth;
 		int trans_num;
 
 	private:
@@ -272,15 +287,21 @@ extern void yolo_acc_top (
 hls::stream<ap_axi_fp<64, 2, 5, 6 > > (&inStream_a),
 hls::stream<ap_axi_fp<64, 2, 5, 6 > > (&inStream_b),
 hls::stream<ap_axi_fp<64, 2, 5, 6 > > (&outStream),
-ap_uint<6> input_h,
-ap_uint<6> input_w);
+ap_uint<9> input_h,
+ap_uint<9> input_w,
+ap_uint<4> fold_input_ch,
+ap_uint<1> leaky,
+ap_uint<1> bias_en);
 
 void AESL_WRAP_yolo_acc_top (
 hls::stream<ap_axi_fp<64, 2, 5, 6 > > (&inStream_a),
 hls::stream<ap_axi_fp<64, 2, 5, 6 > > (&inStream_b),
 hls::stream<ap_axi_fp<64, 2, 5, 6 > > (&outStream),
-ap_uint<6> input_h,
-ap_uint<6> input_w)
+ap_uint<9> input_h,
+ap_uint<9> input_w,
+ap_uint<4> fold_input_ch,
+ap_uint<1> leaky,
+ap_uint<1> bias_en)
 {
 	refine_signal_handler();
 	fstream wrapc_switch_file_token;
@@ -1803,6 +1824,18 @@ ap_uint<6> input_w)
 		char* tvin_input_w_V = new char[50];
 		aesl_fh.touch(AUTOTB_TVIN_input_w_V);
 
+		// "fold_input_ch_V"
+		char* tvin_fold_input_ch_V = new char[50];
+		aesl_fh.touch(AUTOTB_TVIN_fold_input_ch_V);
+
+		// "leaky_V"
+		char* tvin_leaky_V = new char[50];
+		aesl_fh.touch(AUTOTB_TVIN_leaky_V);
+
+		// "bias_en_V"
+		char* tvin_bias_en_V = new char[50];
+		aesl_fh.touch(AUTOTB_TVIN_bias_en_V);
+
 		CodeState = DUMP_INPUTS;
 		static INTER_TCL_FILE tcl_file(INTER_TCL);
 		int leading_zero;
@@ -1838,13 +1871,13 @@ ap_uint<6> input_w)
 		sprintf(tvin_input_h_V, "[[transaction]] %d\n", AESL_transaction);
 		aesl_fh.write(AUTOTB_TVIN_input_h_V, tvin_input_h_V);
 
-		sc_bv<6> input_h_V_tvin_wrapc_buffer;
+		sc_bv<9> input_h_V_tvin_wrapc_buffer;
 
 		// RTL Name: input_h_V
 		{
-			// bitslice(5, 0)
+			// bitslice(8, 0)
 			{
-				// celement: input_h.V(5, 0)
+				// celement: input_h.V(8, 0)
 				{
 					// carray: (0) => (0) @ (0)
 					{
@@ -1856,9 +1889,9 @@ ap_uint<6> input_w)
 						// input_type_conversion : (input_h).to_string(2).c_str()
 						if (&(input_h) != NULL) // check the null address if the c port is array or others
 						{
-							sc_lv<6> input_h_V_tmp_mem;
+							sc_lv<9> input_h_V_tmp_mem;
 							input_h_V_tmp_mem = (input_h).to_string(2).c_str();
-							input_h_V_tvin_wrapc_buffer.range(5, 0) = input_h_V_tmp_mem.range(5, 0);
+							input_h_V_tvin_wrapc_buffer.range(8, 0) = input_h_V_tmp_mem.range(8, 0);
 						}
 					}
 				}
@@ -1880,13 +1913,13 @@ ap_uint<6> input_w)
 		sprintf(tvin_input_w_V, "[[transaction]] %d\n", AESL_transaction);
 		aesl_fh.write(AUTOTB_TVIN_input_w_V, tvin_input_w_V);
 
-		sc_bv<6> input_w_V_tvin_wrapc_buffer;
+		sc_bv<9> input_w_V_tvin_wrapc_buffer;
 
 		// RTL Name: input_w_V
 		{
-			// bitslice(5, 0)
+			// bitslice(8, 0)
 			{
-				// celement: input_w.V(5, 0)
+				// celement: input_w.V(8, 0)
 				{
 					// carray: (0) => (0) @ (0)
 					{
@@ -1898,9 +1931,9 @@ ap_uint<6> input_w)
 						// input_type_conversion : (input_w).to_string(2).c_str()
 						if (&(input_w) != NULL) // check the null address if the c port is array or others
 						{
-							sc_lv<6> input_w_V_tmp_mem;
+							sc_lv<9> input_w_V_tmp_mem;
 							input_w_V_tmp_mem = (input_w).to_string(2).c_str();
-							input_w_V_tvin_wrapc_buffer.range(5, 0) = input_w_V_tmp_mem.range(5, 0);
+							input_w_V_tvin_wrapc_buffer.range(8, 0) = input_w_V_tmp_mem.range(8, 0);
 						}
 					}
 				}
@@ -1917,6 +1950,132 @@ ap_uint<6> input_w)
 		tcl_file.set_num(1, &tcl_file.input_w_V_depth);
 		sprintf(tvin_input_w_V, "[[/transaction]] \n");
 		aesl_fh.write(AUTOTB_TVIN_input_w_V, tvin_input_w_V);
+
+		// [[transaction]]
+		sprintf(tvin_fold_input_ch_V, "[[transaction]] %d\n", AESL_transaction);
+		aesl_fh.write(AUTOTB_TVIN_fold_input_ch_V, tvin_fold_input_ch_V);
+
+		sc_bv<4> fold_input_ch_V_tvin_wrapc_buffer;
+
+		// RTL Name: fold_input_ch_V
+		{
+			// bitslice(3, 0)
+			{
+				// celement: fold_input_ch.V(3, 0)
+				{
+					// carray: (0) => (0) @ (0)
+					{
+						// sub                   : 
+						// ori_name              : fold_input_ch
+						// sub_1st_elem          : 
+						// ori_name_1st_elem     : fold_input_ch
+						// regulate_c_name       : fold_input_ch_V
+						// input_type_conversion : (fold_input_ch).to_string(2).c_str()
+						if (&(fold_input_ch) != NULL) // check the null address if the c port is array or others
+						{
+							sc_lv<4> fold_input_ch_V_tmp_mem;
+							fold_input_ch_V_tmp_mem = (fold_input_ch).to_string(2).c_str();
+							fold_input_ch_V_tvin_wrapc_buffer.range(3, 0) = fold_input_ch_V_tmp_mem.range(3, 0);
+						}
+					}
+				}
+			}
+		}
+
+		// dump tv to file
+		for (int i = 0; i < 1; i++)
+		{
+			sprintf(tvin_fold_input_ch_V, "%s\n", (fold_input_ch_V_tvin_wrapc_buffer).to_string(SC_HEX).c_str());
+			aesl_fh.write(AUTOTB_TVIN_fold_input_ch_V, tvin_fold_input_ch_V);
+		}
+
+		tcl_file.set_num(1, &tcl_file.fold_input_ch_V_depth);
+		sprintf(tvin_fold_input_ch_V, "[[/transaction]] \n");
+		aesl_fh.write(AUTOTB_TVIN_fold_input_ch_V, tvin_fold_input_ch_V);
+
+		// [[transaction]]
+		sprintf(tvin_leaky_V, "[[transaction]] %d\n", AESL_transaction);
+		aesl_fh.write(AUTOTB_TVIN_leaky_V, tvin_leaky_V);
+
+		sc_bv<1> leaky_V_tvin_wrapc_buffer;
+
+		// RTL Name: leaky_V
+		{
+			// bitslice(0, 0)
+			{
+				// celement: leaky.V(0, 0)
+				{
+					// carray: (0) => (0) @ (0)
+					{
+						// sub                   : 
+						// ori_name              : leaky
+						// sub_1st_elem          : 
+						// ori_name_1st_elem     : leaky
+						// regulate_c_name       : leaky_V
+						// input_type_conversion : (leaky).to_string(2).c_str()
+						if (&(leaky) != NULL) // check the null address if the c port is array or others
+						{
+							sc_lv<1> leaky_V_tmp_mem;
+							leaky_V_tmp_mem = (leaky).to_string(2).c_str();
+							leaky_V_tvin_wrapc_buffer.range(0, 0) = leaky_V_tmp_mem.range(0, 0);
+						}
+					}
+				}
+			}
+		}
+
+		// dump tv to file
+		for (int i = 0; i < 1; i++)
+		{
+			sprintf(tvin_leaky_V, "%s\n", (leaky_V_tvin_wrapc_buffer).to_string(SC_HEX).c_str());
+			aesl_fh.write(AUTOTB_TVIN_leaky_V, tvin_leaky_V);
+		}
+
+		tcl_file.set_num(1, &tcl_file.leaky_V_depth);
+		sprintf(tvin_leaky_V, "[[/transaction]] \n");
+		aesl_fh.write(AUTOTB_TVIN_leaky_V, tvin_leaky_V);
+
+		// [[transaction]]
+		sprintf(tvin_bias_en_V, "[[transaction]] %d\n", AESL_transaction);
+		aesl_fh.write(AUTOTB_TVIN_bias_en_V, tvin_bias_en_V);
+
+		sc_bv<1> bias_en_V_tvin_wrapc_buffer;
+
+		// RTL Name: bias_en_V
+		{
+			// bitslice(0, 0)
+			{
+				// celement: bias_en.V(0, 0)
+				{
+					// carray: (0) => (0) @ (0)
+					{
+						// sub                   : 
+						// ori_name              : bias_en
+						// sub_1st_elem          : 
+						// ori_name_1st_elem     : bias_en
+						// regulate_c_name       : bias_en_V
+						// input_type_conversion : (bias_en).to_string(2).c_str()
+						if (&(bias_en) != NULL) // check the null address if the c port is array or others
+						{
+							sc_lv<1> bias_en_V_tmp_mem;
+							bias_en_V_tmp_mem = (bias_en).to_string(2).c_str();
+							bias_en_V_tvin_wrapc_buffer.range(0, 0) = bias_en_V_tmp_mem.range(0, 0);
+						}
+					}
+				}
+			}
+		}
+
+		// dump tv to file
+		for (int i = 0; i < 1; i++)
+		{
+			sprintf(tvin_bias_en_V, "%s\n", (bias_en_V_tvin_wrapc_buffer).to_string(SC_HEX).c_str());
+			aesl_fh.write(AUTOTB_TVIN_bias_en_V, tvin_bias_en_V);
+		}
+
+		tcl_file.set_num(1, &tcl_file.bias_en_V_depth);
+		sprintf(tvin_bias_en_V, "[[/transaction]] \n");
+		aesl_fh.write(AUTOTB_TVIN_bias_en_V, tvin_bias_en_V);
 
 		// push back input stream: "inStream_a"
 		for (int i = 0; i < aesl_tmp_1; i++)
@@ -1939,7 +2098,7 @@ ap_uint<6> input_w)
 // [call_c_dut] ---------->
 
 		CodeState = CALL_C_DUT;
-		yolo_acc_top(inStream_a, inStream_b, outStream, input_h, input_w);
+		yolo_acc_top(inStream_a, inStream_b, outStream, input_h, input_w, fold_input_ch, leaky, bias_en);
 
 		CodeState = DUMP_OUTPUTS;
 		// record input size to tv3: "inStream_a"
@@ -3859,6 +4018,12 @@ ap_uint<6> input_w)
 		delete [] tvin_input_h_V;
 		// release memory allocation: "input_w_V"
 		delete [] tvin_input_w_V;
+		// release memory allocation: "fold_input_ch_V"
+		delete [] tvin_fold_input_ch_V;
+		// release memory allocation: "leaky_V"
+		delete [] tvin_leaky_V;
+		// release memory allocation: "bias_en_V"
+		delete [] tvin_bias_en_V;
 
 		AESL_transaction++;
 

@@ -958,46 +958,10 @@
           </spirit:field>
         </spirit:register>
         <spirit:register>
-          <spirit:name>leaky_V</spirit:name>
-          <spirit:displayName>leaky_V</spirit:displayName>
-          <spirit:description>Data signal of leaky_V</spirit:description>
-          <spirit:addressOffset>72</spirit:addressOffset>
-          <spirit:size spirit:format="long">32</spirit:size>
-          <spirit:access>write-only</spirit:access>
-          <spirit:reset>
-            <spirit:value spirit:format="long">0</spirit:value>
-          </spirit:reset>
-          <spirit:field>
-            <spirit:name>leaky_V</spirit:name>
-            <spirit:description>Bit 0 to 0 Data signal of leaky_V</spirit:description>
-            <spirit:bitOffset>0</spirit:bitOffset>
-            <spirit:bitWidth spirit:format="long">1</spirit:bitWidth>
-            <spirit:access>write-only</spirit:access>
-            <spirit:writeValueConstraint>
-              <spirit:minimum>0</spirit:minimum>
-              <spirit:maximum>0</spirit:maximum>
-            </spirit:writeValueConstraint>
-            <spirit:testable spirit:testConstraint="unconstrained">false</spirit:testable>
-          </spirit:field>
-          <spirit:field>
-            <spirit:name>RESERVED</spirit:name>
-            <spirit:description>Reserved.  0s on read.</spirit:description>
-            <spirit:bitOffset>1</spirit:bitOffset>
-            <spirit:bitWidth spirit:format="long">31</spirit:bitWidth>
-            <spirit:access>read-only</spirit:access>
-            <spirit:writeValueConstraint>
-              <spirit:minimum>0</spirit:minimum>
-              <spirit:maximum>0</spirit:maximum>
-            </spirit:writeValueConstraint>
-            <spirit:readAction>modify</spirit:readAction>
-            <spirit:testable spirit:testConstraint="unconstrained">false</spirit:testable>
-          </spirit:field>
-        </spirit:register>
-        <spirit:register>
           <spirit:name>fold_win_area_V</spirit:name>
           <spirit:displayName>fold_win_area_V</spirit:displayName>
           <spirit:description>Data signal of fold_win_area_V</spirit:description>
-          <spirit:addressOffset>80</spirit:addressOffset>
+          <spirit:addressOffset>72</spirit:addressOffset>
           <spirit:size spirit:format="long">32</spirit:size>
           <spirit:access>write-only</spirit:access>
           <spirit:reset>
@@ -1046,7 +1010,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>5ba139ac</spirit:value>
+            <spirit:value>860dbdda</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1062,7 +1026,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>99fdcfac</spirit:value>
+            <spirit:value>40bd2d92</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1078,7 +1042,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>c6046070</spirit:value>
+            <spirit:value>18716450</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1094,7 +1058,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>fe4213b3</spirit:value>
+            <spirit:value>cb6cdf9a</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1108,7 +1072,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>09ba95f5</spirit:value>
+            <spirit:value>b2ce79dd</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1823,10 +1787,6 @@
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/verilog/yolo_conv_top_kernel_bias_fp_0_V.v</spirit:name>
-        <spirit:fileType>verilogSource</spirit:fileType>
-      </spirit:file>
-      <spirit:file>
         <spirit:name>hdl/verilog/yolo_conv_top_line_buff_group_0_va.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
@@ -1836,10 +1796,6 @@
       </spirit:file>
       <spirit:file>
         <spirit:name>hdl/verilog/yolo_conv_top_mac_muladd_4ns_10ns_9ns_13_1_1.v</spirit:name>
-        <spirit:fileType>verilogSource</spirit:fileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>hdl/verilog/yolo_conv_top_mul_mul_6ns_16s_22_1_0.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
@@ -1889,11 +1845,6 @@
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/verilog/yolo_conv_top_kernel_bias_fp_0_V.v</spirit:name>
-        <spirit:fileType>verilogSource</spirit:fileType>
-        <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
-      </spirit:file>
-      <spirit:file>
         <spirit:name>hdl/verilog/yolo_conv_top_line_buff_group_0_va.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
@@ -1905,11 +1856,6 @@
       </spirit:file>
       <spirit:file>
         <spirit:name>hdl/verilog/yolo_conv_top_mac_muladd_4ns_10ns_9ns_13_1_1.v</spirit:name>
-        <spirit:fileType>verilogSource</spirit:fileType>
-        <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>hdl/verilog/yolo_conv_top_mul_mul_6ns_16s_22_1_0.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
@@ -1960,10 +1906,6 @@
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/vhdl/yolo_conv_top_kernel_bias_fp_0_V.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-      </spirit:file>
-      <spirit:file>
         <spirit:name>hdl/vhdl/yolo_conv_top_line_buff_group_0_va.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
@@ -1976,17 +1918,13 @@
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/vhdl/yolo_conv_top_mul_mul_6ns_16s_22_1_0.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-      </spirit:file>
-      <spirit:file>
         <spirit:name>hdl/vhdl/yolo_conv_top_mul_mul_16s_16s_32_1_0.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
         <spirit:name>hdl/vhdl/yolo_conv_top.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:userFileType>CHECKSUM_330822a4</spirit:userFileType>
+        <spirit:userFileType>CHECKSUM_4f3ecfda</spirit:userFileType>
       </spirit:file>
     </spirit:fileSet>
     <spirit:fileSet>
@@ -2027,11 +1965,6 @@
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/vhdl/yolo_conv_top_kernel_bias_fp_0_V.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
-      </spirit:file>
-      <spirit:file>
         <spirit:name>hdl/vhdl/yolo_conv_top_line_buff_group_0_va.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
@@ -2043,11 +1976,6 @@
       </spirit:file>
       <spirit:file>
         <spirit:name>hdl/vhdl/yolo_conv_top_mac_muladd_4ns_10ns_9ns_13_1_1.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>hdl/vhdl/yolo_conv_top_mul_mul_6ns_16s_22_1_0.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
@@ -2156,7 +2084,7 @@
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>latency</spirit:name>
-      <spirit:value spirit:id="PARAM_VALUE.latency" spirit:order="5">2802505</spirit:value>
+      <spirit:value spirit:id="PARAM_VALUE.latency" spirit:order="5">2802489</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>II</spirit:name>
@@ -2173,17 +2101,17 @@
       </xilinx:taxonomies>
       <xilinx:displayName>Yolo_conv_top</xilinx:displayName>
       <xilinx:definitionSource>HLS</xilinx:definitionSource>
-      <xilinx:coreRevision>1907160901</xilinx:coreRevision>
-      <xilinx:coreCreationDateTime>2019-07-16T08:02:29Z</xilinx:coreCreationDateTime>
+      <xilinx:coreRevision>1907201908</xilinx:coreRevision>
+      <xilinx:coreCreationDateTime>2019-07-20T18:08:39Z</xilinx:coreCreationDateTime>
     </xilinx:coreExtensions>
     <xilinx:packagingInfo>
       <xilinx:xilinxVersion>2019.1</xilinx:xilinxVersion>
       <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="9408b4b9"/>
-      <xilinx:checksum xilinx:scope="memoryMaps" xilinx:value="d2b2c230"/>
-      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="1c623a58"/>
+      <xilinx:checksum xilinx:scope="memoryMaps" xilinx:value="63f1ac74"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="34701d61"/>
       <xilinx:checksum xilinx:scope="ports" xilinx:value="2f0c18eb"/>
       <xilinx:checksum xilinx:scope="hdlParameters" xilinx:value="274ab10d"/>
-      <xilinx:checksum xilinx:scope="parameters" xilinx:value="22e9d2f2"/>
+      <xilinx:checksum xilinx:scope="parameters" xilinx:value="21f761d4"/>
     </xilinx:packagingInfo>
   </spirit:vendorExtensions>
 </spirit:component>

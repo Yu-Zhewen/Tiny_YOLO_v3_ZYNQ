@@ -74,25 +74,6 @@ int main()
 	}
 	}
 
-	for(int i=0;i<OUTPUT_CHANNEL/4;i++)
-	{
-		quad_fp_side_channel curr_input;
-
-
-			fp_data_type *bias_p = (fp_data_type *)&kernel_bias_fp_bits[0];
-			curr_input.data.sub_data_0 = bias_p[4*i];
-			curr_input.data.sub_data_1 = bias_p[4*i+1];
-			curr_input.data.sub_data_2 = bias_p[4*i+2];
-			curr_input.data.sub_data_3 = bias_p[4*i+3];
-
-		curr_input.keep = 1;
-		curr_input.strb = 1;
-		curr_input.user = 1;
-		curr_input.id   = 0;
-		curr_input.dest = 0;
-
-		inputStream << curr_input;
-	}
 
 	int input_height_max = (INPUT_HEIGHT == REAL_INPUT_HEIGHT) ? INPUT_HEIGHT-2*PAD : INPUT_HEIGHT-PAD;
 
@@ -144,7 +125,6 @@ int main()
     yolo_conv_top(inputStream,outputStream,
     		      OUTPUT_CHANNEL,INPUT_CHANNEL,(OUTPUT_CHANNEL+3)/4,(INPUT_CHANNEL+3)/4,//KERNEL_DIM,
 				  INPUT_HEIGHT,INPUT_WIDTH,REAL_INPUT_HEIGHT,
-				  LEAKY,
 				  (KERNEL_DIM*KERNEL_DIM+3)/4);
 
 	for(int pix_idx=0;pix_idx<(OUTPUT_WIDTH*OUTPUT_HEIGHT);pix_idx++)

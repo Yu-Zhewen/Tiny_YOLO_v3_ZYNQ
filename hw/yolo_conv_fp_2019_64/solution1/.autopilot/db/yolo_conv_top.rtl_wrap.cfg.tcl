@@ -404,7 +404,7 @@ set Interface8 "wire"
 set DataType8 "[list ap_uint 9 ]"
 set Port8 [list $PortName8 $Interface8 $DataType8 $Pointer8 $Dims8 $Const8 $Volatile8 $ArrayOpt8]
 lappend PortList $Port8
-set PortName9 "leaky"
+set PortName9 "fold_win_area"
 set BitWidth9 "8"
 set ArrayOpt9 ""
 set Const9 "0"
@@ -413,21 +413,9 @@ set Pointer9 "0"
 set Reference9 "0"
 set Dims9 [list 0]
 set Interface9 "wire"
-set DataType9 "[list ap_uint 1 ]"
+set DataType9 "[list ap_uint 3 ]"
 set Port9 [list $PortName9 $Interface9 $DataType9 $Pointer9 $Dims9 $Const9 $Volatile9 $ArrayOpt9]
 lappend PortList $Port9
-set PortName10 "fold_win_area"
-set BitWidth10 "8"
-set ArrayOpt10 ""
-set Const10 "0"
-set Volatile10 "0"
-set Pointer10 "0"
-set Reference10 "0"
-set Dims10 [list 0]
-set Interface10 "wire"
-set DataType10 "[list ap_uint 3 ]"
-set Port10 [list $PortName10 $Interface10 $DataType10 $Pointer10 $Dims10 $Const10 $Volatile10 $ArrayOpt10]
-lappend PortList $Port10
 set globalAPint "" 
 set returnAPInt "" 
 set hasCPPAPInt 1 

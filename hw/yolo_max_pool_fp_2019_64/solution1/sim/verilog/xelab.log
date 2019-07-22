@@ -8,6 +8,9 @@ INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/xavier/MSc_Project/hls/
 INFO: [VRFC 10-311] analyzing module glbl
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/sim/verilog/write_output.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module write_output
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/sim/verilog/yolo_max_pool_top_mul_mul_9ns_17ns_26_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module yolo_max_pool_top_mul_mul_9ns_17ns_26_1_1_DSP48_0
+INFO: [VRFC 10-311] analyzing module yolo_max_pool_top_mul_mul_9ns_17ns_26_1_1
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/sim/verilog/yolo_max_pool_top_CTRL_BUS_s_axi.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module yolo_max_pool_top_CTRL_BUS_s_axi
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/sim/verilog/yolo_max_pool_top_line_buff_group_0_va.v" into library xil_defaultlib
@@ -19,9 +22,6 @@ INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/xavier/MSc_Project/hls/
 INFO: [VRFC 10-311] analyzing module AESL_axi_s_inStream
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/sim/verilog/AESL_fifo.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module fifo
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/sim/verilog/yolo_max_pool_top_mul_mul_17ns_9ns_26_1_1.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module yolo_max_pool_top_mul_mul_17ns_9ns_26_1_1_DSP48_0
-INFO: [VRFC 10-311] analyzing module yolo_max_pool_top_mul_mul_17ns_9ns_26_1_1
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/sim/verilog/AESL_axi_slave_CTRL_BUS.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module AESL_axi_slave_CTRL_BUS
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_max_pool_fp_2019_64/solution1/sim/verilog/AESL_axi_s_outStream.v" into library xil_defaultlib
@@ -37,8 +37,8 @@ Compiling module xil_defaultlib.yolo_max_pool_top_CTRL_BUS_s_axi
 Compiling module xil_defaultlib.yolo_max_pool_top_line_buff_grou...
 Compiling module xil_defaultlib.yolo_max_pool_top_line_buff_grou...
 Compiling module xil_defaultlib.write_output
-Compiling module xil_defaultlib.yolo_max_pool_top_mul_mul_17ns_9...
-Compiling module xil_defaultlib.yolo_max_pool_top_mul_mul_17ns_9...
+Compiling module xil_defaultlib.yolo_max_pool_top_mul_mul_9ns_17...
+Compiling module xil_defaultlib.yolo_max_pool_top_mul_mul_9ns_17...
 Compiling module xil_defaultlib.yolo_max_pool_top
 Compiling module xil_defaultlib.fifo(DEPTH=692224,WIDTH=64)
 Compiling module xil_defaultlib.fifo(DEPTH=692224)

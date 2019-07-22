@@ -1,0 +1,15 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Mon Jul 22 08:10:35 2019
+# Process ID: 4116
+# Current directory: /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_sys_fp_prj_2019_64
+# Command line: vivado yolo_sys_fp_prj_2019_64.xpr
+# Log file: /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_sys_fp_prj_2019_64/vivado.log
+# Journal file: /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_sys_fp_prj_2019_64/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project yolo_sys_fp_prj_2019_64.xpr
+update_compile_order -fileset sources_1
+launch_sdk -workspace /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_sys_fp_prj_2019_64/yolo_sys_fp_prj_2019_64.sdk -hwspec /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_sys_fp_prj_2019_64/yolo_sys_fp_prj_2019_64.sdk/design_1_wrapper.hdf

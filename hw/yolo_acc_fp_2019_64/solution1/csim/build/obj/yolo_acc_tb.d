@@ -20,4 +20,5 @@ obj/yolo_acc_tb.o: ../../../tb/yolo_acc_tb.cpp \
  /opt/Xilinx_2019_1/Vivado/2019.1/include/ap_fixed_ref.h \
  /opt/Xilinx_2019_1/Vivado/2019.1/include/ap_fixed_special.h \
  /opt/Xilinx_2019_1/Vivado/2019.1/include/hls_stream.h \
- ../../../tb/../src/yolo_fp.h ../../../tb/../src/layer_parameter.h
+ ../../../tb/../src/yolo_fp.h ../../../tb/../src/layer_parameter.h \
+ ../../../tb/weight_file.h

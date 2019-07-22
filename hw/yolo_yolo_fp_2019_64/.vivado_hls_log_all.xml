@@ -12,13 +12,11 @@
   <warningLogs>
     <logs>
       <synLog>
-        <logs message="WARNING: [SYN 201-103] Legalizing function name 'exp&lt;16, 8>' to 'exp_16_8_s'." projectName="yolo_yolo_fp_2019_64" solutionName="solution1" date="2019-07-17T10:35:49.662+0100" type="Warning"/>
-        <logs message="WARNING: [XFORM 203-631] Renaming function 'exp_reduce::exp&lt;16, 8>' to 'exp&lt;16, 8>' (/opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot/hls_exp_apfixed.h:41:1)" projectName="yolo_yolo_fp_2019_64" solutionName="solution1" date="2019-07-17T10:35:49.649+0100" type="Warning"/>
-        <logs message="WARNING: [SYNCHK 200-23] /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot/hls_exp_apfixed.h:191: variable-indexed range selection may cause suboptimal QoR." projectName="yolo_yolo_fp_2019_64" solutionName="solution1" date="2019-07-17T10:35:47.022+0100" type="Warning"/>
+        <logs message="WARNING: [SYN 201-103] Legalizing function name 'exp&lt;16, 8>' to 'exp_16_8_s'." projectName="yolo_yolo_fp_2019_64" solutionName="solution1" date="2019-07-17T14:24:20.902+0100" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-631] Renaming function 'exp_reduce::exp&lt;16, 8>' to 'exp&lt;16, 8>' (/opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot/hls_exp_apfixed.h:41:1)" projectName="yolo_yolo_fp_2019_64" solutionName="solution1" date="2019-07-17T14:24:20.564+0100" type="Warning"/>
+        <logs message="WARNING: [SYNCHK 200-23] /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot/hls_exp_apfixed.h:191: variable-indexed range selection may cause suboptimal QoR." projectName="yolo_yolo_fp_2019_64" solutionName="solution1" date="2019-07-17T14:24:17.804+0100" type="Warning"/>
       </synLog>
-      <simLog>
-        <logs message="WARNING: [XSIM 43-3431] One or more environment variables have been detected which affect the operation of the C compiler. These are typically not set in standard installations and are not tested by Xilinx, however they may be appropriate for your system, so the flow will attempt to continue.  If errors occur, try running xelab with the &quot;-mt off -v 1&quot; switches to see more information from the C compiler. The following environment variables have been detected:&#xA;    LIBRARY_PATH" projectName="yolo_yolo_fp_2019_64" solutionName="solution1" date="2019-07-17T10:37:52.764+0100" type="Warning"/>
-      </simLog>
+      <simLog/>
       <mgLog/>
       <packageLog/>
       <csimLog/>

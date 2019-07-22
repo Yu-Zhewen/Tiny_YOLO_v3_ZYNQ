@@ -848,7 +848,7 @@
               <name>tmp_data</name>
               <fileName>yolo_max_pool_fp_2019_64/src/yolo_max_pool.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>201</lineNumber>
+              <lineNumber>179</lineNumber>
               <contextFuncName>write_output</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -863,7 +863,7 @@
                         <first>yolo_max_pool_fp_2019_64/src/yolo_max_pool.cpp</first>
                         <second>write_output</second>
                       </first>
-                      <second>201</second>
+                      <second>179</second>
                     </item>
                   </second>
                 </item>
@@ -897,10 +897,10 @@
             <Obj>
               <type>0</type>
               <id>30</id>
-              <name>out_stream_V_data_write_ln201</name>
+              <name>out_stream_V_data_write_ln179</name>
               <fileName>yolo_max_pool_fp_2019_64/src/yolo_max_pool.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>201</lineNumber>
+              <lineNumber>179</lineNumber>
               <contextFuncName>write_output</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -915,7 +915,7 @@
                         <first>yolo_max_pool_fp_2019_64/src/yolo_max_pool.cpp</first>
                         <second>write_output</second>
                       </first>
-                      <second>201</second>
+                      <second>179</second>
                     </item>
                   </second>
                 </item>
@@ -959,10 +959,10 @@
             <Obj>
               <type>0</type>
               <id>31</id>
-              <name>_ln202</name>
+              <name>_ln180</name>
               <fileName>yolo_max_pool_fp_2019_64/src/yolo_max_pool.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>202</lineNumber>
+              <lineNumber>180</lineNumber>
               <contextFuncName>write_output</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -977,7 +977,7 @@
                         <first>yolo_max_pool_fp_2019_64/src/yolo_max_pool.cpp</first>
                         <second>write_output</second>
                       </first>
-                      <second>202</second>
+                      <second>180</second>
                     </item>
                   </second>
                 </item>
@@ -1773,7 +1773,7 @@
         </second>
       </item>
       <item>
-        <first>write_ln201_write_fu_120</first>
+        <first>write_ln179_write_fu_120</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>

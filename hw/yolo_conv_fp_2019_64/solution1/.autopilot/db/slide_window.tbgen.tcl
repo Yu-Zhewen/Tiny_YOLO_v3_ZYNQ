@@ -14,14 +14,14 @@ set isEnableWaveformDebug 1
 set C_modelName {slide_window}
 set C_modelType { int 144 }
 set C_modelArgList {
-	{ conv_count_V int 9 regular  }
+	{ conv_count int 9 regular  }
 	{ line_buff_val_0_V int 16 regular {array 3344 { 1 1 } 1 1 }  }
 	{ line_buff_val_1_V int 16 regular {array 3344 { 1 1 } 1 1 }  }
 	{ line_buff_val_2_V int 16 regular {array 3344 { 1 1 } 1 1 }  }
 	{ line_buff_val_V_offset int 4 regular  }
 }
 set C_modelArgMapList {[ 
-	{ "Name" : "conv_count_V", "interface" : "wire", "bitwidth" : 9, "direction" : "READONLY"} , 
+	{ "Name" : "conv_count", "interface" : "wire", "bitwidth" : 9, "direction" : "READONLY"} , 
  	{ "Name" : "line_buff_val_0_V", "interface" : "memory", "bitwidth" : 16, "direction" : "READONLY"} , 
  	{ "Name" : "line_buff_val_1_V", "interface" : "memory", "bitwidth" : 16, "direction" : "READONLY"} , 
  	{ "Name" : "line_buff_val_2_V", "interface" : "memory", "bitwidth" : 16, "direction" : "READONLY"} , 
@@ -37,7 +37,7 @@ set portList {
 	{ ap_idle sc_out sc_logic 1 done -1 } 
 	{ ap_ready sc_out sc_logic 1 ready -1 } 
 	{ ap_ce sc_in sc_logic 1 ce -1 } 
-	{ conv_count_V sc_in sc_lv 9 signal 0 } 
+	{ conv_count sc_in sc_lv 9 signal 0 } 
 	{ line_buff_val_0_V_address0 sc_out sc_lv 12 signal 1 } 
 	{ line_buff_val_0_V_ce0 sc_out sc_logic 1 signal 1 } 
 	{ line_buff_val_0_V_q0 sc_in sc_lv 16 signal 1 } 
@@ -75,7 +75,7 @@ set NewPortList {[
  	{ "name": "ap_idle", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "done", "bundle":{"name": "ap_idle", "role": "default" }} , 
  	{ "name": "ap_ready", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "ready", "bundle":{"name": "ap_ready", "role": "default" }} , 
  	{ "name": "ap_ce", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "ce", "bundle":{"name": "ap_ce", "role": "default" }} , 
- 	{ "name": "conv_count_V", "direction": "in", "datatype": "sc_lv", "bitwidth":9, "type": "signal", "bundle":{"name": "conv_count_V", "role": "default" }} , 
+ 	{ "name": "conv_count", "direction": "in", "datatype": "sc_lv", "bitwidth":9, "type": "signal", "bundle":{"name": "conv_count", "role": "default" }} , 
  	{ "name": "line_buff_val_0_V_address0", "direction": "out", "datatype": "sc_lv", "bitwidth":12, "type": "signal", "bundle":{"name": "line_buff_val_0_V", "role": "address0" }} , 
  	{ "name": "line_buff_val_0_V_ce0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "line_buff_val_0_V", "role": "ce0" }} , 
  	{ "name": "line_buff_val_0_V_q0", "direction": "in", "datatype": "sc_lv", "bitwidth":16, "type": "signal", "bundle":{"name": "line_buff_val_0_V", "role": "q0" }} , 
@@ -120,7 +120,7 @@ set RtlHierarchyInfo {[
 		"InDataflowNetwork" : "0",
 		"HasNonBlockingOperation" : "0",
 		"Port" : [
-			{"Name" : "conv_count_V", "Type" : "None", "Direction" : "I"},
+			{"Name" : "conv_count", "Type" : "None", "Direction" : "I"},
 			{"Name" : "line_buff_val_0_V", "Type" : "Memory", "Direction" : "I"},
 			{"Name" : "line_buff_val_1_V", "Type" : "Memory", "Direction" : "I"},
 			{"Name" : "line_buff_val_2_V", "Type" : "Memory", "Direction" : "I"},
@@ -129,7 +129,7 @@ set RtlHierarchyInfo {[
 
 set ArgLastReadFirstWriteLatency {
 	slide_window {
-		conv_count_V {Type I LastRead 1 FirstWrite -1}
+		conv_count {Type I LastRead 1 FirstWrite -1}
 		line_buff_val_0_V {Type I LastRead 3 FirstWrite -1}
 		line_buff_val_1_V {Type I LastRead 3 FirstWrite -1}
 		line_buff_val_2_V {Type I LastRead 3 FirstWrite -1}
@@ -147,7 +147,7 @@ set PipelineEnableSignalInfo {[
 ]}
 
 set Spec2ImplPortList { 
-	conv_count_V { ap_none {  { conv_count_V in_data 0 9 } } }
+	conv_count { ap_none {  { conv_count in_data 0 9 } } }
 	line_buff_val_0_V { ap_memory {  { line_buff_val_0_V_address0 mem_address 1 12 }  { line_buff_val_0_V_ce0 mem_ce 1 1 }  { line_buff_val_0_V_q0 mem_dout 0 16 }  { line_buff_val_0_V_address1 MemPortADDR2 1 12 }  { line_buff_val_0_V_ce1 MemPortCE2 1 1 }  { line_buff_val_0_V_q1 MemPortDOUT2 0 16 } } }
 	line_buff_val_1_V { ap_memory {  { line_buff_val_1_V_address0 mem_address 1 12 }  { line_buff_val_1_V_ce0 mem_ce 1 1 }  { line_buff_val_1_V_q0 mem_dout 0 16 }  { line_buff_val_1_V_address1 MemPortADDR2 1 12 }  { line_buff_val_1_V_ce1 MemPortCE2 1 1 }  { line_buff_val_1_V_q1 MemPortDOUT2 0 16 } } }
 	line_buff_val_2_V { ap_memory {  { line_buff_val_2_V_address0 mem_address 1 12 }  { line_buff_val_2_V_ce0 mem_ce 1 1 }  { line_buff_val_2_V_q0 mem_dout 0 16 }  { line_buff_val_2_V_address1 MemPortADDR2 1 12 }  { line_buff_val_2_V_ce1 MemPortCE2 1 1 }  { line_buff_val_2_V_q1 MemPortDOUT2 0 16 } } }

@@ -5,15 +5,19 @@
 ############################################################
 open_project yolo_acc_fp_2019_64
 set_top yolo_acc_top
-add_files yolo_acc_fp_2019_64/src/layer_parameter.h
-add_files yolo_acc_fp_2019_64/src/yolo_acc.cpp
-add_files yolo_acc_fp_2019_64/src/yolo_acc.h
-add_files yolo_acc_fp_2019_64/src/yolo_fp.h
 add_files yolo_acc_fp_2019_64/src/yolo_stream.h
-add_files -tb yolo_acc_fp_2019_64/tb/yolo_acc_tb.cpp
+add_files yolo_acc_fp_2019_64/src/yolo_fp.h
+add_files yolo_acc_fp_2019_64/src/yolo_acc.h
+add_files yolo_acc_fp_2019_64/src/yolo_acc.cpp
+add_files yolo_acc_fp_2019_64/src/layer_parameter.h
+add_files -tb yolo_acc_fp_2019_64/tb/layer_input.dat
+add_files -tb yolo_acc_fp_2019_64/tb/layer_output_sdk.dat
+add_files -tb yolo_acc_fp_2019_64/tb/weight_file.h
+add_files -tb yolo_acc_fp_2019_64/tb/yolo_acc_tb.cpp -cflags "-Wno-unknown-pragmas"
 open_solution "solution1"
-set_part {xc7z020clg484-1} -tool vivado
+set_part {xc7z020-clg484-1} -tool vivado
 create_clock -period 10 -name default
+config_export -format ip_catalog -rtl verilog
 #source "./yolo_acc_fp_2019_64/solution1/directives.tcl"
 csim_design
 csynth_design

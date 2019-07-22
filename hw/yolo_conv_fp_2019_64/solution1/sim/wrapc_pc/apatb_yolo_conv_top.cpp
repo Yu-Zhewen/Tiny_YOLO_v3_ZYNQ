@@ -126,8 +126,6 @@ using namespace sc_dt;
 #define AUTOTB_TVIN_input_w_V  "../tv/cdatafile/c.yolo_conv_top.autotvin_input_w_V.dat"
 // wrapc file define: "real_input_h_V"
 #define AUTOTB_TVIN_real_input_h_V  "../tv/cdatafile/c.yolo_conv_top.autotvin_real_input_h_V.dat"
-// wrapc file define: "leaky_V"
-#define AUTOTB_TVIN_leaky_V  "../tv/cdatafile/c.yolo_conv_top.autotvin_leaky_V.dat"
 // wrapc file define: "fold_win_area_V"
 #define AUTOTB_TVIN_fold_win_area_V  "../tv/cdatafile/c.yolo_conv_top.autotvin_fold_win_area_V.dat"
 
@@ -173,7 +171,6 @@ class INTER_TCL_FILE {
 			input_h_V_depth = 0;
 			input_w_V_depth = 0;
 			real_input_h_V_depth = 0;
-			leaky_V_depth = 0;
 			fold_win_area_V_depth = 0;
 			trans_num =0;
 		}
@@ -215,7 +212,6 @@ class INTER_TCL_FILE {
 			total_list << "{input_h_V " << input_h_V_depth << "}\n";
 			total_list << "{input_w_V " << input_w_V_depth << "}\n";
 			total_list << "{real_input_h_V " << real_input_h_V_depth << "}\n";
-			total_list << "{leaky_V " << leaky_V_depth << "}\n";
 			total_list << "{fold_win_area_V " << fold_win_area_V_depth << "}\n";
 			return total_list.str();
 		}
@@ -245,7 +241,6 @@ class INTER_TCL_FILE {
 		int input_h_V_depth;
 		int input_w_V_depth;
 		int real_input_h_V_depth;
-		int leaky_V_depth;
 		int fold_win_area_V_depth;
 		int trans_num;
 
@@ -264,7 +259,6 @@ ap_uint<4> fold_input_ch,
 ap_uint<9> input_h,
 ap_uint<9> input_w,
 ap_uint<9> real_input_h,
-ap_uint<1> leaky,
 ap_uint<3> fold_win_area);
 
 void AESL_WRAP_yolo_conv_top (
@@ -277,7 +271,6 @@ ap_uint<4> fold_input_ch,
 ap_uint<9> input_h,
 ap_uint<9> input_w,
 ap_uint<9> real_input_h,
-ap_uint<1> leaky,
 ap_uint<3> fold_win_area)
 {
 	refine_signal_handler();
@@ -1750,10 +1743,6 @@ ap_uint<3> fold_win_area)
 		char* tvin_real_input_h_V = new char[50];
 		aesl_fh.touch(AUTOTB_TVIN_real_input_h_V);
 
-		// "leaky_V"
-		char* tvin_leaky_V = new char[50];
-		aesl_fh.touch(AUTOTB_TVIN_leaky_V);
-
 		// "fold_win_area_V"
 		char* tvin_fold_win_area_V = new char[50];
 		aesl_fh.touch(AUTOTB_TVIN_fold_win_area_V);
@@ -2075,48 +2064,6 @@ ap_uint<3> fold_win_area)
 		aesl_fh.write(AUTOTB_TVIN_real_input_h_V, tvin_real_input_h_V);
 
 		// [[transaction]]
-		sprintf(tvin_leaky_V, "[[transaction]] %d\n", AESL_transaction);
-		aesl_fh.write(AUTOTB_TVIN_leaky_V, tvin_leaky_V);
-
-		sc_bv<1> leaky_V_tvin_wrapc_buffer;
-
-		// RTL Name: leaky_V
-		{
-			// bitslice(0, 0)
-			{
-				// celement: leaky.V(0, 0)
-				{
-					// carray: (0) => (0) @ (0)
-					{
-						// sub                   : 
-						// ori_name              : leaky
-						// sub_1st_elem          : 
-						// ori_name_1st_elem     : leaky
-						// regulate_c_name       : leaky_V
-						// input_type_conversion : (leaky).to_string(2).c_str()
-						if (&(leaky) != NULL) // check the null address if the c port is array or others
-						{
-							sc_lv<1> leaky_V_tmp_mem;
-							leaky_V_tmp_mem = (leaky).to_string(2).c_str();
-							leaky_V_tvin_wrapc_buffer.range(0, 0) = leaky_V_tmp_mem.range(0, 0);
-						}
-					}
-				}
-			}
-		}
-
-		// dump tv to file
-		for (int i = 0; i < 1; i++)
-		{
-			sprintf(tvin_leaky_V, "%s\n", (leaky_V_tvin_wrapc_buffer).to_string(SC_HEX).c_str());
-			aesl_fh.write(AUTOTB_TVIN_leaky_V, tvin_leaky_V);
-		}
-
-		tcl_file.set_num(1, &tcl_file.leaky_V_depth);
-		sprintf(tvin_leaky_V, "[[/transaction]] \n");
-		aesl_fh.write(AUTOTB_TVIN_leaky_V, tvin_leaky_V);
-
-		// [[transaction]]
 		sprintf(tvin_fold_win_area_V, "[[transaction]] %d\n", AESL_transaction);
 		aesl_fh.write(AUTOTB_TVIN_fold_win_area_V, tvin_fold_win_area_V);
 
@@ -2173,7 +2120,7 @@ ap_uint<3> fold_win_area)
 // [call_c_dut] ---------->
 
 		CodeState = CALL_C_DUT;
-		yolo_conv_top(inStream, outStream, output_ch, input_ch, fold_output_ch, fold_input_ch, input_h, input_w, real_input_h, leaky, fold_win_area);
+		yolo_conv_top(inStream, outStream, output_ch, input_ch, fold_output_ch, fold_input_ch, input_h, input_w, real_input_h, fold_win_area);
 
 		CodeState = DUMP_OUTPUTS;
 		// record input size to tv3: "inStream"
@@ -3421,8 +3368,6 @@ ap_uint<3> fold_win_area)
 		delete [] tvin_input_w_V;
 		// release memory allocation: "real_input_h_V"
 		delete [] tvin_real_input_h_V;
-		// release memory allocation: "leaky_V"
-		delete [] tvin_leaky_V;
 		// release memory allocation: "fold_win_area_V"
 		delete [] tvin_fold_win_area_V;
 

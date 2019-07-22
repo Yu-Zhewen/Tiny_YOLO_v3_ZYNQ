@@ -45,7 +45,6 @@ module AESL_axi_slave_CTRL_BUS (
 `define TV_IN_input_h_V "./c.yolo_conv_top.autotvin_input_h_V.dat"
 `define TV_IN_input_w_V "./c.yolo_conv_top.autotvin_input_w_V.dat"
 `define TV_IN_real_input_h_V "./c.yolo_conv_top.autotvin_real_input_h_V.dat"
-`define TV_IN_leaky_V "./c.yolo_conv_top.autotvin_leaky_V.dat"
 `define TV_IN_fold_win_area_V "./c.yolo_conv_top.autotvin_fold_win_area_V.dat"
 parameter ADDR_WIDTH = 7;
 parameter DATA_WIDTH = 32;
@@ -70,9 +69,6 @@ parameter input_w_V_c_bitwidth = 9;
 parameter real_input_h_V_DEPTH = 1;
 reg [31 : 0] real_input_h_V_OPERATE_DEPTH = 0;
 parameter real_input_h_V_c_bitwidth = 9;
-parameter leaky_V_DEPTH = 1;
-reg [31 : 0] leaky_V_OPERATE_DEPTH = 0;
-parameter leaky_V_c_bitwidth = 1;
 parameter fold_win_area_V_DEPTH = 1;
 reg [31 : 0] fold_win_area_V_OPERATE_DEPTH = 0;
 parameter fold_win_area_V_c_bitwidth = 3;
@@ -86,8 +82,7 @@ parameter fold_input_ch_V_data_in_addr = 40;
 parameter input_h_V_data_in_addr = 48;
 parameter input_w_V_data_in_addr = 56;
 parameter real_input_h_V_data_in_addr = 64;
-parameter leaky_V_data_in_addr = 72;
-parameter fold_win_area_V_data_in_addr = 80;
+parameter fold_win_area_V_data_in_addr = 72;
 parameter STATUS_ADDR = 0;
 
 output [ADDR_WIDTH - 1 : 0] TRAN_s_axi_CTRL_BUS_AWADDR;
@@ -144,8 +139,6 @@ reg [DATA_WIDTH - 1 : 0] mem_input_w_V [input_w_V_DEPTH - 1 : 0];
 reg input_w_V_write_data_finish;
 reg [DATA_WIDTH - 1 : 0] mem_real_input_h_V [real_input_h_V_DEPTH - 1 : 0];
 reg real_input_h_V_write_data_finish;
-reg [DATA_WIDTH - 1 : 0] mem_leaky_V [leaky_V_DEPTH - 1 : 0];
-reg leaky_V_write_data_finish;
 reg [DATA_WIDTH - 1 : 0] mem_fold_win_area_V [fold_win_area_V_DEPTH - 1 : 0];
 reg fold_win_area_V_write_data_finish;
 reg AESL_ready_out_index_reg = 0;
@@ -165,7 +158,6 @@ reg process_6_finish = 0;
 reg process_7_finish = 0;
 reg process_8_finish = 0;
 reg process_9_finish = 0;
-reg process_10_finish = 0;
 //write output_ch_V reg
 reg [31 : 0] write_output_ch_V_count = 0;
 reg write_output_ch_V_run_flag = 0;
@@ -194,10 +186,6 @@ reg write_one_input_w_V_data_done = 0;
 reg [31 : 0] write_real_input_h_V_count = 0;
 reg write_real_input_h_V_run_flag = 0;
 reg write_one_real_input_h_V_data_done = 0;
-//write leaky_V reg
-reg [31 : 0] write_leaky_V_count = 0;
-reg write_leaky_V_run_flag = 0;
-reg write_one_leaky_V_data_done = 0;
 //write fold_win_area_V reg
 reg [31 : 0] write_fold_win_area_V_count = 0;
 reg write_fold_win_area_V_run_flag = 0;
@@ -224,13 +212,13 @@ assign TRAN_CTRL_BUS_write_start_finish = AESL_write_start_finish;
 assign TRAN_CTRL_BUS_done_out = AESL_done_index_reg;
 assign TRAN_CTRL_BUS_ready_out = AESL_ready_out_index_reg;
 assign TRAN_CTRL_BUS_idle_out = AESL_idle_index_reg;
-assign TRAN_CTRL_BUS_write_data_finish = 1 & output_ch_V_write_data_finish & input_ch_V_write_data_finish & fold_output_ch_V_write_data_finish & fold_input_ch_V_write_data_finish & input_h_V_write_data_finish & input_w_V_write_data_finish & real_input_h_V_write_data_finish & leaky_V_write_data_finish & fold_win_area_V_write_data_finish;
+assign TRAN_CTRL_BUS_write_data_finish = 1 & output_ch_V_write_data_finish & input_ch_V_write_data_finish & fold_output_ch_V_write_data_finish & fold_input_ch_V_write_data_finish & input_h_V_write_data_finish & input_w_V_write_data_finish & real_input_h_V_write_data_finish & fold_win_area_V_write_data_finish;
 always @(TRAN_CTRL_BUS_ready_in or ready_initial) 
 begin
     AESL_ready_reg <= TRAN_CTRL_BUS_ready_in | ready_initial;
 end
 
-always @(reset or process_0_finish or process_1_finish or process_2_finish or process_3_finish or process_4_finish or process_5_finish or process_6_finish or process_7_finish or process_8_finish or process_9_finish or process_10_finish ) begin
+always @(reset or process_0_finish or process_1_finish or process_2_finish or process_3_finish or process_4_finish or process_5_finish or process_6_finish or process_7_finish or process_8_finish or process_9_finish ) begin
     if (reset == 0) begin
         ongoing_process_number <= 0;
     end
@@ -262,9 +250,6 @@ always @(reset or process_0_finish or process_1_finish or process_2_finish or pr
             ongoing_process_number <= ongoing_process_number + 1;
     end
     else if (ongoing_process_number == 9 && process_9_finish == 1) begin
-            ongoing_process_number <= ongoing_process_number + 1;
-    end
-    else if (ongoing_process_number == 10 && process_10_finish == 1) begin
             ongoing_process_number <= 0;
     end
 end
@@ -946,79 +931,6 @@ initial begin : write_real_input_h_V
 end
 always @(reset or posedge clk) begin
     if (reset == 0) begin
-        leaky_V_write_data_finish <= 0;
-        write_leaky_V_run_flag <= 0; 
-        write_leaky_V_count = 0;
-        count_operate_depth_by_bitwidth_and_depth (leaky_V_c_bitwidth, leaky_V_DEPTH, leaky_V_OPERATE_DEPTH);
-    end
-    else begin
-        if (TRAN_CTRL_BUS_start_in === 1) begin
-            leaky_V_write_data_finish <= 0;
-        end
-        if (AESL_ready_reg === 1) begin
-            write_leaky_V_run_flag <= 1; 
-            write_leaky_V_count = 0;
-        end
-        if (write_one_leaky_V_data_done === 1) begin
-            write_leaky_V_count = write_leaky_V_count + 1;
-            if (write_leaky_V_count == leaky_V_OPERATE_DEPTH) begin
-                write_leaky_V_run_flag <= 0; 
-                leaky_V_write_data_finish <= 1;
-            end
-        end
-    end
-end
-
-initial begin : write_leaky_V
-    integer write_leaky_V_resp;
-    integer process_num ;
-    integer get_ack;
-    integer four_byte_num;
-    integer c_bitwidth;
-    integer i;
-    integer j;
-    reg [31 : 0] leaky_V_data_tmp_reg;
-    wait(reset === 1);
-    @(posedge clk);
-    c_bitwidth = leaky_V_c_bitwidth;
-    process_num = 8;
-    count_c_data_four_byte_num_by_bitwidth (c_bitwidth , four_byte_num) ;
-    while (1) begin
-        process_8_finish <= 0;
-
-        if (ongoing_process_number === process_num && process_busy === 0 ) begin
-            get_ack = 1;
-            if (write_leaky_V_run_flag === 1 && get_ack === 1) begin
-                process_busy = 1;
-                //write leaky_V data 
-                for (i = 0 ; i < four_byte_num ; i = i+1) begin
-                    if (leaky_V_c_bitwidth < 32) begin
-                        leaky_V_data_tmp_reg = mem_leaky_V[write_leaky_V_count];
-                    end
-                    else begin
-                        for (j=0 ; j<32 ; j = j + 1) begin
-                            if (i*32 + j < leaky_V_c_bitwidth) begin
-                                leaky_V_data_tmp_reg[j] = mem_leaky_V[write_leaky_V_count][i*32 + j];
-                            end
-                            else begin
-                                leaky_V_data_tmp_reg[j] = 0;
-                            end
-                        end
-                    end
-                    write (leaky_V_data_in_addr + write_leaky_V_count * four_byte_num * 4 + i * 4, leaky_V_data_tmp_reg, write_leaky_V_resp);
-                end
-                process_busy = 0;
-                write_one_leaky_V_data_done <= 1;
-                @(posedge clk);
-                write_one_leaky_V_data_done <= 0;
-            end   
-            process_8_finish <= 1;
-        end
-        @(posedge clk);
-    end    
-end
-always @(reset or posedge clk) begin
-    if (reset == 0) begin
         fold_win_area_V_write_data_finish <= 0;
         write_fold_win_area_V_run_flag <= 0; 
         write_fold_win_area_V_count = 0;
@@ -1054,10 +966,10 @@ initial begin : write_fold_win_area_V
     wait(reset === 1);
     @(posedge clk);
     c_bitwidth = fold_win_area_V_c_bitwidth;
-    process_num = 9;
+    process_num = 8;
     count_c_data_four_byte_num_by_bitwidth (c_bitwidth , four_byte_num) ;
     while (1) begin
-        process_9_finish <= 0;
+        process_8_finish <= 0;
 
         if (ongoing_process_number === process_num && process_busy === 0 ) begin
             get_ack = 1;
@@ -1085,7 +997,7 @@ initial begin : write_fold_win_area_V
                 @(posedge clk);
                 write_one_fold_win_area_V_data_done <= 0;
             end   
-            process_9_finish <= 1;
+            process_8_finish <= 1;
         end
         @(posedge clk);
     end    
@@ -1116,9 +1028,9 @@ initial begin : write_start
     integer write_start_resp;
     wait(reset === 1);
     @(posedge clk);
-    process_num = 10;
+    process_num = 9;
     while (1) begin
-        process_10_finish = 0;
+        process_9_finish = 0;
         if (ongoing_process_number === process_num && process_busy === 0 ) begin
             if (write_start_run_flag === 1) begin
                 process_busy = 1;
@@ -1130,7 +1042,7 @@ initial begin : write_start
                 @(posedge clk);
                 AESL_write_start_finish <= 0;
             end
-            process_10_finish <= 1;
+            process_9_finish <= 1;
         end 
         @(posedge clk);
     end
@@ -1793,100 +1705,6 @@ initial begin : read_real_input_h_V_file_process
       if (factor == 2) begin
           if (i%factor != 0) begin
               mem_real_input_h_V [i/factor] = mem_tmp;
-          end
-      end 
-      read_token(fp, token); 
-      if(token != "[[/transaction]]") begin 
-          $display("ERROR: Simulation using HLS TB failed.");
-          $finish; 
-      end 
-      read_token(fp, token); 
-      transaction_idx = transaction_idx + 1; 
-  end 
-  $fclose(fp); 
-end 
- 
-//------------------------Read file------------------------ 
- 
-// Read data from file 
-initial begin : read_leaky_V_file_process 
-  integer fp; 
-  integer ret; 
-  integer factor; 
-  reg [127 : 0] token; 
-  reg [127 : 0] token_tmp; 
-  //reg [leaky_V_c_bitwidth - 1 : 0] token_tmp; 
-  reg [DATA_WIDTH - 1 : 0] mem_tmp; 
-  reg [ 8*5 : 1] str;
-  integer transaction_idx; 
-  integer i; 
-  transaction_idx = 0; 
-  mem_tmp [DATA_WIDTH - 1 : 0] = 0;
-  count_seperate_factor_by_bitwidth (leaky_V_c_bitwidth , factor);
-  fp = $fopen(`TV_IN_leaky_V ,"r"); 
-  if(fp == 0) begin                               // Failed to open file 
-      $display("Failed to open file \"%s\"!", `TV_IN_leaky_V); 
-      $finish; 
-  end 
-  read_token(fp, token); 
-  if (token != "[[[runtime]]]") begin             // Illegal format 
-      $display("ERROR: Simulation using HLS TB failed.");
-      $finish; 
-  end 
-  read_token(fp, token); 
-  while (token != "[[[/runtime]]]") begin 
-      if (token != "[[transaction]]") begin 
-          $display("ERROR: Simulation using HLS TB failed.");
-          $finish; 
-      end 
-      read_token(fp, token);                        // skip transaction number 
-      @(posedge clk);
-      # 0.2;
-      while(AESL_ready_reg !== 1) begin
-          @(posedge clk); 
-          # 0.2;
-      end
-      for(i = 0; i < leaky_V_DEPTH; i = i + 1) begin 
-          read_token(fp, token); 
-          ret = $sscanf(token, "0x%x", token_tmp); 
-          if (factor == 4) begin
-              if (i%factor == 0) begin
-                  mem_tmp [7 : 0] = token_tmp;
-              end
-              if (i%factor == 1) begin
-                  mem_tmp [15 : 8] = token_tmp;
-              end
-              if (i%factor == 2) begin
-                  mem_tmp [23 : 16] = token_tmp;
-              end
-              if (i%factor == 3) begin
-                  mem_tmp [31 : 24] = token_tmp;
-                  mem_leaky_V [i/factor] = mem_tmp;
-                  mem_tmp [DATA_WIDTH - 1 : 0] = 0;
-              end
-          end
-          if (factor == 2) begin
-              if (i%factor == 0) begin
-                  mem_tmp [15 : 0] = token_tmp;
-              end
-              if (i%factor == 1) begin
-                  mem_tmp [31 : 16] = token_tmp;
-                  mem_leaky_V [i/factor] = mem_tmp;
-                  mem_tmp [DATA_WIDTH - 1: 0] = 0;
-              end
-          end
-          if (factor == 1) begin
-              mem_leaky_V [i] = token_tmp;
-          end
-      end 
-      if (factor == 4) begin
-          if (i%factor != 0) begin
-              mem_leaky_V [i/factor] = mem_tmp;
-          end
-      end
-      if (factor == 2) begin
-          if (i%factor != 0) begin
-              mem_leaky_V [i/factor] = mem_tmp;
           end
       end 
       read_token(fp, token); 

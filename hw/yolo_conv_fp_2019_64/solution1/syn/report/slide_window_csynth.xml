@@ -227,8 +227,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>conv_count_V</name>
-<Object>conv_count_V</Object>
+<name>conv_count</name>
+<Object>conv_count</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>

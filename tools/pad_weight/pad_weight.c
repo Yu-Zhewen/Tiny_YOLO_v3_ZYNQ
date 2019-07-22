@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include "layer_parameter.h"
-#include "weight_file.h"
+#include "conv_11_weight_bn_fp.h"
 
 int main()
 {

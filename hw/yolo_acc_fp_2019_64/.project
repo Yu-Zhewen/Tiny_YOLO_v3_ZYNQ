@@ -67,6 +67,21 @@
 			<location>/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_acc_fp_2019_64/src/yolo_stream.h</location>
 		</link>
 		<link>
+			<name>testbench/layer_input.dat</name>
+			<type>1</type>
+			<location>/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_acc_fp_2019_64/tb/layer_input.dat</location>
+		</link>
+		<link>
+			<name>testbench/layer_output_sdk.dat</name>
+			<type>1</type>
+			<location>/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_acc_fp_2019_64/tb/layer_output_sdk.dat</location>
+		</link>
+		<link>
+			<name>testbench/weight_file.h</name>
+			<type>1</type>
+			<location>/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_acc_fp_2019_64/tb/weight_file.h</location>
+		</link>
+		<link>
 			<name>testbench/yolo_acc_tb.cpp</name>
 			<type>1</type>
 			<location>/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_acc_fp_2019_64/tb/yolo_acc_tb.cpp</location>

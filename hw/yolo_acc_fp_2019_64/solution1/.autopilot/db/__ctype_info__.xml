@@ -314,9 +314,9 @@
 <RtlPorts>
 <name>input_h_V</name>
 <CType>
-<TypeName>ap_uint 6</TypeName>
-<TypeWidth>6</TypeWidth>
-<PhysicalWidth>6</PhysicalWidth>
+<TypeName>ap_uint 9</TypeName>
+<TypeWidth>9</TypeWidth>
+<PhysicalWidth>9</PhysicalWidth>
 </CType>
 <CFractionWidth>0</CFractionWidth>
 <InvalidType>0</InvalidType>
@@ -324,9 +324,39 @@
 <RtlPorts>
 <name>input_w_V</name>
 <CType>
-<TypeName>ap_uint 6</TypeName>
-<TypeWidth>6</TypeWidth>
-<PhysicalWidth>6</PhysicalWidth>
+<TypeName>ap_uint 9</TypeName>
+<TypeWidth>9</TypeWidth>
+<PhysicalWidth>9</PhysicalWidth>
+</CType>
+<CFractionWidth>0</CFractionWidth>
+<InvalidType>0</InvalidType>
+</RtlPorts>
+<RtlPorts>
+<name>fold_input_ch_V</name>
+<CType>
+<TypeName>ap_uint 4</TypeName>
+<TypeWidth>4</TypeWidth>
+<PhysicalWidth>4</PhysicalWidth>
+</CType>
+<CFractionWidth>0</CFractionWidth>
+<InvalidType>0</InvalidType>
+</RtlPorts>
+<RtlPorts>
+<name>leaky_V</name>
+<CType>
+<TypeName>ap_uint 1</TypeName>
+<TypeWidth>1</TypeWidth>
+<PhysicalWidth>1</PhysicalWidth>
+</CType>
+<CFractionWidth>0</CFractionWidth>
+<InvalidType>0</InvalidType>
+</RtlPorts>
+<RtlPorts>
+<name>bias_en_V</name>
+<CType>
+<TypeName>ap_uint 1</TypeName>
+<TypeWidth>1</TypeWidth>
+<PhysicalWidth>1</PhysicalWidth>
 </CType>
 <CFractionWidth>0</CFractionWidth>
 <InvalidType>0</InvalidType>

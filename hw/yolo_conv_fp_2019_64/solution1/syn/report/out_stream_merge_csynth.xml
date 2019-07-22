@@ -18,7 +18,7 @@
 <PipelineType>function</PipelineType>
 <SummaryOfTimingAnalysis>
 <unit>ns</unit>
-<EstimatedClockPeriod>5.540</EstimatedClockPeriod>
+<EstimatedClockPeriod>6.127</EstimatedClockPeriod>
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
 <unit>clock cycles</unit>
@@ -34,8 +34,8 @@
 
 <AreaEstimates>
 <Resources>
-<FF>210</FF>
-<LUT>1241</LUT>
+<FF>250</FF>
+<LUT>1359</LUT>
 <BRAM_18K>0</BRAM_18K>
 <DSP48E>0</DSP48E>
 <URAM>0</URAM>
@@ -1646,8 +1646,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>input_ch_idx_V</name>
-<Object>input_ch_idx_V</Object>
+<name>input_ch_idx</name>
+<Object>input_ch_idx</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -1723,8 +1723,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>fold_output_ch_V</name>
-<Object>fold_output_ch_V</Object>
+<name>fold_output_ch</name>
+<Object>fold_output_ch</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>

@@ -43,7 +43,7 @@ set TargetInfo xc7z020:-clg484:-1
 set SourceFiles {sc {} c ../src/yolo_yolo.cpp}
 set SourceFlags {sc {} c {{}}}
 set DirectiveFile /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_yolo_fp_2019_64/solution1/solution1.directive
-set TBFiles {verilog {../tb/layer_input.dat ../tb/layer_output_sdk.dat ../tb/yolo_yolo_tb.cpp} bc {../tb/layer_input.dat ../tb/layer_output_sdk.dat ../tb/yolo_yolo_tb.cpp} vhdl {../tb/layer_input.dat ../tb/layer_output_sdk.dat ../tb/yolo_yolo_tb.cpp} sc {../tb/layer_input.dat ../tb/layer_output_sdk.dat ../tb/yolo_yolo_tb.cpp} cas {../tb/layer_input.dat ../tb/layer_output_sdk.dat ../tb/yolo_yolo_tb.cpp} c {}}
+set TBFiles {verilog {../tb/yolo_yolo_tb.cpp ../tb/layer_output_sdk.dat ../tb/layer_input.dat} bc {../tb/yolo_yolo_tb.cpp ../tb/layer_output_sdk.dat ../tb/layer_input.dat} vhdl {../tb/yolo_yolo_tb.cpp ../tb/layer_output_sdk.dat ../tb/layer_input.dat} sc {../tb/yolo_yolo_tb.cpp ../tb/layer_output_sdk.dat ../tb/layer_input.dat} cas {../tb/yolo_yolo_tb.cpp ../tb/layer_output_sdk.dat ../tb/layer_input.dat} c {}}
 set SpecLanguage C
 set TVInFiles {bc {} c {} sc {} cas {} vhdl {} verilog {}}
 set TVOutFiles {bc {} c {} sc {} cas {} vhdl {} verilog {}}

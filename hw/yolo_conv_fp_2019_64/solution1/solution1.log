@@ -11824,3 +11824,1672 @@ Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ==============================================================
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 1.25ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg484-1'
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: config_export -vivado_optimization_level=2
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: set_clock_uncertainty default
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: config_export -vivado_optimization_level=2
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: set_clock_uncertainty default
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'yolo_conv_fp_2019_64/src/yolo_conv.cpp' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:01:05 ; elapsed = 00:01:13 . Memory (MB): peak = 892.023 ; gain = 192.000 ; free physical = 676 ; free virtual = 11628
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:01:05 ; elapsed = 00:01:13 . Memory (MB): peak = 892.023 ; gain = 192.000 ; free physical = 676 ; free virtual = 11628
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [XFORM 203-603] Inlining function 'hls::LineBuffer<3, 418, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0>, 0>::shift_pixels_up' into 'hls::LineBuffer<3, 418, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0>, 0>::shift_up' (/opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot/hls/hls_video_mem.h:863).
+INFO: [XFORM 203-603] Inlining function 'hls::LineBuffer<3, 418, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0>, 0>::shift_up' into 'yolo_line_buffer' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:258).
+INFO: [XFORM 203-603] Inlining function 'hls::LineBuffer<3, 418, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0>, 0>::insert_bottom_row' into 'hls::LineBuffer<3, 418, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0>, 0>::insert_top' (/opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot/hls/hls_video_mem.h:883).
+INFO: [XFORM 203-603] Inlining function 'hls::LineBuffer<3, 418, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0>, 0>::insert_top' into 'yolo_line_buffer' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:259).
+INFO: [XFORM 203-603] Inlining function 'hls::LineBuffer<3, 418, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0>, 0>::getval' into 'slide_window' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:271).
+INFO: [XFORM 203-603] Inlining function 'hls::Window<3, 3, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0> >::insert_pixel' into 'hls::Window<3, 3, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0> >::insert' (/opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot/hls/hls_video_mem.h:573).
+INFO: [XFORM 203-603] Inlining function 'hls::Window<3, 3, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0> >::insert' into 'slide_window' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:272).
+INFO: [XFORM 203-603] Inlining function 'hls::Window<3, 3, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0> >::getval' into 'window_macc' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:287).
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:01:08 ; elapsed = 00:01:16 . Memory (MB): peak = 894.547 ; gain = 194.523 ; free physical = 600 ; free virtual = 11568
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [XFORM 203-602] Inlining function 'write_output' into 'yolo_conv_top' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:187) automatically.
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:01:09 ; elapsed = 00:01:17 . Memory (MB): peak = 894.547 ; gain = 194.523 ; free physical = 559 ; free virtual = 11533
+INFO: [XFORM 203-1101] Packing variable 'outStream.V.data' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:4) into a 64-bit variable.
+INFO: [XFORM 203-1101] Packing variable 'inStream.V.data' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:4) into a 64-bit variable.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'Loop-7.1.1' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:98) in function 'yolo_conv_top' for pipelining.
+INFO: [XFORM 203-502] Unrolling all loops for pipelining in function 'window_macc' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:279).
+INFO: [XFORM 203-502] Unrolling all loops for pipelining in function 'slide_window' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:265).
+INFO: [XFORM 203-502] Unrolling all loops for pipelining in function 'yolo_line_buffer' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:255).
+INFO: [XFORM 203-502] Unrolling all loops for pipelining in function 'out_stream_merge' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:299).
+INFO: [HLS 200-489] Unrolling loop 'Loop-7.1.1.1' (/opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot/hls/hls_video_mem.h:49) in function 'yolo_conv_top' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'Loop-7.1.1.1.1' (/opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot/hls/hls_video_mem.h:49) in function 'yolo_conv_top' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'Loop-7.1.1.2' (/opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot/hls/hls_video_mem.h:49) in function 'yolo_conv_top' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'Loop-7.1.1.2.1' (/opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot/hls/hls_video_mem.h:49) in function 'yolo_conv_top' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'Loop-7.1.1.3' (/opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot/hls/hls_video_mem.h:49) in function 'yolo_conv_top' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'Loop-7.1.1.3.1' (/opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot/hls/hls_video_mem.h:49) in function 'yolo_conv_top' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'Loop-7.1.1.4' (/opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot/hls/hls_video_mem.h:49) in function 'yolo_conv_top' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'Loop-7.1.1.4.1' (/opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot/hls/hls_video_mem.h:49) in function 'yolo_conv_top' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'Loop-7.1.1.5' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:155) in function 'yolo_conv_top' completely with a factor of 32.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:283) in function 'window_macc' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:285) in function 'window_macc' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:267) in function 'slide_window' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:269) in function 'slide_window' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1' (/opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot/hls/hls_video_mem.h:727) in function 'yolo_line_buffer' completely with a factor of 2.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:305) in function 'out_stream_merge' completely with a factor of 6.
+INFO: [XFORM 203-102] Partitioning array 'window.val.V.0' automatically.
+INFO: [XFORM 203-102] Partitioning array 'window.val.V.1' automatically.
+INFO: [XFORM 203-102] Partitioning array 'window.val.V.2' automatically.
+INFO: [XFORM 203-102] Automatically partitioning streamed array 'out_stream_group.V.V' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:24) .
+INFO: [XFORM 203-101] Partitioning array 'out_stream_group.V.V' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:24) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'line_buff_group_0.val.V' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:28) in dimension 2 completely.
+INFO: [XFORM 203-101] Partitioning array 'line_buff_group_1.val.V' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:29) in dimension 2 completely.
+INFO: [XFORM 203-101] Partitioning array 'line_buff_group_2.val.V' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:30) in dimension 2 completely.
+INFO: [XFORM 203-101] Partitioning array 'line_buff_group_3.val.V' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:31) in dimension 2 completely.
+INFO: [XFORM 203-101] Partitioning array 'val_output.V' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:33) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'local_mem_group.data.V' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:47) in dimension 1 with a block factor 4.
+INFO: [XFORM 203-101] Partitioning array 'kernel_bias_fp.V' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:51) in dimension 1 with a block factor 4.
+INFO: [XFORM 203-101] Partitioning array 'kernel_window_0.val.V' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:146) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'kernel_window_1.val.V' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:146) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'kernel_window_2.val.V' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:146) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'kernel_window_3.val.V' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:146) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'local_mem_group.data.V' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:47) in dimension 3 completely.
+INFO: [XFORM 203-101] Partitioning array 'kernel_window_0.val.V' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:146) in dimension 2 completely.
+INFO: [XFORM 203-101] Partitioning array 'kernel_window_1.val.V' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:146) in dimension 2 completely.
+INFO: [XFORM 203-101] Partitioning array 'kernel_window_2.val.V' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:146) in dimension 2 completely.
+INFO: [XFORM 203-101] Partitioning array 'kernel_window_3.val.V' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:146) in dimension 2 completely.
+INFO: [XFORM 203-602] Inlining function 'yolo_line_buffer' into 'yolo_conv_top' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:138) automatically.
+INFO: [XFORM 203-602] Inlining function 'write_output' into 'yolo_conv_top' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:187) automatically.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (yolo_conv_fp_2019_64/src/yolo_conv.cpp:204:13) to (yolo_conv_fp_2019_64/src/yolo_conv.cpp:209:5) in function 'yolo_conv_top'... converting 4 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (yolo_conv_fp_2019_64/src/yolo_conv.cpp:288:32) to (yolo_conv_fp_2019_64/src/yolo_conv.cpp:291:2) in function 'window_macc'... converting 39 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (yolo_conv_fp_2019_64/src/yolo_conv.cpp:219:18) to (yolo_conv_fp_2019_64/src/yolo_conv.cpp:253:1) in function 'post_process'... converting 26 basic blocks.
+INFO: [XFORM 203-11] Balancing expressions in function 'yolo_conv_top' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:4)...3 expression(s) balanced.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:01:28 ; elapsed = 00:01:36 . Memory (MB): peak = 1020.023 ; gain = 320.000 ; free physical = 476 ; free virtual = 11457
+INFO: [XFORM 203-541] Flattening a loop nest 'Loop-5.1' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:59:26) in function 'yolo_conv_top'.
+INFO: [XFORM 203-541] Flattening a loop nest 'Loop-5' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:56:27) in function 'yolo_conv_top'.
+INFO: [XFORM 203-541] Flattening a loop nest 'Loop-7.1' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:95:27) in function 'yolo_conv_top'.
+INFO: [XFORM 203-541] Flattening a loop nest 'Loop-7' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:91:35) in function 'yolo_conv_top'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'line_buff_group_0.va' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:28).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'line_buff_group_0.va' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:28).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'line_buff_group_1.va' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:29).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'line_buff_group_1.va' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:29).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'line_buff_group_2.va' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:30).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'line_buff_group_2.va' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:30).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'line_buff_group_3.va' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:31).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'line_buff_group_3.va' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:31).
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:01:45 ; elapsed = 00:01:53 . Memory (MB): peak = 1022.609 ; gain = 322.586 ; free physical = 407 ; free virtual = 11392
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'yolo_conv_top' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'slide_window' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining function 'slide_window'.
+WARNING: [SCHED 204-63] Unable to schedule the whole 2 cycles 'load' operation ('Window<3, 3, ap_fixed<16, 8, 4, 0, 0> >.val[0].V[0]', yolo_conv_fp_2019_64/src/yolo_conv.cpp:271) on array 'line_buff_val_0_V' within the first cycle (II = 1).
+Please consider increasing the target initiation interval of the pipeline.
+WARNING: [SCHED 204-69] Unable to schedule 'load' operation ('Window<3, 3, ap_fixed<16, 8, 4, 0, 0> >.val[0].V[0]', yolo_conv_fp_2019_64/src/yolo_conv.cpp:271) on array 'line_buff_val_0_V' due to limited memory ports. Please consider using a memory core with more ports or partitioning the array 'line_buff_val_0_V'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 3, Depth = 4.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 114.94 seconds; current allocated memory: 318.626 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.17 seconds; current allocated memory: 318.822 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'window_macc' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining function 'window_macc'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 7.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.19 seconds; current allocated memory: 319.444 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.24 seconds; current allocated memory: 320.205 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'post_process' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining function 'post_process'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 5.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.34 seconds; current allocated memory: 320.612 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.12 seconds; current allocated memory: 321.076 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'out_stream_merge' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining function 'out_stream_merge'.
+WARNING: [SCHED 204-68] The II Violation in module 'out_stream_merge' (Function: out_stream_merge): Unable to enforce a carried dependence constraint (II = 1, distance = 1, offset = 1)
+   between axis write on port 'outStream_V_data' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:338) and axis write on port 'outStream_V_data' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:338).
+WARNING: [SCHED 204-68] The II Violation in module 'out_stream_merge' (Function: out_stream_merge): Unable to enforce a carried dependence constraint (II = 2, distance = 1, offset = 1)
+   between axis write on port 'outStream_V_data' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:338) and axis write on port 'outStream_V_data' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:338).
+WARNING: [SCHED 204-68] The II Violation in module 'out_stream_merge' (Function: out_stream_merge): Unable to enforce a carried dependence constraint (II = 3, distance = 1, offset = 1)
+   between axis write on port 'outStream_V_data' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:338) and axis write on port 'outStream_V_data' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:338).
+WARNING: [SCHED 204-68] The II Violation in module 'out_stream_merge' (Function: out_stream_merge): Unable to enforce a carried dependence constraint (II = 4, distance = 1, offset = 1)
+   between axis write on port 'outStream_V_data' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:338) and axis write on port 'outStream_V_data' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:338).
+WARNING: [SCHED 204-68] The II Violation in module 'out_stream_merge' (Function: out_stream_merge): Unable to enforce a carried dependence constraint (II = 5, distance = 1, offset = 1)
+   between axis write on port 'outStream_V_data' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:338) and axis write on port 'outStream_V_data' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:338).
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 6, Depth = 7.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 1.89 seconds; current allocated memory: 322.203 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.24 seconds; current allocated memory: 323.875 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'yolo_conv_top' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 5'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-61] Pipelining loop 'Loop 6'.
+WARNING: [SCHED 204-69] Unable to schedule 'store' operation ('kernel_bias_fp_2_V_18_write_ln87', yolo_conv_fp_2019_64/src/yolo_conv.cpp:87) of variable 'curr_input.data.sub_data_2.V', yolo_conv_fp_2019_64/src/yolo_stream.h:8->yolo_conv_fp_2019_64/src/yolo_stream.h:16->yolo_conv_fp_2019_64/src/yolo_conv.cpp:84 on array 'kernel_bias_fp[2].V', yolo_conv_fp_2019_64/src/yolo_conv.cpp:51 due to limited memory ports. Please consider using a memory core with more ports or partitioning the array 'kernel_bias_fp_2_V'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 2, Depth = 3.
+INFO: [SCHED 204-61] Pipelining loop 'Loop 7'.
+WARNING: [SCHED 204-68] The II Violation in module 'yolo_conv_top' (Loop: Loop 7): Unable to enforce a carried dependence constraint (II = 6, distance = 1, offset = 1)
+   between 'call' operation ('_ln208', yolo_conv_fp_2019_64/src/yolo_conv.cpp:208) to 'out_stream_merge' and fifo request on port 'out_stream_group[0].V.V', yolo_conv_fp_2019_64/src/yolo_conv.cpp:24 (yolo_conv_fp_2019_64/src/yolo_conv.cpp:185).
+WARNING: [SCHED 204-68] The II Violation in module 'yolo_conv_top' (Loop: Loop 7): Unable to enforce a carried dependence constraint (II = 7, distance = 1, offset = 1)
+   between 'call' operation ('_ln208', yolo_conv_fp_2019_64/src/yolo_conv.cpp:208) to 'out_stream_merge' and fifo request on port 'out_stream_group[0].V.V', yolo_conv_fp_2019_64/src/yolo_conv.cpp:24 (yolo_conv_fp_2019_64/src/yolo_conv.cpp:185).
+WARNING: [SCHED 204-69] Unable to schedule 'load' operation ('local_mem_group_0_d_396', yolo_conv_fp_2019_64/src/yolo_conv.cpp:166) on array 'local_mem_group[0].data[0].V', yolo_conv_fp_2019_64/src/yolo_conv.cpp:47 due to limited memory ports. Please consider using a memory core with more ports or partitioning the array 'local_mem_group_0_d'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 16, Depth = 53.
+WARNING: [SCHED 204-21] Estimated clock period (10.3832ns) exceeds the target (target clock period: 10ns, clock uncertainty: 1.25ns, effective delay budget: 8.75ns).
+WARNING: [SCHED 204-21] The critical path in module 'yolo_conv_top' consists of the following:
+	'phi' operation ('indvar_flatten67', yolo_conv_fp_2019_64/src/yolo_conv.cpp:95) with incoming values : ('select_ln95', yolo_conv_fp_2019_64/src/yolo_conv.cpp:95) [803]  (0 ns)
+	'icmp' operation ('icmp_ln95', yolo_conv_fp_2019_64/src/yolo_conv.cpp:95) [833]  (2.1 ns)
+	'select' operation ('select_ln887', yolo_conv_fp_2019_64/src/yolo_conv.cpp:91) [834]  (0.968 ns)
+	'add' operation ('col_idx_V', yolo_conv_fp_2019_64/src/yolo_conv.cpp:95) [855]  (1.82 ns)
+	'icmp' operation ('icmp_ln879_9', yolo_conv_fp_2019_64/src/yolo_conv.cpp:122) [863]  (1.66 ns)
+	'or' operation ('or_ln120_3', yolo_conv_fp_2019_64/src/yolo_conv.cpp:120) [874]  (0.993 ns)
+	'or' operation ('or_ln120_5', yolo_conv_fp_2019_64/src/yolo_conv.cpp:120) [876]  (0.993 ns)
+	blocking operation 1.85 ns on control path)
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 25.3 seconds; current allocated memory: 341.005 MB.
+INFO: [HLS 200-434] Only 3 loops out of a total 7 loops have been pipelined in this design.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 9.55 seconds; current allocated memory: 371.866 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'slide_window' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'slide_window'.
+INFO: [HLS 200-111]  Elapsed time: 7.87 seconds; current allocated memory: 373.910 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'window_macc' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Generating core module 'yolo_conv_top_mul_mul_16s_16s_32_1_0': 9 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'window_macc'.
+INFO: [HLS 200-111]  Elapsed time: 0.3 seconds; current allocated memory: 376.004 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'post_process' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Generating core module 'yolo_conv_top_mul_mul_6ns_16s_22_1_0': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'post_process'.
+INFO: [HLS 200-111]  Elapsed time: 0.69 seconds; current allocated memory: 380.185 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'out_stream_merge' 
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 1.25ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg484-1'
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: config_export -vivado_optimization_level=2
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: set_clock_uncertainty default
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: config_export -vivado_optimization_level=2
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: set_clock_uncertainty default
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'yolo_conv_fp_2019_64/src/yolo_conv.cpp' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:01:05 ; elapsed = 00:01:07 . Memory (MB): peak = 892.023 ; gain = 192.000 ; free physical = 862 ; free virtual = 11384
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:01:05 ; elapsed = 00:01:07 . Memory (MB): peak = 892.023 ; gain = 192.000 ; free physical = 862 ; free virtual = 11384
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [XFORM 203-603] Inlining function 'hls::LineBuffer<3, 418, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0>, 0>::shift_pixels_up' into 'hls::LineBuffer<3, 418, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0>, 0>::shift_up' (/opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot/hls/hls_video_mem.h:863).
+INFO: [XFORM 203-603] Inlining function 'hls::LineBuffer<3, 418, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0>, 0>::shift_up' into 'yolo_line_buffer' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:258).
+INFO: [XFORM 203-603] Inlining function 'hls::LineBuffer<3, 418, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0>, 0>::insert_bottom_row' into 'hls::LineBuffer<3, 418, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0>, 0>::insert_top' (/opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot/hls/hls_video_mem.h:883).
+INFO: [XFORM 203-603] Inlining function 'hls::LineBuffer<3, 418, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0>, 0>::insert_top' into 'yolo_line_buffer' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:259).
+INFO: [XFORM 203-603] Inlining function 'hls::LineBuffer<3, 418, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0>, 0>::getval' into 'slide_window' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:271).
+INFO: [XFORM 203-603] Inlining function 'hls::Window<3, 3, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0> >::insert_pixel' into 'hls::Window<3, 3, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0> >::insert' (/opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot/hls/hls_video_mem.h:573).
+INFO: [XFORM 203-603] Inlining function 'hls::Window<3, 3, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0> >::insert' into 'slide_window' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:272).
+INFO: [XFORM 203-603] Inlining function 'hls::Window<3, 3, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0> >::getval' into 'window_macc' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:287).
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:01:08 ; elapsed = 00:01:10 . Memory (MB): peak = 894.547 ; gain = 194.523 ; free physical = 795 ; free virtual = 11327
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [XFORM 203-602] Inlining function 'write_output' into 'yolo_conv_top' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:187) automatically.
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:01:09 ; elapsed = 00:01:11 . Memory (MB): peak = 894.547 ; gain = 194.523 ; free physical = 754 ; free virtual = 11290
+INFO: [XFORM 203-1101] Packing variable 'outStream.V.data' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:4) into a 64-bit variable.
+INFO: [XFORM 203-1101] Packing variable 'inStream.V.data' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:4) into a 64-bit variable.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'Loop-7.1.1' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:98) in function 'yolo_conv_top' for pipelining.
+INFO: [XFORM 203-502] Unrolling all loops for pipelining in function 'window_macc' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:279).
+INFO: [XFORM 203-502] Unrolling all loops for pipelining in function 'slide_window' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:265).
+INFO: [XFORM 203-502] Unrolling all loops for pipelining in function 'yolo_line_buffer' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:255).
+INFO: [XFORM 203-502] Unrolling all loops for pipelining in function 'out_stream_merge' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:299).
+INFO: [HLS 200-489] Unrolling loop 'Loop-7.1.1.1' (/opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot/hls/hls_video_mem.h:49) in function 'yolo_conv_top' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'Loop-7.1.1.1.1' (/opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot/hls/hls_video_mem.h:49) in function 'yolo_conv_top' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'Loop-7.1.1.2' (/opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot/hls/hls_video_mem.h:49) in function 'yolo_conv_top' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'Loop-7.1.1.2.1' (/opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot/hls/hls_video_mem.h:49) in function 'yolo_conv_top' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'Loop-7.1.1.3' (/opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot/hls/hls_video_mem.h:49) in function 'yolo_conv_top' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'Loop-7.1.1.3.1' (/opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot/hls/hls_video_mem.h:49) in function 'yolo_conv_top' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'Loop-7.1.1.4' (/opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot/hls/hls_video_mem.h:49) in function 'yolo_conv_top' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'Loop-7.1.1.4.1' (/opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot/hls/hls_video_mem.h:49) in function 'yolo_conv_top' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'Loop-7.1.1.5' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:155) in function 'yolo_conv_top' completely with a factor of 32.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:283) in function 'window_macc' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:285) in function 'window_macc' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:267) in function 'slide_window' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:269) in function 'slide_window' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1' (/opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot/hls/hls_video_mem.h:727) in function 'yolo_line_buffer' completely with a factor of 2.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:305) in function 'out_stream_merge' completely with a factor of 6.
+INFO: [XFORM 203-102] Partitioning array 'window.val.V.0' automatically.
+INFO: [XFORM 203-102] Partitioning array 'window.val.V.1' automatically.
+INFO: [XFORM 203-102] Partitioning array 'window.val.V.2' automatically.
+INFO: [XFORM 203-102] Automatically partitioning streamed array 'out_stream_group.V.V' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:24) .
+INFO: [XFORM 203-101] Partitioning array 'out_stream_group.V.V' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:24) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'line_buff_group_0.val.V' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:28) in dimension 2 completely.
+INFO: [XFORM 203-101] Partitioning array 'line_buff_group_1.val.V' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:29) in dimension 2 completely.
+INFO: [XFORM 203-101] Partitioning array 'line_buff_group_2.val.V' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:30) in dimension 2 completely.
+INFO: [XFORM 203-101] Partitioning array 'line_buff_group_3.val.V' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:31) in dimension 2 completely.
+INFO: [XFORM 203-101] Partitioning array 'val_output.V' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:33) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'local_mem_group.data.V' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:47) in dimension 1 with a block factor 4.
+INFO: [XFORM 203-101] Partitioning array 'kernel_bias_fp.V' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:51) in dimension 1 with a block factor 4.
+INFO: [XFORM 203-101] Partitioning array 'kernel_window_0.val.V' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:146) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'kernel_window_1.val.V' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:146) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'kernel_window_2.val.V' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:146) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'kernel_window_3.val.V' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:146) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'local_mem_group.data.V' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:47) in dimension 3 completely.
+INFO: [XFORM 203-101] Partitioning array 'kernel_window_0.val.V' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:146) in dimension 2 completely.
+INFO: [XFORM 203-101] Partitioning array 'kernel_window_1.val.V' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:146) in dimension 2 completely.
+INFO: [XFORM 203-101] Partitioning array 'kernel_window_2.val.V' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:146) in dimension 2 completely.
+INFO: [XFORM 203-101] Partitioning array 'kernel_window_3.val.V' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:146) in dimension 2 completely.
+INFO: [XFORM 203-602] Inlining function 'yolo_line_buffer' into 'yolo_conv_top' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:138) automatically.
+INFO: [XFORM 203-602] Inlining function 'write_output' into 'yolo_conv_top' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:187) automatically.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (yolo_conv_fp_2019_64/src/yolo_conv.cpp:204:13) to (yolo_conv_fp_2019_64/src/yolo_conv.cpp:209:5) in function 'yolo_conv_top'... converting 4 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (yolo_conv_fp_2019_64/src/yolo_conv.cpp:288:32) to (yolo_conv_fp_2019_64/src/yolo_conv.cpp:291:2) in function 'window_macc'... converting 39 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (yolo_conv_fp_2019_64/src/yolo_conv.cpp:219:18) to (yolo_conv_fp_2019_64/src/yolo_conv.cpp:253:1) in function 'post_process'... converting 26 basic blocks.
+INFO: [XFORM 203-11] Balancing expressions in function 'yolo_conv_top' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:4)...3 expression(s) balanced.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:01:27 ; elapsed = 00:01:29 . Memory (MB): peak = 1020.023 ; gain = 320.000 ; free physical = 673 ; free virtual = 11216
+INFO: [XFORM 203-541] Flattening a loop nest 'Loop-5.1' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:59:26) in function 'yolo_conv_top'.
+INFO: [XFORM 203-541] Flattening a loop nest 'Loop-5' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:56:27) in function 'yolo_conv_top'.
+INFO: [XFORM 203-541] Flattening a loop nest 'Loop-7.1' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:95:27) in function 'yolo_conv_top'.
+INFO: [XFORM 203-541] Flattening a loop nest 'Loop-7' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:91:35) in function 'yolo_conv_top'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'line_buff_group_0.va' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:28).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'line_buff_group_0.va' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:28).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'line_buff_group_1.va' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:29).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'line_buff_group_1.va' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:29).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'line_buff_group_2.va' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:30).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'line_buff_group_2.va' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:30).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'line_buff_group_3.va' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:31).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'line_buff_group_3.va' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:31).
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:01:44 ; elapsed = 00:01:46 . Memory (MB): peak = 1022.609 ; gain = 322.586 ; free physical = 605 ; free virtual = 11151
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'yolo_conv_top' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'slide_window' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining function 'slide_window'.
+WARNING: [SCHED 204-63] Unable to schedule the whole 2 cycles 'load' operation ('Window<3, 3, ap_fixed<16, 8, 4, 0, 0> >.val[0].V[0]', yolo_conv_fp_2019_64/src/yolo_conv.cpp:271) on array 'line_buff_val_0_V' within the first cycle (II = 1).
+Please consider increasing the target initiation interval of the pipeline.
+WARNING: [SCHED 204-69] Unable to schedule 'load' operation ('Window<3, 3, ap_fixed<16, 8, 4, 0, 0> >.val[0].V[0]', yolo_conv_fp_2019_64/src/yolo_conv.cpp:271) on array 'line_buff_val_0_V' due to limited memory ports. Please consider using a memory core with more ports or partitioning the array 'line_buff_val_0_V'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 3, Depth = 4.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 107.5 seconds; current allocated memory: 318.636 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.07 seconds; current allocated memory: 318.833 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'window_macc' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining function 'window_macc'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 7.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.19 seconds; current allocated memory: 319.455 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.21 seconds; current allocated memory: 320.215 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'post_process' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining function 'post_process'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 5.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.34 seconds; current allocated memory: 320.623 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.13 seconds; current allocated memory: 321.087 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'out_stream_merge' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining function 'out_stream_merge'.
+WARNING: [SCHED 204-68] The II Violation in module 'out_stream_merge' (Function: out_stream_merge): Unable to enforce a carried dependence constraint (II = 1, distance = 1, offset = 1)
+   between axis write on port 'outStream_V_data' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:338) and axis write on port 'outStream_V_data' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:338).
+WARNING: [SCHED 204-68] The II Violation in module 'out_stream_merge' (Function: out_stream_merge): Unable to enforce a carried dependence constraint (II = 2, distance = 1, offset = 1)
+   between axis write on port 'outStream_V_data' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:338) and axis write on port 'outStream_V_data' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:338).
+WARNING: [SCHED 204-68] The II Violation in module 'out_stream_merge' (Function: out_stream_merge): Unable to enforce a carried dependence constraint (II = 3, distance = 1, offset = 1)
+   between axis write on port 'outStream_V_data' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:338) and axis write on port 'outStream_V_data' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:338).
+WARNING: [SCHED 204-68] The II Violation in module 'out_stream_merge' (Function: out_stream_merge): Unable to enforce a carried dependence constraint (II = 4, distance = 1, offset = 1)
+   between axis write on port 'outStream_V_data' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:338) and axis write on port 'outStream_V_data' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:338).
+WARNING: [SCHED 204-68] The II Violation in module 'out_stream_merge' (Function: out_stream_merge): Unable to enforce a carried dependence constraint (II = 5, distance = 1, offset = 1)
+   between axis write on port 'outStream_V_data' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:338) and axis write on port 'outStream_V_data' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:338).
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 6, Depth = 7.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 1.88 seconds; current allocated memory: 322.215 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.28 seconds; current allocated memory: 323.886 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'yolo_conv_top' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 5'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-61] Pipelining loop 'Loop 6'.
+WARNING: [SCHED 204-69] Unable to schedule 'store' operation ('kernel_bias_fp_2_V_18_write_ln87', yolo_conv_fp_2019_64/src/yolo_conv.cpp:87) of variable 'curr_input.data.sub_data_2.V', yolo_conv_fp_2019_64/src/yolo_stream.h:8->yolo_conv_fp_2019_64/src/yolo_stream.h:16->yolo_conv_fp_2019_64/src/yolo_conv.cpp:84 on array 'kernel_bias_fp[2].V', yolo_conv_fp_2019_64/src/yolo_conv.cpp:51 due to limited memory ports. Please consider using a memory core with more ports or partitioning the array 'kernel_bias_fp_2_V'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 2, Depth = 3.
+INFO: [SCHED 204-61] Pipelining loop 'Loop 7'.
+WARNING: [SCHED 204-68] The II Violation in module 'yolo_conv_top' (Loop: Loop 7): Unable to enforce a carried dependence constraint (II = 6, distance = 1, offset = 1)
+   between 'call' operation ('_ln208', yolo_conv_fp_2019_64/src/yolo_conv.cpp:208) to 'out_stream_merge' and fifo request on port 'out_stream_group[0].V.V', yolo_conv_fp_2019_64/src/yolo_conv.cpp:24 (yolo_conv_fp_2019_64/src/yolo_conv.cpp:185).
+WARNING: [SCHED 204-68] The II Violation in module 'yolo_conv_top' (Loop: Loop 7): Unable to enforce a carried dependence constraint (II = 7, distance = 1, offset = 1)
+   between 'call' operation ('_ln208', yolo_conv_fp_2019_64/src/yolo_conv.cpp:208) to 'out_stream_merge' and fifo request on port 'out_stream_group[0].V.V', yolo_conv_fp_2019_64/src/yolo_conv.cpp:24 (yolo_conv_fp_2019_64/src/yolo_conv.cpp:185).
+WARNING: [SCHED 204-69] Unable to schedule 'load' operation ('local_mem_group_0_d_396', yolo_conv_fp_2019_64/src/yolo_conv.cpp:166) on array 'local_mem_group[0].data[0].V', yolo_conv_fp_2019_64/src/yolo_conv.cpp:47 due to limited memory ports. Please consider using a memory core with more ports or partitioning the array 'local_mem_group_0_d'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 16, Depth = 53.
+WARNING: [SCHED 204-21] Estimated clock period (10.3832ns) exceeds the target (target clock period: 10ns, clock uncertainty: 1.25ns, effective delay budget: 8.75ns).
+WARNING: [SCHED 204-21] The critical path in module 'yolo_conv_top' consists of the following:
+	'phi' operation ('indvar_flatten67', yolo_conv_fp_2019_64/src/yolo_conv.cpp:95) with incoming values : ('select_ln95', yolo_conv_fp_2019_64/src/yolo_conv.cpp:95) [803]  (0 ns)
+	'icmp' operation ('icmp_ln95', yolo_conv_fp_2019_64/src/yolo_conv.cpp:95) [833]  (2.1 ns)
+	'select' operation ('select_ln887', yolo_conv_fp_2019_64/src/yolo_conv.cpp:91) [834]  (0.968 ns)
+	'add' operation ('col_idx_V', yolo_conv_fp_2019_64/src/yolo_conv.cpp:95) [855]  (1.82 ns)
+	'icmp' operation ('icmp_ln879_9', yolo_conv_fp_2019_64/src/yolo_conv.cpp:122) [863]  (1.66 ns)
+	'or' operation ('or_ln120_3', yolo_conv_fp_2019_64/src/yolo_conv.cpp:120) [874]  (0.993 ns)
+	'or' operation ('or_ln120_5', yolo_conv_fp_2019_64/src/yolo_conv.cpp:120) [876]  (0.993 ns)
+	blocking operation 1.85 ns on control path)
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 25.33 seconds; current allocated memory: 341.014 MB.
+INFO: [HLS 200-434] Only 3 loops out of a total 7 loops have been pipelined in this design.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 9.38 seconds; current allocated memory: 371.871 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'slide_window' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'slide_window'.
+INFO: [HLS 200-111]  Elapsed time: 7.73 seconds; current allocated memory: 373.916 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'window_macc' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Generating core module 'yolo_conv_top_mul_mul_16s_16s_32_1_0': 9 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'window_macc'.
+INFO: [HLS 200-111]  Elapsed time: 0.19 seconds; current allocated memory: 376.010 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'post_process' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Generating core module 'yolo_conv_top_mul_mul_6ns_16s_22_1_0': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'post_process'.
+INFO: [HLS 200-111]  Elapsed time: 0.67 seconds; current allocated memory: 380.191 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'out_stream_merge' 
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 1.25ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg484-1'
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: config_export -vivado_optimization_level=2
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: set_clock_uncertainty default
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: config_export -vivado_optimization_level=2
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: set_clock_uncertainty default
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'yolo_conv_fp_2019_64/src/yolo_conv.cpp' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:01:05 ; elapsed = 00:01:07 . Memory (MB): peak = 892.023 ; gain = 192.000 ; free physical = 837 ; free virtual = 11359
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:01:05 ; elapsed = 00:01:07 . Memory (MB): peak = 892.023 ; gain = 192.000 ; free physical = 837 ; free virtual = 11359
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [XFORM 203-603] Inlining function 'hls::LineBuffer<3, 418, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0>, 0>::shift_pixels_up' into 'hls::LineBuffer<3, 418, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0>, 0>::shift_up' (/opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot/hls/hls_video_mem.h:863).
+INFO: [XFORM 203-603] Inlining function 'hls::LineBuffer<3, 418, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0>, 0>::shift_up' into 'yolo_line_buffer' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:258).
+INFO: [XFORM 203-603] Inlining function 'hls::LineBuffer<3, 418, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0>, 0>::insert_bottom_row' into 'hls::LineBuffer<3, 418, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0>, 0>::insert_top' (/opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot/hls/hls_video_mem.h:883).
+INFO: [XFORM 203-603] Inlining function 'hls::LineBuffer<3, 418, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0>, 0>::insert_top' into 'yolo_line_buffer' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:259).
+INFO: [XFORM 203-603] Inlining function 'hls::LineBuffer<3, 418, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0>, 0>::getval' into 'slide_window' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:271).
+INFO: [XFORM 203-603] Inlining function 'hls::Window<3, 3, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0> >::insert_pixel' into 'hls::Window<3, 3, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0> >::insert' (/opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot/hls/hls_video_mem.h:573).
+INFO: [XFORM 203-603] Inlining function 'hls::Window<3, 3, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0> >::insert' into 'slide_window' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:272).
+INFO: [XFORM 203-603] Inlining function 'hls::Window<3, 3, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0> >::getval' into 'window_macc' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:287).
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:01:07 ; elapsed = 00:01:09 . Memory (MB): peak = 894.547 ; gain = 194.523 ; free physical = 769 ; free virtual = 11300
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [XFORM 203-602] Inlining function 'write_output' into 'yolo_conv_top' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:187) automatically.
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:01:08 ; elapsed = 00:01:10 . Memory (MB): peak = 894.547 ; gain = 194.523 ; free physical = 728 ; free virtual = 11264
+INFO: [XFORM 203-1101] Packing variable 'outStream.V.data' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:4) into a 64-bit variable.
+INFO: [XFORM 203-1101] Packing variable 'inStream.V.data' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:4) into a 64-bit variable.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'Loop-7.1.1' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:98) in function 'yolo_conv_top' for pipelining.
+INFO: [XFORM 203-502] Unrolling all loops for pipelining in function 'window_macc' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:279).
+INFO: [XFORM 203-502] Unrolling all loops for pipelining in function 'slide_window' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:265).
+INFO: [XFORM 203-502] Unrolling all loops for pipelining in function 'yolo_line_buffer' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:255).
+INFO: [XFORM 203-502] Unrolling all loops for pipelining in function 'out_stream_merge' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:299).
+INFO: [HLS 200-489] Unrolling loop 'Loop-7.1.1.1' (/opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot/hls/hls_video_mem.h:49) in function 'yolo_conv_top' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'Loop-7.1.1.1.1' (/opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot/hls/hls_video_mem.h:49) in function 'yolo_conv_top' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'Loop-7.1.1.2' (/opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot/hls/hls_video_mem.h:49) in function 'yolo_conv_top' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'Loop-7.1.1.2.1' (/opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot/hls/hls_video_mem.h:49) in function 'yolo_conv_top' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'Loop-7.1.1.3' (/opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot/hls/hls_video_mem.h:49) in function 'yolo_conv_top' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'Loop-7.1.1.3.1' (/opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot/hls/hls_video_mem.h:49) in function 'yolo_conv_top' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'Loop-7.1.1.4' (/opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot/hls/hls_video_mem.h:49) in function 'yolo_conv_top' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'Loop-7.1.1.4.1' (/opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot/hls/hls_video_mem.h:49) in function 'yolo_conv_top' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'Loop-7.1.1.5' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:155) in function 'yolo_conv_top' completely with a factor of 32.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:283) in function 'window_macc' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:285) in function 'window_macc' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:267) in function 'slide_window' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:269) in function 'slide_window' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1' (/opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot/hls/hls_video_mem.h:727) in function 'yolo_line_buffer' completely with a factor of 2.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:305) in function 'out_stream_merge' completely with a factor of 6.
+INFO: [XFORM 203-102] Partitioning array 'window.val.V.0' automatically.
+INFO: [XFORM 203-102] Partitioning array 'window.val.V.1' automatically.
+INFO: [XFORM 203-102] Partitioning array 'window.val.V.2' automatically.
+INFO: [XFORM 203-102] Automatically partitioning streamed array 'out_stream_group.V.V' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:24) .
+INFO: [XFORM 203-101] Partitioning array 'out_stream_group.V.V' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:24) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'line_buff_group_0.val.V' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:28) in dimension 2 completely.
+INFO: [XFORM 203-101] Partitioning array 'line_buff_group_1.val.V' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:29) in dimension 2 completely.
+INFO: [XFORM 203-101] Partitioning array 'line_buff_group_2.val.V' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:30) in dimension 2 completely.
+INFO: [XFORM 203-101] Partitioning array 'line_buff_group_3.val.V' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:31) in dimension 2 completely.
+INFO: [XFORM 203-101] Partitioning array 'val_output.V' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:33) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'local_mem_group.data.V' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:47) in dimension 1 with a block factor 4.
+INFO: [XFORM 203-101] Partitioning array 'kernel_bias_fp.V' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:51) in dimension 1 with a block factor 4.
+INFO: [XFORM 203-101] Partitioning array 'kernel_window_0.val.V' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:146) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'kernel_window_1.val.V' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:146) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'kernel_window_2.val.V' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:146) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'kernel_window_3.val.V' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:146) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'local_mem_group.data.V' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:47) in dimension 3 completely.
+INFO: [XFORM 203-101] Partitioning array 'kernel_window_0.val.V' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:146) in dimension 2 completely.
+INFO: [XFORM 203-101] Partitioning array 'kernel_window_1.val.V' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:146) in dimension 2 completely.
+INFO: [XFORM 203-101] Partitioning array 'kernel_window_2.val.V' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:146) in dimension 2 completely.
+INFO: [XFORM 203-101] Partitioning array 'kernel_window_3.val.V' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:146) in dimension 2 completely.
+INFO: [XFORM 203-602] Inlining function 'yolo_line_buffer' into 'yolo_conv_top' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:138) automatically.
+INFO: [XFORM 203-602] Inlining function 'write_output' into 'yolo_conv_top' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:187) automatically.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (yolo_conv_fp_2019_64/src/yolo_conv.cpp:204:13) to (yolo_conv_fp_2019_64/src/yolo_conv.cpp:209:5) in function 'yolo_conv_top'... converting 4 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (yolo_conv_fp_2019_64/src/yolo_conv.cpp:288:32) to (yolo_conv_fp_2019_64/src/yolo_conv.cpp:291:2) in function 'window_macc'... converting 39 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (yolo_conv_fp_2019_64/src/yolo_conv.cpp:219:18) to (yolo_conv_fp_2019_64/src/yolo_conv.cpp:253:1) in function 'post_process'... converting 26 basic blocks.
+INFO: [XFORM 203-11] Balancing expressions in function 'yolo_conv_top' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:4)...3 expression(s) balanced.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:01:26 ; elapsed = 00:01:28 . Memory (MB): peak = 1020.023 ; gain = 320.000 ; free physical = 647 ; free virtual = 11191
+INFO: [XFORM 203-541] Flattening a loop nest 'Loop-5.1' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:59:26) in function 'yolo_conv_top'.
+INFO: [XFORM 203-541] Flattening a loop nest 'Loop-5' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:56:27) in function 'yolo_conv_top'.
+INFO: [XFORM 203-541] Flattening a loop nest 'Loop-7.1' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:95:27) in function 'yolo_conv_top'.
+INFO: [XFORM 203-541] Flattening a loop nest 'Loop-7' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:91:35) in function 'yolo_conv_top'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'line_buff_group_0.va' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:28).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'line_buff_group_0.va' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:28).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'line_buff_group_1.va' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:29).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'line_buff_group_1.va' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:29).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'line_buff_group_2.va' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:30).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'line_buff_group_2.va' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:30).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'line_buff_group_3.va' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:31).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'line_buff_group_3.va' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:31).
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:01:43 ; elapsed = 00:01:45 . Memory (MB): peak = 1022.609 ; gain = 322.586 ; free physical = 557 ; free virtual = 11115
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'yolo_conv_top' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'slide_window' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining function 'slide_window'.
+WARNING: [SCHED 204-63] Unable to schedule the whole 2 cycles 'load' operation ('Window<3, 3, ap_fixed<16, 8, 4, 0, 0> >.val[0].V[0]', yolo_conv_fp_2019_64/src/yolo_conv.cpp:271) on array 'line_buff_val_0_V' within the first cycle (II = 1).
+Please consider increasing the target initiation interval of the pipeline.
+WARNING: [SCHED 204-69] Unable to schedule 'load' operation ('Window<3, 3, ap_fixed<16, 8, 4, 0, 0> >.val[0].V[0]', yolo_conv_fp_2019_64/src/yolo_conv.cpp:271) on array 'line_buff_val_0_V' due to limited memory ports. Please consider using a memory core with more ports or partitioning the array 'line_buff_val_0_V'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 3, Depth = 4.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 106.74 seconds; current allocated memory: 318.630 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.1 seconds; current allocated memory: 318.826 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'window_macc' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining function 'window_macc'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 7.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.21 seconds; current allocated memory: 319.449 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.21 seconds; current allocated memory: 320.210 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'post_process' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining function 'post_process'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 5.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.34 seconds; current allocated memory: 320.617 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.13 seconds; current allocated memory: 321.081 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'out_stream_merge' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining function 'out_stream_merge'.
+WARNING: [SCHED 204-68] The II Violation in module 'out_stream_merge' (Function: out_stream_merge): Unable to enforce a carried dependence constraint (II = 1, distance = 1, offset = 1)
+   between axis write on port 'outStream_V_data' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:338) and axis write on port 'outStream_V_data' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:338).
+WARNING: [SCHED 204-68] The II Violation in module 'out_stream_merge' (Function: out_stream_merge): Unable to enforce a carried dependence constraint (II = 2, distance = 1, offset = 1)
+   between axis write on port 'outStream_V_data' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:338) and axis write on port 'outStream_V_data' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:338).
+WARNING: [SCHED 204-68] The II Violation in module 'out_stream_merge' (Function: out_stream_merge): Unable to enforce a carried dependence constraint (II = 3, distance = 1, offset = 1)
+   between axis write on port 'outStream_V_data' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:338) and axis write on port 'outStream_V_data' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:338).
+WARNING: [SCHED 204-68] The II Violation in module 'out_stream_merge' (Function: out_stream_merge): Unable to enforce a carried dependence constraint (II = 4, distance = 1, offset = 1)
+   between axis write on port 'outStream_V_data' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:338) and axis write on port 'outStream_V_data' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:338).
+WARNING: [SCHED 204-68] The II Violation in module 'out_stream_merge' (Function: out_stream_merge): Unable to enforce a carried dependence constraint (II = 5, distance = 1, offset = 1)
+   between axis write on port 'outStream_V_data' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:338) and axis write on port 'outStream_V_data' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:338).
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 6, Depth = 7.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 1.91 seconds; current allocated memory: 322.208 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.24 seconds; current allocated memory: 323.880 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'yolo_conv_top' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 5'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-61] Pipelining loop 'Loop 6'.
+WARNING: [SCHED 204-69] Unable to schedule 'store' operation ('kernel_bias_fp_2_V_18_write_ln87', yolo_conv_fp_2019_64/src/yolo_conv.cpp:87) of variable 'curr_input.data.sub_data_2.V', yolo_conv_fp_2019_64/src/yolo_stream.h:8->yolo_conv_fp_2019_64/src/yolo_stream.h:16->yolo_conv_fp_2019_64/src/yolo_conv.cpp:84 on array 'kernel_bias_fp[2].V', yolo_conv_fp_2019_64/src/yolo_conv.cpp:51 due to limited memory ports. Please consider using a memory core with more ports or partitioning the array 'kernel_bias_fp_2_V'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 2, Depth = 3.
+INFO: [SCHED 204-61] Pipelining loop 'Loop 7'.
+WARNING: [SCHED 204-68] The II Violation in module 'yolo_conv_top' (Loop: Loop 7): Unable to enforce a carried dependence constraint (II = 6, distance = 1, offset = 1)
+   between 'call' operation ('_ln208', yolo_conv_fp_2019_64/src/yolo_conv.cpp:208) to 'out_stream_merge' and fifo request on port 'out_stream_group[0].V.V', yolo_conv_fp_2019_64/src/yolo_conv.cpp:24 (yolo_conv_fp_2019_64/src/yolo_conv.cpp:185).
+WARNING: [SCHED 204-68] The II Violation in module 'yolo_conv_top' (Loop: Loop 7): Unable to enforce a carried dependence constraint (II = 7, distance = 1, offset = 1)
+   between 'call' operation ('_ln208', yolo_conv_fp_2019_64/src/yolo_conv.cpp:208) to 'out_stream_merge' and fifo request on port 'out_stream_group[0].V.V', yolo_conv_fp_2019_64/src/yolo_conv.cpp:24 (yolo_conv_fp_2019_64/src/yolo_conv.cpp:185).
+WARNING: [SCHED 204-69] Unable to schedule 'load' operation ('local_mem_group_0_d_396', yolo_conv_fp_2019_64/src/yolo_conv.cpp:166) on array 'local_mem_group[0].data[0].V', yolo_conv_fp_2019_64/src/yolo_conv.cpp:47 due to limited memory ports. Please consider using a memory core with more ports or partitioning the array 'local_mem_group_0_d'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 16, Depth = 53.
+WARNING: [SCHED 204-21] Estimated clock period (10.3832ns) exceeds the target (target clock period: 10ns, clock uncertainty: 1.25ns, effective delay budget: 8.75ns).
+WARNING: [SCHED 204-21] The critical path in module 'yolo_conv_top' consists of the following:
+	'phi' operation ('indvar_flatten67', yolo_conv_fp_2019_64/src/yolo_conv.cpp:95) with incoming values : ('select_ln95', yolo_conv_fp_2019_64/src/yolo_conv.cpp:95) [803]  (0 ns)
+	'icmp' operation ('icmp_ln95', yolo_conv_fp_2019_64/src/yolo_conv.cpp:95) [833]  (2.1 ns)
+	'select' operation ('select_ln887', yolo_conv_fp_2019_64/src/yolo_conv.cpp:91) [834]  (0.968 ns)
+	'add' operation ('col_idx_V', yolo_conv_fp_2019_64/src/yolo_conv.cpp:95) [855]  (1.82 ns)
+	'icmp' operation ('icmp_ln879_9', yolo_conv_fp_2019_64/src/yolo_conv.cpp:122) [863]  (1.66 ns)
+	'or' operation ('or_ln120_3', yolo_conv_fp_2019_64/src/yolo_conv.cpp:120) [874]  (0.993 ns)
+	'or' operation ('or_ln120_5', yolo_conv_fp_2019_64/src/yolo_conv.cpp:120) [876]  (0.993 ns)
+	blocking operation 1.85 ns on control path)
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 25.39 seconds; current allocated memory: 341.008 MB.
+INFO: [HLS 200-434] Only 3 loops out of a total 7 loops have been pipelined in this design.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 9.61 seconds; current allocated memory: 371.866 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'slide_window' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'slide_window'.
+INFO: [HLS 200-111]  Elapsed time: 7.89 seconds; current allocated memory: 373.911 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'window_macc' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Generating core module 'yolo_conv_top_mul_mul_16s_16s_32_1_0': 9 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'window_macc'.
+INFO: [HLS 200-111]  Elapsed time: 0.17 seconds; current allocated memory: 376.005 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'post_process' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Generating core module 'yolo_conv_top_mul_mul_6ns_16s_22_1_0': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'post_process'.
+INFO: [HLS 200-111]  Elapsed time: 0.72 seconds; current allocated memory: 380.185 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'out_stream_merge' 
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 1.25ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg484-1'
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: config_export -vivado_optimization_level=2
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: set_clock_uncertainty default
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: config_export -vivado_optimization_level=2
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: set_clock_uncertainty default
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 2ns.
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'yolo_conv_fp_2019_64/src/yolo_conv.cpp' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:01:05 ; elapsed = 00:01:12 . Memory (MB): peak = 892.023 ; gain = 192.000 ; free physical = 3131 ; free virtual = 11710
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:01:05 ; elapsed = 00:01:12 . Memory (MB): peak = 892.023 ; gain = 192.000 ; free physical = 3131 ; free virtual = 11710
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [XFORM 203-603] Inlining function 'hls::LineBuffer<3, 418, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0>, 0>::shift_pixels_up' into 'hls::LineBuffer<3, 418, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0>, 0>::shift_up' (/opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot/hls/hls_video_mem.h:863).
+INFO: [XFORM 203-603] Inlining function 'hls::LineBuffer<3, 418, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0>, 0>::shift_up' into 'yolo_line_buffer' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:249).
+INFO: [XFORM 203-603] Inlining function 'hls::LineBuffer<3, 418, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0>, 0>::insert_bottom_row' into 'hls::LineBuffer<3, 418, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0>, 0>::insert_top' (/opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot/hls/hls_video_mem.h:883).
+INFO: [XFORM 203-603] Inlining function 'hls::LineBuffer<3, 418, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0>, 0>::insert_top' into 'yolo_line_buffer' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:250).
+INFO: [XFORM 203-603] Inlining function 'hls::LineBuffer<3, 418, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0>, 0>::getval' into 'slide_window' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:262).
+INFO: [XFORM 203-603] Inlining function 'hls::Window<3, 3, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0> >::insert_pixel' into 'hls::Window<3, 3, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0> >::insert' (/opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot/hls/hls_video_mem.h:573).
+INFO: [XFORM 203-603] Inlining function 'hls::Window<3, 3, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0> >::insert' into 'slide_window' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:263).
+INFO: [XFORM 203-603] Inlining function 'hls::Window<3, 3, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0> >::getval' into 'window_macc' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:278).
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:01:08 ; elapsed = 00:01:15 . Memory (MB): peak = 894.488 ; gain = 194.465 ; free physical = 3061 ; free virtual = 11654
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [XFORM 203-602] Inlining function 'write_output' into 'yolo_conv_top' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:178) automatically.
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:01:08 ; elapsed = 00:01:16 . Memory (MB): peak = 894.488 ; gain = 194.465 ; free physical = 3019 ; free virtual = 11617
+INFO: [XFORM 203-1101] Packing variable 'outStream.V.data' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:4) into a 64-bit variable.
+INFO: [XFORM 203-1101] Packing variable 'inStream.V.data' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:4) into a 64-bit variable.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'Loop-7.1.1' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:89) in function 'yolo_conv_top' for pipelining.
+INFO: [XFORM 203-502] Unrolling all loops for pipelining in function 'window_macc' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:270).
+INFO: [XFORM 203-502] Unrolling all loops for pipelining in function 'slide_window' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:254).
+INFO: [XFORM 203-502] Unrolling all loops for pipelining in function 'yolo_line_buffer' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:246).
+INFO: [XFORM 203-502] Unrolling all loops for pipelining in function 'out_stream_merge' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:290).
+INFO: [HLS 200-489] Unrolling loop 'Loop-7.1.1.1' (/opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot/hls/hls_video_mem.h:49) in function 'yolo_conv_top' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'Loop-7.1.1.1.1' (/opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot/hls/hls_video_mem.h:49) in function 'yolo_conv_top' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'Loop-7.1.1.2' (/opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot/hls/hls_video_mem.h:49) in function 'yolo_conv_top' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'Loop-7.1.1.2.1' (/opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot/hls/hls_video_mem.h:49) in function 'yolo_conv_top' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'Loop-7.1.1.3' (/opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot/hls/hls_video_mem.h:49) in function 'yolo_conv_top' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'Loop-7.1.1.3.1' (/opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot/hls/hls_video_mem.h:49) in function 'yolo_conv_top' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'Loop-7.1.1.4' (/opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot/hls/hls_video_mem.h:49) in function 'yolo_conv_top' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'Loop-7.1.1.4.1' (/opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot/hls/hls_video_mem.h:49) in function 'yolo_conv_top' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'Loop-7.1.1.5' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:146) in function 'yolo_conv_top' completely with a factor of 32.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:274) in function 'window_macc' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:276) in function 'window_macc' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:258) in function 'slide_window' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:260) in function 'slide_window' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1' (/opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot/hls/hls_video_mem.h:727) in function 'yolo_line_buffer' completely with a factor of 2.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:296) in function 'out_stream_merge' completely with a factor of 6.
+INFO: [XFORM 203-102] Partitioning array 'window.val.V.0' automatically.
+INFO: [XFORM 203-102] Partitioning array 'window.val.V.1' automatically.
+INFO: [XFORM 203-102] Partitioning array 'window.val.V.2' automatically.
+INFO: [XFORM 203-102] Automatically partitioning streamed array 'out_stream_group.V.V' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:24) .
+INFO: [XFORM 203-101] Partitioning array 'out_stream_group.V.V' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:24) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'line_buff_group_0.val.V' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:28) in dimension 2 completely.
+INFO: [XFORM 203-101] Partitioning array 'line_buff_group_1.val.V' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:29) in dimension 2 completely.
+INFO: [XFORM 203-101] Partitioning array 'line_buff_group_2.val.V' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:30) in dimension 2 completely.
+INFO: [XFORM 203-101] Partitioning array 'line_buff_group_3.val.V' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:31) in dimension 2 completely.
+INFO: [XFORM 203-101] Partitioning array 'val_output.V' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:33) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'local_mem_group.data.V' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:38) in dimension 1 with a block factor 4.
+INFO: [XFORM 203-101] Partitioning array 'kernel_bias_fp.V' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:42) in dimension 1 with a block factor 4.
+INFO: [XFORM 203-101] Partitioning array 'kernel_window_0.val.V' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:137) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'kernel_window_1.val.V' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:137) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'kernel_window_2.val.V' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:137) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'kernel_window_3.val.V' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:137) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'local_mem_group.data.V' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:38) in dimension 3 completely.
+INFO: [XFORM 203-101] Partitioning array 'kernel_window_0.val.V' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:137) in dimension 2 completely.
+INFO: [XFORM 203-101] Partitioning array 'kernel_window_1.val.V' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:137) in dimension 2 completely.
+INFO: [XFORM 203-101] Partitioning array 'kernel_window_2.val.V' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:137) in dimension 2 completely.
+INFO: [XFORM 203-101] Partitioning array 'kernel_window_3.val.V' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:137) in dimension 2 completely.
+INFO: [XFORM 203-602] Inlining function 'yolo_line_buffer' into 'yolo_conv_top' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:129) automatically.
+INFO: [XFORM 203-602] Inlining function 'write_output' into 'yolo_conv_top' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:178) automatically.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (yolo_conv_fp_2019_64/src/yolo_conv.cpp:195:13) to (yolo_conv_fp_2019_64/src/yolo_conv.cpp:200:5) in function 'yolo_conv_top'... converting 4 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (yolo_conv_fp_2019_64/src/yolo_conv.cpp:279:11) to (yolo_conv_fp_2019_64/src/yolo_conv.cpp:282:2) in function 'window_macc'... converting 39 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock to (yolo_conv_fp_2019_64/src/yolo_conv.cpp:244:1) in function 'post_process'... converting 26 basic blocks.
+INFO: [XFORM 203-11] Balancing expressions in function 'yolo_conv_top' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:4)...3 expression(s) balanced.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:01:26 ; elapsed = 00:01:34 . Memory (MB): peak = 1020.023 ; gain = 320.000 ; free physical = 2938 ; free virtual = 11544
+INFO: [XFORM 203-541] Flattening a loop nest 'Loop-5.1' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:50:14) in function 'yolo_conv_top'.
+INFO: [XFORM 203-541] Flattening a loop nest 'Loop-5' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:47:15) in function 'yolo_conv_top'.
+INFO: [XFORM 203-541] Flattening a loop nest 'Loop-7.1' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:86:20) in function 'yolo_conv_top'.
+INFO: [XFORM 203-541] Flattening a loop nest 'Loop-7' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:82:28) in function 'yolo_conv_top'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'line_buff_group_0.va' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:28).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'line_buff_group_0.va' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:28).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'line_buff_group_1.va' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:29).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'line_buff_group_1.va' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:29).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'line_buff_group_2.va' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:30).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'line_buff_group_2.va' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:30).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'line_buff_group_3.va' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:31).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'line_buff_group_3.va' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:31).
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:01:44 ; elapsed = 00:01:51 . Memory (MB): peak = 1022.590 ; gain = 322.566 ; free physical = 2870 ; free virtual = 11479
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'yolo_conv_top' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'slide_window' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining function 'slide_window'.
+WARNING: [SCHED 204-63] Unable to schedule the whole 2 cycles 'load' operation ('Window<3, 3, ap_fixed<16, 8, 4, 0, 0> >.val[0].V[0]', yolo_conv_fp_2019_64/src/yolo_conv.cpp:262) on array 'line_buff_val_0_V' within the first cycle (II = 1).
+Please consider increasing the target initiation interval of the pipeline.
+WARNING: [SCHED 204-69] Unable to schedule 'load' operation ('Window<3, 3, ap_fixed<16, 8, 4, 0, 0> >.val[0].V[0]', yolo_conv_fp_2019_64/src/yolo_conv.cpp:262) on array 'line_buff_val_0_V' due to limited memory ports. Please consider using a memory core with more ports or partitioning the array 'line_buff_val_0_V'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 3, Depth = 4.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 113.15 seconds; current allocated memory: 315.906 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.13 seconds; current allocated memory: 316.105 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'window_macc' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining function 'window_macc'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 8.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.21 seconds; current allocated memory: 316.683 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.21 seconds; current allocated memory: 317.448 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'post_process' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining function 'post_process'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 6.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.34 seconds; current allocated memory: 317.873 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.13 seconds; current allocated memory: 318.335 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'out_stream_merge' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining function 'out_stream_merge'.
+WARNING: [SCHED 204-68] The II Violation in module 'out_stream_merge' (Function: out_stream_merge): Unable to enforce a carried dependence constraint (II = 1, distance = 1, offset = 1)
+   between axis write on port 'outStream_V_data' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:329) and axis write on port 'outStream_V_data' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:329).
+WARNING: [SCHED 204-68] The II Violation in module 'out_stream_merge' (Function: out_stream_merge): Unable to enforce a carried dependence constraint (II = 2, distance = 1, offset = 1)
+   between axis write on port 'outStream_V_data' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:329) and axis write on port 'outStream_V_data' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:329).
+WARNING: [SCHED 204-68] The II Violation in module 'out_stream_merge' (Function: out_stream_merge): Unable to enforce a carried dependence constraint (II = 3, distance = 1, offset = 1)
+   between axis write on port 'outStream_V_data' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:329) and axis write on port 'outStream_V_data' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:329).
+WARNING: [SCHED 204-68] The II Violation in module 'out_stream_merge' (Function: out_stream_merge): Unable to enforce a carried dependence constraint (II = 4, distance = 1, offset = 1)
+   between axis write on port 'outStream_V_data' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:329) and axis write on port 'outStream_V_data' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:329).
+WARNING: [SCHED 204-68] The II Violation in module 'out_stream_merge' (Function: out_stream_merge): Unable to enforce a carried dependence constraint (II = 5, distance = 1, offset = 1)
+   between axis write on port 'outStream_V_data' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:329) and axis write on port 'outStream_V_data' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:329).
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 6, Depth = 7.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 1.88 seconds; current allocated memory: 319.460 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.25 seconds; current allocated memory: 321.158 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'yolo_conv_top' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 5'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-61] Pipelining loop 'Loop 6'.
+WARNING: [SCHED 204-69] Unable to schedule 'store' operation ('kernel_bias_fp_2_V_18_write_ln78', yolo_conv_fp_2019_64/src/yolo_conv.cpp:78) of variable 'curr_input.data.sub_data_2.V', yolo_conv_fp_2019_64/src/yolo_stream.h:8->yolo_conv_fp_2019_64/src/yolo_stream.h:16->yolo_conv_fp_2019_64/src/yolo_conv.cpp:75 on array 'kernel_bias_fp[2].V', yolo_conv_fp_2019_64/src/yolo_conv.cpp:42 due to limited memory ports. Please consider using a memory core with more ports or partitioning the array 'kernel_bias_fp_2_V'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 2, Depth = 3.
+INFO: [SCHED 204-61] Pipelining loop 'Loop 7'.
+WARNING: [SCHED 204-68] The II Violation in module 'yolo_conv_top' (Loop: Loop 7): Unable to enforce a carried dependence constraint (II = 6, distance = 1, offset = 1)
+   between 'store' operation ('tmp_V_write_ln167', yolo_conv_fp_2019_64/src/yolo_conv.cpp:167) of variable 'val_output[0].V', yolo_conv_fp_2019_64/src/yolo_conv.cpp:167 on local variable 'tmp.V' and 'load' operation ('tmp_V_load', yolo_conv_fp_2019_64/src/yolo_conv.cpp:167) on local variable 'tmp.V'.
+WARNING: [SCHED 204-68] The II Violation in module 'yolo_conv_top' (Loop: Loop 7): Unable to enforce a carried dependence constraint (II = 7, distance = 1, offset = 1)
+   between 'call' operation ('_ln199', yolo_conv_fp_2019_64/src/yolo_conv.cpp:199) to 'out_stream_merge' and fifo request on port 'out_stream_group[0].V.V', yolo_conv_fp_2019_64/src/yolo_conv.cpp:24 (yolo_conv_fp_2019_64/src/yolo_conv.cpp:176).
+WARNING: [SCHED 204-69] Unable to schedule 'load' operation ('local_mem_group_0_d_450', yolo_conv_fp_2019_64/src/yolo_conv.cpp:155) on array 'local_mem_group[0].data[0].V', yolo_conv_fp_2019_64/src/yolo_conv.cpp:38 due to limited memory ports. Please consider using a memory core with more ports or partitioning the array 'local_mem_group_0_d'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 16, Depth = 55.
+WARNING: [SCHED 204-21] Estimated clock period (9.634ns) exceeds the target (target clock period: 10ns, clock uncertainty: 2ns, effective delay budget: 8ns).
+WARNING: [SCHED 204-21] The critical path in module 'yolo_conv_top' consists of the following:
+	'mul' operation of DSP[909] ('mul_ln203', /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot/hls/hls_video_mem.h:729->/opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot/hls/hls_video_mem.h:863->yolo_conv_fp_2019_64/src/yolo_conv.cpp:249->yolo_conv_fp_2019_64/src/yolo_conv.cpp:129) [908]  (3.36 ns)
+	'add' operation of DSP[909] ('add_ln203_1', /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot/hls/hls_video_mem.h:729->/opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot/hls/hls_video_mem.h:863->yolo_conv_fp_2019_64/src/yolo_conv.cpp:249->yolo_conv_fp_2019_64/src/yolo_conv.cpp:129) [909]  (3.02 ns)
+	'getelementptr' operation ('line_buff_group_0_va_4', /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot/hls/hls_video_mem.h:729->/opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot/hls/hls_video_mem.h:863->yolo_conv_fp_2019_64/src/yolo_conv.cpp:249->yolo_conv_fp_2019_64/src/yolo_conv.cpp:129) [912]  (0 ns)
+	'load' operation ('line_buff_group_0_va_6', /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot/hls/hls_video_mem.h:729->/opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot/hls/hls_video_mem.h:863->yolo_conv_fp_2019_64/src/yolo_conv.cpp:249->yolo_conv_fp_2019_64/src/yolo_conv.cpp:129) on array 'line_buff_group_0.val[1].V', yolo_conv_fp_2019_64/src/yolo_conv.cpp:28 [923]  (3.25 ns)
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 22.76 seconds; current allocated memory: 338.548 MB.
+INFO: [HLS 200-434] Only 3 loops out of a total 7 loops have been pipelined in this design.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 9.59 seconds; current allocated memory: 370.965 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'slide_window' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'slide_window'.
+INFO: [HLS 200-111]  Elapsed time: 7.92 seconds; current allocated memory: 372.977 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'window_macc' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Generating core module 'yolo_conv_top_mul_mul_16s_16s_32_1_0': 9 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'window_macc'.
+INFO: [HLS 200-111]  Elapsed time: 0.22 seconds; current allocated memory: 375.090 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'post_process' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Generating core module 'yolo_conv_top_mul_mul_6ns_16s_22_1_0': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'post_process'.
+INFO: [HLS 200-111]  Elapsed time: 0.67 seconds; current allocated memory: 379.281 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'out_stream_merge' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'out_stream_merge'.
+INFO: [HLS 200-111]  Elapsed time: 0.54 seconds; current allocated memory: 383.280 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'yolo_conv_top' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_conv_top/inStream_V_data' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_conv_top/inStream_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_conv_top/inStream_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_conv_top/inStream_V_user_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_conv_top/inStream_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_conv_top/inStream_V_id_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_conv_top/inStream_V_dest_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_conv_top/outStream_V_data' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_conv_top/outStream_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_conv_top/outStream_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_conv_top/outStream_V_user_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_conv_top/outStream_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_conv_top/outStream_V_id_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_conv_top/outStream_V_dest_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_conv_top/output_ch_V' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_conv_top/input_ch_V' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_conv_top/fold_output_ch_V' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_conv_top/fold_input_ch_V' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_conv_top/input_h_V' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_conv_top/input_w_V' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_conv_top/real_input_h_V' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_conv_top/leaky_V' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_conv_top/fold_win_area_V' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'yolo_conv_top' to 's_axilite & ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Bundling port 'return', 'output_ch_V', 'input_ch_V', 'fold_output_ch_V', 'fold_input_ch_V', 'input_h_V', 'input_w_V', 'real_input_h_V', 'leaky_V' and 'fold_win_area_V' to AXI-Lite port CTRL_BUS.
+INFO: [RTGEN 206-100] Generating core module 'yolo_conv_top_am_addmul_9ns_1ns_13ns_22_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'yolo_conv_top_mac_muladd_4ns_10ns_9ns_13_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'yolo_conv_top'.
+INFO: [HLS 200-111]  Elapsed time: 5.72 seconds; current allocated memory: 411.808 MB.
+INFO: [RTMG 210-278] Implementing memory 'yolo_conv_top_line_buff_group_0_va_ram (RAM)' using block RAMs.
+INFO: [RTMG 210-278] Implementing memory 'yolo_conv_top_local_mem_group_0_d_ram (RAM)' using block RAMs.
+INFO: [RTMG 210-278] Implementing memory 'yolo_conv_top_kernel_bias_fp_0_V_ram (RAM)' using block RAMs.
+INFO: [RTMG 210-285] Implementing FIFO 'out_stream_group_0_s_U(fifo_w16_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'out_stream_group_1_s_U(fifo_w16_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'out_stream_group_2_s_U(fifo_w16_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'out_stream_group_3_s_U(fifo_w16_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'out_stream_group_4_s_U(fifo_w16_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'out_stream_group_5_s_U(fifo_w16_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'out_stream_group_6_s_U(fifo_w16_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'out_stream_group_7_s_U(fifo_w16_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'out_stream_group_8_s_U(fifo_w16_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'out_stream_group_9_s_U(fifo_w16_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'out_stream_group_10_U(fifo_w16_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'out_stream_group_11_U(fifo_w16_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'out_stream_group_12_U(fifo_w16_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'out_stream_group_13_U(fifo_w16_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'out_stream_group_14_U(fifo_w16_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'out_stream_group_15_U(fifo_w16_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'out_stream_group_16_U(fifo_w16_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'out_stream_group_17_U(fifo_w16_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'out_stream_group_18_U(fifo_w16_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'out_stream_group_19_U(fifo_w16_d2_A)' using Shift Registers.
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 1.25ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg484-1'
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: config_export -vivado_optimization_level=2
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: set_clock_uncertainty default
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: config_export -vivado_optimization_level=2
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: set_clock_uncertainty default
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'yolo_conv_fp_2019_64/src/yolo_conv.cpp' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:01:05 ; elapsed = 00:01:08 . Memory (MB): peak = 892.023 ; gain = 192.000 ; free physical = 1644 ; free virtual = 11402
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:01:05 ; elapsed = 00:01:08 . Memory (MB): peak = 892.023 ; gain = 192.000 ; free physical = 1644 ; free virtual = 11402
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [XFORM 203-603] Inlining function 'hls::LineBuffer<3, 418, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0>, 0>::shift_pixels_up' into 'hls::LineBuffer<3, 418, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0>, 0>::shift_up' (/opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot/hls/hls_video_mem.h:863).
+INFO: [XFORM 203-603] Inlining function 'hls::LineBuffer<3, 418, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0>, 0>::shift_up' into 'yolo_line_buffer' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:246).
+INFO: [XFORM 203-603] Inlining function 'hls::LineBuffer<3, 418, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0>, 0>::insert_bottom_row' into 'hls::LineBuffer<3, 418, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0>, 0>::insert_top' (/opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot/hls/hls_video_mem.h:883).
+INFO: [XFORM 203-603] Inlining function 'hls::LineBuffer<3, 418, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0>, 0>::insert_top' into 'yolo_line_buffer' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:247).
+INFO: [XFORM 203-603] Inlining function 'hls::LineBuffer<3, 418, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0>, 0>::getval' into 'slide_window' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:259).
+INFO: [XFORM 203-603] Inlining function 'hls::Window<3, 3, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0> >::insert_pixel' into 'hls::Window<3, 3, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0> >::insert' (/opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot/hls/hls_video_mem.h:573).
+INFO: [XFORM 203-603] Inlining function 'hls::Window<3, 3, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0> >::insert' into 'slide_window' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:260).
+INFO: [XFORM 203-603] Inlining function 'hls::Window<3, 3, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0> >::getval' into 'window_macc' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:275).
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:01:07 ; elapsed = 00:01:11 . Memory (MB): peak = 894.359 ; gain = 194.336 ; free physical = 1578 ; free virtual = 11350
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [XFORM 203-602] Inlining function 'write_output' into 'yolo_conv_top' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:176) automatically.
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:01:08 ; elapsed = 00:01:12 . Memory (MB): peak = 894.359 ; gain = 194.336 ; free physical = 1537 ; free virtual = 11314
+INFO: [XFORM 203-1101] Packing variable 'outStream.V.data' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:4) into a 64-bit variable.
+INFO: [XFORM 203-1101] Packing variable 'inStream.V.data' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:4) into a 64-bit variable.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'Loop-6.1.1' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:88) in function 'yolo_conv_top' for pipelining.
+INFO: [XFORM 203-502] Unrolling all loops for pipelining in function 'window_macc' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:267).
+INFO: [XFORM 203-502] Unrolling all loops for pipelining in function 'slide_window' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:251).
+INFO: [XFORM 203-502] Unrolling all loops for pipelining in function 'yolo_line_buffer' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:243).
+INFO: [XFORM 203-502] Unrolling all loops for pipelining in function 'out_stream_merge' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:287).
+INFO: [HLS 200-489] Unrolling loop 'Loop-6.1.1.1' (/opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot/hls/hls_video_mem.h:49) in function 'yolo_conv_top' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'Loop-6.1.1.1.1' (/opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot/hls/hls_video_mem.h:49) in function 'yolo_conv_top' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'Loop-6.1.1.2' (/opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot/hls/hls_video_mem.h:49) in function 'yolo_conv_top' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'Loop-6.1.1.2.1' (/opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot/hls/hls_video_mem.h:49) in function 'yolo_conv_top' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'Loop-6.1.1.3' (/opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot/hls/hls_video_mem.h:49) in function 'yolo_conv_top' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'Loop-6.1.1.3.1' (/opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot/hls/hls_video_mem.h:49) in function 'yolo_conv_top' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'Loop-6.1.1.4' (/opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot/hls/hls_video_mem.h:49) in function 'yolo_conv_top' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'Loop-6.1.1.4.1' (/opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot/hls/hls_video_mem.h:49) in function 'yolo_conv_top' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'Loop-6.1.1.5' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:145) in function 'yolo_conv_top' completely with a factor of 32.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:271) in function 'window_macc' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:273) in function 'window_macc' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:255) in function 'slide_window' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:257) in function 'slide_window' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1' (/opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot/hls/hls_video_mem.h:727) in function 'yolo_line_buffer' completely with a factor of 2.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:293) in function 'out_stream_merge' completely with a factor of 6.
+INFO: [XFORM 203-102] Partitioning array 'window.val.V.0' automatically.
+INFO: [XFORM 203-102] Partitioning array 'window.val.V.1' automatically.
+INFO: [XFORM 203-102] Partitioning array 'window.val.V.2' automatically.
+INFO: [XFORM 203-102] Automatically partitioning streamed array 'out_stream_group.V.V' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:23) .
+INFO: [XFORM 203-101] Partitioning array 'out_stream_group.V.V' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:23) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'line_buff_group_0.val.V' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:27) in dimension 2 completely.
+INFO: [XFORM 203-101] Partitioning array 'line_buff_group_1.val.V' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:28) in dimension 2 completely.
+INFO: [XFORM 203-101] Partitioning array 'line_buff_group_2.val.V' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:29) in dimension 2 completely.
+INFO: [XFORM 203-101] Partitioning array 'line_buff_group_3.val.V' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:30) in dimension 2 completely.
+INFO: [XFORM 203-101] Partitioning array 'val_output.V' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:32) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'local_mem_group.data.V' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:37) in dimension 1 with a block factor 4.
+INFO: [XFORM 203-101] Partitioning array 'kernel_window_0.val.V' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:136) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'kernel_window_1.val.V' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:136) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'kernel_window_2.val.V' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:136) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'kernel_window_3.val.V' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:136) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'local_mem_group.data.V' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:37) in dimension 3 completely.
+INFO: [XFORM 203-101] Partitioning array 'kernel_window_0.val.V' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:136) in dimension 2 completely.
+INFO: [XFORM 203-101] Partitioning array 'kernel_window_1.val.V' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:136) in dimension 2 completely.
+INFO: [XFORM 203-101] Partitioning array 'kernel_window_2.val.V' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:136) in dimension 2 completely.
+INFO: [XFORM 203-101] Partitioning array 'kernel_window_3.val.V' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:136) in dimension 2 completely.
+INFO: [XFORM 203-602] Inlining function 'yolo_line_buffer' into 'yolo_conv_top' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:128) automatically.
+INFO: [XFORM 203-602] Inlining function 'write_output' into 'yolo_conv_top' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:176) automatically.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (yolo_conv_fp_2019_64/src/yolo_conv.cpp:193:13) to (yolo_conv_fp_2019_64/src/yolo_conv.cpp:198:5) in function 'yolo_conv_top'... converting 4 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (yolo_conv_fp_2019_64/src/yolo_conv.cpp:276:11) to (yolo_conv_fp_2019_64/src/yolo_conv.cpp:279:2) in function 'window_macc'... converting 39 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock to (yolo_conv_fp_2019_64/src/yolo_conv.cpp:239:3) in function 'post_process'... converting 17 basic blocks.
+INFO: [XFORM 203-11] Balancing expressions in function 'yolo_conv_top' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:4)...3 expression(s) balanced.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:01:25 ; elapsed = 00:01:29 . Memory (MB): peak = 894.523 ; gain = 194.500 ; free physical = 1459 ; free virtual = 11243
+INFO: [XFORM 203-541] Flattening a loop nest 'Loop-5.1' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:49:14) in function 'yolo_conv_top'.
+INFO: [XFORM 203-541] Flattening a loop nest 'Loop-5' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:46:15) in function 'yolo_conv_top'.
+INFO: [XFORM 203-541] Flattening a loop nest 'Loop-6.1' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:85:20) in function 'yolo_conv_top'.
+INFO: [XFORM 203-541] Flattening a loop nest 'Loop-6' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:81:28) in function 'yolo_conv_top'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'line_buff_group_0.va' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:27).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'line_buff_group_0.va' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:27).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'line_buff_group_1.va' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:28).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'line_buff_group_1.va' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:28).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'line_buff_group_2.va' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:29).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'line_buff_group_2.va' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:29).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'line_buff_group_3.va' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:30).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'line_buff_group_3.va' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:30).
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:01:42 ; elapsed = 00:01:46 . Memory (MB): peak = 1020.023 ; gain = 320.000 ; free physical = 1391 ; free virtual = 11179
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'yolo_conv_top' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'slide_window' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining function 'slide_window'.
+WARNING: [SCHED 204-63] Unable to schedule the whole 2 cycles 'load' operation ('Window<3, 3, ap_fixed<16, 8, 4, 0, 0> >.val[0].V[0]', yolo_conv_fp_2019_64/src/yolo_conv.cpp:259) on array 'line_buff_val_0_V' within the first cycle (II = 1).
+Please consider increasing the target initiation interval of the pipeline.
+WARNING: [SCHED 204-69] Unable to schedule 'load' operation ('Window<3, 3, ap_fixed<16, 8, 4, 0, 0> >.val[0].V[0]', yolo_conv_fp_2019_64/src/yolo_conv.cpp:259) on array 'line_buff_val_0_V' due to limited memory ports. Please consider using a memory core with more ports or partitioning the array 'line_buff_val_0_V'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 3, Depth = 4.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 107.33 seconds; current allocated memory: 308.555 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.14 seconds; current allocated memory: 308.756 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'window_macc' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining function 'window_macc'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 7.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.2 seconds; current allocated memory: 309.379 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.21 seconds; current allocated memory: 310.141 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'post_process' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining function 'post_process'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 3.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.36 seconds; current allocated memory: 310.407 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.07 seconds; current allocated memory: 310.668 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'out_stream_merge' 
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 2ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg484-1'
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: config_export -vivado_optimization_level=2
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: set_clock_uncertainty default
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 1.25ns.
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: config_export -vivado_optimization_level=2
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: set_clock_uncertainty default
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 2ns.
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'yolo_conv_fp_2019_64/src/yolo_conv.cpp' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:01:05 ; elapsed = 00:01:06 . Memory (MB): peak = 828.023 ; gain = 128.000 ; free physical = 1624 ; free virtual = 11393
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:01:05 ; elapsed = 00:01:06 . Memory (MB): peak = 828.023 ; gain = 128.000 ; free physical = 1624 ; free virtual = 11393
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [XFORM 203-603] Inlining function 'hls::LineBuffer<3, 418, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0>, 0>::shift_pixels_up' into 'hls::LineBuffer<3, 418, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0>, 0>::shift_up' (/opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot/hls/hls_video_mem.h:863).
+INFO: [XFORM 203-603] Inlining function 'hls::LineBuffer<3, 418, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0>, 0>::shift_up' into 'yolo_line_buffer' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:246).
+INFO: [XFORM 203-603] Inlining function 'hls::LineBuffer<3, 418, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0>, 0>::insert_bottom_row' into 'hls::LineBuffer<3, 418, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0>, 0>::insert_top' (/opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot/hls/hls_video_mem.h:883).
+INFO: [XFORM 203-603] Inlining function 'hls::LineBuffer<3, 418, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0>, 0>::insert_top' into 'yolo_line_buffer' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:247).
+INFO: [XFORM 203-603] Inlining function 'hls::LineBuffer<3, 418, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0>, 0>::getval' into 'slide_window' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:259).
+INFO: [XFORM 203-603] Inlining function 'hls::Window<3, 3, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0> >::insert_pixel' into 'hls::Window<3, 3, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0> >::insert' (/opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot/hls/hls_video_mem.h:573).
+INFO: [XFORM 203-603] Inlining function 'hls::Window<3, 3, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0> >::insert' into 'slide_window' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:260).
+INFO: [XFORM 203-603] Inlining function 'hls::Window<3, 3, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0> >::getval' into 'window_macc' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:275).
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:01:07 ; elapsed = 00:01:09 . Memory (MB): peak = 894.359 ; gain = 194.336 ; free physical = 1564 ; free virtual = 11342
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [XFORM 203-602] Inlining function 'write_output' into 'yolo_conv_top' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:176) automatically.
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:01:08 ; elapsed = 00:01:10 . Memory (MB): peak = 894.359 ; gain = 194.336 ; free physical = 1522 ; free virtual = 11304
+INFO: [XFORM 203-1101] Packing variable 'outStream.V.data' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:4) into a 64-bit variable.
+INFO: [XFORM 203-1101] Packing variable 'inStream.V.data' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:4) into a 64-bit variable.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'Loop-6.1.1' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:88) in function 'yolo_conv_top' for pipelining.
+INFO: [XFORM 203-502] Unrolling all loops for pipelining in function 'window_macc' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:267).
+INFO: [XFORM 203-502] Unrolling all loops for pipelining in function 'slide_window' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:251).
+INFO: [XFORM 203-502] Unrolling all loops for pipelining in function 'yolo_line_buffer' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:243).
+INFO: [XFORM 203-502] Unrolling all loops for pipelining in function 'out_stream_merge' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:287).
+INFO: [HLS 200-489] Unrolling loop 'Loop-6.1.1.1' (/opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot/hls/hls_video_mem.h:49) in function 'yolo_conv_top' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'Loop-6.1.1.1.1' (/opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot/hls/hls_video_mem.h:49) in function 'yolo_conv_top' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'Loop-6.1.1.2' (/opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot/hls/hls_video_mem.h:49) in function 'yolo_conv_top' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'Loop-6.1.1.2.1' (/opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot/hls/hls_video_mem.h:49) in function 'yolo_conv_top' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'Loop-6.1.1.3' (/opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot/hls/hls_video_mem.h:49) in function 'yolo_conv_top' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'Loop-6.1.1.3.1' (/opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot/hls/hls_video_mem.h:49) in function 'yolo_conv_top' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'Loop-6.1.1.4' (/opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot/hls/hls_video_mem.h:49) in function 'yolo_conv_top' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'Loop-6.1.1.4.1' (/opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot/hls/hls_video_mem.h:49) in function 'yolo_conv_top' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'Loop-6.1.1.5' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:145) in function 'yolo_conv_top' completely with a factor of 32.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:271) in function 'window_macc' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:273) in function 'window_macc' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:255) in function 'slide_window' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:257) in function 'slide_window' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1' (/opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot/hls/hls_video_mem.h:727) in function 'yolo_line_buffer' completely with a factor of 2.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:293) in function 'out_stream_merge' completely with a factor of 6.
+INFO: [XFORM 203-102] Partitioning array 'window.val.V.0' automatically.
+INFO: [XFORM 203-102] Partitioning array 'window.val.V.1' automatically.
+INFO: [XFORM 203-102] Partitioning array 'window.val.V.2' automatically.
+INFO: [XFORM 203-102] Automatically partitioning streamed array 'out_stream_group.V.V' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:23) .
+INFO: [XFORM 203-101] Partitioning array 'out_stream_group.V.V' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:23) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'line_buff_group_0.val.V' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:27) in dimension 2 completely.
+INFO: [XFORM 203-101] Partitioning array 'line_buff_group_1.val.V' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:28) in dimension 2 completely.
+INFO: [XFORM 203-101] Partitioning array 'line_buff_group_2.val.V' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:29) in dimension 2 completely.
+INFO: [XFORM 203-101] Partitioning array 'line_buff_group_3.val.V' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:30) in dimension 2 completely.
+INFO: [XFORM 203-101] Partitioning array 'val_output.V' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:32) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'local_mem_group.data.V' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:37) in dimension 1 with a block factor 4.
+INFO: [XFORM 203-101] Partitioning array 'kernel_window_0.val.V' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:136) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'kernel_window_1.val.V' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:136) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'kernel_window_2.val.V' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:136) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'kernel_window_3.val.V' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:136) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'local_mem_group.data.V' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:37) in dimension 3 completely.
+INFO: [XFORM 203-101] Partitioning array 'kernel_window_0.val.V' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:136) in dimension 2 completely.
+INFO: [XFORM 203-101] Partitioning array 'kernel_window_1.val.V' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:136) in dimension 2 completely.
+INFO: [XFORM 203-101] Partitioning array 'kernel_window_2.val.V' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:136) in dimension 2 completely.
+INFO: [XFORM 203-101] Partitioning array 'kernel_window_3.val.V' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:136) in dimension 2 completely.
+INFO: [XFORM 203-602] Inlining function 'yolo_line_buffer' into 'yolo_conv_top' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:128) automatically.
+INFO: [XFORM 203-602] Inlining function 'write_output' into 'yolo_conv_top' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:176) automatically.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (yolo_conv_fp_2019_64/src/yolo_conv.cpp:193:13) to (yolo_conv_fp_2019_64/src/yolo_conv.cpp:198:5) in function 'yolo_conv_top'... converting 4 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (yolo_conv_fp_2019_64/src/yolo_conv.cpp:276:11) to (yolo_conv_fp_2019_64/src/yolo_conv.cpp:279:2) in function 'window_macc'... converting 39 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock to (yolo_conv_fp_2019_64/src/yolo_conv.cpp:239:3) in function 'post_process'... converting 17 basic blocks.
+INFO: [XFORM 203-11] Balancing expressions in function 'yolo_conv_top' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:4)...3 expression(s) balanced.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:01:25 ; elapsed = 00:01:27 . Memory (MB): peak = 894.523 ; gain = 194.500 ; free physical = 1442 ; free virtual = 11232
+INFO: [XFORM 203-541] Flattening a loop nest 'Loop-5.1' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:49:14) in function 'yolo_conv_top'.
+INFO: [XFORM 203-541] Flattening a loop nest 'Loop-5' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:46:15) in function 'yolo_conv_top'.
+INFO: [XFORM 203-541] Flattening a loop nest 'Loop-6.1' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:85:20) in function 'yolo_conv_top'.
+INFO: [XFORM 203-541] Flattening a loop nest 'Loop-6' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:81:28) in function 'yolo_conv_top'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'line_buff_group_0.va' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:27).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'line_buff_group_0.va' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:27).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'line_buff_group_1.va' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:28).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'line_buff_group_1.va' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:28).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'line_buff_group_2.va' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:29).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'line_buff_group_2.va' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:29).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'line_buff_group_3.va' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:30).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'line_buff_group_3.va' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:30).
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:01:41 ; elapsed = 00:01:43 . Memory (MB): peak = 1020.023 ; gain = 320.000 ; free physical = 1374 ; free virtual = 11167
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'yolo_conv_top' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'slide_window' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining function 'slide_window'.
+WARNING: [SCHED 204-63] Unable to schedule the whole 2 cycles 'load' operation ('Window<3, 3, ap_fixed<16, 8, 4, 0, 0> >.val[0].V[0]', yolo_conv_fp_2019_64/src/yolo_conv.cpp:259) on array 'line_buff_val_0_V' within the first cycle (II = 1).
+Please consider increasing the target initiation interval of the pipeline.
+WARNING: [SCHED 204-69] Unable to schedule 'load' operation ('Window<3, 3, ap_fixed<16, 8, 4, 0, 0> >.val[0].V[0]', yolo_conv_fp_2019_64/src/yolo_conv.cpp:259) on array 'line_buff_val_0_V' due to limited memory ports. Please consider using a memory core with more ports or partitioning the array 'line_buff_val_0_V'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 3, Depth = 4.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 104.65 seconds; current allocated memory: 308.636 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.1 seconds; current allocated memory: 308.838 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'window_macc' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining function 'window_macc'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 8.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.21 seconds; current allocated memory: 309.388 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.21 seconds; current allocated memory: 310.150 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'post_process' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining function 'post_process'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 3.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.31 seconds; current allocated memory: 310.432 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.08 seconds; current allocated memory: 310.691 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'out_stream_merge' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining function 'out_stream_merge'.
+WARNING: [SCHED 204-68] The II Violation in module 'out_stream_merge' (Function: out_stream_merge): Unable to enforce a carried dependence constraint (II = 1, distance = 1, offset = 1)
+   between axis write on port 'outStream_V_data' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:326) and axis write on port 'outStream_V_data' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:326).
+WARNING: [SCHED 204-68] The II Violation in module 'out_stream_merge' (Function: out_stream_merge): Unable to enforce a carried dependence constraint (II = 2, distance = 1, offset = 1)
+   between axis write on port 'outStream_V_data' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:326) and axis write on port 'outStream_V_data' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:326).
+WARNING: [SCHED 204-68] The II Violation in module 'out_stream_merge' (Function: out_stream_merge): Unable to enforce a carried dependence constraint (II = 3, distance = 1, offset = 1)
+   between axis write on port 'outStream_V_data' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:326) and axis write on port 'outStream_V_data' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:326).
+WARNING: [SCHED 204-68] The II Violation in module 'out_stream_merge' (Function: out_stream_merge): Unable to enforce a carried dependence constraint (II = 4, distance = 1, offset = 1)
+   between axis write on port 'outStream_V_data' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:326) and axis write on port 'outStream_V_data' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:326).
+WARNING: [SCHED 204-68] The II Violation in module 'out_stream_merge' (Function: out_stream_merge): Unable to enforce a carried dependence constraint (II = 5, distance = 1, offset = 1)
+   between axis write on port 'outStream_V_data' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:326) and axis write on port 'outStream_V_data' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:326).
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 6, Depth = 7.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 1.82 seconds; current allocated memory: 311.760 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.24 seconds; current allocated memory: 313.458 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'yolo_conv_top' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 5'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-61] Pipelining loop 'Loop 6'.
+WARNING: [SCHED 204-68] The II Violation in module 'yolo_conv_top' (Loop: Loop 6): Unable to enforce a carried dependence constraint (II = 6, distance = 1, offset = 1)
+   between 'call' operation ('_ln197', yolo_conv_fp_2019_64/src/yolo_conv.cpp:197) to 'out_stream_merge' and fifo request on port 'out_stream_group[0].V.V', yolo_conv_fp_2019_64/src/yolo_conv.cpp:23 (yolo_conv_fp_2019_64/src/yolo_conv.cpp:174).
+WARNING: [SCHED 204-68] The II Violation in module 'yolo_conv_top' (Loop: Loop 6): Unable to enforce a carried dependence constraint (II = 7, distance = 1, offset = 1)
+   between 'call' operation ('_ln197', yolo_conv_fp_2019_64/src/yolo_conv.cpp:197) to 'out_stream_merge' and fifo request on port 'out_stream_group[0].V.V', yolo_conv_fp_2019_64/src/yolo_conv.cpp:23 (yolo_conv_fp_2019_64/src/yolo_conv.cpp:174).
+WARNING: [SCHED 204-69] Unable to schedule 'load' operation ('local_mem_group_0_d_450', yolo_conv_fp_2019_64/src/yolo_conv.cpp:154) on array 'local_mem_group[0].data[0].V', yolo_conv_fp_2019_64/src/yolo_conv.cpp:37 due to limited memory ports. Please consider using a memory core with more ports or partitioning the array 'local_mem_group_0_d'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 16, Depth = 52.
+WARNING: [SCHED 204-21] Estimated clock period (9.634ns) exceeds the target (target clock period: 10ns, clock uncertainty: 2ns, effective delay budget: 8ns).
+WARNING: [SCHED 204-21] The critical path in module 'yolo_conv_top' consists of the following:
+	'mul' operation of DSP[766] ('mul_ln203', /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot/hls/hls_video_mem.h:729->/opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot/hls/hls_video_mem.h:863->yolo_conv_fp_2019_64/src/yolo_conv.cpp:246->yolo_conv_fp_2019_64/src/yolo_conv.cpp:128) [765]  (3.36 ns)
+	'add' operation of DSP[766] ('add_ln203_1', /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot/hls/hls_video_mem.h:729->/opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot/hls/hls_video_mem.h:863->yolo_conv_fp_2019_64/src/yolo_conv.cpp:246->yolo_conv_fp_2019_64/src/yolo_conv.cpp:128) [766]  (3.02 ns)
+	'getelementptr' operation ('line_buff_group_0_va_4', /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot/hls/hls_video_mem.h:729->/opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot/hls/hls_video_mem.h:863->yolo_conv_fp_2019_64/src/yolo_conv.cpp:246->yolo_conv_fp_2019_64/src/yolo_conv.cpp:128) [769]  (0 ns)
+	'load' operation ('line_buff_group_0_va_6', /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot/hls/hls_video_mem.h:729->/opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot/hls/hls_video_mem.h:863->yolo_conv_fp_2019_64/src/yolo_conv.cpp:246->yolo_conv_fp_2019_64/src/yolo_conv.cpp:128) on array 'line_buff_group_0.val[1].V', yolo_conv_fp_2019_64/src/yolo_conv.cpp:27 [780]  (3.25 ns)
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 22.48 seconds; current allocated memory: 329.351 MB.
+INFO: [HLS 200-434] Only 2 loops out of a total 6 loops have been pipelined in this design.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 9.27 seconds; current allocated memory: 359.499 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'slide_window' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'slide_window'.
+INFO: [HLS 200-111]  Elapsed time: 7.44 seconds; current allocated memory: 361.415 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'window_macc' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Generating core module 'yolo_conv_top_mul_mul_16s_16s_32_1_0': 9 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'window_macc'.
+INFO: [HLS 200-111]  Elapsed time: 0.23 seconds; current allocated memory: 363.579 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'post_process' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'post_process'.
+INFO: [HLS 200-111]  Elapsed time: 0.67 seconds; current allocated memory: 367.405 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'out_stream_merge' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'out_stream_merge'.
+INFO: [HLS 200-111]  Elapsed time: 0.39 seconds; current allocated memory: 370.521 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'yolo_conv_top' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_conv_top/inStream_V_data' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_conv_top/inStream_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_conv_top/inStream_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_conv_top/inStream_V_user_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_conv_top/inStream_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_conv_top/inStream_V_id_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_conv_top/inStream_V_dest_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_conv_top/outStream_V_data' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_conv_top/outStream_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_conv_top/outStream_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_conv_top/outStream_V_user_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_conv_top/outStream_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_conv_top/outStream_V_id_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_conv_top/outStream_V_dest_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_conv_top/output_ch_V' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_conv_top/input_ch_V' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_conv_top/fold_output_ch_V' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_conv_top/fold_input_ch_V' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_conv_top/input_h_V' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_conv_top/input_w_V' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_conv_top/real_input_h_V' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_conv_top/fold_win_area_V' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'yolo_conv_top' to 's_axilite & ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Bundling port 'return', 'output_ch_V', 'input_ch_V', 'fold_output_ch_V', 'fold_input_ch_V', 'input_h_V', 'input_w_V', 'real_input_h_V' and 'fold_win_area_V' to AXI-Lite port CTRL_BUS.
+INFO: [RTGEN 206-100] Generating core module 'yolo_conv_top_am_addmul_9ns_1ns_13ns_22_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'yolo_conv_top_mac_muladd_4ns_10ns_9ns_13_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'yolo_conv_top'.
+INFO: [HLS 200-111]  Elapsed time: 5.64 seconds; current allocated memory: 398.050 MB.
+INFO: [RTMG 210-278] Implementing memory 'yolo_conv_top_line_buff_group_0_va_ram (RAM)' using block RAMs.
+INFO: [RTMG 210-278] Implementing memory 'yolo_conv_top_local_mem_group_0_d_ram (RAM)' using block RAMs.
+INFO: [RTMG 210-285] Implementing FIFO 'out_stream_group_0_s_U(fifo_w16_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'out_stream_group_1_s_U(fifo_w16_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'out_stream_group_2_s_U(fifo_w16_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'out_stream_group_3_s_U(fifo_w16_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'out_stream_group_4_s_U(fifo_w16_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'out_stream_group_5_s_U(fifo_w16_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'out_stream_group_6_s_U(fifo_w16_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'out_stream_group_7_s_U(fifo_w16_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'out_stream_group_8_s_U(fifo_w16_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'out_stream_group_9_s_U(fifo_w16_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'out_stream_group_10_U(fifo_w16_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'out_stream_group_11_U(fifo_w16_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'out_stream_group_12_U(fifo_w16_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'out_stream_group_13_U(fifo_w16_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'out_stream_group_14_U(fifo_w16_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'out_stream_group_15_U(fifo_w16_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'out_stream_group_16_U(fifo_w16_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'out_stream_group_17_U(fifo_w16_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'out_stream_group_18_U(fifo_w16_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'out_stream_group_19_U(fifo_w16_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'out_stream_group_20_U(fifo_w16_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'out_stream_group_21_U(fifo_w16_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'out_stream_group_22_U(fifo_w16_d2_A)' using Shift Registers.
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 1.25ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg484-1'
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: config_export -vivado_optimization_level=2
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: set_clock_uncertainty default
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: config_export -vivado_optimization_level=2
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: set_clock_uncertainty default
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 2ns.
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'yolo_conv_fp_2019_64/src/yolo_conv.cpp' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:01:04 ; elapsed = 00:01:06 . Memory (MB): peak = 892.023 ; gain = 192.000 ; free physical = 1526 ; free virtual = 11291
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:01:04 ; elapsed = 00:01:06 . Memory (MB): peak = 892.023 ; gain = 192.000 ; free physical = 1526 ; free virtual = 11291
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [XFORM 203-603] Inlining function 'hls::LineBuffer<3, 418, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0>, 0>::shift_pixels_up' into 'hls::LineBuffer<3, 418, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0>, 0>::shift_up' (/opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot/hls/hls_video_mem.h:863).
+INFO: [XFORM 203-603] Inlining function 'hls::LineBuffer<3, 418, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0>, 0>::shift_up' into 'yolo_line_buffer' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:246).
+INFO: [XFORM 203-603] Inlining function 'hls::LineBuffer<3, 418, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0>, 0>::insert_bottom_row' into 'hls::LineBuffer<3, 418, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0>, 0>::insert_top' (/opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot/hls/hls_video_mem.h:883).
+INFO: [XFORM 203-603] Inlining function 'hls::LineBuffer<3, 418, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0>, 0>::insert_top' into 'yolo_line_buffer' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:247).
+INFO: [XFORM 203-603] Inlining function 'hls::LineBuffer<3, 418, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0>, 0>::getval' into 'slide_window' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:259).
+INFO: [XFORM 203-603] Inlining function 'hls::Window<3, 3, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0> >::insert_pixel' into 'hls::Window<3, 3, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0> >::insert' (/opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot/hls/hls_video_mem.h:573).
+INFO: [XFORM 203-603] Inlining function 'hls::Window<3, 3, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0> >::insert' into 'slide_window' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:260).
+INFO: [XFORM 203-603] Inlining function 'hls::Window<3, 3, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0> >::getval' into 'window_macc' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:275).
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:01:07 ; elapsed = 00:01:09 . Memory (MB): peak = 894.359 ; gain = 194.336 ; free physical = 1466 ; free virtual = 11241
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [XFORM 203-602] Inlining function 'write_output' into 'yolo_conv_top' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:176) automatically.
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:01:08 ; elapsed = 00:01:10 . Memory (MB): peak = 894.359 ; gain = 194.336 ; free physical = 1423 ; free virtual = 11203
+INFO: [XFORM 203-1101] Packing variable 'outStream.V.data' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:4) into a 64-bit variable.
+INFO: [XFORM 203-1101] Packing variable 'inStream.V.data' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:4) into a 64-bit variable.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'Loop-6.1.1' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:88) in function 'yolo_conv_top' for pipelining.
+INFO: [XFORM 203-502] Unrolling all loops for pipelining in function 'window_macc' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:267).
+INFO: [XFORM 203-502] Unrolling all loops for pipelining in function 'slide_window' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:251).
+INFO: [XFORM 203-502] Unrolling all loops for pipelining in function 'yolo_line_buffer' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:243).
+INFO: [XFORM 203-502] Unrolling all loops for pipelining in function 'out_stream_merge' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:287).
+INFO: [HLS 200-489] Unrolling loop 'Loop-6.1.1.1' (/opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot/hls/hls_video_mem.h:49) in function 'yolo_conv_top' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'Loop-6.1.1.1.1' (/opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot/hls/hls_video_mem.h:49) in function 'yolo_conv_top' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'Loop-6.1.1.2' (/opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot/hls/hls_video_mem.h:49) in function 'yolo_conv_top' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'Loop-6.1.1.2.1' (/opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot/hls/hls_video_mem.h:49) in function 'yolo_conv_top' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'Loop-6.1.1.3' (/opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot/hls/hls_video_mem.h:49) in function 'yolo_conv_top' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'Loop-6.1.1.3.1' (/opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot/hls/hls_video_mem.h:49) in function 'yolo_conv_top' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'Loop-6.1.1.4' (/opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot/hls/hls_video_mem.h:49) in function 'yolo_conv_top' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'Loop-6.1.1.4.1' (/opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot/hls/hls_video_mem.h:49) in function 'yolo_conv_top' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'Loop-6.1.1.5' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:145) in function 'yolo_conv_top' completely with a factor of 32.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:271) in function 'window_macc' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:273) in function 'window_macc' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:255) in function 'slide_window' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:257) in function 'slide_window' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1' (/opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot/hls/hls_video_mem.h:727) in function 'yolo_line_buffer' completely with a factor of 2.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:293) in function 'out_stream_merge' completely with a factor of 6.
+INFO: [XFORM 203-102] Partitioning array 'window.val.V.0' automatically.
+INFO: [XFORM 203-102] Partitioning array 'window.val.V.1' automatically.
+INFO: [XFORM 203-102] Partitioning array 'window.val.V.2' automatically.
+INFO: [XFORM 203-102] Automatically partitioning streamed array 'out_stream_group.V.V' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:23) .
+INFO: [XFORM 203-101] Partitioning array 'out_stream_group.V.V' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:23) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'line_buff_group_0.val.V' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:27) in dimension 2 completely.
+INFO: [XFORM 203-101] Partitioning array 'line_buff_group_1.val.V' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:28) in dimension 2 completely.
+INFO: [XFORM 203-101] Partitioning array 'line_buff_group_2.val.V' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:29) in dimension 2 completely.
+INFO: [XFORM 203-101] Partitioning array 'line_buff_group_3.val.V' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:30) in dimension 2 completely.
+INFO: [XFORM 203-101] Partitioning array 'val_output.V' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:32) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'local_mem_group.data.V' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:37) in dimension 1 with a block factor 4.
+INFO: [XFORM 203-101] Partitioning array 'kernel_window_0.val.V' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:136) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'kernel_window_1.val.V' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:136) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'kernel_window_2.val.V' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:136) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'kernel_window_3.val.V' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:136) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'local_mem_group.data.V' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:37) in dimension 3 completely.
+INFO: [XFORM 203-101] Partitioning array 'kernel_window_0.val.V' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:136) in dimension 2 completely.
+INFO: [XFORM 203-101] Partitioning array 'kernel_window_1.val.V' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:136) in dimension 2 completely.
+INFO: [XFORM 203-101] Partitioning array 'kernel_window_2.val.V' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:136) in dimension 2 completely.
+INFO: [XFORM 203-101] Partitioning array 'kernel_window_3.val.V' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:136) in dimension 2 completely.
+INFO: [XFORM 203-602] Inlining function 'yolo_line_buffer' into 'yolo_conv_top' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:128) automatically.
+INFO: [XFORM 203-602] Inlining function 'write_output' into 'yolo_conv_top' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:176) automatically.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (yolo_conv_fp_2019_64/src/yolo_conv.cpp:193:13) to (yolo_conv_fp_2019_64/src/yolo_conv.cpp:198:5) in function 'yolo_conv_top'... converting 4 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (yolo_conv_fp_2019_64/src/yolo_conv.cpp:276:11) to (yolo_conv_fp_2019_64/src/yolo_conv.cpp:279:2) in function 'window_macc'... converting 39 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock to (yolo_conv_fp_2019_64/src/yolo_conv.cpp:239:3) in function 'post_process'... converting 17 basic blocks.
+INFO: [XFORM 203-11] Balancing expressions in function 'yolo_conv_top' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:4)...3 expression(s) balanced.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:01:25 ; elapsed = 00:01:27 . Memory (MB): peak = 894.523 ; gain = 194.500 ; free physical = 1346 ; free virtual = 11132
+INFO: [XFORM 203-541] Flattening a loop nest 'Loop-5.1' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:49:14) in function 'yolo_conv_top'.
+INFO: [XFORM 203-541] Flattening a loop nest 'Loop-5' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:46:15) in function 'yolo_conv_top'.
+INFO: [XFORM 203-541] Flattening a loop nest 'Loop-6.1' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:85:20) in function 'yolo_conv_top'.
+INFO: [XFORM 203-541] Flattening a loop nest 'Loop-6' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:81:28) in function 'yolo_conv_top'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'line_buff_group_0.va' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:27).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'line_buff_group_0.va' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:27).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'line_buff_group_1.va' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:28).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'line_buff_group_1.va' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:28).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'line_buff_group_2.va' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:29).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'line_buff_group_2.va' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:29).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'line_buff_group_3.va' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:30).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'line_buff_group_3.va' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:30).
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:01:41 ; elapsed = 00:01:43 . Memory (MB): peak = 1020.023 ; gain = 320.000 ; free physical = 1280 ; free virtual = 11069
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'yolo_conv_top' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'slide_window' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining function 'slide_window'.
+WARNING: [SCHED 204-63] Unable to schedule the whole 2 cycles 'load' operation ('Window<3, 3, ap_fixed<16, 8, 4, 0, 0> >.val[0].V[0]', yolo_conv_fp_2019_64/src/yolo_conv.cpp:259) on array 'line_buff_val_0_V' within the first cycle (II = 1).
+Please consider increasing the target initiation interval of the pipeline.
+WARNING: [SCHED 204-69] Unable to schedule 'load' operation ('Window<3, 3, ap_fixed<16, 8, 4, 0, 0> >.val[0].V[0]', yolo_conv_fp_2019_64/src/yolo_conv.cpp:259) on array 'line_buff_val_0_V' due to limited memory ports. Please consider using a memory core with more ports or partitioning the array 'line_buff_val_0_V'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 3, Depth = 4.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 104.5 seconds; current allocated memory: 308.590 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.07 seconds; current allocated memory: 308.792 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'window_macc' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining function 'window_macc'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 8.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.2 seconds; current allocated memory: 309.371 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.19 seconds; current allocated memory: 310.134 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'post_process' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining function 'post_process'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 3.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.3 seconds; current allocated memory: 310.416 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.07 seconds; current allocated memory: 310.674 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'out_stream_merge' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining function 'out_stream_merge'.
+WARNING: [SCHED 204-68] The II Violation in module 'out_stream_merge' (Function: out_stream_merge): Unable to enforce a carried dependence constraint (II = 1, distance = 1, offset = 1)
+   between axis write on port 'outStream_V_data' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:326) and axis write on port 'outStream_V_data' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:326).
+WARNING: [SCHED 204-68] The II Violation in module 'out_stream_merge' (Function: out_stream_merge): Unable to enforce a carried dependence constraint (II = 2, distance = 1, offset = 1)
+   between axis write on port 'outStream_V_data' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:326) and axis write on port 'outStream_V_data' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:326).
+WARNING: [SCHED 204-68] The II Violation in module 'out_stream_merge' (Function: out_stream_merge): Unable to enforce a carried dependence constraint (II = 3, distance = 1, offset = 1)
+   between axis write on port 'outStream_V_data' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:326) and axis write on port 'outStream_V_data' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:326).
+WARNING: [SCHED 204-68] The II Violation in module 'out_stream_merge' (Function: out_stream_merge): Unable to enforce a carried dependence constraint (II = 4, distance = 1, offset = 1)
+   between axis write on port 'outStream_V_data' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:326) and axis write on port 'outStream_V_data' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:326).
+WARNING: [SCHED 204-68] The II Violation in module 'out_stream_merge' (Function: out_stream_merge): Unable to enforce a carried dependence constraint (II = 5, distance = 1, offset = 1)
+   between axis write on port 'outStream_V_data' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:326) and axis write on port 'outStream_V_data' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:326).
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 6, Depth = 7.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 1.87 seconds; current allocated memory: 311.744 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.24 seconds; current allocated memory: 313.442 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'yolo_conv_top' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 5'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-61] Pipelining loop 'Loop 6'.
+WARNING: [SCHED 204-68] The II Violation in module 'yolo_conv_top' (Loop: Loop 6): Unable to enforce a carried dependence constraint (II = 6, distance = 1, offset = 1)
+   between 'call' operation ('_ln197', yolo_conv_fp_2019_64/src/yolo_conv.cpp:197) to 'out_stream_merge' and fifo request on port 'out_stream_group[0].V.V', yolo_conv_fp_2019_64/src/yolo_conv.cpp:23 (yolo_conv_fp_2019_64/src/yolo_conv.cpp:174).
+WARNING: [SCHED 204-68] The II Violation in module 'yolo_conv_top' (Loop: Loop 6): Unable to enforce a carried dependence constraint (II = 7, distance = 1, offset = 1)
+   between 'call' operation ('_ln197', yolo_conv_fp_2019_64/src/yolo_conv.cpp:197) to 'out_stream_merge' and fifo request on port 'out_stream_group[0].V.V', yolo_conv_fp_2019_64/src/yolo_conv.cpp:23 (yolo_conv_fp_2019_64/src/yolo_conv.cpp:174).
+WARNING: [SCHED 204-69] Unable to schedule 'load' operation ('local_mem_group_0_d_450', yolo_conv_fp_2019_64/src/yolo_conv.cpp:154) on array 'local_mem_group[0].data[0].V', yolo_conv_fp_2019_64/src/yolo_conv.cpp:37 due to limited memory ports. Please consider using a memory core with more ports or partitioning the array 'local_mem_group_0_d'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 16, Depth = 52.
+WARNING: [SCHED 204-21] Estimated clock period (9.634ns) exceeds the target (target clock period: 10ns, clock uncertainty: 2ns, effective delay budget: 8ns).
+WARNING: [SCHED 204-21] The critical path in module 'yolo_conv_top' consists of the following:
+	'mul' operation of DSP[766] ('mul_ln203', /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot/hls/hls_video_mem.h:729->/opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot/hls/hls_video_mem.h:863->yolo_conv_fp_2019_64/src/yolo_conv.cpp:246->yolo_conv_fp_2019_64/src/yolo_conv.cpp:128) [765]  (3.36 ns)
+	'add' operation of DSP[766] ('add_ln203_1', /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot/hls/hls_video_mem.h:729->/opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot/hls/hls_video_mem.h:863->yolo_conv_fp_2019_64/src/yolo_conv.cpp:246->yolo_conv_fp_2019_64/src/yolo_conv.cpp:128) [766]  (3.02 ns)
+	'getelementptr' operation ('line_buff_group_0_va_4', /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot/hls/hls_video_mem.h:729->/opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot/hls/hls_video_mem.h:863->yolo_conv_fp_2019_64/src/yolo_conv.cpp:246->yolo_conv_fp_2019_64/src/yolo_conv.cpp:128) [769]  (0 ns)
+	'load' operation ('line_buff_group_0_va_6', /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot/hls/hls_video_mem.h:729->/opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot/hls/hls_video_mem.h:863->yolo_conv_fp_2019_64/src/yolo_conv.cpp:246->yolo_conv_fp_2019_64/src/yolo_conv.cpp:128) on array 'line_buff_group_0.val[1].V', yolo_conv_fp_2019_64/src/yolo_conv.cpp:27 [780]  (3.25 ns)
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 22.6 seconds; current allocated memory: 329.306 MB.
+INFO: [HLS 200-434] Only 2 loops out of a total 6 loops have been pipelined in this design.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 9.29 seconds; current allocated memory: 359.453 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'slide_window' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'slide_window'.
+INFO: [HLS 200-111]  Elapsed time: 7.37 seconds; current allocated memory: 361.413 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'window_macc' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Generating core module 'yolo_conv_top_mul_mul_16s_16s_32_1_0': 9 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'window_macc'.
+INFO: [HLS 200-111]  Elapsed time: 0.16 seconds; current allocated memory: 363.562 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'post_process' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'post_process'.
+INFO: [HLS 200-111]  Elapsed time: 0.67 seconds; current allocated memory: 367.359 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'out_stream_merge' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'out_stream_merge'.
+INFO: [HLS 200-111]  Elapsed time: 0.36 seconds; current allocated memory: 370.504 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'yolo_conv_top' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_conv_top/inStream_V_data' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_conv_top/inStream_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_conv_top/inStream_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_conv_top/inStream_V_user_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_conv_top/inStream_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_conv_top/inStream_V_id_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_conv_top/inStream_V_dest_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_conv_top/outStream_V_data' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_conv_top/outStream_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_conv_top/outStream_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_conv_top/outStream_V_user_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_conv_top/outStream_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_conv_top/outStream_V_id_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_conv_top/outStream_V_dest_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_conv_top/output_ch_V' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_conv_top/input_ch_V' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_conv_top/fold_output_ch_V' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_conv_top/fold_input_ch_V' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_conv_top/input_h_V' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_conv_top/input_w_V' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_conv_top/real_input_h_V' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_conv_top/fold_win_area_V' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'yolo_conv_top' to 's_axilite & ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Bundling port 'return', 'output_ch_V', 'input_ch_V', 'fold_output_ch_V', 'fold_input_ch_V', 'input_h_V', 'input_w_V', 'real_input_h_V' and 'fold_win_area_V' to AXI-Lite port CTRL_BUS.
+INFO: [RTGEN 206-100] Generating core module 'yolo_conv_top_am_addmul_9ns_1ns_13ns_22_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'yolo_conv_top_mac_muladd_4ns_10ns_9ns_13_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'yolo_conv_top'.
+INFO: [HLS 200-111]  Elapsed time: 5.54 seconds; current allocated memory: 398.019 MB.
+INFO: [RTMG 210-278] Implementing memory 'yolo_conv_top_line_buff_group_0_va_ram (RAM)' using block RAMs.
+INFO: [RTMG 210-278] Implementing memory 'yolo_conv_top_local_mem_group_0_d_ram (RAM)' using block RAMs.
+INFO: [RTMG 210-285] Implementing FIFO 'out_stream_group_0_s_U(fifo_w16_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'out_stream_group_1_s_U(fifo_w16_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'out_stream_group_2_s_U(fifo_w16_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'out_stream_group_3_s_U(fifo_w16_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'out_stream_group_4_s_U(fifo_w16_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'out_stream_group_5_s_U(fifo_w16_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'out_stream_group_6_s_U(fifo_w16_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'out_stream_group_7_s_U(fifo_w16_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'out_stream_group_8_s_U(fifo_w16_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'out_stream_group_9_s_U(fifo_w16_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'out_stream_group_10_U(fifo_w16_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'out_stream_group_11_U(fifo_w16_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'out_stream_group_12_U(fifo_w16_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'out_stream_group_13_U(fifo_w16_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'out_stream_group_14_U(fifo_w16_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'out_stream_group_15_U(fifo_w16_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'out_stream_group_16_U(fifo_w16_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'out_stream_group_17_U(fifo_w16_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'out_stream_group_18_U(fifo_w16_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'out_stream_group_19_U(fifo_w16_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'out_stream_group_20_U(fifo_w16_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'out_stream_group_21_U(fifo_w16_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'out_stream_group_22_U(fifo_w16_d2_A)' using Shift Registers.
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================

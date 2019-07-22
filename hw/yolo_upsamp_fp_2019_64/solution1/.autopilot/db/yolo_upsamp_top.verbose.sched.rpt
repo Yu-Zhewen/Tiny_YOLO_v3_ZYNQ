@@ -1,0 +1,441 @@
+
+
+================================================================
+== Vivado HLS Report for 'yolo_upsamp_top'
+================================================================
+* Date:           Sun Jul 21 21:07:29 2019
+
+* Version:        2019.1 (Build 2552052 on Fri May 24 15:28:33 MDT 2019)
+* Project:        yolo_upsamp_fp_2019_64
+* Solution:       solution1
+* Product family: zynq
+* Target device:  xc7z020-clg484-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |  10.00|     9.634|        2.00|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +------+------+------+------+---------+
+    |   Latency   |   Interval  | Pipeline|
+    |  min |  max |  min |  max |   Type  |
+    +------+------+------+------+---------+
+    |  5445|  5445|  5445|  5445|   none  |
+    +------+------+------+------+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +----------+------+------+----------+-----------+-----------+------+----------+
+        |          |   Latency   | Iteration|  Initiation Interval  | Trip |          |
+        | Loop Name|  min |  max |  Latency |  achieved |   target  | Count| Pipelined|
+        +----------+------+------+----------+-----------+-----------+------+----------+
+        |- Loop 1  |     7|     7|         1|          -|          -|     8|    no    |
+        |- Loop 2  |     7|     7|         1|          -|          -|     8|    no    |
+        |- Loop 3  |     7|     7|         1|          -|          -|     8|    no    |
+        |- Loop 4  |     7|     7|         1|          -|          -|     8|    no    |
+        |- Loop 5  |  5411|  5411|         5|          1|          1|  5408|    yes   |
+        +----------+------+------+----------+-----------+-----------+------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 1
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
++ Individual pipeline summary: 
+  * Pipeline-0: initiation interval (II) = 1, depth = 5
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 11
+* Pipeline : 1
+  Pipeline-0 : II = 1, D = 5, States = { 6 7 8 9 10 }
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 2 3 
+3 --> 3 4 
+4 --> 4 5 
+5 --> 5 6 
+6 --> 7 
+7 --> 11 8 
+8 --> 9 
+9 --> 10 
+10 --> 6 
+11 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 1.76>
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i64* %outStream_V_data), !map !56"   --->   Operation 12 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 13 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i64* %inStream_V_data), !map !69"   --->   Operation 13 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i8* %inStream_V_keep_V), !map !82"   --->   Operation 14 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 15 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i8* %inStream_V_strb_V), !map !86"   --->   Operation 15 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 16 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i2* %inStream_V_user_V), !map !90"   --->   Operation 16 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 17 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i1* %inStream_V_last_V), !map !94"   --->   Operation 17 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 18 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i5* %inStream_V_id_V), !map !98"   --->   Operation 18 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 19 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i6* %inStream_V_dest_V), !map !102"   --->   Operation 19 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 20 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i8* %outStream_V_keep_V), !map !106"   --->   Operation 20 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 21 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i8* %outStream_V_strb_V), !map !110"   --->   Operation 21 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 22 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i2* %outStream_V_user_V), !map !114"   --->   Operation 22 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 23 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i1* %outStream_V_last_V), !map !118"   --->   Operation 23 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 24 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i5* %outStream_V_id_V), !map !122"   --->   Operation 24 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 25 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i6* %outStream_V_dest_V), !map !126"   --->   Operation 25 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 26 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecTopModule([16 x i8]* @yolo_upsamp_top_str) nounwind"   --->   Operation 26 'spectopmodule' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 27 [1/1] (0.00ns)   --->   "%line_buff_group_0_va = alloca [104 x i16], align 2" [yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:9]   --->   Operation 27 'alloca' 'line_buff_group_0_va' <Predicate = true> <Delay = 0.00> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 104> <RAM>
+ST_1 : Operation 28 [1/1] (0.00ns)   --->   "%line_buff_group_1_va = alloca [104 x i16], align 2" [yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:10]   --->   Operation 28 'alloca' 'line_buff_group_1_va' <Predicate = true> <Delay = 0.00> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 104> <RAM>
+ST_1 : Operation 29 [1/1] (0.00ns)   --->   "%line_buff_group_2_va = alloca [104 x i16], align 2" [yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:11]   --->   Operation 29 'alloca' 'line_buff_group_2_va' <Predicate = true> <Delay = 0.00> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 104> <RAM>
+ST_1 : Operation 30 [1/1] (0.00ns)   --->   "%line_buff_group_3_va = alloca [104 x i16], align 2" [yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:12]   --->   Operation 30 'alloca' 'line_buff_group_3_va' <Predicate = true> <Delay = 0.00> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 104> <RAM>
+ST_1 : Operation 31 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i32 0, [10 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str1, i32 0, i32 0, [9 x i8]* @p_str2, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind" [yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:5]   --->   Operation 31 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 32 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i64* %outStream_V_data, i8* %outStream_V_keep_V, i8* %outStream_V_strb_V, i2* %outStream_V_user_V, i1* %outStream_V_last_V, i5* %outStream_V_id_V, i6* %outStream_V_dest_V, [5 x i8]* @p_str3, i32 1, i32 1, [5 x i8]* @p_str4, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind" [yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:6]   --->   Operation 32 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 33 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i64* %inStream_V_data, i8* %inStream_V_keep_V, i8* %inStream_V_strb_V, i2* %inStream_V_user_V, i1* %inStream_V_last_V, i5* %inStream_V_id_V, i6* %inStream_V_dest_V, [5 x i8]* @p_str3, i32 1, i32 1, [5 x i8]* @p_str4, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind" [yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:7]   --->   Operation 33 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 34 [1/1] (1.76ns)   --->   "br label %"hls::LineBuffer<1, 13, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0>, 0>::LineBuffer.1.region""   --->   Operation 34 'br' <Predicate = true> <Delay = 1.76>
+
+State 2 <SV = 1> <Delay = 2.10>
+ST_2 : Operation 35 [1/1] (0.00ns)   --->   "%phi_ln9 = phi i3 [ 0, %0 ], [ %add_ln9, %"hls::LineBuffer<1, 13, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0>, 0>::LineBuffer.1.region" ]" [yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:9]   --->   Operation 35 'phi' 'phi_ln9' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 36 [1/1] (0.00ns)   --->   "%phi_mul = phi i7 [ 0, %0 ], [ %add_ln627, %"hls::LineBuffer<1, 13, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0>, 0>::LineBuffer.1.region" ]" [/opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot/hls/hls_video_mem.h:627->yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:9]   --->   Operation 36 'phi' 'phi_mul' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 37 [1/1] (1.65ns)   --->   "%add_ln9 = add i3 %phi_ln9, 1" [yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:9]   --->   Operation 37 'add' 'add_ln9' <Predicate = true> <Delay = 1.65> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.87> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 38 [1/1] (1.87ns)   --->   "%add_ln627 = add i7 %phi_mul, 13" [/opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot/hls/hls_video_mem.h:627->yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:9]   --->   Operation 38 'add' 'add_ln627' <Predicate = true> <Delay = 1.87> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.87> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 39 [1/1] (0.00ns)   --->   "%rbegin_i1 = call i32 (...)* @_ssdm_op_SpecRegionBegin([95 x i8]* @hls_KD_KD_LineBuffe) nounwind" [/opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot/hls/hls_video_mem.h:627->yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:9]   --->   Operation 39 'specregionbegin' 'rbegin_i1' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 40 [1/1] (0.00ns)   --->   "%rend_i57 = call i32 (...)* @_ssdm_op_SpecRegionEnd([95 x i8]* @hls_KD_KD_LineBuffe, i32 %rbegin_i1) nounwind" [/opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot/hls/hls_video_mem.h:627->yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:9]   --->   Operation 40 'specregionend' 'rend_i57' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 41 [1/1] (1.13ns)   --->   "%icmp_ln9 = icmp eq i3 %phi_ln9, -1" [yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:9]   --->   Operation 41 'icmp' 'icmp_ln9' <Predicate = true> <Delay = 1.13> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.13> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 42 [1/1] (0.00ns)   --->   "%empty = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 8, i64 8, i64 8)"   --->   Operation 42 'speclooptripcount' 'empty' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 43 [1/1] (0.00ns)   --->   "br i1 %icmp_ln9, label %LineBuffer.1.region1.preheader, label %"hls::LineBuffer<1, 13, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0>, 0>::LineBuffer.1.region"" [yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:9]   --->   Operation 43 'br' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 44 [1/1] (1.76ns)   --->   "br label %"hls::LineBuffer<1, 13, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0>, 0>::LineBuffer.1.region1"" [yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:10]   --->   Operation 44 'br' <Predicate = (icmp_ln9)> <Delay = 1.76>
+
+State 3 <SV = 2> <Delay = 2.10>
+ST_3 : Operation 45 [1/1] (0.00ns)   --->   "%phi_ln10 = phi i3 [ %add_ln10, %"hls::LineBuffer<1, 13, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0>, 0>::LineBuffer.1.region1" ], [ 0, %LineBuffer.1.region1.preheader ]" [yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:10]   --->   Operation 45 'phi' 'phi_ln10' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 46 [1/1] (0.00ns)   --->   "%phi_mul153 = phi i7 [ %add_ln627_1, %"hls::LineBuffer<1, 13, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0>, 0>::LineBuffer.1.region1" ], [ 0, %LineBuffer.1.region1.preheader ]" [/opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot/hls/hls_video_mem.h:627->yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:10]   --->   Operation 46 'phi' 'phi_mul153' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 47 [1/1] (1.65ns)   --->   "%add_ln10 = add i3 %phi_ln10, 1" [yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:10]   --->   Operation 47 'add' 'add_ln10' <Predicate = true> <Delay = 1.65> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.87> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 48 [1/1] (1.87ns)   --->   "%add_ln627_1 = add i7 %phi_mul153, 13" [/opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot/hls/hls_video_mem.h:627->yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:10]   --->   Operation 48 'add' 'add_ln627_1' <Predicate = true> <Delay = 1.87> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.87> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 49 [1/1] (0.00ns)   --->   "%rbegin_i2 = call i32 (...)* @_ssdm_op_SpecRegionBegin([95 x i8]* @hls_KD_KD_LineBuffe) nounwind" [/opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot/hls/hls_video_mem.h:627->yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:10]   --->   Operation 49 'specregionbegin' 'rbegin_i2' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 50 [1/1] (0.00ns)   --->   "%rend_i55 = call i32 (...)* @_ssdm_op_SpecRegionEnd([95 x i8]* @hls_KD_KD_LineBuffe, i32 %rbegin_i2) nounwind" [/opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot/hls/hls_video_mem.h:627->yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:10]   --->   Operation 50 'specregionend' 'rend_i55' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 51 [1/1] (1.13ns)   --->   "%icmp_ln10 = icmp eq i3 %phi_ln10, -1" [yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:10]   --->   Operation 51 'icmp' 'icmp_ln10' <Predicate = true> <Delay = 1.13> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.13> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 52 [1/1] (0.00ns)   --->   "%empty_5 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 8, i64 8, i64 8)"   --->   Operation 52 'speclooptripcount' 'empty_5' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 53 [1/1] (0.00ns)   --->   "br i1 %icmp_ln10, label %LineBuffer.1.region2.preheader, label %"hls::LineBuffer<1, 13, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0>, 0>::LineBuffer.1.region1"" [yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:10]   --->   Operation 53 'br' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 54 [1/1] (1.76ns)   --->   "br label %"hls::LineBuffer<1, 13, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0>, 0>::LineBuffer.1.region2"" [yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:11]   --->   Operation 54 'br' <Predicate = (icmp_ln10)> <Delay = 1.76>
+
+State 4 <SV = 3> <Delay = 2.10>
+ST_4 : Operation 55 [1/1] (0.00ns)   --->   "%phi_ln11 = phi i3 [ %add_ln11, %"hls::LineBuffer<1, 13, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0>, 0>::LineBuffer.1.region2" ], [ 0, %LineBuffer.1.region2.preheader ]" [yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:11]   --->   Operation 55 'phi' 'phi_ln11' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 56 [1/1] (0.00ns)   --->   "%phi_mul155 = phi i7 [ %add_ln627_2, %"hls::LineBuffer<1, 13, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0>, 0>::LineBuffer.1.region2" ], [ 0, %LineBuffer.1.region2.preheader ]" [/opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot/hls/hls_video_mem.h:627->yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:11]   --->   Operation 56 'phi' 'phi_mul155' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 57 [1/1] (1.65ns)   --->   "%add_ln11 = add i3 %phi_ln11, 1" [yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:11]   --->   Operation 57 'add' 'add_ln11' <Predicate = true> <Delay = 1.65> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.87> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 58 [1/1] (1.87ns)   --->   "%add_ln627_2 = add i7 %phi_mul155, 13" [/opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot/hls/hls_video_mem.h:627->yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:11]   --->   Operation 58 'add' 'add_ln627_2' <Predicate = true> <Delay = 1.87> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.87> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 59 [1/1] (0.00ns)   --->   "%rbegin_i3 = call i32 (...)* @_ssdm_op_SpecRegionBegin([95 x i8]* @hls_KD_KD_LineBuffe) nounwind" [/opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot/hls/hls_video_mem.h:627->yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:11]   --->   Operation 59 'specregionbegin' 'rbegin_i3' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 60 [1/1] (0.00ns)   --->   "%rend_i53 = call i32 (...)* @_ssdm_op_SpecRegionEnd([95 x i8]* @hls_KD_KD_LineBuffe, i32 %rbegin_i3) nounwind" [/opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot/hls/hls_video_mem.h:627->yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:11]   --->   Operation 60 'specregionend' 'rend_i53' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 61 [1/1] (1.13ns)   --->   "%icmp_ln11 = icmp eq i3 %phi_ln11, -1" [yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:11]   --->   Operation 61 'icmp' 'icmp_ln11' <Predicate = true> <Delay = 1.13> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.13> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 62 [1/1] (0.00ns)   --->   "%empty_6 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 8, i64 8, i64 8)"   --->   Operation 62 'speclooptripcount' 'empty_6' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 63 [1/1] (0.00ns)   --->   "br i1 %icmp_ln11, label %LineBuffer.1.region3.preheader, label %"hls::LineBuffer<1, 13, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0>, 0>::LineBuffer.1.region2"" [yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:11]   --->   Operation 63 'br' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 64 [1/1] (1.76ns)   --->   "br label %"hls::LineBuffer<1, 13, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0>, 0>::LineBuffer.1.region3"" [yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:12]   --->   Operation 64 'br' <Predicate = (icmp_ln11)> <Delay = 1.76>
+
+State 5 <SV = 4> <Delay = 2.10>
+ST_5 : Operation 65 [1/1] (0.00ns)   --->   "%phi_ln12 = phi i3 [ %add_ln12, %"hls::LineBuffer<1, 13, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0>, 0>::LineBuffer.1.region3" ], [ 0, %LineBuffer.1.region3.preheader ]" [yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:12]   --->   Operation 65 'phi' 'phi_ln12' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 66 [1/1] (0.00ns)   --->   "%phi_mul157 = phi i7 [ %add_ln627_3, %"hls::LineBuffer<1, 13, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0>, 0>::LineBuffer.1.region3" ], [ 0, %LineBuffer.1.region3.preheader ]" [/opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot/hls/hls_video_mem.h:627->yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:12]   --->   Operation 66 'phi' 'phi_mul157' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 67 [1/1] (1.65ns)   --->   "%add_ln12 = add i3 %phi_ln12, 1" [yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:12]   --->   Operation 67 'add' 'add_ln12' <Predicate = true> <Delay = 1.65> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.87> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 68 [1/1] (1.87ns)   --->   "%add_ln627_3 = add i7 %phi_mul157, 13" [/opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot/hls/hls_video_mem.h:627->yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:12]   --->   Operation 68 'add' 'add_ln627_3' <Predicate = true> <Delay = 1.87> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.87> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 69 [1/1] (0.00ns)   --->   "%rbegin_i = call i32 (...)* @_ssdm_op_SpecRegionBegin([95 x i8]* @hls_KD_KD_LineBuffe) nounwind" [/opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot/hls/hls_video_mem.h:627->yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:12]   --->   Operation 69 'specregionbegin' 'rbegin_i' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 70 [1/1] (0.00ns)   --->   "%rend_i = call i32 (...)* @_ssdm_op_SpecRegionEnd([95 x i8]* @hls_KD_KD_LineBuffe, i32 %rbegin_i) nounwind" [/opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot/hls/hls_video_mem.h:627->yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:12]   --->   Operation 70 'specregionend' 'rend_i' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 71 [1/1] (1.13ns)   --->   "%icmp_ln12 = icmp eq i3 %phi_ln12, -1" [yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:12]   --->   Operation 71 'icmp' 'icmp_ln12' <Predicate = true> <Delay = 1.13> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.13> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 72 [1/1] (0.00ns)   --->   "%empty_7 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 8, i64 8, i64 8)"   --->   Operation 72 'speclooptripcount' 'empty_7' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 73 [1/1] (0.00ns)   --->   "br i1 %icmp_ln12, label %.preheader.preheader, label %"hls::LineBuffer<1, 13, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0>, 0>::LineBuffer.1.region3"" [yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:12]   --->   Operation 73 'br' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 74 [1/1] (0.00ns)   --->   "%tmp_dest_V = alloca i6"   --->   Operation 74 'alloca' 'tmp_dest_V' <Predicate = (icmp_ln12)> <Delay = 0.00>
+ST_5 : Operation 75 [1/1] (0.00ns)   --->   "%tmp_keep_V = alloca i8"   --->   Operation 75 'alloca' 'tmp_keep_V' <Predicate = (icmp_ln12)> <Delay = 0.00>
+ST_5 : Operation 76 [1/1] (0.00ns)   --->   "%tmp_strb_V = alloca i8"   --->   Operation 76 'alloca' 'tmp_strb_V' <Predicate = (icmp_ln12)> <Delay = 0.00>
+ST_5 : Operation 77 [1/1] (0.00ns)   --->   "%tmp_user_V = alloca i2"   --->   Operation 77 'alloca' 'tmp_user_V' <Predicate = (icmp_ln12)> <Delay = 0.00>
+ST_5 : Operation 78 [1/1] (0.00ns)   --->   "%tmp_id_V = alloca i5"   --->   Operation 78 'alloca' 'tmp_id_V' <Predicate = (icmp_ln12)> <Delay = 0.00>
+ST_5 : Operation 79 [1/1] (1.76ns)   --->   "br label %.preheader" [yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:52]   --->   Operation 79 'br' <Predicate = (icmp_ln12)> <Delay = 1.76>
+
+State 6 <SV = 5> <Delay = 5.67>
+ST_6 : Operation 80 [1/1] (0.00ns)   --->   "%indvar_flatten136 = phi i13 [ %add_ln15, %hls_label_0_end ], [ 0, %.preheader.preheader ]" [yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:15]   --->   Operation 80 'phi' 'indvar_flatten136' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 81 [1/1] (0.00ns)   --->   "%indvar_flatten72 = phi i10 [ %select_ln17_5, %hls_label_0_end ], [ 0, %.preheader.preheader ]" [yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:17]   --->   Operation 81 'phi' 'indvar_flatten72' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 82 [1/1] (0.00ns)   --->   "%indvar_flatten27 = phi i9 [ %select_ln19, %hls_label_0_end ], [ 0, %.preheader.preheader ]" [yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:19]   --->   Operation 82 'phi' 'indvar_flatten27' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 83 [1/1] (2.09ns)   --->   "%icmp_ln15 = icmp eq i13 %indvar_flatten136, -2784" [yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:15]   --->   Operation 83 'icmp' 'icmp_ln15' <Predicate = true> <Delay = 2.09> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.13> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_6 : Operation 84 [1/1] (1.67ns)   --->   "%add_ln15 = add i13 1, %indvar_flatten136" [yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:15]   --->   Operation 84 'add' 'add_ln15' <Predicate = true> <Delay = 1.67> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.87> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_6 : Operation 85 [1/1] (1.77ns)   --->   "%icmp_ln17 = icmp eq i10 %indvar_flatten72, 416" [yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:17]   --->   Operation 85 'icmp' 'icmp_ln17' <Predicate = (!icmp_ln15)> <Delay = 1.77> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.13> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_6 : Operation 86 [1/1] (0.97ns)   --->   "%xor_ln52 = xor i1 %icmp_ln17, true" [yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:52]   --->   Operation 86 'xor' 'xor_ln52' <Predicate = (!icmp_ln15)> <Delay = 0.97> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_6 : Operation 87 [1/1] (1.66ns)   --->   "%icmp_ln19 = icmp eq i9 %indvar_flatten27, 208" [yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:19]   --->   Operation 87 'icmp' 'icmp_ln19' <Predicate = (!icmp_ln15)> <Delay = 1.66> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.13> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_6 : Operation 88 [1/1] (0.97ns)   --->   "%and_ln52_10 = and i1 %icmp_ln19, %xor_ln52" [yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:52]   --->   Operation 88 'and' 'and_ln52_10' <Predicate = (!icmp_ln15)> <Delay = 0.97> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_6 : Operation 89 [1/1] (0.97ns)   --->   "%or_ln17 = or i1 %and_ln52_10, %icmp_ln17" [yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:17]   --->   Operation 89 'or' 'or_ln17' <Predicate = (!icmp_ln15)> <Delay = 0.97> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_6 : Operation 90 [1/1] (1.82ns)   --->   "%add_ln19_1 = add i9 %indvar_flatten27, 1" [yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:19]   --->   Operation 90 'add' 'add_ln19_1' <Predicate = (!icmp_ln15)> <Delay = 1.82> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.87> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_6 : Operation 91 [1/1] (0.96ns)   --->   "%select_ln19 = select i1 %or_ln17, i9 1, i9 %add_ln19_1" [yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:19]   --->   Operation 91 'select' 'select_ln19' <Predicate = (!icmp_ln15)> <Delay = 0.96> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.68> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_6 : Operation 92 [1/1] (1.73ns)   --->   "%add_ln17_1 = add i10 %indvar_flatten72, 1" [yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:17]   --->   Operation 92 'add' 'add_ln17_1' <Predicate = (!icmp_ln15)> <Delay = 1.73> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.87> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_6 : Operation 93 [1/1] (0.68ns)   --->   "%select_ln17_5 = select i1 %icmp_ln17, i10 1, i10 %add_ln17_1" [yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:17]   --->   Operation 93 'select' 'select_ln17_5' <Predicate = (!icmp_ln15)> <Delay = 0.68> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.68> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+
+State 7 <SV = 6> <Delay = 7.66>
+ST_7 : Operation 94 [1/1] (0.00ns)   --->   "%row_idx_0 = phi i4 [ %select_ln15, %hls_label_0_end ], [ 0, %.preheader.preheader ]" [yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:15]   --->   Operation 94 'phi' 'row_idx_0' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 95 [1/1] (0.00ns)   --->   "%row_stride_0 = phi i2 [ %select_ln17_4, %hls_label_0_end ], [ 0, %.preheader.preheader ]" [yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:17]   --->   Operation 95 'phi' 'row_stride_0' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 96 [1/1] (0.00ns)   --->   "%col_assign = phi i4 [ %select_ln52_4, %hls_label_0_end ], [ 0, %.preheader.preheader ]" [yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:52]   --->   Operation 96 'phi' 'col_assign' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 97 [1/1] (0.00ns)   --->   "%indvar_flatten = phi i6 [ %select_ln21_4, %hls_label_0_end ], [ 0, %.preheader.preheader ]" [yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:21]   --->   Operation 97 'phi' 'indvar_flatten' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 98 [1/1] (0.00ns)   --->   "%col_stride_0 = phi i2 [ %select_ln21_3, %hls_label_0_end ], [ 0, %.preheader.preheader ]" [yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:21]   --->   Operation 98 'phi' 'col_stride_0' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 99 [1/1] (0.00ns)   --->   "%input_ch_idx_0 = phi i4 [ %input_ch_idx, %hls_label_0_end ], [ 0, %.preheader.preheader ]"   --->   Operation 99 'phi' 'input_ch_idx_0' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 100 [1/1] (1.30ns)   --->   "%icmp_ln52 = icmp eq i4 %row_idx_0, -4" [yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:52]   --->   Operation 100 'icmp' 'icmp_ln52' <Predicate = true> <Delay = 1.30> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.13> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_7 : Operation 101 [1/1] (0.00ns)   --->   "%trunc_ln17 = trunc i2 %row_stride_0 to i1" [yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:17]   --->   Operation 101 'trunc' 'trunc_ln17' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 102 [1/1] (0.95ns)   --->   "%icmp_ln52_1 = icmp eq i2 %row_stride_0, 1" [yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:52]   --->   Operation 102 'icmp' 'icmp_ln52_1' <Predicate = (!and_ln52_10)> <Delay = 0.95> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.13> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_7 : Operation 103 [1/1] (0.97ns)   --->   "%and_ln52 = and i1 %icmp_ln52, %icmp_ln52_1" [yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:52]   --->   Operation 103 'and' 'and_ln52' <Predicate = (!and_ln52_10)> <Delay = 0.97> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_7 : Operation 104 [1/1] (0.00ns)   --->   "%trunc_ln21 = trunc i2 %col_stride_0 to i1" [yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:21]   --->   Operation 104 'trunc' 'trunc_ln21' <Predicate = (!and_ln52_10)> <Delay = 0.00>
+ST_7 : Operation 105 [1/1] (0.97ns)   --->   "%or_ln26 = or i1 %trunc_ln21, %trunc_ln17" [yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:26]   --->   Operation 105 'or' 'or_ln26' <Predicate = (!and_ln52_10)> <Delay = 0.97> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_7 : Operation 106 [1/1] (0.95ns)   --->   "%icmp_ln52_2 = icmp eq i2 %col_stride_0, 1" [yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:52]   --->   Operation 106 'icmp' 'icmp_ln52_2' <Predicate = true> <Delay = 0.95> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.13> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_7 : Operation 107 [1/1] (0.00ns)   --->   "br i1 %icmp_ln15, label %1, label %hls_label_0_begin" [yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:15]   --->   Operation 107 'br' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 108 [1/1] (1.73ns)   --->   "%row_idx = add i4 1, %row_idx_0" [yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:15]   --->   Operation 108 'add' 'row_idx' <Predicate = (!icmp_ln15)> <Delay = 1.73> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.87> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_7 : Operation 109 [1/1] (0.99ns)   --->   "%select_ln52 = select i1 %icmp_ln17, i2 0, i2 %row_stride_0" [yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:52]   --->   Operation 109 'select' 'select_ln52' <Predicate = (!icmp_ln15)> <Delay = 0.99> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.68> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_7 : Operation 110 [1/1] (1.30ns)   --->   "%icmp_ln52_3 = icmp eq i4 %row_idx, -4" [yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:52]   --->   Operation 110 'icmp' 'icmp_ln52_3' <Predicate = (!icmp_ln15 & icmp_ln17 & and_ln52_10)> <Delay = 1.30> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.13> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_7 : Operation 111 [1/1] (0.00ns) (grouped into LUT with out node and_ln52_11)   --->   "%select_ln52_1 = select i1 %icmp_ln17, i1 %icmp_ln52_3, i1 %icmp_ln52" [yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:52]   --->   Operation 111 'select' 'select_ln52_1' <Predicate = (!icmp_ln15 & and_ln52_10)> <Delay = 0.00> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.68> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_7 : Operation 112 [1/1] (0.00ns) (grouped into LUT with out node select_ln17_1)   --->   "%and_ln52_3 = and i1 %trunc_ln17, %xor_ln52" [yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:52]   --->   Operation 112 'and' 'and_ln52_3' <Predicate = (!icmp_ln15 & !and_ln52_10)> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_7 : Operation 113 [1/1] (0.00ns) (grouped into LUT with out node select_ln17_2)   --->   "%and_ln52_4 = and i1 %and_ln52, %xor_ln52" [yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:52]   --->   Operation 113 'and' 'and_ln52_4' <Predicate = (!icmp_ln15 & !and_ln52_10)> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_7 : Operation 114 [1/1] (1.30ns)   --->   "%icmp_ln52_5 = icmp eq i4 %col_assign, -4" [yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:52]   --->   Operation 114 'icmp' 'icmp_ln52_5' <Predicate = (!icmp_ln15)> <Delay = 1.30> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.13> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_7 : Operation 115 [1/1] (0.00ns) (grouped into LUT with out node select_ln52_3)   --->   "%and_ln52_5 = and i1 %icmp_ln52_5, %xor_ln52" [yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:52]   --->   Operation 115 'and' 'and_ln52_5' <Predicate = (!icmp_ln15)> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_7 : Operation 116 [1/1] (0.00ns) (grouped into LUT with out node select_ln52_5)   --->   "%and_ln52_6 = and i1 %or_ln26, %xor_ln52" [yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:52]   --->   Operation 116 'and' 'and_ln52_6' <Predicate = (!icmp_ln15 & !and_ln52_10)> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_7 : Operation 117 [1/1] (0.00ns) (grouped into LUT with out node select_ln21_2)   --->   "%and_ln52_7 = and i1 %icmp_ln52_2, %xor_ln52" [yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:52]   --->   Operation 117 'and' 'and_ln52_7' <Predicate = (!icmp_ln15)> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_7 : Operation 118 [1/1] (1.30ns)   --->   "%icmp_ln23 = icmp eq i4 %input_ch_idx_0, -8" [yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:23]   --->   Operation 118 'icmp' 'icmp_ln23' <Predicate = (!icmp_ln15)> <Delay = 1.30> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.13> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_7 : Operation 119 [1/1] (0.00ns) (grouped into LUT with out node and_ln52_13)   --->   "%and_ln52_8 = and i1 %icmp_ln23, %xor_ln52" [yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:52]   --->   Operation 119 'and' 'and_ln52_8' <Predicate = (!icmp_ln15)> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_7 : Operation 120 [1/1] (1.42ns)   --->   "%icmp_ln21 = icmp eq i6 %indvar_flatten, 16" [yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:21]   --->   Operation 120 'icmp' 'icmp_ln21' <Predicate = (!icmp_ln15)> <Delay = 1.42> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.13> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_7 : Operation 121 [1/1] (0.00ns) (grouped into LUT with out node and_ln17_3)   --->   "%and_ln52_9 = and i1 %icmp_ln21, %xor_ln52" [yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:52]   --->   Operation 121 'and' 'and_ln52_9' <Predicate = (!icmp_ln15)> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_7 : Operation 122 [1/1] (1.02ns)   --->   "%select_ln15 = select i1 %icmp_ln17, i4 %row_idx, i4 %row_idx_0" [yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:15]   --->   Operation 122 'select' 'select_ln15' <Predicate = (!icmp_ln15)> <Delay = 1.02> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.68> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_7 : Operation 123 [1/1] (1.56ns)   --->   "%row_stride = add i2 1, %select_ln52" [yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:17]   --->   Operation 123 'add' 'row_stride' <Predicate = (!icmp_ln15)> <Delay = 1.56> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.87> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_7 : Operation 124 [1/1] (1.02ns)   --->   "%select_ln17 = select i1 %or_ln17, i4 0, i4 %col_assign" [yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:17]   --->   Operation 124 'select' 'select_ln17' <Predicate = (!icmp_ln15)> <Delay = 1.02> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.68> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_7 : Operation 125 [1/1] (0.00ns)   --->   "%trunc_ln17_1 = trunc i2 %row_stride to i1" [yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:17]   --->   Operation 125 'trunc' 'trunc_ln17_1' <Predicate = (!icmp_ln15)> <Delay = 0.00>
+ST_7 : Operation 126 [1/1] (0.99ns) (out node of the LUT)   --->   "%select_ln17_1 = select i1 %and_ln52_10, i1 %trunc_ln17_1, i1 %and_ln52_3" [yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:17]   --->   Operation 126 'select' 'select_ln17_1' <Predicate = (!icmp_ln15)> <Delay = 0.99> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.68> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_7 : Operation 127 [1/1] (0.95ns)   --->   "%icmp_ln52_6 = icmp eq i2 %select_ln52, 0" [yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:52]   --->   Operation 127 'icmp' 'icmp_ln52_6' <Predicate = (!icmp_ln15 & and_ln52_10)> <Delay = 0.95> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.13> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_7 : Operation 128 [1/1] (0.99ns) (out node of the LUT)   --->   "%and_ln52_11 = and i1 %select_ln52_1, %icmp_ln52_6" [yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:52]   --->   Operation 128 'and' 'and_ln52_11' <Predicate = (!icmp_ln15 & and_ln52_10)> <Delay = 0.99> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_7 : Operation 129 [1/1] (0.99ns) (out node of the LUT)   --->   "%select_ln17_2 = select i1 %and_ln52_10, i1 %and_ln52_11, i1 %and_ln52_4" [yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:17]   --->   Operation 129 'select' 'select_ln17_2' <Predicate = (!icmp_ln15)> <Delay = 0.99> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.68> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_7 : Operation 130 [1/1] (0.00ns) (grouped into LUT with out node or_ln17_1)   --->   "%xor_ln17 = xor i1 %icmp_ln19, true" [yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:17]   --->   Operation 130 'xor' 'xor_ln17' <Predicate = (!icmp_ln15)> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_7 : Operation 131 [1/1] (0.97ns) (out node of the LUT)   --->   "%or_ln17_1 = or i1 %icmp_ln17, %xor_ln17" [yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:17]   --->   Operation 131 'or' 'or_ln17_1' <Predicate = (!icmp_ln15)> <Delay = 0.97> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_7 : Operation 132 [1/1] (0.00ns) (grouped into LUT with out node select_ln52_3)   --->   "%and_ln17 = and i1 %and_ln52_5, %or_ln17_1" [yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:17]   --->   Operation 132 'and' 'and_ln17' <Predicate = (!icmp_ln15)> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_7 : Operation 133 [1/1] (0.00ns) (grouped into LUT with out node select_ln52_5)   --->   "%select_ln17_3 = select i1 %and_ln52_10, i1 %trunc_ln17_1, i1 %and_ln52_6" [yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:17]   --->   Operation 133 'select' 'select_ln17_3' <Predicate = (!icmp_ln15)> <Delay = 0.00> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.68> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_7 : Operation 134 [1/1] (0.00ns) (grouped into LUT with out node select_ln21_2)   --->   "%and_ln17_1 = and i1 %and_ln52_7, %or_ln17_1" [yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:17]   --->   Operation 134 'and' 'and_ln17_1' <Predicate = (!icmp_ln15)> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_7 : Operation 135 [1/1] (0.00ns) (grouped into LUT with out node and_ln52_13)   --->   "%and_ln17_2 = and i1 %and_ln52_8, %or_ln17_1" [yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:17]   --->   Operation 135 'and' 'and_ln17_2' <Predicate = (!icmp_ln15)> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_7 : Operation 136 [1/1] (0.97ns) (out node of the LUT)   --->   "%and_ln17_3 = and i1 %and_ln52_9, %or_ln17_1" [yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:17]   --->   Operation 136 'and' 'and_ln17_3' <Predicate = (!icmp_ln15)> <Delay = 0.97> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_7 : Operation 137 [1/1] (0.99ns)   --->   "%select_ln17_4 = select i1 %and_ln52_10, i2 %row_stride, i2 %select_ln52" [yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:17]   --->   Operation 137 'select' 'select_ln17_4' <Predicate = (!icmp_ln15)> <Delay = 0.99> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.68> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_7 : Operation 138 [1/1] (1.73ns)   --->   "%col_idx = add i4 1, %select_ln17" [yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:19]   --->   Operation 138 'add' 'col_idx' <Predicate = (!icmp_ln15)> <Delay = 1.73> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.87> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_7 : Operation 139 [1/1] (0.00ns) (grouped into LUT with out node or_ln52_1)   --->   "%or_ln52 = or i1 %and_ln17_3, %and_ln52_10" [yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:52]   --->   Operation 139 'or' 'or_ln52' <Predicate = (!icmp_ln15)> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_7 : Operation 140 [1/1] (0.97ns) (out node of the LUT)   --->   "%or_ln52_1 = or i1 %or_ln52, %icmp_ln17" [yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:52]   --->   Operation 140 'or' 'or_ln52_1' <Predicate = (!icmp_ln15)> <Delay = 0.97> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_7 : Operation 141 [1/1] (0.99ns)   --->   "%select_ln52_2 = select i1 %or_ln52_1, i2 0, i2 %col_stride_0" [yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:52]   --->   Operation 141 'select' 'select_ln52_2' <Predicate = (!icmp_ln15)> <Delay = 0.99> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.68> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_7 : Operation 142 [1/1] (1.30ns)   --->   "%icmp_ln52_7 = icmp eq i4 %col_idx, -4" [yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:52]   --->   Operation 142 'icmp' 'icmp_ln52_7' <Predicate = (!icmp_ln15)> <Delay = 1.30> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.13> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_7 : Operation 143 [1/1] (0.99ns) (out node of the LUT)   --->   "%select_ln52_3 = select i1 %and_ln17_3, i1 %icmp_ln52_7, i1 %and_ln17" [yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:52]   --->   Operation 143 'select' 'select_ln52_3' <Predicate = (!icmp_ln15)> <Delay = 0.99> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.68> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_7 : Operation 144 [1/1] (1.02ns)   --->   "%select_ln52_4 = select i1 %and_ln17_3, i4 %col_idx, i4 %select_ln17" [yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:52]   --->   Operation 144 'select' 'select_ln52_4' <Predicate = (!icmp_ln15)> <Delay = 1.02> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.68> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_7 : Operation 145 [1/1] (0.99ns) (out node of the LUT)   --->   "%select_ln52_5 = select i1 %and_ln17_3, i1 %select_ln17_1, i1 %select_ln17_3" [yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:52]   --->   Operation 145 'select' 'select_ln52_5' <Predicate = (!icmp_ln15)> <Delay = 0.99> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.68> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_7 : Operation 146 [1/1] (0.97ns)   --->   "%xor_ln52_1 = xor i1 %and_ln17_3, true" [yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:52]   --->   Operation 146 'xor' 'xor_ln52_1' <Predicate = (!icmp_ln15)> <Delay = 0.97> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_7 : Operation 147 [1/1] (0.00ns) (grouped into LUT with out node select_ln21_2)   --->   "%and_ln52_12 = and i1 %and_ln17_1, %xor_ln52_1" [yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:52]   --->   Operation 147 'and' 'and_ln52_12' <Predicate = (!icmp_ln15)> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_7 : Operation 148 [1/1] (0.97ns) (out node of the LUT)   --->   "%and_ln52_13 = and i1 %and_ln17_2, %xor_ln52_1" [yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:52]   --->   Operation 148 'and' 'and_ln52_13' <Predicate = (!icmp_ln15)> <Delay = 0.97> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_7 : Operation 149 [1/1] (1.56ns)   --->   "%col_stride = add i2 1, %select_ln52_2" [yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:21]   --->   Operation 149 'add' 'col_stride' <Predicate = (!icmp_ln15)> <Delay = 1.56> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.87> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_7 : Operation 150 [1/1] (0.00ns) (grouped into LUT with out node select_ln21)   --->   "%or_ln21 = or i1 %and_ln52_13, %and_ln17_3" [yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:21]   --->   Operation 150 'or' 'or_ln21' <Predicate = (!icmp_ln15)> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_7 : Operation 151 [1/1] (0.00ns) (grouped into LUT with out node select_ln21)   --->   "%or_ln21_1 = or i1 %or_ln21, %or_ln17" [yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:21]   --->   Operation 151 'or' 'or_ln21_1' <Predicate = (!icmp_ln15)> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_7 : Operation 152 [1/1] (1.02ns) (out node of the LUT)   --->   "%select_ln21 = select i1 %or_ln21_1, i4 0, i4 %input_ch_idx_0" [yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:21]   --->   Operation 152 'select' 'select_ln21' <Predicate = (!icmp_ln15)> <Delay = 1.02> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.68> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_7 : Operation 153 [1/1] (0.00ns) (grouped into LUT with out node select_ln21_1)   --->   "%trunc_ln21_1 = trunc i2 %col_stride to i1" [yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:21]   --->   Operation 153 'trunc' 'trunc_ln21_1' <Predicate = (!icmp_ln15)> <Delay = 0.00>
+ST_7 : Operation 154 [1/1] (0.00ns) (grouped into LUT with out node select_ln21_1)   --->   "%or_ln26_1 = or i1 %trunc_ln21_1, %select_ln17_1" [yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:26]   --->   Operation 154 'or' 'or_ln26_1' <Predicate = (!icmp_ln15)> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_7 : Operation 155 [1/1] (0.99ns) (out node of the LUT)   --->   "%select_ln21_1 = select i1 %and_ln52_13, i1 %or_ln26_1, i1 %select_ln52_5" [yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:21]   --->   Operation 155 'select' 'select_ln21_1' <Predicate = (!icmp_ln15)> <Delay = 0.99> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.68> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_7 : Operation 156 [1/1] (0.95ns)   --->   "%icmp_ln52_8 = icmp eq i2 %select_ln52_2, 0" [yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:52]   --->   Operation 156 'icmp' 'icmp_ln52_8' <Predicate = (!icmp_ln15)> <Delay = 0.95> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.13> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_7 : Operation 157 [1/1] (0.99ns) (out node of the LUT)   --->   "%select_ln21_2 = select i1 %and_ln52_13, i1 %icmp_ln52_8, i1 %and_ln52_12" [yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:21]   --->   Operation 157 'select' 'select_ln21_2' <Predicate = (!icmp_ln15)> <Delay = 0.99> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.68> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_7 : Operation 158 [1/1] (0.99ns)   --->   "%select_ln21_3 = select i1 %and_ln52_13, i2 %col_stride, i2 %select_ln52_2" [yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:21]   --->   Operation 158 'select' 'select_ln21_3' <Predicate = (!icmp_ln15)> <Delay = 0.99> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.68> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_7 : Operation 159 [1/1] (0.00ns)   --->   "br i1 %select_ln21_1, label %getval.exit, label %insert_top.exit70" [yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:26]   --->   Operation 159 'br' <Predicate = (!icmp_ln15)> <Delay = 0.00>
+ST_7 : Operation 160 [1/1] (1.30ns)   --->   "%icmp_ln52_4 = icmp eq i4 %select_ln21, 7" [yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:52]   --->   Operation 160 'icmp' 'icmp_ln52_4' <Predicate = (!icmp_ln15)> <Delay = 1.30> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.13> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_7 : Operation 161 [1/1] (0.00ns) (grouped into LUT with out node curr_output_last_V)   --->   "%and_ln52_1 = and i1 %select_ln21_2, %icmp_ln52_4" [yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:52]   --->   Operation 161 'and' 'and_ln52_1' <Predicate = (!icmp_ln15)> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_7 : Operation 162 [1/1] (0.00ns) (grouped into LUT with out node curr_output_last_V)   --->   "%and_ln52_2 = and i1 %and_ln52_1, %select_ln52_3" [yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:52]   --->   Operation 162 'and' 'and_ln52_2' <Predicate = (!icmp_ln15)> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_7 : Operation 163 [1/1] (0.97ns) (out node of the LUT)   --->   "%curr_output_last_V = and i1 %and_ln52_2, %select_ln17_2" [yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:52]   --->   Operation 163 'and' 'curr_output_last_V' <Predicate = (!icmp_ln15)> <Delay = 0.97> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_7 : Operation 164 [1/1] (1.73ns)   --->   "%input_ch_idx = add i4 %select_ln21, 1" [yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:23]   --->   Operation 164 'add' 'input_ch_idx' <Predicate = (!icmp_ln15)> <Delay = 1.73> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.87> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_7 : Operation 165 [1/1] (1.82ns)   --->   "%add_ln21_1 = add i6 %indvar_flatten, 1" [yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:21]   --->   Operation 165 'add' 'add_ln21_1' <Predicate = (!icmp_ln15)> <Delay = 1.82> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.87> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_7 : Operation 166 [1/1] (1.18ns)   --->   "%select_ln21_4 = select i1 %or_ln52_1, i6 1, i6 %add_ln21_1" [yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:21]   --->   Operation 166 'select' 'select_ln21_4' <Predicate = (!icmp_ln15)> <Delay = 1.18> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.68> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+
+State 8 <SV = 7> <Delay = 9.63>
+ST_8 : Operation 167 [1/1] (0.00ns)   --->   "%empty_10 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 5408, i64 5408, i64 5408)"   --->   Operation 167 'speclooptripcount' 'empty_10' <Predicate = (!icmp_ln15)> <Delay = 0.00>
+ST_8 : Operation 168 [1/1] (0.00ns)   --->   "%zext_ln52 = zext i4 %select_ln52_4 to i8" [yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:52]   --->   Operation 168 'zext' 'zext_ln52' <Predicate = (!icmp_ln15)> <Delay = 0.00>
+ST_8 : Operation 169 [1/1] (0.00ns)   --->   "%tmp = call i32 (...)* @_ssdm_op_SpecRegionBegin([12 x i8]* @p_str5)" [yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:24]   --->   Operation 169 'specregionbegin' 'tmp' <Predicate = (!icmp_ln15)> <Delay = 0.00>
+ST_8 : Operation 170 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecPipeline(i32 -1, i32 1, i32 1, i32 0, [1 x i8]* @p_str1) nounwind" [yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:25]   --->   Operation 170 'specpipeline' <Predicate = (!icmp_ln15)> <Delay = 0.00>
+ST_8 : Operation 171 [1/1] (0.00ns)   --->   "%empty_8 = call { i64, i8, i8, i2, i1, i5, i6 } @_ssdm_op_Read.axis.volatile.i64P.i8P.i8P.i2P.i1P.i5P.i6P(i64* %inStream_V_data, i8* %inStream_V_keep_V, i8* %inStream_V_strb_V, i2* %inStream_V_user_V, i1* %inStream_V_last_V, i5* %inStream_V_id_V, i6* %inStream_V_dest_V)" [yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:29]   --->   Operation 171 'read' 'empty_8' <Predicate = (!icmp_ln15 & !select_ln21_1)> <Delay = 0.00> <Core = "AXI4Stream">   --->   Core 5 'AXI4Stream' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
+ST_8 : Operation 172 [1/1] (0.00ns)   --->   "%tmp_data = extractvalue { i64, i8, i8, i2, i1, i5, i6 } %empty_8, 0" [yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:29]   --->   Operation 172 'extractvalue' 'tmp_data' <Predicate = (!icmp_ln15 & !select_ln21_1)> <Delay = 0.00>
+ST_8 : Operation 173 [1/1] (0.00ns)   --->   "%tmp_keep_V_4 = extractvalue { i64, i8, i8, i2, i1, i5, i6 } %empty_8, 1" [yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:29]   --->   Operation 173 'extractvalue' 'tmp_keep_V_4' <Predicate = (!icmp_ln15 & !select_ln21_1)> <Delay = 0.00>
+ST_8 : Operation 174 [1/1] (0.00ns)   --->   "%tmp_strb_V_4 = extractvalue { i64, i8, i8, i2, i1, i5, i6 } %empty_8, 2" [yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:29]   --->   Operation 174 'extractvalue' 'tmp_strb_V_4' <Predicate = (!icmp_ln15 & !select_ln21_1)> <Delay = 0.00>
+ST_8 : Operation 175 [1/1] (0.00ns)   --->   "%tmp_user_V_4 = extractvalue { i64, i8, i8, i2, i1, i5, i6 } %empty_8, 3" [yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:29]   --->   Operation 175 'extractvalue' 'tmp_user_V_4' <Predicate = (!icmp_ln15 & !select_ln21_1)> <Delay = 0.00>
+ST_8 : Operation 176 [1/1] (0.00ns)   --->   "%tmp_id_V_4 = extractvalue { i64, i8, i8, i2, i1, i5, i6 } %empty_8, 5" [yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:29]   --->   Operation 176 'extractvalue' 'tmp_id_V_4' <Predicate = (!icmp_ln15 & !select_ln21_1)> <Delay = 0.00>
+ST_8 : Operation 177 [1/1] (0.00ns)   --->   "%tmp_dest_V_4 = extractvalue { i64, i8, i8, i2, i1, i5, i6 } %empty_8, 6" [yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:29]   --->   Operation 177 'extractvalue' 'tmp_dest_V_4' <Predicate = (!icmp_ln15 & !select_ln21_1)> <Delay = 0.00>
+ST_8 : Operation 178 [1/1] (0.00ns)   --->   "%curr_input_data_sub_s = trunc i64 %tmp_data to i16" [yolo_upsamp_fp_2019_64/src/yolo_stream.h:8->yolo_upsamp_fp_2019_64/src/yolo_stream.h:16->yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:29]   --->   Operation 178 'trunc' 'curr_input_data_sub_s' <Predicate = (!icmp_ln15 & !select_ln21_1)> <Delay = 0.00>
+ST_8 : Operation 179 [1/1] (0.00ns)   --->   "%curr_input_data_sub_1 = call i16 @_ssdm_op_PartSelect.i16.i64.i32.i32(i64 %tmp_data, i32 16, i32 31)" [yolo_upsamp_fp_2019_64/src/yolo_stream.h:8->yolo_upsamp_fp_2019_64/src/yolo_stream.h:16->yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:29]   --->   Operation 179 'partselect' 'curr_input_data_sub_1' <Predicate = (!icmp_ln15 & !select_ln21_1)> <Delay = 0.00>
+ST_8 : Operation 180 [1/1] (0.00ns)   --->   "%curr_input_data_sub_2 = call i16 @_ssdm_op_PartSelect.i16.i64.i32.i32(i64 %tmp_data, i32 32, i32 47)" [yolo_upsamp_fp_2019_64/src/yolo_stream.h:8->yolo_upsamp_fp_2019_64/src/yolo_stream.h:16->yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:29]   --->   Operation 180 'partselect' 'curr_input_data_sub_2' <Predicate = (!icmp_ln15 & !select_ln21_1)> <Delay = 0.00>
+ST_8 : Operation 181 [1/1] (0.00ns)   --->   "%curr_input_data_sub_3 = call i16 @_ssdm_op_PartSelect.i16.i64.i32.i32(i64 %tmp_data, i32 48, i32 63)" [yolo_upsamp_fp_2019_64/src/yolo_stream.h:8->yolo_upsamp_fp_2019_64/src/yolo_stream.h:16->yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:29]   --->   Operation 181 'partselect' 'curr_input_data_sub_3' <Predicate = (!icmp_ln15 & !select_ln21_1)> <Delay = 0.00>
+ST_8 : Operation 182 [1/1] (0.00ns)   --->   "%zext_ln203_1 = zext i4 %select_ln21 to i8" [/opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot/hls/hls_video_mem.h:765->/opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot/hls/hls_video_mem.h:883->yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:30]   --->   Operation 182 'zext' 'zext_ln203_1' <Predicate = (!icmp_ln15 & !select_ln21_1)> <Delay = 0.00>
+ST_8 : Operation 183 [1/1] (3.36ns) (grouped into DSP with root node add_ln203_1)   --->   "%mul_ln203_1 = mul i8 13, %zext_ln203_1" [/opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot/hls/hls_video_mem.h:765->/opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot/hls/hls_video_mem.h:883->yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:30]   --->   Operation 183 'mul' 'mul_ln203_1' <Predicate = (!icmp_ln15 & !select_ln21_1)> <Delay = 3.36> <Core = "DSP48">   --->   Core 88 'DSP48' <Latency = 0> <II = 1> <Delay = 6.38> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_8 : Operation 184 [1/1] (3.02ns) (root node of the DSP)   --->   "%add_ln203_1 = add i8 %zext_ln52, %mul_ln203_1" [/opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot/hls/hls_video_mem.h:765->/opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot/hls/hls_video_mem.h:883->yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:30]   --->   Operation 184 'add' 'add_ln203_1' <Predicate = (!icmp_ln15 & !select_ln21_1)> <Delay = 3.02> <Core = "DSP48">   --->   Core 88 'DSP48' <Latency = 0> <II = 1> <Delay = 6.38> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_8 : Operation 185 [1/1] (0.00ns)   --->   "%sext_ln203_1 = sext i8 %add_ln203_1 to i64" [/opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot/hls/hls_video_mem.h:765->/opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot/hls/hls_video_mem.h:883->yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:30]   --->   Operation 185 'sext' 'sext_ln203_1' <Predicate = (!icmp_ln15 & !select_ln21_1)> <Delay = 0.00>
+ST_8 : Operation 186 [1/1] (0.00ns)   --->   "%line_buff_group_0_va_1 = getelementptr [104 x i16]* %line_buff_group_0_va, i64 0, i64 %sext_ln203_1" [/opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot/hls/hls_video_mem.h:765->/opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot/hls/hls_video_mem.h:883->yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:30]   --->   Operation 186 'getelementptr' 'line_buff_group_0_va_1' <Predicate = (!icmp_ln15 & !select_ln21_1)> <Delay = 0.00>
+ST_8 : Operation 187 [1/1] (0.00ns)   --->   "%line_buff_group_1_va_1 = getelementptr [104 x i16]* %line_buff_group_1_va, i64 0, i64 %sext_ln203_1" [/opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot/hls/hls_video_mem.h:765->/opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot/hls/hls_video_mem.h:883->yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:31]   --->   Operation 187 'getelementptr' 'line_buff_group_1_va_1' <Predicate = (!icmp_ln15 & !select_ln21_1)> <Delay = 0.00>
+ST_8 : Operation 188 [1/1] (0.00ns)   --->   "%line_buff_group_2_va_1 = getelementptr [104 x i16]* %line_buff_group_2_va, i64 0, i64 %sext_ln203_1" [/opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot/hls/hls_video_mem.h:765->/opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot/hls/hls_video_mem.h:883->yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:32]   --->   Operation 188 'getelementptr' 'line_buff_group_2_va_1' <Predicate = (!icmp_ln15 & !select_ln21_1)> <Delay = 0.00>
+ST_8 : Operation 189 [1/1] (0.00ns)   --->   "%line_buff_group_3_va_1 = getelementptr [104 x i16]* %line_buff_group_3_va, i64 0, i64 %sext_ln203_1" [/opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot/hls/hls_video_mem.h:765->/opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot/hls/hls_video_mem.h:883->yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:33]   --->   Operation 189 'getelementptr' 'line_buff_group_3_va_1' <Predicate = (!icmp_ln15 & !select_ln21_1)> <Delay = 0.00>
+ST_8 : Operation 190 [1/1] (3.25ns)   --->   "store i16 %curr_input_data_sub_s, i16* %line_buff_group_0_va_1, align 2" [/opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot/hls/hls_video_mem.h:765->/opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot/hls/hls_video_mem.h:883->yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:30]   --->   Operation 190 'store' <Predicate = (!icmp_ln15 & !select_ln21_1)> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 104> <RAM>
+ST_8 : Operation 191 [1/1] (3.25ns)   --->   "store i16 %curr_input_data_sub_1, i16* %line_buff_group_1_va_1, align 2" [/opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot/hls/hls_video_mem.h:765->/opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot/hls/hls_video_mem.h:883->yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:31]   --->   Operation 191 'store' <Predicate = (!icmp_ln15 & !select_ln21_1)> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 104> <RAM>
+ST_8 : Operation 192 [1/1] (3.25ns)   --->   "store i16 %curr_input_data_sub_2, i16* %line_buff_group_2_va_1, align 2" [/opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot/hls/hls_video_mem.h:765->/opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot/hls/hls_video_mem.h:883->yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:32]   --->   Operation 192 'store' <Predicate = (!icmp_ln15 & !select_ln21_1)> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 104> <RAM>
+ST_8 : Operation 193 [1/1] (3.25ns)   --->   "store i16 %curr_input_data_sub_3, i16* %line_buff_group_3_va_1, align 2" [/opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot/hls/hls_video_mem.h:765->/opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot/hls/hls_video_mem.h:883->yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:33]   --->   Operation 193 'store' <Predicate = (!icmp_ln15 & !select_ln21_1)> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 104> <RAM>
+ST_8 : Operation 194 [1/1] (0.00ns)   --->   "store i5 %tmp_id_V_4, i5* %tmp_id_V" [yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:41]   --->   Operation 194 'store' <Predicate = (!icmp_ln15 & !select_ln21_1)> <Delay = 0.00>
+ST_8 : Operation 195 [1/1] (0.00ns)   --->   "store i2 %tmp_user_V_4, i2* %tmp_user_V" [yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:41]   --->   Operation 195 'store' <Predicate = (!icmp_ln15 & !select_ln21_1)> <Delay = 0.00>
+ST_8 : Operation 196 [1/1] (0.00ns)   --->   "store i8 %tmp_strb_V_4, i8* %tmp_strb_V" [yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:41]   --->   Operation 196 'store' <Predicate = (!icmp_ln15 & !select_ln21_1)> <Delay = 0.00>
+ST_8 : Operation 197 [1/1] (0.00ns)   --->   "store i8 %tmp_keep_V_4, i8* %tmp_keep_V" [yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:41]   --->   Operation 197 'store' <Predicate = (!icmp_ln15 & !select_ln21_1)> <Delay = 0.00>
+ST_8 : Operation 198 [1/1] (0.00ns)   --->   "store i6 %tmp_dest_V_4, i6* %tmp_dest_V" [yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:41]   --->   Operation 198 'store' <Predicate = (!icmp_ln15 & !select_ln21_1)> <Delay = 0.00>
+ST_8 : Operation 199 [1/1] (1.76ns)   --->   "br label %hls_label_0_end" [yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:41]   --->   Operation 199 'br' <Predicate = (!icmp_ln15 & !select_ln21_1)> <Delay = 1.76>
+ST_8 : Operation 200 [1/1] (0.00ns)   --->   "%zext_ln203 = zext i4 %select_ln21 to i8" [yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:44]   --->   Operation 200 'zext' 'zext_ln203' <Predicate = (!icmp_ln15 & select_ln21_1)> <Delay = 0.00>
+ST_8 : Operation 201 [1/1] (3.36ns) (grouped into DSP with root node add_ln203)   --->   "%mul_ln203 = mul i8 %zext_ln203, 13" [yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:44]   --->   Operation 201 'mul' 'mul_ln203' <Predicate = (!icmp_ln15 & select_ln21_1)> <Delay = 3.36> <Core = "DSP48">   --->   Core 88 'DSP48' <Latency = 0> <II = 1> <Delay = 6.38> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_8 : Operation 202 [1/1] (3.02ns) (root node of the DSP)   --->   "%add_ln203 = add i8 %mul_ln203, %zext_ln52" [yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:44]   --->   Operation 202 'add' 'add_ln203' <Predicate = (!icmp_ln15 & select_ln21_1)> <Delay = 3.02> <Core = "DSP48">   --->   Core 88 'DSP48' <Latency = 0> <II = 1> <Delay = 6.38> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_8 : Operation 203 [1/1] (0.00ns)   --->   "%sext_ln203 = sext i8 %add_ln203 to i64" [yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:44]   --->   Operation 203 'sext' 'sext_ln203' <Predicate = (!icmp_ln15 & select_ln21_1)> <Delay = 0.00>
+ST_8 : Operation 204 [1/1] (0.00ns)   --->   "%line_buff_group_0_va_2 = getelementptr [104 x i16]* %line_buff_group_0_va, i64 0, i64 %sext_ln203" [yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:44]   --->   Operation 204 'getelementptr' 'line_buff_group_0_va_2' <Predicate = (!icmp_ln15 & select_ln21_1)> <Delay = 0.00>
+ST_8 : Operation 205 [1/1] (0.00ns)   --->   "%line_buff_group_1_va_2 = getelementptr [104 x i16]* %line_buff_group_1_va, i64 0, i64 %sext_ln203" [yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:45]   --->   Operation 205 'getelementptr' 'line_buff_group_1_va_2' <Predicate = (!icmp_ln15 & select_ln21_1)> <Delay = 0.00>
+ST_8 : Operation 206 [1/1] (0.00ns)   --->   "%line_buff_group_2_va_2 = getelementptr [104 x i16]* %line_buff_group_2_va, i64 0, i64 %sext_ln203" [yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:46]   --->   Operation 206 'getelementptr' 'line_buff_group_2_va_2' <Predicate = (!icmp_ln15 & select_ln21_1)> <Delay = 0.00>
+ST_8 : Operation 207 [1/1] (0.00ns)   --->   "%line_buff_group_3_va_2 = getelementptr [104 x i16]* %line_buff_group_3_va, i64 0, i64 %sext_ln203" [yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:47]   --->   Operation 207 'getelementptr' 'line_buff_group_3_va_2' <Predicate = (!icmp_ln15 & select_ln21_1)> <Delay = 0.00>
+ST_8 : Operation 208 [2/2] (3.25ns)   --->   "%curr_output_data_sub = load i16* %line_buff_group_0_va_2, align 2" [yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:44]   --->   Operation 208 'load' 'curr_output_data_sub' <Predicate = (!icmp_ln15 & select_ln21_1)> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 104> <RAM>
+ST_8 : Operation 209 [2/2] (3.25ns)   --->   "%curr_output_data_sub_1 = load i16* %line_buff_group_1_va_2, align 2" [yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:45]   --->   Operation 209 'load' 'curr_output_data_sub_1' <Predicate = (!icmp_ln15 & select_ln21_1)> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 104> <RAM>
+ST_8 : Operation 210 [2/2] (3.25ns)   --->   "%curr_output_data_sub_2 = load i16* %line_buff_group_2_va_2, align 2" [yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:46]   --->   Operation 210 'load' 'curr_output_data_sub_2' <Predicate = (!icmp_ln15 & select_ln21_1)> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 104> <RAM>
+ST_8 : Operation 211 [2/2] (3.25ns)   --->   "%line_buff_group_3_va_3 = load i16* %line_buff_group_3_va_2, align 2" [yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:47]   --->   Operation 211 'load' 'line_buff_group_3_va_3' <Predicate = (!icmp_ln15 & select_ln21_1)> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 104> <RAM>
+
+State 9 <SV = 8> <Delay = 5.02>
+ST_9 : Operation 212 [1/2] (3.25ns)   --->   "%curr_output_data_sub = load i16* %line_buff_group_0_va_2, align 2" [yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:44]   --->   Operation 212 'load' 'curr_output_data_sub' <Predicate = (!icmp_ln15 & select_ln21_1)> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 104> <RAM>
+ST_9 : Operation 213 [1/2] (3.25ns)   --->   "%curr_output_data_sub_1 = load i16* %line_buff_group_1_va_2, align 2" [yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:45]   --->   Operation 213 'load' 'curr_output_data_sub_1' <Predicate = (!icmp_ln15 & select_ln21_1)> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 104> <RAM>
+ST_9 : Operation 214 [1/2] (3.25ns)   --->   "%curr_output_data_sub_2 = load i16* %line_buff_group_2_va_2, align 2" [yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:46]   --->   Operation 214 'load' 'curr_output_data_sub_2' <Predicate = (!icmp_ln15 & select_ln21_1)> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 104> <RAM>
+ST_9 : Operation 215 [1/2] (3.25ns)   --->   "%line_buff_group_3_va_3 = load i16* %line_buff_group_3_va_2, align 2" [yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:47]   --->   Operation 215 'load' 'line_buff_group_3_va_3' <Predicate = (!icmp_ln15 & select_ln21_1)> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 104> <RAM>
+ST_9 : Operation 216 [1/1] (1.76ns)   --->   "br label %hls_label_0_end"   --->   Operation 216 'br' <Predicate = (!icmp_ln15 & select_ln21_1)> <Delay = 1.76>
+ST_9 : Operation 217 [1/1] (0.00ns)   --->   "%tmp_data_sub_data_0_s = phi i16 [ %curr_input_data_sub_s, %insert_top.exit70 ], [ %curr_output_data_sub, %getval.exit ]"   --->   Operation 217 'phi' 'tmp_data_sub_data_0_s' <Predicate = (!icmp_ln15)> <Delay = 0.00>
+ST_9 : Operation 218 [1/1] (0.00ns)   --->   "%tmp_data_sub_data_1_s = phi i16 [ %curr_input_data_sub_1, %insert_top.exit70 ], [ %curr_output_data_sub_1, %getval.exit ]"   --->   Operation 218 'phi' 'tmp_data_sub_data_1_s' <Predicate = (!icmp_ln15)> <Delay = 0.00>
+ST_9 : Operation 219 [1/1] (0.00ns)   --->   "%tmp_data_sub_data_2_s = phi i16 [ %curr_input_data_sub_2, %insert_top.exit70 ], [ %curr_output_data_sub_2, %getval.exit ]"   --->   Operation 219 'phi' 'tmp_data_sub_data_2_s' <Predicate = (!icmp_ln15)> <Delay = 0.00>
+ST_9 : Operation 220 [1/1] (0.00ns)   --->   "%curr_output_data_sub_3 = phi i16 [ %curr_input_data_sub_3, %insert_top.exit70 ], [ %line_buff_group_3_va_3, %getval.exit ]"   --->   Operation 220 'phi' 'curr_output_data_sub_3' <Predicate = (!icmp_ln15)> <Delay = 0.00>
+ST_9 : Operation 221 [1/1] (0.00ns)   --->   "%curr_output_dest_V = load i6* %tmp_dest_V" [yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:59]   --->   Operation 221 'load' 'curr_output_dest_V' <Predicate = (!icmp_ln15)> <Delay = 0.00>
+ST_9 : Operation 222 [1/1] (0.00ns)   --->   "%curr_output_keep_V = load i8* %tmp_keep_V" [yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:59]   --->   Operation 222 'load' 'curr_output_keep_V' <Predicate = (!icmp_ln15)> <Delay = 0.00>
+ST_9 : Operation 223 [1/1] (0.00ns)   --->   "%curr_output_strb_V = load i8* %tmp_strb_V" [yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:59]   --->   Operation 223 'load' 'curr_output_strb_V' <Predicate = (!icmp_ln15)> <Delay = 0.00>
+ST_9 : Operation 224 [1/1] (0.00ns)   --->   "%curr_output_user_V = load i2* %tmp_user_V" [yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:59]   --->   Operation 224 'load' 'curr_output_user_V' <Predicate = (!icmp_ln15)> <Delay = 0.00>
+ST_9 : Operation 225 [1/1] (0.00ns)   --->   "%curr_output_id_V = load i5* %tmp_id_V" [yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:59]   --->   Operation 225 'load' 'curr_output_id_V' <Predicate = (!icmp_ln15)> <Delay = 0.00>
+ST_9 : Operation 226 [1/1] (0.00ns)   --->   "%tmp_data_1 = call i64 @_ssdm_op_BitConcatenate.i64.i16.i16.i16.i16(i16 %curr_output_data_sub_3, i16 %tmp_data_sub_data_2_s, i16 %tmp_data_sub_data_1_s, i16 %tmp_data_sub_data_0_s)" [yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:59]   --->   Operation 226 'bitconcatenate' 'tmp_data_1' <Predicate = (!icmp_ln15)> <Delay = 0.00>
+ST_9 : Operation 227 [2/2] (0.00ns)   --->   "call void @_ssdm_op_Write.axis.volatile.i64P.i8P.i8P.i2P.i1P.i5P.i6P(i64* %outStream_V_data, i8* %outStream_V_keep_V, i8* %outStream_V_strb_V, i2* %outStream_V_user_V, i1* %outStream_V_last_V, i5* %outStream_V_id_V, i6* %outStream_V_dest_V, i64 %tmp_data_1, i8 %curr_output_keep_V, i8 %curr_output_strb_V, i2 %curr_output_user_V, i1 %curr_output_last_V, i5 %curr_output_id_V, i6 %curr_output_dest_V)" [yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:59]   --->   Operation 227 'write' <Predicate = (!icmp_ln15)> <Delay = 0.00> <Core = "AXI4Stream">   --->   Core 5 'AXI4Stream' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
+
+State 10 <SV = 9> <Delay = 0.00>
+ST_10 : Operation 228 [1/2] (0.00ns)   --->   "call void @_ssdm_op_Write.axis.volatile.i64P.i8P.i8P.i2P.i1P.i5P.i6P(i64* %outStream_V_data, i8* %outStream_V_keep_V, i8* %outStream_V_strb_V, i2* %outStream_V_user_V, i1* %outStream_V_last_V, i5* %outStream_V_id_V, i6* %outStream_V_dest_V, i64 %tmp_data_1, i8 %curr_output_keep_V, i8 %curr_output_strb_V, i2 %curr_output_user_V, i1 %curr_output_last_V, i5 %curr_output_id_V, i6 %curr_output_dest_V)" [yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:59]   --->   Operation 228 'write' <Predicate = (!icmp_ln15)> <Delay = 0.00> <Core = "AXI4Stream">   --->   Core 5 'AXI4Stream' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
+ST_10 : Operation 229 [1/1] (0.00ns)   --->   "%empty_9 = call i32 (...)* @_ssdm_op_SpecRegionEnd([12 x i8]* @p_str5, i32 %tmp)" [yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:61]   --->   Operation 229 'specregionend' 'empty_9' <Predicate = (!icmp_ln15)> <Delay = 0.00>
+ST_10 : Operation 230 [1/1] (0.00ns)   --->   "br label %.preheader" [yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:23]   --->   Operation 230 'br' <Predicate = (!icmp_ln15)> <Delay = 0.00>
+
+State 11 <SV = 7> <Delay = 0.00>
+ST_11 : Operation 231 [1/1] (0.00ns)   --->   "ret void" [yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:67]   --->   Operation 231 'ret' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10ns, clock uncertainty: 2ns.
+
+ <State 1>: 1.77ns
+The critical path consists of the following:
+	multiplexor before 'phi' operation ('phi_ln9', yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:9) with incoming values : ('add_ln9', yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:9) [39]  (1.77 ns)
+
+ <State 2>: 2.11ns
+The critical path consists of the following:
+	'icmp' operation ('icmp_ln9', yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:9) [45]  (1.13 ns)
+	blocking operation 0.978 ns on control path)
+
+ <State 3>: 2.11ns
+The critical path consists of the following:
+	'icmp' operation ('icmp_ln10', yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:10) [57]  (1.13 ns)
+	blocking operation 0.978 ns on control path)
+
+ <State 4>: 2.11ns
+The critical path consists of the following:
+	'icmp' operation ('icmp_ln11', yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:11) [69]  (1.13 ns)
+	blocking operation 0.978 ns on control path)
+
+ <State 5>: 2.11ns
+The critical path consists of the following:
+	'icmp' operation ('icmp_ln12', yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:12) [81]  (1.13 ns)
+	blocking operation 0.978 ns on control path)
+
+ <State 6>: 5.67ns
+The critical path consists of the following:
+	'phi' operation ('indvar_flatten72', yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:17) with incoming values : ('select_ln17_5', yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:17) [94]  (0 ns)
+	'icmp' operation ('icmp_ln17', yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:17) [114]  (1.77 ns)
+	'xor' operation ('xor_ln52', yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:52) [118]  (0.978 ns)
+	'and' operation ('and_ln52_10', yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:52) [130]  (0.978 ns)
+	'or' operation ('or_ln17', yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:17) [133]  (0.978 ns)
+	'select' operation ('select_ln19', yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:19) [238]  (0.968 ns)
+
+ <State 7>: 7.66ns
+The critical path consists of the following:
+	'phi' operation ('indvar_flatten', yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:21) with incoming values : ('select_ln21_4', yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:21) [98]  (0 ns)
+	'icmp' operation ('icmp_ln21', yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:21) [127]  (1.43 ns)
+	'and' operation ('and_ln52_9', yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:52) [128]  (0 ns)
+	'and' operation ('and_ln17_3', yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:17) [146]  (0.978 ns)
+	'xor' operation ('xor_ln52_1', yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:52) [157]  (0.978 ns)
+	'and' operation ('and_ln52_13', yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:52) [159]  (0.978 ns)
+	'or' operation ('or_ln21', yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:21) [161]  (0 ns)
+	'or' operation ('or_ln21_1', yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:21) [162]  (0 ns)
+	'select' operation ('select_ln21', yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:21) [163]  (1.02 ns)
+	'icmp' operation ('icmp_ln52_4', yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:52) [227]  (1.3 ns)
+	'and' operation ('and_ln52_1', yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:52) [228]  (0 ns)
+	'and' operation ('and_ln52_2', yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:52) [229]  (0 ns)
+	'and' operation ('curr_output.last.V', yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:52) [230]  (0.978 ns)
+
+ <State 8>: 9.63ns
+The critical path consists of the following:
+	'mul' operation of DSP[187] ('mul_ln203_1', /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot/hls/hls_video_mem.h:765->/opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot/hls/hls_video_mem.h:883->yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:30) [186]  (3.36 ns)
+	'add' operation of DSP[187] ('add_ln203_1', /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot/hls/hls_video_mem.h:765->/opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot/hls/hls_video_mem.h:883->yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:30) [187]  (3.02 ns)
+	'getelementptr' operation ('line_buff_group_0_va_1', /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot/hls/hls_video_mem.h:765->/opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot/hls/hls_video_mem.h:883->yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:30) [189]  (0 ns)
+	'store' operation ('store_ln765', /opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot/hls/hls_video_mem.h:765->/opt/Xilinx_2019_1/Vivado/2019.1/common/technology/autopilot/hls/hls_video_mem.h:883->yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:30) of variable 'curr_input.data.sub_data_0.V', yolo_upsamp_fp_2019_64/src/yolo_stream.h:8->yolo_upsamp_fp_2019_64/src/yolo_stream.h:16->yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:29 on array 'line_buff_group_0.val[0].V', yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:9 [193]  (3.25 ns)
+
+ <State 9>: 5.02ns
+The critical path consists of the following:
+	'load' operation ('curr_output.data.sub_data_0.V', yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:44) on array 'line_buff_group_0.val[0].V', yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:9 [212]  (3.25 ns)
+	multiplexor before 'phi' operation ('curr_output.data.sub_data_0.V') with incoming values : ('curr_input.data.sub_data_0.V', yolo_upsamp_fp_2019_64/src/yolo_stream.h:8->yolo_upsamp_fp_2019_64/src/yolo_stream.h:16->yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:29) ('curr_output.data.sub_data_0.V', yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:44) [218]  (1.77 ns)
+	'phi' operation ('curr_output.data.sub_data_0.V') with incoming values : ('curr_input.data.sub_data_0.V', yolo_upsamp_fp_2019_64/src/yolo_stream.h:8->yolo_upsamp_fp_2019_64/src/yolo_stream.h:16->yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:29) ('curr_output.data.sub_data_0.V', yolo_upsamp_fp_2019_64/src/yolo_upsamp.cpp:44) [218]  (0 ns)
+
+ <State 10>: 0ns
+The critical path consists of the following:
+
+ <State 11>: 0ns
+The critical path consists of the following:
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+	State 7
+	State 8
+	State 9
+	State 10
+	State 11
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

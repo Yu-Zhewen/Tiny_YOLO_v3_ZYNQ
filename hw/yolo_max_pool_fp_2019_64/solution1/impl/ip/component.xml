@@ -938,7 +938,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>07c8694f</spirit:value>
+            <spirit:value>2259c0e7</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -954,7 +954,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>7f9e26bf</spirit:value>
+            <spirit:value>8353d493</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -970,7 +970,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>e1317620</spirit:value>
+            <spirit:value>4948c265</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -986,7 +986,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>65a92772</spirit:value>
+            <spirit:value>3c9f4fc6</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1699,7 +1699,7 @@
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/verilog/yolo_max_pool_top_mul_mul_17ns_9ns_26_1_1.v</spirit:name>
+        <spirit:name>hdl/verilog/yolo_max_pool_top_mul_mul_9ns_17ns_26_1_1.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
@@ -1725,7 +1725,7 @@
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/verilog/yolo_max_pool_top_mul_mul_17ns_9ns_26_1_1.v</spirit:name>
+        <spirit:name>hdl/verilog/yolo_max_pool_top_mul_mul_9ns_17ns_26_1_1.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
@@ -1755,13 +1755,13 @@
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/vhdl/yolo_max_pool_top_mul_mul_17ns_9ns_26_1_1.vhd</spirit:name>
+        <spirit:name>hdl/vhdl/yolo_max_pool_top_mul_mul_9ns_17ns_26_1_1.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
         <spirit:name>hdl/vhdl/yolo_max_pool_top.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:userFileType>CHECKSUM_66c63b56</spirit:userFileType>
+        <spirit:userFileType>CHECKSUM_588cccd3</spirit:userFileType>
       </spirit:file>
     </spirit:fileSet>
     <spirit:fileSet>
@@ -1782,7 +1782,7 @@
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/vhdl/yolo_max_pool_top_mul_mul_17ns_9ns_26_1_1.vhd</spirit:name>
+        <spirit:name>hdl/vhdl/yolo_max_pool_top_mul_mul_9ns_17ns_26_1_1.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
@@ -1903,14 +1903,14 @@
       </xilinx:taxonomies>
       <xilinx:displayName>Yolo_max_pool_top</xilinx:displayName>
       <xilinx:definitionSource>HLS</xilinx:definitionSource>
-      <xilinx:coreRevision>1907152032</xilinx:coreRevision>
-      <xilinx:coreCreationDateTime>2019-07-15T19:32:37Z</xilinx:coreCreationDateTime>
+      <xilinx:coreRevision>1907191557</xilinx:coreRevision>
+      <xilinx:coreCreationDateTime>2019-07-19T14:57:51Z</xilinx:coreCreationDateTime>
     </xilinx:coreExtensions>
     <xilinx:packagingInfo>
       <xilinx:xilinxVersion>2019.1</xilinx:xilinxVersion>
       <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="8dfcf37e"/>
       <xilinx:checksum xilinx:scope="memoryMaps" xilinx:value="9b902c0a"/>
-      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="7bab06ba"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="d72d359c"/>
       <xilinx:checksum xilinx:scope="ports" xilinx:value="c6fd10d9"/>
       <xilinx:checksum xilinx:scope="hdlParameters" xilinx:value="e596756a"/>
       <xilinx:checksum xilinx:scope="parameters" xilinx:value="09db4138"/>

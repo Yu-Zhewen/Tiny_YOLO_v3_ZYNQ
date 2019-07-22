@@ -53,14 +53,14 @@ set C_modelArgList {
 	{ outStream_V_last_V int 1 regular {axi_s 1 volatile  { outStream Last } }  }
 	{ outStream_V_id_V int 5 regular {axi_s 1 volatile  { outStream ID } }  }
 	{ outStream_V_dest_V int 6 regular {axi_s 1 volatile  { outStream Dest } }  }
-	{ input_ch_idx_V int 4 regular  }
+	{ input_ch_idx int 4 regular  }
 	{ curr_input_keep_V int 8 regular  }
 	{ curr_input_strb_V int 8 regular  }
 	{ curr_input_user_V int 2 regular  }
 	{ curr_input_id_V int 5 regular  }
 	{ curr_input_dest_V int 6 regular  }
 	{ last_V int 1 regular  }
-	{ fold_output_ch_V int 4 regular  }
+	{ fold_output_ch int 4 regular  }
 }
 set C_modelArgMapList {[ 
 	{ "Name" : "out_stream_group_0_V_V", "interface" : "fifo", "bitwidth" : 16, "direction" : "READONLY"} , 
@@ -102,14 +102,14 @@ set C_modelArgMapList {[
  	{ "Name" : "outStream_V_last_V", "interface" : "axis", "bitwidth" : 1, "direction" : "WRITEONLY"} , 
  	{ "Name" : "outStream_V_id_V", "interface" : "axis", "bitwidth" : 5, "direction" : "WRITEONLY"} , 
  	{ "Name" : "outStream_V_dest_V", "interface" : "axis", "bitwidth" : 6, "direction" : "WRITEONLY"} , 
- 	{ "Name" : "input_ch_idx_V", "interface" : "wire", "bitwidth" : 4, "direction" : "READONLY"} , 
+ 	{ "Name" : "input_ch_idx", "interface" : "wire", "bitwidth" : 4, "direction" : "READONLY"} , 
  	{ "Name" : "curr_input_keep_V", "interface" : "wire", "bitwidth" : 8, "direction" : "READONLY"} , 
  	{ "Name" : "curr_input_strb_V", "interface" : "wire", "bitwidth" : 8, "direction" : "READONLY"} , 
  	{ "Name" : "curr_input_user_V", "interface" : "wire", "bitwidth" : 2, "direction" : "READONLY"} , 
  	{ "Name" : "curr_input_id_V", "interface" : "wire", "bitwidth" : 5, "direction" : "READONLY"} , 
  	{ "Name" : "curr_input_dest_V", "interface" : "wire", "bitwidth" : 6, "direction" : "READONLY"} , 
  	{ "Name" : "last_V", "interface" : "wire", "bitwidth" : 1, "direction" : "READONLY"} , 
- 	{ "Name" : "fold_output_ch_V", "interface" : "wire", "bitwidth" : 4, "direction" : "READONLY"} ]}
+ 	{ "Name" : "fold_output_ch", "interface" : "wire", "bitwidth" : 4, "direction" : "READONLY"} ]}
 # RTL Port declarations: 
 set portNum 153
 set portList { 
@@ -225,14 +225,14 @@ set portList {
 	{ outStream_TLAST sc_out sc_lv 1 signal 36 } 
 	{ outStream_TID sc_out sc_lv 5 signal 37 } 
 	{ outStream_TDEST sc_out sc_lv 6 signal 38 } 
-	{ input_ch_idx_V sc_in sc_lv 4 signal 39 } 
+	{ input_ch_idx sc_in sc_lv 4 signal 39 } 
 	{ curr_input_keep_V sc_in sc_lv 8 signal 40 } 
 	{ curr_input_strb_V sc_in sc_lv 8 signal 41 } 
 	{ curr_input_user_V sc_in sc_lv 2 signal 42 } 
 	{ curr_input_id_V sc_in sc_lv 5 signal 43 } 
 	{ curr_input_dest_V sc_in sc_lv 6 signal 44 } 
 	{ last_V sc_in sc_lv 1 signal 45 } 
-	{ fold_output_ch_V sc_in sc_lv 4 signal 46 } 
+	{ fold_output_ch sc_in sc_lv 4 signal 46 } 
 	{ out_stream_group_0_V_V_blk_n sc_out sc_logic 1 signal -1 } 
 	{ out_stream_group_1_V_V_blk_n sc_out sc_logic 1 signal -1 } 
 	{ out_stream_group_2_V_V_blk_n sc_out sc_logic 1 signal -1 } 
@@ -380,14 +380,14 @@ set NewPortList {[
  	{ "name": "outStream_TLAST", "direction": "out", "datatype": "sc_lv", "bitwidth":1, "type": "signal", "bundle":{"name": "outStream_V_last_V", "role": "default" }} , 
  	{ "name": "outStream_TID", "direction": "out", "datatype": "sc_lv", "bitwidth":5, "type": "signal", "bundle":{"name": "outStream_V_id_V", "role": "default" }} , 
  	{ "name": "outStream_TDEST", "direction": "out", "datatype": "sc_lv", "bitwidth":6, "type": "signal", "bundle":{"name": "outStream_V_dest_V", "role": "default" }} , 
- 	{ "name": "input_ch_idx_V", "direction": "in", "datatype": "sc_lv", "bitwidth":4, "type": "signal", "bundle":{"name": "input_ch_idx_V", "role": "default" }} , 
+ 	{ "name": "input_ch_idx", "direction": "in", "datatype": "sc_lv", "bitwidth":4, "type": "signal", "bundle":{"name": "input_ch_idx", "role": "default" }} , 
  	{ "name": "curr_input_keep_V", "direction": "in", "datatype": "sc_lv", "bitwidth":8, "type": "signal", "bundle":{"name": "curr_input_keep_V", "role": "default" }} , 
  	{ "name": "curr_input_strb_V", "direction": "in", "datatype": "sc_lv", "bitwidth":8, "type": "signal", "bundle":{"name": "curr_input_strb_V", "role": "default" }} , 
  	{ "name": "curr_input_user_V", "direction": "in", "datatype": "sc_lv", "bitwidth":2, "type": "signal", "bundle":{"name": "curr_input_user_V", "role": "default" }} , 
  	{ "name": "curr_input_id_V", "direction": "in", "datatype": "sc_lv", "bitwidth":5, "type": "signal", "bundle":{"name": "curr_input_id_V", "role": "default" }} , 
  	{ "name": "curr_input_dest_V", "direction": "in", "datatype": "sc_lv", "bitwidth":6, "type": "signal", "bundle":{"name": "curr_input_dest_V", "role": "default" }} , 
  	{ "name": "last_V", "direction": "in", "datatype": "sc_lv", "bitwidth":1, "type": "signal", "bundle":{"name": "last_V", "role": "default" }} , 
- 	{ "name": "fold_output_ch_V", "direction": "in", "datatype": "sc_lv", "bitwidth":4, "type": "signal", "bundle":{"name": "fold_output_ch_V", "role": "default" }} , 
+ 	{ "name": "fold_output_ch", "direction": "in", "datatype": "sc_lv", "bitwidth":4, "type": "signal", "bundle":{"name": "fold_output_ch", "role": "default" }} , 
  	{ "name": "out_stream_group_0_V_V_blk_n", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "out_stream_group_0_V_V_blk_n", "role": "default" }} , 
  	{ "name": "out_stream_group_1_V_V_blk_n", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "out_stream_group_1_V_V_blk_n", "role": "default" }} , 
  	{ "name": "out_stream_group_2_V_V_blk_n", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "out_stream_group_2_V_V_blk_n", "role": "default" }} , 
@@ -542,14 +542,14 @@ set RtlHierarchyInfo {[
 			{"Name" : "outStream_V_last_V", "Type" : "Axis", "Direction" : "O"},
 			{"Name" : "outStream_V_id_V", "Type" : "Axis", "Direction" : "O"},
 			{"Name" : "outStream_V_dest_V", "Type" : "Axis", "Direction" : "O"},
-			{"Name" : "input_ch_idx_V", "Type" : "None", "Direction" : "I"},
+			{"Name" : "input_ch_idx", "Type" : "None", "Direction" : "I"},
 			{"Name" : "curr_input_keep_V", "Type" : "None", "Direction" : "I"},
 			{"Name" : "curr_input_strb_V", "Type" : "None", "Direction" : "I"},
 			{"Name" : "curr_input_user_V", "Type" : "None", "Direction" : "I"},
 			{"Name" : "curr_input_id_V", "Type" : "None", "Direction" : "I"},
 			{"Name" : "curr_input_dest_V", "Type" : "None", "Direction" : "I"},
 			{"Name" : "last_V", "Type" : "None", "Direction" : "I"},
-			{"Name" : "fold_output_ch_V", "Type" : "None", "Direction" : "I"}]}]}
+			{"Name" : "fold_output_ch", "Type" : "None", "Direction" : "I"}]}]}
 
 
 set ArgLastReadFirstWriteLatency {
@@ -593,14 +593,14 @@ set ArgLastReadFirstWriteLatency {
 		outStream_V_last_V {Type O LastRead -1 FirstWrite 1}
 		outStream_V_id_V {Type O LastRead -1 FirstWrite 1}
 		outStream_V_dest_V {Type O LastRead -1 FirstWrite 1}
-		input_ch_idx_V {Type I LastRead 0 FirstWrite -1}
+		input_ch_idx {Type I LastRead 0 FirstWrite -1}
 		curr_input_keep_V {Type I LastRead 1 FirstWrite -1}
 		curr_input_strb_V {Type I LastRead 1 FirstWrite -1}
 		curr_input_user_V {Type I LastRead 1 FirstWrite -1}
 		curr_input_id_V {Type I LastRead 1 FirstWrite -1}
 		curr_input_dest_V {Type I LastRead 1 FirstWrite -1}
 		last_V {Type I LastRead 1 FirstWrite -1}
-		fold_output_ch_V {Type I LastRead 0 FirstWrite -1}}}
+		fold_output_ch {Type I LastRead 0 FirstWrite -1}}}
 
 set hasDtUnsupportedChannel 0
 
@@ -653,12 +653,12 @@ set Spec2ImplPortList {
 	outStream_V_last_V { axis {  { outStream_TLAST out_data 1 1 } } }
 	outStream_V_id_V { axis {  { outStream_TID out_data 1 5 } } }
 	outStream_V_dest_V { axis {  { outStream_TVALID out_vld 1 1 }  { outStream_TDEST out_data 1 6 } } }
-	input_ch_idx_V { ap_none {  { input_ch_idx_V in_data 0 4 } } }
+	input_ch_idx { ap_none {  { input_ch_idx in_data 0 4 } } }
 	curr_input_keep_V { ap_none {  { curr_input_keep_V in_data 0 8 } } }
 	curr_input_strb_V { ap_none {  { curr_input_strb_V in_data 0 8 } } }
 	curr_input_user_V { ap_none {  { curr_input_user_V in_data 0 2 } } }
 	curr_input_id_V { ap_none {  { curr_input_id_V in_data 0 5 } } }
 	curr_input_dest_V { ap_none {  { curr_input_dest_V in_data 0 6 } } }
 	last_V { ap_none {  { last_V in_data 0 1 } } }
-	fold_output_ch_V { ap_none {  { fold_output_ch_V in_data 0 4 } } }
+	fold_output_ch { ap_none {  { fold_output_ch in_data 0 4 } } }
 }

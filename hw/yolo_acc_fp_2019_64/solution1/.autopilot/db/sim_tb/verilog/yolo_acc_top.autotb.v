@@ -37,6 +37,9 @@
 `define AESL_DEPTH_outStream_V_dest_V 1
 `define AESL_DEPTH_input_h_V 1
 `define AESL_DEPTH_input_w_V 1
+`define AESL_DEPTH_fold_input_ch_V 1
+`define AESL_DEPTH_leaky_V 1
+`define AESL_DEPTH_bias_en_V 1
 `define AUTOTB_TVIN_inStream_a_V_data  "./c.yolo_acc_top.autotvin_inStream_a_V_data.dat"
 `define AUTOTB_TVIN_inStream_a_V_keep_V  "./c.yolo_acc_top.autotvin_inStream_a_V_keep_V.dat"
 `define AUTOTB_TVIN_inStream_a_V_strb_V  "./c.yolo_acc_top.autotvin_inStream_a_V_strb_V.dat"
@@ -60,6 +63,9 @@
 `define AUTOTB_TVIN_outStream_V_dest_V  "./c.yolo_acc_top.autotvin_outStream_V_dest_V.dat"
 `define AUTOTB_TVIN_input_h_V  "./c.yolo_acc_top.autotvin_input_h_V.dat"
 `define AUTOTB_TVIN_input_w_V  "./c.yolo_acc_top.autotvin_input_w_V.dat"
+`define AUTOTB_TVIN_fold_input_ch_V  "./c.yolo_acc_top.autotvin_fold_input_ch_V.dat"
+`define AUTOTB_TVIN_leaky_V  "./c.yolo_acc_top.autotvin_leaky_V.dat"
+`define AUTOTB_TVIN_bias_en_V  "./c.yolo_acc_top.autotvin_bias_en_V.dat"
 `define AUTOTB_TVIN_inStream_a_V_data_out_wrapc  "./rtl.yolo_acc_top.autotvin_inStream_a_V_data.dat"
 `define AUTOTB_TVIN_inStream_a_V_keep_V_out_wrapc  "./rtl.yolo_acc_top.autotvin_inStream_a_V_keep_V.dat"
 `define AUTOTB_TVIN_inStream_a_V_strb_V_out_wrapc  "./rtl.yolo_acc_top.autotvin_inStream_a_V_strb_V.dat"
@@ -83,6 +89,9 @@
 `define AUTOTB_TVIN_outStream_V_dest_V_out_wrapc  "./rtl.yolo_acc_top.autotvin_outStream_V_dest_V.dat"
 `define AUTOTB_TVIN_input_h_V_out_wrapc  "./rtl.yolo_acc_top.autotvin_input_h_V.dat"
 `define AUTOTB_TVIN_input_w_V_out_wrapc  "./rtl.yolo_acc_top.autotvin_input_w_V.dat"
+`define AUTOTB_TVIN_fold_input_ch_V_out_wrapc  "./rtl.yolo_acc_top.autotvin_fold_input_ch_V.dat"
+`define AUTOTB_TVIN_leaky_V_out_wrapc  "./rtl.yolo_acc_top.autotvin_leaky_V.dat"
+`define AUTOTB_TVIN_bias_en_V_out_wrapc  "./rtl.yolo_acc_top.autotvin_bias_en_V.dat"
 `define AUTOTB_TVOUT_outStream_V_data  "./c.yolo_acc_top.autotvout_outStream_V_data.dat"
 `define AUTOTB_TVOUT_outStream_V_keep_V  "./c.yolo_acc_top.autotvout_outStream_V_keep_V.dat"
 `define AUTOTB_TVOUT_outStream_V_strb_V  "./c.yolo_acc_top.autotvout_outStream_V_strb_V.dat"
@@ -101,30 +110,33 @@ module `AUTOTB_TOP;
 
 parameter AUTOTB_TRANSACTION_NUM = 1;
 parameter PROGRESS_TIMEOUT = 10000000;
-parameter LATENCY_ESTIMATION = 71570;
-parameter LENGTH_inStream_a_V_data = 21632;
-parameter LENGTH_inStream_a_V_keep_V = 21632;
-parameter LENGTH_inStream_a_V_strb_V = 21632;
-parameter LENGTH_inStream_a_V_user_V = 21632;
-parameter LENGTH_inStream_a_V_last_V = 21632;
-parameter LENGTH_inStream_a_V_id_V = 21632;
-parameter LENGTH_inStream_a_V_dest_V = 21632;
-parameter LENGTH_inStream_b_V_data = 21632;
-parameter LENGTH_inStream_b_V_keep_V = 21632;
-parameter LENGTH_inStream_b_V_strb_V = 21632;
-parameter LENGTH_inStream_b_V_user_V = 21632;
-parameter LENGTH_inStream_b_V_last_V = 21632;
-parameter LENGTH_inStream_b_V_id_V = 21632;
-parameter LENGTH_inStream_b_V_dest_V = 21632;
-parameter LENGTH_outStream_V_data = 21632;
-parameter LENGTH_outStream_V_keep_V = 21632;
-parameter LENGTH_outStream_V_strb_V = 21632;
-parameter LENGTH_outStream_V_user_V = 21632;
-parameter LENGTH_outStream_V_last_V = 21632;
-parameter LENGTH_outStream_V_id_V = 21632;
-parameter LENGTH_outStream_V_dest_V = 21632;
+parameter LATENCY_ESTIMATION = 692237;
+parameter LENGTH_inStream_a_V_data = 692224;
+parameter LENGTH_inStream_a_V_keep_V = 692224;
+parameter LENGTH_inStream_a_V_strb_V = 692224;
+parameter LENGTH_inStream_a_V_user_V = 692224;
+parameter LENGTH_inStream_a_V_last_V = 692224;
+parameter LENGTH_inStream_a_V_id_V = 692224;
+parameter LENGTH_inStream_a_V_dest_V = 692224;
+parameter LENGTH_inStream_b_V_data = 692228;
+parameter LENGTH_inStream_b_V_keep_V = 692228;
+parameter LENGTH_inStream_b_V_strb_V = 692228;
+parameter LENGTH_inStream_b_V_user_V = 692228;
+parameter LENGTH_inStream_b_V_last_V = 692228;
+parameter LENGTH_inStream_b_V_id_V = 692228;
+parameter LENGTH_inStream_b_V_dest_V = 692228;
+parameter LENGTH_outStream_V_data = 692224;
+parameter LENGTH_outStream_V_keep_V = 692224;
+parameter LENGTH_outStream_V_strb_V = 692224;
+parameter LENGTH_outStream_V_user_V = 692224;
+parameter LENGTH_outStream_V_last_V = 692224;
+parameter LENGTH_outStream_V_id_V = 692224;
+parameter LENGTH_outStream_V_dest_V = 692224;
 parameter LENGTH_input_h_V = 1;
 parameter LENGTH_input_w_V = 1;
+parameter LENGTH_fold_input_ch_V = 1;
+parameter LENGTH_leaky_V = 1;
+parameter LENGTH_bias_en_V = 1;
 
 task read_token;
     input integer fp;
@@ -207,14 +219,14 @@ reg AESL_done_delay2 = 0;
 reg AESL_ready_delay = 0;
 wire ready;
 wire ready_wire;
-wire [4 : 0] CTRL_BUS_AWADDR;
+wire [5 : 0] CTRL_BUS_AWADDR;
 wire  CTRL_BUS_AWVALID;
 wire  CTRL_BUS_AWREADY;
 wire  CTRL_BUS_WVALID;
 wire  CTRL_BUS_WREADY;
 wire [31 : 0] CTRL_BUS_WDATA;
 wire [3 : 0] CTRL_BUS_WSTRB;
-wire [4 : 0] CTRL_BUS_ARADDR;
+wire [5 : 0] CTRL_BUS_ARADDR;
 wire  CTRL_BUS_ARVALID;
 wire  CTRL_BUS_ARREADY;
 wire  CTRL_BUS_RVALID;
@@ -390,6 +402,9 @@ begin
         slave_done_status <= 1;
     end
 end
+
+
+
 
 
 
@@ -772,6 +787,15 @@ reg [31:0] size_input_h_V_backup;
 reg end_input_w_V;
 reg [31:0] size_input_w_V;
 reg [31:0] size_input_w_V_backup;
+reg end_fold_input_ch_V;
+reg [31:0] size_fold_input_ch_V;
+reg [31:0] size_fold_input_ch_V_backup;
+reg end_leaky_V;
+reg [31:0] size_leaky_V;
+reg [31:0] size_leaky_V_backup;
+reg end_bias_en_V;
+reg [31:0] size_bias_en_V;
+reg [31:0] size_bias_en_V_backup;
 
 initial begin : initial_process
     integer proc_rand;

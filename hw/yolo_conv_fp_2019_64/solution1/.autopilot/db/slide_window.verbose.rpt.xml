@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'slide_window'" level="0">
-<item name = "Date">Tue Jul 16 08:53:14 2019
+<item name = "Date">Sat Jul 20 19:03:55 2019
 </item>
 <item name = "Version">2019.1 (Build 2552052 on Fri May 24 15:28:33 MDT 2019)</item>
 <item name = "Project">yolo_conv_fp_2019_64</item>
@@ -77,12 +77,12 @@
 </item>
 <item name = "Expression"><table name="" hasTotal="1">
 <keys size="7">Variable Name, Operation, DSP48E, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
-<column name="mul_ln271_fu_139_p2">*, 0, 0, 51, 4, 9</column>
-<column name="add_ln1353_1_fu_183_p2">+, 0, 0, 15, 9, 2</column>
-<column name="add_ln1353_fu_161_p2">+, 0, 0, 15, 9, 1</column>
-<column name="add_ln271_1_fu_171_p2">+, 0, 0, 17, 13, 13</column>
-<column name="add_ln271_2_fu_193_p2">+, 0, 0, 17, 13, 13</column>
-<column name="add_ln271_fu_149_p2">+, 0, 0, 17, 13, 13</column>
+<column name="mul_ln259_fu_139_p2">*, 0, 0, 51, 4, 9</column>
+<column name="add_ln259_1_fu_183_p2">+, 0, 0, 15, 9, 2</column>
+<column name="add_ln259_2_fu_149_p2">+, 0, 0, 17, 13, 13</column>
+<column name="add_ln259_3_fu_171_p2">+, 0, 0, 17, 13, 13</column>
+<column name="add_ln259_4_fu_193_p2">+, 0, 0, 17, 13, 13</column>
+<column name="add_ln259_fu_161_p2">+, 0, 0, 15, 9, 1</column>
 <column name="ap_block_pp0_stage0_11001">and, 0, 0, 2, 1, 1</column>
 <column name="ap_block_pp0_stage0_subdone">or, 0, 0, 2, 1, 1</column>
 <column name="ap_enable_pp0">xor, 0, 0, 2, 1, 2</column>
@@ -100,18 +100,18 @@
 </item>
 <item name = "Register"><table name="" hasTotal="1">
 <keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
-<column name="add_ln271_2_reg_289">13, 0, 13, 0</column>
+<column name="add_ln259_4_reg_289">13, 0, 13, 0</column>
 <column name="ap_CS_fsm">3, 0, 3, 0</column>
 <column name="ap_enable_reg_pp0_iter0_reg">1, 0, 1, 0</column>
 <column name="ap_enable_reg_pp0_iter1">1, 0, 1, 0</column>
-<column name="ap_port_reg_conv_count_V">9, 0, 9, 0</column>
+<column name="ap_port_reg_conv_count">9, 0, 9, 0</column>
 <column name="line_buff_val_0_V_l_1_reg_299">16, 0, 16, 0</column>
 <column name="line_buff_val_0_V_l_reg_294">16, 0, 16, 0</column>
 <column name="line_buff_val_1_V_l_1_reg_324">16, 0, 16, 0</column>
 <column name="line_buff_val_1_V_l_reg_319">16, 0, 16, 0</column>
 <column name="line_buff_val_2_V_l_1_reg_334">16, 0, 16, 0</column>
 <column name="line_buff_val_2_V_l_reg_329">16, 0, 16, 0</column>
-<column name="mul_ln271_reg_252">12, 0, 13, 1</column>
+<column name="mul_ln259_reg_252">12, 0, 13, 1</column>
 </table>
 </item>
 </section>
@@ -137,7 +137,7 @@
 <column name="ap_return_6">out, 16, ap_ctrl_hs, slide_window, return value</column>
 <column name="ap_return_7">out, 16, ap_ctrl_hs, slide_window, return value</column>
 <column name="ap_return_8">out, 16, ap_ctrl_hs, slide_window, return value</column>
-<column name="conv_count_V">in, 9, ap_none, conv_count_V, scalar</column>
+<column name="conv_count">in, 9, ap_none, conv_count, scalar</column>
 <column name="line_buff_val_0_V_address0">out, 12, ap_memory, line_buff_val_0_V, array</column>
 <column name="line_buff_val_0_V_ce0">out, 1, ap_memory, line_buff_val_0_V, array</column>
 <column name="line_buff_val_0_V_q0">in, 16, ap_memory, line_buff_val_0_V, array</column>

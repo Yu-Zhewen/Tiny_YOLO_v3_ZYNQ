@@ -192,23 +192,6 @@ u32 XYolo_conv_top_Get_real_input_h_V(XYolo_conv_top *InstancePtr) {
     return Data;
 }
 
-void XYolo_conv_top_Set_leaky_V(XYolo_conv_top *InstancePtr, u32 Data) {
-    Xil_AssertVoid(InstancePtr != NULL);
-    Xil_AssertVoid(InstancePtr->IsReady == XIL_COMPONENT_IS_READY);
-
-    XYolo_conv_top_WriteReg(InstancePtr->Ctrl_bus_BaseAddress, XYOLO_CONV_TOP_CTRL_BUS_ADDR_LEAKY_V_DATA, Data);
-}
-
-u32 XYolo_conv_top_Get_leaky_V(XYolo_conv_top *InstancePtr) {
-    u32 Data;
-
-    Xil_AssertNonvoid(InstancePtr != NULL);
-    Xil_AssertNonvoid(InstancePtr->IsReady == XIL_COMPONENT_IS_READY);
-
-    Data = XYolo_conv_top_ReadReg(InstancePtr->Ctrl_bus_BaseAddress, XYOLO_CONV_TOP_CTRL_BUS_ADDR_LEAKY_V_DATA);
-    return Data;
-}
-
 void XYolo_conv_top_Set_fold_win_area_V(XYolo_conv_top *InstancePtr, u32 Data) {
     Xil_AssertVoid(InstancePtr != NULL);
     Xil_AssertVoid(InstancePtr->IsReady == XIL_COMPONENT_IS_READY);

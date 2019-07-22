@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'logistic_activate'" level="0">
-<item name = "Date">Wed Jul 17 10:35:49 2019
+<item name = "Date">Wed Jul 17 14:24:21 2019
 </item>
 <item name = "Version">2019.1 (Build 2552052 on Fri May 24 15:28:33 MDT 2019)</item>
 <item name = "Project">yolo_yolo_fp_2019_64</item>

@@ -62,21 +62,13 @@ real_input_h_V {
 	offset 64
 	offset_end 71
 }
-leaky_V { 
-	dir I
-	width 1
-	depth 1
-	mode ap_none
-	offset 72
-	offset_end 79
-}
 fold_win_area_V { 
 	dir I
 	width 3
 	depth 1
 	mode ap_none
-	offset 80
-	offset_end 87
+	offset 72
+	offset_end 79
 }
 }
 dict set axilite_register_dict CTRL_BUS $port_CTRL_BUS

@@ -10259,13 +10259,13 @@ _ssdm_op_SpecInterface(0, "s_axilite", 0, 0, "", 0, 0, "CTRL_BUS", "", "", 0, 0,
 _ssdm_op_SpecInterface(&outStream, "axis", 1, 1, "both", 0, 0, "", "", "", 0, 0, 0, 0, "", "");
 _ssdm_op_SpecInterface(&inStream, "axis", 1, 1, "both", 0, 0, "", "", "", 0, 0, 0, 0, "", "");
 
- for(int row_idx=0;row_idx<input_h;row_idx++)
+ for(ap_uint<5> row_idx=0;row_idx<input_h;row_idx++)
  {
 _ssdm_op_SpecLoopTripCount(13, 13, 13, "");
- for(int col_idx=0;col_idx<input_w;col_idx++)
+ for(ap_uint<5> col_idx=0;col_idx<input_w;col_idx++)
   {
 _ssdm_op_SpecLoopTripCount(13, 13, 13, "");
- for(int input_ch_idx=0;input_ch_idx<32/4;input_ch_idx++)
+ for(ap_uint<(5 -2 +1)> input_ch_idx=0;input_ch_idx<32/4;input_ch_idx++)
    {
 
 _ssdm_op_SpecPipeline(-1, 1, 1, 0, "");

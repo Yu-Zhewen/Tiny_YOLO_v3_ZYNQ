@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'yolo_max_pool_top'" level="0">
-<item name = "Date">Mon Jul 15 20:22:34 2019
+<item name = "Date">Fri Jul 19 15:52:34 2019
 </item>
 <item name = "Version">2019.1 (Build 2552052 on Fri May 24 15:28:33 MDT 2019)</item>
 <item name = "Project">yolo_max_pool_fp_2019_64</item>
@@ -31,7 +31,7 @@
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="7">Instance, Module, min, max, min, max, Type</keys>
-<column name="call_ln134_write_output_fu_772">write_output, 0, 0, 1, 1, function</column>
+<column name="call_ln112_write_output_fu_778">write_output, 0, 0, 1, 1, function</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">

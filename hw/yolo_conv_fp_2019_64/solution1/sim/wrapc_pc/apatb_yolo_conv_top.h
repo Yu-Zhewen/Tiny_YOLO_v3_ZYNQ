@@ -13,5 +13,4 @@ ap_uint<4> fold_input_ch,
 ap_uint<9> input_h,
 ap_uint<9> input_w,
 ap_uint<9> real_input_h,
-ap_uint<1> leaky,
 ap_uint<3> fold_win_area);

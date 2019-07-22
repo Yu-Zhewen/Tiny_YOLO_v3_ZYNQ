@@ -10259,13 +10259,13 @@ void yolo_yolo_top(yolo_quad_stream &inStream, yolo_quad_stream &outStream,
 #pragma HLS INTERFACE axis register both port=&outStream
 #pragma HLS INTERFACE axis register both port=&inStream
 
- for(int row_idx=0;row_idx<input_h;row_idx++)
+ for(ap_uint<5> row_idx=0;row_idx<input_h;row_idx++)
  {
 #pragma HLS LOOP_TRIPCOUNT min=13 max=13 avg=13
- for(int col_idx=0;col_idx<input_w;col_idx++)
+ for(ap_uint<5> col_idx=0;col_idx<input_w;col_idx++)
   {
 #pragma HLS LOOP_TRIPCOUNT min=13 max=13 avg=13
- for(int input_ch_idx=0;input_ch_idx<32/4;input_ch_idx++)
+ for(ap_uint<(5 -2 +1)> input_ch_idx=0;input_ch_idx<32/4;input_ch_idx++)
    {
 
 #pragma HLS PIPELINE

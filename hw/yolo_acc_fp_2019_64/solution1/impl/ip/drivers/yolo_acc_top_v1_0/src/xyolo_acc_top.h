@@ -88,6 +88,12 @@ void XYolo_acc_top_Set_input_h_V(XYolo_acc_top *InstancePtr, u32 Data);
 u32 XYolo_acc_top_Get_input_h_V(XYolo_acc_top *InstancePtr);
 void XYolo_acc_top_Set_input_w_V(XYolo_acc_top *InstancePtr, u32 Data);
 u32 XYolo_acc_top_Get_input_w_V(XYolo_acc_top *InstancePtr);
+void XYolo_acc_top_Set_fold_input_ch_V(XYolo_acc_top *InstancePtr, u32 Data);
+u32 XYolo_acc_top_Get_fold_input_ch_V(XYolo_acc_top *InstancePtr);
+void XYolo_acc_top_Set_leaky_V(XYolo_acc_top *InstancePtr, u32 Data);
+u32 XYolo_acc_top_Get_leaky_V(XYolo_acc_top *InstancePtr);
+void XYolo_acc_top_Set_bias_en_V(XYolo_acc_top *InstancePtr, u32 Data);
+u32 XYolo_acc_top_Get_bias_en_V(XYolo_acc_top *InstancePtr);
 
 void XYolo_acc_top_InterruptGlobalEnable(XYolo_acc_top *InstancePtr);
 void XYolo_acc_top_InterruptGlobalDisable(XYolo_acc_top *InstancePtr);

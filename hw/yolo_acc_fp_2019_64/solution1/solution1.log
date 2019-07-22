@@ -22,3 +22,472 @@ Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ==============================================================
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg484-1'
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'yolo_acc_fp_2019_64/src/yolo_acc.cpp' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 892.023 ; gain = 192.000 ; free physical = 197 ; free virtual = 9707
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 892.023 ; gain = 192.000 ; free physical = 197 ; free virtual = 9707
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 892.023 ; gain = 192.000 ; free physical = 176 ; free virtual = 9688
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 892.023 ; gain = 192.000 ; free physical = 164 ; free virtual = 9678
+INFO: [XFORM 203-1101] Packing variable 'outStream.V.data' (yolo_acc_fp_2019_64/src/yolo_acc.cpp:5) into a 64-bit variable.
+INFO: [XFORM 203-1101] Packing variable 'inStream_b.V.data' (yolo_acc_fp_2019_64/src/yolo_acc.cpp:4) into a 64-bit variable.
+INFO: [XFORM 203-1101] Packing variable 'inStream_a.V.data' (yolo_acc_fp_2019_64/src/yolo_acc.cpp:4) into a 64-bit variable.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (yolo_acc_fp_2019_64/src/yolo_acc.cpp:50:20) to (yolo_acc_fp_2019_64/src/yolo_acc.cpp:43:54) in function 'yolo_acc_top'... converting 17 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (yolo_acc_fp_2019_64/src/yolo_acc.cpp:89:5) to (yolo_acc_fp_2019_64/src/yolo_acc.cpp:107:1) in function 'post_process_unit'... converting 10 basic blocks.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 892.023 ; gain = 192.000 ; free physical = 132 ; free virtual = 9647
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 892.023 ; gain = 192.000 ; free physical = 121 ; free virtual = 9637
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'yolo_acc_top' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'post_process_unit' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 18.71 seconds; current allocated memory: 143.784 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.04 seconds; current allocated memory: 144.015 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'yolo_acc_top' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 1'.
+WARNING: [SCHED 204-69] Unable to schedule 'store' operation ('kernel_bias_fp_V_add_2_write_ln32', yolo_acc_fp_2019_64/src/yolo_acc.cpp:32) of variable 'tmp_data_sub_data_2_s', yolo_acc_fp_2019_64/src/yolo_stream.h:8->yolo_acc_fp_2019_64/src/yolo_stream.h:16->yolo_acc_fp_2019_64/src/yolo_acc.cpp:29 on array 'kernel_bias_fp.V', yolo_acc_fp_2019_64/src/yolo_acc.cpp:20 due to limited memory ports. Please consider using a memory core with more ports or partitioning the array 'kernel_bias_fp_V'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 2, Depth = 3.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.16 seconds; current allocated memory: 144.712 MB.
+INFO: [HLS 200-434] Only 1 loops out of a total 4 loops have been pipelined in this design.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.19 seconds; current allocated memory: 145.681 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'post_process_unit' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Generating core module 'yolo_acc_top_mul_mul_6ns_16s_22_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'post_process_unit'.
+INFO: [HLS 200-111]  Elapsed time: 0.33 seconds; current allocated memory: 146.342 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'yolo_acc_top' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_acc_top/inStream_a_V_data' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_acc_top/inStream_a_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_acc_top/inStream_a_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_acc_top/inStream_a_V_user_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_acc_top/inStream_a_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_acc_top/inStream_a_V_id_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_acc_top/inStream_a_V_dest_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_acc_top/inStream_b_V_data' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_acc_top/inStream_b_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_acc_top/inStream_b_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_acc_top/inStream_b_V_user_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_acc_top/inStream_b_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_acc_top/inStream_b_V_id_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_acc_top/inStream_b_V_dest_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_acc_top/outStream_V_data' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_acc_top/outStream_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_acc_top/outStream_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_acc_top/outStream_V_user_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_acc_top/outStream_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_acc_top/outStream_V_id_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_acc_top/outStream_V_dest_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_acc_top/input_h_V' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_acc_top/input_w_V' to 's_axilite & ap_none'.
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg484-1'
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'yolo_acc_fp_2019_64/src/yolo_acc.cpp' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 892.023 ; gain = 192.000 ; free physical = 445 ; free virtual = 9623
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 892.023 ; gain = 192.000 ; free physical = 445 ; free virtual = 9623
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:17 ; elapsed = 00:00:20 . Memory (MB): peak = 892.023 ; gain = 192.000 ; free physical = 417 ; free virtual = 9604
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:17 ; elapsed = 00:00:20 . Memory (MB): peak = 892.023 ; gain = 192.000 ; free physical = 406 ; free virtual = 9594
+INFO: [XFORM 203-1101] Packing variable 'outStream.V.data' (yolo_acc_fp_2019_64/src/yolo_acc.cpp:5) into a 64-bit variable.
+INFO: [XFORM 203-1101] Packing variable 'inStream_b.V.data' (yolo_acc_fp_2019_64/src/yolo_acc.cpp:4) into a 64-bit variable.
+INFO: [XFORM 203-1101] Packing variable 'inStream_a.V.data' (yolo_acc_fp_2019_64/src/yolo_acc.cpp:4) into a 64-bit variable.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (yolo_acc_fp_2019_64/src/yolo_acc.cpp:46:5) to (yolo_acc_fp_2019_64/src/yolo_acc.cpp:45:52) in function 'yolo_acc_top'... converting 17 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (yolo_acc_fp_2019_64/src/yolo_acc.cpp:93:5) to (yolo_acc_fp_2019_64/src/yolo_acc.cpp:111:1) in function 'post_process_unit'... converting 10 basic blocks.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:18 ; elapsed = 00:00:21 . Memory (MB): peak = 892.023 ; gain = 192.000 ; free physical = 372 ; free virtual = 9562
+INFO: [XFORM 203-541] Flattening a loop nest 'Loop-2.1' (yolo_acc_fp_2019_64/src/yolo_acc.cpp:42:20) in function 'yolo_acc_top'.
+INFO: [XFORM 203-541] Flattening a loop nest 'Loop-2' (yolo_acc_fp_2019_64/src/yolo_acc.cpp:39:20) in function 'yolo_acc_top'.
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:18 ; elapsed = 00:00:22 . Memory (MB): peak = 892.023 ; gain = 192.000 ; free physical = 360 ; free virtual = 9552
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'yolo_acc_top' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'post_process_unit' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining function 'post_process_unit'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 3.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 21.91 seconds; current allocated memory: 143.954 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.15 seconds; current allocated memory: 144.199 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'yolo_acc_top' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 1'.
+WARNING: [SCHED 204-69] Unable to schedule 'store' operation ('kernel_bias_fp_V_add_2_write_ln32', yolo_acc_fp_2019_64/src/yolo_acc.cpp:32) of variable 'tmp_data_sub_data_2_s', yolo_acc_fp_2019_64/src/yolo_stream.h:8->yolo_acc_fp_2019_64/src/yolo_stream.h:16->yolo_acc_fp_2019_64/src/yolo_acc.cpp:29 on array 'kernel_bias_fp.V', yolo_acc_fp_2019_64/src/yolo_acc.cpp:20 due to limited memory ports. Please consider using a memory core with more ports or partitioning the array 'kernel_bias_fp_V'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 2, Depth = 3.
+INFO: [SCHED 204-61] Pipelining loop 'Loop 2'.
+WARNING: [SCHED 204-69] Unable to schedule 'load' operation ('kernel_bias_fp_V_loa_2', yolo_acc_fp_2019_64/src/yolo_acc.cpp:64) on array 'kernel_bias_fp.V', yolo_acc_fp_2019_64/src/yolo_acc.cpp:20 due to limited memory ports. Please consider using a memory core with more ports or partitioning the array 'kernel_bias_fp_V'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 2, Depth = 7.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.22 seconds; current allocated memory: 144.967 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.29 seconds; current allocated memory: 145.962 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'post_process_unit' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Generating core module 'yolo_acc_top_mul_mul_6ns_16s_22_1_0': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'post_process_unit'.
+INFO: [HLS 200-111]  Elapsed time: 0.37 seconds; current allocated memory: 146.620 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'yolo_acc_top' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_acc_top/inStream_a_V_data' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_acc_top/inStream_a_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_acc_top/inStream_a_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_acc_top/inStream_a_V_user_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_acc_top/inStream_a_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_acc_top/inStream_a_V_id_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_acc_top/inStream_a_V_dest_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_acc_top/inStream_b_V_data' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_acc_top/inStream_b_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_acc_top/inStream_b_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_acc_top/inStream_b_V_user_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_acc_top/inStream_b_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_acc_top/inStream_b_V_id_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_acc_top/inStream_b_V_dest_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_acc_top/outStream_V_data' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_acc_top/outStream_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500]==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg484-1'
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'yolo_acc_fp_2019_64/src/yolo_acc.cpp' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 892.023 ; gain = 192.000 ; free physical = 406 ; free virtual = 9597
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 892.023 ; gain = 192.000 ; free physical = 406 ; free virtual = 9597
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 892.023 ; gain = 192.000 ; free physical = 384 ; free virtual = 9578
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 892.023 ; gain = 192.000 ; free physical = 372 ; free virtual = 9567
+INFO: [XFORM 203-1101] Packing variable 'outStream.V.data' (yolo_acc_fp_2019_64/src/yolo_acc.cpp:5) into a 64-bit variable.
+INFO: [XFORM 203-1101] Packing variable 'inStream_b.V.data' (yolo_acc_fp_2019_64/src/yolo_acc.cpp:4) into a 64-bit variable.
+INFO: [XFORM 203-1101] Packing variable 'inStream_a.V.data' (yolo_acc_fp_2019_64/src/yolo_acc.cpp:4) into a 64-bit variable.
+INFO: [XFORM 203-101] Partitioning array 'kernel_bias_fp.V' (yolo_acc_fp_2019_64/src/yolo_acc.cpp:20) in dimension 1 completely.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (yolo_acc_fp_2019_64/src/yolo_acc.cpp:30:16) to (yolo_acc_fp_2019_64/src/yolo_acc.cpp:34:18) in function 'yolo_acc_top'... converting 25 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (yolo_acc_fp_2019_64/src/yolo_acc.cpp:47:5) to (yolo_acc_fp_2019_64/src/yolo_acc.cpp:46:52) in function 'yolo_acc_top'... converting 17 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (yolo_acc_fp_2019_64/src/yolo_acc.cpp:94:5) to (yolo_acc_fp_2019_64/src/yolo_acc.cpp:112:1) in function 'post_process_unit'... converting 10 basic blocks.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 892.023 ; gain = 192.000 ; free physical = 339 ; free virtual = 9536
+INFO: [XFORM 203-541] Flattening a loop nest 'Loop-2.1' (yolo_acc_fp_2019_64/src/yolo_acc.cpp:43:20) in function 'yolo_acc_top'.
+INFO: [XFORM 203-541] Flattening a loop nest 'Loop-2' (yolo_acc_fp_2019_64/src/yolo_acc.cpp:40:20) in function 'yolo_acc_top'.
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 892.023 ; gain = 192.000 ; free physical = 327 ; free virtual = 9525
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'yolo_acc_top' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'post_process_unit' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining function 'post_process_unit'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 3.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 18.92 seconds; current allocated memory: 147.015 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.04 seconds; current allocated memory: 147.260 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'yolo_acc_top' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 1'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 1.
+INFO: [SCHED 204-61] Pipelining loop 'Loop 2'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 6.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.34 seconds; current allocated memory: 148.950 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.38 seconds; current allocated memory: 151.088 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'post_process_unit' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Generating core module 'yolo_acc_top_mul_mul_6ns_16s_22_1_0': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'post_process_unit'.
+INFO: [HLS 200-111]  Elapsed time: 0.55 seconds; current allocated memory: 151.958 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'yolo_acc_top' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_acc_top/inStream_a_V_data' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_acc_top/inStream_a_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_acc_top/inStream_a_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_acc_top/inStream_a_V_user_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_acc_top/inStream_a_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_acc_top/inStream_a_V_id_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_acc_top/inStream_a_V_dest_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_acc_top/inStream_b_V_data' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_acc_top/inStream_b_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_acc_top/inStream_b_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_acc_top/inStream_b_V_user_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_acc_top/inStream_b_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_acc_top/inStream_b_V_id_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_acc_top/inStream_b_V_dest_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_acc_top/outStream_V_data' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_acc_top/outStream_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_acc_top/outStream_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_acc_top/outStream_V_user_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_acc_top/outStream_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_acc_top/outStream_V_id_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_acc_top/outStream_V_dest_V' to 'axis' (register, both mode).
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg484-1'
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'yolo_acc_fp_2019_64/src/yolo_acc.cpp' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 892.023 ; gain = 192.000 ; free physical = 388 ; free virtual = 9579
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 892.023 ; gain = 192.000 ; free physical = 388 ; free virtual = 9579
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 892.023 ; gain = 192.000 ; free physical = 366 ; free virtual = 9560
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 892.023 ; gain = 192.000 ; free physical = 354 ; free virtual = 9550
+INFO: [XFORM 203-1101] Packing variable 'outStream.V.data' (yolo_acc_fp_2019_64/src/yolo_acc.cpp:5) into a 64-bit variable.
+INFO: [XFORM 203-1101] Packing variable 'inStream_b.V.data' (yolo_acc_fp_2019_64/src/yolo_acc.cpp:4) into a 64-bit variable.
+INFO: [XFORM 203-1101] Packing variable 'inStream_a.V.data' (yolo_acc_fp_2019_64/src/yolo_acc.cpp:4) into a 64-bit variable.
+INFO: [XFORM 203-101] Partitioning array 'kernel_bias_fp.V' (yolo_acc_fp_2019_64/src/yolo_acc.cpp:20) in dimension 1 with a block factor 4.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (yolo_acc_fp_2019_64/src/yolo_acc.cpp:47:5) to (yolo_acc_fp_2019_64/src/yolo_acc.cpp:46:52) in function 'yolo_acc_top'... converting 17 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (yolo_acc_fp_2019_64/src/yolo_acc.cpp:94:5) to (yolo_acc_fp_2019_64/src/yolo_acc.cpp:112:1) in function 'post_process_unit'... converting 10 basic blocks.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 892.023 ; gain = 192.000 ; free physical = 322 ; free virtual = 9519
+INFO: [XFORM 203-541] Flattening a loop nest 'Loop-2.1' (yolo_acc_fp_2019_64/src/yolo_acc.cpp:43:20) in function 'yolo_acc_top'.
+INFO: [XFORM 203-541] Flattening a loop nest 'Loop-2' (yolo_acc_fp_2019_64/src/yolo_acc.cpp:40:20) in function 'yolo_acc_top'.
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 892.023 ; gain = 192.000 ; free physical = 310 ; free virtual = 9508
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'yolo_acc_top' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'post_process_unit' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining function 'post_process_unit'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 3.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 18.58 seconds; current allocated memory: 144.489 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.06 seconds; current allocated memory: 144.734 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'yolo_acc_top' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 1'.
+WARNING: [SCHED 204-69] Unable to schedule 'store' operation ('kernel_bias_fp_2_V_2_write_ln33', yolo_acc_fp_2019_64/src/yolo_acc.cpp:33) of variable 'tmp_data_sub_data_2_s', yolo_acc_fp_2019_64/src/yolo_stream.h:8->yolo_acc_fp_2019_64/src/yolo_stream.h:16->yolo_acc_fp_2019_64/src/yolo_acc.cpp:30 on array 'kernel_bias_fp[2].V', yolo_acc_fp_2019_64/src/yolo_acc.cpp:20 due to limited memory ports. Please consider using a memory core with more ports or partitioning the array 'kernel_bias_fp_2_V'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 2, Depth = 3.
+INFO: [SCHED 204-61] Pipelining loop 'Loop 2'.
+WARNING: [SCHED 204-69] Unable to schedule 'load' operation ('kernel_bias_fp_0_V_9', yolo_acc_fp_2019_64/src/yolo_acc.cpp:65) on array 'kernel_bias_fp[0].V', yolo_acc_fp_2019_64/src/yolo_acc.cpp:20 due to limited memory ports. Please consider using a memory core with more ports or partitioning the array 'kernel_bias_fp_0_V'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 2, Depth = 7.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.3 seconds; current allocated memory: 145.710 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.4 seconds; current allocated memory: 146.990 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'post_process_unit' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Generating core module 'yolo_acc_top_mul_mul_6ns_16s_22_1_0': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'post_process_unit'.
+INFO: [HLS 200-111]  Elapsed time: 0.46 seconds; current allocated memory: 147.597 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'yolo_acc_top' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_acc_top/inStream_a_V_data' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_acc_top/inStream_a_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_acc_top/inStream_a_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_acc_top/inStream_a_V_user_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_acc_top/inStream_a_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_acc_top/inStream_a_V_id_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_acc_top/inStream_a_V_dest_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_acc_top/inStream_b_V_data' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_acc_top/inStream_b_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_acc_top/inStream_b_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_acc_top/inStream_b_V_user_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_acc_top/inStream_b_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_acc_top/inStream_b_V_id_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_acc_top/inStream_b_V_dest_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_acc_top/outStream_V_data' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_acc_top/outStream_V_keep_V' to 'axis' (register, both mode).
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg484-1'
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'yolo_acc_fp_2019_64/src/yolo_acc.cpp' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 844.027 ; gain = 128.000 ; free physical = 325 ; free virtual = 9517
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 844.027 ; gain = 128.000 ; free physical = 325 ; free virtual = 9517
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 844.027 ; gain = 128.000 ; free physical = 303 ; free virtual = 9498
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 844.027 ; gain = 128.000 ; free physical = 292 ; free virtual = 9487
+INFO: [XFORM 203-1101] Packing variable 'outStream.V.data' (yolo_acc_fp_2019_64/src/yolo_acc.cpp:5) into a 64-bit variable.
+INFO: [XFORM 203-1101] Packing variable 'inStream_b.V.data' (yolo_acc_fp_2019_64/src/yolo_acc.cpp:4) into a 64-bit variable.
+INFO: [XFORM 203-1101] Packing variable 'inStream_a.V.data' (yolo_acc_fp_2019_64/src/yolo_acc.cpp:4) into a 64-bit variable.
+INFO: [XFORM 203-101] Partitioning array 'kernel_bias_fp.V' (yolo_acc_fp_2019_64/src/yolo_acc.cpp:20) in dimension 1 with a cyclic factor 2.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (yolo_acc_fp_2019_64/src/yolo_acc.cpp:47:5) to (yolo_acc_fp_2019_64/src/yolo_acc.cpp:46:52) in function 'yolo_acc_top'... converting 17 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (yolo_acc_fp_2019_64/src/yolo_acc.cpp:94:5) to (yolo_acc_fp_2019_64/src/yolo_acc.cpp:112:1) in function 'post_process_unit'... converting 10 basic blocks.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 844.027 ; gain = 128.000 ; free physical = 259 ; free virtual = 9457
+INFO: [XFORM 203-541] Flattening a loop nest 'Loop-2.1' (yolo_acc_fp_2019_64/src/yolo_acc.cpp:43:20) in function 'yolo_acc_top'.
+INFO: [XFORM 203-541] Flattening a loop nest 'Loop-2' (yolo_acc_fp_2019_64/src/yolo_acc.cpp:40:20) in function 'yolo_acc_top'.
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 908.027 ; gain = 192.000 ; free physical = 248 ; free virtual = 9447
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'yolo_acc_top' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'post_process_unit' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining function 'post_process_unit'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 3.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 18.94 seconds; current allocated memory: 127.913 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.04 seconds; current allocated memory: 128.159 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'yolo_acc_top' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 1'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 1.
+INFO: [SCHED 204-61] Pipelining loop 'Loop 2'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 6.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.18 seconds; current allocated memory: 128.901 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.21 seconds; current allocated memory: 129.934 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'post_process_unit' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Generating core module 'yolo_acc_top_mul_mul_6ns_16s_22_1_0': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'post_process_unit'.
+INFO: [HLS 200-111]  Elapsed time: 0.34 seconds; current allocated memory: 130.578 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'yolo_acc_top' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_acc_top/inStream_a_V_data' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_acc_top/inStream_a_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_acc_top/inStream_a_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_acc_top/inStream_a_V_user_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_acc_top/inStream_a_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_acc_top/inStream_a_V_id_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_acc_top/inStream_a_V_dest_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_acc_top/inStream_b_V_data' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_acc_top/inStream_b_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_acc_top/inStream_b_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_acc_top/inStream_b_V_user_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_acc_top/inStream_b_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_acc_top/inStream_b_V_id_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_acc_top/inStream_b_V_dest_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_acc_top/outStream_V_data' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_acc_top/outStream_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_acc_top/outStream_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_acc_top/outStream_V_user_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_acc_top/outStream_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_acc_top/outStream_V_id_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_acc_top/outStream_V_dest_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_acc_top/input_h_V' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_acc_top/input_w_V' to 's_axilite & ap_none'.
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================

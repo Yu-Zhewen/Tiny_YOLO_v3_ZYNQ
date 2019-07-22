@@ -8,7 +8,7 @@ use IEEE.NUMERIC_STD.all;
 
 entity yolo_acc_top_CTRL_BUS_s_axi is
 generic (
-    C_S_AXI_ADDR_WIDTH    : INTEGER := 5;
+    C_S_AXI_ADDR_WIDTH    : INTEGER := 6;
     C_S_AXI_DATA_WIDTH    : INTEGER := 32);
 port (
     ACLK                  :in   STD_LOGIC;
@@ -36,8 +36,11 @@ port (
     ap_done               :in   STD_LOGIC;
     ap_ready              :in   STD_LOGIC;
     ap_idle               :in   STD_LOGIC;
-    input_h_V             :out  STD_LOGIC_VECTOR(5 downto 0);
-    input_w_V             :out  STD_LOGIC_VECTOR(5 downto 0)
+    input_h_V             :out  STD_LOGIC_VECTOR(8 downto 0);
+    input_w_V             :out  STD_LOGIC_VECTOR(8 downto 0);
+    fold_input_ch_V       :out  STD_LOGIC_VECTOR(3 downto 0);
+    leaky_V               :out  STD_LOGIC_VECTOR(0 downto 0);
+    bias_en_V             :out  STD_LOGIC_VECTOR(0 downto 0)
 );
 end entity yolo_acc_top_CTRL_BUS_s_axi;
 
@@ -61,13 +64,25 @@ end entity yolo_acc_top_CTRL_BUS_s_axi;
 --        bit 1  - Channel 1 (ap_ready)
 --        others - reserved
 -- 0x10 : Data signal of input_h_V
---        bit 5~0 - input_h_V[5:0] (Read/Write)
+--        bit 8~0 - input_h_V[8:0] (Read/Write)
 --        others  - reserved
 -- 0x14 : reserved
 -- 0x18 : Data signal of input_w_V
---        bit 5~0 - input_w_V[5:0] (Read/Write)
+--        bit 8~0 - input_w_V[8:0] (Read/Write)
 --        others  - reserved
 -- 0x1c : reserved
+-- 0x20 : Data signal of fold_input_ch_V
+--        bit 3~0 - fold_input_ch_V[3:0] (Read/Write)
+--        others  - reserved
+-- 0x24 : reserved
+-- 0x28 : Data signal of leaky_V
+--        bit 0  - leaky_V[0] (Read/Write)
+--        others - reserved
+-- 0x2c : reserved
+-- 0x30 : Data signal of bias_en_V
+--        bit 0  - bias_en_V[0] (Read/Write)
+--        others - reserved
+-- 0x34 : reserved
 -- (SC = Self Clear, COR = Clear on Read, TOW = Toggle on Write, COH = Clear on Handshake)
 
 architecture behave of yolo_acc_top_CTRL_BUS_s_axi is
@@ -75,15 +90,21 @@ architecture behave of yolo_acc_top_CTRL_BUS_s_axi is
     signal wstate  : states := wrreset;
     signal rstate  : states := rdreset;
     signal wnext, rnext: states;
-    constant ADDR_AP_CTRL          : INTEGER := 16#00#;
-    constant ADDR_GIE              : INTEGER := 16#04#;
-    constant ADDR_IER              : INTEGER := 16#08#;
-    constant ADDR_ISR              : INTEGER := 16#0c#;
-    constant ADDR_INPUT_H_V_DATA_0 : INTEGER := 16#10#;
-    constant ADDR_INPUT_H_V_CTRL   : INTEGER := 16#14#;
-    constant ADDR_INPUT_W_V_DATA_0 : INTEGER := 16#18#;
-    constant ADDR_INPUT_W_V_CTRL   : INTEGER := 16#1c#;
-    constant ADDR_BITS         : INTEGER := 5;
+    constant ADDR_AP_CTRL                : INTEGER := 16#00#;
+    constant ADDR_GIE                    : INTEGER := 16#04#;
+    constant ADDR_IER                    : INTEGER := 16#08#;
+    constant ADDR_ISR                    : INTEGER := 16#0c#;
+    constant ADDR_INPUT_H_V_DATA_0       : INTEGER := 16#10#;
+    constant ADDR_INPUT_H_V_CTRL         : INTEGER := 16#14#;
+    constant ADDR_INPUT_W_V_DATA_0       : INTEGER := 16#18#;
+    constant ADDR_INPUT_W_V_CTRL         : INTEGER := 16#1c#;
+    constant ADDR_FOLD_INPUT_CH_V_DATA_0 : INTEGER := 16#20#;
+    constant ADDR_FOLD_INPUT_CH_V_CTRL   : INTEGER := 16#24#;
+    constant ADDR_LEAKY_V_DATA_0         : INTEGER := 16#28#;
+    constant ADDR_LEAKY_V_CTRL           : INTEGER := 16#2c#;
+    constant ADDR_BIAS_EN_V_DATA_0       : INTEGER := 16#30#;
+    constant ADDR_BIAS_EN_V_CTRL         : INTEGER := 16#34#;
+    constant ADDR_BITS         : INTEGER := 6;
 
     signal waddr               : UNSIGNED(ADDR_BITS-1 downto 0);
     signal wmask               : UNSIGNED(31 downto 0);
@@ -105,8 +126,11 @@ architecture behave of yolo_acc_top_CTRL_BUS_s_axi is
     signal int_gie             : STD_LOGIC := '0';
     signal int_ier             : UNSIGNED(1 downto 0) := (others => '0');
     signal int_isr             : UNSIGNED(1 downto 0) := (others => '0');
-    signal int_input_h_V       : UNSIGNED(5 downto 0) := (others => '0');
-    signal int_input_w_V       : UNSIGNED(5 downto 0) := (others => '0');
+    signal int_input_h_V       : UNSIGNED(8 downto 0) := (others => '0');
+    signal int_input_w_V       : UNSIGNED(8 downto 0) := (others => '0');
+    signal int_fold_input_ch_V : UNSIGNED(3 downto 0) := (others => '0');
+    signal int_leaky_V         : UNSIGNED(0 downto 0) := (others => '0');
+    signal int_bias_en_V       : UNSIGNED(0 downto 0) := (others => '0');
 
 
 begin
@@ -229,9 +253,15 @@ begin
                     when ADDR_ISR =>
                         rdata_data <= (1 => int_isr(1), 0 => int_isr(0), others => '0');
                     when ADDR_INPUT_H_V_DATA_0 =>
-                        rdata_data <= RESIZE(int_input_h_V(5 downto 0), 32);
+                        rdata_data <= RESIZE(int_input_h_V(8 downto 0), 32);
                     when ADDR_INPUT_W_V_DATA_0 =>
-                        rdata_data <= RESIZE(int_input_w_V(5 downto 0), 32);
+                        rdata_data <= RESIZE(int_input_w_V(8 downto 0), 32);
+                    when ADDR_FOLD_INPUT_CH_V_DATA_0 =>
+                        rdata_data <= RESIZE(int_fold_input_ch_V(3 downto 0), 32);
+                    when ADDR_LEAKY_V_DATA_0 =>
+                        rdata_data <= RESIZE(int_leaky_V(0 downto 0), 32);
+                    when ADDR_BIAS_EN_V_DATA_0 =>
+                        rdata_data <= RESIZE(int_bias_en_V(0 downto 0), 32);
                     when others =>
                         rdata_data <= (others => '0');
                     end case;
@@ -245,6 +275,9 @@ begin
     ap_start             <= int_ap_start;
     input_h_V            <= STD_LOGIC_VECTOR(int_input_h_V);
     input_w_V            <= STD_LOGIC_VECTOR(int_input_w_V);
+    fold_input_ch_V      <= STD_LOGIC_VECTOR(int_fold_input_ch_V);
+    leaky_V              <= STD_LOGIC_VECTOR(int_leaky_V);
+    bias_en_V            <= STD_LOGIC_VECTOR(int_bias_en_V);
 
     process (ACLK)
     begin
@@ -376,7 +409,7 @@ begin
         if (ACLK'event and ACLK = '1') then
             if (ACLK_EN = '1') then
                 if (w_hs = '1' and waddr = ADDR_INPUT_H_V_DATA_0) then
-                    int_input_h_V(5 downto 0) <= (UNSIGNED(WDATA(5 downto 0)) and wmask(5 downto 0)) or ((not wmask(5 downto 0)) and int_input_h_V(5 downto 0));
+                    int_input_h_V(8 downto 0) <= (UNSIGNED(WDATA(8 downto 0)) and wmask(8 downto 0)) or ((not wmask(8 downto 0)) and int_input_h_V(8 downto 0));
                 end if;
             end if;
         end if;
@@ -387,7 +420,40 @@ begin
         if (ACLK'event and ACLK = '1') then
             if (ACLK_EN = '1') then
                 if (w_hs = '1' and waddr = ADDR_INPUT_W_V_DATA_0) then
-                    int_input_w_V(5 downto 0) <= (UNSIGNED(WDATA(5 downto 0)) and wmask(5 downto 0)) or ((not wmask(5 downto 0)) and int_input_w_V(5 downto 0));
+                    int_input_w_V(8 downto 0) <= (UNSIGNED(WDATA(8 downto 0)) and wmask(8 downto 0)) or ((not wmask(8 downto 0)) and int_input_w_V(8 downto 0));
+                end if;
+            end if;
+        end if;
+    end process;
+
+    process (ACLK)
+    begin
+        if (ACLK'event and ACLK = '1') then
+            if (ACLK_EN = '1') then
+                if (w_hs = '1' and waddr = ADDR_FOLD_INPUT_CH_V_DATA_0) then
+                    int_fold_input_ch_V(3 downto 0) <= (UNSIGNED(WDATA(3 downto 0)) and wmask(3 downto 0)) or ((not wmask(3 downto 0)) and int_fold_input_ch_V(3 downto 0));
+                end if;
+            end if;
+        end if;
+    end process;
+
+    process (ACLK)
+    begin
+        if (ACLK'event and ACLK = '1') then
+            if (ACLK_EN = '1') then
+                if (w_hs = '1' and waddr = ADDR_LEAKY_V_DATA_0) then
+                    int_leaky_V(0 downto 0) <= (UNSIGNED(WDATA(0 downto 0)) and wmask(0 downto 0)) or ((not wmask(0 downto 0)) and int_leaky_V(0 downto 0));
+                end if;
+            end if;
+        end if;
+    end process;
+
+    process (ACLK)
+    begin
+        if (ACLK'event and ACLK = '1') then
+            if (ACLK_EN = '1') then
+                if (w_hs = '1' and waddr = ADDR_BIAS_EN_V_DATA_0) then
+                    int_bias_en_V(0 downto 0) <= (UNSIGNED(WDATA(0 downto 0)) and wmask(0 downto 0)) or ((not wmask(0 downto 0)) and int_bias_en_V(0 downto 0));
                 end if;
             end if;
         end if;
