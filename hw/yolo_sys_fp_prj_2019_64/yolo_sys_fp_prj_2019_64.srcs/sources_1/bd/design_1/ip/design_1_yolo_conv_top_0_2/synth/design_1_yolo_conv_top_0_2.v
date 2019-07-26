@@ -48,11 +48,11 @@
 
 
 // IP VLNV: xilinx.com:hls:yolo_conv_top:1.0
-// IP Revision: 1907201908
+// IP Revision: 1907261946
 
 (* X_CORE_INFO = "yolo_conv_top,Vivado 2019.1" *)
 (* CHECK_LICENSE_TYPE = "design_1_yolo_conv_top_0_2,yolo_conv_top,{}" *)
-(* CORE_GENERATION_INFO = "design_1_yolo_conv_top_0_2,yolo_conv_top,{x_ipProduct=Vivado 2019.1,x_ipVendor=xilinx.com,x_ipLibrary=hls,x_ipName=yolo_conv_top,x_ipVersion=1.0,x_ipCoreRevision=1907201908,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED,C_S_AXI_CTRL_BUS_ADDR_WIDTH=7,C_S_AXI_CTRL_BUS_DATA_WIDTH=32}" *)
+(* CORE_GENERATION_INFO = "design_1_yolo_conv_top_0_2,yolo_conv_top,{x_ipProduct=Vivado 2019.1,x_ipVendor=xilinx.com,x_ipLibrary=hls,x_ipName=yolo_conv_top,x_ipVersion=1.0,x_ipCoreRevision=1907261946,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED,C_S_AXI_CTRL_BUS_ADDR_WIDTH=7,C_S_AXI_CTRL_BUS_DATA_WIDTH=32}" *)
 (* IP_DEFINITION_SOURCE = "HLS" *)
 (* DowngradeIPIdentifiedWarnings = "yes" *)
 module design_1_yolo_conv_top_0_2 (

@@ -12,7 +12,7 @@
 `define AUTOTB_PER_RESULT_TRANS_FILE "yolo_conv_top.performance.result.transaction.xml"
 `define AUTOTB_TOP_INST AESL_inst_apatb_yolo_conv_top_top
 `define AUTOTB_MAX_ALLOW_LATENCY  15000000
-`define AUTOTB_CLOCK_PERIOD_DIV2 5.00
+`define AUTOTB_CLOCK_PERIOD_DIV2 4.00
 
 `define AESL_DEPTH_inStream_V_data 1
 `define AESL_DEPTH_inStream_V_keep_V 1
@@ -98,7 +98,7 @@ module `AUTOTB_TOP;
 
 parameter AUTOTB_TRANSACTION_NUM = 1;
 parameter PROGRESS_TIMEOUT = 10000000;
-parameter LATENCY_ESTIMATION = 2802489;
+parameter LATENCY_ESTIMATION = 1401342;
 parameter LENGTH_inStream_V_data = 1808;
 parameter LENGTH_inStream_V_keep_V = 1808;
 parameter LENGTH_inStream_V_strb_V = 1808;

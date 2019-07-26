@@ -1,20 +1,20 @@
 #include <stdio.h>
-#include "yolo2_output_sdk_fp.h"
+#include "yolo1_output_sdk_fp.h"
 
 int main()
 {
 	FILE *fp;
-	fp = fopen("yolo_2_output_pad.h","w");
+	fp = fopen("yolo1_output_sdk_fp_pad.h","w");
 	
 
 
-	fprintf(fp,"short yolo2_output_sdk_fp_pad[]={");
+	fprintf(fp,"short yolo1_output_sdk_fp_pad[]={");
 
-	for(int i=0;i<26*26;i++)
+	for(int i=0;i<13*13;i++)
 	{
 		for(int j=0;j<255;j++)
 		{
-			fprintf(fp,"%hd,\n",yolo2_output_sdk_fp[i*255+j]);
+			fprintf(fp,"%hd,\n",yolo1_output_sdk_fp[i*255+j]);
 		}
 		fprintf(fp,"0,\n");
 

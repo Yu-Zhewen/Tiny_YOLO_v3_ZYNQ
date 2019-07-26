@@ -33,7 +33,7 @@ set Pointer000 "0"
 set Reference000 "0"
 set Dims000 [list 0]
 set Interface000 "wire"
-set DataType000 "[list ap_fixed 16 8 4 0 0 ]"
+set DataType000 "[list ap_fixed 16 8 5 3 0 ]"
 set Port000 [list $PortName000 $Interface000 $DataType000 $Pointer000 $Dims000 $Const000 $Volatile000 $ArrayOpt000]
 lappend structMem00 $Port000
 set PortName001 "sub_data_1"
@@ -45,7 +45,7 @@ set Pointer001 "0"
 set Reference001 "0"
 set Dims001 [list 0]
 set Interface001 "wire"
-set DataType001 "[list ap_fixed 16 8 4 0 0 ]"
+set DataType001 "[list ap_fixed 16 8 5 3 0 ]"
 set Port001 [list $PortName001 $Interface001 $DataType001 $Pointer001 $Dims001 $Const001 $Volatile001 $ArrayOpt001]
 lappend structMem00 $Port001
 set PortName002 "sub_data_2"
@@ -57,7 +57,7 @@ set Pointer002 "0"
 set Reference002 "0"
 set Dims002 [list 0]
 set Interface002 "wire"
-set DataType002 "[list ap_fixed 16 8 4 0 0 ]"
+set DataType002 "[list ap_fixed 16 8 5 3 0 ]"
 set Port002 [list $PortName002 $Interface002 $DataType002 $Pointer002 $Dims002 $Const002 $Volatile002 $ArrayOpt002]
 lappend structMem00 $Port002
 set PortName003 "sub_data_3"
@@ -69,7 +69,7 @@ set Pointer003 "0"
 set Reference003 "0"
 set Dims003 [list 0]
 set Interface003 "wire"
-set DataType003 "[list ap_fixed 16 8 4 0 0 ]"
+set DataType003 "[list ap_fixed 16 8 5 3 0 ]"
 set Port003 [list $PortName003 $Interface003 $DataType003 $Pointer003 $Dims003 $Const003 $Volatile003 $ArrayOpt003]
 lappend structMem00 $Port003
 set structParameter00 [list ]
@@ -191,7 +191,7 @@ set Pointer100 "0"
 set Reference100 "0"
 set Dims100 [list 0]
 set Interface100 "wire"
-set DataType100 "[list ap_fixed 16 8 4 0 0 ]"
+set DataType100 "[list ap_fixed 16 8 5 3 0 ]"
 set Port100 [list $PortName100 $Interface100 $DataType100 $Pointer100 $Dims100 $Const100 $Volatile100 $ArrayOpt100]
 lappend structMem10 $Port100
 set PortName101 "sub_data_1"
@@ -203,7 +203,7 @@ set Pointer101 "0"
 set Reference101 "0"
 set Dims101 [list 0]
 set Interface101 "wire"
-set DataType101 "[list ap_fixed 16 8 4 0 0 ]"
+set DataType101 "[list ap_fixed 16 8 5 3 0 ]"
 set Port101 [list $PortName101 $Interface101 $DataType101 $Pointer101 $Dims101 $Const101 $Volatile101 $ArrayOpt101]
 lappend structMem10 $Port101
 set PortName102 "sub_data_2"
@@ -215,7 +215,7 @@ set Pointer102 "0"
 set Reference102 "0"
 set Dims102 [list 0]
 set Interface102 "wire"
-set DataType102 "[list ap_fixed 16 8 4 0 0 ]"
+set DataType102 "[list ap_fixed 16 8 5 3 0 ]"
 set Port102 [list $PortName102 $Interface102 $DataType102 $Pointer102 $Dims102 $Const102 $Volatile102 $ArrayOpt102]
 lappend structMem10 $Port102
 set PortName103 "sub_data_3"
@@ -227,7 +227,7 @@ set Pointer103 "0"
 set Reference103 "0"
 set Dims103 [list 0]
 set Interface103 "wire"
-set DataType103 "[list ap_fixed 16 8 4 0 0 ]"
+set DataType103 "[list ap_fixed 16 8 5 3 0 ]"
 set Port103 [list $PortName103 $Interface103 $DataType103 $Pointer103 $Dims103 $Const103 $Volatile103 $ArrayOpt103]
 lappend structMem10 $Port103
 set structParameter10 [list ]

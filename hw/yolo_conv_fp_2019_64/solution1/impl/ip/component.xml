@@ -1010,7 +1010,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>860dbdda</spirit:value>
+            <spirit:value>4d74cc56</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1026,7 +1026,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>40bd2d92</spirit:value>
+            <spirit:value>d59183b8</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1042,7 +1042,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>18716450</spirit:value>
+            <spirit:value>9527e134</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1058,7 +1058,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>cb6cdf9a</spirit:value>
+            <spirit:value>fe617ba5</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1799,6 +1799,10 @@
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
+        <spirit:name>hdl/verilog/yolo_conv_top_mac_muladd_16s_16s_32s_32_1_0.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
         <spirit:name>hdl/verilog/yolo_conv_top_mul_mul_16s_16s_32_1_0.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
@@ -1856,6 +1860,11 @@
       </spirit:file>
       <spirit:file>
         <spirit:name>hdl/verilog/yolo_conv_top_mac_muladd_4ns_10ns_9ns_13_1_1.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+        <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/verilog/yolo_conv_top_mac_muladd_16s_16s_32s_32_1_0.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
@@ -1918,13 +1927,17 @@
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
+        <spirit:name>hdl/vhdl/yolo_conv_top_mac_muladd_16s_16s_32s_32_1_0.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
         <spirit:name>hdl/vhdl/yolo_conv_top_mul_mul_16s_16s_32_1_0.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
         <spirit:name>hdl/vhdl/yolo_conv_top.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:userFileType>CHECKSUM_4f3ecfda</spirit:userFileType>
+        <spirit:userFileType>CHECKSUM_296ff89b</spirit:userFileType>
       </spirit:file>
     </spirit:fileSet>
     <spirit:fileSet>
@@ -1976,6 +1989,11 @@
       </spirit:file>
       <spirit:file>
         <spirit:name>hdl/vhdl/yolo_conv_top_mac_muladd_4ns_10ns_9ns_13_1_1.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+        <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/vhdl/yolo_conv_top_mac_muladd_16s_16s_32s_32_1_0.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
@@ -2072,7 +2090,7 @@
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>clk_period</spirit:name>
-      <spirit:value spirit:id="PARAM_VALUE.clk_period" spirit:order="2">10</spirit:value>
+      <spirit:value spirit:id="PARAM_VALUE.clk_period" spirit:order="2">8</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>machine</spirit:name>
@@ -2084,7 +2102,7 @@
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>latency</spirit:name>
-      <spirit:value spirit:id="PARAM_VALUE.latency" spirit:order="5">2802489</spirit:value>
+      <spirit:value spirit:id="PARAM_VALUE.latency" spirit:order="5">1401342</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>II</spirit:name>
@@ -2101,17 +2119,17 @@
       </xilinx:taxonomies>
       <xilinx:displayName>Yolo_conv_top</xilinx:displayName>
       <xilinx:definitionSource>HLS</xilinx:definitionSource>
-      <xilinx:coreRevision>1907201908</xilinx:coreRevision>
-      <xilinx:coreCreationDateTime>2019-07-20T18:08:39Z</xilinx:coreCreationDateTime>
+      <xilinx:coreRevision>1907261946</xilinx:coreRevision>
+      <xilinx:coreCreationDateTime>2019-07-26T18:46:35Z</xilinx:coreCreationDateTime>
     </xilinx:coreExtensions>
     <xilinx:packagingInfo>
       <xilinx:xilinxVersion>2019.1</xilinx:xilinxVersion>
       <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="9408b4b9"/>
       <xilinx:checksum xilinx:scope="memoryMaps" xilinx:value="63f1ac74"/>
-      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="34701d61"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="5bc333c2"/>
       <xilinx:checksum xilinx:scope="ports" xilinx:value="2f0c18eb"/>
       <xilinx:checksum xilinx:scope="hdlParameters" xilinx:value="274ab10d"/>
-      <xilinx:checksum xilinx:scope="parameters" xilinx:value="21f761d4"/>
+      <xilinx:checksum xilinx:scope="parameters" xilinx:value="1f5a8f75"/>
     </xilinx:packagingInfo>
   </spirit:vendorExtensions>
 </spirit:component>

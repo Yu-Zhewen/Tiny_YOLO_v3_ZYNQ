@@ -12,35 +12,36 @@ source design_1_wrapper.tcl -notrace
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/xavier/MSc_Project/hls/ip_fp64'.
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx_2019_1/Vivado/2019.1/data/ip'.
+update_ip_catalog: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 1416.621 ; gain = 0.000 ; free physical = 3458 ; free virtual = 13106
 Command: synth_design -top design_1_wrapper -part xc7z020clg484-1
 Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: [Device 21-403] Loading part xc7z020clg484-1
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 10744 
+INFO: Helper process launched with PID 7153 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1721.621 ; gain = 153.715 ; free physical = 830 ; free virtual = 11922
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1721.879 ; gain = 153.715 ; free physical = 3026 ; free virtual = 12701
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'design_1_wrapper' [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_sys_fp_prj_2019_64/yolo_sys_fp_prj_2019_64.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v:12]
 INFO: [Synth 8-6157] synthesizing module 'design_1' [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_sys_fp_prj_2019_64/yolo_sys_fp_prj_2019_64.srcs/sources_1/bd/design_1/synth/design_1.v:13]
-INFO: [Synth 8-6157] synthesizing module 'design_1_axi_dma_7' [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_sys_fp_prj_2019_64/yolo_sys_fp_prj_2019_64.runs/synth_1/.Xil/Vivado-10721-Lenovo-XiaoXin-CHAO7000/realtime/design_1_axi_dma_7_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_dma_7' (1#1) [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_sys_fp_prj_2019_64/yolo_sys_fp_prj_2019_64.runs/synth_1/.Xil/Vivado-10721-Lenovo-XiaoXin-CHAO7000/realtime/design_1_axi_dma_7_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axi_dma_7' [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_sys_fp_prj_2019_64/yolo_sys_fp_prj_2019_64.runs/synth_1/.Xil/Vivado-7079-Lenovo-XiaoXin-CHAO7000/realtime/design_1_axi_dma_7_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_dma_7' (1#1) [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_sys_fp_prj_2019_64/yolo_sys_fp_prj_2019_64.runs/synth_1/.Xil/Vivado-7079-Lenovo-XiaoXin-CHAO7000/realtime/design_1_axi_dma_7_stub.v:6]
 WARNING: [Synth 8-7023] instance 'axi_dma' of module 'design_1_axi_dma_7' has 64 connections declared, but only 59 given [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_sys_fp_prj_2019_64/yolo_sys_fp_prj_2019_64.srcs/sources_1/bd/design_1/synth/design_1.v:486]
-INFO: [Synth 8-6157] synthesizing module 'design_1_axi_dma_1_5' [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_sys_fp_prj_2019_64/yolo_sys_fp_prj_2019_64.runs/synth_1/.Xil/Vivado-10721-Lenovo-XiaoXin-CHAO7000/realtime/design_1_axi_dma_1_5_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_dma_1_5' (2#1) [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_sys_fp_prj_2019_64/yolo_sys_fp_prj_2019_64.runs/synth_1/.Xil/Vivado-10721-Lenovo-XiaoXin-CHAO7000/realtime/design_1_axi_dma_1_5_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axi_dma_1_5' [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_sys_fp_prj_2019_64/yolo_sys_fp_prj_2019_64.runs/synth_1/.Xil/Vivado-7079-Lenovo-XiaoXin-CHAO7000/realtime/design_1_axi_dma_1_5_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_dma_1_5' (2#1) [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_sys_fp_prj_2019_64/yolo_sys_fp_prj_2019_64.runs/synth_1/.Xil/Vivado-7079-Lenovo-XiaoXin-CHAO7000/realtime/design_1_axi_dma_1_5_stub.v:6]
 WARNING: [Synth 8-7023] instance 'axi_dma_1' of module 'design_1_axi_dma_1_5' has 40 connections declared, but only 37 given [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_sys_fp_prj_2019_64/yolo_sys_fp_prj_2019_64.srcs/sources_1/bd/design_1/synth/design_1.v:546]
 INFO: [Synth 8-6157] synthesizing module 'design_1_axi_mem_intercon_7' [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_sys_fp_prj_2019_64/yolo_sys_fp_prj_2019_64.srcs/sources_1/bd/design_1/synth/design_1.v:1546]
 INFO: [Synth 8-6157] synthesizing module 'm00_couplers_imp_1R706YB' [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_sys_fp_prj_2019_64/yolo_sys_fp_prj_2019_64.srcs/sources_1/bd/design_1/synth/design_1.v:3805]
-INFO: [Synth 8-6157] synthesizing module 'design_1_auto_pc_3' [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_sys_fp_prj_2019_64/yolo_sys_fp_prj_2019_64.runs/synth_1/.Xil/Vivado-10721-Lenovo-XiaoXin-CHAO7000/realtime/design_1_auto_pc_3_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_pc_3' (3#1) [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_sys_fp_prj_2019_64/yolo_sys_fp_prj_2019_64.runs/synth_1/.Xil/Vivado-10721-Lenovo-XiaoXin-CHAO7000/realtime/design_1_auto_pc_3_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_auto_pc_0' [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_sys_fp_prj_2019_64/yolo_sys_fp_prj_2019_64.runs/synth_1/.Xil/Vivado-7079-Lenovo-XiaoXin-CHAO7000/realtime/design_1_auto_pc_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_pc_0' (3#1) [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_sys_fp_prj_2019_64/yolo_sys_fp_prj_2019_64.runs/synth_1/.Xil/Vivado-7079-Lenovo-XiaoXin-CHAO7000/realtime/design_1_auto_pc_0_stub.v:6]
 INFO: [Synth 8-6155] done synthesizing module 'm00_couplers_imp_1R706YB' (4#1) [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_sys_fp_prj_2019_64/yolo_sys_fp_prj_2019_64.srcs/sources_1/bd/design_1/synth/design_1.v:3805]
 INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_7HNO1D' [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_sys_fp_prj_2019_64/yolo_sys_fp_prj_2019_64.srcs/sources_1/bd/design_1/synth/design_1.v:5526]
 INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_7HNO1D' (5#1) [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_sys_fp_prj_2019_64/yolo_sys_fp_prj_2019_64.srcs/sources_1/bd/design_1/synth/design_1.v:5526]
 INFO: [Synth 8-6157] synthesizing module 's01_couplers_imp_1W60HW0' [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_sys_fp_prj_2019_64/yolo_sys_fp_prj_2019_64.srcs/sources_1/bd/design_1/synth/design_1.v:5956]
 INFO: [Synth 8-6155] done synthesizing module 's01_couplers_imp_1W60HW0' (6#1) [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_sys_fp_prj_2019_64/yolo_sys_fp_prj_2019_64.srcs/sources_1/bd/design_1/synth/design_1.v:5956]
-INFO: [Synth 8-6157] synthesizing module 'design_1_xbar_10' [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_sys_fp_prj_2019_64/yolo_sys_fp_prj_2019_64.runs/synth_1/.Xil/Vivado-10721-Lenovo-XiaoXin-CHAO7000/realtime/design_1_xbar_10_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_xbar_10' (7#1) [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_sys_fp_prj_2019_64/yolo_sys_fp_prj_2019_64.runs/synth_1/.Xil/Vivado-10721-Lenovo-XiaoXin-CHAO7000/realtime/design_1_xbar_10_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_xbar_10' [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_sys_fp_prj_2019_64/yolo_sys_fp_prj_2019_64.runs/synth_1/.Xil/Vivado-7079-Lenovo-XiaoXin-CHAO7000/realtime/design_1_xbar_10_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_xbar_10' (7#1) [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_sys_fp_prj_2019_64/yolo_sys_fp_prj_2019_64.runs/synth_1/.Xil/Vivado-7079-Lenovo-XiaoXin-CHAO7000/realtime/design_1_xbar_10_stub.v:6]
 WARNING: [Synth 8-689] width (1) of port connection 's_axi_awready' does not match port width (2) of module 'design_1_xbar_10' [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_sys_fp_prj_2019_64/yolo_sys_fp_prj_2019_64.srcs/sources_1/bd/design_1/synth/design_1.v:2121]
 WARNING: [Synth 8-689] width (2) of port connection 's_axi_bresp' does not match port width (4) of module 'design_1_xbar_10' [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_sys_fp_prj_2019_64/yolo_sys_fp_prj_2019_64.srcs/sources_1/bd/design_1/synth/design_1.v:2125]
 WARNING: [Synth 8-689] width (1) of port connection 's_axi_bvalid' does not match port width (2) of module 'design_1_xbar_10' [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_sys_fp_prj_2019_64/yolo_sys_fp_prj_2019_64.srcs/sources_1/bd/design_1/synth/design_1.v:2126]
@@ -49,19 +50,19 @@ WARNING: [Synth 8-7023] instance 'xbar' of module 'design_1_xbar_10' has 78 conn
 INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_mem_intercon_7' (8#1) [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_sys_fp_prj_2019_64/yolo_sys_fp_prj_2019_64.srcs/sources_1/bd/design_1/synth/design_1.v:1546]
 INFO: [Synth 8-6157] synthesizing module 'design_1_axi_mem_intercon_1_5' [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_sys_fp_prj_2019_64/yolo_sys_fp_prj_2019_64.srcs/sources_1/bd/design_1/synth/design_1.v:1376]
 INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_1FI55ZU' [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_sys_fp_prj_2019_64/yolo_sys_fp_prj_2019_64.srcs/sources_1/bd/design_1/synth/design_1.v:5363]
-INFO: [Synth 8-6157] synthesizing module 'design_1_auto_pc_4' [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_sys_fp_prj_2019_64/yolo_sys_fp_prj_2019_64.runs/synth_1/.Xil/Vivado-10721-Lenovo-XiaoXin-CHAO7000/realtime/design_1_auto_pc_4_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_pc_4' (9#1) [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_sys_fp_prj_2019_64/yolo_sys_fp_prj_2019_64.runs/synth_1/.Xil/Vivado-10721-Lenovo-XiaoXin-CHAO7000/realtime/design_1_auto_pc_4_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_auto_pc_1' [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_sys_fp_prj_2019_64/yolo_sys_fp_prj_2019_64.runs/synth_1/.Xil/Vivado-7079-Lenovo-XiaoXin-CHAO7000/realtime/design_1_auto_pc_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_pc_1' (9#1) [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_sys_fp_prj_2019_64/yolo_sys_fp_prj_2019_64.runs/synth_1/.Xil/Vivado-7079-Lenovo-XiaoXin-CHAO7000/realtime/design_1_auto_pc_1_stub.v:6]
 INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_1FI55ZU' (10#1) [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_sys_fp_prj_2019_64/yolo_sys_fp_prj_2019_64.srcs/sources_1/bd/design_1/synth/design_1.v:5363]
 INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_mem_intercon_1_5' (11#1) [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_sys_fp_prj_2019_64/yolo_sys_fp_prj_2019_64.srcs/sources_1/bd/design_1/synth/design_1.v:1376]
-INFO: [Synth 8-6157] synthesizing module 'design_1_axis_switch_0_2' [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_sys_fp_prj_2019_64/yolo_sys_fp_prj_2019_64.runs/synth_1/.Xil/Vivado-10721-Lenovo-XiaoXin-CHAO7000/realtime/design_1_axis_switch_0_2_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_axis_switch_0_2' (12#1) [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_sys_fp_prj_2019_64/yolo_sys_fp_prj_2019_64.runs/synth_1/.Xil/Vivado-10721-Lenovo-XiaoXin-CHAO7000/realtime/design_1_axis_switch_0_2_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'design_1_axis_switch_1_2' [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_sys_fp_prj_2019_64/yolo_sys_fp_prj_2019_64.runs/synth_1/.Xil/Vivado-10721-Lenovo-XiaoXin-CHAO7000/realtime/design_1_axis_switch_1_2_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_axis_switch_1_2' (13#1) [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_sys_fp_prj_2019_64/yolo_sys_fp_prj_2019_64.runs/synth_1/.Xil/Vivado-10721-Lenovo-XiaoXin-CHAO7000/realtime/design_1_axis_switch_1_2_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'design_1_axis_switch_2_1' [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_sys_fp_prj_2019_64/yolo_sys_fp_prj_2019_64.runs/synth_1/.Xil/Vivado-10721-Lenovo-XiaoXin-CHAO7000/realtime/design_1_axis_switch_2_1_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_axis_switch_2_1' (14#1) [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_sys_fp_prj_2019_64/yolo_sys_fp_prj_2019_64.runs/synth_1/.Xil/Vivado-10721-Lenovo-XiaoXin-CHAO7000/realtime/design_1_axis_switch_2_1_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axis_switch_0_2' [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_sys_fp_prj_2019_64/yolo_sys_fp_prj_2019_64.runs/synth_1/.Xil/Vivado-7079-Lenovo-XiaoXin-CHAO7000/realtime/design_1_axis_switch_0_2_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axis_switch_0_2' (12#1) [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_sys_fp_prj_2019_64/yolo_sys_fp_prj_2019_64.runs/synth_1/.Xil/Vivado-7079-Lenovo-XiaoXin-CHAO7000/realtime/design_1_axis_switch_0_2_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axis_switch_1_2' [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_sys_fp_prj_2019_64/yolo_sys_fp_prj_2019_64.runs/synth_1/.Xil/Vivado-7079-Lenovo-XiaoXin-CHAO7000/realtime/design_1_axis_switch_1_2_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axis_switch_1_2' (13#1) [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_sys_fp_prj_2019_64/yolo_sys_fp_prj_2019_64.runs/synth_1/.Xil/Vivado-7079-Lenovo-XiaoXin-CHAO7000/realtime/design_1_axis_switch_1_2_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axis_switch_2_1' [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_sys_fp_prj_2019_64/yolo_sys_fp_prj_2019_64.runs/synth_1/.Xil/Vivado-7079-Lenovo-XiaoXin-CHAO7000/realtime/design_1_axis_switch_2_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axis_switch_2_1' (14#1) [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_sys_fp_prj_2019_64/yolo_sys_fp_prj_2019_64.runs/synth_1/.Xil/Vivado-7079-Lenovo-XiaoXin-CHAO7000/realtime/design_1_axis_switch_2_1_stub.v:6]
 WARNING: [Synth 8-7023] instance 'axis_switch_2' of module 'design_1_axis_switch_2_1' has 38 connections declared, but only 34 given [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_sys_fp_prj_2019_64/yolo_sys_fp_prj_2019_64.srcs/sources_1/bd/design_1/synth/design_1.v:765]
-INFO: [Synth 8-6157] synthesizing module 'design_1_processing_system7_0_1' [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_sys_fp_prj_2019_64/yolo_sys_fp_prj_2019_64.runs/synth_1/.Xil/Vivado-10721-Lenovo-XiaoXin-CHAO7000/realtime/design_1_processing_system7_0_1_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_processing_system7_0_1' (15#1) [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_sys_fp_prj_2019_64/yolo_sys_fp_prj_2019_64.runs/synth_1/.Xil/Vivado-10721-Lenovo-XiaoXin-CHAO7000/realtime/design_1_processing_system7_0_1_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_processing_system7_0_1' [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_sys_fp_prj_2019_64/yolo_sys_fp_prj_2019_64.runs/synth_1/.Xil/Vivado-7079-Lenovo-XiaoXin-CHAO7000/realtime/design_1_processing_system7_0_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_processing_system7_0_1' (15#1) [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_sys_fp_prj_2019_64/yolo_sys_fp_prj_2019_64.runs/synth_1/.Xil/Vivado-7079-Lenovo-XiaoXin-CHAO7000/realtime/design_1_processing_system7_0_1_stub.v:6]
 WARNING: [Synth 8-7023] instance 'processing_system7_0' of module 'design_1_processing_system7_0_1' has 158 connections declared, but only 139 given [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_sys_fp_prj_2019_64/yolo_sys_fp_prj_2019_64.srcs/sources_1/bd/design_1/synth/design_1.v:800]
 INFO: [Synth 8-6157] synthesizing module 'design_1_ps7_0_axi_periph_4' [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_sys_fp_prj_2019_64/yolo_sys_fp_prj_2019_64.srcs/sources_1/bd/design_1/synth/design_1.v:2139]
 INFO: [Synth 8-6157] synthesizing module 'm00_couplers_imp_15SPJYW' [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_sys_fp_prj_2019_64/yolo_sys_fp_prj_2019_64.srcs/sources_1/bd/design_1/synth/design_1.v:3673]
@@ -85,31 +86,31 @@ INFO: [Synth 8-6155] done synthesizing module 'm08_couplers_imp_1024TAS' (24#1) 
 INFO: [Synth 8-6157] synthesizing module 'm09_couplers_imp_UP9YUT' [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_sys_fp_prj_2019_64/yolo_sys_fp_prj_2019_64.srcs/sources_1/bd/design_1/synth/design_1.v:5238]
 INFO: [Synth 8-6155] done synthesizing module 'm09_couplers_imp_UP9YUT' (25#1) [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_sys_fp_prj_2019_64/yolo_sys_fp_prj_2019_64.srcs/sources_1/bd/design_1/synth/design_1.v:5238]
 INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_UYSKKA' [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_sys_fp_prj_2019_64/yolo_sys_fp_prj_2019_64.srcs/sources_1/bd/design_1/synth/design_1.v:5651]
-INFO: [Synth 8-6157] synthesizing module 'design_1_auto_pc_5' [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_sys_fp_prj_2019_64/yolo_sys_fp_prj_2019_64.runs/synth_1/.Xil/Vivado-10721-Lenovo-XiaoXin-CHAO7000/realtime/design_1_auto_pc_5_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_pc_5' (26#1) [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_sys_fp_prj_2019_64/yolo_sys_fp_prj_2019_64.runs/synth_1/.Xil/Vivado-10721-Lenovo-XiaoXin-CHAO7000/realtime/design_1_auto_pc_5_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_auto_pc_2' [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_sys_fp_prj_2019_64/yolo_sys_fp_prj_2019_64.runs/synth_1/.Xil/Vivado-7079-Lenovo-XiaoXin-CHAO7000/realtime/design_1_auto_pc_2_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_pc_2' (26#1) [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_sys_fp_prj_2019_64/yolo_sys_fp_prj_2019_64.runs/synth_1/.Xil/Vivado-7079-Lenovo-XiaoXin-CHAO7000/realtime/design_1_auto_pc_2_stub.v:6]
 INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_UYSKKA' (27#1) [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_sys_fp_prj_2019_64/yolo_sys_fp_prj_2019_64.srcs/sources_1/bd/design_1/synth/design_1.v:5651]
-INFO: [Synth 8-6157] synthesizing module 'design_1_xbar_11' [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_sys_fp_prj_2019_64/yolo_sys_fp_prj_2019_64.runs/synth_1/.Xil/Vivado-10721-Lenovo-XiaoXin-CHAO7000/realtime/design_1_xbar_11_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_xbar_11' (28#1) [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_sys_fp_prj_2019_64/yolo_sys_fp_prj_2019_64.runs/synth_1/.Xil/Vivado-10721-Lenovo-XiaoXin-CHAO7000/realtime/design_1_xbar_11_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_xbar_11' [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_sys_fp_prj_2019_64/yolo_sys_fp_prj_2019_64.runs/synth_1/.Xil/Vivado-7079-Lenovo-XiaoXin-CHAO7000/realtime/design_1_xbar_11_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_xbar_11' (28#1) [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_sys_fp_prj_2019_64/yolo_sys_fp_prj_2019_64.runs/synth_1/.Xil/Vivado-7079-Lenovo-XiaoXin-CHAO7000/realtime/design_1_xbar_11_stub.v:6]
 WARNING: [Synth 8-689] width (20) of port connection 'm_axi_wstrb' does not match port width (40) of module 'design_1_xbar_11' [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_sys_fp_prj_2019_64/yolo_sys_fp_prj_2019_64.srcs/sources_1/bd/design_1/synth/design_1.v:3650]
 WARNING: [Synth 8-7023] instance 'xbar' of module 'design_1_xbar_11' has 40 connections declared, but only 38 given [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_sys_fp_prj_2019_64/yolo_sys_fp_prj_2019_64.srcs/sources_1/bd/design_1/synth/design_1.v:3632]
 INFO: [Synth 8-6155] done synthesizing module 'design_1_ps7_0_axi_periph_4' (29#1) [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_sys_fp_prj_2019_64/yolo_sys_fp_prj_2019_64.srcs/sources_1/bd/design_1/synth/design_1.v:2139]
-INFO: [Synth 8-6157] synthesizing module 'design_1_rst_ps7_0_100M_6' [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_sys_fp_prj_2019_64/yolo_sys_fp_prj_2019_64.runs/synth_1/.Xil/Vivado-10721-Lenovo-XiaoXin-CHAO7000/realtime/design_1_rst_ps7_0_100M_6_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_rst_ps7_0_100M_6' (30#1) [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_sys_fp_prj_2019_64/yolo_sys_fp_prj_2019_64.runs/synth_1/.Xil/Vivado-10721-Lenovo-XiaoXin-CHAO7000/realtime/design_1_rst_ps7_0_100M_6_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_rst_ps7_0_100M_6' [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_sys_fp_prj_2019_64/yolo_sys_fp_prj_2019_64.runs/synth_1/.Xil/Vivado-7079-Lenovo-XiaoXin-CHAO7000/realtime/design_1_rst_ps7_0_100M_6_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_rst_ps7_0_100M_6' (30#1) [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_sys_fp_prj_2019_64/yolo_sys_fp_prj_2019_64.runs/synth_1/.Xil/Vivado-7079-Lenovo-XiaoXin-CHAO7000/realtime/design_1_rst_ps7_0_100M_6_stub.v:6]
 WARNING: [Synth 8-7023] instance 'rst_ps7_0_100M' of module 'design_1_rst_ps7_0_100M_6' has 10 connections declared, but only 6 given [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_sys_fp_prj_2019_64/yolo_sys_fp_prj_2019_64.srcs/sources_1/bd/design_1/synth/design_1.v:1168]
-INFO: [Synth 8-6157] synthesizing module 'design_1_yolo_acc_top_0_1' [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_sys_fp_prj_2019_64/yolo_sys_fp_prj_2019_64.runs/synth_1/.Xil/Vivado-10721-Lenovo-XiaoXin-CHAO7000/realtime/design_1_yolo_acc_top_0_1_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_yolo_acc_top_0_1' (31#1) [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_sys_fp_prj_2019_64/yolo_sys_fp_prj_2019_64.runs/synth_1/.Xil/Vivado-10721-Lenovo-XiaoXin-CHAO7000/realtime/design_1_yolo_acc_top_0_1_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_yolo_acc_top_0_1' [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_sys_fp_prj_2019_64/yolo_sys_fp_prj_2019_64.runs/synth_1/.Xil/Vivado-7079-Lenovo-XiaoXin-CHAO7000/realtime/design_1_yolo_acc_top_0_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_yolo_acc_top_0_1' (31#1) [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_sys_fp_prj_2019_64/yolo_sys_fp_prj_2019_64.runs/synth_1/.Xil/Vivado-7079-Lenovo-XiaoXin-CHAO7000/realtime/design_1_yolo_acc_top_0_1_stub.v:6]
 WARNING: [Synth 8-7023] instance 'yolo_acc_top_0' of module 'design_1_yolo_acc_top_0_1' has 47 connections declared, but only 46 given [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_sys_fp_prj_2019_64/yolo_sys_fp_prj_2019_64.srcs/sources_1/bd/design_1/synth/design_1.v:1175]
-INFO: [Synth 8-6157] synthesizing module 'design_1_yolo_conv_top_0_2' [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_sys_fp_prj_2019_64/yolo_sys_fp_prj_2019_64.runs/synth_1/.Xil/Vivado-10721-Lenovo-XiaoXin-CHAO7000/realtime/design_1_yolo_conv_top_0_2_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_yolo_conv_top_0_2' (32#1) [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_sys_fp_prj_2019_64/yolo_sys_fp_prj_2019_64.runs/synth_1/.Xil/Vivado-10721-Lenovo-XiaoXin-CHAO7000/realtime/design_1_yolo_conv_top_0_2_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_yolo_conv_top_0_2' [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_sys_fp_prj_2019_64/yolo_sys_fp_prj_2019_64.runs/synth_1/.Xil/Vivado-7079-Lenovo-XiaoXin-CHAO7000/realtime/design_1_yolo_conv_top_0_2_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_yolo_conv_top_0_2' (32#1) [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_sys_fp_prj_2019_64/yolo_sys_fp_prj_2019_64.runs/synth_1/.Xil/Vivado-7079-Lenovo-XiaoXin-CHAO7000/realtime/design_1_yolo_conv_top_0_2_stub.v:6]
 WARNING: [Synth 8-7023] instance 'yolo_conv_top_0' of module 'design_1_yolo_conv_top_0_2' has 38 connections declared, but only 37 given [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_sys_fp_prj_2019_64/yolo_sys_fp_prj_2019_64.srcs/sources_1/bd/design_1/synth/design_1.v:1222]
-INFO: [Synth 8-6157] synthesizing module 'design_1_yolo_max_pool_top_0_1' [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_sys_fp_prj_2019_64/yolo_sys_fp_prj_2019_64.runs/synth_1/.Xil/Vivado-10721-Lenovo-XiaoXin-CHAO7000/realtime/design_1_yolo_max_pool_top_0_1_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_yolo_max_pool_top_0_1' (33#1) [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_sys_fp_prj_2019_64/yolo_sys_fp_prj_2019_64.runs/synth_1/.Xil/Vivado-10721-Lenovo-XiaoXin-CHAO7000/realtime/design_1_yolo_max_pool_top_0_1_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_yolo_max_pool_top_0_1' [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_sys_fp_prj_2019_64/yolo_sys_fp_prj_2019_64.runs/synth_1/.Xil/Vivado-7079-Lenovo-XiaoXin-CHAO7000/realtime/design_1_yolo_max_pool_top_0_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_yolo_max_pool_top_0_1' (33#1) [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_sys_fp_prj_2019_64/yolo_sys_fp_prj_2019_64.runs/synth_1/.Xil/Vivado-7079-Lenovo-XiaoXin-CHAO7000/realtime/design_1_yolo_max_pool_top_0_1_stub.v:6]
 WARNING: [Synth 8-7023] instance 'yolo_max_pool_top_0' of module 'design_1_yolo_max_pool_top_0_1' has 38 connections declared, but only 37 given [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_sys_fp_prj_2019_64/yolo_sys_fp_prj_2019_64.srcs/sources_1/bd/design_1/synth/design_1.v:1260]
-INFO: [Synth 8-6157] synthesizing module 'design_1_yolo_upsamp_top_0_0' [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_sys_fp_prj_2019_64/yolo_sys_fp_prj_2019_64.runs/synth_1/.Xil/Vivado-10721-Lenovo-XiaoXin-CHAO7000/realtime/design_1_yolo_upsamp_top_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_yolo_upsamp_top_0_0' (34#1) [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_sys_fp_prj_2019_64/yolo_sys_fp_prj_2019_64.runs/synth_1/.Xil/Vivado-10721-Lenovo-XiaoXin-CHAO7000/realtime/design_1_yolo_upsamp_top_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_yolo_upsamp_top_0_0' [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_sys_fp_prj_2019_64/yolo_sys_fp_prj_2019_64.runs/synth_1/.Xil/Vivado-7079-Lenovo-XiaoXin-CHAO7000/realtime/design_1_yolo_upsamp_top_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_yolo_upsamp_top_0_0' (34#1) [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_sys_fp_prj_2019_64/yolo_sys_fp_prj_2019_64.runs/synth_1/.Xil/Vivado-7079-Lenovo-XiaoXin-CHAO7000/realtime/design_1_yolo_upsamp_top_0_0_stub.v:6]
 WARNING: [Synth 8-7023] instance 'yolo_upsamp_top_0' of module 'design_1_yolo_upsamp_top_0_0' has 38 connections declared, but only 37 given [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_sys_fp_prj_2019_64/yolo_sys_fp_prj_2019_64.srcs/sources_1/bd/design_1/synth/design_1.v:1298]
-INFO: [Synth 8-6157] synthesizing module 'design_1_yolo_yolo_top_0_0' [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_sys_fp_prj_2019_64/yolo_sys_fp_prj_2019_64.runs/synth_1/.Xil/Vivado-10721-Lenovo-XiaoXin-CHAO7000/realtime/design_1_yolo_yolo_top_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_yolo_yolo_top_0_0' (35#1) [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_sys_fp_prj_2019_64/yolo_sys_fp_prj_2019_64.runs/synth_1/.Xil/Vivado-10721-Lenovo-XiaoXin-CHAO7000/realtime/design_1_yolo_yolo_top_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_yolo_yolo_top_0_0' [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_sys_fp_prj_2019_64/yolo_sys_fp_prj_2019_64.runs/synth_1/.Xil/Vivado-7079-Lenovo-XiaoXin-CHAO7000/realtime/design_1_yolo_yolo_top_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_yolo_yolo_top_0_0' (35#1) [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_sys_fp_prj_2019_64/yolo_sys_fp_prj_2019_64.runs/synth_1/.Xil/Vivado-7079-Lenovo-XiaoXin-CHAO7000/realtime/design_1_yolo_yolo_top_0_0_stub.v:6]
 WARNING: [Synth 8-7023] instance 'yolo_yolo_top_0' of module 'design_1_yolo_yolo_top_0_0' has 38 connections declared, but only 37 given [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_sys_fp_prj_2019_64/yolo_sys_fp_prj_2019_64.srcs/sources_1/bd/design_1/synth/design_1.v:1336]
 INFO: [Synth 8-6155] done synthesizing module 'design_1' (36#1) [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_sys_fp_prj_2019_64/yolo_sys_fp_prj_2019_64.srcs/sources_1/bd/design_1/synth/design_1.v:13]
 INFO: [Synth 8-6155] done synthesizing module 'design_1_wrapper' (37#1) [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_sys_fp_prj_2019_64/yolo_sys_fp_prj_2019_64.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v:12]
@@ -208,7 +209,7 @@ WARNING: [Synth 8-3331] design design_1_axi_mem_intercon_7 has unconnected port 
 WARNING: [Synth 8-3331] design design_1_axi_mem_intercon_7 has unconnected port S01_ACLK
 WARNING: [Synth 8-3331] design design_1_axi_mem_intercon_7 has unconnected port S01_ARESETN
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 1784.309 ; gain = 216.402 ; free physical = 853 ; free virtual = 11946
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1783.566 ; gain = 215.402 ; free physical = 3054 ; free virtual = 12730
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -221,10 +222,10 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1787.277 ; gain = 219.371 ; free physical = 853 ; free virtual = 11946
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 1789.504 ; gain = 221.340 ; free physical = 3055 ; free virtual = 12731
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1787.277 ; gain = 219.371 ; free physical = 853 ; free virtual = 11946
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 1789.504 ; gain = 221.340 ; free physical = 3055 ; free virtual = 12731
 ---------------------------------------------------------------------------------
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
@@ -252,27 +253,27 @@ Parsing XDC File [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_sys_fp_pr
 Finished Parsing XDC File [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_sys_fp_prj_2019_64/yolo_sys_fp_prj_2019_64.srcs/sources_1/bd/design_1/ip/design_1_axi_dma_7/design_1_axi_dma_7/design_1_axi_dma_4_in_context.xdc] for cell 'design_1_i/axi_dma'
 Parsing XDC File [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_sys_fp_prj_2019_64/yolo_sys_fp_prj_2019_64.srcs/sources_1/bd/design_1/ip/design_1_xbar_10/design_1_xbar_10/design_1_xbar_5_in_context.xdc] for cell 'design_1_i/axi_mem_intercon/xbar'
 Finished Parsing XDC File [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_sys_fp_prj_2019_64/yolo_sys_fp_prj_2019_64.srcs/sources_1/bd/design_1/ip/design_1_xbar_10/design_1_xbar_10/design_1_xbar_5_in_context.xdc] for cell 'design_1_i/axi_mem_intercon/xbar'
-Parsing XDC File [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_sys_fp_prj_2019_64/yolo_sys_fp_prj_2019_64.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_3/design_1_auto_pc_3/design_1_auto_pc_3_in_context.xdc] for cell 'design_1_i/axi_mem_intercon/m00_couplers/auto_pc'
-Finished Parsing XDC File [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_sys_fp_prj_2019_64/yolo_sys_fp_prj_2019_64.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_3/design_1_auto_pc_3/design_1_auto_pc_3_in_context.xdc] for cell 'design_1_i/axi_mem_intercon/m00_couplers/auto_pc'
 Parsing XDC File [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_sys_fp_prj_2019_64/yolo_sys_fp_prj_2019_64.srcs/sources_1/bd/design_1/ip/design_1_rst_ps7_0_100M_6/design_1_rst_ps7_0_100M_6/design_1_rst_ps7_0_100M_3_in_context.xdc] for cell 'design_1_i/rst_ps7_0_100M'
 Finished Parsing XDC File [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_sys_fp_prj_2019_64/yolo_sys_fp_prj_2019_64.srcs/sources_1/bd/design_1/ip/design_1_rst_ps7_0_100M_6/design_1_rst_ps7_0_100M_6/design_1_rst_ps7_0_100M_3_in_context.xdc] for cell 'design_1_i/rst_ps7_0_100M'
 Parsing XDC File [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_sys_fp_prj_2019_64/yolo_sys_fp_prj_2019_64.srcs/sources_1/bd/design_1/ip/design_1_axi_dma_1_5/design_1_axi_dma_1_5/design_1_axi_dma_1_2_in_context.xdc] for cell 'design_1_i/axi_dma_1'
 Finished Parsing XDC File [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_sys_fp_prj_2019_64/yolo_sys_fp_prj_2019_64.srcs/sources_1/bd/design_1/ip/design_1_axi_dma_1_5/design_1_axi_dma_1_5/design_1_axi_dma_1_2_in_context.xdc] for cell 'design_1_i/axi_dma_1'
-Parsing XDC File [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_sys_fp_prj_2019_64/yolo_sys_fp_prj_2019_64.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_4/design_1_auto_pc_4/design_1_auto_pc_4_in_context.xdc] for cell 'design_1_i/axi_mem_intercon_1/s00_couplers/auto_pc'
-Finished Parsing XDC File [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_sys_fp_prj_2019_64/yolo_sys_fp_prj_2019_64.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_4/design_1_auto_pc_4/design_1_auto_pc_4_in_context.xdc] for cell 'design_1_i/axi_mem_intercon_1/s00_couplers/auto_pc'
 Parsing XDC File [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_sys_fp_prj_2019_64/yolo_sys_fp_prj_2019_64.srcs/sources_1/bd/design_1/ip/design_1_xbar_11/design_1_xbar_11/design_1_xbar_11_in_context.xdc] for cell 'design_1_i/ps7_0_axi_periph/xbar'
 Finished Parsing XDC File [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_sys_fp_prj_2019_64/yolo_sys_fp_prj_2019_64.srcs/sources_1/bd/design_1/ip/design_1_xbar_11/design_1_xbar_11/design_1_xbar_11_in_context.xdc] for cell 'design_1_i/ps7_0_axi_periph/xbar'
-Parsing XDC File [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_sys_fp_prj_2019_64/yolo_sys_fp_prj_2019_64.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_5/design_1_auto_pc_5/design_1_auto_pc_5_in_context.xdc] for cell 'design_1_i/ps7_0_axi_periph/s00_couplers/auto_pc'
-Finished Parsing XDC File [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_sys_fp_prj_2019_64/yolo_sys_fp_prj_2019_64.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_5/design_1_auto_pc_5/design_1_auto_pc_5_in_context.xdc] for cell 'design_1_i/ps7_0_axi_periph/s00_couplers/auto_pc'
+Parsing XDC File [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_sys_fp_prj_2019_64/yolo_sys_fp_prj_2019_64.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0/design_1_auto_pc_3_in_context.xdc] for cell 'design_1_i/axi_mem_intercon/m00_couplers/auto_pc'
+Finished Parsing XDC File [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_sys_fp_prj_2019_64/yolo_sys_fp_prj_2019_64.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0/design_1_auto_pc_3_in_context.xdc] for cell 'design_1_i/axi_mem_intercon/m00_couplers/auto_pc'
+Parsing XDC File [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_sys_fp_prj_2019_64/yolo_sys_fp_prj_2019_64.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_1/design_1_auto_pc_1/design_1_auto_pc_4_in_context.xdc] for cell 'design_1_i/axi_mem_intercon_1/s00_couplers/auto_pc'
+Finished Parsing XDC File [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_sys_fp_prj_2019_64/yolo_sys_fp_prj_2019_64.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_1/design_1_auto_pc_1/design_1_auto_pc_4_in_context.xdc] for cell 'design_1_i/axi_mem_intercon_1/s00_couplers/auto_pc'
+Parsing XDC File [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_sys_fp_prj_2019_64/yolo_sys_fp_prj_2019_64.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_2/design_1_auto_pc_2/design_1_auto_pc_5_in_context.xdc] for cell 'design_1_i/ps7_0_axi_periph/s00_couplers/auto_pc'
+Finished Parsing XDC File [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_sys_fp_prj_2019_64/yolo_sys_fp_prj_2019_64.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_2/design_1_auto_pc_2/design_1_auto_pc_5_in_context.xdc] for cell 'design_1_i/ps7_0_axi_periph/s00_couplers/auto_pc'
 Parsing XDC File [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_sys_fp_prj_2019_64/yolo_sys_fp_prj_2019_64.runs/synth_1/dont_touch.xdc]
 Finished Parsing XDC File [/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_sys_fp_prj_2019_64/yolo_sys_fp_prj_2019_64.runs/synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1905.887 ; gain = 0.000 ; free physical = 744 ; free virtual = 11837
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1906.145 ; gain = 0.000 ; free physical = 2946 ; free virtual = 12621
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00.21 ; elapsed = 00:00:00.06 . Memory (MB): peak = 1905.887 ; gain = 0.000 ; free physical = 743 ; free virtual = 11836
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.20 ; elapsed = 00:00:00.09 . Memory (MB): peak = 1906.145 ; gain = 0.000 ; free physical = 2945 ; free virtual = 12621
 WARNING: [Timing 38-316] Clock period '100.000' specified during out-of-context synthesis of instance 'design_1_i/axis_switch_0' at clock pin 'aclk' is different from the actual clock period '10.000', this can lead to different synthesis results.
 WARNING: [Timing 38-316] Clock period '100.000' specified during out-of-context synthesis of instance 'design_1_i/axis_switch_1' at clock pin 'aclk' is different from the actual clock period '10.000', this can lead to different synthesis results.
 WARNING: [Timing 38-316] Clock period '100.000' specified during out-of-context synthesis of instance 'design_1_i/axis_switch_2' at clock pin 'aclk' is different from the actual clock period '10.000', this can lead to different synthesis results.
@@ -280,14 +281,14 @@ WARNING: [Timing 38-316] Clock period '100.000' specified during out-of-context 
 WARNING: [Timing 38-316] Clock period '100.000' specified during out-of-context synthesis of instance 'design_1_i/axi_mem_intercon_1/s00_couplers/auto_pc' at clock pin 'aclk' is different from the actual clock period '10.000', this can lead to different synthesis results.
 WARNING: [Timing 38-316] Clock period '100.000' specified during out-of-context synthesis of instance 'design_1_i/ps7_0_axi_periph/s00_couplers/auto_pc' at clock pin 'aclk' is different from the actual clock period '10.000', this can lead to different synthesis results.
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:13 . Memory (MB): peak = 1913.824 ; gain = 345.918 ; free physical = 828 ; free virtual = 11922
+Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 1913.082 ; gain = 344.918 ; free physical = 3019 ; free virtual = 12697
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z020clg484-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:13 . Memory (MB): peak = 1913.824 ; gain = 345.918 ; free physical = 828 ; free virtual = 11922
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 1913.082 ; gain = 344.918 ; free physical = 3019 ; free virtual = 12697
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -564,20 +565,20 @@ Applied set_property DONT_TOUCH = true for design_1_i/axis_switch_1. (constraint
 Applied set_property DONT_TOUCH = true for design_1_i/axis_switch_2. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for design_1_i/axi_dma. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for design_1_i/axi_mem_intercon/xbar. (constraint file  auto generated constraint, line ).
-Applied set_property DONT_TOUCH = true for design_1_i/axi_mem_intercon/m00_couplers/auto_pc. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for design_1_i/axi_mem_intercon. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for design_1_i/rst_ps7_0_100M. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for design_1_i/axi_dma_1. (constraint file  auto generated constraint, line ).
-Applied set_property DONT_TOUCH = true for design_1_i/axi_mem_intercon_1/s00_couplers/auto_pc. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for design_1_i/axi_mem_intercon_1. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for design_1_i/ps7_0_axi_periph/xbar. (constraint file  auto generated constraint, line ).
-Applied set_property DONT_TOUCH = true for design_1_i/ps7_0_axi_periph/s00_couplers/auto_pc. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for design_1_i/ps7_0_axi_periph. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/axi_mem_intercon/m00_couplers/auto_pc. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/axi_mem_intercon_1/s00_couplers/auto_pc. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/ps7_0_axi_periph/s00_couplers/auto_pc. (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 1913.824 ; gain = 345.918 ; free physical = 828 ; free virtual = 11921
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 1913.082 ; gain = 344.918 ; free physical = 3020 ; free virtual = 12697
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 1913.824 ; gain = 345.918 ; free physical = 830 ; free virtual = 11924
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 1913.082 ; gain = 344.918 ; free physical = 3025 ; free virtual = 12702
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -620,7 +621,7 @@ WARNING: [Synth 8-3331] design design_1_ps7_0_axi_periph_4 has unconnected port 
 WARNING: [Synth 8-3331] design design_1_ps7_0_axi_periph_4 has unconnected port M02_ARESETN
 INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 1913.824 ; gain = 345.918 ; free physical = 817 ; free virtual = 11914
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 1913.082 ; gain = 344.918 ; free physical = 3011 ; free virtual = 12692
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -634,13 +635,13 @@ Start Applying XDC Timing Constraints
 INFO: [Synth 8-5578] Moved timing constraint from pin 'design_1_i/processing_system7_0/FCLK_CLK0' to pin 'design_1_i/processing_system7_0/bbstub_FCLK_CLK0/O'
 INFO: [Synth 8-5819] Moved 1 constraints on hierarchical pins to their respective driving/loading pins
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:21 . Memory (MB): peak = 1913.824 ; gain = 345.918 ; free physical = 695 ; free virtual = 11792
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 1913.082 ; gain = 344.918 ; free physical = 2907 ; free virtual = 12588
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:21 . Memory (MB): peak = 1913.824 ; gain = 345.918 ; free physical = 695 ; free virtual = 11792
+Finished Timing Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 1913.082 ; gain = 344.918 ; free physical = 2907 ; free virtual = 12588
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -652,7 +653,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:18 ; elapsed = 00:00:21 . Memory (MB): peak = 1913.824 ; gain = 345.918 ; free physical = 693 ; free virtual = 11790
+Finished Technology Mapping : Time (s): cpu = 00:00:20 ; elapsed = 00:00:23 . Memory (MB): peak = 1913.082 ; gain = 344.918 ; free physical = 2905 ; free virtual = 12586
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -676,7 +677,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 1913.824 ; gain = 345.918 ; free physical = 693 ; free virtual = 11790
+Finished IO Insertion : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 1913.082 ; gain = 344.918 ; free physical = 2904 ; free virtual = 12585
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -689,7 +690,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 1913.824 ; gain = 345.918 ; free physical = 693 ; free virtual = 11790
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 1913.082 ; gain = 344.918 ; free physical = 2904 ; free virtual = 12585
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -701,25 +702,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 1913.824 ; gain = 345.918 ; free physical = 693 ; free virtual = 11790
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 1913.082 ; gain = 344.918 ; free physical = 2904 ; free virtual = 12584
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 1913.824 ; gain = 345.918 ; free physical = 693 ; free virtual = 11790
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 1913.082 ; gain = 344.918 ; free physical = 2905 ; free virtual = 12585
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 1913.824 ; gain = 345.918 ; free physical = 693 ; free virtual = 11790
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 1913.082 ; gain = 344.918 ; free physical = 2905 ; free virtual = 12585
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 1913.824 ; gain = 345.918 ; free physical = 693 ; free virtual = 11790
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 1913.082 ; gain = 344.918 ; free physical = 2905 ; free virtual = 12585
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -730,10 +731,10 @@ Report BlackBoxes:
 |      |BlackBox name                   |Instances |
 +------+--------------------------------+----------+
 |1     |design_1_xbar_10                |         1|
-|2     |design_1_auto_pc_3              |         1|
-|3     |design_1_auto_pc_4              |         1|
+|2     |design_1_auto_pc_0              |         1|
+|3     |design_1_auto_pc_1              |         1|
 |4     |design_1_xbar_11                |         1|
-|5     |design_1_auto_pc_5              |         1|
+|5     |design_1_auto_pc_2              |         1|
 |6     |design_1_axi_dma_7              |         1|
 |7     |design_1_axi_dma_1_5            |         1|
 |8     |design_1_axis_switch_0_2        |         1|
@@ -752,9 +753,9 @@ Report Cell Usage:
 +------+--------------------------------+------+
 |      |Cell                            |Count |
 +------+--------------------------------+------+
-|1     |design_1_auto_pc_3              |     1|
-|2     |design_1_auto_pc_4              |     1|
-|3     |design_1_auto_pc_5              |     1|
+|1     |design_1_auto_pc_0              |     1|
+|2     |design_1_auto_pc_1              |     1|
+|3     |design_1_auto_pc_2              |     1|
 |4     |design_1_axi_dma_1_5            |     1|
 |5     |design_1_axi_dma_7              |     1|
 |6     |design_1_axis_switch_0_2        |     1|
@@ -785,25 +786,25 @@ Report Instance Areas:
 |8     |      s00_couplers     |s00_couplers_imp_UYSKKA       |   177|
 +------+-----------------------+------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 1913.824 ; gain = 345.918 ; free physical = 693 ; free virtual = 11790
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 1913.082 ; gain = 344.918 ; free physical = 2905 ; free virtual = 12585
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 42 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:17 ; elapsed = 00:00:20 . Memory (MB): peak = 1913.824 ; gain = 219.371 ; free physical = 749 ; free virtual = 11847
-Synthesis Optimization Complete : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 1913.832 ; gain = 345.918 ; free physical = 763 ; free virtual = 11860
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 1913.082 ; gain = 221.340 ; free physical = 2961 ; free virtual = 12641
+Synthesis Optimization Complete : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 1913.090 ; gain = 344.918 ; free physical = 2967 ; free virtual = 12647
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1913.832 ; gain = 0.000 ; free physical = 691 ; free virtual = 11788
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1913.090 ; gain = 0.000 ; free physical = 2905 ; free virtual = 12585
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
 89 Infos, 123 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:25 ; elapsed = 00:00:28 . Memory (MB): peak = 1916.793 ; gain = 523.211 ; free physical = 782 ; free virtual = 11879
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1916.793 ; gain = 0.000 ; free physical = 782 ; free virtual = 11879
+synth_design: Time (s): cpu = 00:00:27 ; elapsed = 00:00:30 . Memory (MB): peak = 1916.051 ; gain = 499.430 ; free physical = 2995 ; free virtual = 12676
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1916.051 ; gain = 0.000 ; free physical = 2995 ; free virtual = 12676
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
 INFO: [Common 17-1381] The checkpoint '/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_sys_fp_prj_2019_64/yolo_sys_fp_prj_2019_64.runs/synth_1/design_1_wrapper.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file design_1_wrapper_utilization_synth.rpt -pb design_1_wrapper_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Mon Jul 22 09:09:47 2019...
+INFO: [Common 17-206] Exiting Vivado at Fri Jul 26 19:59:03 2019...

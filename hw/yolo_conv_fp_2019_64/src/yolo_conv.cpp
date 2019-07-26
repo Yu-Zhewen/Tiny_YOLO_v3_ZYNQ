@@ -29,13 +29,13 @@ void yolo_conv_top(yolo_quad_stream &inStream, yolo_quad_stream &outStream,
 	line_buff_type line_buff_group_2[MAX_KERNEL_NUM/4];
 	line_buff_type line_buff_group_3[MAX_KERNEL_NUM/4];
 
-	fp_data_type val_output[MAX_KERNEL_NUM];
+	fp_mid_type val_output[MAX_KERNEL_NUM];
 #pragma HLS ARRAY_PARTITION variable=val_output complete dim=1
 
 	quad_fp_side_channel curr_input;
 
 	local_weight_type local_mem_group[MAX_KERNEL_NUM][MAX_INPUT_CH];
-#pragma HLS ARRAY_PARTITION variable=local_mem_group block factor=4 dim=1
+#pragma HLS ARRAY_PARTITION variable=local_mem_group block factor=8 dim=1
 #pragma HLS ARRAY_PARTITION variable=local_mem_group complete dim=3
 
 //	fp_weight_type kernel_bias_fp[MAX_KERNEL_NUM];
@@ -145,10 +145,10 @@ void yolo_conv_top(yolo_quad_stream &inStream, yolo_quad_stream &outStream,
 						for(int kernel_idx=0; kernel_idx<MAX_KERNEL_NUM; kernel_idx++)
 						{
 
-							fp_data_type sub0_val_output;
-							fp_data_type sub1_val_output;
-							fp_data_type sub2_val_output;
-							fp_data_type sub3_val_output;
+							fp_mid_type sub0_val_output;
+							fp_mid_type sub1_val_output;
+							fp_mid_type sub2_val_output;
+							fp_mid_type sub3_val_output;
 
 							//core of conv, macc
 							sub0_val_output = window_macc(kernel_window_0,local_mem_group[kernel_idx][4*input_ch_idx]);
@@ -170,10 +170,10 @@ void yolo_conv_top(yolo_quad_stream &inStream, yolo_quad_stream &outStream,
 							{
 								if(kernel_idx<output_ch)
 								{
-
+									ap_fixed<16,8,AP_RND_CONV,AP_SAT> output_rec = val_output[kernel_idx];
 								if(!(out_stream_group[kernel_idx].full()))
 									//write data to internal FIFO
-									write_output(val_output[kernel_idx],out_stream_group[kernel_idx]);
+									write_output(output_rec,out_stream_group[kernel_idx]);
 								}
 							}
 						}
@@ -204,10 +204,10 @@ void yolo_conv_top(yolo_quad_stream &inStream, yolo_quad_stream &outStream,
 
 }
 
-fp_data_type post_process(fp_data_type sub0_val_output,fp_data_type sub1_val_output,fp_data_type sub2_val_output,fp_data_type sub3_val_output,
-						  int input_ch_idx,fp_data_type val_output)
+fp_mid_type post_process(fp_mid_type sub0_val_output,fp_mid_type sub1_val_output,fp_mid_type sub2_val_output,fp_mid_type sub3_val_output,
+						  int input_ch_idx,fp_mid_type val_output)
 {
-	fp_data_type biased_output=0,activated_output=0;
+	//fp_data_type biased_output=0,activated_output=0;
 	if(input_ch_idx==0)
 	{
 		val_output=0;
@@ -264,10 +264,10 @@ window_type slide_window(int conv_count, line_buff_type *line_buff)
 	return kernel_window;
 }
 
-fp_data_type window_macc(window_type window, local_weight_type weight)
+fp_mid_type window_macc(window_type window, local_weight_type weight)
 {
 
-	ap_fixed<32,16,AP_RND_CONV,AP_SAT> sum = 0;
+	fp_mid_type sum = 0;
 	for(int win_row=0; win_row < 3; win_row++)
 	{
 		for(int win_col=0; win_col < 3; win_col++)
@@ -276,7 +276,7 @@ fp_data_type window_macc(window_type window, local_weight_type weight)
 			sum += val_in * weight.data[win_row*3+win_col];
 		}
 	}
-	return (fp_data_type)sum;
+	return sum;
 }
 
 void write_output(fp_data_type val_output,  yolo_inter_stream &out_stream)

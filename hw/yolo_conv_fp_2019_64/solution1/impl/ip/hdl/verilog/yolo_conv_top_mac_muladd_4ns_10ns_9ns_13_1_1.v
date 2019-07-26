@@ -4,7 +4,7 @@
 // ==============================================================
 `timescale 1 ns / 1 ps
 
-(* use_dsp = "yes" *) module yolo_conv_top_mac_muladd_4ns_10ns_9ns_13_1_1_DSP48_2(
+(* use_dsp = "yes" *) module yolo_conv_top_mac_muladd_4ns_10ns_9ns_13_1_1_DSP48_3(
     input  [4 - 1:0] in0,
     input  [10 - 1:0] in1,
     input  [9 - 1:0] in2,
@@ -46,7 +46,7 @@ output[dout_WIDTH - 1:0] dout;
 
 
 
-yolo_conv_top_mac_muladd_4ns_10ns_9ns_13_1_1_DSP48_2 yolo_conv_top_mac_muladd_4ns_10ns_9ns_13_1_1_DSP48_2_U(
+yolo_conv_top_mac_muladd_4ns_10ns_9ns_13_1_1_DSP48_3 yolo_conv_top_mac_muladd_4ns_10ns_9ns_13_1_1_DSP48_3_U(
     .in0( din0 ),
     .in1( din1 ),
     .in2( din2 ),

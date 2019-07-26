@@ -2,8 +2,8 @@
 # Vivado v2019.1 (64-bit)
 # SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
 # IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
-# Start of session at: Mon Jul 22 11:09:46 2019
-# Process ID: 26409
+# Start of session at: Fri Jul 26 19:48:13 2019
+# Process ID: 5415
 # Current directory: /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_sys_fp_prj_2019_64
 # Command line: vivado yolo_sys_fp_prj_2019_64.xpr
 # Log file: /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_sys_fp_prj_2019_64/vivado.log
@@ -12,4 +12,26 @@
 start_gui
 open_project yolo_sys_fp_prj_2019_64.xpr
 update_compile_order -fileset sources_1
+open_bd_design {/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_sys_fp_prj_2019_64/yolo_sys_fp_prj_2019_64.srcs/sources_1/bd/design_1/design_1.bd}
+report_ip_status -name ip_status 
+upgrade_ip -vlnv xilinx.com:hls:yolo_conv_top:1.0 [get_ips  design_1_yolo_conv_top_0_2] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips design_1_yolo_conv_top_0_2] -no_script -sync -force -quiet
+report_ip_status -name ip_status 
+regenerate_bd_layout
+regenerate_bd_layout -routing
+validate_bd_design
+report_ip_status -name ip_status 
+reset_run synth_1
+save_bd_design
+launch_runs impl_1 -jobs 2
+wait_on_run impl_1
+open_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+file mkdir /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_sys_fp_prj_2019_64/yolo_sys_fp_prj_2019_64.sdk
+file copy -force /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_sys_fp_prj_2019_64/yolo_sys_fp_prj_2019_64.runs/impl_1/design_1_wrapper.sysdef /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_sys_fp_prj_2019_64/yolo_sys_fp_prj_2019_64.sdk/design_1_wrapper.hdf
+
+file mkdir /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_sys_fp_prj_2019_64/yolo_sys_fp_prj_2019_64.sdk
+file copy -force /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_sys_fp_prj_2019_64/yolo_sys_fp_prj_2019_64.runs/impl_1/design_1_wrapper.sysdef /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_sys_fp_prj_2019_64/yolo_sys_fp_prj_2019_64.sdk/design_1_wrapper.hdf
+
 launch_sdk -workspace /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_sys_fp_prj_2019_64/yolo_sys_fp_prj_2019_64.sdk -hwspec /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_sys_fp_prj_2019_64/yolo_sys_fp_prj_2019_64.sdk/design_1_wrapper.hdf

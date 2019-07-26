@@ -2,8 +2,8 @@
 #define LAYER_PARAMETER_H
 
 #define KERNEL_DIM 3
-#define INPUT_CHANNEL 384
-#define OUTPUT_CHANNEL 256
+#define INPUT_CHANNEL 512
+#define OUTPUT_CHANNEL 1024
 
 
 #endif

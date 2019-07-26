@@ -9,7 +9,7 @@
 <Field>
 <FieldName>sub_data_0</FieldName>
 <FieldType>
-<TypeName>ap_fixed 16 8 4 0 0</TypeName>
+<TypeName>ap_fixed 16 8 5 3 0</TypeName>
 <TypeWidth>16</TypeWidth>
 <PhysicalWidth>16</PhysicalWidth>
 </FieldType>
@@ -17,7 +17,7 @@
 <Field>
 <FieldName>sub_data_1</FieldName>
 <FieldType>
-<TypeName>ap_fixed 16 8 4 0 0</TypeName>
+<TypeName>ap_fixed 16 8 5 3 0</TypeName>
 <TypeWidth>16</TypeWidth>
 <PhysicalWidth>16</PhysicalWidth>
 </FieldType>
@@ -25,7 +25,7 @@
 <Field>
 <FieldName>sub_data_2</FieldName>
 <FieldType>
-<TypeName>ap_fixed 16 8 4 0 0</TypeName>
+<TypeName>ap_fixed 16 8 5 3 0</TypeName>
 <TypeWidth>16</TypeWidth>
 <PhysicalWidth>16</PhysicalWidth>
 </FieldType>
@@ -33,7 +33,7 @@
 <Field>
 <FieldName>sub_data_3</FieldName>
 <FieldType>
-<TypeName>ap_fixed 16 8 4 0 0</TypeName>
+<TypeName>ap_fixed 16 8 5 3 0</TypeName>
 <TypeWidth>16</TypeWidth>
 <PhysicalWidth>16</PhysicalWidth>
 </FieldType>
@@ -113,7 +113,7 @@
 <Field>
 <FieldName>sub_data_0</FieldName>
 <FieldType>
-<TypeName>ap_fixed 16 8 4 0 0</TypeName>
+<TypeName>ap_fixed 16 8 5 3 0</TypeName>
 <TypeWidth>16</TypeWidth>
 <PhysicalWidth>16</PhysicalWidth>
 </FieldType>
@@ -121,7 +121,7 @@
 <Field>
 <FieldName>sub_data_1</FieldName>
 <FieldType>
-<TypeName>ap_fixed 16 8 4 0 0</TypeName>
+<TypeName>ap_fixed 16 8 5 3 0</TypeName>
 <TypeWidth>16</TypeWidth>
 <PhysicalWidth>16</PhysicalWidth>
 </FieldType>
@@ -129,7 +129,7 @@
 <Field>
 <FieldName>sub_data_2</FieldName>
 <FieldType>
-<TypeName>ap_fixed 16 8 4 0 0</TypeName>
+<TypeName>ap_fixed 16 8 5 3 0</TypeName>
 <TypeWidth>16</TypeWidth>
 <PhysicalWidth>16</PhysicalWidth>
 </FieldType>
@@ -137,7 +137,7 @@
 <Field>
 <FieldName>sub_data_3</FieldName>
 <FieldType>
-<TypeName>ap_fixed 16 8 4 0 0</TypeName>
+<TypeName>ap_fixed 16 8 5 3 0</TypeName>
 <TypeWidth>16</TypeWidth>
 <PhysicalWidth>16</PhysicalWidth>
 </FieldType>

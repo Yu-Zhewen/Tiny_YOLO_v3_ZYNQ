@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7z020clg484-1" LaunchTime="1563782873">
+<GenRun Id="synth_1" LaunchPart="xc7z020clg484-1" LaunchTime="1564167062">
   <File Type="VDS-TIMING-PB" Name="design_1_wrapper_timing_summary_synth.pb"/>
   <File Type="VDS-TIMINGSUMMARY" Name="design_1_wrapper_timing_summary_synth.rpt"/>
   <File Type="RDS-DCP" Name="design_1_wrapper.dcp"/>
@@ -47,14 +47,14 @@
     <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019"/>
     <Step Id="synth_design"/>
   </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="design_1_yolo_conv_top_0_2"/>
   <BlockFileSet Type="BlockSrcs" Name="design_1_xbar_11"/>
   <BlockFileSet Type="BlockSrcs" Name="design_1_axis_switch_0_2"/>
   <BlockFileSet Type="BlockSrcs" Name="design_1_axis_switch_1_2"/>
   <BlockFileSet Type="BlockSrcs" Name="design_1_yolo_upsamp_top_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="design_1_yolo_acc_top_0_1"/>
-  <BlockFileSet Type="BlockSrcs" Name="design_1_yolo_conv_top_0_2"/>
-  <BlockFileSet Type="BlockSrcs" Name="design_1_yolo_max_pool_top_0_1"/>
   <BlockFileSet Type="BlockSrcs" Name="design_1_yolo_yolo_top_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_1_yolo_max_pool_top_0_1"/>
   <BlockFileSet Type="BlockSrcs" Name="design_1_axis_switch_2_1"/>
   <BlockFileSet Type="BlockSrcs" Name="design_1_processing_system7_0_1"/>
 </GenRun>

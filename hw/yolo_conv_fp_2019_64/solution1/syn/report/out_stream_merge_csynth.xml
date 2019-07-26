@@ -9,8 +9,8 @@
 <ProductFamily>zynq</ProductFamily>
 <Part>xc7z020-clg484-1</Part>
 <TopModelName>out_stream_merge</TopModelName>
-<TargetClockPeriod>10.00</TargetClockPeriod>
-<ClockUncertainty>2.00</ClockUncertainty>
+<TargetClockPeriod>8.00</TargetClockPeriod>
+<ClockUncertainty>1.60</ClockUncertainty>
 <TargetInitiationInterval>4294967295</TargetInitiationInterval>
 </UserAssignments>
 

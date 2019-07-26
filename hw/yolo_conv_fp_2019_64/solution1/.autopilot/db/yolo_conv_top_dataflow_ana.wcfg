@@ -37,37 +37,85 @@
          <obj_property name="Render_Data">/apatb_yolo_conv_top_top/AESL_inst_yolo_conv_top//AESL_inst_yolo_conv_top_activity.dataflowTxWaveData.Cycles</obj_property>
          <obj_property name="Value_Data">/apatb_yolo_conv_top_top/AESL_inst_yolo_conv_top//AESL_inst_yolo_conv_top_activity.dataflowTxWaveData.OutStanding</obj_property>
          <obj_property name="Detail_Data">/apatb_yolo_conv_top_top/AESL_inst_yolo_conv_top//AESL_inst_yolo_conv_top_activity.dataflowTxTooltipData</obj_property>
-         <wvobject type="group" fp_name="/apatb_yolo_conv_top_top/AESL_inst_yolo_conv_top/grp_out_stream_merge_fu_11390/grp_out_stream_merge_fu_11390_activity">
-            <obj_property name="label">grp_out_stream_merge_fu_11390_activity</obj_property>
+         <wvobject type="group" fp_name="/apatb_yolo_conv_top_top/AESL_inst_yolo_conv_top/grp_out_stream_merge_fu_11954/grp_out_stream_merge_fu_11954_activity">
+            <obj_property name="label">grp_out_stream_merge_fu_11954_activity</obj_property>
             <obj_property name="DisplayName">label</obj_property>
             <obj_property name="UseFullPath">true</obj_property>
-            <obj_property name="ElementShortName">grp_out_stream_merge_fu_11390_activity</obj_property>
-            <obj_property name="ObjectShortName">grp_out_stream_merge_fu_11390_activity</obj_property>
+            <obj_property name="ElementShortName">grp_out_stream_merge_fu_11954_activity</obj_property>
+            <obj_property name="ObjectShortName">grp_out_stream_merge_fu_11954_activity</obj_property>
             <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
             <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
             <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
             <obj_property name="UseCustomSignalColor">true</obj_property>
             <obj_property name="CustomSignalColor">turquoise</obj_property>
             <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
-            <obj_property name="Render_Data">/apatb_yolo_conv_top_top/AESL_inst_yolo_conv_top/grp_out_stream_merge_fu_11390/grp_out_stream_merge_fu_11390_activity.dataflowTxWaveData.Cycles</obj_property>
-            <obj_property name="Value_Data">/apatb_yolo_conv_top_top/AESL_inst_yolo_conv_top/grp_out_stream_merge_fu_11390/grp_out_stream_merge_fu_11390_activity.dataflowTxWaveData.OutStanding</obj_property>
-            <obj_property name="Detail_Data">/apatb_yolo_conv_top_top/AESL_inst_yolo_conv_top/grp_out_stream_merge_fu_11390/grp_out_stream_merge_fu_11390_activity.dataflowTxTooltipData</obj_property>
+            <obj_property name="Render_Data">/apatb_yolo_conv_top_top/AESL_inst_yolo_conv_top/grp_out_stream_merge_fu_11954/grp_out_stream_merge_fu_11954_activity.dataflowTxWaveData.Cycles</obj_property>
+            <obj_property name="Value_Data">/apatb_yolo_conv_top_top/AESL_inst_yolo_conv_top/grp_out_stream_merge_fu_11954/grp_out_stream_merge_fu_11954_activity.dataflowTxWaveData.OutStanding</obj_property>
+            <obj_property name="Detail_Data">/apatb_yolo_conv_top_top/AESL_inst_yolo_conv_top/grp_out_stream_merge_fu_11954/grp_out_stream_merge_fu_11954_activity.dataflowTxTooltipData</obj_property>
          </wvobject>
-         <wvobject type="group" fp_name="/apatb_yolo_conv_top_top/AESL_inst_yolo_conv_top/grp_slide_window_fu_11500/grp_slide_window_fu_11500_activity">
-            <obj_property name="label">grp_slide_window_fu_11500_activity</obj_property>
+         <wvobject type="group" fp_name="/apatb_yolo_conv_top_top/AESL_inst_yolo_conv_top/grp_slide_window_fu_12364/grp_slide_window_fu_12364_activity">
+            <obj_property name="label">grp_slide_window_fu_12364_activity</obj_property>
             <obj_property name="DisplayName">label</obj_property>
             <obj_property name="UseFullPath">true</obj_property>
-            <obj_property name="ElementShortName">grp_slide_window_fu_11500_activity</obj_property>
-            <obj_property name="ObjectShortName">grp_slide_window_fu_11500_activity</obj_property>
+            <obj_property name="ElementShortName">grp_slide_window_fu_12364_activity</obj_property>
+            <obj_property name="ObjectShortName">grp_slide_window_fu_12364_activity</obj_property>
             <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
             <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
             <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
             <obj_property name="UseCustomSignalColor">true</obj_property>
             <obj_property name="CustomSignalColor">turquoise</obj_property>
             <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
-            <obj_property name="Render_Data">/apatb_yolo_conv_top_top/AESL_inst_yolo_conv_top/grp_slide_window_fu_11500/grp_slide_window_fu_11500_activity.dataflowTxWaveData.Cycles</obj_property>
-            <obj_property name="Value_Data">/apatb_yolo_conv_top_top/AESL_inst_yolo_conv_top/grp_slide_window_fu_11500/grp_slide_window_fu_11500_activity.dataflowTxWaveData.OutStanding</obj_property>
-            <obj_property name="Detail_Data">/apatb_yolo_conv_top_top/AESL_inst_yolo_conv_top/grp_slide_window_fu_11500/grp_slide_window_fu_11500_activity.dataflowTxTooltipData</obj_property>
+            <obj_property name="Render_Data">/apatb_yolo_conv_top_top/AESL_inst_yolo_conv_top/grp_slide_window_fu_12364/grp_slide_window_fu_12364_activity.dataflowTxWaveData.Cycles</obj_property>
+            <obj_property name="Value_Data">/apatb_yolo_conv_top_top/AESL_inst_yolo_conv_top/grp_slide_window_fu_12364/grp_slide_window_fu_12364_activity.dataflowTxWaveData.OutStanding</obj_property>
+            <obj_property name="Detail_Data">/apatb_yolo_conv_top_top/AESL_inst_yolo_conv_top/grp_slide_window_fu_12364/grp_slide_window_fu_12364_activity.dataflowTxTooltipData</obj_property>
+         </wvobject>
+         <wvobject type="group" fp_name="/apatb_yolo_conv_top_top/AESL_inst_yolo_conv_top/grp_slide_window_fu_12373/grp_slide_window_fu_12373_activity">
+            <obj_property name="label">grp_slide_window_fu_12373_activity</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <obj_property name="UseFullPath">true</obj_property>
+            <obj_property name="ElementShortName">grp_slide_window_fu_12373_activity</obj_property>
+            <obj_property name="ObjectShortName">grp_slide_window_fu_12373_activity</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+            <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+            <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+            <obj_property name="UseCustomSignalColor">true</obj_property>
+            <obj_property name="CustomSignalColor">turquoise</obj_property>
+            <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+            <obj_property name="Render_Data">/apatb_yolo_conv_top_top/AESL_inst_yolo_conv_top/grp_slide_window_fu_12373/grp_slide_window_fu_12373_activity.dataflowTxWaveData.Cycles</obj_property>
+            <obj_property name="Value_Data">/apatb_yolo_conv_top_top/AESL_inst_yolo_conv_top/grp_slide_window_fu_12373/grp_slide_window_fu_12373_activity.dataflowTxWaveData.OutStanding</obj_property>
+            <obj_property name="Detail_Data">/apatb_yolo_conv_top_top/AESL_inst_yolo_conv_top/grp_slide_window_fu_12373/grp_slide_window_fu_12373_activity.dataflowTxTooltipData</obj_property>
+         </wvobject>
+         <wvobject type="group" fp_name="/apatb_yolo_conv_top_top/AESL_inst_yolo_conv_top/grp_slide_window_fu_12382/grp_slide_window_fu_12382_activity">
+            <obj_property name="label">grp_slide_window_fu_12382_activity</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <obj_property name="UseFullPath">true</obj_property>
+            <obj_property name="ElementShortName">grp_slide_window_fu_12382_activity</obj_property>
+            <obj_property name="ObjectShortName">grp_slide_window_fu_12382_activity</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+            <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+            <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+            <obj_property name="UseCustomSignalColor">true</obj_property>
+            <obj_property name="CustomSignalColor">turquoise</obj_property>
+            <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+            <obj_property name="Render_Data">/apatb_yolo_conv_top_top/AESL_inst_yolo_conv_top/grp_slide_window_fu_12382/grp_slide_window_fu_12382_activity.dataflowTxWaveData.Cycles</obj_property>
+            <obj_property name="Value_Data">/apatb_yolo_conv_top_top/AESL_inst_yolo_conv_top/grp_slide_window_fu_12382/grp_slide_window_fu_12382_activity.dataflowTxWaveData.OutStanding</obj_property>
+            <obj_property name="Detail_Data">/apatb_yolo_conv_top_top/AESL_inst_yolo_conv_top/grp_slide_window_fu_12382/grp_slide_window_fu_12382_activity.dataflowTxTooltipData</obj_property>
+         </wvobject>
+         <wvobject type="group" fp_name="/apatb_yolo_conv_top_top/AESL_inst_yolo_conv_top/grp_slide_window_fu_12391/grp_slide_window_fu_12391_activity">
+            <obj_property name="label">grp_slide_window_fu_12391_activity</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <obj_property name="UseFullPath">true</obj_property>
+            <obj_property name="ElementShortName">grp_slide_window_fu_12391_activity</obj_property>
+            <obj_property name="ObjectShortName">grp_slide_window_fu_12391_activity</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+            <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+            <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+            <obj_property name="UseCustomSignalColor">true</obj_property>
+            <obj_property name="CustomSignalColor">turquoise</obj_property>
+            <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+            <obj_property name="Render_Data">/apatb_yolo_conv_top_top/AESL_inst_yolo_conv_top/grp_slide_window_fu_12391/grp_slide_window_fu_12391_activity.dataflowTxWaveData.Cycles</obj_property>
+            <obj_property name="Value_Data">/apatb_yolo_conv_top_top/AESL_inst_yolo_conv_top/grp_slide_window_fu_12391/grp_slide_window_fu_12391_activity.dataflowTxWaveData.OutStanding</obj_property>
+            <obj_property name="Detail_Data">/apatb_yolo_conv_top_top/AESL_inst_yolo_conv_top/grp_slide_window_fu_12391/grp_slide_window_fu_12391_activity.dataflowTxTooltipData</obj_property>
          </wvobject>
       </wvobject>
    </wvobject>
@@ -78,13 +126,25 @@
    <wvobject type="group" fp_name="AESL_inst_yolo_conv_top_group">
       <obj_property name="label">AESL_inst_yolo_conv_top</obj_property>
       <obj_property name="DisplayName">label</obj_property>
-      <wvobject type="protoinst" fp_name="/apatb_yolo_conv_top_top/AESL_inst_yolo_conv_top/grp_out_stream_merge_fu_11390/grp_out_stream_merge_fu_11390_activity">
-         <obj_property name="ElementShortName">grp_out_stream_merge_fu_11390_activity</obj_property>
-         <obj_property name="ObjectShortName">grp_out_stream_merge_fu_11390_activity</obj_property>
+      <wvobject type="protoinst" fp_name="/apatb_yolo_conv_top_top/AESL_inst_yolo_conv_top/grp_out_stream_merge_fu_11954/grp_out_stream_merge_fu_11954_activity">
+         <obj_property name="ElementShortName">grp_out_stream_merge_fu_11954_activity</obj_property>
+         <obj_property name="ObjectShortName">grp_out_stream_merge_fu_11954_activity</obj_property>
       </wvobject>
-      <wvobject type="protoinst" fp_name="/apatb_yolo_conv_top_top/AESL_inst_yolo_conv_top/grp_slide_window_fu_11500/grp_slide_window_fu_11500_activity">
-         <obj_property name="ElementShortName">grp_slide_window_fu_11500_activity</obj_property>
-         <obj_property name="ObjectShortName">grp_slide_window_fu_11500_activity</obj_property>
+      <wvobject type="protoinst" fp_name="/apatb_yolo_conv_top_top/AESL_inst_yolo_conv_top/grp_slide_window_fu_12364/grp_slide_window_fu_12364_activity">
+         <obj_property name="ElementShortName">grp_slide_window_fu_12364_activity</obj_property>
+         <obj_property name="ObjectShortName">grp_slide_window_fu_12364_activity</obj_property>
+      </wvobject>
+      <wvobject type="protoinst" fp_name="/apatb_yolo_conv_top_top/AESL_inst_yolo_conv_top/grp_slide_window_fu_12373/grp_slide_window_fu_12373_activity">
+         <obj_property name="ElementShortName">grp_slide_window_fu_12373_activity</obj_property>
+         <obj_property name="ObjectShortName">grp_slide_window_fu_12373_activity</obj_property>
+      </wvobject>
+      <wvobject type="protoinst" fp_name="/apatb_yolo_conv_top_top/AESL_inst_yolo_conv_top/grp_slide_window_fu_12382/grp_slide_window_fu_12382_activity">
+         <obj_property name="ElementShortName">grp_slide_window_fu_12382_activity</obj_property>
+         <obj_property name="ObjectShortName">grp_slide_window_fu_12382_activity</obj_property>
+      </wvobject>
+      <wvobject type="protoinst" fp_name="/apatb_yolo_conv_top_top/AESL_inst_yolo_conv_top/grp_slide_window_fu_12391/grp_slide_window_fu_12391_activity">
+         <obj_property name="ElementShortName">grp_slide_window_fu_12391_activity</obj_property>
+         <obj_property name="ObjectShortName">grp_slide_window_fu_12391_activity</obj_property>
       </wvobject>
       <wvobject type="group" fp_name="AESL_inst_yolo_conv_top_Handshake_group">
          <obj_property name="label">Block-level handshake</obj_property>
@@ -102,41 +162,101 @@
             <obj_property name="ObjectShortName">ap_done</obj_property>
          </wvobject>
       </wvobject>
-      <wvobject type="group" fp_name="grp_out_stream_merge_fu_11390_group">
-         <obj_property name="label">grp_out_stream_merge_fu_11390</obj_property>
+      <wvobject type="group" fp_name="grp_out_stream_merge_fu_11954_group">
+         <obj_property name="label">grp_out_stream_merge_fu_11954</obj_property>
          <obj_property name="DisplayName">label</obj_property>
-         <wvobject type="group" fp_name="grp_out_stream_merge_fu_11390_Handshake_group">
+         <wvobject type="group" fp_name="grp_out_stream_merge_fu_11954_Handshake_group">
             <obj_property name="label">Block-level handshake</obj_property>
             <obj_property name="DisplayName">label</obj_property>
-            <wvobject type="logic" fp_name="/apatb_yolo_conv_top_top/AESL_inst_yolo_conv_top/grp_out_stream_merge_fu_11390/ap_start">
+            <wvobject type="logic" fp_name="/apatb_yolo_conv_top_top/AESL_inst_yolo_conv_top/grp_out_stream_merge_fu_11954/ap_start">
                <obj_property name="ElementShortName">ap_start</obj_property>
                <obj_property name="ObjectShortName">ap_start</obj_property>
             </wvobject>
-            <wvobject type="logic" fp_name="/apatb_yolo_conv_top_top/AESL_inst_yolo_conv_top/grp_out_stream_merge_fu_11390/ap_ready">
+            <wvobject type="logic" fp_name="/apatb_yolo_conv_top_top/AESL_inst_yolo_conv_top/grp_out_stream_merge_fu_11954/ap_ready">
                <obj_property name="ElementShortName">ap_ready</obj_property>
                <obj_property name="ObjectShortName">ap_ready</obj_property>
             </wvobject>
-            <wvobject type="logic" fp_name="/apatb_yolo_conv_top_top/AESL_inst_yolo_conv_top/grp_out_stream_merge_fu_11390/ap_done">
+            <wvobject type="logic" fp_name="/apatb_yolo_conv_top_top/AESL_inst_yolo_conv_top/grp_out_stream_merge_fu_11954/ap_done">
                <obj_property name="ElementShortName">ap_done</obj_property>
                <obj_property name="ObjectShortName">ap_done</obj_property>
             </wvobject>
          </wvobject>
       </wvobject>
-      <wvobject type="group" fp_name="grp_slide_window_fu_11500_group">
-         <obj_property name="label">grp_slide_window_fu_11500</obj_property>
+      <wvobject type="group" fp_name="grp_slide_window_fu_12364_group">
+         <obj_property name="label">grp_slide_window_fu_12364</obj_property>
          <obj_property name="DisplayName">label</obj_property>
-         <wvobject type="group" fp_name="grp_slide_window_fu_11500_Handshake_group">
+         <wvobject type="group" fp_name="grp_slide_window_fu_12364_Handshake_group">
             <obj_property name="label">Block-level handshake</obj_property>
             <obj_property name="DisplayName">label</obj_property>
-            <wvobject type="logic" fp_name="/apatb_yolo_conv_top_top/AESL_inst_yolo_conv_top/grp_slide_window_fu_11500/ap_start">
+            <wvobject type="logic" fp_name="/apatb_yolo_conv_top_top/AESL_inst_yolo_conv_top/grp_slide_window_fu_12364/ap_start">
                <obj_property name="ElementShortName">ap_start</obj_property>
                <obj_property name="ObjectShortName">ap_start</obj_property>
             </wvobject>
-            <wvobject type="logic" fp_name="/apatb_yolo_conv_top_top/AESL_inst_yolo_conv_top/grp_slide_window_fu_11500/ap_ready">
+            <wvobject type="logic" fp_name="/apatb_yolo_conv_top_top/AESL_inst_yolo_conv_top/grp_slide_window_fu_12364/ap_ready">
                <obj_property name="ElementShortName">ap_ready</obj_property>
                <obj_property name="ObjectShortName">ap_ready</obj_property>
             </wvobject>
-            <wvobject type="logic" fp_name="/apatb_yolo_conv_top_top/AESL_inst_yolo_conv_top/grp_slide_window_fu_11500/ap_done">
+            <wvobject type="logic" fp_name="/apatb_yolo_conv_top_top/AESL_inst_yolo_conv_top/grp_slide_window_fu_12364/ap_done">
+               <obj_property name="ElementShortName">ap_done</obj_property>
+               <obj_property name="ObjectShortName">ap_done</obj_property>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="grp_slide_window_fu_12373_group">
+         <obj_property name="label">grp_slide_window_fu_12373</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="group" fp_name="grp_slide_window_fu_12373_Handshake_group">
+            <obj_property name="label">Block-level handshake</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="logic" fp_name="/apatb_yolo_conv_top_top/AESL_inst_yolo_conv_top/grp_slide_window_fu_12373/ap_start">
+               <obj_property name="ElementShortName">ap_start</obj_property>
+               <obj_property name="ObjectShortName">ap_start</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_yolo_conv_top_top/AESL_inst_yolo_conv_top/grp_slide_window_fu_12373/ap_ready">
+               <obj_property name="ElementShortName">ap_ready</obj_property>
+               <obj_property name="ObjectShortName">ap_ready</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_yolo_conv_top_top/AESL_inst_yolo_conv_top/grp_slide_window_fu_12373/ap_done">
+               <obj_property name="ElementShortName">ap_done</obj_property>
+               <obj_property name="ObjectShortName">ap_done</obj_property>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="grp_slide_window_fu_12382_group">
+         <obj_property name="label">grp_slide_window_fu_12382</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="group" fp_name="grp_slide_window_fu_12382_Handshake_group">
+            <obj_property name="label">Block-level handshake</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="logic" fp_name="/apatb_yolo_conv_top_top/AESL_inst_yolo_conv_top/grp_slide_window_fu_12382/ap_start">
+               <obj_property name="ElementShortName">ap_start</obj_property>
+               <obj_property name="ObjectShortName">ap_start</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_yolo_conv_top_top/AESL_inst_yolo_conv_top/grp_slide_window_fu_12382/ap_ready">
+               <obj_property name="ElementShortName">ap_ready</obj_property>
+               <obj_property name="ObjectShortName">ap_ready</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_yolo_conv_top_top/AESL_inst_yolo_conv_top/grp_slide_window_fu_12382/ap_done">
+               <obj_property name="ElementShortName">ap_done</obj_property>
+               <obj_property name="ObjectShortName">ap_done</obj_property>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="grp_slide_window_fu_12391_group">
+         <obj_property name="label">grp_slide_window_fu_12391</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="group" fp_name="grp_slide_window_fu_12391_Handshake_group">
+            <obj_property name="label">Block-level handshake</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="logic" fp_name="/apatb_yolo_conv_top_top/AESL_inst_yolo_conv_top/grp_slide_window_fu_12391/ap_start">
+               <obj_property name="ElementShortName">ap_start</obj_property>
+               <obj_property name="ObjectShortName">ap_start</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_yolo_conv_top_top/AESL_inst_yolo_conv_top/grp_slide_window_fu_12391/ap_ready">
+               <obj_property name="ElementShortName">ap_ready</obj_property>
+               <obj_property name="ObjectShortName">ap_ready</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_yolo_conv_top_top/AESL_inst_yolo_conv_top/grp_slide_window_fu_12391/ap_done">
                <obj_property name="ElementShortName">ap_done</obj_property>
                <obj_property name="ObjectShortName">ap_done</obj_property>
             </wvobject>

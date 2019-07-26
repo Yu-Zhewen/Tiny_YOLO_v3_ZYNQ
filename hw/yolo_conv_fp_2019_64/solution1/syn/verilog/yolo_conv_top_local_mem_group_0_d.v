@@ -6,8 +6,8 @@
 module yolo_conv_top_local_mem_group_0_d_ram (addr0, ce0, d0, we0, q0, addr1, ce1, q1,  clk);
 
 parameter DWIDTH = 16;
-parameter AWIDTH = 8;
-parameter MEM_SIZE = 256;
+parameter AWIDTH = 7;
+parameter MEM_SIZE = 128;
 
 input[AWIDTH-1:0] addr0;
 input ce0;
@@ -62,8 +62,8 @@ module yolo_conv_top_local_mem_group_0_d(
     q1);
 
 parameter DataWidth = 32'd16;
-parameter AddressRange = 32'd256;
-parameter AddressWidth = 32'd8;
+parameter AddressRange = 32'd128;
+parameter AddressWidth = 32'd7;
 input reset;
 input clk;
 input[AddressWidth - 1:0] address0;

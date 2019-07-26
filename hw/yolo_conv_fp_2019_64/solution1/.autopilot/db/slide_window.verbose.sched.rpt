@@ -3,7 +3,7 @@
 ================================================================
 == Vivado HLS Report for 'slide_window'
 ================================================================
-* Date:           Sat Jul 20 19:03:13 2019
+* Date:           Fri Jul 26 19:40:03 2019
 
 * Version:        2019.1 (Build 2552052 on Fri May 24 15:28:33 MDT 2019)
 * Project:        yolo_conv_fp_2019_64
@@ -20,7 +20,7 @@
     +--------+-------+----------+------------+
     |  Clock | Target| Estimated| Uncertainty|
     +--------+-------+----------+------------+
-    |ap_clk  |  10.00|     6.756|        2.00|
+    |ap_clk  |   8.00|     4.934|        1.60|
     +--------+-------+----------+------------+
 
 + Latency (clock cycles): 
@@ -83,19 +83,19 @@ IsGatedGlobalClock: 0
 
 State 1 <SV = 0> <Delay = 4.52>
 ST_1 : Operation 5 [1/1] (0.00ns)   --->   "%line_buff_val_V_offs = call i4 @_ssdm_op_Read.ap_auto.i4(i4 %line_buff_val_V_offset)"   --->   Operation 5 'read' 'line_buff_val_V_offs' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%zext_ln259 = zext i4 %line_buff_val_V_offs to i13" [yolo_conv_fp_2019_64/src/yolo_conv.cpp:259]   --->   Operation 6 'zext' 'zext_ln259' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 7 [1/1] (4.52ns)   --->   "%mul_ln259 = mul i13 %zext_ln259, 418" [yolo_conv_fp_2019_64/src/yolo_conv.cpp:259]   --->   Operation 7 'mul' 'mul_ln259' <Predicate = true> <Delay = 4.52> <Core = "Mul">   --->   Core 16 'Mul' <Latency = 0> <II = 1> <Delay = 4.52> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%conv_count_read = call i9 @_ssdm_op_Read.ap_auto.i9(i9 %conv_count)"   --->   Operation 6 'read' 'conv_count_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%zext_ln259 = zext i4 %line_buff_val_V_offs to i13" [yolo_conv_fp_2019_64/src/yolo_conv.cpp:259]   --->   Operation 7 'zext' 'zext_ln259' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 8 [1/1] (4.52ns)   --->   "%mul_ln259 = mul i13 %zext_ln259, 418" [yolo_conv_fp_2019_64/src/yolo_conv.cpp:259]   --->   Operation 8 'mul' 'mul_ln259' <Predicate = true> <Delay = 4.52> <Core = "Mul">   --->   Core 16 'Mul' <Latency = 0> <II = 1> <Delay = 4.52> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 9 [1/1] (1.82ns)   --->   "%add_ln259 = add i9 %conv_count_read, 1" [yolo_conv_fp_2019_64/src/yolo_conv.cpp:259]   --->   Operation 9 'add' 'add_ln259' <Predicate = true> <Delay = 1.82> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.67> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
 
-State 2 <SV = 1> <Delay = 6.75>
-ST_2 : Operation 8 [1/1] (0.00ns)   --->   "%conv_count_read = call i9 @_ssdm_op_Read.ap_auto.i9(i9 %conv_count)"   --->   Operation 8 'read' 'conv_count_read' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 9 [1/1] (0.00ns)   --->   "%zext_ln259_1 = zext i9 %conv_count_read to i13" [yolo_conv_fp_2019_64/src/yolo_conv.cpp:259]   --->   Operation 9 'zext' 'zext_ln259_1' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 10 [1/1] (1.67ns)   --->   "%add_ln259_2 = add i13 %zext_ln259_1, %mul_ln259" [yolo_conv_fp_2019_64/src/yolo_conv.cpp:259]   --->   Operation 10 'add' 'add_ln259_2' <Predicate = true> <Delay = 1.67> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.67> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_2 : Operation 11 [1/1] (0.00ns)   --->   "%sext_ln259 = sext i13 %add_ln259_2 to i64" [yolo_conv_fp_2019_64/src/yolo_conv.cpp:259]   --->   Operation 11 'sext' 'sext_ln259' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 12 [1/1] (0.00ns)   --->   "%line_buff_val_0_V_a = getelementptr [3344 x i16]* %line_buff_val_0_V, i64 0, i64 %sext_ln259" [yolo_conv_fp_2019_64/src/yolo_conv.cpp:259]   --->   Operation 12 'getelementptr' 'line_buff_val_0_V_a' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 13 [1/1] (0.00ns)   --->   "%line_buff_val_1_V_a = getelementptr [3344 x i16]* %line_buff_val_1_V, i64 0, i64 %sext_ln259" [yolo_conv_fp_2019_64/src/yolo_conv.cpp:259]   --->   Operation 13 'getelementptr' 'line_buff_val_1_V_a' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 14 [1/1] (0.00ns)   --->   "%line_buff_val_2_V_a = getelementptr [3344 x i16]* %line_buff_val_2_V, i64 0, i64 %sext_ln259" [yolo_conv_fp_2019_64/src/yolo_conv.cpp:259]   --->   Operation 14 'getelementptr' 'line_buff_val_2_V_a' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 15 [2/2] (3.25ns)   --->   "%line_buff_val_0_V_l = load i16* %line_buff_val_0_V_a, align 2" [yolo_conv_fp_2019_64/src/yolo_conv.cpp:259]   --->   Operation 15 'load' 'line_buff_val_0_V_l' <Predicate = true> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 3344> <RAM>
-ST_2 : Operation 16 [1/1] (1.82ns)   --->   "%add_ln259 = add i9 %conv_count_read, 1" [yolo_conv_fp_2019_64/src/yolo_conv.cpp:259]   --->   Operation 16 'add' 'add_ln259' <Predicate = true> <Delay = 1.82> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.67> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+State 2 <SV = 1> <Delay = 4.93>
+ST_2 : Operation 10 [1/1] (0.00ns)   --->   "%zext_ln259_1 = zext i9 %conv_count_read to i13" [yolo_conv_fp_2019_64/src/yolo_conv.cpp:259]   --->   Operation 10 'zext' 'zext_ln259_1' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 11 [1/1] (1.67ns)   --->   "%add_ln259_2 = add i13 %zext_ln259_1, %mul_ln259" [yolo_conv_fp_2019_64/src/yolo_conv.cpp:259]   --->   Operation 11 'add' 'add_ln259_2' <Predicate = true> <Delay = 1.67> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.67> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 12 [1/1] (0.00ns)   --->   "%sext_ln259 = sext i13 %add_ln259_2 to i64" [yolo_conv_fp_2019_64/src/yolo_conv.cpp:259]   --->   Operation 12 'sext' 'sext_ln259' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 13 [1/1] (0.00ns)   --->   "%line_buff_val_0_V_a = getelementptr [3344 x i16]* %line_buff_val_0_V, i64 0, i64 %sext_ln259" [yolo_conv_fp_2019_64/src/yolo_conv.cpp:259]   --->   Operation 13 'getelementptr' 'line_buff_val_0_V_a' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 14 [1/1] (0.00ns)   --->   "%line_buff_val_1_V_a = getelementptr [3344 x i16]* %line_buff_val_1_V, i64 0, i64 %sext_ln259" [yolo_conv_fp_2019_64/src/yolo_conv.cpp:259]   --->   Operation 14 'getelementptr' 'line_buff_val_1_V_a' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 15 [1/1] (0.00ns)   --->   "%line_buff_val_2_V_a = getelementptr [3344 x i16]* %line_buff_val_2_V, i64 0, i64 %sext_ln259" [yolo_conv_fp_2019_64/src/yolo_conv.cpp:259]   --->   Operation 15 'getelementptr' 'line_buff_val_2_V_a' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 16 [2/2] (3.25ns)   --->   "%line_buff_val_0_V_l = load i16* %line_buff_val_0_V_a, align 2" [yolo_conv_fp_2019_64/src/yolo_conv.cpp:259]   --->   Operation 16 'load' 'line_buff_val_0_V_l' <Predicate = true> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 3344> <RAM>
 ST_2 : Operation 17 [1/1] (0.00ns)   --->   "%zext_ln259_2 = zext i9 %add_ln259 to i13" [yolo_conv_fp_2019_64/src/yolo_conv.cpp:259]   --->   Operation 17 'zext' 'zext_ln259_2' <Predicate = true> <Delay = 0.00>
 ST_2 : Operation 18 [1/1] (1.67ns)   --->   "%add_ln259_3 = add i13 %zext_ln259_2, %mul_ln259" [yolo_conv_fp_2019_64/src/yolo_conv.cpp:259]   --->   Operation 18 'add' 'add_ln259_3' <Predicate = true> <Delay = 1.67> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.67> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
 ST_2 : Operation 19 [1/1] (0.00ns)   --->   "%sext_ln259_1 = sext i13 %add_ln259_3 to i64" [yolo_conv_fp_2019_64/src/yolo_conv.cpp:259]   --->   Operation 19 'sext' 'sext_ln259_1' <Predicate = true> <Delay = 0.00>
@@ -145,28 +145,26 @@ ST_4 : Operation 56 [1/1] (0.00ns)   --->   "ret { i16, i16, i16, i16, i16, i16,
 ============================================================
 + Verbose Summary: Timing violations
 ============================================================
-Target clock period: 10ns, clock uncertainty: 2ns.
+Target clock period: 8ns, clock uncertainty: 1.6ns.
 
  <State 1>: 4.52ns
 The critical path consists of the following:
 	wire read on port 'line_buff_val_V_offset' [6]  (0 ns)
 	'mul' operation ('mul_ln259', yolo_conv_fp_2019_64/src/yolo_conv.cpp:259) [9]  (4.52 ns)
 
- <State 2>: 6.76ns
+ <State 2>: 4.93ns
 The critical path consists of the following:
-	wire read on port 'conv_count' [7]  (0 ns)
-	'add' operation ('add_ln259', yolo_conv_fp_2019_64/src/yolo_conv.cpp:259) [17]  (1.82 ns)
-	'add' operation ('add_ln259_3', yolo_conv_fp_2019_64/src/yolo_conv.cpp:259) [19]  (1.68 ns)
-	'getelementptr' operation ('line_buff_val_0_V_a_1', yolo_conv_fp_2019_64/src/yolo_conv.cpp:259) [21]  (0 ns)
-	'load' operation ('Window<3, 3, ap_fixed<16, 8, 4, 0, 0> >.val[0].V[1]', yolo_conv_fp_2019_64/src/yolo_conv.cpp:259) on array 'line_buff_val_0_V' [24]  (3.25 ns)
+	'add' operation ('add_ln259_2', yolo_conv_fp_2019_64/src/yolo_conv.cpp:259) [11]  (1.68 ns)
+	'getelementptr' operation ('line_buff_val_0_V_a', yolo_conv_fp_2019_64/src/yolo_conv.cpp:259) [13]  (0 ns)
+	'load' operation ('Window<3, 3, ap_fixed<16, 8, 5, 3, 0> >.val[0].V[0]', yolo_conv_fp_2019_64/src/yolo_conv.cpp:259) on array 'line_buff_val_0_V' [16]  (3.25 ns)
 
  <State 3>: 3.25ns
 The critical path consists of the following:
-	'load' operation ('Window<3, 3, ap_fixed<16, 8, 4, 0, 0> >.val[0].V[0]', yolo_conv_fp_2019_64/src/yolo_conv.cpp:259) on array 'line_buff_val_0_V' [16]  (3.25 ns)
+	'load' operation ('Window<3, 3, ap_fixed<16, 8, 5, 3, 0> >.val[0].V[0]', yolo_conv_fp_2019_64/src/yolo_conv.cpp:259) on array 'line_buff_val_0_V' [16]  (3.25 ns)
 
  <State 4>: 3.25ns
 The critical path consists of the following:
-	'load' operation ('Window<3, 3, ap_fixed<16, 8, 4, 0, 0> >.val[0].V[2]', yolo_conv_fp_2019_64/src/yolo_conv.cpp:259) on array 'line_buff_val_0_V' [32]  (3.25 ns)
+	'load' operation ('Window<3, 3, ap_fixed<16, 8, 5, 3, 0> >.val[0].V[2]', yolo_conv_fp_2019_64/src/yolo_conv.cpp:259) on array 'line_buff_val_0_V' [32]  (3.25 ns)
 
 
 ============================================================

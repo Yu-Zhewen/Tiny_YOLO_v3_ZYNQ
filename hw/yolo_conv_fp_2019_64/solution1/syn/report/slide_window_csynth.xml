@@ -9,8 +9,8 @@
 <ProductFamily>zynq</ProductFamily>
 <Part>xc7z020-clg484-1</Part>
 <TopModelName>slide_window</TopModelName>
-<TargetClockPeriod>10.00</TargetClockPeriod>
-<ClockUncertainty>2.00</ClockUncertainty>
+<TargetClockPeriod>8.00</TargetClockPeriod>
+<ClockUncertainty>1.60</ClockUncertainty>
 <TargetInitiationInterval>4294967295</TargetInitiationInterval>
 </UserAssignments>
 
@@ -18,7 +18,7 @@
 <PipelineType>function</PipelineType>
 <SummaryOfTimingAnalysis>
 <unit>ns</unit>
-<EstimatedClockPeriod>6.756</EstimatedClockPeriod>
+<EstimatedClockPeriod>4.934</EstimatedClockPeriod>
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
 <unit>clock cycles</unit>
@@ -35,7 +35,7 @@
 <AreaEstimates>
 <Resources>
 <DSP48E>0</DSP48E>
-<FF>135</FF>
+<FF>144</FF>
 <LUT>222</LUT>
 <BRAM_18K>0</BRAM_18K>
 <URAM>0</URAM>

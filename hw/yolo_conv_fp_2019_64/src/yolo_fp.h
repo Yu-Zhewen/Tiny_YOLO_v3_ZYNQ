@@ -3,8 +3,8 @@
 
 #include <ap_fixed.h>
 
-typedef ap_fixed<16,8,AP_RND_CONV,AP_SAT> fp_data_type;
-typedef ap_fixed<16,8,AP_RND_CONV,AP_SAT> fp_weight_type;
-#define FP_MAX (fp_data_type) 128;
+typedef ap_fixed<16,8> fp_data_type;
+typedef ap_fixed<16,8> fp_weight_type;
+typedef ap_fixed<32,16> fp_mid_type;
 
 #endif

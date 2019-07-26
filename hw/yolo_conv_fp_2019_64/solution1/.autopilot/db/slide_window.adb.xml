@@ -50,6 +50,21 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
+<Node id="7" bw="9" op_0_bw="9" op_1_bw="9">
+<![CDATA[
+.preheader.preheader.0:1  %conv_count_read = call i9 @_ssdm_op_Read.ap_auto.i9(i9 %conv_count)
+
+]]></Node>
+<StgValue><ssdm name="conv_count_read"/></StgValue>
+</operation>
+
+<operation id="7" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
 <Node id="8" bw="13" op_0_bw="4">
 <![CDATA[
 .preheader.preheader.0:2  %zext_ln259 = zext i4 %line_buff_val_V_offs to i13
@@ -58,7 +73,7 @@
 <StgValue><ssdm name="zext_ln259"/></StgValue>
 </operation>
 
-<operation id="7" st_id="1" stage="1" lat="1">
+<operation id="8" st_id="1" stage="1" lat="1">
 <core>Mul</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -72,26 +87,26 @@
 ]]></Node>
 <StgValue><ssdm name="mul_ln259"/></StgValue>
 </operation>
-</state>
 
-<state id="2" st_id="2">
-
-<operation id="8" st_id="2" stage="1" lat="1">
-<core>NULL</core>
+<operation id="9" st_id="1" stage="1" lat="1">
+<core>AddSub</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="7" bw="9" op_0_bw="9" op_1_bw="9">
+<Node id="17" bw="9" op_0_bw="9" op_1_bw="9">
 <![CDATA[
-.preheader.preheader.0:1  %conv_count_read = call i9 @_ssdm_op_Read.ap_auto.i9(i9 %conv_count)
+.preheader.preheader.0:11  %add_ln259 = add i9 %conv_count_read, 1
 
 ]]></Node>
-<StgValue><ssdm name="conv_count_read"/></StgValue>
+<StgValue><ssdm name="add_ln259"/></StgValue>
 </operation>
+</state>
 
-<operation id="9" st_id="2" stage="1" lat="1">
+<state id="2" st_id="2">
+
+<operation id="10" st_id="2" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -106,7 +121,7 @@
 <StgValue><ssdm name="zext_ln259_1"/></StgValue>
 </operation>
 
-<operation id="10" st_id="2" stage="1" lat="1">
+<operation id="11" st_id="2" stage="1" lat="1">
 <core>AddSub</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -121,7 +136,7 @@
 <StgValue><ssdm name="add_ln259_2"/></StgValue>
 </operation>
 
-<operation id="11" st_id="2" stage="1" lat="1">
+<operation id="12" st_id="2" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -136,7 +151,7 @@
 <StgValue><ssdm name="sext_ln259"/></StgValue>
 </operation>
 
-<operation id="12" st_id="2" stage="1" lat="1">
+<operation id="13" st_id="2" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -151,7 +166,7 @@
 <StgValue><ssdm name="line_buff_val_0_V_a"/></StgValue>
 </operation>
 
-<operation id="13" st_id="2" stage="1" lat="1">
+<operation id="14" st_id="2" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -166,7 +181,7 @@
 <StgValue><ssdm name="line_buff_val_1_V_a"/></StgValue>
 </operation>
 
-<operation id="14" st_id="2" stage="1" lat="1">
+<operation id="15" st_id="2" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -181,7 +196,7 @@
 <StgValue><ssdm name="line_buff_val_2_V_a"/></StgValue>
 </operation>
 
-<operation id="15" st_id="2" stage="2" lat="2">
+<operation id="16" st_id="2" stage="2" lat="2">
 <core>RAM</core>
 <MemPortIdVec>0 </MemPortIdVec>
 <condition id="-1">
@@ -194,21 +209,6 @@
 
 ]]></Node>
 <StgValue><ssdm name="line_buff_val_0_V_l"/></StgValue>
-</operation>
-
-<operation id="16" st_id="2" stage="1" lat="1">
-<core>AddSub</core>
-<MemPortIdVec></MemPortIdVec>
-<condition id="-1">
-<or_exp><and_exp></and_exp></or_exp>
-</condition>
-
-<Node id="17" bw="9" op_0_bw="9" op_1_bw="9">
-<![CDATA[
-.preheader.preheader.0:11  %add_ln259 = add i9 %conv_count_read, 1
-
-]]></Node>
-<StgValue><ssdm name="add_ln259"/></StgValue>
 </operation>
 
 <operation id="17" st_id="2" stage="1" lat="1">
@@ -847,77 +847,77 @@
 </dataflow>
 <dataflow id="71" from="line_buff_val_V_offset" to="line_buff_val_V_offs" fromId="68" toId="5">
 </dataflow>
-<dataflow id="72" from="line_buff_val_V_offs" to="zext_ln259" fromId="5" toId="6">
+<dataflow id="73" from="_ssdm_op_Read.ap_auto.i9" to="conv_count_read" fromId="72" toId="6">
 </dataflow>
-<dataflow id="73" from="zext_ln259" to="mul_ln259" fromId="6" toId="7">
+<dataflow id="74" from="conv_count" to="conv_count_read" fromId="64" toId="6">
 </dataflow>
-<dataflow id="75" from="StgValue_74" to="mul_ln259" fromId="74" toId="7">
+<dataflow id="75" from="line_buff_val_V_offs" to="zext_ln259" fromId="5" toId="7">
 </dataflow>
-<dataflow id="77" from="_ssdm_op_Read.ap_auto.i9" to="conv_count_read" fromId="76" toId="8">
+<dataflow id="76" from="zext_ln259" to="mul_ln259" fromId="7" toId="8">
 </dataflow>
-<dataflow id="78" from="conv_count" to="conv_count_read" fromId="64" toId="8">
+<dataflow id="78" from="StgValue_77" to="mul_ln259" fromId="77" toId="8">
 </dataflow>
-<dataflow id="79" from="conv_count_read" to="zext_ln259_1" fromId="8" toId="9">
+<dataflow id="79" from="conv_count_read" to="add_ln259" fromId="6" toId="9">
 </dataflow>
-<dataflow id="80" from="zext_ln259_1" to="add_ln259_2" fromId="9" toId="10">
+<dataflow id="81" from="StgValue_80" to="add_ln259" fromId="80" toId="9">
 </dataflow>
-<dataflow id="81" from="mul_ln259" to="add_ln259_2" fromId="7" toId="10">
+<dataflow id="82" from="conv_count_read" to="zext_ln259_1" fromId="6" toId="10">
 </dataflow>
-<dataflow id="82" from="add_ln259_2" to="sext_ln259" fromId="10" toId="11">
+<dataflow id="83" from="zext_ln259_1" to="add_ln259_2" fromId="10" toId="11">
 </dataflow>
-<dataflow id="83" from="line_buff_val_0_V" to="line_buff_val_0_V_a" fromId="65" toId="12">
+<dataflow id="84" from="mul_ln259" to="add_ln259_2" fromId="8" toId="11">
 </dataflow>
-<dataflow id="85" from="StgValue_84" to="line_buff_val_0_V_a" fromId="84" toId="12">
+<dataflow id="85" from="add_ln259_2" to="sext_ln259" fromId="11" toId="12">
 </dataflow>
-<dataflow id="86" from="sext_ln259" to="line_buff_val_0_V_a" fromId="11" toId="12">
+<dataflow id="86" from="line_buff_val_0_V" to="line_buff_val_0_V_a" fromId="65" toId="13">
 </dataflow>
-<dataflow id="87" from="line_buff_val_1_V" to="line_buff_val_1_V_a" fromId="66" toId="13">
+<dataflow id="88" from="StgValue_87" to="line_buff_val_0_V_a" fromId="87" toId="13">
 </dataflow>
-<dataflow id="88" from="StgValue_84" to="line_buff_val_1_V_a" fromId="84" toId="13">
+<dataflow id="89" from="sext_ln259" to="line_buff_val_0_V_a" fromId="12" toId="13">
 </dataflow>
-<dataflow id="89" from="sext_ln259" to="line_buff_val_1_V_a" fromId="11" toId="13">
+<dataflow id="90" from="line_buff_val_1_V" to="line_buff_val_1_V_a" fromId="66" toId="14">
 </dataflow>
-<dataflow id="90" from="line_buff_val_2_V" to="line_buff_val_2_V_a" fromId="67" toId="14">
+<dataflow id="91" from="StgValue_87" to="line_buff_val_1_V_a" fromId="87" toId="14">
 </dataflow>
-<dataflow id="91" from="StgValue_84" to="line_buff_val_2_V_a" fromId="84" toId="14">
+<dataflow id="92" from="sext_ln259" to="line_buff_val_1_V_a" fromId="12" toId="14">
 </dataflow>
-<dataflow id="92" from="sext_ln259" to="line_buff_val_2_V_a" fromId="11" toId="14">
+<dataflow id="93" from="line_buff_val_2_V" to="line_buff_val_2_V_a" fromId="67" toId="15">
 </dataflow>
-<dataflow id="93" from="line_buff_val_0_V_a" to="line_buff_val_0_V_l" fromId="12" toId="15">
+<dataflow id="94" from="StgValue_87" to="line_buff_val_2_V_a" fromId="87" toId="15">
 </dataflow>
-<dataflow id="94" from="conv_count_read" to="add_ln259" fromId="8" toId="16">
+<dataflow id="95" from="sext_ln259" to="line_buff_val_2_V_a" fromId="12" toId="15">
 </dataflow>
-<dataflow id="96" from="StgValue_95" to="add_ln259" fromId="95" toId="16">
+<dataflow id="96" from="line_buff_val_0_V_a" to="line_buff_val_0_V_l" fromId="13" toId="16">
 </dataflow>
-<dataflow id="97" from="add_ln259" to="zext_ln259_2" fromId="16" toId="17">
+<dataflow id="97" from="add_ln259" to="zext_ln259_2" fromId="9" toId="17">
 </dataflow>
 <dataflow id="98" from="zext_ln259_2" to="add_ln259_3" fromId="17" toId="18">
 </dataflow>
-<dataflow id="99" from="mul_ln259" to="add_ln259_3" fromId="7" toId="18">
+<dataflow id="99" from="mul_ln259" to="add_ln259_3" fromId="8" toId="18">
 </dataflow>
 <dataflow id="100" from="add_ln259_3" to="sext_ln259_1" fromId="18" toId="19">
 </dataflow>
 <dataflow id="101" from="line_buff_val_0_V" to="line_buff_val_0_V_a_1" fromId="65" toId="20">
 </dataflow>
-<dataflow id="102" from="StgValue_84" to="line_buff_val_0_V_a_1" fromId="84" toId="20">
+<dataflow id="102" from="StgValue_87" to="line_buff_val_0_V_a_1" fromId="87" toId="20">
 </dataflow>
 <dataflow id="103" from="sext_ln259_1" to="line_buff_val_0_V_a_1" fromId="19" toId="20">
 </dataflow>
 <dataflow id="104" from="line_buff_val_1_V" to="line_buff_val_1_V_a_1" fromId="66" toId="21">
 </dataflow>
-<dataflow id="105" from="StgValue_84" to="line_buff_val_1_V_a_1" fromId="84" toId="21">
+<dataflow id="105" from="StgValue_87" to="line_buff_val_1_V_a_1" fromId="87" toId="21">
 </dataflow>
 <dataflow id="106" from="sext_ln259_1" to="line_buff_val_1_V_a_1" fromId="19" toId="21">
 </dataflow>
 <dataflow id="107" from="line_buff_val_2_V" to="line_buff_val_2_V_a_1" fromId="67" toId="22">
 </dataflow>
-<dataflow id="108" from="StgValue_84" to="line_buff_val_2_V_a_1" fromId="84" toId="22">
+<dataflow id="108" from="StgValue_87" to="line_buff_val_2_V_a_1" fromId="87" toId="22">
 </dataflow>
 <dataflow id="109" from="sext_ln259_1" to="line_buff_val_2_V_a_1" fromId="19" toId="22">
 </dataflow>
 <dataflow id="110" from="line_buff_val_0_V_a_1" to="line_buff_val_0_V_l_1" fromId="20" toId="23">
 </dataflow>
-<dataflow id="111" from="conv_count_read" to="add_ln259_1" fromId="8" toId="24">
+<dataflow id="111" from="conv_count_read" to="add_ln259_1" fromId="6" toId="24">
 </dataflow>
 <dataflow id="113" from="StgValue_112" to="add_ln259_1" fromId="112" toId="24">
 </dataflow>
@@ -925,17 +925,17 @@
 </dataflow>
 <dataflow id="115" from="zext_ln259_3" to="add_ln259_4" fromId="25" toId="26">
 </dataflow>
-<dataflow id="116" from="mul_ln259" to="add_ln259_4" fromId="7" toId="26">
+<dataflow id="116" from="mul_ln259" to="add_ln259_4" fromId="8" toId="26">
 </dataflow>
-<dataflow id="117" from="line_buff_val_1_V_a" to="line_buff_val_1_V_l" fromId="13" toId="27">
+<dataflow id="117" from="line_buff_val_1_V_a" to="line_buff_val_1_V_l" fromId="14" toId="27">
 </dataflow>
 <dataflow id="118" from="line_buff_val_1_V_a_1" to="line_buff_val_1_V_l_1" fromId="21" toId="28">
 </dataflow>
-<dataflow id="119" from="line_buff_val_2_V_a" to="line_buff_val_2_V_l" fromId="14" toId="29">
+<dataflow id="119" from="line_buff_val_2_V_a" to="line_buff_val_2_V_l" fromId="15" toId="29">
 </dataflow>
 <dataflow id="120" from="line_buff_val_2_V_a_1" to="line_buff_val_2_V_l_1" fromId="22" toId="30">
 </dataflow>
-<dataflow id="121" from="line_buff_val_0_V_a" to="line_buff_val_0_V_l" fromId="12" toId="31">
+<dataflow id="121" from="line_buff_val_0_V_a" to="line_buff_val_0_V_l" fromId="13" toId="31">
 </dataflow>
 <dataflow id="122" from="line_buff_val_0_V_a_1" to="line_buff_val_0_V_l_1" fromId="20" toId="32">
 </dataflow>
@@ -943,31 +943,31 @@
 </dataflow>
 <dataflow id="124" from="line_buff_val_0_V" to="line_buff_val_0_V_a_2" fromId="65" toId="34">
 </dataflow>
-<dataflow id="125" from="StgValue_84" to="line_buff_val_0_V_a_2" fromId="84" toId="34">
+<dataflow id="125" from="StgValue_87" to="line_buff_val_0_V_a_2" fromId="87" toId="34">
 </dataflow>
 <dataflow id="126" from="sext_ln259_2" to="line_buff_val_0_V_a_2" fromId="33" toId="34">
 </dataflow>
 <dataflow id="127" from="line_buff_val_1_V" to="line_buff_val_1_V_a_2" fromId="66" toId="35">
 </dataflow>
-<dataflow id="128" from="StgValue_84" to="line_buff_val_1_V_a_2" fromId="84" toId="35">
+<dataflow id="128" from="StgValue_87" to="line_buff_val_1_V_a_2" fromId="87" toId="35">
 </dataflow>
 <dataflow id="129" from="sext_ln259_2" to="line_buff_val_1_V_a_2" fromId="33" toId="35">
 </dataflow>
 <dataflow id="130" from="line_buff_val_2_V" to="line_buff_val_2_V_a_2" fromId="67" toId="36">
 </dataflow>
-<dataflow id="131" from="StgValue_84" to="line_buff_val_2_V_a_2" fromId="84" toId="36">
+<dataflow id="131" from="StgValue_87" to="line_buff_val_2_V_a_2" fromId="87" toId="36">
 </dataflow>
 <dataflow id="132" from="sext_ln259_2" to="line_buff_val_2_V_a_2" fromId="33" toId="36">
 </dataflow>
 <dataflow id="133" from="line_buff_val_0_V_a_2" to="line_buff_val_0_V_l_2" fromId="34" toId="37">
 </dataflow>
-<dataflow id="134" from="line_buff_val_1_V_a" to="line_buff_val_1_V_l" fromId="13" toId="38">
+<dataflow id="134" from="line_buff_val_1_V_a" to="line_buff_val_1_V_l" fromId="14" toId="38">
 </dataflow>
 <dataflow id="135" from="line_buff_val_1_V_a_1" to="line_buff_val_1_V_l_1" fromId="21" toId="39">
 </dataflow>
 <dataflow id="136" from="line_buff_val_1_V_a_2" to="line_buff_val_1_V_l_2" fromId="35" toId="40">
 </dataflow>
-<dataflow id="137" from="line_buff_val_2_V_a" to="line_buff_val_2_V_l" fromId="14" toId="41">
+<dataflow id="137" from="line_buff_val_2_V_a" to="line_buff_val_2_V_l" fromId="15" toId="41">
 </dataflow>
 <dataflow id="138" from="line_buff_val_2_V_a_1" to="line_buff_val_2_V_l_1" fromId="22" toId="42">
 </dataflow>

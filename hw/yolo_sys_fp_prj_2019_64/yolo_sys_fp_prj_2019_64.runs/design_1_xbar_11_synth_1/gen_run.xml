@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="design_1_xbar_11_synth_1" LaunchPart="xc7z020clg484-1" LaunchTime="1563782873">
-  <File Type="VDS-TIMING-PB" Name="design_1_xbar_11_timing_summary_synth.pb"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="design_1_xbar_11_timing_summary_synth.rpt"/>
-  <File Type="RDS-DCP" Name="design_1_xbar_11.dcp"/>
-  <File Type="REPORTS-TCL" Name="design_1_xbar_11_reports.tcl"/>
-  <File Type="PA-TCL" Name="design_1_xbar_11.tcl"/>
-  <File Type="RDS-RDS" Name="design_1_xbar_11.vds"/>
-  <File Type="RDS-PROPCONSTRS" Name="design_1_xbar_11_drc_synth.rpt"/>
   <File Type="RDS-UTIL" Name="design_1_xbar_11_utilization_synth.rpt"/>
   <File Type="RDS-UTIL-PB" Name="design_1_xbar_11_utilization_synth.pb"/>
+  <File Type="RDS-RDS" Name="design_1_xbar_11.vds"/>
+  <File Type="RDS-DCP" Name="design_1_xbar_11.dcp"/>
+  <File Type="PA-TCL" Name="design_1_xbar_11.tcl"/>
+  <File Type="REPORTS-TCL" Name="design_1_xbar_11_reports.tcl"/>
   <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/design_1_xbar_11">
     <File Path="$PSRCDIR/sources_1/bd/design_1/ip/design_1_xbar_11/design_1_xbar_11.xci">
       <FileInfo>
@@ -42,9 +39,7 @@
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019">
-      <Desc>Vivado Synthesis Defaults</Desc>
-    </StratHandle>
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019"/>
     <Step Id="synth_design"/>
   </Strategy>
 </GenRun>

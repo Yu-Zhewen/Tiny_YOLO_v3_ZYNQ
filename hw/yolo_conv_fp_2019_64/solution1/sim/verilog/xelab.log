@@ -9,6 +9,9 @@ INFO: [VRFC 10-311] analyzing module glbl
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_2019_64/solution1/sim/verilog/fifo_w16_d2_A.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module fifo_w16_d2_A_shiftReg
 INFO: [VRFC 10-311] analyzing module fifo_w16_d2_A
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_2019_64/solution1/sim/verilog/yolo_conv_top_mac_muladd_16s_16s_32s_32_1_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module yolo_conv_top_mac_muladd_16s_16s_32s_32_1_0_DSP48_1
+INFO: [VRFC 10-311] analyzing module yolo_conv_top_mac_muladd_16s_16s_32s_32_1_0
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_2019_64/solution1/sim/verilog/yolo_conv_top_line_buff_group_0_va.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module yolo_conv_top_line_buff_group_0_va_ram
 INFO: [VRFC 10-311] analyzing module yolo_conv_top_line_buff_group_0_va
@@ -28,7 +31,7 @@ INFO: [VRFC 10-311] analyzing module fifo
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_2019_64/solution1/sim/verilog/post_process.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module post_process
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_2019_64/solution1/sim/verilog/yolo_conv_top_am_addmul_9ns_1ns_13ns_22_1_1.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module yolo_conv_top_am_addmul_9ns_1ns_13ns_22_1_1_DSP48_1
+INFO: [VRFC 10-311] analyzing module yolo_conv_top_am_addmul_9ns_1ns_13ns_22_1_1_DSP48_2
 INFO: [VRFC 10-311] analyzing module yolo_conv_top_am_addmul_9ns_1ns_13ns_22_1_1
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_2019_64/solution1/sim/verilog/yolo_conv_top_local_mem_group_0_d.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module yolo_conv_top_local_mem_group_0_d_ram
@@ -44,7 +47,7 @@ INFO: [VRFC 10-311] analyzing module out_stream_merge
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_2019_64/solution1/sim/verilog/AESL_axi_s_outStream.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module AESL_axi_s_outStream
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_2019_64/solution1/sim/verilog/yolo_conv_top_mac_muladd_4ns_10ns_9ns_13_1_1.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module yolo_conv_top_mac_muladd_4ns_10ns_9ns_13_1_1_DSP48_2
+INFO: [VRFC 10-311] analyzing module yolo_conv_top_mac_muladd_4ns_10ns_9ns_13_1_1_DSP48_3
 INFO: [VRFC 10-311] analyzing module yolo_conv_top_mac_muladd_4ns_10ns_9ns_13_1_1
 Starting static elaboration
 Completed static elaboration
@@ -56,12 +59,14 @@ Compiling module xil_defaultlib.yolo_conv_top_line_buff_group_0_...
 Compiling module xil_defaultlib.yolo_conv_top_line_buff_group_0_...
 Compiling module xil_defaultlib.yolo_conv_top_local_mem_group_0_...
 Compiling module xil_defaultlib.yolo_conv_top_local_mem_group_0_...
-Compiling module xil_defaultlib.yolo_conv_top_mul_mul_16s_16s_32...
-Compiling module xil_defaultlib.yolo_conv_top_mul_mul_16s_16s_32...
-Compiling module xil_defaultlib.window_macc
 Compiling module xil_defaultlib.out_stream_merge
-Compiling module xil_defaultlib.post_process
+Compiling module xil_defaultlib.yolo_conv_top_mul_mul_16s_16s_32...
+Compiling module xil_defaultlib.yolo_conv_top_mul_mul_16s_16s_32...
+Compiling module xil_defaultlib.yolo_conv_top_mac_muladd_16s_16s...
+Compiling module xil_defaultlib.yolo_conv_top_mac_muladd_16s_16s...
+Compiling module xil_defaultlib.window_macc
 Compiling module xil_defaultlib.slide_window
+Compiling module xil_defaultlib.post_process
 Compiling module xil_defaultlib.yolo_conv_top_am_addmul_9ns_1ns_...
 Compiling module xil_defaultlib.yolo_conv_top_am_addmul_9ns_1ns_...
 Compiling module xil_defaultlib.yolo_conv_top_mac_muladd_4ns_10n...

@@ -12,7 +12,7 @@ set ProfileFlag 0
 set StallSigGenFlag 0
 set isEnableWaveformDebug 1
 set C_modelName {window_macc}
-set C_modelType { int 16 }
+set C_modelType { int 32 }
 set C_modelArgList {
 	{ p_read int 16 regular  }
 	{ p_read1 int 16 regular  }
@@ -52,7 +52,7 @@ set C_modelArgMapList {[
  	{ "Name" : "p_read15", "interface" : "wire", "bitwidth" : 16, "direction" : "READONLY"} , 
  	{ "Name" : "p_read16", "interface" : "wire", "bitwidth" : 16, "direction" : "READONLY"} , 
  	{ "Name" : "p_read17", "interface" : "wire", "bitwidth" : 16, "direction" : "READONLY"} , 
- 	{ "Name" : "ap_return", "interface" : "wire", "bitwidth" : 16} ]}
+ 	{ "Name" : "ap_return", "interface" : "wire", "bitwidth" : 32} ]}
 # RTL Port declarations: 
 set portNum 22
 set portList { 
@@ -76,7 +76,7 @@ set portList {
 	{ p_read15 sc_in sc_lv 16 signal 15 } 
 	{ p_read16 sc_in sc_lv 16 signal 16 } 
 	{ p_read17 sc_in sc_lv 16 signal 17 } 
-	{ ap_return sc_out sc_lv 16 signal -1 } 
+	{ ap_return sc_out sc_lv 32 signal -1 } 
 	{ ap_ce sc_in sc_logic 1 ce -1 } 
 }
 set NewPortList {[ 
@@ -100,7 +100,7 @@ set NewPortList {[
  	{ "name": "p_read15", "direction": "in", "datatype": "sc_lv", "bitwidth":16, "type": "signal", "bundle":{"name": "p_read15", "role": "default" }} , 
  	{ "name": "p_read16", "direction": "in", "datatype": "sc_lv", "bitwidth":16, "type": "signal", "bundle":{"name": "p_read16", "role": "default" }} , 
  	{ "name": "p_read17", "direction": "in", "datatype": "sc_lv", "bitwidth":16, "type": "signal", "bundle":{"name": "p_read17", "role": "default" }} , 
- 	{ "name": "ap_return", "direction": "out", "datatype": "sc_lv", "bitwidth":16, "type": "signal", "bundle":{"name": "ap_return", "role": "default" }} , 
+ 	{ "name": "ap_return", "direction": "out", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "ap_return", "role": "default" }} , 
  	{ "name": "ap_ce", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "ce", "bundle":{"name": "ap_ce", "role": "default" }}  ]}
 
 set RtlHierarchyInfo {[
@@ -110,7 +110,7 @@ set RtlHierarchyInfo {[
 		"ControlExist" : "0", "ap_start" : "0", "ap_ready" : "0", "ap_done" : "0", "ap_continue" : "0", "ap_idle" : "0",
 		"Pipeline" : "Aligned", "UnalignedPipeline" : "0", "RewindPipeline" : "0", "ProcessNetwork" : "0",
 		"II" : "1",
-		"VariableLatency" : "0", "ExactLatency" : "7", "EstimateLatencyMin" : "7", "EstimateLatencyMax" : "7",
+		"VariableLatency" : "0", "ExactLatency" : "3", "EstimateLatencyMin" : "3", "EstimateLatencyMax" : "3",
 		"Combinational" : "0",
 		"Datapath" : "1",
 		"ClockEnable" : "1",
@@ -140,11 +140,11 @@ set RtlHierarchyInfo {[
 	{"ID" : "2", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.yolo_conv_top_mul_mul_16s_16s_32_1_0_U7", "Parent" : "0"},
 	{"ID" : "3", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.yolo_conv_top_mul_mul_16s_16s_32_1_0_U8", "Parent" : "0"},
 	{"ID" : "4", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.yolo_conv_top_mul_mul_16s_16s_32_1_0_U9", "Parent" : "0"},
-	{"ID" : "5", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.yolo_conv_top_mul_mul_16s_16s_32_1_0_U10", "Parent" : "0"},
-	{"ID" : "6", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.yolo_conv_top_mul_mul_16s_16s_32_1_0_U11", "Parent" : "0"},
-	{"ID" : "7", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.yolo_conv_top_mul_mul_16s_16s_32_1_0_U12", "Parent" : "0"},
-	{"ID" : "8", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.yolo_conv_top_mul_mul_16s_16s_32_1_0_U13", "Parent" : "0"},
-	{"ID" : "9", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.yolo_conv_top_mul_mul_16s_16s_32_1_0_U14", "Parent" : "0"}]}
+	{"ID" : "5", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.yolo_conv_top_mac_muladd_16s_16s_32s_32_1_0_U10", "Parent" : "0"},
+	{"ID" : "6", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.yolo_conv_top_mac_muladd_16s_16s_32s_32_1_0_U11", "Parent" : "0"},
+	{"ID" : "7", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.yolo_conv_top_mac_muladd_16s_16s_32s_32_1_0_U12", "Parent" : "0"},
+	{"ID" : "8", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.yolo_conv_top_mac_muladd_16s_16s_32s_32_1_0_U13", "Parent" : "0"},
+	{"ID" : "9", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.yolo_conv_top_mac_muladd_16s_16s_32s_32_1_0_U14", "Parent" : "0"}]}
 
 
 set ArgLastReadFirstWriteLatency {
@@ -171,7 +171,7 @@ set ArgLastReadFirstWriteLatency {
 set hasDtUnsupportedChannel 0
 
 set PerformanceInfo {[
-	{"Name" : "Latency", "Min" : "7", "Max" : "7"}
+	{"Name" : "Latency", "Min" : "3", "Max" : "3"}
 	, {"Name" : "Interval", "Min" : "1", "Max" : "1"}
 ]}
 

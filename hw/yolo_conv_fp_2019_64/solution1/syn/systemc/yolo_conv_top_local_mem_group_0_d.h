@@ -19,8 +19,8 @@ using namespace sc_dt;
 struct yolo_conv_top_local_mem_group_0_d_ram : public sc_core::sc_module {
 
   static const unsigned DataWidth = 16;
-  static const unsigned AddressRange = 256;
-  static const unsigned AddressWidth = 8;
+  static const unsigned AddressRange = 128;
+  static const unsigned AddressWidth = 7;
 
 //latency = 1
 //input_reg = 1
@@ -95,8 +95,8 @@ SC_MODULE(yolo_conv_top_local_mem_group_0_d) {
 
 
 static const unsigned DataWidth = 16;
-static const unsigned AddressRange = 256;
-static const unsigned AddressWidth = 8;
+static const unsigned AddressRange = 128;
+static const unsigned AddressWidth = 7;
 
 sc_core::sc_in <sc_lv<AddressWidth> > address0;
 sc_core::sc_in<sc_logic> ce0;

@@ -1,1 +1,1 @@
-cat input_image_dog_fp.h | sed 's/[^0-9]//g'
+cat layer_input.h | sed 's/[^[:digit:].-]//g'

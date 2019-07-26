@@ -3,7 +3,7 @@
 ================================================================
 == Vivado HLS Report for 'post_process'
 ================================================================
-* Date:           Sat Jul 20 19:03:14 2019
+* Date:           Fri Jul 26 19:40:04 2019
 
 * Version:        2019.1 (Build 2552052 on Fri May 24 15:28:33 MDT 2019)
 * Project:        yolo_conv_fp_2019_64
@@ -20,7 +20,7 @@
     +--------+-------+----------+------------+
     |  Clock | Target| Estimated| Uncertainty|
     +--------+-------+----------+------------+
-    |ap_clk  |  10.00|     6.140|        2.00|
+    |ap_clk  |   8.00|     4.371|        1.60|
     +--------+-------+----------+------------+
 
 + Latency (clock cycles): 
@@ -29,7 +29,7 @@
     |  Latency  |  Interval | Pipeline |
     | min | max | min | max |   Type   |
     +-----+-----+-----+-----+----------+
-    |    2|    2|    1|    1| function |
+    |    1|    1|    1|    1| function |
     +-----+-----+-----+-----+----------+
 
     + Detail: 
@@ -62,127 +62,56 @@ HasImplIP: 0
 IsGatedGlobalClock: 0
 
 + Individual pipeline summary: 
-  * Pipeline-0: initiation interval (II) = 1, depth = 3
+  * Pipeline-0: initiation interval (II) = 1, depth = 2
 
 
 ============================================================
 + Verbose Summary: Schedule
 ============================================================
-* Number of FSM states : 3
+* Number of FSM states : 2
 * Pipeline : 1
-  Pipeline-0 : II = 1, D = 3, States = { 1 2 3 }
+  Pipeline-0 : II = 1, D = 2, States = { 1 2 }
 * Dataflow Pipeline: 0
 
 * FSM state transitions: 
 1 --> 2 
-2 --> 3 
-3 --> 
+2 --> 
 
 * FSM state operations: 
 
-State 1 <SV = 0> <Delay = 6.14>
-ST_1 : Operation 4 [1/1] (0.00ns)   --->   "%val_output_V_read = call i16 @_ssdm_op_Read.ap_auto.i16(i16 %val_output_V)" [yolo_conv_fp_2019_64/src/yolo_conv.cpp:208]   --->   Operation 4 'read' 'val_output_V_read' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 5 [1/1] (0.00ns)   --->   "%input_ch_idx_read = call i4 @_ssdm_op_Read.ap_auto.i4(i4 %input_ch_idx)" [yolo_conv_fp_2019_64/src/yolo_conv.cpp:208]   --->   Operation 5 'read' 'input_ch_idx_read' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%sub3_val_output_V_re = call i16 @_ssdm_op_Read.ap_auto.i16(i16 %sub3_val_output_V)" [yolo_conv_fp_2019_64/src/yolo_conv.cpp:208]   --->   Operation 6 'read' 'sub3_val_output_V_re' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%sub2_val_output_V_re = call i16 @_ssdm_op_Read.ap_auto.i16(i16 %sub2_val_output_V)" [yolo_conv_fp_2019_64/src/yolo_conv.cpp:208]   --->   Operation 7 'read' 'sub2_val_output_V_re' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%sub1_val_output_V_re = call i16 @_ssdm_op_Read.ap_auto.i16(i16 %sub1_val_output_V)" [yolo_conv_fp_2019_64/src/yolo_conv.cpp:208]   --->   Operation 8 'read' 'sub1_val_output_V_re' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%sub0_val_output_V_re = call i16 @_ssdm_op_Read.ap_auto.i16(i16 %sub0_val_output_V)" [yolo_conv_fp_2019_64/src/yolo_conv.cpp:208]   --->   Operation 9 'read' 'sub0_val_output_V_re' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 10 [1/1] (1.30ns)   --->   "%icmp_ln211 = icmp eq i4 %input_ch_idx_read, 0" [yolo_conv_fp_2019_64/src/yolo_conv.cpp:211]   --->   Operation 10 'icmp' 'icmp_ln211' <Predicate = true> <Delay = 1.30> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.30> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
-ST_1 : Operation 11 [1/1] (0.80ns)   --->   "%p_Val2_s = select i1 %icmp_ln211, i16 0, i16 %val_output_V_read" [yolo_conv_fp_2019_64/src/yolo_conv.cpp:211]   --->   Operation 11 'select' 'p_Val2_s' <Predicate = true> <Delay = 0.80> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.80> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
-ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%lhs_V = sext i16 %p_Val2_s to i17" [yolo_conv_fp_2019_64/src/yolo_conv.cpp:216]   --->   Operation 12 'sext' 'lhs_V' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%rhs_V = sext i16 %sub0_val_output_V_re to i17" [yolo_conv_fp_2019_64/src/yolo_conv.cpp:216]   --->   Operation 13 'sext' 'rhs_V' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 14 [1/1] (2.07ns)   --->   "%ret_V = add nsw i17 %rhs_V, %lhs_V" [yolo_conv_fp_2019_64/src/yolo_conv.cpp:216]   --->   Operation 14 'add' 'ret_V' <Predicate = true> <Delay = 2.07> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.07> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%p_Result_s = call i1 @_ssdm_op_BitSelect.i1.i17.i32(i17 %ret_V, i32 16)" [yolo_conv_fp_2019_64/src/yolo_conv.cpp:216]   --->   Operation 15 'bitselect' 'p_Result_s' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 16 [1/1] (2.07ns)   --->   "%p_Val2_3 = add i16 %p_Val2_s, %sub0_val_output_V_re" [yolo_conv_fp_2019_64/src/yolo_conv.cpp:216]   --->   Operation 16 'add' 'p_Val2_3' <Predicate = true> <Delay = 2.07> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.07> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_1 : Operation 17 [1/1] (0.00ns)   --->   "%p_Result_4 = call i1 @_ssdm_op_BitSelect.i1.i16.i32(i16 %p_Val2_3, i32 15)" [yolo_conv_fp_2019_64/src/yolo_conv.cpp:216]   --->   Operation 17 'bitselect' 'p_Result_4' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 18 [1/1] (0.00ns) (grouped into LUT with out node select_ln388)   --->   "%xor_ln786 = xor i1 %p_Result_4, true" [yolo_conv_fp_2019_64/src/yolo_conv.cpp:216]   --->   Operation 18 'xor' 'xor_ln786' <Predicate = true> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
-ST_1 : Operation 19 [1/1] (0.00ns) (grouped into LUT with out node select_ln388)   --->   "%underflow = and i1 %p_Result_s, %xor_ln786" [yolo_conv_fp_2019_64/src/yolo_conv.cpp:216]   --->   Operation 19 'and' 'underflow' <Predicate = true> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
-ST_1 : Operation 20 [1/1] (0.00ns) (grouped into LUT with out node p_Val2_4)   --->   "%xor_ln340_16 = xor i1 %p_Result_s, %p_Result_4" [yolo_conv_fp_2019_64/src/yolo_conv.cpp:216]   --->   Operation 20 'xor' 'xor_ln340_16' <Predicate = true> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
-ST_1 : Operation 21 [1/1] (0.00ns) (grouped into LUT with out node p_Val2_4)   --->   "%xor_ln340 = xor i1 %p_Result_s, true" [yolo_conv_fp_2019_64/src/yolo_conv.cpp:216]   --->   Operation 21 'xor' 'xor_ln340' <Predicate = true> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
-ST_1 : Operation 22 [1/1] (0.00ns) (grouped into LUT with out node p_Val2_4)   --->   "%or_ln340 = or i1 %p_Result_4, %xor_ln340" [yolo_conv_fp_2019_64/src/yolo_conv.cpp:216]   --->   Operation 22 'or' 'or_ln340' <Predicate = true> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
-ST_1 : Operation 23 [1/1] (0.00ns) (grouped into LUT with out node p_Val2_4)   --->   "%select_ln340 = select i1 %xor_ln340_16, i16 32767, i16 %p_Val2_3" [yolo_conv_fp_2019_64/src/yolo_conv.cpp:216]   --->   Operation 23 'select' 'select_ln340' <Predicate = true> <Delay = 0.00> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.80> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
-ST_1 : Operation 24 [1/1] (0.97ns) (out node of the LUT)   --->   "%select_ln388 = select i1 %underflow, i16 -32768, i16 %p_Val2_3" [yolo_conv_fp_2019_64/src/yolo_conv.cpp:216]   --->   Operation 24 'select' 'select_ln388' <Predicate = true> <Delay = 0.97> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.80> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
-ST_1 : Operation 25 [1/1] (0.97ns) (out node of the LUT)   --->   "%p_Val2_4 = select i1 %or_ln340, i16 %select_ln340, i16 %select_ln388" [yolo_conv_fp_2019_64/src/yolo_conv.cpp:216]   --->   Operation 25 'select' 'p_Val2_4' <Predicate = true> <Delay = 0.97> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.80> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+State 1 <SV = 0> <Delay = 4.37>
+ST_1 : Operation 3 [1/1] (0.00ns)   --->   "%val_output_V_read = call i32 @_ssdm_op_Read.ap_auto.i32(i32 %val_output_V)" [yolo_conv_fp_2019_64/src/yolo_conv.cpp:208]   --->   Operation 3 'read' 'val_output_V_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 4 [1/1] (0.00ns)   --->   "%input_ch_idx_read = call i4 @_ssdm_op_Read.ap_auto.i4(i4 %input_ch_idx)" [yolo_conv_fp_2019_64/src/yolo_conv.cpp:208]   --->   Operation 4 'read' 'input_ch_idx_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 5 [1/1] (0.00ns)   --->   "%sub3_val_output_V_re = call i32 @_ssdm_op_Read.ap_auto.i32(i32 %sub3_val_output_V)" [yolo_conv_fp_2019_64/src/yolo_conv.cpp:208]   --->   Operation 5 'read' 'sub3_val_output_V_re' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%sub2_val_output_V_re = call i32 @_ssdm_op_Read.ap_auto.i32(i32 %sub2_val_output_V)" [yolo_conv_fp_2019_64/src/yolo_conv.cpp:208]   --->   Operation 6 'read' 'sub2_val_output_V_re' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%sub1_val_output_V_re = call i32 @_ssdm_op_Read.ap_auto.i32(i32 %sub1_val_output_V)" [yolo_conv_fp_2019_64/src/yolo_conv.cpp:208]   --->   Operation 7 'read' 'sub1_val_output_V_re' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%sub0_val_output_V_re = call i32 @_ssdm_op_Read.ap_auto.i32(i32 %sub0_val_output_V)" [yolo_conv_fp_2019_64/src/yolo_conv.cpp:208]   --->   Operation 8 'read' 'sub0_val_output_V_re' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 9 [1/1] (1.30ns)   --->   "%icmp_ln211 = icmp eq i4 %input_ch_idx_read, 0" [yolo_conv_fp_2019_64/src/yolo_conv.cpp:211]   --->   Operation 9 'icmp' 'icmp_ln211' <Predicate = true> <Delay = 1.30> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.30> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 10 [1/1] (0.69ns)   --->   "%p_Val2_s = select i1 %icmp_ln211, i32 0, i32 %val_output_V_read" [yolo_conv_fp_2019_64/src/yolo_conv.cpp:211]   --->   Operation 10 'select' 'p_Val2_s' <Predicate = true> <Delay = 0.69> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.69> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_1 : Operation 11 [1/1] (0.00ns) (grouped into TernaryAdder)   --->   "%add_ln703_9 = add i32 %sub2_val_output_V_re, %sub3_val_output_V_re" [yolo_conv_fp_2019_64/src/yolo_conv.cpp:219]   --->   Operation 11 'add' 'add_ln703_9' <Predicate = true> <Delay = 0.00> <Core = "TAddSub">   --->   Core 83 'TAddSub' <Latency = 0> <II = 1> <Delay = 2.18> <IPBlock> <Opcode : 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
+ST_1 : Operation 12 [1/1] (4.37ns) (root node of TernaryAdder)   --->   "%add_ln703_10 = add i32 %add_ln703_9, %sub1_val_output_V_re" [yolo_conv_fp_2019_64/src/yolo_conv.cpp:219]   --->   Operation 12 'add' 'add_ln703_10' <Predicate = true> <Delay = 4.37> <Core = "TAddSub">   --->   Core 83 'TAddSub' <Latency = 0> <II = 1> <Delay = 2.18> <IPBlock> <Opcode : 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
 
-State 2 <SV = 1> <Delay = 6.11>
-ST_2 : Operation 26 [1/1] (0.00ns)   --->   "%lhs_V_1 = sext i16 %p_Val2_4 to i17" [yolo_conv_fp_2019_64/src/yolo_conv.cpp:217]   --->   Operation 26 'sext' 'lhs_V_1' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 27 [1/1] (0.00ns)   --->   "%rhs_V_1 = sext i16 %sub1_val_output_V_re to i17" [yolo_conv_fp_2019_64/src/yolo_conv.cpp:217]   --->   Operation 27 'sext' 'rhs_V_1' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 28 [1/1] (2.07ns)   --->   "%ret_V_1 = add nsw i17 %rhs_V_1, %lhs_V_1" [yolo_conv_fp_2019_64/src/yolo_conv.cpp:217]   --->   Operation 28 'add' 'ret_V_1' <Predicate = true> <Delay = 2.07> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.07> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_2 : Operation 29 [1/1] (0.00ns)   --->   "%p_Result_5 = call i1 @_ssdm_op_BitSelect.i1.i17.i32(i17 %ret_V_1, i32 16)" [yolo_conv_fp_2019_64/src/yolo_conv.cpp:217]   --->   Operation 29 'bitselect' 'p_Result_5' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 30 [1/1] (2.07ns)   --->   "%p_Val2_6 = add i16 %p_Val2_4, %sub1_val_output_V_re" [yolo_conv_fp_2019_64/src/yolo_conv.cpp:217]   --->   Operation 30 'add' 'p_Val2_6' <Predicate = true> <Delay = 2.07> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.07> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_2 : Operation 31 [1/1] (0.00ns)   --->   "%p_Result_6 = call i1 @_ssdm_op_BitSelect.i1.i16.i32(i16 %p_Val2_6, i32 15)" [yolo_conv_fp_2019_64/src/yolo_conv.cpp:217]   --->   Operation 31 'bitselect' 'p_Result_6' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 32 [1/1] (0.00ns) (grouped into LUT with out node select_ln388_9)   --->   "%xor_ln786_2 = xor i1 %p_Result_6, true" [yolo_conv_fp_2019_64/src/yolo_conv.cpp:217]   --->   Operation 32 'xor' 'xor_ln786_2' <Predicate = true> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
-ST_2 : Operation 33 [1/1] (0.00ns) (grouped into LUT with out node select_ln388_9)   --->   "%underflow_1 = and i1 %p_Result_5, %xor_ln786_2" [yolo_conv_fp_2019_64/src/yolo_conv.cpp:217]   --->   Operation 33 'and' 'underflow_1' <Predicate = true> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
-ST_2 : Operation 34 [1/1] (0.00ns) (grouped into LUT with out node p_Val2_7)   --->   "%xor_ln340_17 = xor i1 %p_Result_5, %p_Result_6" [yolo_conv_fp_2019_64/src/yolo_conv.cpp:217]   --->   Operation 34 'xor' 'xor_ln340_17' <Predicate = true> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
-ST_2 : Operation 35 [1/1] (0.00ns) (grouped into LUT with out node p_Val2_7)   --->   "%xor_ln340_9 = xor i1 %p_Result_5, true" [yolo_conv_fp_2019_64/src/yolo_conv.cpp:217]   --->   Operation 35 'xor' 'xor_ln340_9' <Predicate = true> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
-ST_2 : Operation 36 [1/1] (0.00ns) (grouped into LUT with out node p_Val2_7)   --->   "%or_ln340_11 = or i1 %p_Result_6, %xor_ln340_9" [yolo_conv_fp_2019_64/src/yolo_conv.cpp:217]   --->   Operation 36 'or' 'or_ln340_11' <Predicate = true> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
-ST_2 : Operation 37 [1/1] (0.00ns) (grouped into LUT with out node p_Val2_7)   --->   "%select_ln340_9 = select i1 %xor_ln340_17, i16 32767, i16 %p_Val2_6" [yolo_conv_fp_2019_64/src/yolo_conv.cpp:217]   --->   Operation 37 'select' 'select_ln340_9' <Predicate = true> <Delay = 0.00> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.80> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
-ST_2 : Operation 38 [1/1] (0.97ns) (out node of the LUT)   --->   "%select_ln388_9 = select i1 %underflow_1, i16 -32768, i16 %p_Val2_6" [yolo_conv_fp_2019_64/src/yolo_conv.cpp:217]   --->   Operation 38 'select' 'select_ln388_9' <Predicate = true> <Delay = 0.97> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.80> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
-ST_2 : Operation 39 [1/1] (0.97ns) (out node of the LUT)   --->   "%p_Val2_7 = select i1 %or_ln340_11, i16 %select_ln340_9, i16 %select_ln388_9" [yolo_conv_fp_2019_64/src/yolo_conv.cpp:217]   --->   Operation 39 'select' 'p_Val2_7' <Predicate = true> <Delay = 0.97> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.80> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
-ST_2 : Operation 40 [1/1] (0.00ns)   --->   "%lhs_V_2 = sext i16 %p_Val2_7 to i17" [yolo_conv_fp_2019_64/src/yolo_conv.cpp:218]   --->   Operation 40 'sext' 'lhs_V_2' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 41 [1/1] (0.00ns)   --->   "%rhs_V_2 = sext i16 %sub2_val_output_V_re to i17" [yolo_conv_fp_2019_64/src/yolo_conv.cpp:218]   --->   Operation 41 'sext' 'rhs_V_2' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 42 [1/1] (2.07ns)   --->   "%ret_V_2 = add nsw i17 %rhs_V_2, %lhs_V_2" [yolo_conv_fp_2019_64/src/yolo_conv.cpp:218]   --->   Operation 42 'add' 'ret_V_2' <Predicate = true> <Delay = 2.07> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.07> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_2 : Operation 43 [1/1] (0.00ns)   --->   "%p_Result_7 = call i1 @_ssdm_op_BitSelect.i1.i17.i32(i17 %ret_V_2, i32 16)" [yolo_conv_fp_2019_64/src/yolo_conv.cpp:218]   --->   Operation 43 'bitselect' 'p_Result_7' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 44 [1/1] (2.07ns)   --->   "%p_Val2_9 = add i16 %p_Val2_7, %sub2_val_output_V_re" [yolo_conv_fp_2019_64/src/yolo_conv.cpp:218]   --->   Operation 44 'add' 'p_Val2_9' <Predicate = true> <Delay = 2.07> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.07> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_2 : Operation 45 [1/1] (0.00ns)   --->   "%p_Result_8 = call i1 @_ssdm_op_BitSelect.i1.i16.i32(i16 %p_Val2_9, i32 15)" [yolo_conv_fp_2019_64/src/yolo_conv.cpp:218]   --->   Operation 45 'bitselect' 'p_Result_8' <Predicate = true> <Delay = 0.00>
-
-State 3 <SV = 2> <Delay = 5.98>
-ST_3 : Operation 46 [1/1] (0.00ns) (grouped into LUT with out node select_ln388_10)   --->   "%xor_ln786_3 = xor i1 %p_Result_8, true" [yolo_conv_fp_2019_64/src/yolo_conv.cpp:218]   --->   Operation 46 'xor' 'xor_ln786_3' <Predicate = true> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
-ST_3 : Operation 47 [1/1] (0.00ns) (grouped into LUT with out node select_ln388_10)   --->   "%underflow_2 = and i1 %p_Result_7, %xor_ln786_3" [yolo_conv_fp_2019_64/src/yolo_conv.cpp:218]   --->   Operation 47 'and' 'underflow_2' <Predicate = true> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
-ST_3 : Operation 48 [1/1] (0.00ns) (grouped into LUT with out node p_Val2_10)   --->   "%xor_ln340_18 = xor i1 %p_Result_7, %p_Result_8" [yolo_conv_fp_2019_64/src/yolo_conv.cpp:218]   --->   Operation 48 'xor' 'xor_ln340_18' <Predicate = true> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
-ST_3 : Operation 49 [1/1] (0.00ns) (grouped into LUT with out node p_Val2_10)   --->   "%xor_ln340_10 = xor i1 %p_Result_7, true" [yolo_conv_fp_2019_64/src/yolo_conv.cpp:218]   --->   Operation 49 'xor' 'xor_ln340_10' <Predicate = true> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
-ST_3 : Operation 50 [1/1] (0.00ns) (grouped into LUT with out node p_Val2_10)   --->   "%or_ln340_12 = or i1 %p_Result_8, %xor_ln340_10" [yolo_conv_fp_2019_64/src/yolo_conv.cpp:218]   --->   Operation 50 'or' 'or_ln340_12' <Predicate = true> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
-ST_3 : Operation 51 [1/1] (0.00ns) (grouped into LUT with out node p_Val2_10)   --->   "%select_ln340_10 = select i1 %xor_ln340_18, i16 32767, i16 %p_Val2_9" [yolo_conv_fp_2019_64/src/yolo_conv.cpp:218]   --->   Operation 51 'select' 'select_ln340_10' <Predicate = true> <Delay = 0.00> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.80> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
-ST_3 : Operation 52 [1/1] (0.97ns) (out node of the LUT)   --->   "%select_ln388_10 = select i1 %underflow_2, i16 -32768, i16 %p_Val2_9" [yolo_conv_fp_2019_64/src/yolo_conv.cpp:218]   --->   Operation 52 'select' 'select_ln388_10' <Predicate = true> <Delay = 0.97> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.80> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
-ST_3 : Operation 53 [1/1] (0.97ns) (out node of the LUT)   --->   "%p_Val2_10 = select i1 %or_ln340_12, i16 %select_ln340_10, i16 %select_ln388_10" [yolo_conv_fp_2019_64/src/yolo_conv.cpp:218]   --->   Operation 53 'select' 'p_Val2_10' <Predicate = true> <Delay = 0.97> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.80> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
-ST_3 : Operation 54 [1/1] (0.00ns)   --->   "%lhs_V_3 = sext i16 %p_Val2_10 to i17" [yolo_conv_fp_2019_64/src/yolo_conv.cpp:219]   --->   Operation 54 'sext' 'lhs_V_3' <Predicate = true> <Delay = 0.00>
-ST_3 : Operation 55 [1/1] (0.00ns)   --->   "%rhs_V_3 = sext i16 %sub3_val_output_V_re to i17" [yolo_conv_fp_2019_64/src/yolo_conv.cpp:219]   --->   Operation 55 'sext' 'rhs_V_3' <Predicate = true> <Delay = 0.00>
-ST_3 : Operation 56 [1/1] (2.07ns)   --->   "%ret_V_3 = add nsw i17 %rhs_V_3, %lhs_V_3" [yolo_conv_fp_2019_64/src/yolo_conv.cpp:219]   --->   Operation 56 'add' 'ret_V_3' <Predicate = true> <Delay = 2.07> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.07> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_3 : Operation 57 [1/1] (0.00ns)   --->   "%p_Result_9 = call i1 @_ssdm_op_BitSelect.i1.i17.i32(i17 %ret_V_3, i32 16)" [yolo_conv_fp_2019_64/src/yolo_conv.cpp:219]   --->   Operation 57 'bitselect' 'p_Result_9' <Predicate = true> <Delay = 0.00>
-ST_3 : Operation 58 [1/1] (2.07ns)   --->   "%p_Val2_12 = add i16 %p_Val2_10, %sub3_val_output_V_re" [yolo_conv_fp_2019_64/src/yolo_conv.cpp:219]   --->   Operation 58 'add' 'p_Val2_12' <Predicate = true> <Delay = 2.07> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.07> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_3 : Operation 59 [1/1] (0.00ns)   --->   "%p_Result_10 = call i1 @_ssdm_op_BitSelect.i1.i16.i32(i16 %p_Val2_12, i32 15)" [yolo_conv_fp_2019_64/src/yolo_conv.cpp:219]   --->   Operation 59 'bitselect' 'p_Result_10' <Predicate = true> <Delay = 0.00>
-ST_3 : Operation 60 [1/1] (0.00ns) (grouped into LUT with out node select_ln388_11)   --->   "%xor_ln786_4 = xor i1 %p_Result_10, true" [yolo_conv_fp_2019_64/src/yolo_conv.cpp:219]   --->   Operation 60 'xor' 'xor_ln786_4' <Predicate = true> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
-ST_3 : Operation 61 [1/1] (0.00ns) (grouped into LUT with out node select_ln388_11)   --->   "%underflow_3 = and i1 %p_Result_9, %xor_ln786_4" [yolo_conv_fp_2019_64/src/yolo_conv.cpp:219]   --->   Operation 61 'and' 'underflow_3' <Predicate = true> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
-ST_3 : Operation 62 [1/1] (0.00ns) (grouped into LUT with out node select_ln340_21)   --->   "%xor_ln340_19 = xor i1 %p_Result_9, %p_Result_10" [yolo_conv_fp_2019_64/src/yolo_conv.cpp:219]   --->   Operation 62 'xor' 'xor_ln340_19' <Predicate = true> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
-ST_3 : Operation 63 [1/1] (0.00ns) (grouped into LUT with out node select_ln340_21)   --->   "%xor_ln340_11 = xor i1 %p_Result_9, true" [yolo_conv_fp_2019_64/src/yolo_conv.cpp:219]   --->   Operation 63 'xor' 'xor_ln340_11' <Predicate = true> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
-ST_3 : Operation 64 [1/1] (0.00ns) (grouped into LUT with out node select_ln340_21)   --->   "%or_ln340_13 = or i1 %p_Result_10, %xor_ln340_11" [yolo_conv_fp_2019_64/src/yolo_conv.cpp:219]   --->   Operation 64 'or' 'or_ln340_13' <Predicate = true> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
-ST_3 : Operation 65 [1/1] (0.00ns) (grouped into LUT with out node select_ln340_21)   --->   "%select_ln340_11 = select i1 %xor_ln340_19, i16 32767, i16 %p_Val2_12" [yolo_conv_fp_2019_64/src/yolo_conv.cpp:219]   --->   Operation 65 'select' 'select_ln340_11' <Predicate = true> <Delay = 0.00> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.80> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
-ST_3 : Operation 66 [1/1] (0.97ns) (out node of the LUT)   --->   "%select_ln388_11 = select i1 %underflow_3, i16 -32768, i16 %p_Val2_12" [yolo_conv_fp_2019_64/src/yolo_conv.cpp:219]   --->   Operation 66 'select' 'select_ln388_11' <Predicate = true> <Delay = 0.97> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.80> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
-ST_3 : Operation 67 [1/1] (0.97ns) (out node of the LUT)   --->   "%select_ln340_21 = select i1 %or_ln340_13, i16 %select_ln340_11, i16 %select_ln388_11" [yolo_conv_fp_2019_64/src/yolo_conv.cpp:219]   --->   Operation 67 'select' 'select_ln340_21' <Predicate = true> <Delay = 0.97> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.80> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
-ST_3 : Operation 68 [1/1] (0.00ns)   --->   "ret i16 %select_ln340_21" [yolo_conv_fp_2019_64/src/yolo_conv.cpp:239]   --->   Operation 68 'ret' <Predicate = true> <Delay = 0.00>
+State 2 <SV = 1> <Delay = 4.37>
+ST_2 : Operation 13 [1/1] (0.00ns) (grouped into TernaryAdder)   --->   "%add_ln703_8 = add i32 %p_Val2_s, %sub0_val_output_V_re" [yolo_conv_fp_2019_64/src/yolo_conv.cpp:219]   --->   Operation 13 'add' 'add_ln703_8' <Predicate = true> <Delay = 0.00> <Core = "TAddSub">   --->   Core 83 'TAddSub' <Latency = 0> <II = 1> <Delay = 2.18> <IPBlock> <Opcode : 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
+ST_2 : Operation 14 [1/1] (4.37ns) (root node of TernaryAdder)   --->   "%add_ln703 = add i32 %add_ln703_10, %add_ln703_8" [yolo_conv_fp_2019_64/src/yolo_conv.cpp:219]   --->   Operation 14 'add' 'add_ln703' <Predicate = true> <Delay = 4.37> <Core = "TAddSub">   --->   Core 83 'TAddSub' <Latency = 0> <II = 1> <Delay = 2.18> <IPBlock> <Opcode : 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
+ST_2 : Operation 15 [1/1] (0.00ns)   --->   "ret i32 %add_ln703" [yolo_conv_fp_2019_64/src/yolo_conv.cpp:239]   --->   Operation 15 'ret' <Predicate = true> <Delay = 0.00>
 
 
 ============================================================
 + Verbose Summary: Timing violations
 ============================================================
-Target clock period: 10ns, clock uncertainty: 2ns.
+Target clock period: 8ns, clock uncertainty: 1.6ns.
 
- <State 1>: 6.14ns
+ <State 1>: 4.37ns
 The critical path consists of the following:
-	wire read on port 'input_ch_idx' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:208) [8]  (0 ns)
-	'icmp' operation ('icmp_ln211', yolo_conv_fp_2019_64/src/yolo_conv.cpp:211) [13]  (1.3 ns)
-	'select' operation ('__Val2__', yolo_conv_fp_2019_64/src/yolo_conv.cpp:211) [14]  (0.805 ns)
-	'add' operation ('__Val2__', yolo_conv_fp_2019_64/src/yolo_conv.cpp:216) [19]  (2.08 ns)
-	'select' operation ('select_ln388', yolo_conv_fp_2019_64/src/yolo_conv.cpp:216) [27]  (0.978 ns)
-	'select' operation ('__Val2__', yolo_conv_fp_2019_64/src/yolo_conv.cpp:216) [28]  (0.978 ns)
+	wire read on port 'sub3_val_output_V' (yolo_conv_fp_2019_64/src/yolo_conv.cpp:208) [9]  (0 ns)
+	'add' operation ('add_ln703_9', yolo_conv_fp_2019_64/src/yolo_conv.cpp:219) [16]  (0 ns)
+	'add' operation ('add_ln703_10', yolo_conv_fp_2019_64/src/yolo_conv.cpp:219) [17]  (4.37 ns)
 
- <State 2>: 6.11ns
+ <State 2>: 4.37ns
 The critical path consists of the following:
-	'add' operation ('ret.V', yolo_conv_fp_2019_64/src/yolo_conv.cpp:217) [31]  (2.08 ns)
-	'and' operation ('underflow', yolo_conv_fp_2019_64/src/yolo_conv.cpp:217) [36]  (0 ns)
-	'select' operation ('select_ln388_9', yolo_conv_fp_2019_64/src/yolo_conv.cpp:217) [41]  (0.978 ns)
-	'select' operation ('__Val2__', yolo_conv_fp_2019_64/src/yolo_conv.cpp:217) [42]  (0.978 ns)
-	'add' operation ('ret.V', yolo_conv_fp_2019_64/src/yolo_conv.cpp:218) [45]  (2.08 ns)
-
- <State 3>: 5.99ns
-The critical path consists of the following:
-	'xor' operation ('xor_ln786_3', yolo_conv_fp_2019_64/src/yolo_conv.cpp:218) [49]  (0 ns)
-	'and' operation ('underflow', yolo_conv_fp_2019_64/src/yolo_conv.cpp:218) [50]  (0 ns)
-	'select' operation ('select_ln388_10', yolo_conv_fp_2019_64/src/yolo_conv.cpp:218) [55]  (0.978 ns)
-	'select' operation ('__Val2__', yolo_conv_fp_2019_64/src/yolo_conv.cpp:218) [56]  (0.978 ns)
-	'add' operation ('__Val2__', yolo_conv_fp_2019_64/src/yolo_conv.cpp:219) [61]  (2.08 ns)
-	'select' operation ('select_ln388_11', yolo_conv_fp_2019_64/src/yolo_conv.cpp:219) [69]  (0.978 ns)
-	'select' operation ('select_ln340_21', yolo_conv_fp_2019_64/src/yolo_conv.cpp:219) [70]  (0.978 ns)
+	'add' operation ('add_ln703_8', yolo_conv_fp_2019_64/src/yolo_conv.cpp:219) [15]  (0 ns)
+	'add' operation ('add_ln703', yolo_conv_fp_2019_64/src/yolo_conv.cpp:219) [18]  (4.37 ns)
 
 
 ============================================================
@@ -195,7 +124,6 @@ N/A
   - Chain level:
 	State 1
 	State 2
-	State 3
 
 
 ============================================================

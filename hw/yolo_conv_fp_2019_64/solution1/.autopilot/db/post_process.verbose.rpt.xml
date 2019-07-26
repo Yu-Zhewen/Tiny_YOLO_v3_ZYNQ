@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'post_process'" level="0">
-<item name = "Date">Sat Jul 20 19:03:56 2019
+<item name = "Date">Fri Jul 26 19:40:44 2019
 </item>
 <item name = "Version">2019.1 (Build 2552052 on Fri May 24 15:28:33 MDT 2019)</item>
 <item name = "Project">yolo_conv_fp_2019_64</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">10.00, 6.140, 2.00</column>
+<column name="ap_clk">8.00, 4.371, 1.60</column>
 </table>
 </item>
 </section>
@@ -24,7 +24,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="6">, min, max, min, max, Type</keys>
-<column name="">2, 2, 1, 1, function</column>
+<column name="">1, 1, 1, 1, function</column>
 </table>
 </item>
 <item name = "Detail">
@@ -47,12 +47,12 @@
 <item name = "Summary"><table name="" hasTotal="1">
 <keys size="6">Name, BRAM_18K, DSP48E, FF, LUT, URAM</keys>
 <column name="DSP">-, -, -, -, -</column>
-<column name="Expression">-, -, 0, 449, -</column>
+<column name="Expression">-, -, 0, 169, -</column>
 <column name="FIFO">-, -, -, -, -</column>
 <column name="Instance">-, -, -, -, -</column>
 <column name="Memory">-, -, -, -, -</column>
 <column name="Multiplexer">-, -, -, 9, -</column>
-<column name="Register">-, -, 199, -, -</column>
+<column name="Register">-, -, 129, -, -</column>
 <specialColumn name="Available">280, 220, 106400, 53200, 0</specialColumn>
 <specialColumn name="Utilization (%)">0, 0, ~0, ~0, 0</specialColumn>
 </table>
@@ -77,73 +77,26 @@
 </item>
 <item name = "Expression"><table name="" hasTotal="1">
 <keys size="7">Variable Name, Operation, DSP48E, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
-<column name="p_Val2_12_fu_361_p2">+, 0, 0, 23, 16, 16</column>
-<column name="p_Val2_3_fu_106_p2">+, 0, 0, 23, 16, 16</column>
-<column name="p_Val2_6_fu_194_p2">+, 0, 0, 23, 16, 16</column>
-<column name="p_Val2_9_fu_281_p2">+, 0, 0, 23, 16, 16</column>
-<column name="ret_V_1_fu_180_p2">+, 0, 0, 24, 17, 17</column>
-<column name="ret_V_2_fu_267_p2">+, 0, 0, 24, 17, 17</column>
-<column name="ret_V_3_fu_347_p2">+, 0, 0, 24, 17, 17</column>
-<column name="ret_V_fu_92_p2">+, 0, 0, 24, 17, 17</column>
-<column name="underflow_1_fu_212_p2">and, 0, 0, 2, 1, 1</column>
-<column name="underflow_2_fu_299_p2">and, 0, 0, 2, 1, 1</column>
-<column name="underflow_3_fu_380_p2">and, 0, 0, 2, 1, 1</column>
-<column name="underflow_fu_126_p2">and, 0, 0, 2, 1, 1</column>
-<column name="icmp_ln211_fu_70_p2">icmp, 0, 0, 9, 4, 1</column>
-<column name="or_ln340_11_fu_230_p2">or, 0, 0, 2, 1, 1</column>
-<column name="or_ln340_12_fu_313_p2">or, 0, 0, 2, 1, 1</column>
-<column name="or_ln340_13_fu_398_p2">or, 0, 0, 2, 1, 1</column>
-<column name="or_ln340_fu_144_p2">or, 0, 0, 2, 1, 1</column>
-<column name="p_Val2_10_fu_332_p3">select, 0, 0, 16, 1, 16</column>
-<column name="p_Val2_4_fu_166_p3">select, 0, 0, 16, 1, 16</column>
-<column name="p_Val2_7_fu_252_p3">select, 0, 0, 16, 1, 16</column>
-<column name="p_Val2_s_fu_76_p3">select, 0, 0, 16, 1, 1</column>
-<column name="select_ln340_10_fu_318_p3">select, 0, 0, 16, 1, 15</column>
-<column name="select_ln340_11_fu_404_p3">select, 0, 0, 16, 1, 15</column>
-<column name="select_ln340_21_fu_420_p3">select, 0, 0, 16, 1, 16</column>
-<column name="select_ln340_9_fu_236_p3">select, 0, 0, 16, 1, 15</column>
-<column name="select_ln340_fu_150_p3">select, 0, 0, 16, 1, 15</column>
-<column name="select_ln388_10_fu_325_p3">select, 0, 0, 17, 1, 17</column>
-<column name="select_ln388_11_fu_412_p3">select, 0, 0, 17, 1, 17</column>
-<column name="select_ln388_9_fu_244_p3">select, 0, 0, 17, 1, 17</column>
-<column name="select_ln388_fu_158_p3">select, 0, 0, 17, 1, 17</column>
-<column name="xor_ln340_10_fu_308_p2">xor, 0, 0, 2, 1, 2</column>
-<column name="xor_ln340_11_fu_392_p2">xor, 0, 0, 2, 1, 2</column>
-<column name="xor_ln340_16_fu_132_p2">xor, 0, 0, 2, 1, 1</column>
-<column name="xor_ln340_17_fu_218_p2">xor, 0, 0, 2, 1, 1</column>
-<column name="xor_ln340_18_fu_304_p2">xor, 0, 0, 2, 1, 1</column>
-<column name="xor_ln340_19_fu_386_p2">xor, 0, 0, 2, 1, 1</column>
-<column name="xor_ln340_9_fu_224_p2">xor, 0, 0, 2, 1, 2</column>
-<column name="xor_ln340_fu_138_p2">xor, 0, 0, 2, 1, 2</column>
-<column name="xor_ln786_2_fu_206_p2">xor, 0, 0, 2, 1, 2</column>
-<column name="xor_ln786_3_fu_294_p2">xor, 0, 0, 2, 1, 2</column>
-<column name="xor_ln786_4_fu_374_p2">xor, 0, 0, 2, 1, 2</column>
-<column name="xor_ln786_fu_120_p2">xor, 0, 0, 2, 1, 2</column>
+<column name="add_ln703_10_fu_76_p2">+, 0, 0, 32, 32, 32</column>
+<column name="add_ln703_8_fu_82_p2">+, 0, 0, 32, 32, 32</column>
+<column name="add_ln703_9_fu_70_p2">+, 0, 0, 32, 32, 32</column>
+<column name="add_ln703_fu_86_p2">+, 0, 0, 32, 32, 32</column>
+<column name="icmp_ln211_fu_56_p2">icmp, 0, 0, 9, 4, 1</column>
+<column name="p_Val2_s_fu_62_p3">select, 0, 0, 32, 1, 1</column>
 </table>
 </item>
 <item name = "Multiplexer"><table name="" hasTotal="1">
 <keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
-<column name="ap_return">9, 2, 16, 32</column>
+<column name="ap_return">9, 2, 32, 64</column>
 </table>
 </item>
 <item name = "Register"><table name="" hasTotal="1">
 <keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
+<column name="add_ln703_10_reg_101">32, 0, 32, 0</column>
 <column name="ap_ce_reg">1, 0, 1, 0</column>
-<column name="ap_return_int_reg">16, 0, 16, 0</column>
-<column name="input_ch_idx_int_reg">4, 0, 4, 0</column>
-<column name="p_Result_7_reg_452">1, 0, 1, 0</column>
-<column name="p_Result_8_reg_465">1, 0, 1, 0</column>
-<column name="p_Val2_4_reg_446">16, 0, 16, 0</column>
-<column name="p_Val2_9_reg_459">16, 0, 16, 0</column>
-<column name="sub0_val_output_V_int_reg">16, 0, 16, 0</column>
-<column name="sub1_val_output_V_int_reg">16, 0, 16, 0</column>
-<column name="sub1_val_output_V_re_reg_440">16, 0, 16, 0</column>
-<column name="sub2_val_output_V_int_reg">16, 0, 16, 0</column>
-<column name="sub2_val_output_V_re_reg_434">16, 0, 16, 0</column>
-<column name="sub3_val_output_V_int_reg">16, 0, 16, 0</column>
-<column name="sub3_val_output_V_re_reg_428">16, 0, 16, 0</column>
-<column name="sub3_val_output_V_re_reg_428_pp0_iter1_reg">16, 0, 16, 0</column>
-<column name="val_output_V_int_reg">16, 0, 16, 0</column>
+<column name="ap_return_int_reg">32, 0, 32, 0</column>
+<column name="p_Val2_s_reg_96">32, 0, 32, 0</column>
+<column name="sub0_val_output_V_re_reg_91">32, 0, 32, 0</column>
 </table>
 </item>
 </section>
@@ -155,14 +108,14 @@
 <keys size="6">RTL Ports, Dir, Bits, Protocol, Source Object, C Type</keys>
 <column name="ap_clk">in, 1, ap_ctrl_hs, post_process, return value</column>
 <column name="ap_rst">in, 1, ap_ctrl_hs, post_process, return value</column>
-<column name="ap_return">out, 16, ap_ctrl_hs, post_process, return value</column>
+<column name="ap_return">out, 32, ap_ctrl_hs, post_process, return value</column>
 <column name="ap_ce">in, 1, ap_ctrl_hs, post_process, return value</column>
-<column name="sub0_val_output_V">in, 16, ap_none, sub0_val_output_V, scalar</column>
-<column name="sub1_val_output_V">in, 16, ap_none, sub1_val_output_V, scalar</column>
-<column name="sub2_val_output_V">in, 16, ap_none, sub2_val_output_V, scalar</column>
-<column name="sub3_val_output_V">in, 16, ap_none, sub3_val_output_V, scalar</column>
+<column name="sub0_val_output_V">in, 32, ap_none, sub0_val_output_V, scalar</column>
+<column name="sub1_val_output_V">in, 32, ap_none, sub1_val_output_V, scalar</column>
+<column name="sub2_val_output_V">in, 32, ap_none, sub2_val_output_V, scalar</column>
+<column name="sub3_val_output_V">in, 32, ap_none, sub3_val_output_V, scalar</column>
 <column name="input_ch_idx">in, 4, ap_none, input_ch_idx, scalar</column>
-<column name="val_output_V">in, 16, ap_none, val_output_V, scalar</column>
+<column name="val_output_V">in, 32, ap_none, val_output_V, scalar</column>
 </table>
 </item>
 </section>

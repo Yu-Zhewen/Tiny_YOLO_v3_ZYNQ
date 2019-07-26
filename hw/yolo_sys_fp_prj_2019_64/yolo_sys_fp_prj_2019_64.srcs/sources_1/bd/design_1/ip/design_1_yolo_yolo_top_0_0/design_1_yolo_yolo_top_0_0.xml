@@ -1258,11 +1258,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Thu Jul 18 08:12:56 UTC 2019</spirit:value>
+            <spirit:value>Fri Jul 26 16:29:53 UTC 2019</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:22ffdd67</spirit:value>
+            <spirit:value>9:99cfd322</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1273,7 +1273,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:22ffdd67</spirit:value>
+            <spirit:value>9:99cfd322</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1289,11 +1289,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Thu Jul 18 08:12:56 UTC 2019</spirit:value>
+            <spirit:value>Fri Jul 26 16:29:53 UTC 2019</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:22ffdd67</spirit:value>
+            <spirit:value>9:99cfd322</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1309,11 +1309,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Thu Jul 18 08:12:56 UTC 2019</spirit:value>
+            <spirit:value>Fri Jul 26 16:29:53 UTC 2019</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:00b7e9e3</spirit:value>
+            <spirit:value>9:bb87e7a6</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1329,11 +1329,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Thu Jul 18 08:12:56 UTC 2019</spirit:value>
+            <spirit:value>Fri Jul 26 16:29:53 UTC 2019</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:00b7e9e3</spirit:value>
+            <spirit:value>9:bb87e7a6</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1347,11 +1347,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Thu Jul 18 08:23:52 UTC 2019</spirit:value>
+            <spirit:value>Fri Jul 26 16:31:54 UTC 2019</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:22ffdd67</spirit:value>
+            <spirit:value>9:99cfd322</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1974,11 +1974,11 @@
         <spirit:userFileType>USED_IN_out_of_context</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/a0af/hdl/verilog/exp_16_8_s.v</spirit:name>
+        <spirit:name>../../ipshared/a27c/hdl/verilog/exp_16_8_s.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/a0af/hdl/verilog/exp_16_8_s_exp_x_msb_1_table_V.v</spirit:name>
+        <spirit:name>../../ipshared/a27c/hdl/verilog/exp_16_8_s_exp_x_msb_1_table_V.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
@@ -1986,7 +1986,7 @@
         <spirit:userFileType>mif</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/a0af/hdl/verilog/exp_16_8_s_exp_x_msb_2_m_1_tabl.v</spirit:name>
+        <spirit:name>../../ipshared/a27c/hdl/verilog/exp_16_8_s_exp_x_msb_2_m_1_tabl.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
@@ -1994,7 +1994,7 @@
         <spirit:userFileType>mif</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/a0af/hdl/verilog/exp_16_8_s_f_x_lsb_table_V.v</spirit:name>
+        <spirit:name>../../ipshared/a27c/hdl/verilog/exp_16_8_s_f_x_lsb_table_V.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
@@ -2002,19 +2002,19 @@
         <spirit:userFileType>mif</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/a0af/hdl/verilog/logistic_activate.v</spirit:name>
+        <spirit:name>../../ipshared/a27c/hdl/verilog/logistic_activate.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/a0af/hdl/verilog/yolo_yolo_top_CTRL_BUS_s_axi.v</spirit:name>
+        <spirit:name>../../ipshared/a27c/hdl/verilog/yolo_yolo_top_CTRL_BUS_s_axi.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/a0af/hdl/verilog/yolo_yolo_top_sdiv_18ns_17s_18_22_1.v</spirit:name>
+        <spirit:name>../../ipshared/a27c/hdl/verilog/yolo_yolo_top_sdiv_18ns_17s_18_22_1.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/a0af/hdl/verilog/yolo_yolo_top.v</spirit:name>
+        <spirit:name>../../ipshared/a27c/hdl/verilog/yolo_yolo_top.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
     </spirit:fileSet>
@@ -2029,12 +2029,12 @@
     <spirit:fileSet>
       <spirit:name>xilinx_verilogbehavioralsimulation_view_fileset</spirit:name>
       <spirit:file>
-        <spirit:name>../../ipshared/a0af/hdl/verilog/exp_16_8_s.v</spirit:name>
+        <spirit:name>../../ipshared/a27c/hdl/verilog/exp_16_8_s.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/a0af/hdl/verilog/exp_16_8_s_exp_x_msb_1_table_V.v</spirit:name>
+        <spirit:name>../../ipshared/a27c/hdl/verilog/exp_16_8_s_exp_x_msb_1_table_V.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
@@ -2043,7 +2043,7 @@
         <spirit:userFileType>mif</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/a0af/hdl/verilog/exp_16_8_s_exp_x_msb_2_m_1_tabl.v</spirit:name>
+        <spirit:name>../../ipshared/a27c/hdl/verilog/exp_16_8_s_exp_x_msb_2_m_1_tabl.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
@@ -2052,7 +2052,7 @@
         <spirit:userFileType>mif</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/a0af/hdl/verilog/exp_16_8_s_f_x_lsb_table_V.v</spirit:name>
+        <spirit:name>../../ipshared/a27c/hdl/verilog/exp_16_8_s_f_x_lsb_table_V.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
@@ -2061,22 +2061,22 @@
         <spirit:userFileType>mif</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/a0af/hdl/verilog/logistic_activate.v</spirit:name>
+        <spirit:name>../../ipshared/a27c/hdl/verilog/logistic_activate.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/a0af/hdl/verilog/yolo_yolo_top_CTRL_BUS_s_axi.v</spirit:name>
+        <spirit:name>../../ipshared/a27c/hdl/verilog/yolo_yolo_top_CTRL_BUS_s_axi.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/a0af/hdl/verilog/yolo_yolo_top_sdiv_18ns_17s_18_22_1.v</spirit:name>
+        <spirit:name>../../ipshared/a27c/hdl/verilog/yolo_yolo_top_sdiv_18ns_17s_18_22_1.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/a0af/hdl/verilog/yolo_yolo_top.v</spirit:name>
+        <spirit:name>../../ipshared/a27c/hdl/verilog/yolo_yolo_top.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
@@ -2192,7 +2192,7 @@
     <xilinx:coreExtensions>
       <xilinx:displayName>Yolo_yolo_top</xilinx:displayName>
       <xilinx:definitionSource>HLS</xilinx:definitionSource>
-      <xilinx:coreRevision>1907171038</xilinx:coreRevision>
+      <xilinx:coreRevision>1907261726</xilinx:coreRevision>
       <xilinx:configElementInfos>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.AP_CLK.CLK_DOMAIN" xilinx:valueSource="default_prop" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.AP_CLK.FREQ_HZ" xilinx:valueSource="user_prop" xilinx:valuePermission="bd"/>

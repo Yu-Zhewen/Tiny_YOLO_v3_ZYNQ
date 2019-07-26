@@ -159,13 +159,13 @@
                         					
                     </folderInfo>
                     					
-                    <fileInfo id="cdt.managedbuild.config.gnu.exe.debug.434348569.1835599797" name="yolo_conv_tb.cpp" rcbsApplicability="disable" resourcePath="testbench/yolo_conv_tb.cpp" toolsToInvoke="cdt.managedbuild.tool.gnu.cpp.compiler.exe.debug.2044591160.1021134388">
+                    <fileInfo id="cdt.managedbuild.config.gnu.exe.debug.434348569.415243376" name="yolo_conv_tb.cpp" rcbsApplicability="disable" resourcePath="testbench/yolo_conv_tb.cpp" toolsToInvoke="cdt.managedbuild.tool.gnu.cpp.compiler.exe.debug.2044591160.1656367564">
                         						
-                        <tool id="cdt.managedbuild.tool.gnu.cpp.compiler.exe.debug.2044591160.1021134388" name="GCC C++ Compiler" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.exe.debug.2044591160">
+                        <tool id="cdt.managedbuild.tool.gnu.cpp.compiler.exe.debug.2044591160.1656367564" name="GCC C++ Compiler" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.exe.debug.2044591160">
                             							
-                            <option id="gnu.cpp.compiler.option.preprocessor.def.1458054784" name="Defined symbols (-D)" superClass="gnu.cpp.compiler.option.preprocessor.def"/>
+                            <option id="gnu.cpp.compiler.option.preprocessor.def.180053087" name="Defined symbols (-D)" superClass="gnu.cpp.compiler.option.preprocessor.def"/>
                             							
-                            <option id="gnu.cpp.compiler.option.include.paths.1331066165" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" valueType="includePath">
+                            <option id="gnu.cpp.compiler.option.include.paths.1431026650" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" valueType="includePath">
                                 								
                                 <listOptionValue builtIn="false" value="/home/xavier/MSc_Project/hls/yolo_conv_hls_2019"/>
                                 								
@@ -181,17 +181,17 @@
                                 							
                             </option>
                             							
-                            <option id="gnu.cpp.compiler.option.other.other.1257600911" name="Other flags" superClass="gnu.cpp.compiler.option.other.other" value="-Wno-unknown-pragmas -c -fmessage-length=0" valueType="string"/>
+                            <option id="gnu.cpp.compiler.option.other.other.528544999" name="Other flags" superClass="gnu.cpp.compiler.option.other.other" value="-Wno-unknown-pragmas -c -fmessage-length=0" valueType="string"/>
                             							
-                            <inputType id="cdt.managedbuild.tool.gnu.cpp.compiler.input.238543968" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.input"/>
+                            <inputType id="cdt.managedbuild.tool.gnu.cpp.compiler.input.797990985" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.input"/>
                             						
                         </tool>
                         					
                     </fileInfo>
                     					
-                    <fileInfo id="cdt.managedbuild.config.gnu.exe.debug.434348569.523998322" name="layer_output_sdk.dat" rcbsApplicability="disable" resourcePath="testbench/layer_output_sdk.dat" toolsToInvoke=""/>
+                    <fileInfo id="cdt.managedbuild.config.gnu.exe.debug.434348569.542312038" name="layer_output_sdk.dat" rcbsApplicability="disable" resourcePath="testbench/layer_output_sdk.dat" toolsToInvoke=""/>
                     					
-                    <fileInfo id="cdt.managedbuild.config.gnu.exe.debug.434348569.190534665" name="layer_input.dat" rcbsApplicability="disable" resourcePath="testbench/layer_input.dat" toolsToInvoke=""/>
+                    <fileInfo id="cdt.managedbuild.config.gnu.exe.debug.434348569.1150283322" name="layer_input.dat" rcbsApplicability="disable" resourcePath="testbench/layer_input.dat" toolsToInvoke=""/>
                     					
                     <sourceEntries>
                         						
@@ -341,13 +341,13 @@
                         					
                     </folderInfo>
                     					
-                    <fileInfo id="cdt.managedbuild.config.gnu.exe.release.1389642213.1147721931" name="yolo_conv_tb.cpp" rcbsApplicability="disable" resourcePath="testbench/yolo_conv_tb.cpp" toolsToInvoke="cdt.managedbuild.tool.gnu.cpp.compiler.exe.release.2145720050.520419377">
+                    <fileInfo id="cdt.managedbuild.config.gnu.exe.release.1389642213.1382784009" name="yolo_conv_tb.cpp" rcbsApplicability="disable" resourcePath="testbench/yolo_conv_tb.cpp" toolsToInvoke="cdt.managedbuild.tool.gnu.cpp.compiler.exe.release.2145720050.800042157">
                         						
-                        <tool id="cdt.managedbuild.tool.gnu.cpp.compiler.exe.release.2145720050.520419377" name="GCC C++ Compiler" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.exe.release.2145720050">
+                        <tool id="cdt.managedbuild.tool.gnu.cpp.compiler.exe.release.2145720050.800042157" name="GCC C++ Compiler" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.exe.release.2145720050">
                             							
-                            <option id="gnu.cpp.compiler.option.preprocessor.def.1913655491" name="Defined symbols (-D)" superClass="gnu.cpp.compiler.option.preprocessor.def"/>
+                            <option id="gnu.cpp.compiler.option.preprocessor.def.832428625" name="Defined symbols (-D)" superClass="gnu.cpp.compiler.option.preprocessor.def"/>
                             							
-                            <option id="gnu.cpp.compiler.option.include.paths.320262825" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" valueType="includePath">
+                            <option id="gnu.cpp.compiler.option.include.paths.1712391695" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" valueType="includePath">
                                 								
                                 <listOptionValue builtIn="false" value="/home/xavier/MSc_Project/hls/yolo_conv_hls_2019"/>
                                 								
@@ -363,17 +363,17 @@
                                 							
                             </option>
                             							
-                            <option id="gnu.cpp.compiler.option.other.other.1055652749" name="Other flags" superClass="gnu.cpp.compiler.option.other.other" value="-Wno-unknown-pragmas -c -fmessage-length=0" valueType="string"/>
+                            <option id="gnu.cpp.compiler.option.other.other.1190905567" name="Other flags" superClass="gnu.cpp.compiler.option.other.other" value="-Wno-unknown-pragmas -c -fmessage-length=0" valueType="string"/>
                             							
-                            <inputType id="cdt.managedbuild.tool.gnu.cpp.compiler.input.1687807564" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.input"/>
+                            <inputType id="cdt.managedbuild.tool.gnu.cpp.compiler.input.641279504" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.input"/>
                             						
                         </tool>
                         					
                     </fileInfo>
                     					
-                    <fileInfo id="cdt.managedbuild.config.gnu.exe.release.1389642213.647363045" name="layer_output_sdk.dat" rcbsApplicability="disable" resourcePath="testbench/layer_output_sdk.dat" toolsToInvoke=""/>
+                    <fileInfo id="cdt.managedbuild.config.gnu.exe.release.1389642213.975980669" name="layer_output_sdk.dat" rcbsApplicability="disable" resourcePath="testbench/layer_output_sdk.dat" toolsToInvoke=""/>
                     					
-                    <fileInfo id="cdt.managedbuild.config.gnu.exe.release.1389642213.1493979648" name="layer_input.dat" rcbsApplicability="disable" resourcePath="testbench/layer_input.dat" toolsToInvoke=""/>
+                    <fileInfo id="cdt.managedbuild.config.gnu.exe.release.1389642213.55127880" name="layer_input.dat" rcbsApplicability="disable" resourcePath="testbench/layer_input.dat" toolsToInvoke=""/>
                     					
                     <sourceEntries>
                         						

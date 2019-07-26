@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'yolo_conv_top'" level="0">
-<item name = "Date">Sat Jul 20 19:03:48 2019
+<item name = "Date">Fri Jul 26 19:40:34 2019
 </item>
 <item name = "Version">2019.1 (Build 2552052 on Fri May 24 15:28:33 MDT 2019)</item>
 <item name = "Project">yolo_conv_fp_2019_64</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">10.00, 9.634, 2.00</column>
+<column name="ap_clk">8.00, 8.932, 1.60</column>
 </table>
 </item>
 </section>
@@ -24,25 +24,38 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="6">, min, max, min, max, Type</keys>
-<column name="">2802489, 2802489, 2802489, 2802489, none</column>
+<column name="">1401342, 1401342, 1401342, 1401342, none</column>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="7">Instance, Module, min, max, min, max, Type</keys>
-<column name="grp_window_macc_fu_11214">window_macc, 7, 7, 1, 1, function</column>
-<column name="grp_window_macc_fu_11236">window_macc, 7, 7, 1, 1, function</column>
-<column name="grp_window_macc_fu_11258">window_macc, 7, 7, 1, 1, function</column>
-<column name="grp_window_macc_fu_11280">window_macc, 7, 7, 1, 1, function</column>
-<column name="grp_window_macc_fu_11302">window_macc, 7, 7, 1, 1, function</column>
-<column name="grp_window_macc_fu_11324">window_macc, 7, 7, 1, 1, function</column>
-<column name="grp_window_macc_fu_11346">window_macc, 7, 7, 1, 1, function</column>
-<column name="grp_window_macc_fu_11368">window_macc, 7, 7, 1, 1, function</column>
-<column name="grp_out_stream_merge_fu_11390">out_stream_merge, 6, 6, 6, 6, function</column>
-<column name="grp_post_process_fu_11448">post_process, 2, 2, 1, 1, function</column>
-<column name="grp_post_process_fu_11459">post_process, 2, 2, 1, 1, function</column>
-<column name="grp_slide_window_fu_11500">slide_window, 3, 3, 3, 3, function</column>
+<column name="grp_out_stream_merge_fu_11954">out_stream_merge, 6, 6, 6, 6, function</column>
+<column name="grp_window_macc_fu_12012">window_macc, 3, 3, 1, 1, function</column>
+<column name="grp_window_macc_fu_12034">window_macc, 3, 3, 1, 1, function</column>
+<column name="grp_window_macc_fu_12056">window_macc, 3, 3, 1, 1, function</column>
+<column name="grp_window_macc_fu_12078">window_macc, 3, 3, 1, 1, function</column>
+<column name="grp_window_macc_fu_12100">window_macc, 3, 3, 1, 1, function</column>
+<column name="grp_window_macc_fu_12122">window_macc, 3, 3, 1, 1, function</column>
+<column name="grp_window_macc_fu_12144">window_macc, 3, 3, 1, 1, function</column>
+<column name="grp_window_macc_fu_12166">window_macc, 3, 3, 1, 1, function</column>
+<column name="grp_window_macc_fu_12188">window_macc, 3, 3, 1, 1, function</column>
+<column name="grp_window_macc_fu_12210">window_macc, 3, 3, 1, 1, function</column>
+<column name="grp_window_macc_fu_12232">window_macc, 3, 3, 1, 1, function</column>
+<column name="grp_window_macc_fu_12254">window_macc, 3, 3, 1, 1, function</column>
+<column name="grp_window_macc_fu_12276">window_macc, 3, 3, 1, 1, function</column>
+<column name="grp_window_macc_fu_12298">window_macc, 3, 3, 1, 1, function</column>
+<column name="grp_window_macc_fu_12320">window_macc, 3, 3, 1, 1, function</column>
+<column name="grp_window_macc_fu_12342">window_macc, 3, 3, 1, 1, function</column>
+<column name="grp_slide_window_fu_12364">slide_window, 3, 3, 3, 3, function</column>
+<column name="grp_slide_window_fu_12373">slide_window, 3, 3, 3, 3, function</column>
+<column name="grp_slide_window_fu_12382">slide_window, 3, 3, 3, 3, function</column>
+<column name="grp_slide_window_fu_12391">slide_window, 3, 3, 3, 3, function</column>
+<column name="grp_post_process_fu_12400">post_process, 1, 1, 1, 1, function</column>
+<column name="grp_post_process_fu_12411">post_process, 1, 1, 1, 1, function</column>
+<column name="grp_post_process_fu_12422">post_process, 1, 1, 1, 1, function</column>
+<column name="grp_post_process_fu_12436">post_process, 1, 1, 1, 1, function</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
@@ -52,7 +65,7 @@
 <column name="- Loop 3">7, 7, 1, -, -, 8, no</column>
 <column name="- Loop 4">7, 7, 1, -, -, 8, no</column>
 <column name="- Loop 5">144, 144, 2, 1, 1, 144, yes</column>
-<column name="- Loop 6">2802307, 2802307, 52, 16, 1, 175142, yes</column>
+<column name="- Loop 6">1401160, 1401160, 33, 8, 1, 175142, yes</column>
 </table>
 </item>
 </section>

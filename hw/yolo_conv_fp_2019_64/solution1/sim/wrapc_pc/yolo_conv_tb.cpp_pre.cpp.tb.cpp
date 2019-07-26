@@ -73760,8 +73760,9 @@ class stream
 
 
 
-typedef ap_fixed<16,8,AP_RND_CONV,AP_SAT> fp_data_type;
-typedef ap_fixed<16,8,AP_RND_CONV,AP_SAT> fp_weight_type;
+typedef ap_fixed<16,8> fp_data_type;
+typedef ap_fixed<16,8> fp_weight_type;
+typedef ap_fixed<32,16> fp_mid_type;
 # 7 "/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_2019_64/tb/../src/yolo_stream.h" 2
 
 typedef struct quad_fp_pack{
@@ -103287,11 +103288,11 @@ void yolo_conv_top(yolo_quad_stream &inStream, yolo_quad_stream &outStream,
              ap_uint<(5+1)> output_ch, ap_uint<(5+1)> input_ch, ap_uint<(5-2+1)> fold_output_ch, ap_uint<(5-2+1)> fold_input_ch,
              ap_uint<9> input_h, ap_uint<9> input_w, ap_uint<9> real_input_h,
        ap_uint<3> fold_win_area);
-fp_data_type post_process(fp_data_type sub0_val_output,fp_data_type sub1_val_output,fp_data_type sub2_val_output,fp_data_type sub3_val_output,
-        int input_ch_idx,fp_data_type val_output);
+fp_mid_type post_process(fp_mid_type sub0_val_output,fp_mid_type sub1_val_output,fp_mid_type sub2_val_output,fp_mid_type sub3_val_output,
+        int input_ch_idx,fp_mid_type val_output);
 void yolo_line_buffer(fp_data_type curr_data, line_buff_type *line_buff, int col_idx);
 window_type slide_window(int conv_count, line_buff_type *line_buff);
-fp_data_type window_macc(window_type window, local_weight_type weight);
+fp_mid_type window_macc(window_type window, local_weight_type weight);
 void write_output(fp_data_type val_output, yolo_inter_stream &out_stream);
 void out_stream_merge(yolo_inter_stream out_stream_group[32], yolo_quad_stream &outStream, int input_ch_idx,quad_fp_side_channel curr_input,ap_uint<1> last,int output_ch,int fold_output_ch );
 # 4 "/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_2019_64/tb/yolo_conv_tb.cpp" 2

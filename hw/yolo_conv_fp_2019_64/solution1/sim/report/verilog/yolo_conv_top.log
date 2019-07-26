@@ -26,6 +26,9 @@ INFO: [VRFC 10-311] analyzing module glbl
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_2019_64/solution1/sim/verilog/fifo_w16_d2_A.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module fifo_w16_d2_A_shiftReg
 INFO: [VRFC 10-311] analyzing module fifo_w16_d2_A
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_2019_64/solution1/sim/verilog/yolo_conv_top_mac_muladd_16s_16s_32s_32_1_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module yolo_conv_top_mac_muladd_16s_16s_32s_32_1_0_DSP48_1
+INFO: [VRFC 10-311] analyzing module yolo_conv_top_mac_muladd_16s_16s_32s_32_1_0
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_2019_64/solution1/sim/verilog/yolo_conv_top_line_buff_group_0_va.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module yolo_conv_top_line_buff_group_0_va_ram
 INFO: [VRFC 10-311] analyzing module yolo_conv_top_line_buff_group_0_va
@@ -45,7 +48,7 @@ INFO: [VRFC 10-311] analyzing module fifo
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_2019_64/solution1/sim/verilog/post_process.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module post_process
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_2019_64/solution1/sim/verilog/yolo_conv_top_am_addmul_9ns_1ns_13ns_22_1_1.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module yolo_conv_top_am_addmul_9ns_1ns_13ns_22_1_1_DSP48_1
+INFO: [VRFC 10-311] analyzing module yolo_conv_top_am_addmul_9ns_1ns_13ns_22_1_1_DSP48_2
 INFO: [VRFC 10-311] analyzing module yolo_conv_top_am_addmul_9ns_1ns_13ns_22_1_1
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_2019_64/solution1/sim/verilog/yolo_conv_top_local_mem_group_0_d.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module yolo_conv_top_local_mem_group_0_d_ram
@@ -61,7 +64,7 @@ INFO: [VRFC 10-311] analyzing module out_stream_merge
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_2019_64/solution1/sim/verilog/AESL_axi_s_outStream.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module AESL_axi_s_outStream
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_2019_64/solution1/sim/verilog/yolo_conv_top_mac_muladd_4ns_10ns_9ns_13_1_1.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module yolo_conv_top_mac_muladd_4ns_10ns_9ns_13_1_1_DSP48_2
+INFO: [VRFC 10-311] analyzing module yolo_conv_top_mac_muladd_4ns_10ns_9ns_13_1_1_DSP48_3
 INFO: [VRFC 10-311] analyzing module yolo_conv_top_mac_muladd_4ns_10ns_9ns_13_1_1
 Starting static elaboration
 Completed static elaboration
@@ -73,12 +76,14 @@ Compiling module xil_defaultlib.yolo_conv_top_line_buff_group_0_...
 Compiling module xil_defaultlib.yolo_conv_top_line_buff_group_0_...
 Compiling module xil_defaultlib.yolo_conv_top_local_mem_group_0_...
 Compiling module xil_defaultlib.yolo_conv_top_local_mem_group_0_...
-Compiling module xil_defaultlib.yolo_conv_top_mul_mul_16s_16s_32...
-Compiling module xil_defaultlib.yolo_conv_top_mul_mul_16s_16s_32...
-Compiling module xil_defaultlib.window_macc
 Compiling module xil_defaultlib.out_stream_merge
-Compiling module xil_defaultlib.post_process
+Compiling module xil_defaultlib.yolo_conv_top_mul_mul_16s_16s_32...
+Compiling module xil_defaultlib.yolo_conv_top_mul_mul_16s_16s_32...
+Compiling module xil_defaultlib.yolo_conv_top_mac_muladd_16s_16s...
+Compiling module xil_defaultlib.yolo_conv_top_mac_muladd_16s_16s...
+Compiling module xil_defaultlib.window_macc
 Compiling module xil_defaultlib.slide_window
+Compiling module xil_defaultlib.post_process
 Compiling module xil_defaultlib.yolo_conv_top_am_addmul_9ns_1ns_...
 Compiling module xil_defaultlib.yolo_conv_top_am_addmul_9ns_1ns_...
 Compiling module xil_defaultlib.yolo_conv_top_mac_muladd_4ns_10n...
@@ -111,8 +116,8 @@ Built simulation snapshot yolo_conv_top
     ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 
 source /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_2019_64/solution1/sim/verilog/xsim.dir/yolo_conv_top/webtalk/xsim_webtalk.tcl -notrace
-INFO: [Common 17-186] '/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_2019_64/solution1/sim/verilog/xsim.dir/yolo_conv_top/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Sat Jul 20 19:06:07 2019. For additional details about this file, please refer to the WebTalk help file at /opt/Xilinx_2019_1/Vivado/2019.1/doc/webtalk_introduction.html.
-INFO: [Common 17-206] Exiting Webtalk at Sat Jul 20 19:06:07 2019...
+INFO: [Common 17-186] '/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_2019_64/solution1/sim/verilog/xsim.dir/yolo_conv_top/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Fri Jul 26 19:44:26 2019. For additional details about this file, please refer to the WebTalk help file at /opt/Xilinx_2019_1/Vivado/2019.1/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Fri Jul 26 19:44:26 2019...
 
 ****** xsim v2019.1 (64-bit)
   **** SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
@@ -131,13 +136,13 @@ source yolo_conv_top.tcl
 //
 // RTL Simulation : "Inter-Transaction Progress" ["Intra-Transaction Progress"] @ "Simulation Time"
 ////////////////////////////////////////////////////////////////////////////////////
-// RTL Simulation : 0 / 1 [0.00%] @ "125000"
-// RTL Simulation : 1 / 1 [100.00%] @ "404405000"
+// RTL Simulation : 0 / 1 [0.00%] @ "116000"
+// RTL Simulation : 1 / 1 [100.00%] @ "162932000"
 ////////////////////////////////////////////////////////////////////////////////////
-$finish called at time : 404445 ns : File "/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_2019_64/solution1/sim/verilog/yolo_conv_top.autotb.v" Line 502
-run: Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:45 . Memory (MB): peak = 1377.332 ; gain = 0.000 ; free physical = 667 ; free virtual = 11046
+$finish called at time : 162964 ns : File "/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_fp_2019_64/solution1/sim/verilog/yolo_conv_top.autotb.v" Line 502
+run: Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:22 . Memory (MB): peak = 1397.422 ; gain = 0.000 ; free physical = 624 ; free virtual = 11302
 ## quit
-INFO: [Common 17-206] Exiting xsim at Sat Jul 20 19:07:22 2019...
+INFO: [Common 17-206] Exiting xsim at Fri Jul 26 19:45:04 2019...
 4991
 INFO: [COSIM-1000] *** C/RTL co-simulation finished: PASS ***
 INFO: [COSIM-211] II is measurable only when transaction number is greater than 1 in RTL simulation. Otherwise, they will be marked as all NA. If user wants to calculate them, please make sure there are at least 2 transactions in RTL simulation.

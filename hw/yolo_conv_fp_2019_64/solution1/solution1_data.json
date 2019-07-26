@@ -215,13 +215,13 @@
   },
   "ClockInfo": {
     "ClockName": "ap_clk",
-    "ClockPeriod": "10",
+    "ClockPeriod": "8",
     "IsCombLogic": "0",
     "II": "x",
-    "Latency": "2802489",
-    "Uncertainty": "2"
+    "Latency": "1401342",
+    "Uncertainty": "1.6"
   },
-  "Xdc": {"OocClocks": ["create_clock -name ap_clk -period 10.000 [get_ports ap_clk]"]},
+  "Xdc": {"OocClocks": ["create_clock -name ap_clk -period 8.000 [get_ports ap_clk]"]},
   "Ipx": {
     "Vendor": "xilinx.com",
     "Library": "hls",
@@ -246,6 +246,7 @@
       "impl\/vhdl\/yolo_conv_top_line_buff_group_0_va.vhd",
       "impl\/vhdl\/yolo_conv_top_local_mem_group_0_d.vhd",
       "impl\/vhdl\/yolo_conv_top_mac_muladd_4ns_10ns_9ns_13_1_1.vhd",
+      "impl\/vhdl\/yolo_conv_top_mac_muladd_16s_16s_32s_32_1_0.vhd",
       "impl\/vhdl\/yolo_conv_top_mul_mul_16s_16s_32_1_0.vhd",
       "impl\/vhdl\/yolo_conv_top.vhd"
     ],
@@ -260,6 +261,7 @@
       "impl\/verilog\/yolo_conv_top_line_buff_group_0_va.v",
       "impl\/verilog\/yolo_conv_top_local_mem_group_0_d.v",
       "impl\/verilog\/yolo_conv_top_mac_muladd_4ns_10ns_9ns_13_1_1.v",
+      "impl\/verilog\/yolo_conv_top_mac_muladd_16s_16s_32s_32_1_0.v",
       "impl\/verilog\/yolo_conv_top_mul_mul_16s_16s_32_1_0.v",
       "impl\/verilog\/yolo_conv_top.v"
     ],
@@ -1012,52 +1014,104 @@
       "ModuleName": "yolo_conv_top",
       "Instances": [
         {
-          "ModuleName": "window_macc",
-          "InstanceName": "grp_window_macc_fu_11214"
-        },
-        {
-          "ModuleName": "window_macc",
-          "InstanceName": "grp_window_macc_fu_11236"
-        },
-        {
-          "ModuleName": "window_macc",
-          "InstanceName": "grp_window_macc_fu_11258"
-        },
-        {
-          "ModuleName": "window_macc",
-          "InstanceName": "grp_window_macc_fu_11280"
-        },
-        {
-          "ModuleName": "window_macc",
-          "InstanceName": "grp_window_macc_fu_11302"
-        },
-        {
-          "ModuleName": "window_macc",
-          "InstanceName": "grp_window_macc_fu_11324"
-        },
-        {
-          "ModuleName": "window_macc",
-          "InstanceName": "grp_window_macc_fu_11346"
-        },
-        {
-          "ModuleName": "window_macc",
-          "InstanceName": "grp_window_macc_fu_11368"
-        },
-        {
           "ModuleName": "out_stream_merge",
-          "InstanceName": "grp_out_stream_merge_fu_11390"
+          "InstanceName": "grp_out_stream_merge_fu_11954"
         },
         {
-          "ModuleName": "post_process",
-          "InstanceName": "grp_post_process_fu_11448"
+          "ModuleName": "window_macc",
+          "InstanceName": "grp_window_macc_fu_12012"
         },
         {
-          "ModuleName": "post_process",
-          "InstanceName": "grp_post_process_fu_11459"
+          "ModuleName": "window_macc",
+          "InstanceName": "grp_window_macc_fu_12034"
+        },
+        {
+          "ModuleName": "window_macc",
+          "InstanceName": "grp_window_macc_fu_12056"
+        },
+        {
+          "ModuleName": "window_macc",
+          "InstanceName": "grp_window_macc_fu_12078"
+        },
+        {
+          "ModuleName": "window_macc",
+          "InstanceName": "grp_window_macc_fu_12100"
+        },
+        {
+          "ModuleName": "window_macc",
+          "InstanceName": "grp_window_macc_fu_12122"
+        },
+        {
+          "ModuleName": "window_macc",
+          "InstanceName": "grp_window_macc_fu_12144"
+        },
+        {
+          "ModuleName": "window_macc",
+          "InstanceName": "grp_window_macc_fu_12166"
+        },
+        {
+          "ModuleName": "window_macc",
+          "InstanceName": "grp_window_macc_fu_12188"
+        },
+        {
+          "ModuleName": "window_macc",
+          "InstanceName": "grp_window_macc_fu_12210"
+        },
+        {
+          "ModuleName": "window_macc",
+          "InstanceName": "grp_window_macc_fu_12232"
+        },
+        {
+          "ModuleName": "window_macc",
+          "InstanceName": "grp_window_macc_fu_12254"
+        },
+        {
+          "ModuleName": "window_macc",
+          "InstanceName": "grp_window_macc_fu_12276"
+        },
+        {
+          "ModuleName": "window_macc",
+          "InstanceName": "grp_window_macc_fu_12298"
+        },
+        {
+          "ModuleName": "window_macc",
+          "InstanceName": "grp_window_macc_fu_12320"
+        },
+        {
+          "ModuleName": "window_macc",
+          "InstanceName": "grp_window_macc_fu_12342"
         },
         {
           "ModuleName": "slide_window",
-          "InstanceName": "grp_slide_window_fu_11500"
+          "InstanceName": "grp_slide_window_fu_12364"
+        },
+        {
+          "ModuleName": "slide_window",
+          "InstanceName": "grp_slide_window_fu_12373"
+        },
+        {
+          "ModuleName": "slide_window",
+          "InstanceName": "grp_slide_window_fu_12382"
+        },
+        {
+          "ModuleName": "slide_window",
+          "InstanceName": "grp_slide_window_fu_12391"
+        },
+        {
+          "ModuleName": "post_process",
+          "InstanceName": "grp_post_process_fu_12400"
+        },
+        {
+          "ModuleName": "post_process",
+          "InstanceName": "grp_post_process_fu_12411"
+        },
+        {
+          "ModuleName": "post_process",
+          "InstanceName": "grp_post_process_fu_12422"
+        },
+        {
+          "ModuleName": "post_process",
+          "InstanceName": "grp_post_process_fu_12436"
         }
       ]
     },
@@ -1109,13 +1163,13 @@
           "PipelineType": "function"
         },
         "Timing": {
-          "Target": "10.00",
-          "Uncertainty": "2.00",
-          "Estimate": "6.756"
+          "Target": "8.00",
+          "Uncertainty": "1.60",
+          "Estimate": "4.934"
         },
         "Area": {
           "DSP48E": "0",
-          "FF": "135",
+          "FF": "144",
           "LUT": "222",
           "BRAM_18K": "0",
           "URAM": "0"
@@ -1123,43 +1177,43 @@
       },
       "window_macc": {
         "Latency": {
-          "LatencyBest": "7",
-          "LatencyAvg": "7",
-          "LatencyWorst": "7",
+          "LatencyBest": "3",
+          "LatencyAvg": "3",
+          "LatencyWorst": "3",
           "PipelineII": "1",
-          "PipelineDepth": "8",
+          "PipelineDepth": "4",
           "PipelineType": "function"
         },
         "Timing": {
-          "Target": "10.00",
-          "Uncertainty": "2.00",
-          "Estimate": "7.493"
+          "Target": "8.00",
+          "Uncertainty": "1.60",
+          "Estimate": "8.932"
         },
         "Area": {
-          "BRAM_18K": "0",
           "DSP48E": "9",
-          "FF": "1421",
-          "LUT": "1845",
+          "FF": "865",
+          "LUT": "112",
+          "BRAM_18K": "0",
           "URAM": "0"
         }
       },
       "post_process": {
         "Latency": {
-          "LatencyBest": "2",
-          "LatencyAvg": "2",
-          "LatencyWorst": "2",
+          "LatencyBest": "1",
+          "LatencyAvg": "1",
+          "LatencyWorst": "1",
           "PipelineII": "1",
-          "PipelineDepth": "3",
+          "PipelineDepth": "2",
           "PipelineType": "function"
         },
         "Timing": {
-          "Target": "10.00",
-          "Uncertainty": "2.00",
-          "Estimate": "6.140"
+          "Target": "8.00",
+          "Uncertainty": "1.60",
+          "Estimate": "4.371"
         },
         "Area": {
-          "FF": "199",
-          "LUT": "458",
+          "FF": "129",
+          "LUT": "178",
           "BRAM_18K": "0",
           "DSP48E": "0",
           "URAM": "0"
@@ -1175,8 +1229,8 @@
           "PipelineType": "function"
         },
         "Timing": {
-          "Target": "10.00",
-          "Uncertainty": "2.00",
+          "Target": "8.00",
+          "Uncertainty": "1.60",
           "Estimate": "6.127"
         },
         "Area": {
@@ -1189,17 +1243,17 @@
       },
       "yolo_conv_top": {
         "Latency": {
-          "LatencyBest": "2802489",
-          "LatencyAvg": "2802489",
-          "LatencyWorst": "2802489",
-          "PipelineII": "2802490",
+          "LatencyBest": "1401342",
+          "LatencyAvg": "1401342",
+          "LatencyWorst": "1401342",
+          "PipelineII": "1401343",
           "PipelineDepth": "",
           "PipelineType": "none"
         },
         "Timing": {
-          "Target": "10.00",
-          "Uncertainty": "2.00",
-          "Estimate": "9.634"
+          "Target": "8.00",
+          "Uncertainty": "1.60",
+          "Estimate": "8.932"
         },
         "Loops": [
           {
@@ -1240,16 +1294,16 @@
           {
             "Name": "Loop 6",
             "TripCount": "175142",
-            "Latency": "2802307",
-            "PipelineII": "16",
-            "PipelineDepth": "52"
+            "Latency": "1401160",
+            "PipelineII": "8",
+            "PipelineDepth": "33"
           }
         ],
         "Area": {
-          "BRAM_18K": "84",
-          "DSP48E": "74",
-          "FF": "37020",
-          "LUT": "37838",
+          "BRAM_18K": "120",
+          "DSP48E": "146",
+          "FF": "49532",
+          "LUT": "29807",
           "URAM": "0"
         }
       }
@@ -1265,7 +1319,7 @@
   },
   "GenData": {
     "DataVersion": "0.2",
-    "Time": "2019-07-20 19:04:16 BST",
+    "Time": "2019-07-26 19:41:17 BST",
     "ToolName": "vivado_hls",
     "ToolVersion": "2019.1"
   }

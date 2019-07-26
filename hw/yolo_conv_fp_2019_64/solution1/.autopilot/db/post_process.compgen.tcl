@@ -10,7 +10,7 @@ if {${::AESL::PGuard_autoexp_gen}} {
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 34 \
+    id 35 \
     name sub0_val_output_V \
     type other \
     dir I \
@@ -18,22 +18,7 @@ eval "cg_default_interface_gen_dc { \
     sync_rst true \
     corename dc_sub0_val_output_V \
     op interface \
-    ports { sub0_val_output_V { I 16 vector } } \
-} "
-}
-
-# Direct connection:
-if {${::AESL::PGuard_autoexp_gen}} {
-eval "cg_default_interface_gen_dc { \
-    id 35 \
-    name sub1_val_output_V \
-    type other \
-    dir I \
-    reset_level 1 \
-    sync_rst true \
-    corename dc_sub1_val_output_V \
-    op interface \
-    ports { sub1_val_output_V { I 16 vector } } \
+    ports { sub0_val_output_V { I 32 vector } } \
 } "
 }
 
@@ -41,14 +26,14 @@ eval "cg_default_interface_gen_dc { \
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
     id 36 \
-    name sub2_val_output_V \
+    name sub1_val_output_V \
     type other \
     dir I \
     reset_level 1 \
     sync_rst true \
-    corename dc_sub2_val_output_V \
+    corename dc_sub1_val_output_V \
     op interface \
-    ports { sub2_val_output_V { I 16 vector } } \
+    ports { sub1_val_output_V { I 32 vector } } \
 } "
 }
 
@@ -56,14 +41,14 @@ eval "cg_default_interface_gen_dc { \
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
     id 37 \
-    name sub3_val_output_V \
+    name sub2_val_output_V \
     type other \
     dir I \
     reset_level 1 \
     sync_rst true \
-    corename dc_sub3_val_output_V \
+    corename dc_sub2_val_output_V \
     op interface \
-    ports { sub3_val_output_V { I 16 vector } } \
+    ports { sub2_val_output_V { I 32 vector } } \
 } "
 }
 
@@ -71,6 +56,21 @@ eval "cg_default_interface_gen_dc { \
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
     id 38 \
+    name sub3_val_output_V \
+    type other \
+    dir I \
+    reset_level 1 \
+    sync_rst true \
+    corename dc_sub3_val_output_V \
+    op interface \
+    ports { sub3_val_output_V { I 32 vector } } \
+} "
+}
+
+# Direct connection:
+if {${::AESL::PGuard_autoexp_gen}} {
+eval "cg_default_interface_gen_dc { \
+    id 39 \
     name input_ch_idx \
     type other \
     dir I \
@@ -85,7 +85,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 39 \
+    id 40 \
     name val_output_V \
     type other \
     dir I \
@@ -93,7 +93,7 @@ eval "cg_default_interface_gen_dc { \
     sync_rst true \
     corename dc_val_output_V \
     op interface \
-    ports { val_output_V { I 16 vector } } \
+    ports { val_output_V { I 32 vector } } \
 } "
 }
 
@@ -107,7 +107,7 @@ eval "cg_default_interface_gen_dc { \
     sync_rst true \
     corename ap_return \
     op interface \
-    ports { ap_return { O 16 vector } } \
+    ports { ap_return { O 32 vector } } \
 } "
 }
 

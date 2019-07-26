@@ -129,7 +129,7 @@ set RtlHierarchyInfo {[
 
 set ArgLastReadFirstWriteLatency {
 	slide_window {
-		conv_count {Type I LastRead 1 FirstWrite -1}
+		conv_count {Type I LastRead 0 FirstWrite -1}
 		line_buff_val_0_V {Type I LastRead 3 FirstWrite -1}
 		line_buff_val_1_V {Type I LastRead 3 FirstWrite -1}
 		line_buff_val_2_V {Type I LastRead 3 FirstWrite -1}

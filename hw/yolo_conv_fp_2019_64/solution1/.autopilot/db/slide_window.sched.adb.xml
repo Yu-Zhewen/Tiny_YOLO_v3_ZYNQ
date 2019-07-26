@@ -50,6 +50,21 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
+<Node id="7" bw="9" op_0_bw="9" op_1_bw="9">
+<![CDATA[
+.preheader.preheader.0:1  %conv_count_read = call i9 @_ssdm_op_Read.ap_auto.i9(i9 %conv_count)
+
+]]></Node>
+<StgValue><ssdm name="conv_count_read"/></StgValue>
+</operation>
+
+<operation id="7" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
 <Node id="8" bw="13" op_0_bw="4">
 <![CDATA[
 .preheader.preheader.0:2  %zext_ln259 = zext i4 %line_buff_val_V_offs to i13
@@ -58,7 +73,7 @@
 <StgValue><ssdm name="zext_ln259"/></StgValue>
 </operation>
 
-<operation id="7" st_id="1" stage="1" lat="1">
+<operation id="8" st_id="1" stage="1" lat="1">
 <core>Mul</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -72,26 +87,26 @@
 ]]></Node>
 <StgValue><ssdm name="mul_ln259"/></StgValue>
 </operation>
-</state>
 
-<state id="2" st_id="2">
-
-<operation id="8" st_id="2" stage="1" lat="1">
-<core>NULL</core>
+<operation id="9" st_id="1" stage="1" lat="1">
+<core>AddSub</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="7" bw="9" op_0_bw="9" op_1_bw="9">
+<Node id="17" bw="9" op_0_bw="9" op_1_bw="9">
 <![CDATA[
-.preheader.preheader.0:1  %conv_count_read = call i9 @_ssdm_op_Read.ap_auto.i9(i9 %conv_count)
+.preheader.preheader.0:11  %add_ln259 = add i9 %conv_count_read, 1
 
 ]]></Node>
-<StgValue><ssdm name="conv_count_read"/></StgValue>
+<StgValue><ssdm name="add_ln259"/></StgValue>
 </operation>
+</state>
 
-<operation id="9" st_id="2" stage="1" lat="1">
+<state id="2" st_id="2">
+
+<operation id="10" st_id="2" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -106,7 +121,7 @@
 <StgValue><ssdm name="zext_ln259_1"/></StgValue>
 </operation>
 
-<operation id="10" st_id="2" stage="1" lat="1">
+<operation id="11" st_id="2" stage="1" lat="1">
 <core>AddSub</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -121,7 +136,7 @@
 <StgValue><ssdm name="add_ln259_2"/></StgValue>
 </operation>
 
-<operation id="11" st_id="2" stage="1" lat="1">
+<operation id="12" st_id="2" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -136,7 +151,7 @@
 <StgValue><ssdm name="sext_ln259"/></StgValue>
 </operation>
 
-<operation id="12" st_id="2" stage="1" lat="1">
+<operation id="13" st_id="2" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -151,7 +166,7 @@
 <StgValue><ssdm name="line_buff_val_0_V_a"/></StgValue>
 </operation>
 
-<operation id="13" st_id="2" stage="1" lat="1">
+<operation id="14" st_id="2" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -166,7 +181,7 @@
 <StgValue><ssdm name="line_buff_val_1_V_a"/></StgValue>
 </operation>
 
-<operation id="14" st_id="2" stage="1" lat="1">
+<operation id="15" st_id="2" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -181,7 +196,7 @@
 <StgValue><ssdm name="line_buff_val_2_V_a"/></StgValue>
 </operation>
 
-<operation id="15" st_id="2" stage="2" lat="2">
+<operation id="16" st_id="2" stage="2" lat="2">
 <core>RAM</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -194,21 +209,6 @@
 
 ]]></Node>
 <StgValue><ssdm name="line_buff_val_0_V_l"/></StgValue>
-</operation>
-
-<operation id="16" st_id="2" stage="1" lat="1">
-<core>AddSub</core>
-<MemPortIdVec></MemPortIdVec>
-<condition id="-1">
-<or_exp><and_exp></and_exp></or_exp>
-</condition>
-
-<Node id="17" bw="9" op_0_bw="9" op_1_bw="9">
-<![CDATA[
-.preheader.preheader.0:11  %add_ln259 = add i9 %conv_count_read, 1
-
-]]></Node>
-<StgValue><ssdm name="add_ln259"/></StgValue>
 </operation>
 
 <operation id="17" st_id="2" stage="1" lat="1">

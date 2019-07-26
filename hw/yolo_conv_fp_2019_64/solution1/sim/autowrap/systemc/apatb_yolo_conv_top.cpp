@@ -27,10 +27,10 @@ using namespace sc_dt;
 
 // [dump_struct_tree [build_nameSpaceTree] dumpedStructList] ---------->
     typedef struct quad_fp_pack {
-        ap_fixed<16, 8, (ap_q_mode) 4, (ap_o_mode)0, 0> sub_data_0;
-        ap_fixed<16, 8, (ap_q_mode) 4, (ap_o_mode)0, 0> sub_data_1;
-        ap_fixed<16, 8, (ap_q_mode) 4, (ap_o_mode)0, 0> sub_data_2;
-        ap_fixed<16, 8, (ap_q_mode) 4, (ap_o_mode)0, 0> sub_data_3;
+        ap_fixed<16, 8, (ap_q_mode) 5, (ap_o_mode)3, 0> sub_data_0;
+        ap_fixed<16, 8, (ap_q_mode) 5, (ap_o_mode)3, 0> sub_data_1;
+        ap_fixed<16, 8, (ap_q_mode) 5, (ap_o_mode)3, 0> sub_data_2;
+        ap_fixed<16, 8, (ap_q_mode) 5, (ap_o_mode)3, 0> sub_data_3;
        } quad_fp_pack;
 
           template< int D ,int U ,int TI ,int TD > struct ap_axi_fp;
