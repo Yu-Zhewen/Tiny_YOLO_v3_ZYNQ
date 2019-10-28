@@ -15,7 +15,11 @@ src/convolutional_layer.o src/convolutional_layer.o: \
  /home/xavier/MSc_Project/git_v/Tiny_YOLO_v3_ZYNQ/sw/Tiny_Yolo_v3/Tiny_Yolo_v3.sdk/include/../yolo/src/route_layer.h \
  /home/xavier/MSc_Project/git_v/Tiny_YOLO_v3_ZYNQ/sw/Tiny_Yolo_v3/Tiny_Yolo_v3.sdk/include/../yolo/src/upsample_layer.h \
  /home/xavier/MSc_Project/git_v/Tiny_YOLO_v3_ZYNQ/sw/Tiny_Yolo_v3/Tiny_Yolo_v3.sdk/include/../yolo/src/utils.h \
- /home/xavier/MSc_Project/git_v/Tiny_YOLO_v3_ZYNQ/sw/Tiny_Yolo_v3/Tiny_Yolo_v3.sdk/include/../yolo/src/yolo_layer.h
+ /home/xavier/MSc_Project/git_v/Tiny_YOLO_v3_ZYNQ/sw/Tiny_Yolo_v3/Tiny_Yolo_v3.sdk/include/../yolo/src/yolo_layer.h \
+ ../../yolo_bsp/ps7_cortexa9_0/include/xtime_l.h \
+ ../../yolo_bsp/ps7_cortexa9_0/include/xil_types.h \
+ ../../yolo_bsp/ps7_cortexa9_0/include/xparameters.h \
+ ../../yolo_bsp/ps7_cortexa9_0/include/xparameters_ps.h
 
 ../src/convolutional_layer.h:
 
@@ -50,3 +54,11 @@ src/convolutional_layer.o src/convolutional_layer.o: \
 /home/xavier/MSc_Project/git_v/Tiny_YOLO_v3_ZYNQ/sw/Tiny_Yolo_v3/Tiny_Yolo_v3.sdk/include/../yolo/src/utils.h:
 
 /home/xavier/MSc_Project/git_v/Tiny_YOLO_v3_ZYNQ/sw/Tiny_Yolo_v3/Tiny_Yolo_v3.sdk/include/../yolo/src/yolo_layer.h:
+
+../../yolo_bsp/ps7_cortexa9_0/include/xtime_l.h:
+
+../../yolo_bsp/ps7_cortexa9_0/include/xil_types.h:
+
+../../yolo_bsp/ps7_cortexa9_0/include/xparameters.h:
+
+../../yolo_bsp/ps7_cortexa9_0/include/xparameters_ps.h:

@@ -58,8 +58,8 @@ void forward_network(network *netp)
     network net = *netp;
     int i;
     for(i = 0; i < net.n; ++i){
-        fprintf(stderr,"Forward Layer%d\n\r",i);
-        XTime_GetTime(&tStart);
+//        fprintf(stderr,"Forward Layer%d\n\r",i);
+//        XTime_GetTime(&tStart);
         net.index = i;
         layer l = net.layers[i];
         if(l.delta){
@@ -70,9 +70,9 @@ void forward_network(network *netp)
         if(l.truth) {
             net.truth = l.output;
         }
-        XTime_GetTime(&tEnd);
-        time_used = 1.0*((tEnd-tStart))/(COUNTS_PER_SECOND);
-        fprintf(stderr,"Time used:%d(s)\n\r",time_used);
+//        XTime_GetTime(&tEnd);
+//        time_used = 1.0*((tEnd-tStart))/(COUNTS_PER_SECOND);
+//        fprintf(stderr,"Time used:%d(s)\n\r",time_used);
     }
     calc_network_cost(netp);
 }

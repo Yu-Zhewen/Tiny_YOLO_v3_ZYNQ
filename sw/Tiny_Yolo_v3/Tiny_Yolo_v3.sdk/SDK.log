@@ -26,3 +26,21 @@
 09:52:56 INFO  : Bootgen command execution is done.
 09:53:34 INFO  : Invoking Bootgen: bootgen -image yolo_fp.bif -arch zynq -o /home/xavier/MSc_Project/git_v/Tiny_YOLO_v3_ZYNQ/sw/Tiny_Yolo_v3/Tiny_Yolo_v3.sdk/yolo_fp/bootimage/BOOT.bin -w on
 09:53:36 INFO  : Bootgen command execution is done.
+13:33:15 INFO  : Registering command handlers for SDK TCF services
+13:33:17 INFO  : Launching XSCT server: xsct -n -interactive /home/xavier/MSc_Project/git_v/Tiny_YOLO_v3_ZYNQ/sw/Tiny_Yolo_v3/Tiny_Yolo_v3.sdk/temp_xsdb_launch_script.tcl
+13:33:26 INFO  : XSCT server has started successfully.
+13:34:13 INFO  : Successfully done setting XSCT server connection channel  
+13:34:13 INFO  : Successfully done setting SDK workspace  
+13:34:13 INFO  : Processing command line option -hwspec /home/xavier/MSc_Project/git_v/Tiny_YOLO_v3_ZYNQ/sw/Tiny_Yolo_v3/Tiny_Yolo_v3.sdk/yolo_sys_wrapper.hdf.
+13:34:13 INFO  : Checking for hwspec changes in the project yolo_sys_wrapper_hw_platform_0.
+13:36:26 INFO  : Invoking Bootgen: bootgen -image yolo.bif -arch zynq -o /home/xavier/MSc_Project/git_v/Tiny_YOLO_v3_ZYNQ/sw/Tiny_Yolo_v3/Tiny_Yolo_v3.sdk/yolo/bootimage/BOOT.bin -w on
+13:36:28 INFO  : Bootgen command execution is done.
+20:06:13 INFO  : Registering command handlers for SDK TCF services
+20:06:15 INFO  : Launching XSCT server: xsct -n -interactive /home/xavier/MSc_Project/git_v/Tiny_YOLO_v3_ZYNQ/sw/Tiny_Yolo_v3/Tiny_Yolo_v3.sdk/temp_xsdb_launch_script.tcl
+20:06:25 INFO  : XSCT server has started successfully.
+20:06:57 INFO  : Successfully done setting XSCT server connection channel  
+20:06:57 INFO  : Successfully done setting SDK workspace  
+20:06:57 INFO  : Processing command line option -hwspec /home/xavier/MSc_Project/git_v/Tiny_YOLO_v3_ZYNQ/sw/Tiny_Yolo_v3/Tiny_Yolo_v3.sdk/yolo_sys_wrapper.hdf.
+20:06:57 INFO  : Checking for hwspec changes in the project yolo_sys_wrapper_hw_platform_0.
+20:12:22 INFO  : Invoking Bootgen: bootgen -image yolo.bif -arch zynq -o /home/xavier/MSc_Project/git_v/Tiny_YOLO_v3_ZYNQ/sw/Tiny_Yolo_v3/Tiny_Yolo_v3.sdk/yolo/bootimage/BOOT.bin -w on
+20:12:24 INFO  : Bootgen command execution is done.

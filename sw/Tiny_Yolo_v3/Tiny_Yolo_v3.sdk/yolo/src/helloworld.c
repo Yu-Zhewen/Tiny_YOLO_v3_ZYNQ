@@ -99,6 +99,10 @@ int main()
     free_image(sized);
     fprintf(stderr,"End of Detection\n\r");
 
+    extern int g_time_used;
+    fprintf(stderr,"im2col Time used:%f(s)\n\r",1.0*g_time_used/(COUNTS_PER_SECOND));
+
+
     cleanup_platform();
     return 0;
 }

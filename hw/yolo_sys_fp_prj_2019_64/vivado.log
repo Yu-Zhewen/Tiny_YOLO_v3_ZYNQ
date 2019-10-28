@@ -2,17 +2,19 @@
 # Vivado v2019.1 (64-bit)
 # SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
 # IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
-# Start of session at: Fri Jul 26 19:48:13 2019
-# Process ID: 5415
-# Current directory: /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_sys_fp_prj_2019_64
+# Start of session at: Wed Aug 14 12:20:22 2019
+# Process ID: 18157
+# Current directory: /home/xavier/MSc_Project/git_v/Tiny_YOLO_v3_ZYNQ/hw/yolo_sys_fp_prj_2019_64
 # Command line: vivado yolo_sys_fp_prj_2019_64.xpr
-# Log file: /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_sys_fp_prj_2019_64/vivado.log
-# Journal file: /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_sys_fp_prj_2019_64/vivado.jou
+# Log file: /home/xavier/MSc_Project/git_v/Tiny_YOLO_v3_ZYNQ/hw/yolo_sys_fp_prj_2019_64/vivado.log
+# Journal file: /home/xavier/MSc_Project/git_v/Tiny_YOLO_v3_ZYNQ/hw/yolo_sys_fp_prj_2019_64/vivado.jou
 #-----------------------------------------------------------
 start_gui
 open_project yolo_sys_fp_prj_2019_64.xpr
+INFO: [Project 1-313] Project file moved from '/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_sys_fp_prj_2019_64' since last save.
 Scanning sources...
 Finished scanning sources
+INFO: [filemgmt 56-1] IP Repository Path: Directory not found as '/home/xavier/MSc_Project/git_v/Tiny_YOLO_v3_ZYNQ/ip_fp64'; using path '/home/xavier/MSc_Project/hls/ip_fp64' instead.
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/xavier/MSc_Project/hls/ip_fp64'.
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx_2019_1/Vivado/2019.1/data/ip'.
@@ -20,9 +22,9 @@ WARNING: [BD 41-1661] One or more IPs have been locked in the design 'design_1.b
 List of locked IPs:
 design_1_yolo_conv_top_0_2
 
-open_project: Time (s): cpu = 00:00:23 ; elapsed = 00:00:18 . Memory (MB): peak = 6455.121 ; gain = 132.004 ; free physical = 2382 ; free virtual = 13313
+open_project: Time (s): cpu = 00:00:24 ; elapsed = 00:00:21 . Memory (MB): peak = 6487.871 ; gain = 141.445 ; free physical = 397 ; free virtual = 12985
 update_compile_order -fileset sources_1
-open_bd_design {/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_sys_fp_prj_2019_64/yolo_sys_fp_prj_2019_64.srcs/sources_1/bd/design_1/design_1.bd}
+open_bd_design {/home/xavier/MSc_Project/git_v/Tiny_YOLO_v3_ZYNQ/hw/yolo_sys_fp_prj_2019_64/yolo_sys_fp_prj_2019_64.srcs/sources_1/bd/design_1/design_1.bd}
 Adding component instance block -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0
 Adding component instance block -- xilinx.com:hls:yolo_max_pool_top:1.0 - yolo_max_pool_top_0
 Adding component instance block -- xilinx.com:hls:yolo_acc_top:1.0 - yolo_acc_top_0
@@ -43,112 +45,33 @@ Adding component instance block -- xilinx.com:ip:axi_crossbar:2.1 - xbar
 Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
 Adding component instance block -- xilinx.com:hls:yolo_yolo_top:1.0 - yolo_yolo_top_0
 Adding component instance block -- xilinx.com:hls:yolo_conv_top:1.0 - yolo_conv_top_0
-Successfully read diagram <design_1> from BD file </home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_sys_fp_prj_2019_64/yolo_sys_fp_prj_2019_64.srcs/sources_1/bd/design_1/design_1.bd>
-open_bd_design: Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 6700.465 ; gain = 0.000 ; free physical = 1494 ; free virtual = 12763
+Successfully read diagram <design_1> from BD file </home/xavier/MSc_Project/git_v/Tiny_YOLO_v3_ZYNQ/hw/yolo_sys_fp_prj_2019_64/yolo_sys_fp_prj_2019_64.srcs/sources_1/bd/design_1/design_1.bd>
+open_bd_design: Time (s): cpu = 00:00:13 ; elapsed = 00:00:09 . Memory (MB): peak = 6707.980 ; gain = 0.000 ; free physical = 175 ; free virtual = 12833
 report_ip_status -name ip_status 
-upgrade_ip -vlnv xilinx.com:hls:yolo_conv_top:1.0 [get_ips  design_1_yolo_conv_top_0_2] -log ip_upgrade.log
-Upgrading '/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_sys_fp_prj_2019_64/yolo_sys_fp_prj_2019_64.srcs/sources_1/bd/design_1/design_1.bd'
-INFO: [IP_Flow 19-3422] Upgraded design_1_yolo_conv_top_0_2 (Yolo_conv_top 1.0) from revision 1907261758 to revision 1907261946
-Wrote  : </home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_sys_fp_prj_2019_64/yolo_sys_fp_prj_2019_64.srcs/sources_1/bd/design_1/design_1.bd> 
-Wrote  : </home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_sys_fp_prj_2019_64/yolo_sys_fp_prj_2019_64.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
-INFO: [Coretcl 2-1525] Wrote upgrade log to '/home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_sys_fp_prj_2019_64/ip_upgrade.log'.
-export_ip_user_files -of_objects [get_ips design_1_yolo_conv_top_0_2] -no_script -sync -force -quiet
-report_ip_status -name ip_status 
-regenerate_bd_layout
-regenerate_bd_layout -routing
-validate_bd_design
-validate_bd_design: Time (s): cpu = 00:00:09 ; elapsed = 00:00:06 . Memory (MB): peak = 6712.336 ; gain = 0.000 ; free physical = 2488 ; free virtual = 13768
-report_ip_status -name ip_status 
-reset_run synth_1
-save_bd_design
-Wrote  : </home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_sys_fp_prj_2019_64/yolo_sys_fp_prj_2019_64.srcs/sources_1/bd/design_1/design_1.bd> 
-launch_runs impl_1 -jobs 2
-INFO: [BD 41-1662] The design 'design_1.bd' is already validated. Therefore parameter propagation will not be re-run.
-WARNING: [BD 41-235] Width mismatch when connecting pin: '/axi_mem_intercon/m00_couplers/auto_pc/m_axi_bid'(1) to net 'auto_pc_to_m00_couplers_BID'(6) - Only lower order bits will be connected.
-WARNING: [BD 41-235] Width mismatch when connecting pin: '/axi_mem_intercon/m00_couplers/auto_pc/m_axi_rid'(1) to net 'auto_pc_to_m00_couplers_RID'(6) - Only lower order bits will be connected.
-WARNING: [BD 41-235] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP0_AWID'(6) to net 'axi_mem_intercon_M00_AXI_AWID'(1) - Only lower order bits will be connected.
-WARNING: [BD 41-235] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP0_WID'(6) to net 'axi_mem_intercon_M00_AXI_WID'(1) - Only lower order bits will be connected.
-WARNING: [BD 41-235] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP0_ARID'(6) to net 'axi_mem_intercon_M00_AXI_ARID'(1) - Only lower order bits will be connected.
-VHDL Output written to : /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_sys_fp_prj_2019_64/yolo_sys_fp_prj_2019_64.srcs/sources_1/bd/design_1/synth/design_1.v
-WARNING: [BD 41-235] Width mismatch when connecting pin: '/axi_mem_intercon/m00_couplers/auto_pc/m_axi_bid'(1) to net 'auto_pc_to_m00_couplers_BID'(6) - Only lower order bits will be connected.
-WARNING: [BD 41-235] Width mismatch when connecting pin: '/axi_mem_intercon/m00_couplers/auto_pc/m_axi_rid'(1) to net 'auto_pc_to_m00_couplers_RID'(6) - Only lower order bits will be connected.
-WARNING: [BD 41-235] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP0_AWID'(6) to net 'axi_mem_intercon_M00_AXI_AWID'(1) - Only lower order bits will be connected.
-WARNING: [BD 41-235] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP0_WID'(6) to net 'axi_mem_intercon_M00_AXI_WID'(1) - Only lower order bits will be connected.
-WARNING: [BD 41-235] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP0_ARID'(6) to net 'axi_mem_intercon_M00_AXI_ARID'(1) - Only lower order bits will be connected.
-VHDL Output written to : /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_sys_fp_prj_2019_64/yolo_sys_fp_prj_2019_64.srcs/sources_1/bd/design_1/sim/design_1.v
-VHDL Output written to : /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_sys_fp_prj_2019_64/yolo_sys_fp_prj_2019_64.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v
-INFO: [BD 41-1029] Generation completed for the IP Integrator block yolo_yolo_top_0 .
-INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
-INFO: [BD 41-1029] Generation completed for the IP Integrator block yolo_max_pool_top_0 .
-INFO: [BD 41-1029] Generation completed for the IP Integrator block yolo_conv_top_0 .
-INFO: [BD 41-1029] Generation completed for the IP Integrator block yolo_acc_top_0 .
-INFO: [BD 41-1029] Generation completed for the IP Integrator block yolo_upsamp_top_0 .
-INFO: [BD 41-1029] Generation completed for the IP Integrator block axis_switch_0 .
-INFO: [BD 41-1029] Generation completed for the IP Integrator block axis_switch_1 .
-INFO: [BD 41-1029] Generation completed for the IP Integrator block axis_switch_2 .
-INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_dma .
-INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/xbar .
-INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_ps7_0_100M .
-INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_dma_1 .
-INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/xbar .
-WARNING: [IP_Flow 19-3452] Invalid long/float value '1e+08' specified for parameter 'FREQ_HZ(CLK)' for design_1_auto_pc_0.
-INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/m00_couplers/auto_pc .
-WARNING: [IP_Flow 19-3452] Invalid long/float value '1e+08' specified for parameter 'FREQ_HZ(CLK)' for design_1_auto_pc_1.
-INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon_1/s00_couplers/auto_pc .
-WARNING: [IP_Flow 19-3452] Invalid long/float value '1e+08' specified for parameter 'FREQ_HZ(CLK)' for design_1_auto_pc_2.
-INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc .
-Exporting to file /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_sys_fp_prj_2019_64/yolo_sys_fp_prj_2019_64.srcs/sources_1/bd/design_1/hw_handoff/design_1.hwh
-Generated Block Design Tcl file /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_sys_fp_prj_2019_64/yolo_sys_fp_prj_2019_64.srcs/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl
-Generated Hardware Definition File /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_sys_fp_prj_2019_64/yolo_sys_fp_prj_2019_64.srcs/sources_1/bd/design_1/synth/design_1.hwdef
-INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_pc_0, cache-ID = c7058870abce771d; cache size = 289.809 MB.
-INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_pc_1, cache-ID = cd190adeff930318; cache size = 289.809 MB.
-INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_pc_2, cache-ID = 15f300fe928ad4df; cache size = 289.809 MB.
-[Fri Jul 26 19:51:05 2019] Launched design_1_yolo_conv_top_0_2_synth_1, synth_1...
-Run output will be captured here:
-design_1_yolo_conv_top_0_2_synth_1: /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_sys_fp_prj_2019_64/yolo_sys_fp_prj_2019_64.runs/design_1_yolo_conv_top_0_2_synth_1/runme.log
-synth_1: /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_sys_fp_prj_2019_64/yolo_sys_fp_prj_2019_64.runs/synth_1/runme.log
-[Fri Jul 26 19:51:05 2019] Launched impl_1...
-Run output will be captured here: /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_sys_fp_prj_2019_64/yolo_sys_fp_prj_2019_64.runs/impl_1/runme.log
-launch_runs: Time (s): cpu = 00:00:13 ; elapsed = 00:00:11 . Memory (MB): peak = 7027.551 ; gain = 306.375 ; free physical = 2363 ; free virtual = 13630
-open_run impl_1
-INFO: [Device 21-403] Loading part xc7z020clg484-1
-INFO: [Netlist 29-17] Analyzing 1878 Unisim elements for replacement
-INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
-INFO: [Project 1-479] Netlist was created with Vivado 2019.1
-INFO: [Project 1-570] Preparing netlist for logic optimization
-INFO: [Timing 38-478] Restoring timing data from binary archive.
-INFO: [Timing 38-479] Binary timing data restore complete.
-INFO: [Project 1-856] Restoring constraints from binary archive.
-INFO: [Constraints 18-5170] The checkpoint was created with non-default parameter values which do not match the current Vivado settings.  Mismatching parameters are:
-  general.maxThreads
-INFO: [Project 1-853] Binary constraint restore complete.
-Reading XDEF placement.
-Reading placer database...
-Reading XDEF routing.
-Read XDEF File: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 7970.379 ; gain = 77.961 ; free physical = 2789 ; free virtual = 12683
-Restored from archive | CPU: 5.570000 secs | Memory: 82.588280 MB |
-Finished XDEF File Restore: Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 7970.379 ; gain = 77.961 ; free physical = 2789 ; free virtual = 12683
-Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 7970.379 ; gain = 0.000 ; free physical = 2806 ; free virtual = 12701
-INFO: [Project 1-111] Unisim Transformation Summary:
-  A total of 8 instances were transformed.
-  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 5 instances
-  RAM32X1D => RAM32X1D (RAMD32, RAMD32): 2 instances
-  SRLC32E => SRL16E: 1 instances
-
-open_run: Time (s): cpu = 00:00:44 ; elapsed = 00:00:37 . Memory (MB): peak = 8084.492 ; gain = 1056.941 ; free physical = 2705 ; free virtual = 12605
-open_report: Time (s): cpu = 00:00:30 ; elapsed = 00:00:10 . Memory (MB): peak = 8251.070 ; gain = 141.340 ; free physical = 2409 ; free virtual = 12310
-launch_runs impl_1 -to_step write_bitstream -jobs 2
-[Fri Jul 26 20:15:07 2019] Launched impl_1...
-Run output will be captured here: /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_sys_fp_prj_2019_64/yolo_sys_fp_prj_2019_64.runs/impl_1/runme.log
-file mkdir /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_sys_fp_prj_2019_64/yolo_sys_fp_prj_2019_64.sdk
-file copy -force /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_sys_fp_prj_2019_64/yolo_sys_fp_prj_2019_64.runs/impl_1/design_1_wrapper.sysdef /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_sys_fp_prj_2019_64/yolo_sys_fp_prj_2019_64.sdk/design_1_wrapper.hdf
-
-file mkdir /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_sys_fp_prj_2019_64/yolo_sys_fp_prj_2019_64.sdk
-file copy -force /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_sys_fp_prj_2019_64/yolo_sys_fp_prj_2019_64.runs/impl_1/design_1_wrapper.sysdef /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_sys_fp_prj_2019_64/yolo_sys_fp_prj_2019_64.sdk/design_1_wrapper.hdf
-
-launch_sdk -workspace /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_sys_fp_prj_2019_64/yolo_sys_fp_prj_2019_64.sdk -hwspec /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_sys_fp_prj_2019_64/yolo_sys_fp_prj_2019_64.sdk/design_1_wrapper.hdf
+INFO: [Vivado 12-4158] Exported Hardware file is out of date. Exported hardware information may be inconsistent with respect to the current state of the design. It is recommended that you re-export the design and launch SDK otherwise SDK is launched with out of date hardware system file.
+launch_sdk -workspace /home/xavier/MSc_Project/git_v/Tiny_YOLO_v3_ZYNQ/hw/yolo_sys_fp_prj_2019_64/yolo_sys_fp_prj_2019_64.sdk -hwspec /home/xavier/MSc_Project/git_v/Tiny_YOLO_v3_ZYNQ/hw/yolo_sys_fp_prj_2019_64/yolo_sys_fp_prj_2019_64.sdk/design_1_wrapper.hdf
 INFO: [Vivado 12-393] Launching SDK...
-INFO: [Vivado 12-417] Running xsdk -workspace /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_sys_fp_prj_2019_64/yolo_sys_fp_prj_2019_64.sdk -hwspec /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_sys_fp_prj_2019_64/yolo_sys_fp_prj_2019_64.sdk/design_1_wrapper.hdf
+INFO: [Vivado 12-417] Running xsdk -workspace /home/xavier/MSc_Project/git_v/Tiny_YOLO_v3_ZYNQ/hw/yolo_sys_fp_prj_2019_64/yolo_sys_fp_prj_2019_64.sdk -hwspec /home/xavier/MSc_Project/git_v/Tiny_YOLO_v3_ZYNQ/hw/yolo_sys_fp_prj_2019_64/yolo_sys_fp_prj_2019_64.sdk/design_1_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+INFO: [Vivado 12-4158] Exported Hardware file is out of date. Exported hardware information may be inconsistent with respect to the current state of the design. It is recommended that you re-export the design and launch SDK otherwise SDK is launched with out of date hardware system file.
+launch_sdk -workspace /home/xavier/MSc_Project/git_v/Tiny_YOLO_v3_ZYNQ/hw/yolo_sys_fp_prj_2019_64/yolo_sys_fp_prj_2019_64.sdk -hwspec /home/xavier/MSc_Project/git_v/Tiny_YOLO_v3_ZYNQ/hw/yolo_sys_fp_prj_2019_64/yolo_sys_fp_prj_2019_64.sdk/design_1_wrapper.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace /home/xavier/MSc_Project/git_v/Tiny_YOLO_v3_ZYNQ/hw/yolo_sys_fp_prj_2019_64/yolo_sys_fp_prj_2019_64.sdk -hwspec /home/xavier/MSc_Project/git_v/Tiny_YOLO_v3_ZYNQ/hw/yolo_sys_fp_prj_2019_64/yolo_sys_fp_prj_2019_64.sdk/design_1_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+INFO: [Vivado 12-4158] Exported Hardware file is out of date. Exported hardware information may be inconsistent with respect to the current state of the design. It is recommended that you re-export the design and launch SDK otherwise SDK is launched with out of date hardware system file.
+launch_sdk -workspace /home/xavier/MSc_Project/git_v/Tiny_YOLO_v3_ZYNQ/hw/yolo_sys_fp_prj_2019_64/yolo_sys_fp_prj_2019_64.sdk -hwspec /home/xavier/MSc_Project/git_v/Tiny_YOLO_v3_ZYNQ/hw/yolo_sys_fp_prj_2019_64/yolo_sys_fp_prj_2019_64.sdk/design_1_wrapper.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace /home/xavier/MSc_Project/git_v/Tiny_YOLO_v3_ZYNQ/hw/yolo_sys_fp_prj_2019_64/yolo_sys_fp_prj_2019_64.sdk -hwspec /home/xavier/MSc_Project/git_v/Tiny_YOLO_v3_ZYNQ/hw/yolo_sys_fp_prj_2019_64/yolo_sys_fp_prj_2019_64.sdk/design_1_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+INFO: [Vivado 12-4158] Exported Hardware file is out of date. Exported hardware information may be inconsistent with respect to the current state of the design. It is recommended that you re-export the design and launch SDK otherwise SDK is launched with out of date hardware system file.
+launch_sdk -workspace /home/xavier/MSc_Project/git_v/Tiny_YOLO_v3_ZYNQ/hw/yolo_sys_fp_prj_2019_64/yolo_sys_fp_prj_2019_64.sdk -hwspec /home/xavier/MSc_Project/git_v/Tiny_YOLO_v3_ZYNQ/hw/yolo_sys_fp_prj_2019_64/yolo_sys_fp_prj_2019_64.sdk/design_1_wrapper.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace /home/xavier/MSc_Project/git_v/Tiny_YOLO_v3_ZYNQ/hw/yolo_sys_fp_prj_2019_64/yolo_sys_fp_prj_2019_64.sdk -hwspec /home/xavier/MSc_Project/git_v/Tiny_YOLO_v3_ZYNQ/hw/yolo_sys_fp_prj_2019_64/yolo_sys_fp_prj_2019_64.sdk/design_1_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+INFO: [Vivado 12-4158] Exported Hardware file is out of date. Exported hardware information may be inconsistent with respect to the current state of the design. It is recommended that you re-export the design and launch SDK otherwise SDK is launched with out of date hardware system file.
+launch_sdk -workspace /home/xavier/MSc_Project/git_v/Tiny_YOLO_v3_ZYNQ/hw/yolo_sys_fp_prj_2019_64/yolo_sys_fp_prj_2019_64.sdk -hwspec /home/xavier/MSc_Project/git_v/Tiny_YOLO_v3_ZYNQ/hw/yolo_sys_fp_prj_2019_64/yolo_sys_fp_prj_2019_64.sdk/design_1_wrapper.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace /home/xavier/MSc_Project/git_v/Tiny_YOLO_v3_ZYNQ/hw/yolo_sys_fp_prj_2019_64/yolo_sys_fp_prj_2019_64.sdk -hwspec /home/xavier/MSc_Project/git_v/Tiny_YOLO_v3_ZYNQ/hw/yolo_sys_fp_prj_2019_64/yolo_sys_fp_prj_2019_64.sdk/design_1_wrapper.hdf
 INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
 exit
-INFO: [Common 17-206] Exiting Vivado at Fri Jul 26 20:20:11 2019...
+INFO: [Common 17-206] Exiting Vivado at Wed Aug 14 12:28:54 2019...

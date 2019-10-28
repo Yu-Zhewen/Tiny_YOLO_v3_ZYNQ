@@ -105,17 +105,7 @@ double group_Latency_estimator(int II_sys, int f_h, int f_w, int f_ch, int h_h, 
     int F_in = (int)(ceil(1.0*f_ch/N_max));
     int F_out = (int)(ceil(1.0*h_ch/N_max));
 
-    if(F_in > 1)
-    {
-        assert(f_ch%N_max == 0);
-        f_ch = N_max;
-    }
 
-    if(F_out > 1)
-    {
-        assert(h_ch%N_max == 0);
-        h_ch = N_max;
-    }
 
 
     int Latency_layer_group;
@@ -123,7 +113,7 @@ double group_Latency_estimator(int II_sys, int f_h, int f_w, int f_ch, int h_h, 
     if(conv_en)
     {
         int Latency_hw_exe = (f_h+3)*(f_w+2)*(f_ch/4)*II_sys;
-        Latency_layer_group = Latency_hw_exe * F_in * F_out;
+        Latency_layer_group = Latency_hw_exe * F_out;
 
     }
     else
@@ -133,6 +123,19 @@ double group_Latency_estimator(int II_sys, int f_h, int f_w, int f_ch, int h_h, 
     }
 
     double time_ms = Latency_layer_group * 10.0 / 1000000;
+
+    if(F_in > 1)
+    {
+        //assert(f_ch%N_max == 0);
+        f_ch = N_max;
+    }
+
+    if(F_out > 1)
+    {
+        //assert(h_ch%N_max == 0);
+        h_ch = N_max;
+    }
+
 
     int in_size = f_h * f_w * f_ch;
     int acc_size = f_h * f_w * h_ch;

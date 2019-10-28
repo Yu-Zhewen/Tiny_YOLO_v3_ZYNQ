@@ -1,5 +1,8 @@
 #include "convolutional_layer.h"
+#include <xtime_l.h>
 
+XTime g_tEnd, g_tStart;
+int g_time_used=0;
 
 void scale_bias(float *output, float *scales, int batch, int n, int size)
 {
@@ -138,7 +141,7 @@ void forward_convolutional_layer(convolutional_layer l, network net)
     int m = l.n/l.groups;	//number of kernels
     int k = l.size*l.size*l.c/l.groups;	//kernel size * channel
     int n = l.out_w*l.out_h;	//number of outputs
-    fprintf(stderr,"(M:%d,K:%d,N:%d)\n",m,k,n);
+    //fprintf(stderr,"(M:%d,K:%d,N:%d)\n",m,k,n);
     //for(i = 0; i < l.batch; ++i){
     //    for(j = 0; j < l.groups; ++j){
     //        float *a = l.weights + j*l.nweights/l.groups;
@@ -152,7 +155,10 @@ void forward_convolutional_layer(convolutional_layer l, network net)
             if (l.size == 1) {
                 b = im;
             } else {
+                XTime_GetTime(&g_tStart);
                 im2col_cpu(im, l.c/l.groups, l.h, l.w, l.size, l.stride, l.pad, b);	//load layer input to the workspace
+                XTime_GetTime(&g_tEnd);
+                g_time_used += (g_tEnd-g_tStart);
             }
            // gemm(0,0,m,n,k,1,a,k,b,n,1,c,n);
 			float *b_t = calloc(n*k,sizeof(float));

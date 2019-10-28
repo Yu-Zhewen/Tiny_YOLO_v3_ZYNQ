@@ -1,8 +1,8 @@
-20:21:50 **** Incremental Build of configuration Debug for project yolo_sys_ps ****
+12:29:58 **** Incremental Build of configuration Debug for project yolo_sys_ps ****
 make pre-build main-build 
 a9-linaro-pre-build-step
  
 make: Nothing to be done for 'main-build'.
 
-20:21:51 Build Finished (took 642ms)
+12:29:58 Build Finished (took 686ms)
 
