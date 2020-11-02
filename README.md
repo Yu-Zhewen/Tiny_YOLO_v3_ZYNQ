@@ -55,17 +55,37 @@ some tools used for helping the test, not important
 
 ## How to use the automated flow
 
-1. check environment
+Check environment
 - ubuntu 16.04 LTS 
 - Vivado v2019.1
 - python 3.5.2
 - gcc 5.4.0
 
-2. set target FPGA and resource constraints
+Set target FPGA and resource constraints
+
+Edit scripts/run_all.py
+```
+device = "xc7z020-clg484-1"
+clk_ns = "10"
+```
+
+Edit model/main.cpp
+```
+#define DEFAULT_MAX_DSP (220) // zynq7020
+#define DEFAULT_MAX_BRAM_18k (280) // zynq7020
+#define DEFAULT_MAX_ULTILISATION (0.9)  // usually won't use 100% resources
+```
+
+Run scripts/run_all.py
+
+2000 years later...
+
+If everything is fine, Vivado SDK GUI should pop out
+
+Create an application project, add files from code/sdk
 
 
+ ## Contact me
 
-
-
- 
+ you can either create an issue or just drop me an email (zhewen.yu18@imperial.ac.uk)
 
