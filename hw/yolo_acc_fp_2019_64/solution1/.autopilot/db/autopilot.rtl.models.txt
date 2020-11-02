@@ -1,6 +1,0 @@
-yolo_acc_top_mul_mul_6ns_16s_22_1_0
-yolo_acc_top_mul_mul_13ns_9ns_22_1_1
-yolo_acc_top_kernel_bias_fp_0_V
-yolo_acc_top_CTRL_BUS_s_axi
-post_process_unit
-yolo_acc_top

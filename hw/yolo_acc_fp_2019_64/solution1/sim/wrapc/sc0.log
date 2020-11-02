@@ -1,5 +1,0 @@
-   Build using "/opt/Xilinx_2019_1/Vivado/2019.1/tps/lnx64/gcc-6.2.0/bin/g++"
-   Compiling yolo_acc_tb.cpp_pre.cpp.tb.cpp
-   Compiling yolo_acc.cpp_pre.cpp.tb.cpp
-   Compiling apatb_yolo_acc_top.cpp
-   Generating cosim.tv.exe

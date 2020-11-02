@@ -1,5 +1,0 @@
-yolo_max_pool_top_mul_mul_9ns_17ns_26_1_1
-yolo_max_pool_top_line_buff_group_0_va
-yolo_max_pool_top_CTRL_BUS_s_axi
-write_output
-yolo_max_pool_top

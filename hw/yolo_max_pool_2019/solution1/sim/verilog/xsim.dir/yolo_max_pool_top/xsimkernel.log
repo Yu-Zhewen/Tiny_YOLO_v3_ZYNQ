@@ -1,7 +1,0 @@
-Running: xsim.dir/yolo_max_pool_top/xsimk -simmode gui -wdb yolo_max_pool_top.wdb -simrunnum 0 -socket 37097
-Design successfully loaded
-Design Loading Memory Usage: 84484 KB (Peak: 84484 KB)
-Design Loading CPU Usage: 80 ms
-Simulation completed
-Simulation Memory Usage: 1484568 KB (Peak: 1811256 KB)
-Simulation CPU Usage: 822570 ms

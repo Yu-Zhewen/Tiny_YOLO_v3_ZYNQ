@@ -1,1 +1,0 @@
-set ::AESL_AUTOSIM::gTopFileName /home/xavier/MSc_Project/hls/yolo_conv_hls_2019/yolo_conv_2019/solution1/./sim/autowrap/testbench/yolo_conv.cpp_pre.cpp.tb.cpp

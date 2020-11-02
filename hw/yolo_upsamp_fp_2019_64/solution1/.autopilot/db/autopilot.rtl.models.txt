@@ -1,5 +1,0 @@
-yolo_upsamp_top_mac_muladd_5ns_4ns_4ns_8_1_1
-yolo_upsamp_top_mac_muladd_4ns_5ns_4ns_8_1_1
-yolo_upsamp_top_line_buff_group_0_va
-yolo_upsamp_top_CTRL_BUS_s_axi
-yolo_upsamp_top
