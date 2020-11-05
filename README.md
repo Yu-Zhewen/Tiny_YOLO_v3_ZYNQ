@@ -17,6 +17,8 @@ Latency and resource analytical models
 Design Space Exploration to identify the Pareto-optimal design point on Zedboard
 
 ## To cite our work
+Our paper is accepted by ARC2020 (https://arcoresearch.com/arc2020/)
+
 @inproceedings{yu2020parameterisable,
   title={A Parameterisable FPGA-Tailored Architecture for YOLOv3-Tiny},
   author={Yu, Zhewen and Bouganis, Christos-Savvas},
@@ -61,15 +63,19 @@ Check environment
 - python 3.5.2
 - gcc 5.4.0
 
-Set target FPGA and resource constraints
+Set target FPGA, clock and resource constraints by
 
 Edit scripts/run_all.py
+
+*Currently, the following FPGA (on Zedboard) has been tested. But the design should work for other Xilinx Zynq devices*
 ```
 device = "xc7z020-clg484-1"
 clk_ns = "10"
 ```
 
 Edit model/main.cpp
+
+*You have to specify resources constriants. The script is not able to infer resources available from the device you previously chose.*
 ```
 #define DEFAULT_MAX_DSP (220) // zynq7020
 #define DEFAULT_MAX_BRAM_18k (280) // zynq7020

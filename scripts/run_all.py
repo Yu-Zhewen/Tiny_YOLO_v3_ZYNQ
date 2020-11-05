@@ -7,10 +7,12 @@ clk_ns = "10"
 
 root_path = os.path.abspath("../")
 
+# launch Design Space Exploration
 os.chdir(root_path + "/model")
 os.system("g++ -o dse.out main.cpp system_model.cpp system_model.h")
 os.system("./dse.out")
 
+# get optimal config
 with open("opt.conf", "r") as fp:
     opt_conf = fp.readline().rstrip().split(",")
     conf_cmd = {"N_max" : "#define MAX_KERNEL_NUM " + opt_conf[0] + "\n",
@@ -21,6 +23,7 @@ with open("opt.conf", "r") as fp:
 
 os.chdir(root_path + "/code/hls")
 
+# update parameters in the code
 hls_list = ["yolo_acc", "yolo_conv", "yolo_max_pool", "yolo_upsample", "yolo_yolo"]    
 
 for hls_prj_name in os.listdir():
@@ -50,6 +53,7 @@ for hls_prj_name in os.listdir():
                                         break
                 os.replace(path + "/" + cand_file + ".copy", path + "/" + cand_file)
 
+# generate scripts to kick off HLS
 for hls_prj_name in os.listdir():
     os.chdir(root_path + "/code/hls/" + hls_prj_name)
     with open("run_hls.tcl", "w") as tcl_fp:
@@ -77,6 +81,7 @@ for hls_prj_name in os.listdir():
     os.system("vivado_hls run_hls.tcl")
     shutil.copy(hls_prj_name + "_prj/solution1/impl/ip/xilinx_com_hls_" + hls_prj_name + "_top_1_0.zip", root_path + "/code/ip/xilinx_com_hls_" + hls_prj_name + "_top_1_0.zip")
 
+# fetch IPs exported
 os.chdir(root_path + "/code/ip")
 for ip_zip in os.listdir():
     if (ip_zip.split(".")[-1] == "zip"):
@@ -85,6 +90,7 @@ for ip_zip in os.listdir():
             os.mkdir(ip_zip.split(".")[0])
         zip.extractall(ip_zip.split(".")[0])
 
+# run Vivado
 os.chdir(root_path + "/code/sys")
 os.system("vivado -mode tcl -source run_all.tcl -tclargs " + device)
 
