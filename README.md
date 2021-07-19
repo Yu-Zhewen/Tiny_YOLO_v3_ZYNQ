@@ -90,6 +90,7 @@ If everything is fine, Vivado SDK GUI should pop out
 
 Create an application project, add files from code/sdk
 
+Increase the heap size as code/sdk/src/lscript.ld shows
 
  ## Contact me
 
