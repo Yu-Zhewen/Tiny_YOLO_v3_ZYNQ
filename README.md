@@ -86,11 +86,15 @@ Run scripts/run_all.py
 
 2000 years later...
 
-If everything is fine, Vivado SDK GUI should pop out
+You will have the Vivado SDK GUI
 
 Create an application project, add files from code/sdk
 
 Increase the heap size as code/sdk/src/lscript.ld shows
+
+The latency of the inference shall be printed which indicates the system is working
+
+If you want to get the bounding boxes, please refer to https://github.com/pjreddie/darknet for more details on converting the network outputs to bbox
 
  ## Contact me
 
