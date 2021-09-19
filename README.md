@@ -88,7 +88,7 @@ Run scripts/run_all.py
 
 You will have the Vivado SDK GUI
 
-Create an application project, add files from code/sdk
+Create an application project, add files from code/sdk (Notice if you have changed the resource constraints, you need to manually update the folding factors in make_layer_group)
 
 Increase the heap size as code/sdk/src/lscript.ld shows
 
