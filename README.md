@@ -96,7 +96,28 @@ The latency of the inference shall be printed which indicates the system is work
 
 If you want to get the bounding boxes, please refer to https://github.com/pjreddie/darknet for more details on converting the network outputs to bbox
 
- ## Contact me
+## Feed different images
+ 
+Unfortunately, the current system works as bare-metal without an OS. Therefore, if you wish to feed different images into the network, you have to do it at compile-time by converting it a header file.
 
- you can either create an issue or just drop me an email (zhewen.yu18@imperial.ac.uk)
+- Load an image and convert it to an array of 3\*416\*416 by tools/image_load
+- Quantise the image by tools/head_short
+- Pad the array to the size of 4\*416\*416 with tools/input_channel_pad 
+- Replace code/sdk/include/group_0_input.h with the generated header file  
+
+Meanwhile, if you wish to verify the network output, a fixed point YOLO implementation which can run on the desktop has been provided as the reference.
+https://github.com/Yu-Zhewen/Tiny_YOLO_v3_ZYNQ/tree/1c629ad5592a63be0ec61391265feefe9e58068b/sw/desktop_fp_ref
+
+Please do the following steps:  
+- Run the reference project with your image, and you shall obtain a dat file as the reference output.  
+- Use tools/dat_fp_to_short to convert the datatype to short  
+- Use tools/dat_to_head to convert the dat file into a header file  
+- Pad the reference output from 26\*26\*255 to 26\*26\*256, by tools/yolo_pad  
+- Transpose the output by tools/interleave_output_group  
+- Replace code/sdk/include/group_13_output.h with the generated header file
+
+
+## Contact me
+
+you can either create an issue or just drop me an email (zhewen.yu18@imperial.ac.uk)
 
