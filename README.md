@@ -98,7 +98,7 @@ If you want to get the bounding boxes, please refer to https://github.com/pjredd
 
 ## Feed different images
  
-Unfortunately, the current system works as bare-metal without an OS. Therefore, if you wish to feed different images into the network, you have to do it at compile-time by converting it a header file.
+Unfortunately, the current system works as bare-metal without an OS and the system does not include a camera interface. Therefore, if you wish to feed different images into the network, you have to do it at compile-time by converting it to a header file.
 
 - Load an image and convert it to an array of 3\*416\*416 by tools/image_load
 - Quantise the image by tools/head_short
