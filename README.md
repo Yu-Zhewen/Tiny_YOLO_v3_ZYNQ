@@ -18,7 +18,7 @@ Design Space Exploration to identify the Pareto-optimal design point on Zedboard
 
 ## To cite our work
 Our paper is accepted by ARC2020 (https://arcoresearch.com/arc2020/)
-
+```
 @inproceedings{yu2020parameterisable,
   title={A Parameterisable FPGA-Tailored Architecture for YOLOv3-Tiny},
   author={Yu, Zhewen and Bouganis, Christos-Savvas},
@@ -29,6 +29,7 @@ Our paper is accepted by ARC2020 (https://arcoresearch.com/arc2020/)
   publisher={Springer, Cham},
   url={https://doi.org/10.1007/978-3-030-44534-8_25}
 }
+```
 
 ## Navigate inside the project
 /code
@@ -119,5 +120,5 @@ Please do the following steps:
 
 ## Contact me
 
-you can either create an issue or just drop me an email (zhewen.yu18@imperial.ac.uk)
+you can either create an issue or just drop me an email (zhewen.yu18@gmail.com)
 
